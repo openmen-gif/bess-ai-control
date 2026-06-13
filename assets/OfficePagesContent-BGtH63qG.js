@@ -1,4 +1,4 @@
-import{a as e,t}from"./jsx-runtime-DCka7677.js";var n=t(),r=e.div`
+import{t as e}from"./jsx-runtime-C7M7YA1l.js";import{n as t}from"./index-BkoayKyo.js";var n=e(),r=t.div`
   padding: 28px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ import{a as e,t}from"./jsx-runtime-DCka7677.js";var n=t(),r=e.div`
     padding: 16px;
     gap: 16px;
   }
-`,i=e.div`
+`,i=t.div`
   h1 { 
     font-size: 22px; font-weight: 700; margin: 0; 
     @media (max-width: 768px) { font-size: 18px; }
@@ -20,18 +20,18 @@ import{a as e,t}from"./jsx-runtime-DCka7677.js";var n=t(),r=e.div`
     font-size: 13px; color: #6B7280; margin-top: 6px; 
     @media (max-width: 768px) { font-size: 11px; }
   }
-`,a=e.hr`
+`,a=t.hr`
   border: none;
   border-top: 1px solid rgba(255,255,255,0.08);
   margin: 0;
-`,o=e.h2`
+`,o=t.h2`
   font-size: 14px;
   font-weight: 700;
   color: #9CA3AF;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   margin: 0;
-`,s=e.div`
+`,s=t.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 14px;
@@ -39,7 +39,7 @@ import{a as e,t}from"./jsx-runtime-DCka7677.js";var n=t(),r=e.div`
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
   }
-`,c=e.div`
+`,c=t.div`
   background: rgba(255,255,255,0.03);
   border: 1px solid ${({$color:e})=>e?`${e}30`:`rgba(255,255,255,0.08)`};
   border-left: 3px solid ${({$color:e})=>e??`#3B82F6`};
@@ -49,7 +49,7 @@ import{a as e,t}from"./jsx-runtime-DCka7677.js";var n=t(),r=e.div`
   .name  { font-size: 14px; font-weight: 600; color: #F9FAFB; }
   .id    { font-size: 11px; color: #6B7280; margin-top: 3px; }
   .role  { font-size: 12px; color: #9CA3AF; margin-top: 10px; line-height: 1.6; }
-`,l=e.div`
+`,l=t.div`
   background: rgba(59,130,246,0.06);
   border: 1px solid rgba(59,130,246,0.2);
   border-radius: 10px;
@@ -59,11 +59,11 @@ import{a as e,t}from"./jsx-runtime-DCka7677.js";var n=t(),r=e.div`
   line-height: 1.8;
   
   strong { color: #F9FAFB; }
-`,u=e.div`
+`,u=t.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-`,d=e.span`
+`,d=t.span`
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 6px;
