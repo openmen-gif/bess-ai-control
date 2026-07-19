@@ -15,6 +15,10 @@
 
 - POST https://bess-ai-control.work/api/chat — Claude 기반 전문가 응답 스트리밍. 요청: {model, agentId, message, history?}. 브라우저 동일 출처 전용(Origin 검증)·IP당 분당 8회 제한.
 
+## MCP 서버 (AI 에이전트용)
+
+- https://bess-ai-control.work/api/mcp — Model Context Protocol(Streamable HTTP). 도구: list_experts(명부)·get_expert_definition(전문 지식 전문)·ask_expert(질문, IP당 분당 8회). 연결 예: `claude mcp add --transport http bess https://bess-ai-control.work/api/mcp`
+
 ## 부서 요약
 
 - 기술본부 (CTO): aiml-engineer, battery-expert, cable-engineer, circuit-breaker-expert, cbop-engineer, cfd-analyst 외 17명
