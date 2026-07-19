@@ -1,0 +1,23 @@
+# BESS AI Control Center
+
+> 배터리 에너지저장장치(BESS) EPC 전 주기를 다루는 한국어 AI 전문가 조직(82명)의 컨트롤 센터. 배터리·PCS·계통연계·규격/인허가(8개 시장)·재무/세무·물류/조달·안전/소방 분야의 전문 지식과 실시간 AI 상담을 제공한다.
+
+조직: CEO + 3본부 — 기술본부 (CTO) 23명 · 재무본부 (CFO) 22명 · 운영본부 (COO) 36명 · 지원 (SUP) 1명. 대상 시장: KR·JP·US·AU·UK·EU·RO·PL.
+
+## 핵심 리소스
+
+- [전문가 전체 정의 (llms-full.txt)](https://bess-ai-control.work/llms-full.txt): 82명 전원의 ID·부서·역할 정의 전문
+- [전문가 명부 JSON](https://bess-ai-control.work/agents.json): id·부서·설명·키워드 구조화 데이터
+- [조직 그래프 JSON](https://bess-ai-control.work/graph.json): 조직도·협업 관계(노드/링크)
+- [콘솔 (웹 UI)](https://bess-ai-control.work/): 3D 조직 그래프·전문가 카드·AI 상담 콘솔
+
+## 실시간 상담 API
+
+- POST https://bess-ai-control.work/api/chat — Claude 기반 전문가 응답 스트리밍. 요청: {model, agentId, message, history?}. 브라우저 동일 출처 전용(Origin 검증)·IP당 분당 8회 제한.
+
+## 부서 요약
+
+- 기술본부 (CTO): aiml-engineer, battery-expert, cable-engineer, circuit-breaker-expert, cbop-engineer, cfd-analyst 외 17명
+- 재무본부 (CFO): internal-auditor, business-dev, contract-specialist, cost-analyst, customs-tariff, esg-finance 외 16명
+- 운영본부 (COO): precom-report, fit-procedure, grid-interconnection, commissioning-coordinator, cybersecurity-expert, emerging-markets 외 30명
+- 지원 (SUP): output-generator

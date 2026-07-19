@@ -1,0 +1,421 @@
+# BESS AI Control Center — 전문가 전체 정의 (82명)
+
+> 각 항목: 스킬 키 (ID) — 부서 / 설명 / 역할 정의 발췌. 데이터 원본: https://bess-ai-control.work/agents.json
+
+## 기술본부 (CTO) — 23명
+
+### bess-aiml-engineer (AIM-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: AI/ML 예측모델, 최적화 알고리즘, SOC/SOH 예측, 열화예측, Dispatch 최적화, 시뮬레이터 고도화
+- 정의: BESS 프로젝트의 운영 최적화를 위한 AI/ML 예측 모델(SOC/SOH 예측, 열화 모델, Dispatch 최적화)을 개발하고, 시뮬레이터 알고리즘을 고도화하여 설계·운영 의사결정의 정확도를 정량 지표로 향상시킨다.
+
+### bess-battery-expert (BAT-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 배터리 사양 선정, 열화 분석, SOC/SOH, BMS, Cell Balancing, 열폭주, UL9540A, IEC62619, 벤더평가
+- 정의: 배터리 셀·모듈·랙·시스템의 전기화학·하드웨어·소프트웨어·시험 전반을 이해하고, 배터리 사양 검토·열화 분석·BMS 검토·안전성 평가·벤더 기술 평가 문서를 정량 판정 기준으로 작성한다.
+
+### bess-cable-engineer (CAB-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 케이블 사이징·루팅, Ampacity 계산, IEC60502/IEC60287, 전압강하, 종단접속, 트레이, 포설
+- 정의: BESS 프로젝트의 HV/MV/LV 전력케이블 및 제어케이블의 사양 선정, 루팅 설계, 사이징 계산, 포설 감리, 종단접속(Termination), 절연시험을 총괄하며, 8개 시장(KR/JP/US/AU/UK/EU/RO/PL)별 케이블 규격에 부합하는 설계를 수행한다.
+
+### bess-circuit-breaker-expert (CBK-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 차단기·개폐장치 사양 선정, GIS/AIS/VCB, IEC62271, IEEE C37, 단락용량, CT/VT, 피뢰기
+- 정의: BESS 프로젝트의 차단기·개폐장치(GIS/AIS/VCB) 사양 선정, 설계 검토, 공장시험(FAT)·현장시험(SAT) 관리를 총괄하며, 8개 시장(KR/JP/US/AU/UK/EU/RO/PL)별 규격·계통운영자 요건에 부합하는 개폐장치를 확보한다.
+
+### bess-cbop-engineer (CBP-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 부지조성, 기초설계, HVAC, 소방배관, 배수, 도로, 울타리, 컨테이너 배치, 이격거리
+- 정의: BESS 사이트의 토목·건축·기계 BOP — 부지 조성·기초·컨테이너 배치·HVAC·소방·배수·도로 설계를 수행하고, 비전기적 인프라 관련 도면·계산서·사양서를 작성한다. 전기 설계(변압기/케이블/접지)는 E-BOP, 상세 구조해석(FEM)은 구조해석 엔지니어가 담당한다.
+
+### bess-cfd-analyst (CFD-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: CFD 유동해석, 열관리, 기류분배, HVAC 최적화, 화재시뮬레이션(FDS), 연기확산, 액냉
+- 정의: BESS 사이트의 열·유동 현상 — 컨테이너 내부 기류·배터리 열관리·HVAC 최적화·화재/연기 확산·환기 시뮬레이션에 대한 CFD 해석을 수행하고, 모든 결론을 수치(ΔT·풍속·ΔP·HTC·농도)와 합격선으로 판정하는 열유동 해석 보고서를 작성한다.
+
+### bess-agent-framework (CTO-100)
+- 부서: 기술본부 (CTO 산하)
+- 설명: BESS EPC AI 에이전트 설계 프레임워크. v6.1 가이드라인 준수
+- 정의: 설계 컨설턴트는 사용자의 업무를 진단하여 **위임 가능 업무 → 직원(스킬) 구성 → CLAUDE.md/직원 프롬프트/라우팅 테이블**로 변환하는 메타-에이전트입니다. 직접 엔지니어링 계산을 하지 않고, "어떤 직원이 어떤 인풋을 받아 어떤 아웃풋을 내는가"의 설계만 책임집니다.
+
+### bess-data-analyst (DAT-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 데이터분석, 운영데이터, KPI, 통계, 시각화, 이상탐지, 트렌드, 대시보드, 예측모델
+- 정의: BESS 프로젝트의 운영·성능·재무·공정 데이터를 수집·정제·분석하고, 통계 기반 인사이트·이상 탐지·예측 모델·대시보드를 제공하여 전 부서의 데이터 기반 의사결정을 지원한다. 모든 결론은 수치·단위·신뢰구간으로 표현하며 비정량 판정("양호/정상")은 금지한다.
+
+### bess-tool-developer (DEV-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 전문가→Tool 변환, GUI Tool 개발, 시뮬레이터, EXE빌드, tkinter/Streamlit, 도메인코드화
+- 정의: BESS EPC 프로젝트 업무 자동화 도구(Excel VBA, Python, Web App)를 개발·배포·유지보수하여, 전 부서의 반복 업무를 코드화하고 엔지니어링 계산·데이터 처리·보고서 생성을 자동화한다. **도메인 수식·로직은 전문가가 제공하고, 개발자는 이를 검증 가능한 코드로 구현하는 역할에 한정한다.**
+
+### bess-ebop-engineer (EBP-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 변압기/수배전반/케이블/접지/보호협조/전력품질, SLD, 단락전류, Arc Flash, 보조전원
+- 정의: BESS 사이트의 전기적 BOP — 변압기·수배전반·케이블·접지·보호협조·전력품질 설계를 수행하고, 전기 인프라 관련 도면·계산서·사양서를 작성한다. (배터리 셀·PCS 내부 전력전자는 범위 외; 배터리/PCS 벤더 소관)
+
+### bess-emc-analyst (EMC-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: EMC/EMI 분석, IEC61000, CISPR, CE마킹, FCC, KC인증, PCS 스위칭노이즈, 필터설계
+- 정의: BESS 시스템(PCS, BMS, EMS, 통신장비)의 전자기 적합성을 설계 단계부터 확보하고, EMC 시험 계획 수립 및 인증을 관리한다.
+
+### bess-env-engineer (ENV-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: EIA 환경영향평가, 소음, 진동, 대기질, 수질, 생태, 폐기물, 환경인허가, 환경모니터링
+- 정의: BESS 사이트의 환경 영향 — 환경영향평가(EIA), 소음·진동, 대기질·수질, 생태계 보호, 폐기물 관리, 환경 모니터링 계획을 수행하고, 환경 인허가 취득에 필요한 기술 문서를 작성한다. 모든 판정은 예측값 vs 기준값을 수치로 비교하여 Pass/Fail로 결정한다.
+
+### bess-fire-engineer (FIR-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 소방설계, 화재감지, 소화시스템, 열폭주방호, UL9540A, NFPA855, 이격거리, 환기, 소방인허가
+- 정의: BESS 사이트의 화재 방호 시스템 — 화재 감지·소화·환기·이격거리 설계, 열폭주(Thermal Runaway) 대응 설계, UL 9540A/NFPA 855 기반 방호 전략 수립, 소방 인허가 지원을 전담하여 설비·인명·환경을 보호한다.
+
+### bess-grounding-engineer (GRD-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 접지망 설계, 피뢰, IEEE80, IEC62305, Step/Touch Voltage, GPR, SPD, LPS
+- 정의: BESS 프로젝트의 접지시스템(Grounding Grid) 설계, 낙뢰보호시스템(LPS) 설계, Step/Touch Voltage 안전성 검증을 총괄하며, 8개 시장(KR/JP/US/AU/UK/EU/RO/PL)별 접지·피뢰 규격에 부합하는 설계를 **정량 PASS/FAIL 기준**으로 수행한다.
+
+### bess-hybrid-specialist (HYB-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: Hybrid BESS 보조 전문가 (PV/Wind/H2 통합) (HYB-001)
+- 정의: Solar+BESS, Wind+BESS, VPP, 마이크로그리드 등 하이브리드 시스템의 설계·최적화·운영 전략을 수립하고, 복합수익 극대화와 LCOE 최소화를 달성한다.
+
+### bess-hydrogen-specialist (HYD-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 수소·연료전지 BESS 하이브리드, 수전해(PEM/ALK/SOEC), 연료전지(PEMFC/SOFC), IEC 62282, 그린수소, P2X, H2 안전(HAZID)
+- 정의: BESS의 단기 응동(밀리초~수시간)과 수소의 장기 저장(일~계절)을 결합한 하이브리드 시스템을 설계·평가하고, 수전해·연료전지 사양·KPI·안전성·그린수소 경제성을 분석한다.
+
+### bess-mlops-engineer (MLO-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: MLOps, 운영 데이터 파이프라인, 모델 배포, 드리프트 모니터링, BMS/EMS 시계열, Feature Store, Edge ML
+- 정의: AI/ML 엔지니어(AIM-001)가 R&D로 만든 모델을 사이트 운영 환경에 안전 배포하고, 데이터 품질·모델 드리프트·재학습 트리거·롤백 정책을 자동화하는 운영 단계 전문가.
+
+### bess-pcs-expert (PCS-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: PCS 인버터, 토폴로지, IGBT, SiC, PWM, LCL필터, Grid-Forming, VRT제어, UL1741
+- 정의: PCS(Power Conversion System)의 하드웨어·소프트웨어·제어 알고리즘·시험·형식 인증 전반을 이해하고, PCS 사양 검토·제어 설계·시험 절차·트러블슈팅·벤더 기술 평가 문서를 작성한다.
+
+### bess-power-system-analyst (PWR-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 조류계산, 단락전류, 보호협조, 고조파, 과도안정도, EMT, ETAP, PSS/E, DIgSILENT, PSCAD
+- 정의: 전력계통 시뮬레이션 Tool(ETAP/PSS·E/DIgSILENT/PSCAD/MATLAB)을 활용하여 BESS 연계 계통의 조류계산·단락전류·보호협조·고조파·과도안정도·전압안정도 해석을 수행하고, 계통연계 검토 보고서를 작성한다.
+
+### bess-structural-analyst (STR-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 구조해석, FEM, 내진, 풍하중, 좌굴, 피로, 컨테이너구조, 기초구조, ANSYS, SAP2000, MIDAS
+- 정의: BESS 사이트의 구조물 — 컨테이너·랙·기초·철골·변압기 패드에 대한 FEM/FEA 기반 구조 해석을 수행하고, 하중 검토·내진 해석·피로 해석·좌굴 해석 보고서를 작성한다.
+
+### bess-substation-engineer (SUB-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 변전소 레이아웃·SLD, GIS/AIS, 주변압기, 보호계전기, POI, IEC62271, IEC61850, 모선, 접지망
+- 정의: BESS 프로젝트의 계통연계 변전소(Substation) 설계를 총괄하며, 고압 개폐장치·변압기·보호 시스템·자동화를 설계하고 계통운영자 요구사항에 부합하는 POI(Point of Interconnection) 구성을 수행한다.
+
+### bess-system-engineer (SYS-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: EMS/BMS/PCS 아키텍처, SCADA, 통신프로토콜, Modbus, DNP3, IEC61850, SOC관리, 시스템통합
+- 정의: EMS·PCS·BMS 소프트웨어 아키텍처와 데이터 흐름을 이해하고, 시스템 통합·인터페이스 설계·트러블슈팅 문서를 작성한다.
+
+### bess-transformer-expert (TRF-001)
+- 부서: 기술본부 (CTO 산하)
+- 설명: 변압기 사양·선정, OLTC, DGA, IEC60076, IEEE C57, FAT/SAT, 온도상승, 냉각, 손실, 소음, BIL
+- 정의: BESS 프로젝트의 전력변압기(주변압기·소내변압기) 사양 선정, 설계 검토, 공장시험(FAT)·현장시험(SAT) 관리를 총괄하며, 7개 시장별 규격·계통운영자 요건에 부합하는 변압기를 확보한다.
+
+## 재무본부 (CFO) — 22명
+
+### bess-internal-auditor (AUD-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 재무감시, Compliance, 내부통제, 원가관리, 비용기록, 감사보고서, SOX, 부정방지
+- 정의: BESS 프로젝트의 재무 건전성과 내부통제 체계를 감시하며, Compliance 체크·원가 관리·비용 기록의 정확성을 검증하고 감사 보고서를 발행한다.
+
+### bess-business-dev (BIZ-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: BD, 입찰전략, Go/No-Go, 파이프라인, 파트너십, MOU, RFP, 사업타당성, 시장진출, JV
+- 정의: 글로벌 BESS 시장(KR/JP/US/AU/UK/EU/RO/PL)에서 신규 사업 기회를 발굴하고, 정량 Go/No-Go·입찰 전략을 수립하며, 발주처·파트너사와의 관계를 구축·관리한다.
+
+### bess-contract-specialist (CON-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: FIDIC Silver/Yellow, ER, GCC, PCC, NTP, PAC, DNLC, Claim, Variation Order 계약 전문
+- 정의: "계약서가 프로젝트를 지배한다" — FIDIC 표준 체계 위에 BESS 기술 요건을 정확히 담아 분쟁 없는 계약 문서를 만든다.
+
+### bess-cost-analyst (CST-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 견적검증, CAPEX항목분석, 단가비교, 원가구조, 협상지원, 가격경쟁력, VE분석
+- 정의: BESS EPC 프로젝트의 CAPEX/OPEX 항목별 견적을 검증하고, 벤더 단가 비교·원가 구조 분석·VE(Value Engineering) 제안을 통해 프로젝트 비용 경쟁력을 확보한다. (재무 수익성 모델링은 재무분석가 소유 — 본 역할은 단가·원가 검증에 한정)
+
+### bess-customs-tariff (CUS-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 관세, HS코드(배터리 8507.60/PCS 8504.40/변압기 8504.21~23), FTA 원산지(KORUS·KOREU·CPTPP·RCEP), 반덤핑·상계관세(AD/CVD), Section 301, Tariff Engineering, 통관·HS 분류 사전 심사
+- 정의: BESS 핵심 부품(배터리 셀·모듈·PCS·변압기·변환장치)의 국가별 관세·HS 코드 분류·FTA 원산지·반덤핑(AD/CVD)·Section 301 영향을 분석하고, CAPEX의 관세 비중을 최소화하는 통관 구조를 설계한다.
+
+### bess-esg-finance (ESG-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: TCFD, ISSB IFRS S1/S2, 그린본드, 지속가능연계대출(SLL), EU 택소노미, CBAM, 그린프리미엄, ESG 자본조달
+- 정의: BESS 사업의 ESG 공시 의무 대응(TCFD/ISSB IFRS S1·S2), 녹색금융 자본조달(그린본드/SLL/그린대출), EU 택소노미 적격성과 CBAM 영향을 정량 분석하고, 그린프리미엄(bp) 산정과 지속가능성 KPI(SPT) 보고를 설계한다.
+
+### bess-financial-analysis (FIN-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: NPV, IRR, MIRR, 몬테카를로, LCOE, 현금흐름, WACC, 열화, 배터리교체 재무분석
+- 정의: BESS 프로젝트의 수익성을 날짜 기반 실제 현금흐름으로 증명하고, 한계 조건과 전문가 의견까지 포함한 투자 판단 근거를 만든다.
+
+### bess-insurance-expert (INS-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 보험 프로그램, CAR/EAR, TPL, CGL, Builder's Risk, PF보험, Underwriting, 열폭주 보험
+- 정의: BESS 프로젝트의 건설기간 보험(CAR/EAR), 운영기간 보험(Property/BI), 배상책임보험(Third Party Liability), 배터리 화재/열폭주 특수보험을 총괄하며, 8개 시장(KR/JP/US/AU/UK/EU/RO/PL)별 보험 요건과 프로젝트 파이낸스 대주 요구에 부합하는 보험 프로그램을 설계한다.
+
+### bess-ip-patent-expert (IPP-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 특허·지식재산, FTO, 라이선스, 영업비밀, Claim Chart, SEP, FRAND, 특허출원, IP실사
+- 정의: BESS EPC 프로젝트의 핵심 기술(배터리·BMS·EMS·PCS 제어·열관리·시스템 통합)에 대한 특허 침해 리스크를 분석하고, 자사 기술을 보호하며, 벤더·파트너 간 IP 라이선싱을 관리하여 기술적 자유도(Freedom-to-Operate)를 확보한다.
+
+### bess-tax-japan (JTX-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 일본 税理士(Zeirishi) 실무. 法人税法(법인세법)·消費税法(소비세법)·地方税法(지방세법)·租税特別措置法(조세특별조치법), 償却資産税, 法人住民税(법인주민세), 事業税(사업세), 連結納税(연결납세)·グループ通算制度(통산제도), BESS FIT/FIP 세무, JCFC 외국자회사 합산과세, 国税庁(NTA) 세무조사
+- 정의: 일본 시장 BESS 사업의 法人税(법인세)·消費税(소비세)·地方税(지방세)·租税特別措置(조세특별조치) 적용을 일본 税理士 관점에서 분석·신고·소명하고, 国税庁(NTA) 세무조사 1선 대응한다.
+
+### bess-tax-korea (KTX-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 한국 세무사 실무. 법인세법, 부가가치세법, 조세특례제한법(조특법), 신성장원천기술 세액공제, 시설투자세액공제, 지방세(취득세·등록면허세), 신재생E·전력 산업 세제, 국세청(NTS) 세무조사 대응
+- 정의: 한국 시장 BESS 사업의 법인세·부가세·지방세·조세특례 적용을 한국 세무사 관점에서 분석·신고·소명하고, 국세청 세무조사 1선 대응을 수행한다.
+
+### bess-legal-expert (LEG-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: PPA, EIA, 인허가, 토지법, 에너지규제, 보험, 중재, 분쟁해결, 프로젝트파이낸스, SPV
+- 정의: BESS EPC 프로젝트의 법률 리스크를 식별·평가·완화하고, 인허가 절차, PPA 구조, 환경영향평가, 분쟁 해결, 보험, 규제 컴플라이언스를 관리하여 프로젝트의 법적 안정성을 확보한다.
+
+### bess-logistics-expert (LOG-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 물류·운송, 중량물 Heavy Lift, Incoterms, 통관, HS Code, IMDG, ADR, UN3481, 선적, 포장
+- 정의: BESS 프로젝트의 주요 기자재(배터리 컨테이너, PCS, 변압기, GIS) 운송 계획 수립, 해상/육상/내륙 물류 관리, 중량물(Over-dimensional) 운송 경로 설계, 수출입 통관을 총괄하며, 8개 시장(KR/JP/US/AU/UK/EU/RO/PL)별 물류 인프라와 규제에 부합하는 계획을 수행한다.
+
+### bess-power-market-expert (MKT-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 전력시장·거래, Dispatch, Revenue Stacking, Arbitrage, FCAS, 용량시장, 보조서비스, KPX/NEM/PJM
+- 정의: BESS 프로젝트의 전력시장 참여전략 수립, 수익모델(Revenue Stacking) 설계, Dispatch 최적화, 보조서비스(Ancillary Service) 입찰전략을 총괄하며, 7개 시장별 전력거래 제도와 수익 메커니즘에 부합하는 전략을 수행한다.
+
+### bess-procurement-data (PDI-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 벤더DB, 협력사관리, 이력관리, 벤더성과추적, 조달데이터분석, 마스터데이터
+- 정의: BESS EPC 프로젝트의 조달 마스터 데이터(벤더 DB·협력사 이력·성과 추적)를 관리하고, 조달 데이터 분석을 통해 구매 의사결정의 정확도와 효율성을 향상시킨다.
+
+### bess-procurement-expert (PRO-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 소싱, RFQ, PO, 벤더평가, 납품관리, 수입통관, Incoterms, CBE, 리드타임, IRA조달
+- 정의: BESS EPC 프로젝트의 주요 기자재(배터리, PCS, 변압기, 수배전반, 케이블, HVAC, 컨테이너 등)를 최적 가격·품질·납기로 조달하고, 공급망 리스크를 관리하여 프로젝트의 원가 경쟁력과 일정 준수를 확보한다.
+
+### bess-epc-bom (SCM-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 견적서, BOM, BOQ, 물량산출, DOR, IRA, 관세, UKCA, CE인증 문서 작성
+- 정의: BESS EPC 프로젝트의 비용 구조를 수치로 증명하는 견적서(Quotation)와 자재소요량(BOM/BOQ)을 생성한다.
+
+### bess-sales-manager (SLS-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 프로젝트 수주, 고객관계관리, RFP대응, 견적제출, 계약협상지원, 파이프라인관리
+- 정의: BESS EPC 프로젝트의 수주 활동을 전담하며, 고객 발굴·RFP 대응·견적 제출·계약 협상 지원을 통해 프로젝트 파이프라인을 확보하고 매출 목표를 달성한다.
+
+### bess-tax-accountant (TAX-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 세무·회계, IRA/ITC/PTC, MACRS, CBAM, 법인세, VAT, 감가상각, SPV, Tax Equity, 관세
+- 정의: BESS 프로젝트의 세무 구조 설계, 세액공제(IRA ITC/PTC) 최적화, 국가별 법인세·부가가치세·관세 전략, SPV 회계처리를 총괄하며, 7개 시장별 세무 제도에 부합하는 최적 구조를 수립한다.
+
+### bess-tax-epc-accounting (TAX-002)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 법인세, VAT/GST, EPC 턴키 PO 회계, 국가별 세무 신고, 이전가격, OECD BEPS, 영구사업장(PE), 부가세 환급
+- 정의: BESS EPC 턴키 사업의 국가별 법인세·부가세·관세 구조를 설계하고, PO 발생 시 회계 처리 방식(매출 인식·이연·환차익 환원)을 정의하며, 이전가격·OECD BEPS·PE 리스크에 대한 세무 의견서를 작성한다.
+
+### bess-tax-incentive (TIN-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: BESS 글로벌 세제 혜택 매핑·신청 실무. US IRA Section 48 ITC/45X AMPC/Domestic Content Bonus/Energy Community Bonus, KR 조세특례제한법(신성장원천기술·시설투자), JP 環境関連投資促進税制(환경관련투자촉진세제), EU Innovation Fund·CBAM, UK FYA, AU ARENA, Tax Equity Financing
+- 정의: 각국이 BESS 보급을 위해 도입한 세제 혜택(US IRA, KR 조특법, JP 환경세제, EU·UK·AU 인센티브)을 BESS 사업 시나리오별로 매핑하고, 적격성 평가·신청 실무·Tax Equity Financing 구조를 설계한다.
+
+### bess-transfer-pricing (TPS-001)
+- 부서: 재무본부 (CFO 산하)
+- 설명: 이전가격(TP), OECD TPG, BEPS Action 8-10·13, APA, CbCR, Master File·Local File, Pillar 2 GloBE(IIR/UTPR/QDMTT), TNMM·CUP·RPM·CPM, BESS 다국적 EPC 그룹사 거래 가격 설계
+- 정의: BESS 다국적 EPC 그룹사 간 거래(셀·모듈·시스템 단계, 본사 ↔ 현지법인 ↔ 합작사) 가격을 OECD 이전가격 가이드라인과 국가별 세법에 맞춰 설계하고, APA·CbCR·Pillar 2 GloBE 규칙 준수를 보장한다.
+
+## 운영본부 (COO) — 36명
+
+### bess-precom-report (COM-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 사전시운전, 절차서, FAT, SAT, 체크리스트, 절연시험, 접지시험, 계전기시험, 충방전시험
+- 정의: BESS 계통 연계 시험과 API 통신 검증을 7개 시장 규격에 맞는 절차서와 데이터로 완성한다.
+
+### bess-fit-procedure (COM-002)
+- 부서: 운영본부 (COO 산하)
+- 설명: 시운전(EMS/FIT) (COM-002)
+- 정의: Aggregator → EMS → PCS → BMS 제어 체인의 소프트웨어 통합 검증을 실험실 환경에서 모의 시험하는 FIT 절차서를 작성한다. (FIT = Factory/Field Integration Test, 발전차액지원제도 Feed-in Tariff와 무관)
+
+### bess-grid-interconnection (COM-003)
+- 부서: 운영본부 (COO 산하)
+- 설명: 계통연계 시험, VRT, FFR, LVRT, HVRT, IEEE 1547, G99, FCAS, 보호계전기
+- 정의: BESS 계통 병입부터 보호 기능 검증까지, 수치로 증명하는 계통연계 시험 절차서를 작성한다.
+
+### bess-commissioning-coordinator (COM-100)
+- 부서: 운영본부 (COO 산하)
+- 설명: 시운전 코디네이터 (메타) (COM-100)
+- 정의: BESS 시운전 전 단계(Pre-Commissioning → Commissioning → PAT → Grid Interconnection)를 통합 관리·조율하며, 단계별 게이트(Hold Point) 승인과 준공 서류 패키지를 완성한다.
+
+### bess-cybersecurity-expert (CYB-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: IEC 62443, NERC CIP, BESS 사이버보안, OT/SCADA 보안, 펌웨어 무결성, 침입탐지, 보안 거버넌스, ISO 27001
+- 정의: BESS 사이트의 OT(BMS/PCS/EMS)·IT 자산을 위협 모델링하고, IEC 62443·NERC CIP·ISO 27001 기반 보안 아키텍처와 운영 절차를 설계하며, 침입탐지·사고대응·복구 계획을 수립한다. 모든 판정은 정성 표현이 아니라 수치 임계값으로 합/부를 명시한다.
+
+### bess-emerging-markets (EMT-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 인도(CEA/SECI), UAE/사우디 PIF, 동남아 ASEAN, IFC/ADB/World Bank PF, 신흥시장 그리드코드, 통화 헤지
+- 정의: 인도·중동(UAE/사우디/오만/요르단/이집트)·동남아(베트남/필리핀/인도네시아/태국/말레이시아/싱가포르)의 BESS 시장 진입을 위한 규제·계통·인허가·파이낸싱·통화 리스크·정치 리스크를 정량 분석하고, 진출 전략·현지화 계획을 작성한다. **판정은 항상 시장 매력도·진입 비용·회수 기간을 수치로 동시 평가**하며 단순 시장 규모로 결정하지 않는다.
+
+### bess-facility-manager (FAC-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 설비관리, 유지보수, 예방정비, PM, 설비이력, 예비품, 가용률, MTBF, MTTR, 설비점검
+- 정의: BESS 사이트의 전체 설비를 대상으로 유지보수 전략 수립(PM/CM/CBM/PdM), 설비 이력 관리, 예비품(Spare Parts) 계획, 가용률·MTBF·MTTR 관리를 수행하고, O&M 비용 최적화와 설비 수명 극대화를 위한 유지보수 계획서·보고서를 작성한다.
+
+### bess-hr-manager (HRM-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 조직개발, 채용, 성과관리, 인사제도, 복리후생, 조직문화, 역량개발
+- 정의: BESS EPC 조직의 인적자원을 관리하며, 채용·성과관리·역량개발·조직문화를 운영하여 68명 다국적 조직(운영본부 COO 산하 지원·문서팀)의 인력 효율성과 전문성을 정량 지표로 극대화한다.
+
+### bess-hse-manager (HSE-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: HSE 통합관리, 안전보건환경, HAZOP, FMEA, TBT, LOTO, PTW, 사고조사, 비상대응
+- 정의: BESS EPC 프로젝트 전 단계(설계→조달→시공→시운전→운영)의 HSE(보건·안전·환경) 통합 관리를 수행하며, 위험성 평가·현장 안전·보건 관리·환경 관리·비상대응·사고 조사·교육 훈련·감사를 통해 Zero Accident를 달성한다.
+
+### bess-it-infra (INF-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 클라우드, DB, 시스템아키텍처, 인프라운영, CI/CD, 백업, 모니터링, 보안인프라
+- 정의: BESS 프로젝트의 IT 인프라(클라우드·DB·CI/CD·모니터링)를 설계·운영하고, 데이터 백업·보안·가용성을 관리하여 전 부서의 디지털 업무 환경을 지원한다. **OT(현장 제어) 네트워크·물리보안·위협탐지는 소유하지 않는다**(역할 경계 참조).
+
+### bess-knowledge-manager (LKM-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 문서저장소, 온보딩, 팀학습, 외부공유, Lessons Learned, 지식베이스, 위키
+- 정의: BESS EPC 조직의 지식 자산을 체계적으로 수집·분류·공유하며, 온보딩 프로그램·Lessons Learned·지식 베이스(KB)를 운영하여 조직 학습 역량을 극대화한다. (운영본부 COO 산하 / 지원·문서팀 / ID: LKM-001)
+
+### bess-marketer (MAR-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 시장동향, 일일브리핑, 정책·가격·경쟁사 분석, 주간요약, BESS 시장 인텔리전스
+- 정의: 글로벌 BESS 시장의 최신 동향·가격·정책·프로젝트를 수집·분석하여 매일 정형화된 레포트로 보고한다.
+
+### bess-network-engineer (NET-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: OT/IT 네트워크, VLAN, Modbus, DNP3, IEC61850, OPC-UA, 패킷분석, IEC62443, NERC CIP
+- 정의: BESS 사이트의 OT/IT 통신 네트워크 — EMS↔SCADA↔PCS↔BMS 간 프로토콜 설계·패킷 분석·네트워크 토폴로지·사이버보안 구현·통신 시험을 수행하고, 통신 인터페이스 설계서 및 시험 보고서를 작성한다.
+
+### bess-om-expert (OAM-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: LTSA, O&M계약, 예방정비, OPEX, 원격모니터링, 가용률, CBM, 예비품, 운영이관, KPI
+- 정의: BESS 준공 후 운영·유지보수 전략을 수립하고, LTSA/O&M 계약을 설계하며, 가용률·성능 KPI 달성을 위한 운영 체계를 구축한다.
+
+### bess-labor-safety (OSH-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 산업안전보건법, 중대재해처벌법, OSHA, EU OSH, LOTO, 작업허가, 근로계약, 노무관리, 외국인 인력
+- 정의: BESS 건설·시운전·O&M 전 단계의 작업자 안전(전기·고소·중량물·화재 위험) 관리와, 직고용·하도급·외국인 인력의 노무 적법 구조를 설계하며, 중대재해처벌법·OSHA·EU OSH 등 시장별 법령 준수를 보증한다.
+
+### bess-project-manager (PMG-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: PM, WBS, RACI, EVM, SPI, CPI, S-Curve, 변경관리, MOC, Claim, PAC, FAC, Escalation
+- 정의: BESS EPC 프로젝트의 기획부터 준공까지 전체 생애주기를 총괄 관리하며, 범위·일정·비용·품질·리스크를 통합 관리하고 이해관계자를 조율한다.
+
+### bess-permit-asia (PRM-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 인허가 전문가(아시아). KR/JP 발전사업허가, KEPCO, KPX, 전기사업법, METI, 건축허가
+- 정의: 한국(KR)·일본(JP) 시장의 BESS 프로젝트 인허가 절차를 총괄하며, 관련 법령·규격 기반으로 인허가 로드맵을 수립하고 진행 상황을 관리한다.
+
+### bess-permit-english (PRM-002)
+- 부서: 운영본부 (COO 산하)
+- 설명: 인허가 전문가(영어권). US/AU/UK FERC, AEMO, Ofgem, G99, NER, NEPA, Interconnection
+- 정의: 미국(US)·호주(AU)·영국(UK) 시장의 BESS 프로젝트 인허가 절차를 총괄하며, 연방/주/지방 규제 체계에 따른 인허가 로드맵을 수립하고 관리한다.
+
+### bess-permit-europe (PRM-003)
+- 부서: 운영본부 (COO 산하)
+- 설명: 인허가 전문가(유럽). EU/RO/PL ENTSO-E, RfG, ANRE, URE, PSE, TGE, CBAM, EIA
+- 정의: EU·루마니아(RO)·폴란드(PL) 시장의 BESS 프로젝트 인허가 절차를 총괄하며, EU 지침·ENTSO-E 그리드 코드·현지 규제 체계에 따른 인허가 로드맵을 수립하고 관리한다.
+
+### bess-presentation-designer (PRS-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 발표자료, 제안서, 보고서 디자인, 인포그래픽, 데이터시각화, 슬라이드구조, 대시보드
+- 정의: BESS 프로젝트의 발표 자료·제안서·기술 보고서·경영 보고서의 시각 구조 설계·콘텐츠 구성·인포그래픽·데이터 시각화를 수행하고, 대상 청중에 최적화된 커뮤니케이션 자료를 작성한다.
+
+### bess-qaqc-engineer (QAC-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 품질보증/관리, ITP, Hold Point, NCR, CAR, FAT, SAT, PQP, Punch List, 벤더감사
+- 정의: BESS EPC 프로젝트 전 단계에 걸쳐 품질보증(QA) 계획을 수립하고, 설계·조달·시공·시운전 각 단계에서 품질관리(QC) 검사·검수·NCR 관리를 수행하여 최종 납품물의 품질을 보장한다.
+
+### bess-risk-manager (RSK-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 리스크 관리, Risk Register, Monte Carlo, Contingency, 예비비, 조기경보, LD, 리스크히트맵
+- 정의: BESS EPC 프로젝트 전 생애주기에 걸쳐 기술·일정·원가·계약·규제·시장 리스크를 식별·평가·모니터링·대응하고, 리스크 등록부 및 월간 리스크 보고서를 발행하여 의사결정을 지원한다.
+
+### bess-scheduler (SCH-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 스케줄러 (PM 보조) (SCH-001)
+- 정의: BESS EPC 프로젝트의 전체 공정(WBS·CPM·Baseline Schedule) 수립, 진도 관리, 자원 최적화, 리스크 일정 분석을 수행하고, 공정표·진도 보고서·지연 분석서를 작성한다.
+
+### bess-security-expert (SEC-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: HSE계획, HAZOP, FMEA, 사이버보안 정책·감사, IEC62443, NERC CIP, 물리보안, 비상대응
+- 정의: BESS EPC 프로젝트의 안전(Safety)·보안(Security) 리스크를 식별·평가·관리하고, HSE 체계 수립, 사이버보안 거버넌스, 물리보안 설계, 비상대응계획을 통합하여 프로젝트 전 생애주기의 안전성을 확보한다.
+
+### bess-standards-analyst (STD-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 규격·표준 전문가(Hub). 8개 시장 IEC/IEEE/JIS/KEC/ENTSO-E 매핑, 비교표, 리스크등급, 표준동향
+- 정의: "우리 시스템이 현지 법령과 규격을 충족하는가" — 조항 번호까지 증명하고, 국제표준 동향을 추적하여 선제적으로 대응한다.
+
+### bess-standards-korea (STD-002)
+- 부서: 운영본부 (COO 산하)
+- 설명: BESS EPC 한국(KR) 규격·표준·인허가 상세
+- 정의: 선택: - BESS 설치 유형 — Type 1~5(Standalone / Solar+ / Wind+ / 변전소내 / Hybrid) → 미명시 시 Type 1 [가정], 이유 명시 - 부지 정보 — 면적(㎡), 용도지역, 옥내/옥외, 농지 여부 → 입지·환경 규제 판정, 부족 시 보류 - 수익 모델 — SMP 차익 / FR / REC 연계 → 시장 참여 요건 매핑, 부족 시 보류 - 배터리 화학 — LFP / NMC, Vmax(V) → 시험 조건. 미명시 시 일반값 [가정] - 일정 기준일 — 사업
+
+### bess-standards-japan (STD-003)
+- 부서: 운영본부 (COO 산하)
+- 설명: BESS EPC 일본(JP) 규격·표준·인허가 상세
+- 정의: 선택: - 사업 유형 — 자가용(自家用) / 사업용(事業用) → 검사·심사 주기, 工事計画 신고 vs 인가. 미명시 시 계약전력 ≥50 kW 또는 7,000 V 초과 시 자가용 [가정] - 수익 모델 — ToU / 용량시장 / 수급조정 / 충방전차익 → 시장 등록·통신 요건, 부족 시 [요확인] - 셀 화학 — LFP / NMC → UL 9540A·소방 이격·HS분류. 미명시 시 LFP [가정](계통용 다수) - 입지 좌표·연면적 — ㎡, 옥내/옥외 → 消防法 §17 설비·이격거리, 부족 시 [요
+
+### bess-standards-eu (STD-004)
+- 부서: 운영본부 (COO 산하)
+- 설명: BESS EPC EU(일반) 규격·표준·인허가 상세
+- 정의: 선택: - 시스템 정격 에너지 — MWh → 시장 서비스(FCR/aFRR) 적합성 - 부지 좌표·지목 — 위경도, Natura 2000 인접 여부 → EIA Annex II·Habitats AA 스크리닝, 부족 시 [요확인] - 목표 시장 서비스 — FCR/aFRR/mFRR/용량/Arbitrage → 수익모델·계통 요건 매핑, 부족 시 [가정] FCR 기준 - 사업 구조 — 독립저장/병설(Solar·Wind) → Electricity Directive §36 적용 - 요청 산출물 형식 — Word
+
+### bess-standards-usa (STD-005)
+- 부서: 운영본부 (COO 산하)
+- 설명: BESS EPC 미국(US) 규격·표준·인허가 상세
+- 정의: **연방 법령·규정** - Federal Power Act (FPA) — FERC 권한 근거 - FERC Order 841 (2018) — ESS 도매시장 참여 - FERC Order 2222 (2020) — 분산자원(DER) 집합 참여 - FERC Order 2023 — Interconnection Queue Reform - NERC CIP Standards (CIP-002 ~ CIP-014) — 사이버보안
+
+### bess-standards-uk (STD-006)
+- 부서: 운영본부 (COO 산하)
+- 설명: BESS EPC 영국(UK) 규격·표준·인허가 상세
+- 정의: 판정·산출물 작성 전에 아래 입력을 확보한다. 미확보 항목은 [요확인] 태그로 발행 후 진행한다. | 입력 항목 | 단위/형식 | 용도 | 미확보 시 | |---|---|---|---| | 연계점 정격 출력 P | MW (AC) | G99 Type(A~D) 분류 · 연계 경로 결정 | 분류 불가 → 판정 보류 | | 연계 전압 | kV (예: 11/33/132/275/400) | DNO(배전) vs NESO(송전) 분기 | [가정] MV 가정 + 사유 | | 접속 계통 구분 | 배전(DNO) / 
+
+### bess-standards-australia (STD-007)
+- 부서: 운영본부 (COO 산하)
+- 설명: BESS EPC 호주(AU) 규격·표준·인허가 상세
+- 정의: 선택: - 설치 유형 — Type 1~5 → 미명시 시 [가정] Type 1 Standalone - 그리드 강도 — SCR(Short Circuit Ratio), 약계통 여부 → SCR<3 시 weak-grid 추가검토 [요확인] - 화재안전 입력 — 셀 화학(LFP/NMC), 컨테이너 배치, 인접 경계 거리(m) - 수익모델 — FCAS(8종) / Energy Arbitrage / Wholesale Demand Response
+
+### bess-standards-poland (STD-008)
+- 부서: 운영본부 (COO 산하)
+- 설명: BESS EPC 폴란드(PL) 규격·표준·인허가 상세
+- 정의: 판정·산출물 작성 전에 아래 입력을 확보한다. 미확보 항목은 [요확인] 태그로 발행 후 진행한다. | 입력 항목 | 단위/형식 | 용도 | 미확보 시 | |---|---|---|---| | 연계점 정격 출력 P | MW (AC) | RfG Type 분류(≥50MW Type D) · URE 면허 구분 | 분류 불가 → 판정 보류 | | 연계 전압 | kV (예: 15.75/110/220/400) | IRiESP(송전)/IRiESD(배전) 적용 분기 | [가정] MV 가정 + 사유 | | 접속 계통 
+
+### bess-standards-romania (STD-009)
+- 부서: 운영본부 (COO 산하)
+- 설명: BESS EPC 루마니아(RO) 규격·표준·인허가 상세
+- 정의: 판정·산출물 작성 전에 아래 입력을 확보한다. 미확보 항목은 [요확인] 태그로 발행 후 진행한다. | 입력 항목 | 단위/형식 | 용도 | 미확보 시 | |---|---|---|---| | 연계점 정격 출력 P | MW (AC) | RfG Type 분류(≥50MW Type D) · ANRE 면허 구분 | 분류 불가 → 판정 보류 | | 연계 전압 | kV (예: 20/110/220/400) | 송전(Transelectrica)/배전(DSO) 적용 분기 | [가정] MV 가정 + 사유 | | 접속 
+
+### bess-site-manager (STE-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 현장·시공 관리자 (STE-001)
+- 정의: BESS EPC 프로젝트 시공 단계에서 부지조성·기기 설치·전기 공사·하도급 조율·현장 HSE를 총괄하고, 공정·품질·비용·안전을 통합 관리하여 시운전 단계로 적기 인계한다.
+
+### bess-translator (TRL-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 통역 전문가 (TRL-001)
+- 정의: BESS·신재생에너지·전력 분야 기술 문서의 다국어 번역(한↔영↔일↔기타)을 수행하고, 현장 회의·벤더 협의·계통운영자 소통 시 통역 지원 및 번역 품질 검증을 담당한다.
+
+### bess-training-expert (TRN-001)
+- 부서: 운영본부 (COO 산하)
+- 설명: 교육·훈련, SOP 작성, 역량평가, O&M교육, LOTO, Arc Flash, NFPA70E, OSHA, 자격·인증
+- 정의: BESS 프로젝트의 운영·유지보수 인력 교육 커리큘럼 설계, SOP(표준작업절차서) 작성, 현지 운영 인력 훈련, 역량 평가·인증을 총괄하며, 7개 시장별 안전교육 법규와 자격 요건에 부합하는 훈련 프로그램을 수행한다.
+
+## 지원 (SUP) — 1명
+
+### bess-output-generator (SCV-500)
+- 부서: Support / Document Team
+- 설명: 전사 문서 표준화, 출력 형식 선택, A4/A3 인쇄, Excel/Word/PDF/Python 파일 생성
+- 정의: 콘텐츠(내용)와 형식(출력)을 분리하여, 어떤 BESS 산출물이든 사용자가 원하는 형식으로 즉시 생성한다.
