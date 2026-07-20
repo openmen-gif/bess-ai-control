@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 연동 안내 — BESS AI Control Center</title>
+<meta name="description" content="BESS AI Control Center를 외부 AI 에이전트·MCP 클라이언트와 연동하는 방법 — MCP 서버 연결, 기계가독 리소스, 지식 성장 데이터, 이용 정책">
+<style>
+:root { --bg:#0B0F19; --panel:#111827; --line:#1F2937; --ink:#F9FAFB; --muted:#9CA3AF; --accent:#3B82F6; --grow:#10B981; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--ink); font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif; line-height:1.6; }
+.wrap { max-width:860px; margin:0 auto; padding:32px 20px 60px; }
+.top { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
+h1 { font-size:22px; font-weight:800; }
+.sub { color:var(--muted); font-size:13px; margin-bottom:16px; }
+.back { color:var(--accent); text-decoration:none; font-size:13px; }
+.sec { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:16px; }
+h2 { font-size:15px; font-weight:700; margin-bottom:10px; }
+p { color:#D1D5DB; font-size:13.5px; margin-bottom:8px; }
+p:last-child { margin-bottom:0; }
+code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+pre { background:#0a0e1a; border:1px solid var(--line); border-radius:10px; padding:12px 14px; overflow-x:auto; font-size:12.5px; color:var(--grow); margin:8px 0 12px; }
+table { width:100%; border-collapse:collapse; margin-top:6px; font-size:12.5px; }
+th, td { text-align:left; padding:7px 8px; border-top:1px solid var(--line); vertical-align:top; }
+th { color:var(--muted); font-weight:600; font-size:11.5px; text-transform:uppercase; letter-spacing:0.4px; }
+td.name { color:var(--accent); font-weight:600; white-space:nowrap; }
+td.desc { color:#D1D5DB; }
+ul.reslist { list-style:none; padding:0; margin:6px 0 0; }
+ul.reslist li { padding:6px 0; border-top:1px solid var(--line); font-size:13px; }
+ul.reslist li:first-child { border-top:0; }
+ul.reslist a { color:var(--ink); text-decoration:none; }
+ul.reslist a:hover { color:var(--accent); }
+ul.reslist .path { color:var(--muted); font-size:11.5px; margin-left:6px; }
+.badge { display:inline-block; font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:8px; padding:1px 7px; margin-right:6px; }
+footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:14px; }
+footer a { color:var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>🤖 AI 연동 안내</h1>
+    <a class="back" href="/">← 컨트롤 센터</a>
+  </div>
+  <div class="sub">외부 AI 에이전트·MCP 클라이언트가 BESS AI Control Center의 82인 전문가 조직과 지식 성장 데이터를 읽는 방법입니다.</div>
+
+  <section class="sec">
+    <h2>① MCP 서버 연결</h2>
+    <p>Claude Code 등 MCP 클라이언트에서 다음 명령으로 Streamable HTTP 서버를 등록하세요(무인증 · 레이트 리밋만 적용):</p>
+    <pre><code>claude mcp add --transport http bess https://bess-ai-control.work/api/mcp</code></pre>
+    <p>등록 후 제공되는 도구 3종:</p>
+    <table>
+      <thead><tr><th>도구</th><th>설명</th></tr></thead>
+      <tbody>
+        <tr><td class="name">list_experts</td><td class="desc">BESS EPC AI 전문가 82명의 명부를 조회한다(ID·부서·전문 분야). division으로 필터 가능: CTO(기술)/CFO(재무)/COO(운영).</td></tr>
+        <tr><td class="name">get_expert_definition</td><td class="desc">특정 전문가의 역할 정의·전문 지식 전문을 조회한다. agentId는 list_experts의 ID(예: BAT-001).</td></tr>
+        <tr><td class="name">ask_expert</td><td class="desc">특정 BESS 전문가에게 질문하고 Claude 기반 답변을 받는다(레이트 리밋: IP당 분당 8회).</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="sec">
+    <h2>② 기계가독 리소스</h2>
+    <p>LLM·크롤러가 직접 파싱할 수 있는 정적 JSON/텍스트 리소스입니다(동일 출처, 인증 불필요).</p>
+    <ul class="reslist">
+      <li><a href="/llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a><span class="path">— 조직·리소스 인덱스</span></li>
+      <li><a href="/llms-full.txt" target="_blank" rel="noopener noreferrer">llms-full.txt</a><span class="path">— 전문가 82명 전체 정의</span></li>
+      <li><a href="/agents.json" target="_blank" rel="noopener noreferrer">agents.json</a><span class="path">— 구조화 명부(ID·key·부서·키워드)</span></li>
+      <li><a href="/graph.json" target="_blank" rel="noopener noreferrer">graph.json</a><span class="path">— 조직·협업 관계 그래프</span></li>
+      <li><a href="/knowledge/stats.json" target="_blank" rel="noopener noreferrer">knowledge/stats.json</a><span class="path">— 에이전트별 축적 지식·레벨 통계</span></li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <h2>③ 지식 성장 데이터</h2>
+    <p>82인 전문가 조직은 브리핑·스킬 갱신·팀 토론을 통해 매일 지식을 축적합니다. 누적·최근 성장 타임라인은
+      <a href="/growth/" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">/growth/</a>에서 확인할 수 있으며,
+      원장(<code>knowledge/stats.json</code>·<code>knowledge/recent.json</code>)은 <strong>매일 07:30 자동 갱신</strong>됩니다.
+    </p>
+  </section>
+
+  <section class="sec">
+    <h2>④ 이용 정책</h2>
+    <p><span class="badge">레이트 리밋</span>MCP·채팅 백엔드 모두 IP당 <strong>분당 8회</strong>로 제한됩니다. 초과 시 잠시 후 다시 시도해 주세요.</p>
+    <p><span class="badge">실시간 상담</span>대시보드 콘솔의 "실시간 ON" 모드는 <strong>소유자 전용 액세스 키</strong>가 있어야 동작합니다. 키가 없으면 자동으로 무API 정적 매칭 응대로 전환됩니다.</p>
+  </section>
+
+  <footer>
+    BESS AI Control Center · <a href="/">bess-ai-control.work</a> · 문의는 대시보드의 AI 상담 콘솔을 이용해 주세요.
+  </footer>
+</div>
+</body>
+</html>
