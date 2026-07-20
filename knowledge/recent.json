@@ -1,0 +1,3413 @@
+{
+ "updated": "2026-07-21",
+ "events": [
+  {
+   "id": "e09fd37c17be",
+   "date": "2026-07-20",
+   "type": "discussion",
+   "agents": [
+    "bess-ebop-engineer",
+    "bess-internal-auditor",
+    "bess-legal-expert",
+    "bess-permit-asia",
+    "bess-permit-europe",
+    "bess-risk-manager",
+    "bess-sales-manager",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 허가 절차 최적화 워크숍 개최",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "b6aaf8bb4a8c",
+   "date": "2026-07-20",
+   "type": "discussion",
+   "agents": [
+    "bess-cbop-engineer",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-hse-manager",
+    "bess-logistics-expert",
+    "bess-site-manager",
+    "bess-standards-japan",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 부지조성·기초설계 영역 현황 진단 — bess-cbop-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "64e59f030ca3",
+   "date": "2026-07-20",
+   "type": "discussion",
+   "agents": [
+    "bess-cable-engineer",
+    "bess-circuit-breaker-expert",
+    "bess-emc-analyst",
+    "bess-mlops-engineer",
+    "bess-power-system-analyst",
+    "bess-security-expert",
+    "bess-site-manager"
+   ],
+   "title": "팀 토론 — 포설 계획 최적화 및 전압강하 분석 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "18dccc1371be",
+   "date": "2026-07-20",
+   "type": "discussion",
+   "agents": [
+    "bess-hse-manager",
+    "bess-it-infra",
+    "bess-knowledge-manager",
+    "bess-labor-safety",
+    "bess-security-expert",
+    "bess-site-manager",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 외국인 인력 안전 교육 프로그램 구축",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "1629ddfab028",
+   "date": "2026-07-20",
+   "type": "discussion",
+   "agents": [
+    "bess-legal-expert",
+    "bess-permit-english",
+    "bess-power-market-expert",
+    "bess-standards-australia",
+    "bess-standards-usa",
+    "bess-tax-incentive",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 인허가·전문가 영역 1차 분석 — bess-permit-english 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "089b4323c05f",
+   "date": "2026-07-20",
+   "type": "discussion",
+   "agents": [
+    "bess-emerging-markets",
+    "bess-facility-manager",
+    "bess-hr-manager",
+    "bess-precom-report",
+    "bess-qaqc-engineer",
+    "bess-scheduler",
+    "bess-system-engineer",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — 사전시운전·절차서 영역 초안 작성 — bess-precom-report 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "ff821df8654a",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-power-system-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fb13787f82c5",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-output-generator"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f3edc302d5d5",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f39e69417eb0",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-substation-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f33e104caa03",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-mlops-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f310a8c84b1c",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-permit-europe"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ec44647b26ca",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-tax-incentive"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "eba2ba615efa",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-insurance-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e6e3627487c2",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e4196db99308",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-presentation-designer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e2ce6fc8b123",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-hybrid-specialist"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e147327e6cbe",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-permit-asia"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d9fcb9528b7c",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-sales-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d8aac90b1d92",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-qaqc-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d821be6ff4c1",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-customs-tariff"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "cb504663397d",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-transformer-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c8e4f93816a0",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-training-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c790bbeda3e7",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-grid-interconnection"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c3ff4cf21982",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-financial-analysis"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c3dfa9da9542",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-esg-finance"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c1dc2456b120",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-aiml-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b6e393f7aa95",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-poland"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b685d29e2f18",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-commissioning-coordinator"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b382a09c8881",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-tax-japan"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b24739065b70",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-transfer-pricing"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b04c2bf959e2",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-structural-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b0487fbded04",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-cbop-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ad6a96ad00ee",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-tax-korea"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "aae90ad64aca",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-emerging-markets"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a606457bd9c7",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-epc-bom"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a0a4577432ae",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-uk"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "98885df7c352",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "92413f24c159",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-risk-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8f743895edf7",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-hr-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8dc6d97aee33",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-cfd-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8916026f60bf",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-system-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8616826e60dd",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-legal-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "84cede4cc247",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-scheduler"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7deed653bcdc",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-network-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7b91e61ca320",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-hydrogen-specialist"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "795381028838",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-facility-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7894da580690",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-env-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "760273ae4d99",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-power-market-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "75b6f2486f80",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-agent-framework"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "741f4812e282",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-korea"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "73a7807993f4",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-project-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6ccac3beeccc",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-labor-safety"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6c62861b4efb",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-tax-accountant"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6c5efc28f6f0",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-fit-procedure"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "699614ab8c27",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-romania"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "61c1ce60e099",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5ff4b7e792a2",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-cost-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5fafa4d1e2ee",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-ebop-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5caa706cb1e4",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-ip-patent-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "57c7e9987427",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-translator"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "534eb3216b57",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-internal-auditor"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4e0635550c9b",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-data-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4d5a08e7b93f",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-site-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "456723baf623",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "442c19bf4ab0",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-logistics-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4404fd9d0872",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-grounding-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4231fc48ad54",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-knowledge-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3a00c1f68022",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-cybersecurity-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3022ffee0431",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-hse-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "2d6f9508f3b5",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-permit-english"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "2be8071e1b53",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-australia"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "2852cf238df6",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-emc-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "254a8112df19",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-cable-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "2413fc793dc4",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "210860a7b423",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-tax-epc-accounting"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "1f3e2f172b01",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-tool-developer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "1c0d70565974",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-circuit-breaker-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "1b4b551f4cbf",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "17a1112ecfd3",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-eu"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "101f4a7b3deb",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-om-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "0feda0863221",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-usa"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "0fe8dfc611aa",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-precom-report"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "0efb071d8f23",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-contract-specialist"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "0d4c603efc4f",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-data"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "07f241975341",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-it-infra"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "0531fa8616fc",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-standards-japan"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "04c0d6ad7efb",
+   "date": "2026-07-19",
+   "type": "skill",
+   "agents": [
+    "bess-security-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ff9c310df21a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ff8341a7d3d1",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-internal-auditor"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "feeda77ff4b8",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-om-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fe8d89ed58c0",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-asia"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fe5d9fcb6a0f",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-emerging-markets"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fda0e0ef73a0",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-it-infra"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fc606086b1c5",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fc28d8224758",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-substation-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fb9db1dfc584",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-env-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fb672219c345",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f91d8f6d027d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-customs-tariff"
+   ],
+   "title": "스킬 갱신 — fix(bess): 결정 (2) 실행 — customs-tariff 죽은 인용 교체 (BAD_REF 1→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f80dfd43b96a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cybersecurity-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f6fe8edc4190",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-ip-patent-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f460b6838aab",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-insurance-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f4302bcde341",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hse-manager"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f359a56f6ae4",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-transfer-pricing"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f1380ff178a6",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hse-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f0a186d1f080",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-presentation-designer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f05cdeaa999c",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-epc-bom"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "effce0d2a0cd",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ef2bb2554a89",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-substation-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ee3906285eaf",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ed73ddd64a33",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-network-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ed1c1d65ce48",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-contract-specialist"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "eca135e85eca",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-eu"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ec1086b0c4fa",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-precom-report"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ec0f1791023d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-japan"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "eb5311e94046",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-commissioning-coordinator"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "eb369d524608",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-fit-procedure"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ea7dfd86f101",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-usa"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e92b2b1fb32c",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-site-manager"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e91a23d6ade7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-qaqc-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e63cebd1a844",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-om-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e418139be409",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-customs-tariff"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e3902d0727eb",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-emc-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e0c6ad7a92d2",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-grid-interconnection"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e0a78308d9e3",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cfd-analyst"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "dd89d6641576",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-insurance-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "dd7696d5fa3b",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-substation-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "dcd25e57e724",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-financial-analysis"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "dbab7d49f95d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-security-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d97afd0277d6",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-agent-framework"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d93b3c91ca72",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-english"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d6fa21e1ef1f",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-poland"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d669b97199a9",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-circuit-breaker-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d63f16b568b4",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-network-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d60deb56977f",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-circuit-breaker-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d531d754a08d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-poland"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d0328ae1e29a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-network-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "cfb5698aa31d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-scheduler"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "cead5425d771",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-financial-analysis"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "cdccf1daed18",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-power-system-analyst"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ccaf851e9248",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tool-developer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "cb24db9b6db4",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-fit-procedure"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c9281c094d41",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-transfer-pricing"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c88eb5c578c7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c7f881d1d0c3",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-emc-analyst"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c6766dcdd739",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-training-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c476cf0bacdc",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-data"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c3c419948742",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cable-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c3b1570940e9",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-commissioning-coordinator",
+    "bess-data-analyst",
+    "bess-emc-analyst",
+    "bess-financial-analysis",
+    "bess-fit-procedure",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-scheduler",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — EMS/FIT 통합 시운전 절차 최적화 매뉴얼 작성",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "c39a4081a441",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c32b30950831",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-site-manager"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c2da2d02a2cf",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-translator"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c2a2e0bdb5c5",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-structural-analyst"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c15bf1706be6",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-power-market-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "be67c7dd354b",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-data"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "bc6055289140",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-europe"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "bc1d3d068d62",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cbop-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b9df621eaeb4",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-emerging-markets"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b931af0827bb",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b8d267da0162",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-internal-auditor"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b8614b95fb95",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-australia"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b755406a6642",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-precom-report"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b4ff6ee6019b",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-ebop-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b4d00aae724e",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-incentive"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b40c8429128a",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-cybersecurity-expert",
+    "bess-it-infra",
+    "bess-network-engineer",
+    "bess-security-expert",
+    "bess-standards-korea",
+    "bess-standards-poland"
+   ],
+   "title": "팀 토론 — OT/IT 네트워크 보안 취약점 스캔 및 패킷 분석 프로토콜 최적화",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "b3f49a571b04",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hr-manager"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b15a21e9f71f",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-english"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "afdddfc5ad30",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-output-generator"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "afb29ea3e0e3",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-logistics-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ad4c1c1e5c0a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ad15cc4a4f90",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tool-developer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "aca6d8df147e",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-uk"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ac58fb360a26",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-romania"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "abf71c18c039",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cost-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a99978aa7199",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-transformer-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a98b40da1789",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-transfer-pricing"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a84cee9c8e1b",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hr-manager"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a72a4a3da594",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-australia"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a6d4a27ea378",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cable-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a5e5e39e2ad5",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cost-analyst"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a57a9172d305",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-contract-specialist"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a43b38928352",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cost-analyst"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a3018d1e746b",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-romania"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a2dba502a8a8",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-romania"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a2c32d66d495",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-usa"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a1dbf9d72bd0",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-grid-interconnection"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a07fca2ce492",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-esg-finance"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "9e575f832856",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-risk-manager"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "9d90a3af6c27",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cybersecurity-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "9b528e1a2dda",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-translator"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "9a1ae83e46c9",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-europe"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "9a034877ad07",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-esg-finance"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "99c0f2f4be21",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-cfd-analyst",
+    "bess-data-analyst",
+    "bess-emc-analyst",
+    "bess-env-engineer",
+    "bess-labor-safety",
+    "bess-permit-asia",
+    "bess-system-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — CFD 시뮬레이션을 통한 액냉 시스템 최적화 방안 검토 및 열관리 효율성 분석",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "995635924a79",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-australia"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "992d77cb7ff7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "981535e5107d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-accountant"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "97887e0601d9",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-system-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "961ccb656795",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-sales-manager"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "955111eddf9e",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-emc-analyst"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "9140ced5a8ee",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hydrogen-specialist"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "90a46a37e259",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-aiml-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "9085b56f0f7c",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-eu"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8e4a7fae53a8",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-structural-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8e16f351b778",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hybrid-specialist"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8dc56b0df7bf",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-om-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8db3bb477e12",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-korea"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8d241d67708c",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cable-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8c459cab6493",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8a1ab781e413",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-emerging-markets"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "88ee2adbe080",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-presentation-designer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "87cbba9309fd",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-logistics-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "87a956e31531",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-knowledge-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8765a312f63d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hybrid-specialist"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "86a8e3898137",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-logistics-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "85fc66a79a4d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-agent-framework"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "839579bdf5f4",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-ip-patent-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "82f8a529c8f0",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-labor-safety"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "81f8cb84dc71",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-training-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "81a72f95f372",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-uk"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "812fb629c918",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-incentive"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "80fb45cea88d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-structural-analyst"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "80a1dc273e2d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-korea"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7ff3ae2c3ae7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-japan"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7f299b17d9b7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tool-developer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7e723e95f6f1",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-system-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7d49d6ca99b4",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-power-system-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7c43ebe21029",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-japan"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7bee9a208db7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cbop-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7a8e6f71bf38",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-korea"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "79c204822caa",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hydrogen-specialist"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7892afb42f7d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-financial-analysis"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "787d6c771ed5",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cfd-analyst"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "75ae9aee49eb",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "755ed19225e0",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-precom-report"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7448581488e1",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "73ac6d2e1e7e",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-data"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "735127f7a1b5",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-commissioning-coordinator"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "72a13ce939d7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-security-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6f50a212e4c0",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-data-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6aed69b0fb80",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-accountant"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6a2286208523",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-usa"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "68e98b92d80a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-project-manager"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6800ccb6972c",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-japan"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6739dca4ae77",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-internal-auditor",
+    "bess-knowledge-manager",
+    "bess-output-generator",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "6669b14e22e5",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-customs-tariff"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "64fc2b88d586",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-logistics-expert",
+    "bess-marketer",
+    "bess-procurement-expert",
+    "bess-scheduler",
+    "bess-standards-eu",
+    "bess-structural-analyst",
+    "bess-tax-incentive",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 물류 네트워크 최적화 계획 수립 및 글로벌 선적 절차 표준화 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "63334bab4652",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-ebop-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "61d920b4210f",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-epc-accounting"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "615b8c25e5d5",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-knowledge-manager"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "60fa53e5a3cd",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-japan"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "60d47e7dffb4",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-accountant"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5f2c3ce31da2",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-korea"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5de51e645f3a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hybrid-specialist"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5d192177167c",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-agent-framework"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5c243a7eb987",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-customs-tariff",
+    "bess-emc-analyst",
+    "bess-grid-interconnection",
+    "bess-hybrid-specialist",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — Hybrid 시스템 통합 시나리오 개발 및 PV/Wind 상호 운용성 최적화 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "5bda5b4104f7",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-esg-finance",
+    "bess-grid-interconnection",
+    "bess-internal-auditor",
+    "bess-knowledge-manager",
+    "bess-legal-expert",
+    "bess-standards-korea",
+    "bess-tax-korea",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — ESG 재무 성과 벤치마킹 및 보고 프레임워크 구축",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "5bb34b8c0ae0",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-grounding-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "59fadb05610a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-eu"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "58a8f34953fc",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cbop-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "576ceea33e5b",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "573b4bb80a97",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-internal-auditor"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "56a63cfe0b3c",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-grounding-engineer",
+    "bess-power-market-expert",
+    "bess-precom-report",
+    "bess-project-manager",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 입찰전략 분석 및 KPX 시장 진출 로드맵 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "5558e8df97a6",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-system-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5524a239e0de",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "54b642c5c85f",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-tax-incentive"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "54a5c8f38ee8",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-facility-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "54909eb7d25a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-data-analyst"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "519c49fa8589",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-knowledge-manager"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5136c152743e",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-site-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "50f8dc58be1e",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-standards-poland"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "50ed52810fc7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-security-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "50b4e6ae425d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hse-manager"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5086812cf753",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-legal-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4f2e9f3fef1f",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-ip-patent-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4ea378fcf64d",
+   "date": "2026-07-18",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-cybersecurity-expert",
+    "bess-data-analyst",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-hr-manager",
+    "bess-project-manager",
+    "bess-standards-poland"
+   ],
+   "title": "팀 토론 — 배터리 사양 선정을 위한 최적 셀 밸런싱 전략 개발 및 UL9540A 준수 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "4d1ea3ed78f2",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-epc-bom"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4a4ff304a089",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-cfd-analyst"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4a4175582c60",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "49dc9a252c25",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-customs-tariff"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "47c51935b0c7",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-mlops-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "47a36807fba2",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-scheduler"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4669cf8c55ea",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "45fe7cb47078",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-training-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "45c171805769",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-risk-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "45877352da74",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-it-infra"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "43f2b9421280",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-aiml-engineer"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "413f760a0425",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-legal-expert"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "4135851c249b",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-ebop-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3ea1ed0b13bf",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-qaqc-engineer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3e0666dc358e",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-asia"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3cbdb2d5550a",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-mlops-engineer"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3c1221aabbe0",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-asia"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3bdf1985ec35",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-power-market-expert"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "39531b28de64",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hydrogen-specialist"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "38f985ec6458",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-hr-manager"
+   ],
+   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "385a2be49fd3",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-circuit-breaker-expert"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "36daec50683d",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-presentation-designer"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "355a16b82356",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-english"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "341264b2449b",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-labor-safety"
+   ],
+   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3390ece7044e",
+   "date": "2026-07-18",
+   "type": "skill",
+   "agents": [
+    "bess-permit-europe"
+   ],
+   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
+   "link": "",
+   "source": "00_Skill_MD"
+  }
+ ]
+}
