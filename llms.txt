@@ -10,6 +10,8 @@
 - [전문가 명부 JSON](https://bess-ai-control.work/agents.json): id·부서·설명·키워드 구조화 데이터
 - [조직 그래프 JSON](https://bess-ai-control.work/graph.json): 조직도·협업 관계(노드/링크)
 - [콘솔 (웹 UI)](https://bess-ai-control.work/): 3D 조직 그래프·전문가 카드·AI 상담 콘솔
+- [성장 기록](https://bess-ai-control.work/growth/): 에이전트 지식 축적 타임라인 — 원장(https://bess-ai-control.work/knowledge/events.jsonl)·집계(https://bess-ai-control.work/knowledge/stats.json), 매일 07:30 갱신
+- [일일 기술 브리핑](https://bess-ai-control.work/briefing/): 배터리·PCS·계통·안전·정책·시장 6부문 뉴스 큐레이션, 매일 07:30 발행
 
 ## 실시간 상담 API
 
