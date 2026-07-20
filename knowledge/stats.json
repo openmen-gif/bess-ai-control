@@ -1,0 +1,1110 @@
+{
+ "updated": "2026-07-20",
+ "totals": {
+  "all": 515,
+  "briefing": 0,
+  "skill": 417,
+  "discussion": 98,
+  "activity": 0
+ },
+ "perAgent": {
+  "bess-agent-framework": {
+   "count": 5,
+   "byType": {
+    "skill": 5
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-aiml-engineer": {
+   "count": 12,
+   "byType": {
+    "skill": 5,
+    "discussion": 7
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-battery-expert": {
+   "count": 14,
+   "byType": {
+    "skill": 6,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-business-dev": {
+   "count": 14,
+   "byType": {
+    "skill": 5,
+    "discussion": 9
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-cable-engineer": {
+   "count": 15,
+   "byType": {
+    "skill": 5,
+    "discussion": 10
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-cbop-engineer": {
+   "count": 12,
+   "byType": {
+    "skill": 5,
+    "discussion": 7
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-cfd-analyst": {
+   "count": 14,
+   "byType": {
+    "skill": 6,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-circuit-breaker-expert": {
+   "count": 15,
+   "byType": {
+    "skill": 5,
+    "discussion": 10
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-commissioning-coordinator": {
+   "count": 13,
+   "byType": {
+    "skill": 5,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-contract-specialist": {
+   "count": 13,
+   "byType": {
+    "skill": 5,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-cost-analyst": {
+   "count": 31,
+   "byType": {
+    "skill": 6,
+    "discussion": 25
+   },
+   "lastGrown": "2026-07-19",
+   "level": 3
+  },
+  "bess-customs-tariff": {
+   "count": 13,
+   "byType": {
+    "skill": 6,
+    "discussion": 7
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-cybersecurity-expert": {
+   "count": 22,
+   "byType": {
+    "skill": 5,
+    "discussion": 17
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-data-analyst": {
+   "count": 22,
+   "byType": {
+    "skill": 5,
+    "discussion": 17
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-ebop-engineer": {
+   "count": 14,
+   "byType": {
+    "skill": 5,
+    "discussion": 9
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-emc-analyst": {
+   "count": 28,
+   "byType": {
+    "skill": 5,
+    "discussion": 23
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-emerging-markets": {
+   "count": 14,
+   "byType": {
+    "skill": 5,
+    "discussion": 9
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-env-engineer": {
+   "count": 21,
+   "byType": {
+    "skill": 5,
+    "discussion": 16
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-epc-bom": {
+   "count": 11,
+   "byType": {
+    "skill": 5,
+    "discussion": 6
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-esg-finance": {
+   "count": 11,
+   "byType": {
+    "skill": 5,
+    "discussion": 6
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-facility-manager": {
+   "count": 14,
+   "byType": {
+    "skill": 5,
+    "discussion": 9
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-financial-analysis": {
+   "count": 26,
+   "byType": {
+    "skill": 5,
+    "discussion": 21
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-fire-engineer": {
+   "count": 15,
+   "byType": {
+    "skill": 5,
+    "discussion": 10
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-fit-procedure": {
+   "count": 11,
+   "byType": {
+    "skill": 5,
+    "discussion": 6
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-grid-interconnection": {
+   "count": 14,
+   "byType": {
+    "skill": 5,
+    "discussion": 9
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-grounding-engineer": {
+   "count": 18,
+   "byType": {
+    "skill": 5,
+    "discussion": 13
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-hr-manager": {
+   "count": 12,
+   "byType": {
+    "skill": 5,
+    "discussion": 7
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-hse-manager": {
+   "count": 13,
+   "byType": {
+    "skill": 5,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-hybrid-specialist": {
+   "count": 8,
+   "byType": {
+    "skill": 5,
+    "discussion": 3
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-hydrogen-specialist": {
+   "count": 10,
+   "byType": {
+    "skill": 5,
+    "discussion": 5
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-insurance-expert": {
+   "count": 16,
+   "byType": {
+    "skill": 5,
+    "discussion": 11
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-internal-auditor": {
+   "count": 22,
+   "byType": {
+    "skill": 5,
+    "discussion": 17
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-ip-patent-expert": {
+   "count": 10,
+   "byType": {
+    "skill": 5,
+    "discussion": 5
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-it-infra": {
+   "count": 13,
+   "byType": {
+    "skill": 5,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-knowledge-manager": {
+   "count": 15,
+   "byType": {
+    "skill": 5,
+    "discussion": 10
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-labor-safety": {
+   "count": 9,
+   "byType": {
+    "skill": 5,
+    "discussion": 4
+   },
+   "lastGrown": "2026-07-20",
+   "level": 1
+  },
+  "bess-legal-expert": {
+   "count": 27,
+   "byType": {
+    "skill": 5,
+    "discussion": 22
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-logistics-expert": {
+   "count": 12,
+   "byType": {
+    "skill": 5,
+    "discussion": 7
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-marketer": {
+   "count": 12,
+   "byType": {
+    "skill": 5,
+    "discussion": 7
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-mlops-engineer": {
+   "count": 14,
+   "byType": {
+    "skill": 5,
+    "discussion": 9
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-network-engineer": {
+   "count": 8,
+   "byType": {
+    "skill": 5,
+    "discussion": 3
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-om-expert": {
+   "count": 8,
+   "byType": {
+    "skill": 5,
+    "discussion": 3
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-output-generator": {
+   "count": 15,
+   "byType": {
+    "skill": 5,
+    "discussion": 10
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-pcs-expert": {
+   "count": 14,
+   "byType": {
+    "skill": 5,
+    "discussion": 9
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-permit-asia": {
+   "count": 8,
+   "byType": {
+    "skill": 5,
+    "discussion": 3
+   },
+   "lastGrown": "2026-07-20",
+   "level": 1
+  },
+  "bess-permit-english": {
+   "count": 9,
+   "byType": {
+    "skill": 5,
+    "discussion": 4
+   },
+   "lastGrown": "2026-07-20",
+   "level": 1
+  },
+  "bess-permit-europe": {
+   "count": 10,
+   "byType": {
+    "skill": 6,
+    "discussion": 4
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-power-market-expert": {
+   "count": 17,
+   "byType": {
+    "skill": 5,
+    "discussion": 12
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-power-system-analyst": {
+   "count": 22,
+   "byType": {
+    "skill": 5,
+    "discussion": 17
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-precom-report": {
+   "count": 9,
+   "byType": {
+    "skill": 5,
+    "discussion": 4
+   },
+   "lastGrown": "2026-07-20",
+   "level": 1
+  },
+  "bess-presentation-designer": {
+   "count": 9,
+   "byType": {
+    "skill": 5,
+    "discussion": 4
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-procurement-data": {
+   "count": 7,
+   "byType": {
+    "skill": 5,
+    "discussion": 2
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-procurement-expert": {
+   "count": 28,
+   "byType": {
+    "skill": 5,
+    "discussion": 23
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-project-manager": {
+   "count": 17,
+   "byType": {
+    "skill": 5,
+    "discussion": 12
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-qaqc-engineer": {
+   "count": 11,
+   "byType": {
+    "skill": 5,
+    "discussion": 6
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-risk-manager": {
+   "count": 18,
+   "byType": {
+    "skill": 5,
+    "discussion": 13
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-sales-manager": {
+   "count": 13,
+   "byType": {
+    "skill": 5,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-scheduler": {
+   "count": 15,
+   "byType": {
+    "skill": 5,
+    "discussion": 10
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-security-expert": {
+   "count": 18,
+   "byType": {
+    "skill": 5,
+    "discussion": 13
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-site-manager": {
+   "count": 23,
+   "byType": {
+    "skill": 5,
+    "discussion": 18
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-standards-analyst": {
+   "count": 6,
+   "byType": {
+    "skill": 5,
+    "discussion": 1
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-standards-australia": {
+   "count": 7,
+   "byType": {
+    "skill": 5,
+    "discussion": 2
+   },
+   "lastGrown": "2026-07-20",
+   "level": 1
+  },
+  "bess-standards-eu": {
+   "count": 10,
+   "byType": {
+    "skill": 5,
+    "discussion": 5
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-standards-japan": {
+   "count": 10,
+   "byType": {
+    "skill": 5,
+    "discussion": 5
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-standards-korea": {
+   "count": 36,
+   "byType": {
+    "skill": 5,
+    "discussion": 31
+   },
+   "lastGrown": "2026-07-20",
+   "level": 3
+  },
+  "bess-standards-poland": {
+   "count": 9,
+   "byType": {
+    "skill": 5,
+    "discussion": 4
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-standards-romania": {
+   "count": 10,
+   "byType": {
+    "skill": 5,
+    "discussion": 5
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-standards-uk": {
+   "count": 7,
+   "byType": {
+    "skill": 5,
+    "discussion": 2
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-standards-usa": {
+   "count": 13,
+   "byType": {
+    "skill": 5,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-structural-analyst": {
+   "count": 28,
+   "byType": {
+    "skill": 5,
+    "discussion": 23
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-substation-engineer": {
+   "count": 9,
+   "byType": {
+    "skill": 5,
+    "discussion": 4
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-system-engineer": {
+   "count": 20,
+   "byType": {
+    "skill": 5,
+    "discussion": 15
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-tax-accountant": {
+   "count": 5,
+   "byType": {
+    "skill": 5
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-tax-epc-accounting": {
+   "count": 7,
+   "byType": {
+    "skill": 5,
+    "discussion": 2
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-tax-incentive": {
+   "count": 22,
+   "byType": {
+    "skill": 5,
+    "discussion": 17
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-tax-japan": {
+   "count": 14,
+   "byType": {
+    "skill": 6,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-tax-korea": {
+   "count": 40,
+   "byType": {
+    "skill": 5,
+    "discussion": 35
+   },
+   "lastGrown": "2026-07-20",
+   "level": 3
+  },
+  "bess-tool-developer": {
+   "count": 14,
+   "byType": {
+    "skill": 6,
+    "discussion": 8
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-training-expert": {
+   "count": 11,
+   "byType": {
+    "skill": 5,
+    "discussion": 6
+   },
+   "lastGrown": "2026-07-20",
+   "level": 2
+  },
+  "bess-transfer-pricing": {
+   "count": 9,
+   "byType": {
+    "skill": 5,
+    "discussion": 4
+   },
+   "lastGrown": "2026-07-19",
+   "level": 1
+  },
+  "bess-transformer-expert": {
+   "count": 17,
+   "byType": {
+    "skill": 5,
+    "discussion": 12
+   },
+   "lastGrown": "2026-07-19",
+   "level": 2
+  },
+  "bess-translator": {
+   "count": 7,
+   "byType": {
+    "skill": 5,
+    "discussion": 2
+   },
+   "lastGrown": "2026-07-20",
+   "level": 1
+  }
+ },
+ "daily": [
+  {
+   "date": "2026-04-22",
+   "added": 0
+  },
+  {
+   "date": "2026-04-23",
+   "added": 0
+  },
+  {
+   "date": "2026-04-24",
+   "added": 0
+  },
+  {
+   "date": "2026-04-25",
+   "added": 0
+  },
+  {
+   "date": "2026-04-26",
+   "added": 0
+  },
+  {
+   "date": "2026-04-27",
+   "added": 0
+  },
+  {
+   "date": "2026-04-28",
+   "added": 0
+  },
+  {
+   "date": "2026-04-29",
+   "added": 0
+  },
+  {
+   "date": "2026-04-30",
+   "added": 0
+  },
+  {
+   "date": "2026-05-01",
+   "added": 0
+  },
+  {
+   "date": "2026-05-02",
+   "added": 0
+  },
+  {
+   "date": "2026-05-03",
+   "added": 0
+  },
+  {
+   "date": "2026-05-04",
+   "added": 0
+  },
+  {
+   "date": "2026-05-05",
+   "added": 0
+  },
+  {
+   "date": "2026-05-06",
+   "added": 0
+  },
+  {
+   "date": "2026-05-07",
+   "added": 0
+  },
+  {
+   "date": "2026-05-08",
+   "added": 0
+  },
+  {
+   "date": "2026-05-09",
+   "added": 0
+  },
+  {
+   "date": "2026-05-10",
+   "added": 0
+  },
+  {
+   "date": "2026-05-11",
+   "added": 0
+  },
+  {
+   "date": "2026-05-12",
+   "added": 0
+  },
+  {
+   "date": "2026-05-13",
+   "added": 0
+  },
+  {
+   "date": "2026-05-14",
+   "added": 0
+  },
+  {
+   "date": "2026-05-15",
+   "added": 0
+  },
+  {
+   "date": "2026-05-16",
+   "added": 0
+  },
+  {
+   "date": "2026-05-17",
+   "added": 0
+  },
+  {
+   "date": "2026-05-18",
+   "added": 0
+  },
+  {
+   "date": "2026-05-19",
+   "added": 0
+  },
+  {
+   "date": "2026-05-20",
+   "added": 0
+  },
+  {
+   "date": "2026-05-21",
+   "added": 0
+  },
+  {
+   "date": "2026-05-22",
+   "added": 0
+  },
+  {
+   "date": "2026-05-23",
+   "added": 0
+  },
+  {
+   "date": "2026-05-24",
+   "added": 0
+  },
+  {
+   "date": "2026-05-25",
+   "added": 0
+  },
+  {
+   "date": "2026-05-26",
+   "added": 0
+  },
+  {
+   "date": "2026-05-27",
+   "added": 0
+  },
+  {
+   "date": "2026-05-28",
+   "added": 0
+  },
+  {
+   "date": "2026-05-29",
+   "added": 0
+  },
+  {
+   "date": "2026-05-30",
+   "added": 0
+  },
+  {
+   "date": "2026-05-31",
+   "added": 0
+  },
+  {
+   "date": "2026-06-01",
+   "added": 0
+  },
+  {
+   "date": "2026-06-02",
+   "added": 0
+  },
+  {
+   "date": "2026-06-03",
+   "added": 0
+  },
+  {
+   "date": "2026-06-04",
+   "added": 0
+  },
+  {
+   "date": "2026-06-05",
+   "added": 0
+  },
+  {
+   "date": "2026-06-06",
+   "added": 0
+  },
+  {
+   "date": "2026-06-07",
+   "added": 0
+  },
+  {
+   "date": "2026-06-08",
+   "added": 0
+  },
+  {
+   "date": "2026-06-09",
+   "added": 0
+  },
+  {
+   "date": "2026-06-10",
+   "added": 0
+  },
+  {
+   "date": "2026-06-11",
+   "added": 0
+  },
+  {
+   "date": "2026-06-12",
+   "added": 0
+  },
+  {
+   "date": "2026-06-13",
+   "added": 0
+  },
+  {
+   "date": "2026-06-14",
+   "added": 0
+  },
+  {
+   "date": "2026-06-15",
+   "added": 0
+  },
+  {
+   "date": "2026-06-16",
+   "added": 0
+  },
+  {
+   "date": "2026-06-17",
+   "added": 0
+  },
+  {
+   "date": "2026-06-18",
+   "added": 0
+  },
+  {
+   "date": "2026-06-19",
+   "added": 0
+  },
+  {
+   "date": "2026-06-20",
+   "added": 0
+  },
+  {
+   "date": "2026-06-21",
+   "added": 0
+  },
+  {
+   "date": "2026-06-22",
+   "added": 0
+  },
+  {
+   "date": "2026-06-23",
+   "added": 0
+  },
+  {
+   "date": "2026-06-24",
+   "added": 0
+  },
+  {
+   "date": "2026-06-25",
+   "added": 0
+  },
+  {
+   "date": "2026-06-26",
+   "added": 0
+  },
+  {
+   "date": "2026-06-27",
+   "added": 0
+  },
+  {
+   "date": "2026-06-28",
+   "added": 0
+  },
+  {
+   "date": "2026-06-29",
+   "added": 0
+  },
+  {
+   "date": "2026-06-30",
+   "added": 0
+  },
+  {
+   "date": "2026-07-01",
+   "added": 0
+  },
+  {
+   "date": "2026-07-02",
+   "added": 0
+  },
+  {
+   "date": "2026-07-03",
+   "added": 1
+  },
+  {
+   "date": "2026-07-04",
+   "added": 84
+  },
+  {
+   "date": "2026-07-05",
+   "added": 9
+  },
+  {
+   "date": "2026-07-06",
+   "added": 4
+  },
+  {
+   "date": "2026-07-07",
+   "added": 7
+  },
+  {
+   "date": "2026-07-08",
+   "added": 0
+  },
+  {
+   "date": "2026-07-09",
+   "added": 7
+  },
+  {
+   "date": "2026-07-10",
+   "added": 0
+  },
+  {
+   "date": "2026-07-11",
+   "added": 0
+  },
+  {
+   "date": "2026-07-12",
+   "added": 0
+  },
+  {
+   "date": "2026-07-13",
+   "added": 9
+  },
+  {
+   "date": "2026-07-14",
+   "added": 2
+  },
+  {
+   "date": "2026-07-15",
+   "added": 16
+  },
+  {
+   "date": "2026-07-16",
+   "added": 18
+  },
+  {
+   "date": "2026-07-17",
+   "added": 12
+  },
+  {
+   "date": "2026-07-18",
+   "added": 258
+  },
+  {
+   "date": "2026-07-19",
+   "added": 82
+  },
+  {
+   "date": "2026-07-20",
+   "added": 6
+  }
+ ]
+}

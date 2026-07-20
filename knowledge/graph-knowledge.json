@@ -1,0 +1,7886 @@
+{
+ "nodes": [
+  {
+   "id": "K-e09fd37c17be",
+   "name": "팀 토론 — 허가 절차 최적화 워크숍 개최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-b6aaf8bb4a8c",
+   "name": "팀 토론 — 부지조성·기초설계 영역 현황 진단 — bess-cbop-en",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-64e59f030ca3",
+   "name": "팀 토론 — 포설 계획 최적화 및 전압강하 분석 수행",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-18dccc1371be",
+   "name": "팀 토론 — 외국인 인력 안전 교육 프로그램 구축",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-20",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-1629ddfab028",
+   "name": "팀 토론 — 인허가·전문가 영역 1차 분석 — bess-permit-en",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-20",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-089b4323c05f",
+   "name": "팀 토론 — 사전시운전·절차서 영역 초안 작성 — bess-precom-",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-20",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ff821df8654a",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-fb13787f82c5",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#64748B"
+  },
+  {
+   "id": "K-f3edc302d5d5",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-f39e69417eb0",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-f33e104caa03",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-f310a8c84b1c",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ec44647b26ca",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-eba2ba615efa",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-e6e3627487c2",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-e4196db99308",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-e2ce6fc8b123",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-e147327e6cbe",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d9fcb9528b7c",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-d8aac90b1d92",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d821be6ff4c1",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-cb504663397d",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-c8e4f93816a0",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c790bbeda3e7",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c3ff4cf21982",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-c3dfa9da9542",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-c1dc2456b120",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-b6e393f7aa95",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b685d29e2f18",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b382a09c8881",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-b24739065b70",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-b04c2bf959e2",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-b0487fbded04",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ad6a96ad00ee",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-aae90ad64aca",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-a606457bd9c7",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-a0a4577432ae",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-98885df7c352",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-92413f24c159",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-8f743895edf7",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-8dc6d97aee33",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8916026f60bf",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8616826e60dd",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-84cede4cc247",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-7deed653bcdc",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-7b91e61ca320",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-795381028838",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-7894da580690",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-760273ae4d99",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-75b6f2486f80",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-741f4812e282",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-73a7807993f4",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-6ccac3beeccc",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-6c62861b4efb",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-6c5efc28f6f0",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-699614ab8c27",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-61c1ce60e099",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-5ff4b7e792a2",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-5fafa4d1e2ee",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-5caa706cb1e4",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-57c7e9987427",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-534eb3216b57",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-4e0635550c9b",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-4d5a08e7b93f",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-456723baf623",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-442c19bf4ab0",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-4404fd9d0872",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-4231fc48ad54",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-3a00c1f68022",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-3022ffee0431",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-2d6f9508f3b5",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-2be8071e1b53",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-2852cf238df6",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-254a8112df19",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-2413fc793dc4",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-210860a7b423",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-1f3e2f172b01",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-1c0d70565974",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-1b4b551f4cbf",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-17a1112ecfd3",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-101f4a7b3deb",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0feda0863221",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0fe8dfc611aa",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0efb071d8f23",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-0d4c603efc4f",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-07f241975341",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0531fa8616fc",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-04c0d6ad7efb",
+   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-19",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ff9c310df21a",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ff8341a7d3d1",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-feeda77ff4b8",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-fe8d89ed58c0",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-fe5d9fcb6a0f",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-fda0e0ef73a0",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-fc606086b1c5",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-fc28d8224758",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-fb9db1dfc584",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-fb672219c345",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-f91d8f6d027d",
+   "name": "스킬 갱신 — fix(bess): 결정 (2) 실행 — customs-t",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-f80dfd43b96a",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-f6fe8edc4190",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-f460b6838aab",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-f4302bcde341",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-f359a56f6ae4",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-f1380ff178a6",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-f0a186d1f080",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-f05cdeaa999c",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-effce0d2a0cd",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ef2bb2554a89",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ee3906285eaf",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ed73ddd64a33",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ed1c1d65ce48",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-eca135e85eca",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ec1086b0c4fa",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ec0f1791023d",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-eb5311e94046",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-eb369d524608",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ea7dfd86f101",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-e92b2b1fb32c",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-e91a23d6ade7",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-e63cebd1a844",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-e418139be409",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-e3902d0727eb",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-e0c6ad7a92d2",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-e0a78308d9e3",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-dd89d6641576",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-dd7696d5fa3b",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-dcd25e57e724",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-dbab7d49f95d",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d97afd0277d6",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d93b3c91ca72",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d6fa21e1ef1f",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d669b97199a9",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d63f16b568b4",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d60deb56977f",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d531d754a08d",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d0328ae1e29a",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-cfb5698aa31d",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-cead5425d771",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-cdccf1daed18",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ccaf851e9248",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-cb24db9b6db4",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c9281c094d41",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-c88eb5c578c7",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-c7f881d1d0c3",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-c6766dcdd739",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c476cf0bacdc",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-c3c419948742",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-c3b1570940e9",
+   "name": "팀 토론 — EMS/FIT 통합 시운전 절차 최적화 매뉴얼 작성",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c39a4081a441",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-c32b30950831",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c2da2d02a2cf",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c2a2e0bdb5c5",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-c15bf1706be6",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-be67c7dd354b",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-bc6055289140",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-bc1d3d068d62",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-b9df621eaeb4",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b931af0827bb",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b8d267da0162",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-b8614b95fb95",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b755406a6642",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b4ff6ee6019b",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-b4d00aae724e",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-b40c8429128a",
+   "name": "팀 토론 — OT/IT 네트워크 보안 취약점 스캔 및 패킷 분석 프로토콜",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-b3f49a571b04",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b15a21e9f71f",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-afdddfc5ad30",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#64748B"
+  },
+  {
+   "id": "K-afb29ea3e0e3",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-ad4c1c1e5c0a",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ad15cc4a4f90",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-aca6d8df147e",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ac58fb360a26",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-abf71c18c039",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-a99978aa7199",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-a98b40da1789",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-a84cee9c8e1b",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-a72a4a3da594",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-a6d4a27ea378",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-a5e5e39e2ad5",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-a57a9172d305",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-a43b38928352",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-a3018d1e746b",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-a2dba502a8a8",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-a2c32d66d495",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-a1dbf9d72bd0",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-a07fca2ce492",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-9e575f832856",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-9d90a3af6c27",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-9b528e1a2dda",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-9a1ae83e46c9",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-9a034877ad07",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-99c0f2f4be21",
+   "name": "팀 토론 — CFD 시뮬레이션을 통한 액냉 시스템 최적화 방안 검토 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-995635924a79",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-992d77cb7ff7",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-981535e5107d",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-97887e0601d9",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-961ccb656795",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-955111eddf9e",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-9140ced5a8ee",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-90a46a37e259",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-9085b56f0f7c",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-8e4a7fae53a8",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8e16f351b778",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8dc56b0df7bf",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-8db3bb477e12",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-8d241d67708c",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8c459cab6493",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8a1ab781e413",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-88ee2adbe080",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-87cbba9309fd",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-87a956e31531",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-8765a312f63d",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-86a8e3898137",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-85fc66a79a4d",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-839579bdf5f4",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-82f8a529c8f0",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-81f8cb84dc71",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-81a72f95f372",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-812fb629c918",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-80fb45cea88d",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-80a1dc273e2d",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-7ff3ae2c3ae7",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-7f299b17d9b7",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-7e723e95f6f1",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-7d49d6ca99b4",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-7c43ebe21029",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-7bee9a208db7",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-7a8e6f71bf38",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-79c204822caa",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-7892afb42f7d",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-787d6c771ed5",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-75ae9aee49eb",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-755ed19225e0",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-7448581488e1",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-73ac6d2e1e7e",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-735127f7a1b5",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-72a13ce939d7",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-6f50a212e4c0",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-6aed69b0fb80",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-6a2286208523",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-68e98b92d80a",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-6800ccb6972c",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-6739dca4ae77",
+   "name": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-6669b14e22e5",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-64fc2b88d586",
+   "name": "팀 토론 — 물류 네트워크 최적화 계획 수립 및 글로벌 선적 절차 표준화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-63334bab4652",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-61d920b4210f",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-615b8c25e5d5",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-60fa53e5a3cd",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-60d47e7dffb4",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-5f2c3ce31da2",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-5de51e645f3a",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-5d192177167c",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-5c243a7eb987",
+   "name": "팀 토론 — Hybrid 시스템 통합 시나리오 개발 및 PV/Wind 상",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-5bda5b4104f7",
+   "name": "팀 토론 — ESG 재무 성과 벤치마킹 및 보고 프레임워크 구축",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-5bb34b8c0ae0",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-59fadb05610a",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-58a8f34953fc",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-576ceea33e5b",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-573b4bb80a97",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-56a63cfe0b3c",
+   "name": "팀 토론 — 입찰전략 분석 및 KPX 시장 진출 로드맵 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-5558e8df97a6",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-5524a239e0de",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-54b642c5c85f",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-54a5c8f38ee8",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-54909eb7d25a",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-519c49fa8589",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-5136c152743e",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-50f8dc58be1e",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-50ed52810fc7",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-50b4e6ae425d",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-5086812cf753",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-4f2e9f3fef1f",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-4ea378fcf64d",
+   "name": "팀 토론 — 배터리 사양 선정을 위한 최적 셀 밸런싱 전략 개발 및 UL",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-4d1ea3ed78f2",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-4a4ff304a089",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-4a4175582c60",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-49dc9a252c25",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-47c51935b0c7",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-47a36807fba2",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-4669cf8c55ea",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-45fe7cb47078",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-45c171805769",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-45877352da74",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-43f2b9421280",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-413f760a0425",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-4135851c249b",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-3ea1ed0b13bf",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-3e0666dc358e",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-3cbdb2d5550a",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-3c1221aabbe0",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-3bdf1985ec35",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-39531b28de64",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-38f985ec6458",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-385a2be49fd3",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-36daec50683d",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-355a16b82356",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-341264b2449b",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-3390ece7044e",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-2f577dbaa652",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-2dfcc6e60090",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-2cd998f5188a",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-2b0971448633",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-2a3a9ae01bc5",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-2965ee4a6a10",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-28b7023e60a4",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-28afacdb2bff",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-278f71082497",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-26651c3eaa0b",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-25be70411f2e",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-25aef2e6a823",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#64748B"
+  },
+  {
+   "id": "K-25838b4f069f",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-241e2c1989ec",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-22a9d4d5f4fb",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-21d923c044c5",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-208658960c03",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-1e6dbc50ac4f",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#64748B"
+  },
+  {
+   "id": "K-1ceb079b0196",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-1c78d947023c",
+   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-1c7123ee26f5",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-1a3159f20216",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-1a22088c8d4a",
+   "name": "팀 토론 — 수소·연료전지·BESS 영역 현황 진단 — bess-hydr",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-15408b3236a3",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-14ac2539bcbc",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-147d91f78cf1",
+   "name": "팀 토론 — AI 기반 BESS 최적화 시뮬레이터 개발 및 열화 예측 모",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-14762ef0a0ac",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0e292a41ec6b",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-0deb0a5ab73a",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0d9c1edbeb98",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0d896d1a0b26",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0d73bfa6054b",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-0cfcc26bb823",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-0ced07673a96",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0abeec767dd1",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-08ed8b52db3a",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0753fb71cb69",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-071c2d84c3c9",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-04df7493d9d4",
+   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-03f8f10e3740",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-021c461cdeca",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-01dc0db95aa9",
+   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-015061c7f1c1",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-0113179c2099",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-00caa3aafd22",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-007ba8db7700",
+   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-feb146aa94ff",
+   "name": "스킬 갱신 — refactor(standard): B4b — 도구 슬롯 ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-e9aea86f9099",
+   "name": "스킬 갱신 — docs(design): C1~C3 완료 반영 — XML ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-d41495898e5e",
+   "name": "팀 토론 — BESS 프로젝트 견적서 및 BOM 최적화를 위한 정확한 물",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-cf400053b17a",
+   "name": "팀 토론 — 견적서 최적화 및 현지 관세 적용 검토를 위한 초기 BOQ ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-9d978b2d0130",
+   "name": "스킬 갱신 — docs(design): C1~C3 완료 반영 — XML ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-5f5e2949b941",
+   "name": "스킬 갱신 — docs(design): C1~C3 완료 반영 — XML ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-59246d60b21e",
+   "name": "팀 토론 — 계통연계 시험 계획 수립 및 VRT 최적화 방안 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-3b33ec123762",
+   "name": "스킬 갱신 — docs(design): C1~C3 완료 반영 — XML ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-392210ab263c",
+   "name": "팀 토론 — 케이블 사이징 및 전압강하 데이터 수집 및 분석 강화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-1cb531759fb0",
+   "name": "스킬 갱신 — docs(design): C1~C3 완료 반영 — XML ",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-0afdb5c74ac9",
+   "name": "팀 토론 — FIDIC·Silver 영역 리스크 평가 — bess-con",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-045cc65c6dcf",
+   "name": "팀 토론 — 케이블 설계 최적화: KPX 현장에 적합한 케이블 사이징 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ff60f5249148",
+   "name": "팀 토론 — 변압기 성능 최적화 및 Arc Flash 안전 프로토콜 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-fcb6db386016",
+   "name": "팀 토론 — 냉각 시스템 실험 설계 및 고온 환경 성능 검증",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-f10f5396436d",
+   "name": "팀 토론 — 프로그램·CAR 영역 초안 작성 — bess-insuranc",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ed38e5f4802d",
+   "name": "팀 토론 — 관세 분석 및 FTA 원산지 규정 적용 최적화 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-d3ca575b8bb3",
+   "name": "팀 토론 — 쟁점 후속",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-cb0def09d0a5",
+   "name": "팀 토론 — AI 기반 BESS 최적화 알고리즘 개발 착수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ca13d35f4946",
+   "name": "팀 토론 — 시운전·코디네이터 영역 벤치마킹 — bess-commissi",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-c30026a1a2cc",
+   "name": "팀 토론 — 환경 리스크 및 사이버 보안 위협에 대한 보험 특약 검토 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-a6b9146be9f2",
+   "name": "팀 토론 — 냉각 시스템 선택 및 환경 조건 최적화 분석",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8006452175ba",
+   "name": "팀 토론 — 부지조성 계획 최적화를 통한 안전 및 효율성 향상",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-76abd76505dd",
+   "name": "팀 토론 — BESS 프로젝트 견적 및 BOM 최적화를 위한 초기 물량산",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-67b53726848f",
+   "name": "팀 토론 — 입찰전략·파이프라인 영역 초안 작성 — bess-busine",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-63591b02fc30",
+   "name": "팀 토론 — 변압기 설계 최적화 및 Arc Flash 안전성 평가 실시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-52e672406769",
+   "name": "팀 토론 — 냉각 시스템 고온 환경 챔버 내 초기 토양 저항률 측정 계획",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-4fa81410f87f",
+   "name": "팀 토론 — 배터리 사양 선정 및 열화 분석 전문가 팀 구성",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-47d0aacca004",
+   "name": "팀 토론 — 쟁점 후속",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-2892ed345a9c",
+   "name": "팀 토론 — 토양 저항률 고온 변화 모델링 데이터 수집 및 분석 계획 수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-1ed140bbae05",
+   "name": "팀 토론 — 쟁점 후속**: 지반조사 보고서의 세부 항목 재검토 및 강화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-e613ab6bc342",
+   "name": "팀 토론 — 케이블 최적 설계 및 안전성 검증: Ampacity 계산 기",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d7beb82e3fe5",
+   "name": "팀 토론 — 수소·연료전지·BESS 영역 현황 진단 — bess-hydr",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d769daa46fc6",
+   "name": "팀 토론 — 예측모델·최적화 영역 초안 작성 — bess-aiml-eng",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d4f8cf6fd38b",
+   "name": "팀 토론 — HYB-001 팀 구성 및 PV/Wind/H2 통합 시나리오",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-a14e530ac725",
+   "name": "팀 토론 — ESG 보고서 작성 및 TCFD 가이드라인 준수 검토 시작",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-a0d6075449c5",
+   "name": "팀 토론 — 부지조성·기초설계 영역 초안 작성 — bess-cbop-en",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8ba74e1a1a26",
+   "name": "팀 토론 — 변압기 최적화 설계 및 Arc Flash 안전성 검토 수행",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-88da7fd7104b",
+   "name": "팀 토론 — 쟁점 후속",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-88574510298d",
+   "name": "팀 토론 — 계통연계 시스템 최적화 벤치마킹 수행",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-880ec2431abf",
+   "name": "팀 토론 — 쟁점 후속",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-8788552df893",
+   "name": "팀 토론 — 설비관리·유지보수 영역 초안 작성 — bess-facilit",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-7d255b608aa6",
+   "name": "팀 토론 — BESS 설비 최적화 시운전 프로토콜 개발 및 초기 테스트 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-72be8d2a7c9e",
+   "name": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-540f1df6167e",
+   "name": "팀 토론 — 변환 프로젝트 계약서 검토 및 FIDIC Silver 조건 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-40e53b3c7198",
+   "name": "팀 토론 — 신규 영역**: `bess-emerging-markets` ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-400c7a3c859f",
+   "name": "팀 토론 — 조직문화 강화를 위한 워크숍 기획 및 실행 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-15",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-855d39f6e7a0",
+   "name": "팀 토론 — 냉각 유체 보안 강화 프로토콜 개발 및 테스트 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-14",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-4922e4643122",
+   "name": "팀 토론 — 냉각 유체 특성 상세 검토 및 부식 저항성 테스트 프로토콜 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-14",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ef6026e98e93",
+   "name": "팀 토론 — 관세 및 HS 코드 기반 `BESS` 수입 비용 분석 보고서",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-a518d2fe5e16",
+   "name": "팀 토론 — 벤더 품질 보증 기간 및 국내 제조 부품 비율 데이터 수집 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-9670d0e29046",
+   "name": "팀 토론 — 견적서 및 BOM 기반 DOR 최적화 문서 작성 시작",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-13",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-88b00939ac1e",
+   "name": "팀 토론 — BESS 시장 진출을 위한 주요 파트너십 MOU 협상 계획 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-7e3b27942f48",
+   "name": "팀 토론 — 기술 역량 및 국제 표준 준수 세부 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-74bd5d1e525d",
+   "name": "팀 토론 — CFD 유동해석을 통한 액냉 시스템 최적화 설계 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  }
+ ],
+ "links": [
+  {
+   "source": "EBP-001",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-e09fd37c17be",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-b6aaf8bb4a8c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-64e59f030ca3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-64e59f030ca3",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-64e59f030ca3",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-64e59f030ca3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-64e59f030ca3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-64e59f030ca3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-64e59f030ca3",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-18dccc1371be",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-18dccc1371be",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-18dccc1371be",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-18dccc1371be",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-18dccc1371be",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-18dccc1371be",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-18dccc1371be",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-1629ddfab028",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-1629ddfab028",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-1629ddfab028",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-1629ddfab028",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-1629ddfab028",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-1629ddfab028",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-1629ddfab028",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-089b4323c05f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-089b4323c05f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-089b4323c05f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-089b4323c05f",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-089b4323c05f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-089b4323c05f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-089b4323c05f",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-089b4323c05f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ff821df8654a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-fb13787f82c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-f3edc302d5d5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-f39e69417eb0",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-f33e104caa03",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-f310a8c84b1c",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-ec44647b26ca",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-eba2ba615efa",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-e6e3627487c2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-e4196db99308",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-e2ce6fc8b123",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-e147327e6cbe",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-d9fcb9528b7c",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-d8aac90b1d92",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-d821be6ff4c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-cb504663397d",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-c8e4f93816a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-c790bbeda3e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-c3ff4cf21982",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-c3dfa9da9542",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-c1dc2456b120",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-b6e393f7aa95",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-b685d29e2f18",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-b382a09c8881",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-b24739065b70",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-b04c2bf959e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-b0487fbded04",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-ad6a96ad00ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-aae90ad64aca",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-a606457bd9c7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-a0a4577432ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-98885df7c352",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-92413f24c159",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-8f743895edf7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-8dc6d97aee33",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8916026f60bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-8616826e60dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-84cede4cc247",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-7deed653bcdc",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-7b91e61ca320",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-795381028838",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-7894da580690",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-760273ae4d99",
+   "type": "knowledge"
+  },
+  {
+   "source": "CTO-100",
+   "target": "K-75b6f2486f80",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-741f4812e282",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-73a7807993f4",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-6ccac3beeccc",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-6c62861b4efb",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-6c5efc28f6f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-699614ab8c27",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-61c1ce60e099",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-5ff4b7e792a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-5fafa4d1e2ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-5caa706cb1e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-57c7e9987427",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-534eb3216b57",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-4e0635550c9b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-4d5a08e7b93f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-456723baf623",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-442c19bf4ab0",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-4404fd9d0872",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-4231fc48ad54",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-3a00c1f68022",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-3022ffee0431",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-2d6f9508f3b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-2be8071e1b53",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-2852cf238df6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-254a8112df19",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2413fc793dc4",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-210860a7b423",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-1f3e2f172b01",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-1c0d70565974",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-1b4b551f4cbf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-17a1112ecfd3",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-101f4a7b3deb",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-0feda0863221",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-0fe8dfc611aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-0efb071d8f23",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-0d4c603efc4f",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-07f241975341",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-0531fa8616fc",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-04c0d6ad7efb",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ff9c310df21a",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-ff8341a7d3d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-feeda77ff4b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-fe8d89ed58c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-fe5d9fcb6a0f",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-fda0e0ef73a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-fc606086b1c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-fc28d8224758",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-fb9db1dfc584",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-fb672219c345",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-f91d8f6d027d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-f80dfd43b96a",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-f6fe8edc4190",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-f460b6838aab",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-f4302bcde341",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-f359a56f6ae4",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-f1380ff178a6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-f0a186d1f080",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-f05cdeaa999c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-effce0d2a0cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-ef2bb2554a89",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-ee3906285eaf",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-ed73ddd64a33",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-ed1c1d65ce48",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-eca135e85eca",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-ec1086b0c4fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-ec0f1791023d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-eb5311e94046",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-eb369d524608",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-ea7dfd86f101",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-e92b2b1fb32c",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-e91a23d6ade7",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-e63cebd1a844",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-e418139be409",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-e3902d0727eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-e0c6ad7a92d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-e0a78308d9e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-dd89d6641576",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-dd7696d5fa3b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-dcd25e57e724",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-dbab7d49f95d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CTO-100",
+   "target": "K-d97afd0277d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-d93b3c91ca72",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-d6fa21e1ef1f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-d669b97199a9",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-d63f16b568b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-d60deb56977f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-d531d754a08d",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-d0328ae1e29a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-cfb5698aa31d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-cead5425d771",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-cdccf1daed18",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-ccaf851e9248",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-cb24db9b6db4",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-c9281c094d41",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c88eb5c578c7",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-c7f881d1d0c3",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-c6766dcdd739",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-c476cf0bacdc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-c3c419948742",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c3b1570940e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c39a4081a441",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-c32b30950831",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-c2da2d02a2cf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-c2a2e0bdb5c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-c15bf1706be6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-be67c7dd354b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-bc6055289140",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-bc1d3d068d62",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-b9df621eaeb4",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-b931af0827bb",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-b8d267da0162",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-b8614b95fb95",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-b755406a6642",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-b4ff6ee6019b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-b4d00aae724e",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-b40c8429128a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-b40c8429128a",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-b40c8429128a",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-b40c8429128a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-b40c8429128a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b40c8429128a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-b40c8429128a",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-b3f49a571b04",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-b15a21e9f71f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-afdddfc5ad30",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-afb29ea3e0e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-ad4c1c1e5c0a",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-ad15cc4a4f90",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-aca6d8df147e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-ac58fb360a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-abf71c18c039",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-a99978aa7199",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-a98b40da1789",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-a84cee9c8e1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-a72a4a3da594",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-a6d4a27ea378",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a5e5e39e2ad5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-a57a9172d305",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a43b38928352",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-a3018d1e746b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-a2dba502a8a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-a2c32d66d495",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-a1dbf9d72bd0",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-a07fca2ce492",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-9e575f832856",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-9d90a3af6c27",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-9b528e1a2dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-9a1ae83e46c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-9a034877ad07",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-99c0f2f4be21",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-99c0f2f4be21",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-99c0f2f4be21",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-99c0f2f4be21",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-99c0f2f4be21",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-99c0f2f4be21",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-99c0f2f4be21",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-99c0f2f4be21",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-995635924a79",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-992d77cb7ff7",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-981535e5107d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-97887e0601d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-961ccb656795",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-955111eddf9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-9140ced5a8ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-90a46a37e259",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-9085b56f0f7c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-8e4a7fae53a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-8e16f351b778",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-8dc56b0df7bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-8db3bb477e12",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-8d241d67708c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8c459cab6493",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-8a1ab781e413",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-88ee2adbe080",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-87cbba9309fd",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-87a956e31531",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-8765a312f63d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-86a8e3898137",
+   "type": "knowledge"
+  },
+  {
+   "source": "CTO-100",
+   "target": "K-85fc66a79a4d",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-839579bdf5f4",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-82f8a529c8f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-81f8cb84dc71",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-81a72f95f372",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-812fb629c918",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-80fb45cea88d",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-80a1dc273e2d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-7ff3ae2c3ae7",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-7f299b17d9b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7e723e95f6f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-7d49d6ca99b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-7c43ebe21029",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-7bee9a208db7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7a8e6f71bf38",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-79c204822caa",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-7892afb42f7d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-787d6c771ed5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-75ae9aee49eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-755ed19225e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-7448581488e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-73ac6d2e1e7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-735127f7a1b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-72a13ce939d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-6f50a212e4c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-6aed69b0fb80",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-6a2286208523",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-68e98b92d80a",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-6800ccb6972c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6739dca4ae77",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-6739dca4ae77",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-6739dca4ae77",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-6739dca4ae77",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-6739dca4ae77",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-6739dca4ae77",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-6739dca4ae77",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-6739dca4ae77",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-6669b14e22e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-64fc2b88d586",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-64fc2b88d586",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-64fc2b88d586",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-64fc2b88d586",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-64fc2b88d586",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-64fc2b88d586",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-64fc2b88d586",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-64fc2b88d586",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-63334bab4652",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-61d920b4210f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-615b8c25e5d5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-60fa53e5a3cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-60d47e7dffb4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5f2c3ce31da2",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-5de51e645f3a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CTO-100",
+   "target": "K-5d192177167c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-5c243a7eb987",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-5bda5b4104f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-5bb34b8c0ae0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-59fadb05610a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-58a8f34953fc",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-576ceea33e5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-573b4bb80a97",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-56a63cfe0b3c",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-56a63cfe0b3c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-56a63cfe0b3c",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-56a63cfe0b3c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-56a63cfe0b3c",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-56a63cfe0b3c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-5558e8df97a6",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-5524a239e0de",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-54b642c5c85f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-54a5c8f38ee8",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-54909eb7d25a",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-519c49fa8589",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-5136c152743e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-50f8dc58be1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-50ed52810fc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-50b4e6ae425d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5086812cf753",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-4f2e9f3fef1f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-4ea378fcf64d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-4d1ea3ed78f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-4a4ff304a089",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-4a4175582c60",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-49dc9a252c25",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-47c51935b0c7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-47a36807fba2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4669cf8c55ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-45fe7cb47078",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-45c171805769",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-45877352da74",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-43f2b9421280",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-413f760a0425",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-4135851c249b",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-3ea1ed0b13bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-3e0666dc358e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-3cbdb2d5550a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-3c1221aabbe0",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-3bdf1985ec35",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-39531b28de64",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-38f985ec6458",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-385a2be49fd3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-36daec50683d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-355a16b82356",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-341264b2449b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-3390ece7044e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-2f577dbaa652",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-2dfcc6e60090",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-2cd998f5188a",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-2b0971448633",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-2a3a9ae01bc5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-2965ee4a6a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-28b7023e60a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-28afacdb2bff",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-278f71082497",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-26651c3eaa0b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-25be70411f2e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-25aef2e6a823",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-25838b4f069f",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-241e2c1989ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-22a9d4d5f4fb",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-21d923c044c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-208658960c03",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-1e6dbc50ac4f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-1ceb079b0196",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-1c78d947023c",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-1c7123ee26f5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-1a3159f20216",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-1a22088c8d4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-15408b3236a3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-14ac2539bcbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-147d91f78cf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-14762ef0a0ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-0e292a41ec6b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-0deb0a5ab73a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-0d9c1edbeb98",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-0d896d1a0b26",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-0d73bfa6054b",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-0cfcc26bb823",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-0ced07673a96",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-0abeec767dd1",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-08ed8b52db3a",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-0753fb71cb69",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-071c2d84c3c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-04df7493d9d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-03f8f10e3740",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-021c461cdeca",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-01dc0db95aa9",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-015061c7f1c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-0113179c2099",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-00caa3aafd22",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-007ba8db7700",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-feb146aa94ff",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e9aea86f9099",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d41495898e5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-d41495898e5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-d41495898e5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-d41495898e5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d41495898e5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-d41495898e5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-d41495898e5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-d41495898e5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-cf400053b17a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-cf400053b17a",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-cf400053b17a",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-cf400053b17a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-cf400053b17a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-cf400053b17a",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-cf400053b17a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-9d978b2d0130",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-5f5e2949b941",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-59246d60b21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-59246d60b21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-59246d60b21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-59246d60b21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-59246d60b21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-59246d60b21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-59246d60b21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-3b33ec123762",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-392210ab263c",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-392210ab263c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-392210ab263c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-392210ab263c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-392210ab263c",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-392210ab263c",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-392210ab263c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1cb531759fb0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-0afdb5c74ac9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-0afdb5c74ac9",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-0afdb5c74ac9",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-0afdb5c74ac9",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-0afdb5c74ac9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0afdb5c74ac9",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-0afdb5c74ac9",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-0afdb5c74ac9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-045cc65c6dcf",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-045cc65c6dcf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-045cc65c6dcf",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-045cc65c6dcf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-045cc65c6dcf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-045cc65c6dcf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-045cc65c6dcf",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-045cc65c6dcf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-ff60f5249148",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-ff60f5249148",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ff60f5249148",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-ff60f5249148",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-ff60f5249148",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ff60f5249148",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-ff60f5249148",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-ff60f5249148",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-fcb6db386016",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-fcb6db386016",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-fcb6db386016",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-fcb6db386016",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-fcb6db386016",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-fcb6db386016",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-fcb6db386016",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-fcb6db386016",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-f10f5396436d",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-f10f5396436d",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-f10f5396436d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-f10f5396436d",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-f10f5396436d",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-f10f5396436d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-f10f5396436d",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-f10f5396436d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-ed38e5f4802d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-ed38e5f4802d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ed38e5f4802d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ed38e5f4802d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-ed38e5f4802d",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-ed38e5f4802d",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-ed38e5f4802d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-d3ca575b8bb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d3ca575b8bb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-d3ca575b8bb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-d3ca575b8bb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-d3ca575b8bb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d3ca575b8bb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-d3ca575b8bb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-d3ca575b8bb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-cb0def09d0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-cb0def09d0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-cb0def09d0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-cb0def09d0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-cb0def09d0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-cb0def09d0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-cb0def09d0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-cb0def09d0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-ca13d35f4946",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-ca13d35f4946",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-ca13d35f4946",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-ca13d35f4946",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-ca13d35f4946",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-ca13d35f4946",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-ca13d35f4946",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-ca13d35f4946",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-c30026a1a2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-c30026a1a2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-c30026a1a2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-c30026a1a2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-c30026a1a2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-c30026a1a2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-c30026a1a2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-a6b9146be9f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-a6b9146be9f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-a6b9146be9f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-a6b9146be9f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-a6b9146be9f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-a6b9146be9f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-a6b9146be9f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a6b9146be9f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-8006452175ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-8006452175ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-8006452175ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-8006452175ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-8006452175ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-8006452175ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-8006452175ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4fa81410f87f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4fa81410f87f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-4fa81410f87f",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-4fa81410f87f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-4fa81410f87f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-4fa81410f87f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-4fa81410f87f",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-4fa81410f87f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-47d0aacca004",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-47d0aacca004",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-47d0aacca004",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-47d0aacca004",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-47d0aacca004",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-47d0aacca004",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-47d0aacca004",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-47d0aacca004",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-2892ed345a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-2892ed345a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-2892ed345a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-2892ed345a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-2892ed345a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-2892ed345a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-2892ed345a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-2892ed345a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1ed140bbae05",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-1ed140bbae05",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-1ed140bbae05",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-1ed140bbae05",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-1ed140bbae05",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-1ed140bbae05",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-1ed140bbae05",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-1ed140bbae05",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-e613ab6bc342",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-e613ab6bc342",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-e613ab6bc342",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-e613ab6bc342",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-e613ab6bc342",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e613ab6bc342",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-e613ab6bc342",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-e613ab6bc342",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-d7beb82e3fe5",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-d769daa46fc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-d769daa46fc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-d769daa46fc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-d769daa46fc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-d769daa46fc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-d769daa46fc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-d769daa46fc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-d769daa46fc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-d4f8cf6fd38b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a14e530ac725",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-a0d6075449c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-8ba74e1a1a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-8ba74e1a1a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-8ba74e1a1a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8ba74e1a1a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-8ba74e1a1a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-8ba74e1a1a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-8ba74e1a1a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-8ba74e1a1a26",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-88da7fd7104b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-88da7fd7104b",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-88da7fd7104b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-88da7fd7104b",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-88da7fd7104b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-88da7fd7104b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-88da7fd7104b",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-88da7fd7104b",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-88574510298d",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-88574510298d",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-88574510298d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-88574510298d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-88574510298d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-88574510298d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-88574510298d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-88574510298d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-880ec2431abf",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-880ec2431abf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-880ec2431abf",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-880ec2431abf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-880ec2431abf",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-880ec2431abf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-880ec2431abf",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-880ec2431abf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-8788552df893",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-8788552df893",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-8788552df893",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-8788552df893",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-8788552df893",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-8788552df893",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-8788552df893",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-7d255b608aa6",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-7d255b608aa6",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-7d255b608aa6",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-7d255b608aa6",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-7d255b608aa6",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-7d255b608aa6",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-7d255b608aa6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7d255b608aa6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-72be8d2a7c9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-72be8d2a7c9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-72be8d2a7c9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-72be8d2a7c9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-72be8d2a7c9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-72be8d2a7c9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-72be8d2a7c9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-72be8d2a7c9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-540f1df6167e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-540f1df6167e",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-540f1df6167e",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-540f1df6167e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-540f1df6167e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-540f1df6167e",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-540f1df6167e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-40e53b3c7198",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-400c7a3c859f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-400c7a3c859f",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-400c7a3c859f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-400c7a3c859f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-400c7a3c859f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-400c7a3c859f",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-400c7a3c859f",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-400c7a3c859f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-855d39f6e7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-855d39f6e7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-855d39f6e7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-855d39f6e7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-855d39f6e7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-855d39f6e7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-855d39f6e7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-4922e4643122",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-4922e4643122",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-4922e4643122",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-4922e4643122",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-ef6026e98e93",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-a518d2fe5e16",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-a518d2fe5e16",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-a518d2fe5e16",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-a518d2fe5e16",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a518d2fe5e16",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a518d2fe5e16",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a518d2fe5e16",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-9670d0e29046",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-9670d0e29046",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-9670d0e29046",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-9670d0e29046",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-9670d0e29046",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-9670d0e29046",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-9670d0e29046",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-9670d0e29046",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-88b00939ac1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-88b00939ac1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-88b00939ac1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-88b00939ac1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-88b00939ac1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-88b00939ac1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-88b00939ac1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-7e3b27942f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-74bd5d1e525d",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-74bd5d1e525d",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-74bd5d1e525d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-74bd5d1e525d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-74bd5d1e525d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-74bd5d1e525d",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-74bd5d1e525d",
+   "type": "knowledge"
+  }
+ ],
+ "meta": {
+  "updated": "2026-07-20",
+  "history": [
+   {
+    "date": "2026-07-20",
+    "knowledge": 400,
+    "events_total": 515
+   }
+  ]
+ }
+}
