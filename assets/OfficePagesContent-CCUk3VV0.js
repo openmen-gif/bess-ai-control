@@ -1,4 +1,4 @@
-import{n as e,s as t,t as n}from"./jsx-runtime-C7M7YA1l.js";import{n as r,t as i}from"./index-CHo3Cfkz.js";import{c as a}from"./data-DZjWfQ8N.js";var o=t(e(),1),s=n(),c=i`
+import{n as e,s as t,t as n}from"./jsx-runtime-C7M7YA1l.js";import{n as r,t as i}from"./index-DDWZFZHi.js";import{c as a}from"./data-D1CRvrDm.js";var o=t(e(),1),s=n(),c=i`
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
 `,l=i`
@@ -14,7 +14,7 @@ import{n as e,s as t,t as n}from"./jsx-runtime-C7M7YA1l.js";import{n as r,t as i
   flex-direction: column;
   gap: 22px;
   box-sizing: border-box;
-  @media (max-width: 768px) { padding: 16px; gap: 16px; }
+  @media (max-width: 768px) { padding: 16px; gap: 16px; height: auto; overflow-y: visible; }
 `,d=r.div`
   position: absolute;
   width: 340px; height: 340px; border-radius: 50%;
