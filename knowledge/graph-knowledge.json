@@ -64,15 +64,6 @@
    "color": "#10B981"
   },
   {
-   "id": "K-c0601eb1b6c4",
-   "name": "남부발전, 국내 첫 중앙계약형 ‘제주 안덕 BESS’ 준공",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-21",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
    "id": "K-ae7119d20e1c",
    "name": "중부발전, ‘해남화원 BESS 발전사업’ 허가 획득…1500억 규모 대형",
    "group": "KNOWLEDGE",
@@ -109,35 +100,17 @@
    "color": "#F59E0B"
   },
   {
-   "id": "K-9d797b15b425",
-   "name": "남부발전, 국내 최초 중앙계약시장형 장주기 BESS ‘제주 안덕 BESS",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-21",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
    "id": "K-95ea2c812ea2",
    "name": "ESS 시장 커질수록 경쟁도 진화…배터리업계 '토털 설루션' 승부",
    "group": "KNOWLEDGE",
    "type": "briefing",
    "date": "2026-07-21",
    "val": 3,
-   "color": "#8B5CF6"
+   "color": "#10B981"
   },
   {
    "id": "K-94b1f2e7a038",
    "name": "전북자치도, 전북형 분산에너지 모델 구축 속도",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-21",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-8ad3829ab2cb",
-   "name": "한국남부발전, 제주 안덕 BESS 준공…국내 첫 장주기 ESS 상업운전 ",
    "group": "KNOWLEDGE",
    "type": "briefing",
    "date": "2026-07-21",
@@ -260,15 +233,6 @@
    "date": "2026-07-21",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1948b3fca120",
-   "name": "중부발전 ‘해남화원 BESS’ 발전사업허가 획득",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-21",
-   "val": 3,
-   "color": "#10B981"
   },
   {
    "id": "K-147bd253584c",
@@ -3599,6 +3563,42 @@
    "date": "2026-07-16",
    "val": 3,
    "color": "#8B5CF6"
+  },
+  {
+   "id": "K-76abd76505dd",
+   "name": "팀 토론 — BESS 프로젝트 견적 및 BOM 최적화를 위한 초기 물량산",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-67b53726848f",
+   "name": "팀 토론 — 입찰전략·파이프라인 영역 초안 작성 — bess-busine",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-63591b02fc30",
+   "name": "팀 토론 — 변압기 설계 최적화 및 Arc Flash 안전성 평가 실시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-52e672406769",
+   "name": "팀 토론 — 냉각 시스템 고온 환경 챔버 내 초기 토양 저항률 측정 계획",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-16",
+   "val": 3,
+   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3744,11 +3744,6 @@
   },
   {
    "source": "MAR-001",
-   "target": "K-c0601eb1b6c4",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
    "target": "K-ae7119d20e1c",
    "type": "knowledge"
   },
@@ -3804,22 +3799,12 @@
   },
   {
    "source": "MAR-001",
-   "target": "K-9d797b15b425",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
    "target": "K-95ea2c812ea2",
    "type": "knowledge"
   },
   {
    "source": "STD-001",
    "target": "K-94b1f2e7a038",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-8ad3829ab2cb",
    "type": "knowledge"
   },
   {
@@ -3885,11 +3870,6 @@
   {
    "source": "BAT-001",
    "target": "K-28e8b6e42012",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-1948b3fca120",
    "type": "knowledge"
   },
   {
@@ -6896,10 +6876,170 @@
    "source": "TRL-001",
    "target": "K-8006452175ba",
    "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-76abd76505dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-67b53726848f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-63591b02fc30",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-52e672406769",
+   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-07-22",
+  "updated": "2026-07-21",
   "history": [
    {
     "date": "2026-07-20",
@@ -6907,14 +7047,14 @@
     "events_total": 515
    },
    {
-    "date": "2026-07-21",
+    "date": "2026-07-22",
     "knowledge": 400,
     "events_total": 547
    },
    {
-    "date": "2026-07-22",
+    "date": "2026-07-21",
     "knowledge": 400,
-    "events_total": 547
+    "events_total": 543
    }
   ]
  }

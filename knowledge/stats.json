@@ -1,8 +1,8 @@
 {
- "updated": "2026-07-22",
+ "updated": "2026-07-21",
  "totals": {
-  "all": 547,
-  "briefing": 27,
+  "all": 543,
+  "briefing": 23,
   "skill": 417,
   "discussion": 103,
   "activity": 0
@@ -208,13 +208,12 @@
    "level": 2
   },
   "bess-fire-engineer": {
-   "count": 16,
+   "count": 15,
    "byType": {
     "skill": 5,
-    "discussion": 10,
-    "briefing": 1
+    "discussion": 10
    },
-   "lastGrown": "2026-07-21",
+   "lastGrown": "2026-07-20",
    "level": 2
   },
   "bess-fit-procedure": {
@@ -354,11 +353,11 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 18,
+   "count": 15,
    "byType": {
     "skill": 5,
     "discussion": 7,
-    "briefing": 6
+    "briefing": 3
    },
    "lastGrown": "2026-07-21",
    "level": 2
@@ -754,6 +753,10 @@
  },
  "daily": [
   {
+   "date": "2026-04-23",
+   "added": 0
+  },
+  {
    "date": "2026-04-24",
    "added": 0
   },
@@ -1107,22 +1110,18 @@
   },
   {
    "date": "2026-07-21",
-   "added": 32
-  },
-  {
-   "date": "2026-07-22",
-   "added": 0
+   "added": 28
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-07-21",
-   "staleDays": 1,
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-07-21",
-   "gapDays": 1,
+   "previousUpdated": "2026-07-22",
+   "gapDays": -1,
    "overdue": false
   }
  }
