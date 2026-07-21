@@ -1,8 +1,8 @@
 {
  "updated": "2026-07-21",
  "totals": {
-  "all": 515,
-  "briefing": 0,
+  "all": 534,
+  "briefing": 19,
   "skill": 417,
   "discussion": 98,
   "activity": 0
@@ -26,12 +26,13 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 14,
+   "count": 20,
    "byType": {
     "skill": 6,
-    "discussion": 8
+    "discussion": 8,
+    "briefing": 6
    },
-   "lastGrown": "2026-07-19",
+   "lastGrown": "2026-07-21",
    "level": 2
   },
   "bess-business-dev": {
@@ -206,12 +207,13 @@
    "level": 2
   },
   "bess-fire-engineer": {
-   "count": 15,
+   "count": 16,
    "byType": {
     "skill": 5,
-    "discussion": 10
+    "discussion": 10,
+    "briefing": 1
    },
-   "lastGrown": "2026-07-20",
+   "lastGrown": "2026-07-21",
    "level": 2
   },
   "bess-fit-procedure": {
@@ -224,12 +226,13 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 14,
+   "count": 16,
    "byType": {
     "skill": 5,
-    "discussion": 9
+    "discussion": 9,
+    "briefing": 2
    },
-   "lastGrown": "2026-07-19",
+   "lastGrown": "2026-07-21",
    "level": 2
   },
   "bess-grounding-engineer": {
@@ -350,12 +353,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 12,
+   "count": 18,
    "byType": {
     "skill": 5,
-    "discussion": 7
+    "discussion": 7,
+    "briefing": 6
    },
-   "lastGrown": "2026-07-19",
+   "lastGrown": "2026-07-21",
    "level": 2
   },
   "bess-mlops-engineer": {
@@ -548,13 +552,14 @@
    "level": 2
   },
   "bess-standards-analyst": {
-   "count": 6,
+   "count": 10,
    "byType": {
     "skill": 5,
-    "discussion": 1
+    "discussion": 1,
+    "briefing": 4
    },
-   "lastGrown": "2026-07-19",
-   "level": 1
+   "lastGrown": "2026-07-21",
+   "level": 2
   },
   "bess-standards-australia": {
    "count": 7,
@@ -1104,7 +1109,19 @@
   },
   {
    "date": "2026-07-21",
-   "added": 0
+   "added": 19
   }
- ]
+ ],
+ "freshness": {
+  "briefing": {
+   "latestSource": "2026-07-21",
+   "staleDays": 0,
+   "stale": false
+  },
+  "pipelineLastRun": {
+   "previousUpdated": "2026-07-21",
+   "gapDays": 0,
+   "overdue": false
+  }
+ }
 }
