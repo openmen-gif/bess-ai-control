@@ -1,6 +1,132 @@
 {
- "updated": "2026-07-21",
+ "updated": "2026-07-22",
  "events": [
+  {
+   "id": "fedaa6980be7",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "LFP 다음은 나트륨…CATL, 유럽 ESS 시장 공략 본격화",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0yYnZDRU0zRFlBaDdrYTdnTzdhX1pKNngwWGRIMGczMjNkM25oNURLSmFmc1NtNTVzdnVQdnNGWjNtM2QwNGpKdXBIUkVOZHdtcTdRUm5mMVlaTERtT2VZQnNwc3pWeFd5SkxGLQ?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "eeb6e4f8ce23",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "[POWER COMPANY] 삼성SDI, 각형 배터리로 AI시대 ESS 시장 정조준",
+   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE43VUp1dlFIdEtOOFVDMVlHMUwyMkZiTFBWU1JmOF9XaTdjTERreE11SkNoTDBuNVY0RG9sU1BQSHlFbWptSnc?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "dc512838b582",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "국토부, 물류시설 화재안전 제도개선 TF 가동",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5ndGdzaEpNLWxIUk5oQkJmY3BfdmNCSFZtM24wLUZ2ZnJxbzY4aDZOTlhUbnozVU9EYWRmWmhjaWhRM2lnaXhxcXlPUENaWEN6bmhvNEY2SHQ0VFN2TkRkVjFPSmpnNkpoSkx3NNIBcEFVX3lxTFAxUTFSbWtyVVJGck5jU1ZsTVc4NnJvTVhjeU5rWVREeHdWcm10VmZnMzdVX1dERm5OVHp4VzhrNUp0NWU4NVdfVHFmbG9VeU5nY1JveXpmbW9WMjdZZ3dveGhxRFJ2UXRMUHZ6ZjJEdUM?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "d4501c5a6b15",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "중부발전, ‘해남화원 BESS 발전사업’ 허가 획득…1500억 규모 대형 프로젝트 본격화",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Vb29WUTNpVFRJSXNYVjlTdXNVRTg0VmRzZWRIODRSYkRjSFRhd0VGTEJ2NGtjdC1WeUFGUmRlS050SkRvcEdsYzRiZFNVSFB0bThwaHJ4ak9NUHBlbU5QbWhwbFJ3dmVyS2h4MU5rZVlaYUJTckxqVw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "c9d6f62914ca",
+   "date": "2026-07-22",
+   "type": "discussion",
+   "agents": [
+    "bess-circuit-breaker-expert",
+    "bess-emc-analyst",
+    "bess-power-system-analyst",
+    "bess-security-expert",
+    "bess-substation-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 변압기 설계 최적화 및 Arc Flash 보호 평가 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "a0e225d2fbf9",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "원전과 재생에너지 공존, 마이너스 전력가격에서 해답 나온다 [이슈분석]",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5XM24zRjhKektVQzVkeHQzMXduRFl0ZXlMRTluOFZzUTUtTDV0Qm1qWl9NOFBJZDVQT18zcTRfTDJXU21pcmtEYTd5ejZseDBLdjZfNDFDM21jb1gxM1UtMHRB?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "85ac21b4b9f7",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "엘앤에프, 씨아이에스케미칼에 전략적 투자...배터리 재활용 나선다",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9IcnJILWE1eF9iSzRURlJzNE5FNFhKa0VhQkt6SHd3aFRvamJHeUZPWW9XM09Cbi1EenBCZVdvUzVINWluLTVYOXJ3MU9LYVVoUVZxYjFyTlpvLWI5Tkx2NXNTelR0RUxxWnJ4bdIBcEFVX3lxTFBHLXFncDZ5cWY1bVE3d1JHTWFSenhnV1pQU0ZPaWJxZ2NaMDRwTGV4UWJ0N3IyQ1F2WXNSMFZFS1RhZjlSMWtZa25FN1J4anc1aGZyTGxqcUJHRjFmMlpTd1lhenNYcW91OFNwY2hKZVo?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "73b17464953b",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "‘캐즘 핑계’ 끝…실적압박 직면한 배터리 3사 수장",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfdGNfeTNqcm84QnNVT3RKOFFDTlVQUnNYQUdHMll3M2doNTFPM0NEMHV1cWVOQjRwNlpTc0FsVVpTNjFBREN0Y1lfbDg3RWx3b2RvNkUzQlJicXIzb1pQMVBNLUxtY05LV2dJTWk4b2jSAXRBVV95cUxObEdJY1R3Mmp5LUF0blNWcTdLd1FTZGNjUmJNUnpWN25keDRfRFA3ckxFQ0Q2UERIUzFsSHNpQzRDOG9PVlJUY25WRi1GWEExa1hFYU5lZmI1QmdvRVBwajJaTmJjZGlzNjk3cVJWN2x1NmthUA?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "6d37d67f3233",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "美 ESS 90%가 중국산…K배터리 '현지 생산' 승부수",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBHR19reWFTN1JNTnBIX0phdlZwakV1ZUkyZHVQTWZlc2hNVFZLczNEWU1uUGRyYU5KX2xWU1lUSXRZSzM0VGZrTEUtQmdaRWpBX1V5bWV4TzV4LU1UdWRBWVktSGN5NWp00gFsQVVfeXFMT2xqUjgtaGJGQllKSWE0dUVSOUFhN2FoTDNlODNSRVJYeEdoVXJJb3Nlckg2cW1fS0JMQjlnTnJFMjI5UWRzU1BqQmV2d1lBR3V0WU9YQTdhOHV1RmhEWU9lQ1NSRE9HdHZhdDRG?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "6442f3888def",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "경북대·KAIST·ETRI 공동연구 '불 안 붙는 전해질'…배터리 화재 해법 나왔다",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GR3ZKLWZnRkxENGlVanp1MTJTQkVSUTZfQmpCUnZsalE3a0UzSFdnTGR1WGdIWGZUcG1jUXFKZF90akxCd2ZnNXRnTFo1OTIwYjNydWhJUEZRX3ZwTkNXdUNtWlNPc0d4N1hv?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "2ce823934e6e",
+   "date": "2026-07-22",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "경기도·고양시, 전국 첫 '공유형 ESS 가상상계거래' 규제특례 승인",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5Rck1GMVlaUkk2NEhvUWh3R3pSMWpuNWc2RW9RdGc3WFFQYXZ0bUJTVDZiYmItS3U4SEdRYV9odUF4M2RoRkoyc0RkV01QYmZtQU0zdXl3MnhvUkE1UE5VT0M3SQ?oc=5",
+   "source": "구글뉴스"
+  },
   {
    "id": "fcb482eb6a30",
    "date": "2026-07-21",
@@ -149,6 +275,17 @@
    "title": "팀 토론 — 변경된 제안",
    "link": "",
    "source": "bess-team"
+  },
+  {
+   "id": "9d797b15b425",
+   "date": "2026-07-21",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "남부발전, 국내 최초 중앙계약시장형 장주기 BESS ‘제주 안덕 BESS’ 준공",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9sTHJNLXRLYTdsd1hUbDk1T2p0UTQ2ZktjTllIclEzODlNQ3NDQnpKalhBUkY2WjdaOTE3UF90aXZEX1ZVM1duMjZaN3AzeURQRm5xRFktNEljTEhTdkFITHpxckJwY0tRbXRCS08xNDBDdw?oc=5",
+   "source": "구글뉴스"
   },
   {
    "id": "95ea2c812ea2",
@@ -3288,143 +3425,6 @@
     "bess-standards-analyst"
    ],
    "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "573b4bb80a97",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-internal-auditor"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "56a63cfe0b3c",
-   "date": "2026-07-18",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-grounding-engineer",
-    "bess-power-market-expert",
-    "bess-precom-report",
-    "bess-project-manager",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 입찰전략 분석 및 KPX 시장 진출 로드맵 수립",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "5558e8df97a6",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-system-engineer"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "5524a239e0de",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "54b642c5c85f",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-tax-incentive"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "54a5c8f38ee8",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-facility-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "54909eb7d25a",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-data-analyst"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "519c49fa8589",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-knowledge-manager"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "5136c152743e",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-site-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "50f8dc58be1e",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-standards-poland"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "50ed52810fc7",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-security-expert"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "50b4e6ae425d",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-hse-manager"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
    "link": "",
    "source": "00_Skill_MD"
   }
