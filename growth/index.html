@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BESS 에이전트 성장 기록 — 2026-07-22</title>
-<meta name="description" content="BESS AI 전문가 조직의 지식 축적·성장 타임라인 — 누적 555건, 매일 07:30 자동 갱신">
+<title>BESS 에이전트 성장 기록 — 2026-07-23</title>
+<meta name="description" content="BESS AI 전문가 조직의 지식 축적·성장 타임라인 — 누적 640건, 매일 07:30 자동 갱신">
 <style>
 :root { --bg:#0B0F19; --panel:#111827; --line:#1F2937; --ink:#F9FAFB; --muted:#9CA3AF; --accent:#3B82F6; --grow:#10B981; --warn:#F59E0B; --warn-bg:#3A2A0F; }
 * { box-sizing:border-box; margin:0; }
@@ -40,6 +40,11 @@ details.news-fold > summary { cursor:pointer; font-size:13px; font-weight:800; c
 details.news-fold > summary::-webkit-details-marker { display:none; }
 details.news-fold > summary::before { content:'▸ '; color:var(--muted); }
 details.news-fold[open] > summary::before { content:'▾ '; }
+details.date-fold > summary { font-size:15px; font-weight:700; margin-bottom:10px; cursor:pointer; list-style:none; }
+details.date-fold > summary::-webkit-details-marker { display:none; }
+details.date-fold > summary::before { content:'▾ '; color:var(--muted); font-weight:400; }
+details.date-fold:not([open]) > summary { margin-bottom:0; }
+details.date-fold:not([open]) > summary::before { content:'▸ '; }
 footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:14px; }
 footer a { color:var(--accent); text-decoration:none; }
 </style>
@@ -50,41 +55,48 @@ footer a { color:var(--accent); text-decoration:none; }
     <h1>🌱 BESS 에이전트 성장 기록</h1>
     <a class="back" href="/">← 컨트롤 센터</a>
   </div>
-  <div class="date">2026-07-22 기준 · 브리핑 라우팅·스킬 갱신·팀 토론 실데이터 원장 · 매일 07:30 자동 갱신</div>
+  <div class="date">2026-07-23 기준 · 브리핑 라우팅·스킬 갱신·팀 토론 실데이터 원장 · 매일 07:30 자동 갱신</div>
   <div class="cards">
-    <div class="card"><div class="num">555</div><div class="lbl">누적 지식</div></div>
-    <div class="card"><div class="num">+416</div><div class="lbl">최근 7일</div></div>
+    <div class="card"><div class="num">640</div><div class="lbl">누적 지식</div></div>
+    <div class="card"><div class="num">+483</div><div class="lbl">최근 7일</div></div>
     <div class="card"><div class="num">82</div><div class="lbl">성장 중인 에이전트</div></div>
     <div class="card"><div class="num">tax-korea</div><div class="lbl">최다 성장</div></div>
   </div>
   <h2 class="stream-h">🎯 핵심 활동</h2>
-  <section class="sec">
-    <h2>📅 2026-07-22 <span style="color:var(--muted);font-weight:400">+1건</span></h2>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-23 <span style="color:var(--muted);font-weight:400">+1건</span></summary>
+    <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변압기 조달 계약 조건 최적화 및 Variation Order 검토<div class="agents">→ 8명 성장 — contract-specialist · financial-analysis · fire-engineer · internal-auditor · legal-expert · procurement-expert 외 2명</div></div>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-22 <span style="color:var(--muted);font-weight:400">+85건</span></summary>
+    <div class="item"><span class="badge">📚 스킬 성장</span>스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합<div class="agents">→ 82명 성장 — data-analyst · risk-manager · fit-procedure · cable-engineer · contract-specialist · fire-engineer 외 76명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변압기 설계 최적화 및 Arc Flash 보호 평가 수행<div class="agents">→ 6명 성장 — circuit-breaker-expert · emc-analyst · power-system-analyst · security-expert · substation-engineer · transformer-expert</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-21 <span style="color:var(--muted);font-weight:400">+5건</span></h2>
+    <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — HS코드·배터리 영역 1차 분석 — bess-customs-tariff 주관, 핵심 결론 도출<div class="agents">→ 8명 성장 — customs-tariff · epc-bom · logistics-expert · output-generator · procurement-expert · standards-korea 외 2명</div></div>
+    <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변압기 효율 최적화 및 Arc Flash 안전성 평가 실시<div class="agents">→ 7명 성장 — circuit-breaker-expert · emc-analyst · fire-engineer · output-generator · power-system-analyst · presentation-designer 외 1명</div></div>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-21 <span style="color:var(--muted);font-weight:400">+5건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 데이터 수집 프로세스 시작 - 배터리 성능 및 원자재 가격 추적<div class="agents">→ 7명 성장 — cost-analyst · data-analyst · hr-manager · knowledge-manager · standards-korea · tax-korea 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 프로그램·CAR 영역 1차 분석 — bess-insurance-expert 주관, 핵심 결론 도출<div class="agents">→ 8명 성장 — insurance-expert · legal-expert · qaqc-engineer · risk-manager · sales-manager · security-expert 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 배터리 화학종에 따른 정확한 단가 분석 및 비용 최적화 전략 수립<div class="agents">→ 7명 성장 — battery-expert · cost-analyst · facility-manager · financial-analysis · qaqc-engineer · tax-korea 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — FIDIC 계약 조항 분석 및 GCC 표준 준수 검토<div class="agents">→ 3명 성장 — contract-specialist · internal-auditor · legal-expert</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변경된 제안<div class="agents">→ 8명 성장 — cost-analyst · emerging-markets · financial-analysis · procurement-expert · project-manager · standards-korea 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-20 <span style="color:var(--muted);font-weight:400">+6건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-20 <span style="color:var(--muted);font-weight:400">+6건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 허가 절차 최적화 워크숍 개최<div class="agents">→ 9명 성장 — ebop-engineer · internal-auditor · legal-expert · permit-asia · permit-europe · risk-manager 외 3명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 부지조성·기초설계 영역 현황 진단 — bess-cbop-engineer 주관, 핵심 결론 도출<div class="agents">→ 9명 성장 — cbop-engineer · env-engineer · fire-engineer · grounding-engineer · hse-manager · logistics-expert 외 3명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 포설 계획 최적화 및 전압강하 분석 수행<div class="agents">→ 7명 성장 — cable-engineer · circuit-breaker-expert · emc-analyst · mlops-engineer · power-system-analyst · security-expert 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 외국인 인력 안전 교육 프로그램 구축<div class="agents">→ 7명 성장 — hse-manager · it-infra · knowledge-manager · labor-safety · security-expert · site-manager 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 인허가·전문가 영역 1차 분석 — bess-permit-english 주관, 핵심 결론 도출<div class="agents">→ 7명 성장 — legal-expert · permit-english · power-market-expert · standards-australia · standards-usa · tax-incentive 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 사전시운전·절차서 영역 초안 작성 — bess-precom-report 주관, 핵심 결론 도출<div class="agents">→ 8명 성장 — emerging-markets · facility-manager · hr-manager · precom-report · qaqc-engineer · scheduler 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-19 <span style="color:var(--muted);font-weight:400">+82건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-19 <span style="color:var(--muted);font-weight:400">+82건</span></summary>
     <div class="item"><span class="badge">📚 스킬 성장</span>스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성<div class="agents">→ 82명 성장 — power-system-analyst · output-generator · standards-analyst · substation-engineer · mlops-engineer · permit-europe 외 76명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-18 <span style="color:var(--muted);font-weight:400">+258건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-18 <span style="color:var(--muted);font-weight:400">+258건</span></summary>
     <div class="item"><span class="badge">📚 스킬 성장</span>스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]<div class="agents">→ 82명 성장 — battery-expert · permit-asia · it-infra · substation-engineer · business-dev · cybersecurity-expert 외 76명</div></div>
     <div class="item"><span class="badge">📚 스킬 성장</span>스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)<div class="agents">→ 57명 성장 — internal-auditor · env-engineer · presentation-designer · pcs-expert · tax-japan · commissioning-coordinator 외 51명</div></div>
     <div class="item"><span class="badge">📚 스킬 성장</span>스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)<div class="agents">→ 25명 성장 — om-expert · hse-manager · standards-analyst · standards-usa · security-expert · standards-poland 외 19명</div></div>
@@ -101,9 +113,9 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 배터리 사양 선정을 위한 최적 셀 밸런싱 전략 개발 및 UL9540A 준수 검토<div class="agents">→ 10명 성장 — battery-expert · circuit-breaker-expert · cybersecurity-expert · data-analyst · env-engineer · fire-engineer 외 4명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 수소·연료전지·BESS 영역 현황 진단 — bess-hydrogen-specialist 주관, 핵심 결론 도출<div class="agents">→ 10명 성장 — cost-analyst · env-engineer · hydrogen-specialist · power-market-expert · presentation-designer · procurement-expert 외 4명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — AI 기반 BESS 최적화 시뮬레이터 개발 및 열화 예측 모델 고도화<div class="agents">→ 9명 성장 — aiml-engineer · cbop-engineer · data-analyst · financial-analysis · mlops-engineer · pcs-expert 외 3명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-17 <span style="color:var(--muted);font-weight:400">+12건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-17 <span style="color:var(--muted);font-weight:400">+12건</span></summary>
     <div class="item"><span class="badge">📚 스킬 성장</span>스킬 갱신 — refactor(standard): B4b — 도구 슬롯 99_tools 고정 정합화 4개 사업 (위반 47→43)<div class="agents">→ tool-developer</div></div>
     <div class="item"><span class="badge">📚 스킬 성장</span>스킬 갱신 — docs(design): C1~C3 완료 반영 — XML 폐지 판정·프로브 결과·프리앰블 누락 보정<div class="agents">→ 5명 성장 — cost-analyst · permit-europe · cfd-analyst · tax-japan · battery-expert</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — BESS 프로젝트 견적서 및 BOM 최적화를 위한 정확한 물량산출 및 IRA 관세 적용 검토<div class="agents">→ 8명 성장 — cost-analyst · ebop-engineer · ip-patent-expert · output-generator · procurement-expert · scheduler 외 2명</div></div>
@@ -112,9 +124,9 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 케이블 사이징 및 전압강하 데이터 수집 및 분석 강화<div class="agents">→ 7명 성장 — cable-engineer · emc-analyst · facility-manager · power-system-analyst · standards-korea · tax-japan 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — FIDIC·Silver 영역 리스크 평가 — bess-contract-specialist 주관, 핵심 결론 도출<div class="agents">→ 8명 성장 — contract-specialist · cybersecurity-expert · insurance-expert · internal-auditor · legal-expert · procurement-expert 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 케이블 설계 최적화: KPX 현장에 적합한 케이블 사이징 및 전압강하 분석 수행<div class="agents">→ 8명 성장 — cable-engineer · emc-analyst · facility-manager · output-generator · permit-europe · power-system-analyst 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-16 <span style="color:var(--muted);font-weight:400">+18건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-16 <span style="color:var(--muted);font-weight:400">+18건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변압기 성능 최적화 및 Arc Flash 안전 프로토콜 검토<div class="agents">→ 8명 성장 — circuit-breaker-expert · cybersecurity-expert · fire-engineer · grounding-engineer · permit-asia · power-system-analyst 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 냉각 시스템 실험 설계 및 고온 환경 성능 검증<div class="agents">→ 8명 성장 — cfd-analyst · env-engineer · grounding-engineer · logistics-expert · security-expert · structural-analyst 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 프로그램·CAR 영역 초안 작성 — bess-insurance-expert 주관, 핵심 결론 도출<div class="agents">→ 8명 성장 — fit-procedure · insurance-expert · it-infra · legal-expert · qaqc-engineer · risk-manager 외 2명</div></div>
@@ -132,9 +144,9 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 배터리 사양 선정 및 열화 분석 전문가 팀 구성<div class="agents">→ 8명 성장 — battery-expert · cost-analyst · cybersecurity-expert · env-engineer · epc-bom · financial-analysis 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 토양 저항률 고온 변화 모델링 데이터 수집 및 분석 계획 수립<div class="agents">→ 8명 성장 — customs-tariff · cybersecurity-expert · data-analyst · emc-analyst · insurance-expert · standards-korea 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 쟁점 후속**: 지반조사 보고서의 세부 항목 재검토 및 강화 공법 경제성 분석 수행<div class="agents">→ 8명 성장 — cost-analyst · env-engineer · facility-manager · grounding-engineer · it-infra · output-generator 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-15 <span style="color:var(--muted);font-weight:400">+16건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-15 <span style="color:var(--muted);font-weight:400">+16건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 케이블 최적 설계 및 안전성 검증: Ampacity 계산 기반 IEC 표준 준수하에 케이블 트레이 및 포설 설계 검토 진행<div class="agents">→ 8명 성장 — cable-engineer · emc-analyst · grounding-engineer · sales-manager · site-manager · standards-korea 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 수소·연료전지·BESS 영역 현황 진단 — bess-hydrogen-specialist 주관, 핵심 결론 도출<div class="agents">→ 10명 성장 — cable-engineer · cost-analyst · emc-analyst · hydrogen-specialist · legal-expert · power-market-expert 외 4명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 예측모델·최적화 영역 초안 작성 — bess-aiml-engineer 주관, 핵심 결론 도출<div class="agents">→ 8명 성장 — aiml-engineer · circuit-breaker-expert · data-analyst · financial-analysis · mlops-engineer · pcs-expert 외 2명</div></div>
@@ -150,14 +162,14 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변환 프로젝트 계약서 검토 및 FIDIC Silver 조건 적용 최적화 진행<div class="agents">→ 7명 성장 — contract-specialist · hydrogen-specialist · insurance-expert · internal-auditor · legal-expert · procurement-expert 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 신규 영역**: `bess-emerging-markets` 팀 구성 및 인도(CEA/SECI) 시장 진출 전략 수립 시작<div class="agents">→ 9명 성장 — customs-tariff · emerging-markets · esg-finance · financial-analysis · fire-engineer · legal-expert 외 3명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 조직문화 강화를 위한 워크숍 기획 및 실행 계획 수립<div class="agents">→ 8명 성장 — business-dev · hr-manager · internal-auditor · knowledge-manager · presentation-designer · sales-manager 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-14 <span style="color:var(--muted);font-weight:400">+2건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-14 <span style="color:var(--muted);font-weight:400">+2건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 냉각 유체 보안 강화 프로토콜 개발 및 테스트 계획 수립<div class="agents">→ 7명 성장 — contract-specialist · cybersecurity-expert · internal-auditor · security-expert · standards-eu · tool-developer 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 냉각 유체 특성 상세 검토 및 부식 저항성 테스트 프로토콜 개발<div class="agents">→ 4명 성장 — cybersecurity-expert · env-engineer · qaqc-engineer · risk-manager</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-13 <span style="color:var(--muted);font-weight:400">+9건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-13 <span style="color:var(--muted);font-weight:400">+9건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 관세 및 HS 코드 기반 `BESS` 수입 비용 분석 보고서 작성<div class="agents">→ 9명 성장 — battery-expert · cost-analyst · customs-tariff · presentation-designer · procurement-data · standards-japan 외 3명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 벤더 품질 보증 기간 및 국내 제조 부품 비율 데이터 수집 및 분석<div class="agents">→ 7명 성장 — grounding-engineer · insurance-expert · internal-auditor · permit-english · procurement-expert · standards-korea 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 견적서 및 BOM 기반 DOR 최적화 문서 작성 시작<div class="agents">→ 8명 성장 — cost-analyst · cybersecurity-expert · ebop-engineer · it-infra · labor-safety · output-generator 외 2명</div></div>
@@ -167,9 +179,9 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 견적서 및 BOM 상세 검토를 통한 물량산출 최적화 수행<div class="agents">→ 8명 성장 — cost-analyst · ebop-engineer · ip-patent-expert · marketer · output-generator · permit-europe 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 부지조성 및 기초설계 검토를 통한 최적의 안전 기준 설정 수행<div class="agents">→ 8명 성장 — cbop-engineer · emerging-markets · fire-engineer · grounding-engineer · hse-manager · internal-auditor 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 공급망 다각화 전략 및 국내 부품 비율 분석 심층 검토<div class="agents">→ 9명 성장 — cost-analyst · insurance-expert · internal-auditor · legal-expert · logistics-expert · procurement-expert 외 3명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-09 <span style="color:var(--muted);font-weight:400">+7건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-09 <span style="color:var(--muted);font-weight:400">+7건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 쟁점 후속**: 특허 분석 정확성 확보를 위한 외부 법률 전문가 자문 회의 소집 (COM-101)<div class="agents">→ 8명 성장 — hr-manager · insurance-expert · ip-patent-expert · legal-expert · standards-korea · standards-uk 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 케이블 트레이 재료 사양 및 설계하중 데이터 심층 분석<div class="agents">→ 7명 성장 — cable-engineer · cfd-analyst · insurance-expert · standards-eu · standards-korea · structural-analyst 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 시운전·코디네이터 영역 리스크 평가 — bess-commissioning-coordinator 주관, 핵심 결론 도출<div class="agents">→ 9명 성장 — commissioning-coordinator · data-analyst · emerging-markets · financial-analysis · hydrogen-specialist · qaqc-engineer 외 3명</div></div>
@@ -177,9 +189,9 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 견적서 및 BOM 상세 검토 및 최적화 수행<div class="agents">→ 8명 성장 — cfd-analyst · cost-analyst · cybersecurity-expert · ebop-engineer · it-infra · output-generator 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변압기 패드 설계 최적화 및 안전성 검증<div class="agents">→ 8명 성장 — cable-engineer · emc-analyst · fire-engineer · grounding-engineer · security-expert · structural-analyst 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변압기 및 케이블 설계 최적화를 위한 현장 적합성 검토 실시<div class="agents">→ 8명 성장 — cable-engineer · emc-analyst · esg-finance · facility-manager · network-engineer · structural-analyst 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-07 <span style="color:var(--muted);font-weight:400">+7건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-07 <span style="color:var(--muted);font-weight:400">+7건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 케이블 포설 최적화 계획 수립 및 현장 적용 시나리오 검토<div class="agents">→ 7명 성장 — cable-engineer · logistics-expert · scheduler · site-manager · structural-analyst · tax-epc-accounting 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 액냉 시스템 최적화 시나리오 작성<div class="agents">→ 7명 성장 — cfd-analyst · contract-specialist · emc-analyst · mlops-engineer · network-engineer · system-engineer 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 특허 포트폴리오 심층 분석 및 경쟁력 평가 실시<div class="agents">→ 8명 성장 — ip-patent-expert · procurement-expert · security-expert · standards-eu · standards-korea · standards-usa 외 2명</div></div>
@@ -187,16 +199,16 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 수소·연료전지·BESS 영역 1차 분석 — bess-hydrogen-specialist 주관, 핵심 결론 도출<div class="agents">→ 9명 성장 — cost-analyst · emc-analyst · hydrogen-specialist · marketer · power-market-expert · sales-manager 외 3명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — Hybrid·BESS 영역 1차 분석 — bess-hybrid-specialist 주관, 핵심 결론 도출<div class="agents">→ 9명 성장 — battery-expert · emc-analyst · env-engineer · grid-interconnection · hybrid-specialist · power-system-analyst 외 3명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 입찰 전략 강화를 위한 글로벌 파트너십 탐색<div class="agents">→ 6명 성장 — business-dev · epc-bom · legal-expert · marketer · procurement-expert · standards-poland</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-06 <span style="color:var(--muted);font-weight:400">+4건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-06 <span style="color:var(--muted);font-weight:400">+4건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 쟁점 후속<div class="agents">→ 8명 성장 — contract-specialist · esg-finance · financial-analysis · legal-expert · project-manager · risk-manager 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 배터리 열화 분석 및 최적화 전략 수립<div class="agents">→ 8명 성장 — battery-expert · cybersecurity-expert · data-analyst · env-engineer · financial-analysis · power-system-analyst 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — HS코드·배터리 영역 리스크 평가 — bess-customs-tariff 주관, 핵심 결론 도출<div class="agents">→ 8명 성장 — customs-tariff · env-engineer · labor-safety · power-system-analyst · standards-japan · standards-korea 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 프로그램·CAR 영역 벤치마킹 — bess-insurance-expert 주관, 핵심 결론 도출<div class="agents">→ 8명 성장 — circuit-breaker-expert · financial-analysis · insurance-expert · legal-expert · project-manager · standards-australia 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-05 <span style="color:var(--muted);font-weight:400">+9건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-05 <span style="color:var(--muted);font-weight:400">+9건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — AI 기반 최적화 알고리즘 개발로 BESS 운영 효율성 향상<div class="agents">→ 8명 성장 — aiml-engineer · data-analyst · emc-analyst · financial-analysis · logistics-expert · mlops-engineer 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변압기·수배전반 영역 초안 작성 — bess-ebop-engineer 주관, 핵심 결론 도출<div class="agents">→ 9명 성장 — circuit-breaker-expert · contract-specialist · ebop-engineer · hr-manager · power-system-analyst · standards-korea 외 3명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 부지조성 및 안전 이격거리 최적화 계획 수립<div class="agents">→ 8명 성장 — cbop-engineer · fire-engineer · grounding-engineer · hse-manager · site-manager · structural-analyst 외 2명</div></div>
@@ -206,17 +218,17 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 지속가능연계대출(SLL) 프레임워크 분석 및 회사 적합성 평가 실시<div class="agents">→ 8명 성장 — esg-finance · financial-analysis · legal-expert · output-generator · pcs-expert · procurement-expert 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 변경된 목표에 맞춰 재작성<div class="agents">→ 7명 성장 — cost-analyst · financial-analysis · knowledge-manager · power-market-expert · project-manager · standards-korea 외 1명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 조직문화 개선을 위한 BESS 팀 특화 교육 프로그램 개발 및 실행 계획 수립<div class="agents">→ 8명 성장 — cost-analyst · cybersecurity-expert · emerging-markets · hr-manager · internal-auditor · knowledge-manager 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-04 <span style="color:var(--muted);font-weight:400">+84건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-04 <span style="color:var(--muted);font-weight:400">+84건</span></summary>
     <div class="item"><span class="badge">📚 스킬 성장</span>스킬 갱신 — chore: 01_AI개발 git 초기화 — 정본 체계(WORK_RULES·REASONING_LOOP·MODEL_HARNESS)·범용 프롬프트 v1.1.2·harness 프로파일/평가셋 버전 추적 시작<div class="agents">→ 82명 성장 — agent-framework · sales-manager · tax-japan · insurance-expert · standards-romania · presentation-designer 외 76명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — COM-100 준수 시운전 계획 세부 최적화 및 훈련 프로그램 구축<div class="agents">→ 8명 성장 — commissioning-coordinator · data-analyst · epc-bom · fit-procedure · procurement-expert · site-manager 외 2명</div></div>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — Thinking Process<div class="agents">→ 8명 성장 — business-dev · commissioning-coordinator · cost-analyst · knowledge-manager · project-manager · risk-manager 외 2명</div></div>
-  </section>
-  <section class="sec">
-    <h2>📅 2026-07-03 <span style="color:var(--muted);font-weight:400">+1건</span></h2>
+  </details>
+  <details class="sec date-fold" open>
+    <summary>📅 2026-07-03 <span style="color:var(--muted);font-weight:400">+1건</span></summary>
     <div class="item"><span class="badge">🧠 팀 토론</span>팀 토론 — 케이블 시스템 최적화 설계: 인도 시장 적합한 케이블 사이징 및 전압강하 분석 수행<div class="agents">→ 5명 성장 — cable-engineer · emc-analyst · power-system-analyst · site-manager · structural-analyst</div></div>
-  </section>
+  </details>
   <details class="news-fold">
     <summary>📰 뉴스 브리핑 (34건, 펼쳐보기)</summary>
   <section class="sec">
@@ -262,21 +274,21 @@ footer a { color:var(--accent); text-decoration:none; }
   </details>
   <section class="sec">
     <h2>🏆 에이전트 성장 랭킹</h2>
-    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">tax-korea</span><span class="bar"><i style="width:100%"></i></span><span class="cnt">44건</span></div>
-    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">standards-korea</span><span class="bar"><i style="width:86%"></i></span><span class="cnt">38건</span></div>
-    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">cost-analyst</span><span class="bar"><i style="width:77%"></i></span><span class="cnt">34건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">emc-analyst</span><span class="bar"><i style="width:65%"></i></span><span class="cnt">29건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">legal-expert</span><span class="bar"><i style="width:65%"></i></span><span class="cnt">29건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">procurement-expert</span><span class="bar"><i style="width:65%"></i></span><span class="cnt">29건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">financial-analysis</span><span class="bar"><i style="width:63%"></i></span><span class="cnt">28건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">structural-analyst</span><span class="bar"><i style="width:63%"></i></span><span class="cnt">28건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">battery-expert</span><span class="bar"><i style="width:61%"></i></span><span class="cnt">27건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">site-manager</span><span class="bar"><i style="width:54%"></i></span><span class="cnt">24건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">data-analyst</span><span class="bar"><i style="width:52%"></i></span><span class="cnt">23건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">internal-auditor</span><span class="bar"><i style="width:52%"></i></span><span class="cnt">23건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">power-system-analyst</span><span class="bar"><i style="width:52%"></i></span><span class="cnt">23건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">cybersecurity-expert</span><span class="bar"><i style="width:50%"></i></span><span class="cnt">22건</span></div>
-    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">tax-incentive</span><span class="bar"><i style="width:50%"></i></span><span class="cnt">22건</span></div>
+    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">tax-korea</span><span class="bar"><i style="width:100%"></i></span><span class="cnt">47건</span></div>
+    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">standards-korea</span><span class="bar"><i style="width:85%"></i></span><span class="cnt">40건</span></div>
+    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">cost-analyst</span><span class="bar"><i style="width:74%"></i></span><span class="cnt">35건</span></div>
+    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">procurement-expert</span><span class="bar"><i style="width:68%"></i></span><span class="cnt">32건</span></div>
+    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">emc-analyst</span><span class="bar"><i style="width:65%"></i></span><span class="cnt">31건</span></div>
+    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">legal-expert</span><span class="bar"><i style="width:65%"></i></span><span class="cnt">31건</span></div>
+    <div class="rank"><span class="lv">Lv3</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">financial-analysis</span><span class="bar"><i style="width:63%"></i></span><span class="cnt">30건</span></div>
+    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">structural-analyst</span><span class="bar"><i style="width:61%"></i></span><span class="cnt">29건</span></div>
+    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">battery-expert</span><span class="bar"><i style="width:59%"></i></span><span class="cnt">28건</span></div>
+    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">internal-auditor</span><span class="bar"><i style="width:53%"></i></span><span class="cnt">25건</span></div>
+    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">power-system-analyst</span><span class="bar"><i style="width:53%"></i></span><span class="cnt">25건</span></div>
+    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">site-manager</span><span class="bar"><i style="width:53%"></i></span><span class="cnt">25건</span></div>
+    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">data-analyst</span><span class="bar"><i style="width:51%"></i></span><span class="cnt">24건</span></div>
+    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">cybersecurity-expert</span><span class="bar"><i style="width:48%"></i></span><span class="cnt">23건</span></div>
+    <div class="rank"><span class="lv">Lv2</span><span style="width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">tax-incentive</span><span class="bar"><i style="width:48%"></i></span><span class="cnt">23건</span></div>
   </section>
   <footer>실데이터 원장 기반 자동 집계 · <a href="https://bess-ai-control.work/knowledge/events.jsonl">원장(JSONL)</a> · <a href="https://bess-ai-control.work/knowledge/stats.json">집계(JSON)</a> · <a href="https://bess-ai-control.work/briefing/">일일 브리핑</a></footer>
 </div>
