@@ -136,6 +136,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-69d2182683e5",
+   "name": "팀 토론 — CFD 유동해석 및 열관리 전문가 팀 구성",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-23",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-4b4fb5f95e17",
    "name": "차세대 '소듐이온배터리' 시장도 中 싹쓸이 … K 배터리, ESS 시장 ",
    "group": "KNOWLEDGE",
@@ -161,6 +170,15 @@
    "date": "2026-07-23",
    "val": 3,
    "color": "#10B981"
+  },
+  {
+   "id": "K-2afb03ab70c9",
+   "name": "팀 토론 — AI 기반 BESS 운영 최적화 알고리즘 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-23",
+   "val": 3,
+   "color": "#8B5CF6"
   },
   {
    "id": "K-21916997acb9",
@@ -3581,24 +3599,6 @@
    "date": "2026-07-18",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-5f2c3ce31da2",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-5de51e645f3a",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3788,6 +3788,46 @@
    "type": "knowledge"
   },
   {
+   "source": "CFD-001",
+   "target": "K-69d2182683e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-69d2182683e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-69d2182683e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-69d2182683e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-69d2182683e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-69d2182683e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-69d2182683e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-69d2182683e5",
+   "type": "knowledge"
+  },
+  {
    "source": "MAR-001",
    "target": "K-4b4fb5f95e17",
    "type": "knowledge"
@@ -3800,6 +3840,46 @@
   {
    "source": "STD-001",
    "target": "K-344784c02370",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-2afb03ab70c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-2afb03ab70c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-2afb03ab70c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-2afb03ab70c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-2afb03ab70c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-2afb03ab70c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2afb03ab70c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-2afb03ab70c9",
    "type": "knowledge"
   },
   {
@@ -6316,16 +6396,6 @@
    "source": "TAX-001",
    "target": "K-60d47e7dffb4",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-5f2c3ce31da2",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYB-001",
-   "target": "K-5de51e645f3a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -6349,7 +6419,7 @@
    {
     "date": "2026-07-23",
     "knowledge": 400,
-    "events_total": 662
+    "events_total": 664
    }
   ]
  }
