@@ -1,6 +1,87 @@
 {
  "nodes": [
   {
+   "id": "K-db8ce7e921ab",
+   "name": "1조원 물량 걸린 3차 ESS 입찰 9월 시작...삼성SDI·SK온·LG",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-a6043f830a85",
+   "name": "유진테크놀로지, LFP·ESS전환 수혜 본격화 상반기 매출 54% 성장…",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-8c63aeb22744",
+   "name": "AIDC 전력망 부담 줄인다… LG엔솔, 고출력ESS 개발 - 머니투데이",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-825a7d21fb9b",
+   "name": "전북특별법에 도민 제안 담는다…전북도, 우수 특례 10건 선정",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-6ca98df8132c",
+   "name": "“도민의 아이디어가 전북특별법으로” 전북자치도, 상반기 우수제안 특례 1",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-41f99d054684",
+   "name": "그리드 포밍 BESS가 유럽 전력시장 판도를 바꾼다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-3b6fc46d548a",
+   "name": "전고체만 보지 않는다…LG엔솔, ESS·중저가·차세대 '멀티트랙' 승부",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-04d81132d6a4",
+   "name": "전기차 폐배터리로 ESS, 태양광 폐패널로 온실/동서발전, 기술개발 통해",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-01799d84ad65",
+   "name": "ESS 판 커지자 K배터리, 국내 실증부터 북미 양산까지 속도",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fdc4af108d21",
    "name": "경기도, 대형 물류창고 화재안전 긴급점검 및 대응체계 강화",
    "group": "KNOWLEDGE",
@@ -3518,90 +3599,54 @@
    "date": "2026-07-18",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-80fb45cea88d",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-80a1dc273e2d",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-7ff3ae2c3ae7",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-7f299b17d9b7",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7e723e95f6f1",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7d49d6ca99b4",
-   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7c43ebe21029",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-7bee9a208db7",
-   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7a8e6f71bf38",
-   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-db8ce7e921ab",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a6043f830a85",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-8c63aeb22744",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-825a7d21fb9b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-6ca98df8132c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-41f99d054684",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3b6fc46d548a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-04d81132d6a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-01799d84ad65",
+   "type": "knowledge"
+  },
   {
    "source": "FIR-001",
    "target": "K-fdc4af108d21",
@@ -6316,55 +6361,10 @@
    "source": "TIN-001",
    "target": "K-812fb629c918",
    "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-80fb45cea88d",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-80a1dc273e2d",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-7ff3ae2c3ae7",
-   "type": "knowledge"
-  },
-  {
-   "source": "DEV-001",
-   "target": "K-7f299b17d9b7",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-7e723e95f6f1",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-7d49d6ca99b4",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-7c43ebe21029",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-7bee9a208db7",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-7a8e6f71bf38",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-07-24",
+  "updated": "2026-07-25",
   "history": [
    {
     "date": "2026-07-20",
@@ -6390,6 +6390,11 @@
     "date": "2026-07-24",
     "knowledge": 400,
     "events_total": 686
+   },
+   {
+    "date": "2026-07-25",
+    "knowledge": 400,
+    "events_total": 695
    }
   ]
  }

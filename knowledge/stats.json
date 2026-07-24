@@ -1,8 +1,8 @@
 {
- "updated": "2026-07-24",
+ "updated": "2026-07-25",
  "totals": {
-  "all": 686,
-  "briefing": 75,
+  "all": 695,
+  "briefing": 84,
   "skill": 499,
   "discussion": 112,
   "activity": 0
@@ -26,23 +26,23 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 36,
+   "count": 40,
    "byType": {
     "skill": 7,
     "discussion": 9,
-    "briefing": 20
+    "briefing": 24
    },
-   "lastGrown": "2026-07-24",
+   "lastGrown": "2026-07-25",
    "level": 3
   },
   "bess-business-dev": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 6,
     "discussion": 10,
-    "briefing": 4
+    "briefing": 5
    },
-   "lastGrown": "2026-07-24",
+   "lastGrown": "2026-07-25",
    "level": 2
   },
   "bess-cable-engineer": {
@@ -401,13 +401,13 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 6,
     "discussion": 9,
-    "briefing": 4
+    "briefing": 5
    },
-   "lastGrown": "2026-07-23",
+   "lastGrown": "2026-07-25",
    "level": 2
   },
   "bess-permit-asia": {
@@ -438,13 +438,13 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 6,
     "discussion": 13,
-    "briefing": 1
+    "briefing": 2
    },
-   "lastGrown": "2026-07-24",
+   "lastGrown": "2026-07-25",
    "level": 2
   },
   "bess-power-system-analyst": {
@@ -556,13 +556,13 @@
    "level": 2
   },
   "bess-standards-analyst": {
-   "count": 23,
+   "count": 25,
    "byType": {
     "skill": 6,
     "discussion": 1,
-    "briefing": 16
+    "briefing": 18
    },
-   "lastGrown": "2026-07-24",
+   "lastGrown": "2026-07-25",
    "level": 2
   },
   "bess-standards-australia": {
@@ -756,10 +756,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-04-26",
-   "added": 0
-  },
   {
    "date": "2026-04-27",
    "added": 0
@@ -1115,16 +1111,20 @@
   {
    "date": "2026-07-24",
    "added": 21
+  },
+  {
+   "date": "2026-07-25",
+   "added": 9
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-07-24",
+   "latestSource": "2026-07-25",
    "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-07-23",
+   "previousUpdated": "2026-07-24",
    "gapDays": 1,
    "overdue": false
   }
