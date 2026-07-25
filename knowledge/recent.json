@@ -1,6 +1,217 @@
 {
- "updated": "2026-07-25",
+ "updated": "2026-07-26",
  "events": [
+  {
+   "id": "fbe9bfd91891",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "[이충재의 에너지 프리즘] Google의 2026 환경 보고서와 AI 산업을 둘러싼 미국과 중국의 경쟁",
+   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE81UFRpRE84Ym5OdlRkY0EyaTdBVG5zYndGM0JjN2FWMV9lQnc0aUNxSUthODZ0ZXVjbEdXbkNoei1yQm9DR1RBblRmNXE?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "c1677ec93a07",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "HD현대에너지솔루션, 태양광 모듈 제조사 재무건전성 '세계 1위'",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5PUnVCN3FYZDl1UzhjYk43dEVzZWdIS190MFJZTFRwSUtoeGRvNnNDVzhtOUMzSWJaTkVBQklNaHhDZFU1TTRpS25hRXliODZRRC1RajJqMkRyTDZCN2ZhQ3p6N0JZZE5tZUswaw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "a123f87658d1",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "中 견제에 한국 배터리 3사 부상…美 ESS 시장 공급망 판 뒤집히나",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UMnRuZ2Zad1BNa0FmbTZPLUFwd29OUHFPVVJxT29ObXkzU3dKbE1XeV9OYVh0VERsbENXTHdNcTdqd2pFM1NUeVJYdVVfM3FkSGNvb0ZaT05iUmFXenR6MUNMYw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "9bdb37d5bd4b",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "비리튬 ESS, 한국도 준비할 때다",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1VN29ITFNxaHJrV3Axa3ZYYlVtU0pycUdkRVFrSDNnRmM3aGpfaXo0LWpfbXRsRmZRMExFOTdvZkNjMTQ?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "77e2a827766f",
+   "date": "2026-07-26",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-env-engineer",
+    "bess-esg-finance",
+    "bess-procurement-data",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-tax-korea",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 쟁점 후속**: **[요확인] 모회사의 탄소 중립 목표 구체 실행 계획 세부 분석 및 로드맵 제시",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "642d6725f311",
+   "date": "2026-07-26",
+   "type": "discussion",
+   "agents": [
+    "bess-commissioning-coordinator",
+    "bess-data-analyst",
+    "bess-financial-analysis",
+    "bess-fire-engineer",
+    "bess-fit-procedure",
+    "bess-om-expert",
+    "bess-precom-report",
+    "bess-qaqc-engineer",
+    "bess-scheduler",
+    "bess-standards-japan"
+   ],
+   "title": "팀 토론 — 시운전 효율성 제고를 위한 표준 절차 및 체크리스트 개발 (COM-100)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "60d0b7bb2041",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "LG화학, LFP 양극재 준비 '착착'…시장 돌풍 전망 : 네이버 블로그",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdGk3T3lwcFNwTGk4Y0VScllxZGhUb0Fra2I5Zmw1YzZyUnN0amNLSTJHOEpDOHJSaWcxUHRuTktsOTk3ZWlrZGNZWm1vSGxIYTBZTWs4TW1ZUnNEYkF0VXNiLUJLNTJMaDltbUFFaVBGVzNhalhqSlVGYkFaVnJ3LTdnVkVzSG1uWS12ZjlYVQ?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "4e7aaa1de3fe",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "1조원 물량 걸린 3차 ESS 입찰 9월 시작...삼성SDI·SK온·LG엔솔 물밑 경쟁 고조",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBub29nV3dGeV9jRlpyRlBCWlh3ak5XcUZ1d0w0MXpHcUtWa2xVazNCR3dnM01pT2hOSC0zaVJUaGZJUWpyUHVOZ2tTZ0c0bDNiNVdEWWl2bWVkSG5UdGN2Um1BOHUyU0ZPbmRtMk5WWlBOZGvSAXNBVV95cUxQbm9vZ1d3RnlfY0ZackZQQlpYd2pOV3FGdXdMNDF6R3FLVmtsVWszQkd3ZzNNaU9oTkgtM2lSVGhmSVFqclB1TmdrU2dHNGwzYjVXRFlpdm1lZEhuVHRjdlJtQTh1MlNGT25kbTJOVlpQTmRr?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "4c7f375bcd86",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "CATL, 친환경 에너지 붐 타고 2분기 역대 최대 실적… ESS 사업이 견인",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeFVrbGtBSENPaUNteHZWSGRiSmROMHM5V3JpZDM1aHZJSzRrSi1KRUlRbzhJeGpOWmxkdHVoZGkzU1MzUHFUUGJUOWJPQ2J0SnJ6ZFFkT2JmVlhQRUFOQ29CYWUxQjlJVVhEamZ3bzJBbzR4SUQtWjlOTDNfWnNkeFZaLWFqbHhm?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "42e6ddbbd79d",
+   "date": "2026-07-26",
+   "type": "discussion",
+   "agents": [
+    "bess-customs-tariff",
+    "bess-emc-analyst",
+    "bess-fire-engineer",
+    "bess-precom-report",
+    "bess-security-expert",
+    "bess-site-manager",
+    "bess-substation-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 변압기 및 전력품질 전문가 팀 구성 → SLD 및 Arc Flash 안전성 검증",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "407b993d62e7",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "전북도 \"도민 제안 아이디어 10건 '전북특별법' 특례 조문 반영\"",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44N3p6XzVBWnU1ZjhCc0xSbE5wWjZ5dUVpMXZmaUp1aE5IMV9HMVl4MHl5WGQ0dXFEc1dBWEdTaUQwV29idEM1MkNOYzRZSWtudi04X3JrdDR6dw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "33e0192ad99d",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "중부발전, ‘해남화원 BESS’ 발전사업허가 최종 승인 획득",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85X0hsQzZlUk1jVVhzc3VtQmlqSXpFOXRyTHhFbU1saGFubC04d3pPTmoyLTh4MExuNjBuSU9Hcnh3a2VsdmtuLU9waE5uNWxYV1EycUxreGg3V2ktRFp6dE9GbUpfN3pESlE?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "2b8fdf9b2218",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "[동서발전 소식] “1조 4000억 원 폐배터리 재활용 시장 선점” 外",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRWDZ6SmdKZWxNSXlHMHRGbTYxNnVRMjRxUnJDeEFhSVRJLXpFSDdWamRlTzlRREhNWllCYlFLZXh4cklwWkU5UlZuVVgyQ0ZVYnVVYzF6YURHa1FCcXBJV0NnN3hGU3k3MUtKOU5EQmRTQTkxdDR6VHFxTm4?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "10f43bba57cd",
+   "date": "2026-07-26",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-cybersecurity-expert",
+    "bess-emc-analyst",
+    "bess-esg-finance",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 쟁점 후속**: **[요확인] 모회사의 탄소 중립 목표 구체 실행 계획 세부 분석 및 로드맵 제시 - 재무 영향 평가 포함",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "06449abac33e",
+   "date": "2026-07-26",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "비리튬 ESS, 일본이 앞당긴다",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5Na2VGQ08yRnFQOE4yeDlaLXV5ZWRHLWxFR2hQQnZNZDFIR2pFWDZ1RUlHODBMYS0ydzZ1eVZOZEY0UU42SmlLQ2Z3?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "e3618c58d4c9",
+   "date": "2026-07-25",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-esg-finance",
+    "bess-knowledge-manager",
+    "bess-legal-expert",
+    "bess-standards-eu",
+    "bess-standards-korea",
+    "bess-tax-incentive",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — TCFD·ISSB 영역 벤치마킹 — bess-esg-finance 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "db8ce7e921ab",
    "date": "2026-07-25",
@@ -3252,182 +3463,6 @@
     "bess-transfer-pricing"
    ],
    "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f1380ff178a6",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-hse-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f0a186d1f080",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-presentation-designer"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f05cdeaa999c",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-epc-bom"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "effce0d2a0cd",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ef2bb2554a89",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-substation-engineer"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ee3906285eaf",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ed73ddd64a33",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-network-engineer"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ed1c1d65ce48",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-contract-specialist"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "eca135e85eca",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-standards-eu"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ec1086b0c4fa",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-precom-report"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ec0f1791023d",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-tax-japan"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "eb5311e94046",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-commissioning-coordinator"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "eb369d524608",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-fit-procedure"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ea7dfd86f101",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-standards-usa"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "e92b2b1fb32c",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-site-manager"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "e91a23d6ade7",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-qaqc-engineer"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
    "link": "",
    "source": "00_Skill_MD"
   }
