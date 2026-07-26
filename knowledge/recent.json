@@ -1,6 +1,146 @@
 {
- "updated": "2026-07-26",
+ "updated": "2026-07-27",
  "events": [
+  {
+   "id": "f8a5a9ac551e",
+   "date": "2026-07-27",
+   "type": "discussion",
+   "agents": [
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-it-infra",
+    "bess-site-manager",
+    "bess-standards-korea",
+    "bess-structural-analyst",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 상세 토양 조사 수행**: 각 지역별로 Wenner 4전극 방법과 Faller 방법 등을 활용한 토양 저항률 측정 및 분석 실시.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "f3aea870e809",
+   "date": "2026-07-27",
+   "type": "discussion",
+   "agents": [
+    "bess-cbop-engineer",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-hse-manager",
+    "bess-site-manager",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 부지조성 설계 최적화 및 안전 거리 검토 완료",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "f2e151aa70f4",
+   "date": "2026-07-27",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "K-배터리 소재 동맹 출범…나트륨이온 생태계 구축",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4weXJabXFuQXg5cndNYXJlWEh0RHNSUktVYmNhMG12NlJqbWJDYjMtQS1kUDVMVEhkN3AwbjB1NFpmQWtrUVVtb240aGxWWTMtdGlVaTN0UnlOVnlERGN2Q0E5SEc4Zw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "ec47d6fdcbb5",
+   "date": "2026-07-27",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "배터리 이제 날개?…LG엔솔 이어 삼성SDI도 흑자전환할까",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tUDJVdXdFaXV6MTF1U2RsQ2pvQk1IZXg5WmdsQzJFbk9jcTBFZkViYjZxdTlUUjF4bkRjallLY19IbnhuVjhZVjgxaE5mMnNtNExuMkh3?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "a0e120cce619",
+   "date": "2026-07-27",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "ESS에 EV배터리 가세…배터리 3사 실적 반등",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5pWXk3V0E0UzFHbG9kZnh5dGlsWmdxdU1FeXpyWU1Rb01wcHVITTBVbWh4ak42eG5NcElzb0lVUnJMbWY0V3htXzdfQW1vMG9VUjg4?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "8e2f0e3f8b46",
+   "date": "2026-07-27",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "CATL, 2분기 실적 기대치 하회…ESS 사업 88% 고성장",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1fby1aQjVRTUxpeFQtYWVEbmRRVHluN2tqWGp2bXZuaHhwZWhBSERRUEtOWk1ud1NBbjdWNmUyVE1vRDBMTnJTNjBpdEZiRUE0VlhnMnZB?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "7bb80bda20b9",
+   "date": "2026-07-27",
+   "type": "discussion",
+   "agents": [
+    "bess-cable-engineer",
+    "bess-logistics-expert",
+    "bess-procurement-expert",
+    "bess-scheduler",
+    "bess-site-manager",
+    "bess-standards-analyst",
+    "bess-standards-eu",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 케이블 포설 최적화 프로세스 구축",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "76a7d5a4f6fd",
+   "date": "2026-07-27",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "전북도, 도민 제안 10건 '특별법 특례' 추진…빈집 활용·ESS 등 반영 검토",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwNjlsZ2pkeHNsR2xmeDVPb1J0SG16V0g2ZnlUdmRPdmMzdUphUHY0c21seGE0RmptRjVYMTZXWXo1LUdIWnhxbFc1aVJodVlzMDhQUWpzS0FTSFhUOGxKZWdXaHgxUQ?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "4e76d8f3cee4",
+   "date": "2026-07-27",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "비리튬 ESS, 일본이 앞당긴다",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1vd09fZWRQNXlvY3VBVW9NV3JIM2RGdC03ZmNwMjVTZkhUQXByMmN6ODRFSGRnSHUyQWljbkdwVEdpODg?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "4a658dd16e57",
+   "date": "2026-07-27",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "[발전사 이모저모] 남부, 국내 1호 장주기 BESS 준공 |",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBwV09YRENWOUplREFCVXNkMGdUdm1oOXpBamZieVF3eUtXLXlKZkJCaXkyWklPV3dROXFrS3RVdGV1YmlHWE9Pb3JWRlZuQi1VYVVxQmtBLTd1TnoyMk9ua1otcnhYTUhWcFNSWWQzMFdoampr?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "1d7d384d8e4c",
+   "date": "2026-07-27",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "비리튬 ESS, 한국도 준비할 때다",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9tRXd0WloxQjE0VVNMUE5FdDYtdWRyWXA3Q3lrSXFTWkVpR1JsX3UyYUYySW1PbzdyRVV0Mmc1SWk0eDRyWTk4elVNMzFsZmRvOWc?oc=5",
+   "source": "구글뉴스"
+  },
   {
    "id": "fbe9bfd91891",
    "date": "2026-07-26",
@@ -11,6 +151,40 @@
    "title": "[이충재의 에너지 프리즘] Google의 2026 환경 보고서와 AI 산업을 둘러싼 미국과 중국의 경쟁",
    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE81UFRpRE84Ym5OdlRkY0EyaTdBVG5zYndGM0JjN2FWMV9lQnc0aUNxSUthODZ0ZXVjbEdXbkNoei1yQm9DR1RBblRmNXE?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "d2809fdab00e",
+   "date": "2026-07-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-contract-specialist",
+    "bess-cost-analyst",
+    "bess-logistics-expert",
+    "bess-output-generator",
+    "bess-procurement-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 벤더 평가 가중치 재조정 및 현지화 요건 분석",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "c329b29431dc",
+   "date": "2026-07-26",
+   "type": "discussion",
+   "agents": [
+    "bess-cable-engineer",
+    "bess-cybersecurity-expert",
+    "bess-data-analyst",
+    "bess-env-engineer",
+    "bess-power-system-analyst",
+    "bess-project-manager",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 쟁점 후속**: **[요확인] 현지 환경 조건 및 성능 변화 분석**: 한국 및 글로벌 주요 시장의 극단적 기후 데이터 기반 성능 변화 연구 진행",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "c1677ec93a07",
@@ -80,6 +254,24 @@
     "bess-standards-japan"
    ],
    "title": "팀 토론 — 시운전 효율성 제고를 위한 표준 절차 및 체크리스트 개발 (COM-100)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "61afc9ca394a",
+   "date": "2026-07-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-ebop-engineer",
+    "bess-internal-auditor",
+    "bess-it-infra",
+    "bess-output-generator",
+    "bess-procurement-expert",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — 견적서 및 물량산출 최적화 프로세스 구축",
    "link": "",
    "source": "bess-team"
   },
@@ -166,6 +358,26 @@
    "title": "[동서발전 소식] “1조 4000억 원 폐배터리 재활용 시장 선점” 外",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRWDZ6SmdKZWxNSXlHMHRGbTYxNnVRMjRxUnJDeEFhSVRJLXpFSDdWamRlTzlRREhNWllCYlFLZXh4cklwWkU5UlZuVVgyQ0ZVYnVVYzF6YURHa1FCcXBJV0NnN3hGU3k3MUtKOU5EQmRTQTkxdDR6VHFxTm4?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "15a1750497ba",
+   "date": "2026-07-26",
+   "type": "discussion",
+   "agents": [
+    "bess-env-engineer",
+    "bess-esg-finance",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-procurement-expert",
+    "bess-site-manager",
+    "bess-standards-australia",
+    "bess-standards-korea",
+    "bess-standards-uk",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 글로벌 신흥시장(인도, UAE/사우디)의 BESS 설비 접지망 설계 및 안전성 검증 전문가 팀 구성",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "10f43bba57cd",
@@ -3298,171 +3510,6 @@
     "bess-battery-expert"
    ],
    "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ff8341a7d3d1",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-internal-auditor"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "feeda77ff4b8",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-om-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — 82개 전체 표준형 준수 (위반 72→0)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "fe8d89ed58c0",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-permit-asia"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "fe5d9fcb6a0f",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-emerging-markets"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "fda0e0ef73a0",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-it-infra"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "fc606086b1c5",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-procurement-expert"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "fc28d8224758",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-substation-engineer"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "fb9db1dfc584",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-env-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/82 완성 (위반 183→72, 월 한도 중단)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "fb672219c345",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f91d8f6d027d",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-customs-tariff"
-   ],
-   "title": "스킬 갱신 — fix(bess): 결정 (2) 실행 — customs-tariff 죽은 인용 교체 (BAD_REF 1→0)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f80dfd43b96a",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-cybersecurity-expert"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f6fe8edc4190",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-ip-patent-expert"
-   ],
-   "title": "스킬 갱신 — chore(workspace): checkpoint pending standardization changes [WIP]",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f460b6838aab",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-insurance-expert"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f4302bcde341",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-hse-manager"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f359a56f6ae4",
-   "date": "2026-07-18",
-   "type": "skill",
-   "agents": [
-    "bess-transfer-pricing"
-   ],
-   "title": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 — XML 래퍼 폐지·동의어 정규화·순서 재배열 (638→183)",
    "link": "",
    "source": "00_Skill_MD"
   }
