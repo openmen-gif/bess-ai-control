@@ -1,6 +1,245 @@
 {
- "updated": "2026-07-28",
+ "updated": "2026-07-29",
  "events": [
+  {
+   "id": "f36791e50d1d",
+   "date": "2026-07-29",
+   "type": "discussion",
+   "agents": [
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-project-manager",
+    "bess-risk-manager",
+    "bess-standards-korea",
+    "bess-tax-accountant",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 쟁점 후속",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "e669accddae5",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "철강B2B",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA2dEVSSF9hUjByd1NtTUNEUkZvMWx0cFdNRkhFZm1pX0hXUzNUaWEzOGp3aUw5QnMwXzhUYUVsWEFXMURNTUJBTkxPQUZsN0dSeWk4?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "c5b3d918d6a9",
+   "date": "2026-07-29",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-ebop-engineer",
+    "bess-fire-engineer",
+    "bess-output-generator",
+    "bess-procurement-expert",
+    "bess-standards-eu",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 견적서·BOM 영역 초안 작성 — bess-epc-bom 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "b6afc31b221d",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "테슬라도 경고한 'ESS 가격 경쟁' … Ｋ배터리사 수익성 '경고등'",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZVdKV19BQm9HZkFwQnFOY28xa0tZOVBBNm5GRzd3YXJJcmJob053cGxQMnN5dmFvSTFyOXpkRlFfVUpYU0RwSGxzcXhJQ0dTRWZxcTZMc0dRZ1VaR0VNQ2FEaTdWbTZrN01XUTE3RGs0YXRtYzVlaXNqT19aN3pBcdIBgAFBVV95cUxNZVdKV19BQm9HZkFwQnFOY28xa0tZOVBBNm5GRzd3YXJJcmJob053cGxQMnN5dmFvSTFyOXpkRlFfVUpYU0RwSGxzcXhJQ0dTRWZxcTZMc0dRZ1VaR0VNQ2FEaTdWbTZrN01XUTE3RGs0YXRtYzVlaXNqT19aN3pBcQ?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "aceb45222468",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "HD현대일렉트릭, 2Q 잠정 매출 1조1418억...전년동기比 26%↑",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE10ZEtlMURBOFp1Q0NGdkpJQ0UwcVpPanhHcC1qanMyT3p4dF9laUZVWllNdEpVekx2bGV5R19YQkRGTm5LNTRKUXRicnBYd1ctSmRzYw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "abbaa20c2f76",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "[유미's 픽] 한컴라이프케어, 쿠팡 물류센터 화재 계기로 재평가 받나",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1pbzdaS2dLVG5JbWpsdVltcFQ4eTdsRmdHQWV6bEJrd2F6VVdORFZXLXlMOEV0cGgxSXpmNjlhdWJnMmFqNzRRdGdKaXdaZGc1eVlBMw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "6f53d86757a7",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "CATL 뒤집은 비야디·선그로우… 중동 태양광·ESS 프로젝트 수주전 판도 흔든다",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbkYtWXBtcVBVN1BseENWSWxwYTlTZXlZb0YxSDU0OHBWbTdGQTdobjVRVGQ4Snl3WGI0Wmc0Ql9ibWI0a280dmRVbFdqWWMwQlByWmZwNjMwS1A1R2NtdmRMRUZfX1R3Z21JcllUcnRXWk1ROFh1RHV2bHpKb04wem01OVU5Rl9k?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "6628941d5120",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "입찰도 못한 호남 계통안정 설비…투자·조달 체계는 '반쪽'",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1qcGFKM1Nsb202Y1pZM1JsVUxLR1VTM3VIRFdkSlhSTWpidGFPWGJndkFaOU5VdkF0UVhOU2VDc3JhY2lhSXVSQk5OSWt2SWlZM1Zz?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "6497b9d09413",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "ESS 부품 올해만 7000억원치 수주 … 공장 풀가동",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5hMXJlSnp5cGxubXNUUjE4X0hXYWt6YjZRNW9JZUdValRlMHhKSmk0TWpRMy11QS1HZ0xhZmk4amZ4QWJWTHUtaTN6VDlYQlk?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "62d2d1e0de62",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "K배터리 새 먹거리 ESS '후공정 병목'…4분기엔 풀린다",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uWUNjcXFMdThHYUhZNzJSRUxhODM2ak5uNnZabXVMc2NVaU9CdkFaTzFhRHRRenhnVFI1UVR0b2dLWTRYVmh5LWFCSEJYT1hkWUpRd3l0ZnZLZw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "573a31632b3d",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "한국미래기술교육연구원, 배터리 열폭주 대응 전략 세미나 개최",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBkZE1abmpFN0VDQWlmVGhWcGJLRU41VG9waGJ3MGxnWFRCZ0NzM0gzWWRRWFd0bXJwaWFsMl9XMDc3My1nMkhEcmJyUmZBNElhcXB2cHIyYTBtVlhVNVoxRGpUcmJBdm94dHdLNWNNRS1Qd1FHQ2JXTzlpNU8?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "50d2512a10c5",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "바카라 페어 : 학습 전략과 자원 - 최신 트렌드",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdlJyYzZuR3dneEE0c2J1VG1pbDNiS1RiV0o5SnA2eWNmZXlIVnNfM2liaWVSUmdNRkY1cWNMRmk2TktNRE84c2VzQjF2WU1YYVFYU2hqY1Q2NGpHZTlXYUZZXzVDejFRZTBZYjZiRWxUeWdmQl8zVVRLQlFkWFlwLXgwMmNRbXR5TlNWVlZVdGM0OGRBMkpTem55b3o?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "305961b41b23",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "[미르의 글로벌 레이더]사우디, 3GW 초대형 ESS 프로젝트 입찰 본격화…K배터리·전력 인프라 수주 기대감",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lcnhoOWdLallDTzlpa0ZmTVRLMTNwaHdsenBTdVpjV3RxQzFLT0lFbEx4ZFJBODI5bkJlT25FdXFhZzI2RjRSb0Z4Vk5GRTFMRFlIaGpKcWHSAVhBVV95cUxOZXJ4aDlnS2pZQ085aWtGZk1USzEzcGh3bHpwU3VaY1d0cUMxS09JRWxMeGRSQTgyOW5CZU9uRXVxYWcyNkY0Um9GeFZORkUxTERZSGhqSnFh?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "2f24f947dcee",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "미국 BESS 시장 본격화…한국 기업, 공급망·EPC 역량 강화로 승부해야",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFB3NHlxWWozcVZaQk9Cang1RG50ZXZOMldRZkxzc2FLbTNPQWMycnJBbzR4Uy1WQmdaakFtankxaloyTG8?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "11f83fb51170",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "美 혼다 전기차 각형 프로젝트, LG엔솔이 품었다",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE83UVBpX0dsaFZZaVlRelhZWjY2U3o4R0dpbmdERzVjOTJUbE9CcVJkVWE0ejgzaHFiNWJMUGRzMG1FM2I3ell3aW5pcmwwMGEzZjB0NUJrdFp6NVZTTkItS2NkZ0s5Zw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "11368a3e4e13",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "포스코퓨처엠, AX 로드맵 수립...제조 혁신 추진",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oTE1rTXJkcEwxcWJCQnFEeVJyS05FRlRsUE9qREJMVE1mTDdVUm5na21UZHYxYW0yU1UtR2Y4VDMzLVpkTlFoNm9WRVdTSldsNUluLUI5Zl9fblo2N0tPRGVUQ25wUGpwX0xua9IBcEFVX3lxTE02UzZoaVVrT2pLdlhsV2MybUZudmlFY28tR0VTMWRDZmQ0UzA5UFZqSmFnWGJKZktRc0R2THdWUXdaMEVYdlViQ1ZvZjdkYzhDaTVmUlNSRDdYOUtGTHJBRGZWSGNHak9nemp6RFNoc2g?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "067283e8e779",
+   "date": "2026-07-29",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "“AI 전력난, ‘에너지 저장’으로 뚫는다”",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wUkR2S2dmZFJORjh1SjZlbWRVVXpJZ3poSFp3X0pDalZJd2o0NlVWaTVsUkJ0N0tQcHh2dUhkeWJqcWFVYXJmWFlTaDlMa3JqQmlKcXl2c2VvLWVlclY2VDdZR0VuSTdfSUhwc0d6X2J4Ymc?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "01833797000c",
+   "date": "2026-07-29",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-emc-analyst",
+    "bess-env-engineer",
+    "bess-hydrogen-specialist",
+    "bess-power-market-expert",
+    "bess-procurement-data",
+    "bess-sales-manager",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 수소·연료전지·BESS 영역 현황 진단 — bess-hydrogen-specialist 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "ffe55dd7e65e",
+   "date": "2026-07-28",
+   "type": "discussion",
+   "agents": [
+    "bess-circuit-breaker-expert",
+    "bess-commissioning-coordinator",
+    "bess-data-analyst",
+    "bess-emc-analyst",
+    "bess-fit-procedure",
+    "bess-mlops-engineer",
+    "bess-output-generator",
+    "bess-system-engineer",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — 시운전 최적화 프로토콜 개발 및 시범 운영 계획 수립 (COM-100)",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fcf07ff0af62",
    "date": "2026-07-28",
@@ -57,6 +296,26 @@
    "source": "구글뉴스"
   },
   {
+   "id": "ca5c8b33185a",
+   "date": "2026-07-28",
+   "type": "discussion",
+   "agents": [
+    "bess-circuit-breaker-expert",
+    "bess-data-analyst",
+    "bess-internal-auditor",
+    "bess-knowledge-manager",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-structural-analyst",
+    "bess-tax-accountant",
+    "bess-tax-korea",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 자산 인벤토리 작성 도구 및 방법론 심층 분석",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "aea7094ecccf",
    "date": "2026-07-28",
    "type": "briefing",
@@ -77,6 +336,24 @@
    "title": "포항시, 하반기 전기차 366대 추가 보급 추진",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9uX2ZDVEVUSXV2enBWdjhIN2p4TjA1dncyQXRvVkprclhrcUZMVVkwc1Nva2UtS1FuTGZfOEx3MTY5S2VwZ3A2S3hrak9lMUtzNzdpbWZIeGtBZENWTTU3QWRTVS1PalV6?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "a2ee8841acee",
+   "date": "2026-07-28",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-hse-manager",
+    "bess-internal-auditor",
+    "bess-it-infra",
+    "bess-security-expert",
+    "bess-standards-korea",
+    "bess-tax-japan",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 데이터 보안 체계 강화 프로젝트 시작",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "941f3adc8d98",
@@ -108,6 +385,23 @@
    "title": "동서발전, 폐배터리·폐패널 자원화… 신재생에너지 순환 생태계 구축",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Ocy1XT2g4dGM4T1Rqb0l6SUUyaTVPaW9TSnhOcVljRTIzREdzLWpOQUgzZU10bkdNSGlKQU5fMWY5bS1tR3RXZUhIT1FsVFd2d0xzZlFpVG9sS3FjalZrVWhTMk5MRTI2ZnJCQnJmT1I?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "6e530475564b",
+   "date": "2026-07-28",
+   "type": "discussion",
+   "agents": [
+    "bess-cfd-analyst",
+    "bess-emc-analyst",
+    "bess-network-engineer",
+    "bess-procurement-data",
+    "bess-standards-eu",
+    "bess-structural-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — CFD·유동해석 영역 현황 진단 — bess-cfd-analyst 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "6b21dac5f25a",
@@ -154,6 +448,23 @@
    "source": "구글뉴스"
   },
   {
+   "id": "34e370e5a07b",
+   "date": "2026-07-28",
+   "type": "discussion",
+   "agents": [
+    "bess-esg-finance",
+    "bess-facility-manager",
+    "bess-om-expert",
+    "bess-qaqc-engineer",
+    "bess-security-expert",
+    "bess-standards-romania",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 설비 점검 및 가용률 최적화 계획 수립 - 예비품 관리 강화 포함",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "2a8ae9d382c9",
    "date": "2026-07-28",
    "type": "discussion",
@@ -168,6 +479,23 @@
     "bess-training-expert"
    ],
    "title": "팀 토론 — AI 기반 최적화 알고리즘 개발로 시뮬레이션 정확도 향상",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "1b13528a16b2",
+   "date": "2026-07-28",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-env-engineer",
+    "bess-financial-analysis",
+    "bess-it-infra",
+    "bess-marketer",
+    "bess-power-market-expert",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — NPV·IRR 영역 리스크 평가 — bess-financial-analysis 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
   },
@@ -3318,270 +3646,6 @@
    "type": "skill",
    "agents": [
     "bess-procurement-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "92413f24c159",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-risk-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "8f743895edf7",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-hr-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "8dc6d97aee33",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-cfd-analyst"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "8916026f60bf",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-system-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "8616826e60dd",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-legal-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "84cede4cc247",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-scheduler"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7deed653bcdc",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-network-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7b91e61ca320",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-hydrogen-specialist"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "795381028838",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-facility-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7894da580690",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-env-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "760273ae4d99",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-power-market-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "75b6f2486f80",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-agent-framework"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "741f4812e282",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-standards-korea"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "73a7807993f4",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-project-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6ccac3beeccc",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-labor-safety"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6c62861b4efb",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-tax-accountant"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6c5efc28f6f0",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-fit-procedure"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "699614ab8c27",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-standards-romania"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "61c1ce60e099",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "5ff4b7e792a2",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-cost-analyst"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "5fafa4d1e2ee",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-ebop-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "5caa706cb1e4",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-ip-patent-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "57c7e9987427",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-translator"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "534eb3216b57",
-   "date": "2026-07-19",
-   "type": "skill",
-   "agents": [
-    "bess-internal-auditor"
    ],
    "title": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경계·산출물 흡수 + HTML·인덱스 재생성",
    "link": "",
