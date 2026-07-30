@@ -1,6 +1,114 @@
 {
  "nodes": [
   {
+   "id": "K-fef0840d6ff0",
+   "name": "ESS 업고 LG엔솔 흑자전환..\"AIDC 포함 3조 이상 수주 확보\" ",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-fdb4183e452d",
+   "name": "EV 주춤해도 ESS는 달렸다…LG엔솔, 2분기 흑자 전환",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-fbfc82f7c447",
+   "name": "LG엔솔, 적자 고리 끊었다…“3분기 매출 20% 성장”",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-f9fa6158b040",
+   "name": "팀 토론 — 데이터 드리프트 감지 시스템 구축 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-f0714f911e65",
+   "name": "‘캐즘’ 빠졌던 K배터리 3사, ESS 등 AI 수요 업고 흑자 전환",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-f03bb3901945",
+   "name": "전기차 부진 메운 ESS…배터리업계 실적 회복 본격화",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d463041eda45",
+   "name": "미국 BESS 시장 본격화…한국 기업, 공급망·EPC 역량 강화로 승부해",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d41b1aa06ff8",
+   "name": "삼성SDI “美 LFP 배터리 10월 양산…2028년 ESS 수주, 캐파",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-d263341d69c0",
+   "name": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d147ab2fa90c",
+   "name": "K배터리 3사, 2년 만에 ‘동반 흑자’… ESS 사업 확대로 실적 개선",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-c9cbb550b093",
+   "name": "미국 BESS 설치 2026년 15GW 목표…텍사스 대형 프로젝트 가동·",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c0bdd1643089",
+   "name": "배터리 3사, 모두 흑자전환 성공했다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b7824e6034ba",
    "name": "팀 토론 — FIDIC·Silver 영역 1차 분석 — bess-cont",
    "group": "KNOWLEDGE",
@@ -8,6 +116,123 @@
    "date": "2026-07-31",
    "val": 3,
    "color": "#F59E0B"
+  },
+  {
+   "id": "K-a5b15308b0c1",
+   "name": "국내 배터리 제조사, ESS로 매출 늘리고 수익성도 개선",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-a1960e07e023",
+   "name": "LS일렉, AI 데이터센터 전력 안정화 방법 찾았다…블랙아웃 방지기술 확",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-5209cd4d9820",
+   "name": "'109시간 만에 진화' 잇따른 대형 화재에 주목받는 소방안전 수혜주는",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-51ea70e0513d",
+   "name": "[컨콜 줍줍] LG엔솔 “4분기부터 보조금 제외하고도 수익성 확보”",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-3d902e3c6707",
+   "name": "LS일렉트릭, AI 데이터센터 전력망 해법 제시…'그리드포밍' 주목",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-38db2c7f9adf",
+   "name": "LG엔솔, 2분기 북미 보조금 힘입어 흑자 전환…ESS 매출 4.6배 '",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-38990f95371e",
+   "name": "“3차 ESS 중앙계약시장 다음달 중순 공고…최저가 방식 그대로 적용”",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-35ddd8d7ac06",
+   "name": "한국미래기술교육연, '배터리 열폭주 화재안전 기준 대응 전략' 세미나 개",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-1fbb1a016cfc",
+   "name": "리튬 독주 시대 균열…나트륨 이온 배터리, AI 데이터센터 전력난 대안으",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-1ecf63f37d6c",
+   "name": "팀 토론 — AI 기반 최적화 알고리즘 개발로 SOC/SOH 예측 정확도",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-17da290653bd",
+   "name": "“160Wh 이하면 안전?”…비행기 이어 철도까지 번진 리튬배터리 규제",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0a3141c6613f",
+   "name": "팀 토론 — FIDIC·Silver 영역 1차 분석 — bess-cont",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-077b8466d0bb",
+   "name": "충북 오창서 ESS용 LFP 배터리 내년 생산",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
   },
   {
    "id": "K-f88e07c32638",
@@ -3374,234 +3599,139 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0fe8dfc611aa",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-0efb071d8f23",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-0d4c603efc4f",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-07f241975341",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-0531fa8616fc",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-04c0d6ad7efb",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-ff9c310df21a",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ff8341a7d3d1",
-   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-feeda77ff4b8",
-   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-fe8d89ed58c0",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-fe5d9fcb6a0f",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-fda0e0ef73a0",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-fc606086b1c5",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-fc28d8224758",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fb9db1dfc584",
-   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fb672219c345",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-f91d8f6d027d",
-   "name": "스킬 갱신 — fix(bess): 결정 (2) 실행 — customs-t",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-f80dfd43b96a",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-f6fe8edc4190",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-f460b6838aab",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-f4302bcde341",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-f359a56f6ae4",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-f1380ff178a6",
-   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-f0a186d1f080",
-   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-f05cdeaa999c",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-fef0840d6ff0",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-fdb4183e452d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-fbfc82f7c447",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f9fa6158b040",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-f9fa6158b040",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-f9fa6158b040",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-f9fa6158b040",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-f9fa6158b040",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-f9fa6158b040",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-f9fa6158b040",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-f9fa6158b040",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f0714f911e65",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f03bb3901945",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d463041eda45",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-d41b1aa06ff8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d263341d69c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-d263341d69c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-d263341d69c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-d263341d69c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d263341d69c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-d263341d69c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-d263341d69c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d263341d69c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d147ab2fa90c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-c9cbb550b093",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c0bdd1643089",
+   "type": "knowledge"
+  },
   {
    "source": "CON-001",
    "target": "K-b7824e6034ba",
@@ -3610,6 +3740,141 @@
   {
    "source": "STD-002",
    "target": "K-b7824e6034ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a5b15308b0c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-a1960e07e023",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-5209cd4d9820",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-51ea70e0513d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-3d902e3c6707",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-38db2c7f9adf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-38990f95371e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-35ddd8d7ac06",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-1fbb1a016cfc",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-1ecf63f37d6c",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-1ecf63f37d6c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-1ecf63f37d6c",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-1ecf63f37d6c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-1ecf63f37d6c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-1ecf63f37d6c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-1ecf63f37d6c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-1ecf63f37d6c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-17da290653bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0a3141c6613f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-0a3141c6613f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-0a3141c6613f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-0a3141c6613f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-0a3141c6613f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-0a3141c6613f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-0a3141c6613f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-0a3141c6613f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-077b8466d0bb",
    "type": "knowledge"
   },
   {
@@ -7531,131 +7796,6 @@
    "source": "STD-005",
    "target": "K-0feda0863221",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-001",
-   "target": "K-0fe8dfc611aa",
-   "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-0efb071d8f23",
-   "type": "knowledge"
-  },
-  {
-   "source": "PDI-001",
-   "target": "K-0d4c603efc4f",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-07f241975341",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-0531fa8616fc",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-04c0d6ad7efb",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ff9c310df21a",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-ff8341a7d3d1",
-   "type": "knowledge"
-  },
-  {
-   "source": "OAM-001",
-   "target": "K-feeda77ff4b8",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-001",
-   "target": "K-fe8d89ed58c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMT-001",
-   "target": "K-fe5d9fcb6a0f",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-fda0e0ef73a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-fc606086b1c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-fc28d8224758",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-fb9db1dfc584",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-fb672219c345",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-f91d8f6d027d",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-f80dfd43b96a",
-   "type": "knowledge"
-  },
-  {
-   "source": "IPP-001",
-   "target": "K-f6fe8edc4190",
-   "type": "knowledge"
-  },
-  {
-   "source": "INS-001",
-   "target": "K-f460b6838aab",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-f4302bcde341",
-   "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-f359a56f6ae4",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-f1380ff178a6",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRS-001",
-   "target": "K-f0a186d1f080",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCM-001",
-   "target": "K-f05cdeaa999c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -7719,7 +7859,7 @@
    {
     "date": "2026-07-31",
     "knowledge": 400,
-    "events_total": 808
+    "events_total": 833
    }
   ]
  }
