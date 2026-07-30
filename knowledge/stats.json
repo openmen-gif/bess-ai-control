@@ -1,10 +1,10 @@
 {
- "updated": "2026-07-30",
+ "updated": "2026-07-31",
  "totals": {
-  "all": 802,
+  "all": 808,
   "briefing": 156,
   "skill": 499,
-  "discussion": 147,
+  "discussion": 153,
   "activity": 0
  },
  "perAgent": {
@@ -26,24 +26,24 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 68,
+   "count": 73,
    "byType": {
     "skill": 7,
-    "discussion": 12,
+    "discussion": 17,
     "briefing": 49
    },
    "lastGrown": "2026-07-30",
-   "level": 3
+   "level": 4
   },
   "bess-business-dev": {
-   "count": 28,
+   "count": 31,
    "byType": {
     "skill": 6,
-    "discussion": 11,
+    "discussion": 14,
     "briefing": 11
    },
-   "lastGrown": "2026-07-29",
-   "level": 2
+   "lastGrown": "2026-07-30",
+   "level": 3
   },
   "bess-cable-engineer": {
    "count": 22,
@@ -56,12 +56,12 @@
    "level": 2
   },
   "bess-cbop-engineer": {
-   "count": 15,
+   "count": 17,
    "byType": {
     "skill": 6,
-    "discussion": 9
+    "discussion": 11
    },
-   "lastGrown": "2026-07-27",
+   "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-cfd-analyst": {
@@ -92,21 +92,21 @@
    "level": 2
   },
   "bess-contract-specialist": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 6,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-07-27",
+   "lastGrown": "2026-07-31",
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 7,
-    "discussion": 37
+    "discussion": 38
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-07-30",
    "level": 3
   },
   "bess-customs-tariff": {
@@ -155,12 +155,12 @@
    "level": 3
   },
   "bess-emerging-markets": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 6,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-07-27",
+   "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-env-engineer": {
@@ -209,10 +209,10 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 6,
-    "discussion": 23,
+    "discussion": 24,
     "briefing": 15
    },
    "lastGrown": "2026-07-30",
@@ -228,10 +228,10 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 22,
+   "count": 27,
    "byType": {
     "skill": 6,
-    "discussion": 10,
+    "discussion": 15,
     "briefing": 6
    },
    "lastGrown": "2026-07-30",
@@ -355,10 +355,10 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 52,
+   "count": 57,
    "byType": {
     "skill": 6,
-    "discussion": 12,
+    "discussion": 17,
     "briefing": 34
    },
    "lastGrown": "2026-07-30",
@@ -383,12 +383,12 @@
    "level": 2
   },
   "bess-om-expert": {
-   "count": 12,
+   "count": 13,
    "byType": {
     "skill": 6,
-    "discussion": 6
+    "discussion": 7
    },
-   "lastGrown": "2026-07-28",
+   "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-output-generator": {
@@ -401,22 +401,22 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 6,
-    "discussion": 10,
+    "discussion": 11,
     "briefing": 7
    },
    "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-permit-asia": {
-   "count": 10,
+   "count": 13,
    "byType": {
     "skill": 6,
-    "discussion": 4
+    "discussion": 7
    },
-   "lastGrown": "2026-07-27",
+   "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-permit-english": {
@@ -438,13 +438,13 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 24,
+   "count": 26,
    "byType": {
     "skill": 6,
-    "discussion": 16,
+    "discussion": 18,
     "briefing": 2
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-power-system-analyst": {
@@ -457,12 +457,12 @@
    "level": 2
   },
   "bess-precom-report": {
-   "count": 12,
+   "count": 14,
    "byType": {
     "skill": 6,
-    "discussion": 6
+    "discussion": 8
    },
-   "lastGrown": "2026-07-26",
+   "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-presentation-designer": {
@@ -502,12 +502,12 @@
    "level": 2
   },
   "bess-qaqc-engineer": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 6,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-07-28",
+   "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-risk-manager": {
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 6,
-    "discussion": 2,
+    "discussion": 3,
     "briefing": 29
    },
    "lastGrown": "2026-07-30",
@@ -593,12 +593,12 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 59,
+   "count": 63,
    "byType": {
     "skill": 6,
-    "discussion": 53
+    "discussion": 57
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-07-31",
    "level": 3
   },
   "bess-standards-poland": {
@@ -647,12 +647,12 @@
    "level": 3
   },
   "bess-substation-engineer": {
-   "count": 13,
+   "count": 14,
    "byType": {
     "skill": 6,
-    "discussion": 7
+    "discussion": 8
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-07-30",
    "level": 2
   },
   "bess-system-engineer": {
@@ -683,13 +683,13 @@
    "level": 1
   },
   "bess-tax-incentive": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 6,
-    "discussion": 25,
+    "discussion": 26,
     "briefing": 2
    },
-   "lastGrown": "2026-07-28",
+   "lastGrown": "2026-07-30",
    "level": 3
   },
   "bess-tax-japan": {
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 60,
+   "count": 61,
    "byType": {
     "skill": 6,
-    "discussion": 54
+    "discussion": 55
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-07-30",
    "level": 3
   },
   "bess-tool-developer": {
@@ -757,10 +757,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-05-02",
-   "added": 0
-  },
   {
    "date": "2026-05-03",
    "added": 0
@@ -1115,17 +1111,21 @@
   },
   {
    "date": "2026-07-30",
-   "added": 21
+   "added": 26
+  },
+  {
+   "date": "2026-07-31",
+   "added": 1
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-07-30",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-07-29",
+   "previousUpdated": "2026-07-30",
    "gapDays": 1,
    "overdue": false
   }

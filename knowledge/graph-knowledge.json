@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-b7824e6034ba",
+   "name": "팀 토론 — FIDIC·Silver 영역 1차 분석 — bess-cont",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-f88e07c32638",
    "name": "리튬 독주 시대 균열…나트륨 이온 배터리, AI 데이터센터 전력난 대안으",
    "group": "KNOWLEDGE",
@@ -8,6 +17,24 @@
    "date": "2026-07-30",
    "val": 3,
    "color": "#10B981"
+  },
+  {
+   "id": "K-ecc06bf92882",
+   "name": "팀 토론 — 전력거래소 입찰 동향 심층 분석 및 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ec82e5ca3a18",
+   "name": "팀 토론 — BESS EPC 프로젝트 견적 및 세부 BOM 최적화 검토 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-30",
+   "val": 3,
+   "color": "#8B5CF6"
   },
   {
    "id": "K-ea73314ba640",
@@ -100,6 +127,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7199ee113ad8",
+   "name": "팀 토론 — 공급망 안정성 검증 워크숍 개최 — 장기 공급업체 파트너십 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6fe3906f23fa",
    "name": "미국 BESS 시장 본격화…한국 기업, 공급망·EPC 역량 강화로 승부해",
    "group": "KNOWLEDGE",
@@ -140,6 +176,15 @@
    "name": "LG에너지솔루션, ESS 대형 화재시험 통과…'JF2 DC LINK' 안",
    "group": "KNOWLEDGE",
    "type": "briefing",
+   "date": "2026-07-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-51ecce99aa2a",
+   "name": "팀 토론 — BESS EPC 프로젝트 견적서 및 BOM 최적화 방안 마련",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
    "date": "2026-07-30",
    "val": 3,
    "color": "#8B5CF6"
@@ -188,6 +233,15 @@
    "date": "2026-07-30",
    "val": 3,
    "color": "#10B981"
+  },
+  {
+   "id": "K-06d623a20a7d",
+   "name": "팀 토론 — 부지조성·기초설계 영역 초안 작성 — bess-cbop-en",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-30",
+   "val": 3,
+   "color": "#8B5CF6"
   },
   {
    "id": "K-f36791e50d1d",
@@ -3545,66 +3599,102 @@
    "date": "2026-07-18",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-effce0d2a0cd",
-   "name": "스킬 갱신 — feat(bess): BESS 집필 착수분 보존 — 56/",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ef2bb2554a89",
-   "name": "스킬 갱신 — refactor(bess): BESS 82개 기계 변환 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ee3906285eaf",
-   "name": "스킬 갱신 — feat(bess): BESS 미완 25개 집필 완료 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-ed73ddd64a33",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-ed1c1d65ce48",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-eca135e85eca",
-   "name": "스킬 갱신 — chore(workspace): checkpoint pen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
   {
+   "source": "CON-001",
+   "target": "K-b7824e6034ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b7824e6034ba",
+   "type": "knowledge"
+  },
+  {
    "source": "MAR-001",
    "target": "K-f88e07c32638",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ecc06bf92882",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-ecc06bf92882",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-ecc06bf92882",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-ecc06bf92882",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-ecc06bf92882",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-ecc06bf92882",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-ecc06bf92882",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ecc06bf92882",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ec82e5ca3a18",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-ec82e5ca3a18",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-ec82e5ca3a18",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-ec82e5ca3a18",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-ec82e5ca3a18",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-ec82e5ca3a18",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-ec82e5ca3a18",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ec82e5ca3a18",
    "type": "knowledge"
   },
   {
@@ -3658,6 +3748,46 @@
    "type": "knowledge"
   },
   {
+   "source": "BAT-001",
+   "target": "K-7199ee113ad8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-7199ee113ad8",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-7199ee113ad8",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-7199ee113ad8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-7199ee113ad8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7199ee113ad8",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-7199ee113ad8",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-7199ee113ad8",
+   "type": "knowledge"
+  },
+  {
    "source": "MAR-001",
    "target": "K-6fe3906f23fa",
    "type": "knowledge"
@@ -3683,6 +3813,46 @@
    "type": "knowledge"
   },
   {
+   "source": "BAT-001",
+   "target": "K-51ecce99aa2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-51ecce99aa2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-51ecce99aa2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-51ecce99aa2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-51ecce99aa2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-51ecce99aa2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-51ecce99aa2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-51ecce99aa2a",
+   "type": "knowledge"
+  },
+  {
    "source": "MAR-001",
    "target": "K-4b7e0bc2bb7c",
    "type": "knowledge"
@@ -3705,6 +3875,46 @@
   {
    "source": "STD-001",
    "target": "K-1c1c787f706c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-06d623a20a7d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-06d623a20a7d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-06d623a20a7d",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-06d623a20a7d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-06d623a20a7d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-06d623a20a7d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-06d623a20a7d",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-06d623a20a7d",
    "type": "knowledge"
   },
   {
@@ -7446,40 +7656,10 @@
    "source": "SCM-001",
    "target": "K-f05cdeaa999c",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-effce0d2a0cd",
-   "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-ef2bb2554a89",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-ee3906285eaf",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-ed73ddd64a33",
-   "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-ed1c1d65ce48",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-004",
-   "target": "K-eca135e85eca",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-07-30",
+  "updated": "2026-07-31",
   "history": [
    {
     "date": "2026-07-20",
@@ -7535,6 +7715,11 @@
     "date": "2026-07-30",
     "knowledge": 400,
     "events_total": 802
+   },
+   {
+    "date": "2026-07-31",
+    "knowledge": 400,
+    "events_total": 808
    }
   ]
  }
