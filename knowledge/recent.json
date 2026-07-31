@@ -1,6 +1,24 @@
 {
- "updated": "2026-07-31",
+ "updated": "2026-08-01",
  "events": [
+  {
+   "id": "3d488a8fb9ed",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-commissioning-coordinator",
+    "bess-financial-analysis",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-market-expert",
+    "bess-standards-korea",
+    "bess-standards-uk"
+   ],
+   "title": "팀 토론 — 시운전·코디네이터 영역 1차 분석 — bess-commissioning-coordinator 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fef0840d6ff0",
    "date": "2026-07-31",
@@ -3703,17 +3721,6 @@
    "type": "skill",
    "agents": [
     "bess-logistics-expert"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "41b96389e8ba",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-sales-manager"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",

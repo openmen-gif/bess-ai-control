@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-3d488a8fb9ed",
+   "name": "팀 토론 — 시운전·코디네이터 영역 1차 분석 — bess-commiss",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-fef0840d6ff0",
    "name": "ESS 업고 LG엔솔 흑자전환..\"AIDC 포함 3조 이상 수주 확보\" ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-6c62861b4efb",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-fef0840d6ff0",
@@ -8031,15 +8071,10 @@
    "source": "OSH-001",
    "target": "K-6ccac3beeccc",
    "type": "knowledge"
-  },
-  {
-   "source": "TAX-001",
-   "target": "K-6c62861b4efb",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-07-31",
+  "updated": "2026-08-01",
   "history": [
    {
     "date": "2026-07-20",
@@ -8100,6 +8135,11 @@
     "date": "2026-07-31",
     "knowledge": 400,
     "events_total": 861
+   },
+   {
+    "date": "2026-08-01",
+    "knowledge": 400,
+    "events_total": 862
    }
   ]
  }
