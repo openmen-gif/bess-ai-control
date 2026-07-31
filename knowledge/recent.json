@@ -359,6 +359,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "67e307c51a04",
+   "date": "2026-07-31",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-ebop-engineer",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-permit-asia",
+    "bess-security-expert",
+    "bess-standards-usa"
+   ],
+   "title": "팀 토론 — 보안 거버넌스 프레임워크 내 펌웨어 무결성 모니터링 시스템 구축",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "557b78e20b66",
    "date": "2026-07-31",
    "type": "briefing",
@@ -3696,17 +3714,6 @@
    "type": "skill",
    "agents": [
     "bess-sales-manager"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "3f2881bddc2c",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-permit-english"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",
