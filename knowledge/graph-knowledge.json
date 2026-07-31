@@ -100,6 +100,24 @@
    "color": "#10B981"
   },
   {
+   "id": "K-c524ba4a7a10",
+   "name": "팀 토론 — TCFD·ISSB 영역 초안 작성 — bess-esg-fin",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-c1944b7159cd",
+   "name": "팀 토론 — GIS/AIS 통합 차단기 성능 최적화 설계 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c0bdd1643089",
    "name": "배터리 3사, 모두 흑자전환 성공했다",
    "group": "KNOWLEDGE",
@@ -152,6 +170,24 @@
    "date": "2026-07-31",
    "val": 3,
    "color": "#10B981"
+  },
+  {
+   "id": "K-4961e0ba4480",
+   "name": "팀 토론 — CFD·유동해석 영역 현황 진단 — bess-cfd-anal",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-43296c75f16e",
+   "name": "팀 토론 — 시운전 프로세스 최적화 매뉴얼 개발 및 팀 교육 실시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
   },
   {
    "id": "K-3d902e3c6707",
@@ -215,6 +251,15 @@
    "date": "2026-07-31",
    "val": 3,
    "color": "#10B981"
+  },
+  {
+   "id": "K-11308b9ab3b4",
+   "name": "팀 토론 — 시운전 프로토콜 자동화 시스템 구축 계획 수립 (COM-10",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#8B5CF6"
   },
   {
    "id": "K-0a3141c6613f",
@@ -3554,51 +3599,6 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1c0d70565974",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1b4b551f4cbf",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-17a1112ecfd3",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-101f4a7b3deb",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-0feda0863221",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3729,6 +3729,76 @@
   },
   {
    "source": "BAT-001",
+   "target": "K-c524ba4a7a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-c524ba4a7a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-c524ba4a7a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c524ba4a7a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-c524ba4a7a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-c524ba4a7a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c524ba4a7a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-c524ba4a7a10",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-c1944b7159cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-c1944b7159cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-c1944b7159cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-c1944b7159cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-c1944b7159cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c1944b7159cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
    "target": "K-c0bdd1643089",
    "type": "knowledge"
   },
@@ -3760,6 +3830,66 @@
   {
    "source": "STD-001",
    "target": "K-51ea70e0513d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-4961e0ba4480",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-4961e0ba4480",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-4961e0ba4480",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-4961e0ba4480",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-4961e0ba4480",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-4961e0ba4480",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-43296c75f16e",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-43296c75f16e",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-43296c75f16e",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-43296c75f16e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-43296c75f16e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-43296c75f16e",
    "type": "knowledge"
   },
   {
@@ -3830,6 +3960,36 @@
   {
    "source": "MAR-001",
    "target": "K-17da290653bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-11308b9ab3b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-11308b9ab3b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-11308b9ab3b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-11308b9ab3b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-11308b9ab3b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-11308b9ab3b4",
    "type": "knowledge"
   },
   {
@@ -7771,31 +7931,6 @@
    "source": "DEV-001",
    "target": "K-1f3e2f172b01",
    "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-1c0d70565974",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-1b4b551f4cbf",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-004",
-   "target": "K-17a1112ecfd3",
-   "type": "knowledge"
-  },
-  {
-   "source": "OAM-001",
-   "target": "K-101f4a7b3deb",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-0feda0863221",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -7859,7 +7994,7 @@
    {
     "date": "2026-07-31",
     "knowledge": 400,
-    "events_total": 833
+    "events_total": 838
    }
   ]
  }
