@@ -1,6 +1,42 @@
 {
  "nodes": [
   {
+   "id": "K-f592ae0f40af",
+   "name": "2026년 ESS 배터리 가격 상승의 파장: 구조적 공급 제약과 수요 급",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d0cb7b1ba36c",
+   "name": "ESS 업고 적자 탈출...K-배터리 3사 '부활의 날개' 펴나",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b680f80c2d44",
+   "name": "나란히 반등한 K-배터리 3사…하반기 성장 기반 다진다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-b62dae3fc998",
+   "name": "K배터리 3사 2분기 나란히 흑자...\"서로 다른 반등, 같은 ESS 승",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-64e97a459a84",
    "name": "팀 토론 — 변압기 효율성 최적화 가이드라인 개발 및 적용 검토",
    "group": "KNOWLEDGE",
@@ -10,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-5486013e70aa",
+   "name": "팀 토론 — 변압기 효율성 데이터 수집 및 분석 강화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-3d488a8fb9ed",
    "name": "팀 토론 — 시운전·코디네이터 영역 1차 분석 — bess-commiss",
    "group": "KNOWLEDGE",
@@ -17,6 +62,42 @@
    "date": "2026-08-01",
    "val": 3,
    "color": "#F59E0B"
+  },
+  {
+   "id": "K-3bff54e6508f",
+   "name": "지에프아이 투자분석 2026. 07. 31",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-2a3920dd454e",
+   "name": "​7분기 잔혹사 끝낸 K배터리··· EV 늪 뚫고 일제히 흑자",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-1b5f484ce401",
+   "name": "K배터리, ESS 사업 본궤도…‘AI데이터센터’로 가속 목표",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-0c0bbd4188f0",
+   "name": "[신지아의 산업예보] 7분기만에 흑자전환 한 K-배터리 3사…반등 이유는",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#10B981"
   },
   {
    "id": "K-fef0840d6ff0",
@@ -3518,90 +3599,29 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-84cede4cc247",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-7deed653bcdc",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-7b91e61ca320",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-795381028838",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-7894da580690",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-760273ae4d99",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-75b6f2486f80",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-741f4812e282",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-73a7807993f4",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "STD-001",
+   "target": "K-f592ae0f40af",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d0cb7b1ba36c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b680f80c2d44",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b62dae3fc998",
+   "type": "knowledge"
+  },
   {
    "source": "AIM-001",
    "target": "K-64e97a459a84",
@@ -3643,6 +3663,26 @@
    "type": "knowledge"
   },
   {
+   "source": "COM-003",
+   "target": "K-5486013e70aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-5486013e70aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-5486013e70aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5486013e70aa",
+   "type": "knowledge"
+  },
+  {
    "source": "BIZ-001",
    "target": "K-3d488a8fb9ed",
    "type": "knowledge"
@@ -3680,6 +3720,26 @@
   {
    "source": "STD-006",
    "target": "K-3d488a8fb9ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-3bff54e6508f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-2a3920dd454e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1b5f484ce401",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-0c0bbd4188f0",
    "type": "knowledge"
   },
   {
@@ -8061,51 +8121,6 @@
    "source": "LEG-001",
    "target": "K-8616826e60dd",
    "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-84cede4cc247",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-7deed653bcdc",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYD-001",
-   "target": "K-7b91e61ca320",
-   "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-795381028838",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-7894da580690",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-760273ae4d99",
-   "type": "knowledge"
-  },
-  {
-   "source": "CTO-100",
-   "target": "K-75b6f2486f80",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-741f4812e282",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-73a7807993f4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8174,7 +8189,7 @@
    {
     "date": "2026-08-01",
     "knowledge": 400,
-    "events_total": 863
+    "events_total": 872
    }
   ]
  }
