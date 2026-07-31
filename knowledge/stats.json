@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-01",
  "totals": {
-  "all": 872,
+  "all": 873,
   "briefing": 205,
   "skill": 499,
-  "discussion": 168,
+  "discussion": 169,
   "activity": 0
  },
  "perAgent": {
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 7,
-    "discussion": 40
+    "discussion": 41
    },
    "lastGrown": "2026-08-01",
    "level": 3
@@ -200,10 +200,10 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 6,
-    "discussion": 35
+    "discussion": 36
    },
    "lastGrown": "2026-08-01",
    "level": 3
@@ -228,10 +228,10 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 6,
-    "discussion": 24,
+    "discussion": 25,
     "briefing": 7
    },
    "lastGrown": "2026-08-01",
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 6,
-    "discussion": 18,
+    "discussion": 19,
     "briefing": 12
    },
    "lastGrown": "2026-08-01",
@@ -448,10 +448,10 @@
    "level": 2
   },
   "bess-power-system-analyst": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 6,
-    "discussion": 27
+    "discussion": 28
    },
    "lastGrown": "2026-08-01",
    "level": 3
@@ -511,12 +511,12 @@
    "level": 2
   },
   "bess-risk-manager": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 6,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-sales-manager": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 6,
-    "discussion": 67
+    "discussion": 68
    },
    "lastGrown": "2026-08-01",
    "level": 4
@@ -693,12 +693,12 @@
    "level": 3
   },
   "bess-tax-japan": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 7,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-07-28",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-tax-korea": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-01",
-   "added": 11
+   "added": 12
   }
  ],
  "freshness": {

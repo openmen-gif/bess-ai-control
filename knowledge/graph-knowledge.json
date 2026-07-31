@@ -91,6 +91,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-1b5289db5dbc",
+   "name": "팀 토론 — 변압기 효율성 데이터 수집 및 분석 강화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-0c0bbd4188f0",
    "name": "[신지아의 산업예보] 7분기만에 흑자전환 한 K-배터리 3사…반등 이유는",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8616826e60dd",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3735,6 +3735,46 @@
   {
    "source": "BAT-001",
    "target": "K-1b5f484ce401",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1b5289db5dbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-1b5289db5dbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-1b5289db5dbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-1b5289db5dbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-1b5289db5dbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-1b5289db5dbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-1b5289db5dbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-1b5289db5dbc",
    "type": "knowledge"
   },
   {
@@ -8116,11 +8156,6 @@
    "source": "SYS-001",
    "target": "K-8916026f60bf",
    "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-8616826e60dd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8189,7 +8224,7 @@
    {
     "date": "2026-08-01",
     "knowledge": 400,
-    "events_total": 872
+    "events_total": 873
    }
   ]
  }

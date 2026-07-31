@@ -129,6 +129,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "1b5289db5dbc",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-risk-manager",
+    "bess-standards-korea",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 변압기 효율성 데이터 수집 및 분석 강화",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "0c0bbd4188f0",
    "date": "2026-08-01",
    "type": "briefing",
@@ -3714,17 +3732,6 @@
    "type": "skill",
    "agents": [
     "bess-pcs-expert"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "5a6fb99c7885",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-grid-interconnection"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",
