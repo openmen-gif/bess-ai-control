@@ -2,6 +2,24 @@
  "updated": "2026-08-01",
  "events": [
   {
+   "id": "64e97a459a84",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 변압기 효율성 최적화 가이드라인 개발 및 적용 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3d488a8fb9ed",
    "date": "2026-08-01",
    "type": "discussion",
@@ -3710,17 +3728,6 @@
    "type": "skill",
    "agents": [
     "bess-tax-incentive"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "43555749a9b5",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-logistics-expert"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",

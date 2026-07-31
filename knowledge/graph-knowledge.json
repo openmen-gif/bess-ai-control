@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-64e97a459a84",
+   "name": "팀 토론 — 변압기 효율성 최적화 가이드라인 개발 및 적용 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3d488a8fb9ed",
    "name": "팀 토론 — 시운전·코디네이터 영역 1차 분석 — bess-commiss",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-6ccac3beeccc",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "AIM-001",
+   "target": "K-64e97a459a84",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-64e97a459a84",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-64e97a459a84",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-64e97a459a84",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-64e97a459a84",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-64e97a459a84",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-64e97a459a84",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-64e97a459a84",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-3d488a8fb9ed",
@@ -8066,11 +8106,6 @@
    "source": "PMG-001",
    "target": "K-73a7807993f4",
    "type": "knowledge"
-  },
-  {
-   "source": "OSH-001",
-   "target": "K-6ccac3beeccc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8139,7 +8174,7 @@
    {
     "date": "2026-08-01",
     "knowledge": 400,
-    "events_total": 862
+    "events_total": 863
    }
   ]
  }
