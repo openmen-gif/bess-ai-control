@@ -451,6 +451,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0ce5a52c3b14",
+   "name": "팀 토론 — 보안 거버넌스 프레임워크 구축 및 OT/SCADA 보안 강화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-07-31",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-0a3141c6613f",
    "name": "팀 토론 — FIDIC·Silver 영역 1차 분석 — bess-cont",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-699614ab8c27",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -4130,6 +4130,46 @@
   {
    "source": "TPS-001",
    "target": "K-11308b9ab3b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0ce5a52c3b14",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0ce5a52c3b14",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-0ce5a52c3b14",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0ce5a52c3b14",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-0ce5a52c3b14",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-0ce5a52c3b14",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-0ce5a52c3b14",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-0ce5a52c3b14",
    "type": "knowledge"
   },
   {
@@ -7961,11 +8001,6 @@
    "source": "COM-002",
    "target": "K-6c5efc28f6f0",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-009",
-   "target": "K-699614ab8c27",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8029,7 +8064,7 @@
    {
     "date": "2026-07-31",
     "knowledge": 400,
-    "events_total": 859
+    "events_total": 860
    }
   ]
  }

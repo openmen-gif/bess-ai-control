@@ -608,6 +608,24 @@
    "source": "bess-team"
   },
   {
+   "id": "0ce5a52c3b14",
+   "date": "2026-07-31",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-hse-manager",
+    "bess-pcs-expert",
+    "bess-security-expert",
+    "bess-standards-poland",
+    "bess-standards-usa"
+   ],
+   "title": "팀 토론 — 보안 거버넌스 프레임워크 구축 및 OT/SCADA 보안 강화 지침 개발",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "0a3141c6613f",
    "date": "2026-07-31",
    "type": "discussion",
@@ -3689,17 +3707,6 @@
    "type": "skill",
    "agents": [
     "bess-permit-english"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "3e05efbeb85d",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-legal-expert"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",
