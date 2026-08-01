@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-9498983924e9",
+   "name": "팀 토론 — 인도 CEA와의 협력 모델 개발 및 신흥시장 그리드코 투자 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-64e97a459a84",
    "name": "팀 토론 — 변압기 효율성 최적화 가이드라인 개발 및 적용 검토",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-a606457bd9c7",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3730,6 +3730,46 @@
   {
    "source": "BAT-001",
    "target": "K-b62dae3fc998",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9498983924e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-9498983924e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-9498983924e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-9498983924e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-9498983924e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-9498983924e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-9498983924e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-9498983924e9",
    "type": "knowledge"
   },
   {
@@ -8331,11 +8371,6 @@
    "source": "EMT-001",
    "target": "K-aae90ad64aca",
    "type": "knowledge"
-  },
-  {
-   "source": "SCM-001",
-   "target": "K-a606457bd9c7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8404,7 +8439,7 @@
    {
     "date": "2026-08-01",
     "knowledge": 400,
-    "events_total": 879
+    "events_total": 880
    }
   ]
  }

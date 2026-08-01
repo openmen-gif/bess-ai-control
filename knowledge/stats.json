@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-01",
  "totals": {
-  "all": 879,
+  "all": 880,
   "briefing": 205,
   "skill": 499,
-  "discussion": 175,
+  "discussion": 176,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 95,
+   "count": 96,
    "byType": {
     "skill": 7,
-    "discussion": 24,
+    "discussion": 25,
     "briefing": 64
    },
    "lastGrown": "2026-08-01",
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 7,
-    "discussion": 42
+    "discussion": 43
    },
    "lastGrown": "2026-08-01",
    "level": 3
@@ -337,12 +337,12 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 6,
-    "discussion": 32
+    "discussion": 33
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 3
   },
   "bess-logistics-expert": {
@@ -355,10 +355,10 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 72,
+   "count": 73,
    "byType": {
     "skill": 6,
-    "discussion": 19,
+    "discussion": 20,
     "briefing": 47
    },
    "lastGrown": "2026-08-01",
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 6,
-    "discussion": 40
+    "discussion": 41
    },
    "lastGrown": "2026-08-01",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 78,
+   "count": 79,
    "byType": {
     "skill": 6,
-    "discussion": 72
+    "discussion": 73
    },
    "lastGrown": "2026-08-01",
    "level": 4
@@ -683,10 +683,10 @@
    "level": 1
   },
   "bess-tax-incentive": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 6,
-    "discussion": 28,
+    "discussion": 29,
     "briefing": 2
    },
    "lastGrown": "2026-08-01",
@@ -729,12 +729,12 @@
    "level": 2
   },
   "bess-transfer-pricing": {
-   "count": 11,
+   "count": 12,
    "byType": {
     "skill": 6,
-    "discussion": 5
+    "discussion": 6
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-transformer-expert": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-01",
-   "added": 18
+   "added": 19
   }
  ],
  "freshness": {
