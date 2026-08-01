@@ -78,6 +78,24 @@
    "source": "bess-team"
   },
   {
+   "id": "4653dce93084",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-procurement-data",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — 관세 및 HS 코드 기반 BESS 수입 비용 분석 보고서 작성",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3d488a8fb9ed",
    "date": "2026-08-01",
    "type": "discussion",
@@ -3725,17 +3743,6 @@
    "title": "경북대·KAIST·ETRI 공동연구 '불 안 붙는 전해질'…배터리 화재 해법 나왔다",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GR3ZKLWZnRkxENGlVanp1MTJTQkVSUTZfQmpCUnZsalE3a0UzSFdnTGR1WGdIWGZUcG1jUXFKZF90akxCd2ZnNXRnTFo1OTIwYjNydWhJUEZRX3ZwTkNXdUNtWlNPc0d4N1hv?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "5a9debbd7540",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
