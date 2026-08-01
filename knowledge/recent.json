@@ -1,6 +1,24 @@
 {
- "updated": "2026-08-01",
+ "updated": "2026-08-02",
  "events": [
+  {
+   "id": "ce4af6925b1a",
+   "date": "2026-08-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-cybersecurity-expert",
+    "bess-ebop-engineer",
+    "bess-pcs-expert",
+    "bess-procurement-expert",
+    "bess-system-engineer",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 변압기·수배전반 영역 초안 작성 — bess-ebop-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fc0fb9627ca8",
    "date": "2026-08-01",
@@ -3764,17 +3782,6 @@
    "type": "skill",
    "agents": [
     "bess-power-system-analyst"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6e334ac7d940",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-labor-safety"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",
