@@ -19,6 +19,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-e91a6df171e2",
+   "name": "팀 토론 — 케이블 최적화 프로젝트 시작: IEC 60502 및 IEC ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d0cb7b1ba36c",
    "name": "ESS 업고 적자 탈출...K-배터리 3사 '부활의 날개' 펴나",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-8f743895edf7",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3645,6 +3645,46 @@
   {
    "source": "STD-001",
    "target": "K-f592ae0f40af",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-e91a6df171e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-e91a6df171e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e91a6df171e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-e91a6df171e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-e91a6df171e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e91a6df171e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e91a6df171e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-e91a6df171e2",
    "type": "knowledge"
   },
   {
@@ -8221,11 +8261,6 @@
    "source": "RSK-001",
    "target": "K-92413f24c159",
    "type": "knowledge"
-  },
-  {
-   "source": "HRM-001",
-   "target": "K-8f743895edf7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8294,7 +8329,7 @@
    {
     "date": "2026-08-01",
     "knowledge": 400,
-    "events_total": 875
+    "events_total": 876
    }
   ]
  }

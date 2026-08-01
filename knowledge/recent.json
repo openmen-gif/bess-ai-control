@@ -31,6 +31,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "e91a6df171e2",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-cable-engineer",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 케이블 최적화 프로젝트 시작: IEC 60502 및 IEC 60287 기준에 따른 주요 프로젝트 케이블 사이징 및 전압강하 분석 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "d0cb7b1ba36c",
    "date": "2026-08-01",
    "type": "briefing",
@@ -3735,17 +3753,6 @@
    "type": "skill",
    "agents": [
     "bess-om-expert"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6a631559c8f4",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-ebop-engineer"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",

@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-01",
  "totals": {
-  "all": 875,
+  "all": 876,
   "briefing": 205,
   "skill": 499,
-  "discussion": 171,
+  "discussion": 172,
   "activity": 0
  },
  "perAgent": {
@@ -17,10 +17,10 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 6,
-    "discussion": 12
+    "discussion": 13
    },
    "lastGrown": "2026-08-01",
    "level": 2
@@ -46,13 +46,13 @@
    "level": 3
   },
   "bess-cable-engineer": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 6,
-    "discussion": 15,
+    "discussion": 16,
     "briefing": 1
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-cbop-engineer": {
@@ -209,13 +209,13 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 6,
-    "discussion": 27,
+    "discussion": 28,
     "briefing": 19
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 3
   },
   "bess-fit-procedure": {
@@ -228,10 +228,10 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 6,
-    "discussion": 26,
+    "discussion": 27,
     "briefing": 7
    },
    "lastGrown": "2026-08-01",
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 6,
-    "discussion": 20,
+    "discussion": 21,
     "briefing": 12
    },
    "lastGrown": "2026-08-01",
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 6,
-    "discussion": 28
+    "discussion": 29
    },
    "lastGrown": "2026-08-01",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 76,
+   "count": 77,
    "byType": {
     "skill": 6,
-    "discussion": 70
+    "discussion": 71
    },
    "lastGrown": "2026-08-01",
    "level": 4
@@ -738,12 +738,12 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 6,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-07-28",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-translator": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-01",
-   "added": 14
+   "added": 15
   }
  ],
  "freshness": {
