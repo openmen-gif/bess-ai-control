@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-cb08aa8998e3",
+   "name": "팀 토론 — GIS 기반 차단기 시스템 최적화 설계 및 글로벌 표준 준수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c14e9cdcc4d1",
    "name": "흑자 넘어 전략 경쟁···배터리3사 하반기 승부수 갈린다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-cb504663397d",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3690,6 +3690,46 @@
   {
    "source": "DEV-001",
    "target": "K-ce4af6925b1a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-cb08aa8998e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-cb08aa8998e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-cb08aa8998e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-cb08aa8998e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-cb08aa8998e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-cb08aa8998e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-cb08aa8998e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-cb08aa8998e3",
    "type": "knowledge"
   },
   {
@@ -8481,11 +8521,6 @@
    "source": "CUS-001",
    "target": "K-d821be6ff4c1",
    "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-cb504663397d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8559,7 +8594,7 @@
    {
     "date": "2026-08-02",
     "knowledge": 400,
-    "events_total": 893
+    "events_total": 894
    }
   ]
  }
