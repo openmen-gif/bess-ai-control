@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fad12ccbd23f",
+   "name": "팀 토론 — LS일렉트릭의 GFM 기술 검증 완료에 따른 국내 BESS ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-f592ae0f40af",
    "name": "2026년 ESS 배터리 가격 상승의 파장: 구조적 공급 제약과 수요 급",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-8dc6d97aee33",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-fad12ccbd23f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-fad12ccbd23f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-fad12ccbd23f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-fad12ccbd23f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-fad12ccbd23f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-fad12ccbd23f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-fad12ccbd23f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-fad12ccbd23f",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-f592ae0f40af",
@@ -8186,11 +8226,6 @@
    "source": "HRM-001",
    "target": "K-8f743895edf7",
    "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-8dc6d97aee33",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8259,7 +8294,7 @@
    {
     "date": "2026-08-01",
     "knowledge": 400,
-    "events_total": 874
+    "events_total": 875
    }
   ]
  }

@@ -2,6 +2,24 @@
  "updated": "2026-08-01",
  "events": [
   {
+   "id": "fad12ccbd23f",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-financial-analysis",
+    "bess-grid-interconnection",
+    "bess-logistics-expert",
+    "bess-pcs-expert",
+    "bess-power-market-expert",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — LS일렉트릭의 GFM 기술 검증 완료에 따른 국내 BESS 프로젝트 입찰 전략 및 원가 구조 재평가 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f592ae0f40af",
    "date": "2026-08-01",
    "type": "briefing",
@@ -3732,17 +3750,6 @@
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "6442f3888def",
-   "date": "2026-07-22",
-   "type": "briefing",
-   "agents": [
-    "bess-fire-engineer"
-   ],
-   "title": "경북대·KAIST·ETRI 공동연구 '불 안 붙는 전해질'…배터리 화재 해법 나왔다",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GR3ZKLWZnRkxENGlVanp1MTJTQkVSUTZfQmpCUnZsalE3a0UzSFdnTGR1WGdIWGZUcG1jUXFKZF90akxCd2ZnNXRnTFo1OTIwYjNydWhJUEZRX3ZwTkNXdUNtWlNPc0d4N1hv?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
