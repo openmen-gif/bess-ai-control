@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-02",
  "totals": {
-  "all": 881,
+  "all": 882,
   "briefing": 205,
   "skill": 499,
-  "discussion": 177,
+  "discussion": 178,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 97,
+   "count": 98,
    "byType": {
     "skill": 7,
-    "discussion": 26,
+    "discussion": 27,
     "briefing": 64
    },
    "lastGrown": "2026-08-02",
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 7,
-    "discussion": 44
+    "discussion": 45
    },
    "lastGrown": "2026-08-02",
    "level": 3
@@ -228,13 +228,13 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 6,
-    "discussion": 27,
+    "discussion": 28,
     "briefing": 7
    },
-   "lastGrown": "2026-08-01",
+   "lastGrown": "2026-08-02",
    "level": 3
   },
   "bess-grounding-engineer": {
@@ -337,12 +337,12 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 6,
-    "discussion": 33
+    "discussion": 34
    },
-   "lastGrown": "2026-08-01",
+   "lastGrown": "2026-08-02",
    "level": 3
   },
   "bess-logistics-expert": {
@@ -365,12 +365,12 @@
    "level": 4
   },
   "bess-mlops-engineer": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 6,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-02",
    "level": 2
   },
   "bess-network-engineer": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 6,
-    "discussion": 42
+    "discussion": 43
    },
    "lastGrown": "2026-08-02",
    "level": 3
@@ -593,12 +593,12 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 79,
+   "count": 80,
    "byType": {
     "skill": 6,
-    "discussion": 73
+    "discussion": 74
    },
-   "lastGrown": "2026-08-01",
+   "lastGrown": "2026-08-02",
    "level": 4
   },
   "bess-standards-poland": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-02",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1125,8 +1125,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-01",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-02",
+   "gapDays": 0,
    "overdue": false
   }
  }

@@ -20,6 +20,23 @@
    "source": "bess-team"
   },
   {
+   "id": "6987d6858cb8",
+   "date": "2026-08-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-legal-expert",
+    "bess-mlops-engineer",
+    "bess-procurement-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 배터리 3사 동반 흑자 전환 (NEWS-ID: bess-20260801-a02)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fc0fb9627ca8",
    "date": "2026-08-01",
    "type": "discussion",
@@ -3771,17 +3788,6 @@
    "type": "skill",
    "agents": [
     "bess-hydrogen-specialist"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7131a1608571",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-power-system-analyst"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",
