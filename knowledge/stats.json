@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-01",
  "totals": {
-  "all": 876,
+  "all": 877,
   "briefing": 205,
   "skill": 499,
-  "discussion": 172,
+  "discussion": 173,
   "activity": 0
  },
  "perAgent": {
@@ -119,12 +119,12 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 6,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 3
   },
   "bess-data-analyst": {
@@ -200,10 +200,10 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 43,
+   "count": 44,
    "byType": {
     "skill": 6,
-    "discussion": 37
+    "discussion": 38
    },
    "lastGrown": "2026-08-01",
    "level": 3
@@ -374,12 +374,12 @@
    "level": 2
   },
   "bess-network-engineer": {
-   "count": 13,
+   "count": 14,
    "byType": {
     "skill": 6,
-    "discussion": 7
+    "discussion": 8
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-om-expert": {
@@ -575,12 +575,12 @@
    "level": 2
   },
   "bess-standards-eu": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 6,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-standards-japan": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 77,
+   "count": 78,
    "byType": {
     "skill": 6,
-    "discussion": 71
+    "discussion": 72
    },
    "lastGrown": "2026-08-01",
    "level": 4
@@ -629,12 +629,12 @@
    "level": 2
   },
   "bess-standards-usa": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 6,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-structural-analyst": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-01",
-   "added": 15
+   "added": 16
   }
  ],
  "freshness": {

@@ -212,6 +212,22 @@
    "source": "구글뉴스"
   },
   {
+   "id": "08a616d15a9c",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-financial-analysis",
+    "bess-network-engineer",
+    "bess-standards-eu",
+    "bess-standards-korea",
+    "bess-standards-usa"
+   ],
+   "title": "팀 토론 — IEC·62443 영역 벤치마킹 — bess-cybersecurity-expert 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fef0840d6ff0",
    "date": "2026-07-31",
    "type": "briefing",
@@ -3742,17 +3758,6 @@
    "type": "skill",
    "agents": [
     "bess-customs-tariff"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6aa103e14807",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-om-expert"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",
