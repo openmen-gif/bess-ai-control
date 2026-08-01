@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-01",
  "totals": {
-  "all": 877,
+  "all": 878,
   "briefing": 205,
   "skill": 499,
-  "discussion": 173,
+  "discussion": 174,
   "activity": 0
  },
  "perAgent": {
@@ -56,12 +56,12 @@
    "level": 2
   },
   "bess-cbop-engineer": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 6,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-07-30",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-cfd-analyst": {
@@ -182,12 +182,12 @@
    "level": 2
   },
   "bess-esg-finance": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 6,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-facility-manager": {
@@ -209,10 +209,10 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 53,
+   "count": 54,
    "byType": {
     "skill": 6,
-    "discussion": 28,
+    "discussion": 29,
     "briefing": 19
    },
    "lastGrown": "2026-08-01",
@@ -238,12 +238,12 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 6,
-    "discussion": 21
+    "discussion": 22
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-hr-manager": {
@@ -547,12 +547,12 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 6,
-    "discussion": 27
+    "discussion": 28
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-08-01",
    "level": 3
   },
   "bess-standards-analyst": {
@@ -602,12 +602,12 @@
    "level": 4
   },
   "bess-standards-poland": {
-   "count": 12,
+   "count": 13,
    "byType": {
     "skill": 6,
-    "discussion": 6
+    "discussion": 7
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-standards-romania": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-01",
-   "added": 16
+   "added": 17
   }
  ],
  "freshness": {

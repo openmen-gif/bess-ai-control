@@ -2,6 +2,22 @@
  "updated": "2026-08-01",
  "events": [
   {
+   "id": "fc0fb9627ca8",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-cbop-engineer",
+    "bess-esg-finance",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-site-manager",
+    "bess-standards-poland"
+   ],
+   "title": "팀 토론 — 부지조성 계획 최적화 및 안전 이격거리 검토 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fad12ccbd23f",
    "date": "2026-08-01",
    "type": "discussion",
@@ -3747,17 +3763,6 @@
    "type": "skill",
    "agents": [
     "bess-cfd-analyst"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6c0ab91352fb",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-customs-tariff"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",

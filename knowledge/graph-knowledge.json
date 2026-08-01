@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fc0fb9627ca8",
+   "name": "팀 토론 — 부지조성 계획 최적화 및 안전 이격거리 검토 수행",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fad12ccbd23f",
    "name": "팀 토론 — LS일렉트릭의 GFM 기술 검증 완료에 따른 국내 BESS ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-98885df7c352",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "CBP-001",
+   "target": "K-fc0fb9627ca8",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-fc0fb9627ca8",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-fc0fb9627ca8",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-fc0fb9627ca8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-fc0fb9627ca8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-fc0fb9627ca8",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-fad12ccbd23f",
@@ -8281,11 +8311,6 @@
    "source": "STD-006",
    "target": "K-a0a4577432ae",
    "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-98885df7c352",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8354,7 +8379,7 @@
    {
     "date": "2026-08-01",
     "knowledge": 400,
-    "events_total": 877
+    "events_total": 878
    }
   ]
  }
