@@ -10,6 +10,33 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-ebf46e682b9c",
+   "name": "2026년 ESS 배터리 가격 상승의 파장: 구조적 공급 제약과 수요 급",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-da6e8da603b9",
+   "name": "LG엔솔·삼성SDI·SK온 모두 웃었다…보조금 뺀 경쟁력은 과제",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d313ba944a4a",
+   "name": "LG엔솔, 中 배터리 공세 맞서 '3대 전략'…ESS·LFP·에너지플랫폼",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ce4af6925b1a",
    "name": "팀 토론 — 변압기·수배전반 영역 초안 작성 — bess-ebop-eng",
    "group": "KNOWLEDGE",
@@ -19,10 +46,73 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c14e9cdcc4d1",
+   "name": "흑자 넘어 전략 경쟁···배터리3사 하반기 승부수 갈린다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-b0894286e430",
+   "name": "삼성SDI '서프라이즈' 시작 … 유럽향 EV↑, 미국향 ESS↑",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-9c38cf2457a3",
+   "name": "적자 탈출 K-배터리, 성장 동력 확보 돌입…\"로봇까지 진출\"",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-93363e6236f2",
+   "name": "[신지아의 산업예보] 7분기만에 흑자전환 한 K-배터리 3사...반등 이",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-8c4b0b467019",
+   "name": "팀 토론 — GIS 기반 차단기 시스템 최적화 설계 및 글로벌 표준 준수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-8a9f3e507a21",
+   "name": "K배터리, ESS 경쟁 후끈…LG '풀 패키지'·삼성 '기술력'·SK '",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-6987d6858cb8",
    "name": "팀 토론 — 배터리 3사 동반 흑자 전환 (NEWS-ID: bess-20",
    "group": "KNOWLEDGE",
    "type": "discussion",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-3d09698178db",
+   "name": "미국 ESS시장서 입지 넓힌 한국산…\"공급망 재편 대응전략 필요\"",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
@@ -3509,96 +3599,6 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c8e4f93816a0",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-c790bbeda3e7",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-c3ff4cf21982",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-c3dfa9da9542",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-c1dc2456b120",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b6e393f7aa95",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-b685d29e2f18",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-b382a09c8881",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-b24739065b70",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-b04c2bf959e2",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3635,6 +3635,21 @@
   {
    "source": "STD-002",
    "target": "K-f7eeb58806c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-ebf46e682b9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-da6e8da603b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d313ba944a4a",
    "type": "knowledge"
   },
   {
@@ -3679,6 +3694,56 @@
   },
   {
    "source": "BAT-001",
+   "target": "K-c14e9cdcc4d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-b0894286e430",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-9c38cf2457a3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-93363e6236f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-8c4b0b467019",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-8c4b0b467019",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-8c4b0b467019",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-8c4b0b467019",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8c4b0b467019",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-8a9f3e507a21",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
    "target": "K-6987d6858cb8",
    "type": "knowledge"
   },
@@ -3710,6 +3775,11 @@
   {
    "source": "STD-002",
    "target": "K-6987d6858cb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3d09698178db",
    "type": "knowledge"
   },
   {
@@ -8416,56 +8486,6 @@
    "source": "TRF-001",
    "target": "K-cb504663397d",
    "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-c8e4f93816a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-c790bbeda3e7",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-c3ff4cf21982",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-c3dfa9da9542",
-   "type": "knowledge"
-  },
-  {
-   "source": "AIM-001",
-   "target": "K-c1dc2456b120",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-008",
-   "target": "K-b6e393f7aa95",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-100",
-   "target": "K-b685d29e2f18",
-   "type": "knowledge"
-  },
-  {
-   "source": "JTX-001",
-   "target": "K-b382a09c8881",
-   "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-b24739065b70",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-b04c2bf959e2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8539,7 +8559,7 @@
    {
     "date": "2026-08-02",
     "knowledge": 400,
-    "events_total": 883
+    "events_total": 893
    }
   ]
  }

@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-02",
  "totals": {
-  "all": 883,
-  "briefing": 205,
+  "all": 893,
+  "briefing": 214,
   "skill": 499,
-  "discussion": 179,
+  "discussion": 180,
   "activity": 0
  },
  "perAgent": {
@@ -26,11 +26,11 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 98,
+   "count": 101,
    "byType": {
     "skill": 7,
     "discussion": 27,
-    "briefing": 64
+    "briefing": 67
    },
    "lastGrown": "2026-08-02",
    "level": 4
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 6,
-    "discussion": 35
+    "discussion": 36
    },
    "lastGrown": "2026-08-02",
    "level": 3
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 73,
+   "count": 75,
    "byType": {
     "skill": 6,
     "discussion": 20,
-    "briefing": 47
+    "briefing": 49
    },
-   "lastGrown": "2026-08-01",
+   "lastGrown": "2026-08-02",
    "level": 4
   },
   "bess-mlops-engineer": {
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 42,
+   "count": 43,
    "byType": {
     "skill": 6,
-    "discussion": 24,
+    "discussion": 25,
     "briefing": 12
    },
    "lastGrown": "2026-08-02",
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 6,
-    "discussion": 30
+    "discussion": 31
    },
    "lastGrown": "2026-08-02",
    "level": 3
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 46,
+   "count": 51,
    "byType": {
     "skill": 6,
-    "discussion": 3,
-    "briefing": 37
+    "discussion": 4,
+    "briefing": 41
    },
-   "lastGrown": "2026-08-01",
+   "lastGrown": "2026-08-02",
    "level": 3
   },
   "bess-standards-australia": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 6,
-    "discussion": 28
+    "discussion": 29
    },
    "lastGrown": "2026-08-02",
    "level": 3
@@ -1115,13 +1115,13 @@
   },
   {
    "date": "2026-08-02",
-   "added": 3
+   "added": 13
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-01",
-   "staleDays": 1,
+   "latestSource": "2026-08-02",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
