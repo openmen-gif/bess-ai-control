@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-01",
  "totals": {
-  "all": 878,
+  "all": 879,
   "briefing": 205,
   "skill": 499,
-  "discussion": 174,
+  "discussion": 175,
   "activity": 0
  },
  "perAgent": {
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 6,
-    "discussion": 21,
+    "discussion": 22,
     "briefing": 12
    },
    "lastGrown": "2026-08-01",
@@ -438,10 +438,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 6,
-    "discussion": 22,
+    "discussion": 23,
     "briefing": 2
    },
    "lastGrown": "2026-08-01",
@@ -647,12 +647,12 @@
    "level": 3
   },
   "bess-substation-engineer": {
-   "count": 14,
+   "count": 15,
    "byType": {
     "skill": 6,
-    "discussion": 8
+    "discussion": 9
    },
-   "lastGrown": "2026-07-30",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-system-engineer": {
@@ -711,12 +711,12 @@
    "level": 3
   },
   "bess-tool-developer": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 7,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-07-31",
+   "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-training-expert": {
@@ -738,21 +738,21 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 6,
-    "discussion": 17
+    "discussion": 18
    },
    "lastGrown": "2026-08-01",
    "level": 2
   },
   "bess-translator": {
-   "count": 11,
+   "count": 12,
    "byType": {
     "skill": 6,
-    "discussion": 5
+    "discussion": 6
    },
-   "lastGrown": "2026-07-23",
+   "lastGrown": "2026-08-01",
    "level": 2
   }
  },
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-01",
-   "added": 17
+   "added": 18
   }
  ],
  "freshness": {

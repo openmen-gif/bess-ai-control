@@ -130,6 +130,22 @@
    "source": "bess-team"
   },
   {
+   "id": "4ae34b0bbda0",
+   "date": "2026-08-01",
+   "type": "discussion",
+   "agents": [
+    "bess-pcs-expert",
+    "bess-power-market-expert",
+    "bess-substation-engineer",
+    "bess-tool-developer",
+    "bess-transformer-expert",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 변압기 효율성 및 보조전원 시스템 최적화 시나리오 작성 및 시범 적용 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "4653dce93084",
    "date": "2026-08-01",
    "type": "discussion",
@@ -3756,17 +3772,6 @@
    "title": "美 ESS 90%가 중국산…K배터리 '현지 생산' 승부수",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBHR19reWFTN1JNTnBIX0phdlZwakV1ZUkyZHVQTWZlc2hNVFZLczNEWU1uUGRyYU5KX2xWU1lUSXRZSzM0VGZrTEUtQmdaRWpBX1V5bWV4TzV4LU1UdWRBWVktSGN5NWp00gFsQVVfeXFMT2xqUjgtaGJGQllKSWE0dUVSOUFhN2FoTDNlODNSRVJYeEdoVXJJb3Nlckg2cW1fS0JMQjlnTnJFMjI5UWRzU1BqQmV2d1lBR3V0WU9YQTdhOHV1RmhEWU9lQ1NSRE9HdHZhdDRG?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "6c716a0493e2",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-cfd-analyst"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
