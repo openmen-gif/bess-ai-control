@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-02",
+ "updated": "2026-08-03",
  "events": [
   {
    "id": "fd42612b22d7",
@@ -621,6 +621,24 @@
    "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
    "link": "",
    "source": "00_Skill_MD"
+  },
+  {
+   "id": "6be690dd0f0e",
+   "date": "2026-08-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-internal-auditor",
+    "bess-marketer",
+    "bess-procurement-expert",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 배터리 3사 동반 흑자 전환 동향 분석 결과, 글로벌 ESS 수요 확대 추세에 따라 인도(CEA/SECI) 및 동남아 ASEAN 시장의 프로젝트 입찰 전략 최적화 방안 수립.",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "6b4a82de50d2",
@@ -3791,17 +3809,6 @@
    ],
    "title": "“‘초과연계+유연접속+ESS’ 묶어야 계통 숨통…접속당 발전량부터 키워야”",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TUmJELUxQamxCZEFwWS1icWJSci1pUXg1aUwyQ0c3bHJuSzgtQ0lITlJwZWk5d0YxRkppS0lUQmhEV3ZrRk5LMnlkT0xETUxzVVFPWnNobUlWeWw4bW1kR0ZmZ2dLRlNYOVBSazRqbkTSAXBBVV95cUxNU1JiRC1MUGpsQmRBcFktYnFiUnItaVF4NWlMMkNHN2xybks4LUNJSE5ScGVpOXdGMUZKaUtJVEJoRFd2a0ZOSzJ5ZE9MRE1Mc1VRT1pzaG1JVnlsOG1tZEdGZmdnS0ZTWDlQUms0am5E?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "843c8c2edfe3",
-   "date": "2026-07-24",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "LG엔솔, 엔비디아 'AI 데이터센터' 정조준…\"솔루션 개발 중\" - 머니투데이",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE54dVdBQ3BTZmFudVZRalhMMHZxR0ZXcW9weG5VS2VNWHM5SVpjZGJWdjNIcWFCRXhCUWxwZjRUUEdKR2lHNGNldFdheGcwOXJESGlZX1RQblhacHVLdEZXQnB2MVpsNWxERnBNVDNvZjhjZ9IBckFVX3lxTE54dVdBQ3BTZmFudVZRalhMMHZxR0ZXcW9weG5VS2VNWHM5SVpjZGJWdjNIcWFCRXhCUWxwZjRUUEdKR2lHNGNldFdheGcwOXJESGlZX1RQblhacHVLdEZXQnB2MVpsNWxERnBNVDNvZjhjZw?oc=5",
    "source": "구글뉴스"
   }
  ]
