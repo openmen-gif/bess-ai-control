@@ -966,6 +966,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "1c5856ac60e9",
+   "date": "2026-08-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-output-generator",
+    "bess-pcs-expert",
+    "bess-standards-japan",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — ST의 갈바닉 절연 게이트 드라이버 신제품 출시 동향 분석 및 국내 BESS 시스템 통합 적용 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "1acc7ff99071",
    "date": "2026-08-02",
    "type": "skill",
@@ -3770,17 +3788,6 @@
    ],
    "title": "그리드 포밍 ESS, 유럽 재생에너지 전력망 안정화의 현실적 해법으로 부상",
    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9IejI3TTlieF9Wd3c2czgyRVdrOFM4MFdJZEhpeWVYVzhfMlY3VE5wcVNJUG1CR29ta1BQVDNBUEhnN0U?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "5814242773c2",
-   "date": "2026-07-24",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "‘1조 ESS 본게임’ 앞두고…K배터리, AI 배전망서 ‘총성 없는 전쟁’",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE55azBQR1ZWWGkyLWpvUV93d0Vvd0xGakN4VndaZG9jZGFiRXUxTTdMZjBKRmV6MnFFVzV2c1RJZHNyOTZtY3VHXzBZRktab2M?oc=5",
    "source": "구글뉴스"
   }
  ]

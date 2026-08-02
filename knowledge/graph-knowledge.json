@@ -748,6 +748,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-1c5856ac60e9",
+   "name": "팀 토론 — ST의 갈바닉 절연 게이트 드라이버 신제품 출시 동향 분석 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1acc7ff99071",
    "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5a6fb99c7885",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -4270,6 +4270,46 @@
   {
    "source": "PRO-001",
    "target": "K-219f8a6561e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1c5856ac60e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1c5856ac60e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-1c5856ac60e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-1c5856ac60e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-1c5856ac60e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-1c5856ac60e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-1c5856ac60e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-1c5856ac60e9",
    "type": "knowledge"
   },
   {
@@ -8281,11 +8321,6 @@
    "source": "PCS-001",
    "target": "K-5a9debbd7540",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-5a6fb99c7885",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8359,7 +8394,7 @@
    {
     "date": "2026-08-02",
     "knowledge": 400,
-    "events_total": 972
+    "events_total": 973
    }
   ]
  }
