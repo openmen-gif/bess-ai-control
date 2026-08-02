@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-4ee07da67e34",
+   "name": "팀 토론 — 화재 안전성 향상을 위한 액냉 시스템 CFD 유동해석 및 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3d09698178db",
    "name": "미국 ESS시장서 입지 넓힌 한국산…\"공급망 재편 대응전략 필요\"",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d821be6ff4c1",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 역방향 동기화 — 역할 경",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-19",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3815,6 +3815,46 @@
   {
    "source": "STD-002",
    "target": "K-6987d6858cb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4ee07da67e34",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-4ee07da67e34",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-4ee07da67e34",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-4ee07da67e34",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4ee07da67e34",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-4ee07da67e34",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-4ee07da67e34",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-4ee07da67e34",
    "type": "knowledge"
   },
   {
@@ -8516,11 +8556,6 @@
    "source": "QAC-001",
    "target": "K-d8aac90b1d92",
    "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-d821be6ff4c1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8594,7 +8629,7 @@
    {
     "date": "2026-08-02",
     "knowledge": 400,
-    "events_total": 894
+    "events_total": 895
    }
   ]
  }
