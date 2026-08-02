@@ -757,6 +757,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-1a1e41f65bf3",
+   "name": "팀 토론 — 배터리 화학 종류에 따른 구체적인 열폭주 시험 결과 분석 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-145f201c3e5a",
    "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-58df2c23b838",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -4275,6 +4275,46 @@
   {
    "source": "STD-003",
    "target": "K-1acc7ff99071",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1a1e41f65bf3",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-1a1e41f65bf3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-1a1e41f65bf3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-1a1e41f65bf3",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-1a1e41f65bf3",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-1a1e41f65bf3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-1a1e41f65bf3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-1a1e41f65bf3",
    "type": "knowledge"
   },
   {
@@ -8246,11 +8286,6 @@
    "source": "COM-003",
    "target": "K-5a6fb99c7885",
    "type": "knowledge"
-  },
-  {
-   "source": "CTO-100",
-   "target": "K-58df2c23b838",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8324,7 +8359,7 @@
    {
     "date": "2026-08-02",
     "knowledge": 400,
-    "events_total": 971
+    "events_total": 972
    }
   ]
  }

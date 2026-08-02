@@ -977,6 +977,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "1a1e41f65bf3",
+   "date": "2026-08-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cybersecurity-expert",
+    "bess-epc-bom",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-standards-korea",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 배터리 화학 종류에 따른 구체적인 열폭주 시험 결과 분석 및 각 화학 종류별 최적의 안전 이격거리 요구사항 도출 및 적용 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "145f201c3e5a",
    "date": "2026-08-02",
    "type": "skill",
@@ -3763,17 +3781,6 @@
    ],
    "title": "‘1조 ESS 본게임’ 앞두고…K배터리, AI 배전망서 ‘총성 없는 전쟁’",
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE55azBQR1ZWWGkyLWpvUV93d0Vvd0xGakN4VndaZG9jZGFiRXUxTTdMZjBKRmV6MnFFVzV2c1RJZHNyOTZtY3VHXzBZRktab2M?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "4c621112a7ad",
-   "date": "2026-07-24",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "이솔루션, 215kWh급 수냉식 BESS 개발… C&I ESS 시장 공략 본격화",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53eDQ1SnItcHZGUUhxSnBSVERfS05DU3Ruc08zYlp2OGZXM01Kc3BRb0dWMXZtdGpRb2FTcHllMWVhakRrVl9yUmVJMkx0M3Jzb0l1MmlOcGtfMFVZU0hMUkttQTRjNERkS09jZ0JtQXE?oc=5",
    "source": "구글뉴스"
   }
  ]
