@@ -568,6 +568,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-535ce287badf",
+   "name": "팀 토론 — ST의 갈바닉 절연 게이트 드라이버 신제품 출시로 인한 국내",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-529bde450b1d",
    "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6442f3888def",
-   "name": "경북대·KAIST·ETRI 공동연구 '불 안 붙는 전해질'…배터리 화재 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -4170,6 +4170,46 @@
   {
    "source": "STD-004",
    "target": "K-576872866c5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-535ce287badf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-535ce287badf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-535ce287badf",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-535ce287badf",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-535ce287badf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-535ce287badf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-535ce287badf",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-535ce287badf",
    "type": "knowledge"
   },
   {
@@ -8351,11 +8391,6 @@
    "source": "EBP-001",
    "target": "K-6a631559c8f4",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-6442f3888def",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8429,7 +8464,7 @@
    {
     "date": "2026-08-02",
     "knowledge": 400,
-    "events_total": 974
+    "events_total": 975
    }
   ]
  }
