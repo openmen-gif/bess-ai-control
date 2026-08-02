@@ -132,6 +132,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "8eb77e436a62",
+   "date": "2026-08-02",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-financial-analysis",
+    "bess-mlops-engineer",
+    "bess-pcs-expert",
+    "bess-system-engineer",
+    "bess-tax-epc-accounting",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — AI 기반 예측 모델을 활용한 BESS 최적화 알고리즘 개발 및 시범 운영 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "8c4b0b467019",
    "date": "2026-08-02",
    "type": "discussion",
@@ -3801,17 +3819,6 @@
    "type": "skill",
    "agents": [
     "bess-transfer-pricing"
-   ],
-   "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "87285f78814b",
-   "date": "2026-07-22",
-   "type": "skill",
-   "agents": [
-    "bess-emerging-markets"
    ],
    "title": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 — 런타임 SKILL.md와 완전 정합",
    "link": "",

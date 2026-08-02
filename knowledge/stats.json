@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-02",
  "totals": {
-  "all": 895,
+  "all": 896,
   "briefing": 214,
   "skill": 499,
-  "discussion": 182,
+  "discussion": 183,
   "activity": 0
  },
  "perAgent": {
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 7,
-    "discussion": 45
+    "discussion": 46
    },
    "lastGrown": "2026-08-02",
    "level": 3
@@ -128,10 +128,10 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 6,
-    "discussion": 30
+    "discussion": 31
    },
    "lastGrown": "2026-08-02",
    "level": 3
@@ -200,12 +200,12 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 6,
-    "discussion": 38
+    "discussion": 39
    },
-   "lastGrown": "2026-08-01",
+   "lastGrown": "2026-08-02",
    "level": 3
   },
   "bess-fire-engineer": {
@@ -365,10 +365,10 @@
    "level": 4
   },
   "bess-mlops-engineer": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 6,
-    "discussion": 16
+    "discussion": 17
    },
    "lastGrown": "2026-08-02",
    "level": 2
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 6,
-    "discussion": 26,
+    "discussion": 27,
     "briefing": 12
    },
    "lastGrown": "2026-08-02",
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 6,
-    "discussion": 31
+    "discussion": 32
    },
    "lastGrown": "2026-08-02",
    "level": 3
@@ -674,12 +674,12 @@
    "level": 2
   },
   "bess-tax-epc-accounting": {
-   "count": 8,
+   "count": 9,
    "byType": {
     "skill": 6,
-    "discussion": 2
+    "discussion": 3
    },
-   "lastGrown": "2026-07-22",
+   "lastGrown": "2026-08-02",
    "level": 1
   },
   "bess-tax-incentive": {
@@ -720,12 +720,12 @@
    "level": 2
   },
   "bess-training-expert": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 6,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-07-28",
+   "lastGrown": "2026-08-02",
    "level": 2
   },
   "bess-transfer-pricing": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-02",
-   "added": 15
+   "added": 16
   }
  ],
  "freshness": {
