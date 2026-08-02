@@ -1,6 +1,24 @@
 {
  "nodes": [
   {
+   "id": "K-d8a3cc56096a",
+   "name": "\"ESS 타고 동반 흑자 전환\"…배터리 3사, 올 하반기 턴어라운드 '정",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-bcda35cc0006",
+   "name": "전기차 화재 방지 관련주 훨훨…배터리 안전 기술 시장 확대 기대",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-970d09c4b90f",
    "name": "팀 토론 — CEA/SECI 정책 업데이트 확인 및 인도 시장 진출 전략",
    "group": "KNOWLEDGE",
@@ -10,6 +28,24 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-90c2deff806b",
+   "name": "美 ESS시장 입지 넓힌 K배터리… “현지화 전략 필요”",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-7de550586e57",
+   "name": "미 조지아파워, 보웬발전소 가스복합·ESS 대규모 투자 단행",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-4840ccd5442b",
    "name": "팀 토론 — ST의 갈바닉 절연 게이트 드라이버 기술 도입을 통해 국내 ",
    "group": "KNOWLEDGE",
@@ -17,6 +53,78 @@
    "date": "2026-08-03",
    "val": 3,
    "color": "#8B5CF6"
+  },
+  {
+   "id": "K-414cdfd94197",
+   "name": "삼성SDI, ESS·AI 배터리로 턴어라운드…추가 생산능력 확보 검토",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-33e89cb7224e",
+   "name": "배터리 섹터 투자 3대 키워드 'ESS, 광물, 차세대소재'",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-314ae4c1448a",
+   "name": "고객이자 경쟁자 되나…LG엔솔 ‘ESS 사업자’ 변신 딜레마",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-309127a7b352",
+   "name": "포드 이어 GM도 ESS 본격화…韓 배터리사에 위협될까",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-30233e949992",
+   "name": "국내 태양광/ESS 산업, 노무현 정부에서 지원 시작됐으나 정책 변동성 ",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-21f6854ff93d",
+   "name": "산은, 호주 시드니지점 전환 추진…에너지·자원사업 지원 나선다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0630f8612e62",
+   "name": "캐즘 뚫은 K-배터리, 2분기 ‘올 흑자’⋯ 하반기 승부처는 ‘북미·LF",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-0224508583a1",
+   "name": "보백씨엔에스, 구미에 누적 1000억 투자… 배터리 안전소재 거점 구축",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#10B981"
   },
   {
    "id": "K-fd42612b22d7",
@@ -3491,117 +3599,19 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-76b3f4f63c8f",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-74cb3c8b5e0c",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-73f3104c389c",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-73b17464953b",
-   "name": "‘캐즘 핑계’ 끝…실적압박 직면한 배터리 3사 수장",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-73a9d2e83aad",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-725b25e641b1",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-721dbe8a697c",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-7184a0bc8ecd",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7131a1608571",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6e334ac7d940",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-6d37d67f3233",
-   "name": "美 ESS 90%가 중국산…K배터리 '현지 생산' 승부수",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6c716a0493e2",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "STD-001",
+   "target": "K-d8a3cc56096a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-bcda35cc0006",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-970d09c4b90f",
@@ -3644,6 +3654,16 @@
   },
   {
    "source": "BAT-001",
+   "target": "K-90c2deff806b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-7de550586e57",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
    "target": "K-4840ccd5442b",
    "type": "knowledge"
   },
@@ -3680,6 +3700,46 @@
   {
    "source": "SYS-001",
    "target": "K-4840ccd5442b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-414cdfd94197",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-33e89cb7224e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-314ae4c1448a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-309127a7b352",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-30233e949992",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-21f6854ff93d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0630f8612e62",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-0224508583a1",
    "type": "knowledge"
   },
   {
@@ -8436,66 +8496,6 @@
    "source": "AUD-001",
    "target": "K-79cd91d1fad0",
    "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-76b3f4f63c8f",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-74cb3c8b5e0c",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-73f3104c389c",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-73b17464953b",
-   "type": "knowledge"
-  },
-  {
-   "source": "LKM-001",
-   "target": "K-73a9d2e83aad",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-003",
-   "target": "K-725b25e641b1",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-004",
-   "target": "K-721dbe8a697c",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYD-001",
-   "target": "K-7184a0bc8ecd",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-7131a1608571",
-   "type": "knowledge"
-  },
-  {
-   "source": "OSH-001",
-   "target": "K-6e334ac7d940",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-6d37d67f3233",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-6c716a0493e2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8574,7 +8574,7 @@
    {
     "date": "2026-08-03",
     "knowledge": 400,
-    "events_total": 978
+    "events_total": 990
    }
   ]
  }
