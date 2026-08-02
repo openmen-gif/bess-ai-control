@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-970d09c4b90f",
+   "name": "팀 토론 — CEA/SECI 정책 업데이트 확인 및 인도 시장 진출 전략",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fd42612b22d7",
    "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-6aa103e14807",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-970d09c4b90f",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-970d09c4b90f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-970d09c4b90f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-970d09c4b90f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-970d09c4b90f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-970d09c4b90f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-970d09c4b90f",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-970d09c4b90f",
+   "type": "knowledge"
+  },
   {
    "source": "COM-100",
    "target": "K-fd42612b22d7",
@@ -8421,11 +8461,6 @@
    "source": "CUS-001",
    "target": "K-6c0ab91352fb",
    "type": "knowledge"
-  },
-  {
-   "source": "OAM-001",
-   "target": "K-6aa103e14807",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8504,7 +8539,7 @@
    {
     "date": "2026-08-03",
     "knowledge": 400,
-    "events_total": 976
+    "events_total": 977
    }
   ]
  }
