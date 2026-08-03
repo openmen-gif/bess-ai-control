@@ -2,6 +2,23 @@
  "updated": "2026-08-04",
  "events": [
   {
+   "id": "98af03806f8e",
+   "date": "2026-08-04",
+   "type": "discussion",
+   "agents": [
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-japan",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — 시운전 통합 프로세스 최적화를 통한 시스템 호환성 및 효율성 향상 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "d8a3cc56096a",
    "date": "2026-08-03",
    "type": "briefing",
@@ -3845,22 +3862,6 @@
     "bess-structural-analyst"
    ],
    "title": "팀 토론 — 글로벌 신흥시장(인도, UAE/사우디)의 BESS 설비 접지망 설계 및 안전성 검증 전문가 팀 구성",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "10f43bba57cd",
-   "date": "2026-07-26",
-   "type": "discussion",
-   "agents": [
-    "bess-cost-analyst",
-    "bess-cybersecurity-expert",
-    "bess-emc-analyst",
-    "bess-esg-finance",
-    "bess-standards-korea",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 쟁점 후속**: **[요확인] 모회사의 탄소 중립 목표 구체 실행 계획 세부 분석 및 로드맵 제시 - 재무 영향 평가 포함",
    "link": "",
    "source": "bess-team"
   }

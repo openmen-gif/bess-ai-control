@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-98af03806f8e",
+   "name": "팀 토론 — 시운전 통합 프로세스 최적화를 통한 시스템 호환성 및 효율성",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-d8a3cc56096a",
    "name": "\"ESS 타고 동반 흑자 전환\"…배터리 3사, 올 하반기 턴어라운드 '정",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-8bbebca0b3f0",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "LEG-001",
+   "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-d8a3cc56096a",
@@ -8721,11 +8756,6 @@
    "source": "STD-005",
    "target": "K-8c3db8d41732",
    "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-8bbebca0b3f0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8809,7 +8839,7 @@
    {
     "date": "2026-08-04",
     "knowledge": 400,
-    "events_total": 997
+    "events_total": 998
    }
   ]
  }
