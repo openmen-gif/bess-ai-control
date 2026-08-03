@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-03",
  "totals": {
-  "all": 992,
+  "all": 993,
   "briefing": 226,
   "skill": 573,
-  "discussion": 193,
+  "discussion": 194,
   "activity": 0
  },
  "perAgent": {
@@ -256,12 +256,12 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 7,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-03",
    "level": 2
   },
   "bess-hybrid-specialist": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 7,
-    "discussion": 41
+    "discussion": 42
    },
    "lastGrown": "2026-08-03",
    "level": 3
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 7,
-    "discussion": 33,
+    "discussion": 34,
     "briefing": 12
    },
    "lastGrown": "2026-08-03",
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 7,
-    "discussion": 34
+    "discussion": 35
    },
    "lastGrown": "2026-08-03",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 87,
+   "count": 88,
    "byType": {
     "skill": 7,
-    "discussion": 80
+    "discussion": 81
    },
    "lastGrown": "2026-08-03",
    "level": 4
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 7,
-    "discussion": 39
+    "discussion": 40
    },
    "lastGrown": "2026-08-03",
    "level": 3
@@ -747,12 +747,12 @@
    "level": 2
   },
   "bess-translator": {
-   "count": 13,
+   "count": 14,
    "byType": {
     "skill": 7,
-    "discussion": 6
+    "discussion": 7
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-03",
    "level": 2
   }
  },
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-03",
-   "added": 16
+   "added": 17
   }
  ],
  "freshness": {

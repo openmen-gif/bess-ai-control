@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-bc71b1731ff4",
+   "name": "팀 토론 — 차단기 적합성 검증 및 최적 사양 선정으로 국내 BESS 시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-970d09c4b90f",
    "name": "팀 토론 — CEA/SECI 정책 업데이트 확인 및 인도 시장 진출 전략",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-7ea6d11f072b",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3610,6 +3610,41 @@
   {
    "source": "FIR-001",
    "target": "K-bcda35cc0006",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-bc71b1731ff4",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-bc71b1731ff4",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-bc71b1731ff4",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-bc71b1731ff4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-bc71b1731ff4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-bc71b1731ff4",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-bc71b1731ff4",
    "type": "knowledge"
   },
   {
@@ -8561,11 +8596,6 @@
    "source": "STD-007",
    "target": "K-85808d81acba",
    "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-7ea6d11f072b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8644,7 +8674,7 @@
    {
     "date": "2026-08-03",
     "knowledge": 400,
-    "events_total": 992
+    "events_total": 993
    }
   ]
  }
