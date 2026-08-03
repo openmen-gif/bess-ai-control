@@ -118,6 +118,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-165939588714",
+   "name": "팀 토론 — 케이블 최적화 프로젝트 시작: IEC 표준 준수 하의 국내 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0f745d50e12d",
    "name": "팀 토론 — AI 기반 최적화 알고리즘을 활용한 국내 BESS 시스템의 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-85808d81acba",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3765,6 +3765,41 @@
   {
    "source": "MAR-001",
    "target": "K-21f6854ff93d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-165939588714",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-165939588714",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-165939588714",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-165939588714",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-165939588714",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-165939588714",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-165939588714",
    "type": "knowledge"
   },
   {
@@ -8591,11 +8626,6 @@
    "source": "BAT-001",
    "target": "K-85ac21b4b9f7",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-007",
-   "target": "K-85808d81acba",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8674,7 +8704,7 @@
    {
     "date": "2026-08-03",
     "knowledge": 400,
-    "events_total": 993
+    "events_total": 994
    }
   ]
  }
