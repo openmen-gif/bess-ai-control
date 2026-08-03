@@ -118,6 +118,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-1f6caa3ca7e5",
+   "name": "팀 토론 — 배터리 3사의 흑자 전환 동향 분석 결과를 바탕으로 인도(C",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-03",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-165939588714",
    "name": "팀 토론 — 케이블 최적화 프로젝트 시작: IEC 표준 준수 하의 국내 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-85ac21b4b9f7",
-   "name": "엘앤에프, 씨아이에스케미칼에 전략적 투자...배터리 재활용 나선다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3765,6 +3765,46 @@
   {
    "source": "MAR-001",
    "target": "K-21f6854ff93d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1f6caa3ca7e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-1f6caa3ca7e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-1f6caa3ca7e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-1f6caa3ca7e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-1f6caa3ca7e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-1f6caa3ca7e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-1f6caa3ca7e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-1f6caa3ca7e5",
    "type": "knowledge"
   },
   {
@@ -8621,11 +8661,6 @@
    "source": "EMT-001",
    "target": "K-87285f78814b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-85ac21b4b9f7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8704,7 +8739,7 @@
    {
     "date": "2026-08-03",
     "knowledge": 400,
-    "events_total": 994
+    "events_total": 995
    }
   ]
  }
