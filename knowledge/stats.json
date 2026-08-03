@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-04",
  "totals": {
-  "all": 999,
-  "briefing": 226,
+  "all": 1015,
+  "briefing": 241,
   "skill": 573,
-  "discussion": 200,
+  "discussion": 201,
   "activity": 0
  },
  "perAgent": {
@@ -26,13 +26,13 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 118,
+   "count": 121,
    "byType": {
     "skill": 8,
     "discussion": 37,
-    "briefing": 73
+    "briefing": 76
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-04",
    "level": 4
   },
   "bess-business-dev": {
@@ -92,12 +92,12 @@
    "level": 2
   },
   "bess-contract-specialist": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-cost-analyst": {
@@ -209,13 +209,13 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 61,
+   "count": 64,
    "byType": {
     "skill": 7,
     "discussion": 34,
-    "briefing": 20
+    "briefing": 23
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-04",
    "level": 3
   },
   "bess-fit-procedure": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 7,
-    "discussion": 48
+    "discussion": 49
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 80,
+   "count": 85,
    "byType": {
     "skill": 7,
     "discussion": 22,
-    "briefing": 51
+    "briefing": 56
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-04",
    "level": 4
   },
   "bess-mlops-engineer": {
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 56,
+   "count": 60,
    "byType": {
     "skill": 7,
     "discussion": 5,
-    "briefing": 44
+    "briefing": 48
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-04",
    "level": 3
   },
   "bess-standards-australia": {
@@ -1115,13 +1115,13 @@
   },
   {
    "date": "2026-08-04",
-   "added": 2
+   "added": 18
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-03",
-   "staleDays": 1,
+   "latestSource": "2026-08-04",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {

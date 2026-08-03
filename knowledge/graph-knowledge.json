@@ -1,6 +1,51 @@
 {
  "nodes": [
   {
+   "id": "K-e47e8f686662",
+   "name": "팀 토론 — FIDIC Silver/Yellow 계약 조건 적용 사례 분",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-dd0a6bec874f",
+   "name": "\"상반기 글로벌 리튬이온 배터리 ESS 출하량 71% 성장\"",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-da215355b719",
+   "name": "엘앤에프플러스, 국내 첫 LFP양극재 양산라인 시제품 출하",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-cdf32e923aa3",
+   "name": "산은, 호주 시드니지점 전환 추진…에너지·자원사업 지원 나선다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c4e31ef8ea39",
+   "name": "ESS 물량 따내면 끝 아니다…국내 LFP배터리 생태계로 이어질까",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ba48f7e4520b",
    "name": "팀 토론 — 단기 안전 마진 확보를 위한 최적 차단기 및 피뢰기 설계 기",
    "group": "KNOWLEDGE",
@@ -10,6 +55,33 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b30bd7c30c9b",
+   "name": "리튬이온 배터리 사고의 이해와 대응- V",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ac7bc6ebb627",
+   "name": "[여수 AX 전환] ⑤ 화재부터 작업자 안전까지…AI가 바꾸는 산업안전",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-a9ee93255dab",
+   "name": "SK이터닉스, '전력 흐름 설계' 선언…PV·ESS·VPP로 통합 에너지",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-98af03806f8e",
    "name": "팀 토론 — 시운전 통합 프로세스 최적화를 통한 시스템 호환성 및 효율성",
    "group": "KNOWLEDGE",
@@ -17,6 +89,78 @@
    "date": "2026-08-04",
    "val": 3,
    "color": "#F59E0B"
+  },
+  {
+   "id": "K-7a73ef2d6c64",
+   "name": "배터리 안전기준 강화가 부른 나트륨 시대…\"한국도 표준화 참여해야\"",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-67614ac7798f",
+   "name": "[배터리 인사이드]'脫적자' SK온, ESS·보조금으로 V자 반등 시동",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-52694b251df6",
+   "name": "남부권 에너지 수도로 가는 길",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-4ee97814a06d",
+   "name": "LG화학, 美 배터리 열폭주 차단 소재 '넥슐라' 홍보 강화…안전규제 선",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-3553c835466d",
+   "name": "[기획] 리튬배터리 시대…‘끄는 기술’보다 ‘막는 기술’ 경쟁",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-253dfd7d2386",
+   "name": "전기차 라인 ESS로 돌리는 배터리 3사…'캐파와 실적 사이' 속도전",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-1916d1d0d4eb",
+   "name": "리튬전지 '특수가연물' 지정 추진…윤종군 의원, 화재예방법 개정안 발의",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-14b66dc5e669",
+   "name": "배터리 저장 기술을 사용하여 에너지를 절약하세요.",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#10B981"
   },
   {
    "id": "K-d8a3cc56096a",
@@ -3455,153 +3599,39 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-ce7173c3c592",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-caa5bbaa7683",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-c9d6f62914ca",
-   "name": "팀 토론 — 변압기 설계 최적화 및 Arc Flash 보호 평가 수행",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c52cefeac7a3",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-c348fb448d58",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-b95fe82dc9fb",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-b700a58f3b0e",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-b5ecaaeca25a",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b4364e2216b4",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ae7d5e61ea9e",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-ab7a2d9b9c3e",
-   "name": "팀 토론 — HS코드·배터리 영역 1차 분석 — bess-customs-",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-a8e719399070",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-a29983321700",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-a0e225d2fbf9",
-   "name": "원전과 재생에너지 공존, 마이너스 전력가격에서 해답 나온다 [이슈분석]",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-a097ed7cd65d",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-9a97e0212611",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "CON-001",
+   "target": "K-e47e8f686662",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e47e8f686662",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-dd0a6bec874f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-da215355b719",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-cdf32e923aa3",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c4e31ef8ea39",
+   "type": "knowledge"
+  },
   {
    "source": "CBK-001",
    "target": "K-ba48f7e4520b",
@@ -3643,6 +3673,21 @@
    "type": "knowledge"
   },
   {
+   "source": "MAR-001",
+   "target": "K-b30bd7c30c9b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ac7bc6ebb627",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-a9ee93255dab",
+   "type": "knowledge"
+  },
+  {
    "source": "LEG-001",
    "target": "K-98af03806f8e",
    "type": "knowledge"
@@ -3675,6 +3720,46 @@
   {
    "source": "TPS-001",
    "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-7a73ef2d6c64",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-67614ac7798f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-52694b251df6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4ee97814a06d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-3553c835466d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-253dfd7d2386",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-1916d1d0d4eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-14b66dc5e669",
    "type": "knowledge"
   },
   {
@@ -8651,146 +8736,6 @@
    "source": "INF-001",
    "target": "K-d11aefef7383",
    "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-ce7173c3c592",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-caa5bbaa7683",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-c9d6f62914ca",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-c9d6f62914ca",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-c9d6f62914ca",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-c9d6f62914ca",
-   "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-c9d6f62914ca",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-c9d6f62914ca",
-   "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-c52cefeac7a3",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-c348fb448d58",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-b95fe82dc9fb",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-008",
-   "target": "K-b700a58f3b0e",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-b5ecaaeca25a",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-b4364e2216b4",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-009",
-   "target": "K-ae7d5e61ea9e",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-ab7a2d9b9c3e",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCM-001",
-   "target": "K-ab7a2d9b9c3e",
-   "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-ab7a2d9b9c3e",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCV-500",
-   "target": "K-ab7a2d9b9c3e",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-ab7a2d9b9c3e",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-ab7a2d9b9c3e",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-ab7a2d9b9c3e",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-ab7a2d9b9c3e",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-a8e719399070",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-006",
-   "target": "K-a29983321700",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-a0e225d2fbf9",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-a097ed7cd65d",
-   "type": "knowledge"
-  },
-  {
-   "source": "JTX-001",
-   "target": "K-9a97e0212611",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8874,7 +8819,7 @@
    {
     "date": "2026-08-04",
     "knowledge": 400,
-    "events_total": 999
+    "events_total": 1015
    }
   ]
  }
