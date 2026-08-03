@@ -1,10 +1,10 @@
 {
- "updated": "2026-08-03",
+ "updated": "2026-08-04",
  "totals": {
-  "all": 996,
+  "all": 997,
   "briefing": 226,
   "skill": 573,
-  "discussion": 197,
+  "discussion": 198,
   "activity": 0
  },
  "perAgent": {
@@ -56,12 +56,12 @@
    "level": 2
   },
   "bess-cbop-engineer": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 7,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-03",
    "level": 2
   },
   "bess-cfd-analyst": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 7,
-    "discussion": 45
+    "discussion": 46
    },
    "lastGrown": "2026-08-03",
    "level": 3
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 7,
-    "discussion": 38
+    "discussion": 39
    },
    "lastGrown": "2026-08-03",
    "level": 3
@@ -502,12 +502,12 @@
    "level": 2
   },
   "bess-qaqc-engineer": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 7,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-03",
    "level": 2
   },
   "bess-risk-manager": {
@@ -547,12 +547,12 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 35,
+   "count": 36,
    "byType": {
     "skill": 7,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-03",
    "level": 3
   },
   "bess-standards-analyst": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 90,
+   "count": 91,
    "byType": {
     "skill": 7,
-    "discussion": 83
+    "discussion": 84
    },
    "lastGrown": "2026-08-03",
    "level": 4
@@ -665,12 +665,12 @@
    "level": 3
   },
   "bess-tax-accountant": {
-   "count": 10,
+   "count": 11,
    "byType": {
     "skill": 6,
-    "discussion": 4
+    "discussion": 5
    },
-   "lastGrown": "2026-07-29",
+   "lastGrown": "2026-08-03",
    "level": 2
   },
   "bess-tax-epc-accounting": {
@@ -757,10 +757,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-05-06",
-   "added": 0
-  },
   {
    "date": "2026-05-07",
    "added": 0
@@ -1115,18 +1111,22 @@
   },
   {
    "date": "2026-08-03",
-   "added": 20
+   "added": 21
+  },
+  {
+   "date": "2026-08-04",
+   "added": 0
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-08-03",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-08-03",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }

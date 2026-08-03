@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03",
+ "updated": "2026-08-04",
  "events": [
   {
    "id": "d8a3cc56096a",
@@ -55,6 +55,23 @@
     "bess-system-engineer"
    ],
    "title": "팀 토론 — AI 기반 최적화 알고리즘을 활용해 국내 BESS 시스템의 장기적인 성능 예측 및 열화 시뮬레이션 시뮬레이터 고도화 계획 추진.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "ab80f5d843ab",
+   "date": "2026-08-03",
+   "type": "discussion",
+   "agents": [
+    "bess-cbop-engineer",
+    "bess-legal-expert",
+    "bess-power-system-analyst",
+    "bess-qaqc-engineer",
+    "bess-site-manager",
+    "bess-standards-korea",
+    "bess-tax-accountant"
+   ],
+   "title": "팀 토론 — 기초설계 최적화를 통한 부지조성 이격거리 확보 및 안전성 검토 계획 수립.",
    "link": "",
    "source": "bess-team"
   },
@@ -3846,17 +3863,6 @@
    "title": "팀 토론 — 쟁점 후속**: **[요확인] 모회사의 탄소 중립 목표 구체 실행 계획 세부 분석 및 로드맵 제시 - 재무 영향 평가 포함",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "06449abac33e",
-   "date": "2026-07-26",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "비리튬 ESS, 일본이 앞당긴다",
-   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5Na2VGQ08yRnFQOE4yeDlaLXV5ZWRHLWxFR2hQQnZNZDFIR2pFWDZ1RUlHODBMYS0ydzZ1eVZOZEY0UU42SmlLQ2Z3?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
