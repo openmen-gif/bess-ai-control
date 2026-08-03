@@ -2,6 +2,24 @@
  "updated": "2026-08-04",
  "events": [
   {
+   "id": "ba48f7e4520b",
+   "date": "2026-08-04",
+   "type": "discussion",
+   "agents": [
+    "bess-circuit-breaker-expert",
+    "bess-grounding-engineer",
+    "bess-legal-expert",
+    "bess-power-system-analyst",
+    "bess-scheduler",
+    "bess-standards-korea",
+    "bess-standards-usa",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 단기 안전 마진 확보를 위한 최적 차단기 및 피뢰기 설계 기준 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "98af03806f8e",
    "date": "2026-08-04",
    "type": "discussion",
@@ -3844,26 +3862,6 @@
    "title": "[동서발전 소식] “1조 4000억 원 폐배터리 재활용 시장 선점” 外",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRWDZ6SmdKZWxNSXlHMHRGbTYxNnVRMjRxUnJDeEFhSVRJLXpFSDdWamRlTzlRREhNWllCYlFLZXh4cklwWkU5UlZuVVgyQ0ZVYnVVYzF6YURHa1FCcXBJV0NnN3hGU3k3MUtKOU5EQmRTQTkxdDR6VHFxTm4?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "15a1750497ba",
-   "date": "2026-07-26",
-   "type": "discussion",
-   "agents": [
-    "bess-env-engineer",
-    "bess-esg-finance",
-    "bess-fire-engineer",
-    "bess-grounding-engineer",
-    "bess-procurement-expert",
-    "bess-site-manager",
-    "bess-standards-australia",
-    "bess-standards-korea",
-    "bess-standards-uk",
-    "bess-structural-analyst"
-   ],
-   "title": "팀 토론 — 글로벌 신흥시장(인도, UAE/사우디)의 BESS 설비 접지망 설계 및 안전성 검증 전문가 팀 구성",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

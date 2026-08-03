@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-04",
  "totals": {
-  "all": 998,
+  "all": 999,
   "briefing": 226,
   "skill": 573,
-  "discussion": 199,
+  "discussion": 200,
   "activity": 0
  },
  "perAgent": {
@@ -74,12 +74,12 @@
    "level": 2
   },
   "bess-circuit-breaker-expert": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 7,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-commissioning-coordinator": {
@@ -238,13 +238,13 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 7,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-02",
-   "level": 2
+   "lastGrown": "2026-08-04",
+   "level": 3
   },
   "bess-hr-manager": {
    "count": 17,
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 7,
-    "discussion": 47
+    "discussion": 48
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 7,
-    "discussion": 40
+    "discussion": 41
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -529,12 +529,12 @@
    "level": 2
   },
   "bess-scheduler": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 7,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-security-expert": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 92,
+   "count": 93,
    "byType": {
     "skill": 7,
-    "discussion": 85
+    "discussion": 86
    },
    "lastGrown": "2026-08-04",
    "level": 4
@@ -629,12 +629,12 @@
    "level": 2
   },
   "bess-standards-usa": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 7,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-structural-analyst": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 7,
-    "discussion": 43
+    "discussion": 44
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-04",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
