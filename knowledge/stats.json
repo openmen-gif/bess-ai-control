@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-05",
  "totals": {
-  "all": 1047,
+  "all": 1048,
   "briefing": 263,
   "skill": 573,
-  "discussion": 211,
+  "discussion": 212,
   "activity": 0
  },
  "perAgent": {
@@ -191,12 +191,12 @@
    "level": 2
   },
   "bess-facility-manager": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 7,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-05",
    "level": 2
   },
   "bess-financial-analysis": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 7,
-    "discussion": 58
+    "discussion": 59
    },
    "lastGrown": "2026-08-05",
    "level": 3
@@ -448,12 +448,12 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 7,
-    "discussion": 42
+    "discussion": 43
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-05",
    "level": 3
   },
   "bess-precom-report": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 58,
+   "count": 59,
    "byType": {
     "skill": 7,
-    "discussion": 51
+    "discussion": 52
    },
    "lastGrown": "2026-08-05",
    "level": 3
@@ -538,12 +538,12 @@
    "level": 2
   },
   "bess-security-expert": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 7,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-05",
    "level": 3
   },
   "bess-site-manager": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 101,
+   "count": 102,
    "byType": {
     "skill": 7,
-    "discussion": 94
+    "discussion": 95
    },
    "lastGrown": "2026-08-05",
    "level": 4
@@ -656,12 +656,12 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 53,
+   "count": 54,
    "byType": {
     "skill": 7,
-    "discussion": 46
+    "discussion": 47
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-05",
    "level": 3
   },
   "bess-tax-accountant": {
@@ -738,10 +738,10 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 7,
-    "discussion": 18,
+    "discussion": 19,
     "briefing": 1
    },
    "lastGrown": "2026-08-05",
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-05",
-   "added": 25
+   "added": 26
   }
  ],
  "freshness": {

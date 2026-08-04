@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-94e5c9454295",
+   "name": "팀 토론 — 변압기 호환성 최적화 시나리오 작성 및 보조전원 시스템 강화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-05",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-94d07509c66f",
    "name": "[NNA] 인도 정부,?수상 태양광 장려 제도 승인…507억 루피",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4b4fb5f95e17",
-   "name": "차세대 '소듐이온배터리' 시장도 中 싹쓸이 … K 배터리, ESS 시장 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3700,6 +3700,46 @@
   {
    "source": "PCS-001",
    "target": "K-97d1f335cba2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-94e5c9454295",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-94e5c9454295",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-94e5c9454295",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-94e5c9454295",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-94e5c9454295",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-94e5c9454295",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-94e5c9454295",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-94e5c9454295",
    "type": "knowledge"
   },
   {
@@ -9021,11 +9061,6 @@
    "source": "KTX-001",
    "target": "K-69d2182683e5",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-4b4fb5f95e17",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9114,7 +9149,7 @@
    {
     "date": "2026-08-05",
     "knowledge": 400,
-    "events_total": 1047
+    "events_total": 1048
    }
   ]
  }
