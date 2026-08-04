@@ -100,6 +100,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-8d1eb5d2817f",
+   "name": "팀 토론 — 관세 및 FTA 원산지 규정 검토를 통한 글로벌 BESS 프",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7a73ef2d6c64",
    "name": "배터리 안전기준 강화가 부른 나트륨 시대…\"한국도 표준화 참여해야\"",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d3ca91ac2951",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#64748B"
   }
  ],
  "links": [
@@ -3760,6 +3760,41 @@
   {
    "source": "TPS-001",
    "target": "K-98af03806f8e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8d1eb5d2817f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8d1eb5d2817f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-8d1eb5d2817f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-8d1eb5d2817f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8d1eb5d2817f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-8d1eb5d2817f",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-8d1eb5d2817f",
    "type": "knowledge"
   },
   {
@@ -8801,11 +8836,6 @@
    "source": "MAR-001",
    "target": "K-d4501c5a6b15",
    "type": "knowledge"
-  },
-  {
-   "source": "SCV-500",
-   "target": "K-d3ca91ac2951",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8889,7 +8919,7 @@
    {
     "date": "2026-08-04",
     "knowledge": 400,
-    "events_total": 1017
+    "events_total": 1018
    }
   ]
  }

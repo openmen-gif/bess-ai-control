@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-04",
  "totals": {
-  "all": 1017,
+  "all": 1018,
   "briefing": 241,
   "skill": 573,
-  "discussion": 203,
+  "discussion": 204,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 122,
+   "count": 123,
    "byType": {
     "skill": 8,
-    "discussion": 38,
+    "discussion": 39,
     "briefing": 76
    },
    "lastGrown": "2026-08-04",
@@ -101,21 +101,21 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 8,
-    "discussion": 54
+    "discussion": 55
    },
    "lastGrown": "2026-08-04",
    "level": 3
   },
   "bess-customs-tariff": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 8,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-cybersecurity-expert": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 58,
+   "count": 59,
    "byType": {
     "skill": 7,
-    "discussion": 51
+    "discussion": 52
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 53,
+   "count": 54,
    "byType": {
     "skill": 7,
-    "discussion": 46
+    "discussion": 47
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 95,
+   "count": 96,
    "byType": {
     "skill": 7,
-    "discussion": 88
+    "discussion": 89
    },
    "lastGrown": "2026-08-04",
    "level": 4
@@ -729,10 +729,10 @@
    "level": 2
   },
   "bess-transfer-pricing": {
-   "count": 13,
+   "count": 14,
    "byType": {
     "skill": 6,
-    "discussion": 7
+    "discussion": 8
    },
    "lastGrown": "2026-08-04",
    "level": 2
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-04",
-   "added": 20
+   "added": 21
   }
  ],
  "freshness": {
