@@ -1,10 +1,10 @@
 {
- "updated": "2026-08-04",
+ "updated": "2026-08-05",
  "totals": {
-  "all": 1021,
+  "all": 1022,
   "briefing": 241,
   "skill": 573,
-  "discussion": 207,
+  "discussion": 208,
   "activity": 0
  },
  "perAgent": {
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 66,
+   "count": 67,
    "byType": {
     "skill": 8,
-    "discussion": 58
+    "discussion": 59
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -137,12 +137,12 @@
    "level": 3
   },
   "bess-ebop-engineer": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 7,
-    "discussion": 14
+    "discussion": 15
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-emc-analyst": {
@@ -209,10 +209,10 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 7,
-    "discussion": 35,
+    "discussion": 36,
     "briefing": 23
    },
    "lastGrown": "2026-08-04",
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 7,
-    "discussion": 55
+    "discussion": 56
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -374,12 +374,12 @@
    "level": 2
   },
   "bess-network-engineer": {
-   "count": 15,
+   "count": 16,
    "byType": {
     "skill": 7,
-    "discussion": 8
+    "discussion": 9
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-om-expert": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 7,
-    "discussion": 48
+    "discussion": 49
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 98,
+   "count": 99,
    "byType": {
     "skill": 7,
-    "discussion": 91
+    "discussion": 92
    },
    "lastGrown": "2026-08-04",
    "level": 4
@@ -757,10 +757,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-05-07",
-   "added": 0
-  },
   {
    "date": "2026-05-08",
    "added": 0
@@ -1115,18 +1111,22 @@
   },
   {
    "date": "2026-08-04",
-   "added": 24
+   "added": 25
+  },
+  {
+   "date": "2026-08-05",
+   "added": 0
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-08-04",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-08-04",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }

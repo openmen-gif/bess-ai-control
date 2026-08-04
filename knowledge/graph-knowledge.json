@@ -127,6 +127,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-5771e7559c19",
+   "name": "팀 토론 — 공급망 보안 강화 프로세스 구체화 및 모니터링 시스템 구축 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-52694b251df6",
    "name": "남부권 에너지 수도로 가는 길",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-dd2232f1c8e4",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3805,6 +3805,41 @@
   {
    "source": "STD-001",
    "target": "K-67614ac7798f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-5771e7559c19",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-5771e7559c19",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-5771e7559c19",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5771e7559c19",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-5771e7559c19",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-5771e7559c19",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5771e7559c19",
    "type": "knowledge"
   },
   {
@@ -8931,15 +8966,10 @@
    "source": "IPP-001",
    "target": "K-dd699b3164b0",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-dd2232f1c8e4",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-04",
+  "updated": "2026-08-05",
   "history": [
    {
     "date": "2026-07-20",
@@ -9020,6 +9050,11 @@
     "date": "2026-08-04",
     "knowledge": 400,
     "events_total": 1021
+   },
+   {
+    "date": "2026-08-05",
+    "knowledge": 400,
+    "events_total": 1022
    }
   ]
  }
