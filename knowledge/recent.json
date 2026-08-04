@@ -36,6 +36,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "d85119d9bff1",
+   "date": "2026-08-04",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 시운전 호환성 검증 프로세스 자동화 시스템 도입 계획 수립 (COM-100)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "cdf32e923aa3",
    "date": "2026-08-04",
    "type": "briefing",
@@ -3807,25 +3825,6 @@
     "bess-tax-korea"
    ],
    "title": "팀 토론 — 관세 최적화 전략 수립 및 주요 FTA 원산지 규정 적용 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "28444e1a9000",
-   "date": "2026-07-27",
-   "type": "discussion",
-   "agents": [
-    "bess-contract-specialist",
-    "bess-cost-analyst",
-    "bess-cybersecurity-expert",
-    "bess-ebop-engineer",
-    "bess-internal-auditor",
-    "bess-output-generator",
-    "bess-procurement-expert",
-    "bess-tax-incentive",
-    "bess-tool-developer"
-   ],
-   "title": "팀 토론 — 견적서 및 물량산출 최적화 프로세스 구축 및 자동화 도구 도입 검토",
    "link": "",
    "source": "bess-team"
   }

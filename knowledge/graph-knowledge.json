@@ -28,6 +28,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d85119d9bff1",
+   "name": "팀 토론 — 시운전 호환성 검증 프로세스 자동화 시스템 도입 계획 수립 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-cdf32e923aa3",
    "name": "산은, 호주 시드니지점 전환 추진…에너지·자원사업 지원 나선다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#64748B"
-  },
-  {
-   "id": "K-d1eb5b68b363",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3620,6 +3620,46 @@
   {
    "source": "BAT-001",
    "target": "K-da215355b719",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d85119d9bff1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d85119d9bff1",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-d85119d9bff1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d85119d9bff1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-d85119d9bff1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d85119d9bff1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d85119d9bff1",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-d85119d9bff1",
    "type": "knowledge"
   },
   {
@@ -8766,11 +8806,6 @@
    "source": "SCV-500",
    "target": "K-d3ca91ac2951",
    "type": "knowledge"
-  },
-  {
-   "source": "PRS-001",
-   "target": "K-d1eb5b68b363",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8854,7 +8889,7 @@
    {
     "date": "2026-08-04",
     "knowledge": 400,
-    "events_total": 1016
+    "events_total": 1017
    }
   ]
  }
