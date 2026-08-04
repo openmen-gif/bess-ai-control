@@ -205,6 +205,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "3c613cb66700",
+   "date": "2026-08-04",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-facility-manager",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 시운전·코디네이터 영역 리스크 평가 — bess-commissioning-coordinator 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3553c835466d",
    "date": "2026-08-04",
    "type": "briefing",
@@ -3809,24 +3827,6 @@
    "title": "[발전사 이모저모] 남부, 국내 1호 장주기 BESS 준공 |",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBwV09YRENWOUplREFCVXNkMGdUdm1oOXpBamZieVF3eUtXLXlKZkJCaXkyWklPV3dROXFrS3RVdGV1YmlHWE9Pb3JWRlZuQi1VYVVxQmtBLTd1TnoyMk9ua1otcnhYTUhWcFNSWWQzMFdoampr?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "35f6e732d360",
-   "date": "2026-07-27",
-   "type": "discussion",
-   "agents": [
-    "bess-cost-analyst",
-    "bess-data-analyst",
-    "bess-fire-engineer",
-    "bess-internal-auditor",
-    "bess-output-generator",
-    "bess-standards-korea",
-    "bess-tax-accountant",
-    "bess-tool-developer"
-   ],
-   "title": "팀 토론 — BESS 프로젝트 견적 및 물량산출 자동화 도구 개발 시작",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

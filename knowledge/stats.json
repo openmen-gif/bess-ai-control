@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-04",
  "totals": {
-  "all": 1018,
+  "all": 1019,
   "briefing": 241,
   "skill": 573,
-  "discussion": 204,
+  "discussion": 205,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 123,
+   "count": 124,
    "byType": {
     "skill": 8,
-    "discussion": 39,
+    "discussion": 40,
     "briefing": 76
    },
    "lastGrown": "2026-08-04",
@@ -83,12 +83,12 @@
    "level": 2
   },
   "bess-commissioning-coordinator": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 7,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-contract-specialist": {
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 63,
+   "count": 64,
    "byType": {
     "skill": 8,
-    "discussion": 55
+    "discussion": 56
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -191,12 +191,12 @@
    "level": 2
   },
   "bess-facility-manager": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 7,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-financial-analysis": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 59,
+   "count": 60,
    "byType": {
     "skill": 7,
-    "discussion": 52
+    "discussion": 53
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 7,
-    "discussion": 47
+    "discussion": 48
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 7,
-    "discussion": 89
+    "discussion": 90
    },
    "lastGrown": "2026-08-04",
    "level": 4
@@ -711,12 +711,12 @@
    "level": 3
   },
   "bess-tool-developer": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 8,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-training-expert": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-04",
-   "added": 21
+   "added": 22
   }
  ],
  "freshness": {

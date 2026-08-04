@@ -145,6 +145,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3c613cb66700",
+   "name": "팀 토론 — 시운전·코디네이터 영역 리스크 평가 — bess-commis",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3553c835466d",
    "name": "[기획] 리튬배터리 시대…‘끄는 기술’보다 ‘막는 기술’ 경쟁",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d4501c5a6b15",
-   "name": "중부발전, ‘해남화원 BESS 발전사업’ 허가 획득…1500억 규모 대형",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3815,6 +3815,46 @@
   {
    "source": "FIR-001",
    "target": "K-4ee97814a06d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3c613cb66700",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-3c613cb66700",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3c613cb66700",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-3c613cb66700",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-3c613cb66700",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-3c613cb66700",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3c613cb66700",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-3c613cb66700",
    "type": "knowledge"
   },
   {
@@ -8831,11 +8871,6 @@
    "source": "GRD-001",
    "target": "K-d848346b907b",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-d4501c5a6b15",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8919,7 +8954,7 @@
    {
     "date": "2026-08-04",
     "knowledge": 400,
-    "events_total": 1018
+    "events_total": 1019
    }
   ]
  }
