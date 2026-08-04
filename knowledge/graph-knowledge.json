@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-124c0266adbd",
+   "name": "팀 토론 — 반대 : 장기적인 운영 비용 및 유지보수 비용의 구체적 명시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e47e8f686662",
    "name": "팀 토론 — FIDIC Silver/Yellow 계약 조건 적용 사례 분",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-e175eea703e9",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3675,6 +3675,41 @@
   {
    "source": "TAX-002",
    "target": "K-36e00d898257",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-124c0266adbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-124c0266adbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-124c0266adbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-124c0266adbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-124c0266adbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-124c0266adbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-124c0266adbd",
    "type": "knowledge"
   },
   {
@@ -9026,11 +9061,6 @@
    "source": "FAC-001",
    "target": "K-e70fdc54c44d",
    "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-e175eea703e9",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9119,7 +9149,7 @@
    {
     "date": "2026-08-05",
     "knowledge": 400,
-    "events_total": 1024
+    "events_total": 1025
    }
   ]
  }
