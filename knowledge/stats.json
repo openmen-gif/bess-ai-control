@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-04",
  "totals": {
-  "all": 1019,
+  "all": 1021,
   "briefing": 241,
   "skill": 573,
-  "discussion": 205,
+  "discussion": 207,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 124,
+   "count": 125,
    "byType": {
     "skill": 8,
-    "discussion": 40,
+    "discussion": 41,
     "briefing": 76
    },
    "lastGrown": "2026-08-04",
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 64,
+   "count": 66,
    "byType": {
     "skill": 8,
-    "discussion": 56
+    "discussion": 58
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -119,10 +119,10 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 7,
-    "discussion": 34
+    "discussion": 35
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -173,12 +173,12 @@
    "level": 3
   },
   "bess-epc-bom": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 7,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-esg-finance": {
@@ -209,22 +209,22 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 64,
+   "count": 65,
    "byType": {
     "skill": 7,
-    "discussion": 34,
+    "discussion": 35,
     "briefing": 23
    },
    "lastGrown": "2026-08-04",
    "level": 3
   },
   "bess-fit-procedure": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 7,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-grid-interconnection": {
@@ -265,12 +265,12 @@
    "level": 2
   },
   "bess-hybrid-specialist": {
-   "count": 11,
+   "count": 12,
    "byType": {
     "skill": 7,
-    "discussion": 4
+    "discussion": 5
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-hydrogen-specialist": {
@@ -292,12 +292,12 @@
    "level": 2
   },
   "bess-internal-auditor": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 7,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-04",
    "level": 3
   },
   "bess-ip-patent-expert": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 60,
+   "count": 62,
    "byType": {
     "skill": 7,
-    "discussion": 53
+    "discussion": 55
    },
    "lastGrown": "2026-08-04",
    "level": 3
@@ -493,12 +493,12 @@
    "level": 3
   },
   "bess-project-manager": {
-   "count": 28,
+   "count": 29,
    "byType": {
     "skill": 7,
-    "discussion": 21
+    "discussion": 22
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-qaqc-engineer": {
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 7,
-    "discussion": 6,
+    "discussion": 7,
     "briefing": 48
    },
    "lastGrown": "2026-08-04",
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 97,
+   "count": 98,
    "byType": {
     "skill": 7,
-    "discussion": 90
+    "discussion": 91
    },
    "lastGrown": "2026-08-04",
    "level": 4
@@ -611,12 +611,12 @@
    "level": 2
   },
   "bess-standards-romania": {
-   "count": 13,
+   "count": 14,
    "byType": {
     "skill": 6,
-    "discussion": 7
+    "discussion": 8
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-04",
    "level": 2
   },
   "bess-standards-uk": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-04",
-   "added": 22
+   "added": 24
   }
  ],
  "freshness": {
