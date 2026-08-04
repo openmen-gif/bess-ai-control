@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-05",
  "totals": {
-  "all": 1023,
+  "all": 1024,
   "briefing": 241,
   "skill": 573,
-  "discussion": 209,
+  "discussion": 210,
   "activity": 0
  },
  "perAgent": {
@@ -26,23 +26,23 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 126,
+   "count": 127,
    "byType": {
     "skill": 8,
-    "discussion": 42,
+    "discussion": 43,
     "briefing": 76
    },
    "lastGrown": "2026-08-05",
    "level": 4
   },
   "bess-business-dev": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 7,
-    "discussion": 19,
+    "discussion": 20,
     "briefing": 14
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-05",
    "level": 3
   },
   "bess-cable-engineer": {
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 68,
+   "count": 69,
    "byType": {
     "skill": 8,
-    "discussion": 60
+    "discussion": 61
    },
    "lastGrown": "2026-08-05",
    "level": 3
@@ -173,12 +173,12 @@
    "level": 3
   },
   "bess-epc-bom": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 7,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-05",
    "level": 2
   },
   "bess-esg-finance": {
@@ -200,12 +200,12 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 7,
-    "discussion": 41
+    "discussion": 42
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-05",
    "level": 3
   },
   "bess-fire-engineer": {
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 85,
+   "count": 86,
    "byType": {
     "skill": 7,
-    "discussion": 22,
+    "discussion": 23,
     "briefing": 56
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-05",
    "level": 4
   },
   "bess-mlops-engineer": {
@@ -484,12 +484,12 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 56,
+   "count": 57,
    "byType": {
     "skill": 7,
-    "discussion": 49
+    "discussion": 50
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-05",
    "level": 3
   },
   "bess-project-manager": {
@@ -620,12 +620,12 @@
    "level": 2
   },
   "bess-standards-uk": {
-   "count": 13,
+   "count": 14,
    "byType": {
     "skill": 7,
-    "discussion": 6
+    "discussion": 7
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-05",
    "level": 2
   },
   "bess-standards-usa": {
@@ -1115,7 +1115,7 @@
   },
   {
    "date": "2026-08-05",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {

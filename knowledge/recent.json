@@ -2,6 +2,24 @@
  "updated": "2026-08-05",
  "events": [
   {
+   "id": "b78ab23ae6df",
+   "date": "2026-08-05",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-financial-analysis",
+    "bess-marketer",
+    "bess-procurement-expert",
+    "bess-standards-uk"
+   ],
+   "title": "팀 토론 — 글로벌 ESS 출하량 급증에 따른 [ Korea Power Exchange (KPX) 내 BESS 입찰 전략 재검토 및 원가 구조 최적화 방안 수립 ]",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "36e00d898257",
    "date": "2026-08-05",
    "type": "discussion",
@@ -3826,24 +3844,6 @@
    "title": "CATL, 2분기 실적 기대치 하회…ESS 사업 88% 고성장",
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1fby1aQjVRTUxpeFQtYWVEbmRRVHluN2tqWGp2bXZuaHhwZWhBSERRUEtOWk1ud1NBbjdWNmUyVE1vRDBMTnJTNjBpdEZiRUE0VlhnMnZB?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "7bb80bda20b9",
-   "date": "2026-07-27",
-   "type": "discussion",
-   "agents": [
-    "bess-cable-engineer",
-    "bess-logistics-expert",
-    "bess-procurement-expert",
-    "bess-scheduler",
-    "bess-site-manager",
-    "bess-standards-analyst",
-    "bess-standards-eu",
-    "bess-structural-analyst"
-   ],
-   "title": "팀 토론 — 케이블 포설 최적화 프로세스 구축",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
