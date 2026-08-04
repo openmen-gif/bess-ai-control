@@ -2,6 +2,23 @@
  "updated": "2026-08-05",
  "events": [
   {
+   "id": "36e00d898257",
+   "date": "2026-08-05",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-esg-finance",
+    "bess-legal-expert",
+    "bess-standards-korea",
+    "bess-tax-epc-accounting"
+   ],
+   "title": "팀 토론 — TCFD·ISSB 영역 리스크 평가 — bess-esg-finance 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "e47e8f686662",
    "date": "2026-08-04",
    "type": "discussion",
@@ -3825,25 +3842,6 @@
     "bess-structural-analyst"
    ],
    "title": "팀 토론 — 케이블 포설 최적화 프로세스 구축",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "7884e3fc8cbb",
-   "date": "2026-07-27",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-emc-analyst",
-    "bess-env-engineer",
-    "bess-grid-interconnection",
-    "bess-grounding-engineer",
-    "bess-hybrid-specialist",
-    "bess-power-market-expert",
-    "bess-sales-manager",
-    "bess-tax-incentive"
-   ],
-   "title": "팀 토론 — Hybrid·BESS 영역 현황 진단 — bess-hybrid-specialist 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
   }

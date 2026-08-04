@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-36e00d898257",
+   "name": "팀 토론 — TCFD·ISSB 영역 리스크 평가 — bess-esg-fi",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e47e8f686662",
    "name": "팀 토론 — FIDIC Silver/Yellow 계약 조건 적용 사례 분",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-07-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-dd699b3164b0",
-   "name": "스킬 갱신 — fix(bess): 스킬 정본 82개 XML 래퍼 제거 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-07-22",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "AIM-001",
+   "target": "K-36e00d898257",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-36e00d898257",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-36e00d898257",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-36e00d898257",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-36e00d898257",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-36e00d898257",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-36e00d898257",
+   "type": "knowledge"
+  },
   {
    "source": "CON-001",
    "target": "K-e47e8f686662",
@@ -8961,11 +8996,6 @@
    "source": "STD-001",
    "target": "K-dec36c430b49",
    "type": "knowledge"
-  },
-  {
-   "source": "IPP-001",
-   "target": "K-dd699b3164b0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9054,7 +9084,7 @@
    {
     "date": "2026-08-05",
     "knowledge": 400,
-    "events_total": 1022
+    "events_total": 1023
    }
   ]
  }
