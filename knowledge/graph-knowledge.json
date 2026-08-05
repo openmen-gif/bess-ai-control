@@ -181,6 +181,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7b0705e93526",
+   "name": "팀 토론 — EMC 인증 최적화 전략 수립으로 PCS 스위칭 노이즈 감소",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7627f80d536f",
    "name": "북미 ESS, LG엔솔 약진에도 中 강세 여전···판도 언제 바뀔까",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-929b3d1551f7",
-   "name": "팀 토론 — 변압기 조달 계약 조건 최적화 및 Variation Orde",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-23",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3875,6 +3875,46 @@
   {
    "source": "PCS-001",
    "target": "K-7bd5187113e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7b0705e93526",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-7b0705e93526",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-7b0705e93526",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-7b0705e93526",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-7b0705e93526",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-7b0705e93526",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-7b0705e93526",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7b0705e93526",
    "type": "knowledge"
   },
   {
@@ -9091,46 +9131,6 @@
    "source": "TRL-001",
    "target": "K-a24633a2418f",
    "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-929b3d1551f7",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-929b3d1551f7",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-929b3d1551f7",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-929b3d1551f7",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-929b3d1551f7",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-929b3d1551f7",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-929b3d1551f7",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-929b3d1551f7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9219,7 +9219,7 @@
    {
     "date": "2026-08-05",
     "knowledge": 400,
-    "events_total": 1051
+    "events_total": 1052
    }
   ]
  }
