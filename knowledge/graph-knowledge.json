@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-d10e433d40f8",
+   "name": "팀 토론 — 글로벌 ESS 출하량 급증에 따른 KPX 내 입찰 전략 재검",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c29067d65a98",
    "name": "저점을 줄때마다 물량 모아둘 기회로 보이며 이후 전망 및 대응전략.",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-792df36a4b2c",
-   "name": "'美 ESS 시장' 커진다…엔켐, 조지아 공장 앞세워 북미 공략 확대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "STD-001",
    "target": "K-d28840a51e76",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d10e433d40f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-d10e433d40f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-d10e433d40f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-d10e433d40f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-d10e433d40f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-d10e433d40f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d10e433d40f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-d10e433d40f8",
    "type": "knowledge"
   },
   {
@@ -9056,11 +9096,6 @@
    "source": "BAT-001",
    "target": "K-83d1c564b719",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-792df36a4b2c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9149,7 +9184,7 @@
    {
     "date": "2026-08-05",
     "knowledge": 400,
-    "events_total": 1049
+    "events_total": 1050
    }
   ]
  }
