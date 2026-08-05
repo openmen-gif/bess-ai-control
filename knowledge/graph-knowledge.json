@@ -19,6 +19,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-f3aae32b801f",
+   "name": "팀 토론 — 인도 신흥시장 BESS 프로젝트 PF 모델 최적화 방안 연구",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-05",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-eae236f4b6fb",
    "name": "[태양광 시장조사] 업계가 본 서남권 메가 프로젝트… 최대 기회는 ‘ES",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-69d2182683e5",
-   "name": "팀 토론 — CFD 유동해석 및 열관리 전문가 팀 구성",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3610,6 +3610,46 @@
   {
    "source": "STD-001",
    "target": "K-f3b0f550815e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-f3aae32b801f",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-f3aae32b801f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f3aae32b801f",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-f3aae32b801f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-f3aae32b801f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-f3aae32b801f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-f3aae32b801f",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-f3aae32b801f",
    "type": "knowledge"
   },
   {
@@ -9021,46 +9061,6 @@
    "source": "BAT-001",
    "target": "K-792df36a4b2c",
    "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-69d2182683e5",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-69d2182683e5",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-69d2182683e5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCV-500",
-   "target": "K-69d2182683e5",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-69d2182683e5",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-69d2182683e5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-69d2182683e5",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-69d2182683e5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9149,7 +9149,7 @@
    {
     "date": "2026-08-05",
     "knowledge": 400,
-    "events_total": 1048
+    "events_total": 1049
    }
   ]
  }
