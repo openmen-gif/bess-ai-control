@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-05",
+ "updated": "2026-08-06",
  "totals": {
-  "all": 1052,
-  "briefing": 263,
+  "all": 1068,
+  "briefing": 279,
   "skill": 573,
   "discussion": 216,
   "activity": 0
@@ -26,13 +26,13 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 135,
+   "count": 141,
    "byType": {
     "skill": 8,
     "discussion": 47,
-    "briefing": 80
+    "briefing": 86
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-06",
    "level": 4
   },
   "bess-business-dev": {
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 90,
+   "count": 98,
    "byType": {
     "skill": 7,
     "discussion": 23,
-    "briefing": 60
+    "briefing": 68
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-06",
    "level": 4
   },
   "bess-mlops-engineer": {
@@ -556,14 +556,14 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 69,
+   "count": 71,
    "byType": {
     "skill": 7,
     "discussion": 8,
-    "briefing": 54
+    "briefing": 56
    },
-   "lastGrown": "2026-08-05",
-   "level": 3
+   "lastGrown": "2026-08-06",
+   "level": 4
   },
   "bess-standards-australia": {
    "count": 11,
@@ -758,10 +758,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-05-08",
-   "added": 0
-  },
   {
    "date": "2026-05-09",
    "added": 0
@@ -1117,17 +1113,21 @@
   {
    "date": "2026-08-05",
    "added": 30
+  },
+  {
+   "date": "2026-08-06",
+   "added": 16
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-05",
+   "latestSource": "2026-08-06",
    "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-08-05",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }
