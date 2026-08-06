@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-06",
+ "updated": "2026-08-07",
  "totals": {
-  "all": 1068,
-  "briefing": 279,
+  "all": 1080,
+  "briefing": 291,
   "skill": 573,
   "discussion": 216,
   "activity": 0
@@ -26,13 +26,13 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 141,
+   "count": 143,
    "byType": {
     "skill": 8,
     "discussion": 47,
-    "briefing": 86
+    "briefing": 88
    },
-   "lastGrown": "2026-08-06",
+   "lastGrown": "2026-08-07",
    "level": 4
   },
   "bess-business-dev": {
@@ -209,13 +209,13 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 70,
+   "count": 71,
    "byType": {
     "skill": 7,
     "discussion": 39,
-    "briefing": 24
+    "briefing": 25
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-07",
    "level": 4
   },
   "bess-fit-procedure": {
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 98,
+   "count": 103,
    "byType": {
     "skill": 7,
     "discussion": 23,
-    "briefing": 68
+    "briefing": 73
    },
-   "lastGrown": "2026-08-06",
+   "lastGrown": "2026-08-07",
    "level": 4
   },
   "bess-mlops-engineer": {
@@ -401,13 +401,13 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 59,
+   "count": 62,
    "byType": {
     "skill": 7,
     "discussion": 37,
-    "briefing": 15
+    "briefing": 18
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-07",
    "level": 3
   },
   "bess-permit-asia": {
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 71,
+   "count": 72,
    "byType": {
     "skill": 7,
     "discussion": 8,
-    "briefing": 56
+    "briefing": 57
    },
-   "lastGrown": "2026-08-06",
+   "lastGrown": "2026-08-07",
    "level": 4
   },
   "bess-standards-australia": {
@@ -758,10 +758,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-05-09",
-   "added": 0
-  },
   {
    "date": "2026-05-10",
    "added": 0
@@ -1117,16 +1113,20 @@
   {
    "date": "2026-08-06",
    "added": 16
+  },
+  {
+   "date": "2026-08-07",
+   "added": 12
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-06",
+   "latestSource": "2026-08-07",
    "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-05",
+   "previousUpdated": "2026-08-06",
    "gapDays": 1,
    "overdue": false
   }
