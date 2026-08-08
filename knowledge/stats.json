@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-08",
+ "updated": "2026-08-09",
  "totals": {
-  "all": 1100,
-  "briefing": 311,
+  "all": 1116,
+  "briefing": 327,
   "skill": 573,
   "discussion": 216,
   "activity": 0
@@ -26,23 +26,23 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 148,
+   "count": 153,
    "byType": {
     "skill": 8,
     "discussion": 47,
-    "briefing": 93
+    "briefing": 98
    },
-   "lastGrown": "2026-08-08",
-   "level": 4
+   "lastGrown": "2026-08-09",
+   "level": 5
   },
   "bess-business-dev": {
-   "count": 44,
+   "count": 46,
    "byType": {
     "skill": 7,
     "discussion": 21,
-    "briefing": 16
+    "briefing": 18
    },
-   "lastGrown": "2026-08-08",
+   "lastGrown": "2026-08-09",
    "level": 3
   },
   "bess-cable-engineer": {
@@ -209,13 +209,13 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 72,
+   "count": 75,
    "byType": {
     "skill": 7,
     "discussion": 39,
-    "briefing": 26
+    "briefing": 29
    },
-   "lastGrown": "2026-08-08",
+   "lastGrown": "2026-08-09",
    "level": 4
   },
   "bess-fit-procedure": {
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 110,
+   "count": 111,
    "byType": {
     "skill": 7,
     "discussion": 23,
-    "briefing": 80
+    "briefing": 81
    },
-   "lastGrown": "2026-08-08",
+   "lastGrown": "2026-08-09",
    "level": 4
   },
   "bess-mlops-engineer": {
@@ -401,13 +401,13 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 63,
+   "count": 65,
    "byType": {
     "skill": 7,
     "discussion": 37,
-    "briefing": 19
+    "briefing": 21
    },
-   "lastGrown": "2026-08-08",
+   "lastGrown": "2026-08-09",
    "level": 3
   },
   "bess-permit-asia": {
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 77,
+   "count": 80,
    "byType": {
     "skill": 7,
     "discussion": 8,
-    "briefing": 62
+    "briefing": 65
    },
-   "lastGrown": "2026-08-08",
+   "lastGrown": "2026-08-09",
    "level": 4
   },
   "bess-standards-australia": {
@@ -758,10 +758,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-05-11",
-   "added": 0
-  },
   {
    "date": "2026-05-12",
    "added": 0
@@ -1117,16 +1113,20 @@
   {
    "date": "2026-08-08",
    "added": 20
+  },
+  {
+   "date": "2026-08-09",
+   "added": 16
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-08",
+   "latestSource": "2026-08-09",
    "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-07",
+   "previousUpdated": "2026-08-08",
    "gapDays": 1,
    "overdue": false
   }
