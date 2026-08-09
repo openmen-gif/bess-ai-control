@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-09",
+ "updated": "2026-08-10",
  "totals": {
-  "all": 1116,
-  "briefing": 327,
+  "all": 1124,
+  "briefing": 335,
   "skill": 573,
   "discussion": 216,
   "activity": 0
@@ -26,13 +26,13 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 153,
+   "count": 157,
    "byType": {
     "skill": 8,
     "discussion": 47,
-    "briefing": 98
+    "briefing": 102
    },
-   "lastGrown": "2026-08-09",
+   "lastGrown": "2026-08-10",
    "level": 5
   },
   "bess-business-dev": {
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 111,
+   "count": 114,
    "byType": {
     "skill": 7,
     "discussion": 23,
-    "briefing": 81
+    "briefing": 84
    },
-   "lastGrown": "2026-08-09",
+   "lastGrown": "2026-08-10",
    "level": 4
   },
   "bess-mlops-engineer": {
@@ -401,13 +401,13 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 7,
     "discussion": 37,
-    "briefing": 21
+    "briefing": 22
    },
-   "lastGrown": "2026-08-09",
+   "lastGrown": "2026-08-10",
    "level": 3
   },
   "bess-permit-asia": {
@@ -758,10 +758,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-05-12",
-   "added": 0
-  },
   {
    "date": "2026-05-13",
    "added": 0
@@ -1117,16 +1113,20 @@
   {
    "date": "2026-08-09",
    "added": 16
+  },
+  {
+   "date": "2026-08-10",
+   "added": 8
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-09",
+   "latestSource": "2026-08-10",
    "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-08",
+   "previousUpdated": "2026-08-09",
    "gapDays": 1,
    "overdue": false
   }
