@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-11",
  "totals": {
-  "all": 1149,
+  "all": 1150,
   "briefing": 354,
   "skill": 573,
-  "discussion": 222,
+  "discussion": 223,
   "activity": 0
  },
  "perAgent": {
@@ -26,20 +26,20 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 164,
+   "count": 165,
    "byType": {
     "skill": 8,
-    "discussion": 49,
+    "discussion": 50,
     "briefing": 107
    },
    "lastGrown": "2026-08-11",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 7,
-    "discussion": 21,
+    "discussion": 22,
     "briefing": 20
    },
    "lastGrown": "2026-08-11",
@@ -92,21 +92,21 @@
    "level": 2
   },
   "bess-contract-specialist": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 7,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-10",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 71,
+   "count": 72,
    "byType": {
     "skill": 8,
-    "discussion": 63
+    "discussion": 64
    },
-   "lastGrown": "2026-08-10",
+   "lastGrown": "2026-08-11",
    "level": 4
   },
   "bess-customs-tariff": {
@@ -200,10 +200,10 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 7,
-    "discussion": 44
+    "discussion": 45
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 7,
-    "discussion": 66
+    "discussion": 67
    },
    "lastGrown": "2026-08-11",
    "level": 4
@@ -475,12 +475,12 @@
    "level": 2
   },
   "bess-procurement-data": {
-   "count": 13,
+   "count": 14,
    "byType": {
     "skill": 6,
-    "discussion": 7
+    "discussion": 8
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-procurement-expert": {
@@ -511,12 +511,12 @@
    "level": 2
   },
   "bess-risk-manager": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 7,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-sales-manager": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-11",
-   "added": 23
+   "added": 24
   }
  ],
  "freshness": {
