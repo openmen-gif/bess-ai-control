@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-00882caa8884",
+   "name": "팀 토론 — AI 기반 SOC/SOH 예측 모델 개발로 BESS 운영 효",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ea2fd9c1420c",
    "name": "[자원순환] 폐배터리는 쓰레기가 아니다. 한국의 새로운 ‘리튬 광산’이 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c0b87f92b898",
-   "name": "팀 토론 — 지반 조건 분석 심화: 인도 및 UAE/사우디 신흥시장 특화",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "SYS-001",
    "target": "K-15aa9da0d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-00882caa8884",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-00882caa8884",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-00882caa8884",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-00882caa8884",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-00882caa8884",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-00882caa8884",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-00882caa8884",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-00882caa8884",
    "type": "knowledge"
   },
   {
@@ -8546,51 +8586,6 @@
    "source": "BAT-001",
    "target": "K-ec47d6fdcbb5",
    "type": "knowledge"
-  },
-  {
-   "source": "EMT-001",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-001",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-c0b87f92b898",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8709,7 +8704,7 @@
    {
     "date": "2026-08-11",
     "knowledge": 400,
-    "events_total": 1128
+    "events_total": 1129
    }
   ]
  }
