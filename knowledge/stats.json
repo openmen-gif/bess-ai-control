@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-10",
  "totals": {
-  "all": 1125,
+  "all": 1126,
   "briefing": 335,
   "skill": 573,
-  "discussion": 217,
+  "discussion": 218,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 157,
+   "count": 158,
    "byType": {
     "skill": 8,
-    "discussion": 47,
+    "discussion": 48,
     "briefing": 102
    },
    "lastGrown": "2026-08-10",
@@ -74,12 +74,12 @@
    "level": 2
   },
   "bess-circuit-breaker-expert": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 7,
-    "discussion": 20
+    "discussion": 21
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-10",
    "level": 2
   },
   "bess-commissioning-coordinator": {
@@ -119,12 +119,12 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 42,
+   "count": 43,
    "byType": {
     "skill": 7,
-    "discussion": 35
+    "discussion": 36
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-10",
    "level": 3
   },
   "bess-data-analyst": {
@@ -164,12 +164,12 @@
    "level": 2
   },
   "bess-env-engineer": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 7,
-    "discussion": 27
+    "discussion": 28
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-10",
    "level": 3
   },
   "bess-epc-bom": {
@@ -337,12 +337,12 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 70,
+   "count": 71,
    "byType": {
     "skill": 7,
-    "discussion": 63
+    "discussion": 64
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-10",
    "level": 4
   },
   "bess-logistics-expert": {
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 7,
-    "discussion": 44
+    "discussion": 45
    },
    "lastGrown": "2026-08-10",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 107,
+   "count": 108,
    "byType": {
     "skill": 7,
-    "discussion": 100
+    "discussion": 101
    },
    "lastGrown": "2026-08-10",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-10",
-   "added": 9
+   "added": 10
   }
  ],
  "freshness": {

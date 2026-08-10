@@ -53,6 +53,23 @@
    "source": "구글뉴스"
   },
   {
+   "id": "65b3e5d2f5b3",
+   "date": "2026-08-10",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-cybersecurity-expert",
+    "bess-env-engineer",
+    "bess-legal-expert",
+    "bess-power-system-analyst",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — EIA·환경영향평가 영역 리스크 평가 — bess-env-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "56b195ba3451",
    "date": "2026-08-10",
    "type": "briefing",
@@ -3657,22 +3674,6 @@
    "title": "[컨콜 줍줍] LG엔솔 “4분기부터 보조금 제외하고도 수익성 확보”",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1OdS02U3h3RjBpb1JkMEJEeE54YzRYNHI2MWJIc0JNWDgxT0tXLVNFQUVqcERjYXVKVWc2dTV3QUQzbHdPRjVxY3FDcEswQjVRXzlnanl4NUJjdElRVFE4MFpGZVk1XzhsNFRfeFpoNVdTVEVZ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "4961e0ba4480",
-   "date": "2026-07-31",
-   "type": "discussion",
-   "agents": [
-    "bess-cfd-analyst",
-    "bess-cybersecurity-expert",
-    "bess-emc-analyst",
-    "bess-mlops-engineer",
-    "bess-power-system-analyst",
-    "bess-structural-analyst"
-   ],
-   "title": "팀 토론 — CFD·유동해석 영역 현황 진단 — bess-cfd-analyst 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

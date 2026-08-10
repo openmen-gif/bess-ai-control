@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-65b3e5d2f5b3",
+   "name": "팀 토론 — EIA·환경영향평가 영역 리스크 평가 — bess-env-e",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-56b195ba3451",
    "name": "삼성, 7년 만 신기록…'폴더블 대중화' 성큼",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9a874a81b2fa",
-   "name": "팀 토론 — 부지조성 설계 최적화 및 안전 거리 검토 완료",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3655,6 +3655,41 @@
   {
    "source": "BAT-001",
    "target": "K-8206a5a8f12f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-65b3e5d2f5b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-65b3e5d2f5b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-65b3e5d2f5b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-65b3e5d2f5b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-65b3e5d2f5b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-65b3e5d2f5b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-65b3e5d2f5b3",
    "type": "knowledge"
   },
   {
@@ -8521,46 +8556,6 @@
    "source": "BAT-001",
    "target": "K-a0e120cce619",
    "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-9a874a81b2fa",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCM-001",
-   "target": "K-9a874a81b2fa",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-9a874a81b2fa",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-002",
-   "target": "K-9a874a81b2fa",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-9a874a81b2fa",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-9a874a81b2fa",
-   "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-9a874a81b2fa",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-9a874a81b2fa",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8674,7 +8669,7 @@
    {
     "date": "2026-08-10",
     "knowledge": 400,
-    "events_total": 1125
+    "events_total": 1126
    }
   ]
  }
