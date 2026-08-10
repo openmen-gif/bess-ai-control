@@ -19,6 +19,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-85dd40a2f297",
+   "name": "팀 토론 — 케이블 최적 포설 계획 수립으로 KPX 내 설치 효율성 향상",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8206a5a8f12f",
    "name": "한중엔시에스의 승부수 ‘수랭식 냉각’…미국 시장 공략 박차",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8e2f0e3f8b46",
-   "name": "CATL, 2분기 실적 기대치 하회…ESS 사업 88% 고성장",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3610,6 +3610,46 @@
   {
    "source": "MAR-001",
    "target": "K-99b79b6343e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-85dd40a2f297",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-85dd40a2f297",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-85dd40a2f297",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-85dd40a2f297",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-85dd40a2f297",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-85dd40a2f297",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-85dd40a2f297",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-85dd40a2f297",
    "type": "knowledge"
   },
   {
@@ -8521,11 +8561,6 @@
    "source": "STR-001",
    "target": "K-9a874a81b2fa",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-8e2f0e3f8b46",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8639,7 +8674,7 @@
    {
     "date": "2026-08-10",
     "knowledge": 400,
-    "events_total": 1124
+    "events_total": 1125
    }
   ]
  }
