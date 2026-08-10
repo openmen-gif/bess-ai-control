@@ -1,6 +1,24 @@
 {
- "updated": "2026-08-10",
+ "updated": "2026-08-11",
  "events": [
+  {
+   "id": "15aa9da0d8d9",
+   "date": "2026-08-11",
+   "type": "discussion",
+   "agents": [
+    "bess-circuit-breaker-expert",
+    "bess-data-analyst",
+    "bess-financial-analysis",
+    "bess-mlops-engineer",
+    "bess-pcs-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 최적화 알고리즘 적용으로 BESS 운영 효율성 시뮬레이션 및 예측 모델 정확도 향상 검증",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ea2fd9c1420c",
    "date": "2026-08-10",
@@ -3662,17 +3680,6 @@
    ],
    "title": "'109시간 만에 진화' 잇따른 대형 화재에 주목받는 소방안전 수혜주는",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBJRW5IT2lyMll3OS1kaHcwRHg0ak13alBxNld4dTAwOEZSTmVkS3Z1WTVNTF84V2VZLS10bTZweFVyNGkzRldGQ0VxZ3ZRMnFoN1o0elNIcU9kRzFpMnNfbg?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "51ea70e0513d",
-   "date": "2026-07-31",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "[컨콜 줍줍] LG엔솔 “4분기부터 보조금 제외하고도 수익성 확보”",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1OdS02U3h3RjBpb1JkMEJEeE54YzRYNHI2MWJIc0JNWDgxT0tXLVNFQUVqcERjYXVKVWc2dTV3QUQzbHdPRjVxY3FDcEswQjVRXzlnanl4NUJjdElRVFE4MFpGZVk1XzhsNFRfeFpoNVdTVEVZ?oc=5",
    "source": "구글뉴스"
   }
  ]
