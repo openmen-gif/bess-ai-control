@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-11",
  "totals": {
-  "all": 1129,
+  "all": 1130,
   "briefing": 335,
   "skill": 573,
-  "discussion": 221,
+  "discussion": 222,
   "activity": 0
  },
  "perAgent": {
@@ -128,10 +128,10 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 7,
-    "discussion": 37
+    "discussion": 38
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 72,
+   "count": 73,
    "byType": {
     "skill": 7,
-    "discussion": 65
+    "discussion": 66
    },
    "lastGrown": "2026-08-11",
    "level": 4
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 68,
+   "count": 69,
    "byType": {
     "skill": 7,
-    "discussion": 39,
+    "discussion": 40,
     "briefing": 22
    },
    "lastGrown": "2026-08-11",
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 53,
+   "count": 54,
    "byType": {
     "skill": 7,
-    "discussion": 46
+    "discussion": 47
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -529,12 +529,12 @@
    "level": 2
   },
   "bess-scheduler": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 7,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-security-expert": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 111,
+   "count": 112,
    "byType": {
     "skill": 7,
-    "discussion": 104
+    "discussion": 105
    },
    "lastGrown": "2026-08-11",
    "level": 4
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 7,
-    "discussion": 50
+    "discussion": 51
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-11",
-   "added": 3
+   "added": 4
   }
  ],
  "freshness": {
