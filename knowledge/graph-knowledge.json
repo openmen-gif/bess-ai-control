@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-a632ecd5b5a8",
+   "name": "팀 토론 — 부지조성 및 안전 이격거리 최적화 설계 가이드라인 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-15aa9da0d8d9",
    "name": "팀 토론 — AI 기반 최적화 알고리즘 적용으로 BESS 운영 효율성 시",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-07-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-a157d7431b33",
-   "name": "팀 토론 — 입찰전략 강화를 위한 2027년 글로벌 파트너십 MOU 체결",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-27",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-a632ecd5b5a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-a632ecd5b5a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a632ecd5b5a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a632ecd5b5a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a632ecd5b5a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a632ecd5b5a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-a632ecd5b5a8",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-a632ecd5b5a8",
+   "type": "knowledge"
+  },
   {
    "source": "CBK-001",
    "target": "K-15aa9da0d8d9",
@@ -8551,46 +8591,6 @@
    "source": "TIN-001",
    "target": "K-c0b87f92b898",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-a157d7431b33",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-a157d7431b33",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-a157d7431b33",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-a157d7431b33",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-a157d7431b33",
-   "type": "knowledge"
-  },
-  {
-   "source": "TAX-001",
-   "target": "K-a157d7431b33",
-   "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-a157d7431b33",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-a157d7431b33",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8709,7 +8709,7 @@
    {
     "date": "2026-08-11",
     "knowledge": 400,
-    "events_total": 1127
+    "events_total": 1128
    }
   ]
  }
