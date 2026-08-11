@@ -55,6 +55,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-d166f68984dd",
+   "name": "팀 토론 — 예측모델·최적화 영역 현황 진단 — bess-aiml-eng",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-cfd88f339bea",
    "name": "LS일렉트릭, AI 데이터센터 동맹 확대...반도체·운영·시공사 잇달아 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-28",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-edc0ac4d2c72",
-   "name": "AI가 달군 ‘냉각경제’…삼성·LG HVAC, 진짜 캐시카우 될까",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-28",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3700,6 +3700,46 @@
   {
    "source": "MAR-001",
    "target": "K-e1079c6bb6b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-d166f68984dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d166f68984dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-d166f68984dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-d166f68984dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-d166f68984dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-d166f68984dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-d166f68984dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-d166f68984dd",
    "type": "knowledge"
   },
   {
@@ -8511,15 +8551,10 @@
    "source": "BAT-001",
    "target": "K-fcf07ff0af62",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-edc0ac4d2c72",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-11",
+  "updated": "2026-08-12",
   "history": [
    {
     "date": "2026-07-20",
@@ -8635,6 +8670,11 @@
     "date": "2026-08-11",
     "knowledge": 400,
     "events_total": 1156
+   },
+   {
+    "date": "2026-08-12",
+    "knowledge": 400,
+    "events_total": 1157
    }
   ]
  }

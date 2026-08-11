@@ -1,10 +1,10 @@
 {
- "updated": "2026-08-11",
+ "updated": "2026-08-12",
  "totals": {
-  "all": 1156,
+  "all": 1157,
   "briefing": 354,
   "skill": 573,
-  "discussion": 229,
+  "discussion": 230,
   "activity": 0
  },
  "perAgent": {
@@ -17,12 +17,12 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-battery-expert": {
@@ -101,10 +101,10 @@
    "level": 2
   },
   "bess-cost-analyst": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 8,
-    "discussion": 65
+    "discussion": 66
    },
    "lastGrown": "2026-08-11",
    "level": 4
@@ -128,10 +128,10 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 7,
-    "discussion": 42
+    "discussion": 43
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -200,10 +200,10 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 7,
-    "discussion": 48
+    "discussion": 49
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -365,13 +365,13 @@
    "level": 4
   },
   "bess-mlops-engineer": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 7,
-    "discussion": 22
+    "discussion": 23
    },
    "lastGrown": "2026-08-11",
-   "level": 2
+   "level": 3
   },
   "bess-network-engineer": {
    "count": 16,
@@ -493,10 +493,10 @@
    "level": 3
   },
   "bess-project-manager": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 7,
-    "discussion": 24
+    "discussion": 25
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -647,12 +647,12 @@
    "level": 3
   },
   "bess-substation-engineer": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 7,
-    "discussion": 9
+    "discussion": 10
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-system-engineer": {
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 7,
-    "discussion": 19,
+    "discussion": 20,
     "briefing": 1
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-translator": {
@@ -758,10 +758,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-05-14",
-   "added": 0
-  },
   {
    "date": "2026-05-15",
    "added": 0
@@ -1116,18 +1112,22 @@
   },
   {
    "date": "2026-08-11",
-   "added": 30
+   "added": 31
+  },
+  {
+   "date": "2026-08-12",
+   "added": 0
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-08-11",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-08-11",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }

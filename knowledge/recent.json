@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11",
+ "updated": "2026-08-12",
  "events": [
   {
    "id": "f146dca95123",
@@ -80,6 +80,24 @@
    "title": "K-물류, 북미에 ESS 특화 사업 확대…운송·인프라 기반 마련",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBjbHBLYTJFQnN1Q2ZvUWVjYnd0VGU0aWdXQW5TMzZ6MFJ3LWE5OFdlR1ktQm50RE4tOUJSdUJPVGdxNXI1R0hmUnkyVVhLNUhEMGctNjBrNFgxLS15aWFkOHl2Ni0?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "d166f68984dd",
+   "date": "2026-08-11",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-financial-analysis",
+    "bess-mlops-engineer",
+    "bess-project-manager",
+    "bess-substation-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 예측모델·최적화 영역 현황 진단 — bess-aiml-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "cfd88f339bea",
@@ -3712,17 +3730,6 @@
    "title": "팀 토론 — 데이터 드리프트 감지 시스템 구축 계획 수립",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "f880e36a8e23",
-   "date": "2026-07-31",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "K-배터리, 2Q 성적표서 `깜짝 성과`…하반기 ESS 확대·EV 반등에 주목 [배터리레이다]",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YMFhhWE16b2ltNUdUVksyZnVlZk5hMWhPYlpwdlhsTnBqZXhRMUNLQkFjUWhlYUVBSnZwZmhqa3hBVks2a0hraUZ4cmpTQXNrdmg5T1drU2Q3WGRKRGdheXdHLWM?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
