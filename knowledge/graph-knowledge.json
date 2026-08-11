@@ -46,6 +46,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-c2bd18d42240",
+   "name": "팀 토론 — 사이버 보안 및 데이터 프라이버시 통합 전략 심층 분석 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-12",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-884934714b79",
    "name": "대명에너지, 호남 반도체 클러스터 전력원 재생에너지·ESS 사용에 관심↑",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-29",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-abbaa20c2f76",
-   "name": "[유미's 픽] 한컴라이프케어, 쿠팡 물류센터 화재 계기로 재평가 받나",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3660,6 +3660,46 @@
   {
    "source": "STD-001",
    "target": "K-d7092f0908f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-c2bd18d42240",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-c2bd18d42240",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-c2bd18d42240",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-c2bd18d42240",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c2bd18d42240",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-c2bd18d42240",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-c2bd18d42240",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-c2bd18d42240",
    "type": "knowledge"
   },
   {
@@ -8471,11 +8511,6 @@
    "source": "MAR-001",
    "target": "K-aceb45222468",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-abbaa20c2f76",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8599,7 +8634,7 @@
    {
     "date": "2026-08-12",
     "knowledge": 400,
-    "events_total": 1173
+    "events_total": 1174
    }
   ]
  }
