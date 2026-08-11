@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-11",
  "totals": {
-  "all": 1150,
+  "all": 1151,
   "briefing": 354,
   "skill": 573,
-  "discussion": 223,
+  "discussion": 224,
   "activity": 0
  },
  "perAgent": {
@@ -119,12 +119,12 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 43,
+   "count": 44,
    "byType": {
     "skill": 7,
-    "discussion": 36
+    "discussion": 37
    },
-   "lastGrown": "2026-08-10",
+   "lastGrown": "2026-08-11",
    "level": 3
   },
   "bess-data-analyst": {
@@ -137,12 +137,12 @@
    "level": 3
   },
   "bess-ebop-engineer": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 7,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-emc-analyst": {
@@ -191,12 +191,12 @@
    "level": 2
   },
   "bess-facility-manager": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 7,
-    "discussion": 14
+    "discussion": 15
    },
-   "lastGrown": "2026-08-10",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-financial-analysis": {
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 7,
-    "discussion": 47
+    "discussion": 48
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -502,12 +502,12 @@
    "level": 3
   },
   "bess-qaqc-engineer": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 7,
-    "discussion": 14
+    "discussion": 15
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-risk-manager": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 112,
+   "count": 113,
    "byType": {
     "skill": 7,
-    "discussion": 105
+    "discussion": 106
    },
    "lastGrown": "2026-08-11",
    "level": 4
@@ -683,13 +683,13 @@
    "level": 2
   },
   "bess-tax-incentive": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 7,
-    "discussion": 30,
+    "discussion": 31,
     "briefing": 2
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-11",
    "level": 3
   },
   "bess-tax-japan": {
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 7,
-    "discussion": 58
+    "discussion": 59
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-11",
    "level": 3
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-11",
-   "added": 24
+   "added": 25
   }
  ],
  "freshness": {
