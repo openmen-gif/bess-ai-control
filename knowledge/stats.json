@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-11",
  "totals": {
-  "all": 1153,
+  "all": 1154,
   "briefing": 354,
   "skill": 573,
-  "discussion": 226,
+  "discussion": 227,
   "activity": 0
  },
  "perAgent": {
@@ -119,19 +119,19 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 7,
-    "discussion": 38
+    "discussion": 39
    },
    "lastGrown": "2026-08-11",
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 7,
-    "discussion": 40
+    "discussion": 41
    },
    "lastGrown": "2026-08-11",
    "level": 3
@@ -292,12 +292,12 @@
    "level": 2
   },
   "bess-internal-auditor": {
-   "count": 35,
+   "count": 36,
    "byType": {
     "skill": 7,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-11",
    "level": 3
   },
   "bess-ip-patent-expert": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 75,
+   "count": 76,
    "byType": {
     "skill": 7,
-    "discussion": 68
+    "discussion": 69
    },
    "lastGrown": "2026-08-11",
    "level": 4
@@ -602,10 +602,10 @@
    "level": 4
   },
   "bess-standards-poland": {
-   "count": 15,
+   "count": 16,
    "byType": {
     "skill": 7,
-    "discussion": 8
+    "discussion": 9
    },
    "lastGrown": "2026-08-11",
    "level": 2
@@ -702,30 +702,30 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 67,
+   "count": 68,
    "byType": {
     "skill": 7,
-    "discussion": 60
+    "discussion": 61
    },
    "lastGrown": "2026-08-11",
    "level": 3
   },
   "bess-tool-developer": {
-   "count": 28,
+   "count": 29,
    "byType": {
     "skill": 8,
-    "discussion": 20
+    "discussion": 21
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-training-expert": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 7,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-11",
    "level": 2
   },
   "bess-transfer-pricing": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-11",
-   "added": 27
+   "added": 28
   }
  ],
  "freshness": {
