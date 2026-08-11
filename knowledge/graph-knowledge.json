@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-d931d03cf159",
+   "name": "팀 토론 — 미국 BESS 내륙운송 수주 확대 동향 분석 및 KPX 내 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-12",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-f146dca95123",
    "name": "LS일렉트릭, 세계 첫 'DC팩토리' 본격 가동…직류 생태계 키운다",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-07-28",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fcf07ff0af62",
-   "name": "삼성SDI, 시장 예상 뒤집나…ESS 호조에 2분기 흑자 기대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-28",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-d931d03cf159",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d931d03cf159",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-d931d03cf159",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-d931d03cf159",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d931d03cf159",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-d931d03cf159",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-d931d03cf159",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-d931d03cf159",
+   "type": "knowledge"
+  },
   {
    "source": "PCS-001",
    "target": "K-f146dca95123",
@@ -8546,11 +8586,6 @@
    "source": "TIN-001",
    "target": "K-ffe55dd7e65e",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fcf07ff0af62",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8674,7 +8709,7 @@
    {
     "date": "2026-08-12",
     "knowledge": 400,
-    "events_total": 1157
+    "events_total": 1158
    }
   ]
  }
