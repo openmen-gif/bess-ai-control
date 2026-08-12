@@ -136,6 +136,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-098012832e91",
+   "name": "팀 토론 — 인도 신흥시장 그리드코 진출 전략 수립 및 현지 파트너십 구",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-12",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-08251ce8d1ac",
    "name": "디시오, 1700V/1400A 고밀도 전력모듈 양산…국내 대기업에 공급",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-aceb45222468",
-   "name": "HD현대일렉트릭, 2Q 잠정 매출 1조1418억...전년동기比 26%↑",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-29",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3780,6 +3780,46 @@
   {
    "source": "CYB-001",
    "target": "K-0f28f52faa48",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-098012832e91",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-098012832e91",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-098012832e91",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-098012832e91",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-098012832e91",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-098012832e91",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-098012832e91",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-098012832e91",
    "type": "knowledge"
   },
   {
@@ -8506,11 +8546,6 @@
    "source": "STR-001",
    "target": "K-b235e1a096ad",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-aceb45222468",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8634,7 +8669,7 @@
    {
     "date": "2026-08-12",
     "knowledge": 400,
-    "events_total": 1174
+    "events_total": 1175
    }
   ]
  }
