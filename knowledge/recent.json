@@ -101,6 +101,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "966759b9eded",
+   "date": "2026-08-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-financial-analysis",
+    "bess-pcs-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-incentive",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — BESS 프로젝트 BOM 최적화 및 글로벌 인증 문서 통합 전략 수립 명령",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "94982f4f7ac3",
    "date": "2026-08-14",
    "type": "discussion",
@@ -3608,17 +3626,6 @@
    "type": "skill",
    "agents": [
     "bess-standards-poland"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "aae21fcdcdd0",
-   "date": "2026-08-02",
-   "type": "skill",
-   "agents": [
-    "bess-battery-expert"
    ],
    "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
    "link": "",

@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-966759b9eded",
+   "name": "팀 토론 — BESS 프로젝트 BOM 최적화 및 글로벌 인증 문서 통합 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-94982f4f7ac3",
    "name": "팀 토론 — BESS 프로젝트 BOM 최적화 및 글로벌 인증 문서 통합 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c0bdd1643089",
-   "name": "배터리 3사, 모두 흑자전환 성공했다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3645,6 +3645,46 @@
   {
    "source": "STD-001",
    "target": "K-b33e698594bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-966759b9eded",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-966759b9eded",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-966759b9eded",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-966759b9eded",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-966759b9eded",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-966759b9eded",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-966759b9eded",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-966759b9eded",
    "type": "knowledge"
   },
   {
@@ -8006,11 +8046,6 @@
    "source": "SYS-001",
    "target": "K-c1944b7159cd",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-c0bdd1643089",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8144,7 +8179,7 @@
    {
     "date": "2026-08-14",
     "knowledge": 400,
-    "events_total": 1242
+    "events_total": 1243
    }
   ]
  }

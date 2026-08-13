@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-14",
  "totals": {
-  "all": 1242,
+  "all": 1243,
   "briefing": 397,
   "skill": 609,
-  "discussion": 236,
+  "discussion": 237,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 182,
+   "count": 183,
    "byType": {
     "skill": 9,
-    "discussion": 51,
+    "discussion": 52,
     "briefing": 122
    },
    "lastGrown": "2026-08-14",
@@ -200,10 +200,10 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 60,
+   "count": 61,
    "byType": {
     "skill": 8,
-    "discussion": 52
+    "discussion": 53
    },
    "lastGrown": "2026-08-14",
    "level": 3
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 82,
+   "count": 83,
    "byType": {
     "skill": 8,
-    "discussion": 43,
+    "discussion": 44,
     "briefing": 31
    },
    "lastGrown": "2026-08-14",
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 8,
-    "discussion": 54
+    "discussion": 55
    },
    "lastGrown": "2026-08-14",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 119,
+   "count": 120,
    "byType": {
     "skill": 8,
-    "discussion": 111
+    "discussion": 112
    },
    "lastGrown": "2026-08-14",
    "level": 4
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 8,
-    "discussion": 53
+    "discussion": 54
    },
    "lastGrown": "2026-08-14",
    "level": 3
@@ -683,13 +683,13 @@
    "level": 2
   },
   "bess-tax-incentive": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 7,
-    "discussion": 32,
+    "discussion": 33,
     "briefing": 2
    },
-   "lastGrown": "2026-08-12",
+   "lastGrown": "2026-08-14",
    "level": 3
   },
   "bess-tax-japan": {
@@ -748,12 +748,12 @@
    "level": 2
   },
   "bess-translator": {
-   "count": 14,
+   "count": 15,
    "byType": {
     "skill": 7,
-    "discussion": 7
+    "discussion": 8
    },
-   "lastGrown": "2026-08-03",
+   "lastGrown": "2026-08-14",
    "level": 2
   }
  },
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-14",
-   "added": 16
+   "added": 17
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-13",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-14",
+   "gapDays": 0,
    "overdue": false
   }
  }
