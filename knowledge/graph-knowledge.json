@@ -82,6 +82,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-be092b34ae75",
+   "name": "팀 토론 — BESS 시스템 내 액냉 시스템 효율 최적화를 위한 CFD ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b33e698594bd",
    "name": "AI·반도체 전력수요 급증…수소, ‘장주기 저장·계통 유연성’ 역할 커진",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d0ae486c85a3",
-   "name": "동서발전, 폐배터리 ESS로 재탄생…태양광 폐패널은 유리온실로",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "BAT-001",
    "target": "K-c1ffac7ec430",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-be092b34ae75",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-be092b34ae75",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-be092b34ae75",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-be092b34ae75",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-be092b34ae75",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-be092b34ae75",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-be092b34ae75",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-be092b34ae75",
    "type": "knowledge"
   },
   {
@@ -8121,11 +8161,6 @@
    "source": "BAT-001",
    "target": "K-d147ab2fa90c",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-d0ae486c85a3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8259,7 +8294,7 @@
    {
     "date": "2026-08-14",
     "knowledge": 400,
-    "events_total": 1247
+    "events_total": 1248
    }
   ]
  }
