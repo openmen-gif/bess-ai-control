@@ -100,6 +100,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-9402501db32d",
+   "name": "팀 토론 — 단기 최적화된 차단기 시스템 설계 가이드라인 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5d950d1c2592",
    "name": "지에프아이, 상반기 매출액 350억원…전년 대비 164.5% ↑",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c1944b7159cd",
-   "name": "팀 토론 — GIS/AIS 통합 차단기 성능 최적화 설계 검토",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3715,6 +3715,46 @@
   {
    "source": "SYS-001",
    "target": "K-94982f4f7ac3",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9402501db32d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-9402501db32d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-9402501db32d",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-9402501db32d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-9402501db32d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-9402501db32d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-9402501db32d",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-9402501db32d",
    "type": "knowledge"
   },
   {
@@ -8016,36 +8056,6 @@
    "source": "STD-002",
    "target": "K-c524ba4a7a10",
    "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-c1944b7159cd",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-c1944b7159cd",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-001",
-   "target": "K-c1944b7159cd",
-   "type": "knowledge"
-  },
-  {
-   "source": "SLS-001",
-   "target": "K-c1944b7159cd",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-c1944b7159cd",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-c1944b7159cd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8179,7 +8189,7 @@
    {
     "date": "2026-08-14",
     "knowledge": 400,
-    "events_total": 1243
+    "events_total": 1244
    }
   ]
  }
