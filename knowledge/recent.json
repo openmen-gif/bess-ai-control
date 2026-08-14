@@ -219,6 +219,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "02ee2bd93198",
+   "date": "2026-08-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-internal-auditor",
+    "bess-pcs-expert",
+    "bess-system-engineer",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 케이블 최적화 포설 계획 수립 및 IEC 표준 준수 검증 (Ampacity 계산 포함)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "01afbc5a85b7",
    "date": "2026-08-14",
    "type": "discussion",
@@ -3629,17 +3647,6 @@
    "type": "skill",
    "agents": [
     "bess-precom-report"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "b1034362ca9d",
-   "date": "2026-08-02",
-   "type": "skill",
-   "agents": [
-    "bess-knowledge-manager"
    ],
    "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
    "link": "",

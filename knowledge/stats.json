@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-14",
  "totals": {
-  "all": 1245,
+  "all": 1246,
   "briefing": 397,
   "skill": 609,
-  "discussion": 239,
+  "discussion": 240,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 185,
+   "count": 186,
    "byType": {
     "skill": 9,
-    "discussion": 54,
+    "discussion": 55,
     "briefing": 122
    },
    "lastGrown": "2026-08-14",
@@ -46,13 +46,13 @@
    "level": 3
   },
   "bess-cable-engineer": {
-   "count": 28,
+   "count": 29,
    "byType": {
     "skill": 8,
-    "discussion": 19,
+    "discussion": 20,
     "briefing": 1
    },
-   "lastGrown": "2026-08-13",
+   "lastGrown": "2026-08-14",
    "level": 2
   },
   "bess-cbop-engineer": {
@@ -209,10 +209,10 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 81,
+   "count": 82,
    "byType": {
     "skill": 8,
-    "discussion": 43,
+    "discussion": 44,
     "briefing": 30
    },
    "lastGrown": "2026-08-14",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 8,
-    "discussion": 23
+    "discussion": 24
    },
    "lastGrown": "2026-08-14",
    "level": 3
@@ -292,12 +292,12 @@
    "level": 2
   },
   "bess-internal-auditor": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 7,
-    "discussion": 30
+    "discussion": 31
    },
-   "lastGrown": "2026-08-12",
+   "lastGrown": "2026-08-14",
    "level": 3
   },
   "bess-ip-patent-expert": {
@@ -401,10 +401,10 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 85,
+   "count": 86,
    "byType": {
     "skill": 8,
-    "discussion": 46,
+    "discussion": 47,
     "briefing": 31
    },
    "lastGrown": "2026-08-14",
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 64,
+   "count": 65,
    "byType": {
     "skill": 8,
-    "discussion": 56
+    "discussion": 57
    },
    "lastGrown": "2026-08-14",
    "level": 3
@@ -711,10 +711,10 @@
    "level": 4
   },
   "bess-tool-developer": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 8,
-    "discussion": 22
+    "discussion": 23
    },
    "lastGrown": "2026-08-14",
    "level": 3
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-14",
-   "added": 19
+   "added": 20
   }
  ],
  "freshness": {
