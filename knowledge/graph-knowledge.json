@@ -163,6 +163,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-01afbc5a85b7",
+   "name": "팀 토론 — 고밀도 모듈 안전성 평가 방법 심층 분석 및 회사 설계 가이",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fc1ada115d44",
    "name": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-31",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-c524ba4a7a10",
-   "name": "팀 토론 — TCFD·ISSB 영역 초안 작성 — bess-esg-fin",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-07-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3785,6 +3785,46 @@
   {
    "source": "BAT-001",
    "target": "K-04dbf9aabde4",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-01afbc5a85b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-01afbc5a85b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-01afbc5a85b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-01afbc5a85b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-01afbc5a85b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-01afbc5a85b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-01afbc5a85b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-01afbc5a85b7",
    "type": "knowledge"
   },
   {
@@ -8016,46 +8056,6 @@
    "source": "STD-001",
    "target": "K-c732d62ede69",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-c524ba4a7a10",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-c524ba4a7a10",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-c524ba4a7a10",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-c524ba4a7a10",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-c524ba4a7a10",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-001",
-   "target": "K-c524ba4a7a10",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-c524ba4a7a10",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-c524ba4a7a10",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8189,7 +8189,7 @@
    {
     "date": "2026-08-14",
     "knowledge": 400,
-    "events_total": 1244
+    "events_total": 1245
    }
   ]
  }

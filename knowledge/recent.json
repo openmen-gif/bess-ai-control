@@ -219,6 +219,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "01afbc5a85b7",
+   "date": "2026-08-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-mlops-engineer",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 고밀도 모듈 안전성 평가 방법 심층 분석 및 회사 설계 가이드라인 업데이트 권고",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fc1ada115d44",
    "date": "2026-08-13",
    "type": "skill",
@@ -3626,17 +3644,6 @@
    "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "b0894286e430",
-   "date": "2026-08-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "삼성SDI '서프라이즈' 시작 … 유럽향 EV↑, 미국향 ESS↑",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1lZi01N2NFNkFnSXgwZlVhSldDaXZwbF9ITkx4akdXdDZiTnNLbGZTWEFqaDNSeVhobWx6SGZGdURsTmJ6Nk8xc2RUaF9iU2UwcExLZVRXVzlWLTVFWUNLbDg1aVJHUEZnNFcw?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
