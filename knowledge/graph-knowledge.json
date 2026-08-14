@@ -91,6 +91,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b89e7fc8809c",
+   "name": "팀 토론 — 부지조성 최적화를 위한 현지 환경 영향 평가 및 설계 가이드",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b33e698594bd",
    "name": "AI·반도체 전력수요 급증…수소, ‘장주기 저장·계통 유연성’ 역할 커진",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-07-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d147ab2fa90c",
-   "name": "K배터리 3사, 2년 만에 ‘동반 흑자’… ESS 사업 확대로 실적 개선",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-07-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3720,6 +3720,46 @@
   {
    "source": "STR-001",
    "target": "K-be092b34ae75",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-b89e7fc8809c",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-b89e7fc8809c",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-b89e7fc8809c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b89e7fc8809c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-b89e7fc8809c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-b89e7fc8809c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b89e7fc8809c",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-b89e7fc8809c",
    "type": "knowledge"
   },
   {
@@ -8156,11 +8196,6 @@
    "source": "STD-002",
    "target": "K-d263341d69c0",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-d147ab2fa90c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8294,7 +8329,7 @@
    {
     "date": "2026-08-14",
     "knowledge": 400,
-    "events_total": 1248
+    "events_total": 1249
    }
   ]
  }
