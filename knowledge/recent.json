@@ -57,6 +57,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "d52dd54415e6",
+   "date": "2026-08-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-tax-korea",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — 고밀도 모듈 안전성 평가 방법론 심층 분석 및 현재 설계에 대한 갭 분석 및 보완 조치 권고 (@bess-fire-engineer, @bess-battery-expert)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "cd84acdcd248",
    "date": "2026-08-14",
    "type": "briefing",
@@ -3636,17 +3654,6 @@
    "type": "skill",
    "agents": [
     "bess-esg-finance"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "b147a51e7594",
-   "date": "2026-08-02",
-   "type": "skill",
-   "agents": [
-    "bess-precom-report"
    ],
    "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
    "link": "",
