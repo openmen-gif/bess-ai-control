@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-16",
  "totals": {
-  "all": 1265,
+  "all": 1266,
   "briefing": 412,
   "skill": 609,
-  "discussion": 244,
+  "discussion": 245,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 195,
+   "count": 196,
    "byType": {
     "skill": 9,
-    "discussion": 58,
+    "discussion": 59,
     "briefing": 128
    },
    "lastGrown": "2026-08-16",
@@ -191,12 +191,12 @@
    "level": 2
   },
   "bess-facility-manager": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 8,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-13",
+   "lastGrown": "2026-08-16",
    "level": 2
   },
   "bess-financial-analysis": {
@@ -209,10 +209,10 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 85,
+   "count": 86,
    "byType": {
     "skill": 8,
-    "discussion": 47,
+    "discussion": 48,
     "briefing": 30
    },
    "lastGrown": "2026-08-16",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 8,
-    "discussion": 28
+    "discussion": 29
    },
    "lastGrown": "2026-08-16",
    "level": 3
@@ -292,12 +292,12 @@
    "level": 2
   },
   "bess-internal-auditor": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 7,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-08-14",
+   "lastGrown": "2026-08-16",
    "level": 3
   },
   "bess-ip-patent-expert": {
@@ -319,12 +319,12 @@
    "level": 2
   },
   "bess-knowledge-manager": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 7,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-16",
    "level": 2
   },
   "bess-labor-safety": {
@@ -584,12 +584,12 @@
    "level": 2
   },
   "bess-standards-japan": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 7,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-12",
+   "lastGrown": "2026-08-16",
    "level": 2
   },
   "bess-standards-korea": {
@@ -720,12 +720,12 @@
    "level": 3
   },
   "bess-training-expert": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 7,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-11",
+   "lastGrown": "2026-08-16",
    "level": 2
   },
   "bess-transfer-pricing": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-16",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-15",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-16",
+   "gapDays": 0,
    "overdue": false
   }
  }

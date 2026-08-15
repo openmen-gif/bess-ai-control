@@ -2,6 +2,24 @@
  "updated": "2026-08-16",
  "events": [
   {
+   "id": "cb938353e6c2",
+   "date": "2026-08-16",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-facility-manager",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-internal-auditor",
+    "bess-knowledge-manager",
+    "bess-standards-japan",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 조직문화 강화를 위한 맞춤형 교육 프로그램 개발 및 실행 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "0b6a636c6c97",
    "date": "2026-08-16",
    "type": "discussion",
@@ -3650,17 +3668,6 @@
    "type": "skill",
    "agents": [
     "bess-site-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "eaf9f74c56c4",
-   "date": "2026-08-02",
-   "type": "skill",
-   "agents": [
-    "bess-standards-australia"
    ],
    "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
    "link": "",
