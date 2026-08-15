@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-16",
  "totals": {
-  "all": 1278,
+  "all": 1279,
   "briefing": 423,
   "skill": 609,
-  "discussion": 246,
+  "discussion": 247,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 202,
+   "count": 203,
    "byType": {
     "skill": 9,
-    "discussion": 60,
+    "discussion": 61,
     "briefing": 133
    },
    "lastGrown": "2026-08-16",
@@ -46,22 +46,22 @@
    "level": 3
   },
   "bess-cable-engineer": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 8,
-    "discussion": 20,
+    "discussion": 21,
     "briefing": 1
    },
-   "lastGrown": "2026-08-14",
-   "level": 2
+   "lastGrown": "2026-08-16",
+   "level": 3
   },
   "bess-cbop-engineer": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 8,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-08-14",
+   "lastGrown": "2026-08-16",
    "level": 2
   },
   "bess-cfd-analyst": {
@@ -110,12 +110,12 @@
    "level": 4
   },
   "bess-customs-tariff": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 9,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-13",
+   "lastGrown": "2026-08-16",
    "level": 2
   },
   "bess-cybersecurity-expert": {
@@ -209,10 +209,10 @@
    "level": 3
   },
   "bess-fire-engineer": {
-   "count": 86,
+   "count": 87,
    "byType": {
     "skill": 8,
-    "discussion": 48,
+    "discussion": 49,
     "briefing": 30
    },
    "lastGrown": "2026-08-16",
@@ -238,12 +238,12 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 8,
-    "discussion": 25
+    "discussion": 26
    },
-   "lastGrown": "2026-08-14",
+   "lastGrown": "2026-08-16",
    "level": 3
   },
   "bess-hr-manager": {
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 8,
-    "discussion": 29
+    "discussion": 30
    },
    "lastGrown": "2026-08-16",
    "level": 3
@@ -401,13 +401,13 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 89,
+   "count": 90,
    "byType": {
     "skill": 8,
-    "discussion": 48,
+    "discussion": 49,
     "briefing": 33
    },
-   "lastGrown": "2026-08-15",
+   "lastGrown": "2026-08-16",
    "level": 4
   },
   "bess-permit-asia": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-16",
-   "added": 14
+   "added": 15
   }
  ],
  "freshness": {

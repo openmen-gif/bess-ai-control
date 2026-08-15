@@ -64,6 +64,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-6f2bbc249d82",
+   "name": "팀 토론 — 고밀도 BESS 시스템의 케이블 보호협조 설계 최적화 방안 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5825907acac6",
    "name": "택배 넘어 배터리 배송…롯데글로벌로지스, 美 BESS 물량 3배↑",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fad12ccbd23f",
-   "name": "팀 토론 — LS일렉트릭의 GFM 기술 검증 완료에 따른 국내 BESS ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-01",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3705,6 +3705,46 @@
   {
    "source": "MAR-001",
    "target": "K-7cbd1bed0de7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6f2bbc249d82",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-6f2bbc249d82",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-6f2bbc249d82",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-6f2bbc249d82",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6f2bbc249d82",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-6f2bbc249d82",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-6f2bbc249d82",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-6f2bbc249d82",
    "type": "knowledge"
   },
   {
@@ -7916,46 +7956,6 @@
    "source": "STD-008",
    "target": "K-fc0fb9627ca8",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-fad12ccbd23f",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-fad12ccbd23f",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-fad12ccbd23f",
-   "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-fad12ccbd23f",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-fad12ccbd23f",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-fad12ccbd23f",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-fad12ccbd23f",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-fad12ccbd23f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8099,7 +8099,7 @@
    {
     "date": "2026-08-16",
     "knowledge": 400,
-    "events_total": 1278
+    "events_total": 1279
    }
   ]
  }
