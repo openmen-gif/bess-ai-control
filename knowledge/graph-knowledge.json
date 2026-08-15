@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-0b6a636c6c97",
+   "name": "팀 토론 — 계통 안정성 강화를 위한 VRT 및 LVRT 테스트 프로토콜",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fcac00451835",
    "name": "삼성·LG·SK, 1조 ESS '쩐의 전쟁'…올해는 딱 한 번",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-01",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-1b5f484ce401",
-   "name": "K배터리, ESS 사업 본궤도…‘AI데이터센터’로 가속 목표",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-0b6a636c6c97",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-0b6a636c6c97",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-0b6a636c6c97",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0b6a636c6c97",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-0b6a636c6c97",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0b6a636c6c97",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-0b6a636c6c97",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-0b6a636c6c97",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-fcac00451835",
@@ -8061,15 +8101,10 @@
    "source": "MAR-001",
    "target": "K-2a3920dd454e",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-1b5f484ce401",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "history": [
    {
     "date": "2026-07-20",
@@ -8205,6 +8240,11 @@
     "date": "2026-08-15",
     "knowledge": 400,
     "events_total": 1264
+   },
+   {
+    "date": "2026-08-16",
+    "knowledge": 400,
+    "events_total": 1265
    }
   ]
  }
