@@ -2,6 +2,24 @@
  "updated": "2026-08-16",
  "events": [
   {
+   "id": "e18408d9c9a5",
+   "date": "2026-08-16",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-contract-specialist",
+    "bess-emerging-markets",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — FIDIC Silver/Yellow 계약 조건 분석 및 최적화 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "cb938353e6c2",
    "date": "2026-08-16",
    "type": "discussion",
@@ -3661,17 +3679,6 @@
    "title": "2026년 ESS 배터리 가격 상승의 파장: 구조적 공급 제약과 수요 급증, 장기화 우려",
    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE8tOU56U0lGRTRoU2JmNlUxQjV3RDBNOW40djNjRkNlTkI0OVBmcmpSV3d3QjRpeHB2SERjZm10UVpSbkE?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "eb48ee598f3f",
-   "date": "2026-08-02",
-   "type": "skill",
-   "agents": [
-    "bess-site-manager"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거 되먹임 (+472줄)",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
