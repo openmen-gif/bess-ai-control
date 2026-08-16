@@ -73,6 +73,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-59aae8164caf",
+   "name": "팀 토론 — 설비 가용률 향상을 위한 예방정비 점검 주기 최적화 계획 수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5825907acac6",
    "name": "택배 넘어 배터리 배송…롯데글로벌로지스, 美 BESS 물량 3배↑",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fc0fb9627ca8",
-   "name": "팀 토론 — 부지조성 계획 최적화 및 안전 이격거리 검토 수행",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3745,6 +3745,46 @@
   {
    "source": "PCS-001",
    "target": "K-6f2bbc249d82",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-59aae8164caf",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-59aae8164caf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-59aae8164caf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-59aae8164caf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-59aae8164caf",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-59aae8164caf",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-59aae8164caf",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-59aae8164caf",
    "type": "knowledge"
   },
   {
@@ -7926,36 +7966,6 @@
    "source": "SUB-001",
    "target": "K-0680584333dd",
    "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-fc0fb9627ca8",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-fc0fb9627ca8",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-fc0fb9627ca8",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-fc0fb9627ca8",
-   "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-fc0fb9627ca8",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-008",
-   "target": "K-fc0fb9627ca8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8099,7 +8109,7 @@
    {
     "date": "2026-08-16",
     "knowledge": 400,
-    "events_total": 1279
+    "events_total": 1280
    }
   ]
  }

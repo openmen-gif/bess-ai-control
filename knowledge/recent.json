@@ -111,6 +111,24 @@
    "source": "bess-team"
   },
   {
+   "id": "59aae8164caf",
+   "date": "2026-08-16",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-commissioning-coordinator",
+    "bess-customs-tariff",
+    "bess-facility-manager",
+    "bess-financial-analysis",
+    "bess-om-expert",
+    "bess-qaqc-engineer",
+    "bess-scheduler"
+   ],
+   "title": "팀 토론 — 설비 가용률 향상을 위한 예방정비 점검 주기 최적화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5825907acac6",
    "date": "2026-08-16",
    "type": "briefing",
@@ -3653,24 +3671,6 @@
     "bess-system-engineer"
    ],
    "title": "팀 토론 — 케이블 최적화 프로젝트 시작: IEC 표준 준수 하의 국내 BESS 설비 케이블 포설 효율성 향상 및 Ampacity 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "0f745d50e12d",
-   "date": "2026-08-03",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-data-analyst",
-    "bess-financial-analysis",
-    "bess-mlops-engineer",
-    "bess-pcs-expert",
-    "bess-scheduler",
-    "bess-system-engineer",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — AI 기반 최적화 알고리즘을 활용한 국내 BESS 시스템의 장기적인 성능 예측 및 열화 예측 모델 개발",
    "link": "",
    "source": "bess-team"
   }
