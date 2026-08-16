@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-eea3b7b71293",
+   "name": "팀 토론 — 액침형 ESS 안전 제어기능 표준화 동향 분석 및 국내 적용",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e18408d9c9a5",
    "name": "팀 토론 — FIDIC Silver/Yellow 계약 조건 분석 및 최적",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0ac2a94e6ab5",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-eea3b7b71293",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-eea3b7b71293",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-eea3b7b71293",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-eea3b7b71293",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-eea3b7b71293",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-eea3b7b71293",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-eea3b7b71293",
+   "type": "knowledge"
+  },
   {
    "source": "AIM-001",
    "target": "K-e18408d9c9a5",
@@ -7996,11 +8031,6 @@
    "source": "PMG-001",
    "target": "K-1269e582e7f5",
    "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-0ac2a94e6ab5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8144,7 +8174,7 @@
    {
     "date": "2026-08-16",
     "knowledge": 400,
-    "events_total": 1281
+    "events_total": 1282
    }
   ]
  }
