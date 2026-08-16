@@ -10,6 +10,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-c18cb753d321",
+   "name": "팀 토론 — AI 기반 SOC/SOH 예측 모델 개발을 통한 배터리 수명",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-eea3b7b71293",
    "name": "팀 토론 — 액침형 ESS 안전 제어기능 표준화 동향 분석 및 국내 적용",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-13cf9af3355c",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "KTX-001",
    "target": "K-d90e0540d0ad",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c18cb753d321",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-c18cb753d321",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-c18cb753d321",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-c18cb753d321",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-c18cb753d321",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-c18cb753d321",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-c18cb753d321",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-c18cb753d321",
    "type": "knowledge"
   },
   {
@@ -8096,11 +8136,6 @@
    "source": "TIN-001",
    "target": "K-1436b48cc725",
    "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-13cf9af3355c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8249,7 +8284,7 @@
    {
     "date": "2026-08-17",
     "knowledge": 400,
-    "events_total": 1284
+    "events_total": 1285
    }
   ]
  }
