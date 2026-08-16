@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-f938fef5a675",
+   "name": "팀 토론 — 변압기·수배전반 영역 벤치마킹 — bess-ebop-engi",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d90e0540d0ad",
    "name": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 활용을 통한 글로벌",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-369e4a5328f7",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "EBP-001",
+   "target": "K-f938fef5a675",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f938fef5a675",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-f938fef5a675",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-f938fef5a675",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-f938fef5a675",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-f938fef5a675",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-f938fef5a675",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-f938fef5a675",
+   "type": "knowledge"
+  },
   {
    "source": "CUS-001",
    "target": "K-d90e0540d0ad",
@@ -8121,11 +8161,6 @@
    "source": "BAT-001",
    "target": "K-3d09698178db",
    "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-369e4a5328f7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8274,7 +8309,7 @@
    {
     "date": "2026-08-17",
     "knowledge": 400,
-    "events_total": 1298
+    "events_total": 1299
    }
   ]
  }
