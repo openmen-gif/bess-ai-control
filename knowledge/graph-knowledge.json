@@ -136,6 +136,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-14297610fb80",
+   "name": "팀 토론 — 시운전 최적화 프로세스 자동화 및 실시간 모니터링 시스템 구",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0b6a636c6c97",
    "name": "팀 토론 — 계통 안정성 강화를 위한 VRT 및 LVRT 테스트 프로토콜",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-0680584333dd",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3815,6 +3815,46 @@
   {
    "source": "BAT-001",
    "target": "K-18754f2c35f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-14297610fb80",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-14297610fb80",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-14297610fb80",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-14297610fb80",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-14297610fb80",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-14297610fb80",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-14297610fb80",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-14297610fb80",
    "type": "knowledge"
   },
   {
@@ -7961,11 +8001,6 @@
    "source": "LOG-001",
    "target": "K-0ac2a94e6ab5",
    "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-0680584333dd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8109,7 +8144,7 @@
    {
     "date": "2026-08-16",
     "knowledge": 400,
-    "events_total": 1280
+    "events_total": 1281
    }
   ]
  }
