@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-18",
  "totals": {
-  "all": 1305,
+  "all": 1306,
   "briefing": 434,
   "skill": 609,
-  "discussion": 262,
+  "discussion": 263,
   "activity": 0
  },
  "perAgent": {
@@ -36,10 +36,10 @@
    "level": 5
   },
   "bess-business-dev": {
-   "count": 64,
+   "count": 65,
    "byType": {
     "skill": 8,
-    "discussion": 32,
+    "discussion": 33,
     "briefing": 24
    },
    "lastGrown": "2026-08-18",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 80,
+   "count": 81,
    "byType": {
     "skill": 9,
-    "discussion": 71
+    "discussion": 72
    },
    "lastGrown": "2026-08-18",
    "level": 4
@@ -119,10 +119,10 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 8,
-    "discussion": 43
+    "discussion": 44
    },
    "lastGrown": "2026-08-18",
    "level": 3
@@ -155,12 +155,12 @@
    "level": 3
   },
   "bess-emerging-markets": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 8,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-env-engineer": {
@@ -200,10 +200,10 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 71,
+   "count": 72,
    "byType": {
     "skill": 8,
-    "discussion": 63
+    "discussion": 64
    },
    "lastGrown": "2026-08-18",
    "level": 4
@@ -219,12 +219,12 @@
    "level": 4
   },
   "bess-fit-procedure": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 7,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-11",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-grid-interconnection": {
@@ -355,10 +355,10 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 158,
+   "count": 159,
    "byType": {
     "skill": 8,
-    "discussion": 37,
+    "discussion": 38,
     "briefing": 113
    },
    "lastGrown": "2026-08-18",
@@ -374,12 +374,12 @@
    "level": 3
   },
   "bess-network-engineer": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 7,
-    "discussion": 9
+    "discussion": 10
    },
-   "lastGrown": "2026-08-04",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-om-expert": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-18",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {

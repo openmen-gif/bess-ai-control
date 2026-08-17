@@ -10,6 +10,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-7bfceff52f90",
+   "name": "팀 토론 — 시운전·EMS 영역 벤치마킹 — bess-fit-proced",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-483ecdd2c2b7",
    "name": "팀 토론 — Hybrid·BESS 영역 1차 분석 — bess-hybri",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4ee07da67e34",
-   "name": "팀 토론 — 화재 안전성 향상을 위한 액냉 시스템 CFD 유동해석 및 최",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "MLO-001",
    "target": "K-e26490c1275d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-7bfceff52f90",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7bfceff52f90",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-7bfceff52f90",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-7bfceff52f90",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-7bfceff52f90",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-7bfceff52f90",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-7bfceff52f90",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-7bfceff52f90",
    "type": "knowledge"
   },
   {
@@ -8331,46 +8371,6 @@
    "source": "FIR-001",
    "target": "K-4fd90315dd2e",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-4ee07da67e34",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-4ee07da67e34",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-4ee07da67e34",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMT-001",
-   "target": "K-4ee07da67e34",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-4ee07da67e34",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-4ee07da67e34",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-4ee07da67e34",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-4ee07da67e34",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8524,7 +8524,7 @@
    {
     "date": "2026-08-18",
     "knowledge": 400,
-    "events_total": 1305
+    "events_total": 1306
    }
   ]
  }
