@@ -1,10 +1,73 @@
 {
  "nodes": [
   {
+   "id": "K-f4381d686e99",
+   "name": "KTL, 액침형 ESS 기능안전 인증 국내 첫 발행",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-ea1d72bff4be",
+   "name": "LG엔솔·삼성SDI, 커지는 ESS 존재감…매출 비중 20→30%로 - ",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e26490c1275d",
    "name": "팀 토론 — 글로벌 배터리 배송 시장 확대에 따른 물류 및 물류 보안 강",
    "group": "KNOWLEDGE",
    "type": "discussion",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-cfdd2fa39bc6",
+   "name": "[독립신문 분석] 태양광은 늘었는데 전기는 갈 곳이 없다…‘전력망 병목’",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ccb497fcf5ae",
+   "name": "운송업계 新성장동력으로 떠오른 ‘배터리’···롯데글로벌로지스, LG엔솔 ",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-c0b41ac44cee",
+   "name": "LG엔솔 매출 절반 집중된 북미사업… 수익구조 개편 ‘숙제’",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ba6be67d690c",
+   "name": "배터리3사, 북미 공장 홀로서기 속도…합작법인 지분 잇단 인수·재편",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-84e47e26d5dc",
+   "name": "ESS 3차 입찰 '3파전'…K배터리, 1조 수주전 다시 불붙는다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
    "date": "2026-08-18",
    "val": 3,
    "color": "#F59E0B"
@@ -19,6 +82,33 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-6d3263e9ad68",
+   "name": "롯데글로벌로지스, 미국 배터리 물류 확대",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-61a10be8cc7a",
+   "name": "SPOTV NOW 중계 직접 정리한 정보 가이드",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-60c25b7c75e0",
+   "name": "세계 전력 10%가 태양광…ESS 만나 '24시간 전원' 넘본다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-483ecdd2c2b7",
    "name": "팀 토론 — Hybrid·BESS 영역 1차 분석 — bess-hybri",
    "group": "KNOWLEDGE",
@@ -26,6 +116,24 @@
    "date": "2026-08-18",
    "val": 3,
    "color": "#F59E0B"
+  },
+  {
+   "id": "K-3f09e88e9aba",
+   "name": "[기후외교·에너지] 태양광 하나 지어주고 끝?…한국 에너지 ODA도 ‘패",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-13c7a227f4e6",
+   "name": "'여의도 22배' 사막의 발전 단지…ESS 시장 '급성장'",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
   },
   {
    "id": "K-fa220899be8c",
@@ -3491,117 +3599,19 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6586b94cec3a",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-61faccaaaf6a",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5d4fb0e962d5",
-   "name": "팀 토론 — 액냉 시스템의 화재 안전성 최적화 설계 및 실증 테스트 계획",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-59e203b43334",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-58633ea37ee9",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-576872866c5b",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-535ce287badf",
-   "name": "팀 토론 — ST의 갈바닉 절연 게이트 드라이버 신제품 출시로 인한 국내",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-529bde450b1d",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-5299227acaf7",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-51c00d85e0d3",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-50dcf9290b1a",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-4fd90315dd2e",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-f4381d686e99",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ea1d72bff4be",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-e26490c1275d",
@@ -3640,6 +3650,31 @@
   {
    "source": "MLO-001",
    "target": "K-e26490c1275d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-cfdd2fa39bc6",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-ccb497fcf5ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-c0b41ac44cee",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ba6be67d690c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-84e47e26d5dc",
    "type": "knowledge"
   },
   {
@@ -3683,6 +3718,21 @@
    "type": "knowledge"
   },
   {
+   "source": "MAR-001",
+   "target": "K-6d3263e9ad68",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-61a10be8cc7a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-60c25b7c75e0",
+   "type": "knowledge"
+  },
+  {
    "source": "BIZ-001",
    "target": "K-483ecdd2c2b7",
    "type": "knowledge"
@@ -3720,6 +3770,16 @@
   {
    "source": "TAX-002",
    "target": "K-483ecdd2c2b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-3f09e88e9aba",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-13c7a227f4e6",
    "type": "knowledge"
   },
   {
@@ -8241,136 +8301,6 @@
    "source": "GRD-001",
    "target": "K-66f0c4dffd0f",
    "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-6586b94cec3a",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYD-001",
-   "target": "K-61faccaaaf6a",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-5d4fb0e962d5",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-5d4fb0e962d5",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-5d4fb0e962d5",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-5d4fb0e962d5",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-5d4fb0e962d5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-5d4fb0e962d5",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-5d4fb0e962d5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-5d4fb0e962d5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-59e203b43334",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-58633ea37ee9",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-004",
-   "target": "K-576872866c5b",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-535ce287badf",
-   "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-535ce287badf",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-535ce287badf",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-535ce287badf",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-535ce287badf",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-535ce287badf",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-535ce287badf",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-535ce287badf",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMT-001",
-   "target": "K-529bde450b1d",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-5299227acaf7",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-51c00d85e0d3",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-002",
-   "target": "K-50dcf9290b1a",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-4fd90315dd2e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8524,7 +8454,7 @@
    {
     "date": "2026-08-18",
     "knowledge": 400,
-    "events_total": 1306
+    "events_total": 1318
    }
   ]
  }

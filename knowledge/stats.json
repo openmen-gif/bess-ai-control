@@ -1,8 +1,8 @@
 {
  "updated": "2026-08-18",
  "totals": {
-  "all": 1306,
-  "briefing": 434,
+  "all": 1318,
+  "briefing": 446,
   "skill": 609,
   "discussion": 263,
   "activity": 0
@@ -26,21 +26,21 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 213,
+   "count": 218,
    "byType": {
     "skill": 9,
     "discussion": 67,
-    "briefing": 137
+    "briefing": 142
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 8,
     "discussion": 33,
-    "briefing": 24
+    "briefing": 25
    },
    "lastGrown": "2026-08-18",
    "level": 3
@@ -355,11 +355,11 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 159,
+   "count": 161,
    "byType": {
     "skill": 8,
     "discussion": 38,
-    "briefing": 113
+    "briefing": 115
    },
    "lastGrown": "2026-08-18",
    "level": 5
@@ -401,13 +401,13 @@
    "level": 2
   },
   "bess-pcs-expert": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 8,
     "discussion": 54,
-    "briefing": 34
+    "briefing": 35
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 4
   },
   "bess-permit-asia": {
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 103,
+   "count": 106,
    "byType": {
     "skill": 8,
     "discussion": 16,
-    "briefing": 79
+    "briefing": 82
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 4
   },
   "bess-standards-australia": {
@@ -1116,13 +1116,13 @@
   },
   {
    "date": "2026-08-18",
-   "added": 3
+   "added": 15
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-17",
-   "staleDays": 1,
+   "latestSource": "2026-08-18",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
