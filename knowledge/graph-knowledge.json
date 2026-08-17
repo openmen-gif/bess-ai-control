@@ -82,6 +82,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-810c53327f6e",
+   "name": "팀 토론 — CAPEX 최적화 전략 수립을 통한 글로벌 프로젝트 경쟁력 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-7dbe556b696b",
    "name": "AI 핵심 인프라 재생에너지…전력 안정성 높이는 ESS 입지 확대",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3de8c8dab2cb",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3785,6 +3785,46 @@
   {
    "source": "STD-008",
    "target": "K-985f1420e705",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-810c53327f6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-810c53327f6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-810c53327f6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-810c53327f6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-810c53327f6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-810c53327f6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-810c53327f6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-810c53327f6e",
    "type": "knowledge"
   },
   {
@@ -8191,11 +8231,6 @@
    "source": "DAT-001",
    "target": "K-3efa14cf1265",
    "type": "knowledge"
-  },
-  {
-   "source": "AIM-001",
-   "target": "K-3de8c8dab2cb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8344,7 +8379,7 @@
    {
     "date": "2026-08-17",
     "knowledge": 400,
-    "events_total": 1300
+    "events_total": 1301
    }
   ]
  }
