@@ -1,6 +1,24 @@
 {
- "updated": "2026-08-17",
+ "updated": "2026-08-18",
  "events": [
+  {
+   "id": "483ecdd2c2b7",
+   "date": "2026-08-18",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-hybrid-specialist",
+    "bess-marketer",
+    "bess-power-market-expert",
+    "bess-security-expert",
+    "bess-tax-epc-accounting"
+   ],
+   "title": "팀 토론 — Hybrid·BESS 영역 1차 분석 — bess-hybrid-specialist 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fa220899be8c",
    "date": "2026-08-17",
@@ -3677,17 +3695,6 @@
    "title": "팀 토론 — 시운전·코디네이터 영역 리스크 평가 — bess-commissioning-coordinator 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "3553c835466d",
-   "date": "2026-08-04",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "[기획] 리튬배터리 시대…‘끄는 기술’보다 ‘막는 기술’ 경쟁",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42d0REZDVyc1pWcU5ULVlOcHNfVXNVUDJLZ21iVDR3VlBSN2MwWFMzYnhjMFJJd1Z4WXVJSTgtX3VFUzEyNTFERnhiNk5ObVBpWE44OFQwT2pIRng5LTAwT0RsWHU?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
