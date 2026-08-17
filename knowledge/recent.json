@@ -2,6 +2,24 @@
  "updated": "2026-08-18",
  "events": [
   {
+   "id": "e26490c1275d",
+   "date": "2026-08-18",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-cybersecurity-expert",
+    "bess-esg-finance",
+    "bess-financial-analysis",
+    "bess-labor-safety",
+    "bess-logistics-expert",
+    "bess-marketer",
+    "bess-mlops-engineer"
+   ],
+   "title": "팀 토론 — 글로벌 배터리 배송 시장 확대에 따른 물류 및 물류 보안 강화 전략 수립 (bess-logistics-expert, bess-labor-safety)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "483ecdd2c2b7",
    "date": "2026-08-18",
    "type": "discussion",
@@ -3677,24 +3695,6 @@
    "title": "LG화학, 美 배터리 열폭주 차단 소재 '넥슐라' 홍보 강화…안전규제 선제 대응",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5kVnFjZkJHOHEtTzBLemtycWNJaEdPTzJhczVrUENsVDJZeGRYOUhMdHFTbE1yUzE4cXNsZFhDMlQzRjZLVmltSUk5MTV6b0E5YkVtcnNCczJKaktHSlFNemxHRQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "3c613cb66700",
-   "date": "2026-08-04",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-commissioning-coordinator",
-    "bess-cost-analyst",
-    "bess-facility-manager",
-    "bess-legal-expert",
-    "bess-procurement-expert",
-    "bess-standards-korea",
-    "bess-tool-developer"
-   ],
-   "title": "팀 토론 — 시운전·코디네이터 영역 리스크 평가 — bess-commissioning-coordinator 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-18",
  "totals": {
-  "all": 1304,
+  "all": 1305,
   "briefing": 434,
   "skill": 609,
-  "discussion": 261,
+  "discussion": 262,
   "activity": 0
  },
  "perAgent": {
@@ -36,10 +36,10 @@
    "level": 5
   },
   "bess-business-dev": {
-   "count": 63,
+   "count": 64,
    "byType": {
     "skill": 8,
-    "discussion": 31,
+    "discussion": 32,
     "briefing": 24
    },
    "lastGrown": "2026-08-18",
@@ -119,12 +119,12 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 8,
-    "discussion": 42
+    "discussion": 43
    },
-   "lastGrown": "2026-08-16",
+   "lastGrown": "2026-08-18",
    "level": 3
   },
   "bess-data-analyst": {
@@ -182,12 +182,12 @@
    "level": 2
   },
   "bess-esg-finance": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 8,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-facility-manager": {
@@ -200,10 +200,10 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 70,
+   "count": 71,
    "byType": {
     "skill": 8,
-    "discussion": 62
+    "discussion": 63
    },
    "lastGrown": "2026-08-18",
    "level": 4
@@ -328,12 +328,12 @@
    "level": 2
   },
   "bess-labor-safety": {
-   "count": 14,
+   "count": 15,
    "byType": {
     "skill": 7,
-    "discussion": 7
+    "discussion": 8
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-legal-expert": {
@@ -346,31 +346,31 @@
    "level": 4
   },
   "bess-logistics-expert": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 7,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-marketer": {
-   "count": 157,
+   "count": 158,
    "byType": {
     "skill": 8,
-    "discussion": 36,
+    "discussion": 37,
     "briefing": 113
    },
    "lastGrown": "2026-08-18",
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 8,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 3
   },
   "bess-network-engineer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-18",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-17",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-18",
+   "gapDays": 0,
    "overdue": false
   }
  }
