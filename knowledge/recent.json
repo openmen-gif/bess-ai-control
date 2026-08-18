@@ -1,6 +1,24 @@
 {
- "updated": "2026-08-18",
+ "updated": "2026-08-19",
  "events": [
+  {
+   "id": "5884fad456a4",
+   "date": "2026-08-19",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-facility-manager",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-procurement-expert",
+    "bess-structural-analyst",
+    "bess-tax-accountant"
+   ],
+   "title": "팀 토론 — 케이블·사이징·루팅 영역 1차 분석 — bess-cable-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f4381d686e99",
    "date": "2026-08-18",
@@ -3693,17 +3711,6 @@
    ],
    "title": "글로벌 ESS 71% 급성장, LG에너지솔루션 출하량 357% 증가",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FZXd2SXIycUc0QVIyTWhDdG9qV29FMkFmOEhEOFpkXzFzYndmY3F6Uy1qZmg4aFQ5a05MRTZBNFFqY1pYcUszMkdfVUQxTWo1VkUwNHBlbno3cW5Xalk1ZlF0NGN2MlFIdXBCR2FudndZT2PSAXNBVV95cUxNRWV3dklyMnFHNEFSMk1oQ3RvaldvRTJBZjhIRDhaZF8xc2J3ZmNxelMtamZoOGhUOWtOTEU2QTRRamNaWHFLMzJHX1VEMU1qNVZFMDRwZW56N3FuV2pZNWZRdDRjdjJRSHVwQkdhbnZ3WU9j?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "158eb7d159b1",
-   "date": "2026-08-05",
-   "type": "briefing",
-   "agents": [
-    "bess-transformer-expert"
-   ],
-   "title": "美 ESS 붐에 ‘배터리 밖’ 기회…K-변압기·케이블 공급망 부상",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Ed1RhRVhxZ2VJak9FTEZ6WFdZazNMSklWc0ZUTGJCelVpSXZNbTR1c3lZMS1NT0Qtek0xOE1zLVFVc2lsSnB6T1FEcDJRb2NHWEhuNkpqMXZoV2tOVHRSNzhvV1Q?oc=5",
    "source": "구글뉴스"
   }
  ]
