@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-19",
  "totals": {
-  "all": 1325,
+  "all": 1326,
   "briefing": 446,
   "skill": 609,
-  "discussion": 270,
+  "discussion": 271,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 225,
+   "count": 226,
    "byType": {
     "skill": 9,
-    "discussion": 74,
+    "discussion": 75,
     "briefing": 142
    },
    "lastGrown": "2026-08-19",
@@ -92,12 +92,12 @@
    "level": 2
   },
   "bess-contract-specialist": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 8,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-16",
+   "lastGrown": "2026-08-19",
    "level": 3
   },
   "bess-cost-analyst": {
@@ -182,12 +182,12 @@
    "level": 2
   },
   "bess-esg-finance": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 8,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 2
   },
   "bess-facility-manager": {
@@ -200,12 +200,12 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 8,
-    "discussion": 65
+    "discussion": 66
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 4
   },
   "bess-fire-engineer": {
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 8,
-    "discussion": 41
+    "discussion": 42
    },
    "lastGrown": "2026-08-19",
    "level": 3
@@ -337,12 +337,12 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 86,
+   "count": 87,
    "byType": {
     "skill": 8,
-    "discussion": 78
+    "discussion": 79
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-19",
    "level": 4
   },
   "bess-logistics-expert": {
@@ -511,12 +511,12 @@
    "level": 2
   },
   "bess-risk-manager": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 7,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-11",
+   "lastGrown": "2026-08-19",
    "level": 2
   },
   "bess-sales-manager": {
@@ -729,12 +729,12 @@
    "level": 2
   },
   "bess-transfer-pricing": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 6,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 2
   },
   "bess-transformer-expert": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-19",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-18",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-19",
+   "gapDays": 0,
    "overdue": false
   }
  }

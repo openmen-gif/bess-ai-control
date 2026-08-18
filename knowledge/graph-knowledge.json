@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-f119798309a1",
+   "name": "팀 토론 — 계약 조항 최적화를 통한 FIDIC Silver/Yellow",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5884fad456a4",
    "name": "팀 토론 — 케이블·사이징·루팅 영역 1차 분석 — bess-cable-",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-7347ea8e0cb3",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-f119798309a1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-f119798309a1",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-f119798309a1",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f119798309a1",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-f119798309a1",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-f119798309a1",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-f119798309a1",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-f119798309a1",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-5884fad456a4",
@@ -8476,11 +8516,6 @@
    "source": "PRM-003",
    "target": "K-74f5879aeb0d",
    "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-7347ea8e0cb3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8639,7 +8674,7 @@
    {
     "date": "2026-08-19",
     "knowledge": 400,
-    "events_total": 1325
+    "events_total": 1326
    }
   ]
  }
