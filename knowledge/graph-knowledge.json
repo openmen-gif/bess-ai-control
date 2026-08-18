@@ -118,6 +118,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-3f86c67b2ea0",
+   "name": "팀 토론 — 액냉 시스템 최적화 설계를 통한 BESS 열관리 효율성 향상",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3f09e88e9aba",
    "name": "[기후외교·에너지] 태양광 하나 지어주고 끝?…한국 에너지 ODA도 ‘패",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-66f0c4dffd0f",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3770,6 +3770,46 @@
   {
    "source": "TAX-002",
    "target": "K-483ecdd2c2b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3f86c67b2ea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-3f86c67b2ea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-3f86c67b2ea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3f86c67b2ea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-3f86c67b2ea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-3f86c67b2ea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-3f86c67b2ea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-3f86c67b2ea0",
    "type": "knowledge"
   },
   {
@@ -8296,11 +8336,6 @@
    "source": "STD-002",
    "target": "K-6987d6858cb8",
    "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-66f0c4dffd0f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8454,7 +8489,7 @@
    {
     "date": "2026-08-18",
     "knowledge": 400,
-    "events_total": 1318
+    "events_total": 1319
    }
   ]
  }
