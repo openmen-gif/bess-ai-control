@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-5aab0f161319",
+   "name": "팀 토론 — CFD·유동해석 영역 현황 진단 — bess-cfd-anal",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-4dabc7694b76",
    "name": "팀 토론 — 고밀도 모듈의 안전성 평가 심층 분석 및 적합한 안전 기준 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-6be690dd0f0e",
-   "name": "팀 토론 — 배터리 3사 동반 흑자 전환 동향 분석 결과, 글로벌 ESS",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3770,6 +3770,46 @@
   {
    "source": "BAT-001",
    "target": "K-60c25b7c75e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5aab0f161319",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-5aab0f161319",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-5aab0f161319",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-5aab0f161319",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-5aab0f161319",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-5aab0f161319",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-5aab0f161319",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5aab0f161319",
    "type": "knowledge"
   },
   {
@@ -8371,46 +8411,6 @@
    "source": "STD-002",
    "target": "K-6f9b9820aa76",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-6be690dd0f0e",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-6be690dd0f0e",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-6be690dd0f0e",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-6be690dd0f0e",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-6be690dd0f0e",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-6be690dd0f0e",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-6be690dd0f0e",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-6be690dd0f0e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8564,7 +8564,7 @@
    {
     "date": "2026-08-18",
     "knowledge": 400,
-    "events_total": 1322
+    "events_total": 1323
    }
   ]
  }

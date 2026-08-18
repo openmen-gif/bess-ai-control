@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-18",
  "totals": {
-  "all": 1322,
+  "all": 1323,
   "briefing": 446,
   "skill": 609,
-  "discussion": 267,
+  "discussion": 268,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 222,
+   "count": 223,
    "byType": {
     "skill": 9,
-    "discussion": 71,
+    "discussion": 72,
     "briefing": 142
    },
    "lastGrown": "2026-08-18",
@@ -65,12 +65,12 @@
    "level": 2
   },
   "bess-cfd-analyst": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 9,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-circuit-breaker-expert": {
@@ -128,10 +128,10 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 8,
-    "discussion": 46
+    "discussion": 47
    },
    "lastGrown": "2026-08-18",
    "level": 3
@@ -146,10 +146,10 @@
    "level": 2
   },
   "bess-emc-analyst": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 8,
-    "discussion": 41
+    "discussion": 42
    },
    "lastGrown": "2026-08-18",
    "level": 3
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 8,
-    "discussion": 57,
+    "discussion": 58,
     "briefing": 31
    },
    "lastGrown": "2026-08-18",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 8,
-    "discussion": 38
+    "discussion": 39
    },
    "lastGrown": "2026-08-18",
    "level": 3
@@ -529,12 +529,12 @@
    "level": 2
   },
   "bess-scheduler": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 7,
-    "discussion": 20
+    "discussion": 21
    },
-   "lastGrown": "2026-08-16",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-security-expert": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 127,
+   "count": 128,
    "byType": {
     "skill": 8,
-    "discussion": 119
+    "discussion": 120
    },
    "lastGrown": "2026-08-18",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-18",
-   "added": 19
+   "added": 20
   }
  ],
  "freshness": {
