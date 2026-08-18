@@ -181,6 +181,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-093b874c298f",
+   "name": "팀 토론 — 고밀도 모듈 안전성 평가 심층 분석 및 적합한 안전 기준 적",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa220899be8c",
    "name": "팀 토론 — 지속가능한 재무 전략 수립: ESG 지표 통합 그린본드 발행",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6f9b9820aa76",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3980,6 +3980,46 @@
   {
    "source": "BAT-001",
    "target": "K-13c7a227f4e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-093b874c298f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-093b874c298f",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-093b874c298f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-093b874c298f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-093b874c298f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-093b874c298f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-093b874c298f",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-093b874c298f",
    "type": "knowledge"
   },
   {
@@ -8406,11 +8446,6 @@
    "source": "PCS-001",
    "target": "K-7335d5576bc2",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-6f9b9820aa76",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8564,7 +8599,7 @@
    {
     "date": "2026-08-18",
     "knowledge": 400,
-    "events_total": 1323
+    "events_total": 1324
    }
   ]
  }
