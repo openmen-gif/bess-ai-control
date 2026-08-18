@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-19",
  "totals": {
-  "all": 1326,
+  "all": 1327,
   "briefing": 446,
   "skill": 609,
-  "discussion": 271,
+  "discussion": 272,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 226,
+   "count": 227,
    "byType": {
     "skill": 9,
-    "discussion": 75,
+    "discussion": 76,
     "briefing": 142
    },
    "lastGrown": "2026-08-19",
@@ -101,12 +101,12 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 81,
+   "count": 82,
    "byType": {
     "skill": 9,
-    "discussion": 72
+    "discussion": 73
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 4
   },
   "bess-customs-tariff": {
@@ -164,12 +164,12 @@
    "level": 2
   },
   "bess-env-engineer": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 7,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 3
   },
   "bess-epc-bom": {
@@ -200,19 +200,19 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 74,
+   "count": 75,
    "byType": {
     "skill": 8,
-    "discussion": 66
+    "discussion": 67
    },
    "lastGrown": "2026-08-19",
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 99,
+   "count": 100,
    "byType": {
     "skill": 8,
-    "discussion": 60,
+    "discussion": 61,
     "briefing": 31
    },
    "lastGrown": "2026-08-19",
@@ -228,13 +228,13 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 7,
-    "discussion": 30,
+    "discussion": 31,
     "briefing": 9
    },
-   "lastGrown": "2026-08-16",
+   "lastGrown": "2026-08-19",
    "level": 3
   },
   "bess-grounding-engineer": {
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 8,
-    "discussion": 42
+    "discussion": 43
    },
    "lastGrown": "2026-08-19",
    "level": 3
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 161,
+   "count": 162,
    "byType": {
     "skill": 8,
-    "discussion": 38,
+    "discussion": 39,
     "briefing": 115
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 5
   },
   "bess-mlops-engineer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-19",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
