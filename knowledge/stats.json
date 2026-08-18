@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-18",
  "totals": {
-  "all": 1321,
+  "all": 1322,
   "briefing": 446,
   "skill": 609,
-  "discussion": 266,
+  "discussion": 267,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 221,
+   "count": 222,
    "byType": {
     "skill": 9,
-    "discussion": 70,
+    "discussion": 71,
     "briefing": 142
    },
    "lastGrown": "2026-08-18",
@@ -74,12 +74,12 @@
    "level": 2
   },
   "bess-circuit-breaker-expert": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 8,
-    "discussion": 24
+    "discussion": 25
    },
-   "lastGrown": "2026-08-16",
+   "lastGrown": "2026-08-18",
    "level": 3
   },
   "bess-commissioning-coordinator": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 95,
+   "count": 96,
    "byType": {
     "skill": 8,
-    "discussion": 56,
+    "discussion": 57,
     "briefing": 31
    },
    "lastGrown": "2026-08-18",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 8,
-    "discussion": 37
+    "discussion": 38
    },
    "lastGrown": "2026-08-18",
    "level": 3
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 60,
+   "count": 61,
    "byType": {
     "skill": 8,
-    "discussion": 52
+    "discussion": 53
    },
    "lastGrown": "2026-08-18",
    "level": 3
@@ -602,12 +602,12 @@
    "level": 4
   },
   "bess-standards-poland": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 7,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-standards-romania": {
@@ -629,12 +629,12 @@
    "level": 2
   },
   "bess-standards-usa": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 7,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-10",
+   "lastGrown": "2026-08-18",
    "level": 2
   },
   "bess-structural-analyst": {
@@ -656,13 +656,13 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 69,
+   "count": 70,
    "byType": {
     "skill": 8,
-    "discussion": 61
+    "discussion": 62
    },
-   "lastGrown": "2026-08-17",
-   "level": 3
+   "lastGrown": "2026-08-18",
+   "level": 4
   },
   "bess-tax-accountant": {
    "count": 11,
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-18",
-   "added": 18
+   "added": 19
   }
  ],
  "freshness": {
