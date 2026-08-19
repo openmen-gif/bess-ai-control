@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-19",
  "totals": {
-  "all": 1344,
+  "all": 1345,
   "briefing": 462,
   "skill": 609,
-  "discussion": 273,
+  "discussion": 274,
   "activity": 0
  },
  "perAgent": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 83,
+   "count": 84,
    "byType": {
     "skill": 9,
-    "discussion": 74
+    "discussion": 75
    },
    "lastGrown": "2026-08-19",
    "level": 4
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 87,
+   "count": 88,
    "byType": {
     "skill": 8,
-    "discussion": 79
+    "discussion": 80
    },
    "lastGrown": "2026-08-19",
    "level": 4
@@ -392,13 +392,13 @@
    "level": 2
   },
   "bess-output-generator": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 7,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-16",
-   "level": 2
+   "lastGrown": "2026-08-19",
+   "level": 3
   },
   "bess-pcs-expert": {
    "count": 97,
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 66,
+   "count": 67,
    "byType": {
     "skill": 8,
-    "discussion": 58
+    "discussion": 59
    },
    "lastGrown": "2026-08-19",
    "level": 3
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 108,
+   "count": 109,
    "byType": {
     "skill": 8,
-    "discussion": 16,
+    "discussion": 17,
     "briefing": 84
    },
    "lastGrown": "2026-08-19",
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 130,
+   "count": 131,
    "byType": {
     "skill": 8,
-    "discussion": 122
+    "discussion": 123
    },
    "lastGrown": "2026-08-19",
    "level": 4
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 79,
+   "count": 80,
    "byType": {
     "skill": 8,
-    "discussion": 71
+    "discussion": 72
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 4
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-19",
-   "added": 20
+   "added": 21
   }
  ],
  "freshness": {
