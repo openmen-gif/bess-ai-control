@@ -1,6 +1,24 @@
 {
- "updated": "2026-08-19",
+ "updated": "2026-08-20",
  "events": [
+  {
+   "id": "62e9fd6ae51b",
+   "date": "2026-08-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cbop-engineer",
+    "bess-cost-analyst",
+    "bess-env-engineer",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-qaqc-engineer",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 부지조성 최적화를 위한 환경 영향 평가 수행",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f119798309a1",
    "date": "2026-08-19",
@@ -3706,24 +3724,6 @@
    "title": "AI 전력수요 폭증, 국가 전력시스템 대전환 해법 찾는다…'수소' 역할 집중 조명",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5WMXdhR3ZONlJtb19uaTVfYVN6bjJLc0F2Um5lc1pZazh1ZlJfbGR4WUNwUEhncEZEZlR1ZXNIR1JMbU5rcHhPaWdLeGRrdGJSbnFkSW5rLTlfYWh0SnQxT1ctdFJoVFRLTG9PM2xBRlFSUQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "f3aae32b801f",
-   "date": "2026-08-05",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-emerging-markets",
-    "bess-financial-analysis",
-    "bess-internal-auditor",
-    "bess-legal-expert",
-    "bess-project-manager",
-    "bess-standards-korea",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 인도 신흥시장 BESS 프로젝트 PF 모델 최적화 방안 연구",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
