@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-19",
  "totals": {
-  "all": 1343,
+  "all": 1344,
   "briefing": 462,
   "skill": 609,
-  "discussion": 272,
+  "discussion": 273,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 231,
+   "count": 232,
    "byType": {
     "skill": 9,
-    "discussion": 76,
+    "discussion": 77,
     "briefing": 146
    },
    "lastGrown": "2026-08-19",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 82,
+   "count": 83,
    "byType": {
     "skill": 9,
-    "discussion": 73
+    "discussion": 74
    },
    "lastGrown": "2026-08-19",
    "level": 4
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 101,
+   "count": 102,
    "byType": {
     "skill": 8,
-    "discussion": 61,
+    "discussion": 62,
     "briefing": 32
    },
    "lastGrown": "2026-08-19",
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 8,
-    "discussion": 57
+    "discussion": 58
    },
    "lastGrown": "2026-08-19",
    "level": 3
@@ -502,12 +502,12 @@
    "level": 3
   },
   "bess-qaqc-engineer": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 7,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-19",
    "level": 2
   },
   "bess-risk-manager": {
@@ -584,21 +584,21 @@
    "level": 2
   },
   "bess-standards-japan": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 7,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-16",
+   "lastGrown": "2026-08-19",
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 129,
+   "count": 130,
    "byType": {
     "skill": 8,
-    "discussion": 121
+    "discussion": 122
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 4
   },
   "bess-standards-poland": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-19",
-   "added": 19
+   "added": 20
   }
  ],
  "freshness": {
