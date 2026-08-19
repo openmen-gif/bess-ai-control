@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-20",
  "totals": {
-  "all": 1351,
+  "all": 1352,
   "briefing": 462,
   "skill": 609,
-  "discussion": 280,
+  "discussion": 281,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 236,
+   "count": 237,
    "byType": {
     "skill": 9,
-    "discussion": 81,
+    "discussion": 82,
     "briefing": 146
    },
    "lastGrown": "2026-08-20",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 90,
+   "count": 91,
    "byType": {
     "skill": 9,
-    "discussion": 81
+    "discussion": 82
    },
    "lastGrown": "2026-08-20",
    "level": 4
@@ -209,13 +209,13 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 106,
+   "count": 107,
    "byType": {
     "skill": 8,
-    "discussion": 66,
+    "discussion": 67,
     "briefing": 32
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-20",
    "level": 4
   },
   "bess-fit-procedure": {
@@ -310,12 +310,12 @@
    "level": 2
   },
   "bess-it-infra": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-08-16",
+   "lastGrown": "2026-08-20",
    "level": 2
   },
   "bess-knowledge-manager": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 92,
+   "count": 93,
    "byType": {
     "skill": 8,
-    "discussion": 84
+    "discussion": 85
    },
    "lastGrown": "2026-08-20",
    "level": 4
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 70,
+   "count": 71,
    "byType": {
     "skill": 8,
-    "discussion": 62
+    "discussion": 63
    },
    "lastGrown": "2026-08-20",
    "level": 4
@@ -538,12 +538,12 @@
    "level": 2
   },
   "bess-security-expert": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 7,
-    "discussion": 29
+    "discussion": 30
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-20",
    "level": 3
   },
   "bess-site-manager": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 136,
+   "count": 137,
    "byType": {
     "skill": 8,
-    "discussion": 128
+    "discussion": 129
    },
    "lastGrown": "2026-08-20",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-20",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
