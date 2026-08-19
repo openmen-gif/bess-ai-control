@@ -82,6 +82,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a5f0cc770a12",
+   "name": "팀 토론 — 예측모델·최적화 영역 리스크 평가 — bess-aiml-en",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a2df052a9f25",
    "name": "'SK온 파트너' 델타엑스, 美 조지아에 BESS 공장 설립",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-b30431d828d4",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3745,6 +3745,46 @@
   {
    "source": "STD-002",
    "target": "K-af4c67d0df97",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-a5f0cc770a12",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a5f0cc770a12",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a5f0cc770a12",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a5f0cc770a12",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-a5f0cc770a12",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a5f0cc770a12",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-a5f0cc770a12",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-a5f0cc770a12",
    "type": "knowledge"
   },
   {
@@ -8581,11 +8621,6 @@
    "source": "CON-001",
    "target": "K-b33f19359169",
    "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-b30431d828d4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8744,7 +8779,7 @@
    {
     "date": "2026-08-19",
     "knowledge": 400,
-    "events_total": 1347
+    "events_total": 1348
    }
   ]
  }
