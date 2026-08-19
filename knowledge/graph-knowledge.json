@@ -172,6 +172,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-294cdb3cf5ef",
+   "name": "팀 토론 — 시운전·코디네이터 영역 초안 작성 — bess-commiss",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1a35cd5e3aef",
    "name": "[이슈] 1조원대 ESS 수주전 앞둔 배터리 3사…'EV 빈자리' 공략",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-b1034362ca9d",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3860,6 +3860,46 @@
   {
    "source": "BIZ-001",
    "target": "K-518050a8698d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-294cdb3cf5ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-294cdb3cf5ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-294cdb3cf5ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-294cdb3cf5ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-294cdb3cf5ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-294cdb3cf5ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-294cdb3cf5ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-294cdb3cf5ef",
    "type": "knowledge"
   },
   {
@@ -8516,11 +8556,6 @@
    "source": "COM-001",
    "target": "K-b147a51e7594",
    "type": "knowledge"
-  },
-  {
-   "source": "LKM-001",
-   "target": "K-b1034362ca9d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8679,7 +8714,7 @@
    {
     "date": "2026-08-19",
     "knowledge": 400,
-    "events_total": 1345
+    "events_total": 1346
    }
   ]
  }
