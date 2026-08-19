@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-19",
  "totals": {
-  "all": 1346,
+  "all": 1347,
   "briefing": 462,
   "skill": 609,
-  "discussion": 275,
+  "discussion": 276,
   "activity": 0
  },
  "perAgent": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 85,
+   "count": 86,
    "byType": {
     "skill": 9,
-    "discussion": 76
+    "discussion": 77
    },
    "lastGrown": "2026-08-19",
    "level": 4
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 103,
+   "count": 104,
    "byType": {
     "skill": 8,
-    "discussion": 63,
+    "discussion": 64,
     "briefing": 32
    },
    "lastGrown": "2026-08-19",
@@ -238,12 +238,12 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 35,
+   "count": 36,
    "byType": {
     "skill": 8,
-    "discussion": 27
+    "discussion": 28
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-19",
    "level": 3
   },
   "bess-hr-manager": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 88,
+   "count": 89,
    "byType": {
     "skill": 8,
-    "discussion": 80
+    "discussion": 81
    },
    "lastGrown": "2026-08-19",
    "level": 4
@@ -493,12 +493,12 @@
    "level": 3
   },
   "bess-project-manager": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 8,
-    "discussion": 32
+    "discussion": 33
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-19",
    "level": 3
   },
   "bess-qaqc-engineer": {
@@ -575,12 +575,12 @@
    "level": 2
   },
   "bess-standards-eu": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 7,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-02",
+   "lastGrown": "2026-08-19",
    "level": 2
   },
   "bess-standards-japan": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 132,
+   "count": 133,
    "byType": {
     "skill": 8,
-    "discussion": 124
+    "discussion": 125
    },
    "lastGrown": "2026-08-19",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-19",
-   "added": 22
+   "added": 23
   }
  ],
  "freshness": {

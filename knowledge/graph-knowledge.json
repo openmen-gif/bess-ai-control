@@ -154,6 +154,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-596e63c412db",
+   "name": "팀 토론 — 접지망·IEEE80 영역 리스크 평가 — bess-groun",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-5884fad456a4",
    "name": "팀 토론 — 케이블·사이징·루팅 영역 1차 분석 — bess-cable-",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-b147a51e7594",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3815,6 +3815,41 @@
   {
    "source": "MAR-001",
    "target": "K-5a394309ef5d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-596e63c412db",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-596e63c412db",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-596e63c412db",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-596e63c412db",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-596e63c412db",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-596e63c412db",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-596e63c412db",
    "type": "knowledge"
   },
   {
@@ -8551,11 +8586,6 @@
    "source": "ESG-001",
    "target": "K-b30431d828d4",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-001",
-   "target": "K-b147a51e7594",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8714,7 +8744,7 @@
    {
     "date": "2026-08-19",
     "knowledge": 400,
-    "events_total": 1346
+    "events_total": 1347
    }
   ]
  }
