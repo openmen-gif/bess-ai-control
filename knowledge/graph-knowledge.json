@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-e9044bebb8aa",
+   "name": "팀 토론 — 액냉 시스템 최적화를 통한 BESS 열관리 효율 개선 계획 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-764ee009260e",
    "name": "팀 토론 — 고밀도 모듈 안전성 평가 전략 수립 및 관련 표준 적합성 검",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-f343265418bc",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-764ee009260e",
@@ -8926,11 +8966,6 @@
    "source": "STD-002",
    "target": "K-f7eeb58806c5",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-f343265418bc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9099,7 +9134,7 @@
    {
     "date": "2026-08-21",
     "knowledge": 400,
-    "events_total": 1371
+    "events_total": 1372
    }
   ]
  }
