@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-20",
  "totals": {
-  "all": 1368,
+  "all": 1369,
   "briefing": 474,
   "skill": 609,
-  "discussion": 285,
+  "discussion": 286,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 246,
+   "count": 247,
    "byType": {
     "skill": 9,
-    "discussion": 86,
+    "discussion": 87,
     "briefing": 151
    },
    "lastGrown": "2026-08-20",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 95,
+   "count": 96,
    "byType": {
     "skill": 9,
-    "discussion": 86
+    "discussion": 87
    },
    "lastGrown": "2026-08-20",
    "level": 4
@@ -137,12 +137,12 @@
    "level": 3
   },
   "bess-ebop-engineer": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 7,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-20",
    "level": 2
   },
   "bess-emc-analyst": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 109,
+   "count": 110,
    "byType": {
     "skill": 8,
-    "discussion": 68,
+    "discussion": 69,
     "briefing": 33
    },
    "lastGrown": "2026-08-20",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 8,
-    "discussion": 44
+    "discussion": 45
    },
    "lastGrown": "2026-08-20",
    "level": 3
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 98,
+   "count": 99,
    "byType": {
     "skill": 8,
-    "discussion": 54,
+    "discussion": 55,
     "briefing": 36
    },
    "lastGrown": "2026-08-20",
@@ -484,21 +484,21 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 74,
+   "count": 75,
    "byType": {
     "skill": 8,
-    "discussion": 66
+    "discussion": 67
    },
    "lastGrown": "2026-08-20",
    "level": 4
   },
   "bess-project-manager": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 8,
-    "discussion": 33
+    "discussion": 34
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-20",
    "level": 3
   },
   "bess-qaqc-engineer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-20",
-   "added": 19
+   "added": 20
   }
  ],
  "freshness": {
