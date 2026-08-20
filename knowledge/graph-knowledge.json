@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6ea33673faba",
+   "name": "팀 토론 — LG에너지솔루션의 미국 랜싱 공장 가동 확대 전략 분석을 통",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d9c685032951",
    "name": "LG에너지솔루션, 북미 ESS 핵심 거점…랜싱 공장 본격 가동",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-f7eeb58806c5",
-   "name": "팀 토론 — FIDIC 계약 조건 분석 및 우리 프로젝트 적용 가능성 평",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "STD-002",
    "target": "K-764ee009260e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6ea33673faba",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-6ea33673faba",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6ea33673faba",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-6ea33673faba",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-6ea33673faba",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-6ea33673faba",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-6ea33673faba",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-6ea33673faba",
    "type": "knowledge"
   },
   {
@@ -8931,41 +8971,6 @@
    "source": "SCH-001",
    "target": "K-f9aea7d9922f",
    "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-f7eeb58806c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-f7eeb58806c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-f7eeb58806c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-f7eeb58806c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-003",
-   "target": "K-f7eeb58806c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-f7eeb58806c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-f7eeb58806c5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9134,7 +9139,7 @@
    {
     "date": "2026-08-21",
     "knowledge": 400,
-    "events_total": 1372
+    "events_total": 1373
    }
   ]
  }
