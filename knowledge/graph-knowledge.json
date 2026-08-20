@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-89d22347fc02",
+   "name": "팀 토론 — 통합 하이브리드 시스템 시뮬레이션 최적화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-89af2f74283b",
    "name": "[미래성장동력 7대 SEED ③] 태양과 바람이 만든 재생에너지, ‘환경",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ed6aa8b569bf",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3620,6 +3620,46 @@
   {
    "source": "FIR-001",
    "target": "K-96e2f4ff67ba",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-89d22347fc02",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-89d22347fc02",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-89d22347fc02",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-89d22347fc02",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-89d22347fc02",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-89d22347fc02",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-89d22347fc02",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-89d22347fc02",
    "type": "knowledge"
   },
   {
@@ -8856,11 +8896,6 @@
    "source": "EBP-001",
    "target": "K-f187b8e8b865",
    "type": "knowledge"
-  },
-  {
-   "source": "PRM-002",
-   "target": "K-ed6aa8b569bf",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9024,7 +9059,7 @@
    {
     "date": "2026-08-20",
     "knowledge": 400,
-    "events_total": 1369
+    "events_total": 1370
    }
   ]
  }

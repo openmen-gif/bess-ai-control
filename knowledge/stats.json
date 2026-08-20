@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-20",
  "totals": {
-  "all": 1369,
+  "all": 1370,
   "briefing": 474,
   "skill": 609,
-  "discussion": 286,
+  "discussion": 287,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 247,
+   "count": 248,
    "byType": {
     "skill": 9,
-    "discussion": 87,
+    "discussion": 88,
     "briefing": 151
    },
    "lastGrown": "2026-08-20",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 9,
-    "discussion": 87
+    "discussion": 88
    },
    "lastGrown": "2026-08-20",
    "level": 4
@@ -146,12 +146,12 @@
    "level": 2
   },
   "bess-emc-analyst": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 8,
-    "discussion": 42
+    "discussion": 43
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-20",
    "level": 3
   },
   "bess-emerging-markets": {
@@ -164,10 +164,10 @@
    "level": 2
   },
   "bess-env-engineer": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 7,
-    "discussion": 33
+    "discussion": 34
    },
    "lastGrown": "2026-08-20",
    "level": 3
@@ -365,12 +365,12 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 8,
-    "discussion": 29
+    "discussion": 30
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-20",
    "level": 3
   },
   "bess-network-engineer": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 75,
+   "count": 76,
    "byType": {
     "skill": 8,
-    "discussion": 67
+    "discussion": 68
    },
    "lastGrown": "2026-08-20",
    "level": 4
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 71,
+   "count": 72,
    "byType": {
     "skill": 8,
-    "discussion": 63
+    "discussion": 64
    },
    "lastGrown": "2026-08-20",
    "level": 4
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 80,
+   "count": 81,
    "byType": {
     "skill": 8,
-    "discussion": 72
+    "discussion": 73
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-20",
    "level": 4
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-20",
-   "added": 20
+   "added": 21
   }
  ],
  "freshness": {
