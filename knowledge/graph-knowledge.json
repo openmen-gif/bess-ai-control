@@ -154,6 +154,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-0f7cc3504276",
+   "name": "팀 토론 — 변압기 효율 최적화 및 Arc Flash 위험 최소화를 위한",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0d4cc4a337ba",
    "name": "팀 토론 — LG에너지솔루션의 미국 랜싱 공장 가동 확대 전략을 분석하여",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-ebf46e682b9c",
-   "name": "2026년 ESS 배터리 가격 상승의 파장: 구조적 공급 제약과 수요 급",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3855,6 +3855,46 @@
   {
    "source": "STD-001",
    "target": "K-12be2b3c201a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0f7cc3504276",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0f7cc3504276",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-0f7cc3504276",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0f7cc3504276",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0f7cc3504276",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-0f7cc3504276",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-0f7cc3504276",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-0f7cc3504276",
    "type": "knowledge"
   },
   {
@@ -8786,11 +8826,6 @@
    "source": "SCM-001",
    "target": "K-ecc5cbb97c05",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-ebf46e682b9c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8954,7 +8989,7 @@
    {
     "date": "2026-08-20",
     "knowledge": 400,
-    "events_total": 1367
+    "events_total": 1368
    }
   ]
  }
