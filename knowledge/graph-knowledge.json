@@ -100,6 +100,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-43b83ab4bd81",
+   "name": "팀 토론 — 조직개발·성과관리 영역 초안 작성 — bess-hr-mana",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-38abcc415973",
    "name": "팀 토론 — 신흥시장 BESS 프로젝트 추진을 위한 IFC/ADB PF ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-02",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-eaf9f74c56c4",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 75개 — 토론 세션 근거",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3690,6 +3690,46 @@
   {
    "source": "BAT-001",
    "target": "K-4f0e6aaff122",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-43b83ab4bd81",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-43b83ab4bd81",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-43b83ab4bd81",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-43b83ab4bd81",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-43b83ab4bd81",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-43b83ab4bd81",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-43b83ab4bd81",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-43b83ab4bd81",
    "type": "knowledge"
   },
   {
@@ -8716,11 +8756,6 @@
    "source": "STE-001",
    "target": "K-eb48ee598f3f",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-007",
-   "target": "K-eaf9f74c56c4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8884,7 +8919,7 @@
    {
     "date": "2026-08-20",
     "knowledge": 400,
-    "events_total": 1365
+    "events_total": 1366
    }
   ]
  }
