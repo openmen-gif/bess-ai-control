@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-21",
  "totals": {
-  "all": 1387,
+  "all": 1388,
   "briefing": 484,
   "skill": 609,
-  "discussion": 294,
+  "discussion": 295,
   "activity": 0
  },
  "perAgent": {
@@ -128,12 +128,12 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 8,
-    "discussion": 47
+    "discussion": 48
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-21",
    "level": 3
   },
   "bess-ebop-engineer": {
@@ -392,19 +392,19 @@
    "level": 2
   },
   "bess-output-generator": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 7,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-21",
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 102,
+   "count": 103,
    "byType": {
     "skill": 8,
-    "discussion": 57,
+    "discussion": 58,
     "briefing": 37
    },
    "lastGrown": "2026-08-21",
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 8,
-    "discussion": 57
+    "discussion": 58
    },
    "lastGrown": "2026-08-21",
    "level": 3
@@ -620,12 +620,12 @@
    "level": 2
   },
   "bess-standards-uk": {
-   "count": 14,
+   "count": 15,
    "byType": {
     "skill": 7,
-    "discussion": 7
+    "discussion": 8
    },
-   "lastGrown": "2026-08-05",
+   "lastGrown": "2026-08-21",
    "level": 2
   },
   "bess-standards-usa": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 76,
+   "count": 77,
    "byType": {
     "skill": 8,
-    "discussion": 68
+    "discussion": 69
    },
    "lastGrown": "2026-08-21",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-21",
-   "added": 17
+   "added": 18
   }
  ],
  "freshness": {
