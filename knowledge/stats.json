@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-21",
  "totals": {
-  "all": 1386,
+  "all": 1387,
   "briefing": 484,
   "skill": 609,
-  "discussion": 293,
+  "discussion": 294,
   "activity": 0
  },
  "perAgent": {
@@ -65,19 +65,19 @@
    "level": 2
   },
   "bess-cfd-analyst": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 9,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-21",
    "level": 2
   },
   "bess-circuit-breaker-expert": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 8,
-    "discussion": 26
+    "discussion": 27
    },
    "lastGrown": "2026-08-21",
    "level": 3
@@ -146,10 +146,10 @@
    "level": 2
   },
   "bess-emc-analyst": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 8,
-    "discussion": 44
+    "discussion": 45
    },
    "lastGrown": "2026-08-21",
    "level": 3
@@ -328,10 +328,10 @@
    "level": 2
   },
   "bess-labor-safety": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 7,
-    "discussion": 9
+    "discussion": 10
    },
    "lastGrown": "2026-08-21",
    "level": 2
@@ -346,12 +346,12 @@
    "level": 4
   },
   "bess-logistics-expert": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 7,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-21",
    "level": 2
   },
   "bess-marketer": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 75,
+   "count": 76,
    "byType": {
     "skill": 8,
-    "discussion": 67
+    "discussion": 68
    },
    "lastGrown": "2026-08-21",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-21",
-   "added": 16
+   "added": 17
   }
  ],
  "freshness": {

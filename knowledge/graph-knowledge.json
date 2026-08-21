@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e5be8a64cabb",
+   "name": "팀 토론 — 액냉 시스템 최적화를 위한 CFD 기반 기류 분배 및 열 관",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-cb947259c33c",
    "name": "팀 토론 — 액냉 시스템 최적화 계획 수립 및 CFD 기반 열 관리 시뮬",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-33e89cb7224e",
-   "name": "배터리 섹터 투자 3대 키워드 'ESS, 광물, 차세대소재'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,36 @@
   {
    "source": "SYS-001",
    "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-e5be8a64cabb",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-e5be8a64cabb",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-e5be8a64cabb",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-e5be8a64cabb",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-e5be8a64cabb",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e5be8a64cabb",
    "type": "knowledge"
   },
   {
@@ -8906,11 +8936,6 @@
    "source": "BAT-001",
    "target": "K-414cdfd94197",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-33e89cb7224e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9079,7 +9104,7 @@
    {
     "date": "2026-08-21",
     "knowledge": 400,
-    "events_total": 1386
+    "events_total": 1387
    }
   ]
  }
