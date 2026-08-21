@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-21",
  "totals": {
-  "all": 1389,
+  "all": 1390,
   "briefing": 484,
   "skill": 609,
-  "discussion": 296,
+  "discussion": 297,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 259,
+   "count": 260,
    "byType": {
     "skill": 9,
-    "discussion": 93,
+    "discussion": 94,
     "briefing": 157
    },
    "lastGrown": "2026-08-21",
@@ -46,10 +46,10 @@
    "level": 4
   },
   "bess-cable-engineer": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 8,
-    "discussion": 25,
+    "discussion": 26,
     "briefing": 1
    },
    "lastGrown": "2026-08-21",
@@ -228,13 +228,13 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 7,
-    "discussion": 31,
+    "discussion": 32,
     "briefing": 9
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-21",
    "level": 3
   },
   "bess-grounding-engineer": {
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 103,
+   "count": 104,
    "byType": {
     "skill": 8,
-    "discussion": 58,
+    "discussion": 59,
     "briefing": 37
    },
    "lastGrown": "2026-08-21",
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 67,
+   "count": 68,
    "byType": {
     "skill": 8,
-    "discussion": 59
+    "discussion": 60
    },
    "lastGrown": "2026-08-21",
    "level": 3
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 77,
+   "count": 78,
    "byType": {
     "skill": 8,
-    "discussion": 69
+    "discussion": 70
    },
    "lastGrown": "2026-08-21",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-21",
-   "added": 19
+   "added": 20
   }
  ],
  "freshness": {

@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-89a8c6ad37ce",
+   "name": "팀 토론 — 한국요꼬가와전기의 고전압 정밀 파워아날라이저 출시 동향 분석",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8462da870182",
    "name": "‘플랜 B’로 부활 노리는 K-배터리…AI ESS 속도전",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7de550586e57",
-   "name": "미 조지아파워, 보웬발전소 가스복합·ESS 대규모 투자 단행",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3745,6 +3745,36 @@
   {
    "source": "BAT-001",
    "target": "K-8cf61c3a1026",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-89a8c6ad37ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-89a8c6ad37ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-89a8c6ad37ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-89a8c6ad37ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-89a8c6ad37ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-89a8c6ad37ce",
    "type": "knowledge"
   },
   {
@@ -8946,11 +8976,6 @@
    "source": "BAT-001",
    "target": "K-90c2deff806b",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-7de550586e57",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9119,7 +9144,7 @@
    {
     "date": "2026-08-21",
     "knowledge": 400,
-    "events_total": 1389
+    "events_total": 1390
    }
   ]
  }
