@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-21",
  "totals": {
-  "all": 1383,
+  "all": 1384,
   "briefing": 484,
   "skill": 609,
-  "discussion": 290,
+  "discussion": 291,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 257,
+   "count": 258,
    "byType": {
     "skill": 9,
-    "discussion": 91,
+    "discussion": 92,
     "briefing": 157
    },
    "lastGrown": "2026-08-21",
@@ -301,10 +301,10 @@
    "level": 3
   },
   "bess-ip-patent-expert": {
-   "count": 13,
+   "count": 14,
    "byType": {
     "skill": 7,
-    "discussion": 6
+    "discussion": 7
    },
    "lastGrown": "2026-08-21",
    "level": 2
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 100,
+   "count": 101,
    "byType": {
     "skill": 8,
-    "discussion": 55,
+    "discussion": 56,
     "briefing": 37
    },
    "lastGrown": "2026-08-21",
@@ -448,12 +448,12 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 8,
-    "discussion": 54
+    "discussion": 55
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-21",
    "level": 3
   },
   "bess-precom-report": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 8,
-    "discussion": 65
+    "discussion": 66
    },
    "lastGrown": "2026-08-21",
    "level": 4
@@ -720,12 +720,12 @@
    "level": 3
   },
   "bess-training-expert": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-21",
    "level": 2
   },
   "bess-transfer-pricing": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-21",
-   "added": 13
+   "added": 14
   }
  ],
  "freshness": {

@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-80fbac532672",
+   "name": "팀 토론 — 고밀도 모듈 안전성 평가 전략 심층 분석 및 통합 보안 프로",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7c31e9f61cde",
    "name": "ESS 성장에 뜨는 ‘소듐’···K배터리, 상용화 준비 속도",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-30233e949992",
-   "name": "국내 태양광/ESS 산업, 노무현 정부에서 지원 시작됐으나 정책 변동성 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3660,6 +3660,36 @@
   {
    "source": "BAT-001",
    "target": "K-8462da870182",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-80fbac532672",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-80fbac532672",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-80fbac532672",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-80fbac532672",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-80fbac532672",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-80fbac532672",
    "type": "knowledge"
   },
   {
@@ -8831,11 +8861,6 @@
    "source": "BAT-001",
    "target": "K-309127a7b352",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-30233e949992",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9004,7 +9029,7 @@
    {
     "date": "2026-08-21",
     "knowledge": 400,
-    "events_total": 1383
+    "events_total": 1384
    }
   ]
  }
