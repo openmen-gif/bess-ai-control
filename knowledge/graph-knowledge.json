@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-60426faec8c9",
+   "name": "팀 토론 — 시운전 프로세스 자동화를 위한 최적화 프레임워크 개발 계획 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-22",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-e9044bebb8aa",
    "name": "팀 토론 — 액냉 시스템 최적화를 통한 BESS 열관리 효율 개선 계획 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-90c2deff806b",
-   "name": "美 ESS시장 입지 넓힌 K배터리… “현지화 전략 필요”",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CST-001",
+   "target": "K-60426faec8c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-60426faec8c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-60426faec8c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-60426faec8c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-60426faec8c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-60426faec8c9",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-e9044bebb8aa",
@@ -8971,15 +9001,10 @@
    "source": "TIN-001",
    "target": "K-970d09c4b90f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-90c2deff806b",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-21",
+  "updated": "2026-08-22",
   "history": [
    {
     "date": "2026-07-20",
@@ -9145,6 +9170,11 @@
     "date": "2026-08-21",
     "knowledge": 400,
     "events_total": 1390
+   },
+   {
+    "date": "2026-08-22",
+    "knowledge": 400,
+    "events_total": 1391
    }
   ]
  }

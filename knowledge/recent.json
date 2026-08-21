@@ -1,6 +1,22 @@
 {
- "updated": "2026-08-21",
+ "updated": "2026-08-22",
  "events": [
+  {
+   "id": "60426faec8c9",
+   "date": "2026-08-22",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-hse-manager",
+    "bess-hydrogen-specialist",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 시운전 프로세스 자동화를 위한 최적화 프레임워크 개발 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "e9044bebb8aa",
    "date": "2026-08-21",
@@ -3823,17 +3839,6 @@
    ],
    "title": "ESS 71% 성장과 K-배터리 기회",
    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1obVU2U2ViVzEwWkpjTkNxRmcyOTBzYVZfTnVTQU54SklZVG9WWEs4MlgySktYeXdka0tKaXZCV0YtRkhPWFZuRHlR?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "6eca18c6a965",
-   "date": "2026-08-08",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "기후부·산업부, 사용후 배터리 산업 육성 '맞손'…통합 플랫폼 구축·공동 R&D 추진",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VOHROQUZCZmxUdHNCT3ZYZDJ4RU93SU1YV2NFMXlCVHI3T1pJNnFVRzdMZFBQTGNEOW56LWc0Z2FyMFlJZ2Frd1BsTTJuakJQS1dBTWhQQXR1NGlyY1VGWHVOQk9CVUhzNk1Ha1ZmZ010Zw?oc=5",
    "source": "구글뉴스"
   }
  ]
