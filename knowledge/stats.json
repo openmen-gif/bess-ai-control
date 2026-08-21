@@ -1,8 +1,8 @@
 {
  "updated": "2026-08-22",
  "totals": {
-  "all": 1393,
-  "briefing": 484,
+  "all": 1412,
+  "briefing": 503,
   "skill": 609,
   "discussion": 300,
   "activity": 0
@@ -26,23 +26,23 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 260,
+   "count": 264,
    "byType": {
     "skill": 9,
     "discussion": 94,
-    "briefing": 157
+    "briefing": 161
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 8,
     "discussion": 36,
-    "briefing": 29
+    "briefing": 30
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 4
   },
   "bess-cable-engineer": {
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 175,
+   "count": 181,
    "byType": {
     "skill": 8,
     "discussion": 42,
-    "briefing": 125
+    "briefing": 131
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 5
   },
   "bess-mlops-engineer": {
@@ -401,11 +401,11 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 106,
+   "count": 110,
    "byType": {
     "skill": 8,
     "discussion": 61,
-    "briefing": 37
+    "briefing": 41
    },
    "lastGrown": "2026-08-22",
    "level": 4
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 114,
+   "count": 118,
    "byType": {
     "skill": 8,
     "discussion": 20,
-    "briefing": 86
+    "briefing": 90
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 4
   },
   "bess-standards-australia": {
@@ -1116,13 +1116,13 @@
   },
   {
    "date": "2026-08-22",
-   "added": 3
+   "added": 22
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-21",
-   "staleDays": 1,
+   "latestSource": "2026-08-22",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
