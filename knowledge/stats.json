@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-22",
  "totals": {
-  "all": 1392,
+  "all": 1393,
   "briefing": 484,
   "skill": 609,
-  "discussion": 299,
+  "discussion": 300,
   "activity": 0
  },
  "perAgent": {
@@ -219,10 +219,10 @@
    "level": 4
   },
   "bess-fit-procedure": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 7,
-    "discussion": 16
+    "discussion": 17
    },
    "lastGrown": "2026-08-22",
    "level": 2
@@ -365,12 +365,12 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 8,
-    "discussion": 30
+    "discussion": 31
    },
-   "lastGrown": "2026-08-20",
+   "lastGrown": "2026-08-22",
    "level": 3
   },
   "bess-network-engineer": {
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 105,
+   "count": 106,
    "byType": {
     "skill": 8,
-    "discussion": 60,
+    "discussion": 61,
     "briefing": 37
    },
    "lastGrown": "2026-08-22",
@@ -448,13 +448,13 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 69,
+   "count": 70,
    "byType": {
     "skill": 8,
-    "discussion": 61
+    "discussion": 62
    },
    "lastGrown": "2026-08-22",
-   "level": 3
+   "level": 4
   },
   "bess-precom-report": {
    "count": 22,
@@ -466,12 +466,12 @@
    "level": 2
   },
   "bess-presentation-designer": {
-   "count": 15,
+   "count": 16,
    "byType": {
     "skill": 6,
-    "discussion": 9
+    "discussion": 10
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 2
   },
   "bess-procurement-data": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 79,
+   "count": 80,
    "byType": {
     "skill": 8,
-    "discussion": 71
+    "discussion": 72
    },
    "lastGrown": "2026-08-22",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-22",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {

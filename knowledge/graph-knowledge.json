@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-802f1a07e45c",
+   "name": "팀 토론 — AI 기반 최적화 알고리즘 적용으로 BESS 운영 효율성 시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-22",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-7281a71a32bd",
    "name": "팀 토론 — 사이버 보안 및 데이터 프라이버시 규제 불일치 해소를 위한 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ab80f5d843ab",
-   "name": "팀 토론 — 기초설계 최적화를 통한 부지조성 이격거리 확보 및 안전성 검",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "COM-002",
+   "target": "K-802f1a07e45c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-802f1a07e45c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-802f1a07e45c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-802f1a07e45c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-802f1a07e45c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-802f1a07e45c",
+   "type": "knowledge"
+  },
   {
    "source": "CYB-001",
    "target": "K-7281a71a32bd",
@@ -8956,41 +8986,6 @@
    "source": "SYS-001",
    "target": "K-b74b29601aff",
    "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-ab80f5d843ab",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-ab80f5d843ab",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-ab80f5d843ab",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-ab80f5d843ab",
-   "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-ab80f5d843ab",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-ab80f5d843ab",
-   "type": "knowledge"
-  },
-  {
-   "source": "TAX-001",
-   "target": "K-ab80f5d843ab",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9164,7 +9159,7 @@
    {
     "date": "2026-08-22",
     "knowledge": 400,
-    "events_total": 1392
+    "events_total": 1393
    }
   ]
  }
