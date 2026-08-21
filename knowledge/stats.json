@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-22",
  "totals": {
-  "all": 1391,
+  "all": 1392,
   "briefing": 484,
   "skill": 609,
-  "discussion": 298,
+  "discussion": 299,
   "activity": 0
  },
  "perAgent": {
@@ -119,21 +119,21 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 58,
+   "count": 59,
    "byType": {
     "skill": 8,
-    "discussion": 50
+    "discussion": 51
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 56,
+   "count": 57,
    "byType": {
     "skill": 8,
-    "discussion": 48
+    "discussion": 49
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 3
   },
   "bess-ebop-engineer": {
@@ -219,12 +219,12 @@
    "level": 4
   },
   "bess-fit-procedure": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 2
   },
   "bess-grid-interconnection": {
@@ -274,10 +274,10 @@
    "level": 2
   },
   "bess-hydrogen-specialist": {
-   "count": 15,
+   "count": 16,
    "byType": {
     "skill": 7,
-    "discussion": 8
+    "discussion": 9
    },
    "lastGrown": "2026-08-22",
    "level": 2
@@ -593,12 +593,12 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 139,
+   "count": 140,
    "byType": {
     "skill": 8,
-    "discussion": 131
+    "discussion": 132
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 4
   },
   "bess-standards-poland": {
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 81,
+   "count": 82,
    "byType": {
     "skill": 8,
-    "discussion": 73
+    "discussion": 74
    },
-   "lastGrown": "2026-08-20",
+   "lastGrown": "2026-08-22",
    "level": 4
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-22",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-21",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-22",
+   "gapDays": 0,
    "overdue": false
   }
  }

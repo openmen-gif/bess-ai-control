@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-7281a71a32bd",
+   "name": "팀 토론 — 사이버 보안 및 데이터 프라이버시 규제 불일치 해소를 위한 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-22",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-60426faec8c9",
    "name": "팀 토론 — 시운전 프로세스 자동화를 위한 최적화 프레임워크 개발 계획 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-970d09c4b90f",
-   "name": "팀 토론 — CEA/SECI 정책 업데이트 확인 및 인도 시장 진출 전략",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CYB-001",
+   "target": "K-7281a71a32bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-7281a71a32bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-7281a71a32bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-7281a71a32bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7281a71a32bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-7281a71a32bd",
+   "type": "knowledge"
+  },
   {
    "source": "CST-001",
    "target": "K-60426faec8c9",
@@ -8961,46 +8991,6 @@
    "source": "TAX-001",
    "target": "K-ab80f5d843ab",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-970d09c4b90f",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-970d09c4b90f",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-970d09c4b90f",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-970d09c4b90f",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRS-001",
-   "target": "K-970d09c4b90f",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-970d09c4b90f",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-970d09c4b90f",
-   "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-970d09c4b90f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9174,7 +9164,7 @@
    {
     "date": "2026-08-22",
     "knowledge": 400,
-    "events_total": 1391
+    "events_total": 1392
    }
   ]
  }
