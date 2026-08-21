@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-21",
  "totals": {
-  "all": 1388,
+  "all": 1389,
   "briefing": 484,
   "skill": 609,
-  "discussion": 295,
+  "discussion": 296,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 258,
+   "count": 259,
    "byType": {
     "skill": 9,
-    "discussion": 92,
+    "discussion": 93,
     "briefing": 157
    },
    "lastGrown": "2026-08-21",
@@ -46,10 +46,10 @@
    "level": 4
   },
   "bess-cable-engineer": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 8,
-    "discussion": 24,
+    "discussion": 25,
     "briefing": 1
    },
    "lastGrown": "2026-08-21",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 99,
+   "count": 100,
    "byType": {
     "skill": 9,
-    "discussion": 90
+    "discussion": 91
    },
    "lastGrown": "2026-08-21",
    "level": 4
@@ -164,12 +164,12 @@
    "level": 2
   },
   "bess-env-engineer": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 7,
-    "discussion": 34
+    "discussion": 35
    },
-   "lastGrown": "2026-08-20",
+   "lastGrown": "2026-08-21",
    "level": 3
   },
   "bess-epc-bom": {
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 66,
+   "count": 67,
    "byType": {
     "skill": 8,
-    "discussion": 58
+    "discussion": 59
    },
    "lastGrown": "2026-08-21",
    "level": 3
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 77,
+   "count": 78,
    "byType": {
     "skill": 8,
-    "discussion": 69
+    "discussion": 70
    },
    "lastGrown": "2026-08-21",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-21",
-   "added": 18
+   "added": 19
   }
  ],
  "freshness": {
