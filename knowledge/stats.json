@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-21",
  "totals": {
-  "all": 1384,
+  "all": 1385,
   "briefing": 484,
   "skill": 609,
-  "discussion": 291,
+  "discussion": 292,
   "activity": 0
  },
  "perAgent": {
@@ -119,10 +119,10 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 8,
-    "discussion": 49
+    "discussion": 50
    },
    "lastGrown": "2026-08-21",
    "level": 3
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 101,
+   "count": 102,
    "byType": {
     "skill": 8,
-    "discussion": 56,
+    "discussion": 57,
     "briefing": 37
    },
    "lastGrown": "2026-08-21",
@@ -448,10 +448,10 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 63,
+   "count": 64,
    "byType": {
     "skill": 8,
-    "discussion": 55
+    "discussion": 56
    },
    "lastGrown": "2026-08-21",
    "level": 3
@@ -538,12 +538,12 @@
    "level": 2
   },
   "bess-security-expert": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 7,
-    "discussion": 30
+    "discussion": 31
    },
-   "lastGrown": "2026-08-20",
+   "lastGrown": "2026-08-21",
    "level": 3
   },
   "bess-site-manager": {
@@ -647,19 +647,19 @@
    "level": 3
   },
   "bess-substation-engineer": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 7,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-11",
+   "lastGrown": "2026-08-21",
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 74,
+   "count": 75,
    "byType": {
     "skill": 8,
-    "discussion": 66
+    "discussion": 67
    },
    "lastGrown": "2026-08-21",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-21",
-   "added": 14
+   "added": 15
   }
  ],
  "freshness": {

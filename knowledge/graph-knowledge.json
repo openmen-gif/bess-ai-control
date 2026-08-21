@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-cb947259c33c",
+   "name": "팀 토론 — 액냉 시스템 최적화 계획 수립 및 CFD 기반 열 관리 시뮬",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-21",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-b3e059bb6aae",
    "name": "한화컨버전스, '美 공군 출신' 에너지 베테랑 영입…전력 인프라 서비스·",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-309127a7b352",
-   "name": "포드 이어 GM도 ESS 본격화…韓 배터리사에 위협될까",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,36 @@
   {
    "source": "SYS-001",
    "target": "K-e9044bebb8aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-cb947259c33c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-cb947259c33c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-cb947259c33c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-cb947259c33c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-cb947259c33c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-cb947259c33c",
    "type": "knowledge"
   },
   {
@@ -8856,11 +8886,6 @@
    "source": "BAT-001",
    "target": "K-314ae4c1448a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-309127a7b352",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9029,7 +9054,7 @@
    {
     "date": "2026-08-21",
     "knowledge": 400,
-    "events_total": 1384
+    "events_total": 1385
    }
   ]
  }
