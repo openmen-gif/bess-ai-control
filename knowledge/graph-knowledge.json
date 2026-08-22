@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e0f780c4e93b",
+   "name": "팀 토론 — 시운전·코디네이터 영역 초안 작성 — bess-commiss",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d0336f906aff",
    "name": "스탠다드에너지, 한양대학교에 바나듐 이온 배터리 ESS 본격 가동",
    "group": "KNOWLEDGE",
@@ -3590,21 +3599,52 @@
    "date": "2026-08-04",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-ac7bc6ebb627",
-   "name": "[여수 AX 전환] ⑤ 화재부터 작업자 안전까지…AI가 바꾸는 산업안전",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
   {
    "source": "BAT-001",
    "target": "K-ed0aad75cd0f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e0f780c4e93b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-e0f780c4e93b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e0f780c4e93b",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-e0f780c4e93b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-e0f780c4e93b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e0f780c4e93b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-e0f780c4e93b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e0f780c4e93b",
    "type": "knowledge"
   },
   {
@@ -8726,11 +8766,6 @@
    "source": "MAR-001",
    "target": "K-b30bd7c30c9b",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-ac7bc6ebb627",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8904,7 +8939,7 @@
    {
     "date": "2026-08-22",
     "knowledge": 400,
-    "events_total": 1413
+    "events_total": 1414
    }
   ]
  }
