@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-22",
  "totals": {
-  "all": 1415,
+  "all": 1416,
   "briefing": 503,
   "skill": 609,
-  "discussion": 303,
+  "discussion": 304,
   "activity": 0
  },
  "perAgent": {
@@ -92,12 +92,12 @@
    "level": 2
   },
   "bess-contract-specialist": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 8,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-22",
    "level": 3
   },
   "bess-cost-analyst": {
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 8,
-    "discussion": 49
+    "discussion": 50
    },
    "lastGrown": "2026-08-22",
    "level": 3
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 98,
+   "count": 99,
    "byType": {
     "skill": 8,
-    "discussion": 90
+    "discussion": 91
    },
    "lastGrown": "2026-08-22",
    "level": 4
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 111,
+   "count": 112,
    "byType": {
     "skill": 8,
-    "discussion": 62,
+    "discussion": 63,
     "briefing": 41
    },
    "lastGrown": "2026-08-22",
@@ -511,12 +511,12 @@
    "level": 2
   },
   "bess-risk-manager": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 7,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-22",
    "level": 2
   },
   "bess-sales-manager": {
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 119,
+   "count": 120,
    "byType": {
     "skill": 8,
-    "discussion": 21,
+    "discussion": 22,
     "briefing": 90
    },
    "lastGrown": "2026-08-22",
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 81,
+   "count": 82,
    "byType": {
     "skill": 8,
-    "discussion": 73
+    "discussion": 74
    },
    "lastGrown": "2026-08-22",
    "level": 4
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 8,
-    "discussion": 21,
+    "discussion": 22,
     "briefing": 1
    },
-   "lastGrown": "2026-08-20",
+   "lastGrown": "2026-08-22",
    "level": 3
   },
   "bess-translator": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-22",
-   "added": 25
+   "added": 26
   }
  ],
  "freshness": {

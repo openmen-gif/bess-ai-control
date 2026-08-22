@@ -28,6 +28,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-cd41bc596c64",
+   "name": "팀 토론 — FIDIC 계약 조건 분석 및 최적화 전략 수립으로 계약 리",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-22",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-b8322525d247",
    "name": "데이터센터 전력 해법은 태양광+ESS인가",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-04",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ba48f7e4520b",
-   "name": "팀 토론 — 단기 안전 마진 확보를 위한 최적 차단기 및 피뢰기 설계 기",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3650,6 +3650,46 @@
   {
    "source": "BAT-001",
    "target": "K-d0336f906aff",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-cd41bc596c64",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-cd41bc596c64",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-cd41bc596c64",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-cd41bc596c64",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-cd41bc596c64",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-cd41bc596c64",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-cd41bc596c64",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-cd41bc596c64",
    "type": "knowledge"
   },
   {
@@ -8761,46 +8801,6 @@
    "source": "BAT-001",
    "target": "K-c4e31ef8ea39",
    "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-ba48f7e4520b",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-ba48f7e4520b",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-ba48f7e4520b",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-ba48f7e4520b",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-ba48f7e4520b",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-ba48f7e4520b",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-ba48f7e4520b",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-ba48f7e4520b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8974,7 +8974,7 @@
    {
     "date": "2026-08-22",
     "knowledge": 400,
-    "events_total": 1415
+    "events_total": 1416
    }
   ]
  }
