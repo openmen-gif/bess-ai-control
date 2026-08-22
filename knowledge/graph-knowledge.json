@@ -55,6 +55,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a6d8e713c6b6",
+   "name": "팀 토론 — 고밀도 모듈 안전성 평가 심화를 위한 국제 표준 비교 및 적",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a4fe49e15fcc",
    "name": "한국요꼬가와전기, 고전압·고정밀 측정 지원한다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-04",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b30bd7c30c9b",
-   "name": "리튬이온 배터리 사고의 이해와 대응- V",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-04",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3665,6 +3665,46 @@
   {
    "source": "PCS-001",
    "target": "K-afe30ce0d568",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a6d8e713c6b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a6d8e713c6b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a6d8e713c6b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a6d8e713c6b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a6d8e713c6b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-a6d8e713c6b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a6d8e713c6b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-a6d8e713c6b6",
    "type": "knowledge"
   },
   {
@@ -8761,11 +8801,6 @@
    "source": "SYS-001",
    "target": "K-ba48f7e4520b",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-b30bd7c30c9b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8939,7 +8974,7 @@
    {
     "date": "2026-08-22",
     "knowledge": 400,
-    "events_total": 1414
+    "events_total": 1415
    }
   ]
  }
