@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-22",
  "totals": {
-  "all": 1412,
+  "all": 1413,
   "briefing": 503,
   "skill": 609,
-  "discussion": 300,
+  "discussion": 301,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 264,
+   "count": 265,
    "byType": {
     "skill": 9,
-    "discussion": 94,
+    "discussion": 95,
     "briefing": 161
    },
    "lastGrown": "2026-08-22",
@@ -56,12 +56,12 @@
    "level": 3
   },
   "bess-cbop-engineer": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 8,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-20",
+   "lastGrown": "2026-08-22",
    "level": 2
   },
   "bess-cfd-analyst": {
@@ -209,13 +209,13 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 112,
+   "count": 113,
    "byType": {
     "skill": 8,
-    "discussion": 71,
+    "discussion": 72,
     "briefing": 33
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 4
   },
   "bess-fit-procedure": {
@@ -238,12 +238,12 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 8,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-22",
    "level": 3
   },
   "bess-hr-manager": {
@@ -484,12 +484,12 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 78,
+   "count": 79,
    "byType": {
     "skill": 8,
-    "discussion": 70
+    "discussion": 71
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 4
   },
   "bess-project-manager": {
@@ -529,13 +529,13 @@
    "level": 2
   },
   "bess-scheduler": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 7,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-20",
-   "level": 2
+   "lastGrown": "2026-08-22",
+   "level": 3
   },
   "bess-security-expert": {
    "count": 38,
@@ -547,12 +547,12 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 8,
-    "discussion": 30
+    "discussion": 31
    },
-   "lastGrown": "2026-08-14",
+   "lastGrown": "2026-08-22",
    "level": 3
   },
   "bess-standards-analyst": {
@@ -638,12 +638,12 @@
    "level": 2
   },
   "bess-structural-analyst": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 8,
-    "discussion": 43
+    "discussion": 44
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-22",
    "level": 3
   },
   "bess-substation-engineer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-22",
-   "added": 22
+   "added": 23
   }
  ],
  "freshness": {

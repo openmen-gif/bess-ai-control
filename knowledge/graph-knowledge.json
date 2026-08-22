@@ -154,6 +154,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-298128a00b71",
+   "name": "팀 토론 — 부지조성·기초설계 영역 초안 작성 — bess-cbop-en",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-262154694f6d",
    "name": "이차전지 소재·부품 및 장비전 'K-BATTERY SHOW 2026', ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-04",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a9ee93255dab",
-   "name": "SK이터닉스, '전력 흐름 설계' 선언…PV·ESS·VPP로 통합 에너지",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-04",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3760,6 +3760,46 @@
   {
    "source": "PCS-001",
    "target": "K-375548b88144",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-298128a00b71",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-298128a00b71",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-298128a00b71",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-298128a00b71",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-298128a00b71",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-298128a00b71",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-298128a00b71",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-298128a00b71",
    "type": "knowledge"
   },
   {
@@ -8691,11 +8731,6 @@
    "source": "FIR-001",
    "target": "K-ac7bc6ebb627",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-a9ee93255dab",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8869,7 +8904,7 @@
    {
     "date": "2026-08-22",
     "knowledge": 400,
-    "events_total": 1412
+    "events_total": 1413
    }
   ]
  }
