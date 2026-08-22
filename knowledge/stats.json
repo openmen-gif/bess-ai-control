@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-22",
  "totals": {
-  "all": 1416,
+  "all": 1417,
   "briefing": 503,
   "skill": 609,
-  "discussion": 304,
+  "discussion": 305,
   "activity": 0
  },
  "perAgent": {
@@ -17,19 +17,19 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 7,
-    "discussion": 20
+    "discussion": 21
    },
-   "lastGrown": "2026-08-19",
+   "lastGrown": "2026-08-22",
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 267,
+   "count": 268,
    "byType": {
     "skill": 9,
-    "discussion": 97,
+    "discussion": 98,
     "briefing": 161
    },
    "lastGrown": "2026-08-22",
@@ -128,10 +128,10 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 8,
-    "discussion": 49
+    "discussion": 50
    },
    "lastGrown": "2026-08-22",
    "level": 3
@@ -200,12 +200,12 @@
    "level": 2
   },
   "bess-financial-analysis": {
-   "count": 79,
+   "count": 80,
    "byType": {
     "skill": 8,
-    "discussion": 71
+    "discussion": 72
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-22",
    "level": 4
   },
   "bess-fire-engineer": {
@@ -247,12 +247,12 @@
    "level": 3
   },
   "bess-hr-manager": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 6,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-08-20",
+   "lastGrown": "2026-08-22",
    "level": 2
   },
   "bess-hse-manager": {
@@ -310,12 +310,12 @@
    "level": 2
   },
   "bess-it-infra": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 7,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-20",
+   "lastGrown": "2026-08-22",
    "level": 2
   },
   "bess-knowledge-manager": {
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 112,
+   "count": 113,
    "byType": {
     "skill": 8,
-    "discussion": 63,
+    "discussion": 64,
     "briefing": 41
    },
    "lastGrown": "2026-08-22",
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 82,
+   "count": 83,
    "byType": {
     "skill": 8,
-    "discussion": 74
+    "discussion": 75
    },
    "lastGrown": "2026-08-22",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-22",
-   "added": 26
+   "added": 27
   }
  ],
  "freshness": {

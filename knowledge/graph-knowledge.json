@@ -208,6 +208,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-1ec17093455c",
+   "name": "팀 토론 — AI 기반 최적화 알고리즘 개발로 실시간 SOC/SOH 예측",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-102bf2b306ce",
    "name": "재활용 문턱 낮추는 폐배터리…전기차 넘어 ESS·풍력까지 순환망 확대",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-04",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-c4e31ef8ea39",
-   "name": "ESS 물량 따내면 끝 아니다…국내 LFP배터리 생태계로 이어질까",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3930,6 +3930,46 @@
   {
    "source": "STD-001",
    "target": "K-247a0d2ff664",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-1ec17093455c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1ec17093455c",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-1ec17093455c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-1ec17093455c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-1ec17093455c",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-1ec17093455c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-1ec17093455c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-1ec17093455c",
    "type": "knowledge"
   },
   {
@@ -8796,11 +8836,6 @@
    "source": "MAR-001",
    "target": "K-cdf32e923aa3",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-c4e31ef8ea39",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8974,7 +9009,7 @@
    {
     "date": "2026-08-22",
     "knowledge": 400,
-    "events_total": 1416
+    "events_total": 1417
    }
   ]
  }
