@@ -127,6 +127,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d4326f9f3c59",
+   "name": "팀 토론 — 관세 최적화 전략 수립을 통해 글로벌 BESS 조달 비용 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-23",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d39e12525ecd",
    "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4f21a6dd34fa",
-   "name": "[글로벌 배터리 대전 (37)] BYD, 아부다비 태양광 설비 프로젝트에",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3670,6 +3670,46 @@
   {
    "source": "FIR-001",
    "target": "K-d453299072b1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d4326f9f3c59",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d4326f9f3c59",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-d4326f9f3c59",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-d4326f9f3c59",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d4326f9f3c59",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d4326f9f3c59",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-d4326f9f3c59",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-d4326f9f3c59",
    "type": "knowledge"
   },
   {
@@ -8521,11 +8561,6 @@
    "source": "BAT-001",
    "target": "K-53e988599df3",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-4f21a6dd34fa",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8704,7 +8739,7 @@
    {
     "date": "2026-08-23",
     "knowledge": 400,
-    "events_total": 1518
+    "events_total": 1519
    }
   ]
  }

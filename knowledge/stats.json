@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-23",
  "totals": {
-  "all": 1518,
+  "all": 1519,
   "briefing": 517,
   "skill": 696,
-  "discussion": 305,
+  "discussion": 306,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 273,
+   "count": 274,
    "byType": {
     "skill": 11,
-    "discussion": 98,
+    "discussion": 99,
     "briefing": 164
    },
    "lastGrown": "2026-08-23",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 105,
+   "count": 106,
    "byType": {
     "skill": 11,
-    "discussion": 94
+    "discussion": 95
    },
    "lastGrown": "2026-08-23",
    "level": 4
@@ -164,10 +164,10 @@
    "level": 2
   },
   "bess-env-engineer": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 9,
-    "discussion": 35
+    "discussion": 36
    },
    "lastGrown": "2026-08-23",
    "level": 3
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 101,
+   "count": 102,
    "byType": {
     "skill": 10,
-    "discussion": 91
+    "discussion": 92
    },
    "lastGrown": "2026-08-23",
    "level": 4
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 81,
+   "count": 82,
    "byType": {
     "skill": 10,
-    "discussion": 71
+    "discussion": 72
    },
    "lastGrown": "2026-08-23",
    "level": 4
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 143,
+   "count": 144,
    "byType": {
     "skill": 10,
-    "discussion": 133
+    "discussion": 134
    },
    "lastGrown": "2026-08-23",
    "level": 4
@@ -702,21 +702,21 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 84,
+   "count": 85,
    "byType": {
     "skill": 10,
-    "discussion": 74
+    "discussion": 75
    },
    "lastGrown": "2026-08-23",
    "level": 4
   },
   "bess-tool-developer": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 8,
-    "discussion": 24
+    "discussion": 25
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-23",
    "level": 3
   },
   "bess-training-expert": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-23",
-   "added": 72
+   "added": 73
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-22",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-23",
+   "gapDays": 0,
    "overdue": false
   }
  }

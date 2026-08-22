@@ -156,6 +156,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "d4326f9f3c59",
+   "date": "2026-08-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-env-engineer",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-tax-korea",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 관세 최적화 전략 수립을 통해 글로벌 BESS 조달 비용 최소화 및 지역 시장 경쟁력 강화",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "d39e12525ecd",
    "date": "2026-08-23",
    "type": "skill",
@@ -3746,17 +3764,6 @@
    "type": "skill",
    "agents": [
     "bess-fire-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ce9d7def2886",
-   "date": "2026-08-13",
-   "type": "skill",
-   "agents": [
-    "bess-structural-analyst"
    ],
    "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
    "link": "",
