@@ -891,6 +891,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "1053bacc3277",
+   "date": "2026-08-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-env-engineer",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-standards-korea",
+    "bess-tax-accountant",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — 인도 신흥시장 진출을 위한 CEA/SECI 규제 및 금융 지원 모델 분석",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "07a7682f32ce",
    "date": "2026-08-23",
    "type": "skill",
@@ -3783,24 +3801,6 @@
     "bess-tool-developer"
    ],
    "title": "팀 토론 — 케이블 최적화 포설 계획 수립 및 IEC 표준 준수 검증 (Ampacity 계산 포함)",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "01afbc5a85b7",
-   "date": "2026-08-14",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-mlops-engineer",
-    "bess-pcs-expert",
-    "bess-power-system-analyst",
-    "bess-system-engineer",
-    "bess-tool-developer"
-   ],
-   "title": "팀 토론 — 고밀도 모듈 안전성 평가 방법 심층 분석 및 회사 설계 가이드라인 업데이트 권고",
    "link": "",
    "source": "bess-team"
   }
