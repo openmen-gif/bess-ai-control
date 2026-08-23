@@ -185,6 +185,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "d1ee74b87164",
+   "date": "2026-08-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-ebop-engineer",
+    "bess-fire-engineer",
+    "bess-legal-expert",
+    "bess-permit-asia",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-standards-romania"
+   ],
+   "title": "팀 토론 — 변압기·수배전반 영역 현황 진단 — bess-ebop-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "cea3633091fc",
    "date": "2026-08-23",
    "type": "skill",
@@ -566,6 +584,17 @@
     "bess-hse-manager"
    ],
    "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5233d20abb6e",
+   "date": "2026-08-23",
+   "type": "skill",
+   "agents": [
+    "bess-output-generator"
+   ],
+   "title": "스킬 갱신 — fix(bess-skill): bess-output-generator 표 앞 빈 줄 복구 + BESS HTML 파생물 최신화",
    "link": "",
    "source": "00_Skill_MD"
   },
@@ -3591,6 +3620,17 @@
    "source": "bess-team"
   },
   {
+   "id": "7251f4da0556",
+   "date": "2026-08-14",
+   "type": "skill",
+   "agents": [
+    "bess-output-generator"
+   ],
+   "title": "스킬 갱신 — fix(bess-skill): 출력 표준 SSOT 불일치 정정 + TOC PDF 누락 버그 수정",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "5d950d1c2592",
    "date": "2026-08-14",
    "type": "briefing",
@@ -3731,39 +3771,6 @@
    "type": "skill",
    "agents": [
     "bess-data-analyst"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "e447841b4c07",
-   "date": "2026-08-13",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "신한투자 \"산일전기, 대형주와 밸류에이션 격차 확대…목표가↓\"",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE41bXRnTG40NGdMTXFpM0UxejJ0Y1NTM0piLWJSSU5yLVlZVHhfN1l3bXhhczFxTXpRNllxWjNyTTFsWjRuNGhGRjNVUXFTQWFrcnowVDRZUXRlZWJCZ3ItYdIBYEFVX3lxTE41bXRnTG40NGdMTXFpM0UxejJ0Y1NTM0piLWJSSU5yLVlZVHhfN1l3bXhhczFxTXpRNllxWjNyTTFsWjRuNGhGRjNVUXFTQWFrcnowVDRZUXRlZWJCZ3ItYQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "dd926d2d15bc",
-   "date": "2026-08-13",
-   "type": "skill",
-   "agents": [
-    "bess-epc-bom"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "d9f61e41a3d8",
-   "date": "2026-08-13",
-   "type": "skill",
-   "agents": [
-    "bess-fire-engineer"
    ],
    "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
    "link": "",
