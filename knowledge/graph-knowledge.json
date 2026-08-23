@@ -370,6 +370,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-70a0e7893311",
+   "name": "팀 토론 — 고밀도 모듈 안전성 평가 심화를 위한 [구체적인 평가 방법론",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-23",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6df4ac006f99",
    "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-10",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-85dd40a2f297",
-   "name": "팀 토론 — 케이블 최적 포설 계획 수립으로 KPX 내 설치 효율성 향상",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-10",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3910,6 +3910,46 @@
   {
    "source": "STR-001",
    "target": "K-7969e592f5c8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-70a0e7893311",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-70a0e7893311",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-70a0e7893311",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-70a0e7893311",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-70a0e7893311",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-70a0e7893311",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-70a0e7893311",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-70a0e7893311",
    "type": "knowledge"
   },
   {
@@ -8561,46 +8601,6 @@
    "source": "MAR-001",
    "target": "K-99b79b6343e5",
    "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-85dd40a2f297",
-   "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-85dd40a2f297",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-85dd40a2f297",
-   "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-85dd40a2f297",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-85dd40a2f297",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-85dd40a2f297",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-85dd40a2f297",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-85dd40a2f297",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8779,7 +8779,7 @@
    {
     "date": "2026-08-23",
     "knowledge": 400,
-    "events_total": 1523
+    "events_total": 1524
    }
   ]
  }

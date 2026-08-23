@@ -474,6 +474,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "70a0e7893311",
+   "date": "2026-08-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-pcs-expert",
+    "bess-qaqc-engineer",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-standards-usa"
+   ],
+   "title": "팀 토론 — 고밀도 모듈 안전성 평가 심화를 위한 [구체적인 평가 방법론 도입 계획 수립] 및 관련 국제 표준( 삼성 SDI, LG 에너지 솔루션, SK 온의 적합성 검증 필요) 비교 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "6df4ac006f99",
    "date": "2026-08-23",
    "type": "skill",
@@ -3771,17 +3789,6 @@
    "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "ee6d6cdaaa43",
-   "date": "2026-08-13",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "ESS 테크, 비상장 에너지 기업과 합병 추진… 5억 1500만 달러 가치 평가",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB2WDVTYmtjNkpwakw2cnQ1Q0gzMm5nTWxFdzl1MDlVUm93ZWJjQVJSR3E0c3RFbDB3Ym0wNUM0QWlmWk00N3BjdjhHTU9fRWRTQWVGV2VHS2d6dFFpU29YNHRaeGpUeTJfMWNiN2NIaExlRmM?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
