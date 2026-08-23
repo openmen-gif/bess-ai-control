@@ -86,6 +86,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "eba46bf59da1",
+   "date": "2026-08-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cybersecurity-expert",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 고밀도 모듈 안전성 평가의 국제 표준 적합성 검토를 통해 국내 설계 개선 방안 마련 및 사이버 보안 강화 전략 수립 요청",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ea3cacf604f6",
    "date": "2026-08-23",
    "type": "skill",
@@ -3785,24 +3803,6 @@
    "title": "\"긴 터널의 끝?\" K-배터리, 북미 ESS 출하 83% 증가...ESS 생산 전환 가속",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB4MDl0QW9USkFHVFhOVDluZklQUG5OYy0zVWdDc2ZTVmJXdk5zX0RCQk0zdFZVUG9GVGo4bVdtcEp5Uk90WDVJNTZVcjdjY1lkOGk5aA?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "02ee2bd93198",
-   "date": "2026-08-14",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cable-engineer",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-internal-auditor",
-    "bess-pcs-expert",
-    "bess-system-engineer",
-    "bess-tool-developer"
-   ],
-   "title": "팀 토론 — 케이블 최적화 포설 계획 수립 및 IEC 표준 준수 검증 (Ampacity 계산 포함)",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
