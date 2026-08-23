@@ -236,6 +236,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "c6154dae3221",
+   "date": "2026-08-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-ip-patent-expert",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 관세 최적화 전략 수립을 통한 글로벌 조달 비용 최소화 및 FTA 원산지 활용 극대화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "c4c900cdbe2f",
    "date": "2026-08-23",
    "type": "skill",
@@ -3764,17 +3782,6 @@
    "title": "ESS 테크, 비상장 에너지 기업과 합병 추진… 5억 1500만 달러 가치 평가",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB2WDVTYmtjNkpwakw2cnQ1Q0gzMm5nTWxFdzl1MDlVUm93ZWJjQVJSR3E0c3RFbDB3Ym0wNUM0QWlmWk00N3BjdjhHTU9fRWRTQWVGV2VHS2d6dFFpU29YNHRaeGpUeTJfMWNiN2NIaExlRmM?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "ea18edd33bc3",
-   "date": "2026-08-13",
-   "type": "skill",
-   "agents": [
-    "bess-data-analyst"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
