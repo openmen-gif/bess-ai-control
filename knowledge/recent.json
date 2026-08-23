@@ -2,6 +2,24 @@
  "updated": "2026-08-24",
  "events": [
   {
+   "id": "e52aed837fe0",
+   "date": "2026-08-24",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-esg-finance",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-insurance-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 액냉 시스템 최적화 설계를 통해 BESS 운영 효율성 향상 및 열 관리 비용 절감 방안 모색",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "2c50bb32ea06",
    "date": "2026-08-24",
    "type": "discussion",
@@ -3805,17 +3823,6 @@
    ],
    "title": "“ESS가 살렸다” K-배터리 북미서 반격의 닻 오르나",
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1WcVl2QkZHbUg4dmRKMDlXMnBDcm50TmF0VDNwbTJLQmtjVE04dTdJbjc1aTBTcFh0bG90TWdXZ0lMNVp3ZzhwdHp6Ym9TSjg?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3c9e4248929c",
-   "date": "2026-08-14",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "LS일렉트릭, 캐나다 CSA 공인시험소 자격 확보로 북미 시장 정조준",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9jYnBIUXoxSkNKcGw0c2RTb1ViNXdIZTB2RnAyNFRsQVJSR0ltWUdicTJaWU5ENHQ4SnZFWHlxQ2ZDaURGTnVyREdhYnhFSWVXNnNOUkZMMFBEYjVvaGNGa2w1N0NCMFlUYThjMDRDMDE?oc=5",
    "source": "구글뉴스"
   }
  ]

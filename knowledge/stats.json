@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-24",
  "totals": {
-  "all": 1530,
+  "all": 1531,
   "briefing": 517,
   "skill": 698,
-  "discussion": 315,
+  "discussion": 316,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 281,
+   "count": 282,
    "byType": {
     "skill": 11,
-    "discussion": 106,
+    "discussion": 107,
     "briefing": 164
    },
    "lastGrown": "2026-08-24",
@@ -101,12 +101,12 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 108,
+   "count": 109,
    "byType": {
     "skill": 11,
-    "discussion": 97
+    "discussion": 98
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 4
   },
   "bess-customs-tariff": {
@@ -182,13 +182,13 @@
    "level": 2
   },
   "bess-esg-finance": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 9,
-    "discussion": 20
+    "discussion": 21
    },
-   "lastGrown": "2026-08-23",
-   "level": 2
+   "lastGrown": "2026-08-24",
+   "level": 3
   },
   "bess-facility-manager": {
    "count": 29,
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 122,
+   "count": 123,
    "byType": {
     "skill": 10,
-    "discussion": 78,
+    "discussion": 79,
     "briefing": 34
    },
    "lastGrown": "2026-08-24",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 64,
+   "count": 65,
    "byType": {
     "skill": 10,
-    "discussion": 54
+    "discussion": 55
    },
    "lastGrown": "2026-08-24",
    "level": 3
@@ -283,12 +283,12 @@
    "level": 2
   },
   "bess-insurance-expert": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 8,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-internal-auditor": {
@@ -448,12 +448,12 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 74,
+   "count": 75,
    "byType": {
     "skill": 9,
-    "discussion": 65
+    "discussion": 66
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 4
   },
   "bess-precom-report": {
@@ -656,12 +656,12 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 87,
+   "count": 88,
    "byType": {
     "skill": 10,
-    "discussion": 77
+    "discussion": 78
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 4
   },
   "bess-tax-accountant": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-24",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {

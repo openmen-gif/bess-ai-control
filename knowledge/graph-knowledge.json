@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-e52aed837fe0",
+   "name": "팀 토론 — 액냉 시스템 최적화 설계를 통해 BESS 운영 효율성 향상 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2c50bb32ea06",
    "name": "팀 토론 — HS코드·배터리 영역 1차 분석 — bess-customs-",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-11",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-235255692fb7",
-   "name": "[독립신문 칼럼] 에너지 전쟁을 멈춰라… 세계는 ‘믹스 경쟁’에 들어갔다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-e52aed837fe0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e52aed837fe0",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-e52aed837fe0",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e52aed837fe0",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-e52aed837fe0",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-e52aed837fe0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e52aed837fe0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e52aed837fe0",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-2c50bb32ea06",
@@ -8736,11 +8776,6 @@
    "source": "KTX-001",
    "target": "K-45cd07916b8d",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-235255692fb7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8924,7 +8959,7 @@
    {
     "date": "2026-08-24",
     "knowledge": 400,
-    "events_total": 1530
+    "events_total": 1531
    }
   ]
  }
