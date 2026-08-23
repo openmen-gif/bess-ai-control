@@ -75,6 +75,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "7ed394245c38",
+   "date": "2026-08-24",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-emerging-markets",
+    "bess-fire-engineer",
+    "bess-legal-expert",
+    "bess-om-expert",
+    "bess-pcs-expert",
+    "bess-risk-manager",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — CEA·SECI 영역 벤치마킹 — bess-emerging-markets 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5edb4cbd98dd",
    "date": "2026-08-24",
    "type": "briefing",
@@ -3785,24 +3803,6 @@
    "title": "LG·삼성·SK, 북미 ESS 승부수 띄운다…K-배터리, 합작사업 접고 ‘독자경영’ 전환",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9tTWRIeW9zdUNGOEdaMG5XQVhQQjhXS2NsUlVpbEZfWVlJZFdMR2pObjE3bEFucDBjMk02aGtSQ0hCRHlKM0U3YmZPZ1FCOVFtNndtQnZWN3o4dFhPUUFKSmlxWHZqS0FRMndj?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "be092b34ae75",
-   "date": "2026-08-14",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cfd-analyst",
-    "bess-circuit-breaker-expert",
-    "bess-emc-analyst",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-logistics-expert",
-    "bess-structural-analyst"
-   ],
-   "title": "팀 토론 — BESS 시스템 내 액냉 시스템 효율 최적화를 위한 CFD 기반 기류 분배 분석 실행",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
