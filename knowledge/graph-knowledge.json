@@ -28,6 +28,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-f889332707e3",
+   "name": "팀 토론 — EIA 환경영향평가 절차 최적화 계획 수립 및 현지 생태계 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-23",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f70e1f89e466",
    "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-99b79b6343e5",
-   "name": "상장가보다 주가 낮은데 실적은 뛰었다…지에프아이에 무슨 일?",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3615,6 +3615,46 @@
   {
    "source": "FIR-001",
    "target": "K-f9d8f4ef6fa0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f889332707e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-f889332707e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-f889332707e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-f889332707e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-f889332707e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-f889332707e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-f889332707e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-f889332707e3",
    "type": "knowledge"
   },
   {
@@ -8596,11 +8636,6 @@
    "source": "BAT-001",
    "target": "K-ea2fd9c1420c",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-99b79b6343e5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8779,7 +8814,7 @@
    {
     "date": "2026-08-23",
     "knowledge": 400,
-    "events_total": 1524
+    "events_total": 1525
    }
   ]
  }

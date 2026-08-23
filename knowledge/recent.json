@@ -35,6 +35,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "f889332707e3",
+   "date": "2026-08-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-knowledge-manager",
+    "bess-legal-expert",
+    "bess-standards-korea",
+    "bess-tax-accountant"
+   ],
+   "title": "팀 토론 — EIA 환경영향평가 절차 최적화 계획 수립 및 현지 생태계 보호 전략 연계",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f70e1f89e466",
    "date": "2026-08-23",
    "type": "skill",
@@ -3774,17 +3792,6 @@
    "type": "skill",
    "agents": [
     "bess-cost-analyst"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ee99ce63c213",
-   "date": "2026-08-13",
-   "type": "skill",
-   "agents": [
-    "bess-power-market-expert"
    ],
    "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
    "link": "",
