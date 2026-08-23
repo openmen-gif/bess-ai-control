@@ -1,10 +1,73 @@
 {
  "nodes": [
   {
+   "id": "K-e5564cd826a8",
+   "name": "K-배터리, 북미 공략 본격화…ESS 증설·투자 재원 확보 속도 [위클리",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e52aed837fe0",
    "name": "팀 토론 — 액냉 시스템 최적화 설계를 통해 BESS 운영 효율성 향상 ",
    "group": "KNOWLEDGE",
    "type": "discussion",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-dcef9bfed157",
+   "name": "사우디 전력 조달청, 11억 6천만 달러 규모 배터리 에너지 저장 시스템",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-97af190bc2e2",
+   "name": "K배터리, ‘합작’ 벗고 체질 개선… ESS로 가동률·수익성 동시 확보 ",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-978a19960268",
+   "name": "이재명 정부, ‘햇빛소득마을’과 ‘영농형 태양광’ 정책 통해 태양광과 E",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-8751cee03db6",
+   "name": "연방 보조금 삭감 뚫은 AI 전력난… 美 친환경 자본 250조 몰린 이유",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-5edb4cbd98dd",
+   "name": "K-배터리 '다음 승부처'…AI부터 로봇·선박까지",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-5278768053ca",
+   "name": "스탠다드에너지, 한양대 서울캠에 '바나듐 이온 배터리 ESS' 구축 - ",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
    "date": "2026-08-24",
    "val": 3,
    "color": "#8B5CF6"
@@ -17,6 +80,24 @@
    "date": "2026-08-24",
    "val": 3,
    "color": "#8B5CF6"
+  },
+  {
+   "id": "K-193f76740a9c",
+   "name": "팀 토론 — CEA·SECI 영역 벤치마킹 — bess-emerging-",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-1407191dc1ca",
+   "name": "ESS 3차 입찰 임박…절치부심 배터리 3사",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#F59E0B"
   },
   {
    "id": "K-0960c97f14a4",
@@ -3518,90 +3599,14 @@
    "date": "2026-08-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-7a0e25adcc97",
-   "name": "팀 토론 — 변압기·수배전반 영역 리스크 평가 — bess-ebop-en",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-754b17690505",
-   "name": "팀 토론 — COM-100 시운전 프로세스 자동화 및 데이터 기반 최적화",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-7054251bd875",
-   "name": "팀 토론 — 차단기 성능 최적화 시나리오 작성으로 시스템 안정성 및 신뢰",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6d7ed7a6d57f",
-   "name": "LS일렉트릭, GS건설과 AI데이터센터 직류 배전 사업 협력",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-579bcd11de10",
-   "name": "팀 토론 — 시운전·EMS 영역 현황 진단 — bess-fit-proce",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-51fe44fd50bf",
-   "name": "배터리 소재 3사도 2분기 나란히 흑자...“LFP 및 차세대 소재 투자",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5083e71b12ad",
-   "name": "배터리 열폭주 막아라…전기차 화재 방지株 무더기 상승",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4aa8614b1a7d",
-   "name": "리턴 토토 에 대한 궁금증을 해소하는 완벽한 가이드",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-45cd07916b8d",
-   "name": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 규정 준수 방안 검",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-e5564cd826a8",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-e52aed837fe0",
@@ -3643,6 +3648,36 @@
    "type": "knowledge"
   },
   {
+   "source": "MAR-001",
+   "target": "K-dcef9bfed157",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-97af190bc2e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-978a19960268",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-8751cee03db6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5edb4cbd98dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5278768053ca",
+   "type": "knowledge"
+  },
+  {
    "source": "BAT-001",
    "target": "K-2c50bb32ea06",
    "type": "knowledge"
@@ -3680,6 +3715,41 @@
   {
    "source": "KTX-001",
    "target": "K-2c50bb32ea06",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-193f76740a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-193f76740a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-193f76740a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-193f76740a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-193f76740a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-193f76740a9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-1407191dc1ca",
    "type": "knowledge"
   },
   {
@@ -8561,221 +8631,6 @@
    "source": "MAR-001",
    "target": "K-83e71e257c4d",
    "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-7a0e25adcc97",
-   "type": "knowledge"
-  },
-  {
-   "source": "EBP-001",
-   "target": "K-7a0e25adcc97",
-   "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-7a0e25adcc97",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-7a0e25adcc97",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-7a0e25adcc97",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-7a0e25adcc97",
-   "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-7a0e25adcc97",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-7a0e25adcc97",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-754b17690505",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-100",
-   "target": "K-754b17690505",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-754b17690505",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-754b17690505",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-754b17690505",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-754b17690505",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-001",
-   "target": "K-754b17690505",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-754b17690505",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-7054251bd875",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-7054251bd875",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-7054251bd875",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-7054251bd875",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-7054251bd875",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-7054251bd875",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-7054251bd875",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-6d7ed7a6d57f",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-579bcd11de10",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-579bcd11de10",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-579bcd11de10",
-   "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-579bcd11de10",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-579bcd11de10",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-002",
-   "target": "K-579bcd11de10",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-579bcd11de10",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-579bcd11de10",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-51fe44fd50bf",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-5083e71b12ad",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-4aa8614b1a7d",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-45cd07916b8d",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-45cd07916b8d",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-45cd07916b8d",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-45cd07916b8d",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-45cd07916b8d",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-45cd07916b8d",
-   "type": "knowledge"
-  },
-  {
-   "source": "JTX-001",
-   "target": "K-45cd07916b8d",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-45cd07916b8d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8959,7 +8814,7 @@
    {
     "date": "2026-08-24",
     "knowledge": 400,
-    "events_total": 1531
+    "events_total": 1540
    }
   ]
  }
