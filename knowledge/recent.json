@@ -338,6 +338,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "a9ead11ceca5",
+   "date": "2026-08-23",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-qaqc-engineer",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 한국요꼬가와전기의 고전압 파워아날라이저 'WT1500' 출시를 계기로, 글로벌 고전압 시스템 통합 전략 수립 및 기술 경쟁력 강화 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "a3feea96f852",
    "date": "2026-08-23",
    "type": "skill",
@@ -3785,17 +3803,6 @@
    "title": "팀 토론 — 고밀도 모듈 안전성 평가 방법 심층 분석 및 회사 설계 가이드라인 업데이트 권고",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "fc1ada115d44",
-   "date": "2026-08-13",
-   "type": "skill",
-   "agents": [
-    "bess-cost-analyst"
-   ],
-   "title": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — 08-02 이후 멈춰 있던 지식 유입 재개",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
