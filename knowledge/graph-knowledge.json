@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-1b3553e18414",
+   "name": "팀 토론 — 액냉 시스템 최적화를 통한 바나듐 이온 배터리 운영 효율성 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-193f76740a9c",
    "name": "팀 토론 — CEA·SECI 영역 벤치마킹 — bess-emerging-",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-914445357027",
-   "name": "[심층 분석]한솔로지스틱스, 미국 배터리 물류망 중부까지 확장…‘운송’ ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3845,6 +3845,36 @@
   {
    "source": "KTX-001",
    "target": "K-2c50bb32ea06",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1b3553e18414",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-1b3553e18414",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-1b3553e18414",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-1b3553e18414",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-1b3553e18414",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-1b3553e18414",
    "type": "knowledge"
   },
   {
@@ -8736,11 +8766,6 @@
    "source": "JTX-001",
    "target": "K-a632ecd5b5a8",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-914445357027",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8924,7 +8949,7 @@
    {
     "date": "2026-08-24",
     "knowledge": 400,
-    "events_total": 1544
+    "events_total": 1545
    }
   ]
  }

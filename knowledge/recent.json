@@ -181,6 +181,22 @@
    "source": "bess-team"
   },
   {
+   "id": "1b3553e18414",
+   "date": "2026-08-24",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cybersecurity-expert",
+    "bess-emc-analyst",
+    "bess-env-engineer",
+    "bess-scheduler",
+    "bess-standards-japan"
+   ],
+   "title": "팀 토론 — 액냉 시스템 최적화를 통한 바나듐 이온 배터리 운영 효율성 및 열 관리 개선 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "193f76740a9c",
    "date": "2026-08-24",
    "type": "discussion",
@@ -3800,24 +3816,6 @@
    "title": "액침형 ESS 기능안전 검증…KTL, 국내 최초 CB인증서 발행",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1tQXhCemFUTEhOX090SDMtMFJCcTNlMWpqZ2tCNWZoZUJWUG5LOTJMYnVGUUdPXzVnZDE5WUhzNXBqVHJ6NTQ2TV9RX1lZbk51SFJYbjlNOTgyeHhRV3F6TGl5eVVnVUdETG1ialY4V29PUQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "d52dd54415e6",
-   "date": "2026-08-14",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-pcs-expert",
-    "bess-power-system-analyst",
-    "bess-system-engineer",
-    "bess-tax-korea",
-    "bess-transfer-pricing"
-   ],
-   "title": "팀 토론 — 고밀도 모듈 안전성 평가 방법론 심층 분석 및 현재 설계에 대한 갭 분석 및 보완 조치 권고 (@bess-fire-engineer, @bess-battery-expert)",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

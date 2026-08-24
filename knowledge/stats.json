@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-24",
  "totals": {
-  "all": 1544,
+  "all": 1545,
   "briefing": 525,
   "skill": 698,
-  "discussion": 321,
+  "discussion": 322,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 291,
+   "count": 292,
    "byType": {
     "skill": 11,
-    "discussion": 112,
+    "discussion": 113,
     "briefing": 168
    },
    "lastGrown": "2026-08-24",
@@ -119,12 +119,12 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 10,
-    "discussion": 52
+    "discussion": 53
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-data-analyst": {
@@ -146,12 +146,12 @@
    "level": 2
   },
   "bess-emc-analyst": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 9,
-    "discussion": 45
+    "discussion": 46
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-emerging-markets": {
@@ -164,12 +164,12 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 9,
-    "discussion": 38
+    "discussion": 39
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-epc-bom": {
@@ -529,12 +529,12 @@
    "level": 2
   },
   "bess-scheduler": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 7,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-08-22",
+   "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-security-expert": {
@@ -584,12 +584,12 @@
    "level": 2
   },
   "bess-standards-japan": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 8,
-    "discussion": 14
+    "discussion": 15
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-standards-korea": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-24",
-   "added": 16
+   "added": 17
   }
  ],
  "freshness": {
