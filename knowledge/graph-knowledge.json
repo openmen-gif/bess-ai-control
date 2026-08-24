@@ -100,6 +100,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-2d4dca63a74a",
+   "name": "팀 토론 — 케이블 설계 최적화를 통한 전력 손실 최소화 방안 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2c50bb32ea06",
    "name": "팀 토론 — HS코드·배터리 영역 1차 분석 — bess-customs-",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-8ebdcb9c8566",
-   "name": "LS일렉트릭, ‘차세대 ESS용 PCS G2’ 첫 출하… 글로벌 시장 주",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3775,6 +3775,36 @@
   {
    "source": "STR-001",
    "target": "K-35ce3e85932a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2d4dca63a74a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-2d4dca63a74a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2d4dca63a74a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-2d4dca63a74a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2d4dca63a74a",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-2d4dca63a74a",
    "type": "knowledge"
   },
   {
@@ -8711,11 +8741,6 @@
    "source": "MAR-001",
    "target": "K-914445357027",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-8ebdcb9c8566",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8899,7 +8924,7 @@
    {
     "date": "2026-08-24",
     "knowledge": 400,
-    "events_total": 1543
+    "events_total": 1544
    }
   ]
  }
