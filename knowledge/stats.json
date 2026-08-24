@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1550,
+  "all": 1551,
   "briefing": 525,
   "skill": 698,
-  "discussion": 327,
+  "discussion": 328,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 295,
+   "count": 296,
    "byType": {
     "skill": 11,
-    "discussion": 116,
+    "discussion": 117,
     "briefing": 168
    },
    "lastGrown": "2026-08-25",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 115,
+   "count": 116,
    "byType": {
     "skill": 11,
-    "discussion": 104
+    "discussion": 105
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -182,12 +182,12 @@
    "level": 2
   },
   "bess-esg-finance": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 9,
-    "discussion": 21
+    "discussion": 22
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 3
   },
   "bess-facility-manager": {
@@ -247,12 +247,12 @@
    "level": 3
   },
   "bess-hr-manager": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 7,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-25",
    "level": 2
   },
   "bess-hse-manager": {
@@ -475,19 +475,19 @@
    "level": 2
   },
   "bess-procurement-data": {
-   "count": 14,
+   "count": 15,
    "byType": {
     "skill": 6,
-    "discussion": 8
+    "discussion": 9
    },
-   "lastGrown": "2026-08-11",
+   "lastGrown": "2026-08-25",
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 88,
+   "count": 89,
    "byType": {
     "skill": 10,
-    "discussion": 78
+    "discussion": 79
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
