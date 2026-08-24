@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a9f9f1d0dc5b",
+   "name": "팀 토론 — 바나듐 이온 배터리 원자재 공급 안정성 및 가격 변동성에 대",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8521b83a282f",
    "name": "팀 토론 — 고밀도 모듈의 안전성 평가 표준 업데이트 분석 및 현재 설계",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-e1079c6bb6b5",
-   "name": "K-물류, 북미에 ESS 특화 사업 확대…운송·인프라 기반 마련",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3630,6 +3630,36 @@
   {
    "source": "MKT-001",
    "target": "K-e43503438d77",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a9f9f1d0dc5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a9f9f1d0dc5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-a9f9f1d0dc5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-a9f9f1d0dc5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a9f9f1d0dc5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a9f9f1d0dc5b",
    "type": "knowledge"
   },
   {
@@ -8806,11 +8836,6 @@
    "source": "RSK-001",
    "target": "K-e139e7671b46",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-e1079c6bb6b5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8999,7 +9024,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1551
+    "events_total": 1552
    }
   ]
  }

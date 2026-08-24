@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1551,
+  "all": 1552,
   "briefing": 525,
   "skill": 698,
-  "discussion": 328,
+  "discussion": 329,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 296,
+   "count": 297,
    "byType": {
     "skill": 11,
-    "discussion": 117,
+    "discussion": 118,
     "briefing": 168
    },
    "lastGrown": "2026-08-25",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 116,
+   "count": 117,
    "byType": {
     "skill": 11,
-    "discussion": 105
+    "discussion": 106
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -155,12 +155,12 @@
    "level": 3
   },
   "bess-emerging-markets": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 10,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 3
   },
   "bess-env-engineer": {
@@ -420,12 +420,12 @@
    "level": 2
   },
   "bess-permit-english": {
-   "count": 12,
+   "count": 13,
    "byType": {
     "skill": 7,
-    "discussion": 5
+    "discussion": 6
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-25",
    "level": 2
   },
   "bess-permit-europe": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 89,
+   "count": 90,
    "byType": {
     "skill": 10,
-    "discussion": 79
+    "discussion": 80
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 89,
+   "count": 90,
    "byType": {
     "skill": 10,
-    "discussion": 79
+    "discussion": 80
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 4
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 3
+   "added": 4
   }
  ],
  "freshness": {
