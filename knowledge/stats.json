@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1566,
+  "all": 1567,
   "briefing": 538,
   "skill": 698,
-  "discussion": 330,
+  "discussion": 331,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 304,
+   "count": 305,
    "byType": {
     "skill": 11,
-    "discussion": 119,
+    "discussion": 120,
     "briefing": 174
    },
    "lastGrown": "2026-08-25",
@@ -74,12 +74,12 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 10,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 3
   },
   "bess-commissioning-coordinator": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 118,
+   "count": 119,
    "byType": {
     "skill": 11,
-    "discussion": 107
+    "discussion": 108
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 91,
+   "count": 92,
    "byType": {
     "skill": 10,
-    "discussion": 81
+    "discussion": 82
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 89,
+   "count": 90,
    "byType": {
     "skill": 10,
-    "discussion": 79
+    "discussion": 80
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -720,12 +720,12 @@
    "level": 3
   },
   "bess-training-expert": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 8,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 2
   },
   "bess-transfer-pricing": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 18
+   "added": 19
   }
  ],
  "freshness": {

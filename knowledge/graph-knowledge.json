@@ -127,6 +127,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-2d1f6409fb85",
+   "name": "팀 토론 — 변압기 시스템 최적화 설계를 통해 전력 손실 최소화 및 안전",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-17301ba612c1",
    "name": "북미 ESS에 승부수 띄운 삼성SDI···실적 회복 탄력받을까",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-6150fb4947b7",
-   "name": "삼성SDI-GM, '차세대 각형 배터리' 개발 \"미래 모빌리티 시장 대응",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3795,6 +3795,36 @@
   {
    "source": "PRO-001",
    "target": "K-52747e260511",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2d1f6409fb85",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-2d1f6409fb85",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2d1f6409fb85",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2d1f6409fb85",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2d1f6409fb85",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-2d1f6409fb85",
    "type": "knowledge"
   },
   {
@@ -8716,11 +8746,6 @@
    "source": "MAR-001",
    "target": "K-7563e15bc9a1",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-6150fb4947b7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8909,7 +8934,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1566
+    "events_total": 1567
    }
   ]
  }
