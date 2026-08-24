@@ -1,6 +1,22 @@
 {
- "updated": "2026-08-24",
+ "updated": "2026-08-25",
  "events": [
+  {
+   "id": "8521b83a282f",
+   "date": "2026-08-25",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-facility-manager",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 고밀도 모듈의 안전성 평가 표준 업데이트 분석 및 현재 설계의 적합성 검토 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "e5564cd826a8",
    "date": "2026-08-24",
@@ -3819,17 +3835,6 @@
    ],
    "title": "배터리 3사, EV 넘어 ESS로…AI 데이터센터가 새 성장축",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51OXgxbC1MNVRCTkJRT2xPUnNWWi1WQllzeEpKa2M4RENxUnFacUVmYVZlYjhVSjB1N19vR3hTeW9XUUkwTDg1Y1BnR2tEMFhwY21tOG13aFRfMl96SlEwRUR0Ml9kMUVh?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "fc148886e6ea",
-   "date": "2026-08-14",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "KTL, 차세대 '액침형 ESS' 국제인증 첫 발행···지투파워 해외진출 '청신호'",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9LaURmVkE5cUduNXpQbkptZXc2NWt5QkczenRXTXVKNDJQcFkyRzJwMHp2dUtnWFV0MXhyc3VtbGFaZzkwSWJyeUNGTXppLXJ1RlhV?oc=5",
    "source": "구글뉴스"
   }
  ]
