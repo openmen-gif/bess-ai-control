@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-24",
  "totals": {
-  "all": 1541,
+  "all": 1542,
   "briefing": 525,
   "skill": 698,
-  "discussion": 318,
+  "discussion": 319,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 288,
+   "count": 289,
    "byType": {
     "skill": 11,
-    "discussion": 109,
+    "discussion": 110,
     "briefing": 168
    },
    "lastGrown": "2026-08-24",
@@ -74,12 +74,12 @@
    "level": 2
   },
   "bess-circuit-breaker-expert": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 10,
-    "discussion": 27
+    "discussion": 28
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-commissioning-coordinator": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 109,
+   "count": 110,
    "byType": {
     "skill": 11,
-    "discussion": 98
+    "discussion": 99
    },
    "lastGrown": "2026-08-24",
    "level": 4
@@ -466,12 +466,12 @@
    "level": 2
   },
   "bess-presentation-designer": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 6,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-22",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-procurement-data": {
@@ -484,12 +484,12 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 83,
+   "count": 84,
    "byType": {
     "skill": 10,
-    "discussion": 73
+    "discussion": 74
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 4
   },
   "bess-project-manager": {
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 9,
-    "discussion": 22,
+    "discussion": 23,
     "briefing": 2
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-translator": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-24",
-   "added": 13
+   "added": 14
   }
  ],
  "freshness": {
