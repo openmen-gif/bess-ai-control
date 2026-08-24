@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-24",
  "totals": {
-  "all": 1542,
+  "all": 1543,
   "briefing": 525,
   "skill": 698,
-  "discussion": 319,
+  "discussion": 320,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 289,
+   "count": 290,
    "byType": {
     "skill": 11,
-    "discussion": 110,
+    "discussion": 111,
     "briefing": 168
    },
    "lastGrown": "2026-08-24",
@@ -65,12 +65,12 @@
    "level": 2
   },
   "bess-cfd-analyst": {
-   "count": 28,
+   "count": 29,
    "byType": {
     "skill": 11,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-circuit-breaker-expert": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 110,
+   "count": 111,
    "byType": {
     "skill": 11,
-    "discussion": 99
+    "discussion": 100
    },
    "lastGrown": "2026-08-24",
    "level": 4
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 84,
+   "count": 85,
    "byType": {
     "skill": 10,
-    "discussion": 74
+    "discussion": 75
    },
    "lastGrown": "2026-08-24",
    "level": 4
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 155,
+   "count": 156,
    "byType": {
     "skill": 10,
-    "discussion": 145
+    "discussion": 146
    },
    "lastGrown": "2026-08-24",
    "level": 5
@@ -638,12 +638,12 @@
    "level": 2
   },
   "bess-structural-analyst": {
-   "count": 53,
+   "count": 54,
    "byType": {
     "skill": 9,
-    "discussion": 44
+    "discussion": 45
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-substation-engineer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-24",
-   "added": 14
+   "added": 15
   }
  ],
  "freshness": {
