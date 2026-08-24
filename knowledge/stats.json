@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-24",
  "totals": {
-  "all": 1545,
+  "all": 1546,
   "briefing": 525,
   "skill": 698,
-  "discussion": 322,
+  "discussion": 323,
   "activity": 0
  },
  "perAgent": {
@@ -56,13 +56,13 @@
    "level": 3
   },
   "bess-cbop-engineer": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 10,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-08-23",
-   "level": 2
+   "lastGrown": "2026-08-24",
+   "level": 3
   },
   "bess-cfd-analyst": {
    "count": 29,
@@ -155,19 +155,19 @@
    "level": 3
   },
   "bess-emerging-markets": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 10,
-    "discussion": 21
+    "discussion": 22
    },
    "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 9,
-    "discussion": 39
+    "discussion": 40
    },
    "lastGrown": "2026-08-24",
    "level": 3
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 10,
-    "discussion": 55
+    "discussion": 56
    },
    "lastGrown": "2026-08-24",
    "level": 3
@@ -638,10 +638,10 @@
    "level": 2
   },
   "bess-structural-analyst": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 9,
-    "discussion": 45
+    "discussion": 46
    },
    "lastGrown": "2026-08-24",
    "level": 3
@@ -665,12 +665,12 @@
    "level": 4
   },
   "bess-tax-accountant": {
-   "count": 14,
+   "count": 15,
    "byType": {
     "skill": 6,
-    "discussion": 8
+    "discussion": 9
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-tax-epc-accounting": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-24",
-   "added": 17
+   "added": 18
   }
  ],
  "freshness": {
