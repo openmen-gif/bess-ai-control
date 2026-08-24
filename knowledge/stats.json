@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-24",
  "totals": {
-  "all": 1546,
+  "all": 1547,
   "briefing": 525,
   "skill": 698,
-  "discussion": 323,
+  "discussion": 324,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 2
   },
   "bess-battery-expert": {
-   "count": 292,
+   "count": 293,
    "byType": {
     "skill": 11,
-    "discussion": 113,
+    "discussion": 114,
     "briefing": 168
    },
    "lastGrown": "2026-08-24",
@@ -65,13 +65,13 @@
    "level": 3
   },
   "bess-cfd-analyst": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 11,
-    "discussion": 18
+    "discussion": 19
    },
    "lastGrown": "2026-08-24",
-   "level": 2
+   "level": 3
   },
   "bess-circuit-breaker-expert": {
    "count": 38,
@@ -146,10 +146,10 @@
    "level": 2
   },
   "bess-emc-analyst": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 9,
-    "discussion": 46
+    "discussion": 47
    },
    "lastGrown": "2026-08-24",
    "level": 3
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 125,
+   "count": 126,
    "byType": {
     "skill": 10,
-    "discussion": 81,
+    "discussion": 82,
     "briefing": 34
    },
    "lastGrown": "2026-08-24",
@@ -647,12 +647,12 @@
    "level": 3
   },
   "bess-substation-engineer": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 7,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-system-engineer": {
@@ -720,12 +720,12 @@
    "level": 3
   },
   "bess-training-expert": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 8,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-transfer-pricing": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-24",
-   "added": 18
+   "added": 19
   }
  ],
  "freshness": {
