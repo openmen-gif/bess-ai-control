@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1549,
+  "all": 1550,
   "briefing": 525,
   "skill": 698,
-  "discussion": 326,
+  "discussion": 327,
   "activity": 0
  },
  "perAgent": {
@@ -17,19 +17,19 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 8,
-    "discussion": 21
+    "discussion": 22
    },
-   "lastGrown": "2026-08-23",
-   "level": 2
+   "lastGrown": "2026-08-25",
+   "level": 3
   },
   "bess-battery-expert": {
-   "count": 294,
+   "count": 295,
    "byType": {
     "skill": 11,
-    "discussion": 115,
+    "discussion": 116,
     "briefing": 168
    },
    "lastGrown": "2026-08-25",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 114,
+   "count": 115,
    "byType": {
     "skill": 11,
-    "discussion": 103
+    "discussion": 104
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -128,12 +128,12 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 10,
-    "discussion": 51
+    "discussion": 52
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-25",
    "level": 3
   },
   "bess-ebop-engineer": {
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 191,
+   "count": 192,
    "byType": {
     "skill": 10,
-    "discussion": 43,
+    "discussion": 44,
     "briefing": 138
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 5
   },
   "bess-mlops-engineer": {
@@ -438,13 +438,13 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 9,
-    "discussion": 32,
+    "discussion": 33,
     "briefing": 4
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 3
   },
   "bess-power-system-analyst": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-24",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-25",
+   "gapDays": 0,
    "overdue": false
   }
  }
