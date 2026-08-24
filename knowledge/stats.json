@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-24",
  "totals": {
-  "all": 1547,
+  "all": 1548,
   "briefing": 525,
   "skill": 698,
-  "discussion": 324,
+  "discussion": 325,
   "activity": 0
  },
  "perAgent": {
@@ -92,19 +92,19 @@
    "level": 2
   },
   "bess-contract-specialist": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 10,
-    "discussion": 24
+    "discussion": 25
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 112,
+   "count": 113,
    "byType": {
     "skill": 11,
-    "discussion": 101
+    "discussion": 102
    },
    "lastGrown": "2026-08-24",
    "level": 4
@@ -328,19 +328,19 @@
    "level": 2
   },
   "bess-labor-safety": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 8,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 111,
+   "count": 112,
    "byType": {
     "skill": 10,
-    "discussion": 101
+    "discussion": 102
    },
    "lastGrown": "2026-08-24",
    "level": 4
@@ -374,12 +374,12 @@
    "level": 3
   },
   "bess-network-engineer": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 7,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-18",
+   "lastGrown": "2026-08-24",
    "level": 2
   },
   "bess-om-expert": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 86,
+   "count": 87,
    "byType": {
     "skill": 10,
-    "discussion": 76
+    "discussion": 77
    },
    "lastGrown": "2026-08-24",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-24",
-   "added": 19
+   "added": 20
   }
  ],
  "freshness": {

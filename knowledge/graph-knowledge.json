@@ -82,6 +82,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7dc72dbb2be5",
+   "name": "팀 토론 — BESS 프로젝트 계약 조건 분석 및 최적 FIDIC 조항 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-24",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-5edb4cbd98dd",
    "name": "K-배터리 '다음 승부처'…AI부터 로봇·선박까지",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ae506ae1c294",
-   "name": "팀 토론 — 기술 변화에 따른 규제 불일치 해소를 위한 정기적인 기술 동",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3765,6 +3765,36 @@
   {
    "source": "STD-002",
    "target": "K-7ed394245c38",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-7dc72dbb2be5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7dc72dbb2be5",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-7dc72dbb2be5",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-7dc72dbb2be5",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-7dc72dbb2be5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7dc72dbb2be5",
    "type": "knowledge"
   },
   {
@@ -8741,46 +8771,6 @@
    "source": "BAT-001",
    "target": "K-b00a0c21c79d",
    "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-ae506ae1c294",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-ae506ae1c294",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYB-001",
-   "target": "K-ae506ae1c294",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-ae506ae1c294",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-ae506ae1c294",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-ae506ae1c294",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-ae506ae1c294",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-ae506ae1c294",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8964,7 +8954,7 @@
    {
     "date": "2026-08-24",
     "knowledge": 400,
-    "events_total": 1547
+    "events_total": 1548
    }
   ]
  }
