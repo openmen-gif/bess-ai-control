@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1552,
+  "all": 1553,
   "briefing": 525,
   "skill": 698,
-  "discussion": 329,
+  "discussion": 330,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 297,
+   "count": 298,
    "byType": {
     "skill": 11,
-    "discussion": 118,
+    "discussion": 119,
     "briefing": 168
    },
    "lastGrown": "2026-08-25",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 117,
+   "count": 118,
    "byType": {
     "skill": 11,
-    "discussion": 106
+    "discussion": 107
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -337,12 +337,12 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 112,
+   "count": 113,
    "byType": {
     "skill": 10,
-    "discussion": 102
+    "discussion": 103
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 4
   },
   "bess-logistics-expert": {
@@ -475,19 +475,19 @@
    "level": 2
   },
   "bess-procurement-data": {
-   "count": 15,
+   "count": 16,
    "byType": {
     "skill": 6,
-    "discussion": 9
+    "discussion": 10
    },
    "lastGrown": "2026-08-25",
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 90,
+   "count": 91,
    "byType": {
     "skill": 10,
-    "discussion": 80
+    "discussion": 81
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -656,12 +656,12 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 88,
+   "count": 89,
    "byType": {
     "skill": 10,
-    "discussion": 78
+    "discussion": 79
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 4
   },
   "bess-tax-accountant": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 4
+   "added": 5
   }
  ],
  "freshness": {

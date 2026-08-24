@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ed429f0f80a7",
+   "name": "팀 토론 — 시운전 프로세스 최적화 전략 수립 및 자동화 시스템 통합 방",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e43503438d77",
    "name": "팀 토론 — AI 기반 예측 모델 개발로 실시간 운영 최적화 및 유지보수",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-e139e7671b46",
-   "name": "팀 토론 — 계약 조건 최적화 검토 및 클레임 관리 프로세스 강화",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-ed429f0f80a7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ed429f0f80a7",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ed429f0f80a7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-ed429f0f80a7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ed429f0f80a7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ed429f0f80a7",
+   "type": "knowledge"
+  },
   {
    "source": "AIM-001",
    "target": "K-e43503438d77",
@@ -8796,46 +8826,6 @@
    "source": "TRN-001",
    "target": "K-e2760368aecc",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-e139e7671b46",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-e139e7671b46",
-   "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-e139e7671b46",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-e139e7671b46",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-e139e7671b46",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-e139e7671b46",
-   "type": "knowledge"
-  },
-  {
-   "source": "PDI-001",
-   "target": "K-e139e7671b46",
-   "type": "knowledge"
-  },
-  {
-   "source": "RSK-001",
-   "target": "K-e139e7671b46",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9024,7 +9014,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1552
+    "events_total": 1553
    }
   ]
  }
