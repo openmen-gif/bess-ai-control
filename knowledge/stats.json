@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-26",
  "totals": {
-  "all": 1598,
+  "all": 1599,
   "briefing": 558,
   "skill": 698,
-  "discussion": 342,
+  "discussion": 343,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 321,
+   "count": 322,
    "byType": {
     "skill": 11,
-    "discussion": 131,
+    "discussion": 132,
     "briefing": 179
    },
    "lastGrown": "2026-08-26",
@@ -56,12 +56,12 @@
    "level": 3
   },
   "bess-cbop-engineer": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 10,
-    "discussion": 20
+    "discussion": 21
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-26",
    "level": 3
   },
   "bess-cfd-analyst": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 130,
+   "count": 131,
    "byType": {
     "skill": 11,
-    "discussion": 119
+    "discussion": 120
    },
    "lastGrown": "2026-08-26",
    "level": 4
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 127,
+   "count": 128,
    "byType": {
     "skill": 10,
-    "discussion": 82,
+    "discussion": 83,
     "briefing": 35
    },
    "lastGrown": "2026-08-26",
@@ -256,21 +256,21 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 66,
+   "count": 67,
    "byType": {
     "skill": 10,
-    "discussion": 56
+    "discussion": 57
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-26",
    "level": 3
   },
   "bess-hybrid-specialist": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 8,
-    "discussion": 9
+    "discussion": 10
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 2
   },
   "bess-hydrogen-specialist": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 103,
+   "count": 104,
    "byType": {
     "skill": 10,
-    "discussion": 93
+    "discussion": 94
    },
    "lastGrown": "2026-08-26",
    "level": 4
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 90,
+   "count": 91,
    "byType": {
     "skill": 10,
-    "discussion": 80
+    "discussion": 81
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 4
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-26",
-   "added": 23
+   "added": 24
   }
  ],
  "freshness": {
