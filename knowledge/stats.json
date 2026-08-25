@@ -1,8 +1,8 @@
 {
  "updated": "2026-08-26",
  "totals": {
-  "all": 1578,
-  "briefing": 538,
+  "all": 1598,
+  "briefing": 558,
   "skill": 698,
   "discussion": 342,
   "activity": 0
@@ -26,33 +26,33 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 316,
+   "count": 321,
    "byType": {
     "skill": 11,
     "discussion": 131,
-    "briefing": 174
+    "briefing": 179
    },
    "lastGrown": "2026-08-26",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 80,
+   "count": 81,
    "byType": {
     "skill": 10,
     "discussion": 38,
-    "briefing": 32
+    "briefing": 33
    },
    "lastGrown": "2026-08-26",
    "level": 4
   },
   "bess-cable-engineer": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 10,
     "discussion": 27,
-    "briefing": 1
+    "briefing": 2
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-26",
    "level": 3
   },
   "bess-cbop-engineer": {
@@ -209,13 +209,13 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 126,
+   "count": 127,
    "byType": {
     "skill": 10,
     "discussion": 82,
-    "briefing": 34
+    "briefing": 35
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-26",
    "level": 4
   },
   "bess-fit-procedure": {
@@ -355,13 +355,13 @@
    "level": 2
   },
   "bess-marketer": {
-   "count": 194,
+   "count": 202,
    "byType": {
     "skill": 10,
     "discussion": 44,
-    "briefing": 140
+    "briefing": 148
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 5
   },
   "bess-mlops-engineer": {
@@ -401,13 +401,13 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 122,
+   "count": 123,
    "byType": {
     "skill": 10,
     "discussion": 69,
-    "briefing": 43
+    "briefing": 44
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 4
   },
   "bess-permit-asia": {
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 131,
+   "count": 134,
    "byType": {
     "skill": 10,
     "discussion": 24,
-    "briefing": 97
+    "briefing": 100
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 4
   },
   "bess-standards-australia": {
@@ -1116,13 +1116,13 @@
   },
   {
    "date": "2026-08-26",
-   "added": 3
+   "added": 23
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-08-25",
-   "staleDays": 1,
+   "latestSource": "2026-08-26",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
