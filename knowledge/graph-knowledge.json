@@ -235,6 +235,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-0a18edccbfb7",
+   "name": "팀 토론 — LG에너지솔루션의 생산 확대와 전기차 생산 증가 동향을 반영",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e5564cd826a8",
    "name": "K-배터리, 북미 공략 본격화…ESS 증설·투자 재원 확보 속도 [위클리",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-e93166d0450b",
-   "name": "디시오, 글로벌 표준 폼팩터 한계 넘은 1700V/1400A 전력모듈 개",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -4055,6 +4055,36 @@
   {
    "source": "STD-001",
    "target": "K-0d937dc2ae6a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0a18edccbfb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-0a18edccbfb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0a18edccbfb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-0a18edccbfb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-0a18edccbfb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0a18edccbfb7",
    "type": "knowledge"
   },
   {
@@ -8846,11 +8876,6 @@
    "source": "CYB-001",
    "target": "K-025bf2c316d2",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-e93166d0450b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9039,7 +9064,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1574
+    "events_total": 1575
    }
   ]
  }

@@ -353,6 +353,22 @@
    "source": "구글뉴스"
   },
   {
+   "id": "0a18edccbfb7",
+   "date": "2026-08-25",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cfd-analyst",
+    "bess-cost-analyst",
+    "bess-ip-patent-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — LG에너지솔루션의 생산 확대와 전기차 생산 증가 동향을 반영하여, 글로벌 시장에서의 BESS 입찰 전략 및 원가 구조 최적화 방안을 분석하라.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "e5564cd826a8",
    "date": "2026-08-24",
    "type": "briefing",
@@ -3855,24 +3871,6 @@
     "bess-pcs-expert"
    ],
    "title": "팀 토론 — 고밀도 BESS 시스템의 케이블 보호협조 설계 최적화 방안 마련",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "59aae8164caf",
-   "date": "2026-08-16",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-commissioning-coordinator",
-    "bess-customs-tariff",
-    "bess-facility-manager",
-    "bess-financial-analysis",
-    "bess-om-expert",
-    "bess-qaqc-engineer",
-    "bess-scheduler"
-   ],
-   "title": "팀 토론 — 설비 가용률 향상을 위한 예방정비 점검 주기 최적화 계획 수립",
    "link": "",
    "source": "bess-team"
   }

@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1574,
+  "all": 1575,
   "briefing": 538,
   "skill": 698,
-  "discussion": 338,
+  "discussion": 339,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 312,
+   "count": 313,
    "byType": {
     "skill": 11,
-    "discussion": 127,
+    "discussion": 128,
     "briefing": 174
    },
    "lastGrown": "2026-08-25",
@@ -65,10 +65,10 @@
    "level": 3
   },
   "bess-cfd-analyst": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 11,
-    "discussion": 20
+    "discussion": 21
    },
    "lastGrown": "2026-08-25",
    "level": 3
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 126,
+   "count": 127,
    "byType": {
     "skill": 11,
-    "discussion": 115
+    "discussion": 116
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -301,12 +301,12 @@
    "level": 3
   },
   "bess-ip-patent-expert": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 8,
-    "discussion": 8
+    "discussion": 9
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-25",
    "level": 2
   },
   "bess-it-infra": {
@@ -438,10 +438,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 9,
-    "discussion": 33,
+    "discussion": 34,
     "briefing": 4
    },
    "lastGrown": "2026-08-25",
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 99,
+   "count": 100,
    "byType": {
     "skill": 10,
-    "discussion": 89
+    "discussion": 90
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 26
+   "added": 27
   }
  ],
  "freshness": {
