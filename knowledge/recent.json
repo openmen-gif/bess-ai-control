@@ -229,6 +229,22 @@
    "source": "bess-team"
   },
   {
+   "id": "2dbb6892bbb7",
+   "date": "2026-08-25",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-facility-manager",
+    "bess-om-expert",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 설비 이력 분석을 통한 예방정비 최적화 계획 수립 및 가용률 향상 전략 제시",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "2d1f6409fb85",
    "date": "2026-08-25",
    "type": "discussion",
@@ -3851,17 +3867,6 @@
    "title": "팀 토론 — 시운전 프로세스 최적화를 위한 자동화 시스템 구축 및 통합 테스트 계획 수립 (COM-100)",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "448a024e4091",
-   "date": "2026-08-16",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "[VC's Pick]차세대 AI 데이터센터·ESS 기반 '배터리'에 쏠린 시선",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE96RDFwUXlkbHp6OGdlRmh2cS1BNERHSTM5UmZLR0hGVUZvZnROazZIRjd5UFNvMzF5ekhBUmVRZDBOYkhnV1U0Ujd1Nk1ZZ1E1TzRz?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

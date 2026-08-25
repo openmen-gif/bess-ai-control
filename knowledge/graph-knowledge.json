@@ -154,6 +154,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-2dbb6892bbb7",
+   "name": "팀 토론 — 설비 이력 분석을 통한 예방정비 최적화 계획 수립 및 가용률",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2d1f6409fb85",
    "name": "팀 토론 — 변압기 시스템 최적화 설계를 통해 전력 손실 최소화 및 안전",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-12",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-d7092f0908f1",
-   "name": "'낮엔 잉여·밤엔 부족' 태양광 … K배터리 ESS 내수시장 확대 기대감",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3885,6 +3885,36 @@
   {
    "source": "PRO-001",
    "target": "K-52747e260511",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2dbb6892bbb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2dbb6892bbb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-2dbb6892bbb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-2dbb6892bbb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-2dbb6892bbb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2dbb6892bbb7",
    "type": "knowledge"
   },
   {
@@ -8781,11 +8811,6 @@
    "source": "STD-003",
    "target": "K-d931d03cf159",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-d7092f0908f1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8974,7 +8999,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1570
+    "events_total": 1571
    }
   ]
  }
