@@ -91,6 +91,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-973f501da7e8",
+   "name": "팀 토론 — 시운전·코디네이터 영역 초안 작성 — bess-commiss",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8a2145a425ae",
    "name": "와이어블, LFP 배터리사 럼플리어에 투자…ESS 사업 본격 확대",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-12",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-884934714b79",
-   "name": "대명에너지, 호남 반도체 클러스터 전력원 재생에너지·ESS 사용에 관심↑",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3750,6 +3750,36 @@
   {
    "source": "BAT-001",
    "target": "K-a424143bbc53",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-973f501da7e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-973f501da7e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-973f501da7e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-973f501da7e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-973f501da7e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-973f501da7e8",
    "type": "knowledge"
   },
   {
@@ -8766,11 +8796,6 @@
    "source": "KTX-001",
    "target": "K-c2bd18d42240",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-884934714b79",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8959,7 +8984,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1568
+    "events_total": 1569
    }
   ]
  }

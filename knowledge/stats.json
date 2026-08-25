@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1568,
+  "all": 1569,
   "briefing": 538,
   "skill": 698,
-  "discussion": 332,
+  "discussion": 333,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 306,
+   "count": 307,
    "byType": {
     "skill": 11,
-    "discussion": 121,
+    "discussion": 122,
     "briefing": 174
    },
    "lastGrown": "2026-08-25",
@@ -65,12 +65,12 @@
    "level": 3
   },
   "bess-cfd-analyst": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 11,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 3
   },
   "bess-circuit-breaker-expert": {
@@ -83,13 +83,13 @@
    "level": 3
   },
   "bess-commissioning-coordinator": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 10,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-08-24",
-   "level": 2
+   "lastGrown": "2026-08-25",
+   "level": 3
   },
   "bess-contract-specialist": {
    "count": 35,
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 120,
+   "count": 121,
    "byType": {
     "skill": 11,
-    "discussion": 109
+    "discussion": 110
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -137,13 +137,13 @@
    "level": 3
   },
   "bess-ebop-engineer": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 8,
-    "discussion": 21
+    "discussion": 22
    },
-   "lastGrown": "2026-08-23",
-   "level": 2
+   "lastGrown": "2026-08-25",
+   "level": 3
   },
   "bess-emc-analyst": {
    "count": 56,
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 93,
+   "count": 94,
    "byType": {
     "skill": 10,
-    "discussion": 83
+    "discussion": 84
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 20
+   "added": 21
   }
  ],
  "freshness": {
