@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-9a9b60c06647",
+   "name": "팀 토론 — 변압기 효율 최적화 계획 수립 및 최신 ARC Flash 안",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa9ec1e0963e",
    "name": "[기획]전력 확보 전략 다변화…ESS·수소·마이크로그리드 부상",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-025bf2c316d2",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-9a9b60c06647",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-9a9b60c06647",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-9a9b60c06647",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-9a9b60c06647",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-9a9b60c06647",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-9a9b60c06647",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-fa9ec1e0963e",
@@ -8871,15 +8901,10 @@
    "source": "FAC-001",
    "target": "K-05eafd5ed927",
    "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-025bf2c316d2",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "history": [
    {
     "date": "2026-07-20",
@@ -9065,6 +9090,11 @@
     "date": "2026-08-25",
     "knowledge": 400,
     "events_total": 1575
+   },
+   {
+    "date": "2026-08-26",
+    "knowledge": 400,
+    "events_total": 1576
    }
   ]
  }

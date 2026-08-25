@@ -1,6 +1,22 @@
 {
- "updated": "2026-08-25",
+ "updated": "2026-08-26",
  "events": [
+  {
+   "id": "9a9b60c06647",
+   "date": "2026-08-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-procurement-expert",
+    "bess-standards-japan",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 변압기 효율 최적화 계획 수립 및 최신 ARC Flash 안전 기준 준수 검토",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fa9ec1e0963e",
    "date": "2026-08-25",
@@ -3855,24 +3871,6 @@
    "title": "세계 최초 한국 잠수함에서 나왔다! 불나도 안 번지는 배터리의 정체 The Young And The Restless (z7CffVvg9s)",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5HZVh5RVpld1drcnhoazdyNVJsYU9Yd3E3NU4tMWN4dVE5QmtKSU12TVJpYXVjejMwdUFkOFd2WTVha2EzTTlRbFphWTQ2cEJxV1VpWUZfZ282YVk?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "6f2bbc249d82",
-   "date": "2026-08-16",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cable-engineer",
-    "bess-cbop-engineer",
-    "bess-customs-tariff",
-    "bess-fire-engineer",
-    "bess-grounding-engineer",
-    "bess-hse-manager",
-    "bess-pcs-expert"
-   ],
-   "title": "팀 토론 — 고밀도 BESS 시스템의 케이블 보호협조 설계 최적화 방안 마련",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
