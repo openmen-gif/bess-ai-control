@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1567,
+  "all": 1568,
   "briefing": 538,
   "skill": 698,
-  "discussion": 331,
+  "discussion": 332,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 305,
+   "count": 306,
    "byType": {
     "skill": 11,
-    "discussion": 120,
+    "discussion": 121,
     "briefing": 174
    },
    "lastGrown": "2026-08-25",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 119,
+   "count": 120,
    "byType": {
     "skill": 11,
-    "discussion": 108
+    "discussion": 109
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -119,12 +119,12 @@
    "level": 2
   },
   "bess-cybersecurity-expert": {
-   "count": 63,
+   "count": 64,
    "byType": {
     "skill": 10,
-    "discussion": 53
+    "discussion": 54
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 3
   },
   "bess-data-analyst": {
@@ -383,12 +383,12 @@
    "level": 2
   },
   "bess-om-expert": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 7,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 2
   },
   "bess-output-generator": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 92,
+   "count": 93,
    "byType": {
     "skill": 10,
-    "discussion": 82
+    "discussion": 83
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -693,12 +693,12 @@
    "level": 3
   },
   "bess-tax-japan": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 8,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-22",
+   "lastGrown": "2026-08-25",
    "level": 2
   },
   "bess-tax-korea": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 19
+   "added": 20
   }
  ],
  "freshness": {

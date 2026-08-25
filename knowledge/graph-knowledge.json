@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c268d66b3e59",
+   "name": "팀 토론 — 고밀도 모듈 안전성 평가 표준 업데이트 분석 및 현재 설계의",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b2a91cdb03a2",
    "name": "전기차 캐즘이 바꾼 K-배터리의 판도—ESS가 새 성장 축으로 부상",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-7563e15bc9a1",
-   "name": "[기획] ESS 대격변의 시대...한국의 전력망은 ESS를 품을 준비가 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3675,6 +3675,36 @@
   {
    "source": "BAT-001",
    "target": "K-d5ad17be7860",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c268d66b3e59",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c268d66b3e59",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-c268d66b3e59",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-c268d66b3e59",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c268d66b3e59",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-c268d66b3e59",
    "type": "knowledge"
   },
   {
@@ -8741,11 +8771,6 @@
    "source": "MAR-001",
    "target": "K-884934714b79",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-7563e15bc9a1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8934,7 +8959,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1567
+    "events_total": 1568
    }
   ]
  }
