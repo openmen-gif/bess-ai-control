@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e0b37dbd5b29",
+   "name": "팀 토론 — 바나듐 이온 배터리의 구체적인 단가 및 시장 진입 시점에 대",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-df8cc402fdd1",
    "name": "'북미 대공세' 나서는 LG엔솔…ESS 생산 2배, 전기차도 달린다 - ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-e7082c2eaca8",
-   "name": "‘셀부터 ESS까지’…물류기업들, 배터리 영토 넓힌다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3725,6 +3725,36 @@
   {
    "source": "MKT-001",
    "target": "K-e43503438d77",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e0b37dbd5b29",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e0b37dbd5b29",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-e0b37dbd5b29",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-e0b37dbd5b29",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-e0b37dbd5b29",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-e0b37dbd5b29",
    "type": "knowledge"
   },
   {
@@ -8821,11 +8851,6 @@
    "source": "PCS-001",
    "target": "K-e93166d0450b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-e7082c2eaca8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9014,7 +9039,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1573
+    "events_total": 1574
    }
   ]
  }
