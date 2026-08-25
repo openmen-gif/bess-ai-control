@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e7b9eb0af131",
+   "name": "팀 토론 — 변압기 효율 최적화 계획 수립 및 안전 기준 준수 검토 (전",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e43503438d77",
    "name": "팀 토론 — AI 기반 예측 모델 개발로 실시간 운영 최적화 및 유지보수",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-c2bd18d42240",
-   "name": "팀 토론 — 사이버 보안 및 데이터 프라이버시 통합 전략 심층 분석 및 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-12",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3635,6 +3635,36 @@
   {
    "source": "SYS-001",
    "target": "K-ed429f0f80a7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e7b9eb0af131",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-e7b9eb0af131",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e7b9eb0af131",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-e7b9eb0af131",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-e7b9eb0af131",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-e7b9eb0af131",
    "type": "knowledge"
   },
   {
@@ -8756,46 +8786,6 @@
    "source": "STD-001",
    "target": "K-d7092f0908f1",
    "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-c2bd18d42240",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-c2bd18d42240",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-c2bd18d42240",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-c2bd18d42240",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-c2bd18d42240",
-   "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-c2bd18d42240",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-c2bd18d42240",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-c2bd18d42240",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8984,7 +8974,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1569
+    "events_total": 1570
    }
   ]
  }
