@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-26",
  "totals": {
-  "all": 1577,
+  "all": 1578,
   "briefing": 538,
   "skill": 698,
-  "discussion": 341,
+  "discussion": 342,
   "activity": 0
  },
  "perAgent": {
@@ -26,23 +26,23 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 315,
+   "count": 316,
    "byType": {
     "skill": 11,
-    "discussion": 130,
+    "discussion": 131,
     "briefing": 174
    },
    "lastGrown": "2026-08-26",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 79,
+   "count": 80,
    "byType": {
     "skill": 10,
-    "discussion": 37,
+    "discussion": 38,
     "briefing": 32
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 4
   },
   "bess-cable-engineer": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 129,
+   "count": 130,
    "byType": {
     "skill": 11,
-    "discussion": 118
+    "discussion": 119
    },
    "lastGrown": "2026-08-26",
    "level": 4
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 102,
+   "count": 103,
    "byType": {
     "skill": 10,
-    "discussion": 92
+    "discussion": 93
    },
    "lastGrown": "2026-08-26",
    "level": 4
@@ -620,12 +620,12 @@
    "level": 2
   },
   "bess-standards-uk": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 8,
-    "discussion": 9
+    "discussion": 10
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-26",
    "level": 2
   },
   "bess-standards-usa": {
@@ -729,12 +729,12 @@
    "level": 2
   },
   "bess-transfer-pricing": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 7,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-26",
    "level": 2
   },
   "bess-transformer-expert": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-26",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {

@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-98f642bcdaa8",
+   "name": "팀 토론 — 입찰전략·파이프라인 영역 초안 작성 — bess-busine",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-32f15fc86aca",
    "name": "팀 토론 — 인도 CEA와의 파트너십 검토를 통해 현지 시장 진출 사업타",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-09797138eab6",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3630,6 +3630,36 @@
   {
    "source": "TRF-001",
    "target": "K-9a9b60c06647",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-98f642bcdaa8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-98f642bcdaa8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-98f642bcdaa8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-98f642bcdaa8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-98f642bcdaa8",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-98f642bcdaa8",
    "type": "knowledge"
   },
   {
@@ -8921,11 +8951,6 @@
    "source": "MAR-001",
    "target": "K-0b0e3764de9f",
    "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-09797138eab6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9119,7 +9144,7 @@
    {
     "date": "2026-08-26",
     "knowledge": 400,
-    "events_total": 1577
+    "events_total": 1578
    }
   ]
  }
