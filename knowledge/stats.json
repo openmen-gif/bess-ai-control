@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-26",
  "totals": {
-  "all": 1576,
+  "all": 1577,
   "briefing": 538,
   "skill": 698,
-  "discussion": 340,
+  "discussion": 341,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 314,
+   "count": 315,
    "byType": {
     "skill": 11,
-    "discussion": 129,
+    "discussion": 130,
     "briefing": 174
    },
    "lastGrown": "2026-08-26",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 128,
+   "count": 129,
    "byType": {
     "skill": 11,
-    "discussion": 117
+    "discussion": 118
    },
    "lastGrown": "2026-08-26",
    "level": 4
@@ -155,12 +155,12 @@
    "level": 3
   },
   "bess-emerging-markets": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 10,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 3
   },
   "bess-env-engineer": {
@@ -374,12 +374,12 @@
    "level": 3
   },
   "bess-network-engineer": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 7,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-26",
    "level": 2
   },
   "bess-om-expert": {
@@ -448,12 +448,12 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 75,
+   "count": 76,
    "byType": {
     "skill": 9,
-    "discussion": 66
+    "discussion": 67
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-26",
    "level": 4
   },
   "bess-precom-report": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 101,
+   "count": 102,
    "byType": {
     "skill": 10,
-    "discussion": 91
+    "discussion": 92
    },
    "lastGrown": "2026-08-26",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-26",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-25",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-26",
+   "gapDays": 0,
    "overdue": false
   }
  }
