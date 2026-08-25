@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-f80adec6a042",
+   "name": "팀 토론 — NPV·IRR 영역 1차 분석 — bess-financial",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ed429f0f80a7",
    "name": "팀 토론 — 시운전 프로세스 최적화 전략 수립 및 자동화 시스템 통합 방",
    "group": "KNOWLEDGE",
@@ -3590,21 +3599,42 @@
    "date": "2026-08-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-daa92d75148f",
-   "name": "K배터리, 북미 합작공장 잇따라 '독립'…ESS 시장 공략 가속",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
   {
    "source": "STD-001",
    "target": "K-fa9ec1e0963e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f80adec6a042",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f80adec6a042",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-f80adec6a042",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-f80adec6a042",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f80adec6a042",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-f80adec6a042",
    "type": "knowledge"
   },
   {
@@ -8796,11 +8826,6 @@
    "source": "BAT-001",
    "target": "K-e7082c2eaca8",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-daa92d75148f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8989,7 +9014,7 @@
    {
     "date": "2026-08-25",
     "knowledge": 400,
-    "events_total": 1572
+    "events_total": 1573
    }
   ]
  }

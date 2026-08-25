@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1572,
+  "all": 1573,
   "briefing": 538,
   "skill": 698,
-  "discussion": 336,
+  "discussion": 337,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 310,
+   "count": 311,
    "byType": {
     "skill": 11,
-    "discussion": 125,
+    "discussion": 126,
     "briefing": 174
    },
    "lastGrown": "2026-08-25",
@@ -101,19 +101,19 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 124,
+   "count": 125,
    "byType": {
     "skill": 11,
-    "discussion": 113
+    "discussion": 114
    },
    "lastGrown": "2026-08-25",
    "level": 4
   },
   "bess-customs-tariff": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 11,
-    "discussion": 19
+    "discussion": 20
    },
    "lastGrown": "2026-08-25",
    "level": 3
@@ -128,10 +128,10 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 10,
-    "discussion": 52
+    "discussion": 53
    },
    "lastGrown": "2026-08-25",
    "level": 3
@@ -200,12 +200,12 @@
    "level": 3
   },
   "bess-financial-analysis": {
-   "count": 84,
+   "count": 85,
    "byType": {
     "skill": 10,
-    "discussion": 74
+    "discussion": 75
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 4
   },
   "bess-fire-engineer": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 97,
+   "count": 98,
    "byType": {
     "skill": 10,
-    "discussion": 87
+    "discussion": 88
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 24
+   "added": 25
   }
  ],
  "freshness": {
