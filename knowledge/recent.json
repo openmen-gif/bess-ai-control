@@ -72,6 +72,22 @@
    "source": "구글뉴스"
   },
   {
+   "id": "d9803d18ad67",
+   "date": "2026-08-25",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-emc-analyst",
+    "bess-procurement-expert",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 관세 및 HS 코드 최적화 전략 수립으로 글로벌 시장 진출 비용 절감 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "d5ad17be7860",
    "date": "2026-08-25",
    "type": "briefing",
@@ -3849,24 +3865,6 @@
    "title": "中 배터리 소비세 부과 임박…EVE에너지, 가격 인상 착수",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBseGlMblBqUWNPZWhiMmV2cHdMTEZNS1UxZzlxWEtISzJCV3ZjX3piaTRKWHhvRDJsOGM4Mlp3emszUldwdVFOekZMWFZLZHl4Tm9LOWhWdWo1dVU0REZYR2NBZw?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "50be5c9ed8c5",
-   "date": "2026-08-16",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-output-generator",
-    "bess-pcs-expert",
-    "bess-power-market-expert",
-    "bess-standards-analyst",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 시운전 프로세스 최적화를 위한 자동화 시스템 구축 및 통합 테스트 계획 수립 (COM-100)",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-25",
  "totals": {
-  "all": 1571,
+  "all": 1572,
   "briefing": 538,
   "skill": 698,
-  "discussion": 335,
+  "discussion": 336,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 309,
+   "count": 310,
    "byType": {
     "skill": 11,
-    "discussion": 124,
+    "discussion": 125,
     "briefing": 174
    },
    "lastGrown": "2026-08-25",
@@ -101,22 +101,22 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 123,
+   "count": 124,
    "byType": {
     "skill": 11,
-    "discussion": 112
+    "discussion": 113
    },
    "lastGrown": "2026-08-25",
    "level": 4
   },
   "bess-customs-tariff": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 11,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-24",
-   "level": 2
+   "lastGrown": "2026-08-25",
+   "level": 3
   },
   "bess-cybersecurity-expert": {
    "count": 64,
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 56,
+   "count": 57,
    "byType": {
     "skill": 9,
-    "discussion": 47
+    "discussion": 48
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-25",
    "level": 3
   },
   "bess-emerging-markets": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 10,
-    "discussion": 86
+    "discussion": 87
    },
    "lastGrown": "2026-08-25",
    "level": 4
@@ -720,10 +720,10 @@
    "level": 3
   },
   "bess-training-expert": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 8,
-    "discussion": 19
+    "discussion": 20
    },
    "lastGrown": "2026-08-25",
    "level": 2
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-25",
-   "added": 23
+   "added": 24
   }
  ],
  "freshness": {
