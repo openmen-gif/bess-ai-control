@@ -2,6 +2,24 @@
  "updated": "2026-08-27",
  "events": [
   {
+   "id": "bab382c5ed84",
+   "date": "2026-08-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cbop-engineer",
+    "bess-cybersecurity-expert",
+    "bess-hse-manager",
+    "bess-project-manager",
+    "bess-standards-analyst",
+    "bess-system-engineer",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 보안 거버넌스 프레임워크 구축 및 사이버 위협 대응 훈련 실시",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "8da64abd3c6e",
    "date": "2026-08-27",
    "type": "discussion",
@@ -3836,24 +3854,6 @@
     "bess-tax-epc-accounting"
    ],
    "title": "팀 토론 — Hybrid·BESS 영역 1차 분석 — bess-hybrid-specialist 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "3f86c67b2ea0",
-   "date": "2026-08-18",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cybersecurity-expert",
-    "bess-env-engineer",
-    "bess-financial-analysis",
-    "bess-hse-manager",
-    "bess-power-system-analyst",
-    "bess-tax-korea",
-    "bess-training-expert"
-   ],
-   "title": "팀 토론 — 액냉 시스템 최적화 설계를 통한 BESS 열관리 효율성 향상",
    "link": "",
    "source": "bess-team"
   }
