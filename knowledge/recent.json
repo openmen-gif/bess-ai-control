@@ -38,6 +38,24 @@
    "source": "bess-team"
   },
   {
+   "id": "61ac67408ea5",
+   "date": "2026-08-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-emc-analyst",
+    "bess-fit-procedure",
+    "bess-internal-auditor",
+    "bess-power-system-analyst",
+    "bess-scheduler",
+    "bess-system-engineer",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 시운전 효율성 향상을 위한 통합 절차 및 점검 프로토콜 개발 및 실행 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fbd2d9e067e8",
    "date": "2026-08-26",
    "type": "briefing",
@@ -3836,24 +3854,6 @@
     "bess-standards-korea"
    ],
    "title": "팀 토론 — 고밀도 모듈의 안전성 평가 심층 분석 및 적합한 안전 기준 적용 방안 마련 (IEC 62933-5 포함)",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "483ecdd2c2b7",
-   "date": "2026-08-18",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-cost-analyst",
-    "bess-financial-analysis",
-    "bess-hybrid-specialist",
-    "bess-marketer",
-    "bess-power-market-expert",
-    "bess-security-expert",
-    "bess-tax-epc-accounting"
-   ],
-   "title": "팀 토론 — Hybrid·BESS 영역 1차 분석 — bess-hybrid-specialist 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
   }

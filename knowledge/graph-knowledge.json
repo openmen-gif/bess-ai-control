@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-61ac67408ea5",
+   "name": "팀 토론 — 시운전 효율성 향상을 위한 통합 절차 및 점검 프로토콜 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fbd2d9e067e8",
    "name": "한전·LS전선, 해저케이블 통합 자산관리 플랫폼 출시…글로벌 전력망 시장",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-9c17794c40f0",
-   "name": "디시오, 고밀도 전력모듈 양산…AI 데이터센터 시장 확대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "SYS-001",
    "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-61ac67408ea5",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-61ac67408ea5",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-61ac67408ea5",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-61ac67408ea5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-61ac67408ea5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-61ac67408ea5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-61ac67408ea5",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-61ac67408ea5",
    "type": "knowledge"
   },
   {
@@ -9331,11 +9371,6 @@
    "source": "HSE-001",
    "target": "K-9cea90ffc619",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-9c17794c40f0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9534,7 +9569,7 @@
    {
     "date": "2026-08-27",
     "knowledge": 400,
-    "events_total": 1609
+    "events_total": 1610
    }
   ]
  }
