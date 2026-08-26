@@ -28,6 +28,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-12b99683111e",
+   "name": "팀 토론 — 공급망 다각화 시 기술적 역량 및 재무 안정성 평가 프레임워",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fbd2d9e067e8",
    "name": "한전·LS전선, 해저케이블 통합 자산관리 플랫폼 출시…글로벌 전력망 시장",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-9cea90ffc619",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3720,6 +3720,46 @@
   {
    "source": "TRL-001",
    "target": "K-61ac67408ea5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-12b99683111e",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-12b99683111e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-12b99683111e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-12b99683111e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-12b99683111e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-12b99683111e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-12b99683111e",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-12b99683111e",
    "type": "knowledge"
   },
   {
@@ -9366,11 +9406,6 @@
    "source": "MAR-001",
    "target": "K-ad213b4b0b37",
    "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-9cea90ffc619",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9569,7 +9604,7 @@
    {
     "date": "2026-08-27",
     "knowledge": 400,
-    "events_total": 1610
+    "events_total": 1611
    }
   ]
  }
