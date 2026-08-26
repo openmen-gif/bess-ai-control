@@ -46,6 +46,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "b70aebd7981d",
+   "date": "2026-08-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-env-engineer",
+    "bess-hse-manager",
+    "bess-labor-safety",
+    "bess-logistics-expert",
+    "bess-project-manager",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 환경 모니터링 시스템 구축 계획 수립 및 현지 환경 영향 최소화 전략 개발",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "b5b2232e33e2",
    "date": "2026-08-26",
    "type": "briefing",
@@ -3817,24 +3835,6 @@
    "title": "\"AI 전력난 겨냥\"… 韓 델타엑스, 美 조지아에 1.41억 달러 BESS 생산 캠퍼스 신설 - g",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTEo3cFZucE5Nc2k5eVpRN2JQMXpnMUlkQmdJdWREQnZBeGZMMHE1WFNGYkJkaGFpVi1XOFdkbjBVOFdwUnExQl82WXRoU3VqelNLQ1FYMkF6d2xSR3d6SUpxMjNZbW9sRVVmcFZibGgyaGtYRGF5YXVXamw1OVB2V3lDQlJTWXRY?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "c18cb753d321",
-   "date": "2026-08-17",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-data-analyst",
-    "bess-fire-engineer",
-    "bess-grounding-engineer",
-    "bess-hse-manager",
-    "bess-labor-safety",
-    "bess-mlops-engineer",
-    "bess-standards-analyst"
-   ],
-   "title": "팀 토론 — AI 기반 SOC/SOH 예측 모델 개발을 통한 배터리 수명 최적화 계획 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

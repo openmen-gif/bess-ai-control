@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b70aebd7981d",
+   "name": "팀 토론 — 환경 모니터링 시스템 구축 계획 수립 및 현지 환경 영향 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b5b2232e33e2",
    "name": "1조 ESS 수주전 재점화⋯ 삼성·SK 이어 이번엔 LG 반격 통할까",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-5ee73d6f35e7",
-   "name": "데이터센터·ESS용 '안 타는 배터리'…코스모스랩, 220억 투자유치",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3620,6 +3620,46 @@
   {
    "source": "BAT-001",
    "target": "K-c53b0f601435",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b70aebd7981d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b70aebd7981d",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-b70aebd7981d",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b70aebd7981d",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-b70aebd7981d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-b70aebd7981d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-b70aebd7981d",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-b70aebd7981d",
    "type": "knowledge"
   },
   {
@@ -8981,11 +9021,6 @@
    "source": "FIN-001",
    "target": "K-6067a62950a0",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-5ee73d6f35e7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9179,7 +9214,7 @@
    {
     "date": "2026-08-26",
     "knowledge": 400,
-    "events_total": 1599
+    "events_total": 1600
    }
   ]
  }
