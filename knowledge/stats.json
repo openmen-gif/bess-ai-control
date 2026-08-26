@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-26",
  "totals": {
-  "all": 1600,
+  "all": 1601,
   "briefing": 558,
   "skill": 698,
-  "discussion": 344,
+  "discussion": 345,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 323,
+   "count": 324,
    "byType": {
     "skill": 11,
-    "discussion": 133,
+    "discussion": 134,
     "briefing": 179
    },
    "lastGrown": "2026-08-26",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 132,
+   "count": 133,
    "byType": {
     "skill": 11,
-    "discussion": 121
+    "discussion": 122
    },
    "lastGrown": "2026-08-26",
    "level": 4
@@ -119,12 +119,12 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 64,
+   "count": 65,
    "byType": {
     "skill": 10,
-    "discussion": 54
+    "discussion": 55
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 3
   },
   "bess-data-analyst": {
@@ -155,10 +155,10 @@
    "level": 3
   },
   "bess-emerging-markets": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 10,
-    "discussion": 24
+    "discussion": 25
    },
    "lastGrown": "2026-08-26",
    "level": 3
@@ -200,12 +200,12 @@
    "level": 3
   },
   "bess-financial-analysis": {
-   "count": 86,
+   "count": 87,
    "byType": {
     "skill": 10,
-    "discussion": 76
+    "discussion": 77
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-26",
    "level": 4
   },
   "bess-fire-engineer": {
@@ -346,13 +346,13 @@
    "level": 4
   },
   "bess-logistics-expert": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 8,
-    "discussion": 21
+    "discussion": 22
    },
    "lastGrown": "2026-08-26",
-   "level": 2
+   "level": 3
   },
   "bess-marketer": {
    "count": 202,
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 104,
+   "count": 105,
    "byType": {
     "skill": 10,
-    "discussion": 94
+    "discussion": 95
    },
    "lastGrown": "2026-08-26",
    "level": 4
@@ -529,12 +529,12 @@
    "level": 2
   },
   "bess-scheduler": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 7,
-    "discussion": 24
+    "discussion": 25
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-26",
    "level": 3
   },
   "bess-security-expert": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-26",
-   "added": 25
+   "added": 26
   }
  ],
  "freshness": {
