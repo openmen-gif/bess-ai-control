@@ -24,6 +24,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "dda56c0d68f9",
+   "date": "2026-08-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-fire-engineer",
+    "bess-mlops-engineer",
+    "bess-om-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 BESS 운영 최적화 시뮬레이션 모델 개발 및 실제 운영 시나리오 적용 분석",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "da663b8187ee",
    "date": "2026-08-26",
    "type": "briefing",
@@ -3822,24 +3840,6 @@
     "bess-transfer-pricing"
    ],
    "title": "팀 토론 — 고밀도 모듈 안전성 평가 심층 분석 및 적합한 안전 기준 적용 방안 마련 (IEC 62933-5 포함)",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "fa220899be8c",
-   "date": "2026-08-17",
-   "type": "discussion",
-   "agents": [
-    "bess-cost-analyst",
-    "bess-esg-finance",
-    "bess-legal-expert",
-    "bess-marketer",
-    "bess-project-manager",
-    "bess-standards-korea",
-    "bess-structural-analyst",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 지속가능한 재무 전략 수립: ESG 지표 통합 그린본드 발행 계획 검토",
    "link": "",
    "source": "bess-team"
   }

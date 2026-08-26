@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-dda56c0d68f9",
+   "name": "팀 토론 — AI 기반 BESS 운영 최적화 시뮬레이션 모델 개발 및 실",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-da663b8187ee",
    "name": "전기차 캐즘이 바꾼 K-배터리의 판도—ESS가 새 성장 축으로 부상",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-82221b9096db",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3610,6 +3610,46 @@
   {
    "source": "BAT-001",
    "target": "K-fae5d3375246",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-dda56c0d68f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-dda56c0d68f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-dda56c0d68f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-dda56c0d68f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-dda56c0d68f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-dda56c0d68f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-dda56c0d68f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-dda56c0d68f9",
    "type": "knowledge"
   },
   {
@@ -9121,11 +9161,6 @@
    "source": "PWR-001",
    "target": "K-8845ca03ae8f",
    "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-82221b9096db",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9319,7 +9354,7 @@
    {
     "date": "2026-08-26",
     "knowledge": 400,
-    "events_total": 1603
+    "events_total": 1604
    }
   ]
  }
