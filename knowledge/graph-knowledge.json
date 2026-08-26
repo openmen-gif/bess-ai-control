@@ -145,6 +145,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-7091761148dc",
+   "name": "팀 토론 — 장기 계약 유연성 확보 전략 검토 및 FIDIC Silver",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6eafe3dbe189",
    "name": "팀 토론 — 부지조성·기초설계 영역 리스크 평가 — bess-cbop-e",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8b512366ae9a",
-   "name": "삼성SDI, 전기차는 줄이고 ESS는 편다… 북미 배터리 거점 재편 가속",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3905,6 +3905,46 @@
   {
    "source": "MAR-001",
    "target": "K-7f7a6f21a37d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7091761148dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-7091761148dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7091761148dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-7091761148dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-7091761148dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-7091761148dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7091761148dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-7091761148dc",
    "type": "knowledge"
   },
   {
@@ -9226,11 +9266,6 @@
    "source": "GRD-001",
    "target": "K-8d93517bb13c",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-8b512366ae9a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9424,7 +9459,7 @@
    {
     "date": "2026-08-26",
     "knowledge": 400,
-    "events_total": 1606
+    "events_total": 1607
    }
   ]
  }
