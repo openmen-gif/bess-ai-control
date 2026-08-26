@@ -231,6 +231,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "37bf4cf7b4e3",
+   "date": "2026-08-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-circuit-breaker-expert",
+    "bess-emc-analyst",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 케이블 시스템 최적화 프로젝트 추진: 정확한 Ampacity 계산 및 IEC 표준 준수 하에 전압강하 최소화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "32f15fc86aca",
    "date": "2026-08-26",
    "type": "discussion",
@@ -3822,24 +3840,6 @@
     "bess-tax-korea"
    ],
    "title": "팀 토론 — 지속가능한 재무 전략 수립: ESG 지표 통합 그린본드 발행 계획 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "f938fef5a675",
-   "date": "2026-08-17",
-   "type": "discussion",
-   "agents": [
-    "bess-ebop-engineer",
-    "bess-financial-analysis",
-    "bess-legal-expert",
-    "bess-marketer",
-    "bess-pcs-expert",
-    "bess-precom-report",
-    "bess-standards-analyst",
-    "bess-standards-korea"
-   ],
-   "title": "팀 토론 — 변압기·수배전반 영역 벤치마킹 — bess-ebop-engineer 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
   }
