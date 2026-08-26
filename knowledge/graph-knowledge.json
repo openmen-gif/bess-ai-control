@@ -73,6 +73,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-9fd62e3e6294",
+   "name": "팀 토론 — AI 기반 예측 모델을 활용한 실시간 SOC/SOH 최적화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-9ec2e9e5bc4b",
    "name": "나노팀, SK온 미주 ESS 프로젝트 수주…'열폭주차단패드' 첫 공급",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-8845ca03ae8f",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3745,6 +3745,46 @@
   {
    "source": "BIZ-001",
    "target": "K-b5b2232e33e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-9fd62e3e6294",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9fd62e3e6294",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-9fd62e3e6294",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-9fd62e3e6294",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-9fd62e3e6294",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-9fd62e3e6294",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-9fd62e3e6294",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-9fd62e3e6294",
    "type": "knowledge"
   },
   {
@@ -9156,11 +9196,6 @@
    "source": "EMT-001",
    "target": "K-8a2057775635",
    "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-8845ca03ae8f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9354,7 +9389,7 @@
    {
     "date": "2026-08-26",
     "knowledge": 400,
-    "events_total": 1604
+    "events_total": 1605
    }
   ]
  }

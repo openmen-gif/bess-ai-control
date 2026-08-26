@@ -111,6 +111,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "9fd62e3e6294",
+   "date": "2026-08-26",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-data-analyst",
+    "bess-financial-analysis",
+    "bess-logistics-expert",
+    "bess-mlops-engineer",
+    "bess-power-market-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 예측 모델을 활용한 실시간 SOC/SOH 최적화 시뮬레이션 구축",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "9ec2e9e5bc4b",
    "date": "2026-08-26",
    "type": "briefing",
@@ -3824,24 +3842,6 @@
    "title": "'여의도 22배' 사막의 발전 단지…ESS 시장 '급성장'",
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1kcHJtNVRQd3ZqU05mRzh2Sms0NjBqYTVBcEFxQTdvR3gzVUQtbVRfcnkwaXRWRWhVUmNZYzFGS0ZwTDdXRFlqRHpaYThfTXc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "093b874c298f",
-   "date": "2026-08-18",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cybersecurity-expert",
-    "bess-env-engineer",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-hybrid-specialist",
-    "bess-standards-korea",
-    "bess-transfer-pricing"
-   ],
-   "title": "팀 토론 — 고밀도 모듈 안전성 평가 심층 분석 및 적합한 안전 기준 적용 방안 마련 (IEC 62933-5 포함)",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
