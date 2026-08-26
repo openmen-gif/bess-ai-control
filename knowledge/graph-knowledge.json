@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-8da64abd3c6e",
+   "name": "팀 토론 — 화재 위험 최소화를 위한 CFD 유동해석 기반 배터리 시스템",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fbd2d9e067e8",
    "name": "한전·LS전선, 해저케이블 통합 자산관리 플랫폼 출시…글로벌 전력망 시장",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8d93517bb13c",
-   "name": "스킬 갱신 — feat(bess): 스킬 정본 되먹임 120건 반영 — ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8da64abd3c6e",
+   "type": "knowledge"
+  },
   {
    "source": "CAB-001",
    "target": "K-fbd2d9e067e8",
@@ -9261,15 +9301,10 @@
    "source": "SYS-001",
    "target": "K-95985756bf59",
    "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-8d93517bb13c",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-26",
+  "updated": "2026-08-27",
   "history": [
    {
     "date": "2026-07-20",
@@ -9460,6 +9495,11 @@
     "date": "2026-08-26",
     "knowledge": 400,
     "events_total": 1607
+   },
+   {
+    "date": "2026-08-27",
+    "knowledge": 400,
+    "events_total": 1608
    }
   ]
  }
