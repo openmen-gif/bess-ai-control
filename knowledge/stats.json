@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-27",
  "totals": {
-  "all": 1634,
+  "all": 1635,
   "briefing": 578,
   "skill": 698,
-  "discussion": 358,
+  "discussion": 359,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 342,
+   "count": 343,
    "byType": {
     "skill": 11,
-    "discussion": 146,
+    "discussion": 147,
     "briefing": 185
    },
    "lastGrown": "2026-08-27",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 140,
+   "count": 141,
    "byType": {
     "skill": 11,
-    "discussion": 129
+    "discussion": 130
    },
    "lastGrown": "2026-08-27",
    "level": 4
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 72,
+   "count": 73,
    "byType": {
     "skill": 10,
-    "discussion": 62
+    "discussion": 63
    },
    "lastGrown": "2026-08-27",
    "level": 4
@@ -484,19 +484,19 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 111,
+   "count": 112,
    "byType": {
     "skill": 10,
-    "discussion": 101
+    "discussion": 102
    },
    "lastGrown": "2026-08-27",
    "level": 4
   },
   "bess-project-manager": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 9,
-    "discussion": 36
+    "discussion": 37
    },
    "lastGrown": "2026-08-27",
    "level": 3
@@ -520,12 +520,12 @@
    "level": 2
   },
   "bess-sales-manager": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 7,
-    "discussion": 14
+    "discussion": 15
    },
-   "lastGrown": "2026-08-12",
+   "lastGrown": "2026-08-27",
    "level": 2
   },
   "bess-scheduler": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-27",
-   "added": 27
+   "added": 28
   }
  ],
  "freshness": {
