@@ -118,6 +118,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-80c487f64aeb",
+   "name": "팀 토론 — 미국 ESS 시장 확대에 따른 관세 및 FTA 혜택 최적화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-27",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-64545414c7b9",
    "name": "[ENTECH 2026 참가기업] 주식회사 디시오 - 고전압·대전력 전력",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-14",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-54b23f87a445",
-   "name": "[테마시황] 해외발 실적 호재 만난 친환경·배터리…풍력·연료전지·ESS ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3760,6 +3760,36 @@
   {
    "source": "BIZ-001",
    "target": "K-82c1784a21b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-80c487f64aeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-80c487f64aeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-80c487f64aeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-80c487f64aeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-80c487f64aeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-80c487f64aeb",
    "type": "knowledge"
   },
   {
@@ -9356,11 +9386,6 @@
    "source": "MAR-001",
    "target": "K-5d950d1c2592",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-54b23f87a445",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9559,7 +9584,7 @@
    {
     "date": "2026-08-27",
     "knowledge": 400,
-    "events_total": 1632
+    "events_total": 1633
    }
   ]
  }
