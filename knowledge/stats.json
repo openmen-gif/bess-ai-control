@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-28",
  "totals": {
-  "all": 1639,
+  "all": 1640,
   "briefing": 578,
   "skill": 698,
-  "discussion": 363,
+  "discussion": 364,
   "activity": 0
  },
  "perAgent": {
@@ -17,19 +17,19 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 8,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-08-28",
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 346,
+   "count": 347,
    "byType": {
     "skill": 11,
-    "discussion": 150,
+    "discussion": 151,
     "briefing": 185
    },
    "lastGrown": "2026-08-28",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 145,
+   "count": 146,
    "byType": {
     "skill": 11,
-    "discussion": 134
+    "discussion": 135
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -164,12 +164,12 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 9,
-    "discussion": 42
+    "discussion": 43
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-08-28",
    "level": 3
   },
   "bess-epc-bom": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 115,
+   "count": 116,
    "byType": {
     "skill": 10,
-    "discussion": 105
+    "discussion": 106
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -538,12 +538,12 @@
    "level": 3
   },
   "bess-security-expert": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 7,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-08-21",
+   "lastGrown": "2026-08-28",
    "level": 3
   },
   "bess-site-manager": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-28",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
