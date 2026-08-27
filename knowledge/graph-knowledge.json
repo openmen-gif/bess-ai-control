@@ -100,6 +100,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-93fa6de650ea",
+   "name": "팀 토론 — 시운전·코디네이터 영역 초안 작성 — bess-commiss",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8da64abd3c6e",
    "name": "팀 토론 — 화재 위험 최소화를 위한 CFD 유동해석 기반 배터리 시스템",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-94982f4f7ac3",
-   "name": "팀 토론 — BESS 프로젝트 BOM 최적화 및 글로벌 인증 문서 통합 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3715,6 +3715,36 @@
   {
    "source": "STD-001",
    "target": "K-977903b72315",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-93fa6de650ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-93fa6de650ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-93fa6de650ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-93fa6de650ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-93fa6de650ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-93fa6de650ea",
    "type": "knowledge"
   },
   {
@@ -9396,36 +9426,6 @@
    "source": "TRL-001",
    "target": "K-966759b9eded",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-94982f4f7ac3",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-94982f4f7ac3",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-94982f4f7ac3",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-94982f4f7ac3",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-94982f4f7ac3",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-94982f4f7ac3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9624,7 +9624,7 @@
    {
     "date": "2026-08-27",
     "knowledge": 400,
-    "events_total": 1636
+    "events_total": 1637
    }
   ]
  }

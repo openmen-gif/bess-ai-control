@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-27",
  "totals": {
-  "all": 1636,
+  "all": 1637,
   "briefing": 578,
   "skill": 698,
-  "discussion": 360,
+  "discussion": 361,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 344,
+   "count": 345,
    "byType": {
     "skill": 11,
-    "discussion": 148,
+    "discussion": 149,
     "briefing": 185
    },
    "lastGrown": "2026-08-27",
@@ -83,10 +83,10 @@
    "level": 3
   },
   "bess-commissioning-coordinator": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 10,
-    "discussion": 22
+    "discussion": 23
    },
    "lastGrown": "2026-08-27",
    "level": 3
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 142,
+   "count": 143,
    "byType": {
     "skill": 11,
-    "discussion": 131
+    "discussion": 132
    },
    "lastGrown": "2026-08-27",
    "level": 4
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 113,
+   "count": 114,
    "byType": {
     "skill": 10,
-    "discussion": 103
+    "discussion": 104
    },
    "lastGrown": "2026-08-27",
    "level": 4
@@ -547,12 +547,12 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 9,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-27",
    "level": 3
   },
   "bess-standards-analyst": {
@@ -665,12 +665,12 @@
    "level": 4
   },
   "bess-tax-accountant": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 6,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-08-27",
    "level": 2
   },
   "bess-tax-epc-accounting": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-27",
-   "added": 29
+   "added": 30
   }
  ],
  "freshness": {
