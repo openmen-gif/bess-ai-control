@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-28",
  "totals": {
-  "all": 1640,
+  "all": 1641,
   "briefing": 578,
   "skill": 698,
-  "discussion": 364,
+  "discussion": 365,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 347,
+   "count": 348,
    "byType": {
     "skill": 11,
-    "discussion": 151,
+    "discussion": 152,
     "briefing": 185
    },
    "lastGrown": "2026-08-28",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 146,
+   "count": 147,
    "byType": {
     "skill": 11,
-    "discussion": 135
+    "discussion": 136
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -137,12 +137,12 @@
    "level": 3
   },
   "bess-ebop-engineer": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 8,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-28",
    "level": 3
   },
   "bess-emc-analyst": {
@@ -457,12 +457,12 @@
    "level": 4
   },
   "bess-precom-report": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-08-17",
+   "lastGrown": "2026-08-28",
    "level": 2
   },
   "bess-presentation-designer": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 116,
+   "count": 117,
    "byType": {
     "skill": 10,
-    "discussion": 106
+    "discussion": 107
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -620,12 +620,12 @@
    "level": 2
   },
   "bess-standards-uk": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 8,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-08-28",
    "level": 2
   },
   "bess-standards-usa": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-28",
-   "added": 3
+   "added": 4
   }
  ],
  "freshness": {

@@ -18,6 +18,22 @@
    "source": "bess-team"
   },
   {
+   "id": "dcb166563d98",
+   "date": "2026-08-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-ebop-engineer",
+    "bess-precom-report",
+    "bess-procurement-expert",
+    "bess-standards-uk"
+   ],
+   "title": "팀 토론 — 변압기·수배전반 영역 현황 진단 — bess-ebop-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "cf7e79e142aa",
    "date": "2026-08-28",
    "type": "discussion",
@@ -3820,24 +3836,6 @@
     "bess-standards-korea"
    ],
    "title": "팀 토론 — 고밀도 모듈 안전성 평가 : IEC 62933-5 기준 적용 범위 내에서 LFP와 NMC 배터리 모듈별 구체적인 안전 마진 분석 및 현장 적용 가능성 평가 수행",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "a5f0cc770a12",
-   "date": "2026-08-19",
-   "type": "discussion",
-   "agents": [
-    "bess-aiml-engineer",
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-fire-engineer",
-    "bess-power-system-analyst",
-    "bess-procurement-expert",
-    "bess-standards-analyst",
-    "bess-translator"
-   ],
-   "title": "팀 토론 — 예측모델·최적화 영역 리스크 평가 — bess-aiml-engineer 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
   }

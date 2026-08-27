@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-dcb166563d98",
+   "name": "팀 토론 — 변압기·수배전반 영역 현황 진단 — bess-ebop-eng",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-cf7e79e142aa",
    "name": "팀 토론 — 시장 진출 전략 수립: 신규 글로벌 시장 진입을 위한 맞춤형",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-be092b34ae75",
-   "name": "팀 토론 — BESS 시스템 내 액냉 시스템 효율 최적화를 위한 CFD ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3630,6 +3630,36 @@
   {
    "source": "SEC-001",
    "target": "K-fc55618b1ffa",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-dcb166563d98",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-dcb166563d98",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-dcb166563d98",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-dcb166563d98",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-dcb166563d98",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-dcb166563d98",
    "type": "knowledge"
   },
   {
@@ -9391,46 +9421,6 @@
    "source": "BAT-001",
    "target": "K-c1ffac7ec430",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-be092b34ae75",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-be092b34ae75",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-be092b34ae75",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-be092b34ae75",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-be092b34ae75",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-be092b34ae75",
-   "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-be092b34ae75",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-be092b34ae75",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9634,7 +9624,7 @@
    {
     "date": "2026-08-28",
     "knowledge": 400,
-    "events_total": 1640
+    "events_total": 1641
    }
   ]
  }
