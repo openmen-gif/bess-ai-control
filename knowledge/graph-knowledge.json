@@ -235,6 +235,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0b3fd652124c",
+   "name": "팀 토론 — 변압기 설계 최적화를 통한 시스템 안전성 및 전력품질 향상 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-067d2e0fd16e",
    "name": "2배 커지는 ESS 시장 간절한데…K배터리 \"출혈 경쟁에 남는게 없다\" ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9402501db32d",
-   "name": "팀 토론 — 단기 최적화된 차단기 시스템 설계 가이드라인 개발",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3970,6 +3970,36 @@
   {
    "source": "KTX-001",
    "target": "K-12b99683111e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0b3fd652124c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0b3fd652124c",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-0b3fd652124c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0b3fd652124c",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-0b3fd652124c",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-0b3fd652124c",
    "type": "knowledge"
   },
   {
@@ -9396,46 +9426,6 @@
    "source": "SYS-001",
    "target": "K-94982f4f7ac3",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-9402501db32d",
-   "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-9402501db32d",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-9402501db32d",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-9402501db32d",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-9402501db32d",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-9402501db32d",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-9402501db32d",
-   "type": "knowledge"
-  },
-  {
-   "source": "TAX-002",
-   "target": "K-9402501db32d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9634,7 +9624,7 @@
    {
     "date": "2026-08-27",
     "knowledge": 400,
-    "events_total": 1635
+    "events_total": 1636
    }
   ]
  }
