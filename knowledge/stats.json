@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-27",
  "totals": {
-  "all": 1633,
+  "all": 1634,
   "briefing": 578,
   "skill": 698,
-  "discussion": 357,
+  "discussion": 358,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 341,
+   "count": 342,
    "byType": {
     "skill": 11,
-    "discussion": 145,
+    "discussion": 146,
     "briefing": 185
    },
    "lastGrown": "2026-08-27",
@@ -74,12 +74,12 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 42,
+   "count": 43,
    "byType": {
     "skill": 10,
-    "discussion": 32
+    "discussion": 33
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-08-27",
    "level": 3
   },
   "bess-commissioning-coordinator": {
@@ -146,10 +146,10 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 60,
+   "count": 61,
    "byType": {
     "skill": 9,
-    "discussion": 51
+    "discussion": 52
    },
    "lastGrown": "2026-08-27",
    "level": 3
@@ -238,12 +238,12 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 9,
-    "discussion": 30
+    "discussion": 31
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-27",
    "level": 3
   },
   "bess-hr-manager": {
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 71,
+   "count": 72,
    "byType": {
     "skill": 10,
-    "discussion": 61
+    "discussion": 62
    },
    "lastGrown": "2026-08-27",
    "level": 4
@@ -319,12 +319,12 @@
    "level": 2
   },
   "bess-knowledge-manager": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 9,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-27",
    "level": 2
   },
   "bess-labor-safety": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-27",
-   "added": 26
+   "added": 27
   }
  ],
  "freshness": {
