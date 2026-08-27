@@ -181,6 +181,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2417386f82ec",
+   "name": "팀 토론 — 부지조성·기초설계 영역 리스크 평가 — bess-cbop-e",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1e7b26e5d7cc",
    "name": "중국에 밀린 K배터리…“미국 ESS 시장이 기회”",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-15",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-ea42690dda0b",
-   "name": "KTL, 지투파워에 '액침형 ESS' 안전 제어기능 공식 입증",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-15",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3825,6 +3825,46 @@
   {
    "source": "STD-001",
    "target": "K-3dbed0fafbdd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2417386f82ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-2417386f82ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2417386f82ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-2417386f82ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-2417386f82ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-2417386f82ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-2417386f82ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2417386f82ec",
    "type": "knowledge"
   },
   {
@@ -9406,11 +9446,6 @@
    "source": "MAR-001",
    "target": "K-ee59bc7d70a8",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-ea42690dda0b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9614,7 +9649,7 @@
    {
     "date": "2026-08-28",
     "knowledge": 400,
-    "events_total": 1661
+    "events_total": 1662
    }
   ]
  }
