@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-bd073746edb3",
+   "name": "팀 토론 — TCFD·ISSB 영역 초안 작성 — bess-esg-fin",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-bab382c5ed84",
    "name": "팀 토론 — 보안 거버넌스 프레임워크 구축 및 사이버 위협 대응 훈련 실",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3ca43ba9858a",
-   "name": "“ESS가 살렸다” K-배터리 북미서 반격의 닻 오르나",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3625,6 +3625,36 @@
   {
    "source": "BAT-001",
    "target": "K-bf956f3079ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-bd073746edb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-bd073746edb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-bd073746edb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-bd073746edb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-bd073746edb3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-bd073746edb3",
    "type": "knowledge"
   },
   {
@@ -9331,11 +9361,6 @@
    "source": "BAT-001",
    "target": "K-54b23f87a445",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-3ca43ba9858a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9534,7 +9559,7 @@
    {
     "date": "2026-08-27",
     "knowledge": 400,
-    "events_total": 1631
+    "events_total": 1632
    }
   ]
  }
