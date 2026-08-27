@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-28",
  "totals": {
-  "all": 1638,
+  "all": 1639,
   "briefing": 578,
   "skill": 698,
-  "discussion": 362,
+  "discussion": 363,
   "activity": 0
  },
  "perAgent": {
@@ -26,13 +26,13 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 345,
+   "count": 346,
    "byType": {
     "skill": 11,
-    "discussion": 149,
+    "discussion": 150,
     "briefing": 185
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-28",
    "level": 5
   },
   "bess-business-dev": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 144,
+   "count": 145,
    "byType": {
     "skill": 11,
-    "discussion": 133
+    "discussion": 134
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -219,12 +219,12 @@
    "level": 4
   },
   "bess-fit-procedure": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 8,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-28",
    "level": 2
   },
   "bess-grid-interconnection": {
@@ -355,13 +355,13 @@
    "level": 3
   },
   "bess-marketer": {
-   "count": 204,
+   "count": 205,
    "byType": {
     "skill": 10,
-    "discussion": 44,
+    "discussion": 45,
     "briefing": 150
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-28",
    "level": 5
   },
   "bess-mlops-engineer": {
@@ -484,12 +484,12 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 114,
+   "count": 115,
    "byType": {
     "skill": 10,
-    "discussion": 104
+    "discussion": 105
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-28",
    "level": 4
   },
   "bess-project-manager": {
@@ -720,12 +720,12 @@
    "level": 3
   },
   "bess-training-expert": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 8,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-28",
    "level": 3
   },
   "bess-transfer-pricing": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-28",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-27",
-   "gapDays": 1,
+   "previousUpdated": "2026-08-28",
+   "gapDays": 0,
    "overdue": false
   }
  }
