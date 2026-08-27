@@ -28,6 +28,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c32f5790a386",
+   "name": "팀 토론 — 부지 안전성 및 지속 가능한 환경 설계 최적화 방안 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-4fc0fd6858f9",
    "name": "팀 토론 — 변압기 설계 최적화를 통한 시스템 전력품질 및 안전 마진 향",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c1ffac7ec430",
-   "name": "LG·삼성·SK, 북미 ESS 승부수 띄운다…K-배터리, 합작사업 접고 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3690,6 +3690,36 @@
   {
    "source": "TRN-001",
    "target": "K-cf7e79e142aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c32f5790a386",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-c32f5790a386",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c32f5790a386",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-c32f5790a386",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-c32f5790a386",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c32f5790a386",
    "type": "knowledge"
   },
   {
@@ -9416,11 +9446,6 @@
    "source": "BAT-001",
    "target": "K-c50c0ae66fa5",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-c1ffac7ec430",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9624,7 +9649,7 @@
    {
     "date": "2026-08-28",
     "knowledge": 400,
-    "events_total": 1641
+    "events_total": 1642
    }
   ]
  }

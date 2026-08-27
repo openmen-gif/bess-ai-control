@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-28",
  "totals": {
-  "all": 1641,
+  "all": 1642,
   "briefing": 578,
   "skill": 698,
-  "discussion": 365,
+  "discussion": 366,
   "activity": 0
  },
  "perAgent": {
@@ -26,23 +26,23 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 348,
+   "count": 349,
    "byType": {
     "skill": 11,
-    "discussion": 152,
+    "discussion": 153,
     "briefing": 185
    },
    "lastGrown": "2026-08-28",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 84,
+   "count": 85,
    "byType": {
     "skill": 10,
-    "discussion": 38,
+    "discussion": 39,
     "briefing": 36
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-28",
    "level": 4
   },
   "bess-cable-engineer": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 147,
+   "count": 148,
    "byType": {
     "skill": 11,
-    "discussion": 136
+    "discussion": 137
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -164,10 +164,10 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 9,
-    "discussion": 43
+    "discussion": 44
    },
    "lastGrown": "2026-08-28",
    "level": 3
@@ -182,12 +182,12 @@
    "level": 2
   },
   "bess-esg-finance": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 9,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-28",
    "level": 3
   },
   "bess-facility-manager": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 117,
+   "count": 118,
    "byType": {
     "skill": 10,
-    "discussion": 107
+    "discussion": 108
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-28",
-   "added": 4
+   "added": 5
   }
  ],
  "freshness": {
