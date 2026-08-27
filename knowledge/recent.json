@@ -1,6 +1,22 @@
 {
- "updated": "2026-08-27",
+ "updated": "2026-08-28",
  "events": [
+  {
+   "id": "4fc0fd6858f9",
+   "date": "2026-08-28",
+   "type": "discussion",
+   "agents": [
+    "bess-circuit-breaker-expert",
+    "bess-cost-analyst",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-tool-developer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 변압기 설계 최적화를 통한 시스템 전력품질 및 안전 마진 향상 검토 및 프로토타입 개발 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f5ff8f6d1f49",
    "date": "2026-08-27",
@@ -3813,17 +3829,6 @@
    ],
    "title": "BS한양, 매출원가율 79% ‘개선’…선별 수주·리스크 관리 총력",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTVUVSOXZsckNaVFN0YzZOUlFSNzVjcnhQcC12Q25BazVPMVdvcmlHeDFGT2FpaVQwWm1INTJSM3BlTXpNTmZ2bTI1TzQ1UUxmYkc0d0k3R244QkpCS2dWcTFxaGt6dEtYaTlr?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "87223dd0073a",
-   "date": "2026-08-19",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "K-배터리 3사, 1조 규모 공공 ESS 정면승부...국내 생산이 핵심",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sUGxvczN2SUZTX1lZZ2l3aGNpYnppX1hKSkVVUUZwWUp6N2Q1YjF1QWlPSHF1ZFNvR295WTBqX1RvT29vVFd2bnpYVnlxQVdjVGowLWZNYk9wZ9IBWEFVX3lxTFAyUG4yTEFQNHItQmo5NjU0aU5MdFplM3kzODBXai15Q085cVdrc0Myd1JJR2lTRzQ0bElLMU1PV1ZWUDIzU3hNakl0dzRSXzdYekh6MHBDZ1Q?oc=5",
    "source": "구글뉴스"
   }
  ]

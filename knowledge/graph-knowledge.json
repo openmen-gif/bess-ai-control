@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-4fc0fd6858f9",
+   "name": "팀 토론 — 변압기 설계 최적화를 통한 시스템 전력품질 및 안전 마진 향",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f5ff8f6d1f49",
    "name": "ESS 입찰 따낼수록 적자?…출혈 경쟁에 멍드는 K배터리 - 머니투데이",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-14",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-966759b9eded",
-   "name": "팀 토론 — BESS 프로젝트 BOM 최적화 및 글로벌 인증 문서 통합 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CBK-001",
+   "target": "K-4fc0fd6858f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4fc0fd6858f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-4fc0fd6858f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-4fc0fd6858f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-4fc0fd6858f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-4fc0fd6858f9",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-f5ff8f6d1f49",
@@ -9386,50 +9416,10 @@
    "source": "STD-001",
    "target": "K-b33e698594bd",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-966759b9eded",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-966759b9eded",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-966759b9eded",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-966759b9eded",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-966759b9eded",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-966759b9eded",
-   "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-966759b9eded",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRL-001",
-   "target": "K-966759b9eded",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-27",
+  "updated": "2026-08-28",
   "history": [
    {
     "date": "2026-07-20",
@@ -9625,6 +9615,11 @@
     "date": "2026-08-27",
     "knowledge": 400,
     "events_total": 1637
+   },
+   {
+    "date": "2026-08-28",
+    "knowledge": 400,
+    "events_total": 1638
    }
   ]
  }
