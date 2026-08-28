@@ -2,6 +2,24 @@
  "updated": "2026-08-29",
  "events": [
   {
+   "id": "c077dd3e8f98",
+   "date": "2026-08-29",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cybersecurity-expert",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-fit-procedure",
+    "bess-hse-manager",
+    "bess-system-engineer",
+    "bess-tax-accountant"
+   ],
+   "title": "팀 토론 — 화재 위험 최소화를 위한 CFD 기반 열관리 시스템 최적화 설계 추진",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fc55618b1ffa",
    "date": "2026-08-28",
    "type": "discussion",
@@ -3791,17 +3809,6 @@
    ],
    "title": "디케이티, 북미 LFP ESS용 BMS 첫 출하…ESS 시장 공략 본격화",
    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9LNTBpRkZSTmdXckpzUno5Yi1tcVpqMjJXRXdRam5kRU5UeHZPSVZzR2FPcVVyN1pGbV9fZWVmSHBDUWNNRzA2ZFdaSFEydw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "96e2f4ff67ba",
-   "date": "2026-08-20",
-   "type": "briefing",
-   "agents": [
-    "bess-fire-engineer"
-   ],
-   "title": "화재 없는 '물 배터리' 코스모스랩, ESS 시장에서 리튬 대안 될까",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5wekk5cUljbWRyaTNiYS00Z0ZmanBnS3dfYlBtay1VNVppTFBKZkN0cExONG84R2NtaWgxbHRCV2dZcHh1TmxrSzR1ejdQOHhWY1E?oc=5",
    "source": "구글뉴스"
   }
  ]

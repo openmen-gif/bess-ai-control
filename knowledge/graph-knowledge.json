@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-c077dd3e8f98",
+   "name": "팀 토론 — 화재 위험 최소화를 위한 CFD 기반 열관리 시스템 최적화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fc55618b1ffa",
    "name": "팀 토론 — 부지 안전성 및 환경 적합성 평가 프로토콜 개발",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-18754f2c35f8",
-   "name": "삼성SDI, 중국 배터리 점유율 되찾나…ESS·유럽 EV가 승부처",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-c077dd3e8f98",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-c077dd3e8f98",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-c077dd3e8f98",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-c077dd3e8f98",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-c077dd3e8f98",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-c077dd3e8f98",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c077dd3e8f98",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-c077dd3e8f98",
+   "type": "knowledge"
+  },
   {
    "source": "AIM-001",
    "target": "K-fc55618b1ffa",
@@ -9546,11 +9586,6 @@
    "source": "STD-001",
    "target": "K-2cf7b17b72c3",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-18754f2c35f8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9759,7 +9794,7 @@
    {
     "date": "2026-08-29",
     "knowledge": 400,
-    "events_total": 1667
+    "events_total": 1668
    }
   ]
  }
