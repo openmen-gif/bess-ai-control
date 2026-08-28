@@ -199,6 +199,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-672c62001279",
+   "name": "팀 토론 — 비용 분석의 불확실성 해소를 위한 구체적인 분석 프레임워크 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-4fc0fd6858f9",
    "name": "팀 토론 — 변압기 설계 최적화를 통한 시스템 전력품질 및 안전 마진 향",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-14297610fb80",
-   "name": "팀 토론 — 시운전 최적화 프로세스 자동화 및 실시간 모니터링 시스템 구",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3950,6 +3950,46 @@
   {
    "source": "PCS-001",
    "target": "K-705f03a01754",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-672c62001279",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-672c62001279",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-672c62001279",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-672c62001279",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-672c62001279",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-672c62001279",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-672c62001279",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-672c62001279",
    "type": "knowledge"
   },
   {
@@ -9511,50 +9551,10 @@
    "source": "BAT-001",
    "target": "K-18754f2c35f8",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-14297610fb80",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-14297610fb80",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-14297610fb80",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-14297610fb80",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRS-001",
-   "target": "K-14297610fb80",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-14297610fb80",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-14297610fb80",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRL-001",
-   "target": "K-14297610fb80",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-28",
+  "updated": "2026-08-29",
   "history": [
    {
     "date": "2026-07-20",
@@ -9755,6 +9755,11 @@
     "date": "2026-08-28",
     "knowledge": 400,
     "events_total": 1666
+   },
+   {
+    "date": "2026-08-29",
+    "knowledge": 400,
+    "events_total": 1667
    }
   ]
  }
