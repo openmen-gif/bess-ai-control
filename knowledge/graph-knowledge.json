@@ -127,6 +127,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-93f03a54c2cc",
+   "name": "팀 토론 — 계통연계·VRT 영역 현황 진단 — bess-grid-int",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-8d2f6bae0bef",
    "name": "[K-지능강국] ④ 특수 반도체 팹 더 생기면 안돼?···화합물·전력반도",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-15",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fb06bdbb29b3",
-   "name": "배터리 살아났는데 소재는 아직…이차전지업계 실적 '온도차'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-15",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3770,6 +3770,46 @@
   {
    "source": "BAT-001",
    "target": "K-9e9def6f550d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-93f03a54c2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-93f03a54c2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-93f03a54c2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-93f03a54c2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-93f03a54c2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-93f03a54c2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-93f03a54c2cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-93f03a54c2cc",
    "type": "knowledge"
   },
   {
@@ -9476,11 +9516,6 @@
    "source": "BAT-001",
    "target": "K-fcac00451835",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fb06bdbb29b3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9684,7 +9719,7 @@
    {
     "date": "2026-08-28",
     "knowledge": 400,
-    "events_total": 1663
+    "events_total": 1664
    }
   ]
  }
