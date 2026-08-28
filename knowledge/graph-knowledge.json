@@ -145,6 +145,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-81754441d78b",
+   "name": "팀 토론 — 설비관리·유지보수 영역 리스크 평가 — bess-facili",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-73f0aab3c458",
    "name": "커민스(CMI)의 사상 최대 규모 AI 데이터센터 배터리 계약이 커민스 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-15",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ee59bc7d70a8",
-   "name": "지에프아이, 상반기 매출액 350억원…전년 대비 164.5% ↑",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-15",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3780,6 +3780,46 @@
   {
    "source": "FIR-001",
    "target": "K-82afed47bdec",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-81754441d78b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-81754441d78b",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-81754441d78b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-81754441d78b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-81754441d78b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-81754441d78b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-81754441d78b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-81754441d78b",
    "type": "knowledge"
   },
   {
@@ -9441,11 +9481,6 @@
    "source": "BAT-001",
    "target": "K-fb06bdbb29b3",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-ee59bc7d70a8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9649,7 +9684,7 @@
    {
     "date": "2026-08-28",
     "knowledge": 400,
-    "events_total": 1662
+    "events_total": 1663
    }
   ]
  }

@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-28",
  "totals": {
-  "all": 1662,
+  "all": 1663,
   "briefing": 597,
   "skill": 698,
-  "discussion": 367,
+  "discussion": 368,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 354,
+   "count": 355,
    "byType": {
     "skill": 11,
-    "discussion": 154,
+    "discussion": 155,
     "briefing": 189
    },
    "lastGrown": "2026-08-28",
@@ -101,13 +101,13 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 149,
+   "count": 150,
    "byType": {
     "skill": 11,
-    "discussion": 138
+    "discussion": 139
    },
    "lastGrown": "2026-08-28",
-   "level": 4
+   "level": 5
   },
   "bess-customs-tariff": {
    "count": 32,
@@ -128,12 +128,12 @@
    "level": 3
   },
   "bess-data-analyst": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 10,
-    "discussion": 55
+    "discussion": 56
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-08-28",
    "level": 3
   },
   "bess-ebop-engineer": {
@@ -191,12 +191,12 @@
    "level": 3
   },
   "bess-facility-manager": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 9,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-08-28",
    "level": 3
   },
   "bess-financial-analysis": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 136,
+   "count": 137,
    "byType": {
     "skill": 10,
-    "discussion": 87,
+    "discussion": 88,
     "briefing": 39
    },
    "lastGrown": "2026-08-28",
@@ -228,10 +228,10 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 9,
-    "discussion": 32,
+    "discussion": 33,
     "briefing": 10
    },
    "lastGrown": "2026-08-28",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 74,
+   "count": 75,
    "byType": {
     "skill": 10,
-    "discussion": 64
+    "discussion": 65
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 119,
+   "count": 120,
    "byType": {
     "skill": 10,
-    "discussion": 109
+    "discussion": 110
    },
    "lastGrown": "2026-08-28",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-28",
-   "added": 25
+   "added": 26
   }
  ],
  "freshness": {
