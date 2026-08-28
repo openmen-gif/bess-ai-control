@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-eb0198992009",
+   "name": "팀 토론 — AI 기반 예측 모델을 활용한 최적 에너지 분배 시스템 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c077dd3e8f98",
    "name": "팀 토론 — 화재 위험 최소화를 위한 CFD 기반 열관리 시스템 최적화 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2cf7b17b72c3",
-   "name": "풍력·연료전지에 ESS까지…SK이터닉스 하반기 실적 탄력 붙나",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-eb0198992009",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-eb0198992009",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-eb0198992009",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-eb0198992009",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-eb0198992009",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-eb0198992009",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-eb0198992009",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-eb0198992009",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-c077dd3e8f98",
@@ -9581,11 +9621,6 @@
    "source": "BAT-001",
    "target": "K-432b232e5f99",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-2cf7b17b72c3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9794,7 +9829,7 @@
    {
     "date": "2026-08-29",
     "knowledge": 400,
-    "events_total": 1668
+    "events_total": 1669
    }
   ]
  }

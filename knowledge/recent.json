@@ -2,6 +2,24 @@
  "updated": "2026-08-29",
  "events": [
   {
+   "id": "eb0198992009",
+   "date": "2026-08-29",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-financial-analysis",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-legal-expert",
+    "bess-marketer",
+    "bess-pcs-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 예측 모델을 활용한 최적 에너지 분배 시스템 개발 및 시뮬레이션 고도화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "c077dd3e8f98",
    "date": "2026-08-29",
    "type": "discussion",
@@ -3798,17 +3816,6 @@
    ],
    "title": "LG엔솔, 美 랜싱 공장 본격 가동…‘EV→ESS’ 전환으로 AI 전력시장 정조준",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fcFg5VU16d3IwaFFfT0o4c2lUbDFSb3QyR091N2lGZlVXcWpoYmRKSm9ESEFISS00U1NkdXlmQ3V5SG5ub3BmWGNPUEVjN2dCbjJqUERCV0EwZ3ZTNlE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "982e04349c8d",
-   "date": "2026-08-20",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "디케이티, 북미 LFP ESS용 BMS 첫 출하…ESS 시장 공략 본격화",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9LNTBpRkZSTmdXckpzUno5Yi1tcVpqMjJXRXdRam5kRU5UeHZPSVZzR2FPcVVyN1pGbV9fZWVmSHBDUWNNRzA2ZFdaSFEydw?oc=5",
    "source": "구글뉴스"
   }
  ]
