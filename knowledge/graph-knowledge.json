@@ -145,6 +145,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-83728edf2ece",
+   "name": "팀 토론 — 데이터분석·운영데이터 영역 초안 작성 — bess-data-",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-82afed47bdec",
    "name": "지투파워, 화재 차단 액침냉각 ESS 상용화…AI 데이터센터 겨냥",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fcac00451835",
-   "name": "삼성·LG·SK, 1조 ESS '쩐의 전쟁'…올해는 딱 한 번",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-15",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3815,6 +3815,46 @@
   {
    "source": "PCS-001",
    "target": "K-8d2f6bae0bef",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-83728edf2ece",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-83728edf2ece",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-83728edf2ece",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-83728edf2ece",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-83728edf2ece",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-83728edf2ece",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-83728edf2ece",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-83728edf2ece",
    "type": "knowledge"
   },
   {
@@ -9511,11 +9551,6 @@
    "source": "MLO-001",
    "target": "K-0b6a636c6c97",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fcac00451835",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9719,7 +9754,7 @@
    {
     "date": "2026-08-28",
     "knowledge": 400,
-    "events_total": 1664
+    "events_total": 1665
    }
   ]
  }
