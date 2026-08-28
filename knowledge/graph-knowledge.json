@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e00fd0c732d3",
+   "name": "팀 토론 — IEC 표준 준수 케이블 설계 최적화 방안 수립 - Ampa",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-df1a48969dd7",
    "name": "전기차 캐즘 돌파구 된 ESS…\"미국 시장 4배 커진다\" 공략 승부수 -",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0b6a636c6c97",
-   "name": "팀 토론 — 계통 안정성 강화를 위한 VRT 및 LVRT 테스트 프로토콜",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3630,6 +3630,46 @@
   {
    "source": "SEC-001",
    "target": "K-fc55618b1ffa",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e00fd0c732d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-e00fd0c732d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e00fd0c732d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-e00fd0c732d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-e00fd0c732d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e00fd0c732d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-e00fd0c732d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e00fd0c732d3",
    "type": "knowledge"
   },
   {
@@ -9511,46 +9551,6 @@
    "source": "TRL-001",
    "target": "K-14297610fb80",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-0b6a636c6c97",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-0b6a636c6c97",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-0b6a636c6c97",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-0b6a636c6c97",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-0b6a636c6c97",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-0b6a636c6c97",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-0b6a636c6c97",
-   "type": "knowledge"
-  },
-  {
-   "source": "MLO-001",
-   "target": "K-0b6a636c6c97",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9754,7 +9754,7 @@
    {
     "date": "2026-08-28",
     "knowledge": 400,
-    "events_total": 1665
+    "events_total": 1666
    }
   ]
  }
