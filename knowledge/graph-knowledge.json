@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-d18d4283749d",
+   "name": "팀 토론 — AI 기반 최적화 알고리즘을 활용하여 BESS 방전 패턴 예",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-88ac4ef99ae2",
    "name": "팀 토론 — AI 기반 최적화 알고리즘 적용으로 BESS 운영 효율성 시",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-17",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-985f1420e705",
-   "name": "팀 토론 — 예측모델·최적화 영역 벤치마킹 — bess-aiml-engi",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-d18d4283749d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d18d4283749d",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-d18d4283749d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-d18d4283749d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-d18d4283749d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d18d4283749d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-d18d4283749d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d18d4283749d",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-88ac4ef99ae2",
@@ -9386,46 +9426,6 @@
    "source": "MKT-001",
    "target": "K-a4eaf5191b3c",
    "type": "knowledge"
-  },
-  {
-   "source": "AIM-001",
-   "target": "K-985f1420e705",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-985f1420e705",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-985f1420e705",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-985f1420e705",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-985f1420e705",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-985f1420e705",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-985f1420e705",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-008",
-   "target": "K-985f1420e705",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9639,7 +9639,7 @@
    {
     "date": "2026-08-30",
     "knowledge": 400,
-    "events_total": 1694
+    "events_total": 1695
    }
   ]
  }
