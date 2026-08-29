@@ -1,6 +1,24 @@
 {
- "updated": "2026-08-29",
+ "updated": "2026-08-30",
  "events": [
+  {
+   "id": "88ac4ef99ae2",
+   "date": "2026-08-30",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-mlops-engineer",
+    "bess-permit-asia",
+    "bess-procurement-expert",
+    "bess-standards-eu"
+   ],
+   "title": "팀 토론 — AI 기반 최적화 알고리즘 적용으로 BESS 운영 효율성 시뮬레이션 고도화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f6fccd3f2ec1",
    "date": "2026-08-29",
@@ -3764,17 +3782,6 @@
    "title": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 — 가드레일 +5항, 운영 학습 30개 파일",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "08936de46c2a",
-   "date": "2026-08-22",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "[이슈 체크] 전자장비와기기, 북미 ESS 성장세 가속…AI 데이터센터 전력 수요도 확대",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5RdEhoZW5sY1hGa0JKd2o3ZEM2YkY5QXpLVDRTYmRhQ2VtUDlpSWZzcjY4MlBscTNvMGF5OXF4MHJEdzFXOHZVRVJfdFY5WkJmaU84eWhFT3pUTnVj?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

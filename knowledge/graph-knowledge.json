@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-88ac4ef99ae2",
+   "name": "팀 토론 — AI 기반 최적화 알고리즘 적용으로 BESS 운영 효율성 시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f6fccd3f2ec1",
    "name": "스탠다드에너지, LB휴넷 데이터서버에 바나듐이온 배터리 UPS 공급",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-17",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-7dbe556b696b",
-   "name": "AI 핵심 인프라 재생에너지…전력 안정성 높이는 ESS 입지 확대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-88ac4ef99ae2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-88ac4ef99ae2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-88ac4ef99ae2",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-88ac4ef99ae2",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-88ac4ef99ae2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-88ac4ef99ae2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-88ac4ef99ae2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-88ac4ef99ae2",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-f6fccd3f2ec1",
@@ -9386,15 +9426,10 @@
    "source": "TIN-001",
    "target": "K-810c53327f6e",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-7dbe556b696b",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-29",
+  "updated": "2026-08-30",
   "history": [
    {
     "date": "2026-07-20",
@@ -9600,6 +9635,11 @@
     "date": "2026-08-29",
     "knowledge": 400,
     "events_total": 1692
+   },
+   {
+    "date": "2026-08-30",
+    "knowledge": 400,
+    "events_total": 1693
    }
   ]
  }
