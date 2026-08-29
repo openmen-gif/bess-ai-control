@@ -20,6 +20,24 @@
    "source": "bess-team"
   },
   {
+   "id": "825f0a563d83",
+   "date": "2026-08-30",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cbop-engineer",
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-standards-romania",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — HS코드·배터리 영역 현황 진단 — bess-customs-tariff 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f6fccd3f2ec1",
    "date": "2026-08-29",
    "type": "briefing",
@@ -3771,17 +3789,6 @@
    "title": "재활용 문턱 낮추는 폐배터리…전기차 넘어 ESS·풍력까지 순환망 확대",
    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAxWWxkMHNHY0s5R2NWeFlFOEhESDhMVmlVRWVOTFRjdEd0WUo4OUNhOGQ5N0RqdVMtQ3JacU1YdUx3OVZaRzdxc19xMm0?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "0c6df483cc0f",
-   "date": "2026-08-22",
-   "type": "skill",
-   "agents": [
-    "bess-commissioning-coordinator"
-   ],
-   "title": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 — 가드레일 +5항, 운영 학습 30개 파일",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
