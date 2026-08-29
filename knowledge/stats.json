@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-29",
  "totals": {
-  "all": 1691,
+  "all": 1692,
   "briefing": 618,
   "skill": 698,
-  "discussion": 375,
+  "discussion": 376,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 367,
+   "count": 368,
    "byType": {
     "skill": 11,
-    "discussion": 161,
+    "discussion": 162,
     "briefing": 195
    },
    "lastGrown": "2026-08-29",
@@ -119,10 +119,10 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 67,
+   "count": 68,
    "byType": {
     "skill": 10,
-    "discussion": 57
+    "discussion": 58
    },
    "lastGrown": "2026-08-29",
    "level": 3
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 9,
-    "discussion": 53
+    "discussion": 54
    },
-   "lastGrown": "2026-08-28",
+   "lastGrown": "2026-08-29",
    "level": 3
   },
   "bess-emerging-markets": {
@@ -173,12 +173,12 @@
    "level": 3
   },
   "bess-epc-bom": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 8,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-08-29",
    "level": 2
   },
   "bess-esg-finance": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 142,
+   "count": 143,
    "byType": {
     "skill": 10,
-    "discussion": 91,
+    "discussion": 92,
     "briefing": 41
    },
    "lastGrown": "2026-08-29",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 77,
+   "count": 78,
    "byType": {
     "skill": 10,
-    "discussion": 67
+    "discussion": 68
    },
    "lastGrown": "2026-08-29",
    "level": 4
@@ -638,12 +638,12 @@
    "level": 3
   },
   "bess-structural-analyst": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 9,
-    "discussion": 46
+    "discussion": 47
    },
-   "lastGrown": "2026-08-24",
+   "lastGrown": "2026-08-29",
    "level": 3
   },
   "bess-substation-engineer": {
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 95,
+   "count": 96,
    "byType": {
     "skill": 10,
-    "discussion": 85
+    "discussion": 86
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-29",
    "level": 4
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-29",
-   "added": 24
+   "added": 25
   }
  ],
  "freshness": {
