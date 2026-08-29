@@ -172,6 +172,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-03828a2d93e8",
+   "name": "팀 토론 — 미국 ESS 시장 진출 확대 동향을 분석하여, 한국 전력시장",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-30",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-f6fccd3f2ec1",
    "name": "스탠다드에너지, LB휴넷 데이터서버에 바나듐이온 배터리 UPS 공급",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5aab0f161319",
-   "name": "팀 토론 — CFD·유동해석 영역 현황 진단 — bess-cfd-anal",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3835,6 +3835,46 @@
   {
    "source": "BAT-001",
    "target": "K-0a7e141fefae",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-03828a2d93e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-03828a2d93e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-03828a2d93e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-03828a2d93e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-03828a2d93e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-03828a2d93e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-03828a2d93e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-03828a2d93e8",
    "type": "knowledge"
   },
   {
@@ -9106,46 +9146,6 @@
    "source": "BAT-001",
    "target": "K-60c25b7c75e0",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-5aab0f161319",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-5aab0f161319",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-5aab0f161319",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-5aab0f161319",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-5aab0f161319",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-5aab0f161319",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-5aab0f161319",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-5aab0f161319",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9359,7 +9359,7 @@
    {
     "date": "2026-08-30",
     "knowledge": 400,
-    "events_total": 1711
+    "events_total": 1712
    }
   ]
  }

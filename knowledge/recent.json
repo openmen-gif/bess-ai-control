@@ -239,6 +239,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "03828a2d93e8",
+   "date": "2026-08-30",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-it-infra",
+    "bess-legal-expert",
+    "bess-marketer",
+    "bess-power-market-expert",
+    "bess-sales-manager"
+   ],
+   "title": "팀 토론 — 미국 ESS 시장 진출 확대 동향을 분석하여, 한국 전력시장(KPX) 내 맞춤형 입찰 전략 및 비용 구조 최적화 방안 마련.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f6fccd3f2ec1",
    "date": "2026-08-29",
    "type": "briefing",
@@ -3778,17 +3796,6 @@
    "title": "스탠다드에너지, 한양대에 바나듐이온 배터리 ESS 설치",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE42SklXcm1OV1A2TDVidEFrbURodnNtS3RiTVU5dDJDQjVQYkw0NDdQOWZpcGNZUGF0MjBfaFktQnFUcDJlcmhBb2hsR3pqMTJmczdDZnc5WHBjQmhjY090MGxSejNvZw?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "55fdf1724b5e",
-   "date": "2026-08-22",
-   "type": "skill",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 — 가드레일 +5항, 운영 학습 30개 파일",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
