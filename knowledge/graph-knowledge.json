@@ -28,6 +28,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6e1ffbd5ab45",
+   "name": "팀 토론 — 계약 조항 최적화를 통한 글로벌 프로젝트 리스크 감소 전략 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f6fccd3f2ec1",
    "name": "스탠다드에너지, LB휴넷 데이터서버에 바나듐이온 배터리 UPS 공급",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-17",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a4eaf5191b3c",
-   "name": "전기차 밖으로 나온 K-배터리…AI 데이터센터 전력시장 공략",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-17",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3720,6 +3720,46 @@
   {
    "source": "KTX-001",
    "target": "K-825f0a563d83",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6e1ffbd5ab45",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-6e1ffbd5ab45",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-6e1ffbd5ab45",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6e1ffbd5ab45",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-6e1ffbd5ab45",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-6e1ffbd5ab45",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-6e1ffbd5ab45",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-6e1ffbd5ab45",
    "type": "knowledge"
   },
   {
@@ -9421,11 +9461,6 @@
    "source": "BAT-001",
    "target": "K-a50ebda25b81",
    "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-a4eaf5191b3c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9639,7 +9674,7 @@
    {
     "date": "2026-08-30",
     "knowledge": 400,
-    "events_total": 1695
+    "events_total": 1696
    }
   ]
  }
