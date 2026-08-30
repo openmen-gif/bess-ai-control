@@ -188,6 +188,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "01fd445f3f57",
+   "date": "2026-08-31",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-insurance-expert",
+    "bess-permit-europe",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 예측모델·최적화 영역 현황 진단 — bess-aiml-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fcd4fd7d275b",
    "date": "2026-08-30",
    "type": "briefing",
@@ -3798,24 +3816,6 @@
    "title": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 — 가드레일 +5항, 운영 학습 30개 파일",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "a6d8e713c6b6",
-   "date": "2026-08-22",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-legal-expert",
-    "bess-standards-analyst",
-    "bess-standards-korea",
-    "bess-tax-japan"
-   ],
-   "title": "팀 토론 — 고밀도 모듈 안전성 평가 심화를 위한 국제 표준 비교 및 적합성 검토 계획 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
