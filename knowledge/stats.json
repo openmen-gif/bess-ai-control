@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-30",
  "totals": {
-  "all": 1712,
+  "all": 1713,
   "briefing": 633,
   "skill": 698,
-  "discussion": 381,
+  "discussion": 382,
   "activity": 0
  },
  "perAgent": {
@@ -65,19 +65,19 @@
    "level": 3
   },
   "bess-cfd-analyst": {
-   "count": 35,
+   "count": 36,
    "byType": {
     "skill": 11,
-    "discussion": 24
+    "discussion": 25
    },
-   "lastGrown": "2026-08-29",
+   "lastGrown": "2026-08-30",
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 10,
-    "discussion": 35
+    "discussion": 36
    },
    "lastGrown": "2026-08-30",
    "level": 3
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 63,
+   "count": 64,
    "byType": {
     "skill": 9,
-    "discussion": 54
+    "discussion": 55
    },
-   "lastGrown": "2026-08-29",
+   "lastGrown": "2026-08-30",
    "level": 3
   },
   "bess-emerging-markets": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 145,
+   "count": 146,
    "byType": {
     "skill": 10,
-    "discussion": 93,
+    "discussion": 94,
     "briefing": 42
    },
    "lastGrown": "2026-08-30",
@@ -238,12 +238,12 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 9,
-    "discussion": 32
+    "discussion": 33
    },
-   "lastGrown": "2026-08-29",
+   "lastGrown": "2026-08-30",
    "level": 3
   },
   "bess-hr-manager": {
@@ -310,10 +310,10 @@
    "level": 2
   },
   "bess-it-infra": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 8,
-    "discussion": 19
+    "discussion": 20
    },
    "lastGrown": "2026-08-30",
    "level": 2
@@ -365,10 +365,10 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 9,
-    "discussion": 35
+    "discussion": 36
    },
    "lastGrown": "2026-08-30",
    "level": 3
@@ -647,12 +647,12 @@
    "level": 3
   },
   "bess-substation-engineer": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 7,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-08-30",
    "level": 2
   },
   "bess-system-engineer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-30",
-   "added": 20
+   "added": 21
   }
  ],
  "freshness": {
