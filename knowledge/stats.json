@@ -1,10 +1,10 @@
 {
  "updated": "2026-08-31",
  "totals": {
-  "all": 1716,
+  "all": 1717,
   "briefing": 633,
   "skill": 698,
-  "discussion": 385,
+  "discussion": 386,
   "activity": 0
  },
  "perAgent": {
@@ -74,12 +74,12 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 10,
-    "discussion": 37
+    "discussion": 38
    },
-   "lastGrown": "2026-08-30",
+   "lastGrown": "2026-08-31",
    "level": 3
   },
   "bess-commissioning-coordinator": {
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 9,
-    "discussion": 56
+    "discussion": 57
    },
-   "lastGrown": "2026-08-30",
+   "lastGrown": "2026-08-31",
    "level": 3
   },
   "bess-emerging-markets": {
@@ -238,12 +238,12 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 42,
+   "count": 43,
    "byType": {
     "skill": 9,
-    "discussion": 33
+    "discussion": 34
    },
-   "lastGrown": "2026-08-30",
+   "lastGrown": "2026-08-31",
    "level": 3
   },
   "bess-hr-manager": {
@@ -319,12 +319,12 @@
    "level": 2
   },
   "bess-knowledge-manager": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 9,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-08-31",
    "level": 2
   },
   "bess-labor-safety": {
@@ -448,12 +448,12 @@
    "level": 3
   },
   "bess-power-system-analyst": {
-   "count": 81,
+   "count": 82,
    "byType": {
     "skill": 9,
-    "discussion": 72
+    "discussion": 73
    },
-   "lastGrown": "2026-08-28",
+   "lastGrown": "2026-08-31",
    "level": 4
   },
   "bess-precom-report": {
@@ -602,12 +602,12 @@
    "level": 5
   },
   "bess-standards-poland": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 8,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-08-31",
    "level": 2
   },
   "bess-standards-romania": {
@@ -656,12 +656,12 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 100,
+   "count": 101,
    "byType": {
     "skill": 10,
-    "discussion": 90
+    "discussion": 91
    },
-   "lastGrown": "2026-08-30",
+   "lastGrown": "2026-08-31",
    "level": 4
   },
   "bess-tax-accountant": {
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 9,
-    "discussion": 27,
+    "discussion": 28,
     "briefing": 2
    },
-   "lastGrown": "2026-08-28",
+   "lastGrown": "2026-08-31",
    "level": 3
   },
   "bess-translator": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-08-31",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
