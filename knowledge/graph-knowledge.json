@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-64250dd5c8cd",
+   "name": "팀 토론 — COM-100 기반 시운전 프로세스 최적화를 위한 글로벌 표",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5dae0b116c3e",
    "name": "전기차 넘어선 K배터리…AI·ESS·로봇으로 ‘영토 확장’",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-61a10be8cc7a",
-   "name": "SPOTV NOW 중계 직접 정리한 정보 가이드",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3840,6 +3840,46 @@
   {
    "source": "PRO-001",
    "target": "K-6e1ffbd5ab45",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-64250dd5c8cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-64250dd5c8cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-64250dd5c8cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-64250dd5c8cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-64250dd5c8cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-64250dd5c8cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-64250dd5c8cd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-64250dd5c8cd",
    "type": "knowledge"
   },
   {
@@ -9176,15 +9216,10 @@
    "source": "MAR-001",
    "target": "K-6d3263e9ad68",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-61a10be8cc7a",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "history": [
    {
     "date": "2026-07-20",
@@ -9395,6 +9430,11 @@
     "date": "2026-08-30",
     "knowledge": 400,
     "events_total": 1713
+   },
+   {
+    "date": "2026-08-31",
+    "knowledge": 400,
+    "events_total": 1714
    }
   ]
  }
