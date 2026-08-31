@@ -55,6 +55,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c3c24a273016",
+   "name": "팀 토론 — 각국의 에너지 정책 변화에 따른 글로벌 시장 진입 전략 재평",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-bfa841c06956",
    "name": "3차 ESS 입찰 1GW까지 확대되나…K배터리 3사 '물량·수익성' 격돌",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-20",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5cca0dd9043d",
-   "name": "팀 토론 — 그린본드 발행 전략 재검토를 통한 ESG 재무 성과 최적화 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-20",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3630,6 +3630,46 @@
   {
    "source": "FIR-001",
    "target": "K-c5adb790ef42",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c3c24a273016",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c3c24a273016",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-c3c24a273016",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-c3c24a273016",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c3c24a273016",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-c3c24a273016",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-c3c24a273016",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-c3c24a273016",
    "type": "knowledge"
   },
   {
@@ -8986,46 +9026,6 @@
    "source": "STD-002",
    "target": "K-62e9fd6ae51b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-5cca0dd9043d",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-5cca0dd9043d",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-5cca0dd9043d",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-5cca0dd9043d",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-5cca0dd9043d",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-003",
-   "target": "K-5cca0dd9043d",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-5cca0dd9043d",
-   "type": "knowledge"
-  },
-  {
-   "source": "TAX-002",
-   "target": "K-5cca0dd9043d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9249,7 +9249,7 @@
    {
     "date": "2026-09-01",
     "knowledge": 400,
-    "events_total": 1758
+    "events_total": 1759
    }
   ]
  }

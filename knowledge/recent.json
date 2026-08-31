@@ -68,6 +68,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "c3c24a273016",
+   "date": "2026-09-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-ip-patent-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-tax-korea",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 각국의 에너지 정책 변화에 따른 글로벌 시장 진입 전략 재평가 및 맞춤형 비용 분석 모델 개발 제안",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "bfa841c06956",
    "date": "2026-09-01",
    "type": "briefing",
@@ -3829,17 +3847,6 @@
    "type": "skill",
    "agents": [
     "bess-legal-expert"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "2c65f482a3c7",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-data-analyst"
    ],
    "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
    "link": "",
