@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-36cfb2c1e70e",
+   "name": "팀 토론 — 부지 조성 시 친환경 인프라 통합 설계 검토 및 최적 이격거",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f9821f9210a4",
    "name": "[The Company] 북미 ESS 5대 생산거점 완성…시장 선점 가속",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-68faa2a7326b",
-   "name": "북미 합작사 철회하는 韓배터리…ESS 라인 전환 집중",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-19",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "STD-006",
    "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-36cfb2c1e70e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-36cfb2c1e70e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-36cfb2c1e70e",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-36cfb2c1e70e",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-36cfb2c1e70e",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-36cfb2c1e70e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-36cfb2c1e70e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-36cfb2c1e70e",
    "type": "knowledge"
   },
   {
@@ -9256,11 +9296,6 @@
    "source": "STD-001",
    "target": "K-81ea55696d06",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-68faa2a7326b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9484,7 +9519,7 @@
    {
     "date": "2026-09-01",
     "knowledge": 400,
-    "events_total": 1735
+    "events_total": 1736
    }
   ]
  }

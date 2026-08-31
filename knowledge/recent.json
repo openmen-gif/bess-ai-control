@@ -20,6 +20,24 @@
    "source": "bess-team"
   },
   {
+   "id": "36cfb2c1e70e",
+   "date": "2026-09-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cbop-engineer",
+    "bess-customs-tariff",
+    "bess-emc-analyst",
+    "bess-env-engineer",
+    "bess-grounding-engineer",
+    "bess-hse-manager",
+    "bess-site-manager"
+   ],
+   "title": "팀 토론 — 부지 조성 시 친환경 인프라 통합 설계 검토 및 최적 이격거리 설정 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f9821f9210a4",
    "date": "2026-08-31",
    "type": "briefing",
@@ -3833,24 +3851,6 @@
    "title": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 — 가드레일 +5항, 운영 학습 30개 파일",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "cd41bc596c64",
-   "date": "2026-08-22",
-   "type": "discussion",
-   "agents": [
-    "bess-contract-specialist",
-    "bess-hse-manager",
-    "bess-legal-expert",
-    "bess-pcs-expert",
-    "bess-risk-manager",
-    "bess-standards-analyst",
-    "bess-system-engineer",
-    "bess-transformer-expert"
-   ],
-   "title": "팀 토론 — FIDIC 계약 조건 분석 및 최적화 전략 수립으로 계약 리스크 최소화",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

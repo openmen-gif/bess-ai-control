@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-01",
  "totals": {
-  "all": 1735,
+  "all": 1736,
   "briefing": 645,
   "skill": 698,
-  "discussion": 392,
+  "discussion": 393,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 388,
+   "count": 389,
    "byType": {
     "skill": 11,
-    "discussion": 172,
+    "discussion": 173,
     "briefing": 205
    },
    "lastGrown": "2026-09-01",
@@ -56,12 +56,12 @@
    "level": 3
   },
   "bess-cbop-engineer": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 10,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-08-30",
+   "lastGrown": "2026-09-01",
    "level": 3
   },
   "bess-cfd-analyst": {
@@ -110,12 +110,12 @@
    "level": 5
   },
   "bess-customs-tariff": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 11,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-30",
+   "lastGrown": "2026-09-01",
    "level": 3
   },
   "bess-cybersecurity-expert": {
@@ -146,10 +146,10 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 67,
+   "count": 68,
    "byType": {
     "skill": 9,
-    "discussion": 58
+    "discussion": 59
    },
    "lastGrown": "2026-09-01",
    "level": 3
@@ -164,12 +164,12 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 9,
-    "discussion": 46
+    "discussion": 47
    },
-   "lastGrown": "2026-08-31",
+   "lastGrown": "2026-09-01",
    "level": 3
   },
   "bess-epc-bom": {
@@ -238,10 +238,10 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 9,
-    "discussion": 35
+    "discussion": 36
    },
    "lastGrown": "2026-09-01",
    "level": 3
@@ -256,12 +256,12 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 81,
+   "count": 82,
    "byType": {
     "skill": 10,
-    "discussion": 71
+    "discussion": 72
    },
-   "lastGrown": "2026-08-31",
+   "lastGrown": "2026-09-01",
    "level": 4
   },
   "bess-hybrid-specialist": {
@@ -547,12 +547,12 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 9,
-    "discussion": 32
+    "discussion": 33
    },
-   "lastGrown": "2026-08-27",
+   "lastGrown": "2026-09-01",
    "level": 3
   },
   "bess-standards-analyst": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-01",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-08-31",
-   "gapDays": 1,
+   "previousUpdated": "2026-09-01",
+   "gapDays": 0,
    "overdue": false
   }
  }
