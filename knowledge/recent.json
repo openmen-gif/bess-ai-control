@@ -144,6 +144,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "5f720518c9a2",
+   "date": "2026-08-31",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-internal-auditor",
+    "bess-mlops-engineer",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 시운전 프로세스의 자동 최적화 알고리즘 개발 및 COM-002 적용 시나리오 작성",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "4609f6295e62",
    "date": "2026-08-31",
    "type": "briefing",
@@ -3805,17 +3823,6 @@
    "title": "세계 최초 100% 직류 공장 가동...AI시대 빅테크 관심, LS일렉에 쏠린다",
    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFB0YnFUc1lJQjR1MGVuY2QxSjJUci1UcUtNdy1XZUd0a3g5QlJEd29sVVFtUDVuMFhUdC1nVDUybmMxRWJ0dGc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "ae21dc9eda80",
-   "date": "2026-08-22",
-   "type": "skill",
-   "agents": [
-    "bess-env-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 — 가드레일 +5항, 운영 학습 30개 파일",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
