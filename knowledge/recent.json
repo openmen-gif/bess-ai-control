@@ -224,6 +224,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "26dcb0ae8268",
+   "date": "2026-08-31",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-esg-finance",
+    "bess-fire-engineer",
+    "bess-fit-procedure",
+    "bess-hse-manager",
+    "bess-internal-auditor",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 시운전·EMS 영역 현황 진단 — bess-fit-procedure 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "01fd445f3f57",
    "date": "2026-08-31",
    "type": "discussion",
@@ -3819,17 +3837,6 @@
    "title": "힘 받는 최윤범의 '트로이카 드라이브', 고려아연 성장 탄력",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5majdRMkJsaFl5OFBQRHZPelV3SjV2NzF0cjMtRVJfc19CTTNQTGs3N2hOUEk4TFpsTnN1MGNNU1oyVXN4UTJWLVpWZE43TUVjbWw5bGlmRkFWT2xhUXc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "aff0adcc0e0b",
-   "date": "2026-08-22",
-   "type": "skill",
-   "agents": [
-    "bess-cost-analyst"
-   ],
-   "title": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 — 가드레일 +5항, 운영 학습 30개 파일",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

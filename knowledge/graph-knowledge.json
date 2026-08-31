@@ -154,6 +154,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-26dcb0ae8268",
+   "name": "팀 토론 — 시운전·EMS 영역 현황 진단 — bess-fit-proce",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-01fd445f3f57",
    "name": "팀 토론 — 예측모델·최적화 영역 현황 진단 — bess-aiml-eng",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-5e7de8f6c2fc",
-   "name": "팀 토론 — HS코드·배터리 영역 리스크 평가 — bess-customs",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-19",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3860,6 +3860,46 @@
   {
    "source": "BAT-001",
    "target": "K-2a8000ed2cc3",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-26dcb0ae8268",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-26dcb0ae8268",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-26dcb0ae8268",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-26dcb0ae8268",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-26dcb0ae8268",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-26dcb0ae8268",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-26dcb0ae8268",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-26dcb0ae8268",
    "type": "knowledge"
   },
   {
@@ -9181,46 +9221,6 @@
    "source": "STD-001",
    "target": "K-5fab5713ce0b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-5e7de8f6c2fc",
-   "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-5e7de8f6c2fc",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-5e7de8f6c2fc",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-5e7de8f6c2fc",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-5e7de8f6c2fc",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-5e7de8f6c2fc",
-   "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-5e7de8f6c2fc",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-5e7de8f6c2fc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9439,7 +9439,7 @@
    {
     "date": "2026-08-31",
     "knowledge": 400,
-    "events_total": 1732
+    "events_total": 1733
    }
   ]
  }
