@@ -2,6 +2,24 @@
  "updated": "2026-09-01",
  "events": [
   {
+   "id": "a050d8cb862c",
+   "date": "2026-09-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-procurement-expert",
+    "bess-standards-romania",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 배터리 화학종 선택에 대한 최신 안전 기준 검증 및 기업별 적합성 평가 진행 (\"@bess-battery-expert\")",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "75f48885cb2a",
    "date": "2026-09-01",
    "type": "discussion",
@@ -3840,17 +3858,6 @@
    "title": "스탠다드에너지, 한양대학교에 바나듐 이온 배터리 ESS 본격 가동",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54dE9hV0VTWjhoamx5ckdmU1N3VExMX1Eyc29HclVwa3FJTFpBQWR2d3otMGdsd2Q4NjdqRTVZVzh3N293aER0N3M1ck0yMV9pNjNUUVJQTHpGbUZxRmlDbXowbEttZnU2YVFvTy16VUvSAXBBVV95cUxOeHRPYVdFU1o4aGpseXJHZlNTd1RMTF9RMnNvR3JVcGtxSUxaQUFkdnd6LTBnbHdkODY3akU1WVc4dzdvd2hEdDdzNXJNMjFfaTYzVFFSUEx6Rm1GcUZpQ216MGxLbWZ1NmFRb08telVL?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "ce1558afcc4d",
-   "date": "2026-08-22",
-   "type": "skill",
-   "agents": [
-    "bess-cybersecurity-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 — 가드레일 +5항, 운영 학습 30개 파일",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

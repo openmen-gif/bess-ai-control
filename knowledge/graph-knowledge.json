@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-a050d8cb862c",
+   "name": "팀 토론 — 배터리 화학종 선택에 대한 최신 안전 기준 검증 및 기업별 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-75f48885cb2a",
    "name": "팀 토론 — 케이블·사이징·루팅 영역 초안 작성 — bess-cable-",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-19",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-81ea55696d06",
-   "name": "태양광협회 “지역별 전기요금, 기존 발전사업자 희생시켜선 안 돼”",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-a050d8cb862c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a050d8cb862c",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-a050d8cb862c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a050d8cb862c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a050d8cb862c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a050d8cb862c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-a050d8cb862c",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-a050d8cb862c",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-75f48885cb2a",
@@ -9291,11 +9331,6 @@
    "source": "BAT-001",
    "target": "K-87223dd0073a",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-81ea55696d06",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9519,7 +9554,7 @@
    {
     "date": "2026-09-01",
     "knowledge": 400,
-    "events_total": 1736
+    "events_total": 1737
    }
   ]
  }
