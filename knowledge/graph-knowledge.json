@@ -109,6 +109,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-4dfde0a8c085",
+   "name": "팀 토론 — 부지 조성 단계에서 친환경 자재 사용 비율 최적화 방안 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-08-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-4609f6295e62",
    "name": "[발전사 이모저모] 서부, 중앙亞 재생에너지 시장 노린다 |",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-19",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-5fab5713ce0b",
-   "name": "아이티아이즈, 재생에너지 전력거래 플랫폼 ‘엠포그리드’ 출시",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3800,6 +3800,46 @@
   {
    "source": "SYS-001",
    "target": "K-5f720518c9a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4dfde0a8c085",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4dfde0a8c085",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-4dfde0a8c085",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-4dfde0a8c085",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-4dfde0a8c085",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-4dfde0a8c085",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-4dfde0a8c085",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-4dfde0a8c085",
    "type": "knowledge"
   },
   {
@@ -9216,11 +9256,6 @@
    "source": "KTX-001",
    "target": "K-61d6bd248f25",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-5fab5713ce0b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9439,7 +9474,7 @@
    {
     "date": "2026-08-31",
     "knowledge": 400,
-    "events_total": 1733
+    "events_total": 1734
    }
   ]
  }
