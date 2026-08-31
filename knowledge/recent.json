@@ -1,6 +1,24 @@
 {
- "updated": "2026-08-31",
+ "updated": "2026-09-01",
  "events": [
+  {
+   "id": "75f48885cb2a",
+   "date": "2026-09-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-cost-analyst",
+    "bess-emc-analyst",
+    "bess-grounding-engineer",
+    "bess-procurement-expert",
+    "bess-security-expert",
+    "bess-standards-uk"
+   ],
+   "title": "팀 토론 — 케이블·사이징·루팅 영역 초안 작성 — bess-cable-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f9821f9210a4",
    "date": "2026-08-31",
@@ -3833,17 +3851,6 @@
    "title": "팀 토론 — FIDIC 계약 조건 분석 및 최적화 전략 수립으로 계약 리스크 최소화",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "b8322525d247",
-   "date": "2026-08-22",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "데이터센터 전력 해법은 태양광+ESS인가",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE05S2dpMXhRamxtVk9JYmM1OUJMd05SNDBDd045b2FJakpjZURkdXNnd3FJWnBhZjVUNktleDdLR0pabEk?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

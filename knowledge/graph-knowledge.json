@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-75f48885cb2a",
+   "name": "팀 토론 — 케이블·사이징·루팅 영역 초안 작성 — bess-cable-",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f9821f9210a4",
    "name": "[The Company] 북미 ESS 5대 생산거점 완성…시장 선점 가속",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-19",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-61d6bd248f25",
-   "name": "팀 토론 — 관세 최적화 전략 수립을 통한 글로벌 공급망 효율성 향상 및",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-19",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-75f48885cb2a",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-f9821f9210a4",
@@ -9221,45 +9261,10 @@
    "source": "BAT-001",
    "target": "K-68faa2a7326b",
    "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-61d6bd248f25",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-61d6bd248f25",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCV-500",
-   "target": "K-61d6bd248f25",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-61d6bd248f25",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-61d6bd248f25",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-61d6bd248f25",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-61d6bd248f25",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "history": [
    {
     "date": "2026-07-20",
@@ -9475,6 +9480,11 @@
     "date": "2026-08-31",
     "knowledge": 400,
     "events_total": 1734
+   },
+   {
+    "date": "2026-09-01",
+    "knowledge": 400,
+    "events_total": 1735
    }
   ]
  }
