@@ -1,8 +1,8 @@
 {
  "updated": "2026-09-02",
  "totals": {
-  "all": 1804,
-  "briefing": 666,
+  "all": 1819,
+  "briefing": 681,
   "skill": 734,
   "discussion": 404,
   "activity": 0
@@ -26,11 +26,11 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 406,
+   "count": 411,
    "byType": {
     "skill": 12,
     "discussion": 184,
-    "briefing": 210
+    "briefing": 215
    },
    "lastGrown": "2026-09-02",
    "level": 5
@@ -209,11 +209,11 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 162,
+   "count": 163,
    "byType": {
     "skill": 11,
     "discussion": 106,
-    "briefing": 45
+    "briefing": 46
    },
    "lastGrown": "2026-09-02",
    "level": 5
@@ -355,13 +355,13 @@
    "level": 3
   },
   "bess-marketer": {
-   "count": 236,
+   "count": 243,
    "byType": {
     "skill": 11,
     "discussion": 53,
-    "briefing": 172
+    "briefing": 179
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-02",
    "level": 5
   },
   "bess-mlops-engineer": {
@@ -556,11 +556,11 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 158,
+   "count": 160,
    "byType": {
     "skill": 10,
     "discussion": 27,
-    "briefing": 121
+    "briefing": 123
    },
    "lastGrown": "2026-09-02",
    "level": 5
@@ -1116,13 +1116,13 @@
   },
   {
    "date": "2026-09-02",
-   "added": 4
+   "added": 19
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-09-01",
-   "staleDays": 1,
+   "latestSource": "2026-09-02",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
