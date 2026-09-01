@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-02",
  "totals": {
-  "all": 1802,
+  "all": 1803,
   "briefing": 666,
   "skill": 734,
-  "discussion": 402,
+  "discussion": 403,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 404,
+   "count": 405,
    "byType": {
     "skill": 12,
-    "discussion": 182,
+    "discussion": 183,
     "briefing": 210
    },
    "lastGrown": "2026-09-02",
@@ -65,12 +65,12 @@
    "level": 3
   },
   "bess-cfd-analyst": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 12,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-02",
    "level": 3
   },
   "bess-circuit-breaker-expert": {
@@ -146,10 +146,10 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 70,
+   "count": 71,
    "byType": {
     "skill": 10,
-    "discussion": 60
+    "discussion": 61
    },
    "lastGrown": "2026-09-02",
    "level": 4
@@ -164,10 +164,10 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 10,
-    "discussion": 51
+    "discussion": 52
    },
    "lastGrown": "2026-09-02",
    "level": 3
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 161,
+   "count": 162,
    "byType": {
     "skill": 11,
-    "discussion": 105,
+    "discussion": 106,
     "briefing": 45
    },
    "lastGrown": "2026-09-02",
@@ -228,13 +228,13 @@
    "level": 2
   },
   "bess-grid-interconnection": {
-   "count": 58,
+   "count": 59,
    "byType": {
     "skill": 10,
-    "discussion": 37,
+    "discussion": 38,
     "briefing": 11
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-02",
    "level": 3
   },
   "bess-grounding-engineer": {
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 89,
+   "count": 90,
    "byType": {
     "skill": 11,
-    "discussion": 78
+    "discussion": 79
    },
    "lastGrown": "2026-09-02",
    "level": 4
@@ -457,12 +457,12 @@
    "level": 4
   },
   "bess-precom-report": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 7,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-08-28",
+   "lastGrown": "2026-09-02",
    "level": 2
   },
   "bess-presentation-designer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-02",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {

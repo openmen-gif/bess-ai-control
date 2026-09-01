@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-331167ceaa0b",
+   "name": "팀 토론 — CFD 시뮬레이션을 활용한 액냉 시스템 최적화 설계 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-237ab0642923",
    "name": "팀 토론 — 환경 폐기물 관리 비용 및 탄소 발자국 감소 효과 분석을 위",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3936b032e968",
-   "name": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-331167ceaa0b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-331167ceaa0b",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-331167ceaa0b",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-331167ceaa0b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-331167ceaa0b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-331167ceaa0b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-331167ceaa0b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-331167ceaa0b",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-237ab0642923",
@@ -8806,11 +8846,6 @@
    "source": "CFD-001",
    "target": "K-396193d56bc9",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-3936b032e968",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9039,7 +9074,7 @@
    {
     "date": "2026-09-02",
     "knowledge": 400,
-    "events_total": 1802
+    "events_total": 1803
    }
   ]
  }

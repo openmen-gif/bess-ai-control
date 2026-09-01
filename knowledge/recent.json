@@ -2,6 +2,24 @@
  "updated": "2026-09-02",
  "events": [
   {
+   "id": "331167ceaa0b",
+   "date": "2026-09-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cfd-analyst",
+    "bess-emc-analyst",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-hse-manager",
+    "bess-precom-report"
+   ],
+   "title": "팀 토론 — CFD 시뮬레이션을 활용한 액냉 시스템 최적화 설계 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "237ab0642923",
    "date": "2026-09-02",
    "type": "discussion",
@@ -3874,17 +3892,6 @@
    "title": "삼성SDI, 삼성디스플레이 지분 팔아 4.45조 확보",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA2T3ZVWGVKZW1QempGTmZualFQclE2eU5ZMktDRVZDMEZ2OXVNcjhySzRISExYcHo3NGRlTDNxc2piQUNLYkgxdDNOclAzcDZ6TXphcW85a01aT3hqT1Z2aVpGb0RNWVZTR0xOYdIBcEFVX3lxTFBpU2h0Smt6UTVELV9GRmRkNENvRWU5Vkc0S21QSy1RQ0lFcHhsNTlFcmhpQ1E5MUVtY3A0Q2l3RE9GS2wwRUpmRW5CM3pjR3IyQ3lZZzlGLTZzY1BYWXVIQVpJMTJ6ZUQtOUFfeTNuOEI?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "b4ca800d4d45",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-facility-manager"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
