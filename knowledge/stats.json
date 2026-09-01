@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-02",
  "totals": {
-  "all": 1801,
+  "all": 1802,
   "briefing": 666,
   "skill": 734,
-  "discussion": 401,
+  "discussion": 402,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 403,
+   "count": 404,
    "byType": {
     "skill": 12,
-    "discussion": 181,
+    "discussion": 182,
     "briefing": 210
    },
    "lastGrown": "2026-09-02",
@@ -101,12 +101,12 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 170,
+   "count": 171,
    "byType": {
     "skill": 12,
-    "discussion": 158
+    "discussion": 159
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-02",
    "level": 5
   },
   "bess-customs-tariff": {
@@ -128,12 +128,12 @@
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 72,
+   "count": 73,
    "byType": {
     "skill": 11,
-    "discussion": 61
+    "discussion": 62
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-02",
    "level": 4
   },
   "bess-ebop-engineer": {
@@ -164,12 +164,12 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 60,
+   "count": 61,
    "byType": {
     "skill": 10,
-    "discussion": 50
+    "discussion": 51
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-02",
    "level": 3
   },
   "bess-epc-bom": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 160,
+   "count": 161,
    "byType": {
     "skill": 11,
-    "discussion": 104,
+    "discussion": 105,
     "briefing": 45
    },
    "lastGrown": "2026-09-02",
@@ -475,12 +475,12 @@
    "level": 2
   },
   "bess-procurement-data": {
-   "count": 17,
+   "count": 18,
    "byType": {
     "skill": 6,
-    "discussion": 11
+    "discussion": 12
    },
-   "lastGrown": "2026-08-25",
+   "lastGrown": "2026-09-02",
    "level": 2
   },
   "bess-procurement-expert": {
@@ -702,12 +702,12 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 103,
+   "count": 104,
    "byType": {
     "skill": 11,
-    "discussion": 92
+    "discussion": 93
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-02",
    "level": 4
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-02",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-09-01",
-   "gapDays": 1,
+   "previousUpdated": "2026-09-02",
+   "gapDays": 0,
    "overdue": false
   }
  }

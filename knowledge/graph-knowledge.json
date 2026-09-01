@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-237ab0642923",
+   "name": "팀 토론 — 환경 폐기물 관리 비용 및 탄소 발자국 감소 효과 분석을 위",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1a47db81a736",
    "name": "팀 토론 — 변압기 설계 최적화를 위한 최신 SLD 및 Arc Flash",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-375548b88144",
-   "name": "한국요꼬가와전기, 고전압 정밀계측 시장 공략",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-237ab0642923",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-237ab0642923",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-237ab0642923",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-237ab0642923",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-237ab0642923",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-237ab0642923",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-237ab0642923",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-1a47db81a736",
@@ -8776,11 +8811,6 @@
    "source": "STD-001",
    "target": "K-3936b032e968",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-375548b88144",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9009,7 +9039,7 @@
    {
     "date": "2026-09-02",
     "knowledge": 400,
-    "events_total": 1801
+    "events_total": 1802
    }
   ]
  }

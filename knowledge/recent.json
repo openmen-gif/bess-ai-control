@@ -2,6 +2,23 @@
  "updated": "2026-09-02",
  "events": [
   {
+   "id": "237ab0642923",
+   "date": "2026-09-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-procurement-data",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 환경 폐기물 관리 비용 및 탄소 발자국 감소 효과 분석을 위한 세부 비용 모델 개발 및 통합 전략 수립 (@bess-cost-analyst vs @bess-fire-engineer)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "1a47db81a736",
    "date": "2026-09-02",
    "type": "discussion",
@@ -3864,17 +3881,6 @@
    "type": "skill",
    "agents": [
     "bess-facility-manager"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "b22300397e73",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-battery-expert"
    ],
    "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
    "link": "",
