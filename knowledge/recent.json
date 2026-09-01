@@ -119,6 +119,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "7bbcc5b2571a",
+   "date": "2026-09-02",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-fire-engineer",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — FIDIC Silver/Yellow 계약 조건 적용 방안 검토 및 지역별 리스크 평가 강화",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "7731588a16fb",
    "date": "2026-09-02",
    "type": "briefing",
@@ -3867,17 +3885,6 @@
    "title": "팀 토론 — 고밀도 모듈 안전성 평가의 국제 표준 적합성 검토를 통해 국내 설계 개선 방안 마련 및 사이버 보안 강화 전략 수립 요청",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "ea3cacf604f6",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-project-manager"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
