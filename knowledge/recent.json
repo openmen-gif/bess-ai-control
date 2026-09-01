@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-01",
+ "updated": "2026-09-02",
  "events": [
+  {
+   "id": "1a47db81a736",
+   "date": "2026-09-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-emc-analyst",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-hse-manager",
+    "bess-permit-europe",
+    "bess-standards-analyst"
+   ],
+   "title": "팀 토론 — 변압기 설계 최적화를 위한 최신 SLD 및 Arc Flash 분석 가이드라인 적용 검토",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fb5efec77d17",
    "date": "2026-09-01",
@@ -3861,17 +3879,6 @@
    "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "aaac558b6799",
-   "date": "2026-08-23",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "힘 받는 최윤범의 '트로이카 드라이브', 고려아연 성장 탄력",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzdXVIN0JjUnV4NlZXNTdHczVZbldxUWprZ3FzWFVJX194a2JqcmNjTlZveVdsWklKMFJaN1djVTNSVUkzWUFHQ3o4bkd5NkZwM2U0?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

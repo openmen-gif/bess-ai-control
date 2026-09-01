@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-1a47db81a736",
+   "name": "팀 토론 — 변압기 설계 최적화를 위한 최신 SLD 및 Arc Flash",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fb5efec77d17",
    "name": "LG엔솔, 美서 배터리용 리튬 10년치 확보…트럼프 공급망 재편 대응 -",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-348171640a81",
-   "name": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-1a47db81a736",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-1a47db81a736",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-1a47db81a736",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-1a47db81a736",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-1a47db81a736",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-1a47db81a736",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-1a47db81a736",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-1a47db81a736",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-fb5efec77d17",
@@ -8741,15 +8781,10 @@
    "source": "PCS-001",
    "target": "K-375548b88144",
    "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-348171640a81",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "history": [
    {
     "date": "2026-07-20",
@@ -8970,6 +9005,11 @@
     "date": "2026-09-01",
     "knowledge": 400,
     "events_total": 1800
+   },
+   {
+    "date": "2026-09-02",
+    "knowledge": 400,
+    "events_total": 1801
    }
   ]
  }
