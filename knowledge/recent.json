@@ -203,6 +203,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "b1ee4466760b",
+   "date": "2026-09-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-contract-specialist",
+    "bess-cybersecurity-expert",
+    "bess-env-engineer",
+    "bess-facility-manager",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-permit-europe"
+   ],
+   "title": "팀 토론 — 설비관리·유지보수 영역 벤치마킹 — bess-facility-manager 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "b0e44eb31525",
    "date": "2026-09-01",
    "type": "skill",
@@ -3847,24 +3865,6 @@
    "title": "볼타-광운대, 소디움이온배터리 기반 ESS 기술개발·실증 협력",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBna2xrQll1cFFkTVVyY25fNlQzZjBNcGd2UVVQeHQ3dml0WmJVMkVQak1XcUFRWXFteDF2cTllWWZwRmVfRW9CSnNWSlV1VTVHVEZj?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "a9ead11ceca5",
-   "date": "2026-08-23",
-   "type": "discussion",
-   "agents": [
-    "bess-cost-analyst",
-    "bess-legal-expert",
-    "bess-pcs-expert",
-    "bess-power-system-analyst",
-    "bess-qaqc-engineer",
-    "bess-standards-korea",
-    "bess-system-engineer",
-    "bess-training-expert"
-   ],
-   "title": "팀 토론 — 한국요꼬가와전기의 고전압 파워아날라이저 'WT1500' 출시를 계기로, 글로벌 고전압 시스템 통합 전략 수립 및 기술 경쟁력 강화 방안 검토",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

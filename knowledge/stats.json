@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-01",
  "totals": {
-  "all": 1798,
+  "all": 1799,
   "briefing": 666,
   "skill": 734,
-  "discussion": 398,
+  "discussion": 399,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 400,
+   "count": 401,
    "byType": {
     "skill": 12,
-    "discussion": 178,
+    "discussion": 179,
     "briefing": 210
    },
    "lastGrown": "2026-09-01",
@@ -92,12 +92,12 @@
    "level": 3
   },
   "bess-contract-specialist": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 10,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-08-31",
+   "lastGrown": "2026-09-01",
    "level": 3
   },
   "bess-cost-analyst": {
@@ -119,10 +119,10 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 70,
+   "count": 71,
    "byType": {
     "skill": 11,
-    "discussion": 59
+    "discussion": 60
    },
    "lastGrown": "2026-09-01",
    "level": 4
@@ -164,10 +164,10 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 59,
+   "count": 60,
    "byType": {
     "skill": 10,
-    "discussion": 49
+    "discussion": 50
    },
    "lastGrown": "2026-09-01",
    "level": 3
@@ -191,10 +191,10 @@
    "level": 3
   },
   "bess-facility-manager": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 10,
-    "discussion": 24
+    "discussion": 25
    },
    "lastGrown": "2026-09-01",
    "level": 3
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 157,
+   "count": 158,
    "byType": {
     "skill": 11,
-    "discussion": 101,
+    "discussion": 102,
     "briefing": 45
    },
    "lastGrown": "2026-09-01",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 86,
+   "count": 87,
    "byType": {
     "skill": 11,
-    "discussion": 75
+    "discussion": 76
    },
    "lastGrown": "2026-09-01",
    "level": 4
@@ -429,12 +429,12 @@
    "level": 2
   },
   "bess-permit-europe": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 8,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-31",
+   "lastGrown": "2026-09-01",
    "level": 2
   },
   "bess-power-market-expert": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-01",
-   "added": 64
+   "added": 65
   }
  ],
  "freshness": {
