@@ -152,6 +152,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "bfd618e0ed79",
+   "date": "2026-09-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-emerging-markets",
+    "bess-fire-engineer",
+    "bess-legal-expert",
+    "bess-output-generator",
+    "bess-standards-eu",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 각국의 에너지 정책 변화에 따른 신흥시장 (인도, UAE/사우디, 동남아 ASEAN) 맞춤형 BESS 비용 및 규제 준수 분석 모델 개발 제안",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "bfa841c06956",
    "date": "2026-09-01",
    "type": "briefing",
@@ -3847,17 +3865,6 @@
    "title": "팀 토론 — 한국요꼬가와전기의 고전압 파워아날라이저 'WT1500' 출시를 계기로, 글로벌 고전압 시스템 통합 전략 수립 및 기술 경쟁력 강화 방안 검토",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "a3feea96f852",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-emc-analyst"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

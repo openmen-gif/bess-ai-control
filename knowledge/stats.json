@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-01",
  "totals": {
-  "all": 1797,
+  "all": 1798,
   "briefing": 666,
   "skill": 734,
-  "discussion": 397,
+  "discussion": 398,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 399,
+   "count": 400,
    "byType": {
     "skill": 12,
-    "discussion": 177,
+    "discussion": 178,
     "briefing": 210
    },
    "lastGrown": "2026-09-01",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 169,
+   "count": 170,
    "byType": {
     "skill": 12,
-    "discussion": 157
+    "discussion": 158
    },
    "lastGrown": "2026-09-01",
    "level": 5
@@ -155,10 +155,10 @@
    "level": 3
   },
   "bess-emerging-markets": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 11,
-    "discussion": 27
+    "discussion": 28
    },
    "lastGrown": "2026-09-01",
    "level": 3
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 156,
+   "count": 157,
    "byType": {
     "skill": 11,
-    "discussion": 100,
+    "discussion": 101,
     "briefing": 45
    },
    "lastGrown": "2026-09-01",
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 119,
+   "count": 120,
    "byType": {
     "skill": 11,
-    "discussion": 108
+    "discussion": 109
    },
    "lastGrown": "2026-09-01",
    "level": 4
@@ -392,12 +392,12 @@
    "level": 2
   },
   "bess-output-generator": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 9,
-    "discussion": 24
+    "discussion": 25
    },
-   "lastGrown": "2026-08-23",
+   "lastGrown": "2026-09-01",
    "level": 3
   },
   "bess-pcs-expert": {
@@ -575,12 +575,12 @@
    "level": 2
   },
   "bess-standards-eu": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 8,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-08-30",
+   "lastGrown": "2026-09-01",
    "level": 2
   },
   "bess-standards-japan": {
@@ -702,10 +702,10 @@
    "level": 2
   },
   "bess-tax-korea": {
-   "count": 102,
+   "count": 103,
    "byType": {
     "skill": 11,
-    "discussion": 91
+    "discussion": 92
    },
    "lastGrown": "2026-09-01",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-01",
-   "added": 63
+   "added": 64
   }
  ],
  "freshness": {
