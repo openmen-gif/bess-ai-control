@@ -357,6 +357,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "7ef2ab6fbf5b",
+   "date": "2026-09-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cybersecurity-expert",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-internal-auditor",
+    "bess-logistics-expert",
+    "bess-pcs-expert"
+   ],
+   "title": "팀 토론 — 보안 거버넌스 프레임워크 구축 및 정기 보안 감사 프로세스 도입",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "7db8621dffec",
    "date": "2026-09-01",
    "type": "skill",
@@ -3836,17 +3854,6 @@
    "type": "skill",
    "agents": [
     "bess-emc-analyst"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "a3d440757013",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-hydrogen-specialist"
    ],
    "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
    "link": "",
