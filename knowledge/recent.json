@@ -20,6 +20,24 @@
    "source": "bess-team"
   },
   {
+   "id": "d394ef370052",
+   "date": "2026-09-03",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-mlops-engineer",
+    "bess-pcs-expert",
+    "bess-standards-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 SOC 예측 알고리즘 개발을 통해 장기적인 배터리 성능 최적화 방안 제시",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fa3d9c951a83",
    "date": "2026-09-02",
    "type": "briefing",
@@ -3901,17 +3919,6 @@
    ],
    "title": "점유율 추락한 일본 배터리…AI 전원시장서 반전 노린다",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBadVhleDdPUWdzcVZVTlpJVXI4ZmcwakVUQzQ1cjFkc3JJZ0hDR1BEaG1VVGF3VDU5WTltaVJzdXJOS2VvSkNfWEQ4eHg5dmNnUE5v?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "fa33f75cd2d0",
-   "date": "2026-08-23",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "정부, 미래폐자원 순환이용 기준 손질…폐배터리부터 풍력설비까지",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9SYlJXdjlWWGJXNXNRMGhqMkdjOXQ0SUJybXhlM29Pd3J1b0RXOXRULWh5TUNlT3huaVE1VlNaMm5WNG9rTkNkdGxJRWRCVTktRm0wTVEyWHJ5TktSMWZqRzdfa1V4UUlDSUpKcg?oc=5",
    "source": "구글뉴스"
   }
  ]

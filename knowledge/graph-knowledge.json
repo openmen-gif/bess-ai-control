@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d394ef370052",
+   "name": "팀 토론 — AI 기반 SOC 예측 알고리즘 개발을 통해 장기적인 배터리",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa3d9c951a83",
    "name": "SK온, 美 네오볼타에 9GWh 배터리 셀 공급…ESS 승부수 : 네이버",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-9c9865870167",
-   "name": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "STD-001",
    "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d394ef370052",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-d394ef370052",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d394ef370052",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-d394ef370052",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-d394ef370052",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-d394ef370052",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-d394ef370052",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d394ef370052",
    "type": "knowledge"
   },
   {
@@ -9046,11 +9086,6 @@
    "source": "EMT-001",
    "target": "K-9e610d5efe27",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-9c9865870167",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9284,7 +9319,7 @@
    {
     "date": "2026-09-03",
     "knowledge": 400,
-    "events_total": 1826
+    "events_total": 1827
    }
   ]
  }
