@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d7856360790f",
+   "name": "팀 토론 — 운영 데이터 분석을 통한 실시간 BESS 성능 최적화 대시보",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ca8419a1efc7",
    "name": "팀 토론 — 글로벌 하이브리드 에너지 프로젝트 입찰 전략 수립 및 JV ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8a9555b6774b",
-   "name": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3670,6 +3670,46 @@
   {
    "source": "KTX-001",
    "target": "K-d8462b935f1a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d7856360790f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d7856360790f",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-d7856360790f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-d7856360790f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-d7856360790f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-d7856360790f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-d7856360790f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d7856360790f",
    "type": "knowledge"
   },
   {
@@ -8976,11 +9016,6 @@
    "source": "CAB-001",
    "target": "K-97e1e1754f3e",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-8a9555b6774b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9209,7 +9244,7 @@
    {
     "date": "2026-09-02",
     "knowledge": 400,
-    "events_total": 1824
+    "events_total": 1825
    }
   ]
  }
