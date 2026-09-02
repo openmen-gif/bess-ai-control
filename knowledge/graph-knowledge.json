@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-ca8419a1efc7",
+   "name": "팀 토론 — 글로벌 하이브리드 에너지 프로젝트 입찰 전략 수립 및 JV ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a57cd9b73edb",
    "name": "엘앤에프·포스코퓨처엠, 美 ESS 시장 확대 기대감에 강세",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-72c3909a1e8d",
-   "name": "폐배터리 넘어 모터·풍력설비까지…‘미래폐자원 순환경제’ 기반 넓힌다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3670,6 +3670,46 @@
   {
    "source": "KTX-001",
    "target": "K-d8462b935f1a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ca8419a1efc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-ca8419a1efc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-ca8419a1efc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-ca8419a1efc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-ca8419a1efc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-ca8419a1efc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ca8419a1efc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-ca8419a1efc7",
    "type": "knowledge"
   },
   {
@@ -8861,11 +8901,6 @@
    "source": "TRN-001",
    "target": "K-7f625bdbbf4b",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-72c3909a1e8d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9094,7 +9129,7 @@
    {
     "date": "2026-09-02",
     "knowledge": 400,
-    "events_total": 1820
+    "events_total": 1821
    }
   ]
  }
