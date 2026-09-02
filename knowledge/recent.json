@@ -115,6 +115,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "a38a19037120",
+   "date": "2026-09-02",
+   "type": "discussion",
+   "agents": [
+    "bess-commissioning-coordinator",
+    "bess-customs-tariff",
+    "bess-emc-analyst",
+    "bess-fit-procedure",
+    "bess-procurement-expert",
+    "bess-site-manager",
+    "bess-system-engineer",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — COM-100 시운전 프로세스 최적화 매뉴얼 개발 및 현장 적용 시뮬레이션 실행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "9ebaee66782d",
    "date": "2026-09-02",
    "type": "briefing",
@@ -3888,17 +3906,6 @@
    "title": "팀 토론 — EIA 환경영향평가 절차 최적화 계획 수립 및 현지 생태계 보호 전략 연계",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "f70e1f89e466",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-risk-manager"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
