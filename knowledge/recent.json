@@ -199,6 +199,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "3f0b8ebb6102",
+   "date": "2026-09-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 지역별 표준 불일치 해소를 위한 FIDIC 조건 맞춤형 가이드라인 개발 및 적용 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "35b6146aecdc",
    "date": "2026-09-02",
    "type": "briefing",
@@ -3870,17 +3888,6 @@
    "type": "skill",
    "agents": [
     "bess-transfer-pricing"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f3d22e25f5f4",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-it-infra"
    ],
    "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
    "link": "",

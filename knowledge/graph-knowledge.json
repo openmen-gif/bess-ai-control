@@ -145,6 +145,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-3f0b8ebb6102",
+   "name": "팀 토론 — 지역별 표준 불일치 해소를 위한 FIDIC 조건 맞춤형 가이",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-35b6146aecdc",
    "name": "美 '탈중국 기조'에 웃는 K배터리… ESS 점유율 5%P ↑ - 머니투",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-7f625bdbbf4b",
-   "name": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3785,6 +3785,46 @@
   {
    "source": "MAR-001",
    "target": "K-4af693a69e78",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3f0b8ebb6102",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3f0b8ebb6102",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-3f0b8ebb6102",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-3f0b8ebb6102",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-3f0b8ebb6102",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-3f0b8ebb6102",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3f0b8ebb6102",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-3f0b8ebb6102",
    "type": "knowledge"
   },
   {
@@ -8896,11 +8936,6 @@
    "source": "SYS-001",
    "target": "K-802f1a07e45c",
    "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-7f625bdbbf4b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9129,7 +9164,7 @@
    {
     "date": "2026-09-02",
     "knowledge": 400,
-    "events_total": 1821
+    "events_total": 1822
    }
   ]
  }
