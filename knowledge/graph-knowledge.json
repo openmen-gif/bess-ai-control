@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ec32d12cd489",
+   "name": "팀 토론 — 변압기 효율성 및 SLD 통합 최적화 설계 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa3d9c951a83",
    "name": "SK온, 美 네오볼타에 9GWh 배터리 셀 공급…ESS 승부수 : 네이버",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-97e1e1754f3e",
-   "name": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-fa3d9c951a83",
@@ -9011,15 +9051,10 @@
    "source": "COM-003",
    "target": "K-9c9865870167",
    "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-97e1e1754f3e",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "history": [
    {
     "date": "2026-07-20",
@@ -9245,6 +9280,11 @@
     "date": "2026-09-02",
     "knowledge": 400,
     "events_total": 1825
+   },
+   {
+    "date": "2026-09-03",
+    "knowledge": 400,
+    "events_total": 1826
    }
   ]
  }
