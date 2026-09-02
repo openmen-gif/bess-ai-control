@@ -137,6 +137,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "82d249a18abd",
+   "date": "2026-09-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-marketer",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-standards-poland"
+   ],
+   "title": "팀 토론 — 견적서·BOM 영역 초안 작성 — bess-epc-bom 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "7bbcc5b2571a",
    "date": "2026-09-02",
    "type": "discussion",
@@ -3877,17 +3895,6 @@
    "type": "skill",
    "agents": [
     "bess-risk-manager"
-   ],
-   "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "f47f1c669c75",
-   "date": "2026-08-23",
-   "type": "skill",
-   "agents": [
-    "bess-transfer-pricing"
    ],
    "title": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 + 2026-08-23 마이닝 배치 반영",
    "link": "",
