@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-92e92365461f",
+   "name": "팀 토론 — 케이블 시스템 최적화 프로젝트 수행: IEC 표준 준수 하에",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa3d9c951a83",
    "name": "SK온, 美 네오볼타에 9GWh 배터리 셀 공급…ESS 승부수 : 네이버",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9e610d5efe27",
-   "name": "스킬 갱신 — feat(bess-skill): 지식 마이닝 증분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "SYS-001",
    "target": "K-d394ef370052",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-92e92365461f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-92e92365461f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-92e92365461f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-92e92365461f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-92e92365461f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-92e92365461f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-92e92365461f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-92e92365461f",
    "type": "knowledge"
   },
   {
@@ -9081,11 +9121,6 @@
    "source": "PCS-001",
    "target": "K-a4fe49e15fcc",
    "type": "knowledge"
-  },
-  {
-   "source": "EMT-001",
-   "target": "K-9e610d5efe27",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9319,7 +9354,7 @@
    {
     "date": "2026-09-03",
     "knowledge": 400,
-    "events_total": 1827
+    "events_total": 1828
    }
   ]
  }
