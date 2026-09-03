@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-481aaa08f14c",
+   "name": "팀 토론 — 변압기 효율 최적화를 위한 SLD 기반 설계 검토 및 Arc",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ec32d12cd489",
    "name": "팀 토론 — 변압기 효율성 및 SLD 통합 최적화 설계 검토",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-18cbc4ffda57",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ec32d12cd489",
@@ -9276,15 +9316,10 @@
    "source": "CST-001",
    "target": "K-225af5d5bce7",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-18cbc4ffda57",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "history": [
    {
     "date": "2026-07-20",
@@ -9515,6 +9550,11 @@
     "date": "2026-09-03",
     "knowledge": 400,
     "events_total": 1853
+   },
+   {
+    "date": "2026-09-04",
+    "knowledge": 400,
+    "events_total": 1854
    }
   ]
  }

@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-03",
+ "updated": "2026-09-04",
  "events": [
+  {
+   "id": "481aaa08f14c",
+   "date": "2026-09-04",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-commissioning-coordinator",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-power-market-expert",
+    "bess-standards-korea",
+    "bess-standards-poland"
+   ],
+   "title": "팀 토론 — 변압기 효율 최적화를 위한 SLD 기반 설계 검토 및 Arc Flash 보호 강화 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ec32d12cd489",
    "date": "2026-09-03",
@@ -3896,22 +3914,6 @@
     "bess-procurement-expert"
    ],
    "title": "팀 토론 — 설비 이력 분석을 통한 예방정비 최적화 계획 수립 및 가용률 향상 전략 제시",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "2d1f6409fb85",
-   "date": "2026-08-25",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-circuit-breaker-expert",
-    "bess-cost-analyst",
-    "bess-procurement-expert",
-    "bess-system-engineer",
-    "bess-training-expert"
-   ],
-   "title": "팀 토론 — 변압기 시스템 최적화 설계를 통해 전력 손실 최소화 및 안전 기준 충족 방안 수립",
    "link": "",
    "source": "bess-team"
   }
