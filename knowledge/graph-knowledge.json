@@ -1,10 +1,109 @@
 {
  "nodes": [
   {
+   "id": "K-ff005f4220e5",
+   "name": "[AI 대전환 리딩 전략]LG엔솔, ESS·LFP로 글로벌 1위 정조준",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-ef0fb39ddb34",
+   "name": "[SK 배터리 수술] 위고비 맞는 배터리 사업…SK온은 ESS로 반등 조",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-dc2f95501b62",
+   "name": "‘국가 에너지 고속도로’, 3차 ESS 수주전 개봉박두…삼성SDI·SK온",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-dab647711181",
+   "name": "LS일렉트릭, KT클라우드와 AIDC 전력기기 개발 동맹",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d74c8fcc7bec",
+   "name": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 규정 준수 프로세스",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-d5ea3e1bff1e",
+   "name": "전기차 공장이 ESS 공장으로… K배터리, 증설 대신 '전환'",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-d22c79c72be8",
+   "name": "전기차 부진 뚫는 삼성SDI···미국서 BESS로 돌파구",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-b0b588148627",
+   "name": "신성에스티, 북미 ESS 양산 확대…미·베트남 2500만 달러 조달",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-9c3c2bae50a7",
+   "name": "ESS·VPP 사업자들, 전력시장 개편 촉구… “문제는 25년째 멈춘 전",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
+   "id": "K-682b9a042d4b",
+   "name": "“재생에너지 전기를 제값에 사고팔 수 있는 전력시장 만들어야 한다”",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-658455562d5a",
    "name": "팀 토론 — CEA·SECI 영역 1차 분석 — bess-emerging",
    "group": "KNOWLEDGE",
    "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-5ae5b6203f9f",
+   "name": "국내서 체력 키운 LG엔솔… ESS 발판 北美 공략",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
    "date": "2026-09-04",
    "val": 3,
    "color": "#8B5CF6"
@@ -26,6 +125,33 @@
    "date": "2026-09-04",
    "val": 3,
    "color": "#8B5CF6"
+  },
+  {
+   "id": "K-177db3fb18d8",
+   "name": "中 그린수소 전략에서 찾은 AI 시대 전력 해법 [HESS가 뜬다 ①]",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-1280eafbe21e",
+   "name": "\"중국이 사막에 심은 진짜 무기\"…ESS·배터리까지 에너지 새 판 짠다",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-0df169317e56",
+   "name": "인도네시아 전력 수요 대비를 위한 배터리 에너지 저장장치(BESS) 구축",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#10B981"
   },
   {
    "id": "K-ec32d12cd489",
@@ -3473,135 +3599,64 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#64748B"
-  },
-  {
-   "id": "K-4f938848e1d7",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4df23f0a70ee",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-48d244ae12e9",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-47e34fd05af8",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-417cff7d4ce9",
-   "name": "LG에너지솔루션 ESS 매출 비중 20%대…리밸런싱 속도",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3f0ca867a537",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3ccfabb661d7",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-3c0c80ea08c0",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-3af89afcb408",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3642cc97ef5d",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3537ad2ce1f9",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-2c65f482a3c7",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2bec72f2dfcf",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-2bce12c69f4b",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "MAR-001",
+   "target": "K-ff005f4220e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ef0fb39ddb34",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-dc2f95501b62",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-dab647711181",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-d74c8fcc7bec",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d74c8fcc7bec",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d5ea3e1bff1e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d22c79c72be8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b0b588148627",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-9c3c2bae50a7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-682b9a042d4b",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-658455562d5a",
@@ -3640,6 +3695,11 @@
   {
    "source": "TRL-001",
    "target": "K-658455562d5a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5ae5b6203f9f",
    "type": "knowledge"
   },
   {
@@ -3720,6 +3780,21 @@
   {
    "source": "STD-008",
    "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-177db3fb18d8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1280eafbe21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-0df169317e56",
    "type": "knowledge"
   },
   {
@@ -9316,76 +9391,6 @@
    "source": "SCV-500",
    "target": "K-5233d20abb6e",
    "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-4f938848e1d7",
-   "type": "knowledge"
-  },
-  {
-   "source": "IPP-001",
-   "target": "K-4df23f0a70ee",
-   "type": "knowledge"
-  },
-  {
-   "source": "INS-001",
-   "target": "K-48d244ae12e9",
-   "type": "knowledge"
-  },
-  {
-   "source": "LKM-001",
-   "target": "K-47e34fd05af8",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-417cff7d4ce9",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-3f0ca867a537",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-009",
-   "target": "K-3ccfabb661d7",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-3c0c80ea08c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "AIM-001",
-   "target": "K-3af89afcb408",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-3642cc97ef5d",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-3537ad2ce1f9",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-2c65f482a3c7",
-   "type": "knowledge"
-  },
-  {
-   "source": "OSH-001",
-   "target": "K-2bec72f2dfcf",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-2bce12c69f4b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9624,7 +9629,7 @@
    {
     "date": "2026-09-04",
     "knowledge": 400,
-    "events_total": 1856
+    "events_total": 1870
    }
   ]
  }
