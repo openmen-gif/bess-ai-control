@@ -55,6 +55,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c7cd0ccabd77",
+   "name": "팀 토론 — BESS 시스템 보안 거버넌스 프레임워크 구축 및 침투 테스",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-c6dbb12da086",
    "name": "VPP·ESS 업계 “전력시장 개편 더는 못 미뤄”…정부에 도입 촉구",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-146b10260705",
-   "name": "송전망·ESS 병목이 재생에너지 전환을 가로막는다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3735,6 +3735,46 @@
   {
    "source": "BAT-001",
    "target": "K-ca7b2a09f52b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-c7cd0ccabd77",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-c7cd0ccabd77",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-c7cd0ccabd77",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-c7cd0ccabd77",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c7cd0ccabd77",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-c7cd0ccabd77",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-c7cd0ccabd77",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-c7cd0ccabd77",
    "type": "knowledge"
   },
   {
@@ -9206,11 +9246,6 @@
    "source": "MKT-001",
    "target": "K-16b8c075a754",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-146b10260705",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9444,7 +9479,7 @@
    {
     "date": "2026-09-03",
     "knowledge": 400,
-    "events_total": 1851
+    "events_total": 1852
    }
   ]
  }
