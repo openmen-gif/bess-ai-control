@@ -73,6 +73,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a0da027ee8e4",
+   "name": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 규정 준수 프로세스",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-9c3c2bae50a7",
    "name": "ESS·VPP 사업자들, 전력시장 개편 촉구… “문제는 25년째 멈춘 전",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-5233d20abb6e",
-   "name": "스킬 갱신 — fix(bess-skill): bess-output-gen",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#64748B"
   }
  ],
  "links": [
@@ -3645,6 +3645,46 @@
   {
    "source": "BAT-001",
    "target": "K-b0b588148627",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a0da027ee8e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-a0da027ee8e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a0da027ee8e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-a0da027ee8e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-a0da027ee8e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-a0da027ee8e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a0da027ee8e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a0da027ee8e4",
    "type": "knowledge"
   },
   {
@@ -9386,11 +9426,6 @@
    "source": "HSE-001",
    "target": "K-586cbadcfc89",
    "type": "knowledge"
-  },
-  {
-   "source": "SCV-500",
-   "target": "K-5233d20abb6e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9629,7 +9664,7 @@
    {
     "date": "2026-09-04",
     "knowledge": 400,
-    "events_total": 1870
+    "events_total": 1871
    }
   ]
  }

@@ -91,6 +91,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "a0da027ee8e4",
+   "date": "2026-09-04",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-customs-tariff",
+    "bess-legal-expert",
+    "bess-mlops-engineer",
+    "bess-power-market-expert",
+    "bess-scheduler",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 규정 준수 프로세스 강화 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "9c3c2bae50a7",
    "date": "2026-09-04",
    "type": "briefing",
@@ -3873,22 +3891,6 @@
     "bess-standards-usa"
    ],
    "title": "팀 토론 — 변압기 효율 최적화 계획 수립 및 안전 기준 준수 검토 (전력품질, SLD 적용)",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "e43503438d77",
-   "date": "2026-08-25",
-   "type": "discussion",
-   "agents": [
-    "bess-aiml-engineer",
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-data-analyst",
-    "bess-marketer",
-    "bess-power-market-expert"
-   ],
-   "title": "팀 토론 — AI 기반 예측 모델 개발로 실시간 운영 최적화 및 유지보수 예측 정확도 향상",
    "link": "",
    "source": "bess-team"
   }
