@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-528e646dcee3",
+   "name": "팀 토론 — 액냉 시스템 효율 최적화를 위한 CFD 기반 열관리 시뮬레이",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-481aaa08f14c",
    "name": "팀 토론 — 변압기 효율 최적화를 위한 SLD 기반 설계 검토 및 Arc",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-25e652b26d13",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "TRL-001",
    "target": "K-658455562d5a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-528e646dcee3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-528e646dcee3",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-528e646dcee3",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-528e646dcee3",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-528e646dcee3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-528e646dcee3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-528e646dcee3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-528e646dcee3",
    "type": "knowledge"
   },
   {
@@ -9346,11 +9386,6 @@
    "source": "STD-003",
    "target": "K-2bce12c69f4b",
    "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-25e652b26d13",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9589,7 +9624,7 @@
    {
     "date": "2026-09-04",
     "knowledge": 400,
-    "events_total": 1855
+    "events_total": 1856
    }
   ]
  }
