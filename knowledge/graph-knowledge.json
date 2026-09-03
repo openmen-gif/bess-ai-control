@@ -181,6 +181,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3f0fb04d7227",
+   "name": "팀 토론 — 변압기 효율 최적화를 위한 SLD 기반 통합 설계 검토 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-311f375398a9",
    "name": "팀 토론 — 부지조성·기초설계 영역 벤치마킹 — bess-cbop-eng",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-1053bacc3277",
-   "name": "팀 토론 — 인도 신흥시장 진출을 위한 CEA/SECI 규제 및 금융 지",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3930,6 +3930,46 @@
   {
    "source": "BAT-001",
    "target": "K-41e427cf6b3e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3f0fb04d7227",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-3f0fb04d7227",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-3f0fb04d7227",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-3f0fb04d7227",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-3f0fb04d7227",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-3f0fb04d7227",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-3f0fb04d7227",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3f0fb04d7227",
    "type": "knowledge"
   },
   {
@@ -9136,46 +9176,6 @@
    "source": "COM-002",
    "target": "K-141bb56746cf",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-1053bacc3277",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-1053bacc3277",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-1053bacc3277",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-1053bacc3277",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-1053bacc3277",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-1053bacc3277",
-   "type": "knowledge"
-  },
-  {
-   "source": "TAX-001",
-   "target": "K-1053bacc3277",
-   "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-1053bacc3277",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9409,7 +9409,7 @@
    {
     "date": "2026-09-03",
     "knowledge": 400,
-    "events_total": 1849
+    "events_total": 1850
    }
   ]
  }
