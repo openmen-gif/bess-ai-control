@@ -188,6 +188,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "56b08a7478c3",
+   "date": "2026-09-03",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-output-generator",
+    "bess-permit-english",
+    "bess-power-market-expert",
+    "bess-project-manager",
+    "bess-standards-analyst",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — VPP 및 ESS 업계의 전력시장 개편 촉구 동향을 분석하여, 한국 전력시장(KPX) 내에서의 잠재적 입찰 전략 및 계약 조건 재검토 방안 제시",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5488825c7e0a",
    "date": "2026-09-03",
    "type": "discussion",
@@ -3859,24 +3877,6 @@
    "title": "K-배터리, 북미 공략 본격화…ESS 증설·투자 재원 확보 속도 [위클리배터리]",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Sa3o4dmZ0TXJVR0hHNXk4cWoxMGNJb29hdTRFSk9XQThZci1NcW80Z2s2THNOSmFxMng5Rk5qRllxanBKSUNTRVhBUXhueTI3aG1Jc1JldWNJTGdhSk5XV3JSbEQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "e52aed837fe0",
-   "date": "2026-08-24",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-esg-finance",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-insurance-expert",
-    "bess-power-system-analyst",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 액냉 시스템 최적화 설계를 통해 BESS 운영 효율성 향상 및 열 관리 비용 절감 방안 모색",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
