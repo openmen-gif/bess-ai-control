@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e6c9a01b64e7",
+   "name": "팀 토론 — 지역별 표준 불일치 해소를 위한 맞춤형 FIDIC 가이드라인",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d805656db609",
    "name": "[기자수첩] 트럼프의 배터리 '죽이고 살리기'",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-02e62a1bac07",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "STD-001",
    "target": "K-ec32d12cd489",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e6c9a01b64e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-e6c9a01b64e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e6c9a01b64e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e6c9a01b64e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-e6c9a01b64e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-e6c9a01b64e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-e6c9a01b64e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e6c9a01b64e7",
    "type": "knowledge"
   },
   {
@@ -9101,11 +9141,6 @@
    "source": "SYS-001",
    "target": "K-07a7682f32ce",
    "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-02e62a1bac07",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9339,7 +9374,7 @@
    {
     "date": "2026-09-03",
     "knowledge": 400,
-    "events_total": 1847
+    "events_total": 1848
    }
   ]
  }
