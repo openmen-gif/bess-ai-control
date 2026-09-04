@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-09d208dfce43",
+   "name": "팀 토론 — 변압기 효율 개선 프로젝트 수행 및 Arc Flash 보호 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff005f4220e5",
    "name": "[AI 대전환 리딩 전략]LG엔솔, ESS·LFP로 글로벌 1위 정조준",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-5ea5bcba5dc5",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CBK-001",
+   "target": "K-09d208dfce43",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-09d208dfce43",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-09d208dfce43",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-09d208dfce43",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-09d208dfce43",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-09d208dfce43",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-09d208dfce43",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-09d208dfce43",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-ff005f4220e5",
@@ -9596,15 +9636,10 @@
    "source": "MAR-001",
    "target": "K-5f419dfbf80a",
    "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-5ea5bcba5dc5",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "history": [
    {
     "date": "2026-07-20",
@@ -9840,6 +9875,11 @@
     "date": "2026-09-04",
     "knowledge": 400,
     "events_total": 1876
+   },
+   {
+    "date": "2026-09-05",
+    "knowledge": 400,
+    "events_total": 1877
    }
   ]
  }
