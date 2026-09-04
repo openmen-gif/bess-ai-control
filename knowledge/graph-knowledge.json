@@ -64,6 +64,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-bc1362991f49",
+   "name": "팀 토론 — 시운전 프로토콜 최적화를 위한 글로벌 베스트 프랙티스 벤치마",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-b0b588148627",
    "name": "신성에스티, 북미 ESS 양산 확대…미·베트남 2500만 달러 조달",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5df8c8f6538b",
-   "name": "[이슈 체크] 전자장비와기기, 북미 ESS 성장세 가속…AI 데이터센터 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "MAR-001",
    "target": "K-d22c79c72be8",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-bc1362991f49",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-bc1362991f49",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-bc1362991f49",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-bc1362991f49",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-bc1362991f49",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-bc1362991f49",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-bc1362991f49",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-bc1362991f49",
    "type": "knowledge"
   },
   {
@@ -9526,11 +9566,6 @@
    "source": "PCS-001",
    "target": "K-5ea483780ac1",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-5df8c8f6538b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9769,7 +9804,7 @@
    {
     "date": "2026-09-04",
     "knowledge": 400,
-    "events_total": 1874
+    "events_total": 1875
    }
   ]
  }

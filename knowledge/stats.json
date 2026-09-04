@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-04",
  "totals": {
-  "all": 1874,
+  "all": 1875,
   "briefing": 710,
   "skill": 734,
-  "discussion": 430,
+  "discussion": 431,
   "activity": 0
  },
  "perAgent": {
@@ -83,10 +83,10 @@
    "level": 3
   },
   "bess-commissioning-coordinator": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 11,
-    "discussion": 27
+    "discussion": 28
    },
    "lastGrown": "2026-09-04",
    "level": 3
@@ -328,19 +328,19 @@
    "level": 2
   },
   "bess-labor-safety": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 8,
-    "discussion": 14
+    "discussion": 15
    },
-   "lastGrown": "2026-08-28",
+   "lastGrown": "2026-09-04",
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 132,
+   "count": 133,
    "byType": {
     "skill": 11,
-    "discussion": 121
+    "discussion": 122
    },
    "lastGrown": "2026-09-04",
    "level": 4
@@ -438,10 +438,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 72,
+   "count": 73,
    "byType": {
     "skill": 9,
-    "discussion": 51,
+    "discussion": 52,
     "briefing": 12
    },
    "lastGrown": "2026-09-04",
@@ -502,13 +502,13 @@
    "level": 3
   },
   "bess-qaqc-engineer": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 7,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-08-24",
-   "level": 2
+   "lastGrown": "2026-09-04",
+   "level": 3
   },
   "bess-risk-manager": {
    "count": 29,
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 176,
+   "count": 177,
    "byType": {
     "skill": 10,
-    "discussion": 41,
+    "discussion": 42,
     "briefing": 125
    },
    "lastGrown": "2026-09-04",
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 180,
+   "count": 181,
    "byType": {
     "skill": 11,
-    "discussion": 169
+    "discussion": 170
    },
    "lastGrown": "2026-09-04",
    "level": 5
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 108,
+   "count": 109,
    "byType": {
     "skill": 11,
-    "discussion": 97
+    "discussion": 98
    },
    "lastGrown": "2026-09-04",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-04",
-   "added": 21
+   "added": 22
   }
  ],
  "freshness": {
