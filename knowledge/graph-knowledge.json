@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-eeb846118baa",
+   "name": "팀 토론 — BESS 글로벌 JV 파트너십 발굴 및 RFP 분석을 통한 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-05",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-09d208dfce43",
    "name": "팀 토론 — 변압기 효율 개선 프로젝트 수행 및 Arc Flash 보호 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-5f419dfbf80a",
-   "name": "상신이디피, AI 데이터센터·BESS에 ‘잭팟’…배터리 캔 다시 뛴다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "CUS-001",
+   "target": "K-eeb846118baa",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-eeb846118baa",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-eeb846118baa",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-eeb846118baa",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-eeb846118baa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-eeb846118baa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-eeb846118baa",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-eeb846118baa",
+   "type": "knowledge"
+  },
   {
    "source": "CBK-001",
    "target": "K-09d208dfce43",
@@ -9631,11 +9671,6 @@
    "source": "PRO-001",
    "target": "K-65372fccef5d",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-5f419dfbf80a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9879,7 +9914,7 @@
    {
     "date": "2026-09-05",
     "knowledge": 400,
-    "events_total": 1877
+    "events_total": 1878
    }
   ]
  }
