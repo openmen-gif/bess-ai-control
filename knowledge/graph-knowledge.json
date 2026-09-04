@@ -82,6 +82,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-9ffa7ebd4c63",
+   "name": "팀 토론 — 변환 및 최적화 계약 조항 분석을 통해 GCC 지역 BESS",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-9c3c2bae50a7",
    "name": "ESS·VPP 사업자들, 전력시장 개편 촉구… “문제는 25년째 멈춘 전",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5c700dc571cb",
-   "name": "한국요꼬가와전기, 고전압·고정밀 측정 지원하는 정밀 파워아날라이저 ‘WT",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3685,6 +3685,46 @@
   {
    "source": "KTX-001",
    "target": "K-a0da027ee8e4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-9ffa7ebd4c63",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-9ffa7ebd4c63",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-9ffa7ebd4c63",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-9ffa7ebd4c63",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-9ffa7ebd4c63",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-9ffa7ebd4c63",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-9ffa7ebd4c63",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-9ffa7ebd4c63",
    "type": "knowledge"
   },
   {
@@ -9456,11 +9496,6 @@
    "source": "HYB-001",
    "target": "K-5dcc3040f4de",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-5c700dc571cb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9699,7 +9734,7 @@
    {
     "date": "2026-09-04",
     "knowledge": 400,
-    "events_total": 1872
+    "events_total": 1873
    }
   ]
  }
