@@ -136,6 +136,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-279e33a19950",
+   "name": "팀 토론 — VPP 및 ESS 업계의 전력시장 개편 요구 동향을 분석하여",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-177db3fb18d8",
    "name": "中 그린수소 전략에서 찾은 AI 시대 전력 해법 [HESS가 뜬다 ①]",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-586cbadcfc89",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3820,6 +3820,46 @@
   {
    "source": "STD-008",
    "target": "K-481aaa08f14c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-279e33a19950",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-279e33a19950",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-279e33a19950",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-279e33a19950",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-279e33a19950",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-279e33a19950",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-279e33a19950",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-279e33a19950",
    "type": "knowledge"
   },
   {
@@ -9421,11 +9461,6 @@
    "source": "PCS-001",
    "target": "K-5c700dc571cb",
    "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-586cbadcfc89",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9664,7 +9699,7 @@
    {
     "date": "2026-09-04",
     "knowledge": 400,
-    "events_total": 1871
+    "events_total": 1872
    }
   ]
  }

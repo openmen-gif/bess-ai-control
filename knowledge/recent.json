@@ -196,6 +196,24 @@
    "source": "bess-team"
   },
   {
+   "id": "279e33a19950",
+   "date": "2026-09-04",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-env-engineer",
+    "bess-grid-interconnection",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-project-manager",
+    "bess-standards-analyst",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — VPP 및 ESS 업계의 전력시장 개편 요구 동향을 분석하여 한국 전력시장 (KPX) 내 BESS 통합 전략 및 입찰 전략 최적화 방안 제시.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "177db3fb18d8",
    "date": "2026-09-04",
    "type": "briefing",
@@ -3875,22 +3893,6 @@
     "bess-system-engineer"
    ],
    "title": "팀 토론 — 시운전 프로세스 최적화 전략 수립 및 자동화 시스템 통합 방안 제시 (COM-100)",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "e7b9eb0af131",
-   "date": "2026-08-25",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-circuit-breaker-expert",
-    "bess-cost-analyst",
-    "bess-procurement-data",
-    "bess-procurement-expert",
-    "bess-standards-usa"
-   ],
-   "title": "팀 토론 — 변압기 효율 최적화 계획 수립 및 안전 기준 준수 검토 (전력품질, SLD 적용)",
    "link": "",
    "source": "bess-team"
   }
