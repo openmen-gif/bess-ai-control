@@ -172,6 +172,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-10c4129c8836",
+   "name": "팀 토론 — 인도 신흥시장 그리드코 프로젝트의 금융 모델 개발 및 기술 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0df169317e56",
    "name": "인도네시아 전력 수요 대비를 위한 배터리 에너지 저장장치(BESS) 구축",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-5dcc3040f4de",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3910,6 +3910,46 @@
   {
    "source": "BAT-001",
    "target": "K-1280eafbe21e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-10c4129c8836",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-10c4129c8836",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-10c4129c8836",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-10c4129c8836",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-10c4129c8836",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-10c4129c8836",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-10c4129c8836",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-10c4129c8836",
    "type": "knowledge"
   },
   {
@@ -9491,11 +9531,6 @@
    "source": "MAR-001",
    "target": "K-5df8c8f6538b",
    "type": "knowledge"
-  },
-  {
-   "source": "HYB-001",
-   "target": "K-5dcc3040f4de",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9734,7 +9769,7 @@
    {
     "date": "2026-09-04",
     "knowledge": 400,
-    "events_total": 1873
+    "events_total": 1874
    }
   ]
  }
