@@ -64,6 +64,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-c53ced81306f",
+   "name": "팀 토론 — BESS 운영 데이터 분석을 통한 효율성 트렌드 식별 및 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-04",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-bc1362991f49",
    "name": "팀 토론 — 시운전 프로토콜 최적화를 위한 글로벌 베스트 프랙티스 벤치마",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5ea483780ac1",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "MAR-001",
    "target": "K-d22c79c72be8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c53ced81306f",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-c53ced81306f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-c53ced81306f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-c53ced81306f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-c53ced81306f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-c53ced81306f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-c53ced81306f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c53ced81306f",
    "type": "knowledge"
   },
   {
@@ -9561,11 +9601,6 @@
    "source": "CBP-001",
    "target": "K-5ea5bcba5dc5",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-5ea483780ac1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9804,7 +9839,7 @@
    {
     "date": "2026-09-04",
     "knowledge": 400,
-    "events_total": 1875
+    "events_total": 1876
    }
   ]
  }

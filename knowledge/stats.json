@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-04",
  "totals": {
-  "all": 1875,
+  "all": 1876,
   "briefing": 710,
   "skill": 734,
-  "discussion": 431,
+  "discussion": 432,
   "activity": 0
  },
  "perAgent": {
@@ -101,12 +101,12 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 182,
+   "count": 183,
    "byType": {
     "skill": 12,
-    "discussion": 170
+    "discussion": 171
    },
-   "lastGrown": "2026-09-03",
+   "lastGrown": "2026-09-04",
    "level": 5
   },
   "bess-customs-tariff": {
@@ -128,10 +128,10 @@
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 76,
+   "count": 77,
    "byType": {
     "skill": 11,
-    "discussion": 65
+    "discussion": 66
    },
    "lastGrown": "2026-09-04",
    "level": 4
@@ -200,10 +200,10 @@
    "level": 3
   },
   "bess-financial-analysis": {
-   "count": 108,
+   "count": 109,
    "byType": {
     "skill": 11,
-    "discussion": 97
+    "discussion": 98
    },
    "lastGrown": "2026-09-04",
    "level": 4
@@ -429,19 +429,19 @@
    "level": 2
   },
   "bess-permit-europe": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 8,
-    "discussion": 12
+    "discussion": 13
    },
-   "lastGrown": "2026-09-02",
+   "lastGrown": "2026-09-04",
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 9,
-    "discussion": 52,
+    "discussion": 53,
     "briefing": 12
    },
    "lastGrown": "2026-09-04",
@@ -556,20 +556,20 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 177,
+   "count": 178,
    "byType": {
     "skill": 10,
-    "discussion": 42,
+    "discussion": 43,
     "briefing": 125
    },
    "lastGrown": "2026-09-04",
    "level": 5
   },
   "bess-standards-australia": {
-   "count": 16,
+   "count": 17,
    "byType": {
     "skill": 7,
-    "discussion": 9
+    "discussion": 10
    },
    "lastGrown": "2026-09-04",
    "level": 2
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 109,
+   "count": 110,
    "byType": {
     "skill": 11,
-    "discussion": 98
+    "discussion": 99
    },
    "lastGrown": "2026-09-04",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-04",
-   "added": 22
+   "added": 23
   }
  ],
  "freshness": {
