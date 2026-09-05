@@ -19,6 +19,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-6a1e7b6ea542",
+   "name": "팀 토론 — 부지 조성 단계에서의 최적화된 소방 배관 설계 및 이격거리 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f754866ea4ef",
    "name": "美 ESS에 '안보 빗장'…북미 공장 가진 K배터리 '수주 랠리' 기대",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b4ca800d4d45",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3675,6 +3675,46 @@
   {
    "source": "TAX-002",
    "target": "K-b1dbbec00891",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6a1e7b6ea542",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-6a1e7b6ea542",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-6a1e7b6ea542",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-6a1e7b6ea542",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-6a1e7b6ea542",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-6a1e7b6ea542",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-6a1e7b6ea542",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6a1e7b6ea542",
    "type": "knowledge"
   },
   {
@@ -9736,11 +9776,6 @@
    "source": "BAT-001",
    "target": "K-c36149565be0",
    "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-b4ca800d4d45",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9989,7 +10024,7 @@
    {
     "date": "2026-09-06",
     "knowledge": 400,
-    "events_total": 1902
+    "events_total": 1903
    }
   ]
  }

@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-06",
  "totals": {
-  "all": 1902,
+  "all": 1903,
   "briefing": 729,
   "skill": 734,
-  "discussion": 439,
+  "discussion": 440,
   "activity": 0
  },
  "perAgent": {
@@ -209,13 +209,13 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 177,
+   "count": 178,
    "byType": {
     "skill": 11,
-    "discussion": 119,
+    "discussion": 120,
     "briefing": 47
    },
-   "lastGrown": "2026-09-05",
+   "lastGrown": "2026-09-06",
    "level": 5
   },
   "bess-fit-procedure": {
@@ -238,12 +238,12 @@
    "level": 3
   },
   "bess-grounding-engineer": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 10,
-    "discussion": 38
+    "discussion": 39
    },
-   "lastGrown": "2026-09-05",
+   "lastGrown": "2026-09-06",
    "level": 3
   },
   "bess-hr-manager": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 138,
+   "count": 139,
    "byType": {
     "skill": 11,
-    "discussion": 127
+    "discussion": 128
    },
    "lastGrown": "2026-09-06",
    "level": 4
@@ -484,12 +484,12 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 146,
+   "count": 147,
    "byType": {
     "skill": 11,
-    "discussion": 135
+    "discussion": 136
    },
-   "lastGrown": "2026-09-05",
+   "lastGrown": "2026-09-06",
    "level": 4
   },
   "bess-project-manager": {
@@ -547,12 +547,12 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 43,
+   "count": 44,
    "byType": {
     "skill": 9,
-    "discussion": 34
+    "discussion": 35
    },
-   "lastGrown": "2026-09-02",
+   "lastGrown": "2026-09-06",
    "level": 3
   },
   "bess-standards-analyst": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 186,
+   "count": 187,
    "byType": {
     "skill": 11,
-    "discussion": 175
+    "discussion": 176
    },
    "lastGrown": "2026-09-06",
    "level": 5
@@ -638,12 +638,12 @@
    "level": 3
   },
   "bess-structural-analyst": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 10,
-    "discussion": 47
+    "discussion": 48
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-06",
    "level": 3
   },
   "bess-substation-engineer": {
@@ -656,12 +656,12 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 110,
+   "count": 111,
    "byType": {
     "skill": 11,
-    "discussion": 99
+    "discussion": 100
    },
-   "lastGrown": "2026-09-04",
+   "lastGrown": "2026-09-06",
    "level": 4
   },
   "bess-tax-accountant": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-06",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
