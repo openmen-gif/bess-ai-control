@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ce546890e07a",
+   "name": "팀 토론 — EIA·환경영향평가 영역 1차 분석 — bess-env-en",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f754866ea4ef",
    "name": "美 ESS에 '안보 빗장'…북미 공장 가진 K배터리 '수주 랠리' 기대",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-aaac558b6799",
-   "name": "힘 받는 최윤범의 '트로이카 드라이브', 고려아연 성장 탄력",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "ENV-001",
+   "target": "K-ce546890e07a",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ce546890e07a",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-ce546890e07a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-ce546890e07a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-ce546890e07a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ce546890e07a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-ce546890e07a",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-f754866ea4ef",
@@ -9671,15 +9706,10 @@
    "source": "BAT-001",
    "target": "K-b22300397e73",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-aaac558b6799",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-05",
+  "updated": "2026-09-06",
   "history": [
    {
     "date": "2026-07-20",
@@ -9920,6 +9950,11 @@
     "date": "2026-09-05",
     "knowledge": 400,
     "events_total": 1900
+   },
+   {
+    "date": "2026-09-06",
+    "knowledge": 400,
+    "events_total": 1901
    }
   ]
  }

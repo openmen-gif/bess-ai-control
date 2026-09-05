@@ -1,6 +1,23 @@
 {
- "updated": "2026-09-05",
+ "updated": "2026-09-06",
  "events": [
+  {
+   "id": "ce546890e07a",
+   "date": "2026-09-06",
+   "type": "discussion",
+   "agents": [
+    "bess-env-engineer",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-standards-analyst",
+    "bess-standards-eu",
+    "bess-standards-korea",
+    "bess-standards-usa"
+   ],
+   "title": "팀 토론 — EIA·환경영향평가 영역 1차 분석 — bess-env-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f754866ea4ef",
    "date": "2026-09-05",
@@ -3867,24 +3884,6 @@
    "title": "이온어스, 이동형 ESS '인디고 모바일' EV어워즈 수상",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96RXVuNEVvQ2dmWS1pSTFIVkd2S2lpcTBMdzVmM3lYOTFlR0trT0c1ckg4RXpzWnVsTS1DTXVnVlNqbGlxT08zc25mbExHZkdrd19DS2RZM1BNbXZWZjdPNkJUU0tOQQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "bebacb4c6731",
-   "date": "2026-08-26",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-epc-bom",
-    "bess-financial-analysis",
-    "bess-procurement-expert",
-    "bess-scheduler",
-    "bess-tax-incentive",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
