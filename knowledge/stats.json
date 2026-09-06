@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-07",
  "totals": {
-  "all": 1929,
+  "all": 1930,
   "briefing": 749,
   "skill": 734,
-  "discussion": 446,
+  "discussion": 447,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 458,
+   "count": 459,
    "byType": {
     "skill": 12,
-    "discussion": 208,
+    "discussion": 209,
     "briefing": 238
    },
    "lastGrown": "2026-09-07",
@@ -101,12 +101,12 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 185,
+   "count": 186,
    "byType": {
     "skill": 12,
-    "discussion": 173
+    "discussion": 174
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-07",
    "level": 5
   },
   "bess-customs-tariff": {
@@ -328,12 +328,12 @@
    "level": 2
   },
   "bess-labor-safety": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 8,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-07",
    "level": 2
   },
   "bess-legal-expert": {
@@ -484,12 +484,12 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 148,
+   "count": 149,
    "byType": {
     "skill": 11,
-    "discussion": 137
+    "discussion": 138
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-07",
    "level": 4
   },
   "bess-project-manager": {
@@ -547,10 +547,10 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 9,
-    "discussion": 37
+    "discussion": 38
    },
    "lastGrown": "2026-09-07",
    "level": 3
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 42,
+   "count": 43,
    "byType": {
     "skill": 10,
-    "discussion": 30,
+    "discussion": 31,
     "briefing": 2
    },
-   "lastGrown": "2026-09-05",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-translator": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-07",
-   "added": 15
+   "added": 16
   }
  ],
  "freshness": {
