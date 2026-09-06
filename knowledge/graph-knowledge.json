@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-72867952896b",
+   "name": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6a1e7b6ea542",
    "name": "팀 토론 — 부지 조성 단계에서의 최적화된 소방 배관 설계 및 이격거리 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d453299072b1",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3710,6 +3710,46 @@
   {
    "source": "STD-001",
    "target": "K-8af3e306b5f5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-72867952896b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-72867952896b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-72867952896b",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-72867952896b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-72867952896b",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-72867952896b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-72867952896b",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-72867952896b",
    "type": "knowledge"
   },
   {
@@ -9701,11 +9741,6 @@
    "source": "TRF-001",
    "target": "K-db7db677d8a1",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-d453299072b1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9954,7 +9989,7 @@
    {
     "date": "2026-09-06",
     "knowledge": 400,
-    "events_total": 1912
+    "events_total": 1913
    }
   ]
  }
