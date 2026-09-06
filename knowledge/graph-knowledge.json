@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-dba4a163e684",
+   "name": "팀 토론 — 신흥시장 그리드 통합 전략 수립: 인도 CEA/SECI 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-07",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-1a1689ee5093",
    "name": "팀 토론 — 보안 거버넌스 강화를 통한 BESS 시스템 사이버 위협 대응",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-dc63b9596925",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "EMT-001",
+   "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-1a1689ee5093",
@@ -9806,11 +9846,6 @@
    "source": "ESG-001",
    "target": "K-dfd388f29bb1",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-100",
-   "target": "K-dc63b9596925",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10064,7 +10099,7 @@
    {
     "date": "2026-09-07",
     "knowledge": 400,
-    "events_total": 1915
+    "events_total": 1916
    }
   ]
  }
