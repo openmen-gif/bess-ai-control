@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-484f23997d7e",
+   "name": "팀 토론 — 케이블 시스템 최적화 계획 수립: Ampacity 기준에 따",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1a1689ee5093",
    "name": "팀 토론 — 보안 거버넌스 강화를 통한 BESS 시스템 사이버 위협 대응",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-dfd388f29bb1",
-   "name": "스킬 갱신 — fix(bess-skill): 표 앞 빈 줄 복구 35건 ",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-08-23",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "KTX-001",
    "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-484f23997d7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-484f23997d7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-484f23997d7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-484f23997d7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-484f23997d7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-484f23997d7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-484f23997d7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-484f23997d7e",
    "type": "knowledge"
   },
   {
@@ -9841,11 +9881,6 @@
    "source": "CAB-001",
    "target": "K-e0002cbf59b4",
    "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-dfd388f29bb1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10099,7 +10134,7 @@
    {
     "date": "2026-09-07",
     "knowledge": 400,
-    "events_total": 1916
+    "events_total": 1917
    }
   ]
  }

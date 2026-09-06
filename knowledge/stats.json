@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-07",
  "totals": {
-  "all": 1916,
+  "all": 1917,
   "briefing": 737,
   "skill": 734,
-  "discussion": 445,
+  "discussion": 446,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 452,
+   "count": 453,
    "byType": {
     "skill": 12,
-    "discussion": 207,
+    "discussion": 208,
     "briefing": 233
    },
    "lastGrown": "2026-09-07",
@@ -46,13 +46,13 @@
    "level": 4
   },
   "bess-cable-engineer": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 11,
-    "discussion": 32,
+    "discussion": 33,
     "briefing": 2
    },
-   "lastGrown": "2026-09-03",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-cbop-engineer": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 179,
+   "count": 180,
    "byType": {
     "skill": 11,
-    "discussion": 121,
+    "discussion": 122,
     "briefing": 47
    },
    "lastGrown": "2026-09-07",
@@ -256,21 +256,21 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 99,
+   "count": 100,
    "byType": {
     "skill": 11,
-    "discussion": 88
+    "discussion": 89
    },
    "lastGrown": "2026-09-07",
    "level": 4
   },
   "bess-hybrid-specialist": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 8,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-26",
+   "lastGrown": "2026-09-07",
    "level": 2
   },
   "bess-hydrogen-specialist": {
@@ -448,12 +448,12 @@
    "level": 4
   },
   "bess-power-system-analyst": {
-   "count": 86,
+   "count": 87,
    "byType": {
     "skill": 10,
-    "discussion": 76
+    "discussion": 77
    },
-   "lastGrown": "2026-09-04",
+   "lastGrown": "2026-09-07",
    "level": 4
   },
   "bess-precom-report": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 192,
+   "count": 193,
    "byType": {
     "skill": 11,
-    "discussion": 181
+    "discussion": 182
    },
    "lastGrown": "2026-09-07",
    "level": 5
@@ -638,12 +638,12 @@
    "level": 3
   },
   "bess-structural-analyst": {
-   "count": 58,
+   "count": 59,
    "byType": {
     "skill": 10,
-    "discussion": 48
+    "discussion": 49
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-substation-engineer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-07",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
