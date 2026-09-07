@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-07",
  "totals": {
-  "all": 1932,
+  "all": 1933,
   "briefing": 749,
   "skill": 734,
-  "discussion": 449,
+  "discussion": 450,
   "activity": 0
  },
  "perAgent": {
@@ -74,12 +74,12 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 11,
-    "discussion": 44
+    "discussion": 45
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-commissioning-coordinator": {
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 74,
+   "count": 75,
    "byType": {
     "skill": 10,
-    "discussion": 64
+    "discussion": 65
    },
-   "lastGrown": "2026-09-04",
+   "lastGrown": "2026-09-07",
    "level": 4
   },
   "bess-emerging-markets": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 180,
+   "count": 181,
    "byType": {
     "skill": 11,
-    "discussion": 122,
+    "discussion": 123,
     "briefing": 47
    },
    "lastGrown": "2026-09-07",
@@ -374,12 +374,12 @@
    "level": 3
   },
   "bess-network-engineer": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-09-02",
+   "lastGrown": "2026-09-07",
    "level": 2
   },
   "bess-om-expert": {
@@ -401,13 +401,13 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 142,
+   "count": 143,
    "byType": {
     "skill": 11,
-    "discussion": 77,
+    "discussion": 78,
     "briefing": 54
    },
-   "lastGrown": "2026-09-04",
+   "lastGrown": "2026-09-07",
    "level": 4
   },
   "bess-permit-asia": {
@@ -520,12 +520,12 @@
    "level": 3
   },
   "bess-sales-manager": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 7,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-09-03",
+   "lastGrown": "2026-09-07",
    "level": 2
   },
   "bess-scheduler": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-07",
-   "added": 18
+   "added": 19
   }
  ],
  "freshness": {

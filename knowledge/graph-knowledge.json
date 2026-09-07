@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-befa52af8fe4",
+   "name": "팀 토론 — EMC/EMI 필터 설계 최적화를 통한 BESS 시스템 내 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-bd217c6b1388",
    "name": "팀 토론 — 변압기·수배전반 영역 벤치마킹 — bess-ebop-engi",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2c50bb32ea06",
-   "name": "팀 토론 — HS코드·배터리 영역 1차 분석 — bess-customs-",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,36 @@
   {
    "source": "KTX-001",
    "target": "K-dba4a163e684",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-befa52af8fe4",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-befa52af8fe4",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-befa52af8fe4",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-befa52af8fe4",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-befa52af8fe4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-befa52af8fe4",
    "type": "knowledge"
   },
   {
@@ -9761,46 +9791,6 @@
    "source": "QAC-001",
    "target": "K-2d4dca63a74a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-2c50bb32ea06",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-100",
-   "target": "K-2c50bb32ea06",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-2c50bb32ea06",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-2c50bb32ea06",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-2c50bb32ea06",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-2c50bb32ea06",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-2c50bb32ea06",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-2c50bb32ea06",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10054,7 +10044,7 @@
    {
     "date": "2026-09-07",
     "knowledge": 400,
-    "events_total": 1932
+    "events_total": 1933
    }
   ]
  }
