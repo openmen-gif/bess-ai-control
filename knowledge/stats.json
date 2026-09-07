@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-07",
  "totals": {
-  "all": 1931,
+  "all": 1932,
   "briefing": 749,
   "skill": 734,
-  "discussion": 448,
+  "discussion": 449,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 460,
+   "count": 461,
    "byType": {
     "skill": 12,
-    "discussion": 210,
+    "discussion": 211,
     "briefing": 238
    },
    "lastGrown": "2026-09-07",
@@ -83,12 +83,12 @@
    "level": 3
   },
   "bess-commissioning-coordinator": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 11,
-    "discussion": 29
+    "discussion": 30
    },
-   "lastGrown": "2026-09-05",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-contract-specialist": {
@@ -101,21 +101,21 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 187,
+   "count": 188,
    "byType": {
     "skill": 12,
-    "discussion": 175
+    "discussion": 176
    },
    "lastGrown": "2026-09-07",
    "level": 5
   },
   "bess-customs-tariff": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 12,
-    "discussion": 29
+    "discussion": 30
    },
-   "lastGrown": "2026-09-05",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-cybersecurity-expert": {
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 150,
+   "count": 151,
    "byType": {
     "skill": 11,
-    "discussion": 139
+    "discussion": 140
    },
    "lastGrown": "2026-09-07",
    "level": 5
@@ -538,12 +538,12 @@
    "level": 3
   },
   "bess-security-expert": {
-   "count": 42,
+   "count": 43,
    "byType": {
     "skill": 7,
-    "discussion": 35
+    "discussion": 36
    },
-   "lastGrown": "2026-09-03",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-site-manager": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-07",
-   "added": 17
+   "added": 18
   }
  ],
  "freshness": {
