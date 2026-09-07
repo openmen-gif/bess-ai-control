@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3240f2ea6be0",
+   "name": "팀 토론 — 전기차 시장 성장에 따른 한국 전력시장(KPX) 내 신규 E",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2884bb54aa55",
    "name": "마이초이스 카지노 무료 플레이 포스트 코로나 시대 브랜드 구축: 기초, ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2d4dca63a74a",
-   "name": "팀 토론 — 케이블 설계 최적화를 통한 전력 손실 최소화 방안 수립",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3835,6 +3835,36 @@
   {
    "source": "SEC-001",
    "target": "K-44e7ed14fd4d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3240f2ea6be0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3240f2ea6be0",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-3240f2ea6be0",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-3240f2ea6be0",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-3240f2ea6be0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-3240f2ea6be0",
    "type": "knowledge"
   },
   {
@@ -9761,36 +9791,6 @@
    "source": "TRN-001",
    "target": "K-3375f6782534",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-2d4dca63a74a",
-   "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-2d4dca63a74a",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-2d4dca63a74a",
-   "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-2d4dca63a74a",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-2d4dca63a74a",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-2d4dca63a74a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10044,7 +10044,7 @@
    {
     "date": "2026-09-07",
     "knowledge": 400,
-    "events_total": 1933
+    "events_total": 1934
    }
   ]
  }
