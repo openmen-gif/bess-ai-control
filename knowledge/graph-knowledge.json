@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-dabbc30ae090",
+   "name": "팀 토론 — 전기차 시장 성장에 따른 글로벌 표준 강화 동향 분석 및 한",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-08",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e1107b39a4fe",
    "name": "팀 토론 — 정확한 원산지 분석을 통한 견적 및 BOM 최적화 방안 수립",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-35ce3e85932a",
-   "name": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-dabbc30ae090",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-dabbc30ae090",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-dabbc30ae090",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-dabbc30ae090",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-dabbc30ae090",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-dabbc30ae090",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-e1107b39a4fe",
@@ -9761,36 +9791,6 @@
    "source": "BAT-001",
    "target": "K-5278768053ca",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-35ce3e85932a",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-35ce3e85932a",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-35ce3e85932a",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-35ce3e85932a",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-35ce3e85932a",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-35ce3e85932a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10049,7 +10049,7 @@
    {
     "date": "2026-09-08",
     "knowledge": 400,
-    "events_total": 1935
+    "events_total": 1936
    }
   ]
  }

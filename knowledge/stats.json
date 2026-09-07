@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-08",
  "totals": {
-  "all": 1935,
+  "all": 1936,
   "briefing": 749,
   "skill": 734,
-  "discussion": 452,
+  "discussion": 453,
   "activity": 0
  },
  "perAgent": {
@@ -26,13 +26,13 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 463,
+   "count": 464,
    "byType": {
     "skill": 12,
-    "discussion": 213,
+    "discussion": 214,
     "briefing": 238
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-08",
    "level": 5
   },
   "bess-business-dev": {
@@ -101,12 +101,12 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 190,
+   "count": 191,
    "byType": {
     "skill": 12,
-    "discussion": 178
+    "discussion": 179
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-08",
    "level": 5
   },
   "bess-customs-tariff": {
@@ -310,12 +310,12 @@
    "level": 2
   },
   "bess-it-infra": {
-   "count": 28,
+   "count": 29,
    "byType": {
     "skill": 8,
-    "discussion": 20
+    "discussion": 21
    },
-   "lastGrown": "2026-08-30",
+   "lastGrown": "2026-09-08",
    "level": 2
   },
   "bess-knowledge-manager": {
@@ -484,12 +484,12 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 153,
+   "count": 154,
    "byType": {
     "skill": 11,
-    "discussion": 142
+    "discussion": 143
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-08",
    "level": 5
   },
   "bess-project-manager": {
@@ -593,12 +593,12 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 193,
+   "count": 194,
    "byType": {
     "skill": 11,
-    "discussion": 182
+    "discussion": 183
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-08",
    "level": 5
   },
   "bess-standards-poland": {
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 43,
+   "count": 44,
    "byType": {
     "skill": 10,
-    "discussion": 31,
+    "discussion": 32,
     "briefing": 2
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-08",
    "level": 3
   },
   "bess-translator": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-08",
-   "added": 0
+   "added": 1
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-09-07",
-   "gapDays": 1,
+   "previousUpdated": "2026-09-08",
+   "gapDays": 0,
    "overdue": false
   }
  }
