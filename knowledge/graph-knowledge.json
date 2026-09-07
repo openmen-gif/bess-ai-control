@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-e1107b39a4fe",
+   "name": "팀 토론 — 정확한 원산지 분석을 통한 견적 및 BOM 최적화 방안 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-dba4a163e684",
    "name": "팀 토론 — 신흥시장 그리드 통합 전략 수립: 인도 CEA/SECI 및 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3375f6782534",
-   "name": "팀 토론 — 액냉 시스템 최적화를 통한 CFD 기반 열 관리 시뮬레이션 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-e1107b39a4fe",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e1107b39a4fe",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-e1107b39a4fe",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-e1107b39a4fe",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e1107b39a4fe",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-e1107b39a4fe",
+   "type": "knowledge"
+  },
   {
    "source": "EMT-001",
    "target": "K-dba4a163e684",
@@ -9761,40 +9791,10 @@
    "source": "STR-001",
    "target": "K-35ce3e85932a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-3375f6782534",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-3375f6782534",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-3375f6782534",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-3375f6782534",
-   "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-3375f6782534",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-3375f6782534",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "history": [
    {
     "date": "2026-07-20",
@@ -10045,6 +10045,11 @@
     "date": "2026-09-07",
     "knowledge": 400,
     "events_total": 1934
+   },
+   {
+    "date": "2026-09-08",
+    "knowledge": 400,
+    "events_total": 1935
    }
   ]
  }

@@ -1,6 +1,22 @@
 {
- "updated": "2026-09-07",
+ "updated": "2026-09-08",
  "events": [
+  {
+   "id": "e1107b39a4fe",
+   "date": "2026-09-07",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-permit-english",
+    "bess-power-system-analyst",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 정확한 원산지 분석을 통한 견적 및 BOM 최적화 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "dba4a163e684",
    "date": "2026-09-07",
@@ -3881,17 +3897,6 @@
    ],
    "title": "“설비 물량 늘리기 급급한 ESS… ‘시장 구조’ 판 엎어야 산다”",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TdGlJZDZ2TGpHVkdhcnNpVG93TEVRRkFvVmFrODRhbXR4cWxyYUFEUXRRYTFXOERHTHhCOEJXaTJpVDR0dnl1RVVBT0VfUHFZREV1M0lFWHB6NUtqcDVtTHlaWXQ5cHVhZE11bHJLbjDSAXBBVV95cUxOU3RpSWQ2dkxqR1ZHYXJzaVRvd0xFUUZBb1Zhazg0YW10eHFscmFBRFF0UWExVzhER0x4QjhCV2kyaVQ0dHZ5dUVVQU9FX1BxWURFdTNJRVhwejVLanA1bUx5Wll0OXB1YWRNdWxyS24w?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "c9390eb0ab3f",
-   "date": "2026-08-27",
-   "type": "briefing",
-   "agents": [
-    "bess-fire-engineer"
-   ],
-   "title": "\"디지털 재난 미리 막는다\".. 전국 데이터센터 163곳 화재안전조사",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WdVRqUzZYQVdablZQSC1Ib1ZXbGcwenlaeGZmZVBTNnBfSWtOZG1CTHFYODAzTmRLNnllQnl1bDhvZ3NSZUo5V3djRVA2S0dRQTZLZm5GcWpobmZUY1E?oc=5",
    "source": "구글뉴스"
   }
  ]
