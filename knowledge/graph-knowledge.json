@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-bd669eae79a9",
+   "name": "팀 토론 — 계약 조건 분석 및 최적화 프레임워크 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-08",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-630ae907946e",
    "name": "팀 토론 — 액냉 시스템 최적화 설계를 통한 운영 효율성 향상 분석",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-24",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-5edb4cbd98dd",
-   "name": "K-배터리 '다음 승부처'…AI부터 로봇·선박까지",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3630,6 +3630,36 @@
   {
    "source": "TRF-001",
    "target": "K-dabbc30ae090",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-bd669eae79a9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-bd669eae79a9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-bd669eae79a9",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-bd669eae79a9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-bd669eae79a9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-bd669eae79a9",
    "type": "knowledge"
   },
   {
@@ -9811,11 +9841,6 @@
    "source": "PRO-001",
    "target": "K-7dc72dbb2be5",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-5edb4cbd98dd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10074,7 +10099,7 @@
    {
     "date": "2026-09-08",
     "knowledge": 400,
-    "events_total": 1937
+    "events_total": 1938
    }
   ]
  }
