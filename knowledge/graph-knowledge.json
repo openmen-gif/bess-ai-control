@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-630ae907946e",
+   "name": "팀 토론 — 액냉 시스템 최적화 설계를 통한 운영 효율성 향상 분석",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-08",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e1107b39a4fe",
    "name": "팀 토론 — 정확한 원산지 분석을 통한 견적 및 BOM 최적화 방안 수립",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5278768053ca",
-   "name": "스탠다드에너지, 한양대 서울캠에 '바나듐 이온 배터리 ESS' 구축 - ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3630,6 +3630,36 @@
   {
    "source": "TRF-001",
    "target": "K-dabbc30ae090",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-630ae907946e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-630ae907946e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-630ae907946e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-630ae907946e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-630ae907946e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-630ae907946e",
    "type": "knowledge"
   },
   {
@@ -9786,11 +9816,6 @@
    "source": "BAT-001",
    "target": "K-5edb4cbd98dd",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-5278768053ca",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10049,7 +10074,7 @@
    {
     "date": "2026-09-08",
     "knowledge": 400,
-    "events_total": 1936
+    "events_total": 1937
    }
   ]
  }
