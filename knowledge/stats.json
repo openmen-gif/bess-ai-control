@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-07",
  "totals": {
-  "all": 1930,
+  "all": 1931,
   "briefing": 749,
   "skill": 734,
-  "discussion": 447,
+  "discussion": 448,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 459,
+   "count": 460,
    "byType": {
     "skill": 12,
-    "discussion": 209,
+    "discussion": 210,
     "briefing": 238
    },
    "lastGrown": "2026-09-07",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 186,
+   "count": 187,
    "byType": {
     "skill": 12,
-    "discussion": 174
+    "discussion": 175
    },
    "lastGrown": "2026-09-07",
    "level": 5
@@ -137,12 +137,12 @@
    "level": 4
   },
   "bess-ebop-engineer": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 9,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-emc-analyst": {
@@ -466,12 +466,12 @@
    "level": 2
   },
   "bess-presentation-designer": {
-   "count": 19,
+   "count": 20,
    "byType": {
     "skill": 6,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-07",
    "level": 2
   },
   "bess-procurement-data": {
@@ -484,13 +484,13 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 149,
+   "count": 150,
    "byType": {
     "skill": 11,
-    "discussion": 138
+    "discussion": 139
    },
    "lastGrown": "2026-09-07",
-   "level": 4
+   "level": 5
   },
   "bess-project-manager": {
    "count": 51,
@@ -693,12 +693,12 @@
    "level": 3
   },
   "bess-tax-japan": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 8,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-09-02",
+   "lastGrown": "2026-09-07",
    "level": 3
   },
   "bess-tax-korea": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-07",
-   "added": 16
+   "added": 17
   }
  ],
  "freshness": {
