@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ab7021445bba",
+   "name": "팀 토론 — 시운전 효율성 최적화 계획 수립 및 글로벌 모범 사례 벤치마",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff7d1463302e",
    "name": "중국, 배터리 증설 금지 조치…가격 회복 이어지나",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-25",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8521b83a282f",
-   "name": "팀 토론 — 고밀도 모듈의 안전성 평가 표준 업데이트 분석 및 현재 설계",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-25",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-ab7021445bba",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-ab7021445bba",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ab7021445bba",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-ab7021445bba",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-ab7021445bba",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ab7021445bba",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ab7021445bba",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ab7021445bba",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ff7d1463302e",
@@ -9636,40 +9676,10 @@
    "source": "BAT-001",
    "target": "K-8a2145a425ae",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-8521b83a282f",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-8521b83a282f",
-   "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-8521b83a282f",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-8521b83a282f",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-8521b83a282f",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-8521b83a282f",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "history": [
    {
     "date": "2026-07-20",
@@ -9925,6 +9935,11 @@
     "date": "2026-09-08",
     "knowledge": 400,
     "events_total": 1958
+   },
+   {
+    "date": "2026-09-09",
+    "knowledge": 400,
+    "events_total": 1959
    }
   ]
  }

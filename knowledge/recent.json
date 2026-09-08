@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-08",
+ "updated": "2026-09-09",
  "events": [
+  {
+   "id": "ab7021445bba",
+   "date": "2026-09-09",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cbop-engineer",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 시운전 효율성 최적화 계획 수립 및 글로벌 모범 사례 벤치마킹 (COM-100)",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ff7d1463302e",
    "date": "2026-09-08",
@@ -3870,17 +3888,6 @@
    ],
    "title": "K-배터리 위기 돌파구, ‘ESS’가 뜬다… \"美 탈중국 공급망 재편이 새로운 기회\"",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB1Q051V1k1SXR1LUEteDcwVzBvUkJ0M0NlZHltWm5OWmk0RmlPNnVWNFBYZmNQTkFodHZJc1RoUHZzUGNfRTFSdEhFOXl4a3VDM2t2ZE5lcUNKNzY1dWVIQ2Y0d0pTZ0U?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "c348d90df6e3",
-   "date": "2026-08-28",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "산업연구원 “K-배터리, 美 ESS 시장 돌파구 삼아야”",
-   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE05LW1sa3hWTC12Y2JjZjFlUWxpQVhQcnhQODJaaGtjMGxPSEt2VnFRZnNQOElIVlExd3NzVDdWYml4MFpKODVvNHh6dGNMaDBC?oc=5",
    "source": "구글뉴스"
   }
  ]
