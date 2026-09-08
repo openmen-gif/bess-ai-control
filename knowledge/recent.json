@@ -35,6 +35,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "e7e7311e8afa",
+   "date": "2026-09-08",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-cybersecurity-expert",
+    "bess-knowledge-manager",
+    "bess-precom-report",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 기술 표준 불일치 리스크 평가 및 대응 전략 수립 (국제 표준 연계 강화 필요성 vs 기술 변화 속도 고려)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "e3a6acc989bc",
    "date": "2026-09-08",
    "type": "briefing",
@@ -3864,22 +3882,6 @@
    "title": "산업연구원 “K-배터리, 美 ESS 시장 돌파구 삼아야”",
    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE05LW1sa3hWTC12Y2JjZjFlUWxpQVhQcnhQODJaaGtjMGxPSEt2VnFRZnNQOElIVlExd3NzVDdWYml4MFpKODVvNHh6dGNMaDBC?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "c32f5790a386",
-   "date": "2026-08-28",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-business-dev",
-    "bess-cost-analyst",
-    "bess-env-engineer",
-    "bess-esg-finance",
-    "bess-procurement-expert"
-   ],
-   "title": "팀 토론 — 부지 안전성 및 지속 가능한 환경 설계 최적화 방안 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
