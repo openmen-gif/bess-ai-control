@@ -19,6 +19,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-dd6dd2199136",
+   "name": "팀 토론 — 공급망 다각화의 신뢰성 평가 및 구체적 대응 전략 수립 방안",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-09",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-c2afa873dc5f",
    "name": "中, ESS 배터리 증설 제동…K배터리, 저가 경쟁 부담 덜까",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-fa9ec1e0963e",
-   "name": "[기획]전력 확보 전략 다변화…ESS·수소·마이크로그리드 부상",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-25",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3610,6 +3610,46 @@
   {
    "source": "BIZ-001",
    "target": "K-e1e486784e51",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-dd6dd2199136",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-dd6dd2199136",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-dd6dd2199136",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-dd6dd2199136",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-dd6dd2199136",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-dd6dd2199136",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-dd6dd2199136",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-dd6dd2199136",
    "type": "knowledge"
   },
   {
@@ -9446,11 +9486,6 @@
    "source": "MAR-001",
    "target": "K-11987ad30ac0",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-fa9ec1e0963e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9714,7 +9749,7 @@
    {
     "date": "2026-09-09",
     "knowledge": 400,
-    "events_total": 1974
+    "events_total": 1975
    }
   ]
  }
