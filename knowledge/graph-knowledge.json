@@ -109,6 +109,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-713c3df71358",
+   "name": "팀 토론 — 시운전 프로세스 자동화 시스템 구축 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-08",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-630ae907946e",
    "name": "팀 토론 — 액냉 시스템 최적화 설계를 통한 운영 효율성 향상 분석",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-25",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5cd585df897e",
-   "name": "“수년 기다렸는데 후순위로?”…햇빛소득마을 우선접속에 기존 사업자 ‘발칵",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-25",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3710,6 +3710,46 @@
   {
    "source": "MAR-001",
    "target": "K-7a390767a18a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-713c3df71358",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-713c3df71358",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-713c3df71358",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-713c3df71358",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-713c3df71358",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-713c3df71358",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-713c3df71358",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-713c3df71358",
    "type": "knowledge"
   },
   {
@@ -9591,11 +9631,6 @@
    "source": "BAT-001",
    "target": "K-7cc4fa2bdd32",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-5cd585df897e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9854,7 +9889,7 @@
    {
     "date": "2026-09-08",
     "knowledge": 400,
-    "events_total": 1956
+    "events_total": 1957
    }
   ]
  }
