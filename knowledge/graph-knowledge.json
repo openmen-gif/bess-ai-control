@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-be507a64aa06",
+   "name": "팀 토론 — 설비관리·유지보수 영역 현황 진단 — bess-facilit",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b945256b793d",
    "name": "전기안전 영역 확장...ESS·해상풍력·전기차 사고 대응 한자리",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-11987ad30ac0",
-   "name": "\"원하는 제품에 다 맞추는 것도 능력\" 삼성SDI 배터리의 진짜 강점은 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-26",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3655,6 +3655,46 @@
   {
    "source": "BAT-001",
    "target": "K-c2afa873dc5f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-be507a64aa06",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-be507a64aa06",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-be507a64aa06",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-be507a64aa06",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-be507a64aa06",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-be507a64aa06",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-be507a64aa06",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-be507a64aa06",
    "type": "knowledge"
   },
   {
@@ -9481,11 +9521,6 @@
    "source": "MAR-001",
    "target": "K-18790ec93d00",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-11987ad30ac0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9749,7 +9784,7 @@
    {
     "date": "2026-09-09",
     "knowledge": 400,
-    "events_total": 1975
+    "events_total": 1976
    }
   ]
  }
