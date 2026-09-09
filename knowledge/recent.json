@@ -2,6 +2,24 @@
  "updated": "2026-09-10",
  "events": [
   {
+   "id": "91be5b4c3a1c",
+   "date": "2026-09-10",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-facility-manager",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-pcs-expert",
+    "bess-system-engineer",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — 케이블·사이징·루팅 영역 초안 작성 — bess-cable-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5c3dfdbd6f28",
    "date": "2026-09-10",
    "type": "discussion",
@@ -3898,24 +3916,6 @@
    "title": "LG화학 ESS 수요 확대에 트럼프 '탈중국' 기류도 호재, 김동춘 하반기 석유화학 부진 부담 완화",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE90NHZZOVhCLVZmaEFxd3pETEJhTXkycEJQUEZfdnljaEplTUFGbjZSWHhaTDZEWHJkb2Y5eWF2Um5IOTFTVjUzLU9acG1GYjdHMzBjWnktVU83aVJfUmFwUERrOEoyb2RmazVEN3BNdllMUlU?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "b0f93740aad5",
-   "date": "2026-08-29",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cybersecurity-expert",
-    "bess-emc-analyst",
-    "bess-epc-bom",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-structural-analyst",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 명령 : CFD 유동해석을 활용한 BESS 시스템 내 최적의 열관리 설계 방안을 수립하여 화재 위험을 최소화하세요.",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

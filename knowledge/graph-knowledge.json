@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-91be5b4c3a1c",
+   "name": "팀 토론 — 케이블·사이징·루팅 영역 초안 작성 — bess-cable-",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5c3dfdbd6f28",
    "name": "팀 토론 — 시운전 프로세스 자동화 시스템 구축을 위한 최적의 조건 및 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2f804cb421a1",
-   "name": "'산업단지 에너지전환, 탄소중립산단 구축으로 해법 찾는다'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-26",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-91be5b4c3a1c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-91be5b4c3a1c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-91be5b4c3a1c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-91be5b4c3a1c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-91be5b4c3a1c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-91be5b4c3a1c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-91be5b4c3a1c",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-91be5b4c3a1c",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-5c3dfdbd6f28",
@@ -9691,11 +9731,6 @@
    "source": "PRO-001",
    "target": "K-32f15fc86aca",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-2f804cb421a1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9964,7 +9999,7 @@
    {
     "date": "2026-09-10",
     "knowledge": 400,
-    "events_total": 1982
+    "events_total": 1983
    }
   ]
  }
