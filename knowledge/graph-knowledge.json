@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-f71dd5878285",
+   "name": "팀 토론 — 중국 ESS 배터리 공급과잉 동향 분석 및 글로벌 시장 다각",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ee52273bb43b",
    "name": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1f8ed42fa7ae",
-   "name": "아이언 호스 애퀴지션 II 합병 예정사 '일렉트라 AI', 한국 민테크와",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-26",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-f71dd5878285",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-f71dd5878285",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f71dd5878285",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f71dd5878285",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-f71dd5878285",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-f71dd5878285",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-f71dd5878285",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-f71dd5878285",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ee52273bb43b",
@@ -9586,11 +9626,6 @@
    "source": "KTX-001",
    "target": "K-217b734386a5",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-1f8ed42fa7ae",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9854,7 +9889,7 @@
    {
     "date": "2026-09-09",
     "knowledge": 400,
-    "events_total": 1978
+    "events_total": 1979
    }
   ]
  }
