@@ -2,6 +2,24 @@
  "updated": "2026-09-09",
  "events": [
   {
+   "id": "ee52273bb43b",
+   "date": "2026-09-09",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-tax-accountant"
+   ],
+   "title": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ea4d511b72df",
    "date": "2026-09-09",
    "type": "briefing",
@@ -3869,17 +3887,6 @@
    ],
    "title": "삼성SDI, 열폭주 대응 배터리 안전 특허 2건 美서 공개",
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB1OEpQeXZreUxjdGM5UmJWSjBHRXBWQXpCeF9Qamd4VUFmRGlCakxnS1BNNkpIZjNXWnN3dzdRM2N6Q3ZLQldEN3dROHNnN2s?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "588519c0cff3",
-   "date": "2026-08-29",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "KG방화솔루션, 국방기술 창업경진대회 동상…불연 외장패널 기술성 인정",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1USHpiTmJhUDNaMlVwZ3lBem5UY0M4SnFuSXRQZWxqRFlTcHNsVy1rNVl3ajRxVE4zY3djY3Z5bUMwT05xRUhnNGRfTjhsbW90ZkhpRjBtbmFwSkhh?oc=5",
    "source": "구글뉴스"
   }
  ]

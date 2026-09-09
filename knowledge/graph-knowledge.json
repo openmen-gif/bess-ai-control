@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ee52273bb43b",
+   "name": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ea4d511b72df",
    "name": "中, ESS ‘옥석 가리기’…구조조정 칼 뺐다",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-18790ec93d00",
-   "name": "BS한양, 주택·에너지 ‘쌍끌이’로 영업익 2배 껑충…하반기엔 BESS ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-26",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-ee52273bb43b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-ee52273bb43b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-ee52273bb43b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ee52273bb43b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-ee52273bb43b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-ee52273bb43b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ee52273bb43b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-ee52273bb43b",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ea4d511b72df",
@@ -9516,11 +9556,6 @@
    "source": "STD-001",
    "target": "K-1ee2414dbca6",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-18790ec93d00",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9784,7 +9819,7 @@
    {
     "date": "2026-09-09",
     "knowledge": 400,
-    "events_total": 1976
+    "events_total": 1977
    }
   ]
  }
