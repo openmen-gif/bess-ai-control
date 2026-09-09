@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-ad5e6a53f41d",
+   "name": "팀 토론 — CFD·유동해석 영역 리스크 평가 — bess-cfd-ana",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ab7021445bba",
    "name": "팀 토론 — 시운전 효율성 최적화 계획 수립 및 글로벌 모범 사례 벤치마",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-256b89cbcb9e",
-   "name": "\"3박스부터 직배송\"… CATL, 소규모 구매자 겨냥 '온라인 D2C 플",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-26",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3785,6 +3785,46 @@
   {
    "source": "STD-001",
    "target": "K-b0e81a8b684d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ad5e6a53f41d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-ad5e6a53f41d",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-ad5e6a53f41d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ad5e6a53f41d",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-ad5e6a53f41d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-ad5e6a53f41d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-ad5e6a53f41d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ad5e6a53f41d",
    "type": "knowledge"
   },
   {
@@ -9621,15 +9661,10 @@
    "source": "BAT-001",
    "target": "K-26f40a0f4eac",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-256b89cbcb9e",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "history": [
    {
     "date": "2026-07-20",
@@ -9890,6 +9925,11 @@
     "date": "2026-09-09",
     "knowledge": 400,
     "events_total": 1980
+   },
+   {
+    "date": "2026-09-10",
+    "knowledge": 400,
+    "events_total": 1981
    }
   ]
  }
