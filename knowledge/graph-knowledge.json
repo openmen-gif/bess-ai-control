@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-5c3dfdbd6f28",
+   "name": "팀 토론 — 시운전 프로세스 자동화 시스템 구축을 위한 최적의 조건 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-10",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-f71dd5878285",
    "name": "팀 토론 — 중국 ESS 배터리 공급과잉 동향 분석 및 글로벌 시장 다각",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-26f40a0f4eac",
-   "name": "스탠다드에너지, 한양대에 바나듐 이온 배터리 ESS 구축… 도심 분산전원",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-26",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-5c3dfdbd6f28",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-5c3dfdbd6f28",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-5c3dfdbd6f28",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-5c3dfdbd6f28",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-5c3dfdbd6f28",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-5c3dfdbd6f28",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-5c3dfdbd6f28",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-5c3dfdbd6f28",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-f71dd5878285",
@@ -9656,11 +9696,6 @@
    "source": "STD-001",
    "target": "K-2f804cb421a1",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-26f40a0f4eac",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9929,7 +9964,7 @@
    {
     "date": "2026-09-10",
     "knowledge": 400,
-    "events_total": 1981
+    "events_total": 1982
    }
   ]
  }

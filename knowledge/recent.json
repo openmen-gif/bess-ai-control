@@ -2,6 +2,24 @@
  "updated": "2026-09-10",
  "events": [
   {
+   "id": "5c3dfdbd6f28",
+   "date": "2026-09-10",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-cable-engineer",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-marketer",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 시운전 프로세스 자동화 시스템 구축을 위한 최적의 조건 및 절차 검증 및 매뉴얼 작성 완료",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f71dd5878285",
    "date": "2026-09-09",
    "type": "discussion",
@@ -3898,17 +3916,6 @@
    "title": "팀 토론 — 명령 : CFD 유동해석을 활용한 BESS 시스템 내 최적의 열관리 설계 방안을 수립하여 화재 위험을 최소화하세요.",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "a547512a03fe",
-   "date": "2026-08-29",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "\"내년엔 LFP와 단가 같아져\"…나트륨 배터리, ESS 접수하나",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhOGVxTVdmZDkwZkt4YVBPUUlPdXYzMEduNTdQOVAyTDRCblZEbHJocGZFSGxDTHdZNTR3RXVKaXUzNU9sVF9WRkVkbzQzZzg4dzN4Z1lzNU52Zw?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
