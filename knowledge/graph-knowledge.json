@@ -190,6 +190,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-095002f9a9a2",
+   "name": "팀 토론 — 기초 설계 최적화를 위한 현지 환경 영향 평가 및 안전 기준",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff7d1463302e",
    "name": "중국, 배터리 증설 금지 조치…가격 회복 이어지나",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-217b734386a5",
-   "name": "팀 토론 — 바나듐 이온 배터리의 초기 투자 비용 및 장기적인 비용 절감",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-26",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3915,6 +3915,46 @@
   {
    "source": "SYS-001",
    "target": "K-239fad6ef1b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-095002f9a9a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-095002f9a9a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-095002f9a9a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-095002f9a9a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-095002f9a9a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-095002f9a9a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-095002f9a9a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-095002f9a9a2",
    "type": "knowledge"
   },
   {
@@ -9586,46 +9626,6 @@
    "source": "MAR-001",
    "target": "K-256b89cbcb9e",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-217b734386a5",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-217b734386a5",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-217b734386a5",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-217b734386a5",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-217b734386a5",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-217b734386a5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-217b734386a5",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-217b734386a5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9889,7 +9889,7 @@
    {
     "date": "2026-09-09",
     "knowledge": 400,
-    "events_total": 1979
+    "events_total": 1980
    }
   ]
  }
