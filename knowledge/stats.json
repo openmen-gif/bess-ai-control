@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-10",
  "totals": {
-  "all": 2005,
+  "all": 2006,
   "briefing": 801,
   "skill": 734,
-  "discussion": 470,
+  "discussion": 471,
   "activity": 0
  },
  "perAgent": {
@@ -17,19 +17,19 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 9,
-    "discussion": 27
+    "discussion": 28
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-10",
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 492,
+   "count": 493,
    "byType": {
     "skill": 12,
-    "discussion": 227,
+    "discussion": 228,
     "briefing": 253
    },
    "lastGrown": "2026-09-10",
@@ -119,21 +119,21 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 74,
+   "count": 75,
    "byType": {
     "skill": 11,
-    "discussion": 63
+    "discussion": 64
    },
-   "lastGrown": "2026-09-08",
+   "lastGrown": "2026-09-10",
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 78,
+   "count": 79,
    "byType": {
     "skill": 11,
-    "discussion": 67
+    "discussion": 68
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-10",
    "level": 4
   },
   "bess-ebop-engineer": {
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 75,
+   "count": 76,
    "byType": {
     "skill": 10,
-    "discussion": 65
+    "discussion": 66
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-10",
    "level": 4
   },
   "bess-emerging-markets": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 191,
+   "count": 192,
    "byType": {
     "skill": 11,
-    "discussion": 128,
+    "discussion": 129,
     "briefing": 52
    },
    "lastGrown": "2026-09-10",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 104,
+   "count": 105,
    "byType": {
     "skill": 11,
-    "discussion": 93
+    "discussion": 94
    },
    "lastGrown": "2026-09-10",
    "level": 4
@@ -538,12 +538,12 @@
    "level": 3
   },
   "bess-security-expert": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 7,
-    "discussion": 38
+    "discussion": 39
    },
-   "lastGrown": "2026-09-09",
+   "lastGrown": "2026-09-10",
    "level": 3
   },
   "bess-site-manager": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-10",
-   "added": 24
+   "added": 25
   }
  ],
  "freshness": {

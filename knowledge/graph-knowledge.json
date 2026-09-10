@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-ddfb1e76b7c6",
+   "name": "팀 토론 — 예측모델·최적화 영역 벤치마킹 — bess-aiml-engi",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d8a54fad0a3f",
    "name": "팀 토론 — AI 기반 예측 모델을 활용한 BESS 운영 효율 최적화 시",
    "group": "KNOWLEDGE",
@@ -3590,21 +3599,52 @@
    "date": "2026-08-26",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fae5d3375246",
-   "name": "바나듐 이온 배터리 적용 ESS로 전기차 충전 효율·안정성 높인다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-26",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
   {
    "source": "BAT-001",
    "target": "K-e95b754782f6",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-ddfb1e76b7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ddfb1e76b7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-ddfb1e76b7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-ddfb1e76b7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-ddfb1e76b7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ddfb1e76b7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-ddfb1e76b7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-ddfb1e76b7c6",
    "type": "knowledge"
   },
   {
@@ -9466,11 +9506,6 @@
    "source": "CAB-001",
    "target": "K-fbd2d9e067e8",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fae5d3375246",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9739,7 +9774,7 @@
    {
     "date": "2026-09-10",
     "knowledge": 400,
-    "events_total": 2005
+    "events_total": 2006
    }
   ]
  }
