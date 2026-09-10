@@ -208,6 +208,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-15ed04ee99cc",
+   "name": "팀 토론 — HS코드·배터리 영역 리스크 평가 — bess-customs",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1267632672c0",
    "name": "팀 토론 — 부지조성 및 기초설계 최적화를 위한 현지 환경 적합성 검토 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0b3fd652124c",
-   "name": "팀 토론 — 변압기 설계 최적화를 통한 시스템 안전성 및 전력품질 향상 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3915,6 +3915,46 @@
   {
    "source": "STD-001",
    "target": "K-1e605a94c31f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-15ed04ee99cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-15ed04ee99cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-15ed04ee99cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-15ed04ee99cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-15ed04ee99cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-15ed04ee99cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-15ed04ee99cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-15ed04ee99cc",
    "type": "knowledge"
   },
   {
@@ -9581,36 +9621,6 @@
    "source": "KTX-001",
    "target": "K-12b99683111e",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-0b3fd652124c",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-0b3fd652124c",
-   "type": "knowledge"
-  },
-  {
-   "source": "OAM-001",
-   "target": "K-0b3fd652124c",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-0b3fd652124c",
-   "type": "knowledge"
-  },
-  {
-   "source": "JTX-001",
-   "target": "K-0b3fd652124c",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-0b3fd652124c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9879,7 +9889,7 @@
    {
     "date": "2026-09-10",
     "knowledge": 400,
-    "events_total": 2009
+    "events_total": 2010
    }
   ]
  }
