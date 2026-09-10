@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-222063ea0400",
+   "name": "팀 토론 — 국제 안전 표준 강화 동향 분석 및 한국 BESS 설계 적용",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e95b754782f6",
    "name": "엘앤에프, 1년 만에 또 자금 조달 채비···LFP 성장 본궤도 오를까",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-18711137e89c",
-   "name": "2040년 재생E 220GW까지 확대…\"더 높여야\" vs \"이행 조건부터",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-222063ea0400",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-222063ea0400",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-222063ea0400",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-222063ea0400",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-222063ea0400",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-222063ea0400",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-222063ea0400",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-222063ea0400",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-e95b754782f6",
@@ -9616,15 +9656,10 @@
    "source": "BAT-001",
    "target": "K-199e655ba7ad",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-18711137e89c",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "history": [
    {
     "date": "2026-07-20",
@@ -9890,6 +9925,11 @@
     "date": "2026-09-10",
     "knowledge": 400,
     "events_total": 2011
+   },
+   {
+    "date": "2026-09-11",
+    "knowledge": 400,
+    "events_total": 2012
    }
   ]
  }

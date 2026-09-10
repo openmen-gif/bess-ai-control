@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-10",
+ "updated": "2026-09-11",
  "events": [
+  {
+   "id": "222063ea0400",
+   "date": "2026-09-11",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cybersecurity-expert",
+    "bess-facility-manager",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-permit-english",
+    "bess-power-market-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 국제 안전 표준 강화 동향 분석 및 한국 BESS 설계 적용 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "e95b754782f6",
    "date": "2026-09-10",
@@ -3910,17 +3928,6 @@
    "title": "팀 토론 — CFD 유동해석을 통한 BESS 시스템 내 열 관리 최적화 설계로 화재 위험 최소화 전략 수립",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "ddd684ce00cb",
-   "date": "2026-08-30",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "美 배터리 수입 다시 살아났다…삼성SDI·LG엔솔 ESS 공략 탄력",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5OU0E5WkJwakx1b1JocjFvV0dXLUgtd2FMUGFuei1vOGhMSTBQUEpYTEtqd2phTnRBRGtPc2NvUHpudjctTlhYOFZaOHVaWU1RR2hRTDZOb2RYcWJic29ENTdIOA?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
