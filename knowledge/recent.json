@@ -259,6 +259,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "1267632672c0",
+   "date": "2026-09-10",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cbop-engineer",
+    "bess-ebop-engineer",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-hse-manager",
+    "bess-standards-usa"
+   ],
+   "title": "팀 토론 — 부지조성 및 기초설계 최적화를 위한 현지 환경 적합성 검토 및 안전 기준 통합 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "116309dddbe6",
    "date": "2026-09-10",
    "type": "briefing",
@@ -3868,24 +3886,6 @@
    "title": "재생에너지 출력제어, 전기가 남을 때 발전을 줄이는 까닭",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9pa09vTjdfR1lUOFBJR2EwbG5JNlJaaDBtanRmQnZZemhuQmRQVFhhWkY3Y2h6RkVfSWlqVVBUMlRyX2NyNHhhYjlFUU5ucGk5a0IxVGE3cWlKR3ZOTThvSVB0anJndw?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "88ac4ef99ae2",
-   "date": "2026-08-30",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-circuit-breaker-expert",
-    "bess-cost-analyst",
-    "bess-data-analyst",
-    "bess-mlops-engineer",
-    "bess-permit-asia",
-    "bess-procurement-expert",
-    "bess-standards-eu"
-   ],
-   "title": "팀 토론 — AI 기반 최적화 알고리즘 적용으로 BESS 운영 효율성 시뮬레이션 고도화 계획 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
