@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b77dc77142ef",
+   "name": "팀 토론 — 변압기 및 보호협조 시스템 통합 최적화 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b5868b023a35",
    "name": "ESS 화재 미연에 잡는다…전기안전공사 AI 기반 디지털 안전관리 플랫폼",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-067d2e0fd16e",
-   "name": "2배 커지는 ESS 시장 간절한데…K배터리 \"출혈 경쟁에 남는게 없다\" ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3695,6 +3695,46 @@
   {
    "source": "FIR-001",
    "target": "K-b78cf97b248f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-b77dc77142ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-b77dc77142ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-b77dc77142ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-b77dc77142ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b77dc77142ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-b77dc77142ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b77dc77142ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-b77dc77142ef",
    "type": "knowledge"
   },
   {
@@ -9571,11 +9611,6 @@
    "source": "TRF-001",
    "target": "K-0b3fd652124c",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-067d2e0fd16e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9844,7 +9879,7 @@
    {
     "date": "2026-09-10",
     "knowledge": 400,
-    "events_total": 2008
+    "events_total": 2009
    }
   ]
  }

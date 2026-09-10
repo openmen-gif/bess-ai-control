@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-10",
  "totals": {
-  "all": 2008,
+  "all": 2009,
   "briefing": 801,
   "skill": 734,
-  "discussion": 473,
+  "discussion": 474,
   "activity": 0
  },
  "perAgent": {
@@ -74,21 +74,21 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 58,
+   "count": 59,
    "byType": {
     "skill": 11,
-    "discussion": 47
+    "discussion": 48
    },
    "lastGrown": "2026-09-10",
    "level": 3
   },
   "bess-commissioning-coordinator": {
-   "count": 42,
+   "count": 43,
    "byType": {
     "skill": 11,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-09-09",
+   "lastGrown": "2026-09-10",
    "level": 3
   },
   "bess-contract-specialist": {
@@ -119,10 +119,10 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 76,
+   "count": 77,
    "byType": {
     "skill": 11,
-    "discussion": 65
+    "discussion": 66
    },
    "lastGrown": "2026-09-10",
    "level": 4
@@ -173,13 +173,13 @@
    "level": 4
   },
   "bess-epc-bom": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 9,
-    "discussion": 20
+    "discussion": 21
    },
-   "lastGrown": "2026-09-02",
-   "level": 2
+   "lastGrown": "2026-09-10",
+   "level": 3
   },
   "bess-esg-finance": {
    "count": 37,
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 107,
+   "count": 108,
    "byType": {
     "skill": 11,
-    "discussion": 96
+    "discussion": 97
    },
    "lastGrown": "2026-09-10",
    "level": 4
@@ -438,13 +438,13 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 85,
+   "count": 86,
    "byType": {
     "skill": 9,
-    "discussion": 62,
+    "discussion": 63,
     "briefing": 14
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-10",
    "level": 4
   },
   "bess-power-system-analyst": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 122,
+   "count": 123,
    "byType": {
     "skill": 11,
-    "discussion": 111
+    "discussion": 112
    },
    "lastGrown": "2026-09-10",
    "level": 4
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 44,
+   "count": 45,
    "byType": {
     "skill": 10,
-    "discussion": 32,
+    "discussion": 33,
     "briefing": 2
    },
-   "lastGrown": "2026-09-08",
+   "lastGrown": "2026-09-10",
    "level": 3
   },
   "bess-translator": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-10",
-   "added": 27
+   "added": 28
   }
  ],
  "freshness": {
