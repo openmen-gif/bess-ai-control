@@ -226,6 +226,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0701699f579f",
+   "name": "팀 토론 — CEA·SECI 영역 초안 작성 — bess-emerging",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-004ed03e1cc0",
    "name": "팀 토론 — 차단기 및 보호 장치 최적화 계획 수립으로 시스템 신뢰성 향",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-053d8b083f38",
-   "name": "삼성SDI·디스플레이, 지분거래로 이뤄낼 '윈윈 구조'는",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3925,6 +3925,46 @@
   {
    "source": "FIR-001",
    "target": "K-0cc87aecf6a9",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0701699f579f",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-0701699f579f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0701699f579f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-0701699f579f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0701699f579f",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-0701699f579f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-0701699f579f",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-0701699f579f",
    "type": "knowledge"
   },
   {
@@ -9536,11 +9576,6 @@
    "source": "STD-001",
    "target": "K-067d2e0fd16e",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-053d8b083f38",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9809,7 +9844,7 @@
    {
     "date": "2026-09-10",
     "knowledge": 400,
-    "events_total": 2007
+    "events_total": 2008
    }
   ]
  }
