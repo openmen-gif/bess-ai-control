@@ -2,6 +2,24 @@
  "updated": "2026-09-11",
  "events": [
   {
+   "id": "82cb32f8e690",
+   "date": "2026-09-11",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-cybersecurity-expert",
+    "bess-facility-manager",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-tax-epc-accounting",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 공급망 유연성 평가 강화를 통한 기술 변화 대응 능력 분석 및 최적화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "222063ea0400",
    "date": "2026-09-11",
    "type": "discussion",
@@ -3910,24 +3928,6 @@
    "title": "불나면 스스로 물 뿌린다…삼성SDI, ‘셀프 소화’ 배터리 개발",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBkUnNIcTdMUzFzRWZVQlN4RmdkMkFBY0xMV0t1TGZhVlRDRlFrNHN3czFMdF9DLXRwNmFJYUJ5OTJHVERkQU9TUTVMLWRFb2l4Mi1NVDJDQXF1ZlBsSkFtRlJyVGRodHPSAWdBVV95cUxQZFJzSHE3TFMxc0VmVUJTeEZnZDJBQWNMTFdLdUxmYVZUQ0ZRazRzd3MxTHRfQy10cDZhSWFCeTkyR1REZEFPU1E1TC1kRW9peDItTVQyQ0FxdWZQbEpBbUZSclRkaHRz?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "ec752815fecb",
-   "date": "2026-08-30",
-   "type": "discussion",
-   "agents": [
-    "bess-cfd-analyst",
-    "bess-circuit-breaker-expert",
-    "bess-emc-analyst",
-    "bess-fire-engineer",
-    "bess-grounding-engineer",
-    "bess-it-infra",
-    "bess-mlops-engineer",
-    "bess-substation-engineer"
-   ],
-   "title": "팀 토론 — CFD 유동해석을 통한 BESS 시스템 내 열 관리 최적화 설계로 화재 위험 최소화 전략 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

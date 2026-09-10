@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-82cb32f8e690",
+   "name": "팀 토론 — 공급망 유연성 평가 강화를 통한 기술 변화 대응 능력 분석 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-222063ea0400",
    "name": "팀 토론 — 국제 안전 표준 강화 동향 분석 및 한국 BESS 설계 적용",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-199e655ba7ad",
-   "name": "'ESS 골드러시' 미국 시장 4배 커진다…배터리 라인 전환 속도전 - ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-82cb32f8e690",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-82cb32f8e690",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-82cb32f8e690",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-82cb32f8e690",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-82cb32f8e690",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-82cb32f8e690",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-82cb32f8e690",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-82cb32f8e690",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-222063ea0400",
@@ -9651,11 +9691,6 @@
    "source": "BAT-001",
    "target": "K-1c60c414fd55",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-199e655ba7ad",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9929,7 +9964,7 @@
    {
     "date": "2026-09-11",
     "knowledge": 400,
-    "events_total": 2012
+    "events_total": 2013
    }
   ]
  }
