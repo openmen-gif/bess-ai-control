@@ -37,6 +37,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-caa949e3f6ea",
+   "name": "팀 토론 — 변압기 효율 최적화 설계 검토 및 시스템 안정성 평가",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c8a44910d039",
    "name": "한전KDN, 세네갈서 AI에너지 자립 사업 수주",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-12b99683111e",
-   "name": "팀 토론 — 공급망 다각화 시 기술적 역량 및 재무 안정성 평가 프레임워",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "MAR-001",
    "target": "K-d50c21abe418",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-caa949e3f6ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-caa949e3f6ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-caa949e3f6ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-caa949e3f6ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-caa949e3f6ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-caa949e3f6ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-caa949e3f6ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-caa949e3f6ea",
    "type": "knowledge"
   },
   {
@@ -9581,46 +9621,6 @@
    "source": "STD-001",
    "target": "K-18711137e89c",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-12b99683111e",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-100",
-   "target": "K-12b99683111e",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-12b99683111e",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-12b99683111e",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-12b99683111e",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-007",
-   "target": "K-12b99683111e",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-12b99683111e",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-12b99683111e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9889,7 +9889,7 @@
    {
     "date": "2026-09-10",
     "knowledge": 400,
-    "events_total": 2010
+    "events_total": 2011
    }
   ]
  }
