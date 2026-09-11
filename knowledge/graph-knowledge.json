@@ -199,6 +199,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-081838c8bf66",
+   "name": "팀 토론 — 시운전 최적화 프로세스 구축 및 실시간 모니터링 시스템 도입",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-04e945a58f55",
    "name": "NET ZERO EUROPE 2026이 던지는 질문: 한국 PV·ESS ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-28",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-f5ff8f6d1f49",
-   "name": "ESS 입찰 따낼수록 적자?…출혈 경쟁에 멍드는 K배터리 - 머니투데이",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3920,6 +3920,46 @@
   {
    "source": "BAT-001",
    "target": "K-13a67d39fa45",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-081838c8bf66",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-081838c8bf66",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-081838c8bf66",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-081838c8bf66",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-081838c8bf66",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-081838c8bf66",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-081838c8bf66",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-081838c8bf66",
    "type": "knowledge"
   },
   {
@@ -9596,11 +9636,6 @@
    "source": "PCS-001",
    "target": "K-13309408508d",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-f5ff8f6d1f49",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9874,7 +9909,7 @@
    {
     "date": "2026-09-11",
     "knowledge": 400,
-    "events_total": 2036
+    "events_total": 2037
    }
   ]
  }
