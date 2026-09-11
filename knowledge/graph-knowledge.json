@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-88e0bda78d72",
+   "name": "팀 토론 — 미국 전력망 안보 강화 정책 세부 내용 분석 및 국내 BES",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-12",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-f12fdaf07456",
    "name": "[이슈] 현대차·기아, 다 쓴 전기차 배터리로 급속충전소 돌린다… ESS",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-28",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-1ab13d339409",
-   "name": "독보적 팹 파워 입증… 시지트로닉스, GaN 전력반도체 양산 모멘텀",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-28",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "SUB-001",
    "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-88e0bda78d72",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-88e0bda78d72",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-88e0bda78d72",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-88e0bda78d72",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-88e0bda78d72",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-88e0bda78d72",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-88e0bda78d72",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-88e0bda78d72",
    "type": "knowledge"
   },
   {
@@ -9666,11 +9706,6 @@
    "source": "BIZ-001",
    "target": "K-1cf9a66ed9e4",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-1ab13d339409",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9949,7 +9984,7 @@
    {
     "date": "2026-09-12",
     "knowledge": 400,
-    "events_total": 2038
+    "events_total": 2039
    }
   ]
  }
