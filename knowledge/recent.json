@@ -163,6 +163,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "3a056ca3dbc2",
+   "date": "2026-09-11",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-emc-analyst",
+    "bess-epc-bom",
+    "bess-fire-engineer",
+    "bess-fit-procedure",
+    "bess-hse-manager",
+    "bess-network-engineer",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 시운전 프로세스 최적화를 통한 운영 효율성 향상 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "2ddcab925424",
    "date": "2026-09-11",
    "type": "briefing",
@@ -3860,17 +3878,6 @@
    ],
    "title": "[The Company] 북미 ESS 5대 생산거점 완성…시장 선점 가속",
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1kVlN1SE1WdURYVzJIdTExcmo4dmVKQWNReTd3U2tPcnMweUluSlRfQjIyX3ZoajdFR0dnbDZtTkNXbGpSYWhOZWRkaU5BdjVBb0ZmT0RB?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "de59a378cd31",
-   "date": "2026-08-31",
-   "type": "briefing",
-   "agents": [
-    "bess-fire-engineer"
-   ],
-   "title": "[중화학On] 배터리 속 '스프링클러'…삼성SDI, 열폭주 셀 직접 식힌다",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBpRnF0SnhiOE95d2VlYUNJTWdzdi10aV9nMjJaVGdLeHlKMGp6R3VyTmI1LWJNdkhZMW50djNYUGdYSHB3eDR5RTN5NEJEWWM?oc=5",
    "source": "구글뉴스"
   }
  ]

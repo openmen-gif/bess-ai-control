@@ -127,6 +127,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-3a056ca3dbc2",
+   "name": "팀 토론 — 시운전 프로세스 최적화를 통한 운영 효율성 향상 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2ddcab925424",
    "name": "디시오, 한국전력공사 인큐베이팅센터 입주기업 선정...고전압 전력반도체 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-bf956f3079ec",
-   "name": "“전기차 대신 휴머노이드 탑승”…K배터리, ‘꿈의 배터리’ 전선 바꿨다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3705,6 +3705,46 @@
   {
    "source": "MAR-001",
    "target": "K-4aa96b1b784c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3a056ca3dbc2",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-3a056ca3dbc2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-3a056ca3dbc2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-3a056ca3dbc2",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-3a056ca3dbc2",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-3a056ca3dbc2",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-3a056ca3dbc2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3a056ca3dbc2",
    "type": "knowledge"
   },
   {
@@ -9456,11 +9496,6 @@
    "source": "BAT-001",
    "target": "K-c572807cdff8",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-bf956f3079ec",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9734,7 +9769,7 @@
    {
     "date": "2026-09-11",
     "knowledge": 400,
-    "events_total": 2032
+    "events_total": 2033
    }
   ]
  }
