@@ -136,6 +136,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3f69b26070ee",
+   "name": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3a056ca3dbc2",
    "name": "팀 토론 — 시운전 프로세스 최적화를 통한 운영 효율성 향상 계획 수립",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-c9390eb0ab3f",
-   "name": "\"디지털 재난 미리 막는다\".. 전국 데이터센터 163곳 화재안전조사",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3745,6 +3745,46 @@
   {
    "source": "STD-006",
    "target": "K-463d735e323d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3f69b26070ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-3f69b26070ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3f69b26070ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-3f69b26070ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-3f69b26070ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-3f69b26070ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-3f69b26070ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-3f69b26070ee",
    "type": "knowledge"
   },
   {
@@ -9526,11 +9566,6 @@
    "source": "STD-001",
    "target": "K-ee92f2ee42a2",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-c9390eb0ab3f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9804,7 +9839,7 @@
    {
     "date": "2026-09-11",
     "knowledge": 400,
-    "events_total": 2034
+    "events_total": 2035
    }
   ]
  }

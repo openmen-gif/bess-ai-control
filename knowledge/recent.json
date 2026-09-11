@@ -181,6 +181,24 @@
    "source": "bess-team"
   },
   {
+   "id": "3f69b26070ee",
+   "date": "2026-09-11",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-financial-analysis",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-marketer",
+    "bess-output-generator",
+    "bess-permit-english"
+   ],
+   "title": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3a056ca3dbc2",
    "date": "2026-09-11",
    "type": "discussion",
@@ -3875,17 +3893,6 @@
    "title": "“LFP 양산 페달 밟는다”…SK온, 美서 1.5조원 규모 ESS 배터리 셀 공급계약",
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QWkh4aFV5RnNqWHF6V3dXNXMwdWxPT1B0U0hrMldrRHpPUmhZcVpmQjdfNnA4d3Jwem54cklFME1VWUlPTzRwTWxqQ0xINnc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "016d41e600c6",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-standards-korea"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
