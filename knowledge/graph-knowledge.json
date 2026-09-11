@@ -109,6 +109,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-5176c1d4d87b",
+   "name": "팀 토론 — 변압기 효율 최적화 설계 검토 및 보조전원 시스템 안정성 강",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-4bdfc70cfe71",
    "name": "中, ESS도 ‘출혈 경쟁’ 제동…K배터리 반사이익 기대감",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-27",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-ee92f2ee42a2",
-   "name": "“설비 물량 늘리기 급급한 ESS… ‘시장 구조’ 판 엎어야 산다”",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3695,6 +3695,46 @@
   {
    "source": "STD-001",
    "target": "K-604c4bb2826b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-5176c1d4d87b",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-5176c1d4d87b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-5176c1d4d87b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-5176c1d4d87b",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-5176c1d4d87b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-5176c1d4d87b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-5176c1d4d87b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-5176c1d4d87b",
    "type": "knowledge"
   },
   {
@@ -9561,11 +9601,6 @@
    "source": "BIZ-001",
    "target": "K-f5ff8f6d1f49",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-ee92f2ee42a2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9839,7 +9874,7 @@
    {
     "date": "2026-09-11",
     "knowledge": 400,
-    "events_total": 2035
+    "events_total": 2036
    }
   ]
  }
