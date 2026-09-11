@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-11",
+ "updated": "2026-09-12",
  "events": [
+  {
+   "id": "dc924effda00",
+   "date": "2026-09-12",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-financial-analysis",
+    "bess-marketer",
+    "bess-standards-uk",
+    "bess-substation-engineer"
+   ],
+   "title": "팀 토론 — 견적서·BOM 영역 1차 분석 — bess-epc-bom 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f12fdaf07456",
    "date": "2026-09-11",
@@ -3896,17 +3914,6 @@
    "title": "[EV 트렌드코리아 2026]이온어스, 이동형 ESS ‘Indego’ 공개…“모바일 청정 전력 생태계 확대”",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZnExSTZPX19wRXV4UWg4RC1CbmNmS0oyY2FLT2tvN2lBSkpsYkFHcGU5WVo2cVU4ZjZJUGd6dWxpQndEcWxxVTEyUnRQOUtmS3Qtd1ZuTHBJRGlmb0FVV1VvV1M2TU5DTlFTX2wyWldyS09RUmx4V1A0eDFMaUlJRmRMckEybkHSAXtBVV95cUxOZjhLNDNsSVFoQ0hiZ0dTcjlRZVc3ZXk5eFoxNFVJUXMwb2tJTE5zczV0V1Zvcm80QkxHS296R2dGOGZnaDdZRU5zZHE5REVhWEVBWUZUVGFBd2xKR1lfZzRMZWtSOFd0Wkxvd2tZWk9yNmEtdUMyc19PMzQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "097afff0cfac",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

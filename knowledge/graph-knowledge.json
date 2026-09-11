@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-dc924effda00",
+   "name": "팀 토론 — 견적서·BOM 영역 1차 분석 — bess-epc-bom 주",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f12fdaf07456",
    "name": "[이슈] 현대차·기아, 다 쓴 전기차 배터리로 급속충전소 돌린다… ESS",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-28",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-13309408508d",
-   "name": "[In터뷰] 시능코리아, 태양광 인버터 넘어 ESS·PCS 시장 정조준",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-28",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-dc924effda00",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-f12fdaf07456",
@@ -9631,15 +9671,10 @@
    "source": "PCS-001",
    "target": "K-1ab13d339409",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-13309408508d",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "history": [
    {
     "date": "2026-07-20",
@@ -9910,6 +9945,11 @@
     "date": "2026-09-11",
     "knowledge": 400,
     "events_total": 2037
+   },
+   {
+    "date": "2026-09-12",
+    "knowledge": 400,
+    "events_total": 2038
    }
   ]
  }
