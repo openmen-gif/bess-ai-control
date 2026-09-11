@@ -1,8 +1,8 @@
 {
  "updated": "2026-09-12",
  "totals": {
-  "all": 2040,
-  "briefing": 820,
+  "all": 2061,
+  "briefing": 841,
   "skill": 734,
   "discussion": 486,
   "activity": 0
@@ -26,11 +26,11 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 509,
+   "count": 514,
    "byType": {
     "skill": 12,
     "discussion": 238,
-    "briefing": 259
+    "briefing": 264
    },
    "lastGrown": "2026-09-12",
    "level": 5
@@ -209,11 +209,11 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 203,
+   "count": 204,
    "byType": {
     "skill": 11,
     "discussion": 139,
-    "briefing": 53
+    "briefing": 54
    },
    "lastGrown": "2026-09-12",
    "level": 5
@@ -355,11 +355,11 @@
    "level": 3
   },
   "bess-marketer": {
-   "count": 295,
+   "count": 303,
    "byType": {
     "skill": 11,
     "discussion": 63,
-    "briefing": 221
+    "briefing": 229
    },
    "lastGrown": "2026-09-12",
    "level": 5
@@ -401,13 +401,13 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 162,
+   "count": 163,
    "byType": {
     "skill": 11,
     "discussion": 91,
-    "briefing": 60
+    "briefing": 61
    },
-   "lastGrown": "2026-09-11",
+   "lastGrown": "2026-09-12",
    "level": 5
   },
   "bess-permit-asia": {
@@ -438,11 +438,11 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 90,
+   "count": 94,
    "byType": {
     "skill": 9,
     "discussion": 66,
-    "briefing": 15
+    "briefing": 19
    },
    "lastGrown": "2026-09-12",
    "level": 4
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 203,
+   "count": 205,
    "byType": {
     "skill": 10,
     "discussion": 49,
-    "briefing": 144
+    "briefing": 146
    },
-   "lastGrown": "2026-09-11",
+   "lastGrown": "2026-09-12",
    "level": 5
   },
   "bess-standards-australia": {
@@ -1116,13 +1116,13 @@
   },
   {
    "date": "2026-09-12",
-   "added": 3
+   "added": 24
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-09-11",
-   "staleDays": 1,
+   "latestSource": "2026-09-12",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
