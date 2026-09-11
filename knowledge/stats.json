@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-11",
  "totals": {
-  "all": 2033,
+  "all": 2034,
   "briefing": 820,
   "skill": 734,
-  "discussion": 479,
+  "discussion": 480,
   "activity": 0
  },
  "perAgent": {
@@ -26,23 +26,23 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 505,
+   "count": 506,
    "byType": {
     "skill": 12,
-    "discussion": 234,
+    "discussion": 235,
     "briefing": 259
    },
    "lastGrown": "2026-09-11",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 116,
+   "count": 117,
    "byType": {
     "skill": 11,
-    "discussion": 54,
+    "discussion": 55,
     "briefing": 51
    },
-   "lastGrown": "2026-09-10",
+   "lastGrown": "2026-09-11",
    "level": 4
   },
   "bess-cable-engineer": {
@@ -119,10 +119,10 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 79,
+   "count": 80,
    "byType": {
     "skill": 11,
-    "discussion": 68
+    "discussion": 69
    },
    "lastGrown": "2026-09-11",
    "level": 4
@@ -200,12 +200,12 @@
    "level": 3
   },
   "bess-financial-analysis": {
-   "count": 118,
+   "count": 119,
    "byType": {
     "skill": 11,
-    "discussion": 107
+    "discussion": 108
    },
-   "lastGrown": "2026-09-10",
+   "lastGrown": "2026-09-11",
    "level": 4
   },
   "bess-fire-engineer": {
@@ -355,10 +355,10 @@
    "level": 3
   },
   "bess-marketer": {
-   "count": 291,
+   "count": 292,
    "byType": {
     "skill": 11,
-    "discussion": 59,
+    "discussion": 60,
     "briefing": 221
    },
    "lastGrown": "2026-09-11",
@@ -438,10 +438,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 88,
+   "count": 89,
    "byType": {
     "skill": 9,
-    "discussion": 64,
+    "discussion": 65,
     "briefing": 15
    },
    "lastGrown": "2026-09-11",
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 202,
+   "count": 203,
    "byType": {
     "skill": 10,
-    "discussion": 48,
+    "discussion": 49,
     "briefing": 144
    },
    "lastGrown": "2026-09-11",
@@ -620,12 +620,12 @@
    "level": 2
   },
   "bess-standards-uk": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 8,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-11",
    "level": 2
   },
   "bess-standards-usa": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-11",
-   "added": 22
+   "added": 23
   }
  ],
  "freshness": {

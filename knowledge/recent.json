@@ -163,6 +163,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "463d735e323d",
+   "date": "2026-09-11",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cybersecurity-expert",
+    "bess-financial-analysis",
+    "bess-marketer",
+    "bess-power-market-expert",
+    "bess-standards-analyst",
+    "bess-standards-uk"
+   ],
+   "title": "팀 토론 — 미국 전력망 안보 강화 동향 분석 및 국내 BESS 프로젝트 입찰 전략 조정 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3a056ca3dbc2",
    "date": "2026-09-11",
    "type": "discussion",
@@ -3868,17 +3886,6 @@
    "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "f9821f9210a4",
-   "date": "2026-08-31",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "[The Company] 북미 ESS 5대 생산거점 완성…시장 선점 가속",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1kVlN1SE1WdURYVzJIdTExcmo4dmVKQWNReTd3U2tPcnMweUluSlRfQjIyX3ZoajdFR0dnbDZtTkNXbGpSYWhOZWRkaU5BdjVBb0ZmT0RB?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
