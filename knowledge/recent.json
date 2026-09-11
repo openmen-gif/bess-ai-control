@@ -20,6 +20,24 @@
    "source": "bess-team"
   },
   {
+   "id": "ad4bff00bd06",
+   "date": "2026-09-12",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-legal-expert",
+    "bess-presentation-designer",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 기술 표준 불일치 리스크 평가 및 국내 규제 환경과의 연계 방안 구체화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "88e0bda78d72",
    "date": "2026-09-12",
    "type": "discussion",
@@ -3910,17 +3928,6 @@
    "title": "리튬 반등에 북미 ESS 훈풍…2차전지, 실적 회복 `주목`",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9WcXlUTnc2Z1o1eVI1QTVvQVRWSEtPdkJyN1lnSVMyOTA2WFZnNVBhb1ZOWWpuYlpZY1BsZkJybExJSXl6S2FBdVRILU9KZTZmTnQzSjBUQ2w5bHdNWFlKNVJB?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "115cb86dabbc",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-emerging-markets"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

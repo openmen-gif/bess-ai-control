@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-12",
  "totals": {
-  "all": 2039,
+  "all": 2040,
   "briefing": 820,
   "skill": 734,
-  "discussion": 485,
+  "discussion": 486,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 508,
+   "count": 509,
    "byType": {
     "skill": 12,
-    "discussion": 237,
+    "discussion": 238,
     "briefing": 259
    },
    "lastGrown": "2026-09-12",
@@ -164,12 +164,12 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 70,
+   "count": 71,
    "byType": {
     "skill": 10,
-    "discussion": 60
+    "discussion": 61
    },
-   "lastGrown": "2026-09-10",
+   "lastGrown": "2026-09-12",
    "level": 4
   },
   "bess-epc-bom": {
@@ -209,13 +209,13 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 202,
+   "count": 203,
    "byType": {
     "skill": 11,
-    "discussion": 138,
+    "discussion": 139,
     "briefing": 53
    },
-   "lastGrown": "2026-09-11",
+   "lastGrown": "2026-09-12",
    "level": 5
   },
   "bess-fit-procedure": {
@@ -256,12 +256,12 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 114,
+   "count": 115,
    "byType": {
     "skill": 11,
-    "discussion": 103
+    "discussion": 104
    },
-   "lastGrown": "2026-09-11",
+   "lastGrown": "2026-09-12",
    "level": 4
   },
   "bess-hybrid-specialist": {
@@ -337,12 +337,12 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 144,
+   "count": 145,
    "byType": {
     "skill": 11,
-    "discussion": 133
+    "discussion": 134
    },
-   "lastGrown": "2026-09-08",
+   "lastGrown": "2026-09-12",
    "level": 4
   },
   "bess-logistics-expert": {
@@ -466,12 +466,12 @@
    "level": 2
   },
   "bess-presentation-designer": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 6,
-    "discussion": 14
+    "discussion": 15
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-12",
    "level": 2
   },
   "bess-procurement-data": {
@@ -593,12 +593,12 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 199,
+   "count": 200,
    "byType": {
     "skill": 11,
-    "discussion": 188
+    "discussion": 189
    },
-   "lastGrown": "2026-09-11",
+   "lastGrown": "2026-09-12",
    "level": 5
   },
   "bess-standards-poland": {
@@ -702,12 +702,12 @@
    "level": 3
   },
   "bess-tax-korea": {
-   "count": 117,
+   "count": 118,
    "byType": {
     "skill": 11,
-    "discussion": 106
+    "discussion": 107
    },
-   "lastGrown": "2026-09-10",
+   "lastGrown": "2026-09-12",
    "level": 4
   },
   "bess-tool-developer": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-12",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
