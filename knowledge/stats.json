@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-13",
  "totals": {
-  "all": 2063,
+  "all": 2064,
   "briefing": 841,
   "skill": 734,
-  "discussion": 488,
+  "discussion": 489,
   "activity": 0
  },
  "perAgent": {
@@ -46,13 +46,13 @@
    "level": 4
   },
   "bess-cable-engineer": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 11,
-    "discussion": 36,
+    "discussion": 37,
     "briefing": 2
    },
-   "lastGrown": "2026-09-10",
+   "lastGrown": "2026-09-13",
    "level": 3
   },
   "bess-cbop-engineer": {
@@ -74,12 +74,12 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 11,
-    "discussion": 50
+    "discussion": 51
    },
-   "lastGrown": "2026-09-11",
+   "lastGrown": "2026-09-13",
    "level": 3
   },
   "bess-commissioning-coordinator": {
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 78,
+   "count": 79,
    "byType": {
     "skill": 10,
-    "discussion": 68
+    "discussion": 69
    },
-   "lastGrown": "2026-09-11",
+   "lastGrown": "2026-09-13",
    "level": 4
   },
   "bess-emerging-markets": {
@@ -200,10 +200,10 @@
    "level": 3
   },
   "bess-financial-analysis": {
-   "count": 124,
+   "count": 125,
    "byType": {
     "skill": 11,
-    "discussion": 113
+    "discussion": 114
    },
    "lastGrown": "2026-09-13",
    "level": 4
@@ -292,12 +292,12 @@
    "level": 2
   },
   "bess-internal-auditor": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 9,
-    "discussion": 36
+    "discussion": 37
    },
-   "lastGrown": "2026-09-01",
+   "lastGrown": "2026-09-13",
    "level": 3
   },
   "bess-ip-patent-expert": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 201,
+   "count": 202,
    "byType": {
     "skill": 11,
-    "discussion": 190
+    "discussion": 191
    },
    "lastGrown": "2026-09-13",
    "level": 5
@@ -638,12 +638,12 @@
    "level": 3
   },
   "bess-structural-analyst": {
-   "count": 59,
+   "count": 60,
    "byType": {
     "skill": 10,
-    "discussion": 49
+    "discussion": 50
    },
-   "lastGrown": "2026-09-07",
+   "lastGrown": "2026-09-13",
    "level": 3
   },
   "bess-substation-engineer": {
@@ -656,12 +656,12 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 128,
+   "count": 129,
    "byType": {
     "skill": 11,
-    "discussion": 117
+    "discussion": 118
    },
-   "lastGrown": "2026-09-12",
+   "lastGrown": "2026-09-13",
    "level": 4
   },
   "bess-tax-accountant": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-13",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
