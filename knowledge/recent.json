@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-12",
+ "updated": "2026-09-13",
  "events": [
+  {
+   "id": "c71483152db3",
+   "date": "2026-09-13",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-marketer",
+    "bess-procurement-expert",
+    "bess-project-manager",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 시운전·코디네이터 영역 1차 분석 — bess-commissioning-coordinator 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "e769c76169bb",
    "date": "2026-09-12",
@@ -3901,24 +3919,6 @@
     "bess-tax-korea"
    ],
    "title": "팀 토론 — IRA 법안의 구체적인 현지 제조 요건 및 인센티브 분석을 통해 한국 BESS 공급망 전략 최적화 방안 마련",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "75f48885cb2a",
-   "date": "2026-09-01",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cable-engineer",
-    "bess-cost-analyst",
-    "bess-emc-analyst",
-    "bess-grounding-engineer",
-    "bess-procurement-expert",
-    "bess-security-expert",
-    "bess-standards-uk"
-   ],
-   "title": "팀 토론 — 케이블·사이징·루팅 영역 초안 작성 — bess-cable-engineer 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
   }
