@@ -10,6 +10,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-51489ae91b43",
+   "name": "팀 토론 — 계약 리스크 관리 프레임워크 구축 및 FIDIC Silver",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-13",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-e769c76169bb",
    "name": "중국 ESS 업체 삼성SDI 배터리로 무역장벽 우회해 미국 시장 겨냥, ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-28",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d1d454de5c1c",
-   "name": "ESS 늘려도 수익모델 없으면 투자 한계… LG엔솔 \"계통 기여 보상하는",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-28",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "KTX-001",
    "target": "K-c71483152db3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-51489ae91b43",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-51489ae91b43",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-51489ae91b43",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-51489ae91b43",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-51489ae91b43",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-51489ae91b43",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-51489ae91b43",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-51489ae91b43",
    "type": "knowledge"
   },
   {
@@ -9521,11 +9561,6 @@
    "source": "STD-006",
    "target": "K-dcb166563d98",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-d1d454de5c1c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9809,7 +9844,7 @@
    {
     "date": "2026-09-13",
     "knowledge": 400,
-    "events_total": 2062
+    "events_total": 2063
    }
   ]
  }
