@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-b891b6d880d7",
+   "name": "팀 토론 — 액냉 시스템 최적화를 위한 CFD 기반 열 관리 시뮬레이션 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff14b762e6d6",
    "name": "팀 토론 — 재생에너지 넘치는 제주 시장에서의 분산에너지 전환 동향 분석",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9a2323d16b11",
-   "name": "‘통째로 배송’한다, 삼성SDI가 바꾼 ESS 시장 공략 방식",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ff14b762e6d6",
@@ -9676,15 +9716,10 @@
    "source": "STD-007",
    "target": "K-a0a257045f57",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-9a2323d16b11",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-13",
+  "updated": "2026-09-14",
   "history": [
    {
     "date": "2026-07-20",
@@ -9965,6 +10000,11 @@
     "date": "2026-09-13",
     "knowledge": 400,
     "events_total": 2079
+   },
+   {
+    "date": "2026-09-14",
+    "knowledge": 400,
+    "events_total": 2080
    }
   ]
  }
