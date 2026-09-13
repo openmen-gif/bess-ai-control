@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-13",
  "totals": {
-  "all": 2076,
+  "all": 2077,
   "briefing": 851,
   "skill": 734,
-  "discussion": 491,
+  "discussion": 492,
   "activity": 0
  },
  "perAgent": {
@@ -17,19 +17,19 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 9,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-09-10",
+   "lastGrown": "2026-09-13",
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 520,
+   "count": 521,
    "byType": {
     "skill": 12,
-    "discussion": 240,
+    "discussion": 241,
     "briefing": 268
    },
    "lastGrown": "2026-09-13",
@@ -128,12 +128,12 @@
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 80,
+   "count": 81,
    "byType": {
     "skill": 11,
-    "discussion": 69
+    "discussion": 70
    },
-   "lastGrown": "2026-09-11",
+   "lastGrown": "2026-09-13",
    "level": 4
   },
   "bess-ebop-engineer": {
@@ -365,12 +365,12 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 56,
+   "count": 57,
    "byType": {
     "skill": 10,
-    "discussion": 46
+    "discussion": 47
    },
-   "lastGrown": "2026-09-10",
+   "lastGrown": "2026-09-13",
    "level": 3
   },
   "bess-network-engineer": {
@@ -438,10 +438,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 97,
+   "count": 98,
    "byType": {
     "skill": 9,
-    "discussion": 67,
+    "discussion": 68,
     "briefing": 21
    },
    "lastGrown": "2026-09-13",
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 207,
+   "count": 208,
    "byType": {
     "skill": 10,
-    "discussion": 49,
+    "discussion": 50,
     "briefing": 148
    },
    "lastGrown": "2026-09-13",
@@ -575,12 +575,12 @@
    "level": 2
   },
   "bess-standards-eu": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 8,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-09-06",
+   "lastGrown": "2026-09-13",
    "level": 2
   },
   "bess-standards-japan": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 129,
+   "count": 130,
    "byType": {
     "skill": 11,
-    "discussion": 118
+    "discussion": 119
    },
    "lastGrown": "2026-09-13",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-13",
-   "added": 15
+   "added": 16
   }
  ],
  "freshness": {

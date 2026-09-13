@@ -82,6 +82,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "85bca639fc83",
+   "date": "2026-09-13",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-data-analyst",
+    "bess-mlops-engineer",
+    "bess-power-market-expert",
+    "bess-standards-analyst",
+    "bess-standards-eu",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 최적화 알고리즘 적용을 통한 BESS 운영 효율성 제고 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5acc2e08f89a",
    "date": "2026-09-13",
    "type": "briefing",
@@ -3916,17 +3934,6 @@
    "title": "팀 토론 — 배터리 화학종 선택에 대한 최신 안전 기준 검증 및 기업별 적합성 평가 진행 (\"@bess-battery-expert\")",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "a0323b4f1fbc",
-   "date": "2026-09-01",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "SK온, 미 ESS 배터리 공급…K-배터리 3사, ‘북미 공략’ 가속",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LWlU5TV9qLUxURjMtZDNpc0J0U3ZvSU54ZC1LUUk0emlpaXBKanBPWGF1TVhpMXduQkZkRWN1OWJKX0tYcUN4cGI1VUhaWHh4OHhpMjZ6ZWpDTW55M2Q5QUlEdjk1bnE1dV9XVGM5RlVsZw?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
