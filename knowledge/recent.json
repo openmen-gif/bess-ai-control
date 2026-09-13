@@ -155,6 +155,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "239b362746ed",
+   "date": "2026-09-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-hybrid-specialist",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-security-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 기술 표준 불일치로 인한 인증 지연 리스크 평가 및 현재 설계 GAP 분석 보고서 작성 요청 (@bess-standards-korea, @bess-fire-engineer)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "0098842c9c25",
    "date": "2026-09-14",
    "type": "briefing",
@@ -3926,17 +3944,6 @@
    "type": "skill",
    "agents": [
     "bess-customs-tariff"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "d9f44bba0178",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-hse-manager"
    ],
    "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
    "link": "",
