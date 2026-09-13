@@ -28,6 +28,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-cf4190ea38f7",
+   "name": "팀 토론 — 부지 내 최적 이격거리 설정 및 안전 프로토콜 통합 방안 검",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c7b2a9ab5a0b",
    "name": "기본 용어를 익힌 다음 읽는 스포츠 토토 토스 기능 해설",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7d5e79f6dadc",
-   "name": "삼성SDI, 열폭주 대응 배터리 안전 특허 2건 美서 공개",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3650,6 +3650,46 @@
   {
    "source": "MKT-001",
    "target": "K-da613fa298f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-cf4190ea38f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-cf4190ea38f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-cf4190ea38f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-cf4190ea38f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-cf4190ea38f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-cf4190ea38f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-cf4190ea38f7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-cf4190ea38f7",
    "type": "knowledge"
   },
   {
@@ -9606,11 +9646,6 @@
    "source": "BAT-001",
    "target": "K-92a453262429",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-7d5e79f6dadc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9894,7 +9929,7 @@
    {
     "date": "2026-09-13",
     "knowledge": 400,
-    "events_total": 2077
+    "events_total": 2078
    }
   ]
  }

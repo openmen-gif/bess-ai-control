@@ -42,6 +42,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "cf4190ea38f7",
+   "date": "2026-09-13",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-site-manager",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 부지 내 최적 이격거리 설정 및 안전 프로토콜 통합 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "c7b2a9ab5a0b",
    "date": "2026-09-13",
    "type": "briefing",
@@ -3916,24 +3934,6 @@
    "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "a050d8cb862c",
-   "date": "2026-09-01",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-env-engineer",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-procurement-expert",
-    "bess-standards-romania",
-    "bess-transformer-expert"
-   ],
-   "title": "팀 토론 — 배터리 화학종 선택에 대한 최신 안전 기준 검증 및 기업별 적합성 평가 진행 (\"@bess-battery-expert\")",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
