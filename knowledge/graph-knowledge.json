@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e2fa1608a416",
+   "name": "팀 토론 — AI 기반 열화 예측 모델 개발로 BESS 수명 최적화 전략",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-da613fa298f0",
    "name": "전력시장, 건물 에너지자립…제주의 분산에너지 전환은?",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-92a453262429",
-   "name": "가트너 블록 체인 포스트 코로나 시대 디자인 패턴: 핵심 개념과 실제 응",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3645,6 +3645,46 @@
   {
    "source": "BAT-001",
    "target": "K-f2b27c83dbd0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e2fa1608a416",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-e2fa1608a416",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-e2fa1608a416",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-e2fa1608a416",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-e2fa1608a416",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-e2fa1608a416",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-e2fa1608a416",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-e2fa1608a416",
    "type": "knowledge"
   },
   {
@@ -9641,11 +9681,6 @@
    "source": "BAT-001",
    "target": "K-9a2323d16b11",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-92a453262429",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9929,7 +9964,7 @@
    {
     "date": "2026-09-13",
     "knowledge": 400,
-    "events_total": 2078
+    "events_total": 2079
    }
   ]
  }

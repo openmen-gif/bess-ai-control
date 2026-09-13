@@ -31,6 +31,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "e2fa1608a416",
+   "date": "2026-09-13",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-data-analyst",
+    "bess-epc-bom",
+    "bess-financial-analysis",
+    "bess-internal-auditor",
+    "bess-mlops-engineer",
+    "bess-power-market-expert",
+    "bess-standards-analyst"
+   ],
+   "title": "팀 토론 — AI 기반 열화 예측 모델 개발로 BESS 수명 최적화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "da613fa298f0",
    "date": "2026-09-13",
    "type": "briefing",
@@ -3919,17 +3937,6 @@
    "type": "skill",
    "agents": [
     "bess-cbop-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "a161198a101e",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-grounding-engineer"
    ],
    "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
    "link": "",
