@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-dfce7637a54d",
+   "name": "팀 토론 — AI 기반 예측 모델을 활용한 실시간 운영 최적화 알고리즘 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b891b6d880d7",
    "name": "팀 토론 — 액냉 시스템 최적화를 위한 CFD 기반 열 관리 시뮬레이션 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a0a257045f57",
-   "name": "팀 토론 — CEA·SECI 영역 초안 작성 — bess-emerging",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-dfce7637a54d",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-dfce7637a54d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-dfce7637a54d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-dfce7637a54d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-dfce7637a54d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-dfce7637a54d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-dfce7637a54d",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-dfce7637a54d",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-b891b6d880d7",
@@ -9676,46 +9716,6 @@
    "source": "BAT-001",
    "target": "K-a547512a03fe",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-a0a257045f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-a0a257045f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-a0a257045f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMT-001",
-   "target": "K-a0a257045f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-a0a257045f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-a0a257045f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-a0a257045f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-007",
-   "target": "K-a0a257045f57",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10004,7 +10004,7 @@
    {
     "date": "2026-09-14",
     "knowledge": 400,
-    "events_total": 2080
+    "events_total": 2081
    }
   ]
  }
