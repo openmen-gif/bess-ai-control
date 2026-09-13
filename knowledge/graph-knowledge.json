@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-28599612db8b",
+   "name": "팀 토론 — 화재 안전 표준 불일치 검증 프로세스 구체화 및 현재 설계의",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1ad8730272f3",
    "name": "팀 토론 — 케이블 시스템 최적화 계획 수립: IEC 60502 및 IE",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-29",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-526d5267945f",
-   "name": "美ESS시장 진출 확대…이차전지株 기지개",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3750,6 +3750,41 @@
   {
    "source": "MAR-001",
    "target": "K-3dd6f66e3fc0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-28599612db8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-28599612db8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-28599612db8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-28599612db8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-28599612db8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-28599612db8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-28599612db8b",
    "type": "knowledge"
   },
   {
@@ -9541,11 +9576,6 @@
    "source": "MAR-001",
    "target": "K-588519c0cff3",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-526d5267945f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9829,7 +9859,7 @@
    {
     "date": "2026-09-13",
     "knowledge": 400,
-    "events_total": 2075
+    "events_total": 2076
    }
   ]
  }
