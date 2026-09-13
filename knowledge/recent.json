@@ -2,6 +2,24 @@
  "updated": "2026-09-13",
  "events": [
   {
+   "id": "ff14b762e6d6",
+   "date": "2026-09-13",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-power-market-expert",
+    "bess-qaqc-engineer",
+    "bess-site-manager",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 재생에너지 넘치는 제주 시장에서의 분산에너지 전환 동향 분석 및 KPX 내 BESS 통합 전략 개발 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f2b27c83dbd0",
    "date": "2026-09-13",
    "type": "briefing",
@@ -3899,17 +3917,6 @@
    "type": "skill",
    "agents": [
     "bess-circuit-breaker-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "99b9da23650a",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-business-dev"
    ],
    "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
    "link": "",

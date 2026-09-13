@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ff14b762e6d6",
+   "name": "팀 토론 — 재생에너지 넘치는 제주 시장에서의 분산에너지 전환 동향 분석",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f2b27c83dbd0",
    "name": "테슬라 메가팩 증설 수혜…LG엔솔·삼성SDI, 북미 ESS서 성장 가속",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4c1fc444ebb9",
-   "name": "배터리업계 화두 ‘각형배터리’… 나인테크, AI데이터센터발 ‘ESS’ 배",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-ff14b762e6d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-ff14b762e6d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ff14b762e6d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-ff14b762e6d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-ff14b762e6d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-ff14b762e6d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-ff14b762e6d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ff14b762e6d6",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-f2b27c83dbd0",
@@ -9506,11 +9546,6 @@
    "source": "BAT-001",
    "target": "K-526d5267945f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-4c1fc444ebb9",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9794,7 +9829,7 @@
    {
     "date": "2026-09-13",
     "knowledge": 400,
-    "events_total": 2074
+    "events_total": 2075
    }
   ]
  }
