@@ -38,6 +38,24 @@
    "source": "bess-team"
   },
   {
+   "id": "86c5ed539353",
+   "date": "2026-09-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-customs-tariff",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-precom-report",
+    "bess-standards-analyst",
+    "bess-system-engineer",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 관세 및 무역 협정 분석을 통한 글로벌 BESS 프로젝트 비용 최적화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ff14b762e6d6",
    "date": "2026-09-13",
    "type": "discussion",
@@ -3944,17 +3962,6 @@
    "title": "팀 토론 — 설비관리·유지보수 영역 벤치마킹 — bess-facility-manager 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "b0e44eb31525",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-legal-expert"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

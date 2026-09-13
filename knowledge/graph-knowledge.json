@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-86c5ed539353",
+   "name": "팀 토론 — 관세 및 무역 협정 분석을 통한 글로벌 BESS 프로젝트 비",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff14b762e6d6",
    "name": "팀 토론 — 재생에너지 넘치는 제주 시장에서의 분산에너지 전환 동향 분석",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a547512a03fe",
-   "name": "\"내년엔 LFP와 단가 같아져\"…나트륨 배터리, ESS 접수하나",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "SYS-001",
    "target": "K-b891b6d880d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-86c5ed539353",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-86c5ed539353",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-86c5ed539353",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-86c5ed539353",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-86c5ed539353",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-86c5ed539353",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-86c5ed539353",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-86c5ed539353",
    "type": "knowledge"
   },
   {
@@ -9711,11 +9751,6 @@
    "source": "KTX-001",
    "target": "K-b0f93740aad5",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-a547512a03fe",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10004,7 +10039,7 @@
    {
     "date": "2026-09-14",
     "knowledge": 400,
-    "events_total": 2081
+    "events_total": 2082
    }
   ]
  }
