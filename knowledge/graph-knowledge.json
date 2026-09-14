@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0938a7d8eba7",
+   "name": "팀 토론 — 제주 분산에너지 전환 동향 분석 결과를 바탕으로 KPX 내 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0098842c9c25",
    "name": "정부 주도 ESS 시장 커지는데…국산 철강 '사각지대' 왜?",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-30",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0a7e141fefae",
-   "name": "ESS가 살린 배터리 시장…2차전지株 다시 `기지개`",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3805,6 +3805,46 @@
   {
    "source": "STD-002",
    "target": "K-239b362746ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0938a7d8eba7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0938a7d8eba7",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0938a7d8eba7",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-0938a7d8eba7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-0938a7d8eba7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0938a7d8eba7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-0938a7d8eba7",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-0938a7d8eba7",
    "type": "knowledge"
   },
   {
@@ -9641,11 +9681,6 @@
    "source": "MAR-001",
    "target": "K-0b8edcdf5acf",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-0a7e141fefae",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9934,7 +9969,7 @@
    {
     "date": "2026-09-14",
     "knowledge": 400,
-    "events_total": 2093
+    "events_total": 2094
    }
   ]
  }

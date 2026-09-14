@@ -173,6 +173,24 @@
    "source": "bess-team"
   },
   {
+   "id": "0938a7d8eba7",
+   "date": "2026-09-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 제주 분산에너지 전환 동향 분석 결과를 바탕으로 KPX 내 BESS 통합 전략 세부 실행 계획 수립 및 시범 프로젝트 제안",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "0098842c9c25",
    "date": "2026-09-14",
    "type": "briefing",
@@ -3937,17 +3955,6 @@
    "title": "3차 ESS 입찰 코앞으로 …삼성·SK·LG, 승부처는 ‘가격 밖’에",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBGbS0tdlVKc0xzWkxSNlVLLW45S2tiTmlxZy1RSnNzaThzdmx0THN4TUo1QmQxRmF4QmdwekNFUGZKWFVrRndWUUY1OUl2NjlVd0RoZzltaWJLRW8?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "dfabbcf55581",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-customs-tariff"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
