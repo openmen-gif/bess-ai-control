@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-0197b3eecd5f",
+   "name": "팀 토론 — 변압기 효율 최적화 및 보호협조 시스템 강화 방안 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-feb811188836",
    "name": "전기차 충전 요금, 확 바뀔 판... '다 쓴 배터리'가 충전소 핵심 된",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-30",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-49993aa8ed77",
-   "name": "신영證 \"트럼프 전력망 안보 행정명령…韓 이차전지 수혜 기대\"",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-30",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-0197b3eecd5f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-0197b3eecd5f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-0197b3eecd5f",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-0197b3eecd5f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-0197b3eecd5f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-0197b3eecd5f",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-feb811188836",
@@ -9776,15 +9806,10 @@
    "source": "STD-001",
    "target": "K-593b82b93499",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-49993aa8ed77",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "history": [
    {
     "date": "2026-07-20",
@@ -10070,6 +10095,11 @@
     "date": "2026-09-14",
     "knowledge": 400,
     "events_total": 2097
+   },
+   {
+    "date": "2026-09-15",
+    "knowledge": 400,
+    "events_total": 2098
    }
   ]
  }

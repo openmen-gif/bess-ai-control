@@ -1,6 +1,22 @@
 {
- "updated": "2026-09-14",
+ "updated": "2026-09-15",
  "events": [
+  {
+   "id": "0197b3eecd5f",
+   "date": "2026-09-15",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-fit-procedure",
+    "bess-network-engineer",
+    "bess-power-system-analyst",
+    "bess-substation-engineer"
+   ],
+   "title": "팀 토론 — 변압기 효율 최적화 및 보호협조 시스템 강화 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "feb811188836",
    "date": "2026-09-14",
@@ -3964,17 +3980,6 @@
    "title": "국내 배터리 3사 ‘ESS 새 날개’… 美시장 수주 힘입어 흑자 전환",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41dFJkYTNVdEdKRUhhenNVdV84N1pFTUJBZWdaX1dLcnJjcTluT1Eyb2p3c2ZYYkg2WW1Sd2trYTJfbDU3TGRPby1QREhrN2hZUlRWRTRzM3Y0bzVmaUtRellxRXVqYkpLd2JEREJJdmRJeDNZV1HSAWZBVV95cUxOU2V3NDgxNzNlbS1kSnVKUFpDendUb2I5Q0l4WWktUkgzRUZzSzhWT21iZEpjeXZpMDZEUUxjenIxcTQtcE5FdFpIbGlieUF6eTlPNzEydmJMcEdYM3daMWw0ZjVfc0E?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "ed4134916b3d",
-   "date": "2026-09-01",
-   "type": "skill",
-   "agents": [
-    "bess-cable-engineer"
-   ],
-   "title": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 — 스킬 36건에 세션 기준값",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
