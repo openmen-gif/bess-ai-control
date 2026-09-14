@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-9711b767b154",
+   "name": "팀 토론 — BESS 사이버보안 취약점 분석 및 대응 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-15",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-8d56d23f5c53",
    "name": "\"화재 위험 없는 반영구 배터리에 AI 입혔다\"… 한전KDN·에이치투, ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fcd4fd7d275b",
-   "name": "불나면 스스로 물 뿌린다…삼성SDI, ‘셀프 소화’ 배터리 개발",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-30",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3625,6 +3625,36 @@
   {
    "source": "BAT-001",
    "target": "K-b8894c3180b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-9711b767b154",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-9711b767b154",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-9711b767b154",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-9711b767b154",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-9711b767b154",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-9711b767b154",
    "type": "knowledge"
   },
   {
@@ -9651,11 +9681,6 @@
    "source": "PRO-001",
    "target": "K-01fd445f3f57",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-fcd4fd7d275b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9949,7 +9974,7 @@
    {
     "date": "2026-09-15",
     "knowledge": 400,
-    "events_total": 2113
+    "events_total": 2114
    }
   ]
  }

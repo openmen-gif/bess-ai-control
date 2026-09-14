@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-15",
  "totals": {
-  "all": 2113,
+  "all": 2114,
   "briefing": 873,
   "skill": 734,
-  "discussion": 506,
+  "discussion": 507,
   "activity": 0
  },
  "perAgent": {
@@ -119,10 +119,10 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 82,
+   "count": 83,
    "byType": {
     "skill": 11,
-    "discussion": 71
+    "discussion": 72
    },
    "lastGrown": "2026-09-15",
    "level": 4
@@ -292,12 +292,12 @@
    "level": 2
   },
   "bess-internal-auditor": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 9,
-    "discussion": 39
+    "discussion": 40
    },
-   "lastGrown": "2026-09-14",
+   "lastGrown": "2026-09-15",
    "level": 3
   },
   "bess-ip-patent-expert": {
@@ -374,10 +374,10 @@
    "level": 3
   },
   "bess-network-engineer": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 7,
-    "discussion": 20
+    "discussion": 21
    },
    "lastGrown": "2026-09-15",
    "level": 2
@@ -502,21 +502,21 @@
    "level": 3
   },
   "bess-qaqc-engineer": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 7,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-09-13",
+   "lastGrown": "2026-09-15",
    "level": 3
   },
   "bess-risk-manager": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 8,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-09-13",
+   "lastGrown": "2026-09-15",
    "level": 3
   },
   "bess-sales-manager": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 212,
+   "count": 213,
    "byType": {
     "skill": 11,
-    "discussion": 201
+    "discussion": 202
    },
    "lastGrown": "2026-09-15",
    "level": 5
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-15",
-   "added": 16
+   "added": 17
   }
  ],
  "freshness": {
