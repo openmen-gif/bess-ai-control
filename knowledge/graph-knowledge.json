@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-248f54a1c1e7",
+   "name": "팀 토론 — 그린프리미엄 평가를 통한 지속가능한 BESS 투자 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0197b3eecd5f",
    "name": "팀 토론 — 변압기 효율 최적화 및 보호협조 시스템 강화 방안 수립",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-30",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-593b82b93499",
-   "name": "재생에너지 6배 늘려 220GW로…전력망·ESS 확충이 관건[12차 전기",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-30",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "ENV-001",
+   "target": "K-248f54a1c1e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-248f54a1c1e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-248f54a1c1e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-248f54a1c1e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-248f54a1c1e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-248f54a1c1e7",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-0197b3eecd5f",
@@ -9801,11 +9831,6 @@
    "source": "BAT-001",
    "target": "K-5dae0b116c3e",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-593b82b93499",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10099,7 +10124,7 @@
    {
     "date": "2026-09-15",
     "knowledge": 400,
-    "events_total": 2098
+    "events_total": 2099
    }
   ]
  }
