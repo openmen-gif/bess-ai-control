@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-7476aa933476",
+   "name": "팀 토론 — 신흥시장 BESS 투자 전략 수립: 인도 CEA/SECI 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6e85bf3df131",
    "name": "팀 토론 — 부지조성·기초설계 영역 벤치마킹 — bess-cbop-eng",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-30",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-42085e6ee721",
-   "name": "블록체인 스타트업 - 블록체인 솔루션",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3750,6 +3750,46 @@
   {
    "source": "MAR-001",
    "target": "K-7d4ebba01696",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7476aa933476",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-7476aa933476",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-7476aa933476",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-7476aa933476",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-7476aa933476",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-7476aa933476",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-7476aa933476",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7476aa933476",
    "type": "knowledge"
   },
   {
@@ -9741,11 +9781,6 @@
    "source": "MAR-001",
    "target": "K-49993aa8ed77",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-42085e6ee721",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10034,7 +10069,7 @@
    {
     "date": "2026-09-14",
     "knowledge": 400,
-    "events_total": 2096
+    "events_total": 2097
    }
   ]
  }
