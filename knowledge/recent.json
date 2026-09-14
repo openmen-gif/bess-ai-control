@@ -2,6 +2,22 @@
  "updated": "2026-09-15",
  "events": [
   {
+   "id": "28eade7e8ca9",
+   "date": "2026-09-15",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-cost-analyst",
+    "bess-emc-analyst",
+    "bess-it-infra",
+    "bess-network-engineer",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 냉각 시스템과 EMI 관리 구현 방안 연구 및 시범 프로젝트 설계",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "248f54a1c1e7",
    "date": "2026-09-15",
    "type": "discussion",
@@ -3974,17 +3990,6 @@
    "title": "팀 토론 — 변압기 설계 최적화를 위한 최신 SLD 및 Arc Flash 분석 가이드라인 적용 검토",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "fb5efec77d17",
-   "date": "2026-09-01",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "LG엔솔, 美서 배터리용 리튬 10년치 확보…트럼프 공급망 재편 대응 - 머니투데이",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9XXzhKZWxxZ1YzNjBqTjJPRTREQnZTaUJBZFNRMjBrTmNqeWRjMi10MF9ZQ2VlYmxLSENURWJMX2FlWEJEQ1NmSjJjMmFCU2VXbVJWeXYtU2JlMHl0R29yal9COU04cWpFcmdGV0tn0gFuQVVfeXFMT1dfOEplbHFnVjM2MGpOMk9FNERCdlNpQkFkU1EyMGtOY2p5ZGMyLXQwX1lDZWVibEtIQ1RFYkxfYWVYQkRDU2ZKMmMyYUJTZVdtUlZ5di1TYmUweXRHb3JqX0I5TThxakVyZ0ZXS2c?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-28eade7e8ca9",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리 구현 방안 연구 및 시범 프로젝트",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-248f54a1c1e7",
    "name": "팀 토론 — 그린프리미엄 평가를 통한 지속가능한 BESS 투자 전략 수립",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-08-30",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5dae0b116c3e",
-   "name": "전기차 넘어선 K배터리…AI·ESS·로봇으로 ‘영토 확장’",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "AIM-001",
+   "target": "K-28eade7e8ca9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-28eade7e8ca9",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-28eade7e8ca9",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-28eade7e8ca9",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-28eade7e8ca9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-28eade7e8ca9",
+   "type": "knowledge"
+  },
   {
    "source": "ENV-001",
    "target": "K-248f54a1c1e7",
@@ -9826,11 +9856,6 @@
    "source": "STD-006",
    "target": "K-64250dd5c8cd",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-5dae0b116c3e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10124,7 +10149,7 @@
    {
     "date": "2026-09-15",
     "knowledge": 400,
-    "events_total": 2099
+    "events_total": 2100
    }
   ]
  }
