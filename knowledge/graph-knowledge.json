@@ -109,6 +109,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-75fc6fe77519",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리의 구체적인 구현 방안을 위한 트레",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6e07ce29ef64",
    "name": "[산업이(異)면]안방 뺏긴 K-배터리의 ‘선회’…내수 EV 중국산 40%",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-31",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-2a8000ed2cc3",
-   "name": "고객사 실적과 ESS에 울고 웃은 K배터리…EV에서도 반등 모색",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3755,6 +3755,41 @@
   {
    "source": "FIR-001",
    "target": "K-7e253e42183c",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-75fc6fe77519",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-75fc6fe77519",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-75fc6fe77519",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-75fc6fe77519",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-75fc6fe77519",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-75fc6fe77519",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-75fc6fe77519",
    "type": "knowledge"
   },
   {
@@ -9676,11 +9711,6 @@
    "source": "STD-001",
    "target": "K-2fc98718bd15",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-2a8000ed2cc3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9974,7 +10004,7 @@
    {
     "date": "2026-09-15",
     "knowledge": 400,
-    "events_total": 2116
+    "events_total": 2117
    }
   ]
  }
