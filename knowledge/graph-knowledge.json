@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-85a89af21dd4",
+   "name": "팀 토론 — 시운전 최적화 프로세스 개발 및 COM-100 기준 준수 위",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-15",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-82fb8cfb2dd4",
    "name": "제주 15분 전력시장, VPP·양방향 입찰로 확장… 전국 재생에너지 시장",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-26dcb0ae8268",
-   "name": "팀 토론 — 시운전·EMS 영역 현황 진단 — bess-fit-proce",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3660,6 +3660,46 @@
   {
    "source": "FIR-001",
    "target": "K-8d56d23f5c53",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-85a89af21dd4",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-85a89af21dd4",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-85a89af21dd4",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-85a89af21dd4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-85a89af21dd4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-85a89af21dd4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-85a89af21dd4",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-85a89af21dd4",
    "type": "knowledge"
   },
   {
@@ -9641,46 +9681,6 @@
    "source": "BAT-001",
    "target": "K-2a8000ed2cc3",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-26dcb0ae8268",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-26dcb0ae8268",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-26dcb0ae8268",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-26dcb0ae8268",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-002",
-   "target": "K-26dcb0ae8268",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-26dcb0ae8268",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-26dcb0ae8268",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-26dcb0ae8268",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9974,7 +9974,7 @@
    {
     "date": "2026-09-15",
     "knowledge": 400,
-    "events_total": 2115
+    "events_total": 2116
    }
   ]
  }
