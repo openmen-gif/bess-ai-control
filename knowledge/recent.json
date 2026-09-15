@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-15",
+ "updated": "2026-09-16",
  "events": [
+  {
+   "id": "26146f67d174",
+   "date": "2026-09-16",
+   "type": "discussion",
+   "agents": [
+    "bess-cable-engineer",
+    "bess-circuit-breaker-expert",
+    "bess-emc-analyst",
+    "bess-financial-analysis",
+    "bess-marketer",
+    "bess-power-market-expert",
+    "bess-site-manager",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 케이블 시스템 최적화 설계: 제주 KPX 현장에 적합한 Ampacity 및 전압강하 분석 구현",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "e7ae0fb947cd",
    "date": "2026-09-15",
@@ -3944,24 +3962,6 @@
    "title": "SK온, 美서 9GWh ESS용 배터리 셀 장기계약",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51ekI0Q2ZfLWIxbnFmMXcxQjc3djZCOWtxVE9IOGk5MmVmYmd0SHVrTTdSeU5sTFoxY283SXl2M0E0eUJSX0kzdElNMjhWZ3dCdGVQd25RUi1rTzhpSW90ZmM2WVU2ZWtIT1E?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "d8462b935f1a",
-   "date": "2026-09-02",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-customs-tariff",
-    "bess-network-engineer",
-    "bess-procurement-expert",
-    "bess-standards-australia",
-    "bess-standards-korea",
-    "bess-tax-japan",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 관세 최적화 전략 수립 및 FTA 혜택 극대화 방안 검토",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-26146f67d174",
+   "name": "팀 토론 — 케이블 시스템 최적화 설계: 제주 KPX 현장에 적합한 Am",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e7ae0fb947cd",
    "name": "산업교육연구소, [RPS 대전환 초읽기] 2027 재생에너지 시장 大개편",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3d530a89631d",
-   "name": "트럼프, 외국산 ESS 유입 금지…‘현지생산’ K-배터리 질주 예감",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-31",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "CAB-001",
+   "target": "K-26146f67d174",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-26146f67d174",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-26146f67d174",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-26146f67d174",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-26146f67d174",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-26146f67d174",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-26146f67d174",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-26146f67d174",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-e7ae0fb947cd",
@@ -9741,15 +9781,10 @@
    "source": "STD-002",
    "target": "K-43033bebb027",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-3d530a89631d",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "history": [
    {
     "date": "2026-07-20",
@@ -10040,6 +10075,11 @@
     "date": "2026-09-15",
     "knowledge": 400,
     "events_total": 2118
+   },
+   {
+    "date": "2026-09-16",
+    "knowledge": 400,
+    "events_total": 2119
    }
   ]
  }
