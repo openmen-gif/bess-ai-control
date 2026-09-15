@@ -82,6 +82,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-7e6ea38db333",
+   "name": "팀 토론 — BESS 프로젝트 견적서 및 BOM 최적화 프로세스 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-15",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-7e253e42183c",
    "name": "충청권 화재 원인 ‘과학 분석’…지방 첫 감정센터 가동",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-01fd445f3f57",
-   "name": "팀 토론 — 예측모델·최적화 영역 현황 진단 — bess-aiml-eng",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-08-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3670,6 +3670,46 @@
   {
    "source": "BIZ-001",
    "target": "K-80d3aa4c15e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7e6ea38db333",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-7e6ea38db333",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-7e6ea38db333",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7e6ea38db333",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-7e6ea38db333",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7e6ea38db333",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7e6ea38db333",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-7e6ea38db333",
    "type": "knowledge"
   },
   {
@@ -9641,46 +9681,6 @@
    "source": "PRO-001",
    "target": "K-26dcb0ae8268",
    "type": "knowledge"
-  },
-  {
-   "source": "AIM-001",
-   "target": "K-01fd445f3f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-01fd445f3f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-01fd445f3f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-01fd445f3f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-01fd445f3f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "INS-001",
-   "target": "K-01fd445f3f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-003",
-   "target": "K-01fd445f3f57",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-01fd445f3f57",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9974,7 +9974,7 @@
    {
     "date": "2026-09-15",
     "knowledge": 400,
-    "events_total": 2114
+    "events_total": 2115
    }
   ]
  }

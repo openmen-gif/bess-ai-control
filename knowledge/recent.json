@@ -106,6 +106,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "7e6ea38db333",
+   "date": "2026-09-15",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-grounding-engineer",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — BESS 프로젝트 견적서 및 BOM 최적화 프로세스 개발",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "7e253e42183c",
    "date": "2026-09-15",
    "type": "briefing",
@@ -3938,24 +3956,6 @@
    "title": "엘앤에프·포스코퓨처엠, 美 ESS 시장 확대 기대감에 강세",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5pNmlFSWRMNXpicXlrZm41WEtWVi1JRkJmVjU2cG5LcGF4YUMwRncwYW1vNE5CLThJOEtWcUx2SndVRWVJUXVnV2x4VjBZWVZpc2FPOGZSNnBENkpBSERHMXBsdG1leVJlYzZRWHNpTkE4R0k?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "a38a19037120",
-   "date": "2026-09-02",
-   "type": "discussion",
-   "agents": [
-    "bess-commissioning-coordinator",
-    "bess-customs-tariff",
-    "bess-emc-analyst",
-    "bess-fit-procedure",
-    "bess-procurement-expert",
-    "bess-site-manager",
-    "bess-system-engineer",
-    "bess-tax-japan"
-   ],
-   "title": "팀 토론 — COM-100 시운전 프로세스 최적화 매뉴얼 개발 및 현장 적용 시뮬레이션 실행",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
