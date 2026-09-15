@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ce70190a5b70",
+   "name": "팀 토론 — 견적서 및 BOM 최적화를 통한 비용 효율성 분석 및 경쟁력",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-bbffdc48383f",
    "name": "팀 토론 — 변경된 입찰 조건 분석 및 대응 전략 수립 (GCC 계약 적",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-08-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4609f6295e62",
-   "name": "[발전사 이모저모] 서부, 중앙亞 재생에너지 시장 노린다 |",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-31",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "AIM-001",
+   "target": "K-ce70190a5b70",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ce70190a5b70",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ce70190a5b70",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-ce70190a5b70",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ce70190a5b70",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ce70190a5b70",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-ce70190a5b70",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-ce70190a5b70",
+   "type": "knowledge"
+  },
   {
    "source": "CON-001",
    "target": "K-bbffdc48383f",
@@ -9771,11 +9811,6 @@
    "source": "KTX-001",
    "target": "K-4dfde0a8c085",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-4609f6295e62",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10074,7 +10109,7 @@
    {
     "date": "2026-09-16",
     "knowledge": 400,
-    "events_total": 2120
+    "events_total": 2121
    }
   ]
  }
