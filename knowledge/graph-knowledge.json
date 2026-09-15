@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a1c13424a39c",
+   "name": "팀 토론 — 사업 타당성 분석 및 신흥 시장 진출을 위한 JV 파트너십 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-9711b767b154",
    "name": "팀 토론 — BESS 사이버보안 취약점 분석 및 대응 전략 수립",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-08-31",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-2fc98718bd15",
-   "name": "재생에너지 65% 제주, 산업용 전기료 할인서 빠졌다… '실증섬'의 역설",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-08-31",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3625,6 +3625,46 @@
   {
    "source": "BAT-001",
    "target": "K-b8894c3180b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a1c13424a39c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-a1c13424a39c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a1c13424a39c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-a1c13424a39c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-a1c13424a39c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-a1c13424a39c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a1c13424a39c",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a1c13424a39c",
    "type": "knowledge"
   },
   {
@@ -9706,11 +9746,6 @@
    "source": "MAR-001",
    "target": "K-3d530a89631d",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-2fc98718bd15",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10004,7 +10039,7 @@
    {
     "date": "2026-09-15",
     "knowledge": 400,
-    "events_total": 2117
+    "events_total": 2118
    }
   ]
  }

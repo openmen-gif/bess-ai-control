@@ -57,6 +57,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "a1c13424a39c",
+   "date": "2026-09-15",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-power-market-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 사업 타당성 분석 및 신흥 시장 진출을 위한 JV 파트너십 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "9711b767b154",
    "date": "2026-09-15",
    "type": "discussion",
@@ -3942,24 +3960,6 @@
     "bess-tax-korea"
    ],
    "title": "팀 토론 — 관세 최적화 전략 수립 및 FTA 혜택 극대화 방안 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "d7856360790f",
-   "date": "2026-09-02",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-data-analyst",
-    "bess-fit-procedure",
-    "bess-mlops-engineer",
-    "bess-permit-asia",
-    "bess-standards-analyst",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 운영 데이터 분석을 통한 실시간 BESS 성능 최적화 대시보드 구축 및 이상 탐지 알고리즘 개선 제안",
    "link": "",
    "source": "bess-team"
   }
