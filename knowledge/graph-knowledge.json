@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-5c1ff58170da",
+   "name": "팀 토론 — IRA 인센티브 세부 적용 방안 및 견적 최적화 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-ff6dcc7f0272",
    "name": "부경대생, ESS 제도·AI 독성예측 잇단 대상",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-20153865b263",
-   "name": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-5c1ff58170da",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-5c1ff58170da",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5c1ff58170da",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-5c1ff58170da",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-5c1ff58170da",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-5c1ff58170da",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-5c1ff58170da",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-5c1ff58170da",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-ff6dcc7f0272",
@@ -9771,15 +9811,10 @@
    "source": "EMC-001",
    "target": "K-2445479e807b",
    "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-20153865b263",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "history": [
    {
     "date": "2026-07-20",
@@ -10075,6 +10110,11 @@
     "date": "2026-09-16",
     "knowledge": 400,
     "events_total": 2141
+   },
+   {
+    "date": "2026-09-17",
+    "knowledge": 400,
+    "events_total": 2142
    }
   ]
  }
