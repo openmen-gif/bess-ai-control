@@ -163,6 +163,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-33f2acca8561",
+   "name": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-26146f67d174",
    "name": "팀 토론 — 케이블 시스템 최적화 설계: 제주 KPX 현장에 적합한 Am",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0c4ad962586f",
-   "name": "[EV 트렌드코리아 2026]이온어스, 이동형 ESS ‘Indego’ 공",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3790,6 +3790,46 @@
   {
    "source": "PCS-001",
    "target": "K-48c9cc3a48ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-33f2acca8561",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-33f2acca8561",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-33f2acca8561",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-33f2acca8561",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-33f2acca8561",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-33f2acca8561",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-33f2acca8561",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-33f2acca8561",
    "type": "knowledge"
   },
   {
@@ -9666,11 +9706,6 @@
    "source": "EMT-001",
    "target": "K-115cb86dabbc",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0c4ad962586f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9969,7 +10004,7 @@
    {
     "date": "2026-09-16",
     "knowledge": 400,
-    "events_total": 2138
+    "events_total": 2139
    }
   ]
  }
