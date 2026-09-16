@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-a43881772f94",
+   "name": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 규정 준수 방안 검",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-17",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-5c1ff58170da",
    "name": "팀 토론 — IRA 인센티브 세부 적용 방안 및 견적 최적화 전략 수립",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-2445479e807b",
-   "name": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "COM-100",
+   "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-5c1ff58170da",
@@ -9806,11 +9846,6 @@
    "source": "STD-001",
    "target": "K-2c33275920c6",
    "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-2445479e807b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10114,7 +10149,7 @@
    {
     "date": "2026-09-17",
     "knowledge": 400,
-    "events_total": 2142
+    "events_total": 2143
    }
   ]
  }
