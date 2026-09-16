@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-16",
  "totals": {
-  "all": 2139,
+  "all": 2140,
   "briefing": 889,
   "skill": 734,
-  "discussion": 516,
+  "discussion": 517,
   "activity": 0
  },
  "perAgent": {
@@ -17,19 +17,19 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 9,
-    "discussion": 31
+    "discussion": 32
    },
    "lastGrown": "2026-09-16",
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 544,
+   "count": 545,
    "byType": {
     "skill": 12,
-    "discussion": 253,
+    "discussion": 254,
     "briefing": 279
    },
    "lastGrown": "2026-09-16",
@@ -128,10 +128,10 @@
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 84,
+   "count": 85,
    "byType": {
     "skill": 11,
-    "discussion": 73
+    "discussion": 74
    },
    "lastGrown": "2026-09-16",
    "level": 4
@@ -219,12 +219,12 @@
    "level": 5
   },
   "bess-fit-procedure": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 8,
-    "discussion": 29
+    "discussion": 30
    },
-   "lastGrown": "2026-09-15",
+   "lastGrown": "2026-09-16",
    "level": 3
   },
   "bess-grid-interconnection": {
@@ -365,12 +365,12 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 59,
+   "count": 60,
    "byType": {
     "skill": 10,
-    "discussion": 49
+    "discussion": 50
    },
-   "lastGrown": "2026-09-14",
+   "lastGrown": "2026-09-16",
    "level": 3
   },
   "bess-network-engineer": {
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 168,
+   "count": 169,
    "byType": {
     "skill": 11,
-    "discussion": 94,
+    "discussion": 95,
     "briefing": 63
    },
    "lastGrown": "2026-09-16",
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 223,
+   "count": 224,
    "byType": {
     "skill": 10,
-    "discussion": 57,
+    "discussion": 58,
     "briefing": 156
    },
    "lastGrown": "2026-09-16",
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 139,
+   "count": 140,
    "byType": {
     "skill": 11,
-    "discussion": 128
+    "discussion": 129
    },
    "lastGrown": "2026-09-16",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-16",
-   "added": 21
+   "added": 22
   }
  ],
  "freshness": {
