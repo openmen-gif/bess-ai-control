@@ -159,6 +159,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "61ef023a6cdd",
+   "date": "2026-09-17",
+   "type": "discussion",
+   "agents": [
+    "bess-cbop-engineer",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-hse-manager",
+    "bess-mlops-engineer",
+    "bess-procurement-data",
+    "bess-site-manager",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 부지조성 및 기초 설계 최적화를 위한 현장 적합성 평가 실시",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5c1ff58170da",
    "date": "2026-09-17",
    "type": "discussion",
@@ -3904,17 +3922,6 @@
    "title": "팀 토론 — CEA·SECI 영역 1차 분석 — bess-emerging-markets 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "5ae5b6203f9f",
-   "date": "2026-09-04",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "국내서 체력 키운 LG엔솔… ESS 발판 北美 공략",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5GaF9ubnBrODdPYmN3cEdpcUxqTGVPOGd4X3V4cjRDNksxVHlYZkNyNXp5LWV3ODVXYXFEakdrdzFGR1VhMDJQVzlWMXJ4NlEzNEVR?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
