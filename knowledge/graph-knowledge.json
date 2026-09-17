@@ -10,6 +10,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-8098dc383ec3",
+   "name": "팀 토론 — 설비관리·유지보수 영역 리스크 평가 — bess-facili",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-579eb7ae4c73",
    "name": "팀 토론 — 환경 영향 최소화를 위한 BESS 설치 프로젝트 EIA 검토",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-81a8e4615a19",
-   "name": "AI 기반 ESS에 정밀진단-통합관제… ‘안전운영 기술’ 현장 적용",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "STD-002",
    "target": "K-efb34535d708",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8098dc383ec3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-8098dc383ec3",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-8098dc383ec3",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8098dc383ec3",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-8098dc383ec3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-8098dc383ec3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-8098dc383ec3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8098dc383ec3",
    "type": "knowledge"
   },
   {
@@ -9946,11 +9986,6 @@
    "source": "COM-100",
    "target": "K-851b3f0cc1b8",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-81a8e4615a19",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10259,7 +10294,7 @@
    {
     "date": "2026-09-18",
     "knowledge": 400,
-    "events_total": 2167
+    "events_total": 2168
    }
   ]
  }
