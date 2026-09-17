@@ -64,6 +64,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-89b5f8fc6c38",
+   "name": "팀 토론 — 그리드포밍 기술 공동개발 동향 분석 및 국내 BESS 프로젝",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-86c4d30cdf65",
    "name": "LS일렉트릭, 한전과 배전용 그리드포밍 기술 공동 개발 협약",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-b4e2c783beb3",
-   "name": "스킬 갱신 — feat(bess): 지식 마이닝 8/30 실행분 반영 —",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3670,6 +3670,46 @@
   {
    "source": "STD-001",
    "target": "K-92ae780f18d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-89b5f8fc6c38",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-89b5f8fc6c38",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-89b5f8fc6c38",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-89b5f8fc6c38",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-89b5f8fc6c38",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-89b5f8fc6c38",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-89b5f8fc6c38",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-89b5f8fc6c38",
    "type": "knowledge"
   },
   {
@@ -9911,11 +9951,6 @@
    "source": "BIZ-001",
    "target": "K-bfa841c06956",
    "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-b4e2c783beb3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10224,7 +10259,7 @@
    {
     "date": "2026-09-18",
     "knowledge": 400,
-    "events_total": 2184
+    "events_total": 2185
    }
   ]
  }
