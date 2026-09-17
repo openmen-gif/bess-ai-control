@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e62c9b11e9ef",
+   "name": "팀 토론 — 그리드포밍 기술의 공동개발 동향을 바탕으로, 국내 및 글로벌",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-db02b66a8f5e",
    "name": "전력거래소, 육지계통 첫 BESS 사업 건설현장 점검",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-779f17dcfa08",
-   "name": "팀 토론 — IRA 법안의 구체적인 현지 제조 요건 및 인센티브 분석을 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3610,6 +3610,46 @@
   {
    "source": "BAT-001",
    "target": "K-f8a039a1ffd0",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-e62c9b11e9ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e62c9b11e9ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-e62c9b11e9ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e62c9b11e9ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e62c9b11e9ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e62c9b11e9ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-e62c9b11e9ef",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-e62c9b11e9ef",
    "type": "knowledge"
   },
   {
@@ -9841,46 +9881,6 @@
    "source": "FIR-001",
    "target": "K-7b9048a1af5f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-779f17dcfa08",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-779f17dcfa08",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-779f17dcfa08",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-779f17dcfa08",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-779f17dcfa08",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-779f17dcfa08",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-779f17dcfa08",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-779f17dcfa08",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10184,7 +10184,7 @@
    {
     "date": "2026-09-17",
     "knowledge": 400,
-    "events_total": 2162
+    "events_total": 2163
    }
   ]
  }

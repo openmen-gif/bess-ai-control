@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-17",
  "totals": {
-  "all": 2162,
+  "all": 2163,
   "briefing": 905,
   "skill": 734,
-  "discussion": 523,
+  "discussion": 524,
   "activity": 0
  },
  "perAgent": {
@@ -200,10 +200,10 @@
    "level": 3
   },
   "bess-financial-analysis": {
-   "count": 135,
+   "count": 136,
    "byType": {
     "skill": 11,
-    "discussion": 124
+    "discussion": 125
    },
    "lastGrown": "2026-09-17",
    "level": 4
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 160,
+   "count": 161,
    "byType": {
     "skill": 11,
-    "discussion": 149
+    "discussion": 150
    },
    "lastGrown": "2026-09-17",
    "level": 5
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 176,
+   "count": 177,
    "byType": {
     "skill": 11,
-    "discussion": 100,
+    "discussion": 101,
     "briefing": 65
    },
    "lastGrown": "2026-09-17",
@@ -448,12 +448,12 @@
    "level": 4
   },
   "bess-power-system-analyst": {
-   "count": 102,
+   "count": 103,
    "byType": {
     "skill": 10,
-    "discussion": 92
+    "discussion": 93
    },
-   "lastGrown": "2026-09-16",
+   "lastGrown": "2026-09-17",
    "level": 4
   },
   "bess-precom-report": {
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 223,
+   "count": 224,
    "byType": {
     "skill": 11,
-    "discussion": 212
+    "discussion": 213
    },
    "lastGrown": "2026-09-17",
    "level": 5
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 144,
+   "count": 145,
    "byType": {
     "skill": 11,
-    "discussion": 133
+    "discussion": 134
    },
    "lastGrown": "2026-09-17",
    "level": 4
@@ -702,10 +702,10 @@
    "level": 3
   },
   "bess-tax-korea": {
-   "count": 128,
+   "count": 129,
    "byType": {
     "skill": 11,
-    "discussion": 117
+    "discussion": 118
    },
    "lastGrown": "2026-09-17",
    "level": 4
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 10,
-    "discussion": 38,
+    "discussion": 39,
     "briefing": 2
    },
-   "lastGrown": "2026-09-14",
+   "lastGrown": "2026-09-17",
    "level": 3
   },
   "bess-translator": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-17",
-   "added": 21
+   "added": 22
   }
  ],
  "freshness": {
