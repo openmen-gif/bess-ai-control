@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-91e2e5345c02",
+   "name": "팀 토론 — IRA 인센티브 세부 내용 완료 후 국내 BESS 프로젝트 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-17",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-89b9cb6b8c43",
    "name": "LS일렉트릭, 전압·주파수 스스로 잡는 '그리드포밍' 기술 개발",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-75f48885cb2a",
-   "name": "팀 토론 — 케이블·사이징·루팅 영역 초안 작성 — bess-cable-",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3715,6 +3715,46 @@
   {
    "source": "KTX-001",
    "target": "K-a43881772f94",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-91e2e5345c02",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-91e2e5345c02",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-91e2e5345c02",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-91e2e5345c02",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-91e2e5345c02",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-91e2e5345c02",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-91e2e5345c02",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-91e2e5345c02",
    "type": "knowledge"
   },
   {
@@ -9841,46 +9881,6 @@
    "source": "KTX-001",
    "target": "K-779f17dcfa08",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-75f48885cb2a",
-   "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-75f48885cb2a",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-75f48885cb2a",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-75f48885cb2a",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-75f48885cb2a",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-75f48885cb2a",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-75f48885cb2a",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-006",
-   "target": "K-75f48885cb2a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10184,7 +10184,7 @@
    {
     "date": "2026-09-17",
     "knowledge": 400,
-    "events_total": 2161
+    "events_total": 2162
    }
   ]
  }
