@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-d69fa5dd7f46",
+   "name": "팀 토론 — 차단기 성능 최적화 시나리오 작성: IEC62271 및 IE",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f49454589da0",
    "name": "LG엔솔 버테크, 美 ‘리튬세이프 2026’ 참석…전기차·ESS 전 주기",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c3c24a273016",
-   "name": "팀 토론 — 각국의 에너지 정책 변화에 따른 글로벌 시장 진입 전략 재평",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-f49454589da0",
@@ -9981,50 +10021,10 @@
    "source": "FIR-001",
    "target": "K-c5adb790ef42",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-c3c24a273016",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-c3c24a273016",
-   "type": "knowledge"
-  },
-  {
-   "source": "IPP-001",
-   "target": "K-c3c24a273016",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-c3c24a273016",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-c3c24a273016",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-c3c24a273016",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-c3c24a273016",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRL-001",
-   "target": "K-c3c24a273016",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "history": [
    {
     "date": "2026-07-20",
@@ -10330,6 +10330,11 @@
     "date": "2026-09-18",
     "knowledge": 400,
     "events_total": 2188
+   },
+   {
+    "date": "2026-09-19",
+    "knowledge": 400,
+    "events_total": 2189
    }
   ]
  }

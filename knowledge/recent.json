@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-18",
+ "updated": "2026-09-19",
  "events": [
+  {
+   "id": "d69fa5dd7f46",
+   "date": "2026-09-19",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-contract-specialist",
+    "bess-emc-analyst",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 차단기 성능 최적화 시나리오 작성: IEC62271 및 IEEE C37 기준 준수 하에 최적의 단락용량과 피뢰기 설계 방안 모색",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f49454589da0",
    "date": "2026-09-18",
@@ -3930,17 +3948,6 @@
    ],
    "title": "임성진 전기안전연구원장 “사후 대응서 사전 예방으로”…AI·데이터로 안전의 미래 연다",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDZXVVcTlxWFZUQXlYaFVJY0JnaEhtUDBfQjJhMUN4UUFmUEo4c1ZmWmNYR2g2a202aU42MXliLWpZSkJteU1nYmdqSXpvcFJHbVRudFJkMjJoZWFRVjBOc0ZwcDVjYXNucUxHYtIBcEFVX3lxTE9YSWhnMHRFR2tOUFJnWF9vUjMxdXVKTlNHaG5OSzlqU3N3MWZsTFhxNDRKQkY1V3JWVE9RcDBWNnVUMy1Zbm9paHRhY1FCc1BIOVB0MENBSjIwTkgzYjhtYnNZV0E3Wm82UUJadjRZQmY?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "a7252582317b",
-   "date": "2026-09-05",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "전기차 부진 뚫는 삼성SDI…미국서 BESS로 돌파구[애널리스트의 시각]",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA0a0xPdzktcFNabEJTMU92NjZoRHNqVjlUbUFRYmVsVHhzLTRUZWRTQ2E4Vzd4TTFIZ3ZJZE1oSmczaG5VamZFZzFiM2dFMWlmT0lwdg?oc=5",
    "source": "구글뉴스"
   }
  ]
