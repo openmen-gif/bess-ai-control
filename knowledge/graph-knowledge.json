@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c15dbe50855f",
+   "name": "팀 토론 — 그리드포밍 기술 공동개발 동향을 바탕으로 국내 BESS 프로",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f49454589da0",
    "name": "LG엔솔 버테크, 美 ‘리튬세이프 2026’ 참석…전기차·ESS 전 주기",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c5adb790ef42",
-   "name": "[배터리 안전노트 ④] 배터리 화재의 본질, 열폭주 이해해야 안전이 보인",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "TRF-001",
    "target": "K-d69fa5dd7f46",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-c15dbe50855f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c15dbe50855f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-c15dbe50855f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-c15dbe50855f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-c15dbe50855f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-c15dbe50855f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c15dbe50855f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c15dbe50855f",
    "type": "knowledge"
   },
   {
@@ -10016,11 +10056,6 @@
    "source": "SYS-001",
    "target": "K-c5dd0138c979",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-c5adb790ef42",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10334,7 +10369,7 @@
    {
     "date": "2026-09-19",
     "knowledge": 400,
-    "events_total": 2189
+    "events_total": 2190
    }
   ]
  }
