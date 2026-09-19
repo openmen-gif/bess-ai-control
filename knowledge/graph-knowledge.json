@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-8ac43502cd30",
+   "name": "팀 토론 — 액냉 시스템 최적화를 위한 CFD 시뮬레이션 분석으로 화재 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fd232d9bc3e3",
    "name": "[ESS로 옮겨간 배터리 전쟁③] 美 ESS 52GW 돌파…K-배터리 승",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-35b6146aecdc",
-   "name": "美 '탈중국 기조'에 웃는 K배터리… ESS 점유율 5%P ↑ - 머니투",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-fd232d9bc3e3",
@@ -9961,15 +10001,10 @@
    "source": "KTX-001",
    "target": "K-3f0b8ebb6102",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-35b6146aecdc",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "history": [
    {
     "date": "2026-07-20",
@@ -10280,6 +10315,11 @@
     "date": "2026-09-19",
     "knowledge": 400,
     "events_total": 2204
+   },
+   {
+    "date": "2026-09-20",
+    "knowledge": 400,
+    "events_total": 2205
    }
   ]
  }

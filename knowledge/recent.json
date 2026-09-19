@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-19",
+ "updated": "2026-09-20",
  "events": [
+  {
+   "id": "8ac43502cd30",
+   "date": "2026-09-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cfd-analyst",
+    "bess-cybersecurity-expert",
+    "bess-fire-engineer",
+    "bess-ip-patent-expert",
+    "bess-power-system-analyst",
+    "bess-site-manager",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 액냉 시스템 최적화를 위한 CFD 시뮬레이션 분석으로 화재 위험 최소화 방안 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fd232d9bc3e3",
    "date": "2026-09-19",
@@ -3911,24 +3929,6 @@
    "title": "'전기국가' 전환 가속화…2040년 ESS 배터리 수요 175GWh, K-배터리 52조 시장 열린다",
    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5sTnhOSjJ2Z2phVGJsVm9IV0s4MnZyejJXaEFWUXpBTzg0VHVvZkF2S29lZnJvVGxpS2lBYjY1S3FyN1k?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "72867952896b",
-   "date": "2026-09-06",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-circuit-breaker-expert",
-    "bess-cost-analyst",
-    "bess-env-engineer",
-    "bess-fit-procedure",
-    "bess-legal-expert",
-    "bess-standards-korea",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
