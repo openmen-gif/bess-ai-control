@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-efdeae5214e0",
+   "name": "팀 토론 — AI 기반 SOC/SOH 예측 모델 개발로 BESS 운영 효",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8ac43502cd30",
    "name": "팀 토론 — 액냉 시스템 최적화를 위한 CFD 시뮬레이션 분석으로 화재 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-02",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4af693a69e78",
-   "name": "SK, 美 AI 전력 인프라 기회 선점…'에너지-AI' 생태계 구축 속도",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-efdeae5214e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-efdeae5214e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-efdeae5214e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-efdeae5214e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-efdeae5214e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-efdeae5214e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-efdeae5214e0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-efdeae5214e0",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-8ac43502cd30",
@@ -9996,11 +10036,6 @@
    "source": "BAT-001",
    "target": "K-51a5313c24f6",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-4af693a69e78",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10319,7 +10354,7 @@
    {
     "date": "2026-09-20",
     "knowledge": 400,
-    "events_total": 2206
+    "events_total": 2207
    }
   ]
  }

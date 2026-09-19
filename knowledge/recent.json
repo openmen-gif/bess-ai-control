@@ -2,6 +2,24 @@
  "updated": "2026-09-20",
  "events": [
   {
+   "id": "efdeae5214e0",
+   "date": "2026-09-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 SOC/SOH 예측 모델 개발로 BESS 운영 효율 최적화",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "8ac43502cd30",
    "date": "2026-09-20",
    "type": "discussion",
@@ -3924,17 +3942,6 @@
    ],
    "title": "정부, 배전망 ESS에 ‘비리튬 배터리’ 카드 적용 만지작",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Zc3dXNTNzVTB1ZU9hX2tKZE9VdGpNby00bk9wRzl3LXU0dFRfYkQwN1ZaNHRvZHlZR3ZUc3lxQjZxQlJqUmN2WDB3cjFxbkx0cFNKbjg2WUFJOG1JQS02OTZrTjYyMXloQmFPUUNzeU_SAXBBVV95cUxOWXN3VzUzc1UwdWVPYV9rSmRPVXRqTW8tNG5PcEc5dy11NHRUX2JEMDdWWjR0b2R5WUd2VHN5cUI2cUJSalJjdlgwd3IxcW5MdHBTSm44NllBSThtSUEtNjk2a042MjF5aEJhT1FDc3lP?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "8ea7fb87bb50",
-   "date": "2026-09-06",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "앙지, 글로벌 전력 저장 용량 10GW 돌파... 유럽 BESS 급성장 견인",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ybWR5QWkxS1U2S2dUYUsxY2hwMHY4ck44UEtfUXUtLV9vd0d5dFhsTERJZ1Ezb2laRHFKSktjUkFjV2NJTnYtelNvOUNodWF2NUQ5QkFTQ0FBYjJ2Yzk2eXNwZW5GU2c2?oc=5",
    "source": "구글뉴스"
   }
  ]
