@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0a2c4368d72a",
+   "name": "팀 토론 — BESS 시운전 프로세스 자동화 시스템 구축 및 최적화 전략",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fd232d9bc3e3",
    "name": "[ESS로 옮겨간 배터리 전쟁③] 美 ESS 52GW 돌파…K-배터리 승",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-02",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3f0b8ebb6102",
-   "name": "팀 토론 — 지역별 표준 불일치 해소를 위한 FIDIC 조건 맞춤형 가이",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "SYS-001",
    "target": "K-8ac43502cd30",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0a2c4368d72a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-0a2c4368d72a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0a2c4368d72a",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-0a2c4368d72a",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-0a2c4368d72a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-0a2c4368d72a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-0a2c4368d72a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-0a2c4368d72a",
    "type": "knowledge"
   },
   {
@@ -9961,46 +10001,6 @@
    "source": "MAR-001",
    "target": "K-4af693a69e78",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-3f0b8ebb6102",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-3f0b8ebb6102",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-3f0b8ebb6102",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-3f0b8ebb6102",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-3f0b8ebb6102",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-3f0b8ebb6102",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-3f0b8ebb6102",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-3f0b8ebb6102",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10319,7 +10319,7 @@
    {
     "date": "2026-09-20",
     "knowledge": 400,
-    "events_total": 2205
+    "events_total": 2206
    }
   ]
  }
