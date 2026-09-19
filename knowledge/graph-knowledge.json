@@ -136,6 +136,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-359ea492325f",
+   "name": "팀 토론 — 시운전 프로세스의 자동화 수준 향상을 위한 글로벌 모범 사례",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-336b7226620d",
    "name": "팀 토론 — 시운전 프로세스의 자동화 수준 향상을 위한 글로벌 모범 사례",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-fa3d9c951a83",
-   "name": "SK온, 美 네오볼타에 9GWh 배터리 셀 공급…ESS 승부수 : 네이버",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-02",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3745,6 +3745,46 @@
   {
    "source": "BAT-001",
    "target": "K-5ad11f7f11b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-359ea492325f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-359ea492325f",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-359ea492325f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-359ea492325f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-359ea492325f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-359ea492325f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-359ea492325f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-359ea492325f",
    "type": "knowledge"
   },
   {
@@ -9846,11 +9886,6 @@
    "source": "MAR-001",
    "target": "K-0d84f62834af",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fa3d9c951a83",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10169,7 +10204,7 @@
    {
     "date": "2026-09-20",
     "knowledge": 400,
-    "events_total": 2224
+    "events_total": 2225
    }
   ]
  }
