@@ -109,6 +109,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-22f8b246917b",
+   "name": "팀 토론 — 부지조성 및 기초설계 최적화를 위한 현지 환경 영향 평가 수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1c0f5e360011",
    "name": "상반기 글로벌 ESS용 배터리 출하 71% 급증…각형이 전체의 94%",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-9ebac119d72d",
-   "name": "ESS 수주 훈풍···LFP 양극재로 번진다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-03",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3760,6 +3760,41 @@
   {
    "source": "STD-002",
    "target": "K-2549a810c6e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-22f8b246917b",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-22f8b246917b",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-22f8b246917b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-22f8b246917b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-22f8b246917b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-22f8b246917b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-22f8b246917b",
    "type": "knowledge"
   },
   {
@@ -9751,11 +9786,6 @@
    "source": "MAR-001",
    "target": "K-ab465f9cce65",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-9ebac119d72d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10079,7 +10109,7 @@
    {
     "date": "2026-09-21",
     "knowledge": 400,
-    "events_total": 2240
+    "events_total": 2241
    }
   ]
  }
