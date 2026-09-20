@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fb5385840529",
+   "name": "팀 토론 — 계약 전략 강화를 위한 FIDIC 프레임워크 적용 및 지역별",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-21",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-d8aada8cbeca",
    "name": "팀 토론 — AI 기반 최적화 알고리즘 개발로 배터리 수명 예측 정확도 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2ce60518f5e6",
-   "name": "\"25년 묵은 전력시장제도 재설계해야\"… 기후테크 스타트업들의 호소",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-03",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "LEG-001",
+   "target": "K-fb5385840529",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-fb5385840529",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-fb5385840529",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-fb5385840529",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-fb5385840529",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-fb5385840529",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-fb5385840529",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-fb5385840529",
+   "type": "knowledge"
+  },
   {
    "source": "AIM-001",
    "target": "K-d8aada8cbeca",
@@ -9946,11 +9986,6 @@
    "source": "STD-001",
    "target": "K-311f375398a9",
    "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-2ce60518f5e6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10274,7 +10309,7 @@
    {
     "date": "2026-09-21",
     "knowledge": 400,
-    "events_total": 2227
+    "events_total": 2228
    }
   ]
  }
