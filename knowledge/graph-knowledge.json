@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-2549a810c6e9",
+   "name": "팀 토론 — 데이터분석·운영데이터 영역 벤치마킹 — bess-data-a",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fdc5c80fcc12",
    "name": "한울본부, 신한울2호기 실전 방불 방사능방재 전체훈련 실시",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-09-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0d84f62834af",
-   "name": "SK이노베이션, 자회사 美 ESS 9GWh 공급계약…목표주가 19만원 유",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-2549a810c6e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-2549a810c6e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-2549a810c6e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-2549a810c6e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-2549a810c6e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-2549a810c6e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-2549a810c6e9",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-fdc5c80fcc12",
@@ -9881,15 +9916,10 @@
    "source": "MAR-001",
    "target": "K-1aa12343b3df",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0d84f62834af",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "history": [
    {
     "date": "2026-07-20",
@@ -10205,6 +10235,11 @@
     "date": "2026-09-20",
     "knowledge": 400,
     "events_total": 2225
+   },
+   {
+    "date": "2026-09-21",
+    "knowledge": 400,
+    "events_total": 2226
    }
   ]
  }
