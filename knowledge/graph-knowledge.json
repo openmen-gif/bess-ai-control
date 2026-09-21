@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-d8d35c6ba269",
+   "name": "팀 토론 — IRA 인센티브 세부 내용 분석 및 한국 시장 적용 전략 수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d043d9d58ab8",
    "name": "팀 토론 — 계약 조건 재검토 및 지역별 맞춤형 조항 적용을 통한 FID",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-bafe051cbe80",
-   "name": "지에프아이, 삼성SDI 북미 ESS에 159억 규모 화재 안전솔루션 공급",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-d8d35c6ba269",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d8d35c6ba269",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-d8d35c6ba269",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-d8d35c6ba269",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d8d35c6ba269",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-d8d35c6ba269",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-d8d35c6ba269",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d8d35c6ba269",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-d043d9d58ab8",
@@ -9816,11 +9856,6 @@
    "source": "STD-001",
    "target": "K-bcc1a80d1b48",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-bafe051cbe80",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10149,7 +10184,7 @@
    {
     "date": "2026-09-22",
     "knowledge": 400,
-    "events_total": 2242
+    "events_total": 2243
    }
   ]
  }
