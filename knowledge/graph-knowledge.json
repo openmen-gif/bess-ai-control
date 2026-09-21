@@ -19,6 +19,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-25afaae1f7aa",
+   "name": "팀 토론 — 관세 및 FTA 원산지 분석을 통한 글로벌 BESS 프로젝트",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ffc192435641",
    "name": "Ofgem, 전력망 대기열 배터리 저장 장치에 대한 새로운 재정적 약정 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-bcc1a80d1b48",
-   "name": "\"재생E 100GW 달성하려면 ESS·VPP 보상체계부터 이뤄져야\"",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "STD-005",
    "target": "K-d043d9d58ab8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-25afaae1f7aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-25afaae1f7aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-25afaae1f7aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-25afaae1f7aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-25afaae1f7aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-25afaae1f7aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-25afaae1f7aa",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-25afaae1f7aa",
    "type": "knowledge"
   },
   {
@@ -9851,11 +9891,6 @@
    "source": "SYS-001",
    "target": "K-c6d96738fb24",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-bcc1a80d1b48",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10184,7 +10219,7 @@
    {
     "date": "2026-09-22",
     "knowledge": 400,
-    "events_total": 2243
+    "events_total": 2244
    }
   ]
  }
