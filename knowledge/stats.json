@@ -1,8 +1,8 @@
 {
  "updated": "2026-09-22",
  "totals": {
-  "all": 2244,
-  "briefing": 962,
+  "all": 2260,
+  "briefing": 978,
   "skill": 734,
   "discussion": 548,
   "activity": 0
@@ -26,21 +26,21 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 587,
+   "count": 589,
    "byType": {
     "skill": 12,
     "discussion": 272,
-    "briefing": 303
+    "briefing": 305
    },
    "lastGrown": "2026-09-22",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 136,
+   "count": 138,
    "byType": {
     "skill": 11,
     "discussion": 67,
-    "briefing": 58
+    "briefing": 60
    },
    "lastGrown": "2026-09-22",
    "level": 4
@@ -209,13 +209,13 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 222,
+   "count": 224,
    "byType": {
     "skill": 11,
     "discussion": 151,
-    "briefing": 60
+    "briefing": 62
    },
-   "lastGrown": "2026-09-21",
+   "lastGrown": "2026-09-22",
    "level": 5
   },
   "bess-fit-procedure": {
@@ -228,11 +228,11 @@
    "level": 3
   },
   "bess-grid-interconnection": {
-   "count": 79,
+   "count": 80,
    "byType": {
     "skill": 10,
     "discussion": 48,
-    "briefing": 21
+    "briefing": 22
    },
    "lastGrown": "2026-09-22",
    "level": 4
@@ -355,11 +355,11 @@
    "level": 3
   },
   "bess-marketer": {
-   "count": 341,
+   "count": 345,
    "byType": {
     "skill": 11,
     "discussion": 75,
-    "briefing": 255
+    "briefing": 259
    },
    "lastGrown": "2026-09-22",
    "level": 5
@@ -438,13 +438,13 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 116,
+   "count": 117,
    "byType": {
     "skill": 9,
     "discussion": 85,
-    "briefing": 22
+    "briefing": 23
    },
-   "lastGrown": "2026-09-21",
+   "lastGrown": "2026-09-22",
    "level": 4
   },
   "bess-power-system-analyst": {
@@ -556,11 +556,11 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 245,
+   "count": 249,
    "byType": {
     "skill": 10,
     "discussion": 66,
-    "briefing": 169
+    "briefing": 173
    },
    "lastGrown": "2026-09-22",
    "level": 5
@@ -1116,13 +1116,13 @@
   },
   {
    "date": "2026-09-22",
-   "added": 3
+   "added": 19
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-09-21",
-   "staleDays": 1,
+   "latestSource": "2026-09-22",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
