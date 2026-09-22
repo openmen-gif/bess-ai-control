@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-aa174d3aabe2",
+   "name": "팀 토론 — 변압기 설계 최적화를 통한 SLD 및 단락전류 관리 전략 수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a4261e441095",
    "name": "'LG엔솔 공급' 美 캘리포니아 모스랜딩 ESS 또 화재…안전 우려 재점",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-04",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-658455562d5a",
-   "name": "팀 토론 — CEA·SECI 영역 1차 분석 — bess-emerging",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3715,6 +3715,46 @@
   {
    "source": "MAR-001",
    "target": "K-b647224b7f68",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-aa174d3aabe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-aa174d3aabe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-aa174d3aabe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-aa174d3aabe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-aa174d3aabe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-aa174d3aabe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-aa174d3aabe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-aa174d3aabe2",
    "type": "knowledge"
   },
   {
@@ -9571,46 +9611,6 @@
    "source": "MKT-001",
    "target": "K-682b9a042d4b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-658455562d5a",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-658455562d5a",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-658455562d5a",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-658455562d5a",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-001",
-   "target": "K-658455562d5a",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-658455562d5a",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-658455562d5a",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRL-001",
-   "target": "K-658455562d5a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9939,7 +9939,7 @@
    {
     "date": "2026-09-22",
     "knowledge": 400,
-    "events_total": 2261
+    "events_total": 2262
    }
   ]
  }
