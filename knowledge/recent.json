@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-22",
+ "updated": "2026-09-23",
  "events": [
+  {
+   "id": "0b49dd190813",
+   "date": "2026-09-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-fire-engineer",
+    "bess-procurement-expert",
+    "bess-standards-eu",
+    "bess-standards-korea",
+    "bess-standards-poland"
+   ],
+   "title": "팀 토론 — 견적서·BOM 영역 리스크 평가 — bess-epc-bom 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f59f8ae1853f",
    "date": "2026-09-22",
@@ -3904,17 +3922,6 @@
    ],
    "title": "'2026 대한민국 전기안전 컨퍼런스' 일정 본격 돌입했다",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB0QjgtcFdBRDc2WTN3R2E5dk1kTU9QWlNRTUtDclB1UV9mc3hEVVBmQUtZR0c5aThTU1NGSVl6ZlpNNTJFRTAzbHNZWTNHV0I3QUR6dHZWRmFmS0pXWGdqRzd2RU92NmFTdkNJN29IMXYyQQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3be533226237",
-   "date": "2026-09-09",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "中, '과잉 공급' ESS 프로젝트 승인 잠정 중단으로 '속도 조절'",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE94WDNwRjVPZEZnYTUtUU9kbFR3am1hVU1jYUJDNWxLZUg2NFQzejV4VExadEpDTmNmT2Jiak1aUU12cHhDWXN5ZVZiaXcwR2twcE1MYVFkQUNSaE04cUVWek1vYw?oc=5",
    "source": "구글뉴스"
   }
  ]
