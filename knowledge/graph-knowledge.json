@@ -163,6 +163,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-190536e59dff",
+   "name": "팀 토론 — IRA 세액 공제 비율과 보조금 규모에 대한 정확한 정보 확",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-06b12e0c5733",
    "name": "LG엔솔 배터리, 엔비디아 ‘AI 팩토리’ 공식 인증…글로벌 AIDC 공",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-04",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5ae5b6203f9f",
-   "name": "국내서 체력 키운 LG엔솔… ESS 발판 北美 공략",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3795,6 +3795,46 @@
   {
    "source": "BAT-001",
    "target": "K-1e2b9510977c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-190536e59dff",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-190536e59dff",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-190536e59dff",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-190536e59dff",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-190536e59dff",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-190536e59dff",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-190536e59dff",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-190536e59dff",
    "type": "knowledge"
   },
   {
@@ -9571,11 +9611,6 @@
    "source": "TRL-001",
    "target": "K-658455562d5a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-5ae5b6203f9f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9904,7 +9939,7 @@
    {
     "date": "2026-09-22",
     "knowledge": 400,
-    "events_total": 2260
+    "events_total": 2261
    }
   ]
  }
