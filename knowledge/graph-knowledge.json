@@ -46,6 +46,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-c7d04d8996ac",
+   "name": "팀 토론 — 인도 신흥시장 그리드코 프로젝트 분석 및 파트너십 구축 전략",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c1b519254139",
    "name": "재생에너지 시대, ESS도 봄날이 온다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-04",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-682b9a042d4b",
-   "name": "“재생에너지 전기를 제값에 사고팔 수 있는 전력시장 만들어야 한다”",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-04",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3695,6 +3695,46 @@
   {
    "source": "MKT-001",
    "target": "K-ca762195e5e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c7d04d8996ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c7d04d8996ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-c7d04d8996ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-c7d04d8996ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-c7d04d8996ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c7d04d8996ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c7d04d8996ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-c7d04d8996ac",
    "type": "knowledge"
   },
   {
@@ -9606,11 +9646,6 @@
    "source": "MKT-001",
    "target": "K-9c3c2bae50a7",
    "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-682b9a042d4b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9939,7 +9974,7 @@
    {
     "date": "2026-09-22",
     "knowledge": 400,
-    "events_total": 2262
+    "events_total": 2263
    }
   ]
  }

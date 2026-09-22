@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-22",
  "totals": {
-  "all": 2262,
+  "all": 2263,
   "briefing": 978,
   "skill": 734,
-  "discussion": 550,
+  "discussion": 551,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 591,
+   "count": 592,
    "byType": {
     "skill": 12,
-    "discussion": 274,
+    "discussion": 275,
     "briefing": 305
    },
    "lastGrown": "2026-09-22",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 222,
+   "count": 223,
    "byType": {
     "skill": 12,
-    "discussion": 210
+    "discussion": 211
    },
    "lastGrown": "2026-09-22",
    "level": 5
@@ -137,12 +137,12 @@
    "level": 4
   },
   "bess-ebop-engineer": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 9,
-    "discussion": 29
+    "discussion": 30
    },
-   "lastGrown": "2026-09-18",
+   "lastGrown": "2026-09-22",
    "level": 3
   },
   "bess-emc-analyst": {
@@ -155,12 +155,12 @@
    "level": 4
   },
   "bess-emerging-markets": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 11,
-    "discussion": 34
+    "discussion": 35
    },
-   "lastGrown": "2026-09-20",
+   "lastGrown": "2026-09-22",
    "level": 3
   },
   "bess-env-engineer": {
@@ -247,12 +247,12 @@
    "level": 3
   },
   "bess-hr-manager": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-09-10",
+   "lastGrown": "2026-09-22",
    "level": 2
   },
   "bess-hse-manager": {
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 167,
+   "count": 168,
    "byType": {
     "skill": 11,
-    "discussion": 156
+    "discussion": 157
    },
    "lastGrown": "2026-09-22",
    "level": 5
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 177,
+   "count": 178,
    "byType": {
     "skill": 11,
-    "discussion": 166
+    "discussion": 167
    },
    "lastGrown": "2026-09-22",
    "level": 5
@@ -702,10 +702,10 @@
    "level": 3
   },
   "bess-tax-korea": {
-   "count": 130,
+   "count": 131,
    "byType": {
     "skill": 11,
-    "discussion": 119
+    "discussion": 120
    },
    "lastGrown": "2026-09-22",
    "level": 4
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-22",
-   "added": 21
+   "added": 22
   }
  ],
  "freshness": {
