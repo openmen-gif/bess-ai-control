@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fdd3ebb2b829",
+   "name": "팀 토론 — 시운전 프로세스 자동화 도구 도입을 통해 MTTR 단축 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-24",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-f5bc3389f7f3",
    "name": "SK온-포스코퓨처엠, 1조1000억 원 LFP 양극재 공급계약…美 ESS",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-05",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-8dda0a85fe14",
-   "name": "SK이노베이션 재무 악화 원인이던 SK온의 반전...SKIET와 시너지까",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-05",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CST-001",
+   "target": "K-fdd3ebb2b829",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-fdd3ebb2b829",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-fdd3ebb2b829",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-fdd3ebb2b829",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-fdd3ebb2b829",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-fdd3ebb2b829",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-fdd3ebb2b829",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-fdd3ebb2b829",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-f5bc3389f7f3",
@@ -9516,15 +9556,10 @@
    "source": "MAR-001",
    "target": "K-90ba5dd32078",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-8dda0a85fe14",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "history": [
    {
     "date": "2026-07-20",
@@ -9855,6 +9890,11 @@
     "date": "2026-09-23",
     "knowledge": 400,
     "events_total": 2285
+   },
+   {
+    "date": "2026-09-24",
+    "knowledge": 400,
+    "events_total": 2286
    }
   ]
  }
