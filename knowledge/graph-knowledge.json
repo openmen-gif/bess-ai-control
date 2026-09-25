@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a16573e6dddf",
+   "name": "팀 토론 — 설비관리·유지보수 영역 현황 진단 — bess-facilit",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-9f01d3b8d544",
    "name": "팀 토론 — 시운전·코디네이터 영역 리스크 평가 — bess-commis",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-06",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-8af3e306b5f5",
-   "name": "'전기국가' 전환 가속화…2040년 ESS 배터리 수요 175GWh, K",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-06",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3670,6 +3670,46 @@
   {
    "source": "PCS-001",
    "target": "K-b811544211a3",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-a16573e6dddf",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a16573e6dddf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-a16573e6dddf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a16573e6dddf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-a16573e6dddf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a16573e6dddf",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a16573e6dddf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a16573e6dddf",
    "type": "knowledge"
   },
   {
@@ -9441,11 +9481,6 @@
    "source": "MAR-001",
    "target": "K-8ea7fb87bb50",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-8af3e306b5f5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9789,7 +9824,7 @@
    {
     "date": "2026-09-25",
     "knowledge": 400,
-    "events_total": 2305
+    "events_total": 2306
    }
   ]
  }
