@@ -55,6 +55,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-9f01d3b8d544",
+   "name": "팀 토론 — 시운전·코디네이터 영역 리스크 평가 — bess-commis",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-918fb803ba29",
    "name": "한국, 중앙계약시장에서 6시간 저장장치 입찰 개시",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-06",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6a1e7b6ea542",
-   "name": "팀 토론 — 부지 조성 단계에서의 최적화된 소방 배관 설계 및 이격거리 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-06",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3630,6 +3630,46 @@
   {
    "source": "PCS-001",
    "target": "K-b811544211a3",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9f01d3b8d544",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-9f01d3b8d544",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-9f01d3b8d544",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-9f01d3b8d544",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-9f01d3b8d544",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-9f01d3b8d544",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-9f01d3b8d544",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-9f01d3b8d544",
    "type": "knowledge"
   },
   {
@@ -9406,46 +9446,6 @@
    "source": "KTX-001",
    "target": "K-72867952896b",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-6a1e7b6ea542",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-6a1e7b6ea542",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-6a1e7b6ea542",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-6a1e7b6ea542",
-   "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-6a1e7b6ea542",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-6a1e7b6ea542",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-6a1e7b6ea542",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-6a1e7b6ea542",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9789,7 +9789,7 @@
    {
     "date": "2026-09-25",
     "knowledge": 400,
-    "events_total": 2303
+    "events_total": 2304
    }
   ]
  }
