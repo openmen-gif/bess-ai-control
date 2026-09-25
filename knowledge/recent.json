@@ -1,6 +1,24 @@
 {
- "updated": "2026-09-25",
+ "updated": "2026-09-26",
  "events": [
+  {
+   "id": "dfdd3ab28c21",
+   "date": "2026-09-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-pcs-expert",
+    "bess-sales-manager",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — LG에너지솔루션과 엔비디아의 협력 확대를 바탕으로 한 AI 데이터센터 ESS 사업 전략 재검토 및 기술적 적용 방안 분석 수행.",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "e2f78a50db91",
    "date": "2026-09-25",
@@ -3853,24 +3871,6 @@
    "title": "풍력 수명관리부터 BESS 위험까지…전기안전, 에너지전환 해법 찾는다",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wNEYyMFZTOElTellHV1BiTXhUQmtFc3Vzci1EdWJiZVozV2lQeU5sd0RLTGZDUmZpWnU0UHRJanhfNUg0VXZDajJhanF2TGVHaVNQaWlUcjRPcERxWHRtemtPUkJ5UzhWYkQzOdIBcEFVX3lxTE1fYlRSelZjQm45OVEzb2o3emF5RS1paXRwYkRZOWd0ZVduT0JDMWVCMXZaSEVLSTR6cWtMemRNMmpaMEJ0OFhNTHE2X1RJQnJub250Mk5OOGFfM0FocDhVb3c2dmpTMVZWUGtYdHhhNXQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "caa949e3f6ea",
-   "date": "2026-09-10",
-   "type": "discussion",
-   "agents": [
-    "bess-circuit-breaker-expert",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-permit-europe",
-    "bess-power-system-analyst",
-    "bess-security-expert",
-    "bess-system-engineer",
-    "bess-transformer-expert"
-   ],
-   "title": "팀 토론 — 변압기 효율 최적화 설계 검토 및 시스템 안정성 평가",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

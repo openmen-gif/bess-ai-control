@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-dfdd3ab28c21",
+   "name": "팀 토론 — LG에너지솔루션과 엔비디아의 협력 확대를 바탕으로 한 AI ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e2f78a50db91",
    "name": "정부, 역대 최대 1180MW ESS 입찰 공고…배터리 3사 수주전 막 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-06",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8ea7fb87bb50",
-   "name": "앙지, 글로벌 전력 저장 용량 10GW 돌파... 유럽 BESS 급성장 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-06",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-dfdd3ab28c21",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-dfdd3ab28c21",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-dfdd3ab28c21",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-dfdd3ab28c21",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-dfdd3ab28c21",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-dfdd3ab28c21",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-dfdd3ab28c21",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-dfdd3ab28c21",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-e2f78a50db91",
@@ -9476,15 +9516,10 @@
    "source": "BAT-001",
    "target": "K-9605daccc686",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-8ea7fb87bb50",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "history": [
    {
     "date": "2026-07-20",
@@ -9825,6 +9860,11 @@
     "date": "2026-09-25",
     "knowledge": 400,
     "events_total": 2306
+   },
+   {
+    "date": "2026-09-26",
+    "knowledge": 400,
+    "events_total": 2307
    }
   ]
  }
