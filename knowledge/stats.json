@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-26",
  "totals": {
-  "all": 2317,
+  "all": 2318,
   "briefing": 1022,
   "skill": 734,
-  "discussion": 561,
+  "discussion": 562,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 612,
+   "count": 613,
    "byType": {
     "skill": 12,
-    "discussion": 284,
+    "discussion": 285,
     "briefing": 316
    },
    "lastGrown": "2026-09-26",
@@ -119,10 +119,10 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 89,
+   "count": 90,
    "byType": {
     "skill": 11,
-    "discussion": 78
+    "discussion": 79
    },
    "lastGrown": "2026-09-26",
    "level": 4
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 235,
+   "count": 236,
    "byType": {
     "skill": 11,
-    "discussion": 159,
+    "discussion": 160,
     "briefing": 65
    },
    "lastGrown": "2026-09-26",
@@ -337,10 +337,10 @@
    "level": 2
   },
   "bess-legal-expert": {
-   "count": 169,
+   "count": 170,
    "byType": {
     "skill": 11,
-    "discussion": 158
+    "discussion": 159
    },
    "lastGrown": "2026-09-26",
    "level": 5
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 185,
+   "count": 186,
    "byType": {
     "skill": 11,
-    "discussion": 174
+    "discussion": 175
    },
    "lastGrown": "2026-09-26",
    "level": 5
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 257,
+   "count": 258,
    "byType": {
     "skill": 10,
-    "discussion": 68,
+    "discussion": 69,
     "briefing": 179
    },
    "lastGrown": "2026-09-26",
@@ -575,12 +575,12 @@
    "level": 2
   },
   "bess-standards-eu": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 8,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-09-23",
+   "lastGrown": "2026-09-26",
    "level": 2
   },
   "bess-standards-japan": {
@@ -738,10 +738,10 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 53,
+   "count": 54,
    "byType": {
     "skill": 10,
-    "discussion": 41,
+    "discussion": 42,
     "briefing": 2
    },
    "lastGrown": "2026-09-26",
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-26",
-   "added": 11
+   "added": 12
   }
  ],
  "freshness": {

@@ -125,6 +125,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "04e6787ed5b5",
+   "date": "2026-09-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cybersecurity-expert",
+    "bess-fire-engineer",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-standards-eu",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 보안 거버넌스 체계 구축 및 정기 보안 감사 실시 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "02bc5a0a7dc2",
    "date": "2026-09-26",
    "type": "briefing",
@@ -3840,24 +3858,6 @@
    "title": "디시오, 한국전력공사 인큐베이팅센터 입주기업 선정...고전압 전력반도체 연구실증 착수",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmc2dWQU1MOFdidmxiZmZRTW95OV9RWWEtVHZzLVBDNENBSUpCektQR21ZcUVZRHd2Umszbkl5YWVoLUc4VFNhczJsLUhTQWI3Y2tQWmRFWjJmd3FlRHNXMWFjTlJ0WWk2R1dmc2ZB?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "222063ea0400",
-   "date": "2026-09-11",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cybersecurity-expert",
-    "bess-facility-manager",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-permit-english",
-    "bess-power-market-expert",
-    "bess-standards-korea"
-   ],
-   "title": "팀 토론 — 국제 안전 표준 강화 동향 분석 및 한국 BESS 설계 적용 방안 검토",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

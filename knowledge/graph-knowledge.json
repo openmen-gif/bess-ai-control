@@ -91,6 +91,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-04e6787ed5b5",
+   "name": "팀 토론 — 보안 거버넌스 체계 구축 및 정기 보안 감사 실시 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-02bc5a0a7dc2",
    "name": "코트라, '배터리데이 유럽' 컨퍼런스 개최...삼성SDI·LG화학 참여",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-191e6d25f54d",
-   "name": "[SK 배터리 수술] 위고비 맞는 배터리 사업…SK온은 ESS로 반등 조",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3715,6 +3715,46 @@
   {
    "source": "BAT-001",
    "target": "K-140ff5f0b22d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-04e6787ed5b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-04e6787ed5b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-04e6787ed5b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-04e6787ed5b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-04e6787ed5b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-04e6787ed5b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-04e6787ed5b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-04e6787ed5b5",
    "type": "knowledge"
   },
   {
@@ -9476,11 +9516,6 @@
    "source": "DEV-001",
    "target": "K-1a1689ee5093",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-191e6d25f54d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9829,7 +9864,7 @@
    {
     "date": "2026-09-26",
     "knowledge": 400,
-    "events_total": 2317
+    "events_total": 2318
    }
   ]
  }
