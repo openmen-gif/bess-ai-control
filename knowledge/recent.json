@@ -2,6 +2,22 @@
  "updated": "2026-09-28",
  "events": [
   {
+   "id": "99ece259f668",
+   "date": "2026-09-28",
+   "type": "discussion",
+   "agents": [
+    "bess-cfd-analyst",
+    "bess-emc-analyst",
+    "bess-fire-engineer",
+    "bess-network-engineer",
+    "bess-standards-uk",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — CFD·유동해석 영역 리스크 평가 — bess-cfd-analyst 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fb95e16c05ad",
    "date": "2026-09-26",
    "type": "briefing",
@@ -3847,17 +3863,6 @@
    "title": "팀 토론 — 시운전 프로세스 최적화를 통한 운영 효율성 향상 계획 수립",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "2ddcab925424",
-   "date": "2026-09-11",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "디시오, 한국전력공사 인큐베이팅센터 입주기업 선정...고전압 전력반도체 연구실증 착수",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmc2dWQU1MOFdidmxiZmZRTW95OV9RWWEtVHZzLVBDNENBSUpCektQR21ZcUVZRHd2Umszbkl5YWVoLUc4VFNhczJsLUhTQWI3Y2tQWmRFWjJmd3FlRHNXMWFjTlJ0WWk2R1dmc2ZB?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
