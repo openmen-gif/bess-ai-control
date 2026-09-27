@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fcdc8b45ea17",
+   "name": "팀 토론 — 변압기 효율 최적화를 위한 실제 운영 환경의 Arc Flas",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-99ece259f668",
    "name": "팀 토론 — CFD·유동해석 영역 리스크 평가 — bess-cfd-ana",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-09-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2884bb54aa55",
-   "name": "마이초이스 카지노 무료 플레이 포스트 코로나 시대 브랜드 구축: 기초, ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-07",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "EBP-001",
+   "target": "K-fcdc8b45ea17",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-fcdc8b45ea17",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-fcdc8b45ea17",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-fcdc8b45ea17",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-fcdc8b45ea17",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-fcdc8b45ea17",
+   "type": "knowledge"
+  },
   {
    "source": "CFD-001",
    "target": "K-99ece259f668",
@@ -9501,11 +9531,6 @@
    "source": "PRO-001",
    "target": "K-3240f2ea6be0",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-2884bb54aa55",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9859,7 +9884,7 @@
    {
     "date": "2026-09-28",
     "knowledge": 400,
-    "events_total": 2319
+    "events_total": 2320
    }
   ]
  }
