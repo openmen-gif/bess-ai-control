@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-26",
+ "updated": "2026-09-28",
  "totals": {
   "all": 2318,
   "briefing": 1022,
@@ -759,14 +759,6 @@
  },
  "daily": [
   {
-   "date": "2026-06-29",
-   "added": 0
-  },
-  {
-   "date": "2026-06-30",
-   "added": 0
-  },
-  {
    "date": "2026-07-01",
    "added": 0
   },
@@ -1117,18 +1109,26 @@
   {
    "date": "2026-09-26",
    "added": 12
+  },
+  {
+   "date": "2026-09-27",
+   "added": 0
+  },
+  {
+   "date": "2026-09-28",
+   "added": 0
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-09-26",
-   "staleDays": 0,
-   "stale": false
+   "staleDays": 2,
+   "stale": true
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-09-26",
-   "gapDays": 0,
-   "overdue": false
+   "gapDays": 2,
+   "overdue": true
   }
  }
 }
