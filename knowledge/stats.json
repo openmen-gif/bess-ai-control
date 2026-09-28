@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-29",
  "totals": {
-  "all": 2342,
+  "all": 2343,
   "briefing": 1034,
   "skill": 734,
-  "discussion": 574,
+  "discussion": 575,
   "activity": 0
  },
  "perAgent": {
@@ -65,12 +65,12 @@
    "level": 3
   },
   "bess-cfd-analyst": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 12,
-    "discussion": 34
+    "discussion": 35
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-circuit-breaker-expert": {
@@ -146,21 +146,21 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 88,
+   "count": 89,
    "byType": {
     "skill": 10,
-    "discussion": 78
+    "discussion": 79
    },
    "lastGrown": "2026-09-29",
    "level": 4
   },
   "bess-emerging-markets": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 11,
-    "discussion": 37
+    "discussion": 38
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-env-engineer": {
@@ -292,12 +292,12 @@
    "level": 2
   },
   "bess-internal-auditor": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 9,
-    "discussion": 42
+    "discussion": 43
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-ip-patent-expert": {
@@ -383,12 +383,12 @@
    "level": 3
   },
   "bess-om-expert": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-09-22",
+   "lastGrown": "2026-09-29",
    "level": 2
   },
   "bess-output-generator": {
@@ -683,10 +683,10 @@
    "level": 2
   },
   "bess-tax-incentive": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 8,
-    "discussion": 45,
+    "discussion": 46,
     "briefing": 2
    },
    "lastGrown": "2026-09-29",
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-29",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {

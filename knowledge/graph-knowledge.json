@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-bead1aa3c4c0",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리 최적화를 위한 신흥시장(인도, U",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b5f17108c0c1",
    "name": "팀 토론 — 명령: 차단기 및 보호 장치의 최적 사양 선정을 위한 IEC",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-09-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-58bee3413086",
-   "name": "[기획] 직류 전초기지 ‘LS일렉트릭 DC팩토리’",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CFD-001",
+   "target": "K-bead1aa3c4c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-bead1aa3c4c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-bead1aa3c4c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-bead1aa3c4c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-bead1aa3c4c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-bead1aa3c4c0",
+   "type": "knowledge"
+  },
   {
    "source": "CBK-001",
    "target": "K-b5f17108c0c1",
@@ -9546,11 +9576,6 @@
    "source": "SYS-001",
    "target": "K-630ae907946e",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-58bee3413086",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9909,7 +9934,7 @@
    {
     "date": "2026-09-29",
     "knowledge": 400,
-    "events_total": 2342
+    "events_total": 2343
    }
   ]
  }
