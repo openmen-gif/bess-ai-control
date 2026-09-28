@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-b5f17108c0c1",
+   "name": "팀 토론 — 명령: 차단기 및 보호 장치의 최적 사양 선정을 위한 IEC",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-96b9b71f4ecd",
    "name": "팀 토론 — 냉각 시스템과 EMI 관리 최적화 방안 연구",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-09-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3e3f2f5858b3",
-   "name": "[정책의속살] 올해 전기차 보조금 예산 90% 소진...4분기 급제동",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-08",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "CBK-001",
+   "target": "K-b5f17108c0c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-b5f17108c0c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-b5f17108c0c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-b5f17108c0c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b5f17108c0c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-b5f17108c0c1",
+   "type": "knowledge"
+  },
   {
    "source": "EMC-001",
    "target": "K-96b9b71f4ecd",
@@ -9521,11 +9551,6 @@
    "source": "PCS-001",
    "target": "K-58bee3413086",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-3e3f2f5858b3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9884,7 +9909,7 @@
    {
     "date": "2026-09-29",
     "knowledge": 400,
-    "events_total": 2341
+    "events_total": 2342
    }
   ]
  }

@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-29",
  "totals": {
-  "all": 2341,
+  "all": 2342,
   "briefing": 1034,
   "skill": 734,
-  "discussion": 573,
+  "discussion": 574,
   "activity": 0
  },
  "perAgent": {
@@ -74,13 +74,13 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 69,
+   "count": 70,
    "byType": {
     "skill": 11,
-    "discussion": 58
+    "discussion": 59
    },
-   "lastGrown": "2026-09-22",
-   "level": 3
+   "lastGrown": "2026-09-29",
+   "level": 4
   },
   "bess-commissioning-coordinator": {
    "count": 50,
@@ -274,12 +274,12 @@
    "level": 2
   },
   "bess-hydrogen-specialist": {
-   "count": 18,
+   "count": 19,
    "byType": {
     "skill": 8,
-    "discussion": 10
+    "discussion": 11
    },
-   "lastGrown": "2026-08-31",
+   "lastGrown": "2026-09-29",
    "level": 2
   },
   "bess-insurance-expert": {
@@ -374,10 +374,10 @@
    "level": 3
   },
   "bess-network-engineer": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 7,
-    "discussion": 23
+    "discussion": 24
    },
    "lastGrown": "2026-09-29",
    "level": 3
@@ -575,12 +575,12 @@
    "level": 2
   },
   "bess-standards-eu": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 8,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-09-26",
+   "lastGrown": "2026-09-29",
    "level": 2
   },
   "bess-standards-japan": {
@@ -593,12 +593,12 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 236,
+   "count": 237,
    "byType": {
     "skill": 11,
-    "discussion": 225
+    "discussion": 226
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 5
   },
   "bess-standards-poland": {
@@ -683,13 +683,13 @@
    "level": 2
   },
   "bess-tax-incentive": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 8,
-    "discussion": 44,
+    "discussion": 45,
     "briefing": 2
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-tax-japan": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-29",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
