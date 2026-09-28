@@ -127,6 +127,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-590beba5beea",
+   "name": "팀 토론 — 관세 분석 및 최적화 전략 수립 - `bess-customs",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-28",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-51f429bf23f8",
    "name": "[해설] ESS 1180MW 물량 2029년 2월까지 구축 목표",
    "group": "KNOWLEDGE",
@@ -143,6 +152,15 @@
    "date": "2026-09-28",
    "val": 3,
    "color": "#10B981"
+  },
+  {
+   "id": "K-495fb0e62c76",
+   "name": "팀 토론 — IRA 인센티브 세부 내용 분석 및 재무 모델링 초안 작성 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-28",
+   "val": 3,
+   "color": "#F59E0B"
   },
   {
    "id": "K-16545d72e0ab",
@@ -3581,24 +3599,6 @@
    "date": "2026-09-08",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-159f16707ed4",
-   "name": "[탐방] 이온어스, ‘인디고’ 통해 이동형 ESS 산업화 앞장선다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-08",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-125883d16990",
-   "name": "놈놈놈 토토 사이트|본전벳 도메인",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-08",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3823,6 +3823,36 @@
    "type": "knowledge"
   },
   {
+   "source": "CST-001",
+   "target": "K-590beba5beea",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-590beba5beea",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-590beba5beea",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-590beba5beea",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-590beba5beea",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-590beba5beea",
+   "type": "knowledge"
+  },
+  {
    "source": "MAR-001",
    "target": "K-51f429bf23f8",
    "type": "knowledge"
@@ -3830,6 +3860,26 @@
   {
    "source": "MAR-001",
    "target": "K-4e7219cf6408",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-495fb0e62c76",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-495fb0e62c76",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-495fb0e62c76",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-495fb0e62c76",
    "type": "knowledge"
   },
   {
@@ -9426,16 +9476,6 @@
    "source": "STD-001",
    "target": "K-27d2ad2e87a1",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-159f16707ed4",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-125883d16990",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9789,7 +9829,7 @@
    {
     "date": "2026-09-28",
     "knowledge": 400,
-    "events_total": 2337
+    "events_total": 2339
    }
   ]
  }
