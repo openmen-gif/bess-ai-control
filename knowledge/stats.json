@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-29",
  "totals": {
-  "all": 2340,
+  "all": 2341,
   "briefing": 1034,
   "skill": 734,
-  "discussion": 572,
+  "discussion": 573,
   "activity": 0
  },
  "perAgent": {
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 87,
+   "count": 88,
    "byType": {
     "skill": 10,
-    "discussion": 77
+    "discussion": 78
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 4
   },
   "bess-emerging-markets": {
@@ -209,13 +209,13 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 240,
+   "count": 241,
    "byType": {
     "skill": 11,
-    "discussion": 162,
+    "discussion": 163,
     "briefing": 67
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 5
   },
   "bess-fit-procedure": {
@@ -238,12 +238,12 @@
    "level": 4
   },
   "bess-grounding-engineer": {
-   "count": 58,
+   "count": 59,
    "byType": {
     "skill": 10,
-    "discussion": 48
+    "discussion": 49
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-hr-manager": {
@@ -310,12 +310,12 @@
    "level": 2
   },
   "bess-it-infra": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 8,
-    "discussion": 25
+    "discussion": 26
    },
-   "lastGrown": "2026-09-18",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-knowledge-manager": {
@@ -374,13 +374,13 @@
    "level": 3
   },
   "bess-network-engineer": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 7,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-09-28",
-   "level": 2
+   "lastGrown": "2026-09-29",
+   "level": 3
   },
   "bess-om-expert": {
    "count": 22,
@@ -656,12 +656,12 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 164,
+   "count": 165,
    "byType": {
     "skill": 11,
-    "discussion": 153
+    "discussion": 154
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 5
   },
   "bess-tax-accountant": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-29",
-   "added": 0
+   "added": 1
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-09-28",
-   "gapDays": 1,
+   "previousUpdated": "2026-09-29",
+   "gapDays": 0,
    "overdue": false
   }
  }

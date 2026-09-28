@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-96b9b71f4ecd",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리 최적화 방안 연구",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fed26f22cda4",
    "name": "[단독] 배터리 화재는 늘어나는데 화재 진압 장비는 태부족… 소방청, 1",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-09-08",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-29383e32d5b4",
-   "name": "[포커스] 전력망서 데이터센터까지, ESS 확대 어디까지 왔나",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-08",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "EMC-001",
+   "target": "K-96b9b71f4ecd",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-96b9b71f4ecd",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-96b9b71f4ecd",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-96b9b71f4ecd",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-96b9b71f4ecd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-96b9b71f4ecd",
+   "type": "knowledge"
+  },
   {
    "source": "FIR-001",
    "target": "K-fed26f22cda4",
@@ -9496,11 +9526,6 @@
    "source": "STD-001",
    "target": "K-3e3f2f5858b3",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-29383e32d5b4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9859,7 +9884,7 @@
    {
     "date": "2026-09-29",
     "knowledge": 400,
-    "events_total": 2340
+    "events_total": 2341
    }
   ]
  }
