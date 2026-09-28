@@ -91,6 +91,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-72e31a3b27b9",
+   "name": "팀 토론 — IRA 인센티브 세부 내용 분석 및 재무 모델링 진행 — 세",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-28",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-6d62dcf0e77b",
    "name": "美 ESS 업계 ‘1테라 시대’ 예고… K배터리도 영역 넓힌다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-08",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-27d2ad2e87a1",
-   "name": "[09.29] [RPS 대전환 초읽기] 2027 재생에너지 시장 大개편과",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-08",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3775,6 +3775,36 @@
   {
    "source": "BAT-001",
    "target": "K-8781f4478c49",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-72e31a3b27b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-72e31a3b27b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-72e31a3b27b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-72e31a3b27b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-72e31a3b27b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-72e31a3b27b9",
    "type": "knowledge"
   },
   {
@@ -9471,15 +9501,10 @@
    "source": "STD-001",
    "target": "K-29383e32d5b4",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-27d2ad2e87a1",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "history": [
    {
     "date": "2026-07-20",
@@ -9830,6 +9855,11 @@
     "date": "2026-09-28",
     "knowledge": 400,
     "events_total": 2339
+   },
+   {
+    "date": "2026-09-29",
+    "knowledge": 400,
+    "events_total": 2340
    }
   ]
  }
