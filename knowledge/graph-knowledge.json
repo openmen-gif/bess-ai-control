@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d14d47c15860",
+   "name": "팀 토론 — 부지 내 최적화된 배치 계획 수립 및 이격거리 분석을 통한 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b90fb32de438",
    "name": "미국 ESS 1TWh 목표…배터리 3사 현지 공략 강화",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-007d090c7e0a",
-   "name": "\"공급 과잉 폭탄 터질라\"… 中, ESS 신규 공장 승인 '전격 중단'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3675,6 +3675,36 @@
   {
    "source": "BAT-001",
    "target": "K-da2a36ef3ebe",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-d14d47c15860",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-d14d47c15860",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-d14d47c15860",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-d14d47c15860",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-d14d47c15860",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-d14d47c15860",
    "type": "knowledge"
   },
   {
@@ -9381,11 +9411,6 @@
    "source": "PCS-001",
    "target": "K-1250c3017bb0",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-007d090c7e0a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9739,7 +9764,7 @@
    {
     "date": "2026-09-28",
     "knowledge": 400,
-    "events_total": 2335
+    "events_total": 2336
    }
   ]
  }

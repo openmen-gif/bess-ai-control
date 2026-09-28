@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-28",
  "totals": {
-  "all": 2335,
+  "all": 2336,
   "briefing": 1034,
   "skill": 734,
-  "discussion": 567,
+  "discussion": 568,
   "activity": 0
  },
  "perAgent": {
@@ -56,12 +56,12 @@
    "level": 3
   },
   "bess-cbop-engineer": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 11,
-    "discussion": 39
+    "discussion": 40
    },
-   "lastGrown": "2026-09-21",
+   "lastGrown": "2026-09-28",
    "level": 3
   },
   "bess-cfd-analyst": {
@@ -137,10 +137,10 @@
    "level": 4
   },
   "bess-ebop-engineer": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 9,
-    "discussion": 31
+    "discussion": 32
    },
    "lastGrown": "2026-09-28",
    "level": 3
@@ -238,10 +238,10 @@
    "level": 4
   },
   "bess-grounding-engineer": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 10,
-    "discussion": 47
+    "discussion": 48
    },
    "lastGrown": "2026-09-28",
    "level": 3
@@ -547,22 +547,22 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 9,
-    "discussion": 45
+    "discussion": 46
    },
-   "lastGrown": "2026-09-21",
+   "lastGrown": "2026-09-28",
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 258,
+   "count": 259,
    "byType": {
     "skill": 10,
-    "discussion": 69,
+    "discussion": 70,
     "briefing": 179
    },
-   "lastGrown": "2026-09-26",
+   "lastGrown": "2026-09-28",
    "level": 5
   },
   "bess-standards-australia": {
@@ -638,10 +638,10 @@
    "level": 3
   },
   "bess-structural-analyst": {
-   "count": 66,
+   "count": 67,
    "byType": {
     "skill": 10,
-    "discussion": 56
+    "discussion": 57
    },
    "lastGrown": "2026-09-28",
    "level": 3
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-28",
-   "added": 17
+   "added": 18
   }
  ],
  "freshness": {
