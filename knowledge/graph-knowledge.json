@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-fabdbd752b77",
+   "name": "팀 토론 — 시운전(EMS/FIT) 최적화 프로세스 개선 및 효율성 검증",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e41c2dcd0fa6",
    "name": "\"공장화재 옆 건물 번지는 불길 막는다\".. 소방연구원 ‘수막설비’ 실증",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-e1107b39a4fe",
-   "name": "팀 토론 — 정확한 원산지 분석을 통한 견적 및 BOM 최적화 방안 수립",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3635,6 +3635,36 @@
   {
    "source": "STR-001",
    "target": "K-fcdc8b45ea17",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-fabdbd752b77",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-fabdbd752b77",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-fabdbd752b77",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-fabdbd752b77",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-fabdbd752b77",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-fabdbd752b77",
    "type": "knowledge"
   },
   {
@@ -9356,36 +9386,6 @@
    "source": "BAT-001",
    "target": "K-007d090c7e0a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-e1107b39a4fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-e1107b39a4fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-e1107b39a4fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-002",
-   "target": "K-e1107b39a4fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-e1107b39a4fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-e1107b39a4fe",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9739,7 +9739,7 @@
    {
     "date": "2026-09-28",
     "knowledge": 400,
-    "events_total": 2334
+    "events_total": 2335
    }
   ]
  }
