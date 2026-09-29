@@ -100,6 +100,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b15905a236d3",
+   "name": "팀 토론 — BESS 프로젝트 국제 견적 및 인증 문서 통합 관리 시스템",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a9bdf51249c9",
    "name": "팀 토론 — BESS 프로젝트 견적서 및 인증 문서 체계화 방안 수립",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3abcfe8a28f9",
-   "name": "‘전기안전의 미래, 전북서 논하다’ 대한민국 전기안전 컨퍼런스 개막",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-09",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3775,6 +3775,46 @@
   {
    "source": "TIN-001",
    "target": "K-b5f17108c0c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b15905a236d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-b15905a236d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b15905a236d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-b15905a236d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b15905a236d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-b15905a236d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b15905a236d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b15905a236d3",
    "type": "knowledge"
   },
   {
@@ -9531,15 +9571,10 @@
    "source": "BAT-001",
    "target": "K-3be533226237",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-3abcfe8a28f9",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "history": [
    {
     "date": "2026-07-20",
@@ -9895,6 +9930,11 @@
     "date": "2026-09-29",
     "knowledge": 400,
     "events_total": 2362
+   },
+   {
+    "date": "2026-09-30",
+    "knowledge": 400,
+    "events_total": 2363
    }
   ]
  }
