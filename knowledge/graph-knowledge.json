@@ -100,6 +100,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-9bbb7afecb5e",
+   "name": "팀 토론 — 그린프리미엄 인증 절차 최적화를 위한 ESG 재무 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-96b9b71f4ecd",
    "name": "팀 토론 — 냉각 시스템과 EMI 관리 최적화 방안 연구",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2c61f3d0662f",
-   "name": "전기안전공사, 전기안전 컨퍼런스 개막...나흘간 8개 행사 연다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-09",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3775,6 +3775,46 @@
   {
    "source": "SYS-001",
    "target": "K-a9bdf51249c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9bbb7afecb5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-9bbb7afecb5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-9bbb7afecb5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-9bbb7afecb5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-9bbb7afecb5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-9bbb7afecb5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-9bbb7afecb5e",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-9bbb7afecb5e",
    "type": "knowledge"
   },
   {
@@ -9461,11 +9501,6 @@
    "source": "BAT-001",
    "target": "K-3a1d9506c2c4",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-2c61f3d0662f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9824,7 +9859,7 @@
    {
     "date": "2026-09-29",
     "knowledge": 400,
-    "events_total": 2360
+    "events_total": 2361
    }
   ]
  }
