@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-1e352a614bbd",
+   "name": "팀 토론 — BESS 신규 해외 JV 파트너십 탐색 및 사업타당성 분석",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff2baf8042bd",
    "name": "전력 먹는 AIDC가 전력망을 돕는다?…ESS로 ‘계통 자원’ 변신 주목",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-410fae7354e3",
-   "name": "'2026 대한민국 전기안전 컨퍼런스' 일정 본격 돌입했다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-09",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "TRF-001",
    "target": "K-d05987952dbc",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1e352a614bbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-1e352a614bbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1e352a614bbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-1e352a614bbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-1e352a614bbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-1e352a614bbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-1e352a614bbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-1e352a614bbd",
    "type": "knowledge"
   },
   {
@@ -9601,11 +9641,6 @@
    "source": "BAT-001",
    "target": "K-4e06909125f3",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-410fae7354e3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9969,7 +10004,7 @@
    {
     "date": "2026-09-30",
     "knowledge": 400,
-    "events_total": 2364
+    "events_total": 2365
    }
   ]
  }
