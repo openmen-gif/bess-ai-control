@@ -2,6 +2,24 @@
  "updated": "2026-09-30",
  "events": [
   {
+   "id": "d05987952dbc",
+   "date": "2026-09-30",
+   "type": "discussion",
+   "agents": [
+    "bess-cable-engineer",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-output-generator",
+    "bess-pcs-expert",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — Ampacity 계산 및 IEC60502 준수를 통한 최적 케이블 포설 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ff2baf8042bd",
    "date": "2026-09-29",
    "type": "briefing",
@@ -3895,17 +3913,6 @@
    ],
    "title": "재생에너지 넘치는 제주…전력시장·건물 혁신 찾는다",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LYlJETlZTbGpVVkNNOXI1bkpHeXp3d2FySnFmN0Nkc1VyZVBLaWNGYlNrZ1BDRmFaWmZPV1N5NW1CeF9qVkF6andhYnEwNFpVT3NaSXA2UTRCNFhrSFFXU1JyaDI0dkE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "115fdfffee80",
-   "date": "2026-09-13",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "[COP31. 튀르키에 안탈루이로 가는길③] “태양광만 늘려선 안 된다”…UNFCCC, COP31 핵심으로 그리드·ESS·메탄·폐기물 제시",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5XOHZJLU1pbjF5RTRtTTg4Y3dxbFNFREJwWW1sVVVnTFJJNlRHbGExalNEQmdoYmI1S29sVXl4VVNyU1BSTzNmdWkzaVQ3ZERPMF9MMHZsZTl0NHZTcFIxV3ZaanZGZmMzXzBEaQ?oc=5",
    "source": "구글뉴스"
   }
  ]
