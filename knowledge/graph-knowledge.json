@@ -136,6 +136,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-4804cb156266",
+   "name": "팀 토론 — EIA 환경영향평가를 통한 신규 BESS 설치 프로젝트의 생",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3510a3f7ea6e",
    "name": "[IB토마토]삼성SDI, 전기차 공장 ESS로 돌린다…4.4조 실탄 확보",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-095002f9a9a2",
-   "name": "팀 토론 — 기초 설계 최적화를 위한 현지 환경 영향 평가 및 안전 기준",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-09",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3785,6 +3785,46 @@
   {
    "source": "BIZ-001",
    "target": "K-633a973b34b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4804cb156266",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-4804cb156266",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4804cb156266",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-4804cb156266",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4804cb156266",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-4804cb156266",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-4804cb156266",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-4804cb156266",
    "type": "knowledge"
   },
   {
@@ -9426,46 +9466,6 @@
    "source": "SYS-001",
    "target": "K-239fad6ef1b9",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-095002f9a9a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-095002f9a9a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-095002f9a9a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-095002f9a9a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-095002f9a9a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-095002f9a9a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-095002f9a9a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-095002f9a9a2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9824,7 +9824,7 @@
    {
     "date": "2026-09-29",
     "knowledge": 400,
-    "events_total": 2358
+    "events_total": 2359
    }
   ]
  }
