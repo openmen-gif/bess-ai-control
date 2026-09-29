@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-f6968b564b3d",
+   "name": "팀 토론 — BESS 시스템 초기 시운전 프로세스 최적화 매뉴얼 개발 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-29",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-f649f44d59e7",
    "name": "팀 토론 — 냉각 시스템과 EMI 관리의 신흥시장 맞춤형 GAP 분석 및",
    "group": "KNOWLEDGE",
@@ -3590,21 +3599,52 @@
    "date": "2026-09-09",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3a1d9506c2c4",
-   "name": "엘앤에프, 전환사채(CB) 발행 검토 사실 인정…“LFP·ESS 사업 본",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-09",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
   {
    "source": "MAR-001",
    "target": "K-ff2baf8042bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-f6968b564b3d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f6968b564b3d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-f6968b564b3d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-f6968b564b3d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-f6968b564b3d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-f6968b564b3d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-f6968b564b3d",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-f6968b564b3d",
    "type": "knowledge"
   },
   {
@@ -9496,11 +9536,6 @@
    "source": "MAR-001",
    "target": "K-3abcfe8a28f9",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-3a1d9506c2c4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9859,7 +9894,7 @@
    {
     "date": "2026-09-29",
     "knowledge": 400,
-    "events_total": 2361
+    "events_total": 2362
    }
   ]
  }

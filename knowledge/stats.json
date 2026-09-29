@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-29",
  "totals": {
-  "all": 2361,
+  "all": 2362,
   "briefing": 1048,
   "skill": 734,
-  "discussion": 579,
+  "discussion": 580,
   "activity": 0
  },
  "perAgent": {
@@ -92,19 +92,19 @@
    "level": 3
   },
   "bess-contract-specialist": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 10,
-    "discussion": 39
+    "discussion": 40
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 237,
+   "count": 238,
    "byType": {
     "skill": 12,
-    "discussion": 225
+    "discussion": 226
    },
    "lastGrown": "2026-09-29",
    "level": 5
@@ -219,12 +219,12 @@
    "level": 5
   },
   "bess-fit-procedure": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 8,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-grid-interconnection": {
@@ -319,12 +319,12 @@
    "level": 3
   },
   "bess-knowledge-manager": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 9,
-    "discussion": 24
+    "discussion": 25
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-labor-safety": {
@@ -401,10 +401,10 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 195,
+   "count": 196,
    "byType": {
     "skill": 11,
-    "discussion": 114,
+    "discussion": 115,
     "briefing": 70
    },
    "lastGrown": "2026-09-29",
@@ -448,10 +448,10 @@
    "level": 4
   },
   "bess-power-system-analyst": {
-   "count": 122,
+   "count": 123,
    "byType": {
     "skill": 10,
-    "discussion": 112
+    "discussion": 113
    },
    "lastGrown": "2026-09-29",
    "level": 4
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 166,
+   "count": 167,
    "byType": {
     "skill": 11,
-    "discussion": 155
+    "discussion": 156
    },
    "lastGrown": "2026-09-29",
    "level": 5
@@ -720,12 +720,12 @@
    "level": 3
   },
   "bess-training-expert": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 8,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-29",
    "level": 3
   },
   "bess-transfer-pricing": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-29",
-   "added": 21
+   "added": 22
   }
  ],
  "freshness": {
