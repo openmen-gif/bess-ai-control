@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-f649f44d59e7",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리의 신흥시장 맞춤형 GAP 분석 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ccfa1f4e313d",
    "name": "LG전자, AI 데이터센터 ‘열’ 잡는다…냉각사업 수주·제품군 확대",
    "group": "KNOWLEDGE",
@@ -3590,21 +3599,52 @@
    "date": "2026-09-09",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-239fad6ef1b9",
-   "name": "팀 토론 — 열 관리 세부 접근법 개발 및 실제 운영 조건 반영 검증 계",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-09",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
   {
    "source": "MAR-001",
    "target": "K-ff2baf8042bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f649f44d59e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f649f44d59e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-f649f44d59e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-f649f44d59e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-f649f44d59e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-f649f44d59e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-f649f44d59e7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-f649f44d59e7",
    "type": "knowledge"
   },
   {
@@ -9426,46 +9466,6 @@
    "source": "MAR-001",
    "target": "K-2c61f3d0662f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-239fad6ef1b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-239fad6ef1b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-239fad6ef1b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-239fad6ef1b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-239fad6ef1b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-239fad6ef1b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-239fad6ef1b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-239fad6ef1b9",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9824,7 +9824,7 @@
    {
     "date": "2026-09-29",
     "knowledge": 400,
-    "events_total": 2359
+    "events_total": 2360
    }
   ]
  }

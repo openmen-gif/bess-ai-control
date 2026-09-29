@@ -13,6 +13,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "f649f44d59e7",
+   "date": "2026-09-29",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-emc-analyst",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-om-expert",
+    "bess-power-system-analyst",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 냉각 시스템과 EMI 관리의 신흥시장 맞춤형 GAP 분석 및 최적화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ccfa1f4e313d",
    "date": "2026-09-29",
    "type": "briefing",
@@ -3868,24 +3886,6 @@
    "title": "중국 ESS 업체 삼성SDI 배터리로 무역장벽 우회해 미국 시장 겨냥, 트럼프 추가 규제는 변수",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1yeFRPcmd2dkxyeHpFaTNCNk1jVG93RGJ3dm83YnZ0UXc4Yjh1SDFqYVV1ZGUzT0Q3bVJSeXhMSTZhZFFCaDRPc242UXgzUm9yNEhtbUdseUthMV95NG5kSG5UUHctdVd4a1lDTC1Rcl9yeUE?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "dc924effda00",
-   "date": "2026-09-12",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-business-dev",
-    "bess-cost-analyst",
-    "bess-epc-bom",
-    "bess-financial-analysis",
-    "bess-marketer",
-    "bess-standards-uk",
-    "bess-substation-engineer"
-   ],
-   "title": "팀 토론 — 견적서·BOM 영역 1차 분석 — bess-epc-bom 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
