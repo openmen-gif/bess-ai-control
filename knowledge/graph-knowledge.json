@@ -136,6 +136,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-65f80953e4b7",
+   "name": "팀 토론 — 시운전 효율성 극대화를 위한 자동화 시스템 구축 및 초기 운",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-495bf14c8278",
    "name": "'전기차만 바라보던 배터리 끝났다'… LG엔솔이 엔비디아에 올라탄 이유",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-116309dddbe6",
-   "name": "ESS 사업자에 15년간 계약용량정산금 지급…한전 등 전력구매자가 비용 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3725,6 +3725,46 @@
   {
    "source": "BAT-001",
    "target": "K-6ce3943224c9",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-65f80953e4b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-65f80953e4b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-65f80953e4b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-65f80953e4b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-65f80953e4b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-65f80953e4b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-65f80953e4b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-65f80953e4b7",
    "type": "knowledge"
   },
   {
@@ -9371,11 +9411,6 @@
    "source": "STD-005",
    "target": "K-1267632672c0",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-116309dddbe6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9739,7 +9774,7 @@
    {
     "date": "2026-09-30",
     "knowledge": 400,
-    "events_total": 2384
+    "events_total": 2385
    }
   ]
  }
