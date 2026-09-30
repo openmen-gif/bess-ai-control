@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-4d8662e2edaf",
+   "name": "팀 토론 — 부지 안전성 및 효율성 극대화를 위한 최적의 HVAC 시스템",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f1e4305585f5",
    "name": "美 ‘ESS 확대·脫중국’ 가속… K배터리 ‘반사이익’",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-78744d2565c9",
-   "name": "전기안전대상부터 기술 논의까지…전북 달군 ‘전기안전의 4일’",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "TRN-001",
    "target": "K-508894245e50",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4d8662e2edaf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4d8662e2edaf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4d8662e2edaf",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-4d8662e2edaf",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-4d8662e2edaf",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-4d8662e2edaf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-4d8662e2edaf",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-4d8662e2edaf",
    "type": "knowledge"
   },
   {
@@ -9581,11 +9621,6 @@
    "source": "BAT-001",
    "target": "K-8492496dbf96",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-78744d2565c9",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9954,7 +9989,7 @@
    {
     "date": "2026-10-01",
     "knowledge": 400,
-    "events_total": 2393
+    "events_total": 2394
    }
   ]
  }
