@@ -208,6 +208,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0b493fe8c417",
+   "name": "팀 토론 — 액냉 기술 최적화를 통한 고온 환경에서의 BESS 효율성 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff2baf8042bd",
    "name": "전력 먹는 AIDC가 전력망을 돕는다?…ESS로 ‘계통 자원’ 변신 주목",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-10",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-15ed04ee99cc",
-   "name": "팀 토론 — HS코드·배터리 영역 리스크 평가 — bess-customs",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-10",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3870,6 +3870,46 @@
   {
    "source": "SYS-001",
    "target": "K-1e352a614bbd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0b493fe8c417",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-0b493fe8c417",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-0b493fe8c417",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0b493fe8c417",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0b493fe8c417",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-0b493fe8c417",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-0b493fe8c417",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-0b493fe8c417",
    "type": "knowledge"
   },
   {
@@ -9371,46 +9411,6 @@
    "source": "STD-001",
    "target": "K-1e605a94c31f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-15ed04ee99cc",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-15ed04ee99cc",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-15ed04ee99cc",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-15ed04ee99cc",
-   "type": "knowledge"
-  },
-  {
-   "source": "IPP-001",
-   "target": "K-15ed04ee99cc",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-15ed04ee99cc",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-15ed04ee99cc",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-15ed04ee99cc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9774,7 +9774,7 @@
    {
     "date": "2026-09-30",
     "knowledge": 400,
-    "events_total": 2386
+    "events_total": 2387
    }
   ]
  }
