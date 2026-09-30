@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e586c8612603",
+   "name": "팀 토론 — AI 기반 SOC/SOH 예측 모델을 활용한 BESS 열화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e1077bdc3624",
    "name": "판 커진 ESS 3차전…K배터리, 국산 공급망 경쟁 격화 [배터리레이다]",
    "group": "KNOWLEDGE",
@@ -3590,21 +3599,52 @@
    "date": "2026-09-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-207df7682151",
-   "name": "[오프로]26.09.09 상한가 및 상승종목",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
   {
    "source": "BAT-001",
    "target": "K-f1e4305585f5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e586c8612603",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e586c8612603",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-e586c8612603",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e586c8612603",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-e586c8612603",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-e586c8612603",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-e586c8612603",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-e586c8612603",
    "type": "knowledge"
   },
   {
@@ -9476,11 +9516,6 @@
    "source": "BAT-001",
    "target": "K-45553553f56a",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-207df7682151",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9844,7 +9879,7 @@
    {
     "date": "2026-09-30",
     "knowledge": 400,
-    "events_total": 2389
+    "events_total": 2390
    }
   ]
  }
