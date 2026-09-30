@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-80bb6a80b669",
+   "name": "팀 토론 — 부지 안전성 최적화 설계 프로토콜 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f1e4305585f5",
    "name": "美 ‘ESS 확대·脫중국’ 가속… K배터리 ‘반사이익’",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5c3dfdbd6f28",
-   "name": "팀 토론 — 시운전 프로세스 자동화 시스템 구축을 위한 최적의 조건 및 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-10",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-80bb6a80b669",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-80bb6a80b669",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-80bb6a80b669",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-80bb6a80b669",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-80bb6a80b669",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-80bb6a80b669",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-80bb6a80b669",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-80bb6a80b669",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-f1e4305585f5",
@@ -9511,50 +9551,10 @@
    "source": "FIR-001",
    "target": "K-6b26c86a0bca",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-5c3dfdbd6f28",
-   "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-5c3dfdbd6f28",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-5c3dfdbd6f28",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-5c3dfdbd6f28",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-5c3dfdbd6f28",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-5c3dfdbd6f28",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-5c3dfdbd6f28",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-5c3dfdbd6f28",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "history": [
    {
     "date": "2026-07-20",
@@ -9915,6 +9915,11 @@
     "date": "2026-09-30",
     "knowledge": 400,
     "events_total": 2391
+   },
+   {
+    "date": "2026-10-01",
+    "knowledge": 400,
+    "events_total": 2392
    }
   ]
  }
