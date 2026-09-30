@@ -190,6 +190,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-27fa73b32dda",
+   "name": "팀 토론 — AI 기반 예측 모델을 활용한 BESS 운영 최적화 시나리오",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-26b5ef7d2a36",
    "name": "ESS 늘리고 재생e 유연접속 허용…호남 전력포화 내년부터 풀린다 - 머",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-10",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-200ae5f671d1",
-   "name": "SK온 ESS 총괄 \" '1.5조' 네오볼타파워 공급 계약은 시작에 불과",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3860,6 +3860,46 @@
   {
    "source": "BAT-001",
    "target": "K-341c403cb5c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-27fa73b32dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-27fa73b32dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-27fa73b32dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-27fa73b32dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-27fa73b32dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-27fa73b32dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-27fa73b32dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-27fa73b32dda",
    "type": "knowledge"
   },
   {
@@ -9441,11 +9481,6 @@
    "source": "MAR-001",
    "target": "K-207df7682151",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-200ae5f671d1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9809,7 +9844,7 @@
    {
     "date": "2026-09-30",
     "knowledge": 400,
-    "events_total": 2388
+    "events_total": 2389
    }
   ]
  }
