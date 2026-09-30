@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-30",
  "totals": {
-  "all": 2385,
+  "all": 2386,
   "briefing": 1066,
   "skill": 734,
-  "discussion": 585,
+  "discussion": 586,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 635,
+   "count": 636,
    "byType": {
     "skill": 12,
-    "discussion": 294,
+    "discussion": 295,
     "briefing": 329
    },
    "lastGrown": "2026-09-30",
@@ -119,12 +119,12 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 92,
+   "count": 93,
    "byType": {
     "skill": 11,
-    "discussion": 81
+    "discussion": 82
    },
-   "lastGrown": "2026-09-29",
+   "lastGrown": "2026-09-30",
    "level": 4
   },
   "bess-data-analyst": {
@@ -137,12 +137,12 @@
    "level": 4
   },
   "bess-ebop-engineer": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 9,
-    "discussion": 32
+    "discussion": 33
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-09-30",
    "level": 3
   },
   "bess-emc-analyst": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 250,
+   "count": 251,
    "byType": {
     "skill": 11,
-    "discussion": 169,
+    "discussion": 170,
     "briefing": 70
    },
    "lastGrown": "2026-09-30",
@@ -256,12 +256,12 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 131,
+   "count": 132,
    "byType": {
     "skill": 11,
-    "discussion": 120
+    "discussion": 121
    },
-   "lastGrown": "2026-09-29",
+   "lastGrown": "2026-09-30",
    "level": 4
   },
   "bess-hybrid-specialist": {
@@ -374,10 +374,10 @@
    "level": 3
   },
   "bess-network-engineer": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 7,
-    "discussion": 25
+    "discussion": 26
    },
    "lastGrown": "2026-09-30",
    "level": 3
@@ -538,12 +538,12 @@
    "level": 3
   },
   "bess-security-expert": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 7,
-    "discussion": 41
+    "discussion": 42
    },
-   "lastGrown": "2026-09-14",
+   "lastGrown": "2026-09-30",
    "level": 3
   },
   "bess-site-manager": {
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 268,
+   "count": 269,
    "byType": {
     "skill": 10,
-    "discussion": 70,
+    "discussion": 71,
     "briefing": 188
    },
    "lastGrown": "2026-09-30",
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-30",
-   "added": 22
+   "added": 23
   }
  ],
  "freshness": {

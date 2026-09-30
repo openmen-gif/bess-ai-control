@@ -163,6 +163,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-3b5b76fd5043",
+   "name": "팀 토론 — 보안 거버넌스 프레임워크 구축 및 정기 보안 감사 프로세스 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-341c403cb5c1",
    "name": "美전력 인프라서 활로 찾는 삼성SDI…전동화 둔화 뛰어넘을까",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1267632672c0",
-   "name": "팀 토론 — 부지조성 및 기초설계 최적화를 위한 현지 환경 적합성 검토 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-10",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3775,6 +3775,46 @@
   {
    "source": "MAR-001",
    "target": "K-47101a8d7479",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3b5b76fd5043",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-3b5b76fd5043",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-3b5b76fd5043",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-3b5b76fd5043",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-3b5b76fd5043",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-3b5b76fd5043",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-3b5b76fd5043",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-3b5b76fd5043",
    "type": "knowledge"
   },
   {
@@ -9371,46 +9411,6 @@
    "source": "KTX-001",
    "target": "K-15ed04ee99cc",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-1267632672c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-1267632672c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "EBP-001",
-   "target": "K-1267632672c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-1267632672c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-1267632672c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-1267632672c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-1267632672c0",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-1267632672c0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9774,7 +9774,7 @@
    {
     "date": "2026-09-30",
     "knowledge": 400,
-    "events_total": 2385
+    "events_total": 2386
    }
   ]
  }
