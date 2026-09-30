@@ -1,10 +1,10 @@
 {
  "updated": "2026-09-30",
  "totals": {
-  "all": 2390,
+  "all": 2391,
   "briefing": 1066,
   "skill": 734,
-  "discussion": 590,
+  "discussion": 591,
   "activity": 0
  },
  "perAgent": {
@@ -26,20 +26,20 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 640,
+   "count": 641,
    "byType": {
     "skill": 12,
-    "discussion": 299,
+    "discussion": 300,
     "briefing": 329
    },
    "lastGrown": "2026-09-30",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 155,
+   "count": 156,
    "byType": {
     "skill": 11,
-    "discussion": 69,
+    "discussion": 70,
     "briefing": 75
    },
    "lastGrown": "2026-09-30",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 245,
+   "count": 246,
    "byType": {
     "skill": 12,
-    "discussion": 233
+    "discussion": 234
    },
    "lastGrown": "2026-09-30",
    "level": 5
@@ -173,12 +173,12 @@
    "level": 4
   },
   "bess-epc-bom": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 9,
-    "discussion": 25
+    "discussion": 26
    },
-   "lastGrown": "2026-09-23",
+   "lastGrown": "2026-09-30",
    "level": 3
   },
   "bess-esg-finance": {
@@ -209,10 +209,10 @@
    "level": 4
   },
   "bess-fire-engineer": {
-   "count": 255,
+   "count": 256,
    "byType": {
     "skill": 11,
-    "discussion": 174,
+    "discussion": 175,
     "briefing": 70
    },
    "lastGrown": "2026-09-30",
@@ -256,10 +256,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 136,
+   "count": 137,
    "byType": {
     "skill": 11,
-    "discussion": 125
+    "discussion": 126
    },
    "lastGrown": "2026-09-30",
    "level": 4
@@ -584,12 +584,12 @@
    "level": 2
   },
   "bess-standards-japan": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 8,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-09-21",
+   "lastGrown": "2026-09-30",
    "level": 2
   },
   "bess-standards-korea": {
@@ -738,10 +738,10 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 56,
+   "count": 57,
    "byType": {
     "skill": 10,
-    "discussion": 44,
+    "discussion": 45,
     "briefing": 2
    },
    "lastGrown": "2026-09-30",
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-09-30",
-   "added": 27
+   "added": 28
   }
  ],
  "freshness": {

@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e60e42a0c5d2",
+   "name": "팀 토론 — 견적서·BOM 영역 초안 작성 — bess-epc-bom 주",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-09-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e586c8612603",
    "name": "팀 토론 — AI 기반 SOC/SOH 예측 모델을 활용한 BESS 열화 ",
    "group": "KNOWLEDGE",
@@ -3590,21 +3599,52 @@
    "date": "2026-09-10",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-45553553f56a",
-   "name": "[산업 View] K-BATTERY SHOW 컨퍼런스…AI·ESS·안전 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-10",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
   {
    "source": "BAT-001",
    "target": "K-f1e4305585f5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e60e42a0c5d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-e60e42a0c5d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e60e42a0c5d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-e60e42a0c5d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e60e42a0c5d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-e60e42a0c5d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-e60e42a0c5d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-e60e42a0c5d2",
    "type": "knowledge"
   },
   {
@@ -9511,11 +9551,6 @@
    "source": "SYS-001",
    "target": "K-5c3dfdbd6f28",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-45553553f56a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9879,7 +9914,7 @@
    {
     "date": "2026-09-30",
     "knowledge": 400,
-    "events_total": 2390
+    "events_total": 2391
    }
   ]
  }
