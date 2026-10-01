@@ -154,6 +154,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-30ce3edb7117",
+   "name": "팀 토론 — 계약 조건 재검토를 통한 FIDIC Silver/Yellow",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-27bf24331223",
    "name": "있는 전력망 닦고 조여 재생에너지 보급 늘린다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0253565578d2",
-   "name": "미국 전력망 안보 재편, K-배터리 ESS 시장 진입의 문 열리나",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3790,6 +3790,46 @@
   {
    "source": "MAR-001",
    "target": "K-3cd5d7312f88",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-30ce3edb7117",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-30ce3edb7117",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-30ce3edb7117",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-30ce3edb7117",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-30ce3edb7117",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-30ce3edb7117",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-30ce3edb7117",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-30ce3edb7117",
    "type": "knowledge"
   },
   {
@@ -9416,11 +9456,6 @@
    "source": "STD-001",
    "target": "K-04e945a58f55",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0253565578d2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9789,7 +9824,7 @@
    {
     "date": "2026-10-01",
     "knowledge": 400,
-    "events_total": 2412
+    "events_total": 2413
    }
   ]
  }
