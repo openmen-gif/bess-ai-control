@@ -145,6 +145,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-44351c3d1383",
+   "name": "팀 토론 — 차단기 적합성 평가 및 GAP 분석 실시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3cd5d7312f88",
    "name": "[서치 e종목] 지에프아이, 전방 산업 호조 속 올해 고성장 전망…주가 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-04e945a58f55",
-   "name": "NET ZERO EUROPE 2026이 던지는 질문: 한국 PV·ESS ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3785,6 +3785,46 @@
   {
    "source": "BAT-001",
    "target": "K-47902abde5ff",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-44351c3d1383",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-44351c3d1383",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-44351c3d1383",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-44351c3d1383",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-44351c3d1383",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-44351c3d1383",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-44351c3d1383",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-44351c3d1383",
    "type": "knowledge"
   },
   {
@@ -9451,11 +9491,6 @@
    "source": "SYS-001",
    "target": "K-081838c8bf66",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-04e945a58f55",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9824,7 +9859,7 @@
    {
     "date": "2026-10-01",
     "knowledge": 400,
-    "events_total": 2413
+    "events_total": 2414
    }
   ]
  }
