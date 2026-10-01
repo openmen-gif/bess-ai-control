@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fccf684355bf",
+   "name": "팀 토론 — 단락용량 및 CT/VT 기반 시스템 통합 최적화 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e065f1d5a87a",
    "name": "삼성SDI 아시아 최대 데이터센터 전시회에 혁신 배터리 솔루션 선보인다 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-13a67d39fa45",
-   "name": "현대차그룹, 사용 후 배터리 ESS 실증 협력",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-fccf684355bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-fccf684355bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-fccf684355bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-fccf684355bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-fccf684355bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-fccf684355bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-fccf684355bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-fccf684355bf",
+   "type": "knowledge"
+  },
   {
    "source": "FIR-001",
    "target": "K-e065f1d5a87a",
@@ -9486,11 +9526,6 @@
    "source": "FIR-001",
    "target": "K-1ef2b0c7ec95",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-13a67d39fa45",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9859,7 +9894,7 @@
    {
     "date": "2026-10-01",
     "knowledge": 400,
-    "events_total": 2415
+    "events_total": 2416
    }
   ]
  }

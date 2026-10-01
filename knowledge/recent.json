@@ -2,6 +2,24 @@
  "updated": "2026-10-01",
  "events": [
   {
+   "id": "fccf684355bf",
+   "date": "2026-10-01",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-circuit-breaker-expert",
+    "bess-emc-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-insurance-expert",
+    "bess-substation-engineer"
+   ],
+   "title": "팀 토론 — 단락용량 및 CT/VT 기반 시스템 통합 최적화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "e065f1d5a87a",
    "date": "2026-10-01",
    "type": "briefing",
@@ -3844,17 +3862,6 @@
    ],
    "title": "배터리 3사,ESS 수주전…국내 생산·안전성 맞붙는다",
    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBqTnN3Y1lfaHk2QklSUm1PQWJBMkd2Qm84NDVNN0J0QXZrdS1ydFlKbWlJQ0p5di1xOUFISzQxb0huS1JzOGw0UGFnTHRacHU5RXBENDBJdXM?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "df8b73480811",
-   "date": "2026-09-15",
-   "type": "briefing",
-   "agents": [
-    "bess-power-market-expert"
-   ],
-   "title": "실시간 거래·가상발전소로 제주 전력시장이 다시 짜인다!!",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1QZnRCRmh2UlluVWRoeTNJcjFsYWp0OTNXNm12alg3WXhoaUVkXzN6NUd5cnBqQk12TXBSMGtKamVKNTJKd1BfcjE3TVZ4UVhaMTZHZ2RDTm9aVEo4Wk1odTZIN0ZpSHpwTXVr?oc=5",
    "source": "구글뉴스"
   }
  ]
