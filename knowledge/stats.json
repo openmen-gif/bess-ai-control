@@ -1,8 +1,8 @@
 {
  "updated": "2026-10-03",
  "totals": {
-  "all": 2445,
-  "briefing": 1100,
+  "all": 2453,
+  "briefing": 1108,
   "skill": 734,
   "discussion": 611,
   "activity": 0
@@ -209,13 +209,13 @@
    "level": 5
   },
   "bess-fire-engineer": {
-   "count": 264,
+   "count": 266,
    "byType": {
     "skill": 11,
     "discussion": 182,
-    "briefing": 71
+    "briefing": 73
    },
-   "lastGrown": "2026-10-02",
+   "lastGrown": "2026-10-03",
    "level": 5
   },
   "bess-fit-procedure": {
@@ -355,11 +355,11 @@
    "level": 3
   },
   "bess-marketer": {
-   "count": 380,
+   "count": 384,
    "byType": {
     "skill": 11,
     "discussion": 82,
-    "briefing": 287
+    "briefing": 291
    },
    "lastGrown": "2026-10-03",
    "level": 5
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 282,
+   "count": 284,
    "byType": {
     "skill": 10,
     "discussion": 78,
-    "briefing": 194
+    "briefing": 196
    },
-   "lastGrown": "2026-10-02",
+   "lastGrown": "2026-10-03",
    "level": 5
   },
   "bess-standards-australia": {
@@ -1116,13 +1116,13 @@
   },
   {
    "date": "2026-10-03",
-   "added": 3
+   "added": 11
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-10-02",
-   "staleDays": 1,
+   "latestSource": "2026-10-03",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {

@@ -1,6 +1,24 @@
 {
  "nodes": [
   {
+   "id": "K-d9759694cfea",
+   "name": "가정용 ESS, 20kWh 초과 여부부터 안전기준 확인",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-d1e134157e9e",
+   "name": "AI 활용 '에너지저장장치(ESS) 열폭주' 350건 예방…4000억원 ",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-cba1baf9e231",
    "name": "팀 토론 — 냉각 시스템과 EMI 관리 최적화를 위한 통합 시뮬레이션 및",
    "group": "KNOWLEDGE",
@@ -19,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a9f810c5dba7",
+   "name": "한투證 “삼성SDI, 美 대형 BESS 속도 조절은 일시적… 목표가 60",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-9799b4e656ed",
    "name": "팀 토론 — LG엔솔의 북미산 LFP 배터리 공급계약이 KPX 내 에너지",
    "group": "KNOWLEDGE",
@@ -26,6 +53,51 @@
    "date": "2026-10-03",
    "val": 3,
    "color": "#F59E0B"
+  },
+  {
+   "id": "K-6b14621841da",
+   "name": "전기안전공사, AI로 ESS 화재 막는다…열폭주 355건 예방",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-5f6c69704689",
+   "name": "ESS 넘어 서버 바로 옆까지…배터리 3사, AI 데이터센터 ‘전원’ 파",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-4da2c1bcda6a",
+   "name": "물량 두 배 늘었는데…韓 ESS 또 '치킨게임'",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-1939a8af643c",
+   "name": "재생에너지 100GW 시대 대비 전력망 ‘대수술’ 접속제도 전면 개편",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
+   "id": "K-0034d8523ed0",
+   "name": "PC와 태블릿에서 비교하는 누누티비 도박 정보 배치",
+   "group": "KNOWLEDGE",
+   "type": "briefing",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#10B981"
   },
   {
    "id": "K-ed0147747471",
@@ -3527,81 +3599,19 @@
    "date": "2026-09-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-90ce0fd12801",
-   "name": "美, 전력망용 中 배터리 사실상 금지…에너지저장 시장 '비상'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-8b36fe167b11",
-   "name": "셀은 살아나는데 투자는 ‘아직’…K-배터리 생태계 반등 언제 [배터리레이",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-88e0bda78d72",
-   "name": "팀 토론 — 미국 전력망 안보 강화 정책 세부 내용 분석 및 국내 BES",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-7bac075209f1",
-   "name": "재생에너지 넘치는 제주…전력시장·건물 혁신 찾는다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-64827dce4e09",
-   "name": "ESS 보도자료, 안전성·운영효율·전력시장 적용성을 알리는 방법",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-5f5089953a52",
-   "name": "[해설] 지멘스·GE 독점 깨라...한전, ‘대용량 HVDC 국산화’로 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-4d21ebbb25fd",
-   "name": "같은 모양의 심벌은 모두 같을까? 정선 카지노 호텔 판정 기준",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-405b61d077bc",
-   "name": "‘탈중국’ 기조 미국 ESS가 ‘K-배터리’에 던진 과제",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "MAR-001",
+   "target": "K-d9759694cfea",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-d1e134157e9e",
+   "type": "knowledge"
+  },
   {
    "source": "CBK-001",
    "target": "K-cba1baf9e231",
@@ -3683,6 +3693,11 @@
    "type": "knowledge"
   },
   {
+   "source": "MAR-001",
+   "target": "K-a9f810c5dba7",
+   "type": "knowledge"
+  },
+  {
    "source": "BIZ-001",
    "target": "K-9799b4e656ed",
    "type": "knowledge"
@@ -3720,6 +3735,31 @@
   {
    "source": "STD-002",
    "target": "K-9799b4e656ed",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6b14621841da",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-5f6c69704689",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-4da2c1bcda6a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-1939a8af643c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-0034d8523ed0",
    "type": "knowledge"
   },
   {
@@ -9686,81 +9726,6 @@
    "source": "MAR-001",
    "target": "K-aaac4bb523f8",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-90ce0fd12801",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-8b36fe167b11",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-88e0bda78d72",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-002",
-   "target": "K-88e0bda78d72",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-002",
-   "target": "K-88e0bda78d72",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-88e0bda78d72",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-005",
-   "target": "K-88e0bda78d72",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-88e0bda78d72",
-   "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-88e0bda78d72",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-88e0bda78d72",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-7bac075209f1",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-64827dce4e09",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-5f5089953a52",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-4d21ebbb25fd",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-405b61d077bc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10139,7 +10104,7 @@
    {
     "date": "2026-10-03",
     "knowledge": 400,
-    "events_total": 2445
+    "events_total": 2453
    }
   ]
  }
