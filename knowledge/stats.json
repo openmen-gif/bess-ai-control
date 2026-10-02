@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-02",
  "totals": {
-  "all": 2440,
+  "all": 2441,
   "briefing": 1100,
   "skill": 734,
-  "discussion": 606,
+  "discussion": 607,
   "activity": 0
  },
  "perAgent": {
@@ -119,21 +119,21 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 94,
+   "count": 95,
    "byType": {
     "skill": 11,
-    "discussion": 83
+    "discussion": 84
    },
-   "lastGrown": "2026-09-30",
+   "lastGrown": "2026-10-02",
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 91,
+   "count": 92,
    "byType": {
     "skill": 11,
-    "discussion": 80
+    "discussion": 81
    },
-   "lastGrown": "2026-09-30",
+   "lastGrown": "2026-10-02",
    "level": 4
   },
   "bess-ebop-engineer": {
@@ -146,10 +146,10 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 97,
+   "count": 98,
    "byType": {
     "skill": 10,
-    "discussion": 87
+    "discussion": 88
    },
    "lastGrown": "2026-10-02",
    "level": 4
@@ -265,10 +265,10 @@
    "level": 4
   },
   "bess-hybrid-specialist": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 8,
-    "discussion": 17
+    "discussion": 18
    },
    "lastGrown": "2026-10-02",
    "level": 2
@@ -365,12 +365,12 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 67,
+   "count": 68,
    "byType": {
     "skill": 10,
-    "discussion": 57
+    "discussion": 58
    },
-   "lastGrown": "2026-09-30",
+   "lastGrown": "2026-10-02",
    "level": 3
   },
   "bess-network-engineer": {
@@ -457,12 +457,12 @@
    "level": 4
   },
   "bess-precom-report": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 7,
-    "discussion": 24
+    "discussion": 25
    },
-   "lastGrown": "2026-10-01",
+   "lastGrown": "2026-10-02",
    "level": 3
   },
   "bess-presentation-designer": {
@@ -493,12 +493,12 @@
    "level": 5
   },
   "bess-project-manager": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 9,
-    "discussion": 48
+    "discussion": 49
    },
-   "lastGrown": "2026-09-29",
+   "lastGrown": "2026-10-02",
    "level": 3
   },
   "bess-qaqc-engineer": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 176,
+   "count": 177,
    "byType": {
     "skill": 11,
-    "discussion": 165
+    "discussion": 166
    },
    "lastGrown": "2026-10-02",
    "level": 5
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-02",
-   "added": 24
+   "added": 25
   }
  ],
  "freshness": {
