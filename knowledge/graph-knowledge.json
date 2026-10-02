@@ -208,6 +208,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-2cbae5596a24",
+   "name": "팀 토론 — 변압기 효율 최적화를 위한 현장 보조전원 시스템 설계 가이드",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-19cf29ba4e05",
    "name": "‘불연배터리 ESS’ 신기술 스타트업에 지하철역을 실증공간으로 개방 상생",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-26d039be63a0",
-   "name": "전고체·AI 공정·순환경제 세 축으로 본 '배터리코리아 2026'의 과제",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -4020,6 +4020,46 @@
   {
    "source": "BAT-001",
    "target": "K-384caf794d30",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-2cbae5596a24",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-2cbae5596a24",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-2cbae5596a24",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-2cbae5596a24",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-2cbae5596a24",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2cbae5596a24",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-2cbae5596a24",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-2cbae5596a24",
    "type": "knowledge"
   },
   {
@@ -9616,11 +9656,6 @@
    "source": "BAT-001",
    "target": "K-26e3d74dc131",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-26d039be63a0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9994,7 +10029,7 @@
    {
     "date": "2026-10-02",
     "knowledge": 400,
-    "events_total": 2441
+    "events_total": 2442
    }
   ]
  }
