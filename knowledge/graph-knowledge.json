@@ -73,6 +73,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7710de4605d7",
+   "name": "팀 토론 — SLD 분석을 통한 변압기 및 배선 시스템의 전력 품질 최적",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6b6e8cb8406e",
    "name": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 협정 활용 확대 방",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-f12fdaf07456",
-   "name": "[이슈] 현대차·기아, 다 쓴 전기차 배터리로 급속충전소 돌린다… ESS",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3700,6 +3700,46 @@
   {
    "source": "BAT-001",
    "target": "K-7e85754ec21c",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-7710de4605d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-7710de4605d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-7710de4605d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-7710de4605d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-7710de4605d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7710de4605d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-7710de4605d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7710de4605d7",
    "type": "knowledge"
   },
   {
@@ -9441,11 +9481,6 @@
    "source": "MAR-001",
    "target": "K-04a6a31935bd",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-f12fdaf07456",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9819,7 +9854,7 @@
    {
     "date": "2026-10-02",
     "knowledge": 400,
-    "events_total": 2436
+    "events_total": 2437
    }
   ]
  }
