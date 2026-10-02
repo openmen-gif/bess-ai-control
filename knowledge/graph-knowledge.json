@@ -19,6 +19,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-d2ec4cc1c370",
+   "name": "팀 토론 — 변압기 효율 최적화를 위한 최신 SLD 기반 설계 가이드라인",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-02",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-be78ec74b231",
    "name": "[PV·ESS리더스클럽 34] 브이피피랩 차병학 대표, “재생에너지는 이",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-080e5c619a23",
-   "name": "에너솔라·라온테크, 우즈벡 전력난 해법 찾는다...14MW 태양광·ESS",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3610,6 +3610,46 @@
   {
    "source": "MAR-001",
    "target": "K-da3b505d7fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-d2ec4cc1c370",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-d2ec4cc1c370",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-d2ec4cc1c370",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-d2ec4cc1c370",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d2ec4cc1c370",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d2ec4cc1c370",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-d2ec4cc1c370",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-d2ec4cc1c370",
    "type": "knowledge"
   },
   {
@@ -9511,11 +9551,6 @@
    "source": "MAR-001",
    "target": "K-0f0e7a3b2828",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-080e5c619a23",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9889,7 +9924,7 @@
    {
     "date": "2026-10-02",
     "knowledge": 400,
-    "events_total": 2438
+    "events_total": 2439
    }
   ]
  }

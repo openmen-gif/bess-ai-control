@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-02",
  "totals": {
-  "all": 2438,
+  "all": 2439,
   "briefing": 1100,
   "skill": 734,
-  "discussion": 604,
+  "discussion": 605,
   "activity": 0
  },
  "perAgent": {
@@ -146,10 +146,10 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 10,
-    "discussion": 86
+    "discussion": 87
    },
    "lastGrown": "2026-10-02",
    "level": 4
@@ -346,12 +346,12 @@
    "level": 5
   },
   "bess-logistics-expert": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 9,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-09-28",
+   "lastGrown": "2026-10-02",
    "level": 3
   },
   "bess-marketer": {
@@ -448,10 +448,10 @@
    "level": 4
   },
   "bess-power-system-analyst": {
-   "count": 126,
+   "count": 127,
    "byType": {
     "skill": 10,
-    "discussion": 116
+    "discussion": 117
    },
    "lastGrown": "2026-10-02",
    "level": 4
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 281,
+   "count": 282,
    "byType": {
     "skill": 10,
-    "discussion": 77,
+    "discussion": 78,
     "briefing": 194
    },
    "lastGrown": "2026-10-02",
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 249,
+   "count": 250,
    "byType": {
     "skill": 11,
-    "discussion": 238
+    "discussion": 239
    },
    "lastGrown": "2026-10-02",
    "level": 5
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 175,
+   "count": 176,
    "byType": {
     "skill": 11,
-    "discussion": 164
+    "discussion": 165
    },
    "lastGrown": "2026-10-02",
    "level": 5
@@ -738,22 +738,22 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 10,
-    "discussion": 45,
+    "discussion": 46,
     "briefing": 2
    },
-   "lastGrown": "2026-09-30",
+   "lastGrown": "2026-10-02",
    "level": 3
   },
   "bess-translator": {
-   "count": 22,
+   "count": 23,
    "byType": {
     "skill": 7,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-09-15",
+   "lastGrown": "2026-10-02",
    "level": 2
   }
  },
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-02",
-   "added": 22
+   "added": 23
   }
  ],
  "freshness": {
