@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b2301d667a6e",
+   "name": "팀 토론 — 부지조성 단계에서의 최적 이격거리 설정 가이드라인 개발 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-9799b4e656ed",
    "name": "팀 토론 — LG엔솔의 북미산 LFP 배터리 공급계약이 KPX 내 에너지",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3d46f0c96dac",
-   "name": "中 ‘배터리 굴기’, 글로벌 시장 덮쳤다…K-배터리 ‘EV 밖’ 돌파구 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "SYS-001",
    "target": "K-cba1baf9e231",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-b2301d667a6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-b2301d667a6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-b2301d667a6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-b2301d667a6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b2301d667a6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-b2301d667a6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-b2301d667a6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b2301d667a6e",
    "type": "knowledge"
   },
   {
@@ -9721,11 +9761,6 @@
    "source": "BAT-001",
    "target": "K-405b61d077bc",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-3d46f0c96dac",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10104,7 +10139,7 @@
    {
     "date": "2026-10-03",
     "knowledge": 400,
-    "events_total": 2444
+    "events_total": 2445
    }
   ]
  }
