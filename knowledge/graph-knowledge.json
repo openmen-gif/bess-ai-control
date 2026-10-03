@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-009c01eb3f75",
+   "name": "팀 토론 — CFD·유동해석 영역 벤치마킹 — bess-cfd-analy",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d9759694cfea",
    "name": "가정용 ESS, 20kWh 초과 여부부터 안전기준 확인",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-aaac4bb523f8",
-   "name": "[공감경제] 재생에너지 확대...ESS 전기안전 체계 고도화",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-009c01eb3f75",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-009c01eb3f75",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-009c01eb3f75",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-009c01eb3f75",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-009c01eb3f75",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-009c01eb3f75",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-009c01eb3f75",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-009c01eb3f75",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-d9759694cfea",
@@ -9721,15 +9761,10 @@
    "source": "PCS-001",
    "target": "K-acf8fe234ebe",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-aaac4bb523f8",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "history": [
    {
     "date": "2026-07-20",
@@ -10105,6 +10140,11 @@
     "date": "2026-10-03",
     "knowledge": 400,
     "events_total": 2453
+   },
+   {
+    "date": "2026-10-04",
+    "knowledge": 400,
+    "events_total": 2454
    }
   ]
  }

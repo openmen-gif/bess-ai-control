@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-03",
+ "updated": "2026-10-04",
  "events": [
+  {
+   "id": "009c01eb3f75",
+   "date": "2026-10-04",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cfd-analyst",
+    "bess-cost-analyst",
+    "bess-cybersecurity-expert",
+    "bess-ebop-engineer",
+    "bess-fire-engineer",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — CFD·유동해석 영역 벤치마킹 — bess-cfd-analyst 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "d9759694cfea",
    "date": "2026-10-03",
@@ -3863,24 +3881,6 @@
     "bess-tax-korea"
    ],
    "title": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 규정 준수 방안 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "91e2e5345c02",
-   "date": "2026-09-17",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-ebop-engineer",
-    "bess-financial-analysis",
-    "bess-marketer",
-    "bess-pcs-expert",
-    "bess-standards-analyst",
-    "bess-system-engineer",
-    "bess-transfer-pricing"
-   ],
-   "title": "팀 토론 — IRA 인센티브 세부 내용 완료 후 국내 BESS 프로젝트 재무 모델링 최적화 전략 재검증 및 업데이트",
    "link": "",
    "source": "bess-team"
   }
