@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0415ed740e13",
+   "name": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c35746a8babc",
    "name": "[이슈] 역대 최대 ESS 1180MW 구축…전력망 병목 완화 시험대",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-28599612db8b",
-   "name": "팀 토론 — 화재 안전 표준 불일치 검증 프로세스 구체화 및 현재 설계의",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,41 @@
   {
    "source": "PRO-001",
    "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0415ed740e13",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0415ed740e13",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0415ed740e13",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0415ed740e13",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-0415ed740e13",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0415ed740e13",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-0415ed740e13",
    "type": "knowledge"
   },
   {
@@ -9761,41 +9796,6 @@
    "source": "MAR-001",
    "target": "K-3dd6f66e3fc0",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-28599612db8b",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-28599612db8b",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-28599612db8b",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-28599612db8b",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-28599612db8b",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-28599612db8b",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-28599612db8b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10184,7 +10184,7 @@
    {
     "date": "2026-10-05",
     "knowledge": 400,
-    "events_total": 2466
+    "events_total": 2467
    }
   ]
  }
