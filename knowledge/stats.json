@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-05",
  "totals": {
-  "all": 2467,
-  "briefing": 1116,
+  "all": 2477,
+  "briefing": 1125,
   "skill": 734,
-  "discussion": 617,
+  "discussion": 618,
   "activity": 0
  },
  "perAgent": {
@@ -26,23 +26,23 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 666,
+   "count": 672,
    "byType": {
     "skill": 12,
-    "discussion": 314,
-    "briefing": 340
+    "discussion": 315,
+    "briefing": 345
    },
    "lastGrown": "2026-10-05",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 165,
+   "count": 166,
    "byType": {
     "skill": 11,
     "discussion": 76,
-    "briefing": 78
+    "briefing": 79
    },
-   "lastGrown": "2026-10-03",
+   "lastGrown": "2026-10-05",
    "level": 5
   },
   "bess-cable-engineer": {
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 255,
+   "count": 256,
    "byType": {
     "skill": 12,
-    "discussion": 243
+    "discussion": 244
    },
    "lastGrown": "2026-10-05",
    "level": 5
@@ -209,11 +209,11 @@
    "level": 5
   },
   "bess-fire-engineer": {
-   "count": 272,
+   "count": 274,
    "byType": {
     "skill": 11,
-    "discussion": 188,
-    "briefing": 73
+    "discussion": 189,
+    "briefing": 74
    },
    "lastGrown": "2026-10-05",
    "level": 5
@@ -365,12 +365,12 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 71,
+   "count": 72,
    "byType": {
     "skill": 10,
-    "discussion": 61
+    "discussion": 62
    },
-   "lastGrown": "2026-10-04",
+   "lastGrown": "2026-10-05",
    "level": 4
   },
   "bess-network-engineer": {
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 288,
+   "count": 289,
    "byType": {
     "skill": 10,
     "discussion": 78,
-    "briefing": 200
+    "briefing": 201
    },
-   "lastGrown": "2026-10-04",
+   "lastGrown": "2026-10-05",
    "level": 5
   },
   "bess-standards-australia": {
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 60,
+   "count": 61,
    "byType": {
     "skill": 10,
     "discussion": 47,
-    "briefing": 3
+    "briefing": 4
    },
-   "lastGrown": "2026-10-04",
+   "lastGrown": "2026-10-05",
    "level": 3
   },
   "bess-translator": {
@@ -1116,13 +1116,13 @@
   },
   {
    "date": "2026-10-05",
-   "added": 2
+   "added": 12
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-10-04",
-   "staleDays": 1,
+   "latestSource": "2026-10-05",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
