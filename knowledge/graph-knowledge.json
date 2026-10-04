@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-0c658cfb74e6",
+   "name": "팀 토론 — BESS 프로젝트 견적 및 기술 문서 정확성 검증 및 최적화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c35746a8babc",
    "name": "[이슈] 역대 최대 ESS 1180MW 구축…전력망 병목 완화 시험대",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1ad8730272f3",
-   "name": "팀 토론 — 케이블 시스템 최적화 계획 수립: IEC 60502 및 IE",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0c658cfb74e6",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-c35746a8babc",
@@ -9756,46 +9796,6 @@
    "source": "TRF-001",
    "target": "K-28599612db8b",
    "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-1ad8730272f3",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-1ad8730272f3",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-1ad8730272f3",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-1ad8730272f3",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-1ad8730272f3",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-1ad8730272f3",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-1ad8730272f3",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-1ad8730272f3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10184,7 +10184,7 @@
    {
     "date": "2026-10-05",
     "knowledge": 400,
-    "events_total": 2465
+    "events_total": 2466
    }
   ]
  }
