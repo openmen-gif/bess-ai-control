@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-05",
  "totals": {
-  "all": 2464,
+  "all": 2465,
   "briefing": 1116,
   "skill": 734,
-  "discussion": 614,
+  "discussion": 615,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 663,
+   "count": 664,
    "byType": {
     "skill": 12,
-    "discussion": 311,
+    "discussion": 312,
     "briefing": 340
    },
    "lastGrown": "2026-10-04",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 252,
+   "count": 253,
    "byType": {
     "skill": 12,
-    "discussion": 240
+    "discussion": 241
    },
    "lastGrown": "2026-10-04",
    "level": 5
@@ -128,12 +128,12 @@
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 93,
+   "count": 94,
    "byType": {
     "skill": 11,
-    "discussion": 82
+    "discussion": 83
    },
-   "lastGrown": "2026-10-03",
+   "lastGrown": "2026-10-04",
    "level": 4
   },
   "bess-ebop-engineer": {
@@ -209,10 +209,10 @@
    "level": 5
   },
   "bess-fire-engineer": {
-   "count": 269,
+   "count": 270,
    "byType": {
     "skill": 11,
-    "discussion": 185,
+    "discussion": 186,
     "briefing": 73
    },
    "lastGrown": "2026-10-04",
@@ -365,10 +365,10 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 70,
+   "count": 71,
    "byType": {
     "skill": 10,
-    "discussion": 60
+    "discussion": 61
    },
    "lastGrown": "2026-10-04",
    "level": 4
@@ -484,10 +484,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 196,
+   "count": 197,
    "byType": {
     "skill": 11,
-    "discussion": 185
+    "discussion": 186
    },
    "lastGrown": "2026-10-04",
    "level": 5
@@ -575,21 +575,21 @@
    "level": 2
   },
   "bess-standards-eu": {
+   "count": 30,
+   "byType": {
+    "skill": 8,
+    "discussion": 22
+   },
+   "lastGrown": "2026-10-04",
+   "level": 3
+  },
+  "bess-standards-japan": {
    "count": 29,
    "byType": {
     "skill": 8,
     "discussion": 21
    },
-   "lastGrown": "2026-10-01",
-   "level": 2
-  },
-  "bess-standards-japan": {
-   "count": 28,
-   "byType": {
-    "skill": 8,
-    "discussion": 20
-   },
-   "lastGrown": "2026-09-30",
+   "lastGrown": "2026-10-04",
    "level": 2
   },
   "bess-standards-korea": {
@@ -758,10 +758,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-07-07",
-   "added": 7
-  },
   {
    "date": "2026-07-08",
    "added": 0
@@ -1116,18 +1112,22 @@
   },
   {
    "date": "2026-10-04",
-   "added": 11
+   "added": 12
+  },
+  {
+   "date": "2026-10-05",
+   "added": 0
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-10-04",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-10-04",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }

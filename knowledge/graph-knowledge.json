@@ -46,6 +46,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-773e62c95852",
+   "name": "팀 토론 — AI 기반 예측 모델을 활용한 BESS 운영 효율 최적화 시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-77136b64ec9e",
    "name": "팀 토론 — 변압기·수배전반 영역 리스크 평가 — bess-ebop-en",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-163c44999b5f",
-   "name": "재생에너지 넘치는 제주…전력시장·건물 혁신 찾는다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-13",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3625,6 +3625,46 @@
   {
    "source": "MAR-001",
    "target": "K-90f839be8cc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-773e62c95852",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-773e62c95852",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-773e62c95852",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-773e62c95852",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-773e62c95852",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-773e62c95852",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-773e62c95852",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-773e62c95852",
    "type": "knowledge"
   },
   {
@@ -9756,15 +9796,10 @@
    "source": "SYS-001",
    "target": "K-1ad8730272f3",
    "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-163c44999b5f",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "history": [
    {
     "date": "2026-07-20",
@@ -10145,6 +10180,11 @@
     "date": "2026-10-04",
     "knowledge": 400,
     "events_total": 2464
+   },
+   {
+    "date": "2026-10-05",
+    "knowledge": 400,
+    "events_total": 2465
    }
   ]
  }
