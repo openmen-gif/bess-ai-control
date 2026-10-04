@@ -2,6 +2,24 @@
  "updated": "2026-10-05",
  "events": [
   {
+   "id": "e55ba7503a39",
+   "date": "2026-10-05",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-fire-engineer",
+    "bess-insurance-expert",
+    "bess-mlops-engineer",
+    "bess-system-engineer",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — AI 기반 예측 모델을 활용한 BESS 운영 최적화 알고리즘 개발 및 시뮬레이션 테스트 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "dfdc736dce88",
    "date": "2026-10-05",
    "type": "briefing",
@@ -3860,17 +3878,6 @@
    "title": "팀 토론 — 그리드포밍 기술 공동개발 동향 분석 및 국내 BESS 프로젝트 적용 방안 최적화",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "86c4d30cdf65",
-   "date": "2026-09-18",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "LS일렉트릭, 한전과 배전용 그리드포밍 기술 공동 개발 협약",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4xN0hvM2VsMDU2bWN3NklKV1QyV0JNeHdoV1dvNWxmYW5WUUlpS05LNzh0djR3S19fU2ZiV1ZYYUs3TG8zc2FGU3JKZDA0azdwSC10d0JodWZhWWhsR3JvaDhjT3d5NkJkdVE?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
