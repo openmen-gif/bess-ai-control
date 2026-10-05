@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-06",
  "totals": {
-  "all": 2480,
+  "all": 2481,
   "briefing": 1125,
   "skill": 734,
-  "discussion": 621,
+  "discussion": 622,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 675,
+   "count": 676,
    "byType": {
     "skill": 12,
-    "discussion": 318,
+    "discussion": 319,
     "briefing": 345
    },
    "lastGrown": "2026-10-06",
@@ -83,12 +83,12 @@
    "level": 4
   },
   "bess-commissioning-coordinator": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 11,
-    "discussion": 39
+    "discussion": 40
    },
-   "lastGrown": "2026-09-25",
+   "lastGrown": "2026-10-06",
    "level": 3
   },
   "bess-contract-specialist": {
@@ -119,19 +119,19 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 11,
-    "discussion": 85
+    "discussion": 86
    },
-   "lastGrown": "2026-10-04",
+   "lastGrown": "2026-10-06",
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 11,
-    "discussion": 85
+    "discussion": 86
    },
    "lastGrown": "2026-10-06",
    "level": 4
@@ -209,10 +209,10 @@
    "level": 5
   },
   "bess-fire-engineer": {
-   "count": 277,
+   "count": 278,
    "byType": {
     "skill": 11,
-    "discussion": 192,
+    "discussion": 193,
     "briefing": 74
    },
    "lastGrown": "2026-10-06",
@@ -256,13 +256,13 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 149,
+   "count": 150,
    "byType": {
     "skill": 11,
-    "discussion": 138
+    "discussion": 139
    },
    "lastGrown": "2026-10-06",
-   "level": 4
+   "level": 5
   },
   "bess-hybrid-specialist": {
    "count": 26,
@@ -401,13 +401,13 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 206,
+   "count": 207,
    "byType": {
     "skill": 11,
-    "discussion": 121,
+    "discussion": 122,
     "briefing": 74
    },
-   "lastGrown": "2026-10-04",
+   "lastGrown": "2026-10-06",
    "level": 5
   },
   "bess-permit-asia": {
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 183,
+   "count": 184,
    "byType": {
     "skill": 11,
-    "discussion": 172
+    "discussion": 173
    },
    "lastGrown": "2026-10-06",
    "level": 5
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-06",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-10-05",
-   "gapDays": 1,
+   "previousUpdated": "2026-10-06",
+   "gapDays": 0,
    "overdue": false
   }
  }
