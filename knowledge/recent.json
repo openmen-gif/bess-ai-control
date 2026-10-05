@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-10-06",
  "events": [
+  {
+   "id": "4ba2345dfad9",
+   "date": "2026-10-06",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cfd-analyst",
+    "bess-data-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-mlops-engineer",
+    "bess-system-engineer",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — AI 기반 예측 모델을 활용한 실시간 운영 최적화 알고리즘 개발 및 시범 운영 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "e55ba7503a39",
    "date": "2026-10-05",
@@ -3860,24 +3878,6 @@
    "title": "송전선 건설 없이 ESS로 뚫는다…한전·기후부, '가상송전선로' 도입",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE01aGxvWWVmWENxMzlWeHIxRDNGU2tFRFR2Qk92Y2tVMS1oOHd5Y1hrYXpPYlFZTklTQnlMWXE0c05FcmtSLVpKTXZBYm9tYllIUy1oetIBWEFVX3lxTE9ib3dnTkUwVjdqOUh3Nk12dkRKbnpQSnZ5ajlmX29QZFJlVWZkTTdyRWdzMnk5dXdqcXVid19MNDBEMDFORGJQVUtRbkdidmlNLTQxQ0NOWUs?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "92716090a93b",
-   "date": "2026-09-18",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-esg-finance",
-    "bess-financial-analysis",
-    "bess-hse-manager",
-    "bess-marketer",
-    "bess-procurement-expert",
-    "bess-tax-accountant"
-   ],
-   "title": "팀 토론 — TCFD·ISSB 영역 1차 분석 — bess-esg-finance 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

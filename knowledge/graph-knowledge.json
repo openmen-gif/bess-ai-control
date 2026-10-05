@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-4ba2345dfad9",
+   "name": "팀 토론 — AI 기반 예측 모델을 활용한 실시간 운영 최적화 알고리즘 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e55ba7503a39",
    "name": "팀 토론 — AI 기반 예측 모델을 활용한 BESS 운영 최적화 알고리즘",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0098842c9c25",
-   "name": "정부 주도 ESS 시장 커지는데…국산 철강 '사각지대' 왜?",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-4ba2345dfad9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-4ba2345dfad9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-4ba2345dfad9",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4ba2345dfad9",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-4ba2345dfad9",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-4ba2345dfad9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-4ba2345dfad9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-4ba2345dfad9",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-e55ba7503a39",
@@ -9666,15 +9706,10 @@
    "source": "JTX-001",
    "target": "K-0938a7d8eba7",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-0098842c9c25",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "history": [
    {
     "date": "2026-07-20",
@@ -10060,6 +10095,11 @@
     "date": "2026-10-05",
     "knowledge": 400,
     "events_total": 2479
+   },
+   {
+    "date": "2026-10-06",
+    "knowledge": 400,
+    "events_total": 2480
    }
   ]
  }
