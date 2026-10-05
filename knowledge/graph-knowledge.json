@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-a8fc95dab328",
+   "name": "팀 토론 — 관세 최적화 전략 수립 및 FTA 원산지 활용으로 신흥 시장",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-81c7fa405931",
    "name": "팀 토론 — 시운전 절차 최적화를 통한 초기 성능 검증 및 안정화 전략 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-14",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-239b362746ed",
-   "name": "팀 토론 — 기술 표준 불일치로 인한 인증 지연 리스크 평가 및 현재 설",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-a8fc95dab328",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a8fc95dab328",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-a8fc95dab328",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-a8fc95dab328",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a8fc95dab328",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a8fc95dab328",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-a8fc95dab328",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a8fc95dab328",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-81c7fa405931",
@@ -9666,46 +9706,6 @@
    "source": "TRF-001",
    "target": "K-309bf75cd3ae",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-239b362746ed",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-239b362746ed",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYB-001",
-   "target": "K-239b362746ed",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-239b362746ed",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-239b362746ed",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-239b362746ed",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-239b362746ed",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-239b362746ed",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10099,7 +10099,7 @@
    {
     "date": "2026-10-06",
     "knowledge": 400,
-    "events_total": 2481
+    "events_total": 2482
    }
   ]
  }
