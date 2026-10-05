@@ -28,6 +28,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-81d9f51d945c",
+   "name": "팀 토론 — 계약 전략 재검토: FIDIC 기반 국제 계약 조건 최적화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7daf11c303fe",
    "name": "“리튬 다음은 나트륨”…중국 CATL, EV 넘어 세계 ESS 판 흔든다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ff14b762e6d6",
-   "name": "팀 토론 — 재생에너지 넘치는 제주 시장에서의 분산에너지 전환 동향 분석",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3650,6 +3650,46 @@
   {
    "source": "BIZ-001",
    "target": "K-9747dd148e06",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-81d9f51d945c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-81d9f51d945c",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-81d9f51d945c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-81d9f51d945c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-81d9f51d945c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-81d9f51d945c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-81d9f51d945c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-81d9f51d945c",
    "type": "knowledge"
   },
   {
@@ -9631,46 +9671,6 @@
    "source": "BAT-001",
    "target": "K-0098842c9c25",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ff14b762e6d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-ff14b762e6d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-ff14b762e6d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-ff14b762e6d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-ff14b762e6d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-ff14b762e6d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-ff14b762e6d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-ff14b762e6d6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10059,7 +10059,7 @@
    {
     "date": "2026-10-05",
     "knowledge": 400,
-    "events_total": 2478
+    "events_total": 2479
    }
   ]
  }

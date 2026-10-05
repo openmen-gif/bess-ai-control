@@ -42,6 +42,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "81d9f51d945c",
+   "date": "2026-10-05",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-contract-specialist",
+    "bess-ebop-engineer",
+    "bess-financial-analysis",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-legal-expert",
+    "bess-scheduler"
+   ],
+   "title": "팀 토론 — 계약 전략 재검토: FIDIC 기반 국제 계약 조건 최적화 방안 모색",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "7daf11c303fe",
    "date": "2026-10-05",
    "type": "briefing",
@@ -3858,24 +3876,6 @@
     "bess-tax-accountant"
    ],
    "title": "팀 토론 — TCFD·ISSB 영역 1차 분석 — bess-esg-finance 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "89b5f8fc6c38",
-   "date": "2026-09-18",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-commissioning-coordinator",
-    "bess-ebop-engineer",
-    "bess-grid-interconnection",
-    "bess-pcs-expert",
-    "bess-power-system-analyst",
-    "bess-procurement-expert",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 그리드포밍 기술 공동개발 동향 분석 및 국내 BESS 프로젝트 적용 방안 최적화",
    "link": "",
    "source": "bess-team"
   }
