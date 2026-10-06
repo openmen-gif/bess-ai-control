@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-06",
+ "updated": "2026-10-07",
  "totals": {
-  "all": 2496,
+  "all": 2497,
   "briefing": 1136,
   "skill": 734,
-  "discussion": 626,
+  "discussion": 627,
   "activity": 0
  },
  "perAgent": {
@@ -17,12 +17,12 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 9,
-    "discussion": 38
+    "discussion": 39
    },
-   "lastGrown": "2026-10-06",
+   "lastGrown": "2026-10-07",
    "level": 3
   },
   "bess-battery-expert": {
@@ -74,12 +74,12 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 72,
+   "count": 73,
    "byType": {
     "skill": 11,
-    "discussion": 61
+    "discussion": 62
    },
-   "lastGrown": "2026-10-03",
+   "lastGrown": "2026-10-07",
    "level": 4
   },
   "bess-commissioning-coordinator": {
@@ -146,12 +146,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 101,
+   "count": 102,
    "byType": {
     "skill": 10,
-    "discussion": 91
+    "discussion": 92
    },
-   "lastGrown": "2026-10-05",
+   "lastGrown": "2026-10-07",
    "level": 4
   },
   "bess-emerging-markets": {
@@ -310,12 +310,12 @@
    "level": 2
   },
   "bess-it-infra": {
-   "count": 35,
+   "count": 36,
    "byType": {
     "skill": 8,
-    "discussion": 27
+    "discussion": 28
    },
-   "lastGrown": "2026-10-02",
+   "lastGrown": "2026-10-07",
    "level": 3
   },
   "bess-knowledge-manager": {
@@ -337,12 +337,12 @@
    "level": 3
   },
   "bess-legal-expert": {
-   "count": 187,
+   "count": 188,
    "byType": {
     "skill": 11,
-    "discussion": 176
+    "discussion": 177
    },
-   "lastGrown": "2026-10-06",
+   "lastGrown": "2026-10-07",
    "level": 5
   },
   "bess-logistics-expert": {
@@ -738,13 +738,13 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 10,
-    "discussion": 47,
+    "discussion": 48,
     "briefing": 4
    },
-   "lastGrown": "2026-10-05",
+   "lastGrown": "2026-10-07",
    "level": 3
   },
   "bess-translator": {
@@ -758,10 +758,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-07-09",
-   "added": 7
-  },
   {
    "date": "2026-07-10",
    "added": 0
@@ -1117,17 +1113,21 @@
   {
    "date": "2026-10-06",
    "added": 17
+  },
+  {
+   "date": "2026-10-07",
+   "added": 1
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-10-06",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-10-06",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }

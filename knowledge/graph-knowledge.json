@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-1de47b4b82cc",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리 최적화 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f29541b6a621",
    "name": "팀 토론 — 신흥시장 진출 전략 수립: 인도 CEA/SECI와의 파트너십",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-09-15",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-feb811188836",
-   "name": "전기차 충전 요금, 확 바뀔 판... '다 쓴 배터리'가 충전소 핵심 된",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-14",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "AIM-001",
+   "target": "K-1de47b4b82cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-1de47b4b82cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-1de47b4b82cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-1de47b4b82cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-1de47b4b82cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-1de47b4b82cc",
+   "type": "knowledge"
+  },
   {
    "source": "AIM-001",
    "target": "K-f29541b6a621",
@@ -9601,15 +9631,10 @@
    "source": "SUB-001",
    "target": "K-0197b3eecd5f",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-feb811188836",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "history": [
    {
     "date": "2026-07-20",
@@ -10000,6 +10025,11 @@
     "date": "2026-10-06",
     "knowledge": 400,
     "events_total": 2496
+   },
+   {
+    "date": "2026-10-07",
+    "knowledge": 400,
+    "events_total": 2497
    }
   ]
  }
