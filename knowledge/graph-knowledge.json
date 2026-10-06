@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ee9004a095ec",
+   "name": "팀 토론 — 케이블 시스템 최적화 계획 수립: 정확한 Ampacity 계",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e05b95287ace",
    "name": "포스코퓨처엠·엘앤에프, LFP 전환 속도…K 배터리, 美 ESS 양산 본",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-14",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-ba1e53ce1cf2",
-   "name": "진로 토토 먹튀 게임 결과 내역 열람 기능 확인",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-ee9004a095ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-ee9004a095ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ee9004a095ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-ee9004a095ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-ee9004a095ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-ee9004a095ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-ee9004a095ec",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-ee9004a095ec",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-e05b95287ace",
@@ -9531,11 +9571,6 @@
    "source": "MAR-001",
    "target": "K-ca2be3232739",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ba1e53ce1cf2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9929,7 +9964,7 @@
    {
     "date": "2026-10-06",
     "knowledge": 400,
-    "events_total": 2493
+    "events_total": 2494
    }
   ]
  }
