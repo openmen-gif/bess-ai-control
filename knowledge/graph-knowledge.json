@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-d7c8547be648",
+   "name": "팀 토론 — ESG 기반 그린본드 발행 전략 수립 및 지속가능성 보고 강",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-678fad27a5f8",
    "name": "팀 토론 — 견적서·BOM 영역 벤치마킹 — bess-epc-bom 주관",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-09-15",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2764957c7e0a",
-   "name": "팀 토론 — BESS 사이버보안 취약점 분석 및 대응 전략 수립",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-15",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "DAT-001",
+   "target": "K-d7c8547be648",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-d7c8547be648",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-d7c8547be648",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-d7c8547be648",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d7c8547be648",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-d7c8547be648",
+   "type": "knowledge"
+  },
   {
    "source": "CST-001",
    "target": "K-678fad27a5f8",
@@ -9616,21 +9646,6 @@
    "source": "SYS-001",
    "target": "K-28eade7e8ca9",
    "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-2764957c7e0a",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-2764957c7e0a",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-2764957c7e0a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10029,7 +10044,7 @@
    {
     "date": "2026-10-07",
     "knowledge": 400,
-    "events_total": 2499
+    "events_total": 2500
    }
   ]
  }
