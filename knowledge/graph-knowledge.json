@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-f29541b6a621",
+   "name": "팀 토론 — 신흥시장 진출 전략 수립: 인도 CEA/SECI와의 파트너십",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ee9004a095ec",
    "name": "팀 토론 — 케이블 시스템 최적화 계획 수립: 정확한 Ampacity 계",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ca2be3232739",
-   "name": "태블릿에서 정보가 어떻게 보일까? 밸런스게임 질문 매운맛",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-14",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "AIM-001",
+   "target": "K-f29541b6a621",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-f29541b6a621",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f29541b6a621",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-f29541b6a621",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-f29541b6a621",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-f29541b6a621",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-f29541b6a621",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-f29541b6a621",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ee9004a095ec",
@@ -9566,11 +9606,6 @@
    "source": "KTX-001",
    "target": "K-dfce7637a54d",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-ca2be3232739",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9964,7 +9999,7 @@
    {
     "date": "2026-10-06",
     "knowledge": 400,
-    "events_total": 2494
+    "events_total": 2495
    }
   ]
  }
