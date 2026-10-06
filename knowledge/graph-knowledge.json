@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-025ab4b47c98",
+   "name": "팀 토론 — BESS 프로젝트 견적서 및 BOM 정확성 향상을 위한 국제",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f29541b6a621",
    "name": "팀 토론 — 신흥시장 진출 전략 수립: 인도 CEA/SECI와의 파트너십",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-15",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0197b3eecd5f",
-   "name": "팀 토론 — 변압기 효율 최적화 및 보호협조 시스템 강화 방안 수립",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-15",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3630,6 +3630,36 @@
   {
    "source": "TRF-001",
    "target": "K-1de47b4b82cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-025ab4b47c98",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-025ab4b47c98",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-025ab4b47c98",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-025ab4b47c98",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-025ab4b47c98",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-025ab4b47c98",
    "type": "knowledge"
   },
   {
@@ -9601,36 +9631,6 @@
    "source": "TIN-001",
    "target": "K-248f54a1c1e7",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-0197b3eecd5f",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-0197b3eecd5f",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-002",
-   "target": "K-0197b3eecd5f",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-0197b3eecd5f",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-0197b3eecd5f",
-   "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-0197b3eecd5f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -10029,7 +10029,7 @@
    {
     "date": "2026-10-07",
     "knowledge": 400,
-    "events_total": 2497
+    "events_total": 2498
    }
   ]
  }
