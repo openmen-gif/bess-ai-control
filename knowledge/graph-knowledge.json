@@ -154,6 +154,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-a96484f4bc8f",
+   "name": "팀 토론 — 냉각 시스템 혁신 검증 및 고성능 인버터 기술 성능 데이터 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-07",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-a7708ab36118",
    "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-313c2fd9a657",
-   "name": "내용이 긴 규칙 페이지를 탐색하는 카지노 온라인 도박 읽기 안내",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3745,6 +3745,46 @@
   {
    "source": "EMT-001",
    "target": "K-ba2f50359e6a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-a96484f4bc8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-a96484f4bc8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-a96484f4bc8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-a96484f4bc8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-a96484f4bc8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-a96484f4bc8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-a96484f4bc8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a96484f4bc8f",
    "type": "knowledge"
   },
   {
@@ -9111,11 +9151,6 @@
    "source": "BAT-001",
    "target": "K-562b2bd476fb",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-313c2fd9a657",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9514,7 +9549,7 @@
    {
     "date": "2026-10-07",
     "knowledge": 400,
-    "events_total": 2566
+    "events_total": 2567
    }
   ]
  }
