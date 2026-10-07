@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-97fa7c0f00f9",
+   "name": "팀 토론 — CFD 최적화를 통한 냉각 효율 극대화 방안 연구",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-07",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-80121cf5c3e3",
    "name": "팀 토론 — 예측모델·최적화 영역 초안 작성 — bess-aiml-eng",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-26146f67d174",
-   "name": "팀 토론 — 케이블 시스템 최적화 설계: 제주 KPX 현장에 적합한 Am",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3695,6 +3695,46 @@
   {
    "source": "BAT-001",
    "target": "K-a47d5654562e",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-97fa7c0f00f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-97fa7c0f00f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-97fa7c0f00f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-97fa7c0f00f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-97fa7c0f00f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-97fa7c0f00f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-97fa7c0f00f9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-97fa7c0f00f9",
    "type": "knowledge"
   },
   {
@@ -9526,46 +9566,6 @@
    "source": "KTX-001",
    "target": "K-33f2acca8561",
    "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-26146f67d174",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-26146f67d174",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-26146f67d174",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-26146f67d174",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-26146f67d174",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-26146f67d174",
-   "type": "knowledge"
-  },
-  {
-   "source": "STE-001",
-   "target": "K-26146f67d174",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-26146f67d174",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9964,7 +9964,7 @@
    {
     "date": "2026-10-07",
     "knowledge": 400,
-    "events_total": 2519
+    "events_total": 2520
    }
   ]
  }
