@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a53c5e2ea386",
+   "name": "팀 토론 — BESS 시스템 내 OT/SCADA 보안 취약점 분석 및 보",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-07",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-a498dc7e79cb",
    "name": "노매드 파워 솔루션스, 이동식 배터리 ESS 전국 시연 투어 개최",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-e7ae0fb947cd",
-   "name": "산업교육연구소, [RPS 대전환 초읽기] 2027 재생에너지 시장 大개편",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-15",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3645,6 +3645,46 @@
   {
    "source": "BAT-001",
    "target": "K-c601a5a4de7f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-a53c5e2ea386",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-a53c5e2ea386",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-a53c5e2ea386",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-a53c5e2ea386",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-a53c5e2ea386",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-a53c5e2ea386",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a53c5e2ea386",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-a53c5e2ea386",
    "type": "knowledge"
   },
   {
@@ -9491,11 +9531,6 @@
    "source": "MAR-001",
    "target": "K-1ae5d2e66070",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-e7ae0fb947cd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9894,7 +9929,7 @@
    {
     "date": "2026-10-07",
     "knowledge": 400,
-    "events_total": 2517
+    "events_total": 2518
    }
   ]
  }
