@@ -145,6 +145,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3214485a1ddb",
+   "name": "팀 토론 — 환경 모니터링 시스템 구축 계획 수립: EIA 보고서 기반으",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-30f13a7aa47f",
    "name": "[NQ기자의 쓴소리] 2배 커진 ESS 시장, 안전 불감증 재발하면 ‘제",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1ae5d2e66070",
-   "name": "“ESS는 재생에너지를 담는 그릇”…전력거래소, 안좌BESS 건설현장 점",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3800,6 +3800,46 @@
   {
    "source": "PCS-001",
    "target": "K-3297bfb586ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-3214485a1ddb",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-3214485a1ddb",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-3214485a1ddb",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-3214485a1ddb",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-3214485a1ddb",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3214485a1ddb",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3214485a1ddb",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-3214485a1ddb",
    "type": "knowledge"
   },
   {
@@ -9526,11 +9566,6 @@
    "source": "STD-002",
    "target": "K-26146f67d174",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-1ae5d2e66070",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9929,7 +9964,7 @@
    {
     "date": "2026-10-07",
     "knowledge": 400,
-    "events_total": 2518
+    "events_total": 2519
    }
   ]
  }

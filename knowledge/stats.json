@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-07",
  "totals": {
-  "all": 2518,
+  "all": 2519,
   "briefing": 1152,
   "skill": 734,
-  "discussion": 632,
+  "discussion": 633,
   "activity": 0
  },
  "perAgent": {
@@ -164,12 +164,12 @@
    "level": 3
   },
   "bess-env-engineer": {
-   "count": 82,
+   "count": 83,
    "byType": {
     "skill": 10,
-    "discussion": 72
+    "discussion": 73
    },
-   "lastGrown": "2026-10-04",
+   "lastGrown": "2026-10-07",
    "level": 4
   },
   "bess-epc-bom": {
@@ -228,10 +228,10 @@
    "level": 3
   },
   "bess-grid-interconnection": {
-   "count": 89,
+   "count": 90,
    "byType": {
     "skill": 10,
-    "discussion": 53,
+    "discussion": 54,
     "briefing": 26
    },
    "lastGrown": "2026-10-07",
@@ -265,12 +265,12 @@
    "level": 5
   },
   "bess-hybrid-specialist": {
-   "count": 26,
+   "count": 27,
    "byType": {
     "skill": 8,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-10-02",
+   "lastGrown": "2026-10-07",
    "level": 2
   },
   "bess-hydrogen-specialist": {
@@ -438,10 +438,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 122,
+   "count": 123,
    "byType": {
     "skill": 9,
-    "discussion": 88,
+    "discussion": 89,
     "briefing": 25
    },
    "lastGrown": "2026-10-07",
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 296,
+   "count": 297,
    "byType": {
     "skill": 10,
-    "discussion": 80,
+    "discussion": 81,
     "briefing": 206
    },
    "lastGrown": "2026-10-07",
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 260,
+   "count": 261,
    "byType": {
     "skill": 11,
-    "discussion": 249
+    "discussion": 250
    },
    "lastGrown": "2026-10-07",
    "level": 5
@@ -656,10 +656,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 185,
+   "count": 186,
    "byType": {
     "skill": 11,
-    "discussion": 174
+    "discussion": 175
    },
    "lastGrown": "2026-10-07",
    "level": 5
@@ -674,10 +674,10 @@
    "level": 2
   },
   "bess-tax-epc-accounting": {
-   "count": 20,
+   "count": 21,
    "byType": {
     "skill": 6,
-    "discussion": 14
+    "discussion": 15
    },
    "lastGrown": "2026-10-07",
    "level": 2
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-07",
-   "added": 22
+   "added": 23
   }
  ],
  "freshness": {
