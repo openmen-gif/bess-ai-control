@@ -91,6 +91,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-5575a11102ac",
+   "name": "팀 토론 — 아시아 지역 BESS 인허가 통합 프레임워크 개발 및 KEP",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-08",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-542803e42da1",
    "name": "[에너지이슈] 100GW 재생에너지 시대 눈앞...전력거래소 AI 스타트",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-19",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-f49454589da0",
-   "name": "LG엔솔 버테크, 美 ‘리튬세이프 2026’ 참석…전기차·ESS 전 주기",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3685,6 +3685,46 @@
   {
    "source": "BIZ-001",
    "target": "K-55c8bb3b6e36",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-5575a11102ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-5575a11102ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5575a11102ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-5575a11102ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-5575a11102ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-5575a11102ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5575a11102ac",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-5575a11102ac",
    "type": "knowledge"
   },
   {
@@ -9041,11 +9081,6 @@
    "source": "BAT-001",
    "target": "K-0b72684001f5",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-f49454589da0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9449,7 +9484,7 @@
    {
     "date": "2026-10-08",
     "knowledge": 400,
-    "events_total": 2587
+    "events_total": 2588
    }
   ]
  }
