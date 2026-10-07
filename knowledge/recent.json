@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "events": [
   {
    "id": "f7c5d1edf43b",
@@ -370,6 +370,24 @@
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",
    "source": "00_Skill_MD"
+  },
+  {
+   "id": "86927a32529d",
+   "date": "2026-10-07",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-grid-interconnection",
+    "bess-insurance-expert",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-power-market-expert",
+    "bess-precom-report",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 아시아 지역 발전사업 인허가 절차 간소화 전략 수립 및 KEPCO/KPX와의 협력 모델 개발 제안",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "80121cf5c3e3",
@@ -3833,17 +3851,6 @@
    "title": "팀 토론 — ESG 통합 보고서 작성으로 지속가능한 금융 전략 강화",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "3eedb0969aae",
-   "date": "2026-09-23",
-   "type": "briefing",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "정부 ESS 물량 봇물…배터리 3사 2조원대 ESS 수주전 격돌",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5tVlBqX1hYQ2I3WmxOYTFPb0JfYVBQcFFMbVJITU1LSkVJZG0zSENpcUxkWE1MaTg0YldPLW5DajJiNEVZNzgxVzA0NFkwZHc2S2NXcXdCc0hVVVV3T3kwc0NjcXpxZw?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
