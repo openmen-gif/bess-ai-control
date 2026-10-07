@@ -154,6 +154,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-b2f2fb2d61e9",
+   "name": "팀 토론 — 부지조성 최적화 계획 수립으로 안정적 설치 환경 구축",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-07",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a96484f4bc8f",
    "name": "팀 토론 — 냉각 시스템 혁신 검증 및 고성능 인버터 기술 성능 데이터 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-562b2bd476fb",
-   "name": "SK온, ESS용 LFP 양극재 국산화···엘앤에프와 3년 계약",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3745,6 +3745,46 @@
   {
    "source": "EMT-001",
    "target": "K-ba2f50359e6a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-b2f2fb2d61e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-b2f2fb2d61e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-b2f2fb2d61e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b2f2fb2d61e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-b2f2fb2d61e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b2f2fb2d61e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-b2f2fb2d61e9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-b2f2fb2d61e9",
    "type": "knowledge"
   },
   {
@@ -9146,11 +9186,6 @@
    "source": "JTX-001",
    "target": "K-56eddc8d7a8d",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-562b2bd476fb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9549,7 +9584,7 @@
    {
     "date": "2026-10-07",
     "knowledge": 400,
-    "events_total": 2567
+    "events_total": 2568
    }
   ]
  }

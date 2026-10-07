@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-07",
  "totals": {
-  "all": 2567,
+  "all": 2568,
   "briefing": 1152,
   "skill": 779,
-  "discussion": 636,
+  "discussion": 637,
   "activity": 0
  },
  "perAgent": {
@@ -56,10 +56,10 @@
    "level": 3
   },
   "bess-cbop-engineer": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 12,
-    "discussion": 43
+    "discussion": 44
    },
    "lastGrown": "2026-10-07",
    "level": 3
@@ -337,10 +337,10 @@
    "level": 3
   },
   "bess-legal-expert": {
-   "count": 189,
+   "count": 190,
    "byType": {
     "skill": 12,
-    "discussion": 177
+    "discussion": 178
    },
    "lastGrown": "2026-10-07",
    "level": 5
@@ -438,10 +438,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 125,
+   "count": 126,
    "byType": {
     "skill": 10,
-    "discussion": 90,
+    "discussion": 91,
     "briefing": 25
    },
    "lastGrown": "2026-10-07",
@@ -484,19 +484,19 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 203,
+   "count": 204,
    "byType": {
     "skill": 12,
-    "discussion": 191
+    "discussion": 192
    },
    "lastGrown": "2026-10-07",
    "level": 5
   },
   "bess-project-manager": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 10,
-    "discussion": 51
+    "discussion": 52
    },
    "lastGrown": "2026-10-07",
    "level": 3
@@ -593,10 +593,10 @@
    "level": 2
   },
   "bess-standards-korea": {
-   "count": 262,
+   "count": 263,
    "byType": {
     "skill": 12,
-    "discussion": 250
+    "discussion": 251
    },
    "lastGrown": "2026-10-07",
    "level": 5
@@ -738,22 +738,22 @@
    "level": 2
   },
   "bess-transformer-expert": {
-   "count": 64,
+   "count": 65,
    "byType": {
     "skill": 11,
-    "discussion": 48,
+    "discussion": 49,
     "briefing": 5
    },
    "lastGrown": "2026-10-07",
    "level": 3
   },
   "bess-translator": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 7,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-10-05",
+   "lastGrown": "2026-10-07",
    "level": 2
   }
  },
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-07",
-   "added": 71
+   "added": 72
   }
  ],
  "freshness": {
