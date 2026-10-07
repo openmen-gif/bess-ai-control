@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-aea363b1f5e8",
+   "name": "팀 토론 — 내부 통제 시스템 강화 및 원가 관리 효율성 검토 추진",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-08",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-f7c5d1edf43b",
    "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-579eb7ae4c73",
-   "name": "팀 토론 — 환경 영향 최소화를 위한 BESS 설치 프로젝트 EIA 검토",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-aea363b1f5e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-aea363b1f5e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-aea363b1f5e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-aea363b1f5e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-aea363b1f5e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-aea363b1f5e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-aea363b1f5e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-aea363b1f5e8",
+   "type": "knowledge"
+  },
   {
    "source": "SUB-001",
    "target": "K-f7c5d1edf43b",
@@ -9146,46 +9186,6 @@
    "source": "COM-003",
    "target": "K-5e2dca8781f3",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-579eb7ae4c73",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-579eb7ae4c73",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-579eb7ae4c73",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-579eb7ae4c73",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-579eb7ae4c73",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-579eb7ae4c73",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-579eb7ae4c73",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-579eb7ae4c73",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9589,7 +9589,7 @@
    {
     "date": "2026-10-08",
     "knowledge": 400,
-    "events_total": 2569
+    "events_total": 2570
    }
   ]
  }
