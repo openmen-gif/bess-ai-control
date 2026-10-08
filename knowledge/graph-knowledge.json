@@ -19,6 +19,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-83dfb7ba4efd",
+   "name": "팀 토론 — BESS 운영 데이터 분석을 통한 예측 유지보수 모델 개발 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5d5b7592b971",
    "name": "팀 토론 — 액냉 시스템 최적화 설계로 BESS 열 관리 효율 향상",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-9278d250ccb8",
-   "name": "에이치투, 일본 비리튬 ESS 시장 공략...‘JC-STAR’ 취득",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3675,6 +3675,46 @@
   {
    "source": "STD-002",
    "target": "K-b9cb15d9ad9f",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-83dfb7ba4efd",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-83dfb7ba4efd",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-83dfb7ba4efd",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-83dfb7ba4efd",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-83dfb7ba4efd",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-83dfb7ba4efd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-83dfb7ba4efd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-83dfb7ba4efd",
    "type": "knowledge"
   },
   {
@@ -9326,11 +9366,6 @@
    "source": "STD-001",
    "target": "K-ab1fe0257c4b",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-9278d250ccb8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9739,7 +9774,7 @@
    {
     "date": "2026-10-09",
     "knowledge": 400,
-    "events_total": 2596
+    "events_total": 2597
    }
   ]
  }
