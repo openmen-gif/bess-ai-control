@@ -1,6 +1,23 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "events": [
+  {
+   "id": "5d5b7592b971",
+   "date": "2026-10-09",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-epc-bom",
+    "bess-power-market-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 액냉 시스템 최적화 설계로 BESS 열 관리 효율 향상",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fd0493ebc8aa",
    "date": "2026-10-08",
@@ -3868,17 +3885,6 @@
    ],
    "title": "중국 안방 벗어나자 판 바뀐 ESS…북미 19.7% 차지한 K배터리",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbWVNYnVjZnR6YThHTlNLNkRCYzJyODNGNkZPd1JoQV9wR005ajlQTnc3TVV4SVlrc2FOLUprX2ozMjZvUTFXNjdPUGdzb1NVVkp0N2NwNnQtMW0yaXdORTVMRlRwdVRaMGRjaWt1dTlHWl8yUkY3eWl1VFFwdnIxZGQ1TEVzYWFP?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "7772931b8ae3",
-   "date": "2026-09-25",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "SK온, 미국 ESS '탈중국' 공급망 구축…포스코퓨처엠서 LFP 양극재 1.1조 조달",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPcEdUb0c4WGtkNkd3QWtLbWp4aEs2aHBvVU01WHU0VWgwU0ZxaXpHLWVfQ0tVVUE2c3RDNWc5cjBRcnZNMk1DVlFtbXViRFNSbmtvektuVjRiZVpNcmhWYjFTYjRpcFcycGJFUGFzSm9JQQ?oc=5",
    "source": "구글뉴스"
   }
  ]

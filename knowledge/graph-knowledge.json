@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-5d5b7592b971",
+   "name": "팀 토론 — 액냉 시스템 최적화 설계로 BESS 열 관리 효율 향상",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-09",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-fd0493ebc8aa",
    "name": "자동차 내릴 때 배터리는 반등…보상금·ESS가 가른 실적 기대",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-09-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-60fddfd76816",
-   "name": "SK온-엘앤에프, LFP 양극재 공급 계약...‘탈중국’ ESS 나선다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-19",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CYB-001",
+   "target": "K-5d5b7592b971",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-5d5b7592b971",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-5d5b7592b971",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-5d5b7592b971",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5d5b7592b971",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-5d5b7592b971",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-5d5b7592b971",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-fd0493ebc8aa",
@@ -9231,15 +9266,10 @@
    "source": "STD-001",
    "target": "K-7b1575e0fb1c",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-60fddfd76816",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "history": [
    {
     "date": "2026-07-20",
@@ -9640,6 +9670,11 @@
     "date": "2026-10-08",
     "knowledge": 400,
     "events_total": 2593
+   },
+   {
+    "date": "2026-10-09",
+    "knowledge": 400,
+    "events_total": 2594
    }
   ]
  }
