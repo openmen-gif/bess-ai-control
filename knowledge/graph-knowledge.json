@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-e8a958cc61a5",
+   "name": "팀 토론 — BESS 운영 인력 역량 평가 프로그램 개발 및 O&M 교육",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-09",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-5d5b7592b971",
    "name": "팀 토론 — 액냉 시스템 최적화 설계로 BESS 열 관리 효율 향상",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-7b1575e0fb1c",
-   "name": "한전, ESS로 송전 난제 푼다… '가상송전선로' 정책화 - 머니투데이",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-e8a958cc61a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-e8a958cc61a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e8a958cc61a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-e8a958cc61a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-e8a958cc61a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-e8a958cc61a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e8a958cc61a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-e8a958cc61a5",
+   "type": "knowledge"
+  },
   {
    "source": "CYB-001",
    "target": "K-5d5b7592b971",
@@ -9261,11 +9301,6 @@
    "source": "COM-003",
    "target": "K-82d82052fc63",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-7b1575e0fb1c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9674,7 +9709,7 @@
    {
     "date": "2026-10-09",
     "knowledge": 400,
-    "events_total": 2594
+    "events_total": 2595
    }
   ]
  }
