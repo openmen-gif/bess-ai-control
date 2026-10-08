@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-08",
  "totals": {
-  "all": 2592,
+  "all": 2593,
   "briefing": 1168,
   "skill": 779,
-  "discussion": 645,
+  "discussion": 646,
   "activity": 0
  },
  "perAgent": {
@@ -36,10 +36,10 @@
    "level": 5
   },
   "bess-business-dev": {
-   "count": 177,
+   "count": 178,
    "byType": {
     "skill": 12,
-    "discussion": 84,
+    "discussion": 85,
     "briefing": 81
    },
    "lastGrown": "2026-10-08",
@@ -337,10 +337,10 @@
    "level": 3
   },
   "bess-legal-expert": {
-   "count": 197,
+   "count": 198,
    "byType": {
     "skill": 12,
-    "discussion": 185
+    "discussion": 186
    },
    "lastGrown": "2026-10-08",
    "level": 5
@@ -374,12 +374,12 @@
    "level": 4
   },
   "bess-network-engineer": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 7,
-    "discussion": 27
+    "discussion": 28
    },
-   "lastGrown": "2026-10-01",
+   "lastGrown": "2026-10-08",
    "level": 3
   },
   "bess-om-expert": {
@@ -438,10 +438,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 132,
+   "count": 133,
    "byType": {
     "skill": 10,
-    "discussion": 97,
+    "discussion": 98,
     "briefing": 25
    },
    "lastGrown": "2026-10-08",
@@ -593,10 +593,10 @@
    "level": 3
   },
   "bess-standards-korea": {
-   "count": 268,
+   "count": 269,
    "byType": {
     "skill": 12,
-    "discussion": 256
+    "discussion": 257
    },
    "lastGrown": "2026-10-08",
    "level": 5
@@ -693,12 +693,12 @@
    "level": 3
   },
   "bess-tax-japan": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 9,
-    "discussion": 30
+    "discussion": 31
    },
-   "lastGrown": "2026-10-07",
+   "lastGrown": "2026-10-08",
    "level": 3
   },
   "bess-tax-korea": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-08",
-   "added": 23
+   "added": 24
   }
  ],
  "freshness": {
