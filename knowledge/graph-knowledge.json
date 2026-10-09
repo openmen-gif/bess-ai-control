@@ -109,6 +109,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-84d257d434ee",
+   "name": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-83dfb7ba4efd",
    "name": "팀 토론 — BESS 운영 데이터 분석을 통한 예측 유지보수 모델 개발 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-20",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9f809d89c3b2",
-   "name": "배터리3사, ESS 소듐이온 '차별화'로 중국 저가 공세 극복 : 네이버",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-20",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3725,6 +3725,46 @@
   {
    "source": "MAR-001",
    "target": "K-886b7f3375b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-84d257d434ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-84d257d434ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-84d257d434ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-84d257d434ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-84d257d434ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-84d257d434ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-84d257d434ee",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-84d257d434ee",
    "type": "knowledge"
   },
   {
@@ -9231,11 +9271,6 @@
    "source": "PCS-001",
    "target": "K-d86f64633e33",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-9f809d89c3b2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9644,7 +9679,7 @@
    {
     "date": "2026-10-09",
     "knowledge": 400,
-    "events_total": 2618
+    "events_total": 2619
    }
   ]
  }
