@@ -136,6 +136,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-744e1eab3819",
+   "name": "팀 토론 — 글로벌 작은 섬나라 재생에너지 확대 추세 분석 및 BESS ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-09",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-71b6eb6446e3",
    "name": "LG에너지솔루션, 분기 최대 매출…ESS로 회복 동력 얻은 배터리업계",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-20",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9c8d81e959e7",
-   "name": "게임 내 설명을 기준으로 다시 읽는 룰렛 티스토리",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-20",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3775,6 +3775,46 @@
   {
    "source": "STD-001",
    "target": "K-806c5fadf536",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-744e1eab3819",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-744e1eab3819",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-744e1eab3819",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-744e1eab3819",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-744e1eab3819",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-744e1eab3819",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-744e1eab3819",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-744e1eab3819",
    "type": "knowledge"
   },
   {
@@ -9196,11 +9236,6 @@
    "source": "BAT-001",
    "target": "K-9f809d89c3b2",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-9c8d81e959e7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9609,7 +9644,7 @@
    {
     "date": "2026-10-09",
     "knowledge": 400,
-    "events_total": 2617
+    "events_total": 2618
    }
   ]
  }
