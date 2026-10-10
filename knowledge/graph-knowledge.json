@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-94b7ef75d5d6",
+   "name": "팀 토론 — 품질 보증 절차 자동화 도구 도입 검토 및 벤더 감사 프로세",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-11",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-edca3f496707",
    "name": "팀 토론 — BESS·EPC 영역 벤치마킹 — bess-standards",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-21",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-b58bf4e7d53c",
-   "name": "완성차 합작 울타리 벗는 K배터리⋯북미 공장 '독자경영' 승부",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-21",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "KTX-001",
    "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-94b7ef75d5d6",
    "type": "knowledge"
   },
   {
@@ -9346,11 +9386,6 @@
    "source": "STD-001",
    "target": "K-bb21ffe7e3cd",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-b58bf4e7d53c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9769,7 +9804,7 @@
    {
     "date": "2026-10-11",
     "knowledge": 400,
-    "events_total": 2635
+    "events_total": 2636
    }
   ]
  }
