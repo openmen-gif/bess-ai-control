@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fbe8a89ae367",
+   "name": "팀 토론 — OT/IT 네트워크 보안 강화 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-11",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-edca3f496707",
    "name": "팀 토론 — BESS·EPC 영역 벤치마킹 — bess-standards",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-21",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8882dd2b30e3",
-   "name": "SK온, 엘앤에프와 1,600억원 규모 LFP 양극재 계약 “서산공장 E",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-21",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CYB-001",
+   "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-fbe8a89ae367",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-edca3f496707",
@@ -9311,11 +9351,6 @@
    "source": "BAT-001",
    "target": "K-b58bf4e7d53c",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-8882dd2b30e3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9734,7 +9769,7 @@
    {
     "date": "2026-10-11",
     "knowledge": 400,
-    "events_total": 2634
+    "events_total": 2635
    }
   ]
  }

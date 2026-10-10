@@ -2,6 +2,24 @@
  "updated": "2026-10-11",
  "events": [
   {
+   "id": "fbe8a89ae367",
+   "date": "2026-10-11",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-legal-expert",
+    "bess-mlops-engineer",
+    "bess-network-engineer",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — OT/IT 네트워크 보안 강화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "edca3f496707",
    "date": "2026-10-10",
    "type": "discussion",
@@ -3865,22 +3883,6 @@
    "title": "美 ESS ‘1TWh 시대’ 막오른다… K배터리, EV라인 전환에 ‘올인’",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9qR3FLUEY5Y0hrbDlmUTY2VEVaU1I0ZzdfNjh0V0YxRHYzQVUwUzBBbEI2UmpfMUFvWEJTTTF4R1RiQV90TjdCOUVXRkdkSG53Nk5ON0IwTUMwVWpaa2R3OFJyZFJCenlDeU90SlNPSG1RTUk1TVJ2cU41Yw?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "d14d47c15860",
-   "date": "2026-09-28",
-   "type": "discussion",
-   "agents": [
-    "bess-cbop-engineer",
-    "bess-ebop-engineer",
-    "bess-grounding-engineer",
-    "bess-site-manager",
-    "bess-standards-analyst",
-    "bess-structural-analyst"
-   ],
-   "title": "팀 토론 — 부지 내 최적화된 배치 계획 수립 및 이격거리 분석을 통한 안전성 강화 검토",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
