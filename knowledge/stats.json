@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-12",
  "totals": {
-  "all": 2645,
+  "all": 2646,
   "briefing": 1205,
   "skill": 779,
-  "discussion": 661,
+  "discussion": 662,
   "activity": 0
  },
  "perAgent": {
@@ -83,12 +83,12 @@
    "level": 4
   },
   "bess-commissioning-coordinator": {
-   "count": 54,
+   "count": 55,
    "byType": {
     "skill": 12,
-    "discussion": 42
+    "discussion": 43
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 3
   },
   "bess-contract-specialist": {
@@ -337,12 +337,12 @@
    "level": 3
   },
   "bess-legal-expert": {
-   "count": 209,
+   "count": 210,
    "byType": {
     "skill": 12,
-    "discussion": 197
+    "discussion": 198
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 5
   },
   "bess-logistics-expert": {
@@ -411,12 +411,12 @@
    "level": 5
   },
   "bess-permit-asia": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 7,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-10-10",
+   "lastGrown": "2026-10-12",
    "level": 3
   },
   "bess-permit-english": {
@@ -556,13 +556,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 328,
+   "count": 329,
    "byType": {
     "skill": 11,
-    "discussion": 98,
+    "discussion": 99,
     "briefing": 219
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 5
   },
   "bess-standards-australia": {
@@ -593,12 +593,12 @@
    "level": 3
   },
   "bess-standards-korea": {
-   "count": 282,
+   "count": 283,
    "byType": {
     "skill": 12,
-    "discussion": 270
+    "discussion": 271
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 5
   },
   "bess-standards-poland": {
@@ -683,22 +683,22 @@
    "level": 2
   },
   "bess-tax-incentive": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 8,
-    "discussion": 52,
+    "discussion": 53,
     "briefing": 2
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 3
   },
   "bess-tax-japan": {
-   "count": 41,
+   "count": 42,
    "byType": {
     "skill": 9,
-    "discussion": 32
+    "discussion": 33
    },
-   "lastGrown": "2026-10-09",
+   "lastGrown": "2026-10-12",
    "level": 3
   },
   "bess-tax-korea": {
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-12",
-   "added": 0
+   "added": 1
   }
  ],
  "freshness": {
@@ -1126,8 +1126,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-10-11",
-   "gapDays": 1,
+   "previousUpdated": "2026-10-12",
+   "gapDays": 0,
    "overdue": false
   }
  }

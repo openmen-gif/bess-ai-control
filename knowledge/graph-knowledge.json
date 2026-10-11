@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-1dbf2e4601d3",
+   "name": "팀 토론 — BESS EPC 호주 규격 준수를 위한 인허가 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-12",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-fbe8a89ae367",
    "name": "팀 토론 — OT/IT 네트워크 보안 강화 전략 수립",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-09-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3932fcd66e87",
-   "name": "북미 ESS 호황에 K배터리 수주 순풍",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-22",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "COM-100",
+   "target": "K-1dbf2e4601d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-1dbf2e4601d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-1dbf2e4601d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-1dbf2e4601d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-1dbf2e4601d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-1dbf2e4601d3",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-1dbf2e4601d3",
+   "type": "knowledge"
+  },
   {
    "source": "CYB-001",
    "target": "K-fbe8a89ae367",
@@ -9301,11 +9336,6 @@
    "source": "MAR-001",
    "target": "K-3b4132261453",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-3932fcd66e87",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9729,7 +9759,7 @@
    {
     "date": "2026-10-12",
     "knowledge": 400,
-    "events_total": 2645
+    "events_total": 2646
    }
   ]
  }
