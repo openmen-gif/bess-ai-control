@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-11",
  "totals": {
-  "all": 2643,
+  "all": 2644,
   "briefing": 1205,
   "skill": 779,
-  "discussion": 659,
+  "discussion": 660,
   "activity": 0
  },
  "perAgent": {
@@ -36,10 +36,10 @@
    "level": 5
   },
   "bess-business-dev": {
-   "count": 182,
+   "count": 183,
    "byType": {
     "skill": 12,
-    "discussion": 88,
+    "discussion": 89,
     "briefing": 82
    },
    "lastGrown": "2026-10-11",
@@ -146,10 +146,10 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 107,
+   "count": 108,
    "byType": {
     "skill": 11,
-    "discussion": 96
+    "discussion": 97
    },
    "lastGrown": "2026-10-11",
    "level": 4
@@ -337,10 +337,10 @@
    "level": 3
   },
   "bess-legal-expert": {
-   "count": 207,
+   "count": 208,
    "byType": {
     "skill": 12,
-    "discussion": 195
+    "discussion": 196
    },
    "lastGrown": "2026-10-11",
    "level": 5
@@ -593,10 +593,10 @@
    "level": 3
   },
   "bess-standards-korea": {
-   "count": 281,
+   "count": 282,
    "byType": {
     "skill": 12,
-    "discussion": 269
+    "discussion": 270
    },
    "lastGrown": "2026-10-11",
    "level": 5
@@ -638,12 +638,12 @@
    "level": 3
   },
   "bess-structural-analyst": {
-   "count": 71,
+   "count": 72,
    "byType": {
     "skill": 11,
-    "discussion": 60
+    "discussion": 61
    },
-   "lastGrown": "2026-10-07",
+   "lastGrown": "2026-10-11",
    "level": 4
   },
   "bess-substation-engineer": {
@@ -683,10 +683,10 @@
    "level": 2
   },
   "bess-tax-incentive": {
-   "count": 60,
+   "count": 61,
    "byType": {
     "skill": 8,
-    "discussion": 50,
+    "discussion": 51,
     "briefing": 2
    },
    "lastGrown": "2026-10-11",
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-11",
-   "added": 9
+   "added": 10
   }
  ],
  "freshness": {

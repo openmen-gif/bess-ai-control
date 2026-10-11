@@ -73,6 +73,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-3d32cb255428",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리 구현 방안 심층 분석 및 프로젝트",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-11",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-12802d6c5780",
    "name": "산일전기, 미국 BESS 시장 공략…350억 변압기 공급",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1e2b9510977c",
-   "name": "전기차·ESS로 ‘LFP배터리’ 수요↑…중국 독주 속 한국도 가세",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3710,6 +3710,36 @@
   {
    "source": "DEV-001",
    "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-3d32cb255428",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-3d32cb255428",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-3d32cb255428",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3d32cb255428",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-3d32cb255428",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-3d32cb255428",
    "type": "knowledge"
   },
   {
@@ -9276,11 +9306,6 @@
    "source": "JTX-001",
    "target": "K-25afaae1f7aa",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-1e2b9510977c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9699,7 +9724,7 @@
    {
     "date": "2026-10-11",
     "knowledge": 400,
-    "events_total": 2643
+    "events_total": 2644
    }
   ]
  }
