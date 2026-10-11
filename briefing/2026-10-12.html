@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BESS 일일 기술 브리핑 — 2026-10-12</title>
+<meta name="description" content="BESS 기술 부문별 일일 브리핑(2026-10-12) — 배터리·PCS·계통연계·안전·정책·시장 15건 큐레이션">
+<style>
+:root { --bg:#0B0F19; --panel:#111827; --line:#1F2937; --ink:#F9FAFB; --muted:#9CA3AF; --accent:#3B82F6; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--ink); font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif; line-height:1.6; }
+.wrap { max-width:860px; margin:0 auto; padding:32px 20px 60px; }
+.top { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
+h1 { font-size:22px; font-weight:800; }
+.date { color:var(--muted); font-size:13px; }
+.back { color:var(--accent); text-decoration:none; font-size:13px; }
+.sec { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:16px; }
+h2 { font-size:15px; font-weight:700; margin-bottom:10px; }
+.item { padding:8px 0; border-top:1px solid var(--line); }
+.item:first-of-type { border-top:0; }
+.item a { color:var(--ink); text-decoration:none; font-size:14px; }
+.item a:hover { color:var(--accent); }
+.meta { color:var(--muted); font-size:12px; margin-top:2px; }
+.empty { color:var(--muted); font-size:13px; }
+.arch { margin-top:24px; color:var(--muted); font-size:12.5px; }
+.arch a { color:var(--accent); text-decoration:none; margin-right:10px; }
+footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:14px; }
+.live { margin-top:10px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.live button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:7px 14px; font-size:13px; cursor:pointer; font-weight:700; }
+.live button:disabled { opacity:.5; cursor:default; }
+.live .st { color:var(--muted); font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>📰 BESS 일일 기술 브리핑</h1>
+    <a class="back" href="/">← 컨트롤 센터</a>
+  </div>
+  <div class="date">2026-10-12 (월) · 기술 부문별 최근 48시간 · 총 15건 · 매일 07:30 정적 발행 + 접속 시 라이브 갱신</div>
+  <div class="live"><button id="refresh-btn">🔄 최신 뉴스로 갱신</button><span class="st" id="live-status">정적 발행판 표시 중</span></div>
+  <section class="sec" data-sec="0">
+    <h2>🔋 배터리·셀</h2>
+    <div class="items">
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYmhXaEV2dWlaNW8yVEtDaDR5OUllTmNaRWY1UFJxREtPS1kwd2p1bXh5VFdRbjM3ajBUVmhfRGJwUXVPaVhSNDdXaHpQRG4zLTI5aHN1MVdTVGJyZnl5bXN6Z1NEQmNmYy1PTS1PR1lTS0xlOVNUc2tsek90THVyLXZCaWVwck5o?oc=5" target="_blank" rel="noopener">&quot;1,000억 달러 쏟았는데 라인이 멈췄다&quot;… 북미 배터리 공장, &#x27;ESS&#x27;로 긴급 유턴</a><div class="meta">글로벌이코노믹 · 10/12 06:15</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMOHphZ0ZRN3RIa0NZMzVDTFZsdDdqS243TnhQbklkNU94dFRTMEZwaEN5SUFYQ3JPV0ZBczhMdXA3c3RQRlRBbTd6eC1jNU12WkE?oc=5" target="_blank" rel="noopener">데이터센터용 ESS의 힘 … 배터리株 &#x27;재충전&#x27;</a><div class="meta">매일경제 · 10/11 17:08</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE44elFOMFlkWjNLMmxXZTZ0WGlLdmhJUElQSVR1QU1ZX0ZxQm1YcHUxMldIOTRtZDdLSzdmOUhIdkFINERGMHpNNXhfV2lXN3V4MG1KMTRLbS1wekItS0JkM2hIQjhVUQ?oc=5" target="_blank" rel="noopener">관세 철퇴·운송비 폭탄…中 배터리 초저가 전략 미국서 막혔다</a><div class="meta">디일렉 · 10/11 20:33</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQX2hueDVDX2VjcFZXSXlCUXZodFNudzJmdVJlaW9JaG5KdngxRU85a3M4N0d1aXRZc2xGdnpuem5ucVlOQ2ZOdTc5NDM4UC1vUTlrMnJMaEFxYW1zVklkU0Rnd1VERVVzRGgyOHQ3Nl9TZ3NzTTV0bHVZNWdpZl9xMA?oc=5" target="_blank" rel="noopener">ESS 열풍… 이차전지 구원투수로 떠올라</a><div class="meta">조선일보 · 10/12 00:36</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5fYVNMaUlVSFpaTDFocDdJNnlaLWZCYUF1RnlPd21YY1NrZVRBcFR6MXA1eU9ubEZtVVFXdDg2RjdOTW1JUTc3UnhPY0RNbnFXRGtGLS01WXJUYVRzTmtJZlVZV3hUdDBITFE?oc=5" target="_blank" rel="noopener">LFP로 재편되는 ESS 시장···SK온, 3차 입찰서 반전 노린다</a><div class="meta">뉴스웨이 · 10/11 16:37</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE13S1N0cVZ2UExNRmRJMHJwTDl6TE5LYXRVSUp0NDNpWGJkYUxkeHRKRGp2MzZydXh2a1NJTWF0RjVKSUdDX0pjOXN2Z2FKaGZUcnhBTHpocmpJV094?oc=5" target="_blank" rel="noopener">재생에너지·AI 확산에 美 ESS 수요 폭발⋯韓 기업엔 ‘기회의 땅’[K배터리 주도권 탈환] · 현장 상황은?</a><div class="meta">https://spt.co.kr/ · 10/12 05:00</div></div>
+    </div>
+  </section>
+  <section class="sec" data-sec="1">
+    <h2>⚡ PCS·전력변환</h2>
+    <div class="items">
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxPU1BtUERwWWVSeGM0Yy1SVWZvSkZMLUNja3dSQkFoWGlVdkJRcWU5czY2SWdITnRoWkl2WjlGOUR4VG5fZkhaai0zcFNUUjRFZnkxUjlnMkw0eU5GRGs1aTg4NXlvdmZlaWJiY1hLSnZBYzJ3aDVXMUVwNUloU0RPVk44LVVET1A4bXJ0ZkZqcTJUOC0zeVFIbl9Wa1FHTEV2cERaM3MwM0d3b2tSeUZmNmJFMGk1QzNZeFVuWWZiYnhPUnZvRWVSVEg3MlBSOE5JSGZkaQ?oc=5" target="_blank" rel="noopener">스마트폰 회전 후 점검할 냥코 슬롯머신 메뉴 위치</a><div class="meta">Calgary Roughnecks · 10/11 09:36</div></div>
+    </div>
+  </section>
+  <section class="sec" data-sec="2">
+    <h2>🔌 계통연계·그리드</h2>
+    <div class="items">
+    <div class="empty">최근 48시간 내 수집된 소식이 없습니다.</div>
+    </div>
+  </section>
+  <section class="sec" data-sec="3">
+    <h2>🚨 안전·소방</h2>
+    <div class="items">
+    <div class="empty">최근 48시간 내 수집된 소식이 없습니다.</div>
+    </div>
+  </section>
+  <section class="sec" data-sec="4">
+    <h2>🏛️ 규격·인허가·정책</h2>
+    <div class="items">
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQcmNOb3FvSHdqalg2d1hGYlE0NzhCLUozX3R3d1JZU3AyMTNFQXZ1M0piNk9OVXhOQU1wWHJXM3k0S2VneF80cFJtdkRsNHNVV0tuVjMyWExBaHFmQlBtZzZhZUUwNHJwU3NlOFUzMHNRdGRpejh5aU4tTjdSaTdQRQ?oc=5" target="_blank" rel="noopener">[단독]ESS 설치 공공기관 10곳 중 4곳뿐…느슨한 ‘예외 규정’이 발목</a><div class="meta">이데일리 · 10/12 04:30</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBoaEROOVlxZWxab1BISVR1RnNOcG5KeDloYjVkVklrTW5PazVtb0N2TXhSSXdZZV90VmNwYW1TRTRZeWp2V09fajZjUFBITk8wWUhkUGRqU1dqb05PSHgyQ0twZmJPUGYzT3o0QnFB?oc=5" target="_blank" rel="noopener">재생에너지·AI 확산에 美 ESS 수요 폭발⋯韓 기업엔 ‘기회의 땅’[K배터리 주도권 탈환]</a><div class="meta">이투데이 · 10/12 05:00</div></div>
+    </div>
+  </section>
+  <section class="sec" data-sec="5">
+    <h2>🌍 시장·프로젝트</h2>
+    <div class="items">
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYmhXaEV2dWlaNW8yVEtDaDR5OUllTmNaRWY1UFJxREtPS1kwd2p1bXh5VFdRbjM3ajBUVmhfRGJwUXVPaVhSNDdXaHpQRG4zLTI5aHN1MVdTVGJyZnl5bXN6Z1NEQmNmYy1PTS1PR1lTS0xlOVNUc2tsek90THVyLXZCaWVwck5o?oc=5" target="_blank" rel="noopener">&quot;1,000억 달러 쏟았는데 라인이 멈췄다&quot;… 북미 배터리 공장, &#x27;ESS&#x27;로 긴급 유턴</a><div class="meta">글로벌이코노믹 · 10/12 06:15</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxON3A1eklJX0ZpeVc2andIYVhUS1BiTFRTTmR2eG5xRW9sMzJkZFF5UlFkNi12MkgtTVItajA5TEpwcFlsQVp6N2c3VTBIMzQ5cnBsc0g2NWpMUklGdWNjeGJ4bHFnUnRaYU9rOEYyOFkyUEZDVW9ibkpSemdYOHNaOXVhZEZUWldPdk9PWmc3ZHBMWW5OdmVfZEw1MnVGWG9acnZmbTMyZldxbUtIcUhkSDRrczdleTRrX1BTd25DZW1JRVNSbUVJ?oc=5" target="_blank" rel="noopener">진행 속도를 바꿀 수 있나요? 파워볼 대중소 확률 기능 확인</a><div class="meta">Calgary Roughnecks · 10/10 22:16</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jM0JRYk1BSkVEdVAwX05LcERDMmRtX0RfODEwSTY1RGEwZ0tZc3BVVUJDbU96NXc1SFk3QlI1TWZ2WDdHSjJ5UzJNYnRZaVhvUFlPWXNZdEpIRGJjY0h6QnFqTFJCQzjSAWdBVV95cUxOYzNCUWJNQUpFRHVQMF9OS3BEQzJkbV9EXzgxMEk2NURhMGdLWXNwVVVCQ21PejV3NUhZN0JSNU1mdlg3R0oyeVMyTWJ0WWlYb1BZT1lzWXRKSERiY2NIekJxakxSQkM4?oc=5" target="_blank" rel="noopener">산일전기, 미국 BESS 시장 공략…350억 변압기 공급</a><div class="meta">국민기자뉴스 · 10/11 04:45</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5uY2xQWWRUaVhDcTRhM3ZhNlozU1ZNcUNiNVJIdW9vTlhvU3pLTjVwODdlRUdvUTV3d3dvSmZNM0JxVW5PYTYwWFg0cmlQNm1FSHoyS0EwaENWTDM4Z0lIUEtORkRpdjJwS1Y0?oc=5" target="_blank" rel="noopener">“풍력부터 ESS까지”…중부발전·LS일렉트릭, 전주기 에너지 동맹</a><div class="meta">서울경제TV · 10/10 14:37</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQWDkxY3hnTmhiSG1sMEZhZE90MmJsMHJ5RGdJNDlkMVdWMl80c3k5bjdmSkg3WlJma1lCaHdhMy1BYUJlX0hEQU8zSE14VmVvUloteUpvY0ctdjR5Rm1Ub05DZjgtZVFUam1qaVBzUmpSdzdPUHVrOFBKbDY3aUJuMnB5cGhmdmVrQ3NTZUREbw?oc=5" target="_blank" rel="noopener">[2026 한-미 전력망 뉴욕포럼] GPU도 금융상품으로…1조달러 AI 인프라 머니게임 &#x27;역설&#x27;</a><div class="meta">Naver Blog · 10/10 10:08</div></div>
+    <div class="item"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQXzRfMWs5V0o4MFZlRzNGLWdYaVQ0WkZXT05CaWswSXlsX3hQY0J6U2dyNGRKUkVIMFVJMkFMckM4LTlrZTJnbnVIemFuRmx1WUhxWEozTnhoV2RwdE5yMUdLZWs5M0N6aG13T3J6WWp3UWJjSHRfcF9tR1FfelZMZVRn?oc=5" target="_blank" rel="noopener">휴대폰에서 팝업이 겹칠 때 보는 스카이 베팅 10 무료 베팅 조건 화면 안내</a><div class="meta">Calgary Roughnecks · 10/10 23:21</div></div>
+    </div>
+  </section>
+  <div class="arch">지난 브리핑: <a href="/briefing/2026-10-11.html">2026-10-11</a> <a href="/briefing/2026-10-10.html">2026-10-10</a> <a href="/briefing/2026-10-09.html">2026-10-09</a> <a href="/briefing/2026-10-08.html">2026-10-08</a> <a href="/briefing/2026-10-07.html">2026-10-07</a> <a href="/briefing/2026-10-06.html">2026-10-06</a> <a href="/briefing/2026-10-05.html">2026-10-05</a> <a href="/briefing/2026-10-04.html">2026-10-04</a> <a href="/briefing/2026-10-03.html">2026-10-03</a> <a href="/briefing/2026-10-02.html">2026-10-02</a> <a href="/briefing/2026-10-01.html">2026-10-01</a> <a href="/briefing/2026-09-30.html">2026-09-30</a> <a href="/briefing/2026-09-29.html">2026-09-29</a> <a href="/briefing/2026-09-28.html">2026-09-28</a></div>
+  <footer>구글뉴스 RSS 기반 자동 큐레이션 · <a class="back" href="https://bess-ai-control.work/llms.txt">AI 에이전트용 안내</a></footer>
+</div>
+<script>
+(function () {
+  var btn = document.getElementById('refresh-btn');
+  var st = document.getElementById('live-status');
+  if (!btn || !st) return;
+  function safeHref(u) { return /^https?:\/\//.test(u) ? u : '#'; }
+  function render(d) {
+    d.sections.forEach(function (sec, i) {
+      var box = document.querySelector('[data-sec="' + i + '"] .items');
+      if (!box) return;
+      box.textContent = '';
+      if (!sec.items.length) {
+        var e = document.createElement('div');
+        e.className = 'empty';
+        e.textContent = '최근 48시간 내 수집된 소식이 없습니다.';
+        box.appendChild(e);
+        return;
+      }
+      sec.items.forEach(function (it) {
+        var w = document.createElement('div'); w.className = 'item';
+        var a = document.createElement('a');
+        a.href = safeHref(it.link); a.target = '_blank'; a.rel = 'noopener'; a.textContent = it.title;
+        var m = document.createElement('div'); m.className = 'meta';
+        m.textContent = [it.source, it.when].filter(Boolean).join(' · ');
+        w.appendChild(a); w.appendChild(m); box.appendChild(w);
+      });
+    });
+  }
+  function load(auto) {
+    btn.disabled = true; st.textContent = '갱신 중…';
+    fetch('/api/briefing?_=' + Date.now(), {cache: 'no-store'}).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
+      if (!d.total) throw 0;
+      render(d);
+      st.textContent = '라이브: ' + d.updated + ' 기준 ' + d.total + '건 (최대 15분 캐시)';
+    }).catch(function () {
+      st.textContent = auto ? '정적 발행판 표시 중 (라이브 갱신 불가)' : '갱신 실패 — 잠시 후 다시 시도해 주세요';
+    }).finally(function () { btn.disabled = false; });
+  }
+  btn.addEventListener('click', function () { load(false); });
+  load(true);
+})();
+</script>
+</body>
+</html>
