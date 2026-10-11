@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-556025d3d221",
+   "name": "팀 토론 — 설비 가용률 향상을 위한 예방정비 최적화 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-12",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-24122b87101b",
    "name": "팀 토론 — 시운전 프로세스 최적화를 위한 통합 시험 계획 수립 및 인력",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-5f06534a34da",
-   "name": "한전, 324억 규모 나주 ESS 발주… \"수주전 과열 속 저가 경쟁 우",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-22",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "CST-001",
+   "target": "K-556025d3d221",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-556025d3d221",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-556025d3d221",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-556025d3d221",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-556025d3d221",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-556025d3d221",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-556025d3d221",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-556025d3d221",
+   "type": "knowledge"
+  },
   {
    "source": "COM-100",
    "target": "K-24122b87101b",
@@ -9366,11 +9406,6 @@
    "source": "STD-001",
    "target": "K-816b47f21fb1",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-5f06534a34da",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9794,7 +9829,7 @@
    {
     "date": "2026-10-12",
     "knowledge": 400,
-    "events_total": 2647
+    "events_total": 2648
    }
   ]
  }

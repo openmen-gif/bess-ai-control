@@ -2,6 +2,24 @@
  "updated": "2026-10-12",
  "events": [
   {
+   "id": "556025d3d221",
+   "date": "2026-10-12",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-facility-manager",
+    "bess-knowledge-manager",
+    "bess-om-expert",
+    "bess-qaqc-engineer",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-epc-accounting"
+   ],
+   "title": "팀 토론 — 설비 가용률 향상을 위한 예방정비 최적화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "24122b87101b",
    "date": "2026-10-12",
    "type": "discussion",
@@ -3887,17 +3905,6 @@
    "title": "팀 토론 — 냉각 시스템과 EMI 관리 최적화 방안 연구",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "80ab9cb2f5f2",
-   "date": "2026-09-29",
-   "type": "briefing",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "중국 끊고 국산 LFP로 승부본다…배터리 3사, 정부 ESS 수주전",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxa0k2SnVVSlY5ajdna1U0OHFHQ0dRTDJIX3liWnFsWThfNU5iZlprVkNnWk44ZkxVZlpCMUdEbHBzWjdLN0ZFYzBzUFhzY0k1clVEbG9B?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
