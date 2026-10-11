@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-12",
  "totals": {
-  "all": 2646,
+  "all": 2647,
   "briefing": 1205,
   "skill": 779,
-  "discussion": 662,
+  "discussion": 663,
   "activity": 0
  },
  "perAgent": {
@@ -83,10 +83,10 @@
    "level": 4
   },
   "bess-commissioning-coordinator": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 12,
-    "discussion": 43
+    "discussion": 44
    },
    "lastGrown": "2026-10-12",
    "level": 3
@@ -200,12 +200,12 @@
    "level": 3
   },
   "bess-financial-analysis": {
-   "count": 170,
+   "count": 171,
    "byType": {
     "skill": 12,
-    "discussion": 158
+    "discussion": 159
    },
-   "lastGrown": "2026-10-10",
+   "lastGrown": "2026-10-12",
    "level": 5
   },
   "bess-fire-engineer": {
@@ -337,10 +337,10 @@
    "level": 3
   },
   "bess-legal-expert": {
-   "count": 210,
+   "count": 211,
    "byType": {
     "skill": 12,
-    "discussion": 198
+    "discussion": 199
    },
    "lastGrown": "2026-10-12",
    "level": 5
@@ -556,10 +556,10 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 329,
+   "count": 330,
    "byType": {
     "skill": 11,
-    "discussion": 99,
+    "discussion": 100,
     "briefing": 219
    },
    "lastGrown": "2026-10-12",
@@ -593,10 +593,10 @@
    "level": 3
   },
   "bess-standards-korea": {
-   "count": 283,
+   "count": 284,
    "byType": {
     "skill": 12,
-    "discussion": 271
+    "discussion": 272
    },
    "lastGrown": "2026-10-12",
    "level": 5
@@ -656,12 +656,12 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 194,
+   "count": 195,
    "byType": {
     "skill": 12,
-    "discussion": 182
+    "discussion": 183
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 5
   },
   "bess-tax-accountant": {
@@ -674,19 +674,19 @@
    "level": 2
   },
   "bess-tax-epc-accounting": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 6,
-    "discussion": 15
+    "discussion": 16
    },
-   "lastGrown": "2026-10-07",
+   "lastGrown": "2026-10-12",
    "level": 2
   },
   "bess-tax-incentive": {
-   "count": 63,
+   "count": 64,
    "byType": {
     "skill": 8,
-    "discussion": 53,
+    "discussion": 54,
     "briefing": 2
    },
    "lastGrown": "2026-10-12",
@@ -1116,7 +1116,7 @@
   },
   {
    "date": "2026-10-12",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {

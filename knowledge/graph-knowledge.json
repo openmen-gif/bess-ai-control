@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-24122b87101b",
+   "name": "팀 토론 — 시운전 프로세스 최적화를 위한 통합 시험 계획 수립 및 인력",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-12",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-1dbf2e4601d3",
    "name": "팀 토론 — BESS EPC 호주 규격 준수를 위한 인허가 전략 수립",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-22",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-3b4132261453",
-   "name": "전기차·ESS 쌍끌이…'LFP' 양극재 비중 77%까지 확대 전망",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "COM-100",
+   "target": "K-24122b87101b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-24122b87101b",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-24122b87101b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-24122b87101b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-24122b87101b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-24122b87101b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-24122b87101b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-24122b87101b",
+   "type": "knowledge"
+  },
   {
    "source": "COM-100",
    "target": "K-1dbf2e4601d3",
@@ -9331,11 +9371,6 @@
    "source": "BIZ-001",
    "target": "K-5f06534a34da",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-3b4132261453",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9759,7 +9794,7 @@
    {
     "date": "2026-10-12",
     "knowledge": 400,
-    "events_total": 2646
+    "events_total": 2647
    }
   ]
  }
