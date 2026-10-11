@@ -73,6 +73,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-781799c86d79",
+   "name": "팀 토론 — 냉각 시스템의 환경 친화성 및 EMI 필터 재활용 가능성에 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-11",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-3d32cb255428",
    "name": "팀 토론 — 냉각 시스템과 EMI 관리 구현 방안 심층 분석 및 프로젝트",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-22",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-25afaae1f7aa",
-   "name": "팀 토론 — 관세 및 FTA 원산지 분석을 통한 글로벌 BESS 프로젝트",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3710,6 +3710,46 @@
   {
    "source": "DEV-001",
    "target": "K-94b7ef75d5d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-781799c86d79",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-781799c86d79",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-781799c86d79",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-781799c86d79",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-781799c86d79",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-781799c86d79",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-781799c86d79",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-781799c86d79",
    "type": "knowledge"
   },
   {
@@ -9266,50 +9306,10 @@
    "source": "BIZ-001",
    "target": "K-3932fcd66e87",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-25afaae1f7aa",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-25afaae1f7aa",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-25afaae1f7aa",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-25afaae1f7aa",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-25afaae1f7aa",
-   "type": "knowledge"
-  },
-  {
-   "source": "SLS-001",
-   "target": "K-25afaae1f7aa",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-25afaae1f7aa",
-   "type": "knowledge"
-  },
-  {
-   "source": "JTX-001",
-   "target": "K-25afaae1f7aa",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "history": [
    {
     "date": "2026-07-20",
@@ -9725,6 +9725,11 @@
     "date": "2026-10-11",
     "knowledge": 400,
     "events_total": 2644
+   },
+   {
+    "date": "2026-10-12",
+    "knowledge": 400,
+    "events_total": 2645
    }
   ]
  }
