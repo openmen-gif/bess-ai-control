@@ -55,6 +55,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a719d929d8fb",
+   "name": "팀 토론 — 명령: `bess-pcs-expert`를 활용해 최신 SiC",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a3419beb1476",
    "name": "재생에너지·AI 확산에 美 ESS 수요 폭발⋯韓 기업엔 ‘기회의 땅’[K",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-f59f8ae1853f",
-   "name": "한전, ESS 활용 ‘가상송전선로’ 추진…2027년 예산 24억원 반영",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3680,6 +3680,36 @@
   {
    "source": "PRO-001",
    "target": "K-b4e5a77ba268",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-a719d929d8fb",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-a719d929d8fb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-a719d929d8fb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-a719d929d8fb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-a719d929d8fb",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-a719d929d8fb",
    "type": "knowledge"
   },
   {
@@ -9361,11 +9391,6 @@
    "source": "STD-008",
    "target": "K-0b49dd190813",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-f59f8ae1853f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9789,7 +9814,7 @@
    {
     "date": "2026-10-12",
     "knowledge": 400,
-    "events_total": 2662
+    "events_total": 2663
    }
   ]
  }

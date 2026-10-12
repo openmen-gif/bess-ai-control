@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-12",
  "totals": {
-  "all": 2662,
+  "all": 2663,
   "briefing": 1215,
   "skill": 779,
-  "discussion": 668,
+  "discussion": 669,
   "activity": 0
  },
  "perAgent": {
@@ -74,12 +74,12 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 74,
+   "count": 75,
    "byType": {
     "skill": 12,
-    "discussion": 62
+    "discussion": 63
    },
-   "lastGrown": "2026-10-07",
+   "lastGrown": "2026-10-12",
    "level": 4
   },
   "bess-commissioning-coordinator": {
@@ -229,13 +229,13 @@
    "level": 3
   },
   "bess-grid-interconnection": {
-   "count": 94,
+   "count": 95,
    "byType": {
     "skill": 11,
-    "discussion": 57,
+    "discussion": 58,
     "briefing": 26
    },
-   "lastGrown": "2026-10-07",
+   "lastGrown": "2026-10-12",
    "level": 4
   },
   "bess-grounding-engineer": {
@@ -402,20 +402,20 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 222,
+   "count": 223,
    "byType": {
     "skill": 12,
-    "discussion": 128,
+    "discussion": 129,
     "briefing": 82
    },
    "lastGrown": "2026-10-12",
    "level": 5
   },
   "bess-permit-asia": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 7,
-    "discussion": 24
+    "discussion": 25
    },
    "lastGrown": "2026-10-12",
    "level": 3
@@ -449,12 +449,12 @@
    "level": 4
   },
   "bess-power-system-analyst": {
-   "count": 135,
+   "count": 136,
    "byType": {
     "skill": 11,
-    "discussion": 124
+    "discussion": 125
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 4
   },
   "bess-precom-report": {
@@ -666,12 +666,12 @@
    "level": 5
   },
   "bess-tax-accountant": {
-   "count": 28,
+   "count": 29,
    "byType": {
     "skill": 6,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-10-06",
+   "lastGrown": "2026-10-12",
    "level": 2
   },
   "bess-tax-epc-accounting": {
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-12",
-   "added": 17
+   "added": 18
   }
  ],
  "freshness": {
