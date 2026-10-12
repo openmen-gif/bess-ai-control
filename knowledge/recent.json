@@ -46,6 +46,22 @@
    "source": "구글뉴스"
   },
   {
+   "id": "b4e5a77ba268",
+   "date": "2026-10-12",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-env-engineer",
+    "bess-pcs-expert",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 관세 최적화 전략 수립: KORUS FTA 및 주요 수입 국가의 HS 코드 기반 비용 절감 방안 모색",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "a3419beb1476",
    "date": "2026-10-12",
    "type": "briefing",
@@ -3859,24 +3875,6 @@
     "bess-training-expert"
    ],
    "title": "팀 토론 — BESS 시스템 초기 시운전 프로세스 최적화 매뉴얼 개발 및 전문가 훈련 진행 (COM-100)",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "f649f44d59e7",
-   "date": "2026-09-29",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-emc-analyst",
-    "bess-env-engineer",
-    "bess-fire-engineer",
-    "bess-om-expert",
-    "bess-power-system-analyst",
-    "bess-procurement-expert"
-   ],
-   "title": "팀 토론 — 냉각 시스템과 EMI 관리의 신흥시장 맞춤형 GAP 분석 및 최적화 전략 수립",
    "link": "",
    "source": "bess-team"
   }

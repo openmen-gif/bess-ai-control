@@ -37,6 +37,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-b4e5a77ba268",
+   "name": "팀 토론 — 관세 최적화 전략 수립: KORUS FTA 및 주요 수입 국",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a3419beb1476",
    "name": "재생에너지·AI 확산에 美 ESS 수요 폭발⋯韓 기업엔 ‘기회의 땅’[K",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d8d35c6ba269",
-   "name": "팀 토론 — IRA 인센티브 세부 내용 분석 및 한국 시장 적용 전략 수",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3620,6 +3620,36 @@
   {
    "source": "MAR-001",
    "target": "K-b763ebbec76a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b4e5a77ba268",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b4e5a77ba268",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-b4e5a77ba268",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-b4e5a77ba268",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-b4e5a77ba268",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b4e5a77ba268",
    "type": "knowledge"
   },
   {
@@ -9311,46 +9341,6 @@
    "source": "STD-001",
    "target": "K-e22d931d68c8",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-d8d35c6ba269",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-d8d35c6ba269",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-d8d35c6ba269",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-d8d35c6ba269",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-d8d35c6ba269",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-d8d35c6ba269",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-d8d35c6ba269",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-d8d35c6ba269",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9774,7 +9764,7 @@
    {
     "date": "2026-10-12",
     "knowledge": 400,
-    "events_total": 2660
+    "events_total": 2661
    }
   ]
  }
