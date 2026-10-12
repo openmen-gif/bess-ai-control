@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7dc70e827f39",
+   "name": "팀 토론 — 사이버보안 정책 감사 실시 및 위험 평가 수행",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-55cfbc8aec23",
    "name": "휴대폰에서 팝업이 겹칠 때 보는 스카이 베팅 10 무료 베팅 조건 화면 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-22",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-ca762195e5e1",
-   "name": "“전기를 팔면서 돈까지 낸다”…제주서 현실화된 ‘마이너스 전력시장’",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-22",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3625,6 +3625,36 @@
   {
    "source": "BAT-001",
    "target": "K-a3419beb1476",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7dc70e827f39",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7dc70e827f39",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-7dc70e827f39",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-7dc70e827f39",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7dc70e827f39",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-7dc70e827f39",
    "type": "knowledge"
   },
   {
@@ -9331,11 +9361,6 @@
    "source": "STD-005",
    "target": "K-d043d9d58ab8",
    "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-ca762195e5e1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9759,7 +9784,7 @@
    {
     "date": "2026-10-12",
     "knowledge": 400,
-    "events_total": 2658
+    "events_total": 2659
    }
   ]
  }

@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-12",
  "totals": {
-  "all": 2658,
+  "all": 2659,
   "briefing": 1215,
   "skill": 779,
-  "discussion": 664,
+  "discussion": 665,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 715,
+   "count": 716,
    "byType": {
     "skill": 13,
-    "discussion": 324,
+    "discussion": 325,
     "briefing": 378
    },
    "lastGrown": "2026-10-12",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 268,
+   "count": 269,
    "byType": {
     "skill": 13,
-    "discussion": 255
+    "discussion": 256
    },
    "lastGrown": "2026-10-12",
    "level": 5
@@ -120,12 +120,12 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 105,
+   "count": 106,
    "byType": {
     "skill": 12,
-    "discussion": 93
+    "discussion": 94
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 4
   },
   "bess-data-analyst": {
@@ -384,10 +384,10 @@
    "level": 3
   },
   "bess-om-expert": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 7,
-    "discussion": 20
+    "discussion": 21
    },
    "lastGrown": "2026-10-12",
    "level": 2
@@ -485,12 +485,12 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 208,
+   "count": 209,
    "byType": {
     "skill": 12,
-    "discussion": 196
+    "discussion": 197
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-12",
    "level": 5
   },
   "bess-project-manager": {
@@ -675,10 +675,10 @@
    "level": 2
   },
   "bess-tax-epc-accounting": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 6,
-    "discussion": 17
+    "discussion": 18
    },
    "lastGrown": "2026-10-12",
    "level": 2
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-12",
-   "added": 13
+   "added": 14
   }
  ],
  "freshness": {
