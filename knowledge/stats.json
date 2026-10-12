@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-12",
  "totals": {
-  "all": 2661,
+  "all": 2662,
   "briefing": 1215,
   "skill": 779,
-  "discussion": 667,
+  "discussion": 668,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 718,
+   "count": 719,
    "byType": {
     "skill": 13,
-    "discussion": 327,
+    "discussion": 328,
     "briefing": 378
    },
    "lastGrown": "2026-10-12",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 271,
+   "count": 272,
    "byType": {
     "skill": 13,
-    "discussion": 258
+    "discussion": 259
    },
    "lastGrown": "2026-10-12",
    "level": 5
@@ -138,12 +138,12 @@
    "level": 4
   },
   "bess-ebop-engineer": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 9,
-    "discussion": 40
+    "discussion": 41
    },
-   "lastGrown": "2026-10-10",
+   "lastGrown": "2026-10-12",
    "level": 3
   },
   "bess-emc-analyst": {
@@ -439,10 +439,10 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 140,
+   "count": 141,
    "byType": {
     "skill": 10,
-    "discussion": 105,
+    "discussion": 106,
     "briefing": 25
    },
    "lastGrown": "2026-10-12",
@@ -621,12 +621,12 @@
    "level": 2
   },
   "bess-standards-uk": {
-   "count": 27,
+   "count": 28,
    "byType": {
     "skill": 8,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-10-03",
+   "lastGrown": "2026-10-12",
    "level": 2
   },
   "bess-standards-usa": {
@@ -657,10 +657,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 196,
+   "count": 197,
    "byType": {
     "skill": 12,
-    "discussion": 184
+    "discussion": 185
    },
    "lastGrown": "2026-10-12",
    "level": 5
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-12",
-   "added": 16
+   "added": 17
   }
  ],
  "freshness": {
