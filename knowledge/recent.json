@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-13",
  "events": [
+  {
+   "id": "63d072f76223",
+   "date": "2026-10-13",
+   "type": "discussion",
+   "agents": [
+    "bess-customs-tariff",
+    "bess-legal-expert",
+    "bess-permit-english",
+    "bess-standards-analyst",
+    "bess-standards-uk",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 영국(UK) BESS EPC 규격 준수를 위한 인허가 전략 수립 및 현지 규제 갭 분석",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f6e4643d16a8",
    "date": "2026-10-12",
@@ -3860,24 +3876,6 @@
    "title": "[In터뷰] 건국대 박종배 교수 “ESS, 규제 기반에서 시장 기반 자원으로 전환해야”",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93T1dyRmp0WGhmS0JaYTdjaFJyUl82WEtkck5wZG5wZ3pQOXlWb01ZbHdvdHI3Y0VzUzBaU2Z3MWdrUW45WXVldHFKWXZmUDdpR0ZnOF9rWFFQcy1KSHhOZTUyc3kzTTFwZWFJeUZhaVc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "1e352a614bbd",
-   "date": "2026-09-30",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-business-dev",
-    "bess-cost-analyst",
-    "bess-network-engineer",
-    "bess-pcs-expert",
-    "bess-procurement-expert",
-    "bess-standards-poland",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — BESS 신규 해외 JV 파트너십 탐색 및 사업타당성 분석",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
