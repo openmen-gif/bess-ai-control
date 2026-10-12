@@ -2,6 +2,22 @@
  "updated": "2026-10-13",
  "events": [
   {
+   "id": "bf199f3da963",
+   "date": "2026-10-13",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-om-expert",
+    "bess-power-market-expert",
+    "bess-standards-australia",
+    "bess-system-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 변압기 설계 최적화를 통한 보조전원 효율 향상 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "63d072f76223",
    "date": "2026-10-13",
    "type": "discussion",
@@ -3868,24 +3884,6 @@
    "title": "美전력 인프라서 활로 찾는 삼성SDI…전동화 둔화 뛰어넘을까",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xd01ORGE2RWprdEREQW1La2kyd0F1QzhKbzExRk9PeHFlLWQxemRudWtBalM2Y3duTGFqTUtGNjA2SVVSVGFzb3VIRmFoWmJDcWVjOThnN25KdUp4OW1NX19WMV9HSkk1Sk9BMA?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "27fa73b32dda",
-   "date": "2026-09-30",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-data-analyst",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-mlops-engineer",
-    "bess-site-manager",
-    "bess-standards-korea"
-   ],
-   "title": "팀 토론 — AI 기반 예측 모델을 활용한 BESS 운영 최적화 시나리오 개발",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
