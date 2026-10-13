@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-13",
  "totals": {
-  "all": 2694,
+  "all": 2695,
   "briefing": 1238,
   "skill": 779,
-  "discussion": 677,
+  "discussion": 678,
   "activity": 0
  },
  "perAgent": {
@@ -147,12 +147,12 @@
    "level": 3
   },
   "bess-emc-analyst": {
-   "count": 108,
+   "count": 109,
    "byType": {
     "skill": 11,
-    "discussion": 97
+    "discussion": 98
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-13",
    "level": 4
   },
   "bess-emerging-markets": {
@@ -275,12 +275,12 @@
    "level": 2
   },
   "bess-hydrogen-specialist": {
-   "count": 21,
+   "count": 22,
    "byType": {
     "skill": 8,
-    "discussion": 13
+    "discussion": 14
    },
-   "lastGrown": "2026-10-08",
+   "lastGrown": "2026-10-13",
    "level": 2
   },
   "bess-insurance-expert": {
@@ -548,12 +548,12 @@
    "level": 3
   },
   "bess-site-manager": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 10,
-    "discussion": 51
+    "discussion": 52
    },
-   "lastGrown": "2026-10-07",
+   "lastGrown": "2026-10-13",
    "level": 3
   },
   "bess-standards-analyst": {
@@ -594,10 +594,10 @@
    "level": 3
   },
   "bess-standards-korea": {
-   "count": 286,
+   "count": 287,
    "byType": {
     "skill": 12,
-    "discussion": 274
+    "discussion": 275
    },
    "lastGrown": "2026-10-13",
    "level": 5
@@ -657,10 +657,10 @@
    "level": 2
   },
   "bess-system-engineer": {
-   "count": 199,
+   "count": 200,
    "byType": {
     "skill": 12,
-    "discussion": 187
+    "discussion": 188
    },
    "lastGrown": "2026-10-13",
    "level": 5
@@ -703,13 +703,13 @@
    "level": 3
   },
   "bess-tax-korea": {
-   "count": 149,
+   "count": 150,
    "byType": {
     "skill": 12,
-    "discussion": 137
+    "discussion": 138
    },
    "lastGrown": "2026-10-13",
-   "level": 4
+   "level": 5
   },
   "bess-tool-developer": {
    "count": 39,
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-13",
-   "added": 30
+   "added": 31
   }
  ],
  "freshness": {

@@ -244,6 +244,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2f65d504cc94",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리에 대한 구체적인 구현 방안 마련 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-14868987ce0a",
    "name": "\"불 질러서 불을 막는다?\"···화재와 맞서는 과학자들집·물류창고 태워 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-25",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-89f4df8da753",
-   "name": "중국 안방 벗어나자 판 바뀐 ESS…북미 19.7% 차지한 K배터리",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-25",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3910,6 +3910,36 @@
   {
    "source": "COM-003",
    "target": "K-3177b5eb9c25",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-2f65d504cc94",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-2f65d504cc94",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-2f65d504cc94",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-2f65d504cc94",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2f65d504cc94",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-2f65d504cc94",
    "type": "knowledge"
   },
   {
@@ -9426,11 +9456,6 @@
    "source": "STD-001",
    "target": "K-8d79db979bcd",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-89f4df8da753",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9859,7 +9884,7 @@
    {
     "date": "2026-10-13",
     "knowledge": 400,
-    "events_total": 2694
+    "events_total": 2695
    }
   ]
  }
