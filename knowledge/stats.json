@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-14",
  "totals": {
-  "all": 2698,
+  "all": 2699,
   "briefing": 1238,
   "skill": 779,
-  "discussion": 681,
+  "discussion": 682,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 731,
+   "count": 732,
    "byType": {
     "skill": 13,
-    "discussion": 335,
+    "discussion": 336,
     "briefing": 383
    },
    "lastGrown": "2026-10-14",
@@ -74,10 +74,10 @@
    "level": 3
   },
   "bess-circuit-breaker-expert": {
-   "count": 76,
+   "count": 77,
    "byType": {
     "skill": 12,
-    "discussion": 64
+    "discussion": 65
    },
    "lastGrown": "2026-10-14",
    "level": 4
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 279,
+   "count": 280,
    "byType": {
     "skill": 13,
-    "discussion": 266
+    "discussion": 267
    },
    "lastGrown": "2026-10-14",
    "level": 5
@@ -183,12 +183,12 @@
    "level": 3
   },
   "bess-esg-finance": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 11,
-    "discussion": 36
+    "discussion": 37
    },
-   "lastGrown": "2026-10-08",
+   "lastGrown": "2026-10-14",
    "level": 3
   },
   "bess-facility-manager": {
@@ -439,13 +439,13 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 143,
+   "count": 144,
    "byType": {
     "skill": 10,
-    "discussion": 108,
+    "discussion": 109,
     "briefing": 25
    },
-   "lastGrown": "2026-10-13",
+   "lastGrown": "2026-10-14",
    "level": 4
   },
   "bess-power-system-analyst": {
@@ -485,10 +485,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 215,
+   "count": 216,
    "byType": {
     "skill": 12,
-    "discussion": 203
+    "discussion": 204
    },
    "lastGrown": "2026-10-14",
    "level": 5
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-14",
-   "added": 3
+   "added": 4
   }
  ],
  "freshness": {
