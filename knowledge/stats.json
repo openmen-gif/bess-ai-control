@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-13",
  "totals": {
-  "all": 2693,
+  "all": 2694,
   "briefing": 1238,
   "skill": 779,
-  "discussion": 676,
+  "discussion": 677,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 728,
+   "count": 729,
    "byType": {
     "skill": 13,
-    "discussion": 332,
+    "discussion": 333,
     "briefing": 383
    },
    "lastGrown": "2026-10-13",
@@ -248,12 +248,12 @@
    "level": 3
   },
   "bess-hr-manager": {
-   "count": 25,
+   "count": 26,
    "byType": {
     "skill": 7,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-10-10",
+   "lastGrown": "2026-10-13",
    "level": 2
   },
   "bess-hse-manager": {
@@ -585,21 +585,21 @@
    "level": 3
   },
   "bess-standards-japan": {
-   "count": 32,
+   "count": 33,
    "byType": {
     "skill": 8,
-    "discussion": 24
+    "discussion": 25
    },
    "lastGrown": "2026-10-13",
    "level": 3
   },
   "bess-standards-korea": {
-   "count": 285,
+   "count": 286,
    "byType": {
     "skill": 12,
-    "discussion": 273
+    "discussion": 274
    },
-   "lastGrown": "2026-10-12",
+   "lastGrown": "2026-10-13",
    "level": 5
   },
   "bess-standards-poland": {
@@ -639,12 +639,12 @@
    "level": 3
   },
   "bess-structural-analyst": {
-   "count": 72,
+   "count": 73,
    "byType": {
     "skill": 11,
-    "discussion": 61
+    "discussion": 62
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-13",
    "level": 4
   },
   "bess-substation-engineer": {
@@ -721,12 +721,12 @@
    "level": 3
   },
   "bess-training-expert": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 8,
-    "discussion": 30
+    "discussion": 31
    },
-   "lastGrown": "2026-10-09",
+   "lastGrown": "2026-10-13",
    "level": 3
   },
   "bess-transfer-pricing": {
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-13",
-   "added": 29
+   "added": 30
   }
  ],
  "freshness": {
