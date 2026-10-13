@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7ba7e1907edb",
+   "name": "팀 토론 — 산업안전보건법·중대재해처벌법 영역 현황 진단 — bess-l",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa0b29c54045",
    "name": "\"LFP 다음은 소듐\"…LG엔솔, 차세대 ESS 배터리 사업화 속도",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-25",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-918fb803ba29",
-   "name": "한국, 중앙계약시장에서 6시간 저장장치 입찰 개시",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-25",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3630,6 +3630,36 @@
   {
    "source": "SYS-001",
    "target": "K-bf7fb80e196a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7ba7e1907edb",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7ba7e1907edb",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-7ba7e1907edb",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-7ba7e1907edb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7ba7e1907edb",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7ba7e1907edb",
    "type": "knowledge"
   },
   {
@@ -9476,11 +9506,6 @@
    "source": "SYS-001",
    "target": "K-9f01d3b8d544",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-918fb803ba29",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9914,7 +9939,7 @@
    {
     "date": "2026-10-14",
     "knowledge": 400,
-    "events_total": 2696
+    "events_total": 2697
    }
   ]
  }
