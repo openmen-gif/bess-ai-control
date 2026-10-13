@@ -2,6 +2,22 @@
  "updated": "2026-10-14",
  "events": [
   {
+   "id": "ec5a574a1d10",
+   "date": "2026-10-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-emc-analyst",
+    "bess-pcs-expert",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 냉각 시스템과 EMI 관리 구체적 구현 방안 마련 및 현재 설계의 호환성 및 개선 포인트 평가",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "bf7fb80e196a",
    "date": "2026-10-14",
    "type": "discussion",
@@ -3844,17 +3860,6 @@
    "title": "팀 토론 — 차단기 적합성 평가 및 GAP 분석 실시",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "3cd5d7312f88",
-   "date": "2026-10-01",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "[서치 e종목] 지에프아이, 전방 산업 호조 속 올해 고성장 전망…주가 반등 지속?",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAtSjNtZkRiOF93QXBQVXVVRGpRNWhwVXR3VnctR0RGMnNUSU1ZZm11THQtb1B0alJEYXdJdUtFbzROTVhCbktTZndnMlRDb3FsTExLcGZ3ZWVZejBZVDQ4ZVlXWXNRTGFMbFkzbjJDa9IBb0FVX3lxTFAtSjNtZkRiOF93QXBQVXVVRGpRNWhwVXR3VnctR0RGMnNUSU1ZZm11THQtb1B0alJEYXdJdUtFbzROTVhCbktTZndnMlRDb3FsTExLcGZ3ZWVZejBZVDQ4ZVlXWXNRTGFMbFkzbjJDaw?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
