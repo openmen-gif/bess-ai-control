@@ -82,6 +82,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-986b23b2a57f",
+   "name": "팀 토론 — 클라우드 기반 모니터링 시스템 강화로 인프라 안정성 및 보안",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-13",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-97f86b7ff559",
    "name": "\"AI가 삼키는 전력, 배터리가 받친다\"… AI 데이터센터發 ESS 수요",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-25",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7337e56f84d3",
-   "name": "두 배 커진 ESS 시장…LG·삼성·SK '1.18GW 수주전' 격돌",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-25",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3670,6 +3670,36 @@
   {
    "source": "MAR-001",
    "target": "K-98e536d9910e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-986b23b2a57f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-986b23b2a57f",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-986b23b2a57f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-986b23b2a57f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-986b23b2a57f",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-986b23b2a57f",
    "type": "knowledge"
   },
   {
@@ -9376,11 +9406,6 @@
    "source": "BAT-001",
    "target": "K-7772931b8ae3",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-7337e56f84d3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9809,7 +9834,7 @@
    {
     "date": "2026-10-13",
     "knowledge": 400,
-    "events_total": 2692
+    "events_total": 2693
    }
   ]
  }
