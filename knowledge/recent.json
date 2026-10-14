@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-15",
  "events": [
   {
    "id": "fbe00c021010",
@@ -90,6 +90,22 @@
     "bess-system-engineer"
    ],
    "title": "팀 토론 — 접지망 설계 최적화를 통한 시스템 안정성 및 안전성 강화 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "b8344ee089f4",
+   "date": "2026-10-14",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-grounding-engineer",
+    "bess-output-generator",
+    "bess-power-market-expert",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
   },
@@ -3836,17 +3852,6 @@
    ],
    "title": "LG엔솔, 3차 ESS 수주전서 배터리 4대 핵심 소재 국산화…중국 의존도 '제로' 만든다",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA5NlhTZ2IyM2dnSW9TZk5BUjVHeTNqMTNJdUhjU0MxbkFEVmRWODdSdnZfWTJJNTVoc0V5OEFKYXo0TUxvYUktQ3lQME00cWs3NkY3bDZYczdLSDRUTDc1Vy04NjFfVXlyOUhzbnpabXE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "442faa4ac7d1",
-   "date": "2026-10-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "LG엔솔, 캐나다 에네온과 美 생산 BESS 공급계약 체결",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5idF9PWnlaV1JzSWlrcUMzR19SWDk5NnlOM1FSMmN2VmxBYUZidF85VkJCcGdENjd1anRPLVR3LXVXSk8zTjhQWVRMa0FfczJ6WU1FMg?oc=5",
    "source": "구글뉴스"
   }
  ]

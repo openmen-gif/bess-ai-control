@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b8344ee089f4",
+   "name": "팀 토론 — 견적서·BOM 영역 현황 진단 — bess-epc-bom 주",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-14",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-a768befcda58",
    "name": "팀 토론 — 미국 ESS 수요 급증 추세에 따른 맞춤형 공급 전략 수립 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-28",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-16545d72e0ab",
-   "name": "대미투자 1호 가스발전 추진에 ESS 기대감…K-배터리 신시장",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-28",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3710,6 +3710,36 @@
   {
    "source": "SYS-001",
    "target": "K-bf7fb80e196a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b8344ee089f4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-b8344ee089f4",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-b8344ee089f4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-b8344ee089f4",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-b8344ee089f4",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b8344ee089f4",
    "type": "knowledge"
   },
   {
@@ -9446,15 +9476,10 @@
    "source": "TIN-001",
    "target": "K-495fb0e62c76",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-16545d72e0ab",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "history": [
    {
     "date": "2026-07-20",
@@ -9885,6 +9910,11 @@
     "date": "2026-10-14",
     "knowledge": 400,
     "events_total": 2720
+   },
+   {
+    "date": "2026-10-15",
+    "knowledge": 400,
+    "events_total": 2721
    }
   ]
  }
