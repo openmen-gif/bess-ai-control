@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-14",
  "totals": {
-  "all": 2719,
+  "all": 2720,
   "briefing": 1254,
   "skill": 779,
-  "discussion": 686,
+  "discussion": 687,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 741,
+   "count": 742,
    "byType": {
     "skill": 13,
-    "discussion": 339,
+    "discussion": 340,
     "briefing": 389
    },
    "lastGrown": "2026-10-14",
@@ -101,10 +101,10 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 283,
+   "count": 284,
    "byType": {
     "skill": 13,
-    "discussion": 270
+    "discussion": 271
    },
    "lastGrown": "2026-10-14",
    "level": 5
@@ -284,12 +284,12 @@
    "level": 2
   },
   "bess-insurance-expert": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 8,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-10-08",
+   "lastGrown": "2026-10-14",
    "level": 3
   },
   "bess-internal-auditor": {
@@ -485,10 +485,10 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 218,
+   "count": 219,
    "byType": {
     "skill": 12,
-    "discussion": 206
+    "discussion": 207
    },
    "lastGrown": "2026-10-14",
    "level": 5
@@ -512,12 +512,12 @@
    "level": 3
   },
   "bess-risk-manager": {
-   "count": 36,
+   "count": 37,
    "byType": {
     "skill": 8,
-    "discussion": 28
+    "discussion": 29
    },
-   "lastGrown": "2026-10-10",
+   "lastGrown": "2026-10-14",
    "level": 3
   },
   "bess-sales-manager": {
@@ -612,12 +612,12 @@
    "level": 2
   },
   "bess-standards-romania": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 7,
-    "discussion": 17
+    "discussion": 18
    },
-   "lastGrown": "2026-10-10",
+   "lastGrown": "2026-10-14",
    "level": 2
   },
   "bess-standards-uk": {
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-14",
-   "added": 24
+   "added": 25
   }
  ],
  "freshness": {
