@@ -1,8 +1,8 @@
 {
  "updated": "2026-10-15",
  "totals": {
-  "all": 2724,
-  "briefing": 1254,
+  "all": 2741,
+  "briefing": 1271,
   "skill": 779,
   "discussion": 691,
   "activity": 0
@@ -26,23 +26,23 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 742,
+   "count": 747,
    "byType": {
     "skill": 13,
     "discussion": 340,
-    "briefing": 389
+    "briefing": 394
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 190,
+   "count": 193,
    "byType": {
     "skill": 12,
     "discussion": 89,
-    "briefing": 89
+    "briefing": 92
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 5
   },
   "bess-cable-engineer": {
@@ -210,13 +210,13 @@
    "level": 5
   },
   "bess-fire-engineer": {
-   "count": 286,
+   "count": 288,
    "byType": {
     "skill": 12,
     "discussion": 196,
-    "briefing": 78
+    "briefing": 80
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 5
   },
   "bess-fit-procedure": {
@@ -229,13 +229,13 @@
    "level": 3
   },
   "bess-grid-interconnection": {
-   "count": 96,
+   "count": 97,
    "byType": {
     "skill": 11,
     "discussion": 58,
-    "briefing": 27
+    "briefing": 28
    },
-   "lastGrown": "2026-10-13",
+   "lastGrown": "2026-10-15",
    "level": 4
   },
   "bess-grounding-engineer": {
@@ -356,13 +356,13 @@
    "level": 3
   },
   "bess-marketer": {
-   "count": 422,
+   "count": 425,
    "byType": {
     "skill": 12,
     "discussion": 87,
-    "briefing": 323
+    "briefing": 326
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 5
   },
   "bess-mlops-engineer": {
@@ -557,13 +557,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 338,
+   "count": 341,
    "byType": {
     "skill": 11,
     "discussion": 101,
-    "briefing": 226
+    "briefing": 229
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 5
   },
   "bess-standards-australia": {
@@ -1117,13 +1117,13 @@
   },
   {
    "date": "2026-10-15",
-   "added": 3
+   "added": 20
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-10-14",
-   "staleDays": 1,
+   "latestSource": "2026-10-15",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
