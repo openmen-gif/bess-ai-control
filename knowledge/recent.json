@@ -2,6 +2,22 @@
  "updated": "2026-10-15",
  "events": [
   {
+   "id": "6b153b8f1a94",
+   "date": "2026-10-15",
+   "type": "discussion",
+   "agents": [
+    "bess-data-analyst",
+    "bess-ebop-engineer",
+    "bess-facility-manager",
+    "bess-financial-analysis",
+    "bess-knowledge-manager",
+    "bess-om-expert"
+   ],
+   "title": "팀 토론 — 설비 이력 분석 및 가용률 최적화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "430cb973884a",
    "date": "2026-10-15",
    "type": "discussion",
@@ -3840,24 +3856,6 @@
    "title": "3차 ESS 수주 노리는 배터리 3사…국산 소재·안전성으로 승부",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yZDNVcGJsc01QV2JORlNwa3pNdDBSa1lLN0g3bkF4UC1Td0oyMEtsR0NUeG1Gb3o1eWx6aVVtS180eUw5aEJ6MnJCTEEyeWF3Z1hGa2VNb2pfbkhGdUtHRg?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "4dd72e3f9798",
-   "date": "2026-10-02",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-emerging-markets",
-    "bess-financial-analysis",
-    "bess-fit-procedure",
-    "bess-internal-auditor",
-    "bess-legal-expert",
-    "bess-marketer",
-    "bess-standards-korea"
-   ],
-   "title": "팀 토론 — LG엔솔의 북미산 LFP 배터리 공급계약이 인도 및 중동 신흥시장 진출 전략에 미치는 영향 분석 및 맞춤형 비즈니스 모델 개발 제안",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

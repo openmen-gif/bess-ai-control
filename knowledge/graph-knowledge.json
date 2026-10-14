@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-6b153b8f1a94",
+   "name": "팀 토론 — 설비 이력 분석 및 가용률 최적화 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-430cb973884a",
    "name": "팀 토론 — 사이버 보안 정책 감사 강화 및 실시간 위협 모니터링 시스템",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-09-28",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-4e7219cf6408",
-   "name": "[배터리의 역습] ①편리함에 저장된 에너지, 새로운 위험이 되다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-28",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "DAT-001",
+   "target": "K-6b153b8f1a94",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-6b153b8f1a94",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-6b153b8f1a94",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-6b153b8f1a94",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-6b153b8f1a94",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-6b153b8f1a94",
+   "type": "knowledge"
+  },
   {
    "source": "CYB-001",
    "target": "K-430cb973884a",
@@ -9481,11 +9511,6 @@
    "source": "MAR-001",
    "target": "K-51f429bf23f8",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-4e7219cf6408",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9924,7 +9949,7 @@
    {
     "date": "2026-10-15",
     "knowledge": 400,
-    "events_total": 2722
+    "events_total": 2723
    }
   ]
  }
