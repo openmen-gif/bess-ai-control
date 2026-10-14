@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-15",
  "totals": {
-  "all": 2721,
+  "all": 2722,
   "briefing": 1254,
   "skill": 779,
-  "discussion": 688,
+  "discussion": 689,
   "activity": 0
  },
  "perAgent": {
@@ -120,12 +120,12 @@
    "level": 3
   },
   "bess-cybersecurity-expert": {
-   "count": 108,
+   "count": 109,
    "byType": {
     "skill": 12,
-    "discussion": 96
+    "discussion": 97
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 4
   },
   "bess-data-analyst": {
@@ -293,12 +293,12 @@
    "level": 3
   },
   "bess-internal-auditor": {
-   "count": 57,
+   "count": 58,
    "byType": {
     "skill": 9,
-    "discussion": 48
+    "discussion": 49
    },
-   "lastGrown": "2026-10-08",
+   "lastGrown": "2026-10-15",
    "level": 3
   },
   "bess-ip-patent-expert": {
@@ -375,12 +375,12 @@
    "level": 4
   },
   "bess-network-engineer": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 7,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 3
   },
   "bess-om-expert": {
@@ -530,30 +530,30 @@
    "level": 3
   },
   "bess-scheduler": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 8,
-    "discussion": 38
+    "discussion": 39
    },
-   "lastGrown": "2026-10-13",
+   "lastGrown": "2026-10-15",
    "level": 3
   },
   "bess-security-expert": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 7,
-    "discussion": 43
+    "discussion": 44
    },
-   "lastGrown": "2026-10-07",
+   "lastGrown": "2026-10-15",
    "level": 3
   },
   "bess-site-manager": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 10,
-    "discussion": 52
+    "discussion": 53
    },
-   "lastGrown": "2026-10-13",
+   "lastGrown": "2026-10-15",
    "level": 3
   },
   "bess-standards-analyst": {
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-15",
-   "added": 0
+   "added": 1
   }
  ],
  "freshness": {
@@ -1127,8 +1127,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-10-14",
-   "gapDays": 1,
+   "previousUpdated": "2026-10-15",
+   "gapDays": 0,
    "overdue": false
   }
  }

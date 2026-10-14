@@ -2,6 +2,22 @@
  "updated": "2026-10-15",
  "events": [
   {
+   "id": "430cb973884a",
+   "date": "2026-10-15",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-internal-auditor",
+    "bess-network-engineer",
+    "bess-scheduler",
+    "bess-security-expert",
+    "bess-site-manager"
+   ],
+   "title": "팀 토론 — 사이버 보안 정책 감사 강화 및 실시간 위협 모니터링 시스템 구축",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fbe00c021010",
    "date": "2026-10-14",
    "type": "briefing",
@@ -3842,17 +3858,6 @@
    "title": "팀 토론 — LG엔솔의 북미산 LFP 배터리 공급계약이 인도 및 중동 신흥시장 진출 전략에 미치는 영향 분석 및 맞춤형 비즈니스 모델 개발 제안",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "4804021c088e",
-   "date": "2026-10-02",
-   "type": "briefing",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "LG엔솔, 3차 ESS 수주전서 배터리 4대 핵심 소재 국산화…중국 의존도 '제로' 만든다",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA5NlhTZ2IyM2dnSW9TZk5BUjVHeTNqMTNJdUhjU0MxbkFEVmRWODdSdnZfWTJJNTVoc0V5OEFKYXo0TUxvYUktQ3lQME00cWs3NkY3bDZYczdLSDRUTDc1Vy04NjFfVXlyOUhzbnpabXE?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
