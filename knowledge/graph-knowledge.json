@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-b6de74aeb4c1",
+   "name": "팀 토론 — HSE 사고 예방 프로그램 개발 및 실시 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-15",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-6b153b8f1a94",
    "name": "팀 토론 — 설비 이력 분석 및 가용률 최적화 계획 수립",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,39 @@
    "date": "2026-09-28",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-51f429bf23f8",
-   "name": "[해설] ESS 1180MW 물량 2029년 2월까지 구축 목표",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-28",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "COM-100",
+   "target": "K-b6de74aeb4c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b6de74aeb4c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-b6de74aeb4c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-b6de74aeb4c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-b6de74aeb4c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-b6de74aeb4c1",
+   "type": "knowledge"
+  },
   {
    "source": "DAT-001",
    "target": "K-6b153b8f1a94",
@@ -9506,11 +9536,6 @@
    "source": "KTX-001",
    "target": "K-590beba5beea",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-51f429bf23f8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9949,7 +9974,7 @@
    {
     "date": "2026-10-15",
     "knowledge": 400,
-    "events_total": 2723
+    "events_total": 2724
    }
   ]
  }
