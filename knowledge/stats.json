@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-15",
  "totals": {
-  "all": 2741,
+  "all": 2742,
   "briefing": 1271,
   "skill": 779,
-  "discussion": 691,
+  "discussion": 692,
   "activity": 0
  },
  "perAgent": {
@@ -347,12 +347,12 @@
    "level": 5
   },
   "bess-logistics-expert": {
-   "count": 40,
+   "count": 41,
    "byType": {
     "skill": 9,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 3
   },
   "bess-marketer": {
@@ -384,10 +384,10 @@
    "level": 3
   },
   "bess-om-expert": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 7,
-    "discussion": 24
+    "discussion": 25
    },
    "lastGrown": "2026-10-15",
    "level": 3
@@ -485,21 +485,21 @@
    "level": 2
   },
   "bess-procurement-expert": {
-   "count": 220,
+   "count": 221,
    "byType": {
     "skill": 12,
-    "discussion": 208
+    "discussion": 209
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 5
   },
   "bess-project-manager": {
-   "count": 65,
+   "count": 66,
    "byType": {
     "skill": 10,
-    "discussion": 55
+    "discussion": 56
    },
-   "lastGrown": "2026-10-10",
+   "lastGrown": "2026-10-15",
    "level": 3
   },
   "bess-qaqc-engineer": {
@@ -594,12 +594,12 @@
    "level": 3
   },
   "bess-standards-korea": {
-   "count": 291,
+   "count": 292,
    "byType": {
     "skill": 12,
-    "discussion": 279
+    "discussion": 280
    },
-   "lastGrown": "2026-10-14",
+   "lastGrown": "2026-10-15",
    "level": 5
   },
   "bess-standards-poland": {
@@ -675,12 +675,12 @@
    "level": 2
   },
   "bess-tax-epc-accounting": {
-   "count": 24,
+   "count": 25,
    "byType": {
     "skill": 6,
-    "discussion": 18
+    "discussion": 19
    },
-   "lastGrown": "2026-10-12",
+   "lastGrown": "2026-10-15",
    "level": 2
   },
   "bess-tax-incentive": {
@@ -703,21 +703,21 @@
    "level": 3
   },
   "bess-tax-korea": {
-   "count": 150,
+   "count": 151,
    "byType": {
     "skill": 12,
-    "discussion": 138
+    "discussion": 139
    },
-   "lastGrown": "2026-10-13",
+   "lastGrown": "2026-10-15",
    "level": 5
   },
   "bess-tool-developer": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 8,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-10-12",
+   "lastGrown": "2026-10-15",
    "level": 3
   },
   "bess-training-expert": {
@@ -1117,7 +1117,7 @@
   },
   {
    "date": "2026-10-15",
-   "added": 20
+   "added": 21
   }
  ],
  "freshness": {
