@@ -64,6 +64,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-9a8e463050d6",
+   "name": "팀 토론 — HS코드·배터리 영역 현황 진단 — bess-customs-",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8d6afd4b455f",
    "name": "전남광주소방, 통합 후 첫 대형재난 대비 민·관 합동훈련",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3510a3f7ea6e",
-   "name": "[IB토마토]삼성SDI, 전기차 공장 ESS로 돌린다…4.4조 실탄 확보",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3660,6 +3660,46 @@
   {
    "source": "TRN-001",
    "target": "K-b6de74aeb4c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9a8e463050d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-9a8e463050d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-9a8e463050d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-9a8e463050d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-9a8e463050d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-9a8e463050d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-9a8e463050d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-9a8e463050d6",
    "type": "knowledge"
   },
   {
@@ -9366,11 +9406,6 @@
    "source": "STD-002",
    "target": "K-4804cb156266",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-3510a3f7ea6e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9809,7 +9844,7 @@
    {
     "date": "2026-10-15",
     "knowledge": 400,
-    "events_total": 2742
+    "events_total": 2743
    }
   ]
  }
