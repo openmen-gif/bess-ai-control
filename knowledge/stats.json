@@ -1,8 +1,8 @@
 {
  "updated": "2026-10-16",
  "totals": {
-  "all": 2750,
-  "briefing": 1271,
+  "all": 2769,
+  "briefing": 1290,
   "skill": 779,
   "discussion": 700,
   "activity": 0
@@ -26,23 +26,23 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 752,
+   "count": 758,
    "byType": {
     "skill": 13,
     "discussion": 345,
-    "briefing": 394
+    "briefing": 400
    },
    "lastGrown": "2026-10-16",
    "level": 5
   },
   "bess-business-dev": {
-   "count": 193,
+   "count": 194,
    "byType": {
     "skill": 12,
     "discussion": 89,
-    "briefing": 92
+    "briefing": 93
    },
-   "lastGrown": "2026-10-15",
+   "lastGrown": "2026-10-16",
    "level": 5
   },
   "bess-cable-engineer": {
@@ -356,13 +356,13 @@
    "level": 3
   },
   "bess-marketer": {
-   "count": 425,
+   "count": 430,
    "byType": {
     "skill": 12,
     "discussion": 87,
-    "briefing": 326
+    "briefing": 331
    },
-   "lastGrown": "2026-10-15",
+   "lastGrown": "2026-10-16",
    "level": 5
   },
   "bess-mlops-engineer": {
@@ -402,22 +402,23 @@
    "level": 3
   },
   "bess-pcs-expert": {
-   "count": 229,
+   "count": 232,
    "byType": {
     "skill": 12,
     "discussion": 132,
-    "briefing": 85
+    "briefing": 88
    },
-   "lastGrown": "2026-10-15",
+   "lastGrown": "2026-10-16",
    "level": 5
   },
   "bess-permit-asia": {
-   "count": 32,
+   "count": 34,
    "byType": {
     "skill": 7,
-    "discussion": 25
+    "discussion": 25,
+    "briefing": 2
    },
-   "lastGrown": "2026-10-12",
+   "lastGrown": "2026-10-16",
    "level": 3
   },
   "bess-permit-english": {
@@ -557,13 +558,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 341,
+   "count": 343,
    "byType": {
     "skill": 11,
     "discussion": 101,
-    "briefing": 229
+    "briefing": 231
    },
-   "lastGrown": "2026-10-15",
+   "lastGrown": "2026-10-16",
    "level": 5
   },
   "bess-standards-australia": {
@@ -1117,13 +1118,13 @@
   },
   {
    "date": "2026-10-16",
-   "added": 3
+   "added": 22
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-10-15",
-   "staleDays": 1,
+   "latestSource": "2026-10-16",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
