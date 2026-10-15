@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-e31959042271",
+   "name": "팀 토론 — 변전소 통합 효율성 분석 및 최적화 계획 수립으로 운영 비용",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-15",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-d86b36b4be50",
    "name": "[종목 포커스] 산일전기, 美 블룸에너지 데이터센터향 수주 등으로 주가 ",
    "group": "KNOWLEDGE",
@@ -3590,21 +3599,52 @@
    "date": "2026-09-29",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-4804cb156266",
-   "name": "팀 토론 — EIA 환경영향평가를 통한 신규 BESS 설치 프로젝트의 생",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
   {
    "source": "STD-001",
    "target": "K-ff46a027e191",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-e31959042271",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e31959042271",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-e31959042271",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-e31959042271",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-e31959042271",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-e31959042271",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e31959042271",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-e31959042271",
    "type": "knowledge"
   },
   {
@@ -9366,46 +9406,6 @@
    "source": "BIZ-001",
    "target": "K-633a973b34b9",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-4804cb156266",
-   "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-4804cb156266",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-4804cb156266",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-4804cb156266",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-4804cb156266",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-4804cb156266",
-   "type": "knowledge"
-  },
-  {
-   "source": "IPP-001",
-   "target": "K-4804cb156266",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-4804cb156266",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9844,7 +9844,7 @@
    {
     "date": "2026-10-15",
     "knowledge": 400,
-    "events_total": 2743
+    "events_total": 2744
    }
   ]
  }
