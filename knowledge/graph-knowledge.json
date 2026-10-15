@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-da76d5a55e1d",
+   "name": "팀 토론 — 글로벌 화재 안전 표준 개정 동향 분석 및 국내 BESS 설",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff46a027e191",
    "name": "전북, 에너지 기반 확충으로 산업 경쟁력 강화 추진한다",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-09-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-80ab9cb2f5f2",
-   "name": "중국 끊고 국산 LFP로 승부본다…배터리 3사, 정부 ESS 수주전",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-09-29",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-ff46a027e191",
@@ -9506,11 +9546,6 @@
    "source": "SYS-001",
    "target": "K-96b9b71f4ecd",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-80ab9cb2f5f2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9954,7 +9989,7 @@
    {
     "date": "2026-10-16",
     "knowledge": 400,
-    "events_total": 2747
+    "events_total": 2748
    }
   ]
  }
