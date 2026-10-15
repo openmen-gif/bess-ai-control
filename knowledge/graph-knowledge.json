@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-bac4273ced97",
+   "name": "팀 토론 — 법인세 최적화 전략 수립을 통한 일본 BESS 프로젝트 수익",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3bfa53750dfc",
    "name": "팀 토론 — 냉각 시스템과 EMI 관리의 구체적 구현 방안 연구 및 시범",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9bbb7afecb5e",
-   "name": "팀 토론 — 그린프리미엄 인증 절차 최적화를 위한 ESG 재무 전략 수립",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "KTX-001",
    "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-bac4273ced97",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-bac4273ced97",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-bac4273ced97",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-bac4273ced97",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-bac4273ced97",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-bac4273ced97",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-bac4273ced97",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-bac4273ced97",
    "type": "knowledge"
   },
   {
@@ -9516,46 +9556,6 @@
    "source": "SYS-001",
    "target": "K-a9bdf51249c9",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-9bbb7afecb5e",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-9bbb7afecb5e",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-9bbb7afecb5e",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-9bbb7afecb5e",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-9bbb7afecb5e",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-9bbb7afecb5e",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-9bbb7afecb5e",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-9bbb7afecb5e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9999,7 +9999,7 @@
    {
     "date": "2026-10-16",
     "knowledge": 400,
-    "events_total": 2749
+    "events_total": 2750
    }
   ]
  }

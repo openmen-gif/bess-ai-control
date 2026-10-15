@@ -20,6 +20,24 @@
    "source": "bess-team"
   },
   {
+   "id": "bac4273ced97",
+   "date": "2026-10-16",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-output-generator",
+    "bess-project-manager",
+    "bess-risk-manager",
+    "bess-standards-japan",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 법인세 최적화 전략 수립을 통한 일본 BESS 프로젝트 수익성 제고",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3bfa53750dfc",
    "date": "2026-10-16",
    "type": "discussion",
@@ -3836,24 +3854,6 @@
     "bess-system-engineer"
    ],
    "title": "팀 토론 — 냉각 시스템과 EMI 관리 최적화를 위한 통합 시뮬레이션 및 테스트 계획 수립",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "b2301d667a6e",
-   "date": "2026-10-03",
-   "type": "discussion",
-   "agents": [
-    "bess-cable-engineer",
-    "bess-cbop-engineer",
-    "bess-env-engineer",
-    "bess-financial-analysis",
-    "bess-hse-manager",
-    "bess-legal-expert",
-    "bess-site-manager",
-    "bess-standards-korea"
-   ],
-   "title": "팀 토론 — 부지조성 단계에서의 최적 이격거리 설정 가이드라인 개발 및 환경 영향 평가 수행",
    "link": "",
    "source": "bess-team"
   }
