@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3bfa53750dfc",
+   "name": "팀 토론 — 냉각 시스템과 EMI 관리의 구체적 구현 방안 연구 및 시범",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff46a027e191",
    "name": "전북, 에너지 기반 확충으로 산업 경쟁력 강화 추진한다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-96b9b71f4ecd",
-   "name": "팀 토론 — 냉각 시스템과 EMI 관리 최적화 방안 연구",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "KTX-001",
    "target": "K-da76d5a55e1d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3bfa53750dfc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-3bfa53750dfc",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-3bfa53750dfc",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-3bfa53750dfc",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3bfa53750dfc",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-3bfa53750dfc",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-3bfa53750dfc",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3bfa53750dfc",
    "type": "knowledge"
   },
   {
@@ -9516,36 +9556,6 @@
    "source": "KTX-001",
    "target": "K-9bbb7afecb5e",
    "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-96b9b71f4ecd",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-96b9b71f4ecd",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-96b9b71f4ecd",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-96b9b71f4ecd",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-96b9b71f4ecd",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-96b9b71f4ecd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9989,7 +9999,7 @@
    {
     "date": "2026-10-16",
     "knowledge": 400,
-    "events_total": 2748
+    "events_total": 2749
    }
   ]
  }
