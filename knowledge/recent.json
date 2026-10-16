@@ -448,6 +448,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "71f9b9565586",
+   "date": "2026-10-16",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-facility-manager",
+    "bess-fire-engineer",
+    "bess-fit-procedure",
+    "bess-hse-manager",
+    "bess-standards-analyst",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — 시운전 프로토콜 강화를 위한 COM-002 기반 테스트 시나리오 개발 및 실행 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "7196ed663567",
    "date": "2026-10-16",
    "type": "discussion",
@@ -3749,17 +3767,6 @@
    "title": "ESS로 살아난 배터리 3사, 동반 흑자 기조 '와해'",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9sNzhjQjhtTlB6eG1xYl9IVEQzRUtmRW1ScE0zMWFFSS16SUQ5THRHZ2dwQVFWQkd6MW90VnR6c0xaYWR0UGNYNjZLWVluUDVyWGFIMw?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "2956c6eb2315",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-tax-korea"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
