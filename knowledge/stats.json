@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-16",
  "totals": {
-  "all": 2769,
+  "all": 2770,
   "briefing": 1290,
   "skill": 779,
-  "discussion": 700,
+  "discussion": 701,
   "activity": 0
  },
  "perAgent": {
@@ -17,19 +17,19 @@
    "level": 1
   },
   "bess-aiml-engineer": {
-   "count": 51,
+   "count": 52,
    "byType": {
     "skill": 10,
-    "discussion": 41
+    "discussion": 42
    },
-   "lastGrown": "2026-10-09",
+   "lastGrown": "2026-10-16",
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 758,
+   "count": 759,
    "byType": {
     "skill": 13,
-    "discussion": 345,
+    "discussion": 346,
     "briefing": 400
    },
    "lastGrown": "2026-10-16",
@@ -129,10 +129,10 @@
    "level": 4
   },
   "bess-data-analyst": {
-   "count": 108,
+   "count": 109,
    "byType": {
     "skill": 12,
-    "discussion": 96
+    "discussion": 97
    },
    "lastGrown": "2026-10-16",
    "level": 4
@@ -201,10 +201,10 @@
    "level": 3
   },
   "bess-financial-analysis": {
-   "count": 175,
+   "count": 176,
    "byType": {
     "skill": 12,
-    "discussion": 163
+    "discussion": 164
    },
    "lastGrown": "2026-10-16",
    "level": 5
@@ -229,13 +229,13 @@
    "level": 3
   },
   "bess-grid-interconnection": {
-   "count": 97,
+   "count": 98,
    "byType": {
     "skill": 11,
-    "discussion": 58,
+    "discussion": 59,
     "briefing": 28
    },
-   "lastGrown": "2026-10-15",
+   "lastGrown": "2026-10-16",
    "level": 4
   },
   "bess-grounding-engineer": {
@@ -366,12 +366,12 @@
    "level": 5
   },
   "bess-mlops-engineer": {
-   "count": 78,
+   "count": 79,
    "byType": {
     "skill": 11,
-    "discussion": 67
+    "discussion": 68
    },
-   "lastGrown": "2026-10-11",
+   "lastGrown": "2026-10-16",
    "level": 4
   },
   "bess-network-engineer": {
@@ -412,10 +412,10 @@
    "level": 5
   },
   "bess-permit-asia": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 7,
-    "discussion": 25,
+    "discussion": 26,
     "briefing": 2
    },
    "lastGrown": "2026-10-16",
@@ -440,13 +440,13 @@
    "level": 2
   },
   "bess-power-market-expert": {
-   "count": 147,
+   "count": 148,
    "byType": {
     "skill": 10,
-    "discussion": 112,
+    "discussion": 113,
     "briefing": 25
    },
-   "lastGrown": "2026-10-15",
+   "lastGrown": "2026-10-16",
    "level": 4
   },
   "bess-power-system-analyst": {
@@ -1118,7 +1118,7 @@
   },
   {
    "date": "2026-10-16",
-   "added": 22
+   "added": 23
   }
  ],
  "freshness": {

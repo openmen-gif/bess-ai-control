@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-bd5a8329fadf",
+   "name": "팀 토론 — AI 기반 예측 모델 개발로 효율적인 에너지 관리 시스템 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-bac4273ced97",
    "name": "팀 토론 — 법인세 최적화 전략 수립을 통한 일본 BESS 프로젝트 수익",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-09-30",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3455c12e4b80",
-   "name": "팀 토론 — CFD·유동해석 영역 현황 진단 — bess-cfd-anal",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-09-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3655,6 +3655,46 @@
   {
    "source": "BAT-001",
    "target": "K-c3311cf9e494",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-bd5a8329fadf",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-bd5a8329fadf",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-bd5a8329fadf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-bd5a8329fadf",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-bd5a8329fadf",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-bd5a8329fadf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-bd5a8329fadf",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-bd5a8329fadf",
    "type": "knowledge"
   },
   {
@@ -9221,46 +9261,6 @@
    "source": "STD-001",
    "target": "K-3b5b76fd5043",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-3455c12e4b80",
-   "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-3455c12e4b80",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-3455c12e4b80",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-3455c12e4b80",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-3455c12e4b80",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-3455c12e4b80",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-3455c12e4b80",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-3455c12e4b80",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9704,7 +9704,7 @@
    {
     "date": "2026-10-16",
     "knowledge": 400,
-    "events_total": 2769
+    "events_total": 2770
    }
   ]
  }
