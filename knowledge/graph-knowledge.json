@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-8b9cb6973b78",
+   "name": "팀 토론 — 유럽 ESS 시설물 분류 기준 통일 동향을 반영하여 국내 프",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fd574a785f06",
    "name": "팀 토론 — 유럽 ESS 시설물 분류 기준 통일로 인한 인허가 기간 단축",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-e065f1d5a87a",
-   "name": "삼성SDI 아시아 최대 데이터센터 전시회에 혁신 배터리 솔루션 선보인다 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "STD-001",
    "target": "K-937d96ede819",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8b9cb6973b78",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8b9cb6973b78",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-8b9cb6973b78",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-8b9cb6973b78",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-8b9cb6973b78",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-8b9cb6973b78",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-8b9cb6973b78",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-8b9cb6973b78",
    "type": "knowledge"
   },
   {
@@ -9031,11 +9071,6 @@
    "source": "SUB-001",
    "target": "K-fccf684355bf",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-e065f1d5a87a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9484,7 +9519,7 @@
    {
     "date": "2026-10-17",
     "knowledge": 400,
-    "events_total": 2814
+    "events_total": 2815
    }
   ]
  }
