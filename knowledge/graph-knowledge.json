@@ -280,6 +280,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-34b67b206329",
+   "name": "팀 토론 — 법인세 최적화 전략 수립을 통한 일본 BESS 프로젝트 수익",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-222ed883f657",
    "name": "Metlen·Karatzis, 그리스 테살리아 790MWh BESS 준공",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a9f810c5dba7",
-   "name": "한투證 “삼성SDI, 美 대형 BESS 속도 조절은 일시적… 목표가 60",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3860,6 +3860,46 @@
   {
    "source": "BAT-001",
    "target": "K-39d9c64ce519",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-34b67b206329",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-34b67b206329",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-34b67b206329",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-34b67b206329",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-34b67b206329",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-34b67b206329",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-34b67b206329",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-34b67b206329",
    "type": "knowledge"
   },
   {
@@ -8681,11 +8721,6 @@
    "source": "STD-002",
    "target": "K-b2301d667a6e",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-a9f810c5dba7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9134,7 +9169,7 @@
    {
     "date": "2026-10-17",
     "knowledge": 400,
-    "events_total": 2848
+    "events_total": 2849
    }
   ]
  }

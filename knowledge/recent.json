@@ -364,6 +364,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "34b67b206329",
+   "date": "2026-10-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-logistics-expert",
+    "bess-precom-report",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 법인세 최적화 전략 수립을 통한 일본 BESS 프로젝트 수익성 제고 및 EPC 턴키 PO 회계 시스템 개선 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "222ed883f657",
    "date": "2026-10-17",
    "type": "briefing",
@@ -3738,17 +3756,6 @@
    "type": "skill",
    "agents": [
     "bess-cybersecurity-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "a6357a80d344",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-hse-manager"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",
