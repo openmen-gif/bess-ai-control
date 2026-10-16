@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-937d96ede819",
+   "name": "팀 토론 — 프로젝트 RFP 분석 강화 및 고객 맞춤형 견적 제안 시스템",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fd574a785f06",
    "name": "팀 토론 — 유럽 ESS 시설물 분류 기준 통일로 인한 인허가 기간 단축",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-bd0f95abc67f",
-   "name": "인도 BESS 시장 급성장…2년 내 50GWh 육박 전망",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-01",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "SYS-001",
    "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-937d96ede819",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-937d96ede819",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-937d96ede819",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-937d96ede819",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-937d96ede819",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-937d96ede819",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-937d96ede819",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-937d96ede819",
    "type": "knowledge"
   },
   {
@@ -8996,11 +9036,6 @@
    "source": "FIR-001",
    "target": "K-e065f1d5a87a",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-bd0f95abc67f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9449,7 +9484,7 @@
    {
     "date": "2026-10-17",
     "knowledge": 400,
-    "events_total": 2813
+    "events_total": 2814
    }
   ]
  }

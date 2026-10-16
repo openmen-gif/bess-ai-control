@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-17",
  "totals": {
-  "all": 2813,
+  "all": 2814,
   "briefing": 1329,
   "skill": 779,
-  "discussion": 705,
+  "discussion": 706,
   "activity": 0
  },
  "perAgent": {
@@ -26,10 +26,10 @@
    "level": 3
   },
   "bess-battery-expert": {
-   "count": 768,
+   "count": 769,
    "byType": {
     "skill": 13,
-    "discussion": 350,
+    "discussion": 351,
     "briefing": 405
    },
    "lastGrown": "2026-10-17",
@@ -46,13 +46,13 @@
    "level": 5
   },
   "bess-cable-engineer": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 12,
-    "discussion": 47,
+    "discussion": 48,
     "briefing": 3
    },
-   "lastGrown": "2026-10-07",
+   "lastGrown": "2026-10-17",
    "level": 3
   },
   "bess-cbop-engineer": {
@@ -65,12 +65,12 @@
    "level": 3
   },
   "bess-cfd-analyst": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 13,
-    "discussion": 42
+    "discussion": 43
    },
-   "lastGrown": "2026-10-15",
+   "lastGrown": "2026-10-17",
    "level": 3
   },
   "bess-circuit-breaker-expert": {
@@ -101,12 +101,12 @@
    "level": 3
   },
   "bess-cost-analyst": {
-   "count": 286,
+   "count": 287,
    "byType": {
     "skill": 13,
-    "discussion": 273
+    "discussion": 274
    },
-   "lastGrown": "2026-10-15",
+   "lastGrown": "2026-10-17",
    "level": 5
   },
   "bess-customs-tariff": {
@@ -210,10 +210,10 @@
    "level": 5
   },
   "bess-fire-engineer": {
-   "count": 300,
+   "count": 301,
    "byType": {
     "skill": 12,
-    "discussion": 202,
+    "discussion": 203,
     "briefing": 86
    },
    "lastGrown": "2026-10-17",
@@ -257,10 +257,10 @@
    "level": 2
   },
   "bess-hse-manager": {
-   "count": 161,
+   "count": 162,
    "byType": {
     "skill": 12,
-    "discussion": 149
+    "discussion": 150
    },
    "lastGrown": "2026-10-17",
    "level": 5
@@ -495,13 +495,13 @@
    "level": 5
   },
   "bess-project-manager": {
-   "count": 69,
+   "count": 70,
    "byType": {
     "skill": 10,
-    "discussion": 59
+    "discussion": 60
    },
    "lastGrown": "2026-10-17",
-   "level": 3
+   "level": 4
   },
   "bess-qaqc-engineer": {
    "count": 41,
@@ -558,13 +558,13 @@
    "level": 3
   },
   "bess-standards-analyst": {
-   "count": 352,
+   "count": 353,
    "byType": {
     "skill": 11,
-    "discussion": 103,
+    "discussion": 104,
     "briefing": 238
    },
-   "lastGrown": "2026-10-16",
+   "lastGrown": "2026-10-17",
    "level": 5
   },
   "bess-standards-australia": {
@@ -1118,7 +1118,7 @@
   },
   {
    "date": "2026-10-17",
-   "added": 1
+   "added": 2
   }
  ],
  "freshness": {
@@ -1128,8 +1128,8 @@
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-10-16",
-   "gapDays": 1,
+   "previousUpdated": "2026-10-17",
+   "gapDays": 0,
    "overdue": false
   }
  }

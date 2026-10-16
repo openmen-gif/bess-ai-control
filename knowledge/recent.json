@@ -20,6 +20,24 @@
    "source": "bess-team"
   },
   {
+   "id": "937d96ede819",
+   "date": "2026-10-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-cfd-analyst",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-project-manager",
+    "bess-standards-analyst"
+   ],
+   "title": "팀 토론 — 프로젝트 RFP 분석 강화 및 고객 맞춤형 견적 제안 시스템 구축",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fd574a785f06",
    "date": "2026-10-16",
    "type": "discussion",
@@ -3763,17 +3781,6 @@
    "title": "[NQ기자의 쓴소리] 2배 커진 ESS 시장, 안전 불감증 재발하면 ‘제2의 암흑기’ 온다",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAweGJ6YXYxbFA2QzN4ZHVKS2Y3clFmalZFanozQXVNNkk5N2d4eFZ1WTJqY0taWTB5UUVSX0w0Nk5ITm5uQ09SYl9vTkVkRXhCdk9lSU1DcWtVLUxMMF80WmZTYjF2RVYtdGgzU2tIQQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "2e3bd7642204",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-fit-procedure"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
