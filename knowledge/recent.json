@@ -2,6 +2,24 @@
  "updated": "2026-10-16",
  "events": [
   {
+   "id": "fd574a785f06",
+   "date": "2026-10-16",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-financial-analysis",
+    "bess-hse-manager",
+    "bess-procurement-data",
+    "bess-procurement-expert",
+    "bess-project-manager",
+    "bess-standards-analyst",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 유럽 ESS 시설물 분류 기준 통일로 인한 인허가 기간 단축을 반영하여 국내 BESS 프로젝트 입찰 전략 및 원가 구조 재검토 수행.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ed251ea551a0",
    "date": "2026-10-16",
    "type": "briefing",
@@ -3738,17 +3756,6 @@
    "type": "skill",
    "agents": [
     "bess-tax-korea"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "292e5e19a252",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-power-system-analyst"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",

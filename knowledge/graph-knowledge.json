@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fd574a785f06",
+   "name": "팀 토론 — 유럽 ESS 시설물 분류 기준 통일로 인한 인허가 기간 단축",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ed251ea551a0",
    "name": "BESS 안전 규제가 이끄는 난연 복합패널 시장, 2035년 전망",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-01",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-90d8d8874328",
-   "name": "SK온, ESS 전환기에 5억달러 만기…2027년 현금흐름 시험대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-01",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-fd574a785f06",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-fd574a785f06",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-fd574a785f06",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-fd574a785f06",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-fd574a785f06",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-fd574a785f06",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-fd574a785f06",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-fd574a785f06",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ed251ea551a0",
@@ -8891,11 +8931,6 @@
    "source": "MAR-001",
    "target": "K-9b76516cb812",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-90d8d8874328",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9339,7 +9374,7 @@
    {
     "date": "2026-10-16",
     "knowledge": 400,
-    "events_total": 2810
+    "events_total": 2811
    }
   ]
  }
