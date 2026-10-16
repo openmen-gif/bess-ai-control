@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-a5cfce57065c",
+   "name": "팀 토론 — 클라우드 기반 실시간 모니터링 시스템 구축 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fd574a785f06",
    "name": "팀 토론 — 유럽 ESS 시설물 분류 기준 통일로 인한 인허가 기간 단축",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-01",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-a634b2ddaf89",
-   "name": "[정책브리핑] '2030년 재생에너지 100GW' 위해 기존 전력망 더 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-01",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a5cfce57065c",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-fd574a785f06",
@@ -8961,15 +9001,10 @@
    "source": "MAR-001",
    "target": "K-bd0f95abc67f",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-a634b2ddaf89",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "history": [
    {
     "date": "2026-07-20",
@@ -9410,6 +9445,11 @@
     "date": "2026-10-16",
     "knowledge": 400,
     "events_total": 2812
+   },
+   {
+    "date": "2026-10-17",
+    "knowledge": 400,
+    "events_total": 2813
    }
   ]
  }
