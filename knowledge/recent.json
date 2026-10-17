@@ -393,6 +393,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "20a901ad051e",
+   "date": "2026-10-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-ebop-engineer",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-marketer",
+    "bess-procurement-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 유럽 ESS 프로젝트에서의 \"플랫폼 기반 통합 입찰 전략\" 도입 동향을 분석하여, 국내 프로젝트에서의 유연한 입찰 및 계약 관리 시스템 개선 방안 수립.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "1f3cc9f946d9",
    "date": "2026-10-17",
    "type": "briefing",
@@ -3516,6 +3534,28 @@
    "source": "bess-team"
   },
   {
+   "id": "fef5f4b9c21c",
+   "date": "2026-10-07",
+   "type": "skill",
+   "agents": [
+    "bess-aiml-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "fd7aab542ffc",
+   "date": "2026-10-07",
+   "type": "skill",
+   "agents": [
+    "bess-emerging-markets"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "f7c5d1edf43b",
    "date": "2026-10-07",
    "type": "skill",
@@ -3538,6 +3578,17 @@
    "source": "구글뉴스"
   },
   {
+   "id": "f4a7c7e0a95a",
+   "date": "2026-10-07",
+   "type": "skill",
+   "agents": [
+    "bess-tax-korea"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "f49d3398e857",
    "date": "2026-10-07",
    "type": "skill",
@@ -3549,11 +3600,55 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "f2f5311accb2",
+   "date": "2026-10-07",
+   "type": "skill",
+   "agents": [
+    "bess-cybersecurity-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "eacf17fdbc91",
+   "date": "2026-10-07",
+   "type": "skill",
+   "agents": [
+    "bess-power-market-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "e9bcfcc815dd",
    "date": "2026-10-07",
    "type": "skill",
    "agents": [
     "bess-qaqc-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e61be03b9c7c",
+   "date": "2026-10-07",
+   "type": "skill",
+   "agents": [
+    "bess-hse-manager"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e5378021d0d6",
+   "date": "2026-10-07",
+   "type": "skill",
+   "agents": [
+    "bess-standards-analyst"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",
@@ -3587,6 +3682,17 @@
    "type": "skill",
    "agents": [
     "bess-data-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d9cf5541b6b7",
+   "date": "2026-10-07",
+   "type": "skill",
+   "agents": [
+    "bess-grounding-engineer"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",
@@ -3631,131 +3737,11 @@
    "source": "구글뉴스"
   },
   {
-   "id": "cb1dd15977c1",
+   "id": "d45a370241be",
    "date": "2026-10-07",
    "type": "skill",
    "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "cafd712e5d81",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-cfd-analyst"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "c601a5a4de7f",
-   "date": "2026-10-07",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "美 ESS 팽창에 K-소재도 급선회⋯ ‘LFP 양극재’ 양산 타임라인 ‘확’ 당긴다",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kTE1LSzlkY3BJZlBTdVRoenZ5dlBveVotYU5MT19HTEh2WHVLZ0dnSU5aZnNxd2pFY3ZnZ0RfSHNoeTZXRXZYRkhkLW5Ud0NQTm1oeTRVZ29ZUQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "c5252475ceb1",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-transformer-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "c1066471afc4",
-   "date": "2026-10-07",
-   "type": "discussion",
-   "agents": [
-    "bess-financial-analysis",
-    "bess-grid-interconnection",
-    "bess-hydrogen-specialist",
-    "bess-knowledge-manager",
-    "bess-marketer",
-    "bess-pcs-expert",
-    "bess-power-system-analyst",
-    "bess-standards-analyst"
-   ],
-   "title": "팀 토론 — 특허 분석을 통한 차별화 기술 식별 및 라이선싱 전략 수립",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "ba3a66495c14",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-site-manager"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ba2f50359e6a",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-emerging-markets"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "b2f2fb2d61e9",
-   "date": "2026-10-07",
-   "type": "discussion",
-   "agents": [
-    "bess-cbop-engineer",
-    "bess-legal-expert",
-    "bess-power-market-expert",
-    "bess-procurement-expert",
-    "bess-project-manager",
-    "bess-standards-korea",
-    "bess-transformer-expert",
-    "bess-translator"
-   ],
-   "title": "팀 토론 — 부지조성 최적화 계획 수립으로 안정적 설치 환경 구축",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "a96484f4bc8f",
-   "date": "2026-10-07",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-financial-analysis",
-    "bess-pcs-expert",
-    "bess-power-market-expert",
-    "bess-power-system-analyst",
-    "bess-standards-analyst",
-    "bess-standards-australia",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 냉각 시스템 혁신 검증 및 고성능 인버터 기술 성능 데이터 확보",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "a7708ab36118",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-cybersecurity-expert"
+    "bess-emc-analyst"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",
