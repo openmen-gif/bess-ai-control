@@ -253,6 +253,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0d19102bcd37",
+   "name": "팀 토론 — 인도 신흥시장 그리드 프로젝트 참여 전략 수립 및 금융 조달",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0c504a0537b9",
    "name": "AMP-lify, 일본 후쿠이에 200MWh BESS 건설…ING 64.",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-456a38d5dd6b",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3880,6 +3880,46 @@
   {
    "source": "BAT-001",
    "target": "K-122312419112",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0d19102bcd37",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0d19102bcd37",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-0d19102bcd37",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0d19102bcd37",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-0d19102bcd37",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0d19102bcd37",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-0d19102bcd37",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-0d19102bcd37",
    "type": "knowledge"
   },
   {
@@ -8421,11 +8461,6 @@
    "source": "PMG-001",
    "target": "K-47888629a0b4",
    "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-456a38d5dd6b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8879,7 +8914,7 @@
    {
     "date": "2026-10-18",
     "knowledge": 400,
-    "events_total": 2932
+    "events_total": 2933
    }
   ]
  }
