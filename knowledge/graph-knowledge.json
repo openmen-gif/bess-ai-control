@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-8271b39cc81a",
+   "name": "팀 토론 — HYB-001: 태양광(PV), 풍력(Wind), 수소(H2",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-eecfd7b90f07",
    "name": "AI·재생e 확대에 전력시장 대전환기…\"전력망·보상체계 개편 시급\"",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0f3b3979d6e9",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
   {
    "source": "MKT-001",
    "target": "K-eecfd7b90f07",
@@ -8341,15 +8381,10 @@
    "source": "CAB-001",
    "target": "K-10afce8a5d04",
    "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-0f3b3979d6e9",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "history": [
    {
     "date": "2026-07-20",
@@ -8795,6 +8830,11 @@
     "date": "2026-10-17",
     "knowledge": 400,
     "events_total": 2901
+   },
+   {
+    "date": "2026-10-18",
+    "knowledge": 400,
+    "events_total": 2902
    }
   ]
  }

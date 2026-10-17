@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "events": [
+  {
+   "id": "8271b39cc81a",
+   "date": "2026-10-18",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-hybrid-specialist",
+    "bess-ip-patent-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-standards-romania"
+   ],
+   "title": "팀 토론 — HYB-001: 태양광(PV), 풍력(Wind), 수소(H2) 에너지 통합 시스템의 최적 설계 프레임워크 개발 및 시범 프로젝트 적용 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "eecfd7b90f07",
    "date": "2026-10-17",
@@ -3763,17 +3781,6 @@
    "type": "skill",
    "agents": [
     "bess-financial-analysis"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "e021b6ab37a3",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-knowledge-manager"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",
