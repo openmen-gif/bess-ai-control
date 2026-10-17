@@ -118,6 +118,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-b4d4ba9d214c",
+   "name": "팀 토론 — 시공 품질 보증 프로세스 최적화 및 현장 문제 해결 프로토콜",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ab9616c1c3e1",
    "name": "글레나름 배터리 저장장치 공사 착수, 주 정부 지원금 최대 966만 달러",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0d53377f547c",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3730,6 +3730,46 @@
   {
    "source": "SYS-001",
    "target": "K-b53e73c7f7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b4d4ba9d214c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-b4d4ba9d214c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b4d4ba9d214c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-b4d4ba9d214c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-b4d4ba9d214c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b4d4ba9d214c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-b4d4ba9d214c",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-b4d4ba9d214c",
    "type": "knowledge"
   },
   {
@@ -8306,11 +8346,6 @@
    "source": "SCH-001",
    "target": "K-0f3b3979d6e9",
    "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-0d53377f547c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8759,7 +8794,7 @@
    {
     "date": "2026-10-17",
     "knowledge": 400,
-    "events_total": 2900
+    "events_total": 2901
    }
   ]
  }
