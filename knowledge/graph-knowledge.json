@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-22843bdd38f0",
+   "name": "팀 토론 — 견적서 작성 시 IRA 혜택 최적화 방안 마련 및 주요 자재",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-eecfd7b90f07",
    "name": "AI·재생e 확대에 전력시장 대전환기…\"전력망·보상체계 개편 시급\"",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-12299ad07aba",
-   "name": "중국도 못 덤비는 고난도 인버터 기술로 시장 평정",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "STD-009",
    "target": "K-8271b39cc81a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-22843bdd38f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-22843bdd38f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-22843bdd38f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-22843bdd38f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-22843bdd38f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-22843bdd38f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-22843bdd38f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-22843bdd38f0",
    "type": "knowledge"
   },
   {
@@ -8411,11 +8451,6 @@
    "source": "MAR-001",
    "target": "K-145b63758ee2",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-12299ad07aba",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8869,7 +8904,7 @@
    {
     "date": "2026-10-18",
     "knowledge": 400,
-    "events_total": 2903
+    "events_total": 2904
    }
   ]
  }
