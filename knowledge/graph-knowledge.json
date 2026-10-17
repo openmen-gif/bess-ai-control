@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-985acf48142d",
+   "name": "팀 토론 — 장기적인 운영 효율성 향상을 위한 KPI 최적화 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8271b39cc81a",
    "name": "팀 토론 — HYB-001: 태양광(PV), 풍력(Wind), 수소(H2",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-10afce8a5d04",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-8271b39cc81a",
@@ -8376,11 +8416,6 @@
    "source": "PCS-001",
    "target": "K-12299ad07aba",
    "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-10afce8a5d04",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8834,7 +8869,7 @@
    {
     "date": "2026-10-18",
     "knowledge": 400,
-    "events_total": 2902
+    "events_total": 2903
    }
   ]
  }
