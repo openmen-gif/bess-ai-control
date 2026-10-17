@@ -282,6 +282,23 @@
    "source": "구글뉴스"
   },
   {
+   "id": "77a6abc79572",
+   "date": "2026-10-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-labor-safety",
+    "bess-legal-expert",
+    "bess-permit-english",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 국내/해외ESS 화재 기준과 UL 9540A 비교",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "71d026bf3381",
    "date": "2026-10-17",
    "type": "briefing",
@@ -3746,17 +3763,6 @@
    "title": "팀 토론 — ESG 기반 그린본드 발행 전략 수립 및 지속가능성 보고 강화",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "d68b92a97e5b",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-facility-manager"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
