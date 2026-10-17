@@ -328,6 +328,23 @@
    "source": "구글뉴스"
   },
   {
+   "id": "6c6e56327b1b",
+   "date": "2026-10-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-legal-expert",
+    "bess-permit-europe",
+    "bess-standards-analyst",
+    "bess-tax-incentive",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 인허가·전문가 영역 현황 진단 — bess-permit-europe 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "6b7a53730472",
    "date": "2026-10-17",
    "type": "briefing",
@@ -3750,17 +3767,6 @@
    "type": "skill",
    "agents": [
     "bess-data-analyst"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "d9cf5541b6b7",
-   "date": "2026-10-07",
-   "type": "skill",
-   "agents": [
-    "bess-grounding-engineer"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",

@@ -235,6 +235,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-6c6e56327b1b",
+   "name": "팀 토론 — 인허가·전문가 영역 현황 진단 — bess-permit-eu",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6b7a53730472",
    "name": "Waaree Energies, BESS·인버터 확대… PL Capital",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0bae8c52d0e2",
-   "name": "이철규 의원, ESS 중앙계약시장 낙찰가 첫 공개…영업이익률 최대 11.",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3930,6 +3930,41 @@
   {
    "source": "COM-003",
    "target": "K-71d026bf3381",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6c6e56327b1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6c6e56327b1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-6c6e56327b1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-6c6e56327b1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-6c6e56327b1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-6c6e56327b1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-6c6e56327b1b",
    "type": "knowledge"
   },
   {
@@ -8276,11 +8311,6 @@
    "source": "SYS-001",
    "target": "K-0d53377f547c",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-0bae8c52d0e2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8729,7 +8759,7 @@
    {
     "date": "2026-10-17",
     "knowledge": 400,
-    "events_total": 2899
+    "events_total": 2900
    }
   ]
  }
