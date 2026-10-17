@@ -140,6 +140,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "b53e73c7f7c6",
+   "date": "2026-10-17",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-legal-expert",
+    "bess-mlops-engineer",
+    "bess-network-engineer",
+    "bess-procurement-expert",
+    "bess-scheduler",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 네트워크 보안 강화 계획 수립: VLAN 간 통신 경로의 보안 장치 최적화 및 IEC62443 준수 프로토콜 적용 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ab9616c1c3e1",
    "date": "2026-10-17",
    "type": "briefing",
@@ -3747,22 +3765,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레일 보강 46건 반영 — MD 정본 + HTML·인덱스 파생본",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "d7c8547be648",
-   "date": "2026-10-07",
-   "type": "discussion",
-   "agents": [
-    "bess-data-analyst",
-    "bess-esg-finance",
-    "bess-knowledge-manager",
-    "bess-site-manager",
-    "bess-standards-korea",
-    "bess-tax-incentive"
-   ],
-   "title": "팀 토론 — ESG 기반 그린본드 발행 전략 수립 및 지속가능성 보고 강화",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

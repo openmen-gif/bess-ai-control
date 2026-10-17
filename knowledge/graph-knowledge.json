@@ -109,6 +109,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b53e73c7f7c6",
+   "name": "팀 토론 — 네트워크 보안 강화 계획 수립: VLAN 간 통신 경로의 보",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-17",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-ab9616c1c3e1",
    "name": "글레나름 배터리 저장장치 공사 착수, 주 정부 지원금 최대 966만 달러",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0606d1784603",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3690,6 +3690,46 @@
   {
    "source": "BAT-001",
    "target": "K-bbdbf0fdc7d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-b53e73c7f7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-b53e73c7f7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-b53e73c7f7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-b53e73c7f7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b53e73c7f7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-b53e73c7f7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b53e73c7f7c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b53e73c7f7c6",
    "type": "knowledge"
   },
   {
@@ -8241,11 +8281,6 @@
    "source": "STD-001",
    "target": "K-0bae8c52d0e2",
    "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-0606d1784603",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8694,7 +8729,7 @@
    {
     "date": "2026-10-17",
     "knowledge": 400,
-    "events_total": 2898
+    "events_total": 2899
    }
   ]
  }
