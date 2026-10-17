@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-892b27d504f8",
+   "name": "팀 토론 — 화재 안전 인증 및 테스트 기준의 구체적 적용 사례 분석을 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8271b39cc81a",
    "name": "팀 토론 — HYB-001: 태양광(PV), 풍력(Wind), 수소(H2",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-145b63758ee2",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "STD-001",
    "target": "K-985acf48142d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-892b27d504f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-892b27d504f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-892b27d504f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-892b27d504f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-892b27d504f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-892b27d504f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-892b27d504f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-892b27d504f8",
    "type": "knowledge"
   },
   {
@@ -8446,11 +8486,6 @@
    "source": "COM-003",
    "target": "K-1d0ca3d36d15",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-145b63758ee2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8904,7 +8939,7 @@
    {
     "date": "2026-10-18",
     "knowledge": 400,
-    "events_total": 2904
+    "events_total": 2905
    }
   ]
  }
