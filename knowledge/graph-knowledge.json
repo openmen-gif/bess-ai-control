@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e5553dcdfa5b",
+   "name": "팀 토론 — 전압강하 최적화 계획 수립을 통해 국내 전력망 통합 효율성 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-dfe325c3c746",
    "name": "옥상 태양광과 BESS 결합, 베트남 에너지 안보 해법으로 주목",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-9a9dcd7c6549",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3645,6 +3645,46 @@
   {
    "source": "BAT-001",
    "target": "K-e58d8a8ead95",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e5553dcdfa5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e5553dcdfa5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e5553dcdfa5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-e5553dcdfa5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-e5553dcdfa5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-e5553dcdfa5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-e5553dcdfa5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-e5553dcdfa5b",
    "type": "knowledge"
   },
   {
@@ -8476,11 +8516,6 @@
    "source": "CON-001",
    "target": "K-9c03eca36455",
    "type": "knowledge"
-  },
-  {
-   "source": "MLO-001",
-   "target": "K-9a9dcd7c6549",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8939,7 +8974,7 @@
    {
     "date": "2026-10-19",
     "knowledge": 400,
-    "events_total": 2969
+    "events_total": 2970
    }
   ]
  }
