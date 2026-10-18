@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "events": [
+  {
+   "id": "21a21dd360b9",
+   "date": "2026-10-19",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-procurement-expert",
+    "bess-scheduler",
+    "bess-standards-analyst",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 리스크히트맵 구축을 통해 잠재적 위험 요소와 대응 전략 상세히 분석 및 문서화 진행.",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fa9c89767989",
    "date": "2026-10-18",
@@ -3753,17 +3771,6 @@
    ],
    "title": "덴마크, 육상풍력 터빈에 ESS 직접 연결…재생E 간헐성 대응",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA4SS00YTZYQlg2T0V2ejF5eUFmV2NrUHMyM25MT1VuNkd5dFo3UWJ5ZnFaVHRWc194TE1PMWowV1BuY0N4dmZaRTJnSThMMTllN19DYzFfeWJlSnFLdVpjLXhWbjE4Z2lXMlBxZjdPV2lWbUp20gF0QVVfeXFMUDhJLTRhNlhCWDZPRXZ6MXl5QWZXY2tQczIzbkxPVW42R3l0WjdRYnlmcVpUdFZzX3hMTU8xajBXUG5jQ3h2ZlpFMmdJOEwxOWU3X0NjMV95YmVKcUt1WmMteFZuMThnaVcyUHFmN09XaVZtSnY?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "c94e89a49698",
-   "date": "2026-10-08",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "중 독점 LFP에 균열…미 ESS 타고 K배터리 소재사 ‘공급망’ 부상",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9YaXJmcHh0Y1lILUFLd0N1RGJXbWdSeVM0bUk0TW9CQ0h2SG9PZzBEWWVqdk5NTWFpQ1VDODMyS0ZVcGtsVmZEa3BwM0RCejV1UTctTnU4ZTByMEFaNGR6cw?oc=5",
    "source": "구글뉴스"
   }
  ]

@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-21a21dd360b9",
+   "name": "팀 토론 — 리스크히트맵 구축을 통해 잠재적 위험 요소와 대응 전략 상세",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa9c89767989",
    "name": "BESS 금융 적격성은 financial close 훨씬 이전에 시작된다",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-481bc99d5643",
-   "name": "'1등' LG엔솔, 배터리 전쟁 '후반전' 예고…\"하드웨어→소프트웨어\" ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-21a21dd360b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-21a21dd360b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-21a21dd360b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-21a21dd360b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-21a21dd360b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-21a21dd360b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-21a21dd360b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-21a21dd360b9",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-fa9c89767989",
@@ -8486,15 +8526,10 @@
    "source": "BAT-001",
    "target": "K-4c09c414843d",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-481bc99d5643",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "history": [
    {
     "date": "2026-07-20",
@@ -8945,6 +8980,11 @@
     "date": "2026-10-18",
     "knowledge": 400,
     "events_total": 2934
+   },
+   {
+    "date": "2026-10-19",
+    "knowledge": 400,
+    "events_total": 2935
    }
   ]
  }

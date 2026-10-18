@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "totals": {
-  "all": 2934,
+  "all": 2935,
   "briefing": 1388,
   "skill": 824,
-  "discussion": 722,
+  "discussion": 723,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 797,
+   "count": 798,
    "byType": {
     "skill": 14,
-    "discussion": 365,
+    "discussion": 366,
     "briefing": 418
    },
-   "lastGrown": "2026-10-18",
-   "xp": 1190,
+   "lastGrown": "2026-10-19",
+   "xp": 1192,
    "level": 20
   },
   "bess-business-dev": {
@@ -111,13 +111,13 @@
    "level": 7
   },
   "bess-cost-analyst": {
-   "count": 299,
+   "count": 300,
    "byType": {
     "skill": 14,
-    "discussion": 285
+    "discussion": 286
    },
-   "lastGrown": "2026-10-18",
-   "xp": 612,
+   "lastGrown": "2026-10-19",
+   "xp": 614,
    "level": 15
   },
   "bess-customs-tariff": {
@@ -232,14 +232,14 @@
    "level": 12
   },
   "bess-fire-engineer": {
-   "count": 314,
+   "count": 315,
    "byType": {
     "skill": 13,
-    "discussion": 211,
+    "discussion": 212,
     "briefing": 90
    },
-   "lastGrown": "2026-10-18",
-   "xp": 551,
+   "lastGrown": "2026-10-19",
+   "xp": 553,
    "level": 14
   },
   "bess-fit-procedure": {
@@ -284,13 +284,13 @@
    "level": 5
   },
   "bess-hse-manager": {
-   "count": 165,
+   "count": 166,
    "byType": {
     "skill": 13,
-    "discussion": 152
+    "discussion": 153
    },
-   "lastGrown": "2026-10-18",
-   "xp": 343,
+   "lastGrown": "2026-10-19",
+   "xp": 345,
    "level": 11
   },
   "bess-hybrid-specialist": {
@@ -538,13 +538,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 234,
+   "count": 235,
    "byType": {
     "skill": 13,
-    "discussion": 221
+    "discussion": 222
    },
-   "lastGrown": "2026-10-18",
-   "xp": 481,
+   "lastGrown": "2026-10-19",
+   "xp": 483,
    "level": 13
   },
   "bess-project-manager": {
@@ -588,13 +588,13 @@
    "level": 5
   },
   "bess-scheduler": {
-   "count": 50,
+   "count": 51,
    "byType": {
     "skill": 9,
-    "discussion": 41
+    "discussion": 42
    },
-   "lastGrown": "2026-10-17",
-   "xp": 109,
+   "lastGrown": "2026-10-19",
+   "xp": 111,
    "level": 7
   },
   "bess-security-expert": {
@@ -618,14 +618,14 @@
    "level": 7
   },
   "bess-standards-analyst": {
-   "count": 370,
+   "count": 371,
    "byType": {
     "skill": 12,
-    "discussion": 110,
+    "discussion": 111,
     "briefing": 248
    },
-   "lastGrown": "2026-10-18",
-   "xp": 504,
+   "lastGrown": "2026-10-19",
+   "xp": 506,
    "level": 13
   },
   "bess-standards-australia": {
@@ -770,13 +770,13 @@
    "level": 7
   },
   "bess-tax-japan": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 10,
-    "discussion": 37
+    "discussion": 38
    },
-   "lastGrown": "2026-10-17",
-   "xp": 104,
+   "lastGrown": "2026-10-19",
+   "xp": 106,
    "level": 6
   },
   "bess-tax-korea": {
@@ -842,10 +842,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-07-21",
-   "added": 29
-  },
   {
    "date": "2026-07-22",
    "added": 95
@@ -1201,17 +1197,21 @@
   {
    "date": "2026-10-18",
    "added": 33
+  },
+  {
+   "date": "2026-10-19",
+   "added": 1
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-10-18",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-10-18",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }
