@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-55d3e2093f0e",
+   "name": "팀 토론 — 국내 배터리 3사의 LFP 양극재 국산화 추진 동향 분석 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-21a21dd360b9",
    "name": "팀 토론 — 리스크히트맵 구축을 통해 잠재적 위험 요소와 대응 전략 상세",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-50d127d8c00d",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3635,6 +3635,41 @@
   {
    "source": "TAX-002",
    "target": "K-8c998322f096",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-55d3e2093f0e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-55d3e2093f0e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-55d3e2093f0e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-55d3e2093f0e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-55d3e2093f0e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-55d3e2093f0e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-55d3e2093f0e",
    "type": "knowledge"
   },
   {
@@ -8551,11 +8586,6 @@
    "source": "CBP-001",
    "target": "K-5126043a2384",
    "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-50d127d8c00d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9014,7 +9044,7 @@
    {
     "date": "2026-10-19",
     "knowledge": 400,
-    "events_total": 2936
+    "events_total": 2937
    }
   ]
  }
