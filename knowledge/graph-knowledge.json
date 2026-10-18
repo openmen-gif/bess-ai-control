@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-8c998322f096",
+   "name": "팀 토론 — EMC 노이즈 저감을 위한 최신 필터 설계 가이드라인 검토 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-21a21dd360b9",
    "name": "팀 토론 — 리스크히트맵 구축을 통해 잠재적 위험 요소와 대응 전략 상세",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,44 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4c09c414843d",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-8c998322f096",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8c998322f096",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-8c998322f096",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8c998322f096",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8c998322f096",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-8c998322f096",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-8c998322f096",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-21a21dd360b9",
@@ -8521,11 +8556,6 @@
    "source": "PWR-001",
    "target": "K-50d127d8c00d",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-4c09c414843d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8984,7 +9014,7 @@
    {
     "date": "2026-10-19",
     "knowledge": 400,
-    "events_total": 2935
+    "events_total": 2936
    }
   ]
  }
