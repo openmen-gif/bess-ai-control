@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-18",
  "totals": {
-  "all": 2933,
+  "all": 2934,
   "briefing": 1388,
   "skill": 824,
-  "discussion": 721,
+  "discussion": 722,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 796,
+   "count": 797,
    "byType": {
     "skill": 14,
-    "discussion": 364,
+    "discussion": 365,
     "briefing": 418
    },
    "lastGrown": "2026-10-18",
-   "xp": 1188,
+   "xp": 1190,
    "level": 20
   },
   "bess-business-dev": {
@@ -111,13 +111,13 @@
    "level": 7
   },
   "bess-cost-analyst": {
-   "count": 298,
+   "count": 299,
    "byType": {
     "skill": 14,
-    "discussion": 284
+    "discussion": 285
    },
    "lastGrown": "2026-10-18",
-   "xp": 610,
+   "xp": 612,
    "level": 15
   },
   "bess-customs-tariff": {
@@ -232,14 +232,14 @@
    "level": 12
   },
   "bess-fire-engineer": {
-   "count": 313,
+   "count": 314,
    "byType": {
     "skill": 13,
-    "discussion": 210,
+    "discussion": 211,
     "briefing": 90
    },
    "lastGrown": "2026-10-18",
-   "xp": 549,
+   "xp": 551,
    "level": 14
   },
   "bess-fit-procedure": {
@@ -264,13 +264,13 @@
    "level": 9
   },
   "bess-grounding-engineer": {
-   "count": 68,
+   "count": 69,
    "byType": {
     "skill": 12,
-    "discussion": 56
+    "discussion": 57
    },
-   "lastGrown": "2026-10-14",
-   "xp": 148,
+   "lastGrown": "2026-10-18",
+   "xp": 150,
    "level": 8
   },
   "bess-hr-manager": {
@@ -284,13 +284,13 @@
    "level": 5
   },
   "bess-hse-manager": {
-   "count": 164,
+   "count": 165,
    "byType": {
     "skill": 13,
-    "discussion": 151
+    "discussion": 152
    },
-   "lastGrown": "2026-10-17",
-   "xp": 341,
+   "lastGrown": "2026-10-18",
+   "xp": 343,
    "level": 11
   },
   "bess-hybrid-specialist": {
@@ -538,13 +538,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 233,
+   "count": 234,
    "byType": {
     "skill": 13,
-    "discussion": 220
+    "discussion": 221
    },
    "lastGrown": "2026-10-18",
-   "xp": 479,
+   "xp": 481,
    "level": 13
   },
   "bess-project-manager": {
@@ -780,13 +780,13 @@
    "level": 6
   },
   "bess-tax-korea": {
-   "count": 158,
+   "count": 159,
    "byType": {
     "skill": 13,
-    "discussion": 145
+    "discussion": 146
    },
    "lastGrown": "2026-10-18",
-   "xp": 329,
+   "xp": 331,
    "level": 11
   },
   "bess-tool-developer": {
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-18",
-   "added": 32
+   "added": 33
   }
  ],
  "freshness": {

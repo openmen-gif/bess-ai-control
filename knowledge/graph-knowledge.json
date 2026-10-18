@@ -109,6 +109,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a4fda2e1db33",
+   "name": "팀 토론 — 벤더 감사 프로세스 개선을 통한 품질 보증 수준 향상 및 H",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a4e654e78a67",
    "name": "HIZENERGY, 유럽 전시회서 C&I BESS 솔루션 공개",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-47888629a0b4",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3660,6 +3660,41 @@
   {
    "source": "BAT-001",
    "target": "K-ac6e3f5d0a51",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a4fda2e1db33",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a4fda2e1db33",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a4fda2e1db33",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-a4fda2e1db33",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a4fda2e1db33",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a4fda2e1db33",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-a4fda2e1db33",
    "type": "knowledge"
   },
   {
@@ -8456,11 +8491,6 @@
    "source": "BAT-001",
    "target": "K-481bc99d5643",
    "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-47888629a0b4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8914,7 +8944,7 @@
    {
     "date": "2026-10-18",
     "knowledge": 400,
-    "events_total": 2933
+    "events_total": 2934
    }
   ]
  }
