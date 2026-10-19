@@ -208,6 +208,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-79810c3fa951",
+   "name": "팀 토론 — 미국 BESS EPC 표준 심층 분석 및 인허가 요건 가이드",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7937d483c7be",
    "name": "AI와 파형 센서가 바꾸는 전력망 모니터링: PMU에서 PoW 센싱으로",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-a498dc7e79cb",
-   "name": "노매드 파워 솔루션스, 이동식 배터리 ESS 전국 시연 투어 개최",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3840,6 +3840,46 @@
   {
    "source": "FIR-001",
    "target": "K-7b1805953175",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-79810c3fa951",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-79810c3fa951",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-79810c3fa951",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-79810c3fa951",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-79810c3fa951",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-79810c3fa951",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-79810c3fa951",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-79810c3fa951",
    "type": "knowledge"
   },
   {
@@ -8581,11 +8621,6 @@
    "source": "CST-001",
    "target": "K-a4b5f56f8c29",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-a498dc7e79cb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9044,7 +9079,7 @@
    {
     "date": "2026-10-19",
     "knowledge": 400,
-    "events_total": 2972
+    "events_total": 2973
    }
   ]
  }
