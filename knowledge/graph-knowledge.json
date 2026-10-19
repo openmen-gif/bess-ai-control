@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-a00e68982721",
+   "name": "팀 토론 — 간섭 규제 심사 프로세스 개선 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-94f248b93c07",
    "name": "팀 토론 — 조직문화 개선을 위한 역량 강화 프로그램 개발 및 실행 계획",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b1708cea3e8b",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-a00e68982721",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-a00e68982721",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a00e68982721",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a00e68982721",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a00e68982721",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-a00e68982721",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-a00e68982721",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a00e68982721",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-94f248b93c07",
@@ -8756,11 +8796,6 @@
    "source": "TRL-001",
    "target": "K-b2f2fb2d61e9",
    "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-b1708cea3e8b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9224,7 +9259,7 @@
    {
     "date": "2026-10-20",
     "knowledge": 400,
-    "events_total": 2979
+    "events_total": 2980
    }
   ]
  }

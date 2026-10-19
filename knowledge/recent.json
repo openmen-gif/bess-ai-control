@@ -2,6 +2,24 @@
  "updated": "2026-10-20",
  "events": [
   {
+   "id": "a00e68982721",
+   "date": "2026-10-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cfd-analyst",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-marketer",
+    "bess-precom-report",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 간섭 규제 심사 프로세스 개선 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "94f248b93c07",
    "date": "2026-10-20",
    "type": "discussion",
@@ -3773,17 +3791,6 @@
    "title": "팀 토론 — 냉각 시스템과 EMI 관리 구현 방안 심층 분석 및 프로젝트 설계 최적화",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "12802d6c5780",
-   "date": "2026-10-11",
-   "type": "briefing",
-   "agents": [
-    "bess-transformer-expert"
-   ],
-   "title": "산일전기, 미국 BESS 시장 공략…350억 변압기 공급",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jM0JRYk1BSkVEdVAwX05LcERDMmRtX0RfODEwSTY1RGEwZ0tZc3BVVUJDbU96NXc1SFk3QlI1TWZ2WDdHSjJ5UzJNYnRZaVhvUFlPWXNZdEpIRGJjY0h6QnFqTFJCQzjSAWdBVV95cUxOYzNCUWJNQUpFRHVQMF9OS3BEQzJkbV9EXzgxMEk2NURhMGdLWXNwVVVCQ21PejV3NUhZN0JSNU1mdlg3R0oyeVMyTWJ0WWlYb1BZT1lzWXRKSERiY2NIekJxakxSQkM4?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
