@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-19",
  "totals": {
-  "all": 2974,
+  "all": 2975,
   "briefing": 1419,
   "skill": 824,
-  "discussion": 731,
+  "discussion": 732,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 816,
+   "count": 817,
    "byType": {
     "skill": 14,
-    "discussion": 374,
+    "discussion": 375,
     "briefing": 428
    },
    "lastGrown": "2026-10-19",
-   "xp": 1218,
+   "xp": 1220,
    "level": 21
   },
   "bess-business-dev": {
@@ -111,13 +111,13 @@
    "level": 7
   },
   "bess-cost-analyst": {
-   "count": 308,
+   "count": 309,
    "byType": {
     "skill": 14,
-    "discussion": 294
+    "discussion": 295
    },
    "lastGrown": "2026-10-19",
-   "xp": 630,
+   "xp": 632,
    "level": 15
   },
   "bess-customs-tariff": {
@@ -182,13 +182,13 @@
    "level": 7
   },
   "bess-env-engineer": {
-   "count": 88,
+   "count": 89,
    "byType": {
     "skill": 12,
-    "discussion": 76
+    "discussion": 77
    },
-   "lastGrown": "2026-10-12",
-   "xp": 188,
+   "lastGrown": "2026-10-19",
+   "xp": 190,
    "level": 8
   },
   "bess-epc-bom": {
@@ -232,14 +232,14 @@
    "level": 12
   },
   "bess-fire-engineer": {
-   "count": 325,
+   "count": 326,
    "byType": {
     "skill": 13,
-    "discussion": 219,
+    "discussion": 220,
     "briefing": 93
    },
    "lastGrown": "2026-10-19",
-   "xp": 570,
+   "xp": 572,
    "level": 14
   },
   "bess-fit-procedure": {
@@ -354,13 +354,13 @@
    "level": 6
   },
   "bess-knowledge-manager": {
-   "count": 43,
+   "count": 44,
    "byType": {
     "skill": 11,
-    "discussion": 32
+    "discussion": 33
    },
-   "lastGrown": "2026-10-17",
-   "xp": 97,
+   "lastGrown": "2026-10-19",
+   "xp": 99,
    "level": 6
   },
   "bess-labor-safety": {
@@ -538,13 +538,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 242,
+   "count": 243,
    "byType": {
     "skill": 13,
-    "discussion": 229
+    "discussion": 230
    },
    "lastGrown": "2026-10-19",
-   "xp": 497,
+   "xp": 499,
    "level": 13
   },
   "bess-project-manager": {
@@ -709,13 +709,13 @@
    "level": 6
   },
   "bess-structural-analyst": {
-   "count": 75,
+   "count": 76,
    "byType": {
     "skill": 12,
-    "discussion": 63
+    "discussion": 64
    },
    "lastGrown": "2026-10-19",
-   "xp": 162,
+   "xp": 164,
    "level": 8
   },
   "bess-substation-engineer": {
@@ -820,14 +820,14 @@
    "level": 5
   },
   "bess-transformer-expert": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 12,
-    "discussion": 54,
+    "discussion": 55,
     "briefing": 7
    },
    "lastGrown": "2026-10-19",
-   "xp": 151,
+   "xp": 153,
    "level": 8
   },
   "bess-translator": {
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-19",
-   "added": 40
+   "added": 41
   }
  ],
  "freshness": {
