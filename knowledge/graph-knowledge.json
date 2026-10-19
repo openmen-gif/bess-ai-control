@@ -370,6 +370,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0150fe4ffd3b",
+   "name": "팀 토론 — 환경 모니터링 시스템 구축 계획 수립으로 프로젝트 지속 가능",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa9c89767989",
    "name": "BESS 금융 적격성은 financial close 훨씬 이전에 시작된다",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-a6357a80d344",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -4135,6 +4135,46 @@
   {
    "source": "BAT-001",
    "target": "K-05c46eb365fc",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0150fe4ffd3b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0150fe4ffd3b",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-0150fe4ffd3b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0150fe4ffd3b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0150fe4ffd3b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-0150fe4ffd3b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-0150fe4ffd3b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0150fe4ffd3b",
    "type": "knowledge"
   },
   {
@@ -8651,11 +8691,6 @@
    "source": "CYB-001",
    "target": "K-a7708ab36118",
    "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-a6357a80d344",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9114,7 +9149,7 @@
    {
     "date": "2026-10-19",
     "knowledge": 400,
-    "events_total": 2975
+    "events_total": 2976
    }
   ]
  }
