@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-f4239ecdca67",
+   "name": "팀 토론 — 예측모델·최적화 영역 초안 작성 — bess-aiml-eng",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a00e68982721",
    "name": "팀 토론 — 간섭 규제 심사 프로세스 개선 계획 수립",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-b2f2fb2d61e9",
-   "name": "팀 토론 — 부지조성 최적화 계획 수립으로 안정적 설치 환경 구축",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "AIM-001",
+   "target": "K-f4239ecdca67",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f4239ecdca67",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-f4239ecdca67",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f4239ecdca67",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f4239ecdca67",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-f4239ecdca67",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-f4239ecdca67",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-f4239ecdca67",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-a00e68982721",
@@ -8756,46 +8796,6 @@
    "source": "FAC-001",
    "target": "K-b4b5696ddaf2",
    "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-b2f2fb2d61e9",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-b2f2fb2d61e9",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-b2f2fb2d61e9",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-b2f2fb2d61e9",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-b2f2fb2d61e9",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-b2f2fb2d61e9",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-b2f2fb2d61e9",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRL-001",
-   "target": "K-b2f2fb2d61e9",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9259,7 +9259,7 @@
    {
     "date": "2026-10-20",
     "knowledge": 400,
-    "events_total": 2980
+    "events_total": 2981
    }
   ]
  }

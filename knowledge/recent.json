@@ -2,6 +2,24 @@
  "updated": "2026-10-20",
  "events": [
   {
+   "id": "f4239ecdca67",
+   "date": "2026-10-20",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-sales-manager"
+   ],
+   "title": "팀 토론 — 예측모델·최적화 영역 초안 작성 — bess-aiml-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "a00e68982721",
    "date": "2026-10-20",
    "type": "discussion",
@@ -3773,22 +3791,6 @@
     "bess-tax-incentive"
    ],
    "title": "팀 토론 — 냉각 시스템의 환경 친화성 및 EMI 필터 재활용 가능성에 대한 기술적 GAP 분석 및 개선 방안 제시",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "3d32cb255428",
-   "date": "2026-10-11",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-emc-analyst",
-    "bess-legal-expert",
-    "bess-standards-korea",
-    "bess-structural-analyst",
-    "bess-tax-incentive"
-   ],
-   "title": "팀 토론 — 냉각 시스템과 EMI 관리 구현 방안 심층 분석 및 프로젝트 설계 최적화",
    "link": "",
    "source": "bess-team"
   }
