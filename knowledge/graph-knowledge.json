@@ -217,6 +217,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6deec4722243",
+   "name": "팀 토론 — 케이블 최적 포설 계획 수립으로 전압강하 최소화 및 안전성 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6d3998e5b46e",
    "name": "뉴스코틀랜드 타운, BESS 관련 법 논의 위해 특별회의 소집",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a47d5654562e",
-   "name": "BW ESS와 단스케 코모디티스, 영국 200MW 규모 배터리 최적화 계",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3845,6 +3845,46 @@
   {
    "source": "PCS-001",
    "target": "K-7937d483c7be",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6deec4722243",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-6deec4722243",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6deec4722243",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-6deec4722243",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6deec4722243",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-6deec4722243",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-6deec4722243",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-6deec4722243",
    "type": "knowledge"
   },
   {
@@ -8546,11 +8586,6 @@
    "source": "BAT-001",
    "target": "K-a498dc7e79cb",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-a47d5654562e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9009,7 +9044,7 @@
    {
     "date": "2026-10-19",
     "knowledge": 400,
-    "events_total": 2971
+    "events_total": 2972
    }
   ]
  }

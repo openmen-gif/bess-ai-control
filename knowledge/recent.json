@@ -291,6 +291,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "6deec4722243",
+   "date": "2026-10-19",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-cost-analyst",
+    "bess-facility-manager",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-labor-safety",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 케이블 최적 포설 계획 수립으로 전압강하 최소화 및 안전성 확보",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "6d3998e5b46e",
    "date": "2026-10-19",
    "type": "briefing",
@@ -3731,24 +3749,6 @@
    "title": "게임 설명의 별표까지 읽어야 하는 이유, 불법 토토 신고",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeGVhZzJxTEdPWEVuaU1LaG01c1FTRzJZNy1vZUNGMlhjNjA0cDdIQmU5bmR4OU9MQXpiclVkZTZGWkFmVjFkV3JQMWpaV0pJOTNhUkZpZVhfaVBURnFhTHNPNkpsQl9zUGtEZFpkRlNmX1E5d2hEV1djX1hnTFBmbWxXSm10UU9q?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "9a07a06d776c",
-   "date": "2026-10-10",
-   "type": "discussion",
-   "agents": [
-    "bess-cfd-analyst",
-    "bess-cybersecurity-expert",
-    "bess-emc-analyst",
-    "bess-power-market-expert",
-    "bess-standards-analyst",
-    "bess-standards-korea",
-    "bess-standards-usa",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 냉각 시스템과 EMI 관리 구현 방안 구체화 및 현재 프로젝트 설계 적합성 평가",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
