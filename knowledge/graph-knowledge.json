@@ -379,6 +379,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-22c575cdb266",
+   "name": "팀 토론 — 지속가능연계대출(SLL) 활용 전략 수립으로 ESG 재무 성",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1f600778735a",
    "name": "팀 토론 — [쟁점 후속] 유럽 각국의 세부 화재 안전 법규 차이 분석 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-66daa65309d3",
-   "name": "이철규 \"혈세로 정책 실패 수습?\"…'ESS 특혜 구조' 손봐야",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3940,6 +3940,46 @@
   {
    "source": "PRM-001",
    "target": "K-267d8fa651c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-22c575cdb266",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-22c575cdb266",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-22c575cdb266",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-22c575cdb266",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-22c575cdb266",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-22c575cdb266",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-22c575cdb266",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-22c575cdb266",
    "type": "knowledge"
   },
   {
@@ -8626,11 +8666,6 @@
    "source": "KTX-001",
    "target": "K-73e648a931a0",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-66daa65309d3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9094,7 +9129,7 @@
    {
     "date": "2026-10-20",
     "knowledge": 400,
-    "events_total": 3027
+    "events_total": 3028
    }
   ]
  }
