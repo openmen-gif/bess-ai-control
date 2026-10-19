@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "events": [
+  {
+   "id": "1f600778735a",
+   "date": "2026-10-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-cybersecurity-expert",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-standards-eu",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — [쟁점 후속] 유럽 각국의 세부 화재 안전 법규 차이 분석 및 통합 안전 모니터링 시스템 구축 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ff08dfa574d6",
    "date": "2026-10-19",
@@ -3766,17 +3784,6 @@
    "title": "팀 토론 — BESS·EPC 영역 벤치마킹 — bess-standards-japan 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "ea91fd605573",
-   "date": "2026-10-10",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "반도체 시들하자 2차전지 ETF 질주…이달 수익률 상위권 독차지",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9uQ2ltbGhNVl82WEhZZ0RkUjV2SmZFbGx3VUF5NUNqSklIeDdlb3FGS1BRNVYwUmVvLWc1VlVYRnB3bmxXOElDcUpOUXhUZjFER1JMS01KVW5xbF9zNGpV0gFfQVVfeXFMT25DaW1saE1WXzZYSFlnRGRSNXZKZkVsbHdVQXk1Q2pKSUh4N2VvcUZLUFE1VjBSZW8tZzVWVVhGcHdubFc4SUNxSk5ReFRmMURHUkxLTUpVbnFsX3M0alU?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
