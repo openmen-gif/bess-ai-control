@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-19",
  "totals": {
-  "all": 2973,
+  "all": 2974,
   "briefing": 1419,
   "skill": 824,
-  "discussion": 730,
+  "discussion": 731,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 815,
+   "count": 816,
    "byType": {
     "skill": 14,
-    "discussion": 373,
+    "discussion": 374,
     "briefing": 428
    },
    "lastGrown": "2026-10-19",
-   "xp": 1216,
+   "xp": 1218,
    "level": 21
   },
   "bess-business-dev": {
@@ -111,13 +111,13 @@
    "level": 7
   },
   "bess-cost-analyst": {
-   "count": 307,
+   "count": 308,
    "byType": {
     "skill": 14,
-    "discussion": 293
+    "discussion": 294
    },
    "lastGrown": "2026-10-19",
-   "xp": 628,
+   "xp": 630,
    "level": 15
   },
   "bess-customs-tariff": {
@@ -142,13 +142,13 @@
    "level": 10
   },
   "bess-data-analyst": {
-   "count": 112,
+   "count": 113,
    "byType": {
     "skill": 13,
-    "discussion": 99
+    "discussion": 100
    },
-   "lastGrown": "2026-10-18",
-   "xp": 237,
+   "lastGrown": "2026-10-19",
+   "xp": 239,
    "level": 9
   },
   "bess-ebop-engineer": {
@@ -232,14 +232,14 @@
    "level": 12
   },
   "bess-fire-engineer": {
-   "count": 324,
+   "count": 325,
    "byType": {
     "skill": 13,
-    "discussion": 218,
+    "discussion": 219,
     "briefing": 93
    },
    "lastGrown": "2026-10-19",
-   "xp": 568,
+   "xp": 570,
    "level": 14
   },
   "bess-fit-procedure": {
@@ -394,24 +394,24 @@
    "level": 6
   },
   "bess-marketer": {
-   "count": 460,
+   "count": 461,
    "byType": {
     "skill": 13,
-    "discussion": 89,
+    "discussion": 90,
     "briefing": 358
    },
    "lastGrown": "2026-10-19",
-   "xp": 575,
+   "xp": 577,
    "level": 14
   },
   "bess-mlops-engineer": {
-   "count": 82,
+   "count": 83,
    "byType": {
     "skill": 12,
-    "discussion": 70
+    "discussion": 71
    },
-   "lastGrown": "2026-10-17",
-   "xp": 176,
+   "lastGrown": "2026-10-19",
+   "xp": 178,
    "level": 8
   },
   "bess-network-engineer": {
@@ -456,14 +456,14 @@
    "level": 12
   },
   "bess-permit-asia": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 7,
-    "discussion": 26,
+    "discussion": 27,
     "briefing": 4
    },
-   "lastGrown": "2026-10-18",
-   "xp": 77,
+   "lastGrown": "2026-10-19",
+   "xp": 79,
    "level": 6
   },
   "bess-permit-english": {
@@ -538,13 +538,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 241,
+   "count": 242,
    "byType": {
     "skill": 13,
-    "discussion": 228
+    "discussion": 229
    },
    "lastGrown": "2026-10-19",
-   "xp": 495,
+   "xp": 497,
    "level": 13
   },
   "bess-project-manager": {
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-19",
-   "added": 39
+   "added": 40
   }
  ],
  "freshness": {
