@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-94f248b93c07",
+   "name": "팀 토론 — 조직문화 개선을 위한 역량 강화 프로그램 개발 및 실행 계획",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1f600778735a",
    "name": "팀 토론 — [쟁점 후속] 유럽 각국의 세부 화재 안전 법규 차이 분석 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-b07352625da7",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-94f248b93c07",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-94f248b93c07",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-94f248b93c07",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-94f248b93c07",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-94f248b93c07",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-94f248b93c07",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-94f248b93c07",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-94f248b93c07",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-1f600778735a",
@@ -8721,11 +8761,6 @@
    "source": "CUS-001",
    "target": "K-b1708cea3e8b",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-100",
-   "target": "K-b07352625da7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9189,7 +9224,7 @@
    {
     "date": "2026-10-20",
     "knowledge": 400,
-    "events_total": 2978
+    "events_total": 2979
    }
   ]
  }

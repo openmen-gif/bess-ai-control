@@ -2,6 +2,24 @@
  "updated": "2026-10-20",
  "events": [
   {
+   "id": "94f248b93c07",
+   "date": "2026-10-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hr-manager",
+    "bess-marketer",
+    "bess-scheduler",
+    "bess-security-expert",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — 조직문화 개선을 위한 역량 강화 프로그램 개발 및 실행 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "1f600778735a",
    "date": "2026-10-20",
    "type": "discussion",
@@ -3766,24 +3784,6 @@
    "title": "산일전기, 미국 BESS 시장 공략…350억 변압기 공급",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jM0JRYk1BSkVEdVAwX05LcERDMmRtX0RfODEwSTY1RGEwZ0tZc3BVVUJDbU96NXc1SFk3QlI1TWZ2WDdHSjJ5UzJNYnRZaVhvUFlPWXNZdEpIRGJjY0h6QnFqTFJCQzjSAWdBVV95cUxOYzNCUWJNQUpFRHVQMF9OS3BEQzJkbV9EXzgxMEk2NURhMGdLWXNwVVVCQ21PejV3NUhZN0JSNU1mdlg3R0oyeVMyTWJ0WWlYb1BZT1lzWXRKSERiY2NIekJxakxSQkM4?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "edca3f496707",
-   "date": "2026-10-10",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-ebop-engineer",
-    "bess-financial-analysis",
-    "bess-legal-expert",
-    "bess-standards-japan",
-    "bess-standards-korea",
-    "bess-standards-romania",
-    "bess-tax-incentive"
-   ],
-   "title": "팀 토론 — BESS·EPC 영역 벤치마킹 — bess-standards-japan 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
