@@ -415,6 +415,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0f2dc90b234e",
+   "name": "팀 토론 — 지식 공유 플랫폼 최적화 및 팀 학습 프로그램 구축",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0dce8a01645b",
    "name": "신한운용 'SOL 전고체배터리&실리콘음극재', 3개월 수익률 주식형 ET",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-73e648a931a0",
-   "name": "팀 토론 — 수소 연료전지 통합 시스템 설계로 그린 에너지 효율 극대화 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -4030,6 +4030,46 @@
   {
    "source": "PCS-001",
    "target": "K-1335dc506d48",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0f2dc90b234e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0f2dc90b234e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-0f2dc90b234e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-0f2dc90b234e",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-0f2dc90b234e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0f2dc90b234e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-0f2dc90b234e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-0f2dc90b234e",
    "type": "knowledge"
   },
   {
@@ -8626,46 +8666,6 @@
    "source": "PCS-001",
    "target": "K-75109b743c6f",
    "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-73e648a931a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-73e648a931a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYD-001",
-   "target": "K-73e648a931a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRM-003",
-   "target": "K-73e648a931a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-73e648a931a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-73e648a931a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-73e648a931a0",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-73e648a931a0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9129,7 +9129,7 @@
    {
     "date": "2026-10-20",
     "knowledge": 400,
-    "events_total": 3028
+    "events_total": 3029
    }
   ]
  }
