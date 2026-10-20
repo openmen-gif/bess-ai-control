@@ -314,6 +314,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "83ed1a74b7fb",
+   "date": "2026-10-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-circuit-breaker-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-marketer",
+    "bess-power-market-expert",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 현대건설의 호주 에너지 인프라 협력 확대 전략 분석 및 우리 사업의 현지 프로젝트 입찰 전략 최적화 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "82be100121d3",
    "date": "2026-10-20",
    "type": "briefing",
@@ -3700,22 +3718,6 @@
    "title": "게임 진행 중 설정을 바꿀 수 있나요? 파이썬 룰렛 만들기",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFQmtxU1IwcTRfWERVRFByNVZpZ1ZnR0ZZd3I1TWh6VE9SQmgzNjgyMFZpUURya2E4dFJMZ3hacTI4eTR2VzJHS3JwS3lTblZURllBaUV4cmUwVUhzX21WVE9WNkZXYWJaSHZLWDI4MXdYVktK?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "986b23b2a57f",
-   "date": "2026-10-13",
-   "type": "discussion",
-   "agents": [
-    "bess-cost-analyst",
-    "bess-cybersecurity-expert",
-    "bess-it-infra",
-    "bess-scheduler",
-    "bess-system-engineer",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 클라우드 기반 모니터링 시스템 강화로 인프라 안정성 및 보안 강화 방안 검토",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
