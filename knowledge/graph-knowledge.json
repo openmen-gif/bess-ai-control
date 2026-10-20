@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-f3e1d448aa9e",
+   "name": "팀 토론 — 호주 BESS 확장 프로젝트 금융 확보 동향 분석 및 우리 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-eb1f978e4767",
    "name": "BYD 에너지 스토리지, 글로벌 서비스망 확대…2027년 거점 추가",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-11",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-94b7ef75d5d6",
-   "name": "팀 토론 — 품질 보증 절차 자동화 도구 도입 검토 및 벤더 감사 프로세",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3610,6 +3610,46 @@
   {
    "source": "BAT-001",
    "target": "K-f80737ee0055",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f3e1d448aa9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-f3e1d448aa9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f3e1d448aa9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f3e1d448aa9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-f3e1d448aa9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-f3e1d448aa9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-f3e1d448aa9e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-f3e1d448aa9e",
    "type": "knowledge"
   },
   {
@@ -8361,46 +8401,6 @@
    "source": "BIZ-001",
    "target": "K-abdd9a6d9c46",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-100",
-   "target": "K-94b7ef75d5d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-94b7ef75d5d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-94b7ef75d5d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-94b7ef75d5d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-94b7ef75d5d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-94b7ef75d5d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-94b7ef75d5d6",
-   "type": "knowledge"
-  },
-  {
-   "source": "DEV-001",
-   "target": "K-94b7ef75d5d6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8869,7 +8869,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3082
+    "events_total": 3083
    }
   ]
  }
