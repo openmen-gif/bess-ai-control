@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-8aa647096e6d",
+   "name": "팀 토론 — 명령: `bess-pcs-expert` 팀을 구성하여 최신 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ffd76b72fc9a",
    "name": "배터리 저장장치, 균형시장 진입…Ignitis·emsys VPP 파트너십",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-aea363b1f5e8",
-   "name": "팀 토론 — 내부 통제 시스템 강화 및 원가 관리 효율성 검토 추진",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
   {
    "source": "COM-003",
    "target": "K-ffd76b72fc9a",
@@ -8691,50 +8731,10 @@
    "source": "BAT-001",
    "target": "K-c94e89a49698",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "history": [
    {
     "date": "2026-07-20",
@@ -9195,6 +9195,11 @@
     "date": "2026-10-20",
     "knowledge": 400,
     "events_total": 3033
+   },
+   {
+    "date": "2026-10-21",
+    "knowledge": 400,
+    "events_total": 3034
    }
   ]
  }

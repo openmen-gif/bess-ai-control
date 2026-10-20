@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "events": [
+  {
+   "id": "8aa647096e6d",
+   "date": "2026-10-21",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-mlops-engineer",
+    "bess-pcs-expert",
+    "bess-permit-english",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 명령: `bess-pcs-expert` 팀을 구성하여 최신 SiC 기반 IGBT 인버터 기술의 성능 향상 및 Grid-Forming 기능 최적화 방안 연구 진행.",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ffd76b72fc9a",
    "date": "2026-10-20",
@@ -3722,17 +3740,6 @@
    "title": "팀 토론 — 변압기 설계 최적화를 통한 보조전원 효율 향상 방안 검토",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "9f6841eff327",
-   "date": "2026-10-13",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "전기차 부진 메운 ESS…K배터리 실적 반등 ‘시동’",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9pR0hrRndialJjR2N1UmxuUEtyeXBhN3RJY1hvR2ZpSlBLZ3dneThwV1FRSG4tZ0w4MkdWQTMxZU42OVJLLTlfd0szV3QtckJ1NTdWQzZRcHlLNDh6VnRCWQ?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
