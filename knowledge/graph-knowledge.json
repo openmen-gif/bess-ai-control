@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-b558c25a5fe2",
+   "name": "팀 토론 — 배터리 공급망 안정성 및 공급업체 인증 강화 전략 수립 — ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8aa647096e6d",
    "name": "팀 토론 — 명령: `bess-pcs-expert` 팀을 구성하여 최신 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-e29c55b63dbc",
-   "name": "덴마크, 육상풍력 터빈에 ESS 직접 연결…재생E 간헐성 대응",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-8aa647096e6d",
@@ -8761,11 +8801,6 @@
    "source": "BAT-001",
    "target": "K-ea016f85b906",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-e29c55b63dbc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9234,7 +9269,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3035
+    "events_total": 3036
    }
   ]
  }
