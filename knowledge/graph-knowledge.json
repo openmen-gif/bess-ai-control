@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-08d64c55a8d7",
+   "name": "팀 토론 — 루마니아 BESS EPC 표준 심층 분석 및 현지 인허가 절",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ffd76b72fc9a",
    "name": "배터리 저장장치, 균형시장 진입…Ignitis·emsys VPP 파트너십",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c94e89a49698",
-   "name": "중 독점 LFP에 균열…미 ESS 타고 K배터리 소재사 ‘공급망’ 부상",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "SYS-001",
    "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-08d64c55a8d7",
    "type": "knowledge"
   },
   {
@@ -8726,11 +8766,6 @@
    "source": "BAT-001",
    "target": "K-e29c55b63dbc",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-c94e89a49698",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9199,7 +9234,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3034
+    "events_total": 3035
    }
   ]
  }
