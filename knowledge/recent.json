@@ -13,6 +13,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "fd018a9b5449",
+   "date": "2026-10-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-om-expert",
+    "bess-permit-europe",
+    "bess-procurement-expert",
+    "bess-standards-japan",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 비용 효율성 방안 구체화 — 초기 투자 비용과 장기 유지보수 비용 최적화 전략 수립 및 실행 계획 마련",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f6c3612b1632",
    "date": "2026-10-20",
    "type": "briefing",
@@ -495,6 +513,23 @@
    "title": "애리조나 피널 카운티, 500MW급 BESS 프로젝트 재차 부결",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZG1jd0l5SlQtS04wUVA5WEpMYTg3Q0RhbkxyNXlTSjFhUjJGU0NYX2RJZzVSVEE3emh4cmlKOThYOWstTERvblN4aFU2eGpOeUEyUkdsbmRfdzN3dWI5YjByakxKdjBoMzBvem1jb2Q5YmFnMS1lS20ySm04ajduYlY1SW9QQnY3TGlSYTlDalY1RTZObHlZV3RyYkh5NGZEWEVzcw?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "318950dbdd08",
+   "date": "2026-10-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-env-engineer",
+    "bess-fire-engineer",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-sales-manager"
+   ],
+   "title": "팀 토론 — ESS 화재 발샘시 소방수와 노백 등 화학 성분간의 화학 반응을 통한 토질, 지하수 오염 등 이슈에 대한 토론",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "267d8fa651c4",
@@ -3696,28 +3731,6 @@
    "title": "팀 토론 — BESS 운영자 안전 교육 프로그램 개발 및 SOP 업데이트 강화",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "9c13efe49300",
-   "date": "2026-10-13",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "한국투자증권 \"LG엔솔, ESS 판매량 확대로 전기차 매출 감소 상쇄\"",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5RU2dvcHpBZUFPR3ZFTjVtZFlnSEpmaXZSdVFxaEFpaU9KakhPbmFTSjlDYVl6cGc4cGhBa2ZmcUI2dk50RHZha29hLWI0Uzl4cDNHZUtOWXRXd09faThBd0s5TG1ZSXo1VGc?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "98e536d9910e",
-   "date": "2026-10-13",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "게임 진행 중 설정을 바꿀 수 있나요? 파이썬 룰렛 만들기",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFQmtxU1IwcTRfWERVRFByNVZpZ1ZnR0ZZd3I1TWh6VE9SQmgzNjgyMFZpUURya2E4dFJMZ3hacTI4eTR2VzJHS3JwS3lTblZURllBaUV4cmUwVUhzX21WVE9WNkZXYWJaSHZLWDI4MXdYVktK?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

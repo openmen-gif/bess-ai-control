@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-fd018a9b5449",
+   "name": "팀 토론 — 비용 효율성 방안 구체화 — 초기 투자 비용과 장기 유지보수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f6c3612b1632",
    "name": "국가별 에너지저장 목표, COP29 공약 대비 45% 미달",
    "group": "KNOWLEDGE",
@@ -374,6 +383,15 @@
    "name": "애리조나 피널 카운티, 500MW급 BESS 프로젝트 재차 부결",
    "group": "KNOWLEDGE",
    "type": "briefing",
+   "date": "2026-10-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "K-318950dbdd08",
+   "name": "팀 토론 — ESS 화재 발샘시 소방수와 노백 등 화학 성분간의 화학 반",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
    "date": "2026-10-20",
    "val": 3,
    "color": "#8B5CF6"
@@ -3581,30 +3599,52 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-89236d3f5c17",
-   "name": "팀 토론 — 변전소 통합 설계 최적화를 통한 KEPCO 시스템 효율성 향",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7a722a1f11fe",
-   "name": "“태양광·풍력·SMR·HVDC”…K-GX, 에너지산업 공급망까지 ‘대수술",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
   {
    "source": "COM-003",
    "target": "K-ffd76b72fc9a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-fd018a9b5449",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-fd018a9b5449",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-fd018a9b5449",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-fd018a9b5449",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-fd018a9b5449",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-fd018a9b5449",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-fd018a9b5449",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-fd018a9b5449",
    "type": "knowledge"
   },
   {
@@ -3975,6 +4015,41 @@
   {
    "source": "BAT-001",
    "target": "K-4306867a1a68",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-318950dbdd08",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-318950dbdd08",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-318950dbdd08",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-318950dbdd08",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-318950dbdd08",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-318950dbdd08",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-318950dbdd08",
    "type": "knowledge"
   },
   {
@@ -8656,51 +8731,6 @@
    "source": "TPS-001",
    "target": "K-96331f1c19e1",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-89236d3f5c17",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-89236d3f5c17",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-89236d3f5c17",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-89236d3f5c17",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-89236d3f5c17",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-89236d3f5c17",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-89236d3f5c17",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-89236d3f5c17",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-7a722a1f11fe",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9164,7 +9194,7 @@
    {
     "date": "2026-10-20",
     "knowledge": 400,
-    "events_total": 3030
+    "events_total": 3032
    }
   ]
  }
