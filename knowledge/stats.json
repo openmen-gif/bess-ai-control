@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-21",
  "totals": {
-  "all": 3036,
+  "all": 3037,
   "briefing": 1464,
   "skill": 824,
-  "discussion": 748,
+  "discussion": 749,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 843,
+   "count": 844,
    "byType": {
     "skill": 14,
-    "discussion": 391,
+    "discussion": 392,
     "briefing": 438
    },
    "lastGrown": "2026-10-21",
-   "xp": 1262,
+   "xp": 1264,
    "level": 21
   },
   "bess-business-dev": {
@@ -111,13 +111,13 @@
    "level": 7
   },
   "bess-cost-analyst": {
-   "count": 323,
+   "count": 324,
    "byType": {
     "skill": 14,
-    "discussion": 309
+    "discussion": 310
    },
    "lastGrown": "2026-10-21",
-   "xp": 660,
+   "xp": 662,
    "level": 15
   },
   "bess-customs-tariff": {
@@ -232,14 +232,14 @@
    "level": 12
   },
   "bess-fire-engineer": {
-   "count": 339,
+   "count": 340,
    "byType": {
     "skill": 13,
-    "discussion": 231,
+    "discussion": 232,
     "briefing": 95
    },
    "lastGrown": "2026-10-21",
-   "xp": 596,
+   "xp": 598,
    "level": 15
   },
   "bess-fit-procedure": {
@@ -394,14 +394,14 @@
    "level": 6
   },
   "bess-marketer": {
-   "count": 476,
+   "count": 477,
    "byType": {
     "skill": 13,
-    "discussion": 94,
+    "discussion": 95,
     "briefing": 369
    },
-   "lastGrown": "2026-10-20",
-   "xp": 596,
+   "lastGrown": "2026-10-21",
+   "xp": 598,
    "level": 15
   },
   "bess-mlops-engineer": {
@@ -435,13 +435,13 @@
    "level": 5
   },
   "bess-output-generator": {
-   "count": 43,
+   "count": 44,
    "byType": {
     "skill": 9,
-    "discussion": 34
+    "discussion": 35
    },
-   "lastGrown": "2026-10-16",
-   "xp": 95,
+   "lastGrown": "2026-10-21",
+   "xp": 97,
    "level": 6
   },
   "bess-pcs-expert": {
@@ -538,13 +538,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 255,
+   "count": 256,
    "byType": {
     "skill": 13,
-    "discussion": 242
+    "discussion": 243
    },
    "lastGrown": "2026-10-21",
-   "xp": 523,
+   "xp": 525,
    "level": 14
   },
   "bess-project-manager": {
@@ -659,13 +659,13 @@
    "level": 6
   },
   "bess-standards-korea": {
-   "count": 311,
+   "count": 312,
    "byType": {
     "skill": 13,
-    "discussion": 298
+    "discussion": 299
    },
    "lastGrown": "2026-10-21",
-   "xp": 635,
+   "xp": 637,
    "level": 15
   },
   "bess-standards-poland": {
@@ -689,13 +689,13 @@
    "level": 5
   },
   "bess-standards-uk": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 8,
-    "discussion": 21
+    "discussion": 22
    },
-   "lastGrown": "2026-10-13",
-   "xp": 66,
+   "lastGrown": "2026-10-21",
+   "xp": 68,
    "level": 5
   },
   "bess-standards-usa": {
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-21",
-   "added": 3
+   "added": 4
   }
  ],
  "freshness": {

@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-2215f85da746",
+   "name": "팀 토론 — BESS·EPC 영역 초안 작성 — bess-standard",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-08d64c55a8d7",
    "name": "팀 토론 — 루마니아 BESS EPC 표준 심층 분석 및 현지 인허가 절",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ea016f85b906",
-   "name": "[다시 뛰는 K-배터리]① 삼성SDI, 기술 투자 결실…ESS 넘어 AI",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3680,6 +3680,46 @@
   {
    "source": "SYS-001",
    "target": "K-8aa647096e6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2215f85da746",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2215f85da746",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-2215f85da746",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-2215f85da746",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-2215f85da746",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2215f85da746",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-2215f85da746",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-2215f85da746",
    "type": "knowledge"
   },
   {
@@ -8796,11 +8836,6 @@
    "source": "BAT-001",
    "target": "K-fd0493ebc8aa",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ea016f85b906",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9269,7 +9304,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3036
+    "events_total": 3037
    }
   ]
  }
