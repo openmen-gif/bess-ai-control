@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-20",
  "totals": {
-  "all": 3032,
+  "all": 3033,
   "briefing": 1464,
   "skill": 824,
-  "discussion": 744,
+  "discussion": 745,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 839,
+   "count": 840,
    "byType": {
     "skill": 14,
-    "discussion": 387,
+    "discussion": 388,
     "briefing": 438
    },
    "lastGrown": "2026-10-20",
-   "xp": 1254,
+   "xp": 1256,
    "level": 21
   },
   "bess-business-dev": {
@@ -81,13 +81,13 @@
    "level": 7
   },
   "bess-circuit-breaker-expert": {
-   "count": 83,
+   "count": 84,
    "byType": {
     "skill": 13,
-    "discussion": 70
+    "discussion": 71
    },
    "lastGrown": "2026-10-20",
-   "xp": 179,
+   "xp": 181,
    "level": 8
   },
   "bess-commissioning-coordinator": {
@@ -162,13 +162,13 @@
    "level": 7
   },
   "bess-emc-analyst": {
-   "count": 117,
+   "count": 118,
    "byType": {
     "skill": 12,
-    "discussion": 105
+    "discussion": 106
    },
-   "lastGrown": "2026-10-19",
-   "xp": 246,
+   "lastGrown": "2026-10-20",
+   "xp": 248,
    "level": 10
   },
   "bess-emerging-markets": {
@@ -232,14 +232,14 @@
    "level": 12
   },
   "bess-fire-engineer": {
-   "count": 337,
+   "count": 338,
    "byType": {
     "skill": 13,
-    "discussion": 229,
+    "discussion": 230,
     "briefing": 95
    },
    "lastGrown": "2026-10-20",
-   "xp": 592,
+   "xp": 594,
    "level": 15
   },
   "bess-fit-procedure": {
@@ -538,13 +538,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 252,
+   "count": 253,
    "byType": {
     "skill": 13,
-    "discussion": 239
+    "discussion": 240
    },
    "lastGrown": "2026-10-20",
-   "xp": 517,
+   "xp": 519,
    "level": 14
   },
   "bess-project-manager": {
@@ -629,13 +629,13 @@
    "level": 14
   },
   "bess-standards-australia": {
-   "count": 23,
+   "count": 24,
    "byType": {
     "skill": 7,
-    "discussion": 16
+    "discussion": 17
    },
-   "lastGrown": "2026-10-14",
-   "xp": 53,
+   "lastGrown": "2026-10-20",
+   "xp": 55,
    "level": 5
   },
   "bess-standards-eu": {
@@ -659,13 +659,13 @@
    "level": 6
   },
   "bess-standards-korea": {
-   "count": 309,
+   "count": 310,
    "byType": {
     "skill": 13,
-    "discussion": 296
+    "discussion": 297
    },
-   "lastGrown": "2026-10-19",
-   "xp": 631,
+   "lastGrown": "2026-10-20",
+   "xp": 633,
    "level": 15
   },
   "bess-standards-poland": {
@@ -831,13 +831,13 @@
    "level": 8
   },
   "bess-translator": {
-   "count": 28,
+   "count": 29,
    "byType": {
     "skill": 7,
-    "discussion": 21
+    "discussion": 22
    },
-   "lastGrown": "2026-10-19",
-   "xp": 63,
+   "lastGrown": "2026-10-20",
+   "xp": 65,
    "level": 5
   }
  },
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-20",
-   "added": 55
+   "added": 56
   }
  ],
  "freshness": {
