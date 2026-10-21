@@ -442,6 +442,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-22b8e4bde00e",
+   "name": "팀 토론 — BESS 사업에 일본의 세제 혜택 및 규제 동향 분석을 통한",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2215f85da746",
    "name": "팀 토론 — BESS·EPC 영역 초안 작성 — bess-standard",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-ca17f127fd77",
-   "name": "삼성SDI 전고체 배터리 9분 충전 양산 가속",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -4055,6 +4055,46 @@
   {
    "source": "BAT-001",
    "target": "K-24034aa1ff93",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-22b8e4bde00e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-22b8e4bde00e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-22b8e4bde00e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-22b8e4bde00e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-22b8e4bde00e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-22b8e4bde00e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-22b8e4bde00e",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-22b8e4bde00e",
    "type": "knowledge"
   },
   {
@@ -8536,11 +8576,6 @@
    "source": "MAR-001",
    "target": "K-fa806ca3c012",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-ca17f127fd77",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9009,7 +9044,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3087
+    "events_total": 3088
    }
   ]
  }
