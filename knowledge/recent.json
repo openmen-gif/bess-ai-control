@@ -221,6 +221,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "a265f3cd2c43",
+   "date": "2026-10-21",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-procurement-expert",
+    "bess-project-manager",
+    "bess-substation-engineer",
+    "bess-system-engineer",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — BESS 시스템 시뮬레이션 툴 개발로 효율적인 성능 검증 및 최적화 구현",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "9dfe9c555ad3",
    "date": "2026-10-21",
    "type": "briefing",
@@ -3659,22 +3677,6 @@
    "title": "배터리 제조사만 ESS?..전력기기·태양광·자원순환도 가세 - 머니투데이",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBsVnk3eWRnYWJRV0ZTWGJ0X3cxNUxMaldpZnNfeUdoOE5NcXRZbk1HM1k4VTJmZDNGdloxSVFCblBQdG9nU3kySVkxeG5RcmZ5Q0RveC14Snczc183LUd5Z18yNTlxNjVJVmp2OFcxd0t5UdIBckFVX3lxTFBsVnk3eWRnYWJRV0ZTWGJ0X3cxNUxMaldpZnNfeUdoOE5NcXRZbk1HM1k4VTJmZDNGdloxSVFCblBQdG9nU3kySVkxeG5RcmZ5Q0RveC14Snczc183LUd5Z18yNTlxNjVJVmp2OFcxd0t5UQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "b6de74aeb4c1",
-   "date": "2026-10-15",
-   "type": "discussion",
-   "agents": [
-    "bess-commissioning-coordinator",
-    "bess-hse-manager",
-    "bess-pcs-expert",
-    "bess-risk-manager",
-    "bess-site-manager",
-    "bess-training-expert"
-   ],
-   "title": "팀 토론 — HSE 사고 예방 프로그램 개발 및 실시 계획 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
