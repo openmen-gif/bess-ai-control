@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-c5f916c0baae",
+   "name": "팀 토론 — 전사 문서 표준화 프로세스 확립 및 A4/PDF 포맷으로 통",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f839e7f4c108",
    "name": "계통 대기열과 제도 공백에 막힌 북유럽 배터리 사업자의 덴마크·노르웨이 ",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-08cf4fe0e011",
-   "name": "\"1,000억 달러 쏟았는데 라인이 멈췄다\"… 북미 배터리 공장, 'ES",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-c5f916c0baae",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c5f916c0baae",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-c5f916c0baae",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-c5f916c0baae",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-c5f916c0baae",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c5f916c0baae",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-c5f916c0baae",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-c5f916c0baae",
+   "type": "knowledge"
+  },
   {
    "source": "COM-003",
    "target": "K-f839e7f4c108",
@@ -8616,15 +8656,10 @@
    "source": "STD-001",
    "target": "K-0ce0512f46cc",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-08cf4fe0e011",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "history": [
    {
     "date": "2026-07-20",
@@ -9090,6 +9125,11 @@
     "date": "2026-10-21",
     "knowledge": 400,
     "events_total": 3091
+   },
+   {
+    "date": "2026-10-22",
+    "knowledge": 400,
+    "events_total": 3092
    }
   ]
  }
