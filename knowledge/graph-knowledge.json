@@ -136,6 +136,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-ad2d2dca9150",
+   "name": "팀 토론 — 비용 효율성 분석 심화 — 초기 투자 비용과 장기 유지보수 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a522951faae2",
    "name": "엑셀론, ComEd·리치드슨 배터리 저장 협력이 시험대 될까",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fbe8a89ae367",
-   "name": "팀 토론 — OT/IT 네트워크 보안 강화 전략 수립",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3780,6 +3780,46 @@
   {
    "source": "STD-002",
    "target": "K-b558c25a5fe2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ad2d2dca9150",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ad2d2dca9150",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-ad2d2dca9150",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-ad2d2dca9150",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-ad2d2dca9150",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ad2d2dca9150",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-ad2d2dca9150",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ad2d2dca9150",
    "type": "knowledge"
   },
   {
@@ -8571,46 +8611,6 @@
    "source": "DEV-001",
    "target": "K-04a13b604149",
    "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-fbe8a89ae367",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-fbe8a89ae367",
-   "type": "knowledge"
-  },
-  {
-   "source": "MLO-001",
-   "target": "K-fbe8a89ae367",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-fbe8a89ae367",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-fbe8a89ae367",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-fbe8a89ae367",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-fbe8a89ae367",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-fbe8a89ae367",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9079,7 +9079,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3089
+    "events_total": 3090
    }
   ]
  }
