@@ -505,6 +505,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0890fb2b4305",
+   "name": "팀 토론 — 프로그램·CAR 영역 1차 분석 — bess-insuranc",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0772592a0243",
    "name": "팀 토론 — 호주 BESS 프로젝트 금융 확보 동향 분석 결과를 바탕으로",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-04a13b604149",
-   "name": "팀 토론 — SCH-001을 활용한 BESS 운영 스케줄 최적화 전략 수",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -4265,6 +4265,46 @@
   {
    "source": "STD-009",
    "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0890fb2b4305",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0890fb2b4305",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0890fb2b4305",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-0890fb2b4305",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-0890fb2b4305",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-0890fb2b4305",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0890fb2b4305",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-0890fb2b4305",
    "type": "knowledge"
   },
   {
@@ -8581,36 +8621,6 @@
    "source": "BAT-001",
    "target": "K-08cf4fe0e011",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-04a13b604149",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-04a13b604149",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-04a13b604149",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-04a13b604149",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-04a13b604149",
-   "type": "knowledge"
-  },
-  {
-   "source": "DEV-001",
-   "target": "K-04a13b604149",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9079,7 +9089,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3090
+    "events_total": 3091
    }
   ]
  }
