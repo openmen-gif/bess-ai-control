@@ -343,6 +343,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-52b71dfe9078",
+   "name": "팀 토론 — HYB-001 전문가 활용: Hybrid BESS 통합 시스",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-510341a2c15d",
    "name": "2027년 車 시장 기회는 유럽…2차전지는 ESS가 성장 주도",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-c61a3a691a00",
-   "name": "[2026 한-미 전력망 뉴욕포럼] GPU도 금융상품으로…1조달러 AI ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3965,6 +3965,46 @@
   {
    "source": "BAT-001",
    "target": "K-578c3410239b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-52b71dfe9078",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-52b71dfe9078",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-52b71dfe9078",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-52b71dfe9078",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-52b71dfe9078",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-52b71dfe9078",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-52b71dfe9078",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-52b71dfe9078",
    "type": "knowledge"
   },
   {
@@ -8501,11 +8541,6 @@
    "source": "MAR-001",
    "target": "K-ca17f127fd77",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-c61a3a691a00",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8974,7 +9009,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3086
+    "events_total": 3087
    }
   ]
  }
