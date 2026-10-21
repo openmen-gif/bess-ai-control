@@ -343,6 +343,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-56836fabf126",
+   "name": "팀 토론 — 전력시장 분석 강화: KPX 내 용량시장 및 Arbitrag",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-52b71dfe9078",
    "name": "팀 토론 — HYB-001 전문가 활용: Hybrid BESS 통합 시스",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-fa806ca3c012",
-   "name": "“풍력부터 ESS까지”…중부발전·LS일렉트릭, 전주기 에너지 동맹",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3965,6 +3965,46 @@
   {
    "source": "BAT-001",
    "target": "K-578c3410239b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-56836fabf126",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-56836fabf126",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-56836fabf126",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-56836fabf126",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-56836fabf126",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-56836fabf126",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-56836fabf126",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-56836fabf126",
    "type": "knowledge"
   },
   {
@@ -8571,11 +8611,6 @@
    "source": "KTX-001",
    "target": "K-fbe8a89ae367",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-fa806ca3c012",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9044,7 +9079,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3088
+    "events_total": 3089
    }
   ]
  }
