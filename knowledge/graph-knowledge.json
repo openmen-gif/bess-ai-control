@@ -469,6 +469,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0772592a0243",
+   "name": "팀 토론 — 호주 BESS 프로젝트 금융 확보 동향 분석 결과를 바탕으로",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ffd76b72fc9a",
    "name": "배터리 저장장치, 균형시장 진입…Ignitis·emsys VPP 파트너십",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-c531d4a495f2",
-   "name": "LG엔솔, ESS CAPA 확대에 분기 최대 매출 달성 : 네이버 블로그",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -4105,6 +4105,46 @@
   {
    "source": "STD-009",
    "target": "K-08d64c55a8d7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0772592a0243",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-0772592a0243",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-0772592a0243",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-0772592a0243",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-0772592a0243",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-0772592a0243",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0772592a0243",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-0772592a0243",
    "type": "knowledge"
   },
   {
@@ -8466,11 +8506,6 @@
    "source": "MAR-001",
    "target": "K-c61a3a691a00",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-c531d4a495f2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8939,7 +8974,7 @@
    {
     "date": "2026-10-21",
     "knowledge": 400,
-    "events_total": 3085
+    "events_total": 3086
    }
   ]
  }
