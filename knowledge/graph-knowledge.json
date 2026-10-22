@@ -37,6 +37,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-ec635bc92dfb",
+   "name": "팀 토론 — BESS EPC 미국(US) 규격 심층 분석으로 한국 시장 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e6d4b0633a7e",
    "name": "팀 토론 — 변경된 계약 조항 검토 및 FIDIC Silver/Yello",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-14",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-2a8e8bdc0614",
-   "name": "LS일렉트릭, AI 데이터센터 수혜 본격화..3분기 영업익 최대 103%",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3620,6 +3620,46 @@
   {
    "source": "COM-003",
    "target": "K-f08c54a6c432",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ec635bc92dfb",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ec635bc92dfb",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ec635bc92dfb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-ec635bc92dfb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ec635bc92dfb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-ec635bc92dfb",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ec635bc92dfb",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-ec635bc92dfb",
    "type": "knowledge"
   },
   {
@@ -8491,11 +8531,6 @@
    "source": "STD-001",
    "target": "K-32e03ed8b7ce",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-2a8e8bdc0614",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8969,7 +9004,7 @@
    {
     "date": "2026-10-22",
     "knowledge": 400,
-    "events_total": 3146
+    "events_total": 3147
    }
   ]
  }
