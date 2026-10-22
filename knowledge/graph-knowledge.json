@@ -217,6 +217,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a58a380b7810",
+   "name": "팀 토론 — 이전가격 최적화 모델 개발을 통해 국제 프로젝트의 경쟁력 강",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-22",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-a415a39cebe2",
    "name": "중국, 재생에너지·저장설비 연계 입찰 허용하는 현물시장 규칙 초안 발표",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-04678f7e1980",
-   "name": "2026년 ESS 중앙계약시장 입찰 공고 및 ESS 구축지원 사업 공고",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-14",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3825,6 +3825,46 @@
   {
    "source": "BAT-001",
    "target": "K-aa7be64b900f",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-a58a380b7810",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a58a380b7810",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-a58a380b7810",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-a58a380b7810",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-a58a380b7810",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a58a380b7810",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a58a380b7810",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-a58a380b7810",
    "type": "knowledge"
   },
   {
@@ -8366,11 +8406,6 @@
    "source": "BAT-001",
    "target": "K-0c8ede192196",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-04678f7e1980",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8844,7 +8879,7 @@
    {
     "date": "2026-10-22",
     "knowledge": 400,
-    "events_total": 3141
+    "events_total": 3142
    }
   ]
  }
