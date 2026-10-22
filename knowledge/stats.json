@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-22",
  "totals": {
-  "all": 3148,
+  "all": 3149,
   "briefing": 1554,
   "skill": 824,
-  "discussion": 770,
+  "discussion": 771,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 881,
+   "count": 882,
    "byType": {
     "skill": 14,
-    "discussion": 408,
+    "discussion": 409,
     "briefing": 459
    },
    "lastGrown": "2026-10-22",
-   "xp": 1317,
+   "xp": 1319,
    "level": 21
   },
   "bess-business-dev": {
@@ -132,13 +132,13 @@
    "level": 7
   },
   "bess-cybersecurity-expert": {
-   "count": 116,
+   "count": 117,
    "byType": {
     "skill": 13,
-    "discussion": 103
+    "discussion": 104
    },
-   "lastGrown": "2026-10-20",
-   "xp": 245,
+   "lastGrown": "2026-10-22",
+   "xp": 247,
    "level": 10
   },
   "bess-data-analyst": {
@@ -232,14 +232,14 @@
    "level": 12
   },
   "bess-fire-engineer": {
-   "count": 362,
+   "count": 363,
    "byType": {
     "skill": 13,
-    "discussion": 248,
+    "discussion": 249,
     "briefing": 101
    },
    "lastGrown": "2026-10-22",
-   "xp": 636,
+   "xp": 638,
    "level": 15
   },
   "bess-fit-procedure": {
@@ -253,14 +253,14 @@
    "level": 7
   },
   "bess-grid-interconnection": {
-   "count": 133,
+   "count": 134,
    "byType": {
     "skill": 12,
-    "discussion": 64,
+    "discussion": 65,
     "briefing": 57
    },
    "lastGrown": "2026-10-22",
-   "xp": 221,
+   "xp": 223,
    "level": 9
   },
   "bess-grounding-engineer": {
@@ -445,14 +445,14 @@
    "level": 6
   },
   "bess-pcs-expert": {
-   "count": 276,
+   "count": 277,
    "byType": {
     "skill": 13,
-    "discussion": 140,
+    "discussion": 141,
     "briefing": 123
    },
    "lastGrown": "2026-10-22",
-   "xp": 442,
+   "xp": 444,
    "level": 13
   },
   "bess-permit-asia": {
@@ -538,13 +538,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 268,
+   "count": 269,
    "byType": {
     "skill": 13,
-    "discussion": 255
+    "discussion": 256
    },
    "lastGrown": "2026-10-22",
-   "xp": 549,
+   "xp": 551,
    "level": 14
   },
   "bess-project-manager": {
@@ -719,23 +719,23 @@
    "level": 8
   },
   "bess-substation-engineer": {
-   "count": 31,
+   "count": 32,
    "byType": {
     "skill": 9,
-    "discussion": 22
+    "discussion": 23
    },
-   "lastGrown": "2026-10-21",
-   "xp": 71,
+   "lastGrown": "2026-10-22",
+   "xp": 73,
    "level": 5
   },
   "bess-system-engineer": {
-   "count": 222,
+   "count": 223,
    "byType": {
     "skill": 13,
-    "discussion": 209
+    "discussion": 210
    },
    "lastGrown": "2026-10-22",
-   "xp": 457,
+   "xp": 459,
    "level": 13
   },
   "bess-tax-accountant": {
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-22",
-   "added": 57
+   "added": 58
   }
  ],
  "freshness": {
