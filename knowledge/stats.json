@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-22",
  "totals": {
-  "all": 3143,
+  "all": 3144,
   "briefing": 1554,
   "skill": 824,
-  "discussion": 765,
+  "discussion": 766,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 879,
+   "count": 880,
    "byType": {
     "skill": 14,
-    "discussion": 406,
+    "discussion": 407,
     "briefing": 459
    },
    "lastGrown": "2026-10-22",
-   "xp": 1313,
+   "xp": 1315,
    "level": 21
   },
   "bess-business-dev": {
@@ -121,14 +121,14 @@
    "level": 16
   },
   "bess-customs-tariff": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 14,
-    "discussion": 46,
+    "discussion": 47,
     "briefing": 2
    },
    "lastGrown": "2026-10-22",
-   "xp": 136,
+   "xp": 138,
    "level": 7
   },
   "bess-cybersecurity-expert": {
@@ -142,13 +142,13 @@
    "level": 10
   },
   "bess-data-analyst": {
-   "count": 113,
+   "count": 114,
    "byType": {
     "skill": 13,
-    "discussion": 100
+    "discussion": 101
    },
-   "lastGrown": "2026-10-19",
-   "xp": 239,
+   "lastGrown": "2026-10-22",
+   "xp": 241,
    "level": 9
   },
   "bess-ebop-engineer": {
@@ -232,14 +232,14 @@
    "level": 12
   },
   "bess-fire-engineer": {
-   "count": 358,
+   "count": 359,
    "byType": {
     "skill": 13,
-    "discussion": 244,
+    "discussion": 245,
     "briefing": 101
    },
    "lastGrown": "2026-10-22",
-   "xp": 628,
+   "xp": 630,
    "level": 15
   },
   "bess-fit-procedure": {
@@ -364,23 +364,23 @@
    "level": 6
   },
   "bess-labor-safety": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 8,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-10-19",
-   "xp": 76,
+   "lastGrown": "2026-10-22",
+   "xp": 78,
    "level": 6
   },
   "bess-legal-expert": {
-   "count": 234,
+   "count": 235,
    "byType": {
     "skill": 13,
-    "discussion": 221
+    "discussion": 222
    },
    "lastGrown": "2026-10-22",
-   "xp": 481,
+   "xp": 483,
    "level": 13
   },
   "bess-logistics-expert": {
@@ -659,13 +659,13 @@
    "level": 6
   },
   "bess-standards-korea": {
-   "count": 316,
+   "count": 317,
    "byType": {
     "skill": 13,
-    "discussion": 303
+    "discussion": 304
    },
    "lastGrown": "2026-10-22",
-   "xp": 645,
+   "xp": 647,
    "level": 15
   },
   "bess-standards-poland": {
@@ -729,13 +729,13 @@
    "level": 5
   },
   "bess-system-engineer": {
-   "count": 218,
+   "count": 219,
    "byType": {
     "skill": 13,
-    "discussion": 205
+    "discussion": 206
    },
    "lastGrown": "2026-10-22",
-   "xp": 449,
+   "xp": 451,
    "level": 13
   },
   "bess-tax-accountant": {
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-22",
-   "added": 52
+   "added": 53
   }
  ],
  "freshness": {
