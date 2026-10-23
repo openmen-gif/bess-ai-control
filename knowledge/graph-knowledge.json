@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-c89a2f332322",
+   "name": "팀 토론 — 루마니아 BESS EPC 프로젝트에 적용 가능한 주요 인허가",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-79ba833c7285",
    "name": "팀 토론 — 구조적 안정성 강화를 위한 ANSYS 기반 진동 분석 및 최",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3d20d04cb8a5",
-   "name": "글로벌 ESS 설치량 112% 급증…인도 7조원 투자 '기회'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-79ba833c7285",
@@ -8496,11 +8536,6 @@
    "source": "FIR-001",
    "target": "K-3dc11dd77607",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-3d20d04cb8a5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8984,7 +9019,7 @@
    {
     "date": "2026-10-24",
     "knowledge": 400,
-    "events_total": 3203
+    "events_total": 3204
    }
   ]
  }
