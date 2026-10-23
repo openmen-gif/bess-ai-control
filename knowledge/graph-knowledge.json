@@ -361,6 +361,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-37d0207c93f1",
+   "name": "팀 토론 — 수소·연료전지·BESS 영역 현황 진단 — bess-hydr",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-23",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-301b424b1d2d",
    "name": "BW ESS, 400MW/1424MWh 햄스홀 BESS에 국제 금융 조달",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2cbd6d850bda",
-   "name": "급부상한 나트륨 배터리...AI DC·ESS 시장의 게임체인저 '기대감'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -4045,6 +4045,46 @@
   {
    "source": "SYS-001",
    "target": "K-3c241cd3a9cb",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-37d0207c93f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-37d0207c93f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-37d0207c93f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-37d0207c93f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-37d0207c93f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-37d0207c93f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-37d0207c93f1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-37d0207c93f1",
    "type": "knowledge"
   },
   {
@@ -8391,11 +8431,6 @@
    "source": "PCS-001",
    "target": "K-34559ab93b43",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-2cbd6d850bda",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8874,7 +8909,7 @@
    {
     "date": "2026-10-23",
     "knowledge": 400,
-    "events_total": 3199
+    "events_total": 3200
    }
   ]
  }
