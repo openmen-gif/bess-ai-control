@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "events": [
+  {
+   "id": "79ba833c7285",
+   "date": "2026-10-24",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-pcs-expert",
+    "bess-standards-analyst",
+    "bess-structural-analyst",
+    "bess-system-engineer",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 구조적 안정성 강화를 위한 ANSYS 기반 진동 분석 및 최적화 설계 프로세스 개발",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fa88b2c0d540",
    "date": "2026-10-23",
@@ -3742,17 +3760,6 @@
    ],
    "title": "AMP-lify, 일본 후쿠이에 200MWh BESS 건설…ING 64.8억 엔 금융",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1BcjY3Tnp0TXR5eGZCYUdLWWtjRDJHZi1lTUpzSkNzaC00bW90N2ZPTGNrR3ljSkF4OEhjVGl5TGl6d1B3bHJYaVUwTzdOSXVrSGtYMDFQX1prdGZzZGNxT0xBanh3WmJMTTlMNFRBN3lMRFk?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "0bc3388ef9e5",
-   "date": "2026-10-18",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "프랑스, 25MW 이하 태양광+ESS 계통연계 규정 완화 추진",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWjVUQ2JrRDlfeHltYVc4clpYNUxHT3VnNWFQQ24xS29SQ3RNT0JIVlgyUWdveldTR2MtNDhQTUlHd3NSd0pfbDlrVFFxNk1jcEdSTzFFbnlST2dUOTR2V1EwdDl2ejJwaklHc1NNa2RnTVlwZ1B3ZVNKQzRjU0g2TWIzX0E4bWYwd1ZLSkFDSzNIcVJUeHJDMTB6UzRkcEFVclRCVDhTRkZRRHFtaHZWYUF0bm1aYVFzNVBNMw?oc=5",
    "source": "구글뉴스"
   }
  ]

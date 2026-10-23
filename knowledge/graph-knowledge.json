@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-79ba833c7285",
+   "name": "팀 토론 — 구조적 안정성 강화를 위한 ANSYS 기반 진동 분석 및 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa88b2c0d540",
    "name": "TCL SunPower, 유럽 C&I 에너지저장 출시",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3c8c32953e33",
-   "name": "AI 전력난에 ESS 급성장…K배터리 3사, 북미 공략 강화",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-79ba833c7285",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-79ba833c7285",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-79ba833c7285",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-79ba833c7285",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-79ba833c7285",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-79ba833c7285",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-79ba833c7285",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-79ba833c7285",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-fa88b2c0d540",
@@ -8461,15 +8501,10 @@
    "source": "MAR-001",
    "target": "K-3d20d04cb8a5",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-3c8c32953e33",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "history": [
    {
     "date": "2026-07-20",
@@ -8945,6 +8980,11 @@
     "date": "2026-10-23",
     "knowledge": 400,
     "events_total": 3202
+   },
+   {
+    "date": "2026-10-24",
+    "knowledge": 400,
+    "events_total": 3203
    }
   ]
  }
