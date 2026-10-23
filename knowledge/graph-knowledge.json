@@ -64,6 +64,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d5d36c723b2f",
+   "name": "팀 토론 — 세액공제 최적화 전략 수립을 통한 초기 투자 비용 감소 방안",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-23",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-d37719727b5b",
    "name": "팀 토론 — 전문가·TRL 영역 리스크 평가 — bess-translat",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3bfa53750dfc",
-   "name": "팀 토론 — 냉각 시스템과 EMI 관리의 구체적 구현 방안 연구 및 시범",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3635,6 +3635,46 @@
   {
    "source": "FIR-001",
    "target": "K-d64d1ee35699",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d5d36c723b2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-d5d36c723b2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-d5d36c723b2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-d5d36c723b2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d5d36c723b2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-d5d36c723b2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d5d36c723b2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-d5d36c723b2f",
    "type": "knowledge"
   },
   {
@@ -8426,46 +8466,6 @@
    "source": "MAR-001",
    "target": "K-3c8c32953e33",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-3bfa53750dfc",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-3bfa53750dfc",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-3bfa53750dfc",
-   "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-3bfa53750dfc",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-3bfa53750dfc",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-3bfa53750dfc",
-   "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-3bfa53750dfc",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-3bfa53750dfc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8944,7 +8944,7 @@
    {
     "date": "2026-10-23",
     "knowledge": 400,
-    "events_total": 3201
+    "events_total": 3202
    }
   ]
  }
