@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-feae677489b7",
+   "name": "팀 토론 — 원격 모니터링 시스템 통합 전략 수립으로 OPEX 최적화 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-24",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-c89a2f332322",
    "name": "팀 토론 — 루마니아 BESS EPC 프로젝트에 적용 가능한 주요 인허가",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-42f4bf83164c",
-   "name": "기후부, ESS 시설물 분류 지침 마련",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "CST-001",
+   "target": "K-feae677489b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-feae677489b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-feae677489b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-feae677489b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-feae677489b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-feae677489b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-feae677489b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-feae677489b7",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-c89a2f332322",
@@ -8566,11 +8606,6 @@
    "source": "PCS-001",
    "target": "K-43941c78527e",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-42f4bf83164c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9054,7 +9089,7 @@
    {
     "date": "2026-10-24",
     "knowledge": 400,
-    "events_total": 3205
+    "events_total": 3206
    }
   ]
  }

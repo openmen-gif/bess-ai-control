@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-24",
  "totals": {
-  "all": 3205,
+  "all": 3206,
   "briefing": 1596,
   "skill": 824,
-  "discussion": 785,
+  "discussion": 786,
   "activity": 0
  },
  "perAgent": {
@@ -111,13 +111,13 @@
    "level": 7
   },
   "bess-cost-analyst": {
-   "count": 345,
+   "count": 346,
    "byType": {
     "skill": 14,
-    "discussion": 331
+    "discussion": 332
    },
    "lastGrown": "2026-10-24",
-   "xp": 704,
+   "xp": 706,
    "level": 16
   },
   "bess-customs-tariff": {
@@ -142,13 +142,13 @@
    "level": 10
   },
   "bess-data-analyst": {
-   "count": 116,
+   "count": 117,
    "byType": {
     "skill": 13,
-    "discussion": 103
+    "discussion": 104
    },
    "lastGrown": "2026-10-24",
-   "xp": 245,
+   "xp": 247,
    "level": 10
   },
   "bess-ebop-engineer": {
@@ -394,14 +394,14 @@
    "level": 6
   },
   "bess-marketer": {
-   "count": 509,
+   "count": 510,
    "byType": {
     "skill": 13,
-    "discussion": 102,
+    "discussion": 103,
     "briefing": 394
    },
    "lastGrown": "2026-10-24",
-   "xp": 637,
+   "xp": 639,
    "level": 15
   },
   "bess-mlops-engineer": {
@@ -445,14 +445,14 @@
    "level": 6
   },
   "bess-pcs-expert": {
-   "count": 287,
+   "count": 288,
    "byType": {
     "skill": 13,
-    "discussion": 146,
+    "discussion": 147,
     "briefing": 128
    },
    "lastGrown": "2026-10-24",
-   "xp": 459,
+   "xp": 461,
    "level": 13
   },
   "bess-permit-asia": {
@@ -498,13 +498,13 @@
    "level": 10
   },
   "bess-power-system-analyst": {
-   "count": 150,
+   "count": 151,
    "byType": {
     "skill": 12,
-    "discussion": 138
+    "discussion": 139
    },
-   "lastGrown": "2026-10-23",
-   "xp": 312,
+   "lastGrown": "2026-10-24",
+   "xp": 314,
    "level": 11
   },
   "bess-precom-report": {
@@ -618,14 +618,14 @@
    "level": 8
   },
   "bess-standards-analyst": {
-   "count": 419,
+   "count": 420,
    "byType": {
     "skill": 12,
-    "discussion": 125,
+    "discussion": 126,
     "briefing": 282
    },
    "lastGrown": "2026-10-24",
-   "xp": 568,
+   "xp": 570,
    "level": 14
   },
   "bess-standards-australia": {
@@ -729,13 +729,13 @@
    "level": 5
   },
   "bess-system-engineer": {
-   "count": 229,
+   "count": 230,
    "byType": {
     "skill": 13,
-    "discussion": 216
+    "discussion": 217
    },
    "lastGrown": "2026-10-24",
-   "xp": 471,
+   "xp": 473,
    "level": 13
   },
   "bess-tax-accountant": {
@@ -831,13 +831,13 @@
    "level": 8
   },
   "bess-translator": {
-   "count": 30,
+   "count": 31,
    "byType": {
     "skill": 7,
-    "discussion": 23
+    "discussion": 24
    },
-   "lastGrown": "2026-10-23",
-   "xp": 67,
+   "lastGrown": "2026-10-24",
+   "xp": 69,
    "level": 5
   }
  },
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-24",
-   "added": 3
+   "added": 4
   }
  ],
  "freshness": {

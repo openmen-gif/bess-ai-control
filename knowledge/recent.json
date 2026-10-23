@@ -2,6 +2,24 @@
  "updated": "2026-10-24",
  "events": [
   {
+   "id": "feae677489b7",
+   "date": "2026-10-24",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-marketer",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-analyst",
+    "bess-system-engineer",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 원격 모니터링 시스템 통합 전략 수립으로 OPEX 최적화 및 운영 가용률 향상 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "c89a2f332322",
    "date": "2026-10-24",
    "type": "discussion",
@@ -3757,17 +3775,6 @@
    "title": "팀 토론 — 견적서 작성 시 IRA 혜택 최적화 방안 마련 및 주요 자재 CE 인증 현황 검토",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "122312419112",
-   "date": "2026-10-18",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "뉴 스코틀랜드, BESS 법안 특별회의 소집",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcG10dWZVYkV4cW85NDZVbHl5WDhNY0VGWWFPalBKMmpYS0hlNHFxalFWU0ZTbzRDRmI5OGNQOVJ0S0tRcklzakZqdXFhdmV0dlRqNkdYN19WMTJvV2s4c2k4MWN0dk1rbVcyQ29UZjBJdVBPZWpUSGZ0Q2sybXVHZllaYVhYWl9jdExRdElQQdIBjwFBVV95cUxNcG10dWZVYkV4cW85NDZVbHl5WDhNY0VGWWFPalBKMmpYS0hlNHFxalFWU0ZTbzRDRmI5OGNQOVJ0S0tRcklzakZqdXFhdmV0dlRqNkdYN19WMTJvV2s4c2k4MWN0dk1rbVcyQ29UZjBJdVBPZWpUSGZ0Q2sybXVHZllaYVhYWl9jdExRdElQQQ?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
