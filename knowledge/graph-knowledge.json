@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c4078ffd0e9c",
+   "name": "팀 토론 — LS일렉트릭의 ESS용 PCS 단체표준인증 획득이 국내 시장",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-24",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-79ba833c7285",
    "name": "팀 토론 — 구조적 안정성 강화를 위한 ANSYS 기반 진동 분석 및 최",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3dc11dd77607",
-   "name": "“전기버스 사용후 배터리 활용”…남부발전, ‘화재방지형 R-ESS’ 기술",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "SYS-001",
    "target": "K-c89a2f332322",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-c4078ffd0e9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c4078ffd0e9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-c4078ffd0e9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c4078ffd0e9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-c4078ffd0e9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-c4078ffd0e9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-c4078ffd0e9c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-c4078ffd0e9c",
    "type": "knowledge"
   },
   {
@@ -8531,11 +8571,6 @@
    "source": "STD-001",
    "target": "K-42f4bf83164c",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-3dc11dd77607",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9019,7 +9054,7 @@
    {
     "date": "2026-10-24",
     "knowledge": 400,
-    "events_total": 3204
+    "events_total": 3205
    }
   ]
  }
