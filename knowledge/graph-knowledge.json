@@ -73,6 +73,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-ce9333018612",
+   "name": "팀 토론 — 전력시장 동향 분석 및 KPX 내 수익 최적화 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-23",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-c625a6b91e40",
    "name": "에너지저장장치가 AI 데이터센터 전력 수요를 감당하는 방법",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-34559ab93b43",
-   "name": "중일 갈등 여파에…삼성SDI·대만 기업, 日 ESS 시장 공략 가속",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3675,6 +3675,46 @@
   {
    "source": "STD-003",
    "target": "K-d37719727b5b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-ce9333018612",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ce9333018612",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-ce9333018612",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ce9333018612",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-ce9333018612",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-ce9333018612",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ce9333018612",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-ce9333018612",
    "type": "knowledge"
   },
   {
@@ -8426,11 +8466,6 @@
    "source": "SYS-001",
    "target": "K-3bfa53750dfc",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-34559ab93b43",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8909,7 +8944,7 @@
    {
     "date": "2026-10-23",
     "knowledge": 400,
-    "events_total": 3200
+    "events_total": 3201
    }
   ]
  }
