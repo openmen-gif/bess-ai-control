@@ -208,6 +208,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-8158f481f7b5",
+   "name": "팀 토론 — 네트워크·VLAN 영역 리스크 평가 — bess-networ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7d0c635e47f2",
    "name": "Failte-Sigenergy 합작법인, 인도에 인버터·배터리 저장 발전",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d5c757ddb380",
-   "name": "Nightpeak Energy, 텍사스 Bocanova 2단계 300MW",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3855,6 +3855,46 @@
   {
    "source": "COM-003",
    "target": "K-83d24fa30fa2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8158f481f7b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8158f481f7b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-8158f481f7b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-8158f481f7b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-8158f481f7b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8158f481f7b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-8158f481f7b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8158f481f7b5",
    "type": "knowledge"
   },
   {
@@ -8531,15 +8571,10 @@
    "source": "FIR-001",
    "target": "K-d9ab77edf8ee",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-d5c757ddb380",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "history": [
    {
     "date": "2026-07-20",
@@ -9020,6 +9055,11 @@
     "date": "2026-10-24",
     "knowledge": 400,
     "events_total": 3246
+   },
+   {
+    "date": "2026-10-25",
+    "knowledge": 400,
+    "events_total": 3247
    }
   ]
  }
