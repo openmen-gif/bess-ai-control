@@ -2,6 +2,24 @@
  "updated": "2026-10-25",
  "events": [
   {
+   "id": "fed47aa5503d",
+   "date": "2026-10-25",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-knowledge-manager",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-usa",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 미국 BESS EPC 표준 업데이트 분석 및 국내 적용 전략 수립 ([@bess-standards-usa])",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ff9b35e7e979",
    "date": "2026-10-24",
    "type": "briefing",
@@ -3731,17 +3749,6 @@
    "title": "팀 토론 — 케이블 최적 포설 계획 수립으로 전압강하 최소화 및 안전성 확보",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "6d3998e5b46e",
-   "date": "2026-10-19",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "뉴스코틀랜드 타운, BESS 관련 법 논의 위해 특별회의 소집",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMVE5YURETXpVZlg2LWl5TDJ5M3ctb3FaaUlUYzhFRk1PdWtobWRmMGNxZ1QtcDk3ZldkODl5SG9GbVJuSmNYVXBJTVNCMjJ0MDlERG9TM0dUQnRiVHJyM3dfSzhCZC13Y3hYQW9VREdfSHkzOU1KSXlmUGZvQ2FWRkowRTloV2JuU3fSAY8BQVVfeXFMTXBtdHVmVWJFeHFvOTQ2VWx5eVg4TWNFRllhT2pQSjJqWEtIZTRxcWpRVlNGU280Q0ZiOThjUDlSdEtLUXJJc2pGanVxYXZldHZUajZHWDdfVjEyb1drOHNpODFjdHZNa21XMkNvVGYwSXVQT2VqVEhmdENrMm11R2ZZWmFYWFpfY3RMUXRJUEE?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
