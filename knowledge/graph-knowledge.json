@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-424ecf673e40",
+   "name": "팀 토론 — 모델 드리프트 모니터링 시스템 구축 계획 수립 및 자동화 파",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff9b35e7e979",
    "name": "CREC, 필리핀 900MW 태양광·120MWh BESS 사업에 350억",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-da76d5a55e1d",
-   "name": "팀 토론 — 글로벌 화재 안전 표준 개정 동향 분석 및 국내 BESS 설",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "SYS-001",
    "target": "K-fed47aa5503d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-424ecf673e40",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-424ecf673e40",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-424ecf673e40",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-424ecf673e40",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-424ecf673e40",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-424ecf673e40",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-424ecf673e40",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-424ecf673e40",
    "type": "knowledge"
   },
   {
@@ -8566,46 +8606,6 @@
    "source": "PRM-001",
    "target": "K-dbc8d1fa67cb",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-da76d5a55e1d",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-da76d5a55e1d",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-da76d5a55e1d",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-da76d5a55e1d",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-da76d5a55e1d",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-da76d5a55e1d",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-009",
-   "target": "K-da76d5a55e1d",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-da76d5a55e1d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9094,7 +9094,7 @@
    {
     "date": "2026-10-25",
     "knowledge": 400,
-    "events_total": 3248
+    "events_total": 3249
    }
   ]
  }
