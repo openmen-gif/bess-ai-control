@@ -352,6 +352,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-41753bfcb4e1",
+   "name": "팀 토론 — 하이브리드 인버터와 배터리 팩의 최신 기술 동향을 분석하여 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-35b9a503dca4",
    "name": "데이터센터 개발사, 계통연계 지연에 하이브리드 전력 검토 확산",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d2f2f2876d24",
-   "name": "핀란드, 약한 계통 신규 풍력·태양광에 그리드포밍 기능 의무화",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3970,6 +3970,46 @@
   {
    "source": "BAT-001",
    "target": "K-451678a044b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-41753bfcb4e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-41753bfcb4e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-41753bfcb4e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-41753bfcb4e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-41753bfcb4e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-41753bfcb4e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-41753bfcb4e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-41753bfcb4e1",
    "type": "knowledge"
   },
   {
@@ -8496,11 +8536,6 @@
    "source": "MAR-001",
    "target": "K-d5c757ddb380",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-d2f2f2876d24",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8984,7 +9019,7 @@
    {
     "date": "2026-10-24",
     "knowledge": 400,
-    "events_total": 3245
+    "events_total": 3246
    }
   ]
  }
