@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7655a1d86b85",
+   "name": "팀 토론 — 벤더 성과 추적 시스템 구축 및 조달 데이터 분석 강화로 공",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-25",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-424ecf673e40",
    "name": "팀 토론 — 모델 드리프트 모니터링 시스템 구축 계획 수립 및 자동화 파",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-dbc8d1fa67cb",
-   "name": "ESS 인허가 최대 3개월 단축… 건설·전기공사 현장 부담 ↓",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "SYS-001",
    "target": "K-fed47aa5503d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-7655a1d86b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7655a1d86b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-7655a1d86b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-7655a1d86b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-7655a1d86b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7655a1d86b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-7655a1d86b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7655a1d86b85",
    "type": "knowledge"
   },
   {
@@ -8601,11 +8641,6 @@
    "source": "FIR-001",
    "target": "K-e01db89b0942",
    "type": "knowledge"
-  },
-  {
-   "source": "PRM-001",
-   "target": "K-dbc8d1fa67cb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9094,7 +9129,7 @@
    {
     "date": "2026-10-25",
     "knowledge": 400,
-    "events_total": 3249
+    "events_total": 3250
    }
   ]
  }
