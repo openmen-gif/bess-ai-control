@@ -10,6 +10,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-8bfe1730a671",
+   "name": "팀 토론 — 인도의 재생에너지 확대 정책과 연계하여 국내 BESS EPC",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-26",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-fed47aa5503d",
    "name": "팀 토론 — 미국 BESS EPC 표준 업데이트 분석 및 국내 적용 전략",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-17",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-937d96ede819",
-   "name": "팀 토론 — 프로젝트 RFP 분석 강화 및 고객 맞춤형 견적 제안 시스템",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "KTX-001",
    "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-8bfe1730a671",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-8bfe1730a671",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-8bfe1730a671",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-8bfe1730a671",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-8bfe1730a671",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-8bfe1730a671",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-8bfe1730a671",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8bfe1730a671",
    "type": "knowledge"
   },
   {
@@ -8491,46 +8531,6 @@
    "source": "BAT-001",
    "target": "K-93f1bba9348b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-937d96ede819",
-   "type": "knowledge"
-  },
-  {
-   "source": "CAB-001",
-   "target": "K-937d96ede819",
-   "type": "knowledge"
-  },
-  {
-   "source": "CFD-001",
-   "target": "K-937d96ede819",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-937d96ede819",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-937d96ede819",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-937d96ede819",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-937d96ede819",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-937d96ede819",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9024,7 +9024,7 @@
    {
     "date": "2026-10-26",
     "knowledge": 400,
-    "events_total": 3280
+    "events_total": 3281
    }
   ]
  }
