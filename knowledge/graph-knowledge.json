@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fba6478009f3",
+   "name": "팀 토론 — 일본 법인 세금 최적화 전략 수립 및 세무 준수 가이드라인 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-26",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-fed47aa5503d",
    "name": "팀 토론 — 미국 BESS EPC 표준 업데이트 분석 및 국내 적용 전략",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-17",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8b9cb6973b78",
-   "name": "팀 토론 — 유럽 ESS 시설물 분류 기준 통일 동향을 반영하여 국내 프",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "FIN-001",
+   "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-fed47aa5503d",
@@ -8491,50 +8531,10 @@
    "source": "STD-001",
    "target": "K-937d96ede819",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-8b9cb6973b78",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-8b9cb6973b78",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-8b9cb6973b78",
-   "type": "knowledge"
-  },
-  {
-   "source": "LKM-001",
-   "target": "K-8b9cb6973b78",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-8b9cb6973b78",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-004",
-   "target": "K-8b9cb6973b78",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-8b9cb6973b78",
-   "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-8b9cb6973b78",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "history": [
    {
     "date": "2026-07-20",
@@ -9020,6 +9020,11 @@
     "date": "2026-10-25",
     "knowledge": 400,
     "events_total": 3279
+   },
+   {
+    "date": "2026-10-26",
+    "knowledge": 400,
+    "events_total": 3280
    }
   ]
  }
