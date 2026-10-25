@@ -244,6 +244,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2a64c88b8e55",
+   "name": "팀 토론 — 인도의 재생에너지 확대 정책과 배터리 저장 시스템(BESS)",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-25",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-218c43d50a53",
    "name": "Arkannect Launches Hybrid Inverters and ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-17",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7c76b3758c07",
-   "name": "Blendon 타운십, BESS 부지계획·특별사용 승인 표결 또 보류",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3840,6 +3840,46 @@
   {
    "source": "STD-001",
    "target": "K-314325ea4451",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-2a64c88b8e55",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-2a64c88b8e55",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-2a64c88b8e55",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-2a64c88b8e55",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-2a64c88b8e55",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-2a64c88b8e55",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-2a64c88b8e55",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2a64c88b8e55",
    "type": "knowledge"
   },
   {
@@ -8421,11 +8461,6 @@
    "source": "FIR-001",
    "target": "K-83e531a1fa5a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-7c76b3758c07",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8914,7 +8949,7 @@
    {
     "date": "2026-10-25",
     "knowledge": 400,
-    "events_total": 3276
+    "events_total": 3277
    }
   ]
  }
