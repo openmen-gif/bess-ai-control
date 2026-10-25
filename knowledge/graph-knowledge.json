@@ -10,6 +10,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-bd6b35c4f7b9",
+   "name": "팀 토론 — 클라우드 기반 BESS 모니터링 시스템 구축으로 실시간 데이",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-26",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-8bfe1730a671",
    "name": "팀 토론 — 인도의 재생에너지 확대 정책과 연계하여 국내 BESS EPC",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-17",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-93f1bba9348b",
-   "name": "호주 빅토리아주, 1.5GW 워라크나빌 풍력단지·600MW BESS 승인",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3640,6 +3640,46 @@
   {
    "source": "KTX-001",
    "target": "K-fba6478009f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-bd6b35c4f7b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-bd6b35c4f7b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-bd6b35c4f7b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-bd6b35c4f7b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-bd6b35c4f7b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-bd6b35c4f7b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-bd6b35c4f7b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-bd6b35c4f7b9",
    "type": "knowledge"
   },
   {
@@ -8526,11 +8566,6 @@
    "source": "MAR-001",
    "target": "K-9b09b2173927",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-93f1bba9348b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9024,7 +9059,7 @@
    {
     "date": "2026-10-26",
     "knowledge": 400,
-    "events_total": 3281
+    "events_total": 3282
    }
   ]
  }
