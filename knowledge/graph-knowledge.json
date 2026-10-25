@@ -154,6 +154,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-66926cd37283",
+   "name": "팀 토론 — 시운전 효율 최적화 프로토콜 개발 및 실제 시스템 적용 사례",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-25",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-5904ba4cfe61",
    "name": "India needs to focus on battery storage ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-17",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-860182347161",
-   "name": "Zendure, 영국에 플러그인 태양광 출시…에너지 요금 상승 속 확대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3755,6 +3755,46 @@
   {
    "source": "BAT-001",
    "target": "K-695b1d7d12a2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-66926cd37283",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-66926cd37283",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-66926cd37283",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-66926cd37283",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-66926cd37283",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-66926cd37283",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-66926cd37283",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-66926cd37283",
    "type": "knowledge"
   },
   {
@@ -8491,11 +8531,6 @@
    "source": "TPS-001",
    "target": "K-8b9cb6973b78",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-860182347161",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8984,7 +9019,7 @@
    {
     "date": "2026-10-25",
     "knowledge": 400,
-    "events_total": 3278
+    "events_total": 3279
    }
   ]
  }
