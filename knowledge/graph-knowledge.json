@@ -100,6 +100,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-b15d29bf9f76",
+   "name": "팀 토론 — 이전가격 전략 강화를 위한 글로벌 TP 가이드라인 분석 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-26",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-a8d9b38ad0ca",
    "name": "Fourth Partner Energy, Tata Capital로부터 7",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9aa83760f44e",
-   "name": "GIPCL, Bondada Engineering과 20MW/120MWh ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3725,6 +3725,46 @@
   {
    "source": "STD-001",
    "target": "K-b42a9007e32e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-b15d29bf9f76",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-b15d29bf9f76",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-b15d29bf9f76",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-b15d29bf9f76",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-b15d29bf9f76",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-b15d29bf9f76",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b15d29bf9f76",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-b15d29bf9f76",
    "type": "knowledge"
   },
   {
@@ -8461,11 +8501,6 @@
    "source": "PCS-001",
    "target": "K-a4e654e78a67",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-9aa83760f44e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8959,7 +8994,7 @@
    {
     "date": "2026-10-26",
     "knowledge": 400,
-    "events_total": 3319
+    "events_total": 3320
    }
   ]
  }
