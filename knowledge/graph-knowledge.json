@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-92eac20a8e66",
+   "name": "팀 토론 — 다국어 기술 문서 번역 시스템 구축 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-27",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-430747f1339f",
    "name": "팀 토론 — 인도의 재생에너지 확대 정책과 연계하여 국내 BESS 맞춤형",
    "group": "KNOWLEDGE",
@@ -3590,18 +3599,49 @@
    "date": "2026-10-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-b14a8e8ad7bc",
-   "name": "일리노이주 세액공제 중첩, 상업용 배터리 300만 달러 비용 거의 상쇄",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-18",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
   {
    "source": "FIN-001",
    "target": "K-430747f1339f",
@@ -8571,11 +8611,6 @@
    "source": "STD-001",
    "target": "K-b88b369e762a",
    "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-b14a8e8ad7bc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -9074,7 +9109,7 @@
    {
     "date": "2026-10-27",
     "knowledge": 400,
-    "events_total": 3323
+    "events_total": 3324
    }
   ]
  }
