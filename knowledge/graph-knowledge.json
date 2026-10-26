@@ -226,6 +226,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3e69b8aeb84e",
+   "name": "팀 토론 — 명령 : 품질 보증 프로세스 개선을 위한 ITP 및 벤더 감",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-26",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-3db553cc36bc",
    "name": "ESS 설치 규제 완화…인허가 최대 3개월·비용 7000만원 줄인다 - ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-845dfdc5e1d3",
-   "name": "아이오와 윈네바고 카운티, 데이터센터·태양광·BESS 조례 개정 작업 진",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3865,6 +3865,46 @@
   {
    "source": "SYS-001",
    "target": "K-3ffbd415d757",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3e69b8aeb84e",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-3e69b8aeb84e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-3e69b8aeb84e",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-3e69b8aeb84e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-3e69b8aeb84e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-3e69b8aeb84e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3e69b8aeb84e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-3e69b8aeb84e",
    "type": "knowledge"
   },
   {
@@ -8356,11 +8396,6 @@
    "source": "STD-002",
    "target": "K-892b27d504f8",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-845dfdc5e1d3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8854,7 +8889,7 @@
    {
     "date": "2026-10-26",
     "knowledge": 400,
-    "events_total": 3314
+    "events_total": 3315
    }
   ]
  }
