@@ -1,0 +1,3895 @@
+{
+  "nodes": [
+    {
+      "id": "S::2026-10-26T13-02-21",
+      "name": "**원 명령**: 설비 가용률 최적화 전략 수립 및 MTTR 단",
+      "kind": "session",
+      "full": "**원 명령**: 설비 가용률 최적화 전략 수립 및 MTTR 단축 방안 검토",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 19.202864369671527,
+      "y": 72.5,
+      "z": 0.0,
+      "fx": 19.202864369671527,
+      "fy": 72.5,
+      "fz": 0.0
+    },
+    {
+      "id": "S::2026-10-26T11-27-58",
+      "name": "**원 명령**: 안전 프로토콜 통합 검토: HAZOP 및 FM",
+      "kind": "session",
+      "full": "**원 명령**: 안전 프로토콜 통합 검토: HAZOP 및 FMEA를 활용한 BESS 시설 안전 프로토콜 통합 강화 방안 수립",
+      "sessions": 0,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -24.105873177415194,
+      "y": 67.5,
+      "z": 22.082954475214006,
+      "fx": -24.105873177415194,
+      "fy": 67.5,
+      "fz": 22.082954475214006
+    },
+    {
+      "id": "S::2026-10-26T09-27-05",
+      "name": "**원 명령**: 명령 : 품질 보증 프로세스 개선을 위한 IT",
+      "kind": "session",
+      "full": "**원 명령**: 명령 : 품질 보증 프로세스 개선을 위한 ITP 및 벤더 감사 강화 방안 수립",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 3.624479073888199,
+      "y": 62.5,
+      "z": -41.299069619580365,
+      "fx": 3.624479073888199,
+      "fy": 62.5,
+      "fz": -41.299069619580365
+    },
+    {
+      "id": "S::2026-10-26T06-59-31",
+      "name": "**원 명령**: EMC/EMI 간섭 최소화를 위한 BESS 시",
+      "kind": "session",
+      "full": "**원 명령**: EMC/EMI 간섭 최소화를 위한 BESS 시스템 필터 설계 최적화 방안 수립",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 29.29840028064394,
+      "y": 57.49999999999999,
+      "z": 38.214574981218405,
+      "fx": 29.29840028064394,
+      "fy": 57.49999999999999,
+      "fz": 38.214574981218405
+    },
+    {
+      "id": "S::2026-10-26T04-44-21",
+      "name": "**원 명령**: 클라우드 기반 BESS 모니터링 시스템 구축으",
+      "kind": "session",
+      "full": "**원 명령**: 클라우드 기반 BESS 모니터링 시스템 구축으로 실시간 데이터 분석 및 보안 강화 방안 마련",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -52.74195658500836,
+      "y": 52.5,
+      "z": -9.329309491333921,
+      "fx": -52.74195658500836,
+      "fy": 52.5,
+      "fz": -9.329309491333921
+    },
+    {
+      "id": "S::2026-10-26T02-30-04",
+      "name": "**원 명령**: 인도의 재생에너지 확대 정책과 연계하여 국내 ",
+      "kind": "session",
+      "full": "**원 명령**: 인도의 재생에너지 확대 정책과 연계하여 국내 BESS EPC 표준 적합성 및 맞춤형 솔루션 개발 전략 수립 ([@bess-standards-analyst])",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 48.972345235947444,
+      "y": 47.5,
+      "z": -31.152197387843692,
+      "fx": 48.972345235947444,
+      "fy": 47.5,
+      "fz": -31.152197387843692
+    },
+    {
+      "id": "S::2026-10-26T00-13-51",
+      "name": "**원 명령**: 일본 법인 세금 최적화 전략 수립 및 세무 준",
+      "kind": "session",
+      "full": "**원 명령**: 일본 법인 세금 최적화 전략 수립 및 세무 준수 가이드라인 개발",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -16.042516834257228,
+      "y": 42.5,
+      "z": 59.677362991527815,
+      "fx": -16.042516834257228,
+      "fy": 42.5,
+      "fz": 59.677362991527815
+    },
+    {
+      "id": "S::2026-10-25T21-53-32",
+      "name": "**원 명령**: 시운전 효율 최적화 프로토콜 개발 및 실제 시",
+      "kind": "session",
+      "full": "**원 명령**: 시운전 효율 최적화 프로토콜 개발 및 실제 시스템 적용 사례 분석",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -29.93678941383598,
+      "y": 37.5,
+      "z": -57.641466320624055,
+      "fx": -29.93678941383598,
+      "fy": 37.5,
+      "fz": -57.641466320624055
+    },
+    {
+      "id": "S::2026-10-25T18-33-04",
+      "name": "**원 명령**: 물류 효율성 제고를 위한 최적화된 Heavy ",
+      "kind": "session",
+      "full": "**원 명령**: 물류 효율성 제고를 위한 최적화된 Heavy Lift 운송 경로 및 통관 절차 분석 계획 수립",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 63.49110212458829,
+      "y": 32.5,
+      "z": 23.186848664816473,
+      "fx": 63.49110212458829,
+      "fy": 32.5,
+      "fz": 23.186848664816473
+    },
+    {
+      "id": "S::2026-10-25T09-04-27",
+      "name": "**원 명령**: 인도의 재생에너지 확대 정책과 배터리 저장 시",
+      "kind": "session",
+      "full": "**원 명령**: 인도의 재생에너지 확대 정책과 배터리 저장 시스템(BESS) 수요 증가 동향 분석을 통해 국내 시장 진출 전략 최적화 방안 마련.",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -64.49753177792834,
+      "y": 27.500000000000004,
+      "z": 26.62364352516619,
+      "fx": -64.49753177792834,
+      "fy": 27.500000000000004,
+      "fz": 26.62364352516619
+    },
+    {
+      "id": "S::2026-10-25T06-41-56",
+      "name": "**원 명령**: 벤더 성과 추적 시스템 구축 및 조달 데이터 ",
+      "kind": "session",
+      "full": "**원 명령**: 벤더 성과 추적 시스템 구축 및 조달 데이터 분석 강화로 공급망 최적화 전략 수립",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 30.324248252983097,
+      "y": 22.500000000000004,
+      "z": -64.80115714932452,
+      "fx": 30.324248252983097,
+      "fy": 22.500000000000004,
+      "fz": -64.80115714932452
+    },
+    {
+      "id": "S::2026-10-25T04-18-59",
+      "name": "**원 명령**: 모델 드리프트 모니터링 시스템 구축 계획 수립",
+      "kind": "session",
+      "full": "**원 명령**: 모델 드리프트 모니터링 시스템 구축 계획 수립 및 자동화 파이프라인 최적화",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 21.826700624037233,
+      "y": 17.499999999999996,
+      "z": 69.58696099032241,
+      "fx": 21.826700624037233,
+      "fy": 17.499999999999996,
+      "fz": 69.58696099032241
+    },
+    {
+      "id": "S::2026-10-25T02-13-08",
+      "name": "**원 명령**: 미국 BESS EPC 표준 업데이트 분석 및 ",
+      "kind": "session",
+      "full": "**원 명령**: 미국 BESS EPC 표준 업데이트 분석 및 국내 적용 전략 수립 ([@bess-standards-usa])",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -63.98323182665307,
+      "y": 12.499999999999996,
+      "z": -37.07959068027546,
+      "fx": -63.98323182665307,
+      "fy": 12.499999999999996,
+      "fz": -37.07959068027546
+    },
+    {
+      "id": "S::2026-10-24T23-39-58",
+      "name": "**원 명령**: 네트워크·VLAN 영역 리스크 평가 — bes",
+      "kind": "session",
+      "full": "**원 명령**: 네트워크·VLAN 영역 리스크 평가 — bess-network-engineer 주관, 핵심 결론 도출",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 72.88350936648182,
+      "y": 7.499999999999998,
+      "z": -16.02323507990684,
+      "fx": 72.88350936648182,
+      "fy": 7.499999999999998,
+      "fz": -16.02323507990684
+    },
+    {
+      "id": "S::2026-10-24T16-35-42",
+      "name": "**원 명령**: 하이브리드 인버터와 배터리 팩의 최신 기술 동",
+      "kind": "session",
+      "full": "**원 명령**: 하이브리드 인버터와 배터리 팩의 최신 기술 동향을 분석하여 국내 및 글로벌 시장 진출 전략에 대한 기술 경쟁력 평가 및 적용 가능성 검토.",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -43.110736798975005,
+      "y": 2.4999999999999996,
+      "z": 61.320586858325996,
+      "fx": -43.110736798975005,
+      "fy": 2.4999999999999996,
+      "fz": 61.320586858325996
+    },
+    {
+      "id": "S::2026-10-24T08-44-57",
+      "name": "**원 명령**: 초기 투자 비용 및 장기 유지보수 비용 분석 ",
+      "kind": "session",
+      "full": "**원 명령**: 초기 투자 비용 및 장기 유지보수 비용 분석 강화하여 재활용 및 폐기 비용 통합 전략 수립 ([@bess-standards-japan])",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -9.63294563463039,
+      "y": -2.500000000000008,
+      "z": -74.33677662099868,
+      "fx": -9.63294563463039,
+      "fy": -2.500000000000008,
+      "fz": -74.33677662099868
+    },
+    {
+      "id": "S::2026-10-24T06-36-45",
+      "name": "**원 명령**: 원격 모니터링 시스템 통합 전략 수립으로 OP",
+      "kind": "session",
+      "full": "**원 명령**: 원격 모니터링 시스템 통합 전략 수립으로 OPEX 최적화 및 운영 가용률 향상 방안 검토",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 57.061210820621994,
+      "y": -7.500000000000007,
+      "z": 48.09124888880026,
+      "fx": 57.061210820621994,
+      "fy": -7.500000000000007,
+      "fz": 48.09124888880026
+    },
+    {
+      "id": "S::2026-10-24T04-26-31",
+      "name": "**원 명령**: LS일렉트릭의 ESS용 PCS 단체표준인증 획",
+      "kind": "session",
+      "full": "**원 명령**: LS일렉트릭의 ESS용 PCS 단체표준인증 획득이 국내 시장 진입 장벽과 기술 경쟁력에 미치는 영향 분석 및 전략적 파트너십 기회 탐색.",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -73.88784713095302,
+      "y": -12.500000000000005,
+      "z": 3.055494453098949,
+      "fx": -73.88784713095302,
+      "fy": -12.500000000000005,
+      "fz": 3.055494453098949
+    },
+    {
+      "id": "S::2026-10-24T02-16-59",
+      "name": "**원 명령**: 루마니아 BESS EPC 프로젝트에 적용 가능",
+      "kind": "session",
+      "full": "**원 명령**: 루마니아 BESS EPC 프로젝트에 적용 가능한 주요 인허가 절차 및 표준 준수 방안 심층 분석",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 51.69475958287781,
+      "y": -17.500000000000004,
+      "z": -51.44319033330323,
+      "fx": 51.69475958287781,
+      "fy": -17.500000000000004,
+      "fz": -51.44319033330323
+    },
+    {
+      "id": "S::2026-10-24T00-04-11",
+      "name": "**원 명령**: 구조적 안정성 강화를 위한 ANSYS 기반 진",
+      "kind": "session",
+      "full": "**원 명령**: 구조적 안정성 강화를 위한 ANSYS 기반 진동 분석 및 최적화 설계 프로세스 개발",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -3.304787328948314,
+      "y": -22.500000000000004,
+      "z": 71.46907289667624,
+      "fx": -3.304787328948314,
+      "fy": -22.500000000000004,
+      "fz": 71.46907289667624
+    },
+    {
+      "id": "S::2026-10-23T21-53-43",
+      "name": "**원 명령**: 세액공제 최적화 전략 수립을 통한 초기 투자 ",
+      "kind": "session",
+      "full": "**원 명령**: 세액공제 최적화 전략 수립을 통한 초기 투자 비용 감소 방안 검토",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -44.70639596123544,
+      "y": -27.500000000000004,
+      "z": -53.57320375110333,
+      "fx": -44.70639596123544,
+      "fy": -27.500000000000004,
+      "fz": -53.57320375110333
+    },
+    {
+      "id": "S::2026-10-23T18-50-28",
+      "name": "**원 명령**: 전력시장 동향 분석 및 KPX 내 수익 최적화",
+      "kind": "session",
+      "full": "**원 명령**: 전력시장 동향 분석 및 KPX 내 수익 최적화 전략 수립",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 66.98888819261327,
+      "y": -32.5,
+      "z": 9.013260160317046,
+      "fx": 66.98888819261327,
+      "fy": -32.5,
+      "fz": 9.013260160317046
+    },
+    {
+      "id": "S::2026-10-23T17-03-13",
+      "name": "**원 명령**: 수소·연료전지·BESS 영역 현황 진단 — b",
+      "kind": "session",
+      "full": "**원 명령**: 수소·연료전지·BESS 영역 현황 진단 — bess-hydrogen-specialist 주관, 핵심 결론 도출",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -53.316312954052805,
+      "y": -37.5,
+      "z": 37.09610185700784,
+      "fx": -53.316312954052805,
+      "fy": -37.5,
+      "fz": 37.09610185700784
+    },
+    {
+      "id": "S::2026-10-23T15-13-20",
+      "name": "**원 명령**: 전문가·TRL 영역 리스크 평가 — bess-",
+      "kind": "session",
+      "full": "**원 명령**: 전문가·TRL 영역 리스크 평가 — bess-translator 주관, 핵심 결론 도출",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 13.563078479291889,
+      "y": -42.5,
+      "z": -60.289243668871556,
+      "fx": 13.563078479291889,
+      "fy": -42.5,
+      "fz": -60.289243668871556
+    },
+    {
+      "id": "S::2026-10-23T13-22-37",
+      "name": "**원 명령**: Sungrow PowerTitan 3.0의 성",
+      "kind": "session",
+      "full": "**원 명령**: Sungrow PowerTitan 3.0의 성공적인 화재 안전성 검증 결과를 바탕으로, 국내 BESS 프로젝트의 안전 설계 기준 업데이트 및 인증 전략 재검토 필요성 분석.",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 28.856842266008513,
+      "y": -47.5,
+      "z": 50.35903746533193,
+      "fx": 28.856842266008513,
+      "fy": -47.5,
+      "fz": 50.35903746533193
+    },
+    {
+      "id": "S::2026-10-23T11-17-10",
+      "name": "**원 명령**: ESG 통합 투자 전략 수립 및 그린본드 활용",
+      "kind": "session",
+      "full": "**원 명령**: ESG 통합 투자 전략 수립 및 그린본드 활용 확대 계획 마련",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -51.026904620549146,
+      "y": -52.5,
+      "z": -16.27897431797778,
+      "fx": -51.026904620549146,
+      "fy": -52.5,
+      "fz": -16.27897431797778
+    },
+    {
+      "id": "S::2026-10-23T09-27-20",
+      "name": "**원 명령**: 근로자 안전 교육 프로그램 강화 및 국제 안전",
+      "kind": "session",
+      "full": "**원 명령**: 근로자 안전 교육 프로그램 강화 및 국제 안전 표준(OSHA, EU OSH) 준수 점검 실시",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 43.71323021706043,
+      "y": -57.49999999999999,
+      "z": -20.196621103300323,
+      "fx": 43.71323021706043,
+      "fy": -57.49999999999999,
+      "fz": -20.196621103300323
+    },
+    {
+      "id": "S::2026-10-23T07-37-36",
+      "name": "**원 명령**: 접지망·IEEE80 영역 벤치마킹 — bess",
+      "kind": "session",
+      "full": "**원 명령**: 접지망·IEEE80 영역 벤치마킹 — bess-grounding-engineer 주관, 핵심 결론 도출",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -16.00524694788396,
+      "y": -62.49999999999999,
+      "z": 38.24371935543471,
+      "fx": -16.00524694788396,
+      "fy": -62.49999999999999,
+      "fz": 38.24371935543471
+    },
+    {
+      "id": "S::2026-10-23T05-51-48",
+      "name": "**원 명령**: BESS EPC 영국(UK) 규격 준수를 위한",
+      "kind": "session",
+      "full": "**원 명령**: BESS EPC 영국(UK) 규격 준수를 위한 한국 맞춤 인허가 전략 세부 검토 및 적용 방안 마련",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": -11.064594625812134,
+      "y": -67.5,
+      "z": -30.76239174327071,
+      "fx": -11.064594625812134,
+      "fy": -67.5,
+      "fz": -30.76239174327071
+    },
+    {
+      "id": "S::2026-10-23T02-33-57",
+      "name": "**원 명령**: BESS 지식베이스 업데이트 및 팀학습 프로그",
+      "kind": "session",
+      "full": "**원 명령**: BESS 지식베이스 업데이트 및 팀학습 프로그램 개발을 통해 전문 지식 공유 체계 강화",
+      "sessions": 8,
+      "color": "#FFC24D",
+      "val": 16,
+      "x": 16.998172707919863,
+      "y": -72.49999999999999,
+      "z": 8.933763181981579,
+      "fx": 16.998172707919863,
+      "fy": -72.49999999999999,
+      "fz": 8.933763181981579
+    },
+    {
+      "id": "A::bess-battery-expert",
+      "name": "battery-expert",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 11,
+      "color": "#7ad7ff",
+      "val": 20,
+      "x": 26.77274217975367,
+      "y": 162.1551724137931,
+      "z": 14.626015712745302
+    },
+    {
+      "id": "A::bess-business-dev",
+      "name": "business-dev",
+      "kind": "agent",
+      "dept": "business",
+      "deptName": "사업·영업·시장",
+      "sessions": 4,
+      "color": "#fb923c",
+      "val": 13,
+      "x": -50.857192606817705,
+      "y": 156.4655172413793,
+      "z": 12.533470171531961
+    },
+    {
+      "id": "A::bess-cable-engineer",
+      "name": "cable-engineer",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 2,
+      "color": "#7ad7ff",
+      "val": 11,
+      "x": 37.14989644314416,
+      "y": 150.7758620689655,
+      "z": -55.781041686436375
+    },
+    {
+      "id": "A::bess-cbop-engineer",
+      "name": "cbop-engineer",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 1,
+      "color": "#7ad7ff",
+      "val": 10,
+      "x": 12.060855714225537,
+      "y": 145.08620689655172,
+      "z": 77.65003752614432
+    },
+    {
+      "id": "A::bess-circuit-breaker-expert",
+      "name": "circuit-breaker-expert",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 1,
+      "color": "#7ad7ff",
+      "val": 10,
+      "x": -68.91774858834292,
+      "y": 139.39655172413794,
+      "z": -55.17196114815654
+    },
+    {
+      "id": "A::bess-contract-specialist",
+      "name": "contract-specialist",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 2,
+      "color": "#ffb020",
+      "val": 11,
+      "x": 96.46824524841064,
+      "y": 133.70689655172413,
+      "z": -6.429889050290135
+    },
+    {
+      "id": "A::bess-cost-analyst",
+      "name": "cost-analyst",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 13,
+      "color": "#ffb020",
+      "val": 21,
+      "x": -71.91285651388749,
+      "y": 128.01724137931035,
+      "z": 75.2670377897551
+    },
+    {
+      "id": "A::bess-customs-tariff",
+      "name": "customs-tariff",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 1,
+      "color": "#ffb020",
+      "val": 10,
+      "x": 2.3232623511066723,
+      "y": 122.32758620689656,
+      "z": -110.7048513157496
+    },
+    {
+      "id": "A::bess-cybersecurity-expert",
+      "name": "cybersecurity-expert",
+      "kind": "agent",
+      "dept": "data",
+      "deptName": "데이터·AI·IT",
+      "sessions": 1,
+      "color": "#22d3ee",
+      "val": 10,
+      "x": 77.01170314528649,
+      "y": 116.63793103448275,
+      "z": 87.69145125186103
+    },
+    {
+      "id": "A::bess-data-analyst",
+      "name": "data-analyst",
+      "kind": "agent",
+      "dept": "data",
+      "deptName": "데이터·AI·IT",
+      "sessions": 5,
+      "color": "#22d3ee",
+      "val": 14,
+      "x": -121.41051623866915,
+      "y": 110.94827586206897,
+      "z": -13.227495223741283
+    },
+    {
+      "id": "A::bess-ebop-engineer",
+      "name": "ebop-engineer",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 1,
+      "color": "#7ad7ff",
+      "val": 10,
+      "x": 102.43913027007855,
+      "y": 105.25862068965517,
+      "z": -75.17876934361969
+    },
+    {
+      "id": "A::bess-emc-analyst",
+      "name": "emc-analyst",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 1,
+      "color": "#7ad7ff",
+      "val": 10,
+      "x": -25.63067160918798,
+      "y": 99.56896551724138,
+      "z": 129.0507256031068
+    },
+    {
+      "id": "A::bess-emerging-markets",
+      "name": "emerging-markets",
+      "kind": "agent",
+      "dept": "business",
+      "deptName": "사업·영업·시장",
+      "sessions": 1,
+      "color": "#fb923c",
+      "val": 10,
+      "x": -70.41025295487162,
+      "y": 93.87931034482759,
+      "z": -115.99168663318305
+    },
+    {
+      "id": "A::bess-env-engineer",
+      "name": "env-engineer",
+      "kind": "agent",
+      "dept": "hse",
+      "deptName": "HSE·환경·QA",
+      "sessions": 1,
+      "color": "#ef5b5b",
+      "val": 10,
+      "x": 133.88416788986083,
+      "y": 88.18965517241381,
+      "z": 39.020690780793544
+    },
+    {
+      "id": "A::bess-epc-bom",
+      "name": "epc-bom",
+      "kind": "agent",
+      "dept": "ops",
+      "deptName": "운영·시공·물류",
+      "sessions": 1,
+      "color": "#3fc77b",
+      "val": 10,
+      "x": -128.16516977911013,
+      "y": 82.5,
+      "z": 63.18575199751816
+    },
+    {
+      "id": "A::bess-esg-finance",
+      "name": "esg-finance",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 2,
+      "color": "#ffb020",
+      "val": 11,
+      "x": 52.9614226011721,
+      "y": 76.81034482758622,
+      "z": -136.08915696530477
+    },
+    {
+      "id": "A::bess-facility-manager",
+      "name": "facility-manager",
+      "kind": "agent",
+      "dept": "ops",
+      "deptName": "운영·시공·물류",
+      "sessions": 2,
+      "color": "#3fc77b",
+      "val": 11,
+      "x": 53.90815188959628,
+      "y": 71.12068965517241,
+      "z": 138.7831353688944
+    },
+    {
+      "id": "A::bess-financial-analysis",
+      "name": "financial-analysis",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 8,
+      "color": "#ffb020",
+      "val": 17,
+      "x": -135.81619152229413,
+      "y": 65.43103448275862,
+      "z": -67.06520593344635
+    },
+    {
+      "id": "A::bess-fire-engineer",
+      "name": "fire-engineer",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 13,
+      "color": "#7ad7ff",
+      "val": 21,
+      "x": 147.68867962208637,
+      "y": 59.74137931034482,
+      "z": -42.94207155671739
+    },
+    {
+      "id": "A::bess-grid-interconnection",
+      "name": "grid-interconnection",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 7,
+      "color": "#7ad7ff",
+      "val": 16,
+      "x": -80.98001954635515,
+      "y": 54.05172413793103,
+      "z": 133.21279049696744
+    },
+    {
+      "id": "A::bess-grounding-engineer",
+      "name": "grounding-engineer",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 2,
+      "color": "#7ad7ff",
+      "val": 11,
+      "x": -30.632550079695516,
+      "y": 48.362068965517246,
+      "z": -154.75062895183817
+    },
+    {
+      "id": "A::bess-hse-manager",
+      "name": "hse-manager",
+      "kind": "agent",
+      "dept": "hse",
+      "deptName": "HSE·환경·QA",
+      "sessions": 5,
+      "color": "#ef5b5b",
+      "val": 14,
+      "x": 128.43609961349156,
+      "y": 42.672413793103445,
+      "z": 94.3834382566318
+    },
+    {
+      "id": "A::bess-hybrid-specialist",
+      "name": "hybrid-specialist",
+      "kind": "agent",
+      "dept": "business",
+      "deptName": "사업·영업·시장",
+      "sessions": 1,
+      "color": "#fb923c",
+      "val": 10,
+      "x": -159.867098856352,
+      "y": 36.98275862068966,
+      "z": 17.31433706663894
+    },
+    {
+      "id": "A::bess-hydrogen-specialist",
+      "name": "hydrogen-specialist",
+      "kind": "agent",
+      "dept": "business",
+      "deptName": "사업·영업·시장",
+      "sessions": 1,
+      "color": "#fb923c",
+      "val": 10,
+      "x": 106.98001964431633,
+      "y": 31.29310344827587,
+      "z": -121.65943068039236
+    },
+    {
+      "id": "A::bess-insurance-expert",
+      "name": "insurance-expert",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 1,
+      "color": "#ffb020",
+      "val": 10,
+      "x": 3.316292299821694,
+      "y": 25.603448275862064,
+      "z": 162.96768281400887
+    },
+    {
+      "id": "A::bess-internal-auditor",
+      "name": "internal-auditor",
+      "kind": "agent",
+      "dept": "org",
+      "deptName": "조직·관리·문서",
+      "sessions": 2,
+      "color": "#ff8a3d",
+      "val": 11,
+      "x": -113.0755063583037,
+      "y": 19.913793103448278,
+      "z": -118.50050930711765
+    },
+    {
+      "id": "A::bess-ip-patent-expert",
+      "name": "ip-patent-expert",
+      "kind": "agent",
+      "dept": "org",
+      "deptName": "조직·관리·문서",
+      "sessions": 1,
+      "color": "#ff8a3d",
+      "val": 10,
+      "x": 164.01481747482083,
+      "y": 14.224137931034475,
+      "z": 11.036917541601559
+    },
+    {
+      "id": "A::bess-knowledge-manager",
+      "name": "knowledge-manager",
+      "kind": "agent",
+      "dept": "org",
+      "deptName": "조직·관리·문서",
+      "sessions": 3,
+      "color": "#ff8a3d",
+      "val": 12,
+      "x": -128.70200942976933,
+      "y": 8.534482758620689,
+      "z": 102.89779090331521
+    },
+    {
+      "id": "A::bess-legal-expert",
+      "name": "legal-expert",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 10,
+      "color": "#ffb020",
+      "val": 19,
+      "x": 25.424655696002908,
+      "y": 2.844827586206902,
+      "z": -163.0045822630286
+    },
+    {
+      "id": "A::bess-logistics-expert",
+      "name": "logistics-expert",
+      "kind": "agent",
+      "dept": "ops",
+      "deptName": "운영·시공·물류",
+      "sessions": 1,
+      "color": "#3fc77b",
+      "val": 10,
+      "x": 91.3606633927424,
+      "y": -2.844827586206884,
+      "z": 137.36861410250444
+    },
+    {
+      "id": "A::bess-marketer",
+      "name": "marketer",
+      "kind": "agent",
+      "dept": "business",
+      "deptName": "사업·영업·시장",
+      "sessions": 10,
+      "color": "#fb923c",
+      "val": 19,
+      "x": -159.96706819026676,
+      "y": -8.534482758620689,
+      "z": -39.53099668176046
+    },
+    {
+      "id": "A::bess-network-engineer",
+      "name": "network-engineer",
+      "kind": "agent",
+      "dept": "data",
+      "deptName": "데이터·AI·IT",
+      "sessions": 1,
+      "color": "#22d3ee",
+      "val": 10,
+      "x": 144.3121939311698,
+      "y": -14.224137931034493,
+      "z": -78.71889597098873
+    },
+    {
+      "id": "A::bess-om-expert",
+      "name": "om-expert",
+      "kind": "agent",
+      "dept": "ops",
+      "deptName": "운영·시공·물류",
+      "sessions": 3,
+      "color": "#3fc77b",
+      "val": 12,
+      "x": -53.04579564580081,
+      "y": -19.91379310344826,
+      "z": 154.96639767555095
+    },
+    {
+      "id": "A::bess-pcs-expert",
+      "name": "pcs-expert",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 15,
+      "color": "#7ad7ff",
+      "val": 21,
+      "x": -65.24676380218897,
+      "y": -25.603448275862064,
+      "z": -149.37310082383178
+    },
+    {
+      "id": "A::bess-power-system-analyst",
+      "name": "power-system-analyst",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 14,
+      "color": "#7ad7ff",
+      "val": 21,
+      "x": 148.10045734985533,
+      "y": -31.29310344827587,
+      "z": 65.66579177425018
+    },
+    {
+      "id": "A::bess-presentation-designer",
+      "name": "presentation-designer",
+      "kind": "agent",
+      "dept": "org",
+      "deptName": "조직·관리·문서",
+      "sessions": 2,
+      "color": "#ff8a3d",
+      "val": 11,
+      "x": -152.42059788404345,
+      "y": -36.98275862068964,
+      "z": 51.23706573833573
+    },
+    {
+      "id": "A::bess-procurement-data",
+      "name": "procurement-data",
+      "kind": "agent",
+      "dept": "ops",
+      "deptName": "운영·시공·물류",
+      "sessions": 1,
+      "color": "#3fc77b",
+      "val": 10,
+      "x": 77.09541070517025,
+      "y": -42.672413793103445,
+      "z": -139.50040411866652
+    },
+    {
+      "id": "A::bess-procurement-expert",
+      "name": "procurement-expert",
+      "kind": "agent",
+      "dept": "ops",
+      "deptName": "운영·시공·물류",
+      "sessions": 11,
+      "color": "#3fc77b",
+      "val": 20,
+      "x": 37.000351127275906,
+      "y": -48.362068965517246,
+      "z": 153.35280989219874
+    },
+    {
+      "id": "A::bess-qaqc-engineer",
+      "name": "qaqc-engineer",
+      "kind": "agent",
+      "dept": "hse",
+      "deptName": "HSE·환경·QA",
+      "sessions": 1,
+      "color": "#ef5b5b",
+      "val": 10,
+      "x": -129.33001570133086,
+      "y": -54.05172413793105,
+      "z": -87.04687332931907
+    },
+    {
+      "id": "A::bess-sales-manager",
+      "name": "sales-manager",
+      "kind": "agent",
+      "dept": "business",
+      "deptName": "사업·영업·시장",
+      "sessions": 1,
+      "color": "#fb923c",
+      "val": 10,
+      "x": 152.09592887067296,
+      "y": -59.74137931034482,
+      "z": -22.864733085358765
+    },
+    {
+      "id": "A::bess-scheduler",
+      "name": "scheduler",
+      "kind": "agent",
+      "dept": "ops",
+      "deptName": "운영·시공·물류",
+      "sessions": 2,
+      "color": "#3fc77b",
+      "val": 11,
+      "x": -95.23905800252159,
+      "y": -65.43103448275862,
+      "z": 117.78498018554139
+    },
+    {
+      "id": "A::bess-security-expert",
+      "name": "security-expert",
+      "kind": "agent",
+      "dept": "hse",
+      "deptName": "HSE·환경·QA",
+      "sessions": 2,
+      "color": "#ef5b5b",
+      "val": 11,
+      "x": -9.176857416690492,
+      "y": -71.12068965517243,
+      "z": -148.60226374765082
+    },
+    {
+      "id": "A::bess-standards-analyst",
+      "name": "standards-analyst",
+      "kind": "agent",
+      "dept": "permits",
+      "deptName": "인허가·표준",
+      "sessions": 15,
+      "color": "#bb86fc",
+      "val": 21,
+      "x": 105.0922586486239,
+      "y": -76.81034482758619,
+      "z": 101.39422123374706
+    },
+    {
+      "id": "A::bess-standards-japan",
+      "name": "standards-japan",
+      "kind": "agent",
+      "dept": "permits",
+      "deptName": "인허가·표준",
+      "sessions": 2,
+      "color": "#bb86fc",
+      "val": 11,
+      "x": -142.8464099449008,
+      "y": -82.5,
+      "z": -3.6950190599424486
+    },
+    {
+      "id": "A::bess-standards-korea",
+      "name": "standards-korea",
+      "kind": "agent",
+      "dept": "permits",
+      "deptName": "인허가·표준",
+      "sessions": 8,
+      "color": "#bb86fc",
+      "val": 17,
+      "x": 105.23096506509503,
+      "y": -88.18965517241381,
+      "z": -91.50971922172799
+    },
+    {
+      "id": "A::bess-standards-poland",
+      "name": "standards-poland",
+      "kind": "agent",
+      "dept": "permits",
+      "deptName": "인허가·표준",
+      "sessions": 2,
+      "color": "#bb86fc",
+      "val": 11,
+      "x": -15.354082938247876,
+      "y": -93.87931034482757,
+      "z": 134.81812647528133
+    },
+    {
+      "id": "A::bess-standards-uk",
+      "name": "standards-uk",
+      "kind": "agent",
+      "dept": "permits",
+      "deptName": "인허가·표준",
+      "sessions": 1,
+      "color": "#bb86fc",
+      "val": 10,
+      "x": -77.32634507803913,
+      "y": -99.56896551724138,
+      "z": -106.45025816172742
+    },
+    {
+      "id": "A::bess-standards-usa",
+      "name": "standards-usa",
+      "kind": "agent",
+      "dept": "permits",
+      "deptName": "인허가·표준",
+      "sessions": 2,
+      "color": "#bb86fc",
+      "val": 11,
+      "x": 124.50888859259456,
+      "y": -105.25862068965517,
+      "z": 25.360588162504758
+    },
+    {
+      "id": "A::bess-structural-analyst",
+      "name": "structural-analyst",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 2,
+      "color": "#7ad7ff",
+      "val": 11,
+      "x": -104.70751041750374,
+      "y": -110.94827586206895,
+      "z": 62.86348181100529
+    },
+    {
+      "id": "A::bess-substation-engineer",
+      "name": "substation-engineer",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 1,
+      "color": "#7ad7ff",
+      "val": 10,
+      "x": 33.20198525356213,
+      "y": -116.63793103448275,
+      "z": -111.88485697008997
+    },
+    {
+      "id": "A::bess-system-engineer",
+      "name": "system-engineer",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 18,
+      "color": "#7ad7ff",
+      "val": 21,
+      "x": 48.47779622593642,
+      "y": -122.32758620689656,
+      "z": 99.55332704571394
+    },
+    {
+      "id": "A::bess-tax-accountant",
+      "name": "tax-accountant",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 1,
+      "color": "#ffb020",
+      "val": 10,
+      "x": -96.82623577660755,
+      "y": -128.01724137931035,
+      "z": -38.22650879905453
+    },
+    {
+      "id": "A::bess-tax-epc-accounting",
+      "name": "tax-epc-accounting",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 1,
+      "color": "#ffb020",
+      "val": 10,
+      "x": 90.29187566627829,
+      "y": -133.70689655172413,
+      "z": -34.56650117052467
+    },
+    {
+      "id": "A::bess-tax-japan",
+      "name": "tax-japan",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 2,
+      "color": "#ffb020",
+      "val": 11,
+      "x": -39.472821865071346,
+      "y": -139.39655172413794,
+      "z": 78.96516764642548
+    },
+    {
+      "id": "A::bess-tax-korea",
+      "name": "tax-korea",
+      "kind": "agent",
+      "dept": "finance",
+      "deptName": "재무·법무·계약",
+      "sessions": 2,
+      "color": "#ffb020",
+      "val": 11,
+      "x": -21.57135104328903,
+      "y": -145.08620689655174,
+      "z": -75.56235426810217
+    },
+    {
+      "id": "A::bess-training-expert",
+      "name": "training-expert",
+      "kind": "agent",
+      "dept": "org",
+      "deptName": "조직·관리·문서",
+      "sessions": 4,
+      "color": "#ff8a3d",
+      "val": 13,
+      "x": 57.09784970852241,
+      "y": -150.7758620689655,
+      "z": 35.092377748213
+    },
+    {
+      "id": "A::bess-transformer-expert",
+      "name": "transformer-expert",
+      "kind": "agent",
+      "dept": "system",
+      "deptName": "시스템·해석",
+      "sessions": 1,
+      "color": "#7ad7ff",
+      "val": 10,
+      "x": -51.43085223307929,
+      "y": -156.4655172413793,
+      "z": 9.92014883793568
+    },
+    {
+      "id": "A::bess-translator",
+      "name": "translator",
+      "kind": "agent",
+      "dept": "org",
+      "deptName": "조직·관리·문서",
+      "sessions": 2,
+      "color": "#ff8a3d",
+      "val": 11,
+      "x": 18.185170571669268,
+      "y": -162.1551724137931,
+      "z": -24.494889890185704
+    }
+  ],
+  "links": [
+    {
+      "source": "S::2026-10-26T13-02-21",
+      "target": "A::bess-financial-analysis",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T13-02-21",
+      "target": "A::bess-grid-interconnection",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T13-02-21",
+      "target": "A::bess-hse-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T13-02-21",
+      "target": "A::bess-om-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T13-02-21",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T13-02-21",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T13-02-21",
+      "target": "A::bess-tax-accountant",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T13-02-21",
+      "target": "A::bess-training-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T09-27-05",
+      "target": "A::bess-financial-analysis",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T09-27-05",
+      "target": "A::bess-internal-auditor",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T09-27-05",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T09-27-05",
+      "target": "A::bess-qaqc-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T09-27-05",
+      "target": "A::bess-security-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T09-27-05",
+      "target": "A::bess-standards-japan",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T09-27-05",
+      "target": "A::bess-standards-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T09-27-05",
+      "target": "A::bess-training-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T06-59-31",
+      "target": "A::bess-circuit-breaker-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T06-59-31",
+      "target": "A::bess-data-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T06-59-31",
+      "target": "A::bess-emc-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T06-59-31",
+      "target": "A::bess-grounding-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T06-59-31",
+      "target": "A::bess-insurance-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T06-59-31",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T06-59-31",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T06-59-31",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T04-44-21",
+      "target": "A::bess-cybersecurity-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T04-44-21",
+      "target": "A::bess-data-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T04-44-21",
+      "target": "A::bess-grid-interconnection",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T04-44-21",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T04-44-21",
+      "target": "A::bess-scheduler",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T04-44-21",
+      "target": "A::bess-security-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T04-44-21",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T04-44-21",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T02-30-04",
+      "target": "A::bess-facility-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T02-30-04",
+      "target": "A::bess-grid-interconnection",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T02-30-04",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T02-30-04",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T02-30-04",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T02-30-04",
+      "target": "A::bess-standards-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T02-30-04",
+      "target": "A::bess-standards-uk",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T02-30-04",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T00-13-51",
+      "target": "A::bess-financial-analysis",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T00-13-51",
+      "target": "A::bess-internal-auditor",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T00-13-51",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T00-13-51",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T00-13-51",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T00-13-51",
+      "target": "A::bess-substation-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T00-13-51",
+      "target": "A::bess-tax-japan",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-26T00-13-51",
+      "target": "A::bess-tax-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T21-53-32",
+      "target": "A::bess-financial-analysis",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T21-53-32",
+      "target": "A::bess-grid-interconnection",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T21-53-32",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T21-53-32",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T21-53-32",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T21-53-32",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T21-53-32",
+      "target": "A::bess-training-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T21-53-32",
+      "target": "A::bess-transformer-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T18-33-04",
+      "target": "A::bess-cable-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T18-33-04",
+      "target": "A::bess-facility-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T18-33-04",
+      "target": "A::bess-financial-analysis",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T18-33-04",
+      "target": "A::bess-logistics-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T18-33-04",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T18-33-04",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T18-33-04",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T18-33-04",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T09-04-27",
+      "target": "A::bess-business-dev",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T09-04-27",
+      "target": "A::bess-esg-finance",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T09-04-27",
+      "target": "A::bess-financial-analysis",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T09-04-27",
+      "target": "A::bess-grid-interconnection",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T09-04-27",
+      "target": "A::bess-hybrid-specialist",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T09-04-27",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T09-04-27",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T09-04-27",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T06-41-56",
+      "target": "A::bess-contract-specialist",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T06-41-56",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T06-41-56",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T06-41-56",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T06-41-56",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T06-41-56",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T06-41-56",
+      "target": "A::bess-standards-poland",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T06-41-56",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T04-18-59",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T04-18-59",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T04-18-59",
+      "target": "A::bess-env-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T04-18-59",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T04-18-59",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T04-18-59",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T04-18-59",
+      "target": "A::bess-presentation-designer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T04-18-59",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T02-13-08",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T02-13-08",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T02-13-08",
+      "target": "A::bess-hse-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T02-13-08",
+      "target": "A::bess-knowledge-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T02-13-08",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T02-13-08",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T02-13-08",
+      "target": "A::bess-standards-usa",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-25T02-13-08",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T23-39-58",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T23-39-58",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T23-39-58",
+      "target": "A::bess-network-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T23-39-58",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T23-39-58",
+      "target": "A::bess-presentation-designer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T23-39-58",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T23-39-58",
+      "target": "A::bess-scheduler",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T23-39-58",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T16-35-42",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T16-35-42",
+      "target": "A::bess-financial-analysis",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T16-35-42",
+      "target": "A::bess-grid-interconnection",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T16-35-42",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T16-35-42",
+      "target": "A::bess-om-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T16-35-42",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T16-35-42",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T16-35-42",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T08-44-57",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T08-44-57",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T08-44-57",
+      "target": "A::bess-customs-tariff",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T08-44-57",
+      "target": "A::bess-financial-analysis",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T08-44-57",
+      "target": "A::bess-knowledge-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T08-44-57",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T08-44-57",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T08-44-57",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T06-36-45",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T06-36-45",
+      "target": "A::bess-data-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T06-36-45",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T06-36-45",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T06-36-45",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T06-36-45",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T06-36-45",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T06-36-45",
+      "target": "A::bess-translator",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T04-26-31",
+      "target": "A::bess-business-dev",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T04-26-31",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T04-26-31",
+      "target": "A::bess-emerging-markets",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T04-26-31",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T04-26-31",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T04-26-31",
+      "target": "A::bess-om-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T04-26-31",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T04-26-31",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T02-16-59",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T02-16-59",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T02-16-59",
+      "target": "A::bess-data-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T02-16-59",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T02-16-59",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T02-16-59",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T02-16-59",
+      "target": "A::bess-standards-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T02-16-59",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T00-04-11",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T00-04-11",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T00-04-11",
+      "target": "A::bess-hse-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T00-04-11",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T00-04-11",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T00-04-11",
+      "target": "A::bess-structural-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T00-04-11",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-24T00-04-11",
+      "target": "A::bess-tax-japan",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T21-53-43",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T21-53-43",
+      "target": "A::bess-data-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T21-53-43",
+      "target": "A::bess-ip-patent-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T21-53-43",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T21-53-43",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T21-53-43",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T21-53-43",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T21-53-43",
+      "target": "A::bess-tax-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T18-50-28",
+      "target": "A::bess-business-dev",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T18-50-28",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T18-50-28",
+      "target": "A::bess-ebop-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T18-50-28",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T18-50-28",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T18-50-28",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T18-50-28",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T18-50-28",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T17-03-13",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T17-03-13",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T17-03-13",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T17-03-13",
+      "target": "A::bess-hydrogen-specialist",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T17-03-13",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T17-03-13",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T17-03-13",
+      "target": "A::bess-standards-poland",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T17-03-13",
+      "target": "A::bess-structural-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T15-13-20",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T15-13-20",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T15-13-20",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T15-13-20",
+      "target": "A::bess-hse-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T15-13-20",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T15-13-20",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T15-13-20",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T15-13-20",
+      "target": "A::bess-standards-japan",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T13-22-37",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T13-22-37",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T13-22-37",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T13-22-37",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T13-22-37",
+      "target": "A::bess-procurement-data",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T13-22-37",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T13-22-37",
+      "target": "A::bess-standards-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T13-22-37",
+      "target": "A::bess-translator",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T11-17-10",
+      "target": "A::bess-business-dev",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T11-17-10",
+      "target": "A::bess-cable-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T11-17-10",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T11-17-10",
+      "target": "A::bess-esg-finance",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T11-17-10",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T11-17-10",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T11-17-10",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T11-17-10",
+      "target": "A::bess-standards-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T09-27-20",
+      "target": "A::bess-battery-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T09-27-20",
+      "target": "A::bess-cost-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T09-27-20",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T09-27-20",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T09-27-20",
+      "target": "A::bess-procurement-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T09-27-20",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T09-27-20",
+      "target": "A::bess-standards-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T09-27-20",
+      "target": "A::bess-tax-epc-accounting",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T07-37-36",
+      "target": "A::bess-contract-specialist",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T07-37-36",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T07-37-36",
+      "target": "A::bess-grounding-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T07-37-36",
+      "target": "A::bess-hse-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T07-37-36",
+      "target": "A::bess-power-system-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T07-37-36",
+      "target": "A::bess-sales-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T07-37-36",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T07-37-36",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T05-51-48",
+      "target": "A::bess-cbop-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T05-51-48",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T05-51-48",
+      "target": "A::bess-grid-interconnection",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T05-51-48",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T05-51-48",
+      "target": "A::bess-pcs-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T05-51-48",
+      "target": "A::bess-standards-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T05-51-48",
+      "target": "A::bess-standards-usa",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T05-51-48",
+      "target": "A::bess-system-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T02-33-57",
+      "target": "A::bess-epc-bom",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T02-33-57",
+      "target": "A::bess-fire-engineer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T02-33-57",
+      "target": "A::bess-knowledge-manager",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T02-33-57",
+      "target": "A::bess-legal-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T02-33-57",
+      "target": "A::bess-marketer",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T02-33-57",
+      "target": "A::bess-standards-analyst",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T02-33-57",
+      "target": "A::bess-standards-korea",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "S::2026-10-23T02-33-57",
+      "target": "A::bess-training-expert",
+      "type": "knowledge",
+      "kind": "participates",
+      "weight": 1
+    },
+    {
+      "source": "A::bess-power-system-analyst",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 12
+    },
+    {
+      "source": "A::bess-pcs-expert",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 12
+    },
+    {
+      "source": "A::bess-pcs-expert",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 10
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 9
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 9
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 8
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 8
+    },
+    {
+      "source": "A::bess-grid-interconnection",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 7
+    },
+    {
+      "source": "A::bess-marketer",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 7
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 7
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 7
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 7
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 7
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 7
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-legal-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 7
+    },
+    {
+      "source": "A::bess-pcs-expert",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 6
+    },
+    {
+      "source": "A::bess-standards-analyst",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 6
+    },
+    {
+      "source": "A::bess-marketer",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 6
+    },
+    {
+      "source": "A::bess-marketer",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 6
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 6
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 6
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-legal-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 6
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "co",
+      "weight": 6
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-data-analyst",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-grid-interconnection",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-standards-analyst",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-procurement-expert",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-marketer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-procurement-expert",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-marketer",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 5
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-grid-interconnection",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-grid-interconnection",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-hse-manager",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-power-system-analyst",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-marketer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-business-dev",
+      "target": "A::bess-marketer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-hse-manager",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-legal-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "co",
+      "weight": 4
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-training-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-hse-manager",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-procurement-expert",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-data-analyst",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-data-analyst",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-standards-korea",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-grid-interconnection",
+      "target": "A::bess-marketer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-pcs-expert",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-power-system-analyst",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-hse-manager",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-data-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-business-dev",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-business-dev",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-marketer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-hse-manager",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 3
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-om-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-grid-interconnection",
+      "target": "A::bess-om-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-grid-interconnection",
+      "target": "A::bess-training-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-om-expert",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-power-system-analyst",
+      "target": "A::bess-training-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-system-engineer",
+      "target": "A::bess-training-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-internal-auditor",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-internal-auditor",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-procurement-expert",
+      "target": "A::bess-standards-japan",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-standards-korea",
+      "target": "A::bess-training-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-data-analyst",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-grounding-engineer",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-grounding-engineer",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-grid-interconnection",
+      "target": "A::bess-standards-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-scheduler",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-facility-manager",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-facility-manager",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-facility-manager",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-grid-interconnection",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-pcs-expert",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "co",
+      "weight": 2
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 177
+    },
+    {
+      "source": "A::bess-procurement-expert",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 175
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 171
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 126
+    },
+    {
+      "source": "A::bess-hse-manager",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 110
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 98
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-battery-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 94
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 93
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 83
+    },
+    {
+      "source": "A::bess-procurement-expert",
+      "target": "A::bess-battery-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 72
+    },
+    {
+      "source": "A::bess-standards-korea",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 68
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-battery-expert",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 66
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 66
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 64
+    },
+    {
+      "source": "A::bess-standards-korea",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 62
+    },
+    {
+      "source": "A::bess-business-dev",
+      "target": "A::bess-marketer",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 58
+    },
+    {
+      "source": "A::bess-tax-korea",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 56
+    },
+    {
+      "source": "A::bess-standards-korea",
+      "target": "A::bess-legal-expert",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 55
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-financial-analysis",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 50
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 50
+    },
+    {
+      "source": "A::bess-system-engineer",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 49
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 48
+    },
+    {
+      "source": "A::bess-procurement-expert",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 47
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-marketer",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 46
+    },
+    {
+      "source": "A::bess-system-engineer",
+      "target": "A::bess-data-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 45
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-hse-manager",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 44
+    },
+    {
+      "source": "A::bess-system-engineer",
+      "target": "A::bess-emc-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 44
+    },
+    {
+      "source": "A::bess-standards-korea",
+      "target": "A::bess-battery-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 44
+    },
+    {
+      "source": "A::bess-system-engineer",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 43
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-data-analyst",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 42
+    },
+    {
+      "source": "A::bess-tax-korea",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 41
+    },
+    {
+      "source": "A::bess-fire-engineer",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 41
+    },
+    {
+      "source": "A::bess-marketer",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 40
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 40
+    },
+    {
+      "source": "A::bess-system-engineer",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 40
+    },
+    {
+      "source": "A::bess-cost-analyst",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 40
+    },
+    {
+      "source": "A::bess-pcs-expert",
+      "target": "A::bess-system-engineer",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 39
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 39
+    },
+    {
+      "source": "A::bess-power-system-analyst",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 39
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 39
+    },
+    {
+      "source": "A::bess-business-dev",
+      "target": "A::bess-financial-analysis",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 38
+    },
+    {
+      "source": "A::bess-standards-korea",
+      "target": "A::bess-tax-korea",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 38
+    },
+    {
+      "source": "A::bess-standards-korea",
+      "target": "A::bess-procurement-expert",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 38
+    },
+    {
+      "source": "A::bess-marketer",
+      "target": "A::bess-financial-analysis",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 37
+    },
+    {
+      "source": "A::bess-tax-korea",
+      "target": "A::bess-legal-expert",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 37
+    },
+    {
+      "source": "A::bess-power-system-analyst",
+      "target": "A::bess-pcs-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 37
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-contract-specialist",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 36
+    },
+    {
+      "source": "A::bess-pcs-expert",
+      "target": "A::bess-power-system-analyst",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 36
+    },
+    {
+      "source": "A::bess-financial-analysis",
+      "target": "A::bess-battery-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 36
+    },
+    {
+      "source": "A::bess-system-engineer",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 36
+    },
+    {
+      "source": "A::bess-business-dev",
+      "target": "A::bess-cost-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 35
+    },
+    {
+      "source": "A::bess-procurement-expert",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 35
+    },
+    {
+      "source": "A::bess-standards-analyst",
+      "target": "A::bess-standards-korea",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 34
+    },
+    {
+      "source": "A::bess-emc-analyst",
+      "target": "A::bess-fire-engineer",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 32
+    },
+    {
+      "source": "A::bess-legal-expert",
+      "target": "A::bess-financial-analysis",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 32
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-data-analyst",
+      "type": "collab",
+      "kind": "disagree",
+      "weight": 32
+    },
+    {
+      "source": "A::bess-battery-expert",
+      "target": "A::bess-financial-analysis",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 32
+    },
+    {
+      "source": "A::bess-emc-analyst",
+      "target": "A::bess-circuit-breaker-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 32
+    },
+    {
+      "source": "A::bess-system-engineer",
+      "target": "A::bess-battery-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 32
+    },
+    {
+      "source": "A::bess-circuit-breaker-expert",
+      "target": "A::bess-transformer-expert",
+      "type": "collab",
+      "kind": "agree",
+      "weight": 31
+    }
+  ],
+  "meta": {
+    "title": "BESS Team 3D Unified Knowledge Relations (Cosmic Galaxy)",
+    "generatedAt": "2026-10-26T14:00:00Z",
+    "sessionsCount": 30,
+    "agentsCount": 58,
+    "totalNodes": 88,
+    "totalEdges": 382,
+    "knowledgeEdges": 232,
+    "collabEdges": 150,
+    "fps": 60
+  }
+}
