@@ -145,6 +145,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "a1c12432cf74",
+   "date": "2026-10-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-fit-procedure",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 시운전(EMS/FIT) 절차 최적화를 위한 초기 조건 설정 및 성능 평가 프로토콜 개발",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "92eac20a8e66",
    "date": "2026-10-27",
    "type": "discussion",
@@ -3688,24 +3706,6 @@
    "title": "[ES 진단] LG엔솔, 북미 ESS 거점 5곳...연말 생산능력 50GWh 이상 목표",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE91THE3TTZEQTZaclo0QlV0aXVsRzNIa2c1RVNVRXFFNjRQTlVwa3lnS2EyamxkakNFWXdyR0Z5cWJ5bkNDRmZpLVJheldDTVhEb1o5dmoyUXA2WEc4ZjBBcllDZE9IOHp6TEFaNnBiMA?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "8aa647096e6d",
-   "date": "2026-10-21",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-circuit-breaker-expert",
-    "bess-cost-analyst",
-    "bess-grid-interconnection",
-    "bess-mlops-engineer",
-    "bess-pcs-expert",
-    "bess-permit-english",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 명령: `bess-pcs-expert` 팀을 구성하여 최신 SiC 기반 IGBT 인버터 기술의 성능 향상 및 Grid-Forming 기능 최적화 방안 연구 진행.",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
