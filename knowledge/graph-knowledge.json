@@ -406,6 +406,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-09069d0b4c83",
+   "name": "팀 토론 — 지식 공유 플랫폼 업데이트를 통해 글로벌 BESS 트렌드 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-07f2be5a7505",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-aea363b1f5e8",
-   "name": "팀 토론 — 내부 통제 시스템 강화 및 원가 관리 효율성 검토 추진",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7510,6 +7510,46 @@
   {
    "source": "SUB-001",
    "target": "K-0ba79dd77ea1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-09069d0b4c83",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-09069d0b4c83",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-09069d0b4c83",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-09069d0b4c83",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-09069d0b4c83",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-09069d0b4c83",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-09069d0b4c83",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-09069d0b4c83",
    "type": "knowledge"
   },
   {
@@ -16886,46 +16926,6 @@
    "source": "BAT-001",
    "target": "K-c94e89a49698",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "ESG-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-aea363b1f5e8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17429,7 +17429,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3433
+    "events_total": 3434
    }
   ]
  }
