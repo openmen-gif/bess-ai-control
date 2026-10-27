@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-28",
  "totals": {
-  "all": 3432,
+  "all": 3433,
   "briefing": 1733,
   "skill": 880,
-  "discussion": 819,
+  "discussion": 820,
   "activity": 0
  },
  "perAgent": {
@@ -29,14 +29,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 951,
+   "count": 952,
    "byType": {
     "skill": 15,
-    "discussion": 430,
+    "discussion": 431,
     "briefing": 506
    },
    "lastGrown": "2026-10-28",
-   "xp": 1411,
+   "xp": 1413,
    "level": 22
   },
   "bess-business-dev": {
@@ -112,13 +112,13 @@
    "level": 7
   },
   "bess-cost-analyst": {
-   "count": 360,
+   "count": 361,
    "byType": {
     "skill": 16,
-    "discussion": 344
+    "discussion": 345
    },
    "lastGrown": "2026-10-28",
-   "xp": 736,
+   "xp": 738,
    "level": 16
   },
   "bess-customs-tariff": {
@@ -395,14 +395,14 @@
    "level": 6
   },
   "bess-marketer": {
-   "count": 553,
+   "count": 554,
    "byType": {
     "skill": 14,
-    "discussion": 116,
+    "discussion": 117,
     "briefing": 423
    },
    "lastGrown": "2026-10-28",
-   "xp": 697,
+   "xp": 699,
    "level": 16
   },
   "bess-mlops-engineer": {
@@ -539,13 +539,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 288,
+   "count": 289,
    "byType": {
     "skill": 15,
-    "discussion": 273
+    "discussion": 274
    },
    "lastGrown": "2026-10-28",
-   "xp": 591,
+   "xp": 593,
    "level": 15
   },
   "bess-project-manager": {
@@ -1201,7 +1201,7 @@
   },
   {
    "date": "2026-10-28",
-   "added": 45
+   "added": 46
   }
  ],
  "freshness": {

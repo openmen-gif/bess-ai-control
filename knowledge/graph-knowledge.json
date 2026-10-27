@@ -109,6 +109,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-99cb0d8ff1d6",
+   "name": "팀 토론 — 지식 공유 플랫폼 업데이트를 통해 글로벌 BESS 트렌드 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-974e5ee5e81e",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-96331f1c19e1",
-   "name": "팀 토론 — BESS 차별화 기술 특허 분석 및 라이선스 전략 수립 추진",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7295,6 +7295,26 @@
   {
    "source": "BIZ-001",
    "target": "K-a537dba9224f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-99cb0d8ff1d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-99cb0d8ff1d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-99cb0d8ff1d6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-99cb0d8ff1d6",
    "type": "knowledge"
   },
   {
@@ -16906,46 +16926,6 @@
    "source": "STD-001",
    "target": "K-aea363b1f5e8",
    "type": "knowledge"
-  },
-  {
-   "source": "IPP-001",
-   "target": "K-96331f1c19e1",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-96331f1c19e1",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-96331f1c19e1",
-   "type": "knowledge"
-  },
-  {
-   "source": "SLS-001",
-   "target": "K-96331f1c19e1",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-96331f1c19e1",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-96331f1c19e1",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-96331f1c19e1",
-   "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-96331f1c19e1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17449,7 +17429,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3432
+    "events_total": 3433
    }
   ]
  }
