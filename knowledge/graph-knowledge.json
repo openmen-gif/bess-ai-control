@@ -136,6 +136,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-9c1fa50399b6",
+   "name": "팀 토론 — 안전성 통합 시스템 구축 계획 수립 및 초기 설계 검토 (안",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-92eac20a8e66",
    "name": "팀 토론 — 다국어 기술 문서 번역 시스템 구축 계획 수립",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-19",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-e447d13962ce",
-   "name": "팀 토론 — 유럽 전기버스 배터리 재활용 프로젝트 참여 전략 수립 및 국",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-19",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3745,6 +3745,46 @@
   {
    "source": "DEV-001",
    "target": "K-a1c12432cf74",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9c1fa50399b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-9c1fa50399b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-9c1fa50399b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-9c1fa50399b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-9c1fa50399b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-9c1fa50399b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-9c1fa50399b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-9c1fa50399b6",
    "type": "knowledge"
   },
   {
@@ -8436,46 +8476,6 @@
    "source": "TRF-001",
    "target": "K-e5553dcdfa5b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-e447d13962ce",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-e447d13962ce",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-e447d13962ce",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-e447d13962ce",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-e447d13962ce",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-e447d13962ce",
-   "type": "knowledge"
-  },
-  {
-   "source": "PDI-001",
-   "target": "K-e447d13962ce",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-e447d13962ce",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8974,7 +8974,7 @@
    {
     "date": "2026-10-27",
     "knowledge": 400,
-    "events_total": 3371
+    "events_total": 3372
    }
   ]
  }

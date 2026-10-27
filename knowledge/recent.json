@@ -181,6 +181,24 @@
    "source": "bess-team"
   },
   {
+   "id": "9c1fa50399b6",
+   "date": "2026-10-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cybersecurity-expert",
+    "bess-financial-analysis",
+    "bess-pcs-expert",
+    "bess-risk-manager",
+    "bess-scheduler",
+    "bess-system-engineer",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 안전성 통합 시스템 구축 계획 수립 및 초기 설계 검토 (안전 모니터링 시스템과 화재 위험 예측 모델 통합)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "92eac20a8e66",
    "date": "2026-10-27",
    "type": "discussion",
@@ -3708,24 +3726,6 @@
    "title": "열폭주 격리 모듈 시장 2035년 전망: 배터리 안전시험 수요가 성장 견인",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNS1N5OFJGWEJzTGdnY1hocGwwZ0RRd0FVQmJ0cVMyZGpjNUhZQlpvcnpUU1VmMmdCc0NGaU1Bak5MbmxsM2dKZHJ1WVlfU181dlh5elJIc0tmOF8ySV9zY3VGQm1qTG9iQURMSjlFWmJyeVpjcU5LS2JQTHB0MjZReEpPVEdUa3I5bkZiVWdLQ1NlaEJ2VERfbEFFc2NyeXM2aXpOdGYyM2dRVlp1VGQ4UXdBYzVOcTFVYTFKZnhmdmFJQy12bjRz?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "a265f3cd2c43",
-   "date": "2026-10-21",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-fire-engineer",
-    "bess-procurement-expert",
-    "bess-project-manager",
-    "bess-substation-engineer",
-    "bess-system-engineer",
-    "bess-tool-developer"
-   ],
-   "title": "팀 토론 — BESS 시스템 시뮬레이션 툴 개발로 효율적인 성능 검증 및 최적화 구현",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
