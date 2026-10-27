@@ -325,6 +325,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2e67a8e6e0b2",
+   "name": "팀 토론 — 벤더 성과 추적 시스템 구축을 통해 조달 데이터 분석 정확도",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2ce40764579b",
    "name": "SEIA, 계통 운영자·규제기관이 태양광·저장장치로 비용을 줄이는 방안 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-c1b893e224a1",
-   "name": "예측 고도화와 공유형 저장장치로 지방 전력시장 비용 절감",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-19",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -3885,6 +3885,46 @@
   {
    "source": "MAR-001",
    "target": "K-304c72dd38c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2e67a8e6e0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2e67a8e6e0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-2e67a8e6e0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-2e67a8e6e0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-2e67a8e6e0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-2e67a8e6e0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2e67a8e6e0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2e67a8e6e0b2",
    "type": "knowledge"
   },
   {
@@ -8301,11 +8341,6 @@
    "source": "STD-001",
    "target": "K-d56e9e0adbeb",
    "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-c1b893e224a1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8804,7 +8839,7 @@
    {
     "date": "2026-10-27",
     "knowledge": 400,
-    "events_total": 3366
+    "events_total": 3367
    }
   ]
  }
