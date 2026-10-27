@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-27",
  "totals": {
-  "all": 3370,
+  "all": 3371,
   "briefing": 1733,
   "skill": 824,
-  "discussion": 813,
+  "discussion": 814,
   "activity": 0
  },
  "perAgent": {
@@ -28,14 +28,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 944,
+   "count": 945,
    "byType": {
     "skill": 14,
-    "discussion": 424,
+    "discussion": 425,
     "briefing": 506
    },
    "lastGrown": "2026-10-27",
-   "xp": 1396,
+   "xp": 1398,
    "level": 22
   },
   "bess-business-dev": {
@@ -101,23 +101,23 @@
    "level": 7
   },
   "bess-contract-specialist": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 12,
-    "discussion": 49
+    "discussion": 50
    },
-   "lastGrown": "2026-10-25",
-   "xp": 134,
+   "lastGrown": "2026-10-27",
+   "xp": 136,
    "level": 7
   },
   "bess-cost-analyst": {
-   "count": 354,
+   "count": 355,
    "byType": {
     "skill": 14,
-    "discussion": 340
+    "discussion": 341
    },
    "lastGrown": "2026-10-27",
-   "xp": 722,
+   "xp": 724,
    "level": 16
   },
   "bess-customs-tariff": {
@@ -162,13 +162,13 @@
    "level": 7
   },
   "bess-emc-analyst": {
-   "count": 121,
+   "count": 122,
    "byType": {
     "skill": 12,
-    "discussion": 109
+    "discussion": 110
    },
-   "lastGrown": "2026-10-26",
-   "xp": 254,
+   "lastGrown": "2026-10-27",
+   "xp": 256,
    "level": 10
   },
   "bess-emerging-markets": {
@@ -374,13 +374,13 @@
    "level": 6
   },
   "bess-legal-expert": {
-   "count": 247,
+   "count": 248,
    "byType": {
     "skill": 13,
-    "discussion": 234
+    "discussion": 235
    },
-   "lastGrown": "2026-10-26",
-   "xp": 507,
+   "lastGrown": "2026-10-27",
+   "xp": 509,
    "level": 14
   },
   "bess-logistics-expert": {
@@ -425,13 +425,13 @@
    "level": 6
   },
   "bess-om-expert": {
-   "count": 39,
+   "count": 40,
    "byType": {
     "skill": 7,
-    "discussion": 32
+    "discussion": 33
    },
    "lastGrown": "2026-10-27",
-   "xp": 85,
+   "xp": 87,
    "level": 6
   },
   "bess-output-generator": {
@@ -538,13 +538,13 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 283,
+   "count": 284,
    "byType": {
     "skill": 13,
-    "discussion": 270
+    "discussion": 271
    },
    "lastGrown": "2026-10-27",
-   "xp": 579,
+   "xp": 581,
    "level": 14
   },
   "bess-project-manager": {
@@ -1200,7 +1200,7 @@
   },
   {
    "date": "2026-10-27",
-   "added": 50
+   "added": 51
   }
  ],
  "freshness": {

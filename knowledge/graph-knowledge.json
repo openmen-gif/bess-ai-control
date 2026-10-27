@@ -289,6 +289,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-4c1d80b11bf1",
+   "name": "팀 토론 — BESS 프로젝트 계약 최적화를 위한 FIDIC Silver",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-475f43a835c7",
    "name": "BNEF, 2026년 세계 에너지저장 신규 설치 188GW 전망",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-19",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-dfe325c3c746",
-   "name": "옥상 태양광과 BESS 결합, 베트남 에너지 안보 해법으로 주목",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3900,6 +3900,41 @@
   {
    "source": "BAT-001",
    "target": "K-4c3d6237ef1a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4c1d80b11bf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-4c1d80b11bf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4c1d80b11bf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-4c1d80b11bf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-4c1d80b11bf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-4c1d80b11bf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-4c1d80b11bf1",
    "type": "knowledge"
   },
   {
@@ -8441,11 +8476,6 @@
    "source": "PRO-001",
    "target": "K-e447d13962ce",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-dfe325c3c746",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8944,7 +8974,7 @@
    {
     "date": "2026-10-27",
     "knowledge": 400,
-    "events_total": 3370
+    "events_total": 3371
    }
   ]
  }
