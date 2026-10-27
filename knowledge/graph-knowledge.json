@@ -145,6 +145,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-8aa76e76745a",
+   "name": "팀 토론 — BESS 시설 내 화재 감지 시스템 통합 설계 및 UL954",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-89ed01811d2b",
    "name": "사후복구 아닌 사전예방 중심… AI로 안전관리 틀 새로 짠다 [AI가 바",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-de5878c5700b",
-   "name": "당신의 전력이 생각만큼 안정적이지 않은 이유: 70마일 구간",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-19",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -3785,6 +3785,46 @@
   {
    "source": "SYS-001",
    "target": "K-92eac20a8e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-8aa76e76745a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8aa76e76745a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8aa76e76745a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-8aa76e76745a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8aa76e76745a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-8aa76e76745a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8aa76e76745a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8aa76e76745a",
    "type": "knowledge"
   },
   {
@@ -8406,11 +8446,6 @@
    "source": "STD-001",
    "target": "K-dfe325c3c746",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-de5878c5700b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8909,7 +8944,7 @@
    {
     "date": "2026-10-27",
     "knowledge": 400,
-    "events_total": 3369
+    "events_total": 3370
    }
   ]
  }
