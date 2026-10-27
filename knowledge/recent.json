@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "events": [
+  {
+   "id": "1737cedd1fde",
+   "date": "2026-10-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-esg-finance",
+    "bess-financial-analysis",
+    "bess-fire-engineer",
+    "bess-marketer",
+    "bess-procurement-expert",
+    "bess-standards-australia"
+   ],
+   "title": "팀 토론 — ESG 투자 전략 수립으로 TCFD 가이드라인 준수 및 지속가능성 강화",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ffe975230067",
    "date": "2026-10-27",
@@ -3707,17 +3725,6 @@
    "title": "팀 토론 — 호주 BESS 확장 프로젝트 금융 확보 동향 분석 및 우리 사업의 글로벌 시장 진출 전략 조정 방안 수립",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "eb1f978e4767",
-   "date": "2026-10-21",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "BYD 에너지 스토리지, 글로벌 서비스망 확대…2027년 거점 추가",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9hTGZMNHFKdkN1dWJ4eEQ4TlFRX3l2cEEtaEdidzJRa1lHZUFTMUxjYURoZ2ptVC1ybEVGZHpVaWlrRWQ1cWNJSTNKYTRMMTdZeU5sdVV4cFJOOTA3RHJ4YXVHdG5vSXdSU3p4dA?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-1737cedd1fde",
+   "name": "팀 토론 — ESG 투자 전략 수립으로 TCFD 가이드라인 준수 및 지속",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ffe975230067",
    "name": "스킬 갱신 — docs(bess-skills): 스킬 12개 가드레일 반",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c5252475ceb1",
-   "name": "스킬 갱신 — docs(bess-skills): 세션 근거 정합성 가드레",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-1737cedd1fde",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1737cedd1fde",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-1737cedd1fde",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-1737cedd1fde",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-1737cedd1fde",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-1737cedd1fde",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-1737cedd1fde",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-1737cedd1fde",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-ffe975230067",
@@ -17096,15 +17136,10 @@
    "source": "BAT-001",
    "target": "K-c601a5a4de7f",
    "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-c5252475ceb1",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "history": [
    {
     "date": "2026-07-20",
@@ -17600,6 +17635,11 @@
     "date": "2026-10-27",
     "knowledge": 800,
     "events_total": 3387
+   },
+   {
+    "date": "2026-10-28",
+    "knowledge": 800,
+    "events_total": 3388
    }
   ]
  }
