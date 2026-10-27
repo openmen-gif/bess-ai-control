@@ -100,6 +100,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-adda25ee361c",
+   "name": "팀 토론 — 최신 배터리 공급망 안정화 동향 분석 및 한국 전력시장 내 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ac500083496e",
    "name": "Sungrow PowerTitan 3.0, 대형 화재시험서 열폭주 확산 ",
    "group": "KNOWLEDGE",
@@ -3590,15 +3599,6 @@
    "date": "2026-10-19",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d935f2ca67f0",
-   "name": "K-배터리, ESS 새 성장축 확보하나…글로벌 성장에 '청신호'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-19",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -3655,6 +3655,46 @@
   {
    "source": "MAR-001",
    "target": "K-b418345c7dc7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-adda25ee361c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-adda25ee361c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-adda25ee361c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-adda25ee361c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-adda25ee361c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-adda25ee361c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-adda25ee361c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-adda25ee361c",
    "type": "knowledge"
   },
   {
@@ -8371,11 +8411,6 @@
    "source": "MAR-001",
    "target": "K-de5878c5700b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-d935f2ca67f0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -8874,7 +8909,7 @@
    {
     "date": "2026-10-27",
     "knowledge": 400,
-    "events_total": 3368
+    "events_total": 3369
    }
   ]
  }
