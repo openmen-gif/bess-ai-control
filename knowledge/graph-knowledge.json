@@ -10,6 +10,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-f05e852dce09",
+   "name": "팀 토론 — 케이블·사이징·루팅 영역 1차 분석 — bess-cable-",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ea80a7173ccf",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,21 +7199,52 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c94e89a49698",
-   "name": "중 독점 LFP에 균열…미 ESS 타고 K배터리 소재사 ‘공급망’ 부상",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
   {
    "source": "CUS-001",
    "target": "K-fce97af15a48",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f05e852dce09",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-f05e852dce09",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f05e852dce09",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-f05e852dce09",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-f05e852dce09",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-f05e852dce09",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-f05e852dce09",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-f05e852dce09",
    "type": "knowledge"
   },
   {
@@ -16921,11 +16961,6 @@
    "source": "BAT-001",
    "target": "K-e29c55b63dbc",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-c94e89a49698",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17429,7 +17464,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3434
+    "events_total": 3435
    }
   ]
  }

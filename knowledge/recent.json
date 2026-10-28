@@ -13,6 +13,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "f05e852dce09",
+   "date": "2026-10-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-power-system-analyst",
+    "bess-presentation-designer",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 케이블·사이징·루팅 영역 1차 분석 — bess-cable-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ea80a7173ccf",
    "date": "2026-10-28",
    "type": "skill",
@@ -3661,24 +3679,6 @@
    "title": "보스포인트 주민, 588에이커 태양광·배터리 저장 프로젝트 중단 소송",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVTlzWWVWT2Z3TGdGWEluNjVIMFVJTE9oZFUzOFZKVElUem1vdUE0WHZHVE1oeVVDcTNtQlAtQkVjNGs2dHd4UVc4YTlFekdscXF2Y0JES3FBTmVOcnA0T0l0NUQ0enEteC1JSE9wdXFGLWdTdUJWN0hpQ3ViSlV4MkJ3Y2o2SE5kZllVNlRzRzMtN0VsTkxUczBON0dFZlRKeV9PbklJX3l4UEVTRzdSMi00NzR6Y0QwbHdBZDFpQjAtZjA?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "c5f916c0baae",
-   "date": "2026-10-22",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-hydrogen-specialist",
-    "bess-output-generator",
-    "bess-pcs-expert",
-    "bess-procurement-expert",
-    "bess-standards-korea",
-    "bess-training-expert"
-   ],
-   "title": "팀 토론 — 전사 문서 표준화 프로세스 확립 및 A4/PDF 포맷으로 통합 보고서 자동 생성 시스템 구축",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
