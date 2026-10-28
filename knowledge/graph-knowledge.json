@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-08cb2e3884f3",
+   "name": "팀 토론 — 미국 BESS 인증 기준 심층 분석 및 국내 적용 가능성 평",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fce97af15a48",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9f1978e81927",
-   "name": "HT로보틱스(396300)눌릴때마다 물량 모아둘 기회로 보이며 이후 전망",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-09",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "SYS-001",
    "target": "K-9a957383e4f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-08cb2e3884f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-08cb2e3884f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-08cb2e3884f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-08cb2e3884f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-08cb2e3884f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-08cb2e3884f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-08cb2e3884f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-08cb2e3884f3",
    "type": "knowledge"
   },
   {
@@ -17031,11 +17071,6 @@
    "source": "BAT-001",
    "target": "K-b3c3fac7069c",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-9f1978e81927",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17544,7 +17579,7 @@
    {
     "date": "2026-10-29",
     "knowledge": 800,
-    "events_total": 3455
+    "events_total": 3456
    }
   ]
  }
