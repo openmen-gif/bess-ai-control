@@ -91,6 +91,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-bc8e9d96c6e2",
+   "name": "팀 토론 — 원격모니터링 시스템 최적화를 통한 운영 가용률 향상 전략 수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-baf4a15972b9",
    "name": "팀 토론 — 환경 모니터링 시스템 강화 계획 수립 및 한국 전력시장 적합",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-09",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-08dc79d5428f",
-   "name": "반도체 주춤한 사이 2차전지 '급속충전'…관련 ETF 수익률 상위권",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-09",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7285,6 +7285,46 @@
   {
    "source": "CAB-001",
    "target": "K-bf90803f2330",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-bc8e9d96c6e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-bc8e9d96c6e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-bc8e9d96c6e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-bc8e9d96c6e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-bc8e9d96c6e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-bc8e9d96c6e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-bc8e9d96c6e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-bc8e9d96c6e2",
    "type": "knowledge"
   },
   {
@@ -17061,11 +17101,6 @@
    "source": "MAR-001",
    "target": "K-1eaa1ed891ed",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-08dc79d5428f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17569,7 +17604,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3438
+    "events_total": 3439
    }
   ]
  }

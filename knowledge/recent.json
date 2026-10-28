@@ -119,6 +119,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "bc8e9d96c6e2",
+   "date": "2026-10-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-labor-safety",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-structural-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 원격모니터링 시스템 최적화를 통한 운영 가용률 향상 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "baf4a15972b9",
    "date": "2026-10-28",
    "type": "discussion",
@@ -3682,24 +3700,6 @@
    "title": "ENERTRAG, 프랑스 Les Sablons BESS 프로젝트 금융 종결(financial close)",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQb05QMXhxZk5jNUhHLVo5ejNPb2ZERVRnM2pjUlBpdTFYYUhKV3gzNUU2TkV1MGtyWWljMUJwSTRvdi1EZEJaMEQybDYtS244Z2hzcGhyblY2S0k2UTNLaTRLSnFKZlRfM2dfU1JYb2ZSbjU5eDRkalV1ek1PQmRpVFBzSGlncDdFdTNFOGd6Tlk4MGJFQllVNjBveXVUNU14dUJucGVsLVJUMGRkTkJySmdn?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "d571c70b4c9b",
-   "date": "2026-10-22",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cable-engineer",
-    "bess-facility-manager",
-    "bess-om-expert",
-    "bess-pcs-expert",
-    "bess-permit-english",
-    "bess-power-system-analyst",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 설비 가용률 향상을 위한 예방정비 최적화 계획 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
