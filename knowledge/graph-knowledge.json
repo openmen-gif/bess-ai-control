@@ -163,6 +163,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-8c5e030c031a",
+   "name": "팀 토론 — KEPCO 및 KPX 인허가 절차 최적화 전략 수립을 통한 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-736f2fd2ff0a",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ea016f85b906",
-   "name": "[다시 뛰는 K-배터리]① 삼성SDI, 기술 투자 결실…ESS 넘어 AI",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7410,6 +7410,46 @@
   {
    "source": "FIN-001",
    "target": "K-8dea6e2cff5d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8c5e030c031a",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-8c5e030c031a",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-8c5e030c031a",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-8c5e030c031a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-8c5e030c031a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8c5e030c031a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-8c5e030c031a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8c5e030c031a",
    "type": "knowledge"
   },
   {
@@ -16991,11 +17031,6 @@
    "source": "BAT-001",
    "target": "K-fd0493ebc8aa",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ea016f85b906",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17499,7 +17534,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3436
+    "events_total": 3437
    }
   ]
  }
