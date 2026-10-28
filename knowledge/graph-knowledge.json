@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-4597e31fef74",
+   "name": "팀 토론 — 공급망 다각화의 실효성 평가 및 지정학적 리스크 관리 전략 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-08cb2e3884f3",
    "name": "팀 토론 — 미국 BESS 인증 기준 심층 분석 및 국내 적용 가능성 평",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-09",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-b3c3fac7069c",
-   "name": "적자에도 국내 생산 늘리는 배터리업계···‘선불 보조금’ 힘 될까",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-09",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "SYS-001",
    "target": "K-9a957383e4f2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4597e31fef74",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-4597e31fef74",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4597e31fef74",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-4597e31fef74",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-4597e31fef74",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-4597e31fef74",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-4597e31fef74",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-4597e31fef74",
    "type": "knowledge"
   },
   {
@@ -17066,11 +17106,6 @@
    "source": "STD-001",
    "target": "K-b941f9f327c6",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-b3c3fac7069c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17579,7 +17614,7 @@
    {
     "date": "2026-10-29",
     "knowledge": 800,
-    "events_total": 3456
+    "events_total": 3457
    }
   ]
  }
