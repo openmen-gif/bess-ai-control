@@ -231,6 +231,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "8ef71a411bcd",
+   "date": "2026-10-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-cybersecurity-expert",
+    "bess-labor-safety",
+    "bess-power-system-analyst",
+    "bess-precom-report",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 사이버보안 위협 평가 및 대응 전략 강화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "8dea6e2cff5d",
    "date": "2026-10-28",
    "type": "skill",
@@ -3689,17 +3707,6 @@
    "title": "팀 토론 — BESS EPC 일본(JP) 표준 심층 분석 및 한국 적용 가능성 평가 실시",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "d5b3758738d5",
-   "date": "2026-10-22",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "ENERTRAG, 프랑스 Les Sablons BESS 프로젝트 금융 종결(financial close)",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQb05QMXhxZk5jNUhHLVo5ejNPb2ZERVRnM2pjUlBpdTFYYUhKV3gzNUU2TkV1MGtyWWljMUJwSTRvdi1EZEJaMEQybDYtS244Z2hzcGhyblY2S0k2UTNLaTRLSnFKZlRfM2dfU1JYb2ZSbjU5eDRkalV1ek1PQmRpVFBzSGlncDdFdTNFOGd6Tlk4MGJFQllVNjBveXVUNU14dUJucGVsLVJUMGRkTkJySmdn?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

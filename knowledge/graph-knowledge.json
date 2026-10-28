@@ -163,6 +163,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-8ef71a411bcd",
+   "name": "팀 토론 — 사이버보안 위협 평가 및 대응 전략 강화 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8dea6e2cff5d",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1eaa1ed891ed",
-   "name": "기본 조작을 익힌 뒤 살펴볼 토토 갱 추가 기능",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-09",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7445,6 +7445,46 @@
   {
    "source": "LKM-001",
    "target": "K-91a691a6bf40",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8ef71a411bcd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8ef71a411bcd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-8ef71a411bcd",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-8ef71a411bcd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-8ef71a411bcd",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-8ef71a411bcd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8ef71a411bcd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8ef71a411bcd",
    "type": "knowledge"
   },
   {
@@ -17096,11 +17136,6 @@
    "source": "BAT-001",
    "target": "K-24e146140a11",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-1eaa1ed891ed",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17604,7 +17639,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3439
+    "events_total": 3440
    }
   ]
  }
