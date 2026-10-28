@@ -429,6 +429,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "3e2570bf48d1",
+   "date": "2026-10-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fit-procedure",
+    "bess-output-generator",
+    "bess-pcs-expert",
+    "bess-procurement-expert",
+    "bess-sales-manager",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 전사 문서 표준화 및 출력 형식 최적화 가이드라인 개발 및 Python 기반 자동 문서 생성 시스템 구축 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3d985abee0b8",
    "date": "2026-10-28",
    "type": "skill",
@@ -3682,17 +3700,6 @@
    "title": "팀 토론 — 설비 가용률 향상을 위한 예방정비 최적화 계획 수립",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "d556238069f5",
-   "date": "2026-10-22",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "코스피 20% 빠질 때 15% 급등… ESS 동력 삼아 날아오른 LG엔솔",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE92WHFlUVpWV2dCSzB0YWJ0Vk9CQ3dsd3VZZTN3eG5TcGJZdzBJYlBlM3FtNWNXZENJbTU2MTBLeGw1VXV0dTZkbmo1dlk5M0ZYaWJLbmhKdlRPb0EyajF2UVhUM0E?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

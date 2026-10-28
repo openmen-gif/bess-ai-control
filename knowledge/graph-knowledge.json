@@ -325,6 +325,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-3e2570bf48d1",
+   "name": "팀 토론 — 전사 문서 표준화 및 출력 형식 최적화 가이드라인 개발 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-3d985abee0b8",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fd0493ebc8aa",
-   "name": "자동차 내릴 때 배터리는 반등…보상금·ESS가 가른 실적 기대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7535,6 +7535,46 @@
   {
    "source": "STD-002",
    "target": "K-48298955b77b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3e2570bf48d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3e2570bf48d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-3e2570bf48d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-3e2570bf48d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-3e2570bf48d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-3e2570bf48d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-3e2570bf48d1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3e2570bf48d1",
    "type": "knowledge"
   },
   {
@@ -17026,11 +17066,6 @@
    "source": "BAT-001",
    "target": "K-08dc79d5428f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fd0493ebc8aa",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17534,7 +17569,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3437
+    "events_total": 3438
    }
   ]
  }
