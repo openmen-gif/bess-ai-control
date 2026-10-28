@@ -325,6 +325,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-4e021ece83b8",
+   "name": "팀 토론 — 구조해석 기반 컨테이너형 BESS 시스템 좌굴 안전성 평가 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-49c71f7dd8ca",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-24e146140a11",
-   "name": "‘美 ESS 사업 호조’ LG엔솔, 3분기 매출 9.6조 역대 최대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-09",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7605,6 +7605,46 @@
   {
    "source": "IPP-001",
    "target": "K-55f5f8a4b26f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4e021ece83b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-4e021ece83b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-4e021ece83b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-4e021ece83b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-4e021ece83b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-4e021ece83b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-4e021ece83b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-4e021ece83b8",
    "type": "knowledge"
   },
   {
@@ -17131,11 +17171,6 @@
    "source": "KTX-001",
    "target": "K-28f14b53018b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-24e146140a11",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17639,7 +17674,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3440
+    "events_total": 3441
    }
   ]
  }
