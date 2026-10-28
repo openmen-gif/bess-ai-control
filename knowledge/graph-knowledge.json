@@ -91,6 +91,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-baf4a15972b9",
+   "name": "팀 토론 — 환경 모니터링 시스템 강화 계획 수립 및 한국 전력시장 적합",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b9195faf2df3",
    "name": "팀 토론 — 삼성SDI의 미국 생산 계약이 확대됨에 따라, 한국 전력시장",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-e29c55b63dbc",
-   "name": "덴마크, 육상풍력 터빈에 ESS 직접 연결…재생E 간헐성 대응",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-08",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7285,6 +7285,46 @@
   {
    "source": "CAB-001",
    "target": "K-bf90803f2330",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-baf4a15972b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-baf4a15972b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-baf4a15972b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-baf4a15972b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-baf4a15972b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-baf4a15972b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-baf4a15972b9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-baf4a15972b9",
    "type": "knowledge"
   },
   {
@@ -16956,11 +16996,6 @@
    "source": "BAT-001",
    "target": "K-ea016f85b906",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-e29c55b63dbc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17464,7 +17499,7 @@
    {
     "date": "2026-10-28",
     "knowledge": 800,
-    "events_total": 3435
+    "events_total": 3436
    }
   ]
  }
