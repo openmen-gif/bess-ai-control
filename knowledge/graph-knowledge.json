@@ -775,6 +775,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-1edfc8a7c40a",
+   "name": "팀 토론 — 설비 가용률 향상을 위한 예방정비 점검 계획 수립 및 예비품",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-19559bdbd268",
    "name": "SK이터닉스, 제주서 AI 활용 풍력설비 안전 기술교류회 개최",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-991a02e65d76",
-   "name": "브라질, 12월 BESS 경매 앞두고 저장설비 비용 분담 개정안 추진",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7770,6 +7770,46 @@
   {
    "source": "BAT-001",
    "target": "K-2256f3e68a6a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-1edfc8a7c40a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-1edfc8a7c40a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-1edfc8a7c40a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1edfc8a7c40a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-1edfc8a7c40a",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-1edfc8a7c40a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-1edfc8a7c40a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-1edfc8a7c40a",
    "type": "knowledge"
   },
   {
@@ -16096,11 +16136,6 @@
    "source": "MAR-001",
    "target": "K-9b8b7e9f4094",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-991a02e65d76",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16614,7 +16649,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3626
+    "events_total": 3627
    }
   ]
  }
