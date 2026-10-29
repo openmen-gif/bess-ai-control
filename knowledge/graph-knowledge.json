@@ -541,6 +541,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2c2cad006fdf",
+   "name": "팀 토론 — 초기 투자 비용 증가와 운영 복잡성 사이의 균형 분석 및 지",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-287182a93867",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-13",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-97f86b7ff559",
-   "name": "\"AI가 삼키는 전력, 배터리가 받친다\"… AI 데이터센터發 ESS 수요",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7640,6 +7640,46 @@
   {
    "source": "TRL-001",
    "target": "K-3497c5dbbc86",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2c2cad006fdf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-2c2cad006fdf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2c2cad006fdf",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-2c2cad006fdf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-2c2cad006fdf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2c2cad006fdf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-2c2cad006fdf",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2c2cad006fdf",
    "type": "knowledge"
   },
   {
@@ -16461,11 +16501,6 @@
    "source": "KTX-001",
    "target": "K-986b23b2a57f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-97f86b7ff559",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16974,7 +17009,7 @@
    {
     "date": "2026-10-29",
     "knowledge": 800,
-    "events_total": 3528
+    "events_total": 3529
    }
   ]
  }
