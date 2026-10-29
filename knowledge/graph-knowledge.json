@@ -316,6 +316,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7c1df4270fb2",
+   "name": "팀 토론 — 특허 분석을 통한 경쟁력 있는 기술 라이선스 확보 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7ad9a2d505b3",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-98e536d9910e",
-   "name": "게임 진행 중 설정을 바꿀 수 있나요? 파이썬 룰렛 만들기",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7445,6 +7445,46 @@
   {
    "source": "FIR-001",
    "target": "K-82b9e89c6477",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7c1df4270fb2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7c1df4270fb2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-7c1df4270fb2",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-7c1df4270fb2",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-7c1df4270fb2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7c1df4270fb2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-7c1df4270fb2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-7c1df4270fb2",
    "type": "knowledge"
   },
   {
@@ -16506,11 +16546,6 @@
    "source": "MAR-001",
    "target": "K-9c13efe49300",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-98e536d9910e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17019,7 +17054,7 @@
    {
     "date": "2026-10-29",
     "knowledge": 800,
-    "events_total": 3530
+    "events_total": 3531
    }
   ]
  }
