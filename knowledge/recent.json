@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "events": [
+  {
+   "id": "83df95b422e2",
+   "date": "2026-10-30",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-cybersecurity-expert",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-hse-manager",
+    "bess-procurement-expert",
+    "bess-standards-analyst"
+   ],
+   "title": "팀 토론 — 삼성SDI와의 1GWh 공급 계약 체결 동향 분석을 통해 국내 공급망 안정성 강화 및 비용 최적화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fe185417b0be",
    "date": "2026-10-29",
@@ -3640,24 +3658,6 @@
    "title": "유티카 시의회, 개발사 방문 후에도 BESS 모라토리엄 연장",
    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaWo0RmJoVjdPZDBpcExIdUEtaHpqalR6LXdKUTNRek81WHRUbjZVSFpFMVpmSGdtaVJ4WlpMVHVFTUxDN1dRRTdza2psNGxMTXFqNFNkbTNaZnpNTlk2TnlnTllrdk54WjhvU1pHdWk4MkNHaG5COUMyLWsyRU1uZ21IT2dRQXlQOUtkRVMxRkJGcl93QVdfSzBvanhVbjM2eUloREU5d0hrZkltYmhZbDdod0JjVFZOYnhmZ0pGak1hTlpDazhKMGpnMDRiLXdkcEUzNm1lM3QtZnlxTklFSWxn?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "c89a2f332322",
-   "date": "2026-10-24",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-data-analyst",
-    "bess-fire-engineer",
-    "bess-legal-expert",
-    "bess-procurement-expert",
-    "bess-standards-korea",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 루마니아 BESS EPC 프로젝트에 적용 가능한 주요 인허가 절차 및 표준 준수 방안 심층 분석",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
