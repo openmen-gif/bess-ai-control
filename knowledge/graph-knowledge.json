@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fbeb7f48fe2c",
+   "name": "팀 토론 — BESS 프로젝트 변경 관리 프로세스 검토 및 MOC 승인 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-83df95b422e2",
    "name": "팀 토론 — 삼성SDI와의 1GWh 공급 계약 체결 동향 분석을 통해 국",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d52ad8d07394",
-   "name": "방재시험연구원, 원전 화재안전 기술협력 확대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CST-001",
+   "target": "K-fbeb7f48fe2c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-fbeb7f48fe2c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-fbeb7f48fe2c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-fbeb7f48fe2c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-fbeb7f48fe2c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-fbeb7f48fe2c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-fbeb7f48fe2c",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-fbeb7f48fe2c",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-83df95b422e2",
@@ -16661,11 +16701,6 @@
    "source": "FIR-001",
    "target": "K-ef9a5d6c8fc5",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-d52ad8d07394",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17179,7 +17214,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3536
+    "events_total": 3537
    }
   ]
  }

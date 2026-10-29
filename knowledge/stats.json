@@ -1,10 +1,10 @@
 {
  "updated": "2026-10-30",
  "totals": {
-  "all": 3536,
+  "all": 3537,
   "briefing": 1752,
   "skill": 943,
-  "discussion": 841,
+  "discussion": 842,
   "activity": 0
  },
  "perAgent": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 381,
+   "count": 382,
    "byType": {
     "skill": 18,
-    "discussion": 363
+    "discussion": 364
    },
    "lastGrown": "2026-10-30",
-   "xp": 780,
+   "xp": 782,
    "level": 17
   },
   "bess-customs-tariff": {
@@ -233,14 +233,14 @@
    "level": 13
   },
   "bess-fire-engineer": {
-   "count": 407,
+   "count": 408,
    "byType": {
     "skill": 16,
-    "discussion": 273,
+    "discussion": 274,
     "briefing": 118
    },
    "lastGrown": "2026-10-30",
-   "xp": 712,
+   "xp": 714,
    "level": 16
   },
   "bess-fit-procedure": {
@@ -275,23 +275,23 @@
    "level": 8
   },
   "bess-hr-manager": {
-   "count": 35,
+   "count": 36,
    "byType": {
     "skill": 9,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-10-29",
-   "xp": 79,
+   "lastGrown": "2026-10-30",
+   "xp": 81,
    "level": 6
   },
   "bess-hse-manager": {
-   "count": 186,
+   "count": 187,
    "byType": {
     "skill": 15,
-    "discussion": 171
+    "discussion": 172
    },
    "lastGrown": "2026-10-30",
-   "xp": 387,
+   "xp": 389,
    "level": 12
   },
   "bess-hybrid-specialist": {
@@ -539,23 +539,23 @@
    "level": 5
   },
   "bess-procurement-expert": {
-   "count": 307,
+   "count": 308,
    "byType": {
     "skill": 17,
-    "discussion": 290
+    "discussion": 291
    },
    "lastGrown": "2026-10-30",
-   "xp": 631,
+   "xp": 633,
    "level": 15
   },
   "bess-project-manager": {
-   "count": 77,
+   "count": 78,
    "byType": {
     "skill": 13,
-    "discussion": 64
+    "discussion": 65
    },
-   "lastGrown": "2026-10-29",
-   "xp": 167,
+   "lastGrown": "2026-10-30",
+   "xp": 169,
    "level": 8
   },
   "bess-qaqc-engineer": {
@@ -730,13 +730,13 @@
    "level": 6
   },
   "bess-system-engineer": {
-   "count": 272,
+   "count": 273,
    "byType": {
     "skill": 16,
-    "discussion": 256
+    "discussion": 257
    },
-   "lastGrown": "2026-10-29",
-   "xp": 560,
+   "lastGrown": "2026-10-30",
+   "xp": 562,
    "level": 14
   },
   "bess-tax-accountant": {
@@ -832,14 +832,14 @@
    "level": 8
   },
   "bess-translator": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 8,
-    "discussion": 25
+    "discussion": 26
    },
-   "lastGrown": "2026-10-29",
-   "xp": 74,
-   "level": 5
+   "lastGrown": "2026-10-30",
+   "xp": 76,
+   "level": 6
   }
  },
  "daily": [
@@ -1201,7 +1201,7 @@
   },
   {
    "date": "2026-10-30",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
