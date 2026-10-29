@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-667558976978",
+   "name": "팀 토론 — 한국 세무사와 협력하여 BESS 프로젝트의 세액공제 및 세제",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fe185417b0be",
    "name": "데스틴파워, 코스닥 상장 증권신고서 제출…글로벌 전력변환기기 제조사 발돋",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-cce26edbd3f4",
-   "name": "AI 데이터센터가 키운 배터리 시장..ESS 출하량 급증!",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7240,6 +7240,41 @@
   {
    "source": "STD-001",
    "target": "K-83df95b422e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-667558976978",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-667558976978",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-667558976978",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-667558976978",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-667558976978",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-667558976978",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-667558976978",
    "type": "knowledge"
   },
   {
@@ -16631,11 +16666,6 @@
    "source": "FIR-001",
    "target": "K-d52ad8d07394",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-cce26edbd3f4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17149,7 +17179,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3535
+    "events_total": 3536
    }
   ]
  }
