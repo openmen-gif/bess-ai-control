@@ -388,6 +388,15 @@
    "color": "#64748B"
   },
   {
+   "id": "K-5faf736f8efa",
+   "name": "팀 토론 — 미국 BESS 인증 기준의 국내 적용 전략 수립 및 기술 적",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-570edececebd",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7b934e8484fa",
-   "name": "[팩트체크] AI 데이터센터 1∼3년 뒤 가동…신규 LNG보다 태양광·E",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7485,6 +7485,46 @@
   {
    "source": "SCV-500",
    "target": "K-62fc03ebc28b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5faf736f8efa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-5faf736f8efa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-5faf736f8efa",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-5faf736f8efa",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-5faf736f8efa",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5faf736f8efa",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-5faf736f8efa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-5faf736f8efa",
    "type": "knowledge"
   },
   {
@@ -16426,11 +16466,6 @@
    "source": "BAT-001",
    "target": "K-97f86b7ff559",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-7b934e8484fa",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16939,7 +16974,7 @@
    {
     "date": "2026-10-29",
     "knowledge": 800,
-    "events_total": 3527
+    "events_total": 3528
    }
   ]
  }
