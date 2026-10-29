@@ -658,6 +658,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-085bc140326a",
+   "name": "팀 토론 — 접지망 설계 최적화를 통한 안전성 향상 및 저전압 보호 시스",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0684fa25476b",
    "name": "﻿LG에너지솔루션, 북미 ESS 시장 공략 속도… 생산 거점 확보 이어 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-986b23b2a57f",
-   "name": "팀 토론 — 클라우드 기반 모니터링 시스템 강화로 인프라 안정성 및 보안",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-13",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7775,6 +7775,46 @@
   {
    "source": "TPS-001",
    "target": "K-08cb2e3884f3",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-085bc140326a",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-085bc140326a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-085bc140326a",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-085bc140326a",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-085bc140326a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-085bc140326a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-085bc140326a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-085bc140326a",
    "type": "knowledge"
   },
   {
@@ -16471,36 +16511,6 @@
    "source": "MAR-001",
    "target": "K-98e536d9910e",
    "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-986b23b2a57f",
-   "type": "knowledge"
-  },
-  {
-   "source": "CYB-001",
-   "target": "K-986b23b2a57f",
-   "type": "knowledge"
-  },
-  {
-   "source": "INF-001",
-   "target": "K-986b23b2a57f",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-986b23b2a57f",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-986b23b2a57f",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-986b23b2a57f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17009,7 +17019,7 @@
    {
     "date": "2026-10-29",
     "knowledge": 800,
-    "events_total": 3529
+    "events_total": 3530
    }
   ]
  }
