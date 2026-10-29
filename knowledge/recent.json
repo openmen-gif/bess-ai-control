@@ -295,6 +295,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "a43f5cdedc47",
+   "date": "2026-10-29",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-cost-analyst",
+    "bess-hybrid-specialist",
+    "bess-knowledge-manager",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — HYB-001 명령: PV, Wind, H2 통합 시스템 최적화 시나리오 개발 및 성능 예측 모델 구축",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "a18d6f208b48",
    "date": "2026-10-29",
    "type": "briefing",
@@ -3640,17 +3658,6 @@
    "title": "팀 토론 — 초기 투자 비용 및 장기 유지보수 비용 분석 강화하여 재활용 및 폐기 비용 통합 전략 수립 ([@bess-standards-japan])",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "c3447d5ba1ae",
-   "date": "2026-10-24",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "미주리 공공서비스위원회, Ameren Missouri 배터리 저장장치·태양광 사업 승인",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSnhLSUYwTVNoVUpvNVpoMThNbl9qdFRUMVZzVEZObDVXSHBFR2JQTlhFRGFMVHJOUi13c3ZRTlVaR1J2SVVkem5jbU9peXVXb3R3djRRS3FKclRaNm5Oek5jN0dOVEpodklyOWRETjRvSVQ1RFRaODU4VkN1RzNVQnBsVE1kQVdYeTlmeWtkQ3BxWjdSTmREMHd0MzhwSDJEcC1hYW1QTDBvQzhSNnhSNQ?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

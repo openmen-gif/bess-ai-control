@@ -235,6 +235,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-a43f5cdedc47",
+   "name": "팀 토론 — HYB-001 명령: PV, Wind, H2 통합 시스템 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-29",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a18d6f208b48",
    "name": "[가상발전소 특별 기획③] 재생에너지 넘치는 제주, 가상발전소가 전력시장",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9c13efe49300",
-   "name": "한국투자증권 \"LG엔솔, ESS 판매량 확대로 전기차 매출 감소 상쇄\"",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7365,6 +7365,46 @@
   {
    "source": "STE-001",
    "target": "K-a78ef4ddada3",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a43f5cdedc47",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-a43f5cdedc47",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a43f5cdedc47",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-a43f5cdedc47",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-a43f5cdedc47",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-a43f5cdedc47",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-a43f5cdedc47",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a43f5cdedc47",
    "type": "knowledge"
   },
   {
@@ -16541,11 +16581,6 @@
    "source": "TRN-001",
    "target": "K-9dac2785e66f",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-9c13efe49300",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -17054,7 +17089,7 @@
    {
     "date": "2026-10-29",
     "knowledge": 800,
-    "events_total": 3531
+    "events_total": 3532
    }
   ]
  }
