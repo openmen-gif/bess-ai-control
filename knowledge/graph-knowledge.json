@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-a269fb98146e",
+   "name": "팀 토론 — 내부 통제 프로세스 강화를 통한 원가 관리 최적화 제안",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fbeb7f48fe2c",
    "name": "팀 토론 — BESS 프로젝트 변경 관리 프로세스 검토 및 MOC 승인 ",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b4d0b42b6116",
-   "name": "중일 갈등 여파에…삼성SDI·대만 기업, 日 ESS 시장 공략 가속",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
   {
    "source": "CST-001",
    "target": "K-fbeb7f48fe2c",
@@ -16376,15 +16416,10 @@
    "source": "JTX-001",
    "target": "K-bac4273ced97",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-b4d0b42b6116",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "history": [
    {
     "date": "2026-07-20",
@@ -16895,6 +16930,11 @@
     "date": "2026-10-30",
     "knowledge": 800,
     "events_total": 3634
+   },
+   {
+    "date": "2026-10-31",
+    "knowledge": 800,
+    "events_total": 3635
    }
   ]
  }

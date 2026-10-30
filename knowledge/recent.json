@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "events": [
+  {
+   "id": "a269fb98146e",
+   "date": "2026-10-31",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cable-engineer",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-internal-auditor",
+    "bess-procurement-expert",
+    "bess-standards-poland"
+   ],
+   "title": "팀 토론 — 내부 통제 프로세스 강화를 통한 원가 관리 최적화 제안",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fbeb7f48fe2c",
    "date": "2026-10-30",
@@ -3585,17 +3603,6 @@
    "title": "Viridi, 뉴욕 버팔로 공동주택에 3.75MWh 실내 BESS 구축",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObnBXZ3AxV01TUzFxdVQ0NWJubEdQT0RyeVgxWkpxNC00QTZqTnBUV0FseGNmazdycmlRWDZYcXVZZU0ySWtzM3RiRm15U19fOXJvc0hhSVdma044OUtBc2c2NzFINEVNNjhwMGt4eVNGNHU0R2x1NmJCRHd3OEYwellQcVViX2FUZmE4WVF4bWFRQy1aWWxHZ3c2aW8zenBXMFZtVnljemFXcGFnaFc0?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "35d2ecbec90e",
-   "date": "2026-10-27",
-   "type": "skill",
-   "agents": [
-    "bess-agent-framework"
-   ],
-   "title": "스킬 갱신 — refactor(bess): 메타 에이전트 정본을 스킬 frontmatter role: meta 한 곳으로 통일",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
