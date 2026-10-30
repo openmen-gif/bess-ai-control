@@ -838,6 +838,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-132eb93e7e65",
+   "name": "팀 토론 — TCFD 및 ISSB IFRS S2 기준에 따른 ESG 성과",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0f0af8dd017d",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a84bcda53e13",
-   "name": "배터리 저장장치가 영국 항만의 청정 해운 전환을 뒷받침할 수 있다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7980,6 +7980,46 @@
   {
    "source": "STD-001",
    "target": "K-14d69674aed8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-132eb93e7e65",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-132eb93e7e65",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-132eb93e7e65",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-132eb93e7e65",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-132eb93e7e65",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-132eb93e7e65",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-132eb93e7e65",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-132eb93e7e65",
    "type": "knowledge"
   },
   {
@@ -16271,11 +16311,6 @@
    "source": "PCS-001",
    "target": "K-ab51286fc50c",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-a84bcda53e13",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16789,7 +16824,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3631
+    "events_total": 3632
    }
   ]
  }
