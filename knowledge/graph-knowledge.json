@@ -703,6 +703,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-357e57e67b68",
+   "name": "팀 토론 — COM-100 목표 달성을 위한 자동화 시운전 프로세스 최적",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2d34c82b369a",
    "name": "스페인 태양광 PPA 가격 €30.93/MWh 하락…BESS 하이브리드 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-9b8b7e9f4094",
-   "name": "AI 데이터센터 배터리, UPS 넘어 BBU·ESS까지",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7725,6 +7725,46 @@
   {
    "source": "BIZ-001",
    "target": "K-3b4b0cf8c694",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-357e57e67b68",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-357e57e67b68",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-357e57e67b68",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-357e57e67b68",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-357e57e67b68",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-357e57e67b68",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-357e57e67b68",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-357e57e67b68",
    "type": "knowledge"
   },
   {
@@ -16131,11 +16171,6 @@
    "source": "MAR-001",
    "target": "K-9e275415fcd6",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-9b8b7e9f4094",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16649,7 +16684,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3627
+    "events_total": 3628
    }
   ]
  }

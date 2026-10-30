@@ -887,6 +887,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "357e57e67b68",
+   "date": "2026-10-30",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-financial-analysis",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-insurance-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — COM-100 목표 달성을 위한 자동화 시운전 프로세스 최적화 및 시범 프로젝트 실행 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "2d34c82b369a",
    "date": "2026-10-30",
    "type": "briefing",
@@ -3543,17 +3561,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 스킬 12개 가드레일 반례 추가(10-08~10-17 세션 근거) + 파생물 동기화",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "239d03e6507f",
-   "date": "2026-10-27",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "MaxVolt Energy, REI Expo 2026서 ESS·EV 배터리 포트폴리오 공개",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRFFXVTB4Z3UzZUtud2xSd2g2WkNnU2hMUGl3eTZndmVWVzU1M2hpcUMtQTFmaVNCenY5MktlN2treFpiRFlqWHExUDMtNzZPNks5R254U3c0Q1BPWWdpSWVfVlI3dkFNT2NzeUJaNnNWcDlLdXJIeXhsZzRNeXllWnd3T2lhMjl3LXlveVFTMTYzNFB2YlZ6RWhTZE54WVRnNXZtOTlGVVIySzlicnlTa3V6N0UyaHNZOHQw?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
