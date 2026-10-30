@@ -415,6 +415,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-8cb7d482d24c",
+   "name": "팀 토론 — 배터리 셀 화학 선택의 성능 및 안전성 불일치 가능성에 대한",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-84bad061618d",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b48a0bc1badd",
-   "name": "기후에너지환경부, 옥외형 ESS 인허가 기준 통일",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7570,6 +7570,46 @@
   {
    "source": "PCS-001",
    "target": "K-8cc48d4ec7b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-8cb7d482d24c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8cb7d482d24c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8cb7d482d24c",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-8cb7d482d24c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-8cb7d482d24c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-8cb7d482d24c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8cb7d482d24c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8cb7d482d24c",
    "type": "knowledge"
   },
   {
@@ -16341,11 +16381,6 @@
    "source": "PCS-001",
    "target": "K-b4d0b42b6116",
    "type": "knowledge"
-  },
-  {
-   "source": "PRM-001",
-   "target": "K-b48a0bc1badd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16859,7 +16894,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3633
+    "events_total": 3634
    }
   ]
  }

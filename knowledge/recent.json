@@ -536,6 +536,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "8cb7d482d24c",
+   "date": "2026-10-30",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 배터리 셀 화학 선택의 성능 및 안전성 불일치 가능성에 대한 트레이드오프 분석 및 신뢰 구축 전략 수립 (@bess-battery-expert)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "84bad061618d",
    "date": "2026-10-30",
    "type": "skill",
@@ -3578,17 +3596,6 @@
    "title": "스킬 갱신 — refactor(bess): 메타 에이전트 정본을 스킬 frontmatter role: meta 한 곳으로 통일",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "304c72dd38c4",
-   "date": "2026-10-27",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "남동발전·이도테라원, 435MW 규모 ‘인천에코윈드’ 해상풍력 개발 착수",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5sWlJ1XzJFQ05KMGZaYWRHZGlabTdtVDU0aEVUcENxa0M0VWhuZ0lIZzJXSDJaQ1JSdU9UMEIxX3hSbHliRnJYTkRyZWI4QThDVTA4cXlGYnpkZF9mUmQwWXBBWk95cnlPQkZUUtIBcEFVX3lxTFBMZV8tbWQ2dkN0RkVOZVEwSHp4OU9NelEtbkFLYnVabVI0aVBtWFdHeWZDVmRrY3ZlZjhJUG5IeEYzbWhZQ210cW4zUmtkVGdCelo1QmZhT3NRcEZTZW9WVFI3RGhENUZOM0Nrb1NvejA?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
