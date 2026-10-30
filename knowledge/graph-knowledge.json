@@ -379,6 +379,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-97011e07f7d4",
+   "name": "팀 토론 — BESS 운영 효율성 향상을 위한 실시간 모델 드리프트 모니",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-946a187ff901",
    "name": "ENNA Solar, 루마니아 166MW 태양광·612MWh BESS 인",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-a58819930fbb",
-   "name": "9월 글로벌 그리드급 BESS 설치 20.4GWh…전년 대비 61% 증가",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7480,6 +7480,46 @@
   {
    "source": "EBP-001",
    "target": "K-9a996829b928",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-97011e07f7d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-97011e07f7d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-97011e07f7d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-97011e07f7d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-97011e07f7d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-97011e07f7d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-97011e07f7d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-97011e07f7d4",
    "type": "knowledge"
   },
   {
@@ -16236,11 +16276,6 @@
    "source": "COM-003",
    "target": "K-a84bcda53e13",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-a58819930fbb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16754,7 +16789,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3630
+    "events_total": 3631
    }
   ]
  }
