@@ -487,6 +487,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6c810f7231b6",
+   "name": "팀 토론 — 변전소 레이아웃 최적화를 통한 SLD 통합 및 IEC 622",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6ba554669c34",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a47f60be3fdb",
-   "name": "[오늘 이 종목] 반도체 공급망 씨엠티엑스 · ESS 성장 LG에너지솔루",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7575,6 +7575,46 @@
   {
    "source": "BAT-001",
    "target": "K-6d9c4e60e0a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6c810f7231b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6c810f7231b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-6c810f7231b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-6c810f7231b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-6c810f7231b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-6c810f7231b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6c810f7231b6",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-6c810f7231b6",
    "type": "knowledge"
   },
   {
@@ -16201,11 +16241,6 @@
    "source": "BAT-001",
    "target": "K-a58819930fbb",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-a47f60be3fdb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16719,7 +16754,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3629
+    "events_total": 3630
    }
   ]
  }
