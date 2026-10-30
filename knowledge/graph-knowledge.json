@@ -730,6 +730,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-2a680a058ced",
+   "name": "팀 토론 — 환경 영향 최소화를 위한 BESS 설치 사이트 선정 및 모니",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-29b6b2765da4",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9e275415fcd6",
-   "name": "옥외형 ESS시설물 분류 기준 전국 통일…가이드라인 마련",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7780,6 +7780,46 @@
   {
    "source": "FIR-001",
    "target": "K-2b60913bf2ff",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2a680a058ced",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-2a680a058ced",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-2a680a058ced",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-2a680a058ced",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-2a680a058ced",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-2a680a058ced",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-2a680a058ced",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2a680a058ced",
    "type": "knowledge"
   },
   {
@@ -16166,11 +16206,6 @@
    "source": "BAT-001",
    "target": "K-a47f60be3fdb",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-9e275415fcd6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16684,7 +16719,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3628
+    "events_total": 3629
    }
   ]
  }
