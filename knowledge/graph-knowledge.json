@@ -73,6 +73,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-eb64703462e2",
+   "name": "팀 토론 — 배터리 셀 화학 선택에 대한 성능 및 안전성 검증 프로세스를",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-30",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e9c1b0c8eaf3",
    "name": "CATL, 9MWh TENER+ BESS 글로벌 출시 행사 개최·히타치 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-ab51286fc50c",
-   "name": "onsemi, 100MW 배터리 1개 설치로 연간 475MWh 이상 절감",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7275,6 +7275,46 @@
   {
    "source": "OAM-001",
    "target": "K-ec7e790e3afb",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-eb64703462e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-eb64703462e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-eb64703462e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-eb64703462e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-eb64703462e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-eb64703462e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-eb64703462e2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-eb64703462e2",
    "type": "knowledge"
   },
   {
@@ -16306,11 +16346,6 @@
    "source": "PRM-001",
    "target": "K-b48a0bc1badd",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-ab51286fc50c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16824,7 +16859,7 @@
    {
     "date": "2026-10-30",
     "knowledge": 800,
-    "events_total": 3632
+    "events_total": 3633
    }
   ]
  }
