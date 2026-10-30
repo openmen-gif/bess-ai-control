@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-321c73e75961",
+   "name": "팀 토론 — 법인세 최적화 전략 수립 및 국가별 세무 신고 절차 표준화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fbeb7f48fe2c",
    "name": "팀 토론 — BESS 프로젝트 변경 관리 프로세스 검토 및 MOC 승인 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-bac4273ced97",
-   "name": "팀 토론 — 법인세 최적화 전략 수립을 통한 일본 BESS 프로젝트 수익",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "STD-008",
    "target": "K-a269fb98146e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-321c73e75961",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-321c73e75961",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-321c73e75961",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-321c73e75961",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-321c73e75961",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-321c73e75961",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-321c73e75961",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-321c73e75961",
    "type": "knowledge"
   },
   {
@@ -16376,46 +16416,6 @@
    "source": "MAR-001",
    "target": "K-bc32a7d8384a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-bac4273ced97",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-bac4273ced97",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-bac4273ced97",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCV-500",
-   "target": "K-bac4273ced97",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-bac4273ced97",
-   "type": "knowledge"
-  },
-  {
-   "source": "RSK-001",
-   "target": "K-bac4273ced97",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-bac4273ced97",
-   "type": "knowledge"
-  },
-  {
-   "source": "JTX-001",
-   "target": "K-bac4273ced97",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16934,7 +16934,7 @@
    {
     "date": "2026-10-31",
     "knowledge": 800,
-    "events_total": 3635
+    "events_total": 3636
    }
   ]
  }
