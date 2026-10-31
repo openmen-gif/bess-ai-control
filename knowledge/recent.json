@@ -2,6 +2,24 @@
  "updated": "2026-11-01",
  "events": [
   {
+   "id": "ffb67484d8d9",
+   "date": "2026-11-01",
+   "type": "discussion",
+   "agents": [
+    "bess-emc-analyst",
+    "bess-env-engineer",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-scheduler",
+    "bess-system-engineer",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — BESS 스케줄링 효율 최적화를 위한 PM 보조 시스템 기능 개선 방안 분석",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "04b7f3db811e",
    "date": "2026-11-01",
    "type": "discussion",
@@ -3542,17 +3560,6 @@
     "bess-tax-korea"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 스킬 간 상충 3건 해소 + 비용·컨테이너 기준값 2025 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7193ea36ac61",
-   "date": "2026-10-28",
-   "type": "skill",
-   "agents": [
-    "bess-hse-manager"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 44개 갱신",
    "link": "",
    "source": "00_Skill_MD"
   }

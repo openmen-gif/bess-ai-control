@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ffb67484d8d9",
+   "name": "팀 토론 — BESS 스케줄링 효율 최적화를 위한 PM 보조 시스템 기능",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-04b7f3db811e",
    "name": "팀 토론 — 이전가격 전략 검토 및 OECD TP 가이드라인 적용을 통한",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-b88b369e762a",
-   "name": "신에너지 저장에 국제 협력이 필요한 이유",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "EMC-001",
+   "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
   {
    "source": "FIN-001",
    "target": "K-04b7f3db811e",
@@ -15891,11 +15931,6 @@
    "source": "PRM-001",
    "target": "K-c5e56e467806",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-b88b369e762a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16419,7 +16454,7 @@
    {
     "date": "2026-11-01",
     "knowledge": 800,
-    "events_total": 3724
+    "events_total": 3725
    }
   ]
  }
