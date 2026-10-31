@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b3d577fb6e85",
+   "name": "팀 토론 — 전력거래소의 MW급 그리드포밍 ESS 실계통 실증 추진 동향",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-01",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-04b7f3db811e",
    "name": "팀 토론 — 이전가격 전략 검토 및 OECD TP 가이드라인 적용을 통한",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c5e56e467806",
-   "name": "북아일랜드 라른 BESS 인허가 승인, 농촌 산업화 우려 제기",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "TIN-001",
    "target": "K-ffb67484d8d9",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b3d577fb6e85",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-b3d577fb6e85",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-b3d577fb6e85",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-b3d577fb6e85",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-b3d577fb6e85",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-b3d577fb6e85",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-b3d577fb6e85",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b3d577fb6e85",
    "type": "knowledge"
   },
   {
@@ -15926,11 +15966,6 @@
    "source": "BAT-001",
    "target": "K-c6debb832722",
    "type": "knowledge"
-  },
-  {
-   "source": "PRM-001",
-   "target": "K-c5e56e467806",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16454,7 +16489,7 @@
    {
     "date": "2026-11-01",
     "knowledge": 800,
-    "events_total": 3725
+    "events_total": 3726
    }
   ]
  }
