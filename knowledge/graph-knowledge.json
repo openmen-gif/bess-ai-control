@@ -784,6 +784,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-01c7e33f56bd",
+   "name": "팀 토론 — 전력거래소와 생산기술연구원의 BESS 실계통 실증 추진 동향",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-31",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fbeb7f48fe2c",
    "name": "팀 토론 — BESS 프로젝트 변경 관리 프로세스 검토 및 MOC 승인 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a4fda2e1db33",
-   "name": "팀 토론 — 벤더 감사 프로세스 개선을 통한 품질 보증 수준 향상 및 H",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7775,6 +7775,46 @@
   {
    "source": "BAT-001",
    "target": "K-06af3b3d3292",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-01c7e33f56bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-01c7e33f56bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-01c7e33f56bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-01c7e33f56bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-01c7e33f56bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-01c7e33f56bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-01c7e33f56bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-01c7e33f56bd",
    "type": "knowledge"
   },
   {
@@ -15786,41 +15826,6 @@
    "source": "BAT-001",
    "target": "K-ac6e3f5d0a51",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-a4fda2e1db33",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-a4fda2e1db33",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-a4fda2e1db33",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-a4fda2e1db33",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-a4fda2e1db33",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-a4fda2e1db33",
-   "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-a4fda2e1db33",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16339,7 +16344,7 @@
    {
     "date": "2026-10-31",
     "knowledge": 800,
-    "events_total": 3721
+    "events_total": 3722
    }
   ]
  }
