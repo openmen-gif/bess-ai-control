@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-defae5e60105",
+   "name": "팀 토론 — OT/IT 네트워크 보안 강화 및 IEC62443 준수를 위",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-31",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-de90768f16e5",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-18",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-ac6e3f5d0a51",
-   "name": "El Dorado 유권자, 일부 데이터센터·BESS 사업 금지 검토",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7300,6 +7300,46 @@
   {
    "source": "BAT-001",
    "target": "K-dfba691b879d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-defae5e60105",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-defae5e60105",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-defae5e60105",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-defae5e60105",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-defae5e60105",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-defae5e60105",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-defae5e60105",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-defae5e60105",
    "type": "knowledge"
   },
   {
@@ -15821,11 +15861,6 @@
    "source": "TIN-001",
    "target": "K-b14a8e8ad7bc",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ac6e3f5d0a51",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16344,7 +16379,7 @@
    {
     "date": "2026-10-31",
     "knowledge": 800,
-    "events_total": 3722
+    "events_total": 3723
    }
   ]
  }

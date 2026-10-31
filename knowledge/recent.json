@@ -152,6 +152,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "defae5e60105",
+   "date": "2026-10-31",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-network-engineer",
+    "bess-power-system-analyst",
+    "bess-procurement-data",
+    "bess-project-manager",
+    "bess-standards-analyst",
+    "bess-system-engineer",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — OT/IT 네트워크 보안 강화 및 IEC62443 준수를 위한 통합 시스템 벤치마킹 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "de90768f16e5",
    "date": "2026-10-31",
    "type": "skill",
@@ -3528,17 +3546,6 @@
     "bess-business-dev"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 스킬 간 상충 3건 해소 + 비용·컨테이너 기준값 2025 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6f585385e75a",
-   "date": "2026-10-28",
-   "type": "skill",
-   "agents": [
-    "bess-aiml-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 44개 갱신",
    "link": "",
    "source": "00_Skill_MD"
   }
