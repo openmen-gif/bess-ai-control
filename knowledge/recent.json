@@ -665,6 +665,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "451f8bebd313",
+   "date": "2026-10-31",
+   "type": "discussion",
+   "agents": [
+    "bess-financial-analysis",
+    "bess-ip-patent-expert",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea",
+    "bess-standards-uk",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — 글로벌 세제 혜택 분석 및 국내 적용 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "435c6a454718",
    "date": "2026-10-31",
    "type": "briefing",
@@ -3512,17 +3530,6 @@
    "type": "skill",
    "agents": [
     "bess-sales-manager"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 44개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6b0830720609",
-   "date": "2026-10-28",
-   "type": "skill",
-   "agents": [
-    "bess-grid-interconnection"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 44개 갱신",
    "link": "",

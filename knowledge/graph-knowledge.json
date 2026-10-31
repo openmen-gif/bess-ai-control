@@ -532,6 +532,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-451f8bebd313",
+   "name": "팀 토론 — 글로벌 세제 혜택 분석 및 국내 적용 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-10-31",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-435c6a454718",
    "name": "배터리 3사, 전기차 부진 ESS로 메운다…실적 회복은 온도차",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a4e654e78a67",
-   "name": "HIZENERGY, 유럽 전시회서 C&I BESS 솔루션 공개",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7565,6 +7565,46 @@
   {
    "source": "STD-001",
    "target": "K-462d885066bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-451f8bebd313",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-451f8bebd313",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-451f8bebd313",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-451f8bebd313",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-451f8bebd313",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-451f8bebd313",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-451f8bebd313",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-451f8bebd313",
    "type": "knowledge"
   },
   {
@@ -15781,11 +15821,6 @@
    "source": "KTX-001",
    "target": "K-a4fda2e1db33",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-a4e654e78a67",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16304,7 +16339,7 @@
    {
     "date": "2026-10-31",
     "knowledge": 800,
-    "events_total": 3720
+    "events_total": 3721
    }
   ]
  }
