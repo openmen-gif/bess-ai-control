@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "events": [
+  {
+   "id": "04b7f3db811e",
+   "date": "2026-11-01",
+   "type": "discussion",
+   "agents": [
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-precom-report",
+    "bess-standards-analyst",
+    "bess-system-engineer",
+    "bess-tax-incentive",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — 이전가격 전략 검토 및 OECD TP 가이드라인 적용을 통한 국제 프로젝트 재무 효율성 개선 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fe025bb4dee9",
    "date": "2026-10-31",
@@ -3535,17 +3553,6 @@
     "bess-hse-manager"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 44개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7186d9eb2a9c",
-   "date": "2026-10-28",
-   "type": "skill",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 스킬 간 상충 3건 해소 + 비용·컨테이너 기준값 2025 갱신",
    "link": "",
    "source": "00_Skill_MD"
   }
