@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BESS 일일 기술 브리핑 — 2026-11-02</title>
+<meta name="description" content="BESS 기술 부문별 일일 브리핑(2026-11-02) — 국내·해외·기관 발표 62건, 기사별 AI 요약(배경·핵심·특이점·시사점)">
+<style>
+:root { --bg:#0B0F19; --panel:#111827; --line:#1F2937; --ink:#F9FAFB; --muted:#9CA3AF; --accent:#3B82F6; --soft:#0F172A; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--ink); font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif; line-height:1.6; }
+.wrap { max-width:860px; margin:0 auto; padding:32px 16px 60px; }
+.top { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
+h1 { font-size:22px; font-weight:800; }
+.date { color:var(--muted); font-size:13px; }
+.back { color:var(--accent); text-decoration:none; font-size:13px; }
+.tabs { display:flex; gap:6px; margin-top:16px; flex-wrap:wrap; }
+.tabs button { background:var(--panel); color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-size:13px; cursor:pointer; font-weight:700; }
+.tabs button.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+.panel { display:none; }
+.panel.on { display:block; }
+.sec { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:16px; }
+h2 { font-size:15px; font-weight:700; margin-bottom:10px; }
+.item { padding:8px 0; border-top:1px solid var(--line); }
+.item:first-child { border-top:0; }
+.item a, .item .t { color:var(--ink); text-decoration:none; font-size:14px; }
+.item a:hover, summary:hover .t { color:var(--accent); }
+summary { cursor:pointer; list-style:none; }
+summary::-webkit-details-marker { display:none; }
+summary .t::before { content:'▸ '; color:var(--muted); }
+details[open] summary .t::before { content:'▾ '; }
+.meta { display:block; color:var(--muted); font-size:12px; margin-top:2px; }
+.ai { color:var(--accent); }
+.sum { background:var(--soft); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin-top:8px; font-size:13.5px; }
+.sum .row { margin-top:8px; }
+.sum .row:first-child { margin-top:0; }
+.sum b { display:block; font-size:12.5px; color:var(--accent); }
+.sum ul { padding-left:18px; }
+.sum .orig { color:var(--muted); font-size:12px; margin-bottom:6px; }
+.sum .tag { font-style:normal; font-weight:400; color:var(--muted); font-size:11px; border:1px solid var(--line); border-radius:6px; padding:0 5px; }
+.sum .foot { margin-top:10px; color:var(--muted); font-size:12px; }
+.sum .foot a { color:var(--accent); font-size:12px; }
+.fresh { margin-bottom:6px; padding-bottom:4px; border-bottom:1px dashed var(--line); }
+.fresh .lbl { color:#FBBF24; font-size:12px; font-weight:700; }
+.empty { color:var(--muted); font-size:13px; }
+.arch { margin-top:24px; color:var(--muted); font-size:12.5px; }
+.arch a { color:var(--accent); text-decoration:none; margin-right:10px; }
+footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:14px; }
+.live { margin-top:10px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.live button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:7px 14px; font-size:13px; cursor:pointer; font-weight:700; }
+.live button:disabled { opacity:.5; cursor:default; }
+.live .st { color:var(--muted); font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>📰 BESS 일일 기술 브리핑</h1>
+    <a class="back" href="/">← 컨트롤 센터</a>
+  </div>
+  <div class="date">2026-11-02 (월) · 국내·해외 최근 48시간 + 기관 발표 7일 · 총 62건 (AI 요약 9건) · 매일 07:30 발행</div>
+  <div class="live"><button id="refresh-btn">🔄 새 소식 확인</button><span class="st" id="live-status">제목을 누르면 배경·핵심·특이점·시사점이 펼쳐져요</span></div>
+  <nav class="tabs">
+    <button data-tab="kr" class="on">🏠 국내 15</button>
+    <button data-tab="global">🌐 해외 35</button>
+    <button data-tab="notice">📢 기관 발표 12</button>
+  </nav>
+  <div class="panel on" data-panel="kr">
+  <section class="sec" data-region="kr" data-sec="0">
+    <h2>🔋 배터리·셀</h2>
+    <div class="items">
+    <div class="item" data-k="&quot;전기차셀만팔아선안남는다&quot;…catl,&#x27;배터리교환·ess&#x27;로활로모색"><a href="https://www.g-enews.com/article/Global-Biz/2026/11/2026110115551835550c8c1c064d_1" target="_blank" rel="noopener">&quot;전기차 셀만 팔아선 안 남는다&quot;… CATL, &#x27;배터리 교환·ESS&#x27;로 활로 모색</a><div class="meta">글로벌이코노믹 · 11/02 05:25</div></div>
+    <div class="item" data-k="&#x27;전력망특수&#x27;올라탄배터리3사,본업반등속성적표희비"><a href="https://news.bizwatch.co.kr/article/industry/2026/10/30/0031" target="_blank" rel="noopener">&#x27;전력망 특수&#x27; 올라탄 배터리 3사, 본업 반등 속 성적표 희비</a><div class="meta">비즈워치 · 11/02 06:50</div></div>
+    <div class="item" data-k="[글로벌배터리대전(40)]k-배터리3단계생존방정식-라인은돌리고,소재는묶고"><a href="https://www.news2day.co.kr/article/20261101500011" target="_blank" rel="noopener">[글로벌 배터리 대전 (40)] K-배터리 3단계 생존 방정식 - 라인은 돌리고, 소재는 묶고, 기술은 앞서라(下)</a><div class="meta">뉴스투데이 · 11/02 01:18</div></div>
+    <div class="item" data-k="lg엔솔ess용&#x27;ai에이전트&#x27;첫공개…배터리3사폭풍질문오가-머니투데이"><a href="https://www.mt.co.kr/amp/industry/2026/11/01/2026110108491583098" target="_blank" rel="noopener">LG엔솔 ESS용 &#x27;AI 에이전트&#x27; 첫 공개…배터리 3사 폭풍질문 오가 - 머니투데이</a><div class="meta">머니투데이 · 11/01 15:09</div></div>
+    <div class="item" data-k="美보조금축소시계가동⋯k배터리,ess수익성확보시험대"><a href="https://www.viva100.com/article/20261101500489" target="_blank" rel="noopener">美 보조금 축소 시계 가동⋯K배터리, ESS 수익성 확보 시험대</a><div class="meta">브릿지경제 · 11/01 16:28</div></div>
+    <div class="item" data-k="k-배터리,ess서먼저웃었다…유럽ev도회복신호[위클리배터리]"><a href="https://www.ddaily.co.kr/page/view/2026103119405727828" target="_blank" rel="noopener">K-배터리, ESS서 먼저 웃었다…유럽 EV도 회복 신호 [위클리배터리]</a><div class="meta">디지털데일리 · 11/01 10:00</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="1">
+    <h2>⚡ PCS·전력변환</h2>
+    <div class="items">
+    <div class="empty">최근 48시간 내 수집된 소식이 없습니다.</div>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="2">
+    <h2>🔌 계통연계·그리드</h2>
+    <div class="items">
+    <div class="empty">최근 48시간 내 수집된 소식이 없습니다.</div>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="3">
+    <h2>🚨 안전·소방</h2>
+    <div class="items">
+    <details class="item" data-k="sk온,글로벌인증기관화재시험통과…“ess안전성인증”"><summary><span class="t">SK온, 글로벌 인증기관 화재시험 통과… “ESS 안전성 인증”</span><span class="meta">비즈트리뷴 · 11/01 22:51 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>배경</b><p>SK온이 ESS 수주 확대를 추진하는 가운데 북미 시장 진출의 필수 관문인 UL 9540A 대형 화재시험을 글로벌 인증기관 CSA그룹으로부터 통과했다.</p></div><div class="row"><b>핵심</b><ul><li>UL 9540A 대형 화재시험(LSFT) 합격으로 북미 ESS 설치 허가 기반 마련</li><li>인접 컨테이너로의 화재 확산 없이 평가 기준 충족</li><li>국내 2월 중앙계약시장 565MW 중 284MW 확보, 서산공장 3GWh를 ESS용 LFP 전용라인으로 전환 중</li></ul></div><div class="row"><b>특이점</b><p>2026년 3월 개정된 UL 9540A 6판에서 화재 확산 판정 기준이 강화되었으며, SK온이 이 신규 기준을 완전 충족한 첫 사례다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>북미 ESS 시장의 까다로운 안전 인증 취득이 한국 배터리 제조사의 수주 경쟁력을 좌우하는 만큼, SK온의 인증 성공은 글로벌 EPC 프로젝트 수주 확대에 긍정적 신호다. 국내 BESS 기업들도 UL 9540A 같은 국제 안전 기준 대응을 더욱 강화해야 할 필요성을 시사한다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.biztribune.co.kr/news/articleView.html?idxno=361685" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <details class="item" data-k="sk온,글로벌인증기관화재시험통과…ess안전성입증"><summary><span class="t">SK온, 글로벌 인증 기관 화재 시험 통과 … ESS 안전성 입증</span><span class="meta">플라스틱코리아 · 10/31 07:52 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>배경</b><p>ESS 화재 안전에 대한 글로벌 규제가 강화되는 가운데 SK온이 북미 표준 UL 9540A의 대형 화재 시험을 통과했다. 올해 3월 시험 기준이 강화된 이후 주요 업체의 통과 사례다.</p></div><div class="row"><b>핵심</b><ul><li>UL 9540A 대형 화재 시험(LSFT) 통과, 인접 컨테이너 열폭주 없음 확인</li><li>국내 중앙계약시장 284MW 확보, 서산공장 3GWh를 ESS용 LFP 배터리 전용 라인으로 전환 중</li></ul></div><div class="row"><b>특이점</b><p>올해 3월 강화된 세부 기준에 맞춰 평가했으며, 열방출률 급증 억제 설계로 화재 확산 차단을 검증했다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>화재 안전 인증은 ESS EPC 프로젝트 수주의 필수 요건으로 작용하고 있으며, SK온의 통과는 국내 업체들도 글로벌 기준 충족 확보의 중요성을 부각한다. 향후 미국 시장 진출 시 UL 인증 보유가 차별화 포인트가 될 것으로 보인다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="http://www.plastickorea.co.kr/news/articleViewAmp.html?idxno=26409" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="화재는왜약한곳부터덮치나[내일을지키는안전망①]"><a href="https://mobile.newsis.com/view_amp.html?ar_id=NISX20261031_0003849304" target="_blank" rel="noopener">화재는 왜 약한 곳부터 덮치나 [내일을 지키는 안전망①]</a><div class="meta">뉴시스 · 11/01 10:00</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="4">
+    <h2>🏛️ 규격·인허가·정책</h2>
+    <div class="items">
+    <div class="item" data-k="미국메릴랜드,태양광·ess보조금입찰시작…2년간최대2억달러추진"><a href="https://www.aitimes.com/news/articleView.html?idxno=216801" target="_blank" rel="noopener">미국 메릴랜드, 태양광·ESS 보조금 입찰 시작…2년간 최대 2억달러 추진</a><div class="meta">AI타임스 · 10/31 09:30</div></div>
+    <div class="item" data-k="美보조금축소시계가동⋯k배터리,ess수익성확보시험대"><a href="https://www.viva100.com/article/20261101500489" target="_blank" rel="noopener">美 보조금 축소 시계 가동⋯K배터리, ESS 수익성 확보 시험대</a><div class="meta">브릿지경제 · 11/01 16:28</div></div>
+    <div class="item" data-k="재생에너지늘리는데전력망은부족…ess로‘길’넓힌다"><a href="https://www.kukinews.com/article/view/kuk202609290092" target="_blank" rel="noopener">재생에너지 늘리는데 전력망은 부족…ESS로 ‘길’ 넓힌다</a><div class="meta">쿠키뉴스 · 11/01 06:48</div></div>
+    <div class="item" data-k="가정용배터리로연120유로번다,ewe의가정용ess유연성보상서비스는어떻게운영"><a href="https://www.2news.co.kr/news/articleView.html?idxno=31191" target="_blank" rel="noopener">가정용 배터리로 연 120유로 번다, EWE의 가정용 ESS 유연성 보상 서비스는 어떻게 운영되나?</a><div class="meta">https://www.2news.co.kr/ · 10/31 10:29</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="5">
+    <h2>🌍 시장·프로젝트</h2>
+    <div class="items">
+    <div class="item" data-k="[인사]한국원자력안전기술원"><a href="http://www.knpnews.com/news/articleView.html?idxno=34775" target="_blank" rel="noopener">[인 사] 한국원자력안전기술원</a><div class="meta">한국원자력신문 · 11/01 09:44</div></div>
+    <div class="item" data-k="[whois?]박유신bs한양대표이사사장"><a href="https://www.businesspost.co.kr/BP?command=article_view&amp;num=450772" target="_blank" rel="noopener">[Who Is ?] 박유신 BS한양 대표이사 사장</a><div class="meta">비즈니스포스트 · 10/31 07:00</div></div>
+    </div>
+  </section>
+  </div>
+  <div class="panel" data-panel="global">
+  <section class="sec" data-region="global" data-sec="0">
+    <h2>🔋 배터리·셀</h2>
+    <div class="items">
+    <div class="item" data-k="policyworkshoponfinancingbatteryenergyst"><a href="https://www.unescap.org/events/2026/policy-workshop-financing-battery-energy-storage-deployment-pakistan" target="_blank" rel="noopener">Policy Workshop on Financing Battery Energy Storage Deployment in Pakistan</a><div class="meta">ESCAP · 11/02 01:40</div></div>
+    <div class="item" data-k="arizona’senergyfutureincreasinglyrunsthr"><a href="https://azbigmedia.com/real-estate/arizonas-energy-future-increasingly-runs-through-battery-energy-storage/" target="_blank" rel="noopener">Arizona’s energy future increasingly runs through battery energy storage</a><div class="meta">AZ Big Media · 11/01 21:02</div></div>
+    <div class="item" data-k="bessatwellannouncesnewalbumcutafigure"><a href="https://northerntransmissions.com/bess-atwell-announces-new-album-cut-a-figure/" target="_blank" rel="noopener">Bess Atwell announces new album Cut A Figure</a><div class="meta">Northern Transmissions · 10/31 07:55</div></div>
+    <div class="item" data-k="chileinauguratesthelargestbatteryproject"><a href="https://energiaestrategica.com/energiaestrategica/en/notes/inauguran-en-chile-el-proyecto-de-baterias-mas-grande-de-america-es-un-dia-que-no-olvidaremos" target="_blank" rel="noopener">Chile inaugurates the largest battery project in the Americas: &quot;It&#x27;s a day we won&#x27;t forget&quot;</a><div class="meta">Energía Estratégica · 11/01 21:34</div></div>
+    <div class="item" data-k="reitabesslandobituary(2026)-dunlap,tn-ew"><a href="https://www.legacy.com/us/obituaries/name/reita-land-obituary?id=62880979" target="_blank" rel="noopener">Reita Bess Land Obituary (2026) - Dunlap, TN - Ewton Funeral Home &amp; Cremation Center</a><div class="meta">Legacy | Obituary · 11/01 08:58</div></div>
+    <div class="item" data-k="entergyfilesrequesttobuildtwobatterystor"><a href="https://www.arkansasonline.com/news/2026/oct/30/entergy-files-request-to-build-two-battery-storage-systems-google-data-center-west-memphis/" target="_blank" rel="noopener">Entergy files request to build two battery storage systems as part of West Memphis Google data center expansion - The Arkansas Democrat</a><div class="meta">The Arkansas Democrat-Gazette · 10/31 07:51</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="1">
+    <h2>⚡ PCS·전력변환</h2>
+    <div class="items">
+    <div class="item" data-k="homeownerbuysnine$195solarpanelsintennes"><a href="https://shopping.yahoo.com/home-garden/home-improvement/articles/homeowner-buys-nine-195-solar-203900893.html" target="_blank" rel="noopener">Homeowner buys nine $195 solar panels in Tennessee and eyes a $3,800 battery-and-inverter bundle</a><div class="meta">Yahoo · 11/01 05:39</div></div>
+    <div class="item" data-k="californiahomeowner&#x27;spanelreplacementpla"><a href="https://www.thecooldown.com/green-home/san-diego-solar-battery-panel-quote/" target="_blank" rel="noopener">California homeowner&#x27;s panel replacement plans grow into a $46,400 solar-and-battery quote</a><div class="meta">The Cool Down · 11/01 14:03</div></div>
+    <div class="item" data-k="fordputsaninverterinits$28,350evpickupto"><a href="https://www.thecooldown.com/green-tech/ford-fathom-electric-pickup-home-backup/" target="_blank" rel="noopener">Ford puts an inverter in its $28,350 EV pickup to cut home backup equipment costs by 60%</a><div class="meta">The Cool Down · 11/01 02:51</div></div>
+    <div class="item" data-k="powerinvertersmarketto2035:solarpvexpans"><a href="https://www.indexbox.io/blog/power-inverters-market-forecast-to-2035-solar-pv-expansion-and-grid-modernization-drive-growth/" target="_blank" rel="noopener">Power Inverters Market To 2035: Solar PV Expansion and Grid Modernization Drive Growth - News and Statistics</a><div class="meta">IndexBox · 11/01 04:36</div></div>
+    <div class="item" data-k="earningscalltranscript:enelchilebeatsq32"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-enel-chile-beats-q3-2026-estimates-as-shares-fall-93CH-4989556" target="_blank" rel="noopener">Earnings call transcript: Enel Chile beats Q3 2026 estimates as shares fall</a><div class="meta">Investing.com · 11/01 19:17</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="2">
+    <h2>🔌 계통연계·그리드</h2>
+    <div class="items">
+    <div class="item" data-k="miteiannouncesenergystorage,gridmodeling"><a href="https://energy.mit.edu/news-events/news/mitei-announces-energy-storage-grid-modeling-and-carbon-management-focus-areas" target="_blank" rel="noopener">MITEI announces energy storage, grid modeling, and carbon management focus areas</a><div class="meta">MIT Energy Initiative · 11/01 12:19</div></div>
+    <div class="item" data-k="metrodetroitbatterystorageexpansiongetsg"><a href="https://www.mlive.com/news/detroit/2026/11/metro-detroit-battery-storage-expansion-gets-green-light-amid-growing-data-center-demand.html" target="_blank" rel="noopener">Metro Detroit battery storage expansion gets green light amid growing data center demand</a><div class="meta">MLive.com · 11/01 21:00</div></div>
+    <div class="item" data-k="pjmapprovestwoengiebatterystorageproject"><a href="https://energiesmedia.com/pjm-engie-battery-storage-projects/" target="_blank" rel="noopener">PJM approves two ENGIE battery storage projects totaling 1,660 MW under new expedited interconnection process</a><div class="meta">Energies Media · 11/01 04:15</div></div>
+    <div class="item" data-k="minnesotazincbatterypilotcouldhelpsolvea"><a href="https://www.startribune.com/minnesota-zinc-battery-pilot-could-help-solve-a-clean-energy-puzzle/601902956" target="_blank" rel="noopener">Minnesota zinc battery pilot could help solve a clean-energy puzzle</a><div class="meta">Star Tribune · 10/31 20:00</div></div>
+    <div class="item" data-k="seiaproposessolarandstoragegridprocureme"><a href="https://www.constructionowners.com/news/seia-proposes-distributed-solar-and-storage-framework-to-improve-grid-reliability" target="_blank" rel="noopener">SEIA Proposes Solar and Storage Grid Procurement Framework</a><div class="meta">Construction Owners · 11/01 07:16</div></div>
+    <div class="item" data-k="connecticuthomebuyereyesdiysolarfortwoev"><a href="https://www.thecooldown.com/green-home/connecticut-diy-solar-two-ev-charging/" target="_blank" rel="noopener">Connecticut homebuyer eyes DIY solar for two EVs, but grid rules could complicate the plan</a><div class="meta">The Cool Down · 10/31 17:03</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="3">
+    <h2>🚨 안전·소방</h2>
+    <div class="items">
+    <details class="item" data-k="summersidewon&#x27;thavebatterystorageforitss"><summary><span class="t">서머사이드, 선버크 화재 이후 겨울철 태양광 배터리 저장 불가</span><span class="meta">CBC · 10/31 07:32 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: Summerside won&#x27;t have battery storage for its solar power this winter after Sunbank fire</div><div class="row"><b>배경</b><p>캐나다 프린스에드워드아일랜드주 서머사이드시의 태양광 발전소(Sunbank)에서 9월 배터리 화재가 발생해 2주간 타다가 진화됐습니다. 화재 원인은 아직 밝혀지지 않았습니다.</p></div><div class="row"><b>핵심</b><ul><li>화재로 배터리가 멈춰 시가 이번 겨울 저장 용량을 사용할 수 없으며, CAO는 이로 인해 약 5MW의 디스패처블 전력이 빠진다고 밝혔습니다.</li><li>시는 15MW 규모의 비상 발전 설비로 겨울을 대비하며, 연결 중인 Maritime Electric과 조건부 확정(conditional firm) 서비스 계약으로 부족분을 메울 계획입니다.</li><li>서머사이드 전력공사는 재생에너지로 약 60%의 전력을 생산하지만, 해저케이블과 뉴브런즈윅 전력 구매에 여전히 의존하고 있습니다.</li></ul></div><div class="row"><b>특이점</b><p>배터리가 재생에너지 비중이 높은 도시의 전력 안정성을 떠받치는 핵심 설비였다는 점이 드러났고, 복구 전까지 비상 발전기 가동에 의존해야 하는 상황입니다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>BESS 화재가 발전 용량 공백으로 바로 이어질 수 있어, 한국 EPC 사업자는 화재 안전 설계와 함께 저장 설비 장애 시 대체 전력 확보 방안을 사업 초기 단계에서 검토할 필요가 있을 것으로 보입니다. 이는 기사에서 확인된 사실이 아닌 해석입니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.cbc.ca/news/canada/prince-edward-island/pei-summerside-power-energy-electricity-solar-farm-9.7403270" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="batterysafetycagesmarketto2035:evbattery"><a href="https://www.indexbox.io/blog/battery-safety-cages-market-forecast-to-2035-growth-driven-by-ev-battery-transport-regulations/" target="_blank" rel="noopener">Battery Safety Cages Market To 2035: EV Battery Transport Regulations Drive Growth - News and Statistics</a><div class="meta">IndexBox · 11/01 04:41</div></div>
+    <div class="item" data-k="newscotlandtore-examinebatterystorage"><a href="https://altamontenterprise.com/10302026/new-scotland-re-examine-battery-storage?amp" target="_blank" rel="noopener">New Scotland to re-examine battery storage</a><div class="meta">The Altamont Enterprise · 10/31 10:27</div></div>
+    <div class="item" data-k="solarandwindbancouldendasbannockcountyco"><a href="https://www.idahostatejournal.com/news/local/solar-and-wind-ban-could-end-as-bannock-county-council-advances-land-use-rewrite-with/article_eeabdc56-d1db-4fc1-9257-1b486f6a96a6.html" target="_blank" rel="noopener">Solar and wind ban could end as Bannock County council advances land use rewrite with conditions</a><div class="meta">Idaho State Journal · 10/31 06:53</div></div>
+    <div class="item" data-k="10massivebatterystorageprojectsaroundthe"><a href="https://interestingengineering.com/energy/10-massive-battery-storage-projects-around-world" target="_blank" rel="noopener">10 massive battery storage projects around the world redefining power grids</a><div class="meta">Interesting Engineering · 10/31 21:00</div></div>
+    <div class="item" data-k="howtodisposeofapowerbankuk:recyclingdone"><a href="https://coastandfell.co.uk/power-stations/power-banks/how-to-dispose-of-a-power-bank/" target="_blank" rel="noopener">How to Dispose of a Power Bank UK: Recycling Done Right</a><div class="meta">coastandfell.co.uk · 11/02 05:24</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="4">
+    <h2>🏛️ 규격·인허가·정책</h2>
+    <div class="items">
+    <div class="item" data-k="policyworkshoponfinancingbatteryenergyst"><a href="https://www.unescap.org/events/2026/policy-workshop-financing-battery-energy-storage-deployment-pakistan" target="_blank" rel="noopener">Policy Workshop on Financing Battery Energy Storage Deployment in Pakistan</a><div class="meta">ESCAP · 11/02 01:40</div></div>
+    <div class="item" data-k="miteiannouncesenergystorage,gridmodeling"><a href="https://energy.mit.edu/news-events/news/mitei-announces-energy-storage-grid-modeling-and-carbon-management-focus-areas" target="_blank" rel="noopener">MITEI announces energy storage, grid modeling, and carbon management focus areas</a><div class="meta">MIT Energy Initiative · 11/01 12:19</div></div>
+    <div class="item" data-k="arizona’senergyfutureincreasinglyrunsthr"><a href="https://azbigmedia.com/real-estate/arizonas-energy-future-increasingly-runs-through-battery-energy-storage/" target="_blank" rel="noopener">Arizona’s energy future increasingly runs through battery energy storage</a><div class="meta">AZ Big Media · 11/01 21:02</div></div>
+    <div class="item" data-k="ucsbchemicalengineerreceivespackardfello"><a href="https://www.edhat.com/news/ucsb-chemical-engineer-packard-fellowship-renewable-energy-storage/" target="_blank" rel="noopener">UCSB Chemical Engineer Receives Packard Fellowship for Energy Storage</a><div class="meta">edhat · 11/02 00:51</div></div>
+    <div class="item" data-k="lgtosupplyteslawithus$4.3billionofbatter"><a href="https://energynow.com/2026/03/lg-to-supply-tesla-with-us4-3-billion-of-batteries/" target="_blank" rel="noopener">LG to Supply Tesla With US$4.3 Billion of Batteries - Energy News, Top Headlines, Commentaries, Features &amp; Events</a><div class="meta">EnergyNow.com · 11/01 07:25</div></div>
+    <div class="item" data-k="senerextendsbatterystoragecalldeadlineto"><a href="https://mexicobusiness.news/energy/news/sener-extends-battery-storage-call-deadline-march-2027" target="_blank" rel="noopener">SENER Extends Battery Storage Call Deadline to March 2027</a><div class="meta">Mexico Business News · 10/31 07:56</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="5">
+    <h2>🌍 시장·프로젝트</h2>
+    <div class="items">
+    <div class="item" data-k="pacedigitekwins₹7,099.19millionbessepcco"><a href="https://scanx.trade/stock-market-news/companies/pace-digitek-secures-rs-7-099-19-million-contract-from-nlc-india-renewables-limited-for-250mw-500mwh-battery-energy-storage-system-project-in-tamil-nadu/40486766" target="_blank" rel="noopener">Pace Digitek Wins ₹7,099.19 Million BESS EPC Contract</a><div class="meta">scanx.trade · 11/01 12:25</div></div>
+    <div class="item" data-k="seciinvitesbidsfor4gw/16gwhstandalonebes"><a href="https://taiyangnews.info/tenders/seci-4-gw-16-gwh-standalone-bess-tender" target="_blank" rel="noopener">SECI Invites Bids For 4 GW/16 GWh Standalone BESS</a><div class="meta">TaiyangNews · 10/31 16:18</div></div>
+    <div class="item" data-k="acmesolar(nse:acmesolar)expandsbatteryst"><a href="https://kalkinemedia.com/in/news/announcements/acme-solar-nseacmesolar-expands-battery-storage-capacity-with-new-rajasthan-commissioning" target="_blank" rel="noopener">ACME Solar (NSE:ACMESOLAR) Expands Battery Storage Capacity with New Rajasthan Commissioning</a><div class="meta">Kalkine Media · 10/31 17:02</div></div>
+    <div class="item" data-k="revolveentersintodefinitiveagreementtoac"><a href="https://www.tradingview.com/news/acceswire:2fbb1f52c094b:0-revolve-enters-into-definitive-agreement-to-acquire-three-project-6-mw-battery-storage-portfolio-in-ontario/" target="_blank" rel="noopener">Revolve Enters into Definitive Agreement to Acquire Three Project, 6 MW Battery Storage Portfolio in Ontario</a><div class="meta">TradingView · 10/31 08:30</div></div>
+    <div class="item" data-k="bessdeveloperswarnldescapandfloorcouldco"><a href="https://www.ess-news.com/2026/10/30/uk-bess-developers-warn-ldes-cap-and-floor-could-cost-billpayers-gbp-1-6-billion/" target="_blank" rel="noopener">BESS developers warn LDES cap and floor could cost billpayers GBP 1.6 billion</a><div class="meta">ESS News · 10/31 06:58</div></div>
+    <div class="item" data-k="acmesolarbesscommissioningupdateoctober2"><a href="https://www.kalkine.co.in/article/announcements/acme-solar-nseacmesolar-has-it-commissioned-fresh-bess-capacity-in-rajasthan" target="_blank" rel="noopener">ACME Solar BESS Commissioning Update October 2026</a><div class="meta">Kalkine India · 10/31 17:02</div></div>
+    </div>
+  </section>
+  </div>
+  <div class="panel" data-panel="notice">
+  <section class="sec" data-region="notice" data-sec="0">
+    <h2>🏛️ 국내 기관 발표</h2>
+    <div class="items">
+    <details class="item" data-k="k-배터리경쟁력자생력협력강화다짐"><summary><span class="t">K- 배터리 경쟁력 자생력 협력 강화 다짐</span><span class="meta">대한민국 정책브리핑 · 10/29 11:26 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>배경</b><p>산업통상 관련 부처인 배터리전기전자과가 낸 정부 보도자료로, 정책브리핑에 게시되었습니다. 첨부 파일명 기준으로 10월 29일 작성분입니다.</p></div><div class="row"><b>핵심</b><ul><li>제목 기준으로 K-배터리 산업의 경쟁력, 자생력, 협력 강화를 정부가 다짐한 내용입니다.</li><li>수록된 본문이 없어 구체적인 정책 항목, 지원 규모, 일정은 확인할 수 없습니다.</li><li>같은 페이지의 나머지 항목은 농어업, 외교, 신규 택지 등 배터리와 무관한 기사 목록입니다.</li></ul></div><div class="row"><b>특이점</b><p>본문 대신 페이지 목록만 수집되어 이번 발표가 이전 정책과 무엇이 달라졌는지는 판단할 수 없습니다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>원문 PDF를 확인하기 전까지는 배터리 산업 정책의 방향성 신호 정도로만 보는 것이 안전합니다. 원문에서 ESS 지원이나 셀 공급망 관련 조항이 확인되면 BESS EPC 사업의 조달·수주 전략에 영향을 줄 수 있다는 해석이 가능합니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787039&amp;pageIndex=5&amp;repCodeType=&amp;repCode=&amp;startDate=2026-10-28&amp;endDate=2026-10-30&amp;srchWord=&amp;period=" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="문서뷰어"><a href="https://www.korea.kr/docViewer/iframe_skin/doc.html?fn=024acad6d21fe1d3dd74542febd64013&amp;rs=/docViewer/result/2026.10/29/024acad6d21fe1d3dd74542febd64013" target="_blank" rel="noopener">문서뷰어</a><div class="meta">대한민국 정책브리핑 · 10/29 11:00</div></div>
+    <details class="item" data-k="k-배터리,경쟁력·자생력·협력강화다짐"><summary><span class="t">K-배터리, 경쟁력·자생력·협력 강화 다짐</span><span class="meta">대한민국 정책브리핑 · 10/29 11:26 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>배경</b><p>정책브리핑에 게시된 배터리 산업 관련 정부 보도자료다. 본문에는 제목과 파일명, 정책브리핑 이용 안내문만 있고 구체적인 정책 내용은 확인되지 않는다.</p></div><div class="row"><b>핵심</b><ul><li>본문에 구체적인 수치, 금액, 일정, 지원 조치가 없어 확인할 수 없다.</li><li>제목 기준으로 배터리 산업의 경쟁력, 자생력, 협력 강화 방향을 다지는 내용이다.</li></ul></div><div class="row"><b>특이점</b><p>구체적인 지원책이나 수치가 빠져 있어, 실제 변화를 판단하려면 원문 PDF나 HWPX를 직접 확인해야 한다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>해석이며 확정된 사실이 아니다. 정부가 배터리 산업의 경쟁력과 협력을 강조하는 신호로 볼 수 있어, EPC 사업 관점에서는 원문의 ESS 관련 정책 항목을 확인해 둘 필요가 있다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787039&amp;pWise=sub&amp;pWiseSub=C3" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <details class="item" data-k="인천32물류센터화재중앙화재합동조사결과,원인은&#x27;리튬이온배터리열폭주&#x27;추정"><summary><span class="t">인천 32물류센터 화재 중앙화재합동조사 결과, 원인은 &#x27;리튬이온배터리 열폭주&#x27; 추정</span><span class="meta">대한민국 정책브리핑 · 10/29 09:00 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>배경</b><p>인천 32물류센터 화재에 대해 중앙화재합동조사가 완료되어 정부가 10월 29일 보도자료로 조사 결과를 발표했습니다. 본문은 원인을 리튬이온배터리 열폭주로 추정한다는 내용이며, 본문에서 확인되는 세부 조사 경위는 제한적입니다.</p></div><div class="row"><b>핵심</b><ul><li>발표 시점: 10월 29일(목) 즉시 보도자료로 중앙화재합동조사 결과 공개</li><li>원인 판단: 리튬이온배터리 열폭주로 &#x27;추정&#x27;(확정 아님)</li><li>본문에 피해 규모, 적재 배터리 용량(MWh), 후속 대책 수치는 나타나지 않음</li></ul></div><div class="row"><b>특이점</b><p>물류센터 적재 리튬이온배터리의 열폭주가 중앙 단위 합동조사에서 화재 원인으로 지목된 사례라는 점이 눈여겨볼 부분입니다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>사실이 아닌 해석으로, 물류·창고에 보관되는 배터리의 열폭주 대응과 적재 기준이 점검 대상이 될 수 있습니다. BESS 설치 현장에서도 셀 열폭주 감지와 소화 설계 요건을 재확인할 필요가 있을 수 있습니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787155" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="정부와한전은메가프로젝트적기전력공급및전력망인프라신속구축을위한다양한대책을"><a href="https://www.korea.kr/common/download.do?fileId=198580502" target="_blank" rel="noopener">정부와 한전은 메가프로젝트 적기 전력공급 및 전력망 인프라 신속구축을 위한 다양한 대책을</a><div class="meta">대한민국 정책브리핑 · 10/30 05:59</div></div>
+    <div class="item" data-k="산업부장관,다시찾은대경권구미에서성장엔진과m.ax확산속도낸다"><a href="https://m.korea.kr/briefing/pressReleaseView.do?newsId=156786811&amp;gubun=pressRelease&amp;pageIndex=1&amp;repCode=" target="_blank" rel="noopener">산업부장관, 다시 찾은 대경권 구미에서 성장엔진과 M.AX 확산 속도 낸다</a><div class="meta">대한민국 정책브리핑 · 10/28 13:15</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="notice" data-sec="1">
+    <h2>🌐 해외 기관 발표</h2>
+    <div class="items">
+    <details class="item" data-k="doe’sofficeofcriticalmineralsandenergyin"><summary><span class="t">미 DOE, 배터리 국가 전략과 제조 가속 컨소시엄 발표</span><span class="meta">Department of Energy (.gov) · 10/28 22:28 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: DOE’s Office of Critical Minerals and Energy Innovation Unveils New Strategy and Initiative to Strengthen American Battery Leadership - Department of Energy (.gov)</div><div class="row"><b>배경</b><p>미 에너지부(DOE) 산하 핵심광물·에너지혁신국(CMEI)이 미국 내 배터리 공급망 구축과 제조 역량 강화를 위한 국가 배터리 전략을 발표했습니다. 이와 함께 국립연구소·산업계·학계가 참여하는 배터리 제조 가속기(BattMan) 컨소시엄도 출범했습니다.</p></div><div class="row"><b>핵심</b><ul><li>미국 배터리 수요(교통+에너지저장 응용)는 2025년 179GWh에서 2035년 707GWh로 약 4배 증가할 것으로 전망됩니다.</li><li>전략 목표는 2030년까지 국내 배터리 공급망 완성, 2035년까지 배터리 기술·제조 분야 미국 리더십 달성, 안전하고 경제적인 에너지저장 솔루션의 상용화 가속입니다.</li><li>전략은 상·중류 공급망 투자, 연구소 성과의 상용화, 제조 공정 혁신, 계통 현대화를 위한 임무 중심 배치, 국제 협력, 인재 투자의 6대 축으로 구성됩니다. BattMan은 미국 PNNL이 주도합니다.</li></ul></div><div class="row"><b>특이점</b><p>배터리 전략이 전기차 중심에서 벗어나 계통 현대화와 에너지저장 상용화를 명시적 정책 축으로 포함한 점이 눈에 띕니다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>국내 공급망 우선 정책이 강화되면 미국 프로젝트의 셀·소재 조달 조건과 현지 조달 요건이 더 까다로워질 수 있습니다. 한국 BESS EPC사는 미국 계통 연계 프로젝트에서 현지화 요건과 공급망 변화를 사전에 점검할 필요가 있다는 해석이 가능합니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.energy.gov/cmei/articles/does-office-critical-minerals-and-energy-innovation-unveils-new-strategy-and" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="anationalstrategyforamericanleadershipin"><a href="https://www.energy.gov/sites/default/files/2026-10/national-strategy-for-american-leadership-in-batteries_102826.pdf" target="_blank" rel="noopener">A National Strategy for American Leadership in Batteries - Department of Energy (.gov)</a><div class="meta">Department of Energy (.gov) · 10/29 05:32</div></div>
+    <details class="item" data-k="doelaunchesbatterymanufacturingaccelerat"><summary><span class="t">DOE, 배터리 제조 가속기(BattMan) 출범…미국 제조 경쟁력 강화</span><span class="meta">Department of Energy (.gov) · 10/28 05:56 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: DOE Launches Battery Manufacturing Accelerator to Strengthen U.S. Competitiveness - Department of Energy (.gov)</div><div class="row"><b>배경</b><p>미 에너지부(DOE) 산하 CMEI의 첨단재료·제조기술실이 실험실 단계의 첨단 배터리 기술을 국내 양산으로 옮기기 위한 국가 컨소시엄을 새로 만들었습니다. 배터리는 전력망, 교통, 데이터센터, 국방 등에 쓰이지만 연구에서 상용 생산으로 넘어가는 단계의 어려움이 지적되어 왔습니다.</p></div><div class="row"><b>핵심</b><ul><li>신규 국가 컨소시엄 BattMan(Battery Manufacturing Accelerator)을 출범했으며, PNNL이 주관하고 Argonne, ORNL, National Laboratory of the Rockies가 참여합니다.</li><li>목표는 제조 비용 절감과 상용화 기간 단축, 미국 배터리 공급망 강화이며, 산학 파트너십을 병행해 제조 공정을 검증합니다.</li><li>장기적으로 실시간 공정 모니터링, 초지능(SI), 디지털 트윈, 폐루프 제어를 결합한 자율 최적화 제조 시스템을 지향합니다. 본문에는 예산이나 정량 목표 수치가 없습니다.</li></ul></div><div class="row"><b>특이점</b><p>기존 배터리 연구 지원이 소재·화학 중심이었다면, 이번에는 제조 공정의 데이터 기반 자동 제어와 AI 활용에 무게를 둔 점이 눈에 띕니다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>이 소식은 BESS 사업 자체보다 미국 내 셀 제조 공급망과 공정 기술 경쟁 방향을 보여준다고 해석할 수 있습니다. 향후 셀 품질 데이터와 공정 모니터링 역량이 조달 요건으로 중요해질 가능성을 함께 살펴볼 만합니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.energy.gov/cmei/ammto/articles/doe-launches-battery-manufacturing-accelerator-strengthen-us-competitiveness" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <details class="item" data-k="energydepartmentcloses$5.1billionloantol"><summary><span class="t">미 에너지부, 아이오와·위스콘신 전력 비용 절감·계통 안정화에 51억 달러 대출 확정</span><span class="meta">Department of Energy (.gov) · 10/28 22:27 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: Energy Department Closes $5.1 Billion Loan to Lower Electricity Costs and Strengthen Grid Reliability in Iowa and Wisconsin - Department of Energy (.gov)</div><div class="row"><b>배경</b><p>미 에너지부(DOE) 산하 Office of Energy Dominance Financing(EDF)이 전력 수요 증가에 대응하고 전력망 신뢰성을 높이기 위한 대통령 행정명령의 일환으로 이번 대출을 실행했습니다. 이번 건은 행정부의 열 번째 금융 종결이며, EDF 프로그램을 통한 여섯 번째와 일곱 번째 전력회사 금융입니다.</p></div><div class="row"><b>핵심</b><ul><li>Alliant Energy에 대한 대출 규모는 51억 달러(약 5.1 billion)이며, 아이오와·위스콘신 두 주에서 발전 설비를 확충·개선합니다.</li><li>신규 또는 개선되는 발전 용량은 2.6GW 이상이며, 두 주 소비자의 전력 비용 절감 효과는 10억 달러 이상으로 제시됐습니다.</li><li>투자 항목은 신규 천연가스 발전소, 에너지저장장치(ESS), 기존 발전설비 업그레이드이며, 프로젝트 전력은 약 200만 가구 분량으로 설명됐습니다.</li></ul></div><div class="row"><b>특이점</b><p>저장장치(ESS)가 가스 발전과 함께 전력 신뢰성 투자의 한 축으로 명시됐지만, 본문에는 ESS의 MW/MWh 용량이 공개되지 않아 규모를 가늠하기 어렵습니다.</p></div><div class="row"><b>시사점 <i class="tag">AI 분석</i></b><p>미국 유틸리티 대규모 금융이 가스 발전과 ESS를 묶어 집행되는 흐름이라, 한국 EPC 사업자는 기존 발전 부지 연계형 ESS 계통연계·EPC 기회를 검토해 볼 만합니다. 다만 이는 본문 사실에 기반한 해석이며, 실제 발주 조건과 ESS 규모는 추가 확인이 필요합니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.energy.gov/articles/energy-department-closes-51-billion-loan-lower-electricity-costs-and-strengthen-grid" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="cx-036143:marincleanenergystorageprogram"><a href="https://www.energy.gov/nepa/articles/cx-036143-marin-clean-energy-storage-program" target="_blank" rel="noopener">CX-036143: Marin Clean Energy Storage Program - Department of Energy (.gov)</a><div class="meta">Department of Energy (.gov) · 10/30 05:00</div></div>
+    <div class="item" data-k="dailyenergystoragereport"><a href="https://www.caiso.com/documents/daily-energy-storage-report-oct-29-2026.html" target="_blank" rel="noopener">Daily Energy Storage Report</a><div class="meta">California ISO · 10/29 16:00</div></div>
+    </div>
+  </section>
+  </div>
+  <div class="arch">지난 브리핑: <a href="/briefing/2026-11-01.html">2026-11-01</a> <a href="/briefing/2026-10-31.html">2026-10-31</a> <a href="/briefing/2026-10-30.html">2026-10-30</a> <a href="/briefing/2026-10-29.html">2026-10-29</a> <a href="/briefing/2026-10-27.html">2026-10-27</a> <a href="/briefing/2026-10-26.html">2026-10-26</a> <a href="/briefing/2026-10-25.html">2026-10-25</a> <a href="/briefing/2026-10-24.html">2026-10-24</a> <a href="/briefing/2026-10-23.html">2026-10-23</a> <a href="/briefing/2026-10-22.html">2026-10-22</a> <a href="/briefing/2026-10-21.html">2026-10-21</a> <a href="/briefing/2026-10-20.html">2026-10-20</a> <a href="/briefing/2026-10-19.html">2026-10-19</a> <a href="/briefing/2026-10-18.html">2026-10-18</a></div>
+  <footer>구글뉴스 RSS 기반 자동 큐레이션 · 요약은 AI가 원문을 읽고 작성(원문 링크 필수 확인) · <a class="back" href="https://bess-ai-control.work/llms.txt">AI 에이전트용 안내</a></footer>
+</div>
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.tabs button');
+  function show(r) {
+    tabs.forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-tab') === r); });
+    document.querySelectorAll('.panel').forEach(function (p) { p.classList.toggle('on', p.getAttribute('data-panel') === r); });
+  }
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () { var r = b.getAttribute('data-tab'); show(r); history.replaceState(null, '', '#' + r); });
+  });
+  var h = location.hash.slice(1);
+  if (['kr', 'global', 'notice'].indexOf(h) >= 0) show(h);
+
+  var btn = document.getElementById('refresh-btn');
+  var st = document.getElementById('live-status');
+  if (!btn || !st) return;
+  function tkey(t) { return String(t).replace(/\s+/g, '').toLowerCase().slice(0, 40); }
+  function safeHref(u) { return /^https?:\/\//.test(u) ? u : '#'; }
+  function addFresh(region, secs) {
+    var n = 0;
+    (secs || []).forEach(function (sec, i) {
+      var box = document.querySelector('[data-region="' + region + '"][data-sec="' + i + '"] .items');
+      if (!box) return;
+      var old = box.querySelector('.fresh');
+      if (old) old.remove();
+      var have = {};
+      box.querySelectorAll('[data-k]').forEach(function (el) { have[el.getAttribute('data-k')] = 1; });
+      var news = (sec.items || []).filter(function (it) { return it.title && !have[tkey(it.title)]; });
+      if (!news.length) return;
+      var f = document.createElement('div'); f.className = 'fresh';
+      var l = document.createElement('div'); l.className = 'lbl';
+      l.textContent = '🆕 새로 들어온 소식 ' + news.length + '건 · 참고용(AI 요약·관련도 판정 전, 다음 정기 발행 07:30에 반영)';
+      f.appendChild(l);
+      news.forEach(function (it) {
+        var w = document.createElement('div'); w.className = 'item';
+        var a = document.createElement('a');
+        a.href = safeHref(it.link); a.target = '_blank'; a.rel = 'noopener'; a.textContent = it.title;
+        var m = document.createElement('div'); m.className = 'meta';
+        m.textContent = [it.source, it.when].filter(Boolean).join(' · ');
+        w.appendChild(a); w.appendChild(m); f.appendChild(w);
+      });
+      box.insertBefore(f, box.firstChild);
+      n += news.length;
+    });
+    return n;
+  }
+  btn.addEventListener('click', function () {
+    btn.disabled = true; st.textContent = '확인 중…';
+    fetch('/api/briefing?_=' + Date.now(), {cache: 'no-store'}).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
+      if (!d.total && !d.total_global) throw 0;
+      var n = addFresh('kr', d.sections) + addFresh('global', d.sections_global);
+      st.textContent = d.updated + ' 기준 새 소식 ' + n + '건' + (n ? ' (각 부문 상단)' : '');
+    }).catch(function () {
+      st.textContent = '확인 실패 — 잠시 후 다시 시도해 주세요';
+    }).finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
