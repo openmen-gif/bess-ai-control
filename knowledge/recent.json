@@ -2,6 +2,24 @@
  "updated": "2026-11-02",
  "events": [
   {
+   "id": "fdad0cd742e3",
+   "date": "2026-11-02",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-emerging-markets",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-hse-manager",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 작업허가 절차 간소화 및 외국인 인력 안전 교육 프로그램 개발 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f861d22d382b",
    "date": "2026-11-02",
    "type": "briefing",
@@ -3476,17 +3494,6 @@
    "title": "CATL 소듐 배터리, 유럽 ESS 3GWh 추가 수주",
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kNExLT3VtU1RBclYtTEN5cGVNRzlpREI5b0R3NTZiUkpoSmtMUzNrQWNfUmh1MWRpVzgyeVpCRnBrRjlmSi1OeEtyUzBJNFdySlBYUzJR?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "6c958914a761",
-   "date": "2026-10-29",
-   "type": "skill",
-   "agents": [
-    "bess-mlops-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 51개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
