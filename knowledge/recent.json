@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "events": [
   {
    "id": "fdad0cd742e3",
@@ -73,6 +73,24 @@
    "title": "ACME Solar (NSE:ACMESOLAR) Expands Battery Storage Capacity with New Rajasthan Commissioning",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMWtZaFZsalRRMHpFdkVYY0tTbWYwc18zekVOd3dvLWZVUEpUMTB0ZUxCeGp5S0pVNVRnMEp5Qy1zWHNibUV6cnFXUlRzVFlfMzhDa3dIbGd0N3NtSkxTTGxYRG4yMkVaVVVDcV8xaWNrSEdGQS12dzVENG91TVNMcnVlT2xtdUlTVHBvZnZ5ZkVMWm1vZjQ2VnJmRHlET3JvY1JFbFpKWUs5X2g5RzlSbEZ6NFh3TjRPOFFLVG1vaVp3clVQQXN4dUtveUNJLU5tVUE?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "bbabe0636311",
+   "date": "2026-11-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-procurement-data",
+    "bess-procurement-expert",
+    "bess-project-manager",
+    "bess-system-engineer",
+    "bess-tool-developer",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — 견적서 및 BOM 최적화 프로세스 자동화 도구 도입 계획 수립",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "bb41c6249bc0",
@@ -3486,17 +3504,6 @@
    "type": "skill",
    "agents": [
     "bess-standards-uk"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 51개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "75755ae42c07",
-   "date": "2026-10-29",
-   "type": "skill",
-   "agents": [
-    "bess-security-expert"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 51개 갱신",
    "link": "",
