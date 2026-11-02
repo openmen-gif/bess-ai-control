@@ -399,6 +399,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "1bf8cac666a1",
+   "date": "2026-11-02",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-ebop-engineer",
+    "bess-emerging-markets",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-pcs-expert",
+    "bess-permit-english",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — CEA·SECI 영역 초안 작성 — bess-emerging-markets 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "11285820393b",
    "date": "2026-11-02",
    "type": "briefing",
@@ -3483,17 +3501,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 51개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "726e60075cf6",
-   "date": "2026-10-29",
-   "type": "briefing",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "CATL 소듐 배터리, 유럽 ESS 3GWh 추가 수주",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kNExLT3VtU1RBclYtTEN5cGVNRzlpREI5b0R3NTZiUkpoSmtMUzNrQWNfUmh1MWRpVzgyeVpCRnBrRjlmSi1OeEtyUzBJNFdySlBYUzJR?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
