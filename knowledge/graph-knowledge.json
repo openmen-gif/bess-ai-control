@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-35e10ae89ac4",
+   "name": "팀 토론 — [쟁점 후속] 화재 안전 설비 투자 세제 혜택 분석 및 국내",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fdad0cd742e3",
    "name": "팀 토론 — 작업허가 절차 간소화 및 외국인 인력 안전 교육 프로그램 개",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-20",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4d26f0651e10",
-   "name": "구자라트 BESS 규제 2026 최종안 확정, 계통연계 기준 제시",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-20",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-35e10ae89ac4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-35e10ae89ac4",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-35e10ae89ac4",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-35e10ae89ac4",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-35e10ae89ac4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-35e10ae89ac4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-35e10ae89ac4",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-35e10ae89ac4",
+   "type": "knowledge"
+  },
   {
    "source": "BIZ-001",
    "target": "K-fdad0cd742e3",
@@ -15556,11 +15596,6 @@
    "source": "PCS-001",
    "target": "K-5001324e0dbc",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-4d26f0651e10",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16094,7 +16129,7 @@
    {
     "date": "2026-11-03",
     "knowledge": 800,
-    "events_total": 3793
+    "events_total": 3794
    }
   ]
  }

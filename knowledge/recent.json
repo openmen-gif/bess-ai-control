@@ -2,6 +2,24 @@
  "updated": "2026-11-03",
  "events": [
   {
+   "id": "35e10ae89ac4",
+   "date": "2026-11-03",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-hse-manager",
+    "bess-standards-korea",
+    "bess-standards-poland",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — [쟁점 후속] 화재 안전 설비 투자 세제 혜택 분석 및 국내 적용 전략 구체화",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fdad0cd742e3",
    "date": "2026-11-02",
    "type": "discussion",
@@ -3493,17 +3511,6 @@
    "type": "skill",
    "agents": [
     "bess-power-system-analyst"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 51개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7755e4190a5b",
-   "date": "2026-10-29",
-   "type": "skill",
-   "agents": [
-    "bess-standards-uk"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 51개 갱신",
    "link": "",
