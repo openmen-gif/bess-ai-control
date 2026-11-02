@@ -2,6 +2,24 @@
  "updated": "2026-11-03",
  "events": [
   {
+   "id": "4fd087c03185",
+   "date": "2026-11-03",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-fit-procedure",
+    "bess-hse-manager",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-permit-asia",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 아시아 지역 BESS 인허가 동향 분석 및 국내 적용 전략 수립으로 KEPCO, KPX 허가 요건 최적화 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "35e10ae89ac4",
    "date": "2026-11-03",
    "type": "discussion",
@@ -3500,17 +3518,6 @@
    "type": "skill",
    "agents": [
     "bess-permit-english"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 51개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7a1da50e7a48",
-   "date": "2026-10-29",
-   "type": "skill",
-   "agents": [
-    "bess-power-system-analyst"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 51개 갱신",
    "link": "",

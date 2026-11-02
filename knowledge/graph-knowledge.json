@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-4fd087c03185",
+   "name": "팀 토론 — 아시아 지역 BESS 인허가 동향 분석 및 국내 적용 전략 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-35e10ae89ac4",
    "name": "팀 토론 — [쟁점 후속] 화재 안전 설비 투자 세제 혜택 분석 및 국내",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-20",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-5001324e0dbc",
-   "name": "오프그리드 럭셔리 빌라를 떠받치는 보이지 않는 전력 시스템",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-20",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-4fd087c03185",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4fd087c03185",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-4fd087c03185",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-4fd087c03185",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-4fd087c03185",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-4fd087c03185",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-4fd087c03185",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-4fd087c03185",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-35e10ae89ac4",
@@ -15591,11 +15631,6 @@
    "source": "BAT-001",
    "target": "K-515b8f87e4f0",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-5001324e0dbc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -16129,7 +16164,7 @@
    {
     "date": "2026-11-03",
     "knowledge": 800,
-    "events_total": 3794
+    "events_total": 3795
    }
   ]
  }
