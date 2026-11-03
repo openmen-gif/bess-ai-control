@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-c6721f25a1b8",
+   "name": "팀 토론 — BESS EPC EU 규격 준수 검토 및 국내 적용 전략 수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f0e0144cb763",
    "name": "DeltaX's Rack-, Cabinet-, & Container-Ba",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-21",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3946a76a1390",
-   "name": "BESS 가용률은 유지보수에 달렸다: 스트링 vs 중앙형 PCS 비교",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-21",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
   {
    "source": "PCS-001",
    "target": "K-f0e0144cb763",
@@ -15251,11 +15291,6 @@
    "source": "STD-001",
    "target": "K-4273c7d6d427",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-3946a76a1390",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15794,7 +15829,7 @@
    {
     "date": "2026-11-04",
     "knowledge": 800,
-    "events_total": 3842
+    "events_total": 3843
    }
   ]
  }
