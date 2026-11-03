@@ -28,6 +28,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7cc6ed10b975",
+   "name": "팀 토론 — 전사 문서 자동화 시스템 구축 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f0e0144cb763",
    "name": "DeltaX's Rack-, Cabinet-, & Container-Ba",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-21",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-4d13c60848a0",
-   "name": "뉴질랜드 Genesis, 200MWh BESS 가동… 훈틀리 발전소 1단",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-21",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7315,6 +7315,46 @@
   {
    "source": "PRO-001",
    "target": "K-a051154be56a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7cc6ed10b975",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7cc6ed10b975",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-7cc6ed10b975",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-7cc6ed10b975",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-7cc6ed10b975",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7cc6ed10b975",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-7cc6ed10b975",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-7cc6ed10b975",
    "type": "knowledge"
   },
   {
@@ -15351,11 +15391,6 @@
    "source": "MAR-001",
    "target": "K-4d281a072b5e",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-4d13c60848a0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15894,7 +15929,7 @@
    {
     "date": "2026-11-04",
     "knowledge": 800,
-    "events_total": 3845
+    "events_total": 3846
    }
   ]
  }

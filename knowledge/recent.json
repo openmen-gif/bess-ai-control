@@ -55,6 +55,24 @@
    "source": "bess-team"
   },
   {
+   "id": "7cc6ed10b975",
+   "date": "2026-11-04",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-hse-manager",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 전사 문서 자동화 시스템 구축 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f0e0144cb763",
    "date": "2026-11-03",
    "type": "briefing",
@@ -3489,17 +3507,6 @@
    "title": "Delta Capacity, 핀란드 600MWh BESS 2건 금융 클로징",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLXViVlkzM0MyUlFJNjFKNTJnc0MtS2xvSHB5bVVxOFdSYjEwakVtR0hvSjBQQVV6OEFDalV3Y0psRWdJUDlfYmtmaWJOWTlmWlZfOWJNZWR3V3BpY0RMVGlqZnZ4UkVCc2dYVDRCN2I1dEtacnVNNTFQU2xXQVEzVlFlVW5XWTU4QXhKSS1lS2xOUFVxemtLYUpYclJvS3dpbm14OWIyZw?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "241b6183b823",
-   "date": "2026-10-30",
-   "type": "skill",
-   "agents": [
-    "bess-customs-tariff"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 41개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
