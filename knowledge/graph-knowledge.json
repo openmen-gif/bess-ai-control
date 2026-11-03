@@ -100,6 +100,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b61df76e1d05",
+   "name": "팀 토론 — 배터리 재활용 규제 개정에 따른 국내 BESS 조달 전략 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-03",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b51625b7258d",
    "name": "[배터리 안전노트 ⑥] ESS 화재, 반복된 사고가 남긴 교훈",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-21",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3788bc800d59",
-   "name": "HT로보틱스(396300)눌릴때마다 물량 모아둘 기회로 보이며 이후 전망",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-21",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7255,6 +7255,46 @@
   {
    "source": "FIR-001",
    "target": "K-c0d7b34c5591",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b61df76e1d05",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b61df76e1d05",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-b61df76e1d05",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-b61df76e1d05",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b61df76e1d05",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b61df76e1d05",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-b61df76e1d05",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-b61df76e1d05",
    "type": "knowledge"
   },
   {
@@ -15216,15 +15256,10 @@
    "source": "PCS-001",
    "target": "K-3946a76a1390",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-3788bc800d59",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "history": [
    {
     "date": "2026-07-20",
@@ -15755,6 +15790,11 @@
     "date": "2026-11-03",
     "knowledge": 800,
     "events_total": 3841
+   },
+   {
+    "date": "2026-11-04",
+    "knowledge": 800,
+    "events_total": 3842
    }
   ]
  }
