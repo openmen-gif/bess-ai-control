@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a051154be56a",
+   "name": "팀 토론 — 화재 안전 설비 투자 세제 혜택의 구체적 적용 기준과 증빙 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f0e0144cb763",
    "name": "DeltaX's Rack-, Cabinet-, & Container-Ba",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-21",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4273c7d6d427",
-   "name": "상시 출입 가능한 ESS 전용건물은 ‘건축물’",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-21",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7240,6 +7240,41 @@
   {
    "source": "STR-001",
    "target": "K-c6721f25a1b8",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-a051154be56a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a051154be56a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a051154be56a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a051154be56a",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a051154be56a",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a051154be56a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a051154be56a",
    "type": "knowledge"
   },
   {
@@ -15286,11 +15321,6 @@
    "source": "BAT-001",
    "target": "K-4847d06c2c4d",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-4273c7d6d427",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15829,7 +15859,7 @@
    {
     "date": "2026-11-04",
     "knowledge": 800,
-    "events_total": 3843
+    "events_total": 3844
    }
   ]
  }
