@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fc0dae5a1b4b",
+   "name": "팀 토론 — EU BESS 규격 강화 동향 분석 및 국내 설계·인증 프로",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c6721f25a1b8",
    "name": "팀 토론 — BESS EPC EU 규격 준수 검토 및 국내 적용 전략 수",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-21",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-4847d06c2c4d",
-   "name": "Dominion Energy, PJM에 향후 20년간 3.5GW BESS",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-21",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-fc0dae5a1b4b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-fc0dae5a1b4b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-fc0dae5a1b4b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-fc0dae5a1b4b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-fc0dae5a1b4b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-fc0dae5a1b4b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-fc0dae5a1b4b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-fc0dae5a1b4b",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-c6721f25a1b8",
@@ -15316,11 +15356,6 @@
    "source": "MAR-001",
    "target": "K-4d13c60848a0",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-4847d06c2c4d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15859,7 +15894,7 @@
    {
     "date": "2026-11-04",
     "knowledge": 800,
-    "events_total": 3844
+    "events_total": 3845
    }
   ]
  }

@@ -2,6 +2,24 @@
  "updated": "2026-11-04",
  "events": [
   {
+   "id": "fc0dae5a1b4b",
+   "date": "2026-11-04",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-procurement-data",
+    "bess-procurement-expert",
+    "bess-standards-analyst"
+   ],
+   "title": "팀 토론 — EU BESS 규격 강화 동향 분석 및 국내 설계·인증 프로세스 최적화 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "c6721f25a1b8",
    "date": "2026-11-04",
    "type": "discussion",
@@ -3478,17 +3496,6 @@
    "type": "skill",
    "agents": [
     "bess-customs-tariff"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 41개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "233c60ee4581",
-   "date": "2026-10-30",
-   "type": "skill",
-   "agents": [
-    "bess-qaqc-engineer"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 41개 갱신",
    "link": "",

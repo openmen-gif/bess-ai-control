@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-04",
  "totals": {
-  "all": 3844,
+  "all": 3845,
   "briefing": 1952,
   "skill": 1022,
-  "discussion": 870,
+  "discussion": 871,
   "activity": 0
  },
  "perAgent": {
@@ -29,14 +29,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 1045,
+   "count": 1046,
    "byType": {
     "skill": 19,
-    "discussion": 471,
+    "discussion": 472,
     "briefing": 555
    },
    "lastGrown": "2026-11-04",
-   "xp": 1554,
+   "xp": 1556,
    "level": 23
   },
   "bess-business-dev": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 394,
+   "count": 395,
    "byType": {
     "skill": 20,
-    "discussion": 374
+    "discussion": 375
    },
    "lastGrown": "2026-11-04",
-   "xp": 808,
+   "xp": 810,
    "level": 17
   },
   "bess-customs-tariff": {
@@ -193,13 +193,13 @@
    "level": 9
   },
   "bess-epc-bom": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 13,
-    "discussion": 36
+    "discussion": 37
    },
-   "lastGrown": "2026-10-28",
-   "xp": 111,
+   "lastGrown": "2026-11-04",
+   "xp": 113,
    "level": 7
   },
   "bess-esg-finance": {
@@ -233,14 +233,14 @@
    "level": 13
   },
   "bess-fire-engineer": {
-   "count": 445,
+   "count": 446,
    "byType": {
     "skill": 18,
-    "discussion": 295,
+    "discussion": 296,
     "briefing": 132
    },
    "lastGrown": "2026-11-04",
-   "xp": 776,
+   "xp": 778,
    "level": 17
   },
   "bess-fit-procedure": {
@@ -285,13 +285,13 @@
    "level": 6
   },
   "bess-hse-manager": {
-   "count": 198,
+   "count": 199,
    "byType": {
     "skill": 16,
-    "discussion": 182
+    "discussion": 183
    },
    "lastGrown": "2026-11-04",
-   "xp": 412,
+   "xp": 414,
    "level": 12
   },
   "bess-hybrid-specialist": {
@@ -529,23 +529,23 @@
    "level": 5
   },
   "bess-procurement-data": {
-   "count": 33,
+   "count": 34,
    "byType": {
     "skill": 8,
-    "discussion": 25
-   },
-   "lastGrown": "2026-11-02",
-   "xp": 74,
-   "level": 5
-  },
-  "bess-procurement-expert": {
-   "count": 320,
-   "byType": {
-    "skill": 19,
-    "discussion": 301
+    "discussion": 26
    },
    "lastGrown": "2026-11-04",
-   "xp": 659,
+   "xp": 76,
+   "level": 6
+  },
+  "bess-procurement-expert": {
+   "count": 321,
+   "byType": {
+    "skill": 19,
+    "discussion": 302
+   },
+   "lastGrown": "2026-11-04",
+   "xp": 661,
    "level": 15
   },
   "bess-project-manager": {
@@ -619,14 +619,14 @@
    "level": 8
   },
   "bess-standards-analyst": {
-   "count": 495,
+   "count": 496,
    "byType": {
     "skill": 15,
-    "discussion": 141,
+    "discussion": 142,
     "briefing": 339
    },
-   "lastGrown": "2026-11-03",
-   "xp": 666,
+   "lastGrown": "2026-11-04",
+   "xp": 668,
    "level": 15
   },
   "bess-standards-australia": {
@@ -1201,7 +1201,7 @@
   },
   {
    "date": "2026-11-04",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
