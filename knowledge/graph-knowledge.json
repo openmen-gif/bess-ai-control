@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7cc687d419a4",
+   "name": "팀 토론 — 전사 문서 표준화 가이드라인 제정 및 A4 인쇄 포맷 최적화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fc12fa18357f",
    "name": "Mapping Sweden’s BESS Market through its",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3a2544e0c81b",
-   "name": "[금융권 이모저모]삼성자산운용, 배터리 ETF 순자산 2000억원 돌파 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "STD-001",
    "target": "K-a91599091010",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7cc687d419a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-7cc687d419a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7cc687d419a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-7cc687d419a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-7cc687d419a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-7cc687d419a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-7cc687d419a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-7cc687d419a4",
    "type": "knowledge"
   },
   {
@@ -15206,11 +15246,6 @@
    "source": "PCS-001",
    "target": "K-3b4071697089",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-3a2544e0c81b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15754,7 +15789,7 @@
    {
     "date": "2026-11-05",
     "knowledge": 800,
-    "events_total": 3902
+    "events_total": 3903
    }
   ]
  }
