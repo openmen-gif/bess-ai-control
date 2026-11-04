@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6a0999c8c710",
+   "name": "팀 토론 — 수소 연료전지 BESS 하이브리드 시스템의 통합 시험 프로토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-05",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-fc12fa18357f",
    "name": "Mapping Sweden’s BESS Market through its",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3b4071697089",
-   "name": "LS일렉트릭, ESS용 PCS 단체표준인증 1호 획득",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7280,6 +7280,46 @@
   {
    "source": "STD-001",
    "target": "K-7cc687d419a4",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-6a0999c8c710",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-6a0999c8c710",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-6a0999c8c710",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-6a0999c8c710",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-6a0999c8c710",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-6a0999c8c710",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6a0999c8c710",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-6a0999c8c710",
    "type": "knowledge"
   },
   {
@@ -15241,11 +15281,6 @@
    "source": "COM-003",
    "target": "K-3baa8780854c",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-3b4071697089",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15789,7 +15824,7 @@
    {
     "date": "2026-11-05",
     "knowledge": 800,
-    "events_total": 3903
+    "events_total": 3904
    }
   ]
  }
