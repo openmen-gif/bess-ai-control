@@ -235,6 +235,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-9aac5de18c2d",
+   "name": "팀 토론 — 초기 비용 증가와 신뢰 구축 기간 필요성에 대한 우려를 극복",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-94f9152b5a30",
    "name": "韓배터리 3사, ESS로 돌파구 마련…美 시장보호 의존은 숙제",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-22e2c68a56a6",
-   "name": "Polaris, 푸에르토리코 Punta Lima BESS 공급계약 체결 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-22",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7430,6 +7430,46 @@
   {
    "source": "BIZ-001",
    "target": "K-9e72b007f7f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9aac5de18c2d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-9aac5de18c2d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-9aac5de18c2d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-9aac5de18c2d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-9aac5de18c2d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-9aac5de18c2d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-9aac5de18c2d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-9aac5de18c2d",
    "type": "knowledge"
   },
   {
@@ -15106,11 +15146,6 @@
    "source": "SYS-001",
    "target": "K-22f5d5f4400c",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-22e2c68a56a6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15649,7 +15684,7 @@
    {
     "date": "2026-11-04",
     "knowledge": 800,
-    "events_total": 3897
+    "events_total": 3898
    }
   ]
  }
