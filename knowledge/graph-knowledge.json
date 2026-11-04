@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-a91599091010",
+   "name": "팀 토론 — FIDIC Silver/Yellow 계약 조건 분석 및 국내",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fc12fa18357f",
    "name": "Mapping Sweden’s BESS Market through its",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-35e095e3fe81",
-   "name": "태양광 인버터 강자 OCI파워, ‘찾아가는 서비스’로 글로벌 시장 공략 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-a91599091010",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a91599091010",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-a91599091010",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-a91599091010",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a91599091010",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a91599091010",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-a91599091010",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-a91599091010",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-fc12fa18357f",
@@ -15171,15 +15211,10 @@
    "source": "MAR-001",
    "target": "K-3a2544e0c81b",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-35e095e3fe81",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "history": [
    {
     "date": "2026-07-20",
@@ -15715,6 +15750,11 @@
     "date": "2026-11-04",
     "knowledge": 800,
     "events_total": 3901
+   },
+   {
+    "date": "2026-11-05",
+    "knowledge": 800,
+    "events_total": 3902
    }
   ]
  }

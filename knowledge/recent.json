@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "events": [
+  {
+   "id": "a91599091010",
+   "date": "2026-11-05",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-security-expert",
+    "bess-standards-analyst"
+   ],
+   "title": "팀 토론 — FIDIC Silver/Yellow 계약 조건 분석 및 국내 BESS 프로젝트 적용 가능성 평가",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fc12fa18357f",
    "date": "2026-11-04",
@@ -3474,17 +3492,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 41개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "b167b04f426a",
-   "date": "2026-10-30",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "NGCP, 배터리 저장장치로 전력 공급 부족 완화 추진",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSHZ4RE9LUVpmZDB1aVhxWEVMby1tNGpfMk16MEdTNGgyM0ZFdElnbEQ2MWxQeUxSRE1iLTllX1NJLWtZVHJsV0JuQ0tMVXhFNGx5OXpCblZyVlBJRnpmZXAwMklNSFJGblVtY3VUMFdSQml1M2dVVlZob3FsU1BQekJXMXVGeTBuaHNr?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
