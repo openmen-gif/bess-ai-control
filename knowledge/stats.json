@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-04",
  "totals": {
-  "all": 3898,
+  "all": 3899,
   "briefing": 2003,
   "skill": 1022,
-  "discussion": 873,
+  "discussion": 874,
   "activity": 0
  },
  "perAgent": {
@@ -29,14 +29,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 1058,
+   "count": 1059,
    "byType": {
     "skill": 19,
-    "discussion": 474,
+    "discussion": 475,
     "briefing": 565
    },
    "lastGrown": "2026-11-04",
-   "xp": 1570,
+   "xp": 1572,
    "level": 23
   },
   "bess-business-dev": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 397,
+   "count": 398,
    "byType": {
     "skill": 20,
-    "discussion": 377
+    "discussion": 378
    },
    "lastGrown": "2026-11-04",
-   "xp": 814,
+   "xp": 816,
    "level": 17
   },
   "bess-customs-tariff": {
@@ -153,13 +153,13 @@
    "level": 10
   },
   "bess-ebop-engineer": {
-   "count": 60,
+   "count": 61,
    "byType": {
     "skill": 11,
-    "discussion": 49
+    "discussion": 50
    },
-   "lastGrown": "2026-11-02",
-   "xp": 131,
+   "lastGrown": "2026-11-04",
+   "xp": 133,
    "level": 7
   },
   "bess-emc-analyst": {
@@ -265,13 +265,13 @@
    "level": 11
   },
   "bess-grounding-engineer": {
-   "count": 81,
+   "count": 82,
    "byType": {
     "skill": 16,
-    "discussion": 65
+    "discussion": 66
    },
-   "lastGrown": "2026-10-31",
-   "xp": 178,
+   "lastGrown": "2026-11-04",
+   "xp": 180,
    "level": 8
   },
   "bess-hr-manager": {
@@ -295,13 +295,13 @@
    "level": 12
   },
   "bess-hybrid-specialist": {
-   "count": 38,
+   "count": 39,
    "byType": {
     "skill": 9,
-    "discussion": 29
+    "discussion": 30
    },
-   "lastGrown": "2026-10-30",
-   "xp": 85,
+   "lastGrown": "2026-11-04",
+   "xp": 87,
    "level": 6
   },
   "bess-hydrogen-specialist": {
@@ -539,13 +539,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 323,
+   "count": 324,
    "byType": {
     "skill": 19,
-    "discussion": 304
+    "discussion": 305
    },
    "lastGrown": "2026-11-04",
-   "xp": 665,
+   "xp": 667,
    "level": 15
   },
   "bess-project-manager": {
@@ -619,14 +619,14 @@
    "level": 8
   },
   "bess-standards-analyst": {
-   "count": 505,
+   "count": 506,
    "byType": {
     "skill": 15,
-    "discussion": 143,
+    "discussion": 144,
     "briefing": 347
    },
    "lastGrown": "2026-11-04",
-   "xp": 678,
+   "xp": 680,
    "level": 16
   },
   "bess-standards-australia": {
@@ -1201,7 +1201,7 @@
   },
   {
    "date": "2026-11-04",
-   "added": 56
+   "added": 57
   }
  ],
  "freshness": {

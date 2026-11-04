@@ -28,6 +28,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-fa1b78ac654b",
+   "name": "팀 토론 — 접지망·IEEE80 영역 1차 분석 — bess-ground",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f99ab46c91f0",
    "name": "LG에너지솔루션, 엔비디아 AI 전력망에 배터리 공급 기반…소듐이온 개발",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-22",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-22f5d5f4400c",
-   "name": "팀 토론 — 변전소 내 모선 설계 최적화를 통한 시스템 신뢰성 향상 방안",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7250,6 +7250,41 @@
   {
    "source": "MAR-001",
    "target": "K-fbf1760906a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-fa1b78ac654b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-fa1b78ac654b",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-fa1b78ac654b",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-fa1b78ac654b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-fa1b78ac654b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-fa1b78ac654b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-fa1b78ac654b",
    "type": "knowledge"
   },
   {
@@ -15106,46 +15141,6 @@
    "source": "SYS-001",
    "target": "K-2a7bc881e7b9",
    "type": "knowledge"
-  },
-  {
-   "source": "CBP-001",
-   "target": "K-22f5d5f4400c",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-22f5d5f4400c",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-22f5d5f4400c",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-22f5d5f4400c",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-22f5d5f4400c",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-22f5d5f4400c",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-22f5d5f4400c",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-22f5d5f4400c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15684,7 +15679,7 @@
    {
     "date": "2026-11-04",
     "knowledge": 800,
-    "events_total": 3898
+    "events_total": 3899
    }
   ]
  }
