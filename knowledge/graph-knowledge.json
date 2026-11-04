@@ -325,6 +325,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-68aefd44e65b",
+   "name": "팀 토론 — 프로젝트 파이프라인 강화를 위한 신규 글로벌 BESS RFP",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-04",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5ff5327ca76f",
    "name": "‘Liberation’ at Berkeley Repertory – Bes",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-2a7bc881e7b9",
-   "name": "팀 토론 — HS코드·배터리 영역 초안 작성 — bess-customs-",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7580,6 +7580,46 @@
   {
    "source": "STD-001",
    "target": "K-76cba63f8663",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-68aefd44e65b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-68aefd44e65b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-68aefd44e65b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-68aefd44e65b",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-68aefd44e65b",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-68aefd44e65b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-68aefd44e65b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-68aefd44e65b",
    "type": "knowledge"
   },
   {
@@ -15101,46 +15141,6 @@
    "source": "STD-001",
    "target": "K-2d8bdfbcf7a8",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-2a7bc881e7b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "CUS-001",
-   "target": "K-2a7bc881e7b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-2a7bc881e7b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-2a7bc881e7b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "OSH-001",
-   "target": "K-2a7bc881e7b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-2a7bc881e7b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-2a7bc881e7b9",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-2a7bc881e7b9",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15679,7 +15679,7 @@
    {
     "date": "2026-11-04",
     "knowledge": 800,
-    "events_total": 3899
+    "events_total": 3900
    }
   ]
  }
