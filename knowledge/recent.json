@@ -397,6 +397,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "3d49887aaea3",
+   "date": "2026-11-05",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-tax-korea",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 그리드 인터커넥션 기술 고도화에 따른 국내 BESS 시스템 설계 최적화 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3d2e5266ae24",
    "date": "2026-11-05",
    "type": "briefing",
@@ -3463,17 +3481,6 @@
    "type": "skill",
    "agents": [
     "bess-logistics-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "26875f7efe0b",
-   "date": "2026-10-31",
-   "type": "skill",
-   "agents": [
-    "bess-cybersecurity-expert"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
    "link": "",
