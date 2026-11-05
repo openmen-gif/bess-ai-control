@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-eb50b313d9ae",
+   "name": "팀 토론 — 세무 최적화 전략 수립: IRA/ITC 혜택 극대화 및 MA",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-97389602e103",
    "name": "팀 토론 — 영국 BESS EPC 프로젝트에 대한 UK 주요 인증 절차 ",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-79d339bc4265",
-   "name": "브라질, 첫 폐쇄형 양수발전 시설 concession 요청 접수",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "CST-001",
+   "target": "K-eb50b313d9ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-eb50b313d9ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-eb50b313d9ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-eb50b313d9ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-eb50b313d9ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-eb50b313d9ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-eb50b313d9ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-eb50b313d9ae",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-97389602e103",
@@ -14976,11 +15016,6 @@
    "source": "BAT-001",
    "target": "K-7b2098e30211",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-79d339bc4265",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15529,7 +15564,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 3972
+    "events_total": 3973
    }
   ]
  }

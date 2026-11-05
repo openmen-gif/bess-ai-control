@@ -2,6 +2,24 @@
  "updated": "2026-11-06",
  "events": [
   {
+   "id": "eb50b313d9ae",
+   "date": "2026-11-06",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-facility-manager",
+    "bess-financial-analysis",
+    "bess-hse-manager",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-system-engineer",
+    "bess-tax-incentive"
+   ],
+   "title": "팀 토론 — 세무 최적화 전략 수립: IRA/ITC 혜택 극대화 및 MACRS 감가상각 계획 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "97389602e103",
    "date": "2026-11-06",
    "type": "discussion",
@@ -3491,17 +3509,6 @@
    "title": "인천 쿠팡 물류센터 화재 원인은 '리튬이온배터리 열폭주' 추정…피해액 1140억원",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBhOVJqNmh1VXZjSmoyTHpfMF9wT1E5QWJPNU1nZkZxX19Lc3FmSUNBdk1iZVdYYlRVbmVNRDFDLVZVRkQxZ0I3UWkyWW5QWVZadk5ld1BPNlNpOVBl?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "58430d73b065",
-   "date": "2026-10-31",
-   "type": "skill",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
