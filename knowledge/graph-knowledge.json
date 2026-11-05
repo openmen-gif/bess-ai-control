@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-f99ed2beb37e",
+   "name": "팀 토론 — 프로젝트 RFP 분석 강화를 통한 맞춤형 견적 제안 전략 개",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-eb50b313d9ae",
    "name": "팀 토론 — 세무 최적화 전략 수립: IRA/ITC 혜택 극대화 및 MA",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7fc5ad67c741",
-   "name": "뉴저지 브리지워터 조닝보드, 로클랜드 APV BESS 화재 위험 공청회",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-f99ed2beb37e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f99ed2beb37e",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-f99ed2beb37e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-f99ed2beb37e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-f99ed2beb37e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-f99ed2beb37e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-f99ed2beb37e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-f99ed2beb37e",
+   "type": "knowledge"
+  },
   {
    "source": "CST-001",
    "target": "K-eb50b313d9ae",
@@ -15046,11 +15086,6 @@
    "source": "FIR-001",
    "target": "K-8305e0993487",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-7fc5ad67c741",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15599,7 +15634,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 3974
+    "events_total": 3975
    }
   ]
  }
