@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-97389602e103",
+   "name": "팀 토론 — 영국 BESS EPC 프로젝트에 대한 UK 주요 인증 절차 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fc5b86346652",
    "name": "이솔루션, 한전 ‘공유형 ESS 2차 사업’ 사용전검사 통과… 상업 운전",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-23",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-75d85a46692d",
-   "name": "[2026 국감] 기후부 업무보고로 읽는 2027 태양광 시장",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-23",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-97389602e103",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-fc5b86346652",
@@ -14941,15 +14981,10 @@
    "source": "STD-001",
    "target": "K-79d339bc4265",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-75d85a46692d",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "history": [
    {
     "date": "2026-07-20",
@@ -15490,6 +15525,11 @@
     "date": "2026-11-05",
     "knowledge": 800,
     "events_total": 3971
+   },
+   {
+    "date": "2026-11-06",
+    "knowledge": 800,
+    "events_total": 3972
    }
   ]
  }

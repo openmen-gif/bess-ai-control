@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "events": [
+  {
+   "id": "97389602e103",
+   "date": "2026-11-06",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-grid-interconnection",
+    "bess-hybrid-specialist",
+    "bess-procurement-expert",
+    "bess-standards-uk",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 영국 BESS EPC 프로젝트에 대한 UK 주요 인증 절차 및 규격 준수 전략 검토",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fc5b86346652",
    "date": "2026-11-05",
@@ -3484,17 +3502,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "574e8416b2d3",
-   "date": "2026-10-31",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "배터리 3사 중 SK온만 적자…ESS가 돌파구 될까",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE14YV9nVi0yWG1WWlVOdkZBck1wc2Q4Y0VsaGwzWHpUZ0xlZkFKTnM4ekRGbV9uYmU4azJBQkJBNGRIc0ZJY2Y3YTV6RDJBNVVsb0NQUjBqVmxrYjdNMi13QUhienNGV09JSm5DZ1luLVDSAXRBVV95cUxNNmhjel80WE1ocnQyMFNmaDBjZHY2VEVneERBb1FTa001Sm5zS041T2J1LU5rcG1WenN5S0dqdG9LcXpIMXdINHJ6Rmc1SE05TTNjaFFxQVVPZDBYMFVkZUFrWnRKZHA0ZlppbGFvejYyaWJWNg?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
