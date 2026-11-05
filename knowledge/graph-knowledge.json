@@ -136,6 +136,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-bd879fb96189",
+   "name": "팀 토론 — 그리드포밍 ESS 실증 프로젝트 동향 분석 및 국내 적용 전",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b9d37d79e2c5",
    "name": "‘We've done all the trials’: Akaysha cal",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-22",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-ec635bc92dfb",
-   "name": "팀 토론 — BESS EPC 미국(US) 규격 심층 분석으로 한국 시장 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-22",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7275,6 +7275,46 @@
   {
    "source": "BIZ-001",
    "target": "K-c452b2ad02fe",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-bd879fb96189",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-bd879fb96189",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-bd879fb96189",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-bd879fb96189",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-bd879fb96189",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-bd879fb96189",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-bd879fb96189",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-bd879fb96189",
    "type": "knowledge"
   },
   {
@@ -14926,46 +14966,6 @@
    "source": "COM-003",
    "target": "K-f08c54a6c432",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ec635bc92dfb",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-ec635bc92dfb",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-ec635bc92dfb",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-ec635bc92dfb",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-ec635bc92dfb",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-ec635bc92dfb",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-ec635bc92dfb",
-   "type": "knowledge"
-  },
-  {
-   "source": "TAX-002",
-   "target": "K-ec635bc92dfb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15509,7 +15509,7 @@
    {
     "date": "2026-11-05",
     "knowledge": 800,
-    "events_total": 3944
+    "events_total": 3945
    }
   ]
  }

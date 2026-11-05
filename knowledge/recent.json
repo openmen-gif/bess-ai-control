@@ -167,6 +167,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "bd879fb96189",
+   "date": "2026-11-05",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-grid-interconnection",
+    "bess-hydrogen-specialist",
+    "bess-power-system-analyst",
+    "bess-standards-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 그리드포밍 ESS 실증 프로젝트 동향 분석 및 국내 적용 전략 수립 (bess-grid-interconnection, bess-power-system-analyst 참여)",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "b9d37d79e2c5",
    "date": "2026-11-05",
    "type": "briefing",
@@ -3470,17 +3488,6 @@
    "type": "skill",
    "agents": [
     "bess-substation-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "2825bc942b18",
-   "date": "2026-10-31",
-   "type": "skill",
-   "agents": [
-    "bess-logistics-expert"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
    "link": "",
