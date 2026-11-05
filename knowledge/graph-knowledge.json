@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-4770339710d4",
+   "name": "팀 토론 — 공급망 안정성 확보를 위한 다각화된 공급업체 파트너십 전략 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fc5b86346652",
    "name": "이솔루션, 한전 ‘공유형 ESS 2차 사업’ 사용전검사 통과… 상업 운전",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-23",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7b2098e30211",
-   "name": "UL Solutions, 모듈형 DC BESS 인증 경로 출시",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7280,6 +7280,46 @@
   {
    "source": "SYS-001",
    "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4770339710d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4770339710d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-4770339710d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-4770339710d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-4770339710d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-4770339710d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-4770339710d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-4770339710d4",
    "type": "knowledge"
   },
   {
@@ -15011,11 +15051,6 @@
    "source": "FIR-001",
    "target": "K-7fc5ad67c741",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-7b2098e30211",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15564,7 +15599,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 3973
+    "events_total": 3974
    }
   ]
  }
