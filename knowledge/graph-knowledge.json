@@ -361,6 +361,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-6bdda1a26ede",
+   "name": "팀 토론 — 그리드포밍 ESS 실증 성공 사례 분석을 통해 국내 시장 진",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-05",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6a4f7d28a211",
    "name": "Safety Rules Must Keep Pace With Energy ",
    "group": "KNOWLEDGE",
@@ -530,6 +539,15 @@
    "date": "2026-11-05",
    "val": 3,
    "color": "#8B5CF6"
+  },
+  {
+   "id": "K-1d6f7b2e9665",
+   "name": "팀 토론 — 전사 문서 형식 최적화 프레임워크 구축 및 다양한 출력 파일",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-05",
+   "val": 3,
+   "color": "#10B981"
   },
   {
    "id": "K-1d210e1767ba",
@@ -7181,24 +7199,6 @@
    "date": "2026-10-23",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-7186e2a8fe95",
-   "name": "선그로우, PowerTitan 3.0 BESS 대규모 화재 시험 성공적 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-23",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6edb81cbeb2c",
-   "name": "부진한 CATL, 생존 몸부림…K배터리는 ‘미국 ESS’에 박차",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-23",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7543,6 +7543,26 @@
    "type": "knowledge"
   },
   {
+   "source": "BAT-001",
+   "target": "K-6bdda1a26ede",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-6bdda1a26ede",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-6bdda1a26ede",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6bdda1a26ede",
+   "type": "knowledge"
+  },
+  {
    "source": "MAR-001",
    "target": "K-6a4f7d28a211",
    "type": "knowledge"
@@ -7705,6 +7725,46 @@
   {
    "source": "PCS-001",
    "target": "K-20c121be6144",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-1d6f7b2e9665",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-1d6f7b2e9665",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-1d6f7b2e9665",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-1d6f7b2e9665",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-1d6f7b2e9665",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-1d6f7b2e9665",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-1d6f7b2e9665",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-1d6f7b2e9665",
    "type": "knowledge"
   },
   {
@@ -14886,16 +14946,6 @@
    "source": "STD-001",
    "target": "K-75d85a46692d",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-7186e2a8fe95",
-   "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-6edb81cbeb2c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15439,7 +15489,7 @@
    {
     "date": "2026-11-05",
     "knowledge": 800,
-    "events_total": 3969
+    "events_total": 3971
    }
   ]
  }

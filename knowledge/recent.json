@@ -470,6 +470,20 @@
    "source": "구글뉴스"
   },
   {
+   "id": "6bdda1a26ede",
+   "date": "2026-11-05",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-grid-interconnection",
+    "bess-power-system-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 그리드포밍 ESS 실증 성공 사례 분석을 통해 국내 시장 진출 전략 및 기술적 통합 방안 구체화",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "6a4f7d28a211",
    "date": "2026-11-05",
    "type": "briefing",
@@ -691,6 +705,24 @@
    "title": "OCI파워, 국산 태양광 인버터·단지제어 기술 고도화… K-태양광 기술 자립 강화",
    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9la3BEZVI1YzhRRHY0dlkxOWNyQndUeDRKeF92NzFQV2tpZGs0YUxoSFEtZlV1Zy1UX1lUYnBEZHhSamwteW9DME40VEE?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "1d6f7b2e9665",
+   "date": "2026-11-05",
+   "type": "discussion",
+   "agents": [
+    "bess-commissioning-coordinator",
+    "bess-grid-interconnection",
+    "bess-logistics-expert",
+    "bess-output-generator",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 전사 문서 형식 최적화 프레임워크 구축 및 다양한 출력 파일 형식별 검증 프로세스 도입",
+   "link": "",
+   "source": "bess-team"
   },
   {
    "id": "1d210e1767ba",
@@ -3463,28 +3495,6 @@
    "title": "배터리 3사 중 SK온만 적자…ESS가 돌파구 될까",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE14YV9nVi0yWG1WWlVOdkZBck1wc2Q4Y0VsaGwzWHpUZ0xlZkFKTnM4ekRGbV9uYmU4azJBQkJBNGRIc0ZJY2Y3YTV6RDJBNVVsb0NQUjBqVmxrYjdNMi13QUhienNGV09JSm5DZ1luLVDSAXRBVV95cUxNNmhjel80WE1ocnQyMFNmaDBjZHY2VEVneERBb1FTa001Sm5zS041T2J1LU5rcG1WenN5S0dqdG9LcXpIMXdINHJ6Rmc1SE05TTNjaFFxQVVPZDBYMFVkZUFrWnRKZHA0ZlppbGFvejYyaWJWNg?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "534827540031",
-   "date": "2026-10-31",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "Allye, 2차 사용 배터리 적용 400kW 급속충전기 출시",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZTlSeFBVRm1WVTRYUWV1dENyb3JyTGQ4SVR3SmMzbklFMTlyQkVfMXlWdFVjbGN3QjgxeElhd1BtVjRwNjdQYmNkckN4WXVsRndLb05IaTlJWnE1al9mbnRuWEhQVXV0VHBqc05tSlZ5NlJLLTB5S1ljZElNU1h4RGc4MVpWdTMyODEzX0dja0tWSE1zVkE1VkNjSmM5ajhWdTZN?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "51fc37f3f5c2",
-   "date": "2026-10-31",
-   "type": "skill",
-   "agents": [
-    "bess-qaqc-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
