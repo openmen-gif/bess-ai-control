@@ -290,6 +290,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "5e44a83e866a",
+   "date": "2026-11-06",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-esg-finance",
+    "bess-grid-interconnection",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-australia",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 허가 절차 간소화 전략 수립: 아시아 지역 내 KR/JP 인허가 요건 최적화 방안 모색",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "57881343ac93",
    "date": "2026-11-06",
    "type": "briefing",
@@ -3512,17 +3530,6 @@
    "title": "삼성SDI, 전기차 부진에도 ESS 성장 본격화…목표가↑-한투",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5oODNHVllsX2xYTlJFMUQ1eER5aG9wZGZQWTZPdUxtTDNMNUc2S3Y0QkdEWUVjZHBsZzlPeEpKZXRCS29qTi12WWFUMktjM1RuVU9PeHo4cTBlWTlhZnItOHVXekFjUVZPdjBHWWllOW9CdV9waGc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "f2ecc4df9a1a",
-   "date": "2026-10-31",
-   "type": "skill",
-   "agents": [
-    "bess-financial-analysis"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

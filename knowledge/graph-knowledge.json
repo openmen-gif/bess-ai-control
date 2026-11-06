@@ -208,6 +208,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-5e44a83e866a",
+   "name": "팀 토론 — 허가 절차 간소화 전략 수립: 아시아 지역 내 KR/JP 인",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-57881343ac93",
    "name": "GridPoint, 상업용 건물 대상 2GW 배터리 저장장치 확대 계획",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-729f1531ef2e",
-   "name": "허니웰, 배터리 설비·데이터센터용 화재 예방 제품 확대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7490,6 +7490,46 @@
   {
    "source": "BAT-001",
    "target": "K-675f222ff153",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5e44a83e866a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-5e44a83e866a",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-5e44a83e866a",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-5e44a83e866a",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5e44a83e866a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-5e44a83e866a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-5e44a83e866a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5e44a83e866a",
    "type": "knowledge"
   },
   {
@@ -14871,11 +14911,6 @@
    "source": "BAT-001",
    "target": "K-7425a5e190f5",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-729f1531ef2e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15424,7 +15459,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 4017
+    "events_total": 4018
    }
   ]
  }
