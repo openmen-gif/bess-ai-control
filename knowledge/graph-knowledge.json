@@ -244,6 +244,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-5250294a0fda",
+   "name": "팀 토론 — 기술 표준 통합 어려움 해소를 위한 KEC와 국제 표준 간 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-4fc844515e6e",
    "name": "LG에너지솔루션, ESS 성장에 실적 반등…3분기 영업익 567% 급증",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-79ba833c7285",
-   "name": "팀 토론 — 구조적 안정성 강화를 위한 ANSYS 기반 진동 분석 및 최",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7615,6 +7615,46 @@
   {
    "source": "COM-003",
    "target": "K-57881343ac93",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5250294a0fda",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-5250294a0fda",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-5250294a0fda",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5250294a0fda",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-5250294a0fda",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-5250294a0fda",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-5250294a0fda",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-5250294a0fda",
    "type": "knowledge"
   },
   {
@@ -14976,46 +15016,6 @@
    "source": "PCS-001",
    "target": "K-7d0c635e47f2",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-79ba833c7285",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-79ba833c7285",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-79ba833c7285",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-79ba833c7285",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-79ba833c7285",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-79ba833c7285",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-79ba833c7285",
-   "type": "knowledge"
-  },
-  {
-   "source": "JTX-001",
-   "target": "K-79ba833c7285",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15564,7 +15564,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 4021
+    "events_total": 4022
    }
   ]
  }
