@@ -154,6 +154,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-9e4ada24ce1b",
+   "name": "팀 토론 — 전문가·TRL 영역 현황 진단 — bess-translato",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-98efddcd3e7a",
    "name": "한온시스템, 3분기 영업이익 1206억원⋯ ESS 등 신사업 속도",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-796ed09283dc",
-   "name": "“싸졌다면서 왜 보조금인가”… 재생에너지 ‘보조금 빨대’ 걷어내라",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-24",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7425,6 +7425,46 @@
   {
    "source": "BAT-001",
    "target": "K-a3540d15d328",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9e4ada24ce1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-9e4ada24ce1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-9e4ada24ce1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-9e4ada24ce1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-9e4ada24ce1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-9e4ada24ce1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-9e4ada24ce1b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-9e4ada24ce1b",
    "type": "knowledge"
   },
   {
@@ -14976,11 +15016,6 @@
    "source": "JTX-001",
    "target": "K-79ba833c7285",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-796ed09283dc",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15529,7 +15564,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 4020
+    "events_total": 4021
    }
   ]
  }
