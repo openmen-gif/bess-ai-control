@@ -154,6 +154,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-8a09c311d8d4",
+   "name": "팀 토론 — 벤더 성과 추적 시스템 구축을 통한 조달 효율성 향상 및 데",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-819b565ba662",
    "name": "라가르드 ECB 총재, 유럽에 전력망·에너지 저장 투자 확대 촉구",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-24",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-6ba8b4f33ab5",
-   "name": "Bondada, GIPCL 20MW/120MWh 바나듐 흐름전지 BESS",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-24",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7390,6 +7390,46 @@
   {
    "source": "SYS-001",
    "target": "K-97389602e103",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8a09c311d8d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8a09c311d8d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-8a09c311d8d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-8a09c311d8d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8a09c311d8d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-8a09c311d8d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-8a09c311d8d4",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-8a09c311d8d4",
    "type": "knowledge"
   },
   {
@@ -14801,11 +14841,6 @@
    "source": "STD-001",
    "target": "K-6d74e70668b4",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-6ba8b4f33ab5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15354,7 +15389,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 4015
+    "events_total": 4016
    }
   ]
  }
