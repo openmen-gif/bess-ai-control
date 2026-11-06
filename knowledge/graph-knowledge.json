@@ -64,6 +64,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-dbdb884cd1ce",
+   "name": "팀 토론 — 글로벌 ESS 중앙계약시장 입찰 방식 변화에 따른 한국 BE",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-d537973b0dab",
    "name": "LG엔솔, 3차 ESS 중앙계약시장 불참…\"기존 수주·차세대 기술 집중\"",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-24",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-76f00a62ea81",
-   "name": "빠르게 성장하는 獨 산업용 ESS 시장…韓기업 진출 기회 확대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7340,6 +7340,46 @@
   {
    "source": "COM-003",
    "target": "K-dee2b02e72d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-dbdb884cd1ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-dbdb884cd1ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-dbdb884cd1ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-dbdb884cd1ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-dbdb884cd1ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-dbdb884cd1ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-dbdb884cd1ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-dbdb884cd1ce",
    "type": "knowledge"
   },
   {
@@ -14941,11 +14981,6 @@
    "source": "STD-001",
    "target": "K-796ed09283dc",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-76f00a62ea81",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15494,7 +15529,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 4019
+    "events_total": 4020
    }
   ]
  }

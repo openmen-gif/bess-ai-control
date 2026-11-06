@@ -100,6 +100,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "dbdb884cd1ce",
+   "date": "2026-11-06",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-cable-engineer",
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-qaqc-engineer",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 글로벌 ESS 중앙계약시장 입찰 방식 변화에 따른 한국 BESS 조달 전략 및 원가 구조 재평가 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "d537973b0dab",
    "date": "2026-11-06",
    "type": "briefing",
@@ -3526,17 +3544,6 @@
    "title": "로단 에너지, 세인트메리스 시멘트 공장에 캐나다 최대 규모 BTM 배터리 저장장치 구축",
    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNVWF1X2pycmdhZV85X3MtM0p3SjRqa1k4TUQ5bVZSLWVVLW51SS1JTWNaQngwVHlyQWtYbW9oNDNraW1KYS1YTjltMlRXMlVHMURGUEM1cjl2UXBsbFNpZjBnT0VkTDdYSDdaak9YNks2eXF4T0IyYTFyYUM3MWl6RUE5cEE4NEwwY0x6T3B1V3RfaDB0eEEtc2FkbWozZFc0STZ6NlRjWjF6YXc5bVlIWml0dG50NVBVOWdpMkFudEY4U29UdFNvSDJ3aERlSjdyVEZSd0thU2szU1A5Yy1PZg?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "f69c3f2a2da2",
-   "date": "2026-10-31",
-   "type": "skill",
-   "agents": [
-    "bess-contract-specialist"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

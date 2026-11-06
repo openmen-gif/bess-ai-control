@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-06",
  "totals": {
-  "all": 4019,
+  "all": 4020,
   "briefing": 2104,
   "skill": 1022,
-  "discussion": 893,
+  "discussion": 894,
   "activity": 0
  },
  "perAgent": {
@@ -40,25 +40,25 @@
    "level": 24
   },
   "bess-business-dev": {
-   "count": 255,
+   "count": 256,
    "byType": {
     "skill": 19,
-    "discussion": 113,
+    "discussion": 114,
     "briefing": 123
    },
    "lastGrown": "2026-11-06",
-   "xp": 406,
+   "xp": 408,
    "level": 12
   },
   "bess-cable-engineer": {
-   "count": 80,
+   "count": 81,
    "byType": {
     "skill": 16,
-    "discussion": 61,
+    "discussion": 62,
     "briefing": 3
    },
-   "lastGrown": "2026-10-31",
-   "xp": 173,
+   "lastGrown": "2026-11-06",
+   "xp": 175,
    "level": 8
   },
   "bess-cbop-engineer": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 412,
+   "count": 413,
    "byType": {
     "skill": 20,
-    "discussion": 392
+    "discussion": 393
    },
    "lastGrown": "2026-11-06",
-   "xp": 844,
+   "xp": 846,
    "level": 17
   },
   "bess-customs-tariff": {
@@ -375,13 +375,13 @@
    "level": 6
   },
   "bess-legal-expert": {
-   "count": 268,
+   "count": 269,
    "byType": {
     "skill": 18,
-    "discussion": 250
+    "discussion": 251
    },
    "lastGrown": "2026-11-06",
-   "xp": 554,
+   "xp": 556,
    "level": 14
   },
   "bess-logistics-expert": {
@@ -488,14 +488,14 @@
    "level": 5
   },
   "bess-power-market-expert": {
-   "count": 171,
+   "count": 172,
    "byType": {
     "skill": 12,
-    "discussion": 124,
+    "discussion": 125,
     "briefing": 35
    },
    "lastGrown": "2026-11-06",
-   "xp": 319,
+   "xp": 321,
    "level": 11
   },
   "bess-power-system-analyst": {
@@ -539,13 +539,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 337,
+   "count": 338,
    "byType": {
     "skill": 19,
-    "discussion": 318
+    "discussion": 319
    },
    "lastGrown": "2026-11-06",
-   "xp": 693,
+   "xp": 695,
    "level": 16
   },
   "bess-project-manager": {
@@ -559,13 +559,13 @@
    "level": 8
   },
   "bess-qaqc-engineer": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 12,
-    "discussion": 37
+    "discussion": 38
    },
-   "lastGrown": "2026-10-31",
-   "xp": 110,
+   "lastGrown": "2026-11-06",
+   "xp": 112,
    "level": 7
   },
   "bess-risk-manager": {
@@ -660,13 +660,13 @@
    "level": 6
   },
   "bess-standards-korea": {
-   "count": 349,
+   "count": 350,
    "byType": {
     "skill": 18,
-    "discussion": 331
+    "discussion": 332
    },
    "lastGrown": "2026-11-06",
-   "xp": 716,
+   "xp": 718,
    "level": 16
   },
   "bess-standards-poland": {
@@ -1201,7 +1201,7 @@
   },
   {
    "date": "2026-11-06",
-   "added": 48
+   "added": 49
   }
  ],
  "freshness": {
