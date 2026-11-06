@@ -280,6 +280,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-3847dde88293",
+   "name": "팀 토론 — 변압기 효율성 최적화를 위한 최신 IEC 표준 준수 검토",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-3392fc00fd8b",
    "name": "Aggreko, 데이터센터용 BESS 3종 출시 — 계통 지연·공사 전력",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-7425a5e190f5",
-   "name": "Solmeria 마켓플레이스, 루마니아로 확장…태양광·BESS 프로젝트 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-24",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7635,6 +7635,46 @@
   {
    "source": "MAR-001",
    "target": "K-3a45eabdd05c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3847dde88293",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-3847dde88293",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-3847dde88293",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-3847dde88293",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-3847dde88293",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-3847dde88293",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-3847dde88293",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3847dde88293",
    "type": "knowledge"
   },
   {
@@ -14906,11 +14946,6 @@
    "source": "PCS-001",
    "target": "K-76f00a62ea81",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-7425a5e190f5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15459,7 +15494,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 4018
+    "events_total": 4019
    }
   ]
  }
