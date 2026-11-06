@@ -71,6 +71,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "e38afb7c85c1",
+   "date": "2026-11-06",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-grid-interconnection",
+    "bess-it-infra",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-risk-manager",
+    "bess-standards-korea",
+    "bess-structural-analyst"
+   ],
+   "title": "팀 토론 — 리스크 히트맵 업데이트: 글로벌 공급망 리스크 분석 및 조기 경보 시스템 강화 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "dee2b02e72d0",
    "date": "2026-11-06",
    "type": "briefing",
@@ -3505,17 +3523,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 40개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "ef1001e2aed3",
-   "date": "2026-10-31",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "FERC의 PJM 판정, 데이터센터 밀집지 이슈로 주() 역할 부각",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTnVLLWUzRnhUUnBTbkhVTDFqd3loSFlOSnJ6VjFtb25HMzZzQ2VhTExRaWxGQ084S1Q4MmNBQV9ON2NTWlBTQTlGaU0tOWF6Zy1vbjduRDUtdjRtNUlOeFJhWGp4a2RseDBzbFhJRjhkRi1haGZKZW5mYmxWSFBhUlNpVWpVLWtrSy1kRGJIckFHMGFYNFB2S2YwU0NpX1B4VVgyNE5Dbkc4Rkk?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

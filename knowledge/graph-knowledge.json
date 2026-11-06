@@ -46,6 +46,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-e38afb7c85c1",
+   "name": "팀 토론 — 리스크 히트맵 업데이트: 글로벌 공급망 리스크 분석 및 조기",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-06",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-dee2b02e72d0",
    "name": "Return, 독일 대규모 배터리 저장장치용 포트폴리오 금융 €835M ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-24",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-6d74e70668b4",
-   "name": "인도 ESS 붐 속 배터리 국산화 우려와 셀 제조 목표 미달",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-24",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7295,6 +7295,46 @@
   {
    "source": "STD-001",
    "target": "K-e4dd8cbde195",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e38afb7c85c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-e38afb7c85c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-e38afb7c85c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e38afb7c85c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-e38afb7c85c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-e38afb7c85c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e38afb7c85c1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-e38afb7c85c1",
    "type": "knowledge"
   },
   {
@@ -14836,11 +14876,6 @@
    "source": "FIR-001",
    "target": "K-729f1531ef2e",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-6d74e70668b4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15389,7 +15424,7 @@
    {
     "date": "2026-11-06",
     "knowledge": 800,
-    "events_total": 4016
+    "events_total": 4017
    }
   ]
  }
