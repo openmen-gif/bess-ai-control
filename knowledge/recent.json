@@ -1,6 +1,677 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "events": [
+  {
+   "id": "ff8587ae7d3a",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "리튬이온 배터리 화재, 위험물 사고 초기 몇 분이 결과를 좌우한다",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPc2hXZ3JmQ0pLT0doSXhSU0E0SXc0WmNyVWFVYTVFdmpDVzJxZWdGUU9HVG5rMi1IYndGcHR1T2ZsdTRUekQ3TThUeF9CYkZCVkJheERfdllJUlViOGZhcDFIU0JDS0tXSlczTFBNbXlEdkpuS2h3a28zWloyenAxQ2ptWUtQd2RyZW9QTU5xTUtRdVN1VWRXSVdveGZGNGhuMTlwMkhOaGFPeUtGZlFvcVZkSElEUHNJaElKX01xck5VcWsxMFBVNXl3cGh3cnZlZGgtOTMzMmlCdi1oWHhldE5yMVpaZ0JVLWdtLUJTMGNFWEJmMUE?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "feed67b622ac",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-standards-korea"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f7e0d89e906f",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-permit-english"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "ee181106ad30",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-grid-interconnection"
+   ],
+   "title": "차세대 배터리 7가지 기술: 전기차와 계통 저장용",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTDBwY0Y3bWZIRHNaa1c3bTktQjRTc2xhR195WW42SHgzY1owUlpnNnBEaXJNTXZvdzY1NXQ3TzNBT0otZFdmb0JnZTF6TzlxSXdFU2hXY1dkLU9kOFpGT3ctMTR0RHZZaFBTQ3BBZ1dhU0R0dnVOY1ZRektBOUJTWThUR1JCUlo3bUVqRVFFZ1ppNXZWeHk5NzNveVU0TXhadVFN?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "ed3fcbb3dec2",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e8923a4064c1",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-tax-korea"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "e7e93f687753",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "선그로우, 호주 올에너지 2026서 주택용 ESS 'PowerHarbour' 공개",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdkZlemRKbldmM3NLSjJ0Mm9ycFBrdTdFaUl1SWtzNzFrNWExV3gxS3hxR2ttLVd6YU9qVkVKVkxaYndzLXRkLXcwbjFDdk9GMGx5UlZHbnNQRFppYUN6SVM3TEhkdDM0ZnltUDVtV1JQNmZNanF2SW9CbE16UHhSUHVlTlIyU0RLbVRXMGgwaWpra0E3a2diOG9XRjR4N05PUTJRbEVybU0yWGl0UDROU3Y3ZzM1bTBNcDYzTzY4bWFqbjJVMUhxVDlHZw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "dca9646a13aa",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "[美선거 산업여파] ③ 친환경 정책 돌아오나…K배터리·태양광 훈풍 기대",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NT1daai1VWWIwRFJqclE1TXpmQnJuUk56SkU4OG00d0xVM2FXaXA4VlFZZ2lqZUlueHFWN2lQdkZTbDFjUVFTSXhqMXVLN05Ed2hMdEdsaDRmZkctemZ4StIBYEFVX3lxTE5NT1daai1VWWIwRFJqclE1TXpmQnJuUk56SkU4OG00d0xVM2FXaXA4VlFZZ2lqZUlueHFWN2lQdkZTbDFjUVFTSXhqMXVLN05Ed2hMdEdsaDRmZkctemZ4Sg?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "da56e0a0c9b6",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-cbop-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "da2f3c6d4a65",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "인도 1,450억 루피 규모 에너지저장 추진, 사업성 논란",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZDdjUnVMUFFZTDdoNndlVkJ6NUt3b3RrX2hlT3lrRjFqQnhkWUhsTnhpR1JnZ2JVY3BObHMyMzh6cktxS2hCdm43Y29yTjdyanJnbEpia2plbVhTb2lGcGpSN05UVG5nVkJEbW1iYXdzUkdfNE9CUGFGQkJoT0plY181RVNUeVBBZzRCNzNxaGlQWkVEZGNLT0dzQ0gwWDd2UzZuNXIxSzd1clVRU2lOQ2hpOUVHT1dhRXNMMA?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "d8e031f30074",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-power-system-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d4507dbaaebd",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-scheduler"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "d0c4f93169f1",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-network-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "bf77e4b9956c",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-site-manager"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b38986022c05",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-insurance-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a7b332db946f",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "2026년 리튬 배터리 저장장치 안전 기준: 인클로저 선택 전 기업 검토사항",
+   "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQRVNWSlFNX1UwNUk0YjduMm9mMURyeG1TdWMtUkQ3VUU5VzA1V3I4ZTZUYzJiNDNOcGI5LWFaS2JqaW1idm9RUWRXYm8yWTNvTy1fXy12U0EwVUptWDQyd0lEYjctZnQxR05CbG4tRXhtdGdZa3JCaXNxUXlfcVQ1dlhRb3NEcGRWR1BBMkxBdlNzaVpJYzQ5S3FFcDhFUVRXd1RfUkxfaTVwSkhWQU5IVnkzbFoxTG9JNEVpVlBqOTBXNC13eUtIMmtINk9ldWNGYUVDYXVPanNEVnZGbkJ2Zmh2MWY1OThNN2FEME1hN2kwaXYzWDVycVpiSmxzV29UMmlDVGpoQno5X3JVMFJiMm45bFctbG9TRTcyZWxwY1ZTRjFwekpTMExUZVJEdw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "a05761d8e41d",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "9eb4493e0692",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "한화오션 - 재래식 추진 잠수함의 게임 체인저 리튬이온 ESS 탑재와 전력 밀도 혁신 > 공기불요추진 연료전지와 통합 스텔스 기술이 창출하는 심해 생존성 프리미엄",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzMVpqeWdNY0J4RG16M2hldlZGUktud2hnTHl1N0tDQ0FKLVFaMjZrUFV2dTVnRDhjc2tlZVFvX2xUYkNITHR2ZTlTNG9YbEM1eWlaWmNqNUlSX2w5cWxxcHBFSVJuV2laeTRTY2VudUpIZw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "99b250931a11",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-fit-procedure"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "937cd01a84e1",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-aiml-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8eb56807731c",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "던커크 소방서장, 옥외 BESS 화재 대응 계획과 주민 우려 설명",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORngzdGtrVDZ5SzMtb0hIYU1DUzFHbG8yLTBPenk1NGVTUi16VW9fNlhzeFYySUlxR0RJQ25kR3NlYTdxLUZJWnZlZ0ZfQkl6d3p0SldSeXRBLU82ZEtNdU8wcVVoWTF3MGhiUGw2V1FDRDljVHRUSVN0RmlOeVJQbTF4MW56N1R0UGw1S2M5cmp6cHFoT3dFODdNazQ?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "8e242f832d5e",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-structural-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "87d1535509c7",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "빈주 카운티 위원회, 배터리 에너지저장장치(BESS) 조례 개정안 심의",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcU1uV2Jwc1U5OEo3a3hnZmh2OG81QjgzUExxYjRUbjVLcFlVUnVPQUJ3ZHJ5WGdKQmxjNUdYR24tNE5UVFJlQmxacXNpLUtwQkRpZXFQX1JGbll5THplNmR6d1lrYmhkRDVRd1dOaHQ5SzZOSTlKaFZjX004X0NZdVhVVFVlWWh5VDBINGpwYVB1eHhpbzBHbGo1emxidTg?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "830f0936214c",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-esg-finance"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8165dbab2142",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-grid-interconnection"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "7dbf5f63ab85",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-cybersecurity-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "72b46653cdaa",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-ebop-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6e42abf4f538",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-om-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6dcabbd0db99",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "영국 주택 화재 정전 때 Tesla Powerwall 2대 백업 실패 주장",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMUNWZVFfeDRiRWNOVTR6d2puSnV4OHRFNkJuTFFKckl6b2xyUFBVbS1zcEd4Y1FpcnNQLXotZ0ZDYUNDbGNNUEZ6MV9YUUNwby1DOXBBdXNrdWgzamFENHBOY2NkUUcyNWNtSEN5NUNhLVlmeVppQkZQYXBPaEVUeXl3RVUwTk5vTk1CZW5jdVJlZw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "6c7c2f60208d",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "저장장치: Trina Storage, 추저우에 35억 위안 규모 100GWh 저장 시스템 공장 및 셀 R&D 센터 건설 계획",
+   "link": "https://news.google.com/rss/articles/CBMi3wNBVV95cUxPaDNCUnh5RlJFa3lMZ082Sld6U18xS0lTNWp4bzV2ZXpQT2hsMm5oRDhfcElRTFlPbGpvNGEzcExfaUNxTHk2STNFUC1xZXN4MVRjODlSUHlLOUxRbjlTbVREcjUyNEM4VXh2akZ1QU43SWZhUUVXdElUa0djMlRsZmU4TDVMb3BRTjhvQmNOb0VqanI0RE9yMldZUy1ZemJ4MlBvRHdEd0g0ZC1MTDJHQkdTRGZ4M2JxOUFRQlFCSjF5ZjYwOWVtZ3ZIUXRTaGNqOFRVM1hLTHp5aEROamx3cFo3NnhvdFpqeUFDSHA3R2ljMFVheTJ2alJLazZUUGp2UlBQYUsxTlpYbnJYNlJib1JtUUcySHc5M3M5OFp4aXZPeEVLby1zOHFIMk9XeXd3Z2VCSmlxV2dRblNvMlBvbV9zVXJjeFNvVnJfTHlYM21wTVJqblJpLTBrdTJJMndka2VDb2MtUDZtc1RPbDU3d3dRRjhDZ3RPR205QzFiQjdsc0J6SUxmQmNmUTBuTTBpbHNCMExRbWNHY05DZERacWVyVklOclgxYnpYcFJfMFp5bFZrZEdPemR0Y2MydjJOU3NId1ZLT0FaMVN6c3YySmlEcnBOZURLeTg2TE1Waw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "6aed7a75481c",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "LG엔솔, 3차 ESS 중앙계약시장 경쟁입찰 불참 : 네이버 블로그",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObUJUVi1vQ2E1ZDVOV0RUOUk5TVdiN0F6d2FBVVJkNjFfci1oSDlLbERUcmRhSDB6Q3RzckN6emlDbnoxRUV6MFBlOGlNUVdrQTlHTXo4cE90MGg4TkVSc3lQVTF5cXVXLTdvbmNUYUV5WHFDdDdHMWVwRXd2b1JNbjl2cUdyamlNS2p1c1k5VQ?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "69e7c910f8ec",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-ip-patent-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "689e3ac39308",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-training-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "686173a009be",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "영국 가정, 태양광 11패널+배터리로도 정전 시 작동 안 해… 추가 장비 필요",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN3E2ZzJUSEd2V01wWE5QTGl1YThyNDVLb1hCdkRkcmxoSE1nTFdvc0ZxZFQ1RTBZZ25DaUNUS25KWDVJT3l4eGNKVVk0djdXRmlEMWdOaS0wUkIwYW91VlpMMVMyZW5fOXExOWs2c1MyTUlPc3FrdjBLY0RFaFpfRWdRRVdvOW0z?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "6820d9c4c914",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-contract-specialist"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "61a42073bd03",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-substation-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5adca211ef22",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "더글러스 카운티, 배터리 에너지저장장치 규정 마련 위해 주민 의견 수렴",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNSG12N1o0XzZuTWUxcWl2WEdINU5FOGNpLVNkLWI5dU9vaTlmNE5xOTdGYWFyeFJsMDRvRENDNEVuMEtHUDl5M1hodVo2S21CVGV1NGIwWjR2amlFRnR4cl9JVnV5WC1LLUdibWtVZkhGYUhlMWpLaXB2TFJpRXRrVGh3OXpEeXJLWWxUMWl4eXk3cDhjbkFra1oybmtQNVBuRjZPalRnWFctdktwSnpvbnJlaURuc2F5cWZ0dFJTLUZxXy1iMWp6d3NlY2x6cjFfU2xiR3VBc0VxdEVSMFVHeDNDR3c2ZnN0YktBbEZIMWY5YmprTnVHN1dBaHZJMkY2SXVVeg?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "58923124480d",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-data-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "56527b333a3d",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-emc-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "532de30b0282",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-project-manager"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5229a81565af",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "그리드포밍 배터리 저장장치의 진동, 슬라이딩모드 제어로 억제",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPb1VYU2p3RkZaaWtFdnFTYlcyMUxVNnRmQ0tKV1UzVGhJdDNSaWJVMzd6TjBQTV9jdlJEMnk1MUFIa2N4aVd4X2Fac0l1VV95TmZrYjVNTmtReGlyOTJmcUtmeU1vUnh3cEtwYW85U2QtSGpQcjBPcFN5MDAweWRXMDh3RVVSMmd5Z0xJal9aZk9zV3U2U2ZqOUNLcXk?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "4d99838597ef",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "BERC, 비하르 150MW 태양광·300MWh BESS 입찰서류 수정 지시",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcFZfOFJsOGhyTEl1R0hILWZtMEtYZHBTSjlHTG13OE1uWm9sbmdoT1RUU0N6eVVKOUtRbTZUcEdsQno4cDNDcXRmbEZVWE5pQ3NIbTFkMmJySHRtMWRfVUd0YkxLUHg2bmlDbExWMzFtZFJZWm5PRDB1cE81ZGdDZklSZ3lLTk9nMWg3Z2dEanJqTU9mVkprN3dyTU41R0RFbURXWFEyV1FDc0FMZXJSWThuV1JqLUUtOVFSYjFIeFdMWVNnb0RNNGtpSWliQ3Fj?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "4b29f5d6a5f3",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "450723c4e580",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "[대미투자 재점검 ④] 수십조 쏟아부은 美 배터리 공장···보조금·수요 '이중 변수'",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sMnEwT0ZaWmtwcTFqODdkUHJTZXBDUUl4dUQ5UzNEOTJ2VFNtYzdPcEpMWmtLcDdrS1FnLS1xS0RwS2lBSEwxSUFIY2NJNE40QTF5VE5waGZFNk03aXZhdTBDMjE0VUZISHc?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "431c666af87f",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-standards-analyst"
+   ],
+   "title": "중국 칭하이 60MW/600MWh 액체공기 에너지저장 설비 가동",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMmJNaThYVVJxNE96ejQzZVFtdm03dVk5VWtDY0pKV2x0cFRPQ1NSOGpPUWY4V0VxTGx6ckttcmxfQ2FWZDFUZGFCSjVFVWV2bG55aC1ZS2QwaTJhcm04TGRvU0phR0tYdk90Qm4zVzhwUWlwVXR3cFZiUmdMSTlmel9RTV9DbWJZTHN3YlREay1MNUdjMFVtX05qWXptMDN2TEd5MThRcw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "3fb75eef0823",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-cable-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3d8e59584601",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "39cb2763b009",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-cost-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "29c05f6bf12a",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-fire-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "27def1acd1f7",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-tax-incentive"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "26966c1a636e",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "Enertis Applus+, 이탈리아 유틸리티급 BESS 프로젝트의 bankability 요건 제시",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RNzJla054Z0hDdlNwMGJLVUpDYTIyNlNCQi1NVmo2bEJpSmUyNGpWQ3hsR0VxeXVmSWpXaGRpTkQ5MVZBbm9VWFlVTlhHREZQUjN3S1I3eXhCZjFJZEZzdWdtaF93YnNlZUs1LVIzaWRSZw?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "268b99efaffb",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-financial-analysis"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "1f76971ab017",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "ZD Energy, 태국서 해외 스마트에너지 솔루션 출시…가정용 태양광·ESS 확대",
+   "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPRE9Lam1YWERueU9UQ3BOcFllZWFDOG52eTVJUnpoWDJ3ZWNUWEs2NDR0QmltQ0hSODRoNEprR1Y0ZWVyQ3JocU5aN2lNWjM3TFNYV2tFamNxN3V3NEZ0VDZjY0txUTdCRUFWRHlZVjNheG5kS0FfVTNxaVp0UmdrSXZlN0F2dVVMbXd3aTBPT28wZ2RVX3BMNWg3R2Z6bDBUV2lHM0x3aUczYmhkTUZaTTFHc3gxeFo3VWhodk5DT0Y2YjRPc3ByaUR0S1dBR212blBtMlNIZzFrU3V1ZENfOE1scWZ5TlhLVzY2LTlLUFB0OHdOX3pjQ29HaHJ3SndZc1ZpTGVNS192eVR4RGEySjRQclpMNUZOZGRHMXVoblNYQjQ0OU10eXIxRFBGSFM1VTJsMmQ5alJMaWJ1ZUhpX1p0ekJGS0NoMXRXdg?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "1e913707452f",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-legal-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "1597ff83b5e6",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-epc-bom"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "103b5e9b4fdf",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "웨어리 리뉴어블 테크놀로지스, 500MWh BESS EPC 수주",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaW1qOE5NVlFxSHU4V2NvTllUc2xaRUxCMEJ2TVNkblUtVnQ2RUJXRGszV1VBUWJJMnBLQTlPdTh6M01xNnluYV9qekhiUFpfNjFvaTJITVppMjgyRUZzbFN1b0hSQ1dQN1lxMzVaWTRvblE1NUNoZjIxX2RqcHNady1XTEN6dGQ3UDVsSVBnY21CZlJ4TzlBZTd5NnJIZktSb1E?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "085d433181c0",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-hybrid-specialist"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "06a53bb750af",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "LG엔솔, 왜 수조 원대의 ESS 입찰 경쟁 포기했나?",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA2WnhSdERURGdmUHlnMVluMkFVLWtNMnFvVjVUYmw0S2RUc3B2N3R0VHl1amFsT1hSVjdSMzFOc0p1ZllrNWgzc1NIQVhpekl4UG1qQ2Y1S2x1ZGRHUTBTcERn?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "063bba2d6d4c",
+   "date": "2026-11-08",
+   "type": "briefing",
+   "agents": [
+    "bess-grid-interconnection"
+   ],
+   "title": "인도, 국영 전력사에 에너지저장장치 설치 의무화 추진",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ3Bqb2RlbzJHMnVVZ1pOU1RUNDhKRUpTMW9tVUh0end4SVZWOW12V1FUcXE1MVdBVFA4ek5RTXRDVVJtYjhqdTh0b2JVTzFpQ1NRT016OGItb0NmWEVBZTloUkV1QmVlU3ppU283REtNakFkblpGRzFEZ1NvUFBtSjlwTXV5djB0Szd1R0htRDEyTDd4bWZoVV9tcHRHUWtkeGxQcVl4Y2xmM3F6?oc=5",
+   "source": "구글뉴스"
+  },
+  {
+   "id": "04d3bda2a41c",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-hr-manager"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "025dc3ba13b3",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-mlops-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
   {
    "id": "fa59bfe3b7cc",
    "date": "2026-11-07",
@@ -2825,710 +3496,6 @@
    ],
    "title": "Obituary for James \"Jim\" Bess",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBReFZhN0xWa3R3T2FwSnE1OGpfVjY4N0RqNE9jRUJ2V3VUV3RKYlI4Yk5nWEZDUVlkR0E4X2tkbHVqWnY0NE1nanFfTUUteldBcVZLN18xWHBncGlHR0lWWkFVMA?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "97e6e6a64efb",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "Armenia introduces interest rate subsidies for storage systems",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOGJTZjU1VnJ2T1FuY19idzBrUGN0a09qeENnQmw2WDBaUURUdDBMclZTMHVYWlpLQVlaZUlHWW1oa2ZYbjVaZkZPMURHVFJDQW52M0IxMjlJV1JRVmdLbTdfNHNxaVZOb2FpV3AwXzlxNFhkZkpaMHBLTHZzcG8xRkpIS1pHVXVvLVNpRWZZSkhhbmIyeVNQRE1YOHI3aFhUZUJyUA?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "94925c5c0589",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "삼정KPMG \"글로벌 ESS 시장, 10년간 2.6배 성장 전망\"",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1vV0tZLVFqaDlud2p1Nk4wVVlZVjVlX2szb0hUaDQwQmlFckVLNjBtbjJaM2phODdGODMtSkd5UFd5SndaZGxvWGpiOEZhQnlMdnA3dUlCTS1EeWtFckRMeWJHY2NRNU9zdXl6WjJSWWtsMDFKUERtTNIBeEFVX3lxTE1vV0tZLVFqaDlud2p1Nk4wVVlZVjVlX2szb0hUaDQwQmlFckVLNjBtbjJaM2phODdGODMtSkd5UFd5SndaZGxvWGpiOEZhQnlMdnA3dUlCTS1EeWtFckRMeWJHY2NRNU9zdXl6WjJSWWtsMDFKUERtTA?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "89d9c3911dec",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "\"호르무즈 막히고 기름값 뛰자 불티났다\"… 中 태양광·ESS, '사상 최대 특수'",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSmxwNEo5ZmVYRkJuTHE1Wnk5aU9xTEt6RHBOeG0wX1pMd01OU01GX21rZVg1OGRxU0VKRTJpY1VwOXVVY1VVR1ctVzZ5UmtNV21aaDN2U3djanI2TExTN2NON0NxQXF4S0Z3ekp0anc0djhlc05jNnFlaHRjZmdsVlpZLW9ON3Nv?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "88f13f577c4c",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "Sungrow launches PowerHarbour residential energy storage platform in Australia - Vietnam Investment Review",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM1pZUy1NWGViN0xfRWctMHloWE1DYl9DbVJmRE9KUndkclNXR3VVbTFXRFI2M3Nsd3EwNkFNamQzUHBYT0FUQ1VPcjJNSlA0bk9penlCWXBheTFkM1pKdnpkYWpUTnVrd1hsVGxYdmRneklEX3BxYXkxN0NjMUJCaUQ2NV9CT2hHeGMwYlpBZi1MVUhveTN5ZlNhMUJwSklPeVdTd0M1R0N1bXhSY0E?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "7c3431ee2c70",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "‘Advancing grid-forming energy storage’: Sungrow wins Hazelwood BESS 2 PCS and BESS order in Australia - Energy",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcHNoYVNfRFlBdVFyWHd3cmdkbWxIdEk2UU4tQjJ0NWllUFB4amlhR3JqVWtyWlplRUlLbHdMc012NTRuQktIbXVERmhxUFgyMldwWUdCNkFhNFdJaVlxRFBwYWU2MU1ETEVaZmhhaE9WWGMySjkyaWpacGNXQzZDcmxpVFluYXdwdV90aEEwSy1QTlhYeUxDMVMwd1hNNWhNRmN5bThFd241Y3VPaXU5MHc1bE4tbHppeUpnTEV1Z2szbEE0Z2xUTkt1YWU?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "76cff39ff727",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "“제주 히트펌프 확대 제도 개선 필요”",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5VTUt0eVNYdVVjSDBOaVNtR1VUN1pSS3J1cXJYcjFONEVodXQ1MUg4M3RKc3I0a3I0cnM3M0dvb2piYTB4d3dsTnVUa2Y5MkN0Yk1QTTlLZkpOV2lVSHpDaHNBVG9iR1ltdXFLSTBCNA?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "727bc33c1c1b",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "HiTHIUM displays 8 hour battery storage system in Melbourne - Vietnam Investment Review",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMUJqdXRtWDkwcU9jNDBQTTF0Y1BIQy1GNjNwdmc4VEh3UHhpLVhWVU1sRFB5SFVjYXBTcU43V0JsWGZ2MDdSaW9ZcjljZDdySF9EXzI2dWJxbmprVE9la0FKVEJ3bm9OV2VWeV85UmViakdxckR0TlNpUXhPMzJXZEJmYTF2cEQ5cndLU2hrbXF6NnhC?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "6c16c2350808",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Coal India Appoints Neopulse for 320 MWh Odisha BESS",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdUpKRURydWhiVUtnYnlyRkh0YU5kczZQQjNKclRRZzNfcnBoUXRVRTMzZmlpYjZVT2FtYndoRWQwWnlrRFBsOUlEazNJSUFvYTZ5bmZaTWlCRG90dWd4SExGUFZtTVBoMW1ZdE53dlh2MzFZSDg3dVBTR3NSQ1NKcDg3d2o?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "6a23115aabc8",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "MITEI’s Future Energy Systems Center kicks off projects to address data center energy demand, long-duration energy storage, energy affordability, and more",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeHdKUjI2eHFVX1dreXZHc3VwVlc2MEs4LWUyTUFYRGtlbWNXQTMxWkFXWmgzdTVMMk5fc0xXdkh2Yl9CRWsyZm80QkxSSDAyTHJfWUljNTU4Z2JveE1EVnBfSFBqQU9tQmRPRG5wSllIMWV3eXk5Vi1aRmVaaEhNRWs1RXk5ZUlNWHI0Y2VPOXlnWDg5SzdlWEJETndtbXNHcmJZbmt4bFNHU1I1Vm01Wm5EbU5KaEh3?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "68719bafef60",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "[전기차 관련주 동향] 11월 1주, LFP 전환과 ESS 확대 부각",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDeHdla0Y4NnkxeWxtcnZlbF90cHo2dmZyX0RlU1dwYlNGV3VKd1ZmMlRid2RETmFSOE5oUzNMVVBvYy1JcjU4cktrZGZiaW9rcGJMSFZ2RGItZEota0o4dEs1S0h2WG8yRjUyRQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "5b825b439314",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "Mecklenburg battery energy storage project proposed",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaGlzZFE4OV9HaXBGZ1lia01mOWZYdkhrRG1wLWx5bzJWNzd1SEJUSEJLa1p1a05LWDZuVkhtUHNDdXdqaHc4ODJIdk8tSzUwcndzcDJBd0F2YmVPdFRGWkRaNjRvYjhqc2xaWVlrUFVuZzh0UHg5TXFmX3hTSzhjQ3FCc1UxS2Ff?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "583aae5337f5",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "AI 전력 수요 급증에 ‘그리드 제어’ 부각… 싸이더스, VPP·배전망 ESS 시장 정조준",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9jWDBmeTQyaTJBcVl3eGdxYUtmRnZDY2VSTXlNejhzMWJKcWJGZk15THB5TmRmVDV5NzVoQXMwZWd4N20tanRlTHVBUGZFUWsxa0djQ3piam03cUxmS0RXMkN3?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "55b920ad1814",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "LG엔솔·삼성SDI 실적 반등에도…북미 투자금 회수는 숙제",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5vUmxPbllGMk0xUHdzN0pEMG51QUNlSURDRlBzbUFYSzVnclBNQTVCc2U2QjFoY0xNUlQzbjR2VVRPNy1QWEFQU1c4UUZjSlJHS1psNUFiSnF1bXN2b0lqbjd0LXdGWGUzZmdZ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "51504f8239b8",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "Is long-duration energy storage procurement a hostage to lithium-ion’s success?",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOFZNeERIdXRWYWdOUXN6NlZxT1lXSWNyOXBMcFhnby1XT2g2cFh1RVRGdW9YS25ta1BWZFVjNEVkd2ItT0VOVTN5TjlxRmFOM1Bwc3lIZXVrQzBTeHVWM2luZS0wY2lwTUhFVURNSDdqdUpVNUpfTVNmQ0hOLWdWZFVWN2x3TV9aSU5rcXVLU09wVGhCYWVwcmxFZXdzaVdtNXBlcGpfT1FaLXE4Z0RkRENLeFhxTHl1?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "4fd087c03185",
-   "date": "2026-11-03",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-fire-engineer",
-    "bess-fit-procedure",
-    "bess-hse-manager",
-    "bess-legal-expert",
-    "bess-pcs-expert",
-    "bess-permit-asia",
-    "bess-standards-korea"
-   ],
-   "title": "팀 토론 — 아시아 지역 BESS 인허가 동향 분석 및 국내 적용 전략 수립으로 KEPCO, KPX 허가 요건 최적화 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "41ae9a040410",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "Army Corps Awards $61.5M for Fort Hood Microgrid, Built for 14-Day Grid Independence - Engineering News",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRFQ5WWx1YWpwb0w2UUJ0N1BDRVg5SDd6X0tpa2pEU2pSTXJGQ0R5TTZqbVhlMHFKMHVJeW4xODhBZUJIdzl3anIxN0F5eUdVMXBGX1V5R0U2YVJZelQwa1g1bzRrS18yM253SHF0S2pTZTQwa1FLeTBOdzVZRE9GenBMVDJnTmIxVVJTRVJKQmd6N1RzUmZDWHZNRGtJWlY3d1JQWTVYeG1DdDFzUEJLd0dyLTgwZE0?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "404fcd30ae3c",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "유럽 최대 규모 배터리 깨어났다… BW ESS 함스홀 상업운전 돌입",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VM0xpMWZSU2FPa3BILWY5bi1ISkd6VTBZWWhIWkQ4TGh2TU1xTFRNWEs4VlJCcGJwak16TTlHRHF5SllxN1RQN0VFVUU5bGRNYXljSGhwM0tBNDFCZkFOaWp6Q2FneXFZ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3d13946726ca",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Renewable Energy Update 10.30.26",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPN0tIUmUxT1BzYnBYeHhncHFUeHBYalJmRUFxdGh5VGstaWdwdTVCcDFCRUdyTS1HYzRkZVZjdzUwY21MbG81SURsU1hndFhpNTNOT3drYlQ0WFNmcnJiYi1jdmJuUlBCci1Tb3hDTENjRkkyX1A2VnNzbDBXMkpOLQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3d0037c232ef",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "BW ESS announces commercial operations of Hams Hall Battery Energy Storage project",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQ3d3X0xQRHBYTWJ1SGJyaFQxemZlMXVEd2x4UHlsOTFyNnl3SVJydmJNckZCM0xxT00yM3ZfOWZhaWs5YVJWeDhPa3V4RE5lTFZKWldsWndJa2dYYmxhWW1aSldVMzlRS1Q5dFgzZzVNUkZINVZTb1l3RUlIcnNfMjdpS1JjbnNTeWI4Y3QwcVBNN09pWjMzd0M0YjhWSmVvZWtCQ0F3?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3b1efd482381",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "ESS·폐배터리 규제 손질…이차전지 산업 경쟁력 강화 지원",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcEVzMHBpQzMyYzg0VVpJcmJLdnZfdm5QSk1SWmxzYVVwQ3E5MzB2WS1FZzV3TmhDVHBQMGZvZDM4cndlQVFucWVxOGoxNFVvemctTGJNQTRUZVptTDJRNV8wQ2llYk9CMU50N1VEOXBlanR2ZDcxMFZYUHlRbVJXNTh3bUZtSnM2bUE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3ac4a225e14f",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "DIYer turns over 1,000 discarded laptop cells into a home battery bank housed in a separate shed",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObVVxWHo3dkswSzFiNmtUX21oTkRvUktwY01EUHN4RmUwZ0JaNzR2OXJJSWJuV2tzSm5KOEhVYThZVlZHMzYzbnphNTRkRnZYNGRnUmp5dDVCZ3NEN0FidWd5YTR5RUNvejlWVnc3cTBpWUpqUzlIZXFBSDZzMzQyRkNLWUxGQ1lJ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "389a2618f8c3",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "Peru publishes draft regulation to modernize...",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQZmlneXUtNHZ2Ump1U1ExTkxUSGQyRWF4dUcwMWl0ZkM3WGxxQVBXVzdmM29zSFVmblFBZWFrc2diSEZORDVsUmFud0ZGRTRWVDhZbHBiVVlkNlhReW1FSmlPVEhNdndJczloOVp1SWlGZGF0YXFocm4yTWxqTnFKbmFqaHFBS0dIZ3hQc0dTanhTbVI0cVZJNndHVXlVd2ZjYmNndmxtUmhBSTdBTXZrUGlkU1FiWERaUFdiSjJNbUR5RG1CQXZYeGVxVnh5TE4wZk94SE55X24tQmNLay1yeDl6cUJ4NXNadUctZ0EzT3otdw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "35e10ae89ac4",
-   "date": "2026-11-03",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-fire-engineer",
-    "bess-grid-interconnection",
-    "bess-hse-manager",
-    "bess-standards-korea",
-    "bess-standards-poland",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — [쟁점 후속] 화재 안전 설비 투자 세제 혜택 분석 및 국내 적용 전략 구체화",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "33efe73194c8",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "Trump bulk power equipment ban sparks industry pushback: ‘Let’s not reinvent the wheel’ - Energy",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZl9QSi0zSEI2OVh4cWZWS1VVNkVrTjd0OFpCWmZsLS1HSlBaN0RtZGY2NW5GS0FiWDU1VUNXR0x4UFpxLTVVOEdUbDF6R0xVdjJ6aS1Fa2ZOVkNUSk1Pcy02dlU1VWNhTzIxczdGd3JHU3VBMW8tYy1KYkFKdFZYMDJEVm0ycy04RWNZMFhuTF8wdENkSFcyZG9Rclo4NEZiZzlubDZHWHNHMzZPZnhSYlFmMjROZDQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "2ecf3d5c12a0",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Hazle Twp. planners formalize data center recommendations for supervisors - The Standard",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbDVpNHZEeDB3V3AzZ2oyYXdVdkNZdlBhQ0o1eHNTaHMycF9iRjFBYnJIMUpKUlBVLXRUZjJESUF1LUZPbF9XWFJIYWVfNTFQeFc4aXpfMzI0Z3FpMFEzVjRrSXB4dnUwMGh0MFk3Q1htUmFlaFlNelM4RkJxdG1EV2JfVnRwb1dwRGpXSS1RaFVubV9BX1lGS0hnaTdKVXhYZnZOZVRKR3A4MG5kQl82dzVjYVVkaEU?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "2ca69bcadd7c",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Lithium-ion battery testing safety - International Fire & Safety Journal",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tZnZGV2w4MUpTejVXWG1NMGZCZnlxWmdRMEJIYVRQTkk2MW5pc2l6WUpkWnRRNUpWWTdyZTkzdzJsRk5SVmdZTWwtMnlFX25sbnJuMmNrZ290ZGlCZm1OWXZLQW5xYUZnVXhmb1UwSkFGbEhMTG9ETkVldTRxNjQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "1d63dada9779",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "삼정KPMG “ESS 경쟁력, 가격보다 공급망·안전 인증·시스템 운영 역량이 좌우”",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZbmJ0dTd6WENhNnkzYmE3UHd5a29LRkwxc3JKc3hWam0xcDRUbHh4aUdqT2w4bEVORTc1ZWp5MTF0dTE5WE5TNFBDc0dvek1VNlFQZllJdWt6TnBHR3Rv?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "1d37c0271fe8",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "Spanish BESS projects reach financial close with 220 MWh",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVGlfOFFfLUM2b1ZYQjItSFZCYTB2UVVWMEN1aENqWFJYSG9nVl85cVF0WGduQ21XdTg5QWZPdDRXbHZKUnpFd08ycEdFdTlaYzlPalQwQ28zanlsR1UtSVI2VkZLTl9sak1odlJqLWR6YW40ZjViVHVDU3NHbW1PcnJHeWRqRXNmdlRpLUdkVXp5MGs0UnhGeQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "1cec3337764d",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "동서발전, 전력망 안정성 강화 추진… 전력거래소·생산기술연구원과 MOU",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBXMmF0VXZ6c1NJUW9IOWh0NUgzNDN3Q0lDOEtvRFlIOF9YTlc4c1QySW9Dd1BYRV8wRXJMMDhGdEJDU0lUakhBZmwyWl9NbklZZGJnWWpHRXhGc3lDWklhNG9LekpiWGExanJRQlZhMWE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "161a9eb1e250",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "‘말산업 메카’ 제주, 한국마사회 유치로 국가 경쟁력 견인",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaTFxUzF5XzlMenlScENjdWNGOUFkSFdLVFJ6QzhDbU52c3puRnlTNlVERFdYdnVzcU42bERncWs5bEhmZ20zU3U1RFQyWjhxMFE5eEdwRW9OR2Y5RXJBQWdmSGJ4OERUWlJUYWFmeEdSX2hDc1FiQUFGWlVvWHVHR2N4SWdndw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "1356382eac2c",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "포르투갈, 대형 ESS에 전력망 안정화 기능 의무화…재생에너지 확대 대비",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RaGN6UHF2MVpmTGt2VVJfRWtjdDJhSDBMcXVWbnhobXFlLXgzak50OXBLUS15WDN3VjBwR1o5N1VDeTNlMTM1VVVHVTh0Vjl5U3B1MVRBYXU2MXY0V080Yzk5Z0taY0RrcVE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "0e212b273422",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "[배터리의 역습] ⑧버려진 배터리, 다시 불씨가 되다",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DMDd4eVV3d29Ya2hxNWpldTVPS1NXaTYzb2lCUTdSTVVleWR1X3NzWGFSTzVLRFVJNnFrNURJZnNLR3pBbG1PajczS0RvNWF3b19HZTc4YkxZUGdsYUE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "0292e453e8e8",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Battery energy storage system",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbWxZNTVBLWd4U0VSQUY2QlNvUDVDbExIdUZMNUNqb2Z5MC1CTnZIaEJBYncwa2NqSnowTTJqc0VoVy1mSjIwSVd2RVJKb3ctY2FqS1NzNlBITUlKNlJKWHpuOVE2Vi04U09lSWFuOEVqWmdiNFBGcjBEdHVUSllIeFhaTWdyZDBTNVRNUzhlVkJSOUhOcVMtczM3cURUZzBPV0FYbkZsaUJRTXd4Umc?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "fdad0cd742e3",
-   "date": "2026-11-02",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-emerging-markets",
-    "bess-fire-engineer",
-    "bess-grid-interconnection",
-    "bess-hse-manager",
-    "bess-power-system-analyst",
-    "bess-system-engineer",
-    "bess-tax-japan"
-   ],
-   "title": "팀 토론 — 작업허가 절차 간소화 및 외국인 인력 안전 교육 프로그램 개발 방안 수립",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "f861d22d382b",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "Metro Detroit battery storage expansion gets green light amid growing data center demand",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbHlQUXZEbXJ2YWw0bEtFTkFoNjVaOHN6em9iSEMyRDBqNHhFLUt3N2VZdlo1VmZCVU5DNzRWZTBFdzg1bWcwQVdwRHJMLXVjQnE0WWxKa09SWEMyandBa2dEc2UzalBBRjRoUktlWGJQdmVCdS1lN0g4Q3pXejBoWjYwVThuTURvMU9PQTVyaEczVHNGeWlhXy1ZOGNyLU5qYTNQMFZkQWxERXlpR0hDQ04tdk81ajNVNk9iNUZKSE9hYUtNXzRWZV9mYVNDeEFTelE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "f1e29ae5d27b",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "10 massive battery storage projects around the world redefining power grids",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONVM3OGJhWTY2Sk5jM3FQNUZyeTZmWnBpczNxb2JfUFBiM3VZajlsMTNZdTlnTUVyNGt2XzJVWlRMV01oS0pHUkxWSVY5RC1TZjRzU3B5YVJLZ1ZsWHR2UXc3enEweHVyZkQ1QmJiNTJVRHRBQkpmcjNRd0FQb21FS0Y1Y1IzS0dqMG5CcEVtbHRFLXdK?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "de48441f57b5",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Pace Digitek Wins ₹7,099.19 Million BESS EPC Contract",
-   "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPOExLYzBuWXhKS1VYU3pucWFwTkNHUFAyXzV0LVhfTm5JQzlKVWNsYzNRd3V5VVhwaFgxT21PeUVLa2JCaWJTN2lOTnN0d1RIYVdoMDJSWWUyQ0FZRmpXM1pFU0RjWC10ZEVFQXdpLVVhVnVmOHVXV0ZXb3NjbXBtM3lILVdJOGIzZmRPS1dXcHdsSDAwbmd1dzBzRTkwU18xRnFNMmQtd1JzWGFFWHZaWlNOdEZGc3UzeHdaVEJqUjczTTZEcVFkcU8tZGhSZ0daV2NVcEpzSTF2QTFBM3I0RjRsSUJPUnN4MjRwaVRFSmk1QXpnVFFzOWgzSXRiUDYwSVBnRWVFNkdSVndDMnVNQTV1M1N5LW1XeEhXaF9XSGh1ZTRubENXZEdMa2c0VmRDS0Nn?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "dda80f25671b",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "LG엔솔 ESS용 'AI 에이전트' 첫 공개…배터리 3사 폭풍질문 오가 - 머니투데이",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE42UkhuaThxT2hqVF9vQktxenRCY3ZOTjJ1bGNTOVRwbEcyc3JqQ1M4VndGNGNuUm1fYnl6N3lGNlJ6RjZkd2doMzRadnR2MjhXVXFXaHg3ellTZVE2aVNmNGZwVmY4YmlGSkowU0pISGJwQdIBckFVX3lxTE42UkhuaThxT2hqVF9vQktxenRCY3ZOTjJ1bGNTOVRwbEcyc3JqQ1M4VndGNGNuUm1fYnl6N3lGNlJ6RjZkd2doMzRadnR2MjhXVXFXaHg3ellTZVE2aVNmNGZwVmY4YmlGSkowU0pISGJwQQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "d9b6749079a6",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "ACME Solar (NSE:ACMESOLAR) Expands Battery Storage Capacity with New Rajasthan Commissioning",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMWtZaFZsalRRMHpFdkVYY0tTbWYwc18zekVOd3dvLWZVUEpUMTB0ZUxCeGp5S0pVNVRnMEp5Qy1zWHNibUV6cnFXUlRzVFlfMzhDa3dIbGd0N3NtSkxTTGxYRG4yMkVaVVVDcV8xaWNrSEdGQS12dzVENG91TVNMcnVlT2xtdUlTVHBvZnZ5ZkVMWm1vZjQ2VnJmRHlET3JvY1JFbFpKWUs5X2g5RzlSbEZ6NFh3TjRPOFFLVG1vaVp3clVQQXN4dUtveUNJLU5tVUE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "bbabe0636311",
-   "date": "2026-11-02",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-procurement-data",
-    "bess-procurement-expert",
-    "bess-project-manager",
-    "bess-system-engineer",
-    "bess-tool-developer",
-    "bess-transfer-pricing"
-   ],
-   "title": "팀 토론 — 견적서 및 BOM 최적화 프로세스 자동화 도구 도입 계획 수립",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "bb41c6249bc0",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "Power Inverters Market To 2035: Solar PV Expansion and Grid Modernization Drive Growth - News and Statistics",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUDdwc2pVaTZWT0o1eTRITXNCR0dHZjZ4Ny0tN1hXbnZ0aHduQmNRbDdwUkJlMzEwTGZJcVU1c1VyUUxTZ0dFTE9OQ1kxRUVmQzZjMmU0cGJPVGdTQm13V0FkaE1PWlgzLVhPWnQ2dUVBc1ZyUzk1Z1M0bi1MR29TUldBVlZTa1BESjlNYnI1b3hKYnIzR0RlLTMwaGl3RU5pNVNOeFdQRUVBNHllUFpqN0Npd2VfdmtjcUpfNE0xd1Zodw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "b95065f5c846",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "Connecticut homebuyer eyes DIY solar for two EVs, but grid rules could complicate the plan",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSXcxVFpBQWtQc3ZYbHhBdVBtTlAzX0R2Tk9FLVJ5bFpJTTVKSFh1WTlXZ0RVczYyZ0RYeHV6enNlUTM1WTN4T1V1RjVCUXNEaVh3d3NqSFBEX3hhRVl5WGVpU00yS3dYRzN3cWZvcDdYbHBtMHoxeExOUUM3by11a0NZRQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "b7871669e816",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "Homeowner buys nine $195 solar panels in Tennessee and eyes a $3,800 battery-and-inverter bundle",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOd19jOFpGdElZTVRtUDhwVjVBUFBkckk4MFNnNGR4NWlvUXlUeV9WVnRfV0VybGxielVmVmpCclZNYzhudUVJR3pkd3RmMGQ4RDhHVTdPcWxNd29DNTI4b0hmZlhzU19fNExzQjhpYlVfeGJ2dkhaaHhQcUxoS3FTTGJvdjVMSG93QXQzcVpIT2l0TC1tSWZIRnJTVks2U2FONlNLSU9hWU5IdGhKZHc?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "b069fb50ba06",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "K-배터리, ESS서 먼저 웃었다…유럽 EV도 회복 신호 [위클리배터리]",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAzWDBSVk5seDdfWklYSE5ZemNOSmVWREdkZGRSNXFWLWF4XzJtLUxyYWxGc1BldGxCY09RWDJVcm1SQ1VjRnRkTVNSTjZ1ejVmTThiWHVtWDlVcFpQd201TXl0SE0?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "869eaae3123d",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "Minnesota zinc battery pilot could help solve a clean-energy puzzle",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSjY4c3NTQXFnb3lQZlU1TDFMSDZTNTB0dnZXYWRaRW5ZVlZtZTFJOU9zTGhoTkNnWWJqQzRhdjNaWUxuMlFVZkhqOER4SXExUHMwN0ZYTmpha1ZPYVhkc1ZRdWhQbjZyUlJaWXhFNGk2d1FlZUdoT0dKZWdHRUFjY2R5VzJ0N0lkZU1FRzhvOU41eW5Hd1IyVmJvQ09WTEZwTnpBUEZfa2M?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "822eef969a81",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-fire-engineer"
-   ],
-   "title": "SK온, 글로벌 인증기관 화재시험 통과… “ESS 안전성 인증”",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFd29TcEpKWlNFb01XRXN5UkxGOEgyeEdCWTJJMTFmZmdLV3RYTWQ5ZTlxZ1lCdHd6WE1HeThpclFrTnA1YnZfMDl4SmNEcXdUYzltNUtpOTM1TGgxTW9OVUgyVmtJZ25ZZVI1ZUZwRVg?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "8016498dad83",
-   "date": "2026-11-02",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-fire-engineer",
-    "bess-grid-interconnection",
-    "bess-hse-manager",
-    "bess-power-system-analyst",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 작업허가 절차 간소화 및 외국인 인력 안전 교육 프로그램 개발 방안 수립",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "78c732425590",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "[Who Is ?] 박유신 BS한양 대표이사 사장",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16TllSNnNUdnF5YnNWSElzaE5TLU01MjZzbVhtcEhCTjFtdmY2d3daTVRvZ0JPYUl6WnN3cmI3V3dtMFJ4al9lcjgyUmlvc1RRc1Z1NFgtbmU2MmNjS3RwNmJfbUp2V3NIRmJWTEUxRXFhbjQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "5f78bf73a301",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "Earnings call transcript: Enel Chile beats Q3 2026 estimates as shares fall",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQaU5CVWhRRlBnNmc4QktMNEFGejJRSkZmOVE2VG16RUkwU2MxaExXTzlMRWc2UkVEZzAwYUxGUDVhN1VaQVNRdGJfUEVNVmFzREhvQm1ISnJZX1JDallsbF9oSm0xb3dpWDF1elBRRE9wMkR4WHV3dUlRc0NxS1RIalJPMXB4aG8tTWVpRmtSdTNCTm1mQUhkYW4xcmpZbG1SYjdCd3BjVzVfRDVReG8zNWxYejBMeWd3RG1HbGcwclpIdUhSVnhhWDJB?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "5ae79122712d",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "美 보조금 축소 시계 가동⋯K배터리, ESS 수익성 확보 시험대",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sZDBqbV90aVVPWUVGdFA2Y3A3U0FicGw4S3ctdE02LUphZDdfTXUyRXBpR0xLcGhGcXFCQ0tFMWpicE13ZjBuWmRRWUdkYXhPTDJhZkxhOHFjUQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "584da1fd2472",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "Reita Bess Land Obituary (2026) - Dunlap, TN - Ewton Funeral Home & Cremation Center",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ET2N2emJaMTRfSFV2a0c5SVhWMW5PZEpZZWI2Rlp4UGEzLTlPdkV5OXpYN1BYb0lZTEYzcl82di1ZUU9QaEpZUzJWcThxY3JMcjFDd2VLRENQTjFDWTVkVjlPV25YblZWbGtQUTdDY1ZJY2tOdmE4dlU4bUtudw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "52be0e8bd96c",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "[글로벌 배터리 대전 (40)] K-배터리 3단계 생존 방정식 - 라인은 돌리고, 소재는 묶고, 기술은 앞서라(下)",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1pd1R3UllvbEdoUktiQnNTdjdkano0Q1FVWHFqZXR4NUVDUDd6bG5NSXZ5Z1dUSGFDTG5iSmdyeHphZmxweU1nQzVlSXlvRW9zS05SRUppMGR0QUo5SVE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "42f225eeb4fb",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "New Scotland to re-examine battery storage",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeVhCelhCaGotYmVzd3VteW1wTWZZd2Zka2FfQ1JJZTVmNWRKemFMU3Q4OFhHZjN1aW5hc3JXZ1BUWWRQTFh3ZWJhdm5Na0ljZ0g3bS04WkVEUHhneFVuLVlXWF9EeERKSnptSS1naFhodk9QWHRJQUs4c05Ra3AxLVRBRWxGakFSMzhB0gGLAUFVX3lxTE55WEJ6WEJoai1iZXN3dW15bXBNZll3ZmRrYV9DUkllNWY1ZEp6YUxTdDg4WEdmM3VpbmFzcldnUFRZZFBMWHdlYmF2bk1rSWNnSDdtLThaRURQeGd4VW4tWVdYX0R4REpKem1JLWdoWGh2T1BYdElBSzhzTlFrcDEtVEFFbEZqQVIzOEE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "420be3e206ed",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Revolve Enters into Definitive Agreement to Acquire Three Project, 6 MW Battery Storage Portfolio in Ontario",
-   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOR1pxeUh0c0JfYTQxT0xQay1TMFRIeExHWmNMX1dXeU9PTEt4Vi1FVWVGbzdTS1gwNEpRY0V3enRDQmNEUlBWT3RydFRheFQ0d2RaNGh3MDBPaU9jeTNrMWRDSV95dzVHUlFsYnZtajdzbU4tcHQzT2k2bEYzc3A3QTNCOUIyN01QSC15dzduZDFJY2hQRGRBRUlSMlpOMk1fOXpIUHpNb3dabTQ1eFRfLVRLOFhRMjdrRW95MlkwcmZ4bVZUaUpxMEVSSC1RMVRFd3pwQUp0a2h5NS1QQ0xKazgtNWVVd2syT3ZSbk43T2plMVRQQVQ2bEg0cw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "40433de6400a",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "ACME Solar BESS Commissioning Update October 2026",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbVVWbzdyamgwUTFqeUNmbHROWk1WVzMwSVAxY2lXRDdsaDZkQjJTYW55eld4NTVCRlZEYzlfbmFiWVgwOEN5azF0SFdmR0FSQ1djZWVDd3hiazFQTi1FV3VncTBvRDdXV1Nzd2VXZFdmRU9JdU9PeWVTenlXcFZQanhDU0gwU2g3OFhSQ1cxdUt5NkgyNkdDUHRkRUVnMlBneWtwX2FGVjAxNHR3Z1hpN3lhTUZmSHI1YkVmZ3pzempLUQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3fd708508604",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "\"전기차 셀만 팔아선 안 남는다\"… CATL, '배터리 교환·ESS'로 활로 모색",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQVczRHJVcW93bEF5S1FNUjREMF9DUUVPb3VRTTRFaUY1REhfN1VobEVFUmJlc2NMRjZVRjRNRHRBTmhnS3JNRDlpVmx2RmJtRDNDTE9ndGxaZDJ0NS0wUUZEVE8tNWs0VktrWmR2bWs5UEU0TG8tS1l0czBMVnJzNjdPakZYVUNR?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3de6d1fa2850",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "Arizona’s energy future increasingly runs through battery energy storage",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONXZ1NDdQNUV2UG8xa2Utdm5uUG12R3NHRGhGd2ZCamxhc1p2X2FPOVhXa204MDZrNGhZbjNEQXhKZWdQcTNiMWhyOWFEM3c3blZ4Tko5dU0ya2FRQkl0RFZIT1dUT3p0ampCbHNZU2pTaXVUUVVjYnkzYk90NEVYVlZ4Y3hVWlNfdWgwem9NeXY2TjZ3aHdoenpLLVl5Vm1idEMxZzZtY1J1WEk?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3b8793069d3c",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-fire-engineer"
-   ],
-   "title": "화재는 왜 약한 곳부터 덮치나 [내일을 지키는 안전망①]",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8yZ0w4STZhZ0JYbHVLZEhWYkNwQUV0QU00aDBMZkxiWWp6VG9oZ1pqSlJ4YnhBM241Ym5LcWxrelFaa3VyRjdIOWJEZWltYThobFh0dXhQWWZ0QTZMbEEzY0d0MVJiS0NVWjNBTVkzTkdwM0tnWmhLUtIBeEFVX3lxTE8yZ0w4STZhZ0JYbHVLZEhWYkNwQUV0QU00aDBMZkxiWWp6VG9oZ1pqSlJ4YnhBM241Ym5LcWxrelFaa3VyRjdIOWJEZWltYThobFh0dXhQWWZ0QTZMbEEzY0d0MVJiS0NVWjNBTVkzTkdwM0tnWmhLUg?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "30680a8d34b9",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "California homeowner's panel replacement plans grow into a $46,400 solar-and-battery quote",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaWZLZ25qU0FBdFdoZ3lJZzVlTjZueFBabi1femQ3TjM0WEYxX3dNWko5SzZjZEExeTlad1ZvVUV6LVRVQ2pSVjdWNS1vUkJ2eXZBWHZmZkcwTXRXTW9xTzBnZEpIcmZPOUtHSjFtakd4SGFQRGFHa1E1ZU1pa3Z4Vw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "2d1836c57d34",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "[인 사] 한국원자력안전기술원",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfemFhV21Dc3MxUUJHV2haMmVwV1QxSGVoelZwTi02WVpNTW1vSEh3aWZNbnRKVXlBVW1UODZSRUVCdnVORG9wNldKeEE3WFB0ckc4aUZERXdIVnRNOXo1SlJiM3lhajjSAWtBVV95cUxQOTZxY3BZWlBpa3VtYXNQU1prcWR5eU5FYUVCU3Vsb1dLV084aHRUaEtpLWNlRFRJcmFWeWtJQTlTazVaWDd5VXFZbGpGb0lYWFNJbGd3eV9nOVZFS3J5TThaWFJCbUNBQ2pLRQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "27495824b8f4",
-   "date": "2026-11-02",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "'전력망 특수' 올라탄 배터리 3사, 본업 반등 속 성적표 희비",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBtdkExcklraVUzeWdXdG1BSm56VW5uTU9hNjBfNGI4M0JVSUZ3STFMUlgxX3VMLUg5bkhiamxNQXR6U1VyLTZjZWV2UmpoRzZrdXhlM3JQRnNGa0lXYnUyUkFJWlJtR0NFd2RVcA?oc=5",
    "source": "구글뉴스"
   }
  ]
