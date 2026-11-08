@@ -2,6 +2,23 @@
  "updated": "2026-11-09",
  "events": [
   {
+   "id": "f3a15deb69bf",
+   "date": "2026-11-09",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-env-engineer",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 예측모델·최적화 영역 1차 분석 — bess-aiml-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "142c8c916da0",
    "date": "2026-11-09",
    "type": "discussion",
@@ -3486,24 +3503,6 @@
    "title": "SK온, 글로벌 인증기관 화재시험 통과… “ESS 안전성 인증”",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5qUVpJNXQxQW9EVEp3bXhqelVxZlNwdTEyam1uOHBRS2hHZ2NUb2N3RTdvOTZ2WjdlU2k4OFMySHVQQ09hWHYxQnBwWHN0WGFZbUIyUU5nSmd6SE5tV2dfbnFrd2VGR2RhMHVyWlhtdw?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "b61df76e1d05",
-   "date": "2026-11-03",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-fire-engineer",
-    "bess-grid-interconnection",
-    "bess-hse-manager",
-    "bess-procurement-expert",
-    "bess-standards-analyst",
-    "bess-transformer-expert"
-   ],
-   "title": "팀 토론 — 배터리 재활용 규제 개정에 따른 국내 BESS 조달 전략 및 비용 구조 최적화 방안 분석",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

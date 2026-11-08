@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-f3a15deb69bf",
+   "name": "팀 토론 — 예측모델·최적화 영역 1차 분석 — bess-aiml-eng",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-142c8c916da0",
    "name": "팀 토론 — 글로벌 ESS 중앙계약시장 입찰 방식 변화에 따른 한국 BE",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,44 @@
    "date": "2026-10-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-2b3912a40eb1",
-   "name": "삼성SDI, 美 ESS '투트랙 공략' - 머니투데이",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "AIM-001",
+   "target": "K-f3a15deb69bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f3a15deb69bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-f3a15deb69bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-f3a15deb69bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-f3a15deb69bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-f3a15deb69bf",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-f3a15deb69bf",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-142c8c916da0",
@@ -14246,11 +14281,6 @@
    "source": "COM-003",
    "target": "K-2ce40764579b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-2b3912a40eb1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14814,7 +14844,7 @@
    {
     "date": "2026-11-09",
     "knowledge": 800,
-    "events_total": 4130
+    "events_total": 4131
    }
   ]
  }
