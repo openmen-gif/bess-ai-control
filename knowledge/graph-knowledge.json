@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-142c8c916da0",
+   "name": "팀 토론 — 글로벌 ESS 중앙계약시장 입찰 방식 변화에 따른 한국 BE",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff8587ae7d3a",
    "name": "리튬이온 배터리 화재, 위험물 사고 초기 몇 분이 결과를 좌우한다",
    "group": "KNOWLEDGE",
@@ -199,6 +208,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-8ccc4ba95f35",
+   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 4",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-11-08",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-87d1535509c7",
    "name": "빈주 카운티 위원회, 배터리 에너지저장장치(BESS) 조례 개정안 심의",
    "group": "KNOWLEDGE",
@@ -316,6 +334,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-63766e180af7",
+   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 4",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-11-08",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-61a42073bd03",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -431,6 +458,15 @@
    "date": "2026-11-08",
    "val": 3,
    "color": "#F59E0B"
+  },
+  {
+   "id": "K-360d89efacc4",
+   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 4",
+   "group": "KNOWLEDGE",
+   "type": "skill",
+   "date": "2026-11-08",
+   "val": 3,
+   "color": "#10B981"
   },
   {
    "id": "K-29c05f6bf12a",
@@ -7163,45 +7199,49 @@
    "date": "2026-10-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-282bfc9f7e2c",
-   "name": "텍사스·캘리포니아, 배터리 저장 확대로 여름 도매전력비 수십억 달러 절감",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#10B981"
-  },
-  {
-   "id": "K-23e8d4abd11a",
-   "name": "스킬 갱신 — docs(bess-skills): 스킬 12개 가드레일 반",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#F59E0B"
-  },
-  {
-   "id": "K-239d03e6507f",
-   "name": "MaxVolt Energy, REI Expo 2026서 ESS·EV 배터",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1cc0c275a9bc",
-   "name": "뉴질랜드 헌틀리 석탄·가스 발전소 내 200MWh 배터리 가동",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-142c8c916da0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-142c8c916da0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-142c8c916da0",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-142c8c916da0",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-142c8c916da0",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-142c8c916da0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-142c8c916da0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-142c8c916da0",
+   "type": "knowledge"
+  },
   {
    "source": "FIR-001",
    "target": "K-ff8587ae7d3a",
@@ -7313,6 +7353,11 @@
    "type": "knowledge"
   },
   {
+   "source": "STD-006",
+   "target": "K-8ccc4ba95f35",
+   "type": "knowledge"
+  },
+  {
    "source": "BAT-001",
    "target": "K-87d1535509c7",
    "type": "knowledge"
@@ -7378,6 +7423,11 @@
    "type": "knowledge"
   },
   {
+   "source": "STR-001",
+   "target": "K-63766e180af7",
+   "type": "knowledge"
+  },
+  {
    "source": "SUB-001",
    "target": "K-61a42073bd03",
    "type": "knowledge"
@@ -7440,6 +7490,11 @@
   {
    "source": "CST-001",
    "target": "K-39cb2763b009",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-360d89efacc4",
    "type": "knowledge"
   },
   {
@@ -14196,30 +14251,10 @@
    "source": "BAT-001",
    "target": "K-2b3912a40eb1",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-282bfc9f7e2c",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-23e8d4abd11a",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-239d03e6507f",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-1cc0c275a9bc",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "history": [
    {
     "date": "2026-07-20",
@@ -14775,6 +14810,11 @@
     "date": "2026-11-08",
     "knowledge": 800,
     "events_total": 4126
+   },
+   {
+    "date": "2026-11-09",
+    "knowledge": 800,
+    "events_total": 4130
    }
   ]
  }

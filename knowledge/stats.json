@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "totals": {
-  "all": 4126,
+  "all": 4130,
   "briefing": 2170,
-  "skill": 1060,
-  "discussion": 896,
+  "skill": 1063,
+  "discussion": 897,
   "activity": 0
  },
  "perAgent": {
@@ -29,25 +29,25 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 1116,
+   "count": 1117,
    "byType": {
     "skill": 20,
-    "discussion": 491,
+    "discussion": 492,
     "briefing": 605
    },
-   "lastGrown": "2026-11-08",
-   "xp": 1647,
+   "lastGrown": "2026-11-09",
+   "xp": 1649,
    "level": 24
   },
   "bess-business-dev": {
-   "count": 268,
+   "count": 269,
    "byType": {
     "skill": 20,
-    "discussion": 115,
+    "discussion": 116,
     "briefing": 133
    },
-   "lastGrown": "2026-11-08",
-   "xp": 423,
+   "lastGrown": "2026-11-09",
+   "xp": 425,
    "level": 12
   },
   "bess-cable-engineer": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 415,
+   "count": 416,
    "byType": {
     "skill": 21,
-    "discussion": 394
+    "discussion": 395
    },
-   "lastGrown": "2026-11-08",
-   "xp": 851,
+   "lastGrown": "2026-11-09",
+   "xp": 853,
    "level": 17
   },
   "bess-customs-tariff": {
@@ -305,13 +305,13 @@
    "level": 6
   },
   "bess-hydrogen-specialist": {
-   "count": 29,
+   "count": 30,
    "byType": {
     "skill": 10,
-    "discussion": 19
+    "discussion": 20
    },
-   "lastGrown": "2026-11-05",
-   "xp": 68,
+   "lastGrown": "2026-11-09",
+   "xp": 70,
    "level": 5
   },
   "bess-insurance-expert": {
@@ -426,14 +426,14 @@
    "level": 6
   },
   "bess-om-expert": {
-   "count": 48,
+   "count": 49,
    "byType": {
     "skill": 11,
-    "discussion": 37
+    "discussion": 38
    },
-   "lastGrown": "2026-11-08",
-   "xp": 107,
-   "level": 6
+   "lastGrown": "2026-11-09",
+   "xp": 109,
+   "level": 7
   },
   "bess-output-generator": {
    "count": 49,
@@ -488,14 +488,14 @@
    "level": 5
   },
   "bess-power-market-expert": {
-   "count": 172,
+   "count": 173,
    "byType": {
     "skill": 12,
-    "discussion": 125,
+    "discussion": 126,
     "briefing": 35
    },
-   "lastGrown": "2026-11-06",
-   "xp": 321,
+   "lastGrown": "2026-11-09",
+   "xp": 323,
    "level": 11
   },
   "bess-power-system-analyst": {
@@ -539,13 +539,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 339,
+   "count": 340,
    "byType": {
     "skill": 20,
-    "discussion": 319
+    "discussion": 320
    },
-   "lastGrown": "2026-11-08",
-   "xp": 698,
+   "lastGrown": "2026-11-09",
+   "xp": 700,
    "level": 16
   },
   "bess-project-manager": {
@@ -660,13 +660,13 @@
    "level": 6
   },
   "bess-standards-korea": {
-   "count": 351,
+   "count": 352,
    "byType": {
-    "skill": 19,
+    "skill": 20,
     "discussion": 332
    },
    "lastGrown": "2026-11-08",
-   "xp": 721,
+   "xp": 724,
    "level": 16
   },
   "bess-standards-poland": {
@@ -690,13 +690,13 @@
    "level": 5
   },
   "bess-standards-uk": {
-   "count": 37,
+   "count": 38,
    "byType": {
-    "skill": 10,
+    "skill": 11,
     "discussion": 27
    },
-   "lastGrown": "2026-11-06",
-   "xp": 84,
+   "lastGrown": "2026-11-08",
+   "xp": 87,
    "level": 6
   },
   "bess-standards-usa": {
@@ -710,14 +710,14 @@
    "level": 7
   },
   "bess-structural-analyst": {
-   "count": 88,
+   "count": 89,
    "byType": {
-    "skill": 14,
+    "skill": 15,
     "discussion": 74
    },
    "lastGrown": "2026-11-08",
-   "xp": 190,
-   "level": 8
+   "xp": 193,
+   "level": 9
   },
   "bess-substation-engineer": {
    "count": 39,
@@ -730,13 +730,13 @@
    "level": 6
   },
   "bess-system-engineer": {
-   "count": 306,
+   "count": 307,
    "byType": {
     "skill": 18,
-    "discussion": 288
+    "discussion": 289
    },
-   "lastGrown": "2026-11-06",
-   "xp": 630,
+   "lastGrown": "2026-11-09",
+   "xp": 632,
    "level": 15
   },
   "bess-tax-accountant": {
@@ -843,10 +843,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-08-11",
-   "added": 31
-  },
   {
    "date": "2026-08-12",
    "added": 18
@@ -1201,17 +1197,21 @@
   },
   {
    "date": "2026-11-08",
-   "added": 61
+   "added": 64
+  },
+  {
+   "date": "2026-11-09",
+   "added": 1
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-11-08",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
-   "previousUpdated": "2026-11-07",
+   "previousUpdated": "2026-11-08",
    "gapDays": 1,
    "overdue": false
   }

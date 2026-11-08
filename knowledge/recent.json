@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "events": [
+  {
+   "id": "142c8c916da0",
+   "date": "2026-11-09",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-hydrogen-specialist",
+    "bess-om-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 글로벌 ESS 중앙계약시장 입찰 방식 변화에 따른 한국 BESS 조달 전략 및 비용 구조 최적화 방안 재평가 수행",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ff8587ae7d3a",
    "date": "2026-11-08",
@@ -244,6 +262,17 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "8ccc4ba95f35",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-standards-uk"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 40 개 반영, 스킬 3개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "87d1535509c7",
    "date": "2026-11-08",
    "type": "briefing",
@@ -387,6 +416,17 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "63766e180af7",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-structural-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 40 개 반영, 스킬 3개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "61a42073bd03",
    "date": "2026-11-08",
    "type": "skill",
@@ -526,6 +566,17 @@
     "bess-cost-analyst"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 38개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "360d89efacc4",
+   "date": "2026-11-08",
+   "type": "skill",
+   "agents": [
+    "bess-standards-korea"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 40 개 반영, 스킬 3개 갱신",
    "link": "",
    "source": "00_Skill_MD"
   },
@@ -3453,50 +3504,6 @@
    "title": "팀 토론 — 배터리 재활용 규제 개정에 따른 국내 BESS 조달 전략 및 비용 구조 최적화 방안 분석",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "b51625b7258d",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-fire-engineer"
-   ],
-   "title": "[배터리 안전노트 ⑥] ESS 화재, 반복된 사고가 남긴 교훈",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5yTUR6UkFWRWRGRF9fUU9LbURxSUlVUk52b1JMMFFJZVZ5Z2xtSXlkVVVuSXNBZDZiU0x5SEtjUXE5WGcwWEdvSXNnSU4wNHVUYWZjWUxWaFU0RmtZSzJqUERELTFLelFsLWFnb21LZUI?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "ac740ee8be14",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "삼성물산, 호주 파워텍 1억 호주달러에 인수…친환경 인력 확보",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBsWTJuRndoeVdIRmRLSENRZlkxSHNmVDhRQjlYcXpPUDkwbF9HWWpJd0dIbUNwSFdtRVR6WVpxM0NfcUVPbTNla3JEU0h2S2VJaHJBdEgyVjdKT3JrTGh1ZTFPVkJYT3E4M2Qw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "abdd8b74707a",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "“Electric jerry can:” Arena backs Aussie portable energy storage innovation that’s not qu...",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZV8xRDQ3Tkc2M2FZTW05MzdPZXRrV3pHZkxndGFaMml1T0hSWGJjMS1lcXVrV0ctYzhtVXVGdzY5NGtfLTlaTlZ1UHllSW5JVlRwZzE3Qzh0WkNySWxtb3FyMTBTNWFHNUhDMS00V0NYcFNST0pDaWc1Tzhzc256NTRXVmR6MDRmOEpjeVVLN3N6RnhpOHlib1dORm5OLW9WaWVnSnBHRTFENzItdVZKbll3TXFwb2d6QzR30gG7AUFVX3lxTE5lXzFENDdORzYzYVlNbTkzN09ldGtXekdmTGd0YVoyaXVPSFJYYmMxLWVxdWtXRy1jOG1VdUZ3Njk0a18tOVpOVnVQeWVJbklWVHBnMTdDOHRaQ3JJbG1vcXIxMFM1YUc1SEMxLTRXQ1hwU1JPSkNpZzVPOHNzbno1NFdWZHowNGY4SmN5VUs3c3pGeGk4eWJvV05Gbk4tb1ZpZWdKcEdFMUQ3Mi11VkpuWXdNcXBvZ3pDNHc?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "a60a7bac6e15",
-   "date": "2026-11-03",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "Obituary for James \"Jim\" Bess",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBReFZhN0xWa3R3T2FwSnE1OGpfVjY4N0RqNE9jRUJ2V3VUV3RKYlI4Yk5nWEZDUVlkR0E4X2tkbHVqWnY0NE1nanFfTUUteldBcVZLN18xWHBncGlHR0lWWkFVMA?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
