@@ -127,6 +127,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c262076df566",
+   "name": "팀 토론 — BESS 프로젝트의 일본 세금 최적화 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-09",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-b6d082f29ab0",
    "name": "Jupiter Power, 텍사스·미시간 1.5GW 배터리 저장 프로젝트",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-b418345c7dc7",
-   "name": "호주, 1GW 데이터센터·5,000MWh 배터리 저장장치 EPBC법 승인",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7335,6 +7335,46 @@
   {
    "source": "BAT-001",
    "target": "K-c3f3c832d6dd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-c262076df566",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c262076df566",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-c262076df566",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c262076df566",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-c262076df566",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-c262076df566",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c262076df566",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-c262076df566",
    "type": "knowledge"
   },
   {
@@ -14066,11 +14106,6 @@
    "source": "MAR-001",
    "target": "K-b70bfa5e094c",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-b418345c7dc7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14634,7 +14669,7 @@
    {
     "date": "2026-11-09",
     "knowledge": 800,
-    "events_total": 4172
+    "events_total": 4173
    }
   ]
  }
