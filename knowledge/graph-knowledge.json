@@ -316,6 +316,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3514d84bebb8",
+   "name": "팀 토론 — 충방전시험 프로토콜 최적화를 통한 시스템 신뢰성 향상 방안 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-30d3b953eb29",
    "name": "데이터센터·산업자동화 수요로 본 케이블 컨딧 시스템 시장 전망(2035)",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-b70bfa5e094c",
-   "name": "美 ESS 설치 250배 늘었지만 고장률 97% 감소…한국도 91% 줄어",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7545,6 +7545,46 @@
   {
    "source": "SYS-001",
    "target": "K-383d56f08476",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3514d84bebb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3514d84bebb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-3514d84bebb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-3514d84bebb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-3514d84bebb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-3514d84bebb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-3514d84bebb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3514d84bebb8",
    "type": "knowledge"
   },
   {
@@ -14101,11 +14141,6 @@
    "source": "STD-001",
    "target": "K-b894f6f2c1dc",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-b70bfa5e094c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14669,7 +14704,7 @@
    {
     "date": "2026-11-09",
     "knowledge": 800,
-    "events_total": 4173
+    "events_total": 4174
    }
   ]
  }
