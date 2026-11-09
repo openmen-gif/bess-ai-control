@@ -208,6 +208,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-849fc426dc26",
+   "name": "팀 토론 — 유럽 BESS 프로젝트 인허가 전략 수립 및 주요 규제 프레",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-09",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-7e548729735c",
    "name": "LG엔솔 빠진 제3차 ESS 수주전…삼성SDI·SK온 맞대결",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-bb4445c26b9e",
-   "name": "미국 에너지저장 가격, 2030년까지 하락 전망…무역 리스크·공급 격차가",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7450,6 +7450,46 @@
   {
    "source": "CUS-001",
    "target": "K-85730b91ff98",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-849fc426dc26",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-849fc426dc26",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-849fc426dc26",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-849fc426dc26",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-849fc426dc26",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-849fc426dc26",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-849fc426dc26",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-849fc426dc26",
    "type": "knowledge"
   },
   {
@@ -14166,11 +14206,6 @@
    "source": "MAR-001",
    "target": "K-c25dbf10b919",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-bb4445c26b9e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14734,7 +14769,7 @@
    {
     "date": "2026-11-09",
     "knowledge": 800,
-    "events_total": 4175
+    "events_total": 4176
    }
   ]
  }
