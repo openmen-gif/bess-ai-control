@@ -406,6 +406,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-611b5cac802e",
+   "name": "팀 토론 — 독일 442MWh BESS 프로젝트 파트너십 확대 동향 분석",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-601077303c7b",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-136aaa563cb8",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-29",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7460,6 +7460,46 @@
   {
    "source": "FIR-001",
    "target": "K-68f174b64b23",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-611b5cac802e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-611b5cac802e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-611b5cac802e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-611b5cac802e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-611b5cac802e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-611b5cac802e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-611b5cac802e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-611b5cac802e",
    "type": "knowledge"
   },
   {
@@ -13906,11 +13946,6 @@
    "source": "EMC-001",
    "target": "K-16bfd69cb807",
    "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-136aaa563cb8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14479,7 +14514,7 @@
    {
     "date": "2026-11-10",
     "knowledge": 800,
-    "events_total": 4261
+    "events_total": 4262
    }
   ]
  }
