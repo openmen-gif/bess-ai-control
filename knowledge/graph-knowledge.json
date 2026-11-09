@@ -91,6 +91,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-d25886b0e86a",
+   "name": "팀 토론 — 통합 하이브리드 시스템 최적화 설계 — PV, Wind, H",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-09",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-caea9dd4171e",
    "name": "뉴스코틀랜드, 뉴욕 청정에너지 거센 반대 여론의 축소판",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-27",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-adda25ee361c",
-   "name": "팀 토론 — 최신 배터리 공급망 안정화 동향 분석 및 한국 전력시장 내 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7280,6 +7280,46 @@
   {
    "source": "MAR-001",
    "target": "K-d9a59bc07a66",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d25886b0e86a",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-d25886b0e86a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-d25886b0e86a",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-d25886b0e86a",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d25886b0e86a",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-d25886b0e86a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d25886b0e86a",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-d25886b0e86a",
    "type": "knowledge"
   },
   {
@@ -14031,46 +14071,6 @@
    "source": "MAR-001",
    "target": "K-b418345c7dc7",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-adda25ee361c",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-adda25ee361c",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCM-001",
-   "target": "K-adda25ee361c",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYB-001",
-   "target": "K-adda25ee361c",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-adda25ee361c",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-adda25ee361c",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-adda25ee361c",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-adda25ee361c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14634,7 +14634,7 @@
    {
     "date": "2026-11-09",
     "knowledge": 800,
-    "events_total": 4171
+    "events_total": 4172
    }
   ]
  }
