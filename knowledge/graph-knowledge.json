@@ -127,6 +127,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-ab9049fd9e18",
+   "name": "팀 토론 — MLOps 파이프라인 최적화를 통한 실시간 BMS/EMS 성",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-09",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-9a2820e4fd1b",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ac500083496e",
-   "name": "Sungrow PowerTitan 3.0, 대형 화재시험서 열폭주 확산 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7300,6 +7300,46 @@
   {
    "source": "MAR-001",
    "target": "K-b6d082f29ab0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ab9049fd9e18",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ab9049fd9e18",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-ab9049fd9e18",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-ab9049fd9e18",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-ab9049fd9e18",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-ab9049fd9e18",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ab9049fd9e18",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-ab9049fd9e18",
    "type": "knowledge"
   },
   {
@@ -14031,11 +14071,6 @@
    "source": "SYS-001",
    "target": "K-adda25ee361c",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-ac500083496e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14599,7 +14634,7 @@
    {
     "date": "2026-11-09",
     "knowledge": 800,
-    "events_total": 4170
+    "events_total": 4171
    }
   ]
  }
