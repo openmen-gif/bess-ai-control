@@ -2,6 +2,24 @@
  "updated": "2026-11-10",
  "events": [
   {
+   "id": "28bffd73e227",
+   "date": "2026-11-10",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cfd-analyst",
+    "bess-cost-analyst",
+    "bess-marketer",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-sales-manager"
+   ],
+   "title": "팀 토론 — BESS 관련 최신 지식 업데이트 및 팀 학습 자료 공유 시스템 구축 제안",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "090837ab04b3",
    "date": "2026-11-10",
    "type": "discussion",
@@ -3525,17 +3543,6 @@
    ],
    "title": "AI 데이터센터 전력난 해법으로 직류배전 부상",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBWcy1nbFNXMXFwRXdqYWpmTmZZbFpsenRvckNaTkV5LWNGU0I5bE93emVlaHFFRzNIOVJuRnZncnRkR091dFVqMUZLeHhGaVlxVEMyakEyeXVhX2RfMlg2cXg5TmwwWl83S3VWQXdR?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "aab63191c67a",
-   "date": "2026-11-04",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "LG엔솔, 3분기 영업익 7560억원…실적 반등 요인은?",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5mUzdHZ2R2QUJkc09HbVJJc3FnZ3BqVWE2UnVyYm1STEd0dERQeGpJOVZNQXNZT1E5UklxbGFCYl85dDRGN1dCMi1ITGNDaWd1aVlqaDc5eVd4eVBabS1rQXE0TGN4b1dOR19PQWZFVQ?oc=5",
    "source": "구글뉴스"
   }
  ]
