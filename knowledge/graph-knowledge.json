@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-090837ab04b3",
+   "name": "팀 토론 — 공급망 안정성 강화를 위한 다각화 전략 및 대체 공급처 검증",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f3a15deb69bf",
    "name": "팀 토론 — 예측모델·최적화 영역 1차 분석 — bess-aiml-eng",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-27",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c3793bce72c3",
-   "name": "삼성SDI, 美 ESS 시장 확대… 각형 ESS솔루션 1GWh 추가 공급",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-27",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-090837ab04b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-090837ab04b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-090837ab04b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-090837ab04b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-090837ab04b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-090837ab04b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-090837ab04b3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-090837ab04b3",
+   "type": "knowledge"
+  },
   {
    "source": "AIM-001",
    "target": "K-f3a15deb69bf",
@@ -14236,15 +14276,10 @@
    "source": "BAT-001",
    "target": "K-c3c4d6b058ca",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-c3793bce72c3",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "history": [
    {
     "date": "2026-07-20",
@@ -14805,6 +14840,11 @@
     "date": "2026-11-09",
     "knowledge": 800,
     "events_total": 4177
+   },
+   {
+    "date": "2026-11-10",
+    "knowledge": 800,
+    "events_total": 4178
    }
   ]
  }

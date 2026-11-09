@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "totals": {
-  "all": 4177,
+  "all": 4178,
   "briefing": 2200,
   "skill": 1070,
-  "discussion": 907,
+  "discussion": 908,
   "activity": 0
  },
  "perAgent": {
@@ -29,25 +29,25 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 1129,
+   "count": 1130,
    "byType": {
     "skill": 21,
-    "discussion": 498,
+    "discussion": 499,
     "briefing": 610
    },
-   "lastGrown": "2026-11-09",
-   "xp": 1669,
+   "lastGrown": "2026-11-10",
+   "xp": 1671,
    "level": 24
   },
   "bess-business-dev": {
-   "count": 276,
+   "count": 277,
    "byType": {
     "skill": 20,
-    "discussion": 118,
+    "discussion": 119,
     "briefing": 138
    },
-   "lastGrown": "2026-11-09",
-   "xp": 434,
+   "lastGrown": "2026-11-10",
+   "xp": 436,
    "level": 13
   },
   "bess-cable-engineer": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 427,
+   "count": 428,
    "byType": {
     "skill": 22,
-    "discussion": 405
+    "discussion": 406
    },
-   "lastGrown": "2026-11-09",
-   "xp": 876,
+   "lastGrown": "2026-11-10",
+   "xp": 878,
    "level": 18
   },
   "bess-customs-tariff": {
@@ -143,13 +143,13 @@
    "level": 10
   },
   "bess-data-analyst": {
-   "count": 126,
+   "count": 127,
    "byType": {
     "skill": 16,
-    "discussion": 110
+    "discussion": 111
    },
-   "lastGrown": "2026-11-09",
-   "xp": 268,
+   "lastGrown": "2026-11-10",
+   "xp": 270,
    "level": 10
   },
   "bess-ebop-engineer": {
@@ -183,13 +183,13 @@
    "level": 7
   },
   "bess-env-engineer": {
-   "count": 103,
+   "count": 104,
    "byType": {
     "skill": 14,
-    "discussion": 89
+    "discussion": 90
    },
-   "lastGrown": "2026-11-09",
-   "xp": 220,
+   "lastGrown": "2026-11-10",
+   "xp": 222,
    "level": 9
   },
   "bess-epc-bom": {
@@ -395,14 +395,14 @@
    "level": 6
   },
   "bess-marketer": {
-   "count": 677,
+   "count": 678,
    "byType": {
     "skill": 18,
-    "discussion": 129,
+    "discussion": 130,
     "briefing": 530
    },
-   "lastGrown": "2026-11-09",
-   "xp": 842,
+   "lastGrown": "2026-11-10",
+   "xp": 844,
    "level": 17
   },
   "bess-mlops-engineer": {
@@ -488,14 +488,14 @@
    "level": 5
   },
   "bess-power-market-expert": {
-   "count": 177,
+   "count": 178,
    "byType": {
     "skill": 12,
-    "discussion": 130,
+    "discussion": 131,
     "briefing": 35
    },
-   "lastGrown": "2026-11-09",
-   "xp": 331,
+   "lastGrown": "2026-11-10",
+   "xp": 333,
    "level": 11
   },
   "bess-power-system-analyst": {
@@ -539,13 +539,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 348,
+   "count": 349,
    "byType": {
     "skill": 21,
-    "discussion": 327
+    "discussion": 328
    },
-   "lastGrown": "2026-11-09",
-   "xp": 717,
+   "lastGrown": "2026-11-10",
+   "xp": 719,
    "level": 16
   },
   "bess-project-manager": {
@@ -843,10 +843,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-08-12",
-   "added": 18
-  },
   {
    "date": "2026-08-13",
    "added": 51
@@ -1202,17 +1198,21 @@
   {
    "date": "2026-11-09",
    "added": 48
+  },
+  {
+   "date": "2026-11-10",
+   "added": 1
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-11-09",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-11-09",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }
