@@ -55,6 +55,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-e8491574095b",
+   "name": "팀 토론 — BESS·EPC 영역 1차 분석 — bess-standard",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e780410ab6a7",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-29",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-16c102eead5e",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-29",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7230,6 +7230,46 @@
   {
    "source": "COM-003",
    "target": "K-f2c5d2191c47",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e8491574095b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-e8491574095b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e8491574095b",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-e8491574095b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-e8491574095b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e8491574095b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-e8491574095b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e8491574095b",
    "type": "knowledge"
   },
   {
@@ -13976,11 +14016,6 @@
    "source": "HRM-001",
    "target": "K-1e2163941e4b",
    "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-16c102eead5e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14549,7 +14584,7 @@
    {
     "date": "2026-11-10",
     "knowledge": 800,
-    "events_total": 4263
+    "events_total": 4264
    }
   ]
  }
