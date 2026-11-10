@@ -505,6 +505,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-46c4c74a41b5",
+   "name": "팀 토론 — 공급망 안정성 강화를 위한 구체적인 다각화 전략 및 대체 공",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-40bb494d43e7",
    "name": "태양광과 히트펌프 함께 쓰면 난방비 얼마나 줄어들까, EWE 주택 에너지",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-29",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-16bfd69cb807",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7550,6 +7550,46 @@
   {
    "source": "BAT-001",
    "target": "K-49b66c3a2308",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-46c4c74a41b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-46c4c74a41b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-46c4c74a41b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-46c4c74a41b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-46c4c74a41b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-46c4c74a41b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-46c4c74a41b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-46c4c74a41b5",
    "type": "knowledge"
   },
   {
@@ -13941,11 +13981,6 @@
    "source": "QAC-001",
    "target": "K-16c102eead5e",
    "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-16bfd69cb807",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14514,7 +14549,7 @@
    {
     "date": "2026-11-10",
     "knowledge": 800,
-    "events_total": 4262
+    "events_total": 4263
    }
   ]
  }
