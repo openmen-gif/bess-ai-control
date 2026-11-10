@@ -163,6 +163,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d1df0315bcc8",
+   "name": "팀 토론 — 관세 및 HS 코드 분석을 통한 BESS 수출입 비용 최적화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-cbdfaf0ca09d",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1e2163941e4b",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-29",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7360,6 +7360,46 @@
   {
    "source": "PCS-001",
    "target": "K-d2bd6c23a596",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d1df0315bcc8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d1df0315bcc8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-d1df0315bcc8",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-d1df0315bcc8",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-d1df0315bcc8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d1df0315bcc8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-d1df0315bcc8",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-d1df0315bcc8",
    "type": "knowledge"
   },
   {
@@ -14011,11 +14051,6 @@
    "source": "EBP-001",
    "target": "K-1e818dffe538",
    "type": "knowledge"
-  },
-  {
-   "source": "HRM-001",
-   "target": "K-1e2163941e4b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14584,7 +14619,7 @@
    {
     "date": "2026-11-10",
     "knowledge": 800,
-    "events_total": 4264
+    "events_total": 4265
    }
   ]
  }
