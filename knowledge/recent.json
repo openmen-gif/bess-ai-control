@@ -2,6 +2,24 @@
  "updated": "2026-11-11",
  "events": [
   {
+   "id": "6716a7b0a3b0",
+   "date": "2026-11-11",
+   "type": "discussion",
+   "agents": [
+    "bess-cfd-analyst",
+    "bess-cost-analyst",
+    "bess-facility-manager",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-scheduler",
+    "bess-substation-engineer",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 설비 가용률 향상을 위한 예방정비 최적화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "41ed78212d36",
    "date": "2026-11-11",
    "type": "discussion",
@@ -3530,17 +3548,6 @@
    ],
    "title": "RES, 미국 BESS 준공 지연의 주범으로 시스템 통합·규제 준수 지목",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1WSkZkWFYtOFpFcmZTVEM0aXpuc3NkelJYTGh2SUVMMmQzRWpOeDFsbThhSU1KbTFRQm5DMjdsYjQ5TmhFeHRRYkVWQ0NpTW15dFo0SmUzZ1YxWFlHYzQydUVHVEk0cWdsdmtid3l3?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "fc5b86346652",
-   "date": "2026-11-05",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "이솔루션, 한전 ‘공유형 ESS 2차 사업’ 사용전검사 통과… 상업 운전 준비",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EV29zSkl2cW01TDRueGxuWFI0RTBGRS1aNkRuRW1iUnRibG5DRklZWXlXYk1HZTh0dGtYOGUxei1rRG14MTFSWk1wcE1NckI0LVZoamhtVmRSajRRYTh4eFhIUndQYlNxbG9oOW1vWk8?oc=5",
    "source": "구글뉴스"
   }
  ]

@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-6716a7b0a3b0",
+   "name": "팀 토론 — 설비 가용률 향상을 위한 예방정비 최적화 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-41ed78212d36",
    "name": "팀 토론 — 폴란드 BESS 프로젝트 인허가 절차 심층 분석 및 현지 표",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-29",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-2c2cad006fdf",
-   "name": "팀 토론 — 초기 투자 비용 증가와 운영 복잡성 사이의 균형 분석 및 지",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CFD-001",
+   "target": "K-6716a7b0a3b0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6716a7b0a3b0",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-6716a7b0a3b0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-6716a7b0a3b0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-6716a7b0a3b0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-6716a7b0a3b0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-6716a7b0a3b0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6716a7b0a3b0",
+   "type": "knowledge"
+  },
   {
    "source": "ENV-001",
    "target": "K-41ed78212d36",
@@ -14151,46 +14191,6 @@
    "source": "TRL-001",
    "target": "K-3497c5dbbc86",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-2c2cad006fdf",
-   "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-2c2cad006fdf",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-2c2cad006fdf",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMT-001",
-   "target": "K-2c2cad006fdf",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-2c2cad006fdf",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-2c2cad006fdf",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-2c2cad006fdf",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-2c2cad006fdf",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14764,7 +14764,7 @@
    {
     "date": "2026-11-11",
     "knowledge": 800,
-    "events_total": 4270
+    "events_total": 4271
    }
   ]
  }
