@@ -613,6 +613,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2efa98b49d19",
+   "name": "팀 토론 — 장기적인 운영 효율성 향상을 위한 O&M 계약 최적화 전략 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2bfb191066ca",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-29",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-226d27b7acfd",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-29",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7750,6 +7750,46 @@
   {
    "source": "STE-001",
    "target": "K-2f1e49d49fb7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2efa98b49d19",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-2efa98b49d19",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-2efa98b49d19",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2efa98b49d19",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-2efa98b49d19",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-2efa98b49d19",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2efa98b49d19",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-2efa98b49d19",
    "type": "knowledge"
   },
   {
@@ -14081,11 +14121,6 @@
    "source": "CON-001",
    "target": "K-23cfd4feadba",
    "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-226d27b7acfd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14654,7 +14689,7 @@
    {
     "date": "2026-11-10",
     "knowledge": 800,
-    "events_total": 4266
+    "events_total": 4267
    }
   ]
  }
