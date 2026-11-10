@@ -640,6 +640,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2bc4f20046cc",
+   "name": "팀 토론 — 내부 통제 체계 강화를 통한 원가 관리 최적화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-10",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-28bffd73e227",
    "name": "팀 토론 — BESS 관련 최신 지식 업데이트 및 팀 학습 자료 공유 시",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-287182a93867",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7835,6 +7835,46 @@
   {
    "source": "MAR-001",
    "target": "K-2bfb191066ca",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2bc4f20046cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-2bc4f20046cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2bc4f20046cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-2bc4f20046cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-2bc4f20046cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-2bc4f20046cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2bc4f20046cc",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-2bc4f20046cc",
    "type": "knowledge"
   },
   {
@@ -14151,15 +14191,10 @@
    "source": "STD-001",
    "target": "K-2bc66d172642",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-287182a93867",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "history": [
    {
     "date": "2026-07-20",
@@ -14725,6 +14760,11 @@
     "date": "2026-11-10",
     "knowledge": 800,
     "events_total": 4268
+   },
+   {
+    "date": "2026-11-11",
+    "knowledge": 800,
+    "events_total": 4269
    }
   ]
  }
