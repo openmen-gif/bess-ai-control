@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-41ed78212d36",
+   "name": "팀 토론 — 폴란드 BESS 프로젝트 인허가 절차 심층 분석 및 현지 표",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fd6956ac64b1",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-29",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2bc66d172642",
-   "name": "팀 토론 — KPX 용량시장 진입 전략 분석 및 수익 극대화 방안 모색",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-29",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "ENV-001",
+   "target": "K-41ed78212d36",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-41ed78212d36",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-41ed78212d36",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-41ed78212d36",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-41ed78212d36",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-41ed78212d36",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-41ed78212d36",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-41ed78212d36",
+   "type": "knowledge"
+  },
   {
    "source": "AIM-001",
    "target": "K-fd6956ac64b1",
@@ -14151,46 +14191,6 @@
    "source": "SYS-001",
    "target": "K-2c2cad006fdf",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-2bc66d172642",
-   "type": "knowledge"
-  },
-  {
-   "source": "CBK-001",
-   "target": "K-2bc66d172642",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-2bc66d172642",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-2bc66d172642",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-2bc66d172642",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-2bc66d172642",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-2bc66d172642",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-2bc66d172642",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14764,7 +14764,7 @@
    {
     "date": "2026-11-11",
     "knowledge": 800,
-    "events_total": 4269
+    "events_total": 4270
    }
   ]
  }
