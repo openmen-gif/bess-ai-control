@@ -90,7 +90,7 @@ footer a { text-decoration:none; }
         <p>본부(<code>CTO</code>·<code>CFO</code>·<code>COO</code>)로 거를 수 있어요. 비우면 82명 전체예요.</p>
         <div class="label">입력</div>
         <pre><code>{ "division": "CTO" }</code></pre>
-        <div class="label">실제 응답(앞부분)</div>
+        <div class="label">실제 응답(발췌 — 긴 설명은 …로 줄임)</div>
         <pre class="out"><code>BESS EPC 전문가 23명 (CTO)
 - CTO-100 · bess-agent-framework (기술본부 (CTO 산하)): BESS EPC AI 에이전트 설계 프레임워크. v6.1 가이드라인 준수
 - AIM-001 · bess-aiml-engineer (기술본부 (CTO 산하)): AI/ML 예측모델, 최적화 알고리즘, SOC/SOH 예측, …
@@ -129,7 +129,7 @@ footer a { text-decoration:none; }
     <div class="flow" aria-label="명부 연계 흐름">
       <div class="node"><span class="t">원본</span><b>전문가 정의 문서 82개</b><small>00_Skill_MD/bess-*.md</small></div>
       <span class="arrow" aria-hidden="true">→</span>
-      <div class="node"><span class="t">매일 07:30</span><b>자동 재생성</b><small>80건 미만·빈 필드면 멈추고 기존 명부 유지</small></div>
+      <div class="node"><span class="t">매일 07:30</span><b>자동 재생성</b><small>80건 미만·빈 필드면 멈추고 기존 명부 유지 + 알림</small></div>
       <span class="arrow" aria-hidden="true">→</span>
       <div class="node hl"><span class="t">명부</span><b>agents.json</b><small>전문가 1명 = 필드 9개</small></div>
     </div>
@@ -138,7 +138,7 @@ footer a { text-decoration:none; }
       <li><b>대시보드</b>카드·질문 매칭·3D 지도<small>페이지를 열 때</small></li>
       <li><b>llms.txt · llms-full.txt</b>AI 검색엔진용 요약<small>명부가 바뀌면 같이 재생성</small></li>
       <li><b>MCP list_experts</b>외부 AI 에이전트<small>요청 시(10분 캐시)</small></li>
-      <li><b>AI 상담 프롬프트</b>채팅·get_expert_definition<small>수동 배포 시</small></li>
+      <li><b>AI 상담 프롬프트</b>채팅·ask_expert·get_expert_definition<small>수동 배포 시</small></li>
       <li><b>지식 수집기</b>지식을 전문가 분야로 배분<small>매일 07:30</small></li>
     </ul>
     <p style="margin-top:10px">필드 9개의 뜻과 실제 예시는 <a href="/">컨트롤 센터</a> 왼쪽 메뉴의 <b>소개 · 문의</b>에서 볼 수 있어요.</p>
