@@ -640,6 +640,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-330fec497449",
+   "name": "팀 토론 — 프로젝트 관리 계획 재검토 및 효율성 향상 워크숍 개최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-326006fa79e9",
    "name": "캘리포니아 부족 소방서, 솔라 마이크로그리드에 바나듐 흐름전지 추가",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-3b75619277ca",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7695,6 +7695,46 @@
   {
    "source": "BAT-001",
    "target": "K-33318384b250",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-330fec497449",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-330fec497449",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-330fec497449",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-330fec497449",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-330fec497449",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-330fec497449",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-330fec497449",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-330fec497449",
    "type": "knowledge"
   },
   {
@@ -13866,11 +13906,6 @@
    "source": "STD-003",
    "target": "K-3e69459b14b6",
    "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-3b75619277ca",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14444,7 +14479,7 @@
    {
     "date": "2026-11-11",
     "knowledge": 800,
-    "events_total": 4353
+    "events_total": 4354
    }
   ]
  }
