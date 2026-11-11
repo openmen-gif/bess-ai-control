@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-f8ffdaabb4ce",
+   "name": "팀 토론 — BESS EPC 영국(UK) 규격 준수 전략 수립 및 인허가",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f7cc346b57dd",
    "name": "에너지저장 확대 속도, 정책 목표를 앞질러",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-45d93da80a44",
-   "name": "Rock Island County 배터리 저장시설 제안, 개발사 주민 공",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7220,6 +7220,46 @@
   {
    "source": "ENV-001",
    "target": "K-f97095c6f2f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-f8ffdaabb4ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-f8ffdaabb4ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-f8ffdaabb4ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-f8ffdaabb4ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-f8ffdaabb4ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-f8ffdaabb4ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-f8ffdaabb4ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-f8ffdaabb4ce",
    "type": "knowledge"
   },
   {
@@ -13971,11 +14011,6 @@
    "source": "BAT-001",
    "target": "K-48afb314b80a",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-45d93da80a44",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14549,7 +14584,7 @@
    {
     "date": "2026-11-11",
     "knowledge": 800,
-    "events_total": 4356
+    "events_total": 4357
    }
   ]
  }
