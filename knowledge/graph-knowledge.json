@@ -136,6 +136,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-e5496668c9cb",
+   "name": "팀 토론 — 클라우드 기반 BESS 모니터링 시스템 최적화 및 자동화 C",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-d9fd971787eb",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-49a54ab76051",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7310,6 +7310,46 @@
   {
    "source": "IPP-001",
    "target": "K-e782d2b30db1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e5496668c9cb",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e5496668c9cb",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-e5496668c9cb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-e5496668c9cb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-e5496668c9cb",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-e5496668c9cb",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e5496668c9cb",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-e5496668c9cb",
    "type": "knowledge"
   },
   {
@@ -14076,11 +14116,6 @@
    "source": "MKT-001",
    "target": "K-4a2532171887",
    "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-49a54ab76051",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14654,7 +14689,7 @@
    {
     "date": "2026-11-11",
     "knowledge": 800,
-    "events_total": 4359
+    "events_total": 4360
    }
   ]
  }
