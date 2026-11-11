@@ -469,6 +469,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-5dfb28e126a0",
+   "name": "팀 토론 — 개 시장 표준 비교 분석 완료 및 우리 사업 맞춤형 적용 전",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5b6e1b454763",
    "name": "442 MWh 규모 Smareg 13 BESS 프로젝트, 독일 바이에른 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-3b4b0cf8c694",
-   "name": "포르투갈, 대규모 BESS 그리드포밍 의무화 및 1GW 입찰 공고",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7530,6 +7530,46 @@
   {
    "source": "MAR-001",
    "target": "K-62a6ffa120e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5dfb28e126a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-5dfb28e126a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-5dfb28e126a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-5dfb28e126a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-5dfb28e126a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5dfb28e126a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-5dfb28e126a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-5dfb28e126a0",
    "type": "knowledge"
   },
   {
@@ -13831,11 +13871,6 @@
    "source": "SYS-001",
    "target": "K-3b75619277ca",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-3b4b0cf8c694",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14409,7 +14444,7 @@
    {
     "date": "2026-11-11",
     "knowledge": 800,
-    "events_total": 4352
+    "events_total": 4353
    }
   ]
  }
