@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3a9aa8c7144f",
+   "name": "팀 토론 — EU/RO/PL의 ENTSO-E RfG 개정 동향 분석 및 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ffc99ea07cca",
    "name": "[GAM]AI '전력 공룡' 부상 NEE ① 배터리 저장장치 수주 폭발,",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-54b314a4eb5d",
-   "name": "BW ESS, 프랑스 진출 및 유럽 최대 BESS 금융 조달",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7280,6 +7280,46 @@
   {
    "source": "TPS-001",
    "target": "K-c035f5301633",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-3a9aa8c7144f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-3a9aa8c7144f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3a9aa8c7144f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-3a9aa8c7144f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-3a9aa8c7144f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-3a9aa8c7144f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-3a9aa8c7144f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3a9aa8c7144f",
    "type": "knowledge"
   },
   {
@@ -14181,11 +14221,6 @@
    "source": "CYB-001",
    "target": "K-56ccf1b4cf54",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-54b314a4eb5d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14764,7 +14799,7 @@
    {
     "date": "2026-11-12",
     "knowledge": 800,
-    "events_total": 4362
+    "events_total": 4363
    }
   ]
  }
