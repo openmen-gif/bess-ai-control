@@ -478,6 +478,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-61ad04abbe72",
+   "name": "팀 토론 — 환경적 지속가능성 확보를 위한 구체적인 배터리 폐기물 관리 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5dfb28e126a0",
    "name": "팀 토론 — 개 시장 표준 비교 분석 완료 및 우리 사업 맞춤형 적용 전",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-49279f92dd43",
-   "name": "그리드 포밍 배터리 기술의 실증 검증",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7570,6 +7570,46 @@
   {
    "source": "MAR-001",
    "target": "K-62a6ffa120e1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-61ad04abbe72",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-61ad04abbe72",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-61ad04abbe72",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-61ad04abbe72",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-61ad04abbe72",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-61ad04abbe72",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-61ad04abbe72",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-61ad04abbe72",
    "type": "knowledge"
   },
   {
@@ -14041,11 +14081,6 @@
    "source": "AUD-001",
    "target": "K-49a54ab76051",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-49279f92dd43",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14619,7 +14654,7 @@
    {
     "date": "2026-11-11",
     "knowledge": 800,
-    "events_total": 4358
+    "events_total": 4359
    }
   ]
  }
