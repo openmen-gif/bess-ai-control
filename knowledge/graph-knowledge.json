@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-dc99560c911d",
+   "name": "팀 토론 — 지식 공유 플랫폼 구축 및 팀 학습 프로그램 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c035f5301633",
    "name": "팀 토론 — 변전소 최적화 설계를 위한 POI 기반 GIS/AIS 통합 ",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4d0a45fd7fc7",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-dc99560c911d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-dc99560c911d",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-dc99560c911d",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-dc99560c911d",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-dc99560c911d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-dc99560c911d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-dc99560c911d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-dc99560c911d",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-c035f5301633",
@@ -14146,11 +14186,6 @@
    "source": "BAT-001",
    "target": "K-54b314a4eb5d",
    "type": "knowledge"
-  },
-  {
-   "source": "FAC-001",
-   "target": "K-4d0a45fd7fc7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14729,7 +14764,7 @@
    {
     "date": "2026-11-12",
     "knowledge": 800,
-    "events_total": 4361
+    "events_total": 4362
    }
   ]
  }
