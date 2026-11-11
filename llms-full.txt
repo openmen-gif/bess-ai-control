@@ -144,7 +144,7 @@
 ### bess-customs-tariff (CUS-001)
 - 부서: 재무본부 (CFO 산하)
 - 설명: 관세, HS코드(배터리 8507.60/PCS 8504.40/변압기 8504.21~23), FTA 원산지(KORUS·KOREU·CPTPP·RCEP), 반덤핑·상계관세(AD/CVD), Section 301, Tariff Engineering, 통관·HS 분류 사전 심사
-- 정의: BESS 핵심 부품(배터리 셀·모듈·PCS·변압기·변환장치)의 국가별 관세·HS 코드 분류·FTA 원산지·반덤핑(AD/CVD)·Section 301 영향을 분석하고, CAPEX의 관세 비중을 최소화하는 통관 구조를 설계한다.
+- 정의: BESS CAPEX의 60~70%를 차지하는 수입 부품(배터리·PCS·변압기)의 HS 코드 분류, 국가별 관세율, FTA 원산지 검증, 반덤핑·상계관세 영향을 분석하여 통관 전략·관세 비용을 최적화한다.
 
 ### bess-esg-finance (ESG-001)
 - 부서: 재무본부 (CFO 산하)
@@ -169,12 +169,12 @@
 ### bess-tax-japan (JTX-001)
 - 부서: 재무본부 (CFO 산하)
 - 설명: 일본 税理士(Zeirishi) 실무. 法人税法(법인세법)·消費税法(소비세법)·地方税法(지방세법)·租税特別措置法(조세특별조치법), 償却資産税, 法人住民税(법인주민세), 事業税(사업세), 連結納税(연결납세)·グループ通算制度(통산제도), BESS FIT/FIP 세무, JCFC 외국자회사 합산과세, 国税庁(NTA) 세무조사
-- 정의: 일본 시장 BESS 사업의 法人税(법인세)·消費税(소비세)·地方税(지방세)·租税特別措置(조세특별조치) 적용을 일본 税理士 관점에서 분석·신고·소명하고, 国税庁(NTA) 세무조사 1선 대응한다.
+- 정의: 일본 시장 BESS 사업의 法人税·消費税·地方税·租税特別措置·償却資産税 적용을 税理士 관점에서 분석·신고·소명하고, JCFC(외국자회사 합산과세) 영향과 国税庁 세무조사 1선 대응을 수행한다.
 
 ### bess-tax-korea (KTX-001)
 - 부서: 재무본부 (CFO 산하)
 - 설명: 한국 세무사 실무. 법인세법, 부가가치세법, 조세특례제한법(조특법), 신성장원천기술 세액공제, 시설투자세액공제, 지방세(취득세·등록면허세), 신재생E·전력 산업 세제, 국세청(NTS) 세무조사 대응
-- 정의: 한국 시장 BESS 사업의 법인세·부가세·지방세·조세특례 적용을 한국 세무사 관점에서 분석·신고·소명하고, 국세청 세무조사 1선 대응을 수행한다.
+- 정의: 한국 시장 BESS 사업의 법인세·부가세·지방세·조세특례(신성장원천기술·시설투자 세액공제) 적용을 한국 세무사 관점에서 분석·신고·소명하고, 국세청(NTS) 세무조사 1선 대응한다.
 
 ### bess-legal-expert (LEG-001)
 - 부서: 재무본부 (CFO 산하)
@@ -224,12 +224,12 @@
 ### bess-tax-incentive (TIN-001)
 - 부서: 재무본부 (CFO 산하)
 - 설명: BESS 글로벌 세제 혜택 매핑·신청 실무. US IRA Section 48 ITC/45X AMPC/Domestic Content Bonus/Energy Community Bonus, KR 조세특례제한법(신성장원천기술·시설투자), JP 環境関連投資促進税制(환경관련투자촉진세제), EU Innovation Fund·CBAM, UK FYA, AU ARENA, Tax Equity Financing
-- 정의: 각국이 BESS 보급을 위해 도입한 세제 혜택(US IRA, KR 조특법, JP 환경세제, EU·UK·AU 인센티브)을 BESS 사업 시나리오별로 매핑하고, 적격성 평가·신청 실무·Tax Equity Financing 구조를 설계한다.
+- 정의: 각국 BESS 세제 혜택(US IRA ITC 30~50%, KR 조특법, JP 환경·탄소중립세제, EU·UK·AU 인센티브)을 사업 시나리오별로 매핑하고, 적격성 평가·신청서 작성·Tax Equity Financing 구조 설계까지 수행한다.
 
 ### bess-transfer-pricing (TPS-001)
 - 부서: 재무본부 (CFO 산하)
 - 설명: 이전가격(TP), OECD TPG, BEPS Action 8-10·13, APA, CbCR, Master File·Local File, Pillar 2 GloBE(IIR/UTPR/QDMTT), TNMM·CUP·RPM·CPM, BESS 다국적 EPC 그룹사 거래 가격 설계
-- 정의: BESS 다국적 EPC 그룹사 간 거래(셀·모듈·시스템 단계, 본사 ↔ 현지법인 ↔ 합작사) 가격을 OECD 이전가격 가이드라인과 국가별 세법에 맞춰 설계하고, APA·CbCR·Pillar 2 GloBE 규칙 준수를 보장한다.
+- 정의: 다국적 BESS EPC 그룹사 간 거래(셀·모듈·완제 시스템·기술 사용료·관리수수료)의 정상가격(Arm's Length Price)을 OECD 이전가격 가이드라인(TPG)·BEPS Action 8-10·13에 따라 산정·문서화하고, Pillar 2 GloBE 규칙 적용 여부 및 영향을 분석한다.
 
 ## 운영본부 (COO) — 36명
 
