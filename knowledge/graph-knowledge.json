@@ -685,6 +685,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-2c63e889cea0",
+   "name": "팀 토론 — 산업안전보건법·중대재해처벌법 영역 초안 작성 — bess-l",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-11",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2955b89a74d6",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-48afb314b80a",
-   "name": "OnPath Energy, 첫 태양광·BESS 동일부지 사업 금융종결",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7825,6 +7825,46 @@
   {
    "source": "FIR-001",
    "target": "K-30c3e16457f8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CAB-001",
+   "target": "K-2c63e889cea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-2c63e889cea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-2c63e889cea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-2c63e889cea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-2c63e889cea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-2c63e889cea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-2c63e889cea0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2c63e889cea0",
    "type": "knowledge"
   },
   {
@@ -14006,11 +14046,6 @@
    "source": "PCS-001",
    "target": "K-49279f92dd43",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-48afb314b80a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14584,7 +14619,7 @@
    {
     "date": "2026-11-11",
     "knowledge": 800,
-    "events_total": 4357
+    "events_total": 4358
    }
   ]
  }
