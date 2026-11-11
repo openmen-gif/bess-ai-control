@@ -4,86 +4,173 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 연동 안내 — BESS AI Control Center</title>
-<meta name="description" content="BESS AI Control Center를 외부 AI 에이전트·MCP 클라이언트와 연동하는 방법 — MCP 서버 연결, 기계가독 리소스, 지식 성장 데이터, 이용 정책">
+<meta name="description" content="BESS AI Control Center를 외부 AI 에이전트·MCP 클라이언트와 연동하는 방법 — 3단계 빠른 시작(MCP 등록·전문가 찾기·질문), 명부 연계 구조, 리소스별 크기·갱신 주기, 이용 정책">
+<link rel="canonical" href="https://bess-ai-control.work/ai/" />
 <style>
 :root { --bg:#0B0F19; --panel:#111827; --line:#1F2937; --ink:#F9FAFB; --muted:#9CA3AF; --accent:#3B82F6; --grow:#10B981; }
 * { box-sizing:border-box; margin:0; }
-body { background:var(--bg); color:var(--ink); font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif; line-height:1.6; }
-.wrap { max-width:860px; margin:0 auto; padding:32px 20px 60px; }
+body { background:var(--bg); color:var(--ink); font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif; line-height:1.6; word-break:keep-all; }
+.wrap { max-width:860px; margin:0 auto; padding:32px 16px 60px; }
 .top { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
 h1 { font-size:22px; font-weight:800; }
 .sub { color:var(--muted); font-size:13px; margin-bottom:16px; }
 .back { color:var(--accent); text-decoration:none; font-size:13px; }
 .sec { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:16px; }
+@media (max-width:640px) { .sec { padding:16px 14px; } }
 h2 { font-size:15px; font-weight:700; margin-bottom:10px; }
+h3 { font-size:13.5px; font-weight:700; margin:0 0 6px; }
 p { color:#D1D5DB; font-size:13.5px; margin-bottom:8px; }
 p:last-child { margin-bottom:0; }
+a { color:var(--accent); }
 code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
-pre { background:#0a0e1a; border:1px solid var(--line); border-radius:10px; padding:12px 14px; overflow-x:auto; font-size:12.5px; color:var(--grow); margin:8px 0 12px; }
+pre { background:#0a0e1a; border:1px solid var(--line); border-radius:10px; padding:10px 12px; overflow-x:auto; font-size:12px; color:var(--grow); margin:6px 0 8px; white-space:pre-wrap; overflow-wrap:anywhere; }
+pre.out { color:#D1D5DB; }
+.label { font-size:11px; color:var(--muted); font-weight:600; margin-top:8px; }
+/* 빠른 시작 3단계 */
+ol.steps { list-style:none; padding:0; counter-reset:s; }
+ol.steps > li { position:relative; padding:0 0 16px 38px; counter-increment:s; }
+ol.steps > li:last-child { padding-bottom:0; }
+ol.steps > li::before { content:counter(s); position:absolute; left:0; top:0; width:26px; height:26px; border-radius:50%;
+  background:rgba(59,130,246,0.15); border:1px solid rgba(59,130,246,0.5); color:#93C5FD; font-size:13px; font-weight:700;
+  display:flex; align-items:center; justify-content:center; }
+ol.steps > li:not(:last-child)::after { content:""; position:absolute; left:13px; top:30px; bottom:4px; width:1px; background:var(--line); }
+/* 표 — 좁은 화면에서는 카드형 */
 table { width:100%; border-collapse:collapse; margin-top:6px; font-size:12.5px; }
 th, td { text-align:left; padding:7px 8px; border-top:1px solid var(--line); vertical-align:top; }
-th { color:var(--muted); font-weight:600; font-size:11.5px; text-transform:uppercase; letter-spacing:0.4px; }
+th { color:var(--muted); font-weight:600; font-size:11.5px; letter-spacing:0.2px; }
 td.name { color:var(--accent); font-weight:600; white-space:nowrap; }
-td.desc { color:#D1D5DB; }
-ul.reslist { list-style:none; padding:0; margin:6px 0 0; }
-ul.reslist li { padding:6px 0; border-top:1px solid var(--line); font-size:13px; }
-ul.reslist li:first-child { border-top:0; }
-ul.reslist a { color:var(--ink); text-decoration:none; }
-ul.reslist a:hover { color:var(--accent); }
-ul.reslist .path { color:var(--muted); font-size:11.5px; margin-left:6px; }
+td.name a { text-decoration:none; }
+td { color:#D1D5DB; }
+td small { display:block; color:var(--muted); font-size:11px; }
+td[data-k="크기"] { white-space:nowrap; }
+@media (max-width:640px) {
+  table, tbody, tr, td { display:block; width:100%; }
+  thead { display:none; }
+  tr { border-top:1px solid var(--line); padding:8px 0; }
+  td { border:0; padding:2px 0; }
+  td[data-k]::before { content:attr(data-k) " · "; color:var(--muted); font-size:11px; }
+}
+/* 연계 흐름 */
+.flow { display:flex; gap:8px; align-items:stretch; }
+.node { flex:1; min-width:0; padding:10px 12px; border-radius:10px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); }
+.node.hl { background:rgba(59,130,246,0.12); border-color:rgba(59,130,246,0.5); }
+.node .t { font-size:11px; color:#60A5FA; font-weight:600; }
+.node b { display:block; font-size:13.5px; }
+.node small { display:block; color:var(--muted); font-size:11.5px; line-height:1.5; overflow-wrap:anywhere; }
+.arrow { align-self:center; color:#6B7280; }
+.fan { text-align:center; color:#6B7280; font-size:12px; margin:8px 0; }
+.uses { list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:8px; }
+.uses li { padding:9px 11px; border-radius:10px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); font-size:12px; color:#D1D5DB; }
+.uses b { display:block; color:var(--ink); font-size:12.5px; overflow-wrap:anywhere; }
+.uses small { display:block; color:#6B7280; font-size:11px; }
+@media (max-width:640px) { .flow { flex-direction:column; } .arrow { transform:rotate(90deg); } }
 .badge { display:inline-block; font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:8px; padding:1px 7px; margin-right:6px; }
 footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:14px; }
-footer a { color:var(--accent); text-decoration:none; }
+footer a { text-decoration:none; }
 </style>
-    <link rel="canonical" href="https://bess-ai-control.work/ai/" />
-  </head>
+</head>
 <body>
 <div class="wrap">
   <div class="top">
     <h1>🤖 AI 연동 안내</h1>
     <a class="back" href="/">← 컨트롤 센터</a>
   </div>
-  <div class="sub">외부 AI 에이전트·MCP 클라이언트가 BESS AI Control Center의 82인 전문가 조직과 지식 성장 데이터를 읽는 방법입니다.</div>
+  <div class="sub">Claude Code 같은 MCP 클라이언트나 AI 검색엔진이 BESS EPC 전문가 82명의 명부·정의·지식 데이터를 읽는 방법이에요. 인증 없이 바로 쓸 수 있어요.</div>
 
-  <section class="sec">
-    <h2>① MCP 서버 연결</h2>
-    <p>Claude Code 등 MCP 클라이언트에서 다음 명령으로 Streamable HTTP 서버를 등록하세요(무인증 · 레이트 리밋만 적용):</p>
-    <pre><code>claude mcp add --transport http bess https://bess-ai-control.work/api/mcp</code></pre>
-    <p>등록 후 제공되는 도구 3종:</p>
+  <section class="sec" id="quick">
+    <h2>⚡ 3단계 빠른 시작</h2>
+    <ol class="steps">
+      <li>
+        <h3>MCP 서버 등록</h3>
+        <p>Claude Code에서 아래 한 줄이면 끝나요. 다른 MCP 클라이언트는 Streamable HTTP 주소로 <code>https://bess-ai-control.work/api/mcp</code>를 등록하면 돼요.</p>
+        <pre><code>claude mcp add --transport http bess https://bess-ai-control.work/api/mcp</code></pre>
+      </li>
+      <li>
+        <h3>전문가 찾기 — <code>list_experts</code></h3>
+        <p>본부(<code>CTO</code>·<code>CFO</code>·<code>COO</code>)로 거를 수 있어요. 비우면 82명 전체예요.</p>
+        <div class="label">입력</div>
+        <pre><code>{ "division": "CTO" }</code></pre>
+        <div class="label">실제 응답(앞부분)</div>
+        <pre class="out"><code>BESS EPC 전문가 23명 (CTO)
+- CTO-100 · bess-agent-framework (기술본부 (CTO 산하)): BESS EPC AI 에이전트 설계 프레임워크. v6.1 가이드라인 준수
+- AIM-001 · bess-aiml-engineer (기술본부 (CTO 산하)): AI/ML 예측모델, 최적화 알고리즘, SOC/SOH 예측, …
+- BAT-001 · bess-battery-expert (기술본부 (CTO 산하)): 배터리 사양 선정, 열화 분석, SOC/SOH, BMS, …
+…</code></pre>
+      </li>
+      <li>
+        <h3>지식 읽기·질문 — <code>get_expert_definition</code> · <code>ask_expert</code></h3>
+        <p>2단계에서 찾은 ID로 그 전문가의 역할 정의 전문(BAT-001 기준 약 11KB)을 읽거나, 바로 질문할 수 있어요.</p>
+        <div class="label">입력 — 정의 읽기</div>
+        <pre><code>{ "agentId": "BAT-001" }</code></pre>
+        <div class="label">실제 응답(첫 줄)</div>
+        <pre class="out"><code>당신은 BESS EPC 분야의 "bess-battery-expert" (기술본부 (CTO 산하)) 전문가입니다. …</code></pre>
+        <div class="label">입력 — 질문하기</div>
+        <pre><code>{ "agentId": "BAT-001", "question": "LFP 셀 SOH 80% 도달 사이클을 25도와 35도 운전에서 비교해 주세요" }</code></pre>
+        <p>응답은 그 전문가 관점의 한국어 답변 텍스트예요. <code>agentId</code>를 비우면 CEO-001(전체 조율 담당)이 답해요.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="sec" id="tools">
+    <h2>MCP 도구 3종</h2>
     <table>
-      <thead><tr><th>도구</th><th>설명</th></tr></thead>
+      <thead><tr><th>도구</th><th>입력</th><th>하는 일</th></tr></thead>
       <tbody>
-        <tr><td class="name">list_experts</td><td class="desc">BESS EPC AI 전문가 82명의 명부를 조회한다(ID·부서·전문 분야). division으로 필터 가능: CTO(기술)/CFO(재무)/COO(운영).</td></tr>
-        <tr><td class="name">get_expert_definition</td><td class="desc">특정 전문가의 역할 정의·전문 지식 전문을 조회한다. agentId는 list_experts의 ID(예: BAT-001).</td></tr>
-        <tr><td class="name">ask_expert</td><td class="desc">특정 BESS 전문가에게 질문하고 Claude 기반 답변을 받는다(레이트 리밋: IP당 분당 8회).</td></tr>
+        <tr><td class="name">list_experts</td><td data-k="입력"><code>division</code> 선택</td><td data-k="하는 일">명부 조회(ID·부서·전문 분야). 명부 <code>agents.json</code>을 요청 시 읽어요(10분 캐시).</td></tr>
+        <tr><td class="name">get_expert_definition</td><td data-k="입력"><code>agentId</code> 필수</td><td data-k="하는 일">역할 정의·전문 지식 전문. 채팅 상담과 같은 프롬프트 묶음에서 읽어요(수동 배포 때 갱신).</td></tr>
+        <tr><td class="name">ask_expert</td><td data-k="입력"><code>question</code> 필수 · <code>agentId</code> 선택</td><td data-k="하는 일">해당 전문가로서 Claude 기반 답변. IP당 분당 8회.</td></tr>
       </tbody>
     </table>
   </section>
 
-  <section class="sec">
-    <h2>② 기계가독 리소스</h2>
-    <p>LLM·크롤러가 직접 파싱할 수 있는 정적 JSON/텍스트 리소스입니다(동일 출처, 인증 불필요).</p>
-    <ul class="reslist">
-      <li><a href="/llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a><span class="path">— 조직·리소스 인덱스</span></li>
-      <li><a href="/llms-full.txt" target="_blank" rel="noopener noreferrer">llms-full.txt</a><span class="path">— 전문가 82명 전체 정의</span></li>
-      <li><a href="/agents.json" target="_blank" rel="noopener noreferrer">agents.json</a><span class="path">— 구조화 명부(ID·key·부서·키워드)</span></li>
-      <li><a href="/graph.json" target="_blank" rel="noopener noreferrer">graph.json</a><span class="path">— 조직·협업 관계 그래프</span></li>
-      <li><a href="/knowledge/stats.json" target="_blank" rel="noopener noreferrer">knowledge/stats.json</a><span class="path">— 에이전트별 축적 지식·레벨 통계</span></li>
+  <section class="sec" id="flow">
+    <h2>명부 연계 구조</h2>
+    <p>전문가 정의는 원본 문서 한 곳에만 있고, 매일 07:30에 그 문서로 명부를 다시 만들어요. 아래 리소스와 MCP 도구가 모두 이 명부를 기준으로 해요.</p>
+    <div class="flow" aria-label="명부 연계 흐름">
+      <div class="node"><span class="t">원본</span><b>전문가 정의 문서 82개</b><small>00_Skill_MD/bess-*.md</small></div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <div class="node"><span class="t">매일 07:30</span><b>자동 재생성</b><small>80건 미만·빈 필드면 멈추고 기존 명부 유지</small></div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <div class="node hl"><span class="t">명부</span><b>agents.json</b><small>전문가 1명 = 필드 9개</small></div>
+    </div>
+    <div class="fan" aria-hidden="true">↓ 같은 명부를 읽는 곳 5</div>
+    <ul class="uses">
+      <li><b>대시보드</b>카드·질문 매칭·3D 지도<small>페이지를 열 때</small></li>
+      <li><b>llms.txt · llms-full.txt</b>AI 검색엔진용 요약<small>명부가 바뀌면 같이 재생성</small></li>
+      <li><b>MCP list_experts</b>외부 AI 에이전트<small>요청 시(10분 캐시)</small></li>
+      <li><b>AI 상담 프롬프트</b>채팅·get_expert_definition<small>수동 배포 시</small></li>
+      <li><b>지식 수집기</b>지식을 전문가 분야로 배분<small>매일 07:30</small></li>
     </ul>
+    <p style="margin-top:10px">필드 9개의 뜻과 실제 예시는 <a href="/">컨트롤 센터</a> 왼쪽 메뉴의 <b>소개 · 문의</b>에서 볼 수 있어요.</p>
   </section>
 
-  <section class="sec">
-    <h2>③ 지식 성장 데이터</h2>
-    <p>82인 전문가 조직은 브리핑·스킬 갱신·팀 토론을 통해 매일 지식을 축적합니다. 누적·최근 성장 타임라인은
-      <a href="/growth/" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">/growth/</a>에서 확인할 수 있으며,
-      원장(<code>knowledge/stats.json</code>·<code>knowledge/recent.json</code>)은 <strong>매일 07:30 자동 갱신</strong>됩니다.
-    </p>
+  <section class="sec" id="resources">
+    <h2>기계가독 리소스</h2>
+    <p>같은 사이트에서 인증 없이 바로 읽을 수 있어요. 크기는 2026-11-11 실측값이에요.</p>
+    <table>
+      <thead><tr><th>리소스</th><th>내용</th><th>크기</th><th>갱신</th></tr></thead>
+      <tbody>
+        <tr><td class="name"><a href="/llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a></td><td data-k="내용">조직·리소스 인덱스(llmstxt.org 형식)</td><td data-k="크기">약 2KB</td><td data-k="갱신">명부가 바뀔 때</td></tr>
+        <tr><td class="name"><a href="/llms-full.txt" target="_blank" rel="noopener noreferrer">llms-full.txt</a></td><td data-k="내용">전문가 82명 전체 정의</td><td data-k="크기">약 38KB</td><td data-k="갱신">명부가 바뀔 때</td></tr>
+        <tr><td class="name"><a href="/agents.json" target="_blank" rel="noopener noreferrer">agents.json</a></td><td data-k="내용">구조화 명부 — key·id·name·dept·division·color·desc·keywords·snippet</td><td data-k="크기">약 58KB</td><td data-k="갱신">매일 07:30 점검, 원본이 바뀐 날만</td></tr>
+        <tr><td class="name"><a href="/agents.meta.json" target="_blank" rel="noopener noreferrer">agents.meta.json</a></td><td data-k="내용">명부 마지막 변경 시각·건수</td><td data-k="크기">1KB 미만</td><td data-k="갱신">명부와 함께</td></tr>
+        <tr><td class="name"><a href="/graph.json" target="_blank" rel="noopener noreferrer">graph.json</a></td><td data-k="내용">조직·협업 관계 그래프</td><td data-k="크기">약 25KB</td><td data-k="갱신">수동(마지막 2026-06-14)</td></tr>
+        <tr><td class="name"><a href="/knowledge/stats.json" target="_blank" rel="noopener noreferrer">knowledge/stats.json</a></td><td data-k="내용">전문가별 축적 지식·레벨 통계</td><td data-k="크기">약 18KB</td><td data-k="갱신">지식이 쌓일 때마다(하루 여러 번)</td></tr>
+        <tr><td class="name"><a href="/knowledge/recent.json" target="_blank" rel="noopener noreferrer">knowledge/recent.json</a></td><td data-k="내용">최근 축적 지식 목록</td><td data-k="크기">약 127KB</td><td data-k="갱신">지식이 쌓일 때마다</td></tr>
+      </tbody>
+    </table>
   </section>
 
-  <section class="sec">
-    <h2>④ 이용 정책</h2>
-    <p><span class="badge">레이트 리밋</span>MCP·채팅 백엔드 모두 IP당 <strong>분당 8회</strong>로 제한됩니다. 초과 시 잠시 후 다시 시도해 주세요.</p>
-    <p><span class="badge">실시간 상담</span>대시보드 콘솔의 "실시간 ON" 모드는 <strong>소유자 전용 액세스 키</strong>가 있어야 동작합니다. 키가 없으면 자동으로 무API 정적 매칭 응대로 전환됩니다.</p>
+  <section class="sec" id="growth">
+    <h2>지식 성장 데이터</h2>
+    <p>82인 전문가 조직은 브리핑·스킬 갱신·팀 토론으로 매일 지식을 쌓아요. 누적·최근 성장 타임라인은
+      <a href="/growth/" target="_blank" rel="noopener noreferrer">/growth/</a>에서 볼 수 있어요.</p>
+  </section>
+
+  <section class="sec" id="policy">
+    <h2>이용 정책</h2>
+    <p><span class="badge">레이트 리밋</span>MCP·채팅 백엔드 모두 IP당 <strong>분당 8회</strong>예요. 넘으면 잠시 후 다시 시도해 주세요.</p>
+    <p><span class="badge">실시간 상담</span>대시보드 콘솔의 "실시간 ON" 모드는 <strong>소유자 전용 액세스 키</strong>가 있어야 동작해요. 키가 없으면 무API 정적 매칭 응대로 자동 전환돼요.</p>
   </section>
 
   <footer>
