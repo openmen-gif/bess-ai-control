@@ -10,6 +10,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-6c44aa921fe7",
+   "name": "팀 토론 — 전사 문서 표준화 프로세스 자동화를 위한 A4 출력 형식 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-ffc40f3bf5c5",
    "name": "Calibrant Energy, PJM 하이퍼스케일 데이터센터용 BESS",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-2a221ae73c28",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-31",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "TAX-001",
    "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-6c44aa921fe7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6c44aa921fe7",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-6c44aa921fe7",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-6c44aa921fe7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-6c44aa921fe7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-6c44aa921fe7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-6c44aa921fe7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6c44aa921fe7",
    "type": "knowledge"
   },
   {
@@ -14186,11 +14226,6 @@
    "source": "CBK-001",
    "target": "K-2d868d0583f3",
    "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-2a221ae73c28",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14774,7 +14809,7 @@
    {
     "date": "2026-11-13",
     "knowledge": 800,
-    "events_total": 4406
+    "events_total": 4407
    }
   ]
  }
