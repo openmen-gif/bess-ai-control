@@ -469,6 +469,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-38a5d3226c7e",
+   "name": "팀 토론 — EU/RO 지역 인허가 절차 최적화 전략 수립 및 현지 파트",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-12",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-345099b73950",
    "name": "팀 토론 — SiC 기술 도입을 통한 BESS 시스템 효율성 향상 방안 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-f9602e3136c8",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7600,6 +7600,46 @@
   {
    "source": "STD-002",
    "target": "K-3a9aa8c7144f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-38a5d3226c7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-38a5d3226c7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-38a5d3226c7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-38a5d3226c7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-38a5d3226c7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-38a5d3226c7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-38a5d3226c7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-38a5d3226c7e",
    "type": "knowledge"
   },
   {
@@ -14046,11 +14086,6 @@
    "source": "TPS-001",
    "target": "K-fa3c56f30db3",
    "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-f9602e3136c8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14629,7 +14664,7 @@
    {
     "date": "2026-11-12",
     "knowledge": 800,
-    "events_total": 4431
+    "events_total": 4432
    }
   ]
  }
