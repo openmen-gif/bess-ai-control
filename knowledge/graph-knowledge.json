@@ -361,6 +361,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-713e36b491bd",
+   "name": "팀 토론 — ESG 성과 기반 그린본드 발행 전략 수립 및 TCFD 준수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-70f1d1afc9bc",
    "name": "오세철 삼성물산 대표, 호주 전력망 잡는다...1조 수주·940억 M&A",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fbeb7f48fe2c",
-   "name": "팀 토론 — BESS 프로젝트 변경 관리 프로세스 검토 및 MOC 승인 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7505,6 +7505,46 @@
   {
    "source": "BIZ-001",
    "target": "K-71724d272097",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-713e36b491bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-713e36b491bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-713e36b491bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-713e36b491bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-713e36b491bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-713e36b491bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-713e36b491bd",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-713e36b491bd",
    "type": "knowledge"
   },
   {
@@ -14081,46 +14121,6 @@
    "source": "SYS-001",
    "target": "K-01c7e33f56bd",
    "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-fbeb7f48fe2c",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-fbeb7f48fe2c",
-   "type": "knowledge"
-  },
-  {
-   "source": "HRM-001",
-   "target": "K-fbeb7f48fe2c",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-fbeb7f48fe2c",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-fbeb7f48fe2c",
-   "type": "knowledge"
-  },
-  {
-   "source": "PMG-001",
-   "target": "K-fbeb7f48fe2c",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-fbeb7f48fe2c",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRL-001",
-   "target": "K-fbeb7f48fe2c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14699,7 +14699,7 @@
    {
     "date": "2026-11-12",
     "knowledge": 800,
-    "events_total": 4393
+    "events_total": 4394
    }
   ]
  }

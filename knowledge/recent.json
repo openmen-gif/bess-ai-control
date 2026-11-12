@@ -463,6 +463,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "713e36b491bd",
+   "date": "2026-11-12",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-esg-finance",
+    "bess-labor-safety",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-scheduler",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — ESG 성과 기반 그린본드 발행 전략 수립 및 TCFD 준수 계획 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "70f1d1afc9bc",
    "date": "2026-11-12",
    "type": "briefing",
@@ -3553,24 +3571,6 @@
    "title": "[인사이드 스토리]건설 3대장, 호주로 향하는 이유",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9maWFQdzdmcGlHSGU2U3hWelp6MTc4RG56NUh1X3lwb0lkY3U2bzkwYU92NDZjNU9VN2VycGNqbTFUU3duVDJ6MDBXVmNJWnA1ZlZhbnpUaFpHM1gxNkN1NllidFZxTWJyclVQMHRuZ1M?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "142c8c916da0",
-   "date": "2026-11-09",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-business-dev",
-    "bess-cost-analyst",
-    "bess-hydrogen-specialist",
-    "bess-om-expert",
-    "bess-power-market-expert",
-    "bess-procurement-expert",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 글로벌 ESS 중앙계약시장 입찰 방식 변화에 따른 한국 BESS 조달 전략 및 비용 구조 최적화 방안 재평가 수행",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
