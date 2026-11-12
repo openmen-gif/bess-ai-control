@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "events": [
+  {
+   "id": "fdb47a9bef56",
+   "date": "2026-11-13",
+   "type": "discussion",
+   "agents": [
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-uk",
+    "bess-system-engineer",
+    "bess-tax-accountant"
+   ],
+   "title": "팀 토론 — 온세미의 4세대 SiC 플랫폼 엘리트SiC M4 도입을 통해 KPX 내 입찰 경쟁력 강화 및 기술적 비용 효율성 분석 방안 수립 요청",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ffc40f3bf5c5",
    "date": "2026-11-12",
@@ -3559,17 +3577,6 @@
    ],
    "title": "ESS 2파전…K-배터리, '출혈 경쟁' 끝낼까",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1FdlNnMF9uOW9wOHJ6d3M5ZWxYb2FDQjhYa3JnLUM0aHdnSW1pZFA2WlFYeVJPeUpQUWFwRmRlb2VHQnpwckVuNTM2d1ItVTZhZExQc2l3LXhPTFR5b2d2dW9lTU0?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "68373578cb41",
-   "date": "2026-11-09",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "Clean the Sky - 유틸리티급 배터리 저장 시스템",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTlhlTG1TTW9MVXdZR2lFM25qRnk2Wm1NcnRoemdCdE5wZHd3bnpJTXd5Z3pYODNpNlFmc0puZzM1S2F2N1Q1M2FhUEhPcVBzOE8xeFBvODgzYlViSGJzMzJianBjdy15WFpPb29TdC1rUXY2NmJfWTQ4czhOOG04aw?oc=5",
    "source": "구글뉴스"
   }
  ]

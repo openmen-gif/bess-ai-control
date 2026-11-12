@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-fdb47a9bef56",
+   "name": "팀 토론 — 온세미의 4세대 SiC 플랫폼 엘리트SiC M4 도입을 통해",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-ffc40f3bf5c5",
    "name": "Calibrant Energy, PJM 하이퍼스케일 데이터센터용 BESS",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-10-31",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-299917fb2e80",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BIZ-001",
+   "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-fdb47a9bef56",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-ffc40f3bf5c5",
@@ -14151,15 +14191,10 @@
    "source": "CST-001",
    "target": "K-2a221ae73c28",
    "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-299917fb2e80",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "history": [
    {
     "date": "2026-07-20",
@@ -14735,6 +14770,11 @@
     "date": "2026-11-12",
     "knowledge": 800,
     "events_total": 4405
+   },
+   {
+    "date": "2026-11-13",
+    "knowledge": 800,
+    "events_total": 4406
    }
   ]
  }
