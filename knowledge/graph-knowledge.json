@@ -370,6 +370,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-66ee9da3c034",
+   "name": "팀 토론 — SiC 기술 도입 동향 분석 및 한국 전력시장(KPX) 입찰",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-61f2919aba67",
    "name": "화웨이, AI가 가정 전력 생산·저장·소비 최적화하는 에너지 시스템 ‘루",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-30",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-fa3c56f30db3",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-30",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7510,6 +7510,46 @@
   {
    "source": "BIZ-001",
    "target": "K-70f1d1afc9bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-66ee9da3c034",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-66ee9da3c034",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-66ee9da3c034",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-66ee9da3c034",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-66ee9da3c034",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-66ee9da3c034",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-66ee9da3c034",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-66ee9da3c034",
    "type": "knowledge"
   },
   {
@@ -14081,11 +14121,6 @@
    "source": "TRL-001",
    "target": "K-fbeb7f48fe2c",
    "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-fa3c56f30db3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14664,7 +14699,7 @@
    {
     "date": "2026-11-12",
     "knowledge": 800,
-    "events_total": 4392
+    "events_total": 4393
    }
   ]
  }
