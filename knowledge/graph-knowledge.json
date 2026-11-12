@@ -496,6 +496,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-36535e1f4b99",
+   "name": "팀 토론 — 전사 문서 표준화 프로세스 자동화 및 데이터 시각화 도구 개",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-12",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-345099b73950",
    "name": "팀 토론 — SiC 기술 도입을 통한 BESS 시스템 효율성 향상 방안 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-31",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-01c7e33f56bd",
-   "name": "팀 토론 — 전력거래소와 생산기술연구원의 BESS 실계통 실증 추진 동향",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-10-31",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7720,6 +7720,46 @@
   {
    "source": "SYS-001",
    "target": "K-38a5d3226c7e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-36535e1f4b99",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-36535e1f4b99",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-36535e1f4b99",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-36535e1f4b99",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-36535e1f4b99",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-36535e1f4b99",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-36535e1f4b99",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-36535e1f4b99",
    "type": "knowledge"
   },
   {
@@ -14081,46 +14121,6 @@
    "source": "BAT-001",
    "target": "K-06af3b3d3292",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-01c7e33f56bd",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-01c7e33f56bd",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-01c7e33f56bd",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-01c7e33f56bd",
-   "type": "knowledge"
-  },
-  {
-   "source": "OAM-001",
-   "target": "K-01c7e33f56bd",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-01c7e33f56bd",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-01c7e33f56bd",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-01c7e33f56bd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14699,7 +14699,7 @@
    {
     "date": "2026-11-12",
     "knowledge": 800,
-    "events_total": 4394
+    "events_total": 4395
    }
   ]
  }
