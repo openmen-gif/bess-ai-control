@@ -235,6 +235,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-3a6f390ce13e",
+   "name": "팀 토론 — 계통 안정성 향상을 위한 최신 VRT 기술 적용 방안 연구 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-373c73ca8923",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-31",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-6338ce35a19f",
-   "name": "[분석] 한·독 에너지협력 ‘전기화 시대 산업경쟁력’으로 확장…전력망·E",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-31",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7435,6 +7435,46 @@
   {
    "source": "RSK-001",
    "target": "K-422d824abab6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-3a6f390ce13e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3a6f390ce13e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-3a6f390ce13e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-3a6f390ce13e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-3a6f390ce13e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-3a6f390ce13e",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-3a6f390ce13e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3a6f390ce13e",
    "type": "knowledge"
   },
   {
@@ -14221,11 +14261,6 @@
    "source": "BIZ-001",
    "target": "K-65684d713e68",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-6338ce35a19f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14809,7 +14844,7 @@
    {
     "date": "2026-11-13",
     "knowledge": 800,
-    "events_total": 4438
+    "events_total": 4439
    }
   ]
  }
