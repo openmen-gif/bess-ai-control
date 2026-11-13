@@ -136,6 +136,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-c31e94248037",
+   "name": "팀 토론 — BESS EPC 프로젝트 루마니아(RO) 시장 진출을 위한 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-bc696b21fbfc",
    "name": "에너지 저장장치는 재생에너지의 빠진 퍼즐인가",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-31",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-f873874a32fd",
-   "name": "로단 에너지, 세인트메리스 시멘트 공장에 캐나다 최대 규모 BTM 배터리",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-31",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7310,6 +7310,46 @@
   {
    "source": "COM-001",
    "target": "K-c3cc65be0e66",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c31e94248037",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-c31e94248037",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-c31e94248037",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c31e94248037",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-c31e94248037",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c31e94248037",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-c31e94248037",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c31e94248037",
    "type": "knowledge"
   },
   {
@@ -14186,11 +14226,6 @@
    "source": "STD-001",
    "target": "K-fa14a34e08d0",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-f873874a32fd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14774,7 +14809,7 @@
    {
     "date": "2026-11-13",
     "knowledge": 800,
-    "events_total": 4480
+    "events_total": 4481
    }
   ]
  }
