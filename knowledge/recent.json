@@ -360,6 +360,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "8eaeb7e380fe",
+   "date": "2026-11-13",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-precom-report",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 벤더 성과 추적 시스템 구축을 통한 조달 효율성 개선 방안 분석",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "8db966014ef6",
    "date": "2026-11-13",
    "type": "skill",
@@ -3541,17 +3559,6 @@
    "title": "BESS의 다음 취약점은 배터리가 아니다: 접근 권한과 복구 역량",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPLVp0bjhtR0NoYkx3d2xtdEVMczZ0NVVJZFdCYV91UlBRWnRzTllQNFBTZVJGTWhQemxXQzRvQk5fcGt4bnRjQlh2RVpobmZGdVpqTmxMckN1NWN3Y1lkWVl0enh2ZFVPV1RaZG45bVlzMVRtX2xrOGdmRTBGVm9PaFRTVEp5cDZzWWc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "78f06f9a2244",
-   "date": "2026-11-10",
-   "type": "skill",
-   "agents": [
-    "bess-permit-english"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 37개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
