@@ -604,6 +604,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-21eb997840a0",
+   "name": "팀 토론 — 변압기·사양·선정 영역 1차 분석 — bess-transfo",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-21d61ef1573e",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-04b7f3db811e",
-   "name": "팀 토론 — 이전가격 전략 검토 및 OECD TP 가이드라인 적용을 통한",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-01",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7885,6 +7885,46 @@
   {
    "source": "DEV-001",
    "target": "K-2b0bf09b0794",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-21eb997840a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-21eb997840a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-21eb997840a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-21eb997840a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-21eb997840a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-21eb997840a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-21eb997840a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-21eb997840a0",
    "type": "knowledge"
   },
   {
@@ -14326,46 +14366,6 @@
    "source": "BAT-001",
    "target": "K-0fca3ead375b",
    "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-04b7f3db811e",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-04b7f3db811e",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-04b7f3db811e",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-001",
-   "target": "K-04b7f3db811e",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-04b7f3db811e",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-04b7f3db811e",
-   "type": "knowledge"
-  },
-  {
-   "source": "TIN-001",
-   "target": "K-04b7f3db811e",
-   "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-04b7f3db811e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14949,7 +14949,7 @@
    {
     "date": "2026-11-13",
     "knowledge": 800,
-    "events_total": 4485
+    "events_total": 4486
    }
   ]
  }
