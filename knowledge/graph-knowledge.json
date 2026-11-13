@@ -208,6 +208,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a40e63b7bd83",
+   "name": "팀 토론 — [쟁점] 환경적 지속가능성 에 대한 구체적인 실행 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a25b9d13625b",
    "name": "전기차 수주 가뭄, ESS도 변수 … K-배터리도 美 '블루웨이브' 직격",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-01",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0230d0571a6a",
-   "name": "Battery storage system removed from sola",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-01",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7420,6 +7420,46 @@
   {
    "source": "SYS-001",
    "target": "K-ae342898ce99",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a40e63b7bd83",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a40e63b7bd83",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-a40e63b7bd83",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a40e63b7bd83",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-a40e63b7bd83",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-a40e63b7bd83",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-a40e63b7bd83",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-a40e63b7bd83",
    "type": "knowledge"
   },
   {
@@ -14291,11 +14331,6 @@
    "source": "FIR-001",
    "target": "K-031ce86aee5e",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0230d0571a6a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14879,7 +14914,7 @@
    {
     "date": "2026-11-13",
     "knowledge": 800,
-    "events_total": 4483
+    "events_total": 4484
    }
   ]
  }
