@@ -352,6 +352,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-8ec4748e9392",
+   "name": "팀 토론 — 벤더 성과 추적 시스템 구축을 통한 공급망 최적화 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-8afa22e2b1ac",
    "name": "썬그로우, 이익 압박 속 가정용 배터리로 성장 모색",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-02",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-f1e29ae5d27b",
-   "name": "10 massive battery storage projects arou",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7430,6 +7430,46 @@
   {
    "source": "SYS-001",
    "target": "K-941034528000",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8ec4748e9392",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8ec4748e9392",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-8ec4748e9392",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-8ec4748e9392",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8ec4748e9392",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-8ec4748e9392",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-8ec4748e9392",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-8ec4748e9392",
    "type": "knowledge"
   },
   {
@@ -14231,11 +14271,6 @@
    "source": "COM-003",
    "target": "K-f861d22d382b",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-f1e29ae5d27b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14824,7 +14859,7 @@
    {
     "date": "2026-11-14",
     "knowledge": 800,
-    "events_total": 4550
+    "events_total": 4551
    }
   ]
  }

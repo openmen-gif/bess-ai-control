@@ -438,6 +438,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "8ec4748e9392",
+   "date": "2026-11-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-ebop-engineer",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-qaqc-engineer",
+    "bess-standards-analyst",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 벤더 성과 추적 시스템 구축을 통한 공급망 최적화 전략 수립 및 데이터 기반 조달 의사결정 강화 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "8afa22e2b1ac",
    "date": "2026-11-14",
    "type": "briefing",
@@ -3499,24 +3517,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 15 개 반영, 스킬 37개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "41ed78212d36",
-   "date": "2026-11-11",
-   "type": "discussion",
-   "agents": [
-    "bess-env-engineer",
-    "bess-legal-expert",
-    "bess-pcs-expert",
-    "bess-power-market-expert",
-    "bess-standards-poland",
-    "bess-standards-uk",
-    "bess-structural-analyst",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 폴란드 BESS 프로젝트 인허가 절차 심층 분석 및 현지 표준 준수 전략 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
