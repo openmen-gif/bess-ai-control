@@ -577,6 +577,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-2b0bf09b0794",
+   "name": "팀 토론 — BESS EPC 프로젝트를 위한 EU BESS EPC 표준 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-21d61ef1573e",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-01",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-fe025bb4dee9",
-   "name": "중국 휴대용 배터리 저장 업체, 3분기 실적서 해외 수주 증가",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-31",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7765,6 +7765,46 @@
   {
    "source": "BAT-001",
    "target": "K-2c4666550903",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2b0bf09b0794",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-2b0bf09b0794",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-2b0bf09b0794",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-2b0bf09b0794",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2b0bf09b0794",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-2b0bf09b0794",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-2b0bf09b0794",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-2b0bf09b0794",
    "type": "knowledge"
   },
   {
@@ -14256,11 +14296,6 @@
    "source": "MAR-001",
    "target": "K-0230d0571a6a",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-fe025bb4dee9",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14844,7 +14879,7 @@
    {
     "date": "2026-11-13",
     "knowledge": 800,
-    "events_total": 4482
+    "events_total": 4483
    }
   ]
  }

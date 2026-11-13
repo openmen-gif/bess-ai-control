@@ -755,6 +755,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "2b0bf09b0794",
+   "date": "2026-11-13",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-financial-analysis",
+    "bess-hydrogen-specialist",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-eu",
+    "bess-standards-korea",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — BESS EPC 프로젝트를 위한 EU BESS EPC 표준 준수 및 인허가 전략 심층 분석 추진",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "21d61ef1573e",
    "date": "2026-11-13",
    "type": "skill",
@@ -3523,17 +3541,6 @@
    "type": "skill",
    "agents": [
     "bess-project-manager"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 37개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7806c2c0d42d",
-   "date": "2026-11-10",
-   "type": "skill",
-   "agents": [
-    "bess-standards-australia"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 20 개 반영, 스킬 37개 갱신",
    "link": "",
