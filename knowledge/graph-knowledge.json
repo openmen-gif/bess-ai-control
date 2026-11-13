@@ -199,6 +199,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-ae342898ce99",
+   "name": "팀 토론 — BESS 프로젝트 리스크 완화를 위한 포괄적 보험 프로그램 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a25b9d13625b",
    "name": "전기차 수주 가뭄, ESS도 변수 … K-배터리도 美 '블루웨이브' 직격",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-31",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-fa14a34e08d0",
-   "name": "서아프리카 ECOWAS, 에너지저장 지침 채택…가나 200MW 배터리 조",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-10-31",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7380,6 +7380,46 @@
   {
    "source": "BAT-001",
    "target": "K-b1175cd29c50",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ae342898ce99",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ae342898ce99",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-ae342898ce99",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-ae342898ce99",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ae342898ce99",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-ae342898ce99",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ae342898ce99",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ae342898ce99",
    "type": "knowledge"
   },
   {
@@ -14221,11 +14261,6 @@
    "source": "BIZ-001",
    "target": "K-fe025bb4dee9",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-fa14a34e08d0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14809,7 +14844,7 @@
    {
     "date": "2026-11-13",
     "knowledge": 800,
-    "events_total": 4481
+    "events_total": 4482
    }
   ]
  }
