@@ -361,6 +361,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-672173336607",
+   "name": "팀 토론 — 전력시장·거래·Dispatch 영역 1차 분석 — bess-",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-13",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-63475060ff62",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-10-31",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-f69c3f2a2da2",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-10-31",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7470,6 +7470,46 @@
   {
    "source": "SYS-001",
    "target": "K-6c44aa921fe7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-672173336607",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-672173336607",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-672173336607",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-672173336607",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-003",
+   "target": "K-672173336607",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-672173336607",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-672173336607",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-672173336607",
    "type": "knowledge"
   },
   {
@@ -14151,11 +14191,6 @@
    "source": "COM-003",
    "target": "K-f873874a32fd",
    "type": "knowledge"
-  },
-  {
-   "source": "CON-001",
-   "target": "K-f69c3f2a2da2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14739,7 +14774,7 @@
    {
     "date": "2026-11-13",
     "knowledge": 800,
-    "events_total": 4479
+    "events_total": 4480
    }
   ]
  }
