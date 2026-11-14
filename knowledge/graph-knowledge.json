@@ -37,6 +37,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-ecf51f37efdd",
+   "name": "팀 토론 — 리스크 히트맵 업데이트 및 예비비 분석을 통한 BESS 프로",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e9800918269a",
    "name": "칠레 BESS 3,100MW 돌파, 피크 통제 제도 재검토 요구",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-02",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-f861d22d382b",
-   "name": "Metro Detroit battery storage expansion ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-02",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7220,6 +7220,46 @@
   {
    "source": "TAX-001",
    "target": "K-efb72ae2c647",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ecf51f37efdd",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ecf51f37efdd",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ecf51f37efdd",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-ecf51f37efdd",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ecf51f37efdd",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-ecf51f37efdd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-ecf51f37efdd",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-ecf51f37efdd",
    "type": "knowledge"
   },
   {
@@ -14266,11 +14306,6 @@
    "source": "JTX-001",
    "target": "K-fdad0cd742e3",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-f861d22d382b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14859,7 +14894,7 @@
    {
     "date": "2026-11-14",
     "knowledge": 800,
-    "events_total": 4551
+    "events_total": 4552
    }
   ]
  }
