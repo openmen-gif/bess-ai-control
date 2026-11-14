@@ -759,6 +759,23 @@
    "source": "구글뉴스"
   },
   {
+   "id": "27c68aa43904",
+   "date": "2026-11-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-internal-auditor",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-precom-report",
+    "bess-structural-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 구조적 안정성 검토 강화 : ANSYS 기반으로 컨테이너형 BESS 구조물의 풍하중 및 좌굴 안전성 검증 수행 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "1ce55f8046c0",
    "date": "2026-11-14",
    "type": "briefing",
@@ -3530,17 +3547,6 @@
    "type": "skill",
    "agents": [
     "bess-tax-korea"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 15 개 반영, 스킬 37개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "4f5bdc45adcf",
-   "date": "2026-11-11",
-   "type": "skill",
-   "agents": [
-    "bess-hydrogen-specialist"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 15 개 반영, 스킬 37개 갱신",
    "link": "",

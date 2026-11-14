@@ -586,6 +586,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-27c68aa43904",
+   "name": "팀 토론 — 구조적 안정성 검토 강화 : ANSYS 기반으로 컨테이너형 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-1ce55f8046c0",
    "name": "[B트렌드] K-배터리, ESS 전환 ‘실적’으로… 북미 공백 속 반등 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-161a9eb1e250",
-   "name": "‘말산업 메카’ 제주, 한국마사회 유치로 국가 경쟁력 견인",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7735,6 +7735,41 @@
   {
    "source": "PCS-001",
    "target": "K-28d691c936df",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-27c68aa43904",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-27c68aa43904",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-27c68aa43904",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-27c68aa43904",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-27c68aa43904",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-27c68aa43904",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-27c68aa43904",
    "type": "knowledge"
   },
   {
@@ -14406,11 +14441,6 @@
    "source": "MAR-001",
    "target": "K-1cec3337764d",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-161a9eb1e250",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14999,7 +15029,7 @@
    {
     "date": "2026-11-14",
     "knowledge": 800,
-    "events_total": 4556
+    "events_total": 4557
    }
   ]
  }
