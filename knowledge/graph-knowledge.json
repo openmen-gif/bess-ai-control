@@ -388,6 +388,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-7b3e8c4f5d54",
+   "name": "팀 토론 — SiC 기술 구현의 효율성 향상이 공급망 비용 구조에 미치는",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7818f4c37361",
    "name": "윌트셔 Rivals 촬영지 대형 BESS 계획에 수백 건 이의 제기",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0292e453e8e8",
-   "name": "Battery energy storage system",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7520,6 +7520,46 @@
   {
    "source": "MAR-001",
    "target": "K-809affbbddc8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7b3e8c4f5d54",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-7b3e8c4f5d54",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-7b3e8c4f5d54",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-7b3e8c4f5d54",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-7b3e8c4f5d54",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-7b3e8c4f5d54",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7b3e8c4f5d54",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-7b3e8c4f5d54",
    "type": "knowledge"
   },
   {
@@ -14301,11 +14341,6 @@
    "source": "MAR-001",
    "target": "K-0e212b273422",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0292e453e8e8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14894,7 +14929,7 @@
    {
     "date": "2026-11-14",
     "knowledge": 800,
-    "events_total": 4553
+    "events_total": 4554
    }
   ]
  }
