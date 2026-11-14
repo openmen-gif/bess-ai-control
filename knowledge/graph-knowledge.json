@@ -595,6 +595,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-00fc99237aa7",
+   "name": "팀 토론 — 프로젝트 RFP 대응 강화 전략 수립 및 파이프라인 관리 최",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fe32e5e54eda",
    "name": "인도 BESS·스트링 인버터 수요 확대, GoodWe 인터뷰",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-fdad0cd742e3",
-   "name": "팀 토론 — 작업허가 절차 간소화 및 외국인 인력 안전 교육 프로그램 개",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-02",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7635,6 +7635,46 @@
   {
    "source": "BAT-001",
    "target": "K-087994a12d05",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-00fc99237aa7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-00fc99237aa7",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-00fc99237aa7",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-00fc99237aa7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-00fc99237aa7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-00fc99237aa7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-00fc99237aa7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-00fc99237aa7",
    "type": "knowledge"
   },
   {
@@ -14266,46 +14306,6 @@
    "source": "MAR-001",
    "target": "K-0292e453e8e8",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-fdad0cd742e3",
-   "type": "knowledge"
-  },
-  {
-   "source": "EMT-001",
-   "target": "K-fdad0cd742e3",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-fdad0cd742e3",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-fdad0cd742e3",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-fdad0cd742e3",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-fdad0cd742e3",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-fdad0cd742e3",
-   "type": "knowledge"
-  },
-  {
-   "source": "JTX-001",
-   "target": "K-fdad0cd742e3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14894,7 +14894,7 @@
    {
     "date": "2026-11-14",
     "knowledge": 800,
-    "events_total": 4552
+    "events_total": 4553
    }
   ]
  }

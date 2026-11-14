@@ -749,6 +749,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "00fc99237aa7",
+   "date": "2026-11-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-facility-manager",
+    "bess-it-infra",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 프로젝트 RFP 대응 강화 전략 수립 및 파이프라인 관리 최적화를 통한 신규 고객 확보 계획 제시",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fe32e5e54eda",
    "date": "2026-11-13",
    "type": "briefing",
@@ -3513,17 +3531,6 @@
    "title": "팀 토론 — BESS 프로젝트 보험 프로그램 강화로 위험 관리 수준 향상 및 특수 보험 상품 적합성 검토 시작",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "4586bad878e6",
-   "date": "2026-11-11",
-   "type": "skill",
-   "agents": [
-    "bess-standards-australia"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 15 개 반영, 스킬 37개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
