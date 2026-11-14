@@ -109,6 +109,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e0a2d2c3ea60",
+   "name": "팀 토론 — 외국인 인력 안전 교육 프로그램 강화 및 정기적 안전 점검 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-14",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-df2da13eff0f",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 9",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-1356382eac2c",
-   "name": "포르투갈, 대형 ESS에 전력망 안정화 기능 의무화…재생에너지 확대 대비",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7330,6 +7330,46 @@
   {
    "source": "PCS-001",
    "target": "K-e23cac16ed28",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e0a2d2c3ea60",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-e0a2d2c3ea60",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e0a2d2c3ea60",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-e0a2d2c3ea60",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e0a2d2c3ea60",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e0a2d2c3ea60",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-e0a2d2c3ea60",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-e0a2d2c3ea60",
    "type": "knowledge"
   },
   {
@@ -14371,11 +14411,6 @@
    "source": "STD-001",
    "target": "K-161a9eb1e250",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-1356382eac2c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14964,7 +14999,7 @@
    {
     "date": "2026-11-14",
     "knowledge": 800,
-    "events_total": 4555
+    "events_total": 4556
    }
   ]
  }
