@@ -2,6 +2,24 @@
  "updated": "2026-11-14",
  "events": [
   {
+   "id": "faebdfc6c673",
+   "date": "2026-11-14",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hr-manager",
+    "bess-legal-expert",
+    "bess-om-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — LTSA·O&M계약 영역 1차 분석 — bess-om-expert 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "fad7e161ec48",
    "date": "2026-11-14",
    "type": "briefing",
@@ -3520,17 +3538,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 15 개 반영, 스킬 37개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "4c051a17b282",
-   "date": "2026-11-11",
-   "type": "briefing",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "포르투갈, 배터리 저장 계통연계 용량 1,050MVA 입찰 공고",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdFd1OGx5ZWlVY0FJMkFZTjVNMDBwODc2THgzNlpxQ1FicU1uWVd0cWMzUzUyMlJ0SGZ1SVhJMUNobWtNSVMwaWoxdi11a055cGR0d0pMdk0tb0tnT1puX2Q5UGoxQ2VpTUlBbzZaREhvTkU5UEF4R0tGM2dyQjJIUkhBbEUtRGZNSVNGQWk0dmJodlBNXzZQZU9KdWd1VU1Ccnhhem9R?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-faebdfc6c673",
+   "name": "팀 토론 — LTSA·O&M계약 영역 1차 분석 — bess-om-exp",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-14",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fad7e161ec48",
    "name": "Deye 125kW 하이브리드 인버터, C&I 태양광·ESS 연계 제품 ",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0e212b273422",
-   "name": "[배터리의 역습] ⑧버려진 배터리, 다시 불씨가 되다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-faebdfc6c673",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-faebdfc6c673",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-faebdfc6c673",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-faebdfc6c673",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-faebdfc6c673",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-faebdfc6c673",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-faebdfc6c673",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-faebdfc6c673",
+   "type": "knowledge"
+  },
   {
    "source": "PCS-001",
    "target": "K-fad7e161ec48",
@@ -14336,11 +14376,6 @@
    "source": "COM-003",
    "target": "K-1356382eac2c",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0e212b273422",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14929,7 +14964,7 @@
    {
     "date": "2026-11-14",
     "knowledge": 800,
-    "events_total": 4554
+    "events_total": 4555
    }
   ]
  }
