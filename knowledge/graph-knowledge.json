@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-fee0e3f70090",
+   "name": "팀 토론 — [환경적 지속가능성] BESS 프로젝트의 환경 영향 평가 프",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-efb3d8f0f9e8",
    "name": "LG에너지솔루션 AI 데이터센터 공략…엔비디아와 손잡아",
    "group": "KNOWLEDGE",
@@ -7190,21 +7199,52 @@
    "date": "2026-11-04",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-eee16f86aacf",
-   "name": "이솔루션, 한전 ‘공유형 ESS 2차 사업’ 사용전검사 통과… 상업 운전",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-04",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
   {
    "source": "STD-001",
    "target": "K-ff792f92a92b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-fee0e3f70090",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-fee0e3f70090",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-fee0e3f70090",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-fee0e3f70090",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-fee0e3f70090",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-fee0e3f70090",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-fee0e3f70090",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-fee0e3f70090",
    "type": "knowledge"
   },
   {
@@ -14361,11 +14401,6 @@
    "source": "STD-001",
    "target": "K-eee45bde3dd9",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-eee16f86aacf",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14964,7 +14999,7 @@
    {
     "date": "2026-11-16",
     "knowledge": 800,
-    "events_total": 4654
+    "events_total": 4655
    }
   ]
  }
