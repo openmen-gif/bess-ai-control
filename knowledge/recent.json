@@ -200,6 +200,23 @@
    "source": "구글뉴스"
   },
   {
+   "id": "5315a8baa080",
+   "date": "2026-11-15",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-security-expert",
+    "bess-tax-korea",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 한국 세제 혜택 최적화 전략 수립: BESS 프로젝트에 대한 법인세 및 지방세 감면 적용 방안 분석 및 적용 가능성 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "4e5562d48c2b",
    "date": "2026-11-15",
    "type": "discussion",
@@ -3529,17 +3546,6 @@
    "type": "skill",
    "agents": [
     "bess-hse-manager"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 15 개 반영, 스킬 37개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "9ffe61b0eb8b",
-   "date": "2026-11-11",
-   "type": "skill",
-   "agents": [
-    "bess-structural-analyst"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 15 개 반영, 스킬 37개 갱신",
    "link": "",

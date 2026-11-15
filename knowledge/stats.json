@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-15",
  "totals": {
-  "all": 4587,
+  "all": 4588,
   "briefing": 2391,
   "skill": 1235,
-  "discussion": 961,
+  "discussion": 962,
   "activity": 0
  },
  "perAgent": {
@@ -29,14 +29,14 @@
    "level": 7
   },
   "bess-battery-expert": {
-   "count": 1223,
+   "count": 1224,
    "byType": {
     "skill": 27,
-    "discussion": 542,
+    "discussion": 543,
     "briefing": 654
    },
    "lastGrown": "2026-11-15",
-   "xp": 1819,
+   "xp": 1821,
    "level": 25
   },
   "bess-business-dev": {
@@ -112,14 +112,14 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 471,
+   "count": 472,
    "byType": {
     "skill": 28,
-    "discussion": 443
+    "discussion": 444
    },
    "lastGrown": "2026-11-15",
-   "xp": 970,
-   "level": 18
+   "xp": 972,
+   "level": 19
   },
   "bess-customs-tariff": {
    "count": 78,
@@ -375,13 +375,13 @@
    "level": 6
   },
   "bess-legal-expert": {
-   "count": 298,
+   "count": 299,
    "byType": {
     "skill": 24,
-    "discussion": 274
+    "discussion": 275
    },
-   "lastGrown": "2026-11-14",
-   "xp": 620,
+   "lastGrown": "2026-11-15",
+   "xp": 622,
    "level": 15
   },
   "bess-logistics-expert": {
@@ -539,13 +539,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 374,
+   "count": 375,
    "byType": {
     "skill": 27,
-    "discussion": 347
+    "discussion": 348
    },
-   "lastGrown": "2026-11-14",
-   "xp": 775,
+   "lastGrown": "2026-11-15",
+   "xp": 777,
    "level": 17
   },
   "bess-project-manager": {
@@ -599,13 +599,13 @@
    "level": 8
   },
   "bess-security-expert": {
-   "count": 61,
+   "count": 62,
    "byType": {
     "skill": 10,
-    "discussion": 51
+    "discussion": 52
    },
-   "lastGrown": "2026-11-05",
-   "xp": 132,
+   "lastGrown": "2026-11-15",
+   "xp": 134,
    "level": 7
   },
   "bess-site-manager": {
@@ -781,13 +781,13 @@
    "level": 7
   },
   "bess-tax-korea": {
-   "count": 190,
+   "count": 191,
    "byType": {
     "skill": 24,
-    "discussion": 166
+    "discussion": 167
    },
-   "lastGrown": "2026-11-13",
-   "xp": 404,
+   "lastGrown": "2026-11-15",
+   "xp": 406,
    "level": 12
   },
   "bess-tool-developer": {
@@ -832,13 +832,13 @@
    "level": 8
   },
   "bess-translator": {
-   "count": 35,
+   "count": 36,
    "byType": {
     "skill": 8,
-    "discussion": 27
+    "discussion": 28
    },
-   "lastGrown": "2026-11-04",
-   "xp": 78,
+   "lastGrown": "2026-11-15",
+   "xp": 80,
    "level": 6
   }
  },
@@ -1201,7 +1201,7 @@
   },
   {
    "date": "2026-11-15",
-   "added": 30
+   "added": 31
   }
  ],
  "freshness": {

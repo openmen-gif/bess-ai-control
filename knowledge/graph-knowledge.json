@@ -163,6 +163,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-5315a8baa080",
+   "name": "팀 토론 — 한국 세제 혜택 최적화 전략 수립: BESS 프로젝트에 대한",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-4e5562d48c2b",
    "name": "팀 토론 — 예측 모델을 활용한 운영데이터 기반의 KPI 트렌드 분석 및",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-abdd8b74707a",
-   "name": "“Electric jerry can:” Arena backs Aussie",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7290,6 +7290,41 @@
   {
    "source": "STD-001",
    "target": "K-559b6ab4fb26",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-5315a8baa080",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-5315a8baa080",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5315a8baa080",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-5315a8baa080",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-5315a8baa080",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-5315a8baa080",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-5315a8baa080",
    "type": "knowledge"
   },
   {
@@ -14436,11 +14471,6 @@
    "source": "MAR-001",
    "target": "K-ac740ee8be14",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-abdd8b74707a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15034,7 +15064,7 @@
    {
     "date": "2026-11-15",
     "knowledge": 800,
-    "events_total": 4587
+    "events_total": 4588
    }
   ]
  }
