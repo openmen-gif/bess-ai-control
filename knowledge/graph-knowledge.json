@@ -163,6 +163,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-4e5562d48c2b",
+   "name": "팀 토론 — 예측 모델을 활용한 운영데이터 기반의 KPI 트렌드 분석 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-383a442710cc",
    "name": "Europe Solar PV News Snippets: Israel’s ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-97e6e6a64efb",
-   "name": "Armenia introduces interest rate subsidi",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7290,6 +7290,46 @@
   {
    "source": "STD-001",
    "target": "K-559b6ab4fb26",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4e5562d48c2b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4e5562d48c2b",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-4e5562d48c2b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-4e5562d48c2b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-4e5562d48c2b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-4e5562d48c2b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-4e5562d48c2b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-4e5562d48c2b",
    "type": "knowledge"
   },
   {
@@ -14366,11 +14406,6 @@
    "source": "BAT-001",
    "target": "K-a60a7bac6e15",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-97e6e6a64efb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14964,7 +14999,7 @@
    {
     "date": "2026-11-15",
     "knowledge": 800,
-    "events_total": 4585
+    "events_total": 4586
    }
   ]
  }
