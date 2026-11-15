@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-85a4f3216cd1",
+   "name": "팀 토론 — 클라우드 기반 모니터링 시스템 업그레이드를 통해 실시간 데이",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-6c4216e2fd79",
    "name": "팀 토론 — FIDIC 계약 조건 분석 및 우리 프로젝트 최적화 적용 방",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b61df76e1d05",
-   "name": "팀 토론 — 배터리 재활용 규제 개정에 따른 국내 BESS 조달 전략 및",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7240,6 +7240,41 @@
   {
    "source": "SYS-001",
    "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-85a4f3216cd1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-85a4f3216cd1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-85a4f3216cd1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-85a4f3216cd1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-85a4f3216cd1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-85a4f3216cd1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-85a4f3216cd1",
    "type": "knowledge"
   },
   {
@@ -14501,46 +14536,6 @@
    "source": "FIR-001",
    "target": "K-c0d7b34c5591",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-b61df76e1d05",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-b61df76e1d05",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-b61df76e1d05",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-b61df76e1d05",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-b61df76e1d05",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-b61df76e1d05",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-b61df76e1d05",
-   "type": "knowledge"
-  },
-  {
-   "source": "TRF-001",
-   "target": "K-b61df76e1d05",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15139,7 +15134,7 @@
    {
     "date": "2026-11-16",
     "knowledge": 800,
-    "events_total": 4590
+    "events_total": 4591
    }
   ]
  }

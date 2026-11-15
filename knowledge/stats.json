@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-16",
  "totals": {
-  "all": 4590,
+  "all": 4591,
   "briefing": 2391,
   "skill": 1235,
-  "discussion": 964,
+  "discussion": 965,
   "activity": 0
  },
  "perAgent": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 474,
+   "count": 475,
    "byType": {
     "skill": 28,
-    "discussion": 446
+    "discussion": 447
    },
    "lastGrown": "2026-11-16",
-   "xp": 976,
+   "xp": 978,
    "level": 19
   },
   "bess-customs-tariff": {
@@ -436,24 +436,24 @@
    "level": 7
   },
   "bess-output-generator": {
-   "count": 53,
+   "count": 54,
    "byType": {
     "skill": 12,
-    "discussion": 41
+    "discussion": 42
    },
-   "lastGrown": "2026-11-13",
-   "xp": 118,
+   "lastGrown": "2026-11-16",
+   "xp": 120,
    "level": 7
   },
   "bess-pcs-expert": {
-   "count": 468,
+   "count": 469,
    "byType": {
     "skill": 20,
-    "discussion": 214,
+    "discussion": 215,
     "briefing": 234
    },
    "lastGrown": "2026-11-16",
-   "xp": 722,
+   "xp": 724,
    "level": 16
   },
   "bess-permit-asia": {
@@ -499,13 +499,13 @@
    "level": 11
   },
   "bess-power-system-analyst": {
-   "count": 236,
+   "count": 237,
    "byType": {
     "skill": 23,
-    "discussion": 213
+    "discussion": 214
    },
-   "lastGrown": "2026-11-15",
-   "xp": 495,
+   "lastGrown": "2026-11-16",
+   "xp": 497,
    "level": 13
   },
   "bess-precom-report": {
@@ -599,13 +599,13 @@
    "level": 8
   },
   "bess-security-expert": {
-   "count": 62,
+   "count": 63,
    "byType": {
     "skill": 10,
-    "discussion": 52
+    "discussion": 53
    },
-   "lastGrown": "2026-11-15",
-   "xp": 134,
+   "lastGrown": "2026-11-16",
+   "xp": 136,
    "level": 7
   },
   "bess-site-manager": {
@@ -650,14 +650,14 @@
    "level": 6
   },
   "bess-standards-japan": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 12,
-    "discussion": 35
+    "discussion": 36
    },
    "lastGrown": "2026-11-16",
-   "xp": 106,
-   "level": 6
+   "xp": 108,
+   "level": 7
   },
   "bess-standards-korea": {
    "count": 376,
@@ -730,13 +730,13 @@
    "level": 6
   },
   "bess-system-engineer": {
-   "count": 356,
+   "count": 357,
    "byType": {
     "skill": 24,
-    "discussion": 332
+    "discussion": 333
    },
    "lastGrown": "2026-11-16",
-   "xp": 736,
+   "xp": 738,
    "level": 16
   },
   "bess-tax-accountant": {
@@ -1201,7 +1201,7 @@
   },
   {
    "date": "2026-11-16",
-   "added": 2
+   "added": 3
   }
  ],
  "freshness": {
