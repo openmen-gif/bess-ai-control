@@ -172,6 +172,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3c4279b42d59",
+   "name": "팀 토론 — SiC 기술 구현의 효율성 향상이 우리 BESS 시스템의 장",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-15",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-383a442710cc",
    "name": "Europe Solar PV News Snippets: Israel’s ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-a60a7bac6e15",
-   "name": "Obituary for James \"Jim\" Bess",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7330,6 +7330,46 @@
   {
    "source": "SYS-001",
    "target": "K-4e5562d48c2b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3c4279b42d59",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3c4279b42d59",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3c4279b42d59",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-3c4279b42d59",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-3c4279b42d59",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-3c4279b42d59",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3c4279b42d59",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-3c4279b42d59",
    "type": "knowledge"
   },
   {
@@ -14401,11 +14441,6 @@
    "source": "PCS-001",
    "target": "K-abdd8b74707a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-a60a7bac6e15",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14999,7 +15034,7 @@
    {
     "date": "2026-11-15",
     "knowledge": 800,
-    "events_total": 4586
+    "events_total": 4587
    }
   ]
  }
