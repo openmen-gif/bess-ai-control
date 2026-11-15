@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-c0461a7ec423",
+   "name": "팀 토론 — BESS 프로젝트 이해관계자를 위한 혁신적인 데이터 시각화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fdffbeecaef2",
    "name": "Hundreds object to huge batteries on Wil",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-03",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ac740ee8be14",
-   "name": "삼성물산, 호주 파워텍 1억 호주달러에 인수…친환경 인력 확보",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-03",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c0461a7ec423",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-fdffbeecaef2",
@@ -14466,15 +14506,10 @@
    "source": "FIR-001",
    "target": "K-b51625b7258d",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-ac740ee8be14",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "history": [
    {
     "date": "2026-07-20",
@@ -15065,6 +15100,11 @@
     "date": "2026-11-15",
     "knowledge": 800,
     "events_total": 4588
+   },
+   {
+    "date": "2026-11-16",
+    "knowledge": 800,
+    "events_total": 4589
    }
   ]
  }
