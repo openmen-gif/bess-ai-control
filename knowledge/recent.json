@@ -633,6 +633,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "43f47dd98399",
+   "date": "2026-11-16",
+   "type": "discussion",
+   "agents": [
+    "bess-cable-engineer",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 유럽 인허가 절차 최적화 전략 수립: EU/RO/PL의 주요 인허가 요건 (ENTSO-E, RfG 포함) 분석 및 현지 규제 준수 프레임워크 개발",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "41e99346c66c",
    "date": "2026-11-16",
    "type": "discussion",
@@ -3522,17 +3540,6 @@
     "bess-battery-expert"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "73101a4f6bdf",
-   "date": "2026-11-12",
-   "type": "skill",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 30개 갱신",
    "link": "",
    "source": "00_Skill_MD"
   }
