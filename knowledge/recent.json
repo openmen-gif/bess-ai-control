@@ -665,6 +665,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "3c55d0bbe06a",
+   "date": "2026-11-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-internal-auditor",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-security-expert"
+   ],
+   "title": "팀 토론 — 현장 시공 최적화를 위한 지역별 맞춤형 시공 프로토콜 개발 및 검증 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "3a00bd58df87",
    "date": "2026-11-17",
    "type": "briefing",
@@ -3506,17 +3524,6 @@
    "type": "skill",
    "agents": [
     "bess-scheduler"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 30개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "55dc41077e57",
-   "date": "2026-11-13",
-   "type": "skill",
-   "agents": [
-    "bess-epc-bom"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 30개 갱신",
    "link": "",
