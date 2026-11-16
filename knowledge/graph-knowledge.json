@@ -28,6 +28,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-ef5b6ffffbb5",
+   "name": "팀 토론 — 글로벌 BESS 시장 입찰 문서 다국어 번역 및 현지화 전략",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ed5f9c8b4282",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-04",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-fa1b78ac654b",
-   "name": "팀 토론 — 접지망·IEEE80 영역 1차 분석 — bess-ground",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7250,6 +7250,46 @@
   {
    "source": "STD-001",
    "target": "K-efb3d8f0f9e8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-ef5b6ffffbb5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-ef5b6ffffbb5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ef5b6ffffbb5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-ef5b6ffffbb5",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ef5b6ffffbb5",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ef5b6ffffbb5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-ef5b6ffffbb5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ef5b6ffffbb5",
    "type": "knowledge"
   },
   {
@@ -14436,41 +14476,6 @@
    "source": "MAR-001",
    "target": "K-fbf1760906a0",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fa1b78ac654b",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-fa1b78ac654b",
-   "type": "knowledge"
-  },
-  {
-   "source": "EBP-001",
-   "target": "K-fa1b78ac654b",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-fa1b78ac654b",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYB-001",
-   "target": "K-fa1b78ac654b",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-fa1b78ac654b",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-fa1b78ac654b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15069,7 +15074,7 @@
    {
     "date": "2026-11-16",
     "knowledge": 800,
-    "events_total": 4657
+    "events_total": 4658
    }
   ]
  }

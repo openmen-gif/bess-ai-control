@@ -42,6 +42,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "ef5b6ffffbb5",
+   "date": "2026-11-16",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cost-analyst",
+    "bess-epc-bom",
+    "bess-fire-engineer",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 글로벌 BESS 시장 입찰 문서 다국어 번역 및 현지화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ed5f9c8b4282",
    "date": "2026-11-16",
    "type": "skill",
@@ -3517,17 +3535,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 30개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "71724d272097",
-   "date": "2026-11-12",
-   "type": "briefing",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "Bayernwerk Netz, 바이에른주 Speichersdorf 변전소용 20MW/80MWh BESS 입찰 공고",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ0ppTlgwWkp3UkhOaHJWeTA4UmsycHp6NGlEMkhnNi01TDB0UWhTaC1pcVFEaUZhWk1XRVVrdjRQcWNyNE9hZkc1ZjNIa3JRNDltS0dpdkNfbC11Y1lpU0REb2V0ekNHNTdmWmItRlZUQV9Sd2lxVlZsdXl5TFVxWVFiZzh3LVdGOFE?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
