@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-16",
  "totals": {
-  "all": 4656,
+  "all": 4657,
   "briefing": 2422,
   "skill": 1266,
-  "discussion": 968,
+  "discussion": 969,
   "activity": 0
  },
  "perAgent": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 479,
+   "count": 480,
    "byType": {
     "skill": 29,
-    "discussion": 450
+    "discussion": 451
    },
    "lastGrown": "2026-11-16",
-   "xp": 987,
+   "xp": 989,
    "level": 19
   },
   "bess-customs-tariff": {
@@ -336,13 +336,13 @@
    "level": 8
   },
   "bess-ip-patent-expert": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 15,
-    "discussion": 34
+    "discussion": 35
    },
-   "lastGrown": "2026-11-12",
-   "xp": 113,
+   "lastGrown": "2026-11-16",
+   "xp": 115,
    "level": 7
   },
   "bess-it-infra": {
@@ -376,13 +376,13 @@
    "level": 6
   },
   "bess-legal-expert": {
-   "count": 303,
+   "count": 304,
    "byType": {
     "skill": 25,
-    "discussion": 278
+    "discussion": 279
    },
    "lastGrown": "2026-11-16",
-   "xp": 631,
+   "xp": 633,
    "level": 15
   },
   "bess-logistics-expert": {
@@ -540,13 +540,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 378,
+   "count": 379,
    "byType": {
     "skill": 28,
-    "discussion": 350
+    "discussion": 351
    },
    "lastGrown": "2026-11-16",
-   "xp": 784,
+   "xp": 786,
    "level": 17
   },
   "bess-project-manager": {
@@ -620,14 +620,14 @@
    "level": 8
   },
   "bess-standards-analyst": {
-   "count": 587,
+   "count": 588,
    "byType": {
     "skill": 19,
-    "discussion": 160,
+    "discussion": 161,
     "briefing": 408
    },
    "lastGrown": "2026-11-16",
-   "xp": 785,
+   "xp": 787,
    "level": 17
   },
   "bess-standards-australia": {
@@ -661,13 +661,13 @@
    "level": 7
   },
   "bess-standards-korea": {
-   "count": 379,
+   "count": 380,
    "byType": {
     "skill": 26,
-    "discussion": 353
+    "discussion": 354
    },
    "lastGrown": "2026-11-16",
-   "xp": 784,
+   "xp": 786,
    "level": 17
   },
   "bess-standards-poland": {
@@ -701,13 +701,13 @@
    "level": 6
   },
   "bess-standards-usa": {
-   "count": 55,
+   "count": 56,
    "byType": {
     "skill": 10,
-    "discussion": 45
+    "discussion": 46
    },
-   "lastGrown": "2026-11-11",
-   "xp": 120,
+   "lastGrown": "2026-11-16",
+   "xp": 122,
    "level": 7
   },
   "bess-structural-analyst": {
@@ -782,13 +782,13 @@
    "level": 7
   },
   "bess-tax-korea": {
-   "count": 192,
+   "count": 193,
    "byType": {
     "skill": 25,
-    "discussion": 167
+    "discussion": 168
    },
    "lastGrown": "2026-11-16",
-   "xp": 409,
+   "xp": 411,
    "level": 12
   },
   "bess-tool-developer": {
@@ -1202,7 +1202,7 @@
   },
   {
    "date": "2026-11-16",
-   "added": 68
+   "added": 69
   }
  ],
  "freshness": {

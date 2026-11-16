@@ -469,6 +469,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-41e99346c66c",
+   "name": "팀 토론 — 이전가격 최적화 전략 수립: OECD TPG 가이드라인에 따",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-16",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-3cbdcc9da083",
    "name": "2026년 중국 BESS 공급사 소개 보도자료 (Xupernova·Wel",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-04",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-f99ab46c91f0",
-   "name": "LG에너지솔루션, 엔비디아 AI 전력망에 배터리 공급 기반…소듐이온 개발",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7665,6 +7665,46 @@
   {
    "source": "COM-003",
    "target": "K-44d60030cf04",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-41e99346c66c",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-41e99346c66c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-41e99346c66c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-41e99346c66c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-41e99346c66c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-41e99346c66c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-41e99346c66c",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-41e99346c66c",
    "type": "knowledge"
   },
   {
@@ -14431,11 +14471,6 @@
    "source": "STD-001",
    "target": "K-fa1b78ac654b",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-f99ab46c91f0",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15034,7 +15069,7 @@
    {
     "date": "2026-11-16",
     "knowledge": 800,
-    "events_total": 4656
+    "events_total": 4657
    }
   ]
  }
