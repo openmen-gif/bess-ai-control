@@ -309,6 +309,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "a11848ce2439",
+   "date": "2026-11-16",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-tax-accountant"
+   ],
+   "title": "팀 토론 — 지식베이스 업데이트 및 팀 내 최신 BESS 동향 통합 워크샵 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "9b795470cfa9",
    "date": "2026-11-16",
    "type": "discussion",
@@ -3531,17 +3549,6 @@
    "title": "SolarBridge, 텍사스 양산 앞두고 135kW PCS 출시",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTVlORDBFRktYcW9DMjlIWmJfT2hlem1RNjkxNFdkYWZfYnJfS051ZUNGMW9adFY0UV9jVlZNRHMtZHpCci12N0FXa2xUQmRTNWgyZVFENnhyUUhDNWdKSGM5cjQ0YUZuMjFrZG8xTWhSLU1Gcy1UZVA4UzZmYVBmUTVTaWZhQVpBTm9UMkNUS3lWVV9BOUZySDBpMG0yVWdr?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "7365fe286bdb",
-   "date": "2026-11-12",
-   "type": "skill",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

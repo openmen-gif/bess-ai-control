@@ -235,6 +235,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-a11848ce2439",
+   "name": "팀 토론 — 지식베이스 업데이트 및 팀 내 최신 BESS 동향 통합 워크",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-16",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-9b795470cfa9",
    "name": "팀 토론 — 삼성SDI와 LG엔솔의 차세대 배터리 공개 동향 분석 및 한",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-04",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fc0dae5a1b4b",
-   "name": "팀 토론 — EU BESS 규격 강화 동향 분석 및 국내 설계·인증 프로",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7435,6 +7435,46 @@
   {
    "source": "OAM-001",
    "target": "K-a229ffd499b7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a11848ce2439",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a11848ce2439",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a11848ce2439",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a11848ce2439",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-a11848ce2439",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a11848ce2439",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-a11848ce2439",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-a11848ce2439",
    "type": "knowledge"
   },
   {
@@ -14471,46 +14511,6 @@
    "source": "BAT-001",
    "target": "K-fc12fa18357f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fc0dae5a1b4b",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-fc0dae5a1b4b",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCM-001",
-   "target": "K-fc0dae5a1b4b",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-fc0dae5a1b4b",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-fc0dae5a1b4b",
-   "type": "knowledge"
-  },
-  {
-   "source": "PDI-001",
-   "target": "K-fc0dae5a1b4b",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-fc0dae5a1b4b",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-fc0dae5a1b4b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15109,7 +15109,7 @@
    {
     "date": "2026-11-16",
     "knowledge": 800,
-    "events_total": 4659
+    "events_total": 4660
    }
   ]
  }
