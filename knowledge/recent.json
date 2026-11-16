@@ -2,6 +2,24 @@
  "updated": "2026-11-17",
  "events": [
   {
+   "id": "d01a17aa7d20",
+   "date": "2026-11-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-tax-incentive",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — BESS 프로젝트 리스크 히트맵 작성 및 Monte Carlo 시뮬레이션을 통한 예비비 최적화 실행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "4441cba2d4c6",
    "date": "2026-11-17",
    "type": "discussion",
@@ -3551,17 +3569,6 @@
    ],
    "title": "도미니카공화국 화력발전단지에 배터리 설비 추가 추진",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN3ZjMnppQkNoTWx6bGIwRFh2OVdtNXFGamFzSnBhdEh0ZGY0Z2lGeG5tWHc4dzRIWVVyY2JPdFpfRVZEbF8zMTNncHNuQmRVOXdXZnBzRVJaOUoxT3ozOXV6emliOTJ0TS1fek9famV0dWFxVFlYQkE5aWJBdnFLVzZNMmIzOFo3eDRmdVZqTjRwM3VlbG9MSw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "7975687ffe53",
-   "date": "2026-11-12",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "온세미, 전력 손실 35% 줄인 차세대 SiC 플랫폼 공개…AI 데이터센터·전기차 공략",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyMEFaNEg0MzhPc2ZHdXNXcHpTeXZTNE5PeVM3UC1YdG9GR3NaQXVCWW9qeFRpZjZaLUppTm9JQVRwQ1docWpEcUtrSUlqMWdJbW5yN3lVWTB0OHUySWFNX2RDa1RCVDlpejV0Mg?oc=5",
    "source": "구글뉴스"
   }
  ]
