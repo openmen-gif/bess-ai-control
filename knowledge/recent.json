@@ -20,6 +20,24 @@
    "source": "bess-team"
   },
   {
+   "id": "11cdc6c4c087",
+   "date": "2026-11-17",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-network-engineer",
+    "bess-sales-manager",
+    "bess-security-expert",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 네트워크 보안 프로토콜 업그레이드 계획 수립: VLAN 설정 최적화 및 IEC 62443 준수를 통한 시스템 안정성 강화",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ff792f92a92b",
    "date": "2026-11-16",
    "type": "briefing",
@@ -3545,17 +3563,6 @@
    "title": "온세미, 전력 손실 35% 줄인 차세대 SiC 플랫폼 공개…AI 데이터센터·전기차 공략",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyMEFaNEg0MzhPc2ZHdXNXcHpTeXZTNE5PeVM3UC1YdG9GR3NaQXVCWW9qeFRpZjZaLUppTm9JQVRwQ1docWpEcUtrSUlqMWdJbW5yN3lVWTB0OHUySWFNX2RDa1RCVDlpejV0Mg?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "78c6d5a28c7e",
-   "date": "2026-11-12",
-   "type": "skill",
-   "agents": [
-    "bess-ip-patent-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 30개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

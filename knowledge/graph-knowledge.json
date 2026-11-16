@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-11cdc6c4c087",
+   "name": "팀 토론 — 네트워크 보안 프로토콜 업그레이드 계획 수립: VLAN 설정",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff792f92a92b",
    "name": "아일랜드 데이터센터 소송, 에너지 정책 주목",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-05",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-02902dcd1eb2",
-   "name": "Officials reveal cause of fire that led ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-05",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "STD-002",
    "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-11cdc6c4c087",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-11cdc6c4c087",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-11cdc6c4c087",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-11cdc6c4c087",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-11cdc6c4c087",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-11cdc6c4c087",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-11cdc6c4c087",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-11cdc6c4c087",
    "type": "knowledge"
   },
   {
@@ -14541,11 +14581,6 @@
    "source": "STD-001",
    "target": "K-0895a7142ced",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-02902dcd1eb2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15149,7 +15184,7 @@
    {
     "date": "2026-11-17",
     "knowledge": 800,
-    "events_total": 4661
+    "events_total": 4662
    }
   ]
  }
