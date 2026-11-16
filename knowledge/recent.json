@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "events": [
+  {
+   "id": "4441cba2d4c6",
+   "date": "2026-11-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-env-engineer",
+    "bess-esg-finance",
+    "bess-legal-expert",
+    "bess-logistics-expert",
+    "bess-permit-english",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 환경적 지속가능성 측면에서 BESS 프로젝트의 구체적인 환경 영향 평가 방법론을 강화하고, TCFD 및 EU 택소노미 기준에 맞춘 지속가능성 보고서 작성 프레임워크를 개발하세요.",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ff792f92a92b",
    "date": "2026-11-16",
@@ -3538,17 +3556,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 30개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "74408bf8645c",
-   "date": "2026-11-12",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "SolarBridge, 텍사스 양산 앞두고 135kW PCS 출시",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTVlORDBFRktYcW9DMjlIWmJfT2hlem1RNjkxNFdkYWZfYnJfS051ZUNGMW9adFY0UV9jVlZNRHMtZHpCci12N0FXa2xUQmRTNWgyZVFENnhyUUhDNWdKSGM5cjQ0YUZuMjFrZG8xTWhSLU1Gcy1UZVA4UzZmYVBmUTVTaWZhQVpBTm9UMkNUS3lWVV9BOUZySDBpMG0yVWdr?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

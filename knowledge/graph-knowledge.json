@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-4441cba2d4c6",
+   "name": "팀 토론 — 환경적 지속가능성 측면에서 BESS 프로젝트의 구체적인 환경",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff792f92a92b",
    "name": "아일랜드 데이터센터 소송, 에너지 정책 주목",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-05",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-fc12fa18357f",
-   "name": "Mapping Sweden’s BESS Market through its",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-04",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "LOG-001",
+   "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-4441cba2d4c6",
+   "type": "knowledge"
+  },
   {
    "source": "STD-001",
    "target": "K-ff792f92a92b",
@@ -14506,15 +14546,10 @@
    "source": "MAR-001",
    "target": "K-02902dcd1eb2",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-fc12fa18357f",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "history": [
    {
     "date": "2026-07-20",
@@ -15110,6 +15145,11 @@
     "date": "2026-11-16",
     "knowledge": 800,
     "events_total": 4660
+   },
+   {
+    "date": "2026-11-17",
+    "knowledge": 800,
+    "events_total": 4661
    }
   ]
  }
