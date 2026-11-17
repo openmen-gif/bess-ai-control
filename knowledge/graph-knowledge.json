@@ -181,6 +181,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-c49a71c005fa",
+   "name": "팀 토론 — 명령: FIDIC Silver/Yellow 조건 하의 신흥 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c4506dfb8712",
    "name": "HD현대, 태양광 모듈·ESS 앞세워 북미 시장 공략",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-06",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0ab94475443f",
-   "name": "말레이시아 데이터센터용 500MW 태양광·1GWh BESS 프로젝트 추진",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-06",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7335,6 +7335,46 @@
   {
    "source": "INS-001",
    "target": "K-c4a7bf9b66fd",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c49a71c005fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-c49a71c005fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c49a71c005fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-c49a71c005fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c49a71c005fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-c49a71c005fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c49a71c005fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-c49a71c005fa",
    "type": "knowledge"
   },
   {
@@ -14456,11 +14496,6 @@
    "source": "PCS-001",
    "target": "K-0d38d16bcd36",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0ab94475443f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15064,7 +15099,7 @@
    {
     "date": "2026-11-17",
     "knowledge": 800,
-    "events_total": 4737
+    "events_total": 4738
    }
   ]
  }
