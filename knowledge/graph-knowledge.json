@@ -64,6 +64,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-e47414530ea6",
+   "name": "팀 토론 — 법인세 및 VAT 최적화 전략 수립을 위한 국가별 세무 신고",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e2355890ed0b",
    "name": "Charge Power, 텍사스 580MWh BESS 상업운전 이후 운영",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-06",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0d38d16bcd36",
-   "name": "한온시스템, ESS·AI 냉각시장 진출...종합 열관리 기업 도약(종합)",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-06",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7235,6 +7235,46 @@
   {
    "source": "KTX-001",
    "target": "K-e553d42b0ad9",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-e47414530ea6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e47414530ea6",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e47414530ea6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-e47414530ea6",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-e47414530ea6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e47414530ea6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e47414530ea6",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-e47414530ea6",
    "type": "knowledge"
   },
   {
@@ -14491,11 +14531,6 @@
    "source": "MAR-001",
    "target": "K-0d4b42c344a3",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-0d38d16bcd36",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15099,7 +15134,7 @@
    {
     "date": "2026-11-17",
     "knowledge": 800,
-    "events_total": 4738
+    "events_total": 4739
    }
   ]
  }
