@@ -235,6 +235,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-a65e7f26424c",
+   "name": "팀 토론 — 품질 보증 프로세스 개선을 위한 PQP 및 벤더 감사 강화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-a52fd84ae126",
    "name": "일본 간사이전력, PJM 연계 버지니아 150MW/600MWh BESS ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-06",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-094575385efa",
-   "name": "“NCM·LFP 두 축 모두 잡겠다”…엘앤에프, 전기차·ESS 동시 공략",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-06",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7365,6 +7365,46 @@
   {
    "source": "HSE-001",
    "target": "K-a670586eb487",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a65e7f26424c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a65e7f26424c",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a65e7f26424c",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-a65e7f26424c",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-001",
+   "target": "K-a65e7f26424c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a65e7f26424c",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-a65e7f26424c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a65e7f26424c",
    "type": "knowledge"
   },
   {
@@ -14421,11 +14461,6 @@
    "source": "MAR-001",
    "target": "K-0ab94475443f",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-094575385efa",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15029,7 +15064,7 @@
    {
     "date": "2026-11-17",
     "knowledge": 800,
-    "events_total": 4736
+    "events_total": 4737
    }
   ]
  }

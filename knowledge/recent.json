@@ -295,6 +295,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "a65e7f26424c",
+   "date": "2026-11-17",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-hse-manager",
+    "bess-insurance-expert",
+    "bess-precom-report",
+    "bess-procurement-expert",
+    "bess-qaqc-engineer",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 품질 보증 프로세스 개선을 위한 PQP 및 벤더 감사 강화 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "a52fd84ae126",
    "date": "2026-11-17",
    "type": "briefing",
@@ -3517,17 +3535,6 @@
    "title": "[2026 에너지포럼] 반도체·AI 메가프로젝트에 ESS 수요 커진다…삼성SDI, 국내외 ESS 수주 확대 주목",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3VkdaN3V3UkNmWUtnZWpoRmk2all6cVo1VjZNV2VuWVVNQjlLZkRTVjc1RVZjWmxtRlF6N1U1NkdXR3hvOGp6VVpTZXQ5M25DX1kxYUZkZnRZcUhvYzZwMA?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "5c70921b4797",
-   "date": "2026-11-13",
-   "type": "skill",
-   "agents": [
-    "bess-scheduler"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 30개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
