@@ -523,6 +523,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-455a34aebed8",
+   "name": "팀 토론 — 삼성SDI의 북미 LFP 배터리 출시 전략 분석 및 한국 시",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-44e6229be08d",
    "name": "아일랜드 에너지 규제기관, 500MW 장주기 저장(LDES) 조달 승인",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-06",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-0d4b42c344a3",
-   "name": "2028년까지 일감 꽉 찼다 … ESS 업은 K배터리, 中 공세는 변수",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-06",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7630,6 +7630,46 @@
   {
    "source": "MKT-001",
    "target": "K-47aeaddad4bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-455a34aebed8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-455a34aebed8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-455a34aebed8",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-455a34aebed8",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-455a34aebed8",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-455a34aebed8",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-455a34aebed8",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-455a34aebed8",
    "type": "knowledge"
   },
   {
@@ -14526,11 +14566,6 @@
    "source": "COM-003",
    "target": "K-171a014132d6",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0d4b42c344a3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15134,7 +15169,7 @@
    {
     "date": "2026-11-17",
     "knowledge": 800,
-    "events_total": 4739
+    "events_total": 4740
    }
   ]
  }
