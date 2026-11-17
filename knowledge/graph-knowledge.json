@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-23ec6a51d9c5",
+   "name": "팀 토론 — 원격모니터링 시스템 구축을 통한 BESS 운영 가용률 향상 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa157c23e66c",
    "name": "Flower, 독일 Ragow 500MW/2000MWh BESS 계획 공",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-06",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-1cbfadd6b698",
-   "name": "[K배터리 새 출구 열리나②] 'AI 전기 먹는 하마' 잡아라…데이터센터",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-06",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-23ec6a51d9c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-23ec6a51d9c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-23ec6a51d9c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-23ec6a51d9c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-23ec6a51d9c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-23ec6a51d9c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-23ec6a51d9c5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-23ec6a51d9c5",
+   "type": "knowledge"
+  },
   {
    "source": "MAR-001",
    "target": "K-fa157c23e66c",
@@ -14596,15 +14636,10 @@
    "source": "COM-003",
    "target": "K-1fcc3caff15f",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-1cbfadd6b698",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "history": [
    {
     "date": "2026-07-20",
@@ -15205,6 +15240,11 @@
     "date": "2026-11-17",
     "knowledge": 800,
     "events_total": 4741
+   },
+   {
+    "date": "2026-11-18",
+    "knowledge": 800,
+    "events_total": 4742
    }
   ]
  }
