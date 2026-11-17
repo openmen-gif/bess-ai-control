@@ -424,6 +424,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6aef33e61e9a",
+   "name": "팀 토론 — 선적 프로세스 최적화를 위한 국제 물류 표준 준수 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-17",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6897f526a7aa",
    "name": "삼성SDI, 미국서 ‘ESS용 LFP’ 수조원 계약",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-06",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-171a014132d6",
-   "name": "스톡홀름 Green Voltis, AI 기반 유럽 배터리 저장장치 운영·",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-06",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7575,6 +7575,46 @@
   {
    "source": "BAT-001",
    "target": "K-6bb94531d815",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6aef33e61e9a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-6aef33e61e9a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-6aef33e61e9a",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-6aef33e61e9a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6aef33e61e9a",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-6aef33e61e9a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-6aef33e61e9a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6aef33e61e9a",
    "type": "knowledge"
   },
   {
@@ -14561,11 +14601,6 @@
    "source": "MAR-001",
    "target": "K-1cbfadd6b698",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-171a014132d6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15169,7 +15204,7 @@
    {
     "date": "2026-11-17",
     "knowledge": 800,
-    "events_total": 4740
+    "events_total": 4741
    }
   ]
  }
