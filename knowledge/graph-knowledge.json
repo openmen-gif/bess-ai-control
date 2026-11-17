@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-be2ec5386bc1",
+   "name": "팀 토론 — 변전소·레이아웃·SLD 영역 1차 분석 — bess-subs",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-23ec6a51d9c5",
    "name": "팀 토론 — 원격모니터링 시스템 구축을 통한 BESS 운영 가용률 향상 ",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-06",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1fcc3caff15f",
-   "name": "PJM 신속연계 트랙, 펜실베이니아 3개 사업 선정…총 1.7GW 추가",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-06",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-be2ec5386bc1",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-be2ec5386bc1",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-be2ec5386bc1",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-be2ec5386bc1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-be2ec5386bc1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-be2ec5386bc1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-be2ec5386bc1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-be2ec5386bc1",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-23ec6a51d9c5",
@@ -14631,11 +14671,6 @@
    "source": "PCS-001",
    "target": "K-204b66f10bad",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-1fcc3caff15f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15244,7 +15279,7 @@
    {
     "date": "2026-11-18",
     "knowledge": 800,
-    "events_total": 4742
+    "events_total": 4743
    }
   ]
  }
