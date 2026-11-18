@@ -649,6 +649,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0fad9d4c1289",
+   "name": "팀 토론 — 환경적 지속가능성 평가 강화 및 구체적인 친환경 기술 도입 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fa157c23e66c",
    "name": "Flower, 독일 Ragow 500MW/2000MWh BESS 계획 공",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d6ed504231d3",
-   "name": "인도, ESS 의무화로 전력망 뜯어고친다...92GWh 구축에 2.3조 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-07",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7770,6 +7770,46 @@
   {
    "source": "PCS-001",
    "target": "K-1606eb31db00",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-0fad9d4c1289",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-0fad9d4c1289",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-0fad9d4c1289",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-0fad9d4c1289",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-0fad9d4c1289",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-0fad9d4c1289",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0fad9d4c1289",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-0fad9d4c1289",
    "type": "knowledge"
   },
   {
@@ -14386,11 +14426,6 @@
    "source": "BAT-001",
    "target": "K-dfd2978461c3",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-d6ed504231d3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14999,7 +15034,7 @@
    {
     "date": "2026-11-18",
     "knowledge": 800,
-    "events_total": 4813
+    "events_total": 4814
    }
   ]
  }
