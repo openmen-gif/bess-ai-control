@@ -145,6 +145,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-ceceb74c8e6e",
+   "name": "팀 토론 — 개발팀 구성하여 Streamlit 기반 BESS 시뮬레이션 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-18",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-c71760210b2f",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-07",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d001dd89038f",
-   "name": "Sigenergy, 상업·산업용 배터리 저장 시스템 'SigenCube'",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7350,6 +7350,46 @@
   {
    "source": "MAR-001",
    "target": "K-d68a192aaa40",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-ceceb74c8e6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-ceceb74c8e6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-ceceb74c8e6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ceceb74c8e6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-ceceb74c8e6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PDI-001",
+   "target": "K-ceceb74c8e6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ceceb74c8e6e",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-ceceb74c8e6e",
    "type": "knowledge"
   },
   {
@@ -14351,11 +14391,6 @@
    "source": "STD-001",
    "target": "K-d6ed504231d3",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-d001dd89038f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14964,7 +14999,7 @@
    {
     "date": "2026-11-18",
     "knowledge": 800,
-    "events_total": 4812
+    "events_total": 4813
    }
   ]
  }
