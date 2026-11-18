@@ -190,6 +190,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-51503091872f",
+   "name": "팀 토론 — 다국어 BESS 시스템 통합 가이드라인 개발",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-46943d965de0",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-08",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4d99838597ef",
-   "name": "BERC, 비하르 150MW 태양광·300MWh BESS 입찰서류 수정 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-08",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7375,6 +7375,46 @@
   {
    "source": "LKM-001",
    "target": "K-52c1b827facb",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-51503091872f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-51503091872f",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-51503091872f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-51503091872f",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-51503091872f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-51503091872f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-51503091872f",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-51503091872f",
    "type": "knowledge"
   },
   {
@@ -14526,11 +14566,6 @@
    "source": "PCS-001",
    "target": "K-5229a81565af",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-4d99838597ef",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15144,7 +15179,7 @@
    {
     "date": "2026-11-19",
     "knowledge": 800,
-    "events_total": 4845
+    "events_total": 4846
    }
   ]
  }
