@@ -424,6 +424,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6c00f6ca3c13",
+   "name": "팀 토론 — AI 기반 SOC/SOH 예측 모델 개발로 운영 효율성 향상",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-18",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-64b865068ce3",
    "name": "Power Electronics, 호주 Edify 2.4GWh 하이브리드",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-dfd2978461c3",
-   "name": "Ford Energy, DESRI와 손잡고 미국 BESS 구축 추진",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7610,6 +7610,46 @@
   {
    "source": "FIR-001",
    "target": "K-6f276a02d79e",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-6c00f6ca3c13",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6c00f6ca3c13",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6c00f6ca3c13",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-6c00f6ca3c13",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-6c00f6ca3c13",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-6c00f6ca3c13",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-6c00f6ca3c13",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6c00f6ca3c13",
    "type": "knowledge"
   },
   {
@@ -14421,11 +14461,6 @@
    "source": "FIR-001",
    "target": "K-e1ca8e7a5cf9",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-dfd2978461c3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15034,7 +15069,7 @@
    {
     "date": "2026-11-18",
     "knowledge": 800,
-    "events_total": 4814
+    "events_total": 4815
    }
   ]
  }

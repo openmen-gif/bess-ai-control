@@ -554,6 +554,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "6c00f6ca3c13",
+   "date": "2026-11-18",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-battery-expert",
+    "bess-fire-engineer",
+    "bess-grid-interconnection",
+    "bess-hse-manager",
+    "bess-power-system-analyst",
+    "bess-standards-japan",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 SOC/SOH 예측 모델 개발로 운영 효율성 향상",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "64b865068ce3",
    "date": "2026-11-18",
    "type": "briefing",
@@ -3525,24 +3543,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 9 개 반영, 스킬 27개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "8ec4748e9392",
-   "date": "2026-11-14",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-ebop-engineer",
-    "bess-legal-expert",
-    "bess-procurement-expert",
-    "bess-qaqc-engineer",
-    "bess-standards-analyst",
-    "bess-standards-korea"
-   ],
-   "title": "팀 토론 — 벤더 성과 추적 시스템 구축을 통한 공급망 최적화 전략 수립 및 데이터 기반 조달 의사결정 강화 방안 검토",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
