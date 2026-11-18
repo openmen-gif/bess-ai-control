@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "events": [
+  {
+   "id": "cd656f08a6bc",
+   "date": "2026-11-19",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-emc-analyst",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-substation-engineer",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — FIDIC 계약 조건 분석 및 최적 적용 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ff6c8aa5ebc7",
    "date": "2026-11-18",
@@ -3528,17 +3546,6 @@
    "type": "skill",
    "agents": [
     "bess-standards-eu"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 9 개 반영, 스킬 27개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "941034528000",
-   "date": "2026-11-14",
-   "type": "skill",
-   "agents": [
-    "bess-system-engineer"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 9 개 반영, 스킬 27개 갱신",
    "link": "",

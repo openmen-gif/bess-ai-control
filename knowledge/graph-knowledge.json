@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-cd656f08a6bc",
+   "name": "팀 토론 — FIDIC 계약 조건 분석 및 최적 적용 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff6c8aa5ebc7",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-07",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-e1ca8e7a5cf9",
-   "name": "캄보디아 배터리 저장시설 화재 후 인근 납 제련공장 우려 확산",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-07",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-cd656f08a6bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-cd656f08a6bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-cd656f08a6bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-cd656f08a6bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-cd656f08a6bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-cd656f08a6bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "SUB-001",
+   "target": "K-cd656f08a6bc",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-cd656f08a6bc",
+   "type": "knowledge"
+  },
   {
    "source": "SCH-001",
    "target": "K-ff6c8aa5ebc7",
@@ -14456,15 +14496,10 @@
    "source": "PCS-001",
    "target": "K-e585b213ce95",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-e1ca8e7a5cf9",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "history": [
    {
     "date": "2026-07-20",
@@ -15070,6 +15105,11 @@
     "date": "2026-11-18",
     "knowledge": 800,
     "events_total": 4815
+   },
+   {
+    "date": "2026-11-19",
+    "knowledge": 800,
+    "events_total": 4816
    }
   ]
  }
