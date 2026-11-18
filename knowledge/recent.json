@@ -46,6 +46,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "f8f1d15831f4",
+   "date": "2026-11-18",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fit-procedure",
+    "bess-grid-interconnection",
+    "bess-knowledge-manager",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 클라우드 기반 BESS 모니터링 시스템 구축 계획 수립 및 자동화된 백업 전략 개발",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "f716d541e39c",
    "date": "2026-11-18",
    "type": "briefing",
@@ -3511,24 +3529,6 @@
    "title": "[칼럼] 재생에너지 확대의 완성은 ESS 보급이 아닌 `안전`이다",
    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBBaUhjQU40Q0I5ZFl2cG5mMzVxb0t4Q3Q3QkZPTzJtZFh5RlFpdGp5Y2FBbVI4YVlhOWFhdkdUdDRHODM4TFE?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "7b3e8c4f5d54",
-   "date": "2026-11-14",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-network-engineer",
-    "bess-pcs-expert",
-    "bess-power-system-analyst",
-    "bess-standards-korea",
-    "bess-system-engineer",
-    "bess-tax-epc-accounting"
-   ],
-   "title": "팀 토론 — SiC 기술 구현의 효율성 향상이 공급망 비용 구조에 미치는 영향 분석 및 최적 공급망 전략 수립 제안",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
