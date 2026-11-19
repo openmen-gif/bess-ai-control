@@ -514,6 +514,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2e315e3906b5",
+   "name": "팀 토론 — 미국 ESS 시장 진출 확대를 위한 삼성SDI의 AI 데이터",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-2e11b3624f90",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-012ba04fd0a4",
-   "name": "팀 토론 — 비용 예측의 불확실성에 대한 유연한 대응 전략 수립 및 [b",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-09",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7590,6 +7590,46 @@
   {
    "source": "MAR-001",
    "target": "K-2ec7e8ff9510",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2e315e3906b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2e315e3906b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-2e315e3906b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-2e315e3906b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-2e315e3906b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-2e315e3906b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-2e315e3906b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2e315e3906b5",
    "type": "knowledge"
   },
   {
@@ -14531,41 +14571,6 @@
    "source": "PCS-001",
    "target": "K-040567269a6e",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-012ba04fd0a4",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-012ba04fd0a4",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-012ba04fd0a4",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-012ba04fd0a4",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-012ba04fd0a4",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-012ba04fd0a4",
-   "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-012ba04fd0a4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15179,7 +15184,7 @@
    {
     "date": "2026-11-19",
     "knowledge": 800,
-    "events_total": 4889
+    "events_total": 4890
    }
   ]
  }
