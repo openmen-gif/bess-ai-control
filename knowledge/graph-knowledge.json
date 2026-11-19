@@ -631,6 +631,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-0b7dea35783b",
+   "name": "팀 토론 — 법인세 및 부가세 최적화 전략 수립을 통한 글로벌 BESS ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-19",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-0956429429c9",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-09",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-040567269a6e",
-   "name": "아일랜드 주택 소유자, 날씨 경보 기반 배터리 만충 기능 두 차례 오작동",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-09",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7690,6 +7690,46 @@
   {
    "source": "CYB-001",
    "target": "K-0d1025515120",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0b7dea35783b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-0b7dea35783b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-0b7dea35783b",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-0b7dea35783b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-0b7dea35783b",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-0b7dea35783b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-0b7dea35783b",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-0b7dea35783b",
    "type": "knowledge"
   },
   {
@@ -14566,11 +14606,6 @@
    "source": "STD-001",
    "target": "K-075d69593a55",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-040567269a6e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15184,7 +15219,7 @@
    {
     "date": "2026-11-19",
     "knowledge": 800,
-    "events_total": 4890
+    "events_total": 4891
    }
   ]
  }
