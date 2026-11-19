@@ -178,6 +178,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "73a9a2d0078b",
+   "date": "2026-11-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-grid-interconnection",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-power-market-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 전사 문서 일관성 강화 프로젝트 시작: 문서 표준화 및 자동화 시스템 구축 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5d3e0b8bf96c",
    "date": "2026-11-20",
    "type": "skill",
@@ -3525,17 +3543,6 @@
    ],
    "title": "삼성SDI, 미국 ‘RE+ 2026’서 ESS·UPS·BBU용 배터리 선보인다",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uSXVwdTlEcG9qREJCWHE4SGFzbTQ1LXFJMlh1SGV0bXBKUnhEN29BV040RFo1RTV3VHFMNkZWbzFDcTgxZ05FZXpZUEhfQS10WVRXeHBhRzg0SXpIOXY3WVMwYUNEN2tmVHFkRV9QYXg?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "72251f33aea6",
-   "date": "2026-11-16",
-   "type": "briefing",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "역대 최대 ESS 입찰 삼성SDI·SK온…LG 불참 왜",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKeGZIMmZnQVpIOG1MV042Mkl2ek1ZUDJodTFJZFhhamlncmw5aHhtdVRGc2JDUHdHc3FGVmRydXF0Qm95dUVXZC1IOWNQZURaaU15bk5zUkNqTm0ySldnbUxab0RPNEE?oc=5",
    "source": "구글뉴스"
   }
  ]

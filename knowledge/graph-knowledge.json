@@ -145,6 +145,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-73a9a2d0078b",
+   "name": "팀 토론 — 전사 문서 일관성 강화 프로젝트 시작: 문서 표준화 및 자동",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5d3e0b8bf96c",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-09",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d25886b0e86a",
-   "name": "팀 토론 — 통합 하이브리드 시스템 최적화 설계 — PV, Wind, H",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-09",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7280,6 +7280,46 @@
   {
    "source": "LEG-001",
    "target": "K-77586b743940",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-73a9a2d0078b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-73a9a2d0078b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-73a9a2d0078b",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-73a9a2d0078b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-73a9a2d0078b",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-73a9a2d0078b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-73a9a2d0078b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-73a9a2d0078b",
    "type": "knowledge"
   },
   {
@@ -14431,46 +14471,6 @@
    "source": "MAR-001",
    "target": "K-d9a59bc07a66",
    "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-d25886b0e86a",
-   "type": "knowledge"
-  },
-  {
-   "source": "ENV-001",
-   "target": "K-d25886b0e86a",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-d25886b0e86a",
-   "type": "knowledge"
-  },
-  {
-   "source": "HYB-001",
-   "target": "K-d25886b0e86a",
-   "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-d25886b0e86a",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-d25886b0e86a",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-d25886b0e86a",
-   "type": "knowledge"
-  },
-  {
-   "source": "TPS-001",
-   "target": "K-d25886b0e86a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15089,7 +15089,7 @@
    {
     "date": "2026-11-20",
     "knowledge": 800,
-    "events_total": 4926
+    "events_total": 4927
    }
   ]
  }
