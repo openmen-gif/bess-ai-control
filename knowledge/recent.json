@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "events": [
+  {
+   "id": "223b49db0888",
+   "date": "2026-11-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-power-market-expert",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-standards-analyst",
+    "bess-system-engineer",
+    "bess-tax-epc-accounting"
+   ],
+   "title": "팀 토론 — 인재 유치 및 유지 전략 수립: 역량개발 프로그램과 유연한 조직문화 구축 방안 제시",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fc9841edc598",
    "date": "2026-11-19",
@@ -51,6 +69,17 @@
    "title": "팀 토론 — 환경적 지속가능성 평가 강화를 위한 구체적인 친환경 기술 도입 로드맵 작성 및 실행 계획 수립",
    "link": "",
    "source": "bess-team"
+  },
+  {
+   "id": "f9a967b89a57",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-system-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
   },
   {
    "id": "f4988251a16d",
@@ -218,6 +247,17 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "cdd3a5d552f1",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-power-market-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "cd656f08a6bc",
    "date": "2026-11-19",
    "type": "discussion",
@@ -258,6 +298,17 @@
    "source": "구글뉴스"
   },
   {
+   "id": "b784f21e3510",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "af04e061409d",
    "date": "2026-11-19",
    "type": "briefing",
@@ -267,6 +318,17 @@
    "title": "열폭주 대응: 리튬이온 배터리 화재 시 소방관이 알아야 할 것",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOLWlBaUg0aFhKM2FaaFFEaFMybkhNSmJYSGJDTFRFTThCV3FjTFNjMWlCTC1oVFVRSGwwR21PTDdmb3lHYVFuZ2k5YnRCY3h1TFJ3SkNVRklQM09ua0NoWEE3NFpZYkNCUzVFOEc0VENJQmJZcFlKRHJoUHBuNHBMVVZhM0tHNk1jVzFsNG8wcVluT2FsQmVWWGM5SkZfY1lMdDhzVERKSHlEcVNQX2JmX1pyY2R6Q2lvaS1OeVN3a0w?oc=5",
    "source": "구글뉴스"
+  },
+  {
+   "id": "ac51dd67d35b",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-business-dev"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
   },
   {
    "id": "a8b2bf828f18",
@@ -364,6 +426,17 @@
    "source": "구글뉴스"
   },
   {
+   "id": "8e5e599e3a2e",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "8c4ed42d254b",
    "date": "2026-11-19",
    "type": "briefing",
@@ -441,6 +514,17 @@
    "source": "구글뉴스"
   },
   {
+   "id": "7c6d78bac588",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "7b0384d3ce74",
    "date": "2026-11-19",
    "type": "skill",
@@ -485,6 +569,17 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "6b22b2aebafe",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-grid-interconnection"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "686bd7e84030",
    "date": "2026-11-19",
    "type": "briefing",
@@ -523,6 +618,17 @@
    "title": "팀 토론 — BESS·EPC 영역 초안 작성 — bess-standards-australia 주관, 핵심 결론 도출",
    "link": "",
    "source": "bess-team"
+  },
+  {
+   "id": "5cfa1838deca",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-legal-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
   },
   {
    "id": "5c386b154a22",
@@ -607,6 +713,17 @@
    "title": "팀 토론 — 다국어 BESS 시스템 통합 가이드라인 개발",
    "link": "",
    "source": "bess-team"
+  },
+  {
+   "id": "4c5d75576ab6",
+   "date": "2026-11-19",
+   "type": "skill",
+   "agents": [
+    "bess-cost-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
+   "link": "",
+   "source": "00_Skill_MD"
   },
   {
    "id": "4c5d6fb126b2",
@@ -3433,116 +3550,6 @@
    ],
    "title": "2026년 중국 BESS 공급사 소개 보도자료 (Xupernova·Welion 등)",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdGNzaEFnLWE3cTFTclBVOGVWU2o0b0JzQlRkMVU2WGIza2JUMjlNVS1XbG9fSkhkc2d1TEljTDZ5X0liNjJlOFl4YUZEZm1OUm03TDYxcHdaSHBhd0U3X1A5aXNFTjI4bHQ0T0R6YzVCbkZ5RkNfa1dCUzVTR1lza0MtVzFmXzlvTnR6bElBRHpTQUZzeml6bXVna2E4NDNXaW5YaWxlbUJXVVN2RjNUZC01MHNUUQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3925288e180b",
-   "date": "2026-11-16",
-   "type": "skill",
-   "agents": [
-    "bess-data-analyst"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 14 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "38d5e623362d",
-   "date": "2026-11-16",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "주 정부가 기대하는 배터리 농장, 일부 지역은 반대",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOTQtZG5BOHhZRzVPTlVFWFd4NmVQd2g5QzZUR1dmekw0RzZDTGlmVURYWWxLLURpdER3dFp4QXdCb1hObmZBRk13aFZrcFdlWEZpNXpvOFIzTVA3VjRBV3hna1BDdmVCdFBCdVhMR2lId0s4aWdzSEJOWnljZ3B1czllWG1fQjYxZFV6YUZMVEpCcnB0U3c?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "363a670623bd",
-   "date": "2026-11-16",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "샌디에이고 카운티 어세서, 기부금 요청으로 배터리 저장 기업 후원 논란",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQV1Q1aDBabF9RclQyWkZNNENpV0prb21rNzRKY0VJcTdMelZ1c0tMNXo2QTE0MGZzVkxiYjhPNkQ3eWxieXZ1YmxzbkRIXzdOZXJMazNKZmItR0JzWTJjSV9oVnBaek1HVk0zWWMwX25JSEM2T19HVmtiTEV6N2xnZlBTcTRtUW9GSVY5VnFwME9Va3VtNmg3YlZjeUhZa3dFNW1iR01fNzZLOEVUdzNOUDBhbHpiWmlaME16anRGWS1FT3owdnpGeWY1djJrMTE1LU5j?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "324a0f2ec159",
-   "date": "2026-11-16",
-   "type": "skill",
-   "agents": [
-    "bess-structural-analyst"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 14 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "321087d3adf3",
-   "date": "2026-11-16",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "삼성SDI 미국산 LFP로 ESS 공략…데이터센터 겨냥",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XLVVqSjRRYXFhdThGYVBYYWpybThqYm5iYWpMVlhuMkUwN3o0elZab0s4dkhRT0lpazR1N1lGUENLMVg3Nm9GdlRibHdGV1hXaG1xS1lHUElENWRBLUhDQTg0OUVZVXM?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "3201749c2c13",
-   "date": "2026-11-16",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "캘리포니아 가정, 태양광 설치 후 배터리 단계적 추가 검토…NEM 3.0에서 절감 효과 우려",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOa3dKMmkxcnFGVm83cVZ4by1vM292MkJ5dzQ4NU5uNUt0M3YxUUphNkFRNnI4cnZmTjhDU0NJUVM5dUVON0RyZUc2YjdyTXhtTzdObzNGazB2Qjd3VkplS3d0UWhjejZBNHE3c2l5b2p1OGw5Z2lodHl2RGlYQXVFelBJaVpIeFQzdXJPNWZDSXRtMGxOa19J?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "30861841c21f",
-   "date": "2026-11-16",
-   "type": "skill",
-   "agents": [
-    "bess-standards-korea"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 14 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "25ea8c4e96c8",
-   "date": "2026-11-16",
-   "type": "skill",
-   "agents": [
-    "bess-presentation-designer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 14 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "19fb74634f29",
-   "date": "2026-11-16",
-   "type": "skill",
-   "agents": [
-    "bess-internal-auditor"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 14 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "1678362fcf40",
-   "date": "2026-11-16",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "Vikram Solar, 2030년 3월까지 BESS 15GWh 목표 제시",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSnpYcWZFWXBFRlpxWWlzTkFwVTZFODB0MEJObEZ5M2hnTnNKaTNSNGRFZklIaUdWR3ZsZ2ZWaS00M1pXRjhBT3p6a3dzSE9oek9QM0owMlhCSmRoV0FIVUFWTTExZFJ5ZWNySENxdEZtSXFZWWhidzJJS09sd3cwcXpEeXFQSlM0c3hYVllkRlJ1Tmo1UUhVc2ppdHVYNk16dENWam9MU0N5ZTRU?oc=5",
    "source": "구글뉴스"
   }
  ]
