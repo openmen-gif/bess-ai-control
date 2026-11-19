@@ -507,6 +507,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "60baf23d0ab1",
+   "date": "2026-11-19",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-contract-specialist",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-standards-australia",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — BESS·EPC 영역 초안 작성 — bess-standards-australia 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5c386b154a22",
    "date": "2026-11-19",
    "type": "skill",
@@ -3526,17 +3544,6 @@
    "title": "Vikram Solar, 2030년 3월까지 BESS 15GWh 목표 제시",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSnpYcWZFWXBFRlpxWWlzTkFwVTZFODB0MEJObEZ5M2hnTnNKaTNSNGRFZklIaUdWR3ZsZ2ZWaS00M1pXRjhBT3p6a3dzSE9oek9QM0owMlhCSmRoV0FIVUFWTTExZFJ5ZWNySENxdEZtSXFZWWhidzJJS09sd3cwcXpEeXFQSlM0c3hYVllkRlJ1Tmo1UUhVc2ppdHVYNk16dENWam9MU0N5ZTRU?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "09a8f12ad0ab",
-   "date": "2026-11-16",
-   "type": "skill",
-   "agents": [
-    "bess-legal-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 14 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

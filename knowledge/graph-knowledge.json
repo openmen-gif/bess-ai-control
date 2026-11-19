@@ -397,6 +397,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-60baf23d0ab1",
+   "name": "팀 토론 — BESS·EPC 영역 초안 작성 — bess-standard",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-19",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5c386b154a22",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-09",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0ba521b19cd3",
-   "name": "베트남 청정에너지 전환, 기술과 시장 여건에 달려",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-09",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7525,6 +7525,46 @@
   {
    "source": "BAT-001",
    "target": "K-63a6252c491f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-60baf23d0ab1",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-60baf23d0ab1",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-60baf23d0ab1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-60baf23d0ab1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-60baf23d0ab1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-60baf23d0ab1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-60baf23d0ab1",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-60baf23d0ab1",
    "type": "knowledge"
   },
   {
@@ -14636,11 +14676,6 @@
    "source": "SYS-001",
    "target": "K-142c8c916da0",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-0ba521b19cd3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15254,7 +15289,7 @@
    {
     "date": "2026-11-19",
     "knowledge": 800,
-    "events_total": 4892
+    "events_total": 4893
    }
   ]
  }
