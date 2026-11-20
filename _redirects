@@ -1,1 +1,5 @@
-/*  /index.html  200
+# 전체 SPA 대체 규칙(/*  /index.html  200)은 2026-11-21에 뺐다.
+# 그 규칙은 없는 /assets/* 청크에도 index.html(200, text/html)을 돌려줬고,
+# _headers 의 /assets/* immutable(1년) 때문에 그 HTML이 엣지 캐시에 굳어 대시보드가 멈췄다.
+# 대시보드는 경로 라우팅을 쓰지 않아(모든 화면이 / 안에서 전환) 대체 규칙이 필요 없다.
+# 루트 404.html 이 있으면 Pages 는 SPA 기본 동작을 끄고 없는 주소에 404를 준다.
