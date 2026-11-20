@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-1e01951e9f97",
+   "name": "팀 토론 — 변압기 효율 최적화 설계 검토 및 비용 분석",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-21",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-fef57d33c209",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-590ce5aef699",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7280,6 +7280,46 @@
   {
    "source": "SYS-001",
    "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-1e01951e9f97",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-1e01951e9f97",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-1e01951e9f97",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-1e01951e9f97",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-1e01951e9f97",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-1e01951e9f97",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-1e01951e9f97",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-1e01951e9f97",
    "type": "knowledge"
   },
   {
@@ -14541,11 +14581,6 @@
    "source": "MAR-001",
    "target": "K-5a8a76d8518a",
    "type": "knowledge"
-  },
-  {
-   "source": "KTX-001",
-   "target": "K-590ce5aef699",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15169,7 +15204,7 @@
    {
     "date": "2026-11-21",
     "knowledge": 800,
-    "events_total": 4975
+    "events_total": 4976
    }
   ]
  }
