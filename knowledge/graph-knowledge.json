@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-740dc4b6881c",
+   "name": "팀 토론 — BESS 프로젝트 견적서 작성 시 IRA 및 UKCA 인증 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6e2eea85690e",
    "name": "팀 토론 — CFD·유동해석 영역 리스크 평가 — bess-cfd-ana",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-5a8a76d8518a",
-   "name": "[ESG특집] 독일 BESS 프로젝트에 금융 8.35억유로 투입…",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "SYS-001",
    "target": "K-ff5a65bb05f5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-740dc4b6881c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-740dc4b6881c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-740dc4b6881c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-740dc4b6881c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-740dc4b6881c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-740dc4b6881c",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-740dc4b6881c",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-740dc4b6881c",
    "type": "knowledge"
   },
   {
@@ -14576,11 +14616,6 @@
    "source": "STD-001",
    "target": "K-5ff59c3afef8",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-5a8a76d8518a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15204,7 +15239,7 @@
    {
     "date": "2026-11-21",
     "knowledge": 800,
-    "events_total": 4976
+    "events_total": 4977
    }
   ]
  }

@@ -20,6 +20,24 @@
    "source": "bess-team"
   },
   {
+   "id": "740dc4b6881c",
+   "date": "2026-11-21",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-permit-english",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-tax-incentive",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — BESS 프로젝트 견적서 작성 시 IRA 및 UKCA 인증 요건 통합 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "6e2eea85690e",
    "date": "2026-11-21",
    "type": "discussion",
@@ -3527,24 +3545,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 32개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "3c55d0bbe06a",
-   "date": "2026-11-17",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-business-dev",
-    "bess-cost-analyst",
-    "bess-grid-interconnection",
-    "bess-internal-auditor",
-    "bess-power-system-analyst",
-    "bess-procurement-expert",
-    "bess-security-expert"
-   ],
-   "title": "팀 토론 — 현장 시공 최적화를 위한 지역별 맞춤형 시공 프로토콜 개발 및 검증 계획 수립",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
