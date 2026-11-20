@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-6e2eea85690e",
+   "name": "팀 토론 — CFD·유동해석 영역 리스크 평가 — bess-cfd-ana",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fef57d33c209",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-5417ed23fa8b",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "CFD-001",
+   "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6e2eea85690e",
+   "type": "knowledge"
+  },
   {
    "source": "PRM-003",
    "target": "K-fef57d33c209",
@@ -14471,15 +14511,10 @@
    "source": "QAC-001",
    "target": "K-54541a93a3ce",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-5417ed23fa8b",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "history": [
    {
     "date": "2026-07-20",
@@ -15095,6 +15130,11 @@
     "date": "2026-11-20",
     "knowledge": 800,
     "events_total": 4973
+   },
+   {
+    "date": "2026-11-21",
+    "knowledge": 800,
+    "events_total": 4974
    }
   ]
  }
