@@ -37,6 +37,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-e3b66b9f6d8f",
+   "name": "팀 토론 — 지속가능 연계 대출(SLL) 프레임워크 구축 계획 수립: T",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-20",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-de141839e2a4",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-4b6ef63ea997",
-   "name": "[미리보는 소부장 테크서밋]〈2〉SK파워텍, SiC 국산화 이끌 파운드리",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7220,6 +7220,46 @@
   {
    "source": "STD-005",
    "target": "K-f73bbf8f627f",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-e3b66b9f6d8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-e3b66b9f6d8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-e3b66b9f6d8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e3b66b9f6d8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SLS-001",
+   "target": "K-e3b66b9f6d8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e3b66b9f6d8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e3b66b9f6d8f",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-e3b66b9f6d8f",
    "type": "knowledge"
   },
   {
@@ -14366,11 +14406,6 @@
    "source": "PDI-001",
    "target": "K-4dce94bece31",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-4b6ef63ea997",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14989,7 +15024,7 @@
    {
     "date": "2026-11-20",
     "knowledge": 800,
-    "events_total": 4970
+    "events_total": 4971
    }
   ]
  }
