@@ -321,6 +321,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "8bbb8594a1e9",
+   "date": "2026-11-20",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-data-analyst",
+    "bess-labor-safety",
+    "bess-mlops-engineer",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-substation-engineer",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — AI 기반 예측 모델 개발로 BESS 운영 효율성 최적화 및 실시간 SOC/SOH 모니터링 시스템 구축 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "860e8ef1158d",
    "date": "2026-11-20",
    "type": "skill",
@@ -3478,17 +3496,6 @@
    "title": "2035년까지의 배터리 인버터 시장: 태양광+저장장치 수요가 확장 견인",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONW02cUNBSldid29TdU1VczBMT1VCVUlyVGtjbkxlSVNzUV9sQXJrOExxdlQtX29CV2g2N1FCUmJCVTJuZEFnTWRXbjlTSlR5clFRWkU2YThmSTN4cVBhZmRQaEVTOFZ5SkJYUTZUa24xOXYtb1JOMVJ0TjFDTktDZTItN2hLby1ldHRKd3NQVHpnZE5pY1BsX18xUi12Y1labklCbmRDWUJBeGZQejd3azNtTkRPaXBQRDhKekRvdTdRZmRJ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "1f8b56a18c7a",
-   "date": "2026-11-17",
-   "type": "skill",
-   "agents": [
-    "bess-network-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
