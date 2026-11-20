@@ -361,6 +361,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6e214c979e2f",
+   "name": "팀 토론 — 프로젝트 관리 프로세스 최적화 계획 수립: WBS 기반의 세",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-68b08233797f",
    "name": "중국, 신형 에너지저장 시장화 전환…배터리 업계에 주는 의미",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4dce94bece31",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7575,6 +7575,46 @@
   {
    "source": "BAT-001",
    "target": "K-727552b74276",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6e214c979e2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-6e214c979e2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-6e214c979e2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-6e214c979e2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "PMG-001",
+   "target": "K-6e214c979e2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-6e214c979e2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6e214c979e2f",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-6e214c979e2f",
    "type": "knowledge"
   },
   {
@@ -14401,11 +14441,6 @@
    "source": "BAT-001",
    "target": "K-525f94ecca2d",
    "type": "knowledge"
-  },
-  {
-   "source": "PDI-001",
-   "target": "K-4dce94bece31",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15024,7 +15059,7 @@
    {
     "date": "2026-11-20",
     "knowledge": 800,
-    "events_total": 4971
+    "events_total": 4972
    }
   ]
  }
