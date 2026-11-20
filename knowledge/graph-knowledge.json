@@ -271,6 +271,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-7ffd0836f657",
+   "name": "팀 토론 — 사이버 보안 정책 감사 프로세스 개선 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-20",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-7fef215cd4a2",
    "name": "Waaree Transpower, NTPC 배터리 ESS 프로젝트용 인버",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-40bb494d43e7",
-   "name": "태양광과 히트펌프 함께 쓰면 난방비 얼마나 줄어들까, EWE 주택 에너지",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7350,6 +7350,46 @@
   {
    "source": "COM-003",
    "target": "K-860e8ef1158d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-7ffd0836f657",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-7ffd0836f657",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-7ffd0836f657",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-7ffd0836f657",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-7ffd0836f657",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-7ffd0836f657",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-7ffd0836f657",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7ffd0836f657",
    "type": "knowledge"
   },
   {
@@ -14296,11 +14336,6 @@
    "source": "SYS-001",
    "target": "K-46c4c74a41b5",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-40bb494d43e7",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14919,7 +14954,7 @@
    {
     "date": "2026-11-20",
     "knowledge": 800,
-    "events_total": 4967
+    "events_total": 4968
    }
   ]
  }
