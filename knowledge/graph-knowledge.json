@@ -154,6 +154,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-866cb1f977ce",
+   "name": "팀 토론 — 접지망 설계 최적화를 통해 피뢰 시스템의 신뢰성 향상 및 I",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-826e7eb2aa7d",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-dd44008c721e",
-   "name": "매사추세츠 그린필드시, BESS·데이터센터 조례 정비 착수",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7320,6 +7320,46 @@
   {
    "source": "HYB-001",
    "target": "K-89a145368165",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-866cb1f977ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-866cb1f977ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-866cb1f977ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-866cb1f977ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-866cb1f977ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-866cb1f977ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-866cb1f977ce",
+   "type": "knowledge"
+  },
+  {
+   "source": "TPS-001",
+   "target": "K-866cb1f977ce",
    "type": "knowledge"
   },
   {
@@ -14436,11 +14476,6 @@
    "source": "COM-003",
    "target": "K-e01a4b4a8085",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-dd44008c721e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15064,7 +15099,7 @@
    {
     "date": "2026-11-21",
     "knowledge": 800,
-    "events_total": 5014
+    "events_total": 5015
    }
   ]
  }

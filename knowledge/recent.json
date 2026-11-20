@@ -196,6 +196,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "866cb1f977ce",
+   "date": "2026-11-21",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-customs-tariff",
+    "bess-fire-engineer",
+    "bess-grounding-engineer",
+    "bess-legal-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-transfer-pricing"
+   ],
+   "title": "팀 토론 — 접지망 설계 최적화를 통해 피뢰 시스템의 신뢰성 향상 및 IEEE80 표준 준수 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "826e7eb2aa7d",
    "date": "2026-11-21",
    "type": "skill",
@@ -3502,17 +3520,6 @@
    "type": "skill",
    "agents": [
     "bess-standards-korea"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "b6f473331348",
-   "date": "2026-11-17",
-   "type": "skill",
-   "agents": [
-    "bess-procurement-expert"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 32개 갱신",
    "link": "",
