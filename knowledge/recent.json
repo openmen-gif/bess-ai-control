@@ -236,6 +236,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "b1e60f1599e5",
+   "date": "2026-11-20",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-grid-interconnection",
+    "bess-om-expert",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-usa",
+    "bess-system-engineer",
+    "bess-tax-accountant"
+   ],
+   "title": "팀 토론 — 미국 BESS EPC 표준 심층 분석 및 한국 적용성 평가 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ad08d37c0007",
    "date": "2026-11-20",
    "type": "briefing",
@@ -3506,17 +3524,6 @@
    "title": "뉴욕주 나이아가라 카운티에 1,330만 달러 규모 배터리 저장장치 제안",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONlZ0ZHFsQkVwQzBFYlFtZ05QcVFhaEhFaUdMUFdfWnJ2M1BQZFIxOHpOT3J1bmo5TEMta1U3a0FOdEZtT2hJRU1WRnUwVWZpSEtaenN6cHgxeFhxUkRCU2xFcG1sS1hic1NHRWJ3YnphX1BfcC1IUnM2Q0lEdGF6UDJBb2FYVExlTlJvcWc2RzlwOGFsRXJfNXpPbFU3YmtEYTQyZFRjWQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "2cdb7a4d9472",
-   "date": "2026-11-17",
-   "type": "skill",
-   "agents": [
-    "bess-tax-accountant"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 32개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

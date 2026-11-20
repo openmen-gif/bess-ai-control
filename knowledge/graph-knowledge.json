@@ -181,6 +181,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b1e60f1599e5",
+   "name": "팀 토론 — 미국 BESS EPC 표준 심층 분석 및 한국 적용성 평가 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ad08d37c0007",
    "name": "HelloTech, 뉴욕 1,000가구 이동형 ESS 가상발전소 수주",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-525f94ecca2d",
-   "name": "이온어스, 美 THOR Energy와 북미 ESS 시장 공략",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7370,6 +7370,46 @@
   {
    "source": "FIR-001",
    "target": "K-bbdecd3d98b5",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b1e60f1599e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-b1e60f1599e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-b1e60f1599e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-b1e60f1599e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-b1e60f1599e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-b1e60f1599e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b1e60f1599e5",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-b1e60f1599e5",
    "type": "knowledge"
   },
   {
@@ -14436,11 +14476,6 @@
    "source": "STD-002",
    "target": "K-5417ed23fa8b",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-525f94ecca2d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15059,7 +15094,7 @@
    {
     "date": "2026-11-20",
     "knowledge": 800,
-    "events_total": 4972
+    "events_total": 4973
    }
   ]
  }
