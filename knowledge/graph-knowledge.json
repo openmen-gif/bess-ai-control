@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c338a3481780",
+   "name": "팀 토론 — COM-100 시운전 최적화 프로세스 자동화 및 표준화 매뉴",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-20",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c0ecd9b002eb",
    "name": "[K배터리 새 출구 열리나④] ESS로 돈 버는 K배터리…’보조금·일회성",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-10",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-49b66c3a2308",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 2",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-10",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7265,6 +7265,46 @@
   {
    "source": "PCS-001",
    "target": "K-c742ae092787",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c338a3481780",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-c338a3481780",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-c338a3481780",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-c338a3481780",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-c338a3481780",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-c338a3481780",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-c338a3481780",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c338a3481780",
    "type": "knowledge"
   },
   {
@@ -14331,11 +14371,6 @@
    "source": "PCS-001",
    "target": "K-4b6ef63ea997",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-49b66c3a2308",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14954,7 +14989,7 @@
    {
     "date": "2026-11-20",
     "knowledge": 800,
-    "events_total": 4969
+    "events_total": 4970
    }
   ]
  }
