@@ -6,7 +6,7 @@
 
 ## 핵심 리소스
 
-- [전문가 전체 정의 (llms-full.txt)](https://bess-ai-control.work/llms-full.txt): 82명 전원의 ID·부서·역할 정의 전문
+- [전문가 전체 명부 (llms-full.txt)](https://bess-ai-control.work/llms-full.txt): 82명 전원의 ID·부서·전문 분야 설명
 - [전문가 명부 JSON](https://bess-ai-control.work/agents.json): id·부서·설명·키워드 구조화 데이터
 - [조직 그래프 JSON](https://bess-ai-control.work/graph.json): 조직도·협업 관계(노드/링크)
 - [콘솔 (웹 UI)](https://bess-ai-control.work/): 3D 조직 그래프·전문가 카드·AI 상담 콘솔
@@ -16,10 +16,6 @@
 ## 실시간 상담 API
 
 - POST https://bess-ai-control.work/api/chat — Claude 기반 전문가 응답 스트리밍. 요청: {model, agentId, message, history?}. 브라우저 동일 출처 전용(Origin 검증)·IP당 분당 8회 제한.
-
-## MCP 서버 (AI 에이전트용)
-
-- https://bess-ai-control.work/api/mcp — Model Context Protocol(Streamable HTTP). 도구: list_experts(명부)·get_expert_definition(전문 지식 전문)·ask_expert(질문, IP당 분당 8회). 연결 예: `claude mcp add --transport http bess https://bess-ai-control.work/api/mcp`
 
 ## 부서 요약
 
