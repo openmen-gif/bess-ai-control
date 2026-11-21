@@ -361,6 +361,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-72acce9415c6",
+   "name": "팀 토론 — 시운전(EMS/FIT) 절차 최적화를 위한 시뮬레이션 기반 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-707f51de8f61",
    "name": "Moment Energy, 전기차 배터리 기반 BESS 신제품 'Nova",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4ddc941de1ed",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7610,6 +7610,46 @@
   {
    "source": "KTX-001",
    "target": "K-740dc4b6881c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-72acce9415c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-72acce9415c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-72acce9415c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-72acce9415c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-72acce9415c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-72acce9415c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-001",
+   "target": "K-72acce9415c6",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-72acce9415c6",
    "type": "knowledge"
   },
   {
@@ -14366,11 +14406,6 @@
    "source": "HYD-001",
    "target": "K-4f5bdc45adcf",
    "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-4ddc941de1ed",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14994,7 +15029,7 @@
    {
     "date": "2026-11-21",
     "knowledge": 800,
-    "events_total": 5055
+    "events_total": 5056
    }
   ]
  }
