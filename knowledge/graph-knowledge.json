@@ -271,6 +271,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-39f016e7f76e",
+   "name": "팀 토론 — 냉각 효율 개선 방안에 대한 양측 입장의 트레이드오프 비교 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-23fdb2d976c8",
    "name": "FERC Approves Sabine Pass LNG Expansion ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c81525945f4b",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7455,6 +7455,46 @@
   {
    "source": "COM-003",
    "target": "K-3bff973dbde2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-39f016e7f76e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-39f016e7f76e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-39f016e7f76e",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-39f016e7f76e",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-39f016e7f76e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-39f016e7f76e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-39f016e7f76e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-39f016e7f76e",
    "type": "knowledge"
   },
   {
@@ -14436,11 +14476,6 @@
    "source": "PCS-001",
    "target": "K-cc4b39f747cc",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-c81525945f4b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15069,7 +15104,7 @@
    {
     "date": "2026-11-22",
     "knowledge": 800,
-    "events_total": 5097
+    "events_total": 5098
    }
   ]
  }
