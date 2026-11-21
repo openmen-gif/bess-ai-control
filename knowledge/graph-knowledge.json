@@ -145,6 +145,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c1f2bd74569a",
+   "name": "팀 토론 — 조직문화 강화를 위한 역량개발 프로그램 도입 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-c03cdf4e997e",
    "name": "팀 토론 — 법인세 및 소비세 최적화 전략 수립을 통한 일본 BESS 프",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-4c051a17b282",
-   "name": "포르투갈, 배터리 저장 계통연계 용량 1,050MVA 입찰 공고",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7315,6 +7315,46 @@
   {
    "source": "BAT-001",
    "target": "K-cba330feed4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c1f2bd74569a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-c1f2bd74569a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-c1f2bd74569a",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-c1f2bd74569a",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-c1f2bd74569a",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-c1f2bd74569a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-c1f2bd74569a",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-c1f2bd74569a",
    "type": "knowledge"
   },
   {
@@ -14331,11 +14371,6 @@
    "source": "SYS-001",
    "target": "K-4ddc941de1ed",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-4c051a17b282",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14959,7 +14994,7 @@
    {
     "date": "2026-11-21",
     "knowledge": 800,
-    "events_total": 5054
+    "events_total": 5055
    }
   ]
  }

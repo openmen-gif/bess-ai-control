@@ -185,6 +185,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "c1f2bd74569a",
+   "date": "2026-11-21",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-financial-analysis",
+    "bess-hse-manager",
+    "bess-marketer",
+    "bess-pcs-expert",
+    "bess-standards-uk",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 조직문화 강화를 위한 역량개발 프로그램 도입 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "c03cdf4e997e",
    "date": "2026-11-21",
    "type": "discussion",
@@ -3492,17 +3510,6 @@
    "title": "Sonnedix, 일본 오이타에 125MWh 태양광 연계 BESS 가동",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOFpuRGVHeDdjNUxKQ2VSb21WdVlJOXlJZHF6c3NQamxmNlVuM2U3dFA2YUF4cVczVE12V2o5NV9OU1dpdk1TN0RZRVdON0FPZzJsdWtadEpIaHdzalQ5SmxEc1JOYWdwUGhZWU1yTU9sRjF5Njc2Mnc5Y1lYTllRdEdpWkl6QzdsR2k4TDllbjUtWkNDRjBjbHI1QkFsdmFzUmZJNlNWdTA3LW81MXc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "32a1b0dabc96",
-   "date": "2026-11-18",
-   "type": "skill",
-   "agents": [
-    "bess-power-system-analyst"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 24개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
