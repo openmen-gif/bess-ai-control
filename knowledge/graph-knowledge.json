@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-7bd5c7fd70f0",
+   "name": "팀 토론 — BESS EPC 프로젝트를 위한 최신 UK BESS 규격 준",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-73f9abd07423",
    "name": "팀 토론 — 견적서 작성 시 IRA 및 UKCA 인증 요건 통합 검토 및",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-58f3a08b0fac",
-   "name": "[산업이(異)면]LG 빠지자 ESS 배터리값 상승?…‘팔 곳’ 찾던 배터",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
   {
    "source": "CFD-001",
    "target": "K-73f9abd07423",
@@ -14506,11 +14546,6 @@
    "source": "PRM-001",
    "target": "K-593bfad59902",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-58f3a08b0fac",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15139,7 +15174,7 @@
    {
     "date": "2026-11-22",
     "knowledge": 800,
-    "events_total": 5059
+    "events_total": 5060
    }
   ]
  }

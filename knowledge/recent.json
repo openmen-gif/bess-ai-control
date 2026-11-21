@@ -2,6 +2,24 @@
  "updated": "2026-11-22",
  "events": [
   {
+   "id": "7bd5c7fd70f0",
+   "date": "2026-11-22",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-facility-manager",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-network-engineer",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-uk"
+   ],
+   "title": "팀 토론 — BESS EPC 프로젝트를 위한 최신 UK BESS 규격 준수 검토 및 인허가 전략 개발",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "73f9abd07423",
    "date": "2026-11-22",
    "type": "discussion",
@@ -3523,17 +3541,6 @@
    "type": "skill",
    "agents": [
     "bess-standards-eu"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 24개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "4274f2c99246",
-   "date": "2026-11-18",
-   "type": "skill",
-   "agents": [
-    "bess-legal-expert"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 24개 갱신",
    "link": "",
