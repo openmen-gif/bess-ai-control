@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BESS 일일 기술 브리핑 — 2026-11-22</title>
+<meta name="description" content="BESS 기술 부문별 일일 브리핑(2026-11-22) — 국내·해외·기관 발표 71건, 기사별 AI 요약(배경·핵심 사항·상세 내용·시사점)">
+<link rel="canonical" href="https://bess-ai-control.work/briefing/2026-11-22" />
+<style>
+:root { --bg:#0B0F19; --panel:#111827; --line:#1F2937; --ink:#F9FAFB; --muted:#9CA3AF; --accent:#3B82F6; --soft:#0F172A; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--ink); font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif; line-height:1.6; }
+.wrap { max-width:860px; margin:0 auto; padding:32px 16px 60px; }
+.top { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
+h1 { font-size:22px; font-weight:800; }
+.date { color:var(--muted); font-size:13px; }
+.back { color:var(--accent); text-decoration:none; font-size:13px; }
+.tabs { display:flex; gap:6px; margin-top:16px; flex-wrap:wrap; }
+.tabs button { background:var(--panel); color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-size:13px; cursor:pointer; font-weight:700; }
+.tabs button.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+.panel { display:none; }
+.panel.on { display:block; }
+.sec { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:16px; }
+h2 { font-size:15px; font-weight:700; margin-bottom:10px; }
+.item { padding:8px 0; border-top:1px solid var(--line); }
+.item:first-child { border-top:0; }
+.item a, .item .t { color:var(--ink); text-decoration:none; font-size:14px; }
+.item a:hover, summary:hover .t { color:var(--accent); }
+summary { cursor:pointer; list-style:none; }
+summary::-webkit-details-marker { display:none; }
+summary .t::before { content:'▸ '; color:var(--muted); }
+details[open] summary .t::before { content:'▾ '; }
+.meta { display:block; color:var(--muted); font-size:12px; margin-top:2px; }
+.ai { color:var(--accent); }
+.sum { background:var(--soft); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin-top:8px; font-size:13.5px; }
+.sum .row { margin-top:8px; }
+.sum .row:first-child { margin-top:0; }
+.sum b { display:block; font-size:12.5px; color:var(--accent); }
+.sum ul { padding-left:18px; }
+.sum .orig { color:var(--muted); font-size:12px; margin-bottom:6px; }
+.sum .tag { font-style:normal; font-weight:400; color:var(--muted); font-size:11px; border:1px solid var(--line); border-radius:6px; padding:0 5px; }
+.sum .foot { margin-top:10px; color:var(--muted); font-size:12px; }
+.sum .foot a { color:var(--accent); font-size:12px; }
+.fresh { margin-bottom:6px; padding-bottom:4px; border-bottom:1px dashed var(--line); }
+.fresh .lbl { color:#FBBF24; font-size:12px; font-weight:700; }
+.empty { color:var(--muted); font-size:13px; }
+.arch { margin-top:24px; color:var(--muted); font-size:12.5px; }
+.arch a { color:var(--accent); text-decoration:none; margin-right:10px; }
+footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:14px; }
+.live { margin-top:10px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.live button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:7px 14px; font-size:13px; cursor:pointer; font-weight:700; }
+.live button:disabled { opacity:.5; cursor:default; }
+.live .st { color:var(--muted); font-size:12.5px; }
+.search { margin-top:12px; }
+.search input { width:100%; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:10px; padding:10px 14px; font-size:14px; }
+.search input:focus { outline:none; border-color:var(--accent); }
+.search .st { display:block; color:var(--muted); font-size:12.5px; margin-top:6px; min-height:1em; }
+.searching .tabs, .searching .empty, .searching .arch { display:none; }
+.searching .panel { display:block; }
+.item.hide, .sec.hide { display:none; }
+.qarch h2 { color:var(--muted); }
+.qarch .meta a { color:var(--accent); text-decoration:none; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>📰 BESS 일일 기술 브리핑</h1>
+    <a class="back" href="/">← 컨트롤 센터</a>
+  </div>
+  <div class="date">2026-11-22 (일) · 국내·해외 최근 48시간 + 기관 발표 7일 · 총 71건 (AI 요약 18건) · 매일 07:30 발행</div>
+  <div class="live"><button id="refresh-btn">🔄 새 소식 확인</button><span class="st" id="live-status">제목을 누르면 배경·핵심 사항·상세 내용·시사점이 펼쳐져요</span></div>
+  <div class="search"><input id="q" type="search" placeholder="🔍 브리핑 검색 — 예: 그리드포밍, 삼성SDI, NFPA 855" autocomplete="off" aria-label="브리핑 검색 (이 페이지 + 지난 브리핑)"><span class="st" id="q-status" aria-live="polite"></span></div>
+  <nav class="tabs">
+    <button data-tab="kr" class="on">🏠 국내 23</button>
+    <button data-tab="global">🌐 해외 36</button>
+    <button data-tab="notice">📢 기관 발표 12</button>
+  </nav>
+  <div class="panel on" data-panel="kr">
+  <section class="sec" data-region="kr" data-sec="0">
+    <h2>🔋 배터리·셀</h2>
+    <div class="items">
+    <div class="item" data-k="에코프로비엠도lfp양극재경쟁참전,송호준탈중국ess수요증가에삼원계&#x27;올인&#x27;철"><a href="https://www.businesspost.co.kr/BP?command=article_view&amp;num=452416" target="_blank" rel="noopener">에코프로비엠도 LFP 양극재 경쟁 참전, 송호준 탈중국 ESS 수요 증가에 삼원계 &#x27;올인&#x27; 철회</a><div class="meta">비즈니스포스트 · 11/22 06:00</div></div>
+    <div class="item" data-k="전기차둔화맞선lg에너지솔루션,폴란드배터리거점ess라인전환추진"><a href="https://www.g-enews.com/article/Global-Biz/2026/11/2026112122495160902bd56fbc3c_1" target="_blank" rel="noopener">전기차 둔화 맞선 LG에너지솔루션, 폴란드 배터리 거점 ESS 라인 전환 추진</a><div class="meta">글로벌이코노믹 · 11/21 23:01</div></div>
+    <div class="item" data-k="09화ess,선두셀회사의두번째주력"><a href="https://brunch.co.kr/@@4J3S/65" target="_blank" rel="noopener">09화 ESS, 선두 셀 회사의 두 번째 주력</a><div class="meta">브런치 · 11/22 07:02</div></div>
+    <div class="item" data-k="jaess,eu규제준수지원하기위해자체배터리여권플랫폼출시"><a href="https://www.newsis.com/view/ALSX20261121_0000008325" target="_blank" rel="noopener">JA ESS, EU 규제 준수 지원하기 위해 자체 배터리 여권 플랫폼 출시</a><div class="meta">뉴시스 · 11/21 22:11</div></div>
+    <div class="item" data-k="[단독]sk온,lfp로‘제주25년장기계약’입찰참여…초장기수명검증시험대"><a href="https://www.electimes.com/news/articleView.html?idxno=375040" target="_blank" rel="noopener">[단독] SK온, LFP로 ‘제주 25년 장기계약’ 입찰 참여…초장기 수명 검증 시험대</a><div class="meta">전기신문 · 11/20 08:36</div></div>
+    <details class="item" data-k="sk온,25년장주기제주ess사업도전"><summary><span class="t">SK온, 25년 장주기 제주 ESS 사업 도전</span><span class="meta">디일렉 · 11/20 11:39 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>전력거래소가 재생에너지 발전량이 많은 제주 지역의 ESS 장기계약을 위해 제3차 중앙계약시장 입찰을 공고했고, 기존 15년 계약에 25년 계약을 추가했습니다. SK온은 전기차 중심 사업구조에서 ESS로 공급처를 넓히는 과정에서 LFP 배터리 컨소시엄으로 이 입찰에 참여했습니다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>제주 ESS 입찰 규모는 80MW/480MWh이며, 25년 장기계약이 새로 추가되었습니다.</li><li>사업자는 하루 평균 2회 충전과 방전을 반복하며 장기간 설비를 운용해야 합니다.</li><li>계약기간 동안 연간 730회, 전체 1만8250회 이상의 충방전을 견뎌야 합니다.</li><li>계약기간 내내 배터리 용량을 초기 대비 70% 이상 유지해야 합니다.</li><li>전력거래소는 이달 중 3차 입찰 평가를 마치고 우선협상대상자를 선정하며, 선정 사업자는 2029년 2월까지 구축을 완료해야 합니다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이번 입찰은 배터리 종류를 제한하지 않지만, 25년 운용과 높은 내구성 요구 때문에 흐름배터리 같은 비리튬계 제품에 유리하다는 평가가 나옵니다. SK온의 LFP 배터리는 가격과 수명 면에서 ESS에 적합하다고 알려져 있으나, 25년 조건을 맞추려면 초기 설계 단계부터 충분한 용량을 확보해야 합니다. 그만큼 배터리 투입량과 사업비가 늘어날 수 있어 가격 경쟁력도 함께 확보해야 하는 구조입니다. 기존 15년 계약 중심 시장에서 장주기 계약이 추가되면서, 운용 기간과 열화 조건이 입찰 평가의 핵심 변수로 올라왔다는 점이 이전과 달라진 부분입니다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>해석이지만, 25년 계약 조건은 셀 선정뿐 아니라 초기 용량 여유 설계, 열화 관리, 보증 조건, 증설(augmentation) 계획을 함께 검토해야 한다는 신호로 볼 수 있습니다. 한국 BESS EPC 사업자는 장주기 입찰 대응 시 배터리 사양과 사업비 간 균형을 제안 단계에서 정량적으로 검토할 필요가 있습니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.thelec.kr/news/articleView.html?idxno=65705" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="1">
+    <h2>⚡ PCS·전력변환</h2>
+    <div class="items">
+    <details class="item" data-k="상장추진데스틴파워,&#x27;연료전지→ess&#x27;사업다변화"><summary><span class="t">상장 추진 데스틴파워, &#x27;연료전지→ESS&#x27; 사업 다변화</span><span class="meta">디일렉 · 11/20 17:32 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>AI 데이터센터 투자가 늘면서 연료전지 외의 에너지 공급 수요가 커지고 있습니다. 데스틴파워는 두산퓨얼셀 단일 고객사에 의존하는 구조를 줄이기 위해 ESS·수전해용 PCS 사업을 확대하고 있으며, 연내 코스닥 상장을 추진 중입니다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>두산퓨얼셀 납품 ESM 매출은 지난해 240억원, 올해 3분기까지 185억원이며 수주잔고는 1074억원입니다.</li><li>올해 3분기 누적 매출은 215억원으로 지난해 연간 실적의 72%에 해당합니다.</li><li>ESS용 PCS 단일 용량은 2MW에서 4MW, 8MW로 커지는 추세이며 자체 액침냉각 기술을 적용합니다.</li><li>2028년 신규 매출은 국내 장주기 ESS용 PCS 78억원, 수전해 PCS 41억원으로 예상됩니다.</li><li>공모주식 220만주, 희망공모가 8000~1만1000원이며 공모자금 156억원은 전북 익산 신공장에 투입됩니다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>데스틴파워는 연료전지 발전 시스템의 전력 변환부와 제어부를 묶은 ESM을 두산퓨얼셀에 전량 공급해 왔고, 2024년부터 단일 고객사 구조가 이어지고 있습니다. 그래서 매출이 두산퓨얼셀의 연료전지 수주에 따라 좌우되는 상황입니다. 회사는 ESM을 기존 수익원으로 유지하면서 ESS용 PCS와 수전해 정류기용 PCS로 고객을 넓히는 전략을 택했습니다. 데이터센터 용량이 커지며 PCS 단일 용량이 키워지면 발열도 함께 늘어나는데, 이를 해결하기 위해 자체 확보한 액침냉각 기술을 대용량 PCS에 적용하고 있습니다. 회사는 ESS와 수전해 PCS 사업이 계획대로 진행되면 관련 매출을 ESM 매출의 50~60% 수준까지 높일 수 있을 것으로 기대합니다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>국내 BESS 현장에서 PCS가 4~8MW급으로 커지면 열관리 방식이 설비 신뢰성과 설치 공간에 직접 영향을 줄 수 있어, EPC 설계 단계에서 냉각 방식과 PCS 공급사 다변화를 함께 검토할 필요가 있다고 볼 수 있습니다. 이는 기사 내용에 근거한 해석이며, 실제 제품 성능이나 수주 가능성은 별도 확인이 필요합니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.thelec.kr/news/articleView.html?idxno=65734" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <details class="item" data-k="ge버노바·sk온·시텔뉴에너지,ai전력인프라공략"><summary><span class="t">GE 버노바·SK온·시텔뉴에너지, AI 전력 인프라 공략</span><span class="meta">애플경제 · 11/21 00:48 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>글로벌 AI 데이터센터 확대로 전력 수요가 빠르게 늘면서 대규모 ESS 수요도 커지고 있다. 주요국이 에너지 설비와 AI 인프라에서 중국산 장비 의존도를 낮추려는 흐름 속에서 세 회사가 업무협약(MOU)을 맺었다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>GE 버노바는 고출력 대용량 PCS(전력변환시스템)를 담당한다.</li><li>SK온은 ESS의 핵심인 리튬인산철(LFP) 배터리 셀과 모듈을 공급한다.</li><li>시텔뉴에너지는 자회사 아우로시의 타이중 배터리 모듈 생산기지를 기반으로 시스템 통합과 현지 제조를 맡는다.</li><li>초기 협력과 생산 거점은 대만이며, 이후 일본·미국·캐나다로 사업을 확대할 계획이다.</li><li>본문에는 구체적인 용량(MW/MWh), 투자 금액, 착공 일정은 제시되지 않았다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>역할은 미국의 전력변환 기술, 한국의 배터리 기술, 대만의 시스템 통합과 제조로 나뉜다. PCS는 배터리의 직류 전력을 전력망에서 쓰는 교류로 바꾸거나 반대로 충전 방향으로 변환하는 설비로, 손실과 구축 비용을 줄이는 것이 이번 협력의 포인트로 제시됐다. LFP 배터리는 안전성과 수명, 안정적인 충방전 특성 때문에 24시간 운영되는 대형 ESS에 적합하다고 평가된다. 이 ESS는 전력이 남는 시간에 저장했다가 수요가 몰리는 시간에 공급해 데이터센터 부하를 조절하고, 정전 시 비상 전원으로도 쓰일 수 있다. 대만은 전자·반도체 제조 중심에서 배터리와 전력변환 장비를 통합해 완성형 ESS를 생산하는 거점으로 역할을 넓힐 수 있다는 점도 함께 언급됐다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>국내 셀 기업이 해외 통합 ESS 컨소시엄의 공급자로 들어가는 구조로 볼 수 있어, EPC 사업자에게는 서로 다른 제조사의 PCS와 셀을 묶는 인터페이스 설계, 계통연계 검증, 해외 현지 인허가 지원에서 기회가 생길 수 있다는 해석이 가능하다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.apple-economy.com/news/articleView.html?idxno=80590" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <details class="item" data-k="sk온대만ess수주전뛰어든다…12월입찰-머니투데이"><summary><span class="t">SK온 대만 ESS 수주전 뛰어든다…12월 입찰 - 머니투데이</span><span class="meta">머니투데이 · 11/20 19:22 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>대만은 정보보안과 공급망 정책에 따라 비중국산 배터리 수요가 형성된 시장이다. 2021~2022년 잇단 대규모 정전과 AI 데이터센터 전력 수요 증가로 전력망 안정화용 ESS 수요도 커지고 있다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>SK온은 오는 12월 대만전력공사가 발주하는 대규모 ESS 프로젝트 입찰에 참여할 계획이다.</li><li>입찰 결과는 내년 3월경 발표될 예정이며, 제목 기준 프로젝트 규모는 1.2GWh이다.</li><li>SK온은 ESS용 LFP 배터리 팩을 공급하고, 씨텔은 ESS 시스템 제작과 인증을 맡는다.</li><li>GE버노바는 전력변환장치인 PCS를 공급하며, 3사는 지난 MOU를 바탕으로 처음 공동 참여하는 사업이다.</li><li>SK온의 생산능력은 국내 서산 21GWh, 헝가리 47.5GWh, 미국 102GWh 규모이며, 대만 시장 규모는 2025년 약 1.9GW에서 2030년 7~8GW로 확대될 전망이다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이번 입찰은 SK온, GE버노바, 씨텔 3사가 MOU를 맺은 뒤 처음 추진하는 공동 사업이다. 역할은 배터리 팩 공급(SK온), 시스템 제작과 인증(씨텔), 전력변환장치 공급(GE버노바)으로 나뉘어, 단순 기술 협력을 넘어 실제 공급 사업에 함께 참여하는 구조다. 배터리는 국내와 해외 생산시설에서 만들어지며, 중국 생산 물량은 대만의 정책상 공급이 어려울 것으로 보인다. 기사에서는 대만 공공 ESS와 보조금 사업에서 원산지와 공급망 안정성이 핵심 평가 요소라고 설명한다. 3사는 대만 입찰을 출발점으로 삼아 이후 미국과 일본 시장으로 협력을 넓힐 계획이다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>대만처럼 공급망 정책으로 비중국산 배터리를 우대하는 시장에서는 제조 거점의 원산지가 수주 경쟁력이 될 수 있다. 국내 EPC 사업자는 배터리사, PCS사, 시스템 통합사를 묶는 컨소시엄 구성 역량이 중요해질 것으로 보인다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.mt.co.kr/index.php/industry/2026/11/19/2026111813284883136" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="2">
+    <h2>🔌 계통연계·그리드</h2>
+    <div class="items">
+    <div class="empty">최근 48시간 내 수집된 소식이 없습니다.</div>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="3">
+    <h2>🚨 안전·소방</h2>
+    <div class="items">
+    <details class="item" data-k="햇빛소득마을,발전수익에서비용빼면주민몫은?"><summary><span class="t">햇빛소득마을, 발전 수익에서 비용 빼면 주민 몫은?</span><span class="meta">주간함양 · 11/20 13:43 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>정부의 &#x27;햇빛소득마을&#x27; 사업은 태양광 발전 수익으로 주민 소득을 높이는 것이 목표지만, 송전망 부족으로 대부분 대상지가 조건부 승인에 머물러 있다. 전력계통 문제 해결책으로 ESS 설치가 제시되면서 ESS의 경제성과 유지관리 문제가 쟁점이 되었다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>올해 사업 대상지 523개 마을 중 즉시 추진 가능한 곳은 36곳(약 7%)이고, 나머지 487곳은 조건부 승인을 받았다.</li><li>정부가 제시한 ESS 설치 규모는 4.4MWh이며, MWh당 설치 단가 약 5억8000만 원을 적용하면 총사업비는 약 25억5000만 원이다.</li><li>중앙정부와 지방정부가 ESS 사업비의 70%, 사업자가 30%를 부담하는 구조로 가정하면 사업자 투자액은 약 7억7000만 원이다.</li><li>정부는 ESS를 중앙정부·지방정부·사업자가 4:3:3 비율로 투자하는 방식을 밝혔다.</li><li>ESS 운영비, 배터리 교체비, 부지 임대료, 대출 이자 등 추가 비용의 부담 주체와 주민 수익 배분 기준은 아직 결정되지 않았다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>기존에는 마을이 ESS 설치비와 운영비를 떠안아야 했으나, 정부는 통합발전소(VPP) 사업자가 이를 맡고 ESS 운영으로 추가 수익을 얻도록 사업구조를 바꾸겠다고 밝혔다. 이는 주민 부담을 줄이려는 방향이지만, 사업자가 초기 투자비를 회수하려면 ESS 운영 수익 구조가 뒷받침되어야 한다. 국내 최초 상업용 ESS가 10년 만에 철거된 사례처럼 가동률 저하, 잦은 고장, 부품 수급 문제는 장기 운영비를 키울 수 있다. 특히 주민이 직접 관리할 수 없어 위탁이나 별도 인력이 필요하고, 그 비용이 늘면 주민 배분 몫이 줄어든다. 여주시 구양리는 송전 여건과 마을 소유 토지, 자부담 현금 확보 덕에 월 약 1000만 원의 순수익을 내고 있지만, 함양군은 ESS 설치와 대출, 임대료가 더해질 가능성이 있어 같은 사업이라도 주민 수익이 달라질 수 있다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>국내 BESS EPC 사업자 관점에서는 ESS의 초기 설치뿐 아니라 배터리 교체 주기, 운영·유지보수(O&amp;M), 안전관리 체계까지 포함한 생애주기 비용 설계가 사업 수주의 핵심 경쟁력이 될 수 있다. 다만 수익 배분 기준과 교체 비용 부담 주체가 확정되지 않은 만큼, 이 부분이 정해지기 전까지는 사업 참여 조건을 보수적으로 검토하는 것이 필요해 보인다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.hynews.kr/news/view.php?idx=80052" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="09화ess,선두셀회사의두번째주력"><a href="https://brunch.co.kr/@@4J3S/65" target="_blank" rel="noopener">09화 ESS, 선두 셀 회사의 두 번째 주력</a><div class="meta">브런치 · 11/22 07:02</div></div>
+    <details class="item" data-k="ess(energystoragesystem,에너지저장장치)란?–전기를어떻"><summary><span class="t">ESS(Energy Storage System, 에너지저장장치)란? – 전기를 어떻게 저장하고, 왜 지금 주목받을까?</span><span class="meta">자투리경제 · 11/20 09:49 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>재생에너지 비중 확대와 데이터센터 등 대규모 수요 증가로 전력망의 수급 균형을 맞출 설비에 대한 관심이 커지고 있다. 이 글은 ESS와 BESS의 개념, 작동 방식, 주요 배터리 종류와 최근 설치 동향을 일반 독자 눈높이에서 정리한 해설 기사다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>미국 유틸리티 규모 배터리 저장 용량은 2025년 말 기준 43.6GW이며, 2026년 상반기에 8.3GW가 추가로 설치되었다.</li><li>미국 사업자들의 계획에 따르면 2026년 하반기부터 2028년 말까지 54GW의 배터리 저장 용량이 추가로 가동될 예정이다(2026년 하반기 14GW, 2027년 26GW, 2028년 14GW).</li><li>미국 유틸리티 규모 ESS 누적 설치량은 2025년 초 88GWh에서 2026년 중반 165GWh로 약 2배가 되었다.</li><li>IEA에 따르면 2025년 전 세계 신규 배터리 저장 설치량은 108GW로 2024년보다 40% 증가했으며, 이 중 LFP가 약 90%를 차지한다.</li><li>일반적인 유틸리티 규모 BESS의 왕복효율(RTE)은 85~90% 수준이다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>ESS는 에너지를 저장했다가 필요한 시점에 공급하는 설비와 제어 체계를 통칭하며, 배터리를 저장 매체로 쓰는 방식이 BESS다. BESS는 PCS가 교류를 직류로 바꿔 배터리에 저장하고, 방전 시에는 다시 교류로 바꿔 전력망에 공급하는 구조다. 충전 시점은 EMS가 수요, 요금, 배터리 상태를 고려해 정하고, BMS는 전압·전류·온도를 감시해 안전 운전 범위를 지키도록 관리한다. 시장에서는 리튬인산철(LFP)이 열 안정성, 수명, 경제성 측면에서 주력으로 자리 잡았으며, 바나듐·나트륨 계열 기술도 실증 단계에 있다. 태양광·풍력의 출력제어를 줄이고 AI 데이터센터의 급격한 부하 변동과 피크 수요를 완충하는 역할이 주목받는 이유로 설명된다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>해석하면, 미국의 설치 규모 확대와 데이터센터 수요 증가는 대형 BESS 프로젝트의 수주와 LFP 중심 설계 및 안전 관리 역량의 중요성이 커지고 있다는 신호로 볼 수 있다. 다만 이 글은 개념 해설이며 한국 시장의 상황을 직접 다루지 않으므로, 국내 적용 여부는 별도 검토가 필요하다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.jaturi.kr/news/articleView.html?idxno=27835" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="김동명lg에너지솔루션사장,2027년임원인사11명승진…마케팅·r&amp;d·북미품"><a href="https://www.ceojhn.com/news/articleViewAmp.html?idxno=10933" target="_blank" rel="noopener">김동명 LG에너지솔루션 사장, 2027년 임원인사 11명 승진…마케팅·R&amp;D·북미 품질 보강</a><div class="meta">CEO저널 · 11/20 08:50</div></div>
+    <div class="item" data-k="[줌-in]전기안전의패러다임바꾼다…중소기업이엘피의‘무감전·무정전’도전"><a href="http://www.dailymagazine.co.kr/news/newsview.php?ncode=1065617938861277" target="_blank" rel="noopener">[줌-in] 전기 안전의 패러다임 바꾼다… 중소기업 이엘피의 ‘무감전·무정전’ 도전</a><div class="meta">데일리매거진 · 11/21 21:58</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="4">
+    <h2>🏛️ 규격·인허가·정책</h2>
+    <div class="items">
+    <details class="item" data-k="sk온대만ess수주전뛰어든다…12월입찰-머니투데이"><summary><span class="t">SK온 대만 ESS 수주전 뛰어든다…12월 입찰 - 머니투데이</span><span class="meta">머니투데이 · 11/20 19:22 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>대만은 정보보안과 공급망 정책에 따라 비중국산 배터리 수요가 형성된 시장이다. 2021~2022년 잇단 대규모 정전과 AI 데이터센터 전력 수요 증가로 전력망 안정화용 ESS 수요도 커지고 있다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>SK온은 오는 12월 대만전력공사가 발주하는 대규모 ESS 프로젝트 입찰에 참여할 계획이다.</li><li>입찰 결과는 내년 3월경 발표될 예정이며, 제목 기준 프로젝트 규모는 1.2GWh이다.</li><li>SK온은 ESS용 LFP 배터리 팩을 공급하고, 씨텔은 ESS 시스템 제작과 인증을 맡는다.</li><li>GE버노바는 전력변환장치인 PCS를 공급하며, 3사는 지난 MOU를 바탕으로 처음 공동 참여하는 사업이다.</li><li>SK온의 생산능력은 국내 서산 21GWh, 헝가리 47.5GWh, 미국 102GWh 규모이며, 대만 시장 규모는 2025년 약 1.9GW에서 2030년 7~8GW로 확대될 전망이다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이번 입찰은 SK온, GE버노바, 씨텔 3사가 MOU를 맺은 뒤 처음 추진하는 공동 사업이다. 역할은 배터리 팩 공급(SK온), 시스템 제작과 인증(씨텔), 전력변환장치 공급(GE버노바)으로 나뉘어, 단순 기술 협력을 넘어 실제 공급 사업에 함께 참여하는 구조다. 배터리는 국내와 해외 생산시설에서 만들어지며, 중국 생산 물량은 대만의 정책상 공급이 어려울 것으로 보인다. 기사에서는 대만 공공 ESS와 보조금 사업에서 원산지와 공급망 안정성이 핵심 평가 요소라고 설명한다. 3사는 대만 입찰을 출발점으로 삼아 이후 미국과 일본 시장으로 협력을 넓힐 계획이다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>대만처럼 공급망 정책으로 비중국산 배터리를 우대하는 시장에서는 제조 거점의 원산지가 수주 경쟁력이 될 수 있다. 국내 EPC 사업자는 배터리사, PCS사, 시스템 통합사를 묶는 컨소시엄 구성 역량이 중요해질 것으로 보인다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.mt.co.kr/index.php/industry/2026/11/19/2026111813284883136" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <details class="item" data-k="“원료부터전구체까지자체생산…인니니켈광산등경영권확보”"><summary><span class="t">“원료부터 전구체까지 자체 생산…인니 니켈 광산 등 경영권 확보”</span><span class="meta">매일경제 마켓 · 11/20 08:32 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>중국이 삼원계 전구체와 LFP 소재 공급을 사실상 주도하는 가운데, 미국 OBBBA 법안과 유럽의 탈중국 기조로 비중국산 배터리 소재 수요가 커지고 있습니다. 인도네시아의 니켈 가격 산정 방식 조정과 채굴 쿼터 강화도 원료 확보를 서두르게 하는 요인입니다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>피노는 싱가포르 자회사를 통해 HSM 니켈광산 지분 51%와 ABEB 전구체 공장 지분 51.49%를 인수하며, 총 투자 규모는 619억원이고 올해 말 거래 완료를 목표로 합니다.</li><li>HSM 니켈광산은 매장량 4000만톤 이상, 연간 채굴능력 300만톤 이상으로 인수 후 피노의 주력 니켈 공급원이 될 예정입니다.</li><li>ABEB는 연산 2만톤 규모의 삼원계(NCM) 전구체 공장으로, 건설과 시운전을 마치고 고객사 라인 인증과 양산 납품을 준비 중입니다.</li><li>2025년 기준 중국은 전 세계 삼원계 전구체의 약 88%, LFP 소재의 약 99%를 공급하고 있습니다.</li><li>피노는 씨앤피신소재테크놀로지 지분 75%를 확보해 포항에 연산 1만2500톤 LFP 양극재 공장을 2027년 양산 목표로 건설 중이며, 폐배터리 재활용으로 연간 최대 7000톤을 처리할 계획입니다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>피노는 위탁가공 중심이던 전구체 사업을 광산 확보부터 제품 생산까지 직접 수행하는 수직계열화 구조로 바꾸려 합니다. 원료는 천연 광물과 폐배터리 재활용이라는 두 경로로 확보해 특정 공급원에 대한 의존을 줄이는 투트랙 구조를 택했습니다. 생산은 인도네시아의 삼원계 전구체와 한국의 LFP 양극재로 나누어, 유럽과 미국의 전기차 및 ESS 수요에 함께 대응하겠다는 방향입니다. 미국 OBBBA는 금지외국기관(PFE)의 관여 여부에 따라 배터리와 핵심광물 세액공제를 제한하므로, 지분 구조까지 따지는 N-PFE 생산능력이 고객사의 필수 조건이 되고 있다고 회사는 설명합니다. 신규 공장을 짓는 대신 기존 설비를 인수해 양산까지의 기간과 초기 투자 부담을 줄이려는 전략도 함께 읽힙니다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>해석이지만, ESS용 LFP 셀과 양극재 조달에서 원산지뿐 아니라 지분 구조와 N-PFE 요건을 확인하는 절차가 프로젝트 계약과 설계 단계에 들어올 가능성이 있습니다. 한국 BESS EPC 사업자는 미국·유럽 프로젝트의 셀 공급사 지분 구조와 공급망 증빙을 사전에 점검하는 체계를 준비해 두면 입찰과 인도 일정 리스크를 줄일 수 있을 것으로 보입니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://stock.mk.co.kr/news/view/1202968" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="[리포트브리핑]lg에너지솔루션,&#x27;ess외형성장&#x27;목표가570,000원-교보"><a href="https://www.newspim.com/news/view/20261120000233" target="_blank" rel="noopener">[리포트 브리핑]LG에너지솔루션, &#x27;ESS 외형 성장&#x27; 목표가 570,000원 - 교보증권</a><div class="meta">뉴스핌 · 11/20 08:56</div></div>
+    <div class="item" data-k="김동명lg에너지솔루션사장,2027년임원인사11명승진…마케팅·r&amp;d·북미품"><a href="https://www.ceojhn.com/news/articleViewAmp.html?idxno=10933" target="_blank" rel="noopener">김동명 LG에너지솔루션 사장, 2027년 임원인사 11명 승진…마케팅·R&amp;D·북미 품질 보강</a><div class="meta">CEO저널 · 11/20 08:50</div></div>
+    <div class="item" data-k="[리포트브리핑]한중엔시에스,&#x27;ess뿐아니라ups랙주요파트너로도약&#x27;목표가9"><a href="https://www.newspim.com/news/view/20261120000216" target="_blank" rel="noopener">[리포트 브리핑]한중엔시에스, &#x27;ESS뿐 아니라 UPS 랙 주요 파트너로 도약&#x27; 목표가 97,000원 - 유안타증권</a><div class="meta">뉴스핌 · 11/20 08:34</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="kr" data-sec="5">
+    <h2>🌍 시장·프로젝트</h2>
+    <div class="items">
+    <details class="item" data-k="ess(energystoragesystem,에너지저장장치)란?–전기를어떻"><summary><span class="t">ESS(Energy Storage System, 에너지저장장치)란? – 전기를 어떻게 저장하고, 왜 지금 주목받을까?</span><span class="meta">자투리경제 · 11/20 09:49 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>재생에너지 비중 확대와 데이터센터 등 대규모 수요 증가로 전력망의 수급 균형을 맞출 설비에 대한 관심이 커지고 있다. 이 글은 ESS와 BESS의 개념, 작동 방식, 주요 배터리 종류와 최근 설치 동향을 일반 독자 눈높이에서 정리한 해설 기사다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>미국 유틸리티 규모 배터리 저장 용량은 2025년 말 기준 43.6GW이며, 2026년 상반기에 8.3GW가 추가로 설치되었다.</li><li>미국 사업자들의 계획에 따르면 2026년 하반기부터 2028년 말까지 54GW의 배터리 저장 용량이 추가로 가동될 예정이다(2026년 하반기 14GW, 2027년 26GW, 2028년 14GW).</li><li>미국 유틸리티 규모 ESS 누적 설치량은 2025년 초 88GWh에서 2026년 중반 165GWh로 약 2배가 되었다.</li><li>IEA에 따르면 2025년 전 세계 신규 배터리 저장 설치량은 108GW로 2024년보다 40% 증가했으며, 이 중 LFP가 약 90%를 차지한다.</li><li>일반적인 유틸리티 규모 BESS의 왕복효율(RTE)은 85~90% 수준이다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>ESS는 에너지를 저장했다가 필요한 시점에 공급하는 설비와 제어 체계를 통칭하며, 배터리를 저장 매체로 쓰는 방식이 BESS다. BESS는 PCS가 교류를 직류로 바꿔 배터리에 저장하고, 방전 시에는 다시 교류로 바꿔 전력망에 공급하는 구조다. 충전 시점은 EMS가 수요, 요금, 배터리 상태를 고려해 정하고, BMS는 전압·전류·온도를 감시해 안전 운전 범위를 지키도록 관리한다. 시장에서는 리튬인산철(LFP)이 열 안정성, 수명, 경제성 측면에서 주력으로 자리 잡았으며, 바나듐·나트륨 계열 기술도 실증 단계에 있다. 태양광·풍력의 출력제어를 줄이고 AI 데이터센터의 급격한 부하 변동과 피크 수요를 완충하는 역할이 주목받는 이유로 설명된다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>해석하면, 미국의 설치 규모 확대와 데이터센터 수요 증가는 대형 BESS 프로젝트의 수주와 LFP 중심 설계 및 안전 관리 역량의 중요성이 커지고 있다는 신호로 볼 수 있다. 다만 이 글은 개념 해설이며 한국 시장의 상황을 직접 다루지 않으므로, 국내 적용 여부는 별도 검토가 필요하다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.jaturi.kr/news/articleView.html?idxno=27835" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <details class="item" data-k="한화투자증권&quot;데이터센터공사늦어지는데배터리는뜬다…삼성sdi·lg엔솔반전기회"><summary><span class="t">한화투자증권 &quot;데이터센터 공사 늦어지는데 배터리는 뜬다…삼성SDI·LG엔솔 반전 기회&quot;</span><span class="meta">핀포인트뉴스 · 11/20 08:33 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>AI 산업 성장으로 데이터센터 전력 수요가 빠르게 늘고 있지만, 발전소와 송·배전망 확충에는 시간과 비용이 많이 든다. 미국 중간선거 이후 데이터센터 건설 지연 우려가 나오면서, 전기차 수요 둔화를 보완할 새 수요처로 BESS가 거론되고 있다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>한국투자증권 이충재 연구원은 국내 이차전지 업체의 2027년 BESS 매출이 올해보다 개선될 것으로 전망했다.</li><li>데이터센터 건설이 늦어져도 기존 전력 설비가 갖춰진 지역으로 입지가 옮겨가 BESS 수요가 꺾이지 않는다는 분석이다.</li><li>도심형 데이터센터는 소음과 디젤 발전기 인허가 문제 때문에 BESS가 필수 설비가 될 수 있다고 봤다.</li><li>업종 투자의견은 &#x27;비중 확대&#x27;이며, 추천 종목은 삼성SDI와 LG에너지솔루션이다.</li><li>본문에는 BESS 수주 규모나 MW·MWh 등 구체적 수치가 제시되지 않았다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>보고서는 데이터센터 신축이 전력망 접속과 인허가 문제로 늦어지면 사업자들이 이미 발전·송전 인프라가 있는 입지로 몰릴 것으로 본다. 이 경우 제한된 전력을 효율적으로 쓰기 위해 저장장치 투자가 늘 수 있다는 논리다. 도심과 산업단지 인근 데이터센터는 AI 추론 응답 속도를 높이려는 수요가 있지만, 디젤 발전기에 대한 주민 반발이 커서 BESS가 비상 발전 부담을 줄이는 대안으로 검토된다. 다만 데이터센터 투자 일정과 BESS 발주 시점이 같은 방향으로 움직인다는 보장은 없으며, 발주 지연 가능성도 함께 언급됐다. 미국 내 데이터센터 반대 여론과 미중 AI 경쟁에 따른 여론 변화도 변수로 제시됐다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>해석상 데이터센터 BESS 프로젝트가 변전소와 기존 계통 인근으로 옮겨갈 가능성이 있어, 계통연계 검토와 인허가 역량이 수주 경쟁력의 핵심이 될 수 있다. 도심형 소규모 BESS 수요가 늘면 소음·화재 안전 설계 경험이 차별 요소가 될 수 있으므로, 발주 시점 불확실성을 고려해 파이프라인을 단계별로 관리하는 전략이 필요해 보인다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=506160" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="[힘내라k산업]②빅테크전력수요에…hd현대일렉트릭,분기최대매출"><a href="https://www.asiatime.co.kr/article/20261120500272" target="_blank" rel="noopener">[힘내라 K산업]②빅테크 전력 수요에…HD현대일렉트릭, 분기 최대 매출</a><div class="meta">아시아타임즈 · 11/21 06:01</div></div>
+    <div class="item" data-k="국내이차전지,내년bess매출개선…한투증권비중확대:기업·산업"><a href="https://news.jkn.co.kr/post/1109076" target="_blank" rel="noopener">국내 이차전지, 내년 BESS 매출 개선…한투증권 비중확대 : 기업·산업</a><div class="meta">재경일보 · 11/20 08:48</div></div>
+    </div>
+  </section>
+  </div>
+  <div class="panel" data-panel="global">
+  <section class="sec" data-region="global" data-sec="0">
+    <h2>🔋 배터리·셀</h2>
+    <div class="items">
+    <div class="item" data-k="supportersofbatteryenergystoragesystemst"><a href="https://www.heraldbulletin.com/news/state_news/supporters-of-battery-energy-storage-systems-tout-environmental-benefits/article_4e8ea5ed-fb3e-4a0e-b16c-11c5187d3833.html" target="_blank" rel="noopener">Supporters of battery energy storage systems tout environmental benefits</a><div class="meta">Herald Bulletin · 11/21 20:55</div></div>
+    <div class="item" data-k="tariffs,taxesandabesspricerise"><a href="https://www.pv-magazine.com/2026/11/21/tariffs-taxes-and-a-bess-price-rise/" target="_blank" rel="noopener">Tariffs, taxes and a BESS price rise</a><div class="meta">pv magazine Global · 11/21 14:24</div></div>
+    <div class="item" data-k="foxessdeliversa6mw/14.21mwhbatteryenergy"><a href="https://batteriesnews.com/fox-ess-delivers-a-6mw-14-21mwh-battery-energy-storage-project-in-trutnov-czech-republic/" target="_blank" rel="noopener">Fox ESS Delivers a 6MW/14.21MWh Battery Energy Storage Project in Trutnov, Czech Republic</a><div class="meta">Batteries News · 11/21 15:26</div></div>
+    <div class="item" data-k="germany:operatorsprogressover4gwhofbesst"><a href="https://www.energy-storage.news/germany-operators-4gwh-large-scale-bess-construction-fid-deadline/" target="_blank" rel="noopener">Germany: operators progress over 4GWh of BESS towards construction ahead of year-end FID deadline - Energy</a><div class="meta">Energy-Storage.News · 11/20 20:55</div></div>
+    <div class="item" data-k="powerx&amp;averroespartnerforbesssalesingulf"><a href="https://solarbytes.info/battery-and-energy-storage-system/powerx-averroes-bess-sales-partnership-gcc-region-battery-storage-projects-2026-12829596" target="_blank" rel="noopener">PowerX &amp; Averroes partner for BESS sales in Gulf region</a><div class="meta">Solarbytes · 11/21 21:53</div></div>
+    <div class="item" data-k="world’sfirstcertifiedbessmadefromoldevba"><a href="https://interestingengineering.com/energy/first-certified-bess-ev-batteries" target="_blank" rel="noopener">World’s first certified BESS made from old EV batteries debuts with 500-kWh capacity</a><div class="meta">Interesting Engineering · 11/21 08:29</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="1">
+    <h2>⚡ PCS·전력변환</h2>
+    <div class="items">
+    <div class="item" data-k="deltabessuseriesand800vdcsstpowersystemt"><a href="https://pv-magazine-usa.com/2026/11/20/delta-bess-u-series-and-800-vdc-sst-power-system-target-space-savings-and-ai-load-swings/" target="_blank" rel="noopener">Delta BESS U Series and 800 VDC SST power system target space savings and AI load swings</a><div class="meta">pv magazine USA · 11/21 00:00</div></div>
+    <div class="item" data-k="foxessdeliversa6mw/14.21mwhbatteryenergy"><a href="https://batteriesnews.com/fox-ess-delivers-a-6mw-14-21mwh-battery-energy-storage-project-in-trutnov-czech-republic/" target="_blank" rel="noopener">Fox ESS Delivers a 6MW/14.21MWh Battery Energy Storage Project in Trutnov, Czech Republic</a><div class="meta">Batteries News · 11/21 15:26</div></div>
+    <details class="item" data-k="austria:drafteagamendmentproposesnewresu"><summary><span class="t">오스트리아, EAG 개정안에 신규 재생에너지 보조금 제안</span><span class="meta">TaiyangNews · 11/20 18:51 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: Austria: Draft EAG Amendment Proposes New RE Subsidies</div><div class="row"><b>1. 배경</b><p>오스트리아 연방 경제·에너지·관광부가 재생에너지확대법(EAG) 개정안을 제출해 태양광과 배터리 저장장치 지원체계를 2027년부터 바꾸려는 상황이다. 개정안은 EU 재생에너지지침(RED III) 이행과 함께 유럽산 인버터 요건 도입을 포함한다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>다기능 태양광에 연간 최소 800만 유로를 배정하고, 1,000kW 이하 신규·증설 설비에 투자비의 최대 45%(건당 최대 15만 유로)를 지원한다.</li><li>태양광 연계 배터리 저장장치(BESS)에 연간 최소 5,200만 유로를 배정하며, 가구는 15kWh, 사업자는 50kWh까지 보조금 대상 용량을 제한한다.</li><li>저장장치는 태양광 1kW당 배터리 1.5kWh 이상의 비율을 갖추고, 보조금은 토지비를 제외한 투자비의 최대 10%로 제한된다.</li><li>공동 설치 태양광·배터리 시스템에는 유럽 가치사슬의 인버터 요건을 적용하며 유럽산 부품 보너스도 함께 도입한다.</li><li>ÖSG 개정으로 2027년 7월 1일 이후 20kW 초과 신규 FIT 계약에 동적 보상 옵션을 포함하고, 마이너스 가격 구간의 계통 역송을 줄이도록 한다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이번 개정은 재생에너지 보조금의 효율을 높이고 행정 부담을 줄이며, 설비가 시장 가격 신호에 반응하도록 유도하는 것이 목적이다. 기존에는 태양광과 배터리를 묶은 지원 체계가 뚜렷하지 않았지만, 개정안은 태양광 연계 BESS를 별도 보조금 트랙으로 분리했다. 저장장치는 자동화된 통신 가능 EMS를 갖춰야 하며, 전력 지시 응답, 발전·저장 제어, 동적 전기요금 반영 등의 요건이 후속 시행령에서 구체화될 예정이다. 수익원도 자가소비 증대를 넘어 유연성 서비스, 동적 요금제, 유연 계통연계, 에너지 공동체 참여 등으로 증명해야 한다. 다만 세부 지원 기준과 신청 절차는 별도 시행령에 위임되어 있어 현재 확정된 내용은 틀만 제시된 상태다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>한국 BESS EPC 관점에서는 저장 용량 상한, 태양광 대비 1.5kWh/kW 비율, EMS 통신·제어 요건이 설계 기준으로 번질 가능성이 있어 참고할 만하다. 유럽산 인버터 요건은 중국산 장비 비중이 높은 국내 공급망 구성에 영향을 줄 수 있는 신호로 해석된다. 이는 본문에 근거한 해석이며, 실제 적용 범위와 시기는 시행령 확정 후 판단해야 한다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://taiyangnews.info/markets/austria-draft-eag-amendment-proposes-new-re-subsidies" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="waareewins$10.7mtransformerorder"><a href="https://transformer-magazine.com/news/waaree-wins-10-7-m-transformer-order/" target="_blank" rel="noopener">Waaree wins $10.7 M transformer order</a><div class="meta">Transformer Magazine · 11/20 16:48</div></div>
+    <div class="item" data-k="waareetranspowerwinsrs100crorentpcorderf"><a href="https://www.manufacturingtodayindia.com/waaree-transpower-wins-rs-100-crore" target="_blank" rel="noopener">Waaree Transpower wins Rs 100 crore NTPC order for energy storage project</a><div class="meta">Manufacturing Today India · 11/21 20:47</div></div>
+    <div class="item" data-k="statconenergiaaclaims69%domesticvalueadd"><a href="https://www.saurenergy.com/solar-energy-news/statcon-energia-claims-69-domestic-value-addition-in-its-inverters-12825271" target="_blank" rel="noopener">Statcon Energiaa Claims 69% Domestic Value Addition in Its Inverters</a><div class="meta">Saur Energy · 11/20 13:18</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="2">
+    <h2>🔌 계통연계·그리드</h2>
+    <div class="items">
+    <div class="item" data-k="unigridsodium-ionbatteriestargetshort-du"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQdk81dUNWZkE2NUVsTEI2VmJhVHdib2J3bG16aFBxUUZZYXlfMGR2a1IzaG43UFBncW5rSTdKX0k4SDVQRTloZkRrWXFRODlOdXlDaVQ3dU5vYzAzS2d0Q1QzRzFtUm9QMjlMUW1qaHNueDdoX3Y4VWxjdncyTnVUZ3FjQjRaR0RMYTJCSHpMWmRMU0NGanZrdUpJUjUtUXJZNmtVSkJWT2RVUWRIQlFBMFZ4NA?oc=5" target="_blank" rel="noopener">Unigrid Sodium-Ion Batteries Target Short-Duration, High-Power Storage - News and Statistics</a><div class="meta">IndexBox · 11/21 19:10</div></div>
+    <div class="item" data-k="&#x27;closeproximitytokeygridinfrastructure&#x27;:"><a href="https://www.energy-storage.news/edf-acquires-250mw-holloway-battery-storage-project-new-south-wales-australia/" target="_blank" rel="noopener">&#x27;Close proximity to key grid infrastructure&#x27;: EDF buys 1GWh battery storage system in Australia - Energy</a><div class="meta">Energy-Storage.News · 11/20 19:00</div></div>
+    <div class="item" data-k="edfacquires250mwbatteryprojectinaustrali"><a href="https://www.ess-news.com/2026/11/20/edf-acquires-250-mw-battery-project-in-australia/" target="_blank" rel="noopener">EDF acquires 250 MW battery project in Australia</a><div class="meta">ESS News · 11/21 14:36</div></div>
+    <div class="item" data-k="industryreportexamines2026costsfor5kwoff"><a href="https://www.wboc.com/online_features/press_releases/industry-report-examines-2026-costs-for-5kw-off-grid-solar-systems-with-battery-storage/article_9b8d47d9-9a9b-5c19-a187-3b7c556f9227.html" target="_blank" rel="noopener">Industry report examines 2026 costs for 5kW off-grid solar systems with battery storage</a><div class="meta">WBOC TV · 11/21 13:15</div></div>
+    <div class="item" data-k="pg&amp;emakes20-yearsolar,batterystorageplan"><a href="https://dailyenergyinsider.com/news/54532-pge-makes-20-year-solar-battery-storage-plans-with-avantus-in-california/" target="_blank" rel="noopener">PG&amp;E makes 20-year solar, battery storage plans with Avantus in California</a><div class="meta">Daily Energy Insider · 11/20 22:10</div></div>
+    <div class="item" data-k="tigoenergyexpandsvirtualpowerplantprogra"><a href="https://energiesmedia.com/tigo-energy-virtual-power-plant-expansion/" target="_blank" rel="noopener">Tigo Energy expands Virtual Power Plant program to new California and PJM grid-services markets for residential storage owners</a><div class="meta">Energies Media · 11/21 12:49</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="3">
+    <h2>🚨 안전·소방</h2>
+    <div class="items">
+    <div class="item" data-k="bronxlawmakerscallforstrongere-bikebatte"><a href="https://www.riverdalepress.com/stories/bronx-lawmakers-call-for-stronger-e-bike-battery-rules-after-fatal-fires,251664" target="_blank" rel="noopener">Bronx lawmakers call for stronger e-bike battery rules after fatal fires</a><div class="meta">The Riverdale Press · 11/21 01:06</div></div>
+    <details class="item" data-k="sandcutresidentsraisesafetyconcernsabout"><summary><span class="t">Sandcut 주민들, 제안된 배터리 저장 프로젝트에 안전 우려 제기</span><span class="meta">WTHI-TV · 11/20 08:14 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: Sandcut residents raise safety concerns about proposed battery storage project - WTHI</div><div class="row"><b>1. 배경</b><p>인디애나주 Vigo 카운티 위원회가 배터리 저장시스템 관련 용도지역 변경안을 2대1로 승인했으나, 이는 Sandcut Storage 시설의 최종 승인이 아니며 개발사 NextEra Energy Resources는 여전히 허가와 승인이 필요하다고 밝혔다. 주민들은 사업 정보를 이웃이나 소셜미디어를 통해 뒤늦게 알게 되었다고 말한다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>개발사 NextEra Energy Resources가 제안한 Sandcut Storage 시설의 최대 용량은 350MW이며, 이는 순간 출력 기준이고 저장 용량(MWh)이나 지속 시간을 뜻하지 않는다.</li><li>사업 투자액은 약 4억 1,400만 달러(414 million)로 추정되며, 건설 일자리는 약 175개로 예상된다(변경 가능).</li><li>Vigo 카운티 위원회는 배터리 저장시스템 관련 용도지역 변경안을 2대1로 가결했으나 최종 건설 승인은 아니다.</li><li>주민들은 화재 안전, 지하수·토지 영향, 주민 소통 부족, 비상 대응 준비 상태를 주요 우려로 제기했다.</li><li>Area Board of Zoning Appeals의 청원 심리가 12월 9일 오전 10시 Vigo 카운티 Annex 빌딩에서 예정되어 있다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이번 사안은 배터리 저장 설비의 입지 허가 단계에서 지역 주민 반발이 커지는 흐름을 보여준다. 위원회의 용도지역 변경 가결은 저장시스템을 허용하는 방향의 행정 절차이지만, 실제 건설에는 별도의 허가와 승인이 남아 있다. 주민들은 사업 공개 과정이 충분하지 않았고 질의에 대한 답변도 부족했다고 지적하며, 화재 시 지하수 오염 가능성과 소방 대응 능력을 핵심 쟁점으로 삼고 있다. 기사에 따르면 배터리 화재 위험과 안전장치는 설계와 장비에 따라 달라지며, 현장별 안전계획과 용수 사용 계획은 향후 심사 과정에서 검토되어야 한다. 기사에 나온 350MW는 출력 규모일 뿐 저장 에너지량이나 연속 운전 시간은 확인되지 않아, 실제 설비 사양은 추가 자료로 확인이 필요하다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>국내 BESS EPC 관점에서는 사업 초기부터 주민 설명회와 정보 공개, 화재 대응 계획, 용수·배수 관리 방안을 인허가 패키지에 함께 준비하는 것이 중요해 보인다. 특히 MW(출력)와 MWh(용량)를 명확히 구분해 제안하지 않으면 지역 신뢰를 얻기 어려울 수 있다는 점을 해석할 수 있다. 다만 이는 미국 인디애나주 사례를 바탕으로 한 해석이며 국내 규제 환경에 그대로 적용되는지는 별도 검토가 필요하다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.wthitv.com/2026/11/19/sandcut-residents-raise-safety-concerns-about-proposed-battery-storage-project/" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="company:proposedeasternlibatterystoragep"><a href="https://lilifepolitics.com/news/businesses/company-proposed-eastern-li-battery-storage-project-to-be-free-of-lithium-ion/" target="_blank" rel="noopener">Company: Proposed Eastern LI Battery Storage Project to Be Free of Lithium-Ion - Long Island Life &amp; Politics</a><div class="meta">Long Island Life &amp; Politics · 11/20 11:07</div></div>
+    <div class="item" data-k="voltwisestartsconstructionofitsfirstgerm"><a href="https://www.azocleantech.com/news.aspx?newsID=36874" target="_blank" rel="noopener">Voltwise Starts Construction of Its First German Battery Storage System in Leopoldshöhe</a><div class="meta">AZoCleantech · 11/20 21:20</div></div>
+    <div class="item" data-k="this500kwhenergystoragesystemrunsonretir"><a href="https://electrek.co/2026/11/20/this-500-kwh-energy-storage-system-runs-on-retired-ev-batteries/" target="_blank" rel="noopener">This 500 kWh energy storage system runs on retired EV batteries</a><div class="meta">Electrek · 11/21 06:08</div></div>
+    <details class="item" data-k="newsodium-ionenergystoragesolutionfordat"><summary><span class="t">Proper Voltage·Unigrid, 데이터센터용 나트륨이온 UPS 캐비닛 Salt Vault 출시</span><span class="meta">ESS News · 11/20 23:24 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: New sodium-ion energy storage solution for data centers from California’s Proper Voltage and Unigrid</div><div class="row"><b>1. 배경</b><p>AI 데이터센터의 학습·추론 클러스터는 유휴 상태와 피크 부하 사이를 밀리초 단위로 오가며, 이런 반복적 전력 과도 상태가 기존 납축 및 LFP 백업 배터리의 열화를 앞당길 수 있다는 문제의식에서 나온 제품입니다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>Salt Vault High Power 캐비닛은 용량 73.1 kWh, 출력 333 kW, 공칭 522 VDC이며 정격 사이클은 10,000회입니다.</li><li>단일 모듈 용량은 6.1 kWh입니다.</li><li>방전 온도 범위는 -20°C~40°C, 충전 온도 범위는 0°C~40°C입니다.</li><li>상용 납품은 2027년 4월에 얼리 어답터 데이터센터 및 핵심 인프라 운영사를 대상으로 시작될 예정입니다.</li><li>가격과 독립 성능 검증 데이터는 아직 공개되지 않았습니다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>Proper Voltage가 자사 배터리 운영체제(bOS) 소프트웨어로 전압을 제어하고, Unigrid의 나트륨-크롬 산화물(NCO) 셀을 결합한 UPS 백업 제품입니다. 소프트웨어 기반 전압 제어로 충전 상태 전 구간에서 출력을 일정하게 유지해, 기존 UPS 구조에 인버터를 새로 설계하지 않고 넣을 수 있다고 설명합니다. 또한 업계가 향하고 있는 800V 랙에도 대응할 수 있다고 밝혔습니다. Unigrid는 NCO 화학계가 고율 펄스 출력과 과부하가 반복되는 조건에서의 열 안정성에 맞춰졌다고 주장합니다. 다만 이는 제조사 주장이며 독립 검증 결과는 없습니다. 나트륨이온 업체들이 에너지 밀도보다 화재 안전과 고율 방전이 중요한 AI 인프라 시장으로 진입하는 흐름의 하나로 볼 수 있습니다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>해석이지만, 데이터센터 UPS 백업 수요에서 LFP 외 대체 화학을 검토할 필요가 생길 수 있습니다. 한국 BESS EPC 사업자는 가격과 검증 데이터가 나오기 전까지 나트륨이온 셀의 인증 요건, 소방 설계, UPS 연계 방식을 미리 비교해 두면 좋겠습니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.ess-news.com/2026/11/20/new-sodium-ion-energy-storage-solution-for-data-centers-from-californias-proper-voltage-and-unigrid/" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="4">
+    <h2>🏛️ 규격·인허가·정책</h2>
+    <div class="items">
+    <div class="item" data-k="&#x27;sodiumisachanceforustoleanforwardandwin"><a href="https://www.energy-storage.news/sodium-is-a-chance-for-us-to-lean-forward-and-win-alsym-energy-at-re-on-why-us-battery-policy-needs-to-shift-upstream/" target="_blank" rel="noopener">&#x27;Sodium is a chance for us to lean forward and win&#x27;: Alsym Energy at RE+ on why US battery policy needs to shift upstream - Energy</a><div class="meta">Energy-Storage.News · 11/20 21:53</div></div>
+    <div class="item" data-k="catl,byd,acwaamongco-initiatorsofstorage"><a href="https://www.pv-magazine.com/2026/11/21/catl-byd-acwa-among-co-initiators-of-storage-alliance-unveiled-at-cop31/" target="_blank" rel="noopener">CATL, BYD, ACWA among co-initiators of storage alliance unveiled at COP31</a><div class="meta">pv magazine Global · 11/21 18:35</div></div>
+    <div class="item" data-k="full-chainregulationsuppressesdendritesa"><a href="https://www.azocleantech.com/news.aspx?newsID=36862" target="_blank" rel="noopener">Full-Chain Regulation Suppresses Dendrites and Side Reactions in Zinc Batteries</a><div class="meta">AZoCleantech · 11/20 13:12</div></div>
+    <div class="item" data-k="fercapprovessabinepasslngexpansionand600"><a href="https://dailyenergyinsider.com/hearing-summaries/54523-ferc-approves-sabine-pass-lng-expansion-and-600000-dth-d-mvp-boost-staff-reports-improved-winter-outlook/" target="_blank" rel="noopener">FERC Approves Sabine Pass LNG Expansion and 600,000-Dth/d MVP Boost; Staff Reports Improved Winter Outlook</a><div class="meta">Daily Energy Insider · 11/21 02:08</div></div>
+    <div class="item" data-k="australia’shomebatterysubsidydebateshift"><a href="https://www.ess-news.com/2026/11/20/australias-home-battery-subsidy-debate-shifts-to-grid-benefits/" target="_blank" rel="noopener">Australia’s home battery subsidy debate shifts to grid benefits</a><div class="meta">ESS News · 11/20 23:24</div></div>
+    <div class="item" data-k="communitymicrogridscutcarbonemissionsbyu"><a href="https://bioengineer.org/community-microgrids-cut-carbon-emissions-by-up-to-ninety-four-percent/" target="_blank" rel="noopener">Community Microgrids Cut Carbon Emissions by up to Ninety-Four Percent</a><div class="meta">Bioengineer.org · 11/21 09:06</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="global" data-sec="5">
+    <h2>🌍 시장·프로젝트</h2>
+    <div class="items">
+    <div class="item" data-k="fluenceandlinxonpairupforbessaftera200mw"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNbUdpZDl0VUpxZi1oYldFWnVNcHZrLTR5aHJyVGJJVkNRXzh3dERSaU12Q0p6V2ViM0ZwaTMxR3VpY0lWNzFTTGpoVXRvb0xsVUFpTnJYMmhZako5MF9YMll0cURER3F0ekUzMzliUU5venFxd3ZwLWtSMGVXRWRKYmlMd1pYRlFPSndCR1RlVk9Ud1BwNTdJX2k2WEhEN19KbW5TOUk0OXBBS090R2t3YVdiSWRwS1VVUjdialhxMEF0ZTdvQnZCUksxd1RrZw?oc=5" target="_blank" rel="noopener">Fluence and Linxon pair up for BESS after a 200 MWh award in ERCOT</a><div class="meta">Solarbytes · 11/21 18:02</div></div>
+    <div class="item" data-k="&#x27;closeproximitytokeygridinfrastructure&#x27;:"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQTnhvdWdTN19qSHBvWlhKRWNzeHBSTlplaDEwN19MRGZxek1TQmpSeHZCS2NOSWlZMVlraHRSTGpwZTY3cWdXOHFMcnZsay1kOHphMHVZVVN4dUY3M3Q0cUFjSTdXRDBhZkJGOGFtVjJERUFGTnJvc0xpaDV3SDlvZ1UzN1lUM3hRbzRfOURxaW9mZFoxOUNHc0FzTkdHNm4zTkNINFd0YkhNcENObDAw?oc=5" target="_blank" rel="noopener">&#x27;Close proximity to key grid infrastructure&#x27;: EDF buys 1GWh battery storage system in Australia - Energy</a><div class="meta">Energy-Storage.News · 11/20 19:00</div></div>
+    <div class="item" data-k="cmblulands100mwhcaliforniaprojectfor10-h"><a href="https://www.bestmag.co.uk/cmblu-10-hour-non-lithium/" target="_blank" rel="noopener">CMBlu lands 100 MWh California project for 10-hour non-lithium storage</a><div class="meta">www.bestmag.co.uk · 11/20 20:17</div></div>
+    <div class="item" data-k="nalainksrevenueoptimisationdealfor125-mw"><a href="https://renewablesnow.com/news/nala-inks-revenue-optimisation-deal-for-125-mw-finnish-bess-1305362/" target="_blank" rel="noopener">Nala inks revenue optimisation deal for 125-MW Finnish BESS</a><div class="meta">Renewables Now · 11/20 21:55</div></div>
+    <div class="item" data-k="junipergreencommissions108.50mwpsolar&amp;94"><a href="https://www.saurenergy.com/solar-energy-news/juniper-green-commissions-10850-mwp-solar-9477-mwh-bess-capacity-12825162" target="_blank" rel="noopener">Juniper Green Commissions 108.50 MWp Solar &amp; 94.77 MWh BESS Capacity</a><div class="meta">Saur Energy · 11/20 13:03</div></div>
+    <div class="item" data-k="acmesolarcommissions51.87mwbesscapacityi"><a href="https://solarquarter.com/2026/11/21/acme-solar-commissions-51-87-mw-bess-capacity-in-rajasthan/" target="_blank" rel="noopener">ACME Solar Commissions 51.87 MW BESS Capacity In Rajasthan</a><div class="meta">SolarQuarter · 11/21 13:38</div></div>
+    </div>
+  </section>
+  </div>
+  <div class="panel" data-panel="notice">
+  <section class="sec" data-region="notice" data-sec="0">
+    <h2>🏛️ 국내 기관 발표</h2>
+    <div class="items">
+    <div class="item" data-k="과기정통부-기후부,ai데이터센터신속구축을위한전력계통영향평가제도개선추진"><a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790061" target="_blank" rel="noopener">과기정통부-기후부, AI 데이터센터 신속 구축을 위한 전력계통영향평가 제도 개선 추진</a><div class="meta">대한민국 정책브리핑 · 11/20 12:00</div></div>
+    <details class="item" data-k="소형드론배터리국가표준제정추진"><summary><span class="t">소형드론 배터리 국가표준 제정 추진</span><span class="meta">대한민국 정책브리핑 · 11/19 15:12 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>정책브리핑에 올라온 기계융합산업표준과의 보도자료로, 소형드론용 배터리에 대한 국가표준을 새로 만드는 계획을 알린다. 본문에는 추진 배경을 설명하는 내용이 없다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>소형드론 배터리에 대한 국가표준 제정을 추진한다는 내용이다.</li><li>담당 부서는 기계융합산업표준과이며, 파일명 기준 보도 날짜는 11월 19일이다.</li><li>본문 텍스트에는 표준의 세부 항목, 시험 기준, 시행 일정이 나와 있지 않다.</li><li>자료는 PDF와 HWPX 두 형식으로 첨부되어 있으며, 원문 확인이 필요하다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이번 소식은 소형드론에 쓰이는 배터리를 대상으로 국가표준을 새로 만드는 계획이다. 보도자료 본문에는 표준이 다루는 안전 항목, 성능 시험 방식, 제정 절차와 일정이 포함되어 있지 않다. 따라서 어떤 셀 화학이나 팩 구조를 다루는지, 화재 안전 기준을 포함하는지는 첨부 파일을 확인해야 알 수 있다. 본문에 근거할 수 있는 내용은 제정을 추진한다는 사실과 발표 주체, 날짜 정도다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>해석이며 사실이 아니다. 드론용 배터리 표준이 셀과 팩의 안전·시험 기준으로 이어진다면, 한국 BESS EPC 사업자는 ESS 셀 조달과 인증 요건을 검토할 때 참고할 수 있다. 다만 소형 드론용 표준이라 대형 ESS에 직접 적용되지는 않으므로, 첨부 원문과 후속 제정 일정을 확인한 뒤 판단하는 것이 좋다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789938" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="‘소형드론배터리국가표준’제정추진"><a href="https://www.korea.kr/common/download.do?fileId=198593169&amp;tblKey=GMN" target="_blank" rel="noopener">‘소형드론 배터리 국가표준’ 제정 추진</a><div class="meta">대한민국 정책브리핑 · 11/19 08:30</div></div>
+    <details class="item" data-k="&#x27;소형드론배터리국가표준&#x27;제정추진"><summary><span class="t">&#x27;소형드론 배터리 국가표준&#x27; 제정 추진</span><span class="meta">대한민국 정책브리핑 · 11/19 16:07 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="row"><b>1. 배경</b><p>소형드론 사용이 늘면서 드론에 쓰이는 배터리의 안전과 품질 기준을 국가 차원에서 정하려는 흐름으로 보입니다. 본문이 제목과 첨부파일명 정도만 있어 배경은 제목과 발표 주체에서 추정한 범위입니다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>국방부와 산업통상부가 공동으로 &#x27;소형드론 배터리 국가표준&#x27; 제정을 추진한다고 발표했습니다.</li><li>발표 자료는 2026년 11월 19일자 보도자료(첨부파일명 기준 261119)로 확인됩니다.</li><li>본문에는 표준의 세부 항목, 적용 범위, 시행 일정, 수치 기준이 포함되어 있지 않습니다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이번 발표는 소형드론에 탑재되는 배터리를 대상으로 한 국가표준 제정 계획을 알리는 내용입니다. 주관 부처는 국방부와 산업통상부이며, 두 부처가 공동 명의로 자료를 냈습니다. 본문에서 확인되는 정보는 제정을 추진한다는 사실과 자료 게시 시점뿐이고, 표준이 다룰 안전 시험 항목이나 성능 기준, 적용 시기는 적혀 있지 않습니다. 따라서 이전 제도와 비교해 무엇이 달라지는지도 본문만으로는 판단하기 어렵습니다. 자세한 내용은 원문 보도자료 첨부(hwpx, pdf)를 확인해야 합니다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>BESS 사업 관점에서는 드론용 배터리 표준이라는 점에서 직접 적용 대상은 아니지만, 배터리 셀과 팩의 안전 시험 기준이 국가표준으로 정리되는 흐름은 ESS 인증과 화재 안전 요건에 간접 영향을 줄 수 있습니다. 실제 영향은 표준의 세부 내용이 공개된 뒤에 판단해야 합니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789949" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="문서뷰어"><a href="https://www.korea.kr/common/docViewer.do?fileId=198593106&amp;tblKey=GMN" target="_blank" rel="noopener">문서뷰어</a><div class="meta">대한민국 정책브리핑 · 11/19 11:00</div></div>
+    <div class="item" data-k="3"><a href="https://www.korea.kr/docViewer/result/2026.11/20/9a27e37c4cc97a38429015c9be0bb926/9a27e37c4cc97a38429015c9be0bb926.view.xhtml?" target="_blank" rel="noopener">3</a><div class="meta">대한민국 정책브리핑 · 11/20 12:00</div></div>
+    </div>
+  </section>
+  <section class="sec" data-region="notice" data-sec="1">
+    <h2>🌐 해외 기관 발표</h2>
+    <div class="items">
+    <details class="item" data-k="fercapprovesmajorgasinfrastructurefacili"><summary><span class="t">FERC, 미국 주요 천연가스 인프라 프로젝트 승인</span><span class="meta">Federal Energy Regulatory Commission (.gov) · 11/20 02:30 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: FERC Approves Major Gas Infrastructure Facilities to Get American Energy Moving - Federal Energy Regulatory Commission (.gov)</div><div class="row"><b>1. 배경</b><p>미국 연방에너지규제위원회(FERC)가 전원 찬성으로 대형 에너지 프로젝트를 승인했다. 위원장은 취임 1년을 맞아 저렴하고 안정적인 천연가스 공급을 약속한 바 있으며, 이번 결정은 그 이행으로 소개됐다. 본문은 BESS 직접 사안이 아니라 가스 인프라 중심이다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>Sabine Pass LNG 터미널에 액화 트레인 3기를 추가하는 확장이 승인됐다.</li><li>MVP Boost 프로젝트는 600,000 Dth/day의 firm 수송 용량을 추가한다.</li><li>Southeast Virginia 에너지저장 프로젝트는 1.1백만 Dth/day 규모의 LNG 저장 시설을 포함한다.</li><li>Forza 파이프라인은 약 36마일 신설에 최대 750,000 Dth/day의 firm 수송을 제공한다.</li><li>Texas Eastern Line 31 확장은 125,000 Dth/day의 신규 firm 수송 서비스를 제공한다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이번 승인은 LNG 수출 터미널 확장, 주간 파이프라인 신설, 저장 시설 건설 등 가스 공급망 전반을 겨냥한다. Sabine Pass는 기존 터미널에 트레인을 더해 액화 능력을 늘리고, Creole Trail 계열 파이프라인으로 터미널에 가스를 공급한다. Southeast Virginia 프로젝트는 LNG 저장과 소규모 액화 기능을 묶어 수요 피크 대응 역할을 맡는다. 다만 본문은 건설 일정과 투자 금액을 제시하지 않아 상세 일정은 확인이 필요하다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>가스 인프라 투자 확대는 전력 수요 피크 대응용 가스발전과 연계되어 간접적으로 계통 유연성 수요를 키울 수 있다. 한국 BESS EPC 사업자 입장에서는 미국 시장 진출 시 가스 중심 인프라 확장과 함께 계통 안정화용 ESS 수요가 같이 늘어나는지 살펴볼 만하다. 이는 본문 사실에서 도출한 해석이다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.ferc.gov/news-events/news/ferc-approves-major-gas-infrastructure-facilities-get-american-energy-moving" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <div class="item" data-k="eventdetails-electricreliabilitycouncilo"><a href="https://www.ercot.com/calendar/11172026-Batch_CTP-Workshop-4a_CTP-Planning" target="_blank" rel="noopener">Event Details - Electric Reliability Council of Texas (ERCOT)</a><div class="meta">Electric Reliability Council of Texas (ERCOT) · 11/17 17:00</div></div>
+    <div class="item" data-k="benshrager-departmentofenergy(.gov)"><a href="https://www.energy.gov/oe/person/ben-shrager" target="_blank" rel="noopener">Ben Shrager - Department of Energy (.gov)</a><div class="meta">Department of Energy (.gov) · 11/19 01:18</div></div>
+    <div class="item" data-k="windturbinescanstabilizethegrid-departme"><a href="https://www.energy.gov/cmei/systems/articles/wind-turbines-can-stabilize-grid" target="_blank" rel="noopener">Wind Turbines Can Stabilize the Grid - Department of Energy (.gov)</a><div class="meta">Department of Energy (.gov) · 11/19 01:18</div></div>
+    <details class="item" data-k="doe/ea-2325:hopitribeturquoisetrailsiteh"><summary><span class="t">DOE/EA-2325: 호피 부족 터키즈 트레일 하이브리드 마이크로그리드 환경평가(애리조나 나바호 카운티)</span><span class="meta">Department of Energy (.gov) · 11/19 01:40 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: DOE/EA-2325: Hopi Tribe Turquoise Trail Site Hybrid Microgrid Project; Navajo County, Arizona - Department of Energy (.gov)</div><div class="row"><b>1. 배경</b><p>미국 에너지부(DOE) 청정에너지 시연국(OCED)이 연방 자금 지원 사업의 환경영향을 검토하기 위해 작성한 환경평가(EA) 문서다. 애리조나주립대(ASU)가 집행할 연방 자금의 사용 승인 여부를 판단하기 위한 자료로, 호피 부족 분할 토지 내 공공시설에 전력을 공급하는 소규모 마이크로그리드가 대상이다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>제안 사업은 1,250kW 태양광 PV 어레이, 배터리 저장장치, 기존 130kW 디젤 백업발전기로 구성된 하이브리드 마이크로그리드다.</li><li>대상 시설은 애리조나주 나바호 카운티 호피 분할 토지의 Turquoise Trail 시정부 복합시설(TTMC)이다.</li><li>배터리 저장장치의 용량(MWh)과 출력 사양은 본문 요약에 명시되어 있지 않다.</li><li>EA는 시공 단계와 운영·유지보수 단계의 직접 및 간접 영향을 평가한다.</li><li>DOE가 자금을 지원하지 않는 무조치 대안(No Action)에서는 사업이 진행되지 않는다고 가정한다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이 사업은 외부 계통 의존도가 낮은 원격지 공공시설에 태양광과 배터리를 결합해 전력을 자급하도록 설계되었다. 기존 디젤 백업발전기 130kW는 그대로 활용되어, 태양광과 저장장치가 주 전원 역할을 하고 디젤은 비상용으로 남는 구조로 보인다. 연방 자금은 ASU가 집행하며, DOE는 자금 지원 결정 전에 NEPA에 따라 환경영향을 검토해야 한다. 이 EA는 시공 중 토지 이용, 생태, 문화자원 등과 운영 중 영향을 함께 다루고, 자금을 지원하지 않을 때의 대안도 비교한다. 문서와 함께 영향 없음 결정서(FONSI)도 2026년 11월 게재되어 있어, 검토 결과 중대한 환경영향이 없다고 판단된 것으로 읽힌다. 다만 저장장치 용량과 기술 방식은 본문 요약에서 확인되지 않아 원문 확인이 필요하다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>미국 연방 자금이 들어간 부족 지역 마이크로그리드는 태양광과 저장장치를 디젤 대체에 활용하는 소규모 사업 모델로 볼 수 있어, 한국 EPC 사업자에게는 원격지·도서형 마이크로그리드 레퍼런스 확보 기회로 해석할 수 있다. 다만 NEPA 환경평가와 부족 토지 승인 절차가 공정 일정에 영향을 줄 수 있으므로, 해외 공공 입찰 시 사전 행정 절차 기간을 감안하는 것이 바람직하다는 해석이 가능하다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://www.energy.gov/nepa/doeea-2325-hopi-tribe-turquoise-trail-site-hybrid-microgrid-project-navajo-county-arizona" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    <details class="item" data-k="documents"><summary><span class="t">EU 가스공급 안보 규정 관련 회원국 계획 의견 문서 목록</span><span class="meta">energy.ec.europa.eu · 07/23 03:55 · <span class="ai">요약 보기</span></span></summary><div class="sum"><div class="orig">원제: Documents</div><div class="row"><b>1. 배경</b><p>EU 집행위원회가 가스공급 안보 규정(2017/1938)에 따라 회원국이 제출한 예방행동계획과 비상계획을 검토하고 내린 의견 문서들을 모아 둔 페이지입니다. 같은 페이지에는 REPowerEU(러시아산 에너지 수입 단계적 폐지)와 에너지 공급 복원력 강화 관련 자료도 함께 연결되어 있습니다.</p></div><div class="row"><b>2. 핵심 사항</b><ul><li>집행위원회 의견 문서가 확인되는 회원국은 최소 16개국이며, 목록은 덴마크에서 끝나 그 이후 국가는 본문에 나오지 않습니다.</li><li>가장 이른 의견은 이탈리아(2024.7.18)와 에스토니아(2024.7.22)이고, 리투아니아(2024.9.17)가 뒤를 잇습니다.</li><li>2026년 의견으로는 루마니아(2026.1.30), 네덜란드(2026.1.12), 아일랜드(2026.9.7), 프랑스(2026.9.23)가 있습니다.</li><li>본문에는 개별 계획의 용량(MWh/MW), 금액, 세부 조치 내용이 포함되어 있지 않고 문서 제목과 링크만 나열되어 있습니다.</li></ul></div><div class="row"><b>3. 상세 내용</b><p>이 규정은 회원국이 가스 공급 차질에 대비해 예방행동계획과 비상계획을 제출하도록 하며, 집행위원회는 이를 검토해 의견을 냅니다. 목록의 의견 날짜가 2024년 중반부터 2026년 9월까지 분포해 있어, 회원국별 계획이 주기적으로 갱신·검토되고 있음을 보여줍니다. 페이지에는 REPowerEU와 AccelerateEU 같은 에너지 복원력 정책 문서와 에너지 통계 자료도 함께 연결되어 있어, 가스 안보 점검과 재생에너지·저장 확대 정책이 한 묶음으로 다뤄지는 흐름으로 보입니다. 다만 이 본문만으로는 각 의견의 구체적 권고 내용을 알 수 없어, 세부 요건은 개별 문서를 확인해야 합니다.</p></div><div class="row"><b>4. 시사점 <i class="tag">AI 분석</i></b><p>사실이 아닌 해석이지만, EU가 가스 공급 안보와 러시아 의존 탈피를 함께 추진하면서 전력 계통의 유연성 확보 수단으로 BESS 수요가 함께 거론될 가능성이 있습니다. 한국 BESS EPC 사업자는 유럽 수출 프로젝트에서 계통 안정화·피크 대응용 ESS 요구가 늘어나는지 관련 정책 문서를 계속 살펴볼 필요가 있습니다.</p></div><div class="foot">🤖 AI 요약 · 본문 기반 · 원문과 다를 수 있어요 · <a href="https://energy.ec.europa.eu/documents_en" target="_blank" rel="noopener">원문 보기 ↗</a></div></div></details>
+    </div>
+  </section>
+  </div>
+  <div id="q-arch" hidden></div>
+  <div class="arch">지난 브리핑: <a href="/briefing/2026-11-21.html">2026-11-21</a> <a href="/briefing/2026-11-20.html">2026-11-20</a> <a href="/briefing/2026-11-19.html">2026-11-19</a> <a href="/briefing/2026-11-18.html">2026-11-18</a> <a href="/briefing/2026-11-17.html">2026-11-17</a> <a href="/briefing/2026-11-16.html">2026-11-16</a> <a href="/briefing/2026-11-15.html">2026-11-15</a> <a href="/briefing/2026-11-14.html">2026-11-14</a> <a href="/briefing/2026-11-13.html">2026-11-13</a> <a href="/briefing/2026-11-12.html">2026-11-12</a> <a href="/briefing/2026-11-11.html">2026-11-11</a> <a href="/briefing/2026-11-10.html">2026-11-10</a> <a href="/briefing/2026-11-09.html">2026-11-09</a> <a href="/briefing/2026-11-08.html">2026-11-08</a></div>
+  <footer>구글뉴스 RSS 기반 자동 큐레이션 · 요약은 AI가 원문을 읽고 작성(원문 링크 필수 확인) · <a class="back" href="https://bess-ai-control.work/llms.txt">AI 에이전트용 안내</a></footer>
+</div>
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.tabs button');
+  function show(r) {
+    tabs.forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-tab') === r); });
+    document.querySelectorAll('.panel').forEach(function (p) { p.classList.toggle('on', p.getAttribute('data-panel') === r); });
+  }
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () { var r = b.getAttribute('data-tab'); show(r); history.replaceState(null, '', '#' + r); });
+  });
+  var h = location.hash.slice(1);
+  if (['kr', 'global', 'notice'].indexOf(h) >= 0) show(h);
+
+  var btn = document.getElementById('refresh-btn');
+  var st = document.getElementById('live-status');
+  if (!btn || !st) return;
+  function tkey(t) { return String(t).replace(/\s+/g, '').toLowerCase().slice(0, 40); }
+  function safeHref(u) { return /^https?:\/\//.test(u) ? u : '#'; }
+  function addFresh(region, secs) {
+    var n = 0;
+    (secs || []).forEach(function (sec, i) {
+      var box = document.querySelector('[data-region="' + region + '"][data-sec="' + i + '"] .items');
+      if (!box) return;
+      var old = box.querySelector('.fresh');
+      if (old) old.remove();
+      var have = {};
+      box.querySelectorAll('[data-k]').forEach(function (el) { have[el.getAttribute('data-k')] = 1; });
+      var news = (sec.items || []).filter(function (it) { return it.title && !have[tkey(it.title)]; });
+      if (!news.length) return;
+      var f = document.createElement('div'); f.className = 'fresh';
+      var l = document.createElement('div'); l.className = 'lbl';
+      l.textContent = '🆕 새로 들어온 소식 ' + news.length + '건 · 참고용(AI 요약·관련도 판정 전, 다음 정기 발행 07:30에 반영)';
+      f.appendChild(l);
+      news.forEach(function (it) {
+        var w = document.createElement('div'); w.className = 'item';
+        var a = document.createElement('a');
+        a.href = safeHref(it.link); a.target = '_blank'; a.rel = 'noopener'; a.textContent = it.title;
+        var m = document.createElement('div'); m.className = 'meta';
+        m.textContent = [it.source, it.when].filter(Boolean).join(' · ');
+        w.appendChild(a); w.appendChild(m); f.appendChild(w);
+      });
+      box.insertBefore(f, box.firstChild);
+      n += news.length;
+    });
+    return n;
+  }
+  btn.addEventListener('click', function () {
+    btn.disabled = true; st.textContent = '확인 중…';
+    fetch('/api/briefing?_=' + Date.now(), {cache: 'no-store'}).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
+      if (!d.total && !d.total_global) throw 0;
+      var n = addFresh('kr', d.sections) + addFresh('global', d.sections_global);
+      st.textContent = d.updated + ' 기준 새 소식 ' + n + '건' + (n ? ' (각 부문 상단)' : '');
+    }).catch(function () {
+      st.textContent = '확인 실패 — 잠시 후 다시 시도해 주세요';
+    }).finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+<script>
+// 검색 — 이 페이지 기사는 즉시 거르고(요약 본문 포함), 지난 브리핑은 /briefing/search.json 색인에서 찾는다.
+// 색인은 처음 입력할 때 한 번만 받는다. 여러 단어는 모두 들어간 기사만(AND). XSS 방지: textContent만 사용.
+(function () {
+  var q = document.getElementById('q');
+  var st = document.getElementById('q-status');
+  var box = document.getElementById('q-arch');
+  var wrap = document.querySelector('.wrap');
+  if (!q || !st || !box || !wrap) return;
+  var REGION = {kr: '국내', global: '해외', notice: '기관 발표'};
+  var MAX = 50;
+  var rows = null, loading = null, timer = null;
+  function norm(s) { return String(s || '').toLowerCase(); }
+  function hit(text, terms) { for (var i = 0; i < terms.length; i++) if (text.indexOf(terms[i]) < 0) return false; return true; }
+  function safeHref(u) { return /^https?:\/\//.test(u) ? u : '#'; }
+  function load() {
+    if (!loading) loading = fetch('/briefing/search.json', {cache: 'no-cache'}).then(function (r) {
+      if (!r.ok) throw 0; return r.json();
+    }).then(function (d) {
+      rows = (d.rows || []).map(function (r) { return {r: r, s: norm(r.slice(2).join(' '))}; });
+    }).catch(function () { loading = null; rows = null; throw 0; });
+    return loading;
+  }
+  function filterPage(terms) {
+    var n = 0, links = {};
+    document.querySelectorAll('.panel .sec').forEach(function (sec) {
+      var any = false;
+      sec.querySelectorAll('.item').forEach(function (it) {
+        var ok = !terms.length || hit(norm(it.textContent), terms);
+        it.classList.toggle('hide', !ok);
+        if (ok) { any = true; if (terms.length) n++; }
+        var a = it.querySelector('a[href]'); if (a) links[a.getAttribute('href')] = 1;
+      });
+      sec.classList.toggle('hide', terms.length > 0 && !any);
+    });
+    return {n: n, links: links};
+  }
+  function renderArch(terms, links) {
+    box.textContent = '';
+    var found = rows.filter(function (x) { return !links[x.r[4]] && hit(x.s, terms); });
+    if (!found.length) { box.hidden = true; return 0; }
+    var sec = document.createElement('section'); sec.className = 'sec qarch';
+    var h = document.createElement('h2');
+    h.textContent = '🗂️ 지난 브리핑 ' + found.length + '건' + (found.length > MAX ? ' (최근 ' + MAX + '건 표시)' : '');
+    sec.appendChild(h);
+    found.slice(0, MAX).forEach(function (x) {
+      var r = x.r, w = document.createElement('div'); w.className = 'item';
+      var a = document.createElement('a');
+      a.href = safeHref(r[4]); a.target = '_blank'; a.rel = 'noopener'; a.textContent = r[3];
+      var m = document.createElement('div'); m.className = 'meta';
+      m.textContent = [r[0], REGION[r[1]] || r[1], r[2], r[5]].filter(Boolean).join(' · ') + ' · ';
+      var day = document.createElement('a'); day.href = '/briefing/' + r[0] + '.html'; day.textContent = '그날 브리핑';
+      m.appendChild(day);
+      w.appendChild(a); w.appendChild(m); sec.appendChild(w);
+    });
+    box.appendChild(sec); box.hidden = false;
+    return found.length;
+  }
+  function run() {
+    var v = q.value.trim();
+    var terms = norm(v).split(/\s+/).filter(Boolean);
+    var u = new URL(location.href);
+    if (v) u.searchParams.set('q', v); else u.searchParams.delete('q');
+    history.replaceState(null, '', u.pathname + u.search + u.hash);
+    wrap.classList.toggle('searching', terms.length > 0);
+    var page = filterPage(terms);
+    if (!terms.length) { box.hidden = true; box.textContent = ''; st.textContent = ''; return; }
+    st.textContent = '이 페이지 ' + page.n + '건 · 지난 브리핑 찾는 중…';
+    load().then(function () {
+      if (q.value.trim() !== v) return;
+      var m = renderArch(terms, page.links);
+      st.textContent = '이 페이지 ' + page.n + '건 · 지난 브리핑 ' + m + '건' + (page.n + m ? '' : ' — 다른 단어로 찾아보세요');
+    }).catch(function () {
+      if (q.value.trim() !== v) return;
+      st.textContent = '이 페이지 ' + page.n + '건 · 지난 브리핑 색인을 불러오지 못했어요';
+    });
+  }
+  q.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(run, 150); });
+  var init = new URLSearchParams(location.search).get('q');
+  if (init) { q.value = init; run(); }
+})();
+</script>
+</body>
+</html>
