@@ -185,6 +185,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "c03cdf4e997e",
+   "date": "2026-11-21",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-japan",
+    "bess-tax-epc-accounting",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 법인세 및 소비세 최적화 전략 수립을 통한 일본 BESS 프로젝트 비용 효율성 개선 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "be63d2e44697",
    "date": "2026-11-21",
    "type": "skill",
@@ -3485,17 +3503,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 24개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "290758e61f55",
-   "date": "2026-11-18",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "화웨이, SiC 기반 하이브리드 인버터·배터리 일체형 가정용 ESS 출시",
-   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPWXNuV1ZWR0NKTGRWSUlYRXJNMnlBYjUwbU9tcnFXZkp6QWJFdUVDUG9RVUdTLURtWUQ4c1N1d0ozbTl4Z3hac0xPY1VGS3VvVEJfdGlSR08xdHNhb1dQVzNISnQ3SFlDLXZ2R0lsbEZsdHVPY0IweXRfWW82N1hYRkpDTGIyRXFMUVlQXzV4RXFuazdpS0RUSlBVNkZ5cllpMTVTTW1jT2MzMk5pY2ZhUE1VVktGdEc1R01OZW5jTU9BZXJTRm81XzVldmV0UndIQzY0a3FpZFNadllac1l5TW0wR2FIUQ?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

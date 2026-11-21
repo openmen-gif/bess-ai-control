@@ -145,6 +145,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-c03cdf4e997e",
+   "name": "팀 토론 — 법인세 및 소비세 최적화 전략 수립을 통한 일본 BESS 프",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-21",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-be63d2e44697",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-4631aaa5b3fe",
-   "name": "팀 토론 — BESS 프로젝트 보험 프로그램 강화로 위험 관리 수준 향상",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7315,6 +7315,46 @@
   {
    "source": "BAT-001",
    "target": "K-cba330feed4a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-c03cdf4e997e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-c03cdf4e997e",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-c03cdf4e997e",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-c03cdf4e997e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-c03cdf4e997e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-c03cdf4e997e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-c03cdf4e997e",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-c03cdf4e997e",
    "type": "knowledge"
   },
   {
@@ -14296,46 +14336,6 @@
    "source": "BIZ-001",
    "target": "K-4c051a17b282",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-4631aaa5b3fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-4631aaa5b3fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "INS-001",
-   "target": "K-4631aaa5b3fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-4631aaa5b3fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-4631aaa5b3fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-4631aaa5b3fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-4631aaa5b3fe",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-4631aaa5b3fe",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -14959,7 +14959,7 @@
    {
     "date": "2026-11-21",
     "knowledge": 800,
-    "events_total": 5053
+    "events_total": 5054
    }
   ]
  }
