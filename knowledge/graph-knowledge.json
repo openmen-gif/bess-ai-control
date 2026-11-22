@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3bc78db8dfca",
+   "name": "팀 토론 — 시공 품질 관리 시스템 구축 및 현장 유지보수 프로토콜 최적",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-23",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-f64386acabd0",
    "name": "This 500 kWh energy storage system runs ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-e822dd9bdf3c",
-   "name": "‘변전소 옆 시한폭탄’ 되나…4조원 ESS 사업 화재 대책 ‘사각지대’ ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7280,6 +7280,46 @@
   {
    "source": "STD-002",
    "target": "K-b11a5c100573",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3bc78db8dfca",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3bc78db8dfca",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3bc78db8dfca",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-3bc78db8dfca",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-3bc78db8dfca",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-3bc78db8dfca",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3bc78db8dfca",
+   "type": "knowledge"
+  },
+  {
+   "source": "STR-001",
+   "target": "K-3bc78db8dfca",
    "type": "knowledge"
   },
   {
@@ -14681,11 +14721,6 @@
    "source": "MAR-001",
    "target": "K-ebcbec1602d6",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-e822dd9bdf3c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15319,7 +15354,7 @@
    {
     "date": "2026-11-23",
     "knowledge": 800,
-    "events_total": 5106
+    "events_total": 5107
    }
   ]
  }
