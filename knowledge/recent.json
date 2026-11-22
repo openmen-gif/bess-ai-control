@@ -455,6 +455,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "10c12a8e7315",
+   "date": "2026-11-22",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-emc-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-knowledge-manager",
+    "bess-marketer",
+    "bess-structural-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 구조 안전성 강화를 위한 ANSYS 기반 FEM 분석 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "0f0cf9360ae5",
    "date": "2026-11-22",
    "type": "briefing",
@@ -3513,24 +3531,6 @@
    "title": "프론티어 에너지, 서호주 SWIS 연계 최대 규모 태양광+저장 하이브리드 발전소 건설",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUVNIYWc3b18zVHVxRWt2bG9SRmEtalEtaE9VX0VUU1BSWW51SEczaEd6YnRPRmRkbjRNclFxSElyZWI1UkZxamc2NFcyeHdsZGs5QlEzZnZUcVV2WW85TnNiUVFmRmItMWFCU0ZwU2sxa3JwY0s0X2hWNFNwWERMdllkUFlLRURZb25JZVFKa1ZHV043ZFJ3ckpNSGNpbjZJRExGTno3X01IbS16aXI4Nw?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "ceceb74c8e6e",
-   "date": "2026-11-18",
-   "type": "discussion",
-   "agents": [
-    "bess-cybersecurity-expert",
-    "bess-grid-interconnection",
-    "bess-power-market-expert",
-    "bess-power-system-analyst",
-    "bess-presentation-designer",
-    "bess-procurement-data",
-    "bess-system-engineer",
-    "bess-tool-developer"
-   ],
-   "title": "팀 토론 — 개발팀 구성하여 Streamlit 기반 BESS 시뮬레이션 툴 GUI 개발 시작",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
