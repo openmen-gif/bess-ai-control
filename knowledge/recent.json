@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "events": [
+  {
+   "id": "da3e30718678",
+   "date": "2026-11-23",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hybrid-specialist",
+    "bess-ip-patent-expert",
+    "bess-legal-expert",
+    "bess-procurement-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 특허 분석을 통해 경쟁 우위 확보 가능한 BESS 기술 라이선스 기회 탐색 및 평가",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "f64386acabd0",
    "date": "2026-11-22",
@@ -3548,24 +3566,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 24개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "e2ec6b2b4b32",
-   "date": "2026-11-18",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-epc-bom",
-    "bess-grid-interconnection",
-    "bess-power-market-expert",
-    "bess-procurement-expert",
-    "bess-standards-usa",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 글로벌 세제 혜택 활용을 통한 BESS 프로젝트 ROI 최적화 전략 수립 및 국내 적용 방안 모색",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }
