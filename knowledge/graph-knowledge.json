@@ -208,6 +208,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-60fb270f3a00",
+   "name": "팀 토론 — 최신 업계 동향에 따른 글로벌 배터리 재사용 기술 도입 전략",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5c0e18fff92e",
    "name": "[단독] SK온, LFP로 ‘제주 25년 장기계약’ 입찰 참여…초장기 수",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d011ab179a3b",
-   "name": "[기자수첩] “정보 없인 목숨 건다”… 리튬 화재 ‘사전 신고제’, 현장",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7455,6 +7455,46 @@
   {
    "source": "STD-001",
    "target": "K-6819b9355a66",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-60fb270f3a00",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-60fb270f3a00",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMT-001",
+   "target": "K-60fb270f3a00",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-60fb270f3a00",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-60fb270f3a00",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-60fb270f3a00",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-60fb270f3a00",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-60fb270f3a00",
    "type": "knowledge"
   },
   {
@@ -14576,11 +14616,6 @@
    "source": "SYS-001",
    "target": "K-d87d08f9f7a2",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-d011ab179a3b",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15209,7 +15244,7 @@
    {
     "date": "2026-11-22",
     "knowledge": 800,
-    "events_total": 5101
+    "events_total": 5102
    }
   ]
  }
