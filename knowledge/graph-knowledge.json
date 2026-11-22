@@ -46,6 +46,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-cfa58b1b95c4",
+   "name": "팀 토론 — 명령: 8개 시장의 BESS 관련 표준(IEC, IEEE, ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-22",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-c823b9eee046",
    "name": "Bronx lawmakers call for stronger e-bike",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d9fd971787eb",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7225,6 +7225,46 @@
   {
    "source": "STD-001",
    "target": "K-d5ad13650233",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-cfa58b1b95c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-cfa58b1b95c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-cfa58b1b95c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-cfa58b1b95c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-cfa58b1b95c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-cfa58b1b95c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-cfa58b1b95c4",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-cfa58b1b95c4",
    "type": "knowledge"
   },
   {
@@ -14611,11 +14651,6 @@
    "source": "TRN-001",
    "target": "K-e5496668c9cb",
    "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-d9fd971787eb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15244,7 +15279,7 @@
    {
     "date": "2026-11-22",
     "knowledge": 800,
-    "events_total": 5103
+    "events_total": 5104
    }
   ]
  }
