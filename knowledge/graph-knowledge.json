@@ -406,6 +406,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-034dd45ee7af",
+   "name": "팀 토론 — ESG 성과 기반 그린본드 발행 전략 수립 및 TCFD 가이",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-0083438db171",
    "name": "Community Microgrids Cut Carbon Emission",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d87d08f9f7a2",
-   "name": "팀 토론 — 독일 442MWh BESS 프로젝트 파트너십 확대 동향 분석",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7740,6 +7740,46 @@
   {
    "source": "PCS-001",
    "target": "K-068c798fd362",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-034dd45ee7af",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-034dd45ee7af",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-034dd45ee7af",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-034dd45ee7af",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-034dd45ee7af",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-034dd45ee7af",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-034dd45ee7af",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-034dd45ee7af",
    "type": "knowledge"
   },
   {
@@ -14576,46 +14616,6 @@
    "source": "GRD-001",
    "target": "K-d9fd971787eb",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-d87d08f9f7a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-d87d08f9f7a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-d87d08f9f7a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "EBP-001",
-   "target": "K-d87d08f9f7a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-d87d08f9f7a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-d87d08f9f7a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-d87d08f9f7a2",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-d87d08f9f7a2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15244,7 +15244,7 @@
    {
     "date": "2026-11-22",
     "knowledge": 800,
-    "events_total": 5102
+    "events_total": 5103
    }
   ]
  }

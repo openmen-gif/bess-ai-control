@@ -560,6 +560,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "034dd45ee7af",
+   "date": "2026-11-22",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-esg-finance",
+    "bess-facility-manager",
+    "bess-financial-analysis",
+    "bess-procurement-expert",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — ESG 성과 기반 그린본드 발행 전략 수립 및 TCFD 가이드라인 준수 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "0083438db171",
    "date": "2026-11-22",
    "type": "briefing",
@@ -3541,17 +3559,6 @@
    "title": "오스트리아, 소형 태양광 보조금 29초 만에 소진…4만건 신청에 승인율 17%",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ES2dhTjFRQmRtdnpRZDdWMGVDdVdGZTRseXJteW80WFpWX1dHWWs5VDA5c3lSTGRBeUp4eXhQdk9oanlDUGNZMGdnd2VKc2lIc1VYWTZ4aGxzV1c2RDFQeEVIai1QNk5GV2c?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "df9188af3004",
-   "date": "2026-11-18",
-   "type": "skill",
-   "agents": [
-    "bess-precom-report"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 10 개 반영, 스킬 24개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
