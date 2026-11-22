@@ -586,6 +586,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3845fec75212",
+   "name": "팀 토론 — 시운전·EMS 영역 벤치마킹 — bess-fit-proced",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-23",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-33fe00914ec2",
    "name": "Adani 그룹, BESS·수소·수전해 사업 상업 총괄 부사장에 Prer",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-c33314d1eb8e",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-12",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7630,6 +7630,46 @@
   {
    "source": "STR-001",
    "target": "K-3bc78db8dfca",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3845fec75212",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-3845fec75212",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-3845fec75212",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-3845fec75212",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-3845fec75212",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCH-001",
+   "target": "K-3845fec75212",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3845fec75212",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-3845fec75212",
    "type": "knowledge"
   },
   {
@@ -14401,11 +14441,6 @@
    "source": "COM-003",
    "target": "K-c70780423c32",
    "type": "knowledge"
-  },
-  {
-   "source": "LOG-001",
-   "target": "K-c33314d1eb8e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15039,7 +15074,7 @@
    {
     "date": "2026-11-23",
     "knowledge": 800,
-    "events_total": 5179
+    "events_total": 5180
    }
   ]
  }
