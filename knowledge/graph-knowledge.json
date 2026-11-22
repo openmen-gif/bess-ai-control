@@ -163,6 +163,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-7906fbe62d15",
+   "name": "팀 토론 — 조직문화 개선을 통한 BESS 팀 역량 강화 전략 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-74cae49d4b4e",
    "name": "CATL, BYD, ACWA among co-initiators of s",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-cff310b213dd",
-   "name": "삼성SDI, 데이터센터 비상전원용 배터리 CES 혁신상…화재 안전성 강화",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7360,6 +7360,46 @@
   {
    "source": "STD-006",
    "target": "K-7bd5c7fd70f0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7906fbe62d15",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-7906fbe62d15",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-7906fbe62d15",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-7906fbe62d15",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-7906fbe62d15",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-7906fbe62d15",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-7906fbe62d15",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-7906fbe62d15",
    "type": "knowledge"
   },
   {
@@ -14541,11 +14581,6 @@
    "source": "FIR-001",
    "target": "K-d011ab179a3b",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-cff310b213dd",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15174,7 +15209,7 @@
    {
     "date": "2026-11-22",
     "knowledge": 800,
-    "events_total": 5100
+    "events_total": 5101
    }
   ]
  }
