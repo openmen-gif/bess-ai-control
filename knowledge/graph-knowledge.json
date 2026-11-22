@@ -109,6 +109,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-a12455864f0d",
+   "name": "팀 토론 — 냉각 효율 개선을 위한 AI 기반 모니터링 시스템 도입 타당",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-22",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-979ff04ba144",
    "name": "JA ESS, EU 규제 준수 지원하기 위해 자체 배터리 여권 플랫폼 출",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-11",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-cd91329a884c",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-11",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7260,6 +7260,46 @@
   {
    "source": "MAR-001",
    "target": "K-a839c76f6075",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a12455864f0d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-a12455864f0d",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a12455864f0d",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-a12455864f0d",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-a12455864f0d",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-a12455864f0d",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-a12455864f0d",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a12455864f0d",
    "type": "knowledge"
   },
   {
@@ -14506,11 +14546,6 @@
    "source": "FIR-001",
    "target": "K-cff310b213dd",
    "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-cd91329a884c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15139,7 +15174,7 @@
    {
     "date": "2026-11-22",
     "knowledge": 800,
-    "events_total": 5099
+    "events_total": 5100
    }
   ]
  }
