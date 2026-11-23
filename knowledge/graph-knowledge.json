@@ -658,6 +658,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-17a6bfe9afeb",
+   "name": "팀 토론 — 시운전 최적화 프로토콜 개발 및 실제 적용 사례 분석을 통한",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-23",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-179dc3ce6755",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d419ebb1a944",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7775,6 +7775,46 @@
   {
    "source": "KTX-001",
    "target": "K-1834003cdefe",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-17a6bfe9afeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-17a6bfe9afeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-17a6bfe9afeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-17a6bfe9afeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-17a6bfe9afeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-17a6bfe9afeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-17a6bfe9afeb",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-17a6bfe9afeb",
    "type": "knowledge"
   },
   {
@@ -14506,11 +14546,6 @@
    "source": "COM-003",
    "target": "K-d6b7c71659af",
    "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-d419ebb1a944",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15144,7 +15179,7 @@
    {
     "date": "2026-11-23",
     "knowledge": 800,
-    "events_total": 5182
+    "events_total": 5183
    }
   ]
  }

@@ -847,6 +847,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "17a6bfe9afeb",
+   "date": "2026-11-23",
+   "type": "discussion",
+   "agents": [
+    "bess-commissioning-coordinator",
+    "bess-financial-analysis",
+    "bess-grid-interconnection",
+    "bess-internal-auditor",
+    "bess-knowledge-manager",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 시운전 최적화 프로토콜 개발 및 실제 적용 사례 분석을 통한 COM-100 성능 향상 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "179dc3ce6755",
    "date": "2026-11-23",
    "type": "skill",
@@ -3548,17 +3566,6 @@
    "title": "독일 BNE, 계통에 대형 BESS 확대 및 재급전 체계 편입 제안",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVVl1NllRdTRhV1h3TUtnS1hFM19qT1hVOXVBdWtzZVp5clpJeWhJVllSdlVQdUQ1MUY4aHQ5NHg2NV9NZDl5MWdmbWFZMEhibEZ1Skt3RnJOeGtCTWxhVl8zOVBub0lHZnBSX2FMSE1xSHdUZ2tXQm5XOEJua2FvU0NxUm5DU0V2eTNVRzFmYTVHXzY1TkE?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "d064be2f325b",
-   "date": "2026-11-19",
-   "type": "skill",
-   "agents": [
-    "bess-epc-bom"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7 개 반영, 스킬 29개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
