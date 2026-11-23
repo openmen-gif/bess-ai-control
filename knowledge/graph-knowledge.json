@@ -19,6 +19,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-5110be2c5f0c",
+   "name": "팀 토론 — 품질 보증 프로세스 강화를 위한 벤더 감사 프로토콜 개선 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fd857d1fb001",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-e5c2fa29e5fb",
-   "name": "[생활 속 안전] \"사용 끝난 배터리, 안전하다고?\".. 특정 조건서 '",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7275,6 +7275,46 @@
   {
    "source": "SYS-001",
    "target": "K-91aa6f2c2261",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-5110be2c5f0c",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-5110be2c5f0c",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-5110be2c5f0c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-5110be2c5f0c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-5110be2c5f0c",
+   "type": "knowledge"
+  },
+  {
+   "source": "QAC-001",
+   "target": "K-5110be2c5f0c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-5110be2c5f0c",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-5110be2c5f0c",
    "type": "knowledge"
   },
   {
@@ -14706,11 +14746,6 @@
    "source": "STD-001",
    "target": "K-e77544c46a2c",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-e5c2fa29e5fb",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15349,7 +15384,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5189
+    "events_total": 5190
    }
   ]
  }
