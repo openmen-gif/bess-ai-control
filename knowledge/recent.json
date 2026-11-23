@@ -101,6 +101,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "e554690c669a",
+   "date": "2026-11-23",
+   "type": "discussion",
+   "agents": [
+    "bess-grid-interconnection",
+    "bess-legal-expert",
+    "bess-permit-europe",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-standards-korea",
+    "bess-system-engineer",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 아시아 지역 발전사업허가 절차 최적화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "e27273e0c8a7",
    "date": "2026-11-23",
    "type": "skill",
@@ -3575,17 +3593,6 @@
    "title": "중국 신규 에너지저장 15차 5개년 이행안, 탄산리튬 약세 반전은 어려울 듯",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wTXFqUXpib0V0aWxCOFZjRlVjT3N2TTAxd05qM3NJMmQ4VkJ4UUE1b1kzNndLb29SMFc0SjBuX0xXSVlEaHdrbTI3UlRWUDhwS3FKcjRZcHozSTF1MlE?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "de69d6d1f79b",
-   "date": "2026-11-19",
-   "type": "skill",
-   "agents": [
-    "bess-legal-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7 개 반영, 스킬 29개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
