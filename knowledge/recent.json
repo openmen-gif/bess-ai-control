@@ -721,6 +721,23 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "44deec732ff7",
+   "date": "2026-11-24",
+   "type": "discussion",
+   "agents": [
+    "bess-cfd-analyst",
+    "bess-circuit-breaker-expert",
+    "bess-emc-analyst",
+    "bess-grid-interconnection",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 냉각 효율 최적화를 위한 CFD 기반 기류 분배 시스템 설계 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "42a3a30b5576",
    "date": "2026-11-24",
    "type": "skill",
@@ -3541,17 +3558,6 @@
    "type": "skill",
    "agents": [
     "bess-epc-bom"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7 개 반영, 스킬 23개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "cd4aeba67297",
-   "date": "2026-11-20",
-   "type": "skill",
-   "agents": [
-    "bess-procurement-expert"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7 개 반영, 스킬 23개 갱신",
    "link": "",

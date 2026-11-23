@@ -568,6 +568,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-44deec732ff7",
+   "name": "팀 토론 — 냉각 효율 최적화를 위한 CFD 기반 기류 분배 시스템 설계",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-42a3a30b5576",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-ae342898ce99",
-   "name": "팀 토론 — BESS 프로젝트 리스크 완화를 위한 포괄적 보험 프로그램 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7645,6 +7645,41 @@
   {
    "source": "HSE-001",
    "target": "K-45e5e275fa0f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-44deec732ff7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-44deec732ff7",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-44deec732ff7",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-44deec732ff7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-44deec732ff7",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-44deec732ff7",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-44deec732ff7",
    "type": "knowledge"
   },
   {
@@ -14421,46 +14456,6 @@
    "source": "BAT-001",
    "target": "K-b1175cd29c50",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ae342898ce99",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-ae342898ce99",
-   "type": "knowledge"
-  },
-  {
-   "source": "FIN-001",
-   "target": "K-ae342898ce99",
-   "type": "knowledge"
-  },
-  {
-   "source": "INS-001",
-   "target": "K-ae342898ce99",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-ae342898ce99",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRS-001",
-   "target": "K-ae342898ce99",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-ae342898ce99",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-ae342898ce99",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15099,7 +15094,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5263
+    "events_total": 5264
    }
   ]
  }
