@@ -721,6 +721,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-081a062d0308",
+   "name": "팀 토론 — 예측모델·최적화 영역 현황 진단 — bess-aiml-eng",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-23",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-05dc4976b265",
    "name": "팀 토론 — 전사 문서 표준화 프로세스 구축 및 효율적인 보고서 출력 형",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-12",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-dd2e26cfd149",
-   "name": "[배터리의 역습] ⑨배터리 화재, 누가 책임지나…제조사·사용자·관리자의 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7915,6 +7915,41 @@
   {
    "source": "STD-007",
    "target": "K-08530041030c",
+   "type": "knowledge"
+  },
+  {
+   "source": "AIM-001",
+   "target": "K-081a062d0308",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-081a062d0308",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-081a062d0308",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-081a062d0308",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-081a062d0308",
+   "type": "knowledge"
+  },
+  {
+   "source": "STE-001",
+   "target": "K-081a062d0308",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-081a062d0308",
    "type": "knowledge"
   },
   {
@@ -14576,11 +14611,6 @@
    "source": "QAC-001",
    "target": "K-dd88494e36aa",
    "type": "knowledge"
-  },
-  {
-   "source": "FIR-001",
-   "target": "K-dd2e26cfd149",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15214,7 +15244,7 @@
    {
     "date": "2026-11-23",
     "knowledge": 800,
-    "events_total": 5185
+    "events_total": 5186
    }
   ]
  }

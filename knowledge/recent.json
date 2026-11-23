@@ -945,6 +945,23 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "081a062d0308",
+   "date": "2026-11-23",
+   "type": "discussion",
+   "agents": [
+    "bess-aiml-engineer",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-hse-manager",
+    "bess-power-system-analyst",
+    "bess-site-manager",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 예측모델·최적화 영역 현황 진단 — bess-aiml-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "05dc4976b265",
    "date": "2026-11-23",
    "type": "discussion",
@@ -3565,17 +3582,6 @@
    "type": "skill",
    "agents": [
     "bess-legal-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7 개 반영, 스킬 29개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "dcdd4d494fdb",
-   "date": "2026-11-19",
-   "type": "skill",
-   "agents": [
-    "bess-substation-engineer"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7 개 반영, 스킬 29개 갱신",
    "link": "",
