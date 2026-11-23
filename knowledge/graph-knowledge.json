@@ -235,6 +235,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-ac09b73d737c",
+   "name": "팀 토론 — 호주 AU BESS EPC 표준 심층 검토 및 국내 적용 가",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-23",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-aa0076f3f3da",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-dc99560c911d",
-   "name": "팀 토론 — 지식 공유 플랫폼 구축 및 팀 학습 프로그램 개발",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7470,6 +7470,46 @@
   {
    "source": "STD-002",
    "target": "K-b11a5c100573",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-ac09b73d737c",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ac09b73d737c",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-ac09b73d737c",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-ac09b73d737c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-ac09b73d737c",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-ac09b73d737c",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-ac09b73d737c",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ac09b73d737c",
    "type": "knowledge"
   },
   {
@@ -14541,46 +14581,6 @@
    "source": "FIR-001",
    "target": "K-dd2e26cfd149",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-dc99560c911d",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-dc99560c911d",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-dc99560c911d",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-dc99560c911d",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-dc99560c911d",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-dc99560c911d",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-008",
-   "target": "K-dc99560c911d",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-dc99560c911d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15214,7 +15214,7 @@
    {
     "date": "2026-11-23",
     "knowledge": 800,
-    "events_total": 5184
+    "events_total": 5185
    }
   ]
  }
