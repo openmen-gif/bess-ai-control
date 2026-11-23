@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-9a2f68109009",
+   "name": "팀 토론 — 냉각 효율 개선 방안 심층 분석 및 나트륨 이온 배터리의 환",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-91aa6f2c2261",
    "name": "팀 토론 — 현장 시공 최적화를 위한 지역별 환경 영향 평가 및 대응 전",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-dfe07d840d90",
-   "name": "솔루스첨단소재, '북미 유일' 캐나다 동박 공장 내년 양산 돌입",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "COM-100",
+   "target": "K-9a2f68109009",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-9a2f68109009",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-9a2f68109009",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-9a2f68109009",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-9a2f68109009",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-9a2f68109009",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-9a2f68109009",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-9a2f68109009",
+   "type": "knowledge"
+  },
   {
    "source": "COM-003",
    "target": "K-91aa6f2c2261",
@@ -14671,11 +14711,6 @@
    "source": "FIR-001",
    "target": "K-e5c2fa29e5fb",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-dfe07d840d90",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15314,7 +15349,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5188
+    "events_total": 5189
    }
   ]
  }
