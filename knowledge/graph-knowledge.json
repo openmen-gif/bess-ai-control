@@ -451,6 +451,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6320e6c8d1ae",
+   "name": "팀 토론 — 대시보드 설계 명령 : 글로벌 BESS 시장 트렌드와 KPX",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-23",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-5de75b9b9ba5",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-cce746f77128",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-12",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7555,6 +7555,46 @@
   {
    "source": "BAT-001",
    "target": "K-64141a843ca1",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-6320e6c8d1ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "INS-001",
+   "target": "K-6320e6c8d1ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-6320e6c8d1ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-6320e6c8d1ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-6320e6c8d1ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-6320e6c8d1ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-6320e6c8d1ae",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-6320e6c8d1ae",
    "type": "knowledge"
   },
   {
@@ -14471,11 +14511,6 @@
    "source": "SYS-001",
    "target": "K-d419ebb1a944",
    "type": "knowledge"
-  },
-  {
-   "source": "EMC-001",
-   "target": "K-cce746f77128",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15109,7 +15144,7 @@
    {
     "date": "2026-11-23",
     "knowledge": 800,
-    "events_total": 5181
+    "events_total": 5182
    }
   ]
  }

@@ -573,6 +573,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "6320e6c8d1ae",
+   "date": "2026-11-23",
+   "type": "discussion",
+   "agents": [
+    "bess-grid-interconnection",
+    "bess-insurance-expert",
+    "bess-legal-expert",
+    "bess-marketer",
+    "bess-power-system-analyst",
+    "bess-security-expert",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 대시보드 설계 명령 : 글로벌 BESS 시장 트렌드와 KPX 요구사항을 반영한 혁신적인 BESS 프로젝트 제안서 대시보드 디자인 및 제작 제안",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5de75b9b9ba5",
    "date": "2026-11-23",
    "type": "skill",
@@ -3539,17 +3557,6 @@
     "bess-epc-bom"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7 개 반영, 스킬 29개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "cdd3a5d552f1",
-   "date": "2026-11-19",
-   "type": "skill",
-   "agents": [
-    "bess-power-market-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 승인 지식 승격 — 지식 7건 → 스킬 9개 운영 학습 반영",
    "link": "",
    "source": "00_Skill_MD"
   }
