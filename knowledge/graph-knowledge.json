@@ -118,6 +118,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d1e3b234b7a0",
+   "name": "팀 토론 — 보안 거버넌스 프레임워크 구축 및 잠재 위협 분석 보고서 작",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-23",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-c7f7e1d91a04",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-12",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-d6b7c71659af",
-   "name": "주정부들이 배터리 발전소에 의존하지만 일부 마을은 반대한다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-12",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7300,6 +7300,46 @@
   {
    "source": "PCS-001",
    "target": "K-d8cd8d2b5d02",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-d1e3b234b7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-d1e3b234b7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-d1e3b234b7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-d1e3b234b7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-d1e3b234b7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d1e3b234b7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-d1e3b234b7a0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d1e3b234b7a0",
    "type": "knowledge"
   },
   {
@@ -14541,11 +14581,6 @@
    "source": "SYS-001",
    "target": "K-dc99560c911d",
    "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-d6b7c71659af",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15179,7 +15214,7 @@
    {
     "date": "2026-11-23",
     "knowledge": 800,
-    "events_total": 5183
+    "events_total": 5184
    }
   ]
  }
