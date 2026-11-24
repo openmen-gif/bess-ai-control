@@ -991,6 +991,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-2195eba366ea",
+   "name": "팀 토론 — BESS EPC EU 규격 준수를 위한 인허가 전략 강화 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-1e42d7c6987f",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-14",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-7b3e8c4f5d54",
-   "name": "팀 토론 — SiC 기술 구현의 효율성 향상이 공급망 비용 구조에 미치는",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -8015,6 +8015,46 @@
   {
    "source": "COM-003",
    "target": "K-2663fecd9cef",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-2195eba366ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2195eba366ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-2195eba366ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-2195eba366ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-2195eba366ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-2195eba366ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-2195eba366ea",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-2195eba366ea",
    "type": "knowledge"
   },
   {
@@ -14451,46 +14491,6 @@
    "source": "MAR-001",
    "target": "K-809affbbddc8",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-7b3e8c4f5d54",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-7b3e8c4f5d54",
-   "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-7b3e8c4f5d54",
-   "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-7b3e8c4f5d54",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-7b3e8c4f5d54",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-7b3e8c4f5d54",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-7b3e8c4f5d54",
-   "type": "knowledge"
-  },
-  {
-   "source": "TAX-002",
-   "target": "K-7b3e8c4f5d54",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15129,7 +15129,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5311
+    "events_total": 5312
    }
   ]
  }
