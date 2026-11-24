@@ -110,6 +110,48 @@ export function formatKstTime(isoString) {
 }
 
 /**
+ * HTML 문서 또는 DOM 노드에서 현재 브리핑 페이지의 발행일자(YYYY-MM-DD)를 안전하게 감지합니다.
+ * .date 요소, <title> 태그, URL 등에서 추출하며 달력 유효성을 검증합니다.
+ * 
+ * @param {Document|HTMLElement} [rootNode]
+ * @returns {string|null} YYYY-MM-DD 또는 감지 실패 시 null
+ */
+export function getPageDate(rootNode = (typeof document !== 'undefined' ? document : null)) {
+  if (!rootNode) return null;
+  try {
+    // 1. .date 요소의 텍스트에서 검색 (예: "2026-11-24 (화) ...")
+    const dateEl = rootNode.querySelector ? rootNode.querySelector('.date') : null;
+    if (dateEl && dateEl.textContent) {
+      const m = dateEl.textContent.match(/\b(\d{4}-\d{2}-\d{2})\b/);
+      if (m) {
+        const [year, month, day] = m[1].split('-').map((v) => parseInt(v, 10));
+        if (isValidCalendarDate(year, month, day)) return m[1];
+      }
+    }
+    // 2. <title> 텍스트에서 검색 (예: "BESS 일일 기술 브리핑 — 2026-11-24")
+    const titleText = rootNode.title || (rootNode.querySelector && rootNode.querySelector('title')?.textContent);
+    if (titleText) {
+      const m = titleText.match(/\b(\d{4}-\d{2}-\d{2})\b/);
+      if (m) {
+        const [year, month, day] = m[1].split('-').map((v) => parseInt(v, 10));
+        if (isValidCalendarDate(year, month, day)) return m[1];
+      }
+    }
+    // 3. location pathname에서 검색 (예: "/briefing/2026-11-24.html")
+    if (typeof window !== 'undefined' && window.location && window.location.pathname) {
+      const m = window.location.pathname.match(/\b(\d{4}-\d{2}-\d{2})\b/);
+      if (m) {
+        const [year, month, day] = m[1].split('-').map((v) => parseInt(v, 10));
+        if (isValidCalendarDate(year, month, day)) return m[1];
+      }
+    }
+  } catch (_e) {
+    // 파싱 오류 시 null 반환
+  }
+  return null;
+}
+
+/**
  * status.json 데이터와 기준 시각을 바탕으로 UI에 렌더링할 상태를 계산하는 순수 함수입니다.
  * 계약에 맞는 비음수 정수 pending 및 유효 ISO 시각만 허용하여 잘못된 응답을 정상/0으로 오인하지 않습니다.
  * 
@@ -117,7 +159,9 @@ export function formatKstTime(isoString) {
  * @param {object} [options]
  * @param {Date} [options.now=new Date()] 현재 시각
  * @param {string} [options.today] KST 기준 오늘 날짜 (미지정 시 자동 계산)
- * @returns {object} 계산된 UI 상태 결과
+ * @param {string} [options.pageDate] 현재 페이지 날짜 (페이지 일자와 불일치 시 적용 금지)
+ * @param {boolean} [options.hasFallback] DOM 내 fallback(#briefing-retry-fallback) 존재 여부
+ * @returns {object} 계산된 UI 상태 결과 (유효 성공 시 valid: true, 실패 시 valid: false)
  */
 export function computeBriefingRetryStatus(statusData, options = {}) {
   const now = options.now ?? new Date();
@@ -125,7 +169,7 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
 
   // 1. 유효하지 않은 응답 방어
   if (!statusData || typeof statusData !== 'object') {
-    return { visible: false, reason: 'invalid_payload' };
+    return { visible: false, valid: false, reason: 'invalid_payload' };
   }
 
   const { date, pending, state, next_retry_at, total, summarized } = statusData;
@@ -134,39 +178,49 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
   // status.date 달력 유효성 엄격 검증 (예: 2026-11-31 비정상 날짜 방어)
   const dateParts = typeof date === 'string' && date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (!dateParts || !isValidCalendarDate(parseInt(dateParts[1], 10), parseInt(dateParts[2], 10), parseInt(dateParts[3], 10))) {
-    return { visible: false, reason: 'invalid_date', date };
+    return { visible: false, valid: false, reason: 'invalid_date', date };
   }
   if (date !== today) {
-    return { visible: false, reason: 'date_mismatch', dataDate: date, today };
+    return { visible: false, valid: false, reason: 'date_mismatch', dataDate: date, today };
+  }
+
+  // 2-1. 페이지 날짜 검증
+  // fallback이 존재하는 DOM(hasFallback=true)인데 페이지 날짜 추출이 불가(null/empty)한 경우 안전 거부
+  if (options.hasFallback && !options.pageDate) {
+    return { visible: false, valid: false, reason: 'page_date_missing' };
+  }
+  // 페이지 날짜가 지정된 경우 status.date와 일치해야 함 (과거 브리핑 페이지 열람 중 오늘 status 방어)
+  if (options.pageDate && date !== options.pageDate) {
+    return { visible: false, valid: false, reason: 'page_date_mismatch', dataDate: date, pageDate: options.pageDate };
   }
 
   // 3. pending 유효성 검증: 계약에 부합하는 '비음수 정수'만 허용
   // 문자열 '49', 소수 1.5, 음수 -1 등은 잘못된 응답으로 거부하여 정상(ok)이나 0으로 오인 방지
   if (typeof pending !== 'number' || !Number.isInteger(pending) || pending < 0) {
-    return { visible: false, reason: 'invalid_pending', pending };
+    return { visible: false, valid: false, reason: 'invalid_pending', pending };
   }
 
   // total과 summarized가 제공된 경우 비음수 정수여야 함
   if (typeof total !== 'undefined' && (typeof total !== 'number' || !Number.isInteger(total) || total < 0)) {
-    return { visible: false, reason: 'invalid_total', total };
+    return { visible: false, valid: false, reason: 'invalid_total', total };
   }
   if (typeof summarized !== 'undefined' && (typeof summarized !== 'number' || !Number.isInteger(summarized) || summarized < 0)) {
-    return { visible: false, reason: 'invalid_summarized', summarized };
+    return { visible: false, valid: false, reason: 'invalid_summarized', summarized };
   }
 
-  // 4. state 및 pending 관계 검증
+  // 4. state 및 pending 관계 검증 (유효 성공과 검증 실패를 엄격히 분리)
   // ok 상태: pending이 정확히 0이어야 함
   if (state === 'ok') {
     if (pending === 0) {
-      return { visible: false, state: 'ok' };
+      return { visible: false, valid: true, state: 'ok' };
     }
-    // state는 ok인데 pending이 0보다 큰 불일치 응답은 정상으로 오인하지 않도록 거부
-    return { visible: false, reason: 'state_pending_conflict', state, pending };
+    // state는 ok인데 pending > 0인 불일치 응답은 절대 ok로 취급하지 않고 검증 실패로 거부 (state: 'ok' 노출 금지)
+    return { visible: false, valid: false, reason: 'state_pending_conflict', conflictState: state, pending };
   }
 
-  // pending이 0인 경우: 지연 안내 제거
+  // pending이 0인데 state가 ok가 아닌 경우(invalid, pending_retry 등): 유효한 ok로 정규화하지 않고 검증 실패로 거부
   if (pending === 0) {
-    return { visible: false, state: 'ok' };
+    return { visible: false, valid: false, reason: 'state_pending_conflict', conflictState: state, pending };
   }
 
   const pendingCount = pending;
@@ -175,6 +229,7 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
   if (state === 'gave_up') {
     return {
       visible: true,
+      valid: true,
       state: 'gave_up',
       pending: pendingCount,
       message: `AI 요약 ${pendingCount}건 생성 지연 — 자동 재시도 종료`
@@ -190,6 +245,7 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
     if (!formattedTime || Number.isNaN(retryTimeMs)) {
       return {
         visible: true,
+        valid: true,
         state: 'pending_retry',
         pending: pendingCount,
         hasNextRetry: false,
@@ -203,6 +259,7 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
     if (isExpired) {
       return {
         visible: true,
+        valid: true,
         state: 'pending_retry',
         pending: pendingCount,
         hasNextRetry: true,
@@ -215,6 +272,7 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
     // 정상 대기 중: 예정 시각 표시
     return {
       visible: true,
+      valid: true,
       state: 'pending_retry',
       pending: pendingCount,
       hasNextRetry: true,
@@ -225,13 +283,19 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
     };
   }
 
-  // 기타 알 수 없는 state의 경우 안전하게 숨김 처리
-  return { visible: false, reason: 'unknown_state', state };
+  // 기타 알 수 없는 state의 경우 안전하게 검증 실패 처리
+  return { visible: false, valid: false, reason: 'unknown_state', conflictState: state };
 }
 
 /**
- * 계산된 결과를 실제 브라우저 DOM에 안전하게 반영합니다.
+ * 계산된 결과를 실제 브라우저 DOM에 안전하게 반영하고 정적 fallback(#briefing-retry-fallback)을 연동합니다.
  * XSS 방지를 위해 모든 문자열은 textContent로만 삽입합니다.
+ * 
+ * [계약 준수 사항]
+ * 1. 유효 status 반영 성공(지연/gave_up) 시: 동적 배너 표시 + fallback.hidden = true (같은 동기 DOM 처리)
+ * 2. 유효 ok 상태 시: 동적 배너 제거 + fallback.hidden = true (안내 0개)
+ * 3. 실패/손상/404/5xx/검증실패 시: 동적 배너 제거 + fallback.hidden = false (정적 안내 복원)
+ * 4. fallback 요소가 없는 기존 페이지에서도 오류 없이 정상 호환
  * 
  * @param {object} computedResult computeBriefingRetryStatus 반환 객체
  * @param {Document|HTMLElement} [rootNode=document]
@@ -240,40 +304,64 @@ export function renderBriefingRetryStatus(computedResult, rootNode = (typeof doc
   if (!rootNode) return;
 
   const CONTAINER_ID = 'briefing-retry-status';
-  let el = rootNode.getElementById ? rootNode.getElementById(CONTAINER_ID) : rootNode.querySelector?.(`#${CONTAINER_ID}`);
+  const FALLBACK_ID = 'briefing-retry-fallback';
 
-  if (!computedResult || !computedResult.visible) {
-    if (el) el.remove();
+  const el = rootNode.getElementById ? rootNode.getElementById(CONTAINER_ID) : rootNode.querySelector?.(`#${CONTAINER_ID}`);
+  const fallback = rootNode.getElementById ? rootNode.getElementById(FALLBACK_ID) : rootNode.querySelector?.(`#${FALLBACK_ID}`);
+
+  // 유효한 적용 성공 여부 (검증 실패/오류가 아닌 성공적인 상태)
+  const isValidSuccess = Boolean(computedResult && computedResult.valid !== false && !computedResult.reason);
+
+  // 1. 유효한 지연 상태 배너 표시 (pending_retry 또는 gave_up)
+  if (isValidSuccess && computedResult.visible) {
+    let target = el;
+    if (!target) {
+      target = rootNode.createElement('div');
+      target.id = CONTAINER_ID;
+      target.className = 'retry-status';
+
+      // fallback 요소가 있으면 그 앞에 삽입하여 시각적 위치를 통일, 없으면 tabs 뒤에 삽입
+      if (fallback && fallback.parentNode) {
+        fallback.parentNode.insertBefore(target, fallback);
+      } else {
+        const anchor = rootNode.querySelector?.('.tabs') || rootNode.querySelector?.('.live') || rootNode.querySelector?.('.date');
+        if (anchor && anchor.parentNode) {
+          anchor.parentNode.insertBefore(target, anchor.nextSibling);
+        } else {
+          const wrap = rootNode.querySelector?.('.wrap') || rootNode.body;
+          if (wrap) wrap.insertBefore(target, wrap.firstChild);
+        }
+      }
+    }
+
+    target.classList.toggle('gave-up', computedResult.state === 'gave_up');
+    if (computedResult.nextRetryAt) {
+      target.setAttribute('data-at', computedResult.nextRetryAt);
+    } else {
+      target.removeAttribute('data-at');
+    }
+    target.textContent = computedResult.message || '';
+
+    // 동적 배너 표시와 정적 fallback 숨김을 같은 동기 DOM 처리 안에서 즉시 수행
+    if (fallback) {
+      fallback.hidden = true;
+    }
     return;
   }
 
-  if (!el) {
-    el = rootNode.createElement('div');
-    el.id = CONTAINER_ID;
-    el.className = 'retry-status';
+  // 2. 동적 배너 제거
+  if (el) el.remove();
 
-    // 탭 메뉴(.tabs) 바로 뒤 또는 date/live 아래에 자연스럽게 배치
-    const anchor = rootNode.querySelector('.tabs') || rootNode.querySelector('.live') || rootNode.querySelector('.date');
-    if (anchor && anchor.parentNode) {
-      anchor.parentNode.insertBefore(el, anchor.nextSibling);
+  // 3. 정적 fallback 처리:
+  // 오직 유효한 ok 상태(isValidSuccess && computedResult.state === 'ok')일 때만 fallback 숨김 (안내 0개)
+  // 그 외 모든 실패/검증오류/비정상응답은 fallback 복원 (정적 안내 1개)
+  if (fallback) {
+    if (isValidSuccess && computedResult.state === 'ok') {
+      fallback.hidden = true;
     } else {
-      const wrap = rootNode.querySelector('.wrap') || rootNode.body;
-      if (wrap) wrap.insertBefore(el, wrap.firstChild);
+      fallback.hidden = false;
     }
   }
-
-  // gave_up일 때 별도 스타일 클래스 토글
-  el.classList.toggle('gave-up', computedResult.state === 'gave_up');
-
-  // data-at 속성 관리 (주기적 경과 체크용)
-  if (computedResult.nextRetryAt) {
-    el.setAttribute('data-at', computedResult.nextRetryAt);
-  } else {
-    el.removeAttribute('data-at');
-  }
-
-  // 텍스트 내용 안전하게 반영
-  el.textContent = computedResult.message || '';
 }
 
 /**
@@ -286,7 +374,8 @@ export function renderBriefingRetryStatus(computedResult, rootNode = (typeof doc
  * @returns {object} { refresh: Function, destroy: Function }
  */
 export function initBriefingStatus(options = {}) {
-  if (typeof window === 'undefined' || typeof document === 'undefined') {
+  const rootDoc = options.rootNode ?? (typeof document !== 'undefined' ? document : null);
+  if (typeof window === 'undefined' || !rootDoc) {
     return { refresh: () => Promise.resolve(), destroy: () => {} };
   }
 
@@ -300,31 +389,57 @@ export function initBriefingStatus(options = {}) {
   let pollTimer = null;
 
   async function fetchAndRender() {
+    const fallbackEl = rootDoc.getElementById ? rootDoc.getElementById('briefing-retry-fallback') : rootDoc.querySelector?.('#briefing-retry-fallback');
+    const hasFallback = Boolean(fallbackEl);
+    const pageDate = options.pageDate !== undefined ? options.pageDate : getPageDate(rootDoc);
+
     try {
       // 캐시 방지를 위해 no-cache 헤더 및 타임스탬프 쿼리 사용
       const res = await fetch(`${statusUrl}?_=${Date.now()}`, { cache: 'no-cache' });
       if (!res.ok) {
-        // 404(내일 생성 전)나 서버 오류 시 요약 정상으로 오인하지 않고 기존 상태 유지(또는 숨김)
-        if (res.status === 404) {
-          currentData = null; // 유효 상태 다음 404 발생 시 캐시된 데이터를 비워 60초 tick의 배너 재등장 방지
-          renderBriefingRetryStatus({ visible: false, reason: '404_not_found' });
-        }
+        // 404(내일 생성 전)나 서버 오류(5xx 등) 시 요약 정상으로 오인하지 않고 동적 배너 제거 및 fallback 복원
+        currentData = null; // 유효 상태 다음 실패 발생 시 캐시된 데이터를 비워 60초 tick의 배너 재등장 방지
+        renderBriefingRetryStatus({ visible: false, valid: false, reason: `http_${res.status}` }, rootDoc);
         return;
       }
       const data = await res.json();
-      currentData = data;
-      const result = computeBriefingRetryStatus(data, { now: getNow() });
-      renderBriefingRetryStatus(result);
+      const result = computeBriefingRetryStatus(data, {
+        now: getNow(),
+        today: options.today,
+        pageDate,
+        hasFallback
+      });
+
+      // 유효한 적용 성공(valid === true)인 경우만 캐시 유지, 그 외 모든 검증 실패는 캐시 초기화
+      if (!result || result.valid !== true) {
+        currentData = null;
+      } else {
+        currentData = data;
+      }
+      renderBriefingRetryStatus(result, rootDoc);
     } catch (_err) {
-      // 네트워크 장애 시 브라우저 콘솔을 오염시키지 않고 조용히 기존 UI 유지
+      // 네트워크 장애, JSON 파싱 오류 등 실패 시 동적 배너 제거, 캐시 초기화, fallback 복원
+      currentData = null;
+      renderBriefingRetryStatus({ visible: false, valid: false, reason: 'network_failure' }, rootDoc);
     }
   }
 
   // 60초마다 시각 경과 여부 갱신 (네트워크 요청 없이 로컬 시각만 재계산)
   function checkExpiredTick() {
     if (!currentData) return;
-    const result = computeBriefingRetryStatus(currentData, { now: getNow() });
-    renderBriefingRetryStatus(result);
+    const fallbackEl = rootDoc.getElementById ? rootDoc.getElementById('briefing-retry-fallback') : rootDoc.querySelector?.('#briefing-retry-fallback');
+    const hasFallback = Boolean(fallbackEl);
+    const pageDate = options.pageDate !== undefined ? options.pageDate : getPageDate(rootDoc);
+    const result = computeBriefingRetryStatus(currentData, {
+      now: getNow(),
+      today: options.today,
+      pageDate,
+      hasFallback
+    });
+    if (!result || result.valid !== true) {
+      currentData = null;
+    }
+    renderBriefingRetryStatus(result, rootDoc);
   }
 
   // 즉시 1회 실행
@@ -339,8 +454,8 @@ export function initBriefingStatus(options = {}) {
   }
 
   // 기존 새로고침 버튼('refresh-btn')이 있다면 status.json도 함께 갱신되도록 연계
-  const refreshBtn = document.getElementById('refresh-btn');
-  if (refreshBtn) {
+  const refreshBtn = rootDoc.getElementById ? rootDoc.getElementById('refresh-btn') : null;
+  if (refreshBtn && refreshBtn.addEventListener) {
     refreshBtn.addEventListener('click', () => {
       setTimeout(fetchAndRender, 300);
     });
