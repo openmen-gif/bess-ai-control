@@ -12,7 +12,8 @@ import {
   isValidCalendarDate,
   computeBriefingRetryStatus,
   renderBriefingRetryStatus,
-  initBriefingStatus
+  initBriefingStatus,
+  getPageDate
 } from '../briefing/briefing-status.js';
 
 test('getKstDateString converts UTC dates to KST YYYY-MM-DD properly', () => {
@@ -493,6 +494,382 @@ test('initBriefingStatus handles 404, network failure, and verifies 60000ms call
       await monitor.refresh();
     });
 
+  } finally {
+    globalThis.window = originalWindow;
+    globalThis.document = originalDocument;
+    globalThis.fetch = originalFetch;
+    globalThis.setInterval = originalSetInterval;
+    globalThis.clearInterval = originalClearInterval;
+  }
+});
+
+test('getPageDate extracts valid YYYY-MM-DD from .date, title, or pathname', () => {
+  // 1. .date 요소에서 추출
+  const docWithDate = {
+    querySelector: (sel) => (sel === '.date' ? { textContent: '2026-11-24 (화) 07:30 발행' } : null)
+  };
+  assert.equal(getPageDate(docWithDate), '2026-11-24');
+
+  // 2. <title>에서 추출
+  const docWithTitle = {
+    querySelector: () => null,
+    title: 'BESS 일일 기술 브리핑 — 2026-11-24'
+  };
+  assert.equal(getPageDate(docWithTitle), '2026-11-24');
+
+  // 3. 비정상 달력 날짜(예: 2026-11-31)는 무시
+  const docInvalidDate = {
+    querySelector: (sel) => (sel === '.date' ? { textContent: '2026-11-31 브리핑' } : null),
+    title: ''
+  };
+  assert.equal(getPageDate(docInvalidDate), null);
+
+  // 4. 빈 DOM
+  assert.equal(getPageDate(null), null);
+  assert.equal(getPageDate({}), null);
+});
+
+test('computeBriefingRetryStatus: rejects status if pageDate does not match status date', () => {
+  const statusToday = {
+    date: '2026-11-24',
+    total: 71,
+    summarized: 30,
+    pending: 41,
+    reason: 'rate_limit',
+    next_retry_at: '2026-11-24T12:00:00+09:00',
+    attempt: 1,
+    max_attempts: 3,
+    state: 'pending_retry'
+  };
+
+  // 과거 날짜 페이지(2026-11-23) 열람 중 오늘의 status.json 도착 시 거부
+  const resMismatch = computeBriefingRetryStatus(statusToday, {
+    today: '2026-11-24',
+    pageDate: '2026-11-23'
+  });
+  assert.equal(resMismatch.visible, false);
+  assert.equal(resMismatch.reason, 'page_date_mismatch');
+  assert.notEqual(resMismatch.state, 'ok');
+
+  // 오늘 페이지와 일치할 때는 정상 노출
+  const resMatch = computeBriefingRetryStatus(statusToday, {
+    today: '2026-11-24',
+    pageDate: '2026-11-24'
+  });
+  assert.equal(resMatch.visible, true);
+  assert.equal(resMatch.pending, 41);
+});
+
+test('renderBriefingRetryStatus: verifies static fallback (#briefing-retry-fallback) interaction contract', () => {
+  class MockElement {
+    constructor(tagName, id = '') {
+      this.tagName = tagName;
+      this.id = id;
+      this.className = '';
+      this.classList = {
+        _set: new Set(),
+        add(c) { this._set.add(c); },
+        remove(c) { this._set.delete(c); },
+        toggle(c, force) {
+          if (force === undefined) force = !this._set.has(c);
+          if (force) this.add(c); else this.remove(c);
+        },
+        contains(c) { return this._set.has(c); }
+      };
+      this.attributes = new Map();
+      this.textContent = '';
+      this.hidden = false;
+      this.parentNode = null;
+      this.children = [];
+    }
+    setAttribute(k, v) { this.attributes.set(k, v); }
+    getAttribute(k) { return this.attributes.get(k); }
+    removeAttribute(k) { this.attributes.delete(k); }
+    remove() {
+      if (this.parentNode) {
+        this.parentNode.children = this.parentNode.children.filter((c) => c !== this);
+        this.parentNode = null;
+      }
+    }
+  }
+
+  function createMockEnv(includeFallback = true) {
+    const root = new MockElement('div', 'root');
+    const tabs = new MockElement('nav');
+    tabs.className = 'tabs';
+    tabs.parentNode = root;
+    root.children.push(tabs);
+
+    let fallback = null;
+    if (includeFallback) {
+      fallback = new MockElement('div', 'briefing-retry-fallback');
+      fallback.className = 'retry-status';
+      fallback.textContent = 'AI 요약 N건 생성 지연 — 다음 자동 재시도 ...';
+      fallback.hidden = false; // 발행기 기본 표시 상태
+      fallback.parentNode = root;
+      root.children.push(fallback);
+    }
+
+    const doc = {
+      getElementById(id) {
+        return root.children.find((c) => c.id === id) || null;
+      },
+      querySelector(sel) {
+        if (sel === '.tabs') return tabs;
+        if (sel.startsWith('#')) return this.getElementById(sel.slice(1));
+        return null;
+      },
+      createElement(tag) {
+        return new MockElement(tag);
+      }
+    };
+
+    root.insertBefore = (newChild, refChild) => {
+      const idx = root.children.indexOf(refChild);
+      if (idx >= 0) {
+        root.children.splice(idx, 0, newChild);
+      } else {
+        root.children.push(newChild);
+      }
+      newChild.parentNode = root;
+    };
+
+    return { root, doc, fallback };
+  }
+
+  // 1. 유효 status 반영 성공(pending_retry): 동적 배너 1개 + fallback 숨김 (총 안내 1개)
+  const env1 = createMockEnv(true);
+  const pendingResult = {
+    visible: true,
+    state: 'pending_retry',
+    nextRetryAt: '2026-11-24T12:00:00+09:00',
+    message: 'AI 요약 41건 생성 지연 — 다음 자동 재시도 12:00'
+  };
+  renderBriefingRetryStatus(pendingResult, env1.doc);
+  const banner1 = env1.doc.getElementById('briefing-retry-status');
+  assert.ok(banner1, '동적 배너가 생성되어야 함');
+  assert.equal(banner1.textContent, 'AI 요약 41건 생성 지연 — 다음 자동 재시도 12:00');
+  assert.equal(env1.fallback.hidden, true, '동적 배너 표시 시 fallback은 hidden=true여야 함 (안내 총 1개)');
+
+  // 2. gave_up 전환: 동적 배너 1개 + fallback 숨김 (총 안내 1개)
+  const gaveUpResult = {
+    visible: true,
+    state: 'gave_up',
+    message: 'AI 요약 41건 생성 지연 — 자동 재시도 종료'
+  };
+  renderBriefingRetryStatus(gaveUpResult, env1.doc);
+  assert.equal(banner1.textContent, 'AI 요약 41건 생성 지연 — 자동 재시도 종료');
+  assert.equal(env1.fallback.hidden, true, 'gave_up 상태에서도 fallback은 hidden=true 유지');
+
+  // 3. ok 상태: 동적 배너 제거 + fallback 숨김 (총 안내 0개)
+  const okResult = { visible: false, state: 'ok' };
+  renderBriefingRetryStatus(okResult, env1.doc);
+  assert.equal(env1.doc.getElementById('briefing-retry-status'), null, '동적 배너는 제거되어야 함');
+  assert.equal(env1.fallback.hidden, true, 'ok 상태 시 fallback도 hidden=true로 안내 0개여야 함');
+
+  // 4. 실패/오류 상태 (404/500/네트워크 실패): 동적 배너 제거 + fallback 복원 (정적 안내 1개)
+  const failResult = { visible: false, reason: 'http_404' };
+  renderBriefingRetryStatus(failResult, env1.doc);
+  assert.equal(env1.doc.getElementById('briefing-retry-status'), null, '동적 배너 없음');
+  assert.equal(env1.fallback.hidden, false, '실패 시 fallback은 hidden=false로 복원되어야 함 (정적 안내 1개)');
+
+  // 5. fallback 요소가 없는 기존 DOM 환경 하위 호환성 검증
+  const envNoFallback = createMockEnv(false);
+  assert.doesNotThrow(() => {
+    renderBriefingRetryStatus(pendingResult, envNoFallback.doc);
+    assert.ok(envNoFallback.doc.getElementById('briefing-retry-status'));
+    renderBriefingRetryStatus(okResult, envNoFallback.doc);
+    assert.equal(envNoFallback.doc.getElementById('briefing-retry-status'), null);
+  });
+});
+
+test('initBriefingStatus: complete lifecycle test (pending_retry -> 404/failure -> tick -> retry recovery -> ok)', async () => {
+  const originalWindow = globalThis.window;
+  const originalDocument = globalThis.document;
+  const originalFetch = globalThis.fetch;
+  const originalSetInterval = globalThis.setInterval;
+  const originalClearInterval = globalThis.clearInterval;
+
+  class MockElement {
+    constructor(tagName, id = '') {
+      this.tagName = tagName;
+      this.id = id;
+      this.classList = {
+        _set: new Set(),
+        add(c) { this._set.add(c); },
+        remove(c) { this._set.delete(c); },
+        toggle(c, force) {
+          if (force === undefined) force = !this._set.has(c);
+          if (force) this.add(c); else this.remove(c);
+        },
+        contains(c) { return this._set.has(c); }
+      };
+      this.attributes = new Map();
+      this.textContent = '';
+      this.hidden = false;
+      this.parentNode = null;
+      this.children = [];
+    }
+    setAttribute(k, v) { this.attributes.set(k, v); }
+    getAttribute(k) { return this.attributes.get(k); }
+    removeAttribute(k) { this.attributes.delete(k); }
+    remove() {
+      if (this.parentNode) {
+        this.parentNode.children = this.parentNode.children.filter((c) => c !== this);
+        this.parentNode = null;
+      }
+    }
+  }
+
+  const root = new MockElement('div', 'root');
+  const fallback = new MockElement('div', 'briefing-retry-fallback');
+  fallback.hidden = false;
+  fallback.parentNode = root;
+  root.children.push(fallback);
+
+  const mockDoc = {
+    readyState: 'complete',
+    getElementById(id) {
+      return root.children.find((c) => c.id === id) || null;
+    },
+    querySelector(sel) {
+      if (sel === '.date') return { textContent: '2026-11-24' };
+      if (sel.startsWith('#')) return this.getElementById(sel.slice(1));
+      return null;
+    },
+    createElement(tag) {
+      return new MockElement(tag);
+    }
+  };
+  root.insertBefore = (newChild, refChild) => {
+    const idx = root.children.indexOf(refChild);
+    if (idx >= 0) {
+      root.children.splice(idx, 0, newChild);
+    } else {
+      root.children.push(newChild);
+    }
+    newChild.parentNode = root;
+  };
+
+  globalThis.document = mockDoc;
+  globalThis.window = { document: mockDoc };
+
+  let captured60kCallback = null;
+  globalThis.setInterval = (cb, ms) => {
+    if (ms === 60000) captured60kCallback = cb;
+    return 999;
+  };
+  globalThis.clearInterval = () => {};
+
+  const fixedNow = new Date('2026-11-24T08:00:00+09:00');
+  const kstToday = '2026-11-24';
+
+  try {
+    // 1단계: 정상 pending_retry 응답
+    globalThis.fetch = async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({
+        date: kstToday,
+        total: 71,
+        summarized: 30,
+        pending: 41,
+        reason: 'rate_limit',
+        next_retry_at: `${kstToday}T12:00:00+09:00`,
+        attempt: 1,
+        max_attempts: 3,
+        state: 'pending_retry'
+      })
+    });
+
+    const monitor = initBriefingStatus({
+      checkIntervalMs: 60000,
+      pollIntervalMs: 0,
+      now: fixedNow,
+      pageDate: kstToday
+    });
+
+    await monitor.refresh();
+
+    let dynamicBanner = mockDoc.getElementById('briefing-retry-status');
+    assert.ok(dynamicBanner, '동적 배너가 존재해야 함');
+    assert.equal(fallback.hidden, true, '동적 배너 표시 시 정적 fallback은 hidden=true (총 안내 1개)');
+
+    // 2단계: 404 발생 시 동적 배너 제거 + 정적 fallback 복원
+    globalThis.fetch = async () => ({
+      ok: false,
+      status: 404,
+      json: async () => ({})
+    });
+
+    await monitor.refresh();
+    dynamicBanner = mockDoc.getElementById('briefing-retry-status');
+    assert.equal(dynamicBanner, null, '404 시 동적 배너 제거');
+    assert.equal(fallback.hidden, false, '404 시 정적 fallback 복원 (정적 안내 1개)');
+
+    // 3단계: 실패 후 60초 tick 실행 시 동적 배너 미부활 (0개 유지)
+    assert.ok(captured60kCallback, '60초 tick 콜백 존재 확인');
+    captured60kCallback();
+    dynamicBanner = mockDoc.getElementById('briefing-retry-status');
+    assert.equal(dynamicBanner, null, '실패 후 tick이 과거 배너를 부활시키지 않아야 함');
+    assert.equal(fallback.hidden, false, 'fallback은 계속 표시 상태 유지');
+
+    // 4단계: 재조회 성공 시 다시 동적 배너 노출 + fallback 숨김
+    globalThis.fetch = async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({
+        date: kstToday,
+        total: 71,
+        summarized: 50,
+        pending: 21,
+        reason: 'rate_limit',
+        next_retry_at: `${kstToday}T13:00:00+09:00`,
+        attempt: 2,
+        max_attempts: 3,
+        state: 'pending_retry'
+      })
+    });
+
+    await monitor.refresh();
+    dynamicBanner = mockDoc.getElementById('briefing-retry-status');
+    assert.ok(dynamicBanner, '재조회 성공 시 동적 배너 부활');
+    assert.match(dynamicBanner.textContent, /AI 요약 21건 생성 지연 — 다음 자동 재시도 13:00/);
+    assert.equal(fallback.hidden, true, '재조회 성공 시 fallback 재숨김 (총 안내 1개)');
+
+    // 5단계: 완료(ok) 응답 시 동적 배너 제거 + fallback 숨김 (총 안내 0개)
+    globalThis.fetch = async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({
+        date: kstToday,
+        total: 71,
+        summarized: 71,
+        pending: 0,
+        reason: null,
+        next_retry_at: null,
+        attempt: 2,
+        max_attempts: 3,
+        state: 'ok'
+      })
+    });
+
+    await monitor.refresh();
+    dynamicBanner = mockDoc.getElementById('briefing-retry-status');
+    assert.equal(dynamicBanner, null, 'ok 상태 시 동적 배너 제거');
+    assert.equal(fallback.hidden, true, 'ok 상태 시 fallback도 hidden=true (총 안내 0개)');
+
+    // 6단계: 네트워크 예외 발생 시 동적 배너 제거 + fallback 복원
+    globalThis.fetch = async () => {
+      throw new Error('Network offline');
+    };
+
+    await monitor.refresh();
+    dynamicBanner = mockDoc.getElementById('briefing-retry-status');
+    assert.equal(dynamicBanner, null, '네트워크 예외 시 동적 배너 없음');
+    assert.equal(fallback.hidden, false, '네트워크 예외 시 fallback 복원');
+
+    monitor.destroy();
   } finally {
     globalThis.window = originalWindow;
     globalThis.document = originalDocument;

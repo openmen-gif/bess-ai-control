@@ -110,6 +110,48 @@ export function formatKstTime(isoString) {
 }
 
 /**
+ * HTML 문서 또는 DOM 노드에서 현재 브리핑 페이지의 발행일자(YYYY-MM-DD)를 안전하게 감지합니다.
+ * .date 요소, <title> 태그, URL 등에서 추출하며 달력 유효성을 검증합니다.
+ * 
+ * @param {Document|HTMLElement} [rootNode]
+ * @returns {string|null} YYYY-MM-DD 또는 감지 실패 시 null
+ */
+export function getPageDate(rootNode = (typeof document !== 'undefined' ? document : null)) {
+  if (!rootNode) return null;
+  try {
+    // 1. .date 요소의 텍스트에서 검색 (예: "2026-11-24 (화) ...")
+    const dateEl = rootNode.querySelector ? rootNode.querySelector('.date') : null;
+    if (dateEl && dateEl.textContent) {
+      const m = dateEl.textContent.match(/\b(\d{4}-\d{2}-\d{2})\b/);
+      if (m) {
+        const [year, month, day] = m[1].split('-').map((v) => parseInt(v, 10));
+        if (isValidCalendarDate(year, month, day)) return m[1];
+      }
+    }
+    // 2. <title> 텍스트에서 검색 (예: "BESS 일일 기술 브리핑 — 2026-11-24")
+    const titleText = rootNode.title || (rootNode.querySelector && rootNode.querySelector('title')?.textContent);
+    if (titleText) {
+      const m = titleText.match(/\b(\d{4}-\d{2}-\d{2})\b/);
+      if (m) {
+        const [year, month, day] = m[1].split('-').map((v) => parseInt(v, 10));
+        if (isValidCalendarDate(year, month, day)) return m[1];
+      }
+    }
+    // 3. location pathname에서 검색 (예: "/briefing/2026-11-24.html")
+    if (typeof window !== 'undefined' && window.location && window.location.pathname) {
+      const m = window.location.pathname.match(/\b(\d{4}-\d{2}-\d{2})\b/);
+      if (m) {
+        const [year, month, day] = m[1].split('-').map((v) => parseInt(v, 10));
+        if (isValidCalendarDate(year, month, day)) return m[1];
+      }
+    }
+  } catch (_e) {
+    // 파싱 오류 시 null 반환
+  }
+  return null;
+}
+
+/**
  * status.json 데이터와 기준 시각을 바탕으로 UI에 렌더링할 상태를 계산하는 순수 함수입니다.
  * 계약에 맞는 비음수 정수 pending 및 유효 ISO 시각만 허용하여 잘못된 응답을 정상/0으로 오인하지 않습니다.
  * 
@@ -117,6 +159,7 @@ export function formatKstTime(isoString) {
  * @param {object} [options]
  * @param {Date} [options.now=new Date()] 현재 시각
  * @param {string} [options.today] KST 기준 오늘 날짜 (미지정 시 자동 계산)
+ * @param {string} [options.pageDate] 현재 페이지 날짜 (페이지 일자와 불일치 시 적용 금지)
  * @returns {object} 계산된 UI 상태 결과
  */
 export function computeBriefingRetryStatus(statusData, options = {}) {
@@ -138,6 +181,12 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
   }
   if (date !== today) {
     return { visible: false, reason: 'date_mismatch', dataDate: date, today };
+  }
+
+  // 2-1. 페이지 날짜와 다른 status 적용 금지 (KST 오늘 검증과 함께 양립)
+  const pageDate = options.pageDate;
+  if (pageDate && date !== pageDate) {
+    return { visible: false, reason: 'page_date_mismatch', dataDate: date, pageDate };
   }
 
   // 3. pending 유효성 검증: 계약에 부합하는 '비음수 정수'만 허용
@@ -230,8 +279,14 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
 }
 
 /**
- * 계산된 결과를 실제 브라우저 DOM에 안전하게 반영합니다.
+ * 계산된 결과를 실제 브라우저 DOM에 안전하게 반영하고 정적 fallback(#briefing-retry-fallback)을 연동합니다.
  * XSS 방지를 위해 모든 문자열은 textContent로만 삽입합니다.
+ * 
+ * [계약 준수 사항]
+ * 1. 유효 status 반영 성공(지연/gave_up) 시: 동적 배너 표시 + fallback.hidden = true (같은 동기 DOM 처리)
+ * 2. ok 상태 시: 동적 배너 제거 + fallback.hidden = true (안내 0개)
+ * 3. 실패/손상/404/5xx/검증실패 시: 동적 배너 제거 + fallback.hidden = false (정적 안내 복원)
+ * 4. fallback 요소가 없는 기존 페이지에서도 오류 없이 정상 호환
  * 
  * @param {object} computedResult computeBriefingRetryStatus 반환 객체
  * @param {Document|HTMLElement} [rootNode=document]
@@ -240,40 +295,59 @@ export function renderBriefingRetryStatus(computedResult, rootNode = (typeof doc
   if (!rootNode) return;
 
   const CONTAINER_ID = 'briefing-retry-status';
-  let el = rootNode.getElementById ? rootNode.getElementById(CONTAINER_ID) : rootNode.querySelector?.(`#${CONTAINER_ID}`);
+  const FALLBACK_ID = 'briefing-retry-fallback';
 
-  if (!computedResult || !computedResult.visible) {
-    if (el) el.remove();
+  const el = rootNode.getElementById ? rootNode.getElementById(CONTAINER_ID) : rootNode.querySelector?.(`#${CONTAINER_ID}`);
+  const fallback = rootNode.getElementById ? rootNode.getElementById(FALLBACK_ID) : rootNode.querySelector?.(`#${FALLBACK_ID}`);
+
+  // 1. 유효한 지연 상태 배너 표시 (pending_retry 또는 gave_up)
+  if (computedResult && computedResult.visible) {
+    let target = el;
+    if (!target) {
+      target = rootNode.createElement('div');
+      target.id = CONTAINER_ID;
+      target.className = 'retry-status';
+
+      // fallback 요소가 있으면 그 앞에 삽입하여 시각적 위치를 통일, 없으면 tabs 뒤에 삽입
+      if (fallback && fallback.parentNode) {
+        fallback.parentNode.insertBefore(target, fallback);
+      } else {
+        const anchor = rootNode.querySelector?.('.tabs') || rootNode.querySelector?.('.live') || rootNode.querySelector?.('.date');
+        if (anchor && anchor.parentNode) {
+          anchor.parentNode.insertBefore(target, anchor.nextSibling);
+        } else {
+          const wrap = rootNode.querySelector?.('.wrap') || rootNode.body;
+          if (wrap) wrap.insertBefore(target, wrap.firstChild);
+        }
+      }
+    }
+
+    target.classList.toggle('gave-up', computedResult.state === 'gave_up');
+    if (computedResult.nextRetryAt) {
+      target.setAttribute('data-at', computedResult.nextRetryAt);
+    } else {
+      target.removeAttribute('data-at');
+    }
+    target.textContent = computedResult.message || '';
+
+    // 동적 배너 표시와 정적 fallback 숨김을 같은 동기 DOM 처리 안에서 즉시 수행
+    if (fallback) {
+      fallback.hidden = true;
+    }
     return;
   }
 
-  if (!el) {
-    el = rootNode.createElement('div');
-    el.id = CONTAINER_ID;
-    el.className = 'retry-status';
+  // 2. 동적 배너 제거
+  if (el) el.remove();
 
-    // 탭 메뉴(.tabs) 바로 뒤 또는 date/live 아래에 자연스럽게 배치
-    const anchor = rootNode.querySelector('.tabs') || rootNode.querySelector('.live') || rootNode.querySelector('.date');
-    if (anchor && anchor.parentNode) {
-      anchor.parentNode.insertBefore(el, anchor.nextSibling);
+  // 3. 정적 fallback 처리: ok 상태인 경우 숨김(0개), 그 외 실패/오류/부적합 응답인 경우 복원(표시)
+  if (fallback) {
+    if (computedResult && computedResult.state === 'ok') {
+      fallback.hidden = true;
     } else {
-      const wrap = rootNode.querySelector('.wrap') || rootNode.body;
-      if (wrap) wrap.insertBefore(el, wrap.firstChild);
+      fallback.hidden = false;
     }
   }
-
-  // gave_up일 때 별도 스타일 클래스 토글
-  el.classList.toggle('gave-up', computedResult.state === 'gave_up');
-
-  // data-at 속성 관리 (주기적 경과 체크용)
-  if (computedResult.nextRetryAt) {
-    el.setAttribute('data-at', computedResult.nextRetryAt);
-  } else {
-    el.removeAttribute('data-at');
-  }
-
-  // 텍스트 내용 안전하게 반영
-  el.textContent = computedResult.message || '';
 }
 
 /**
@@ -286,7 +360,8 @@ export function renderBriefingRetryStatus(computedResult, rootNode = (typeof doc
  * @returns {object} { refresh: Function, destroy: Function }
  */
 export function initBriefingStatus(options = {}) {
-  if (typeof window === 'undefined' || typeof document === 'undefined') {
+  const rootDoc = options.rootNode ?? (typeof document !== 'undefined' ? document : null);
+  if (typeof window === 'undefined' || !rootDoc) {
     return { refresh: () => Promise.resolve(), destroy: () => {} };
   }
 
@@ -300,31 +375,42 @@ export function initBriefingStatus(options = {}) {
   let pollTimer = null;
 
   async function fetchAndRender() {
+    const pageDate = options.pageDate ?? getPageDate(rootDoc);
     try {
       // 캐시 방지를 위해 no-cache 헤더 및 타임스탬프 쿼리 사용
       const res = await fetch(`${statusUrl}?_=${Date.now()}`, { cache: 'no-cache' });
       if (!res.ok) {
-        // 404(내일 생성 전)나 서버 오류 시 요약 정상으로 오인하지 않고 기존 상태 유지(또는 숨김)
-        if (res.status === 404) {
-          currentData = null; // 유효 상태 다음 404 발생 시 캐시된 데이터를 비워 60초 tick의 배너 재등장 방지
-          renderBriefingRetryStatus({ visible: false, reason: '404_not_found' });
-        }
+        // 404(내일 생성 전)나 서버 오류(5xx 등) 시 요약 정상으로 오인하지 않고 동적 배너 제거 및 fallback 복원
+        currentData = null; // 유효 상태 다음 실패 발생 시 캐시된 데이터를 비워 60초 tick의 배너 재등장 방지
+        renderBriefingRetryStatus({ visible: false, reason: `http_${res.status}` }, rootDoc);
         return;
       }
       const data = await res.json();
-      currentData = data;
-      const result = computeBriefingRetryStatus(data, { now: getNow() });
-      renderBriefingRetryStatus(result);
+      const result = computeBriefingRetryStatus(data, { now: getNow(), pageDate });
+
+      // 유효성 실패나 날짜 불일치 등으로 배너가 안 뜨고 ok 상태도 아닌 경우 캐시 비움
+      if (!result.visible && result.state !== 'ok') {
+        currentData = null;
+      } else {
+        currentData = data;
+      }
+      renderBriefingRetryStatus(result, rootDoc);
     } catch (_err) {
-      // 네트워크 장애 시 브라우저 콘솔을 오염시키지 않고 조용히 기존 UI 유지
+      // 네트워크 장애, JSON 파싱 오류 등 실패 시 동적 배너 제거 및 fallback 복원
+      currentData = null;
+      renderBriefingRetryStatus({ visible: false, reason: 'network_failure' }, rootDoc);
     }
   }
 
   // 60초마다 시각 경과 여부 갱신 (네트워크 요청 없이 로컬 시각만 재계산)
   function checkExpiredTick() {
     if (!currentData) return;
-    const result = computeBriefingRetryStatus(currentData, { now: getNow() });
-    renderBriefingRetryStatus(result);
+    const pageDate = options.pageDate ?? getPageDate(rootDoc);
+    const result = computeBriefingRetryStatus(currentData, { now: getNow(), pageDate });
+    if (!result.visible && result.state !== 'ok') {
+      currentData = null;
+    }
+    renderBriefingRetryStatus(result, rootDoc);
   }
 
   // 즉시 1회 실행
@@ -339,8 +425,8 @@ export function initBriefingStatus(options = {}) {
   }
 
   // 기존 새로고침 버튼('refresh-btn')이 있다면 status.json도 함께 갱신되도록 연계
-  const refreshBtn = document.getElementById('refresh-btn');
-  if (refreshBtn) {
+  const refreshBtn = rootDoc.getElementById ? rootDoc.getElementById('refresh-btn') : null;
+  if (refreshBtn && refreshBtn.addEventListener) {
     refreshBtn.addEventListener('click', () => {
       setTimeout(fetchAndRender, 300);
     });
