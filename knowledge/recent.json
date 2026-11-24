@@ -721,6 +721,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "45895829e2eb",
+   "date": "2026-11-24",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-grid-interconnection",
+    "bess-internal-auditor",
+    "bess-output-generator",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-tax-korea"
+   ],
+   "title": "팀 토론 — 관세 최적화 전략 수립 및 FTA 활용을 통한 비용 절감 방안 검토",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "44deec732ff7",
    "date": "2026-11-24",
    "type": "discussion",
@@ -3551,17 +3569,6 @@
    "title": "Revera와 Macquarie Capital, 영국 1GW BESS 포트폴리오 합작법인 설립",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMS1Id25ZTkdwQy0ybGdUeUU5bzdLd2VVYVVaOG9mc2t6X2FBamlSZk5EMDNFSFhESnF3SzRRMndGcjk5UWhaQnJfOUVFcUFwbG5ldHdNMHZaNl9rT0gtbjR0NnRKamFlUmFCZkJVSkJ2alJKUFJ2Y1ZYS2dMbDNDenhjX0FtWWwxNlpIbkI0cGxTbEZjbzBwNVIxUlpRQU5fTVFUUWlnSHl1eVdHeXNkdVhLX2xSRVV5aklueQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "d38ab6a552fe",
-   "date": "2026-11-20",
-   "type": "skill",
-   "agents": [
-    "bess-epc-bom"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 7 개 반영, 스킬 23개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

@@ -568,6 +568,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-45895829e2eb",
+   "name": "팀 토론 — 관세 최적화 전략 수립 및 FTA 활용을 통한 비용 절감 방",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-44deec732ff7",
    "name": "팀 토론 — 냉각 효율 최적화를 위한 CFD 기반 기류 분배 시스템 설계",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-13",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b1175cd29c50",
-   "name": "주()들은 배터리 발전소에 기대지만 일부 지역은 반대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-13",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7645,6 +7645,46 @@
   {
    "source": "HSE-001",
    "target": "K-45e5e275fa0f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-45895829e2eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-45895829e2eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-45895829e2eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-45895829e2eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-45895829e2eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-45895829e2eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-45895829e2eb",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-45895829e2eb",
    "type": "knowledge"
   },
   {
@@ -14451,11 +14491,6 @@
    "source": "BAT-001",
    "target": "K-b1d0e4c8706a",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-b1175cd29c50",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15094,7 +15129,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5264
+    "events_total": 5265
    }
   ]
  }
