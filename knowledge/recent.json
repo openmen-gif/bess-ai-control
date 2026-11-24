@@ -19,6 +19,24 @@
    "source": "bess-team"
   },
   {
+   "id": "443c19b2d971",
+   "date": "2026-11-25",
+   "type": "discussion",
+   "agents": [
+    "bess-cybersecurity-expert",
+    "bess-facility-manager",
+    "bess-internal-auditor",
+    "bess-legal-expert",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — BESS 사이버보안 강화를 위한 보안 거버넌스 프레임워크 구축 및 위협 대응 시나리오 작성",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "ff83bbcc4619",
    "date": "2026-11-24",
    "type": "skill",
@@ -3582,24 +3600,6 @@
     "bess-tax-korea"
    ],
    "title": "팀 토론 — BESS 프로젝트 견적서 작성 시 IRA 및 UKCA 인증 요건 통합 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "72acce9415c6",
-   "date": "2026-11-21",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-financial-analysis",
-    "bess-fire-engineer",
-    "bess-hse-manager",
-    "bess-pcs-expert",
-    "bess-power-system-analyst",
-    "bess-standards-analyst",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 시운전(EMS/FIT) 절차 최적화를 위한 시뮬레이션 기반 시스템 성능 평가 수행",
    "link": "",
    "source": "bess-team"
   }

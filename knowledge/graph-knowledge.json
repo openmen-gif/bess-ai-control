@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-443c19b2d971",
+   "name": "팀 토론 — BESS 사이버보안 강화를 위한 보안 거버넌스 프레임워크 구",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-ff83bbcc4619",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-14",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-941034528000",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 9",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7235,6 +7235,46 @@
   {
    "source": "SYS-001",
    "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-443c19b2d971",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-443c19b2d971",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-443c19b2d971",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-443c19b2d971",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-443c19b2d971",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-443c19b2d971",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-443c19b2d971",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-443c19b2d971",
    "type": "knowledge"
   },
   {
@@ -14551,11 +14591,6 @@
    "source": "STD-004",
    "target": "K-9845462886d4",
    "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-941034528000",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15199,7 +15234,7 @@
    {
     "date": "2026-11-25",
     "knowledge": 800,
-    "events_total": 5315
+    "events_total": 5316
    }
   ]
  }
