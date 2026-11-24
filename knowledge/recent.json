@@ -211,6 +211,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "d233b7760066",
+   "date": "2026-11-24",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-output-generator",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — BESS 관련 최신 지식 업데이트 위키 페이지 검토 및 팀 내부 공유 프로세스 개선",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "cd725c3d7277",
    "date": "2026-11-24",
    "type": "briefing",
@@ -3578,17 +3596,6 @@
    "title": "Moment Energy, 전기차 배터리 기반 BESS 신제품 'Nova' 출시",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYVRjYkx5ZEJULUVFeC1UX3ppM1N2Q0lvS1JpbVd2MFprM2ZnRW1UYllHYUsyWGlQc1FvUlk1cmJaWkg0dkdyQUI0emlNZ0R2VklnaHdKTWY5UWFtUTFQWUN5a09HclNRUnV2Z1NIaTR1dTNLZl9oNWg1OHlTVm1EbmRQd243ZDhtNnhjSDdIemk1R05vbUFzMjdn?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "6f4b59adddaf",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-permit-english"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

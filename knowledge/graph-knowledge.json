@@ -172,6 +172,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d233b7760066",
+   "name": "팀 토론 — BESS 관련 최신 지식 업데이트 위키 페이지 검토 및 팀 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-cd725c3d7277",
    "name": "LONGi outlines solar-storage strategy fo",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8afa22e2b1ac",
-   "name": "썬그로우, 이익 압박 속 가정용 배터리로 성장 모색",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7295,6 +7295,46 @@
   {
    "source": "BAT-001",
    "target": "K-d3f0be8b3cf6",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d233b7760066",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d233b7760066",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-d233b7760066",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCV-500",
+   "target": "K-d233b7760066",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-d233b7760066",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-d233b7760066",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d233b7760066",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-d233b7760066",
    "type": "knowledge"
   },
   {
@@ -14521,11 +14561,6 @@
    "source": "STD-002",
    "target": "K-8ec4748e9392",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-8afa22e2b1ac",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15164,7 +15199,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5313
+    "events_total": 5314
    }
   ]
  }
