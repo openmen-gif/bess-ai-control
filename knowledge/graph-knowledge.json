@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-e710f31e4aad",
+   "name": "팀 토론 — 냉각 효율 개선 방안에 대한 양측 입장의 트레이드오프 분석 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff83bbcc4619",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,44 @@
    "date": "2026-11-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-8ec4748e9392",
-   "name": "팀 토론 — 벤더 성과 추적 시스템 구축을 통한 공급망 최적화 전략 수립",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-14",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CFD-001",
+   "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
   {
    "source": "QAC-001",
    "target": "K-ff83bbcc4619",
@@ -14521,50 +14556,10 @@
    "source": "SYS-001",
    "target": "K-941034528000",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-8ec4748e9392",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-8ec4748e9392",
-   "type": "knowledge"
-  },
-  {
-   "source": "EBP-001",
-   "target": "K-8ec4748e9392",
-   "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-8ec4748e9392",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-8ec4748e9392",
-   "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-8ec4748e9392",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-8ec4748e9392",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-8ec4748e9392",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "history": [
    {
     "date": "2026-07-20",
@@ -15200,6 +15195,11 @@
     "date": "2026-11-24",
     "knowledge": 800,
     "events_total": 5314
+   },
+   {
+    "date": "2026-11-25",
+    "knowledge": 800,
+    "events_total": 5315
    }
   ]
  }

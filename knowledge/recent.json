@@ -1,6 +1,23 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "events": [
+  {
+   "id": "e710f31e4aad",
+   "date": "2026-11-25",
+   "type": "discussion",
+   "agents": [
+    "bess-cfd-analyst",
+    "bess-circuit-breaker-expert",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-network-engineer",
+    "bess-power-system-analyst",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 냉각 효율 개선 방안에 대한 양측 입장의 트레이드오프 분석 및 우선순위 설정 명령 발행 - bess-cfd-analyst, bess-system-engineer 협업",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ff83bbcc4619",
    "date": "2026-11-24",
@@ -3585,17 +3602,6 @@
    "title": "팀 토론 — 시운전(EMS/FIT) 절차 최적화를 위한 시뮬레이션 기반 시스템 성능 평가 수행",
    "link": "",
    "source": "bess-team"
-  },
-  {
-   "id": "707f51de8f61",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "Moment Energy, 전기차 배터리 기반 BESS 신제품 'Nova' 출시",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYVRjYkx5ZEJULUVFeC1UX3ppM1N2Q0lvS1JpbVd2MFprM2ZnRW1UYllHYUsyWGlQc1FvUlk1cmJaWkg0dkdyQUI0emlNZ0R2VklnaHdKTWY5UWFtUTFQWUN5a09HclNRUnV2Z1NIaTR1dTNLZl9oNWg1OHlTVm1EbmRQd243ZDhtNnhjSDdIemk1R05vbUFzMjdn?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }
