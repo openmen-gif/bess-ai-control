@@ -784,6 +784,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-189caefbd526",
+   "name": "팀 토론 — BESS EPC 루마니아 규정 준수 및 현지 인허가 전략 수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-1140d9f8014f",
    "name": "FERC approves major gas infrastructure f",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-db86600a6e1a",
-   "name": "Sunrun·Captona 주거용 태양광·ESS 9,400건 금융 조달 ",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7900,6 +7900,41 @@
   {
    "source": "PCS-001",
    "target": "K-1a0f6201b121",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-189caefbd526",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-189caefbd526",
+   "type": "knowledge"
+  },
+  {
+   "source": "INF-001",
+   "target": "K-189caefbd526",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-189caefbd526",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-189caefbd526",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-189caefbd526",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-189caefbd526",
    "type": "knowledge"
   },
   {
@@ -14521,11 +14556,6 @@
    "source": "COM-100",
    "target": "K-de763b154994",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-db86600a6e1a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15164,7 +15194,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5277
+    "events_total": 5278
    }
   ]
  }
