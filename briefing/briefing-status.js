@@ -37,7 +37,8 @@ export function getKstDateString(now = new Date()) {
 }
 
 /**
- * ISO 8601 시각 문자열에서 KST 기준 시/분(HH:MM) 문자열을 안전하게 추출합니다.
+ * ISO 8601 시각 문자열에서 KST 기준 시/분(HH:MM) 문자열을 엄격하고 안전하게 추출합니다.
+ * 유효하지 않은 ISO 형식이거나 파싱 불가능한 시각, 비정상적인 시/분(예: 99:99)은 null을 반환합니다.
  * 
  * @param {string} isoString
  * @returns {string|null} HH:MM 형식의 문자열 또는 유효하지 않을 경우 null
@@ -45,13 +46,12 @@ export function getKstDateString(now = new Date()) {
 export function formatKstTime(isoString) {
   if (!isoString || typeof isoString !== 'string') return null;
 
-  // 정규식으로 +09:00 또는 KST ISO 문자열의 시:분을 빠르게 1차 추출
-  const isoMatch = isoString.match(/T(\d{2}):(\d{2})/);
-  if (isoString.includes('+09:00') && isoMatch) {
-    return `${isoMatch[1]}:${isoMatch[2]}`;
-  }
+  // 엄격한 ISO 8601 패턴 검증: YYYY-MM-DDTHH:MM[:SS][.mmm](Z|±HH:MM)
+  const ISO_REGEX = /^\d{4}-\d{2}-\d{2}T(\d{2}):(\d{2})(?::\d{2})?(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})$/;
+  const match = isoString.match(ISO_REGEX);
+  if (!match) return null;
 
-  // 타임존 파싱이 필요한 경우 Date 객체 활용
+  // Date.parse로 타임스탬프 유효성 검증 (NaN 방지)
   const timeMs = Date.parse(isoString);
   if (Number.isNaN(timeMs)) return null;
 
@@ -64,17 +64,23 @@ export function formatKstTime(isoString) {
       hour12: false
     });
     const parts = formatter.formatToParts(d);
-    const hour = parts.find((p) => p.type === 'hour')?.value.padStart(2, '0') ?? '00';
-    const minute = parts.find((p) => p.type === 'minute')?.value.padStart(2, '0') ?? '00';
-    return `${hour}:${minute}`;
+    const hourStr = parts.find((p) => p.type === 'hour')?.value ?? '';
+    const minuteStr = parts.find((p) => p.type === 'minute')?.value ?? '';
+    const h = parseInt(hourStr, 10);
+    const m = parseInt(minuteStr, 10);
+    // 시(0~23) 및 분(0~59) 범위 검증
+    if (Number.isNaN(h) || h < 0 || h > 23 || Number.isNaN(m) || m < 0 || m > 59) {
+      return null;
+    }
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
   } catch (_e) {
-    if (isoMatch) return `${isoMatch[1]}:${isoMatch[2]}`;
     return null;
   }
 }
 
 /**
  * status.json 데이터와 기준 시각을 바탕으로 UI에 렌더링할 상태를 계산하는 순수 함수입니다.
+ * 계약에 맞는 비음수 정수 pending 및 유효 ISO 시각만 허용하여 잘못된 응답을 정상/0으로 오인하지 않습니다.
  * 
  * @param {any} statusData /briefing/status.json 파싱 객체
  * @param {object} [options]
@@ -91,21 +97,45 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
     return { visible: false, reason: 'invalid_payload' };
   }
 
-  const { date, pending, state, next_retry_at } = statusData;
+  const { date, pending, state, next_retry_at, total, summarized } = statusData;
 
   // 2. KST 오늘 날짜 확인: 어제 상태나 과거 데이터는 지연 안내를 노출하지 않음
   if (date !== today) {
     return { visible: false, reason: 'date_mismatch', dataDate: date, today };
   }
 
-  // 3. ok 상태이거나 잔여 누락 건수가 0건인 경우: 지연 안내 제거
-  if (state === 'ok' || pending === 0 || (typeof pending === 'number' && pending <= 0)) {
+  // 3. pending 유효성 검증: 계약에 부합하는 '비음수 정수'만 허용
+  // 문자열 '49', 소수 1.5, 음수 -1 등은 잘못된 응답으로 거부하여 정상(ok)이나 0으로 오인 방지
+  if (typeof pending !== 'number' || !Number.isInteger(pending) || pending < 0) {
+    return { visible: false, reason: 'invalid_pending', pending };
+  }
+
+  // total과 summarized가 제공된 경우 비음수 정수여야 함
+  if (typeof total !== 'undefined' && (typeof total !== 'number' || !Number.isInteger(total) || total < 0)) {
+    return { visible: false, reason: 'invalid_total', total };
+  }
+  if (typeof summarized !== 'undefined' && (typeof summarized !== 'number' || !Number.isInteger(summarized) || summarized < 0)) {
+    return { visible: false, reason: 'invalid_summarized', summarized };
+  }
+
+  // 4. state 및 pending 관계 검증
+  // ok 상태: pending이 정확히 0이어야 함
+  if (state === 'ok') {
+    if (pending === 0) {
+      return { visible: false, state: 'ok' };
+    }
+    // state는 ok인데 pending이 0보다 큰 불일치 응답은 정상으로 오인하지 않도록 거부
+    return { visible: false, reason: 'state_pending_conflict', state, pending };
+  }
+
+  // pending이 0인 경우: 지연 안내 제거
+  if (pending === 0) {
     return { visible: false, state: 'ok' };
   }
 
-  const pendingCount = typeof pending === 'number' && pending > 0 ? pending : 0;
+  const pendingCount = pending;
 
-  // 4. gave_up 상태: attempt(0~2 회차 포함)에 구애받지 않고 오직 state로 자동 재시도 종료 판단
+  // 5. gave_up 상태: attempt(0~2 회차 포함)에 구애받지 않고 오직 state로 자동 재시도 종료 판단
   if (state === 'gave_up') {
     return {
       visible: true,
@@ -115,12 +145,13 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
     };
   }
 
-  // 5. pending_retry 상태
+  // 6. pending_retry 상태
   if (state === 'pending_retry') {
     const formattedTime = formatKstTime(next_retry_at);
+    const retryTimeMs = typeof next_retry_at === 'string' ? Date.parse(next_retry_at) : NaN;
 
-    // next_retry_at 부재 시: 특정 시각 약속 금지
-    if (!formattedTime || !next_retry_at) {
+    // next_retry_at 부재 또는 유효하지 않은 시각(NaN, 99:99 등): 특정 시각 약속 금지
+    if (!formattedTime || Number.isNaN(retryTimeMs)) {
       return {
         visible: true,
         state: 'pending_retry',
@@ -130,9 +161,8 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
       };
     }
 
-    // next_retry_at 시각 경과 여부 확인
-    const retryTimeMs = Date.parse(next_retry_at);
-    const isExpired = !Number.isNaN(retryTimeMs) && now.getTime() >= retryTimeMs;
+    // next_retry_at 시각 경과 여부 확인 (엄격한 타임스탬프 비교)
+    const isExpired = now.getTime() >= retryTimeMs;
 
     if (isExpired) {
       return {
@@ -227,6 +257,7 @@ export function initBriefingStatus(options = {}) {
   const statusUrl = options.statusUrl || '/briefing/status.json';
   const checkIntervalMs = options.checkIntervalMs ?? 60000;
   const pollIntervalMs = options.pollIntervalMs ?? 300000;
+  const getNow = typeof options.now === 'function' ? options.now : () => (options.now ?? new Date());
 
   let currentData = null;
   let checkTimer = null;
@@ -239,13 +270,14 @@ export function initBriefingStatus(options = {}) {
       if (!res.ok) {
         // 404(내일 생성 전)나 서버 오류 시 요약 정상으로 오인하지 않고 기존 상태 유지(또는 숨김)
         if (res.status === 404) {
+          currentData = null; // 유효 상태 다음 404 발생 시 캐시된 데이터를 비워 60초 tick의 배너 재등장 방지
           renderBriefingRetryStatus({ visible: false, reason: '404_not_found' });
         }
         return;
       }
       const data = await res.json();
       currentData = data;
-      const result = computeBriefingRetryStatus(data);
+      const result = computeBriefingRetryStatus(data, { now: getNow() });
       renderBriefingRetryStatus(result);
     } catch (_err) {
       // 네트워크 장애 시 브라우저 콘솔을 오염시키지 않고 조용히 기존 UI 유지
@@ -255,7 +287,7 @@ export function initBriefingStatus(options = {}) {
   // 60초마다 시각 경과 여부 갱신 (네트워크 요청 없이 로컬 시각만 재계산)
   function checkExpiredTick() {
     if (!currentData) return;
-    const result = computeBriefingRetryStatus(currentData);
+    const result = computeBriefingRetryStatus(currentData, { now: getNow() });
     renderBriefingRetryStatus(result);
   }
 

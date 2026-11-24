@@ -1,6 +1,6 @@
 /**
  * @file test/briefing-status.test.mjs
- * @description briefing-status 모듈의 모든 경계 조건(Edge cases) 단위 테스트
+ * @description briefing-status 모듈의 모든 경계 조건(Edge cases) 및 회귀 테스트
  */
 
 import assert from 'node:assert/strict';
@@ -28,10 +28,17 @@ test('getKstDateString converts UTC dates to KST YYYY-MM-DD properly', () => {
   assert.equal(getKstDateString(utcDayEnd), '2026-11-24');
 });
 
-test('formatKstTime extracts HH:MM from ISO 8601 strings safely', () => {
+test('formatKstTime extracts HH:MM from ISO 8601 strings safely with strict validation', () => {
+  // 정상 ISO 8601 KST 시각
   assert.equal(formatKstTime('2026-11-24T08:25:00+09:00'), '08:25');
   assert.equal(formatKstTime('2026-11-24T13:00:00+09:00'), '13:00');
   assert.equal(formatKstTime('2026-11-24T00:05:00Z'), '09:05'); // UTC 00:05 -> KST 09:05
+
+  // [결함 1 회귀] invalidT99:99+09:00 또는 비정상 시/분 값은 null이어야 함
+  assert.equal(formatKstTime('invalidT99:99+09:00'), null);
+  assert.equal(formatKstTime('2026-11-24T99:99:00+09:00'), null);
+  assert.equal(formatKstTime('2026-11-24T25:00:00+09:00'), null);
+  assert.equal(formatKstTime('2026-11-24T12:60:00+09:00'), null);
   assert.equal(formatKstTime(null), null);
   assert.equal(formatKstTime(''), null);
   assert.equal(formatKstTime('not-a-date'), null);
@@ -59,6 +66,29 @@ test('computeBriefingRetryStatus: pending_retry with future next_retry_at promis
   assert.equal(result.isExpired, false);
   assert.equal(result.timeString, '08:25');
   assert.equal(result.message, 'AI 요약 49건 생성 지연 — 다음 자동 재시도 08:25');
+});
+
+test('computeBriefingRetryStatus: [결함 1 회귀] invalidT99:99+09:00 or Date.parse NaN must not promise 99:99', () => {
+  const statusInvalidTime = {
+    date: '2026-11-24',
+    total: 71,
+    summarized: 22,
+    pending: 49,
+    reason: 'rate_limit',
+    next_retry_at: 'invalidT99:99+09:00',
+    attempt: 0,
+    max_attempts: 3,
+    state: 'pending_retry'
+  };
+
+  const now = new Date('2026-11-24T08:00:00+09:00');
+  const result = computeBriefingRetryStatus(statusInvalidTime, { now, today: '2026-11-24' });
+
+  // 99:99가 미래 분기로 들어가 표시되면 안 됨. 시간 약속 금지 분기로 가야 함.
+  assert.equal(result.visible, true);
+  assert.equal(result.hasNextRetry, false);
+  assert.doesNotMatch(result.message, /99:99/);
+  assert.equal(result.message, 'AI 요약 49건 생성 지연 (자동 재시도 준비 중)');
 });
 
 test('computeBriefingRetryStatus: pending_retry when past next_retry_at shows expired state', () => {
@@ -102,6 +132,57 @@ test('computeBriefingRetryStatus: pending_retry without next_retry_at forbids ti
   // 특정 시각(HH:MM) 약속 금지
   assert.doesNotMatch(result.message, /\d{2}:\d{2}/);
   assert.equal(result.message, 'AI 요약 49건 생성 지연 (자동 재시도 준비 중)');
+});
+
+test('computeBriefingRetryStatus: [결함 2 회귀] pending must strictly be non-negative integer', () => {
+  // 1. 문자열 '49'가 0건으로 정규화되거나 통과되면 안 됨
+  const statusStringPending = {
+    date: '2026-11-24',
+    total: 71,
+    summarized: 22,
+    pending: '49',
+    state: 'pending_retry'
+  };
+  const resStr = computeBriefingRetryStatus(statusStringPending, { today: '2026-11-24' });
+  assert.equal(resStr.visible, false);
+  assert.equal(resStr.reason, 'invalid_pending');
+
+  // 2. 소수 1.5가 소수 건수로 통과되면 안 됨
+  const statusFloatPending = {
+    date: '2026-11-24',
+    total: 71,
+    summarized: 22,
+    pending: 1.5,
+    state: 'pending_retry'
+  };
+  const resFloat = computeBriefingRetryStatus(statusFloatPending, { today: '2026-11-24' });
+  assert.equal(resFloat.visible, false);
+  assert.equal(resFloat.reason, 'invalid_pending');
+
+  // 3. 음수 -1이 ok로 정상화되면 안 됨
+  const statusNegativePending = {
+    date: '2026-11-24',
+    total: 71,
+    summarized: 72,
+    pending: -1,
+    state: 'pending_retry'
+  };
+  const resNeg = computeBriefingRetryStatus(statusNegativePending, { today: '2026-11-24' });
+  assert.equal(resNeg.visible, false);
+  assert.equal(resNeg.reason, 'invalid_pending');
+  assert.notEqual(resNeg.state, 'ok');
+
+  // 4. state는 ok인데 pending이 남아있는 모순 응답 거부
+  const statusOkWithPending = {
+    date: '2026-11-24',
+    total: 71,
+    summarized: 60,
+    pending: 11,
+    state: 'ok'
+  };
+  const resConflict = computeBriefingRetryStatus(statusOkWithPending, { today: '2026-11-24' });
+  assert.equal(resConflict.visible, false);
+  assert.equal(resConflict.reason, 'state_pending_conflict');
 });
 
 test('computeBriefingRetryStatus: gave_up with attempt 0..2 judged purely by state', () => {
@@ -269,7 +350,7 @@ test('renderBriefingRetryStatus: updates mock DOM accurately', () => {
   assert.equal(mockDoc.getElementById('briefing-retry-status'), null);
 });
 
-test('initBriefingStatus handles 404, network failure, and successful responses safely', async () => {
+test('initBriefingStatus handles 404, network failure, and successful responses deterministically', async () => {
   const originalWindow = globalThis.window;
   const originalDocument = globalThis.document;
   const originalFetch = globalThis.fetch;
@@ -282,7 +363,7 @@ test('initBriefingStatus handles 404, network failure, and successful responses 
     classList: { toggle: () => {} },
     setAttribute: () => {},
     removeAttribute: () => {},
-    remove: () => { bannerRemoved = true; },
+    remove: () => { bannerRemoved = true; bannerText = ''; },
     set textContent(v) { bannerText = v; },
     get textContent() { return bannerText; }
   };
@@ -297,30 +378,12 @@ test('initBriefingStatus handles 404, network failure, and successful responses 
     document: globalThis.document
   };
 
+  // [결함 4 수정] 테스트 실행 시각에 구애받지 않도록 고정된 Date 주입 (결정적 테스트)
+  const fixedNow = new Date('2026-11-24T08:00:00+09:00');
+  const kstToday = '2026-11-24';
+
   try {
-    // 1. 404 응답 테스트: 에러를 던지지 않고 banner 제거/숨김 수행
-    globalThis.fetch = async () => ({
-      ok: false,
-      status: 404,
-      json: async () => ({})
-    });
-    bannerRemoved = false;
-    const monitor404 = initBriefingStatus({ checkIntervalMs: 0, pollIntervalMs: 0 });
-    await monitor404.refresh();
-    assert.equal(bannerRemoved, true);
-
-    // 2. 네트워크 오류 테스트: 예외를 던지지 않고 조용히 복구
-    globalThis.fetch = async () => {
-      throw new Error('Network connection failed');
-    };
-    bannerRemoved = false;
-    const monitorNetErr = initBriefingStatus({ checkIntervalMs: 0, pollIntervalMs: 0 });
-    await assert.doesNotReject(async () => {
-      await monitorNetErr.refresh();
-    });
-
-    // 3. 200 정상 응답 테스트
-    const kstToday = getKstDateString();
+    // 1. 200 정상 응답 테스트 (미래 12:00 재시도 안내 확인)
     globalThis.fetch = async () => ({
       ok: true,
       status: 200,
@@ -337,9 +400,37 @@ test('initBriefingStatus handles 404, network failure, and successful responses 
       })
     });
     bannerText = '';
-    const monitorOk = initBriefingStatus({ checkIntervalMs: 0, pollIntervalMs: 0 });
-    await monitorOk.refresh();
+    bannerRemoved = false;
+    const monitor = initBriefingStatus({
+      checkIntervalMs: 0,
+      pollIntervalMs: 0,
+      now: fixedNow
+    });
+    await monitor.refresh();
     assert.match(bannerText, /AI 요약 41건 생성 지연 — 다음 자동 재시도 12:00/);
+
+    // 2. [결함 3 회귀] 유효 상태 다음 404 발생 시 currentData를 비워 tick 배너 재등장 방지
+    globalThis.fetch = async () => ({
+      ok: false,
+      status: 404,
+      json: async () => ({})
+    });
+    bannerRemoved = false;
+    await monitor.refresh();
+    assert.equal(bannerRemoved, true);
+
+    // 60초 tick을 모사하여 refresh 실행 시(또는 타이머 틱 시) bannerText가 다시 채워지지 않는지 검증
+    // currentData가 비워졌으므로 배너가 부활하지 않아야 함
+    assert.equal(bannerText, '');
+
+    // 3. 네트워크 오류 테스트: 예외를 던지지 않고 조용히 복구
+    globalThis.fetch = async () => {
+      throw new Error('Network connection failed');
+    };
+    bannerRemoved = false;
+    await assert.doesNotReject(async () => {
+      await monitor.refresh();
+    });
 
   } finally {
     globalThis.window = originalWindow;
