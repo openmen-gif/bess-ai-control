@@ -878,3 +878,240 @@ test('initBriefingStatus: complete lifecycle test (pending_retry -> 404/failure 
     globalThis.clearInterval = originalClearInterval;
   }
 });
+
+test('regression: state=ok with pending=11 and state=invalid with pending=0 strictly rejected without hiding fallback', () => {
+  const today = '2026-11-24';
+
+  // 1. state=ok, pending=11 검증 실패 테스트
+  const conflictData = {
+    date: today,
+    total: 71,
+    summarized: 60,
+    pending: 11,
+    state: 'ok'
+  };
+  const resConflict = computeBriefingRetryStatus(conflictData, { today });
+  assert.equal(resConflict.visible, false);
+  assert.equal(resConflict.valid, false, '검증 실패이므로 valid=false여야 함');
+  assert.equal(resConflict.reason, 'state_pending_conflict');
+  assert.notEqual(resConflict.state, 'ok', '검증 실패 응답 객체에 state=ok가 유지되어서는 안 됨');
+
+  // DOM 렌더링 시 fallback이 숨겨지지 않고 복원(표시)되어야 함
+  const fallbackMock = { hidden: true };
+  const mockDocConflict = {
+    getElementById: (id) => (id === 'briefing-retry-fallback' ? fallbackMock : null),
+    querySelector: () => null
+  };
+  renderBriefingRetryStatus(resConflict, mockDocConflict);
+  assert.equal(fallbackMock.hidden, false, 'state=ok, pending=11 검증 실패 시 fallback.hidden은 false로 복원되어야 함');
+
+  // 2. state=invalid, pending=0 정규화 금지 및 검증 실패 테스트
+  const invalidStateZeroPending = {
+    date: today,
+    total: 71,
+    summarized: 71,
+    pending: 0,
+    state: 'invalid'
+  };
+  const resInvalid = computeBriefingRetryStatus(invalidStateZeroPending, { today });
+  assert.equal(resInvalid.visible, false);
+  assert.equal(resInvalid.valid, false, '알 수 없는 state는 pending=0이어도 valid=false여야 함');
+  assert.notEqual(resInvalid.state, 'ok', '알 수 없는 state를 pending=0이라는 이유로 state=ok로 정규화해서는 안 됨');
+
+  const fallbackMock2 = { hidden: true };
+  const mockDocInvalid = {
+    getElementById: (id) => (id === 'briefing-retry-fallback' ? fallbackMock2 : null),
+    querySelector: () => null
+  };
+  renderBriefingRetryStatus(resInvalid, mockDocInvalid);
+  assert.equal(fallbackMock2.hidden, false, 'state=invalid, pending=0 검증 실패 시 fallback.hidden은 false로 복원되어야 함');
+});
+
+test('regression: fallback-present DOM safely rejects missing pageDate, legacy DOM without fallback preserved', () => {
+  const today = '2026-11-24';
+  const validStatus = {
+    date: today,
+    total: 71,
+    summarized: 30,
+    pending: 41,
+    reason: 'rate_limit',
+    next_retry_at: `${today}T12:00:00+09:00`,
+    attempt: 1,
+    max_attempts: 3,
+    state: 'pending_retry'
+  };
+
+  // 1. fallback이 존재하는 DOM인데 pageDate 추출 불가(null/undefined) 시 안전 거부
+  const resMissingDate = computeBriefingRetryStatus(validStatus, {
+    today,
+    pageDate: null,
+    hasFallback: true
+  });
+  assert.equal(resMissingDate.visible, false);
+  assert.equal(resMissingDate.valid, false);
+  assert.equal(resMissingDate.reason, 'page_date_missing');
+
+  const fallbackMock = { hidden: true };
+  const mockDoc = {
+    getElementById: (id) => (id === 'briefing-retry-fallback' ? fallbackMock : null),
+    querySelector: () => null
+  };
+  renderBriefingRetryStatus(resMissingDate, mockDoc);
+  assert.equal(fallbackMock.hidden, false, '페이지 일자 누락 시 fallback.hidden=false로 복원');
+
+  // 2. fallback이 없는 기존 레거시 DOM: pageDate가 없어도 기존 동작대로 정상 통과 호환
+  const resLegacy = computeBriefingRetryStatus(validStatus, {
+    today,
+    pageDate: null,
+    hasFallback: false
+  });
+  assert.equal(resLegacy.visible, true);
+  assert.equal(resLegacy.valid, true);
+  assert.equal(resLegacy.pending, 41);
+});
+
+test('regression: success -> conflict/invalid failure -> 60000ms tick banner non-revival in real DOM lifecycle', async () => {
+  const originalWindow = globalThis.window;
+  const originalDocument = globalThis.document;
+  const originalFetch = globalThis.fetch;
+  const originalSetInterval = globalThis.setInterval;
+  const originalClearInterval = globalThis.clearInterval;
+
+  class MockElement {
+    constructor(tagName, id = '') {
+      this.tagName = tagName;
+      this.id = id;
+      this.classList = {
+        _set: new Set(),
+        add(c) { this._set.add(c); },
+        remove(c) { this._set.delete(c); },
+        toggle(c, force) {
+          if (force === undefined) force = !this._set.has(c);
+          if (force) this.add(c); else this.remove(c);
+        },
+        contains(c) { return this._set.has(c); }
+      };
+      this.attributes = new Map();
+      this.textContent = '';
+      this.hidden = false;
+      this.parentNode = null;
+      this.children = [];
+    }
+    setAttribute(k, v) { this.attributes.set(k, v); }
+    getAttribute(k) { return this.attributes.get(k); }
+    removeAttribute(k) { this.attributes.delete(k); }
+    remove() {
+      if (this.parentNode) {
+        this.parentNode.children = this.parentNode.children.filter((c) => c !== this);
+        this.parentNode = null;
+      }
+    }
+  }
+
+  const root = new MockElement('div', 'root');
+  const fallback = new MockElement('div', 'briefing-retry-fallback');
+  fallback.hidden = false;
+  fallback.parentNode = root;
+  root.children.push(fallback);
+
+  const mockDoc = {
+    readyState: 'complete',
+    getElementById(id) {
+      return root.children.find((c) => c.id === id) || null;
+    },
+    querySelector(sel) {
+      if (sel === '.date') return { textContent: '2026-11-24' };
+      if (sel.startsWith('#')) return this.getElementById(sel.slice(1));
+      return null;
+    },
+    createElement(tag) {
+      return new MockElement(tag);
+    }
+  };
+  root.insertBefore = (newChild, refChild) => {
+    const idx = root.children.indexOf(refChild);
+    if (idx >= 0) {
+      root.children.splice(idx, 0, newChild);
+    } else {
+      root.children.push(newChild);
+    }
+    newChild.parentNode = root;
+  };
+
+  globalThis.document = mockDoc;
+  globalThis.window = { document: mockDoc };
+
+  let captured60kCallback = null;
+  globalThis.setInterval = (cb, ms) => {
+    if (ms === 60000) captured60kCallback = cb;
+    return 888;
+  };
+  globalThis.clearInterval = () => {};
+
+  const fixedNow = new Date('2026-11-24T08:00:00+09:00');
+  const kstToday = '2026-11-24';
+
+  try {
+    // 1단계: 유효 지연 성공 응답 수신
+    globalThis.fetch = async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({
+        date: kstToday,
+        total: 71,
+        summarized: 30,
+        pending: 41,
+        reason: 'rate_limit',
+        next_retry_at: `${kstToday}T12:00:00+09:00`,
+        attempt: 1,
+        max_attempts: 3,
+        state: 'pending_retry'
+      })
+    });
+
+    const monitor = initBriefingStatus({
+      checkIntervalMs: 60000,
+      pollIntervalMs: 0,
+      now: fixedNow,
+      pageDate: kstToday
+    });
+
+    await monitor.refresh();
+    let banner = mockDoc.getElementById('briefing-retry-status');
+    assert.ok(banner, '동적 배너가 정상 노출되어야 함');
+    assert.equal(fallback.hidden, true, '동적 배너 표시 시 정적 fallback은 숨김');
+
+    // 2단계: state=ok, pending=11 불일치 응답 수신 (검증 실패)
+    globalThis.fetch = async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({
+        date: kstToday,
+        total: 71,
+        summarized: 60,
+        pending: 11,
+        state: 'ok'
+      })
+    });
+
+    await monitor.refresh();
+    banner = mockDoc.getElementById('briefing-retry-status');
+    assert.equal(banner, null, '검증 실패 응답 수신 시 동적 배너 제거');
+    assert.equal(fallback.hidden, false, '검증 실패 시 정적 fallback 복원 (hidden=false)');
+
+    // 3단계: 실패 상태에서 60000ms tick 실행 시 과거 배너 미부활 및 fallback 유지
+    assert.ok(captured60kCallback, '60초 tick 콜백 등록 확인');
+    captured60kCallback();
+    banner = mockDoc.getElementById('briefing-retry-status');
+    assert.equal(banner, null, '검증 실패 후 60초 tick 콜백이 과거 배너를 부활시키지 않아야 함');
+    assert.equal(fallback.hidden, false, '정적 fallback은 계속 복원(표시) 상태 유지');
+
+    monitor.destroy();
+  } finally {
+    globalThis.window = originalWindow;
+    globalThis.document = originalDocument;
+    globalThis.fetch = originalFetch;
+    globalThis.setInterval = originalSetInterval;
+    globalThis.clearInterval = originalClearInterval;
+  }
+});
