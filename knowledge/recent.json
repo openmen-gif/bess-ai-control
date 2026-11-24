@@ -710,6 +710,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "61262621abf1",
+   "date": "2026-11-24",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-financial-analysis",
+    "bess-internal-auditor",
+    "bess-legal-expert",
+    "bess-permit-asia",
+    "bess-procurement-expert",
+    "bess-standards-japan",
+    "bess-tax-japan"
+   ],
+   "title": "팀 토론 — 일본 세법 실무 분석을 통한 BESS 프로젝트 세금 최적화 전략 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "5ffa90d3226c",
    "date": "2026-11-24",
    "type": "briefing",
@@ -3558,17 +3576,6 @@
    "title": "LG엔솔·삼성SDI·SK온, 전기차 넘어 ESS로…배터리 3사 서로 다른 전략",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5rXy1RUzBONjFLcm9MclNqbDF1ZnYtTlZSS1pLMDVneFgxU2Zxb2NRcDkwNF9RdVZoN190T0dmOFhuVGF6amc3N3h6R3JFSzdVc05aRi1WbzJqY19uSWwyQjRmQnp1UXNLSjJEZ1J3?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "05a6d0ab6219",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-business-dev"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

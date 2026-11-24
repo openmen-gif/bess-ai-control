@@ -559,6 +559,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-61262621abf1",
+   "name": "팀 토론 — 일본 세법 실무 분석을 통한 BESS 프로젝트 세금 최적화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5ffa90d3226c",
    "name": "Mulilo Achieves Financial Close for 77 M",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-13",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-d839d098a960",
-   "name": "코벤트리 시의회, 슈퍼펀드 부지 배터리 저장시설 임대 부결",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-13",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7640,6 +7640,46 @@
   {
    "source": "MAR-001",
    "target": "K-624841064d18",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-61262621abf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-61262621abf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-61262621abf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-61262621abf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-61262621abf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-61262621abf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-61262621abf1",
+   "type": "knowledge"
+  },
+  {
+   "source": "JTX-001",
+   "target": "K-61262621abf1",
    "type": "knowledge"
   },
   {
@@ -14486,11 +14526,6 @@
    "source": "MAR-001",
    "target": "K-db86600a6e1a",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-d839d098a960",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15129,7 +15164,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5276
+    "events_total": 5277
    }
   ]
  }
