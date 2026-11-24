@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-5517fe85a0b2",
+   "name": "팀 토론 — HSE 통합 프로세스 재검토 및 사고 예방을 위한 HAZOP",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-443c19b2d971",
    "name": "팀 토론 — BESS 사이버보안 강화를 위한 보안 거버넌스 프레임워크 구",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-9845462886d4",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 9",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-14",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7235,6 +7235,46 @@
   {
    "source": "SYS-001",
    "target": "K-e710f31e4aad",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-5517fe85a0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-5517fe85a0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-5517fe85a0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-5517fe85a0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-005",
+   "target": "K-5517fe85a0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-5517fe85a0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-5517fe85a0b2",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-5517fe85a0b2",
    "type": "knowledge"
   },
   {
@@ -14586,11 +14626,6 @@
    "source": "PCS-001",
    "target": "K-9b4df572b22d",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-004",
-   "target": "K-9845462886d4",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15234,7 +15269,7 @@
    {
     "date": "2026-11-25",
     "knowledge": 800,
-    "events_total": 5316
+    "events_total": 5317
    }
   ]
  }
