@@ -60,6 +60,8 @@ footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px sol
 .item.hide, .sec.hide { display:none; }
 .qarch h2 { color:var(--muted); }
 .qarch .meta a { color:var(--accent); text-decoration:none; font-size:12px; }
+.retry-status { background:var(--panel); border:1px solid #D97706; color:#FBBF24; border-radius:10px; padding:10px 14px; margin-top:14px; font-size:13px; font-weight:600; line-height:1.5; }
+.retry-status.gave-up { border-color:var(--line); color:var(--muted); background:var(--soft); }
 </style>
 </head>
 <body>
@@ -367,5 +369,6 @@ footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px sol
   if (init) { q.value = init; run(); }
 })();
 </script>
+<script type="module" src="/briefing/briefing-status.js"></script>
 </body>
 </html>
