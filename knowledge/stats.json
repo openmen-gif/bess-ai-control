@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-25",
  "totals": {
-  "all": 5385,
+  "all": 5386,
   "briefing": 2775,
   "skill": 1555,
-  "discussion": 1055,
+  "discussion": 1056,
   "activity": 0
  },
  "perAgent": {
@@ -29,25 +29,25 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1381,
+   "count": 1382,
    "byType": {
     "skill": 38,
-    "discussion": 597,
+    "discussion": 598,
     "briefing": 746
    },
    "lastGrown": "2026-11-25",
-   "xp": 2054,
+   "xp": 2056,
    "level": 27
   },
   "bess-business-dev": {
-   "count": 371,
+   "count": 372,
    "byType": {
     "skill": 33,
-    "discussion": 155,
+    "discussion": 156,
     "briefing": 183
    },
    "lastGrown": "2026-11-25",
-   "xp": 592,
+   "xp": 594,
    "level": 15
   },
   "bess-cable-engineer": {
@@ -92,13 +92,13 @@
    "level": 9
   },
   "bess-commissioning-coordinator": {
-   "count": 77,
+   "count": 78,
    "byType": {
     "skill": 20,
-    "discussion": 57
+    "discussion": 58
    },
    "lastGrown": "2026-11-25",
-   "xp": 174,
+   "xp": 176,
    "level": 8
   },
   "bess-contract-specialist": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 532,
+   "count": 533,
    "byType": {
     "skill": 38,
-    "discussion": 494
+    "discussion": 495
    },
    "lastGrown": "2026-11-25",
-   "xp": 1102,
+   "xp": 1104,
    "level": 20
   },
   "bess-customs-tariff": {
@@ -223,13 +223,13 @@
    "level": 8
   },
   "bess-financial-analysis": {
-   "count": 287,
+   "count": 288,
    "byType": {
     "skill": 33,
-    "discussion": 254
+    "discussion": 255
    },
    "lastGrown": "2026-11-25",
-   "xp": 607,
+   "xp": 609,
    "level": 15
   },
   "bess-fire-engineer": {
@@ -396,14 +396,14 @@
    "level": 7
   },
   "bess-marketer": {
-   "count": 810,
+   "count": 811,
    "byType": {
     "skill": 27,
-    "discussion": 143,
+    "discussion": 144,
     "briefing": 640
    },
    "lastGrown": "2026-11-25",
-   "xp": 1007,
+   "xp": 1009,
    "level": 19
   },
   "bess-mlops-engineer": {
@@ -540,13 +540,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 421,
+   "count": 422,
    "byType": {
     "skill": 37,
-    "discussion": 384
+    "discussion": 385
    },
    "lastGrown": "2026-11-25",
-   "xp": 879,
+   "xp": 881,
    "level": 18
   },
   "bess-project-manager": {
@@ -600,13 +600,13 @@
    "level": 8
   },
   "bess-security-expert": {
-   "count": 73,
+   "count": 74,
    "byType": {
     "skill": 15,
-    "discussion": 58
+    "discussion": 59
    },
-   "lastGrown": "2026-11-24",
-   "xp": 161,
+   "lastGrown": "2026-11-25",
+   "xp": 163,
    "level": 8
   },
   "bess-site-manager": {
@@ -1202,7 +1202,7 @@
   },
   {
    "date": "2026-11-25",
-   "added": 71
+   "added": 72
   }
  ],
  "freshness": {

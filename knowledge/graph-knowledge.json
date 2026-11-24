@@ -226,6 +226,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-9f6d19458465",
+   "name": "팀 토론 — 프로젝트 수주 파이프라인 강화를 위한 맞춤형 RFP 전략 개",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-9c2d8e2480b4",
    "name": "간극을 메우다: 온타리오 전력망에 공급할 신규 배터리 저장 시설 3곳",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-15",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-c0f4808ac5da",
-   "name": "LG엔솔 빠진 역대 최대 ESS 입찰…삼성SDI 대 SK온 맞대결",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-15",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7355,6 +7355,46 @@
   {
    "source": "STD-001",
    "target": "K-a004765883b0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9f6d19458465",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-9f6d19458465",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-9f6d19458465",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-9f6d19458465",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-9f6d19458465",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-9f6d19458465",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-9f6d19458465",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-9f6d19458465",
    "type": "knowledge"
   },
   {
@@ -14416,11 +14456,6 @@
    "source": "BAT-001",
    "target": "K-ddd18ccd7789",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-c0f4808ac5da",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15064,7 +15099,7 @@
    {
     "date": "2026-11-25",
     "knowledge": 800,
-    "events_total": 5385
+    "events_total": 5386
    }
   ]
  }
