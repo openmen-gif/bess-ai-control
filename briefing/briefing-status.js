@@ -37,8 +37,26 @@ export function getKstDateString(now = new Date()) {
 }
 
 /**
+ * 연/월/일의 달력 유효성(월별 일수 및 윤년 계산)을 엄격하게 검증합니다.
+ * JS Date.parse의 비정상 일자 자동 rollover(예: 11월 31일 -> 12월 1일) 방지를 위해 사용합니다.
+ * 
+ * @param {number} year
+ * @param {number} month 1~12
+ * @param {number} day 1~31
+ * @returns {boolean} 유효한 달력 날짜이면 true
+ */
+export function isValidCalendarDate(year, month, day) {
+  if (!Number.isInteger(year) || !Number.isInteger(month) || !Number.isInteger(day)) return false;
+  if (year < 1 || month < 1 || month > 12 || day < 1) return false;
+  const isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+  const daysInMonths = [31, isLeap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  return day <= daysInMonths[month - 1];
+}
+
+/**
  * ISO 8601 시각 문자열에서 KST 기준 시/분(HH:MM) 문자열을 엄격하고 안전하게 추출합니다.
- * 유효하지 않은 ISO 형식이거나 파싱 불가능한 시각, 비정상적인 시/분(예: 99:99)은 null을 반환합니다.
+ * 달력상 존재하지 않는 날짜(예: 11월 31일, 평년 2월 29일), 유효하지 않은 ISO 형식,
+ * 파싱 불가능한 시각, 비정상적인 시/분(예: 99:99)은 null을 반환합니다.
  * 
  * @param {string} isoString
  * @returns {string|null} HH:MM 형식의 문자열 또는 유효하지 않을 경우 null
@@ -47,11 +65,24 @@ export function formatKstTime(isoString) {
   if (!isoString || typeof isoString !== 'string') return null;
 
   // 엄격한 ISO 8601 패턴 검증: YYYY-MM-DDTHH:MM[:SS][.mmm](Z|±HH:MM)
-  const ISO_REGEX = /^\d{4}-\d{2}-\d{2}T(\d{2}):(\d{2})(?::\d{2})?(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})$/;
+  const ISO_REGEX = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})(?::(\d{2}))?(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})$/;
   const match = isoString.match(ISO_REGEX);
   if (!match) return null;
 
-  // Date.parse로 타임스탬프 유효성 검증 (NaN 방지)
+  const year = parseInt(match[1], 10);
+  const month = parseInt(match[2], 10);
+  const day = parseInt(match[3], 10);
+  const hour = parseInt(match[4], 10);
+  const minute = parseInt(match[5], 10);
+  const second = match[6] ? parseInt(match[6], 10) : 0;
+
+  // 1. 달력 유효성 검증 (월별 일수 및 윤년 계산, 예: 2026-11-31 또는 2026-02-29 방어)
+  if (!isValidCalendarDate(year, month, day)) return null;
+
+  // 2. 시(0~23), 분(0~59), 초(0~59) 범위 검증
+  if (hour < 0 || hour > 23 || minute < 0 || minute > 59 || second < 0 || second > 59) return null;
+
+  // 3. Date.parse로 타임스탬프 유효성 검증 (NaN 방지)
   const timeMs = Date.parse(isoString);
   if (Number.isNaN(timeMs)) return null;
 
@@ -100,6 +131,11 @@ export function computeBriefingRetryStatus(statusData, options = {}) {
   const { date, pending, state, next_retry_at, total, summarized } = statusData;
 
   // 2. KST 오늘 날짜 확인: 어제 상태나 과거 데이터는 지연 안내를 노출하지 않음
+  // status.date 달력 유효성 엄격 검증 (예: 2026-11-31 비정상 날짜 방어)
+  const dateParts = typeof date === 'string' && date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!dateParts || !isValidCalendarDate(parseInt(dateParts[1], 10), parseInt(dateParts[2], 10), parseInt(dateParts[3], 10))) {
+    return { visible: false, reason: 'invalid_date', date };
+  }
   if (date !== today) {
     return { visible: false, reason: 'date_mismatch', dataDate: date, today };
   }

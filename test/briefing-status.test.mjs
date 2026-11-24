@@ -9,6 +9,7 @@ import test from 'node:test';
 import {
   getKstDateString,
   formatKstTime,
+  isValidCalendarDate,
   computeBriefingRetryStatus,
   renderBriefingRetryStatus,
   initBriefingStatus
@@ -28,11 +29,36 @@ test('getKstDateString converts UTC dates to KST YYYY-MM-DD properly', () => {
   assert.equal(getKstDateString(utcDayEnd), '2026-11-24');
 });
 
-test('formatKstTime extracts HH:MM from ISO 8601 strings safely with strict validation', () => {
+test('isValidCalendarDate strictly validates calendar limits and leap years', () => {
+  // 월별 일수 검증
+  assert.equal(isValidCalendarDate(2026, 11, 30), true);
+  assert.equal(isValidCalendarDate(2026, 11, 31), false); // 11월은 30일까지
+  assert.equal(isValidCalendarDate(2026, 4, 31), false);  // 4월은 30일까지
+  assert.equal(isValidCalendarDate(2026, 12, 31), true);  // 12월은 31일까지
+
+  // 윤년 검증 (2024 윤년 vs 2026 평년)
+  assert.equal(isValidCalendarDate(2026, 2, 28), true);
+  assert.equal(isValidCalendarDate(2026, 2, 29), false); // 2026년은 평년이므로 29일 없음
+  assert.equal(isValidCalendarDate(2024, 2, 29), true);  // 2024년은 윤년이므로 29일 존재
+  assert.equal(isValidCalendarDate(2000, 2, 29), true);  // 400 배수 윤년
+  assert.equal(isValidCalendarDate(1900, 2, 29), false); // 100 배수 평년
+
+  // 범위 외 입력 방어
+  assert.equal(isValidCalendarDate(2026, 0, 1), false);
+  assert.equal(isValidCalendarDate(2026, 13, 1), false);
+  assert.equal(isValidCalendarDate(2026, 5, 0), false);
+});
+
+test('formatKstTime extracts HH:MM safely with strict ISO and calendar validation', () => {
   // 정상 ISO 8601 KST 시각
   assert.equal(formatKstTime('2026-11-24T08:25:00+09:00'), '08:25');
   assert.equal(formatKstTime('2026-11-24T13:00:00+09:00'), '13:00');
   assert.equal(formatKstTime('2026-11-24T00:05:00Z'), '09:05'); // UTC 00:05 -> KST 09:05
+  assert.equal(formatKstTime('2024-02-29T14:30:00+09:00'), '14:30'); // 윤년 2월 29일 정상
+
+  // [P2 결함 회귀] 11월 31일 등 달력상 불가능한 일자가 JS rollover(12월 1일)되지 않고 null 처리되어야 함
+  assert.equal(formatKstTime('2026-11-31T08:25:00+09:00'), null);
+  assert.equal(formatKstTime('2026-02-29T08:25:00+09:00'), null); // 평년 2월 29일
 
   // [결함 1 회귀] invalidT99:99+09:00 또는 비정상 시/분 값은 null이어야 함
   assert.equal(formatKstTime('invalidT99:99+09:00'), null);
@@ -68,6 +94,29 @@ test('computeBriefingRetryStatus: pending_retry with future next_retry_at promis
   assert.equal(result.message, 'AI 요약 49건 생성 지연 — 다음 자동 재시도 08:25');
 });
 
+test('computeBriefingRetryStatus: [P2 결함 회귀] 2026-11-31 rollover must not promise 08:25', () => {
+  const statusInvalidCalendar = {
+    date: '2026-11-24',
+    total: 71,
+    summarized: 22,
+    pending: 49,
+    reason: 'rate_limit',
+    next_retry_at: '2026-11-31T08:25:00+09:00', // 11월 31일은 존재하지 않음
+    attempt: 0,
+    max_attempts: 3,
+    state: 'pending_retry'
+  };
+
+  const now = new Date('2026-11-24T08:00:00+09:00');
+  const result = computeBriefingRetryStatus(statusInvalidCalendar, { now, today: '2026-11-24' });
+
+  // 12월 1일로 rollover되어 다음 08:25가 표시되면 안 됨. 시간 약속 금지 분기로 처리되어야 함.
+  assert.equal(result.visible, true);
+  assert.equal(result.hasNextRetry, false);
+  assert.doesNotMatch(result.message, /08:25/);
+  assert.equal(result.message, 'AI 요약 49건 생성 지연 (자동 재시도 준비 중)');
+});
+
 test('computeBriefingRetryStatus: [결함 1 회귀] invalidT99:99+09:00 or Date.parse NaN must not promise 99:99', () => {
   const statusInvalidTime = {
     date: '2026-11-24',
@@ -84,7 +133,6 @@ test('computeBriefingRetryStatus: [결함 1 회귀] invalidT99:99+09:00 or Date.
   const now = new Date('2026-11-24T08:00:00+09:00');
   const result = computeBriefingRetryStatus(statusInvalidTime, { now, today: '2026-11-24' });
 
-  // 99:99가 미래 분기로 들어가 표시되면 안 됨. 시간 약속 금지 분기로 가야 함.
   assert.equal(result.visible, true);
   assert.equal(result.hasNextRetry, false);
   assert.doesNotMatch(result.message, /99:99/);
@@ -129,13 +177,12 @@ test('computeBriefingRetryStatus: pending_retry without next_retry_at forbids ti
 
   assert.equal(result.visible, true);
   assert.equal(result.hasNextRetry, false);
-  // 특정 시각(HH:MM) 약속 금지
   assert.doesNotMatch(result.message, /\d{2}:\d{2}/);
   assert.equal(result.message, 'AI 요약 49건 생성 지연 (자동 재시도 준비 중)');
 });
 
 test('computeBriefingRetryStatus: [결함 2 회귀] pending must strictly be non-negative integer', () => {
-  // 1. 문자열 '49'가 0건으로 정규화되거나 통과되면 안 됨
+  // 1. 문자열 '49' 거부
   const statusStringPending = {
     date: '2026-11-24',
     total: 71,
@@ -147,7 +194,7 @@ test('computeBriefingRetryStatus: [결함 2 회귀] pending must strictly be non
   assert.equal(resStr.visible, false);
   assert.equal(resStr.reason, 'invalid_pending');
 
-  // 2. 소수 1.5가 소수 건수로 통과되면 안 됨
+  // 2. 소수 1.5 거부
   const statusFloatPending = {
     date: '2026-11-24',
     total: 71,
@@ -159,7 +206,7 @@ test('computeBriefingRetryStatus: [결함 2 회귀] pending must strictly be non
   assert.equal(resFloat.visible, false);
   assert.equal(resFloat.reason, 'invalid_pending');
 
-  // 3. 음수 -1이 ok로 정상화되면 안 됨
+  // 3. 음수 -1 거부 (ok 오인 방지)
   const statusNegativePending = {
     date: '2026-11-24',
     total: 71,
@@ -172,7 +219,7 @@ test('computeBriefingRetryStatus: [결함 2 회귀] pending must strictly be non
   assert.equal(resNeg.reason, 'invalid_pending');
   assert.notEqual(resNeg.state, 'ok');
 
-  // 4. state는 ok인데 pending이 남아있는 모순 응답 거부
+  // 4. state는 ok인데 pending 남아있는 모순 거부
   const statusOkWithPending = {
     date: '2026-11-24',
     total: 71,
@@ -186,7 +233,6 @@ test('computeBriefingRetryStatus: [결함 2 회귀] pending must strictly be non
 });
 
 test('computeBriefingRetryStatus: gave_up with attempt 0..2 judged purely by state', () => {
-  // attempt가 0회여도 공급자 부재 또는 13:00 초과로 gave_up이 될 수 있음
   const statusAttempt0 = {
     date: '2026-11-24',
     total: 71,
@@ -205,7 +251,6 @@ test('computeBriefingRetryStatus: gave_up with attempt 0..2 judged purely by sta
   assert.equal(result0.pending, 56);
   assert.equal(result0.message, 'AI 요약 56건 생성 지연 — 자동 재시도 종료');
 
-  // attempt 2인 경우
   const statusAttempt2 = { ...statusAttempt0, attempt: 2 };
   const result2 = computeBriefingRetryStatus(statusAttempt2, { today: '2026-11-24' });
   assert.equal(result2.visible, true);
@@ -246,7 +291,6 @@ test('computeBriefingRetryStatus: yesterday status is ignored to prevent stale w
   const result = computeBriefingRetryStatus(yesterdayStatus, { today: '2026-11-24' });
   assert.equal(result.visible, false);
   assert.equal(result.reason, 'date_mismatch');
-  // 어제 상태가 정상 요약으로 오인되지 않도록 state는 ok가 아님
   assert.notEqual(result.state, 'ok');
 });
 
@@ -255,6 +299,8 @@ test('computeBriefingRetryStatus: invalid or corrupt payloads are safely rejecte
   assert.equal(computeBriefingRetryStatus(undefined).visible, false);
   assert.equal(computeBriefingRetryStatus('string-payload').visible, false);
   assert.equal(computeBriefingRetryStatus({}).visible, false);
+  // date가 비정상 달력 날짜인 경우
+  assert.equal(computeBriefingRetryStatus({ date: '2026-11-31', pending: 10, state: 'pending_retry' }).visible, false);
 });
 
 test('renderBriefingRetryStatus: updates mock DOM accurately', () => {
@@ -350,13 +396,16 @@ test('renderBriefingRetryStatus: updates mock DOM accurately', () => {
   assert.equal(mockDoc.getElementById('briefing-retry-status'), null);
 });
 
-test('initBriefingStatus handles 404, network failure, and successful responses deterministically', async () => {
+test('initBriefingStatus handles 404, network failure, and verifies 60000ms callback banner non-revival', async () => {
   const originalWindow = globalThis.window;
   const originalDocument = globalThis.document;
   const originalFetch = globalThis.fetch;
+  const originalSetInterval = globalThis.setInterval;
+  const originalClearInterval = globalThis.clearInterval;
 
   let bannerText = '';
   let bannerRemoved = false;
+  let captured60kCallback = null;
 
   const mockElement = {
     id: 'briefing-retry-status',
@@ -378,12 +427,20 @@ test('initBriefingStatus handles 404, network failure, and successful responses 
     document: globalThis.document
   };
 
-  // [결함 4 수정] 테스트 실행 시각에 구애받지 않도록 고정된 Date 주입 (결정적 테스트)
+  // 실제 60000ms 등록 callback을 포착하기 위해 setInterval 모킹
+  globalThis.setInterval = (cb, ms) => {
+    if (ms === 60000) {
+      captured60kCallback = cb;
+    }
+    return 123;
+  };
+  globalThis.clearInterval = () => {};
+
   const fixedNow = new Date('2026-11-24T08:00:00+09:00');
   const kstToday = '2026-11-24';
 
   try {
-    // 1. 200 정상 응답 테스트 (미래 12:00 재시도 안내 확인)
+    // 1. 200 정상 응답 테스트
     globalThis.fetch = async () => ({
       ok: true,
       status: 200,
@@ -402,14 +459,15 @@ test('initBriefingStatus handles 404, network failure, and successful responses 
     bannerText = '';
     bannerRemoved = false;
     const monitor = initBriefingStatus({
-      checkIntervalMs: 0,
+      checkIntervalMs: 60000,
       pollIntervalMs: 0,
       now: fixedNow
     });
     await monitor.refresh();
     assert.match(bannerText, /AI 요약 41건 생성 지연 — 다음 자동 재시도 12:00/);
+    assert.ok(captured60kCallback, '60000ms 주기 콜백이 정상 등록되어야 함');
 
-    // 2. [결함 3 회귀] 유효 상태 다음 404 발생 시 currentData를 비워 tick 배너 재등장 방지
+    // 2. [P2 회귀] 유효 상태 다음 404 발생 시 배너 제거 및 포착된 60000ms 콜백 실행 시 배너 미부활 영구 검증
     globalThis.fetch = async () => ({
       ok: false,
       status: 404,
@@ -418,10 +476,13 @@ test('initBriefingStatus handles 404, network failure, and successful responses 
     bannerRemoved = false;
     await monitor.refresh();
     assert.equal(bannerRemoved, true);
-
-    // 60초 tick을 모사하여 refresh 실행 시(또는 타이머 틱 시) bannerText가 다시 채워지지 않는지 검증
-    // currentData가 비워졌으므로 배너가 부활하지 않아야 함
     assert.equal(bannerText, '');
+
+    // 실제로 포착한 60000ms 콜백(checkExpiredTick)을 직접 실행!
+    captured60kCallback();
+
+    // currentData가 초기화되었으므로 배너 텍스트가 다시 생성되거나 부활하지 않아야 함
+    assert.equal(bannerText, '', '404 이후 60000ms tick 콜백이 실행되어도 배너가 재등장하지 않아야 함');
 
     // 3. 네트워크 오류 테스트: 예외를 던지지 않고 조용히 복구
     globalThis.fetch = async () => {
@@ -436,5 +497,7 @@ test('initBriefingStatus handles 404, network failure, and successful responses 
     globalThis.window = originalWindow;
     globalThis.document = originalDocument;
     globalThis.fetch = originalFetch;
+    globalThis.setInterval = originalSetInterval;
+    globalThis.clearInterval = originalClearInterval;
   }
 });
