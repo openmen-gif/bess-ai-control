@@ -2,6 +2,50 @@
  "updated": "2026-11-25",
  "events": [
   {
+   "id": "f6a611e667cd",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-grid-interconnection"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f4fd75f7f081",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-standards-eu"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f25a4069652c",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-network-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "f23923ccb21c",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-tax-accountant"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "e710f31e4aad",
    "date": "2026-11-25",
    "type": "discussion",
@@ -15,6 +59,211 @@
     "bess-system-engineer"
    ],
    "title": "팀 토론 — 냉각 효율 개선 방안에 대한 양측 입장의 트레이드오프 분석 및 우선순위 설정 명령 발행 - bess-cfd-analyst, bess-system-engineer 협업",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
+   "id": "db08f91d1132",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-output-generator"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "daff300acb7f",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-it-infra"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c32f26c96bdd",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-cfd-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "c0a4b9b90184",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-circuit-breaker-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "b54a29a359f6",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-internal-auditor"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "afad8bf995e5",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-emc-analyst"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a657b56dc2ba",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-battery-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "a1c8bf44b8a2",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-tax-korea"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "94a902835486",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-marketer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "90cf0fc4b619",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-power-market-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "8c8cffc267a3",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-standards-japan"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "80ce63182ea7",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-pcs-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "741c022cf554",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-procurement-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "6a88ff3646ea",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-financial-analysis"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "67af57a1245c",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-facility-manager"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "623a49fb05dc",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-hr-manager"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5e2e1dfb5ef7",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-tax-incentive"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "5d9a59d595a9",
+   "date": "2026-11-25",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-permit-english",
+    "bess-power-system-analyst",
+    "bess-standards-poland",
+    "bess-system-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 변압기 손실 최소화를 위한 최신 IEC60076 표준 준수 사양 선정 및 최적화 검토",
    "link": "",
    "source": "bess-team"
   },
@@ -37,6 +286,17 @@
    "source": "bess-team"
   },
   {
+   "id": "46fad2d4fb70",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-training-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
    "id": "443c19b2d971",
    "date": "2026-11-25",
    "type": "discussion",
@@ -53,6 +313,127 @@
    "title": "팀 토론 — BESS 사이버보안 강화를 위한 보안 거버넌스 프레임워크 구축 및 위협 대응 시나리오 작성",
    "link": "",
    "source": "bess-team"
+  },
+  {
+   "id": "3a0fb7c1cb93",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-permit-asia"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "3478a87eec77",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-tax-japan"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "2f1c29a190a2",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-fit-procedure"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "2611a399fcfd",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-legal-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "22a894bdae6a",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-system-engineer"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "190df7d8f0b0",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-cybersecurity-expert"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "175a5e0eedcb",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-customs-tariff"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "1655388e8ecc",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-standards-korea"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "15afb79d9bf9",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-standards-australia"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "0d71c2567f52",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-standards-romania"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
+  },
+  {
+   "id": "09c321842ff8",
+   "date": "2026-11-25",
+   "type": "skill",
+   "agents": [
+    "bess-commissioning-coordinator"
+   ],
+   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 33개 갱신",
+   "link": "",
+   "source": "00_Skill_MD"
   },
   {
    "id": "ff83bbcc4619",
@@ -3199,408 +3580,6 @@
    ],
    "title": "BESS 업계 소식: RE+, EU 생산 프리미엄, 유럽 수익 변동성",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNT3FkQ21ObnhaVjkxVk90Y1ppQTFtOWdHWV9FS3JRYXNVVG1vemFHbUViWmY3WkNZcGhQZFlzenE4VHhsYWZfNjFyS3FDNzhIREhnOFBnMGQ0R2xzY3MxcmpESXFESGNYMWpfaFh6Mnd4SWtlcnZPTUVhWFZoLUV6TVBEYmZpYVpYLWFRNnlGbV9KYzlHOUdOaTVvSno0SkYzRnc?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "f56c3c805ec1",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "서머셋 조닝 항소위원회, 배터리 저장시설과 타코벨 신축 승인",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUlVNWHFyazNhRGNhWkpPZlhBc3ZGTm0tck5oZ1Nmb0p1Q2JNVGVTdnpzYWVMSFFveWxockRqYjNqUlRoYWZ5dHNZZUlLRThuTVpoRXZ0ci1sQ3RWQjRZcHdGalMzcWRXUVVIeGxDMG9rd0dSS0pJQmd1bnhfc2pBWWRyVVFoTVg4a2MtNkx3NnBEc0NnS2Z4OUlOajJSQlZrOHJVNTVvM3gwcGtyWjM4b2NzZ2R5UQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "f41538068a7f",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Sandcut 주민들, 제안된 배터리 저장 프로젝트에 안전 우려 제기",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZWJyVlVsU2pqSW5XbUhGU2NmT0pXTjhKdWtmODZMdThSa0dPOHFPcnowaHFMclltY29BazhqTFJwbmNtSDJVYjhITkREaVB1elY0ZXEtMUlZWG1BdWdRTHN4eUJ3WTV5Y1hMVVJHWFpzOWpDTDVTRE45XzZVejRiSFdpMm1QZkhtQUU3M3NvNVZNT09kVXZKSFlEeV8xTWp3a3lyeDNpbmNGTlEwMnBaYWRNNNIBxwFBVV95cUxPdzZVME5fZVYwRXhNZUthQkNyUEcyTG9sQWpPZjBIRlhQMWJneE83VkllYkcxM1J0YmhXYnhOZ1FtQXRIOGRsQ0lwMm83eFNSRUh4UkNlOFVuLTBuNUVRSkVHRldrOXdMTUExUU5SZEJ4ZHRLTUVFU04yS0ZlVVo2RTU1Q0hRS3UydEFiQ3ZaaEVzMDliODdzdm9UZDNTem84LXpNbG5TYzF4clZFTFljNDFlU1pLNmxpRF83STFGdTl0ZmUzT2I0?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "ee0a1b0daf42",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "인도 에너지저장장치(BESS) 시장, 정책 지원으로 성장하나 배터리 가격·사업 수행이 관건",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNE1BX2ltell3a25CQnhxdFBTQzVLZGJuUko5LVowUnZUS1AxLWhzTHlVWmI5bUVrc3F6S1FiVkVicGo3R3FGemI2TmhyX05RWTJzcjFiTG1sbEpJYUk5RHdVVDRYdTgzTW1CQm5vcWVpMkdrYmFZTVZKUWdKdW9ndnNuUVFsZlVyS3B0d3ozSXM2TDlNakI4bzVQeWlQWmRyUlc4WQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "e9c6bc224f0e",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-ebop-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "e8e5f7d45f1b",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "하이브리드 인버터와 배터리 저장장치: 차세대 주택 에너지관리 설계",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdmtFOHA2UUFrZ3dERFV5UzNaT3k2ZWZXR0ItcWNUY3hkNU52MkM3WE5lbVZRQVM2eWo2RzZhWHk1dWI0Ylh3TmMzQXBUUmEtUG8wUEN1dkZGX0hLV1psZGJ5RDg5c3hYUk5EMjQ1RXo5NGNmMG5pMEFsSEdiT2laMFV2TXM3TVh0cVQzZjBoRlRDNDJTUzN5M2lEZWdDWU9Jcnc2YVF3TXUyRlNSNlhGV3hTWk42THgzWmtOdElZZzBvZnViT0VlNWdSNDhkdElqT001T3VaY25ld3c?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "e6d281242c2c",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-standards-uk"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "e41ae5aab31a",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "SK온, 25년 장주기 제주 ESS 사업 도전",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1FN2o1VlVKeW1NOUZlYVBZM212d2JQVGlzelFGOU00eVR2R2Rxc3dIRllid3VTZDZZQm9vdTRfcnVtVm9ZdnRmc2VIVGpXeGgyVzVpYXdLbFRvRVZuVFpjNTBZQm1Ldw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "de0419b3e8d3",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-tax-incentive"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "d56ec8a34548",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-tool-developer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "ccc912ee50ee",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-standards-usa"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "cba330feed4a",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "ESS로 활로 찾은 K배터리..공장 가동률 회복세 접어들어 - 머니투데이",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SUFJHWlFUYllEaHRYdWFia2FvaTY3ZjFJYzhNeDV2RXNHMmVPNXJlU056RC1sTkVIZVJoQVdzMHVkRlk1R3E1aGM5MVNwd2NmbXdzSU1jbHI5azJUS0VqUC1hU2Q0b2dDWFJnOE1MRDFUa3hpeXdManlXM0xLUnPSAX9BVV95cUxOUlBSR1pRVGJZRGh0WHVhYmthb2k2N2YxSWM4TXg1dkVzRzJlTzVyZVNOekQtbE5FSGVSaEFXczB1ZEZZNUdxNWhjOTFTcHdjZm13c0lNY2xyOWsyVEtFalAtYVNkNG9nQ1hSZzhNTEQxVGt4aXl3TGp5VzNMS1Jz?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "c1f2bd74569a",
-   "date": "2026-11-21",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-business-dev",
-    "bess-financial-analysis",
-    "bess-hse-manager",
-    "bess-marketer",
-    "bess-pcs-expert",
-    "bess-standards-uk",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 조직문화 강화를 위한 역량개발 프로그램 도입 계획 수립",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "c03cdf4e997e",
-   "date": "2026-11-21",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-cost-analyst",
-    "bess-financial-analysis",
-    "bess-legal-expert",
-    "bess-procurement-expert",
-    "bess-standards-japan",
-    "bess-tax-epc-accounting",
-    "bess-tax-korea"
-   ],
-   "title": "팀 토론 — 법인세 및 소비세 최적화 전략 수립을 통한 일본 BESS 프로젝트 비용 효율성 개선 방안 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "be63d2e44697",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-legal-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "bdc7d7e45587",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-hr-manager"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "babb7c0a2a00",
-   "date": "2026-11-21",
-   "type": "discussion",
-   "agents": [
-    "bess-business-dev",
-    "bess-circuit-breaker-expert",
-    "bess-financial-analysis",
-    "bess-marketer",
-    "bess-pcs-expert",
-    "bess-sales-manager",
-    "bess-standards-korea",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — 지식 공유 플랫폼 통합 매뉴얼 업데이트 및 팀 학습 프로그램 개발 계획 수립",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "b7e412d2095e",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "델타 BESS U 시리즈·800VDC SST 전력 시스템, 공간 절감과 AI 부하 변동 대응 목표",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUUxQRDcxMnRIQWh5SlQ1dkpkaG9RRU1Ta1preTB3RDV6d1VVT3dYdkNSYVhxaV9TTktBOGNqbnNOdEpQNHhRUmRMRW96WTBiT2g5MUlYSUlBd0x0UTNWbVI0em4zZXd0S2tDYk8yejdtNjZEbWUzM0xBT3pVRjZBU0IwN29EclNqQ0xKUVJtRWpyV2RyRzZBRzQ3UVItWmt2c2pXMEwtdWZoOUx0WUlZNTFoYktOd2lSRlhXZ0NIUnlRR29Fb1Q4?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "b5ee418213b4",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "롱아일랜드 동부 제안 배터리 저장 사업, 리튬이온 미사용 방침",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUlJJY1ZNV0Q5blRCdzF0aExvUGlPd2FxNDdqVmFPOUhpUGZtSzNNYU5MMmVuZFhER2QxTklvN0llTEdqeDZMcnFSMWFmRTRoYlZ5cXJ5UVVkYTFuSGJUVThlQWdDbGxxMFczVEtPdEZFdXpidTRLMHBQdmpmMGdQa0RscWFXbm1abVpzUUhFWkhiVWE0aDRMMFp3ZTlnUDFwdTlvNHZWWUM0TkJvT0tTMFFmaV9yYzcyN29vOUNB?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "b58e4438cb7a",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "발전기가 다 꺼진 전력망을 누가 떠받치나? 그리드 포밍",
-   "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBSTFpCMkpGd05oQnJOZnU1M0RyN1dRVWVqeXNUczc5OHMxS3FNRVRvR2pxSndOSTFXUl9jOHBnZkg2TlQ2d0JN?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "ae1df417c044",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "ESS(Energy Storage System, 에너지저장장치)란? – 전기를 어떻게 저장하고, 왜 지금 주목받을까?",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UQXgyNGtoU1Q0U0ZuUTl5Vk82cVZrOHQ1QmlkRVpRb2tZSHpxWnpva244LS1udUJsYmN2NGpMYVo5YzZMcTNZd1BHcHFwaXZTb0JxM1BOUEY5YW1Hei1vN3ltS181UQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "a51f3cbb26d0",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-pcs-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "a2e6ba90fab7",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-qaqc-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "a0e85416a246",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-project-manager"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "a0de8cb07ad0",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-standards-poland"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "9c57d764144f",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Proper Voltage·Unigrid, 데이터센터용 나트륨이온 UPS 캐비닛 Salt Vault 출시",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQM3ZYaFJXbjlUSFFUUmg4OEQ5clAzUEZUS193T3F3UldmeVVWa0dRb1VSTWFUd0J0M0Y2VmlEeHBLN0cxZ3ZvREFQWUN6U3pCaTlpQVpRTXhOb3VFc1RqZHd0cmhsUDFhYndidFNEU05MTkNEWW9abTZwR0VOeVBfSlhYYW9MdzRpZ21vLWU2dFR1ZXhIMEZicE00ejA5UndaWFZaS2lLSmphQnRlSTViMnIwdGNiSU5vVUlfdnhIUXJqQ0hqOWp6UGVrR0hKM3RPTUE?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "9acf9d5706b6",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "히트펌프·태양광·5kWh 배터리 개보수, 계통 수전량 17% 절감",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxON1FrcUcyZmJ0RENGUXR4SW9ERUJENWlLamFVbkpseDRLamJkUk1Uako4NXJkNFBhSmN3Wkk4ZURqVTNMWjRmX3ZWYUVGLXdVUVdQSDRabng3WGlmX1FyZUZXTzU1Qk8zd0dvQVJWVVVYa2dYbURGaGhYUlpNZzREeF84WElNdXpiMDYtQWs2SGcwRzlaZkkzVms5bFozMzNDckJ0cGRmaXZqaUh0bnBCVlBJZUxlQ2c1TnNXNGU4WQ?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "96be7add139d",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-standards-korea"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "968de616afe7",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-standards-analyst"
-   ],
-   "title": "나트륨 배터리는 기회: Alsym Energy, 미국 배터리 정책의 상류 전환 주장",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNamtwODEwTUZkSks4WWFvUzdxXzUweGZQSkIyb2lzVkhORFpoNjJ2cHJJMWQ1ak9OVnNPVGMwdG5BZ1dqRnhtRXpKX0hTUFJMM2NPb09VZnh0c0FyaFhXNVRHUnVaSXJaUHBfWUcxMG1BN2hJM2JXWjc0VjMwVmo4WHNlbVViQnRreXRISkJkYjFZOENOYUJJeWIwZWxjZmZmZk5ZbV84S2NHdmNaV05TRmdTakxDeTR3ZmpXMFRWalFNZmg5VjY0V2dWTExmRmpZNENYcjh3bkM5b2FSNDlJVE1fY3E?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "8ca0bf8a0157",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-cable-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "89a145368165",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-hybrid-specialist"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "866cb1f977ce",
-   "date": "2026-11-21",
-   "type": "discussion",
-   "agents": [
-    "bess-battery-expert",
-    "bess-customs-tariff",
-    "bess-fire-engineer",
-    "bess-grounding-engineer",
-    "bess-legal-expert",
-    "bess-power-system-analyst",
-    "bess-system-engineer",
-    "bess-transfer-pricing"
-   ],
-   "title": "팀 토론 — 접지망 설계 최적화를 통해 피뢰 시스템의 신뢰성 향상 및 IEEE80 표준 준수 방안 검토",
-   "link": "",
-   "source": "bess-team"
-  },
-  {
-   "id": "826e7eb2aa7d",
-   "date": "2026-11-21",
-   "type": "skill",
-   "agents": [
-    "bess-labor-safety"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "7e768f36db5c",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "EDF, 호주에 1GWh 배터리 저장장치 매입…핵심 계통 인프라 인접",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTnhvdWdTN19qSHBvWlhKRWNzeHBSTlplaDEwN19MRGZxek1TQmpSeHZCS2NOSWlZMVlraHRSTGpwZTY3cWdXOHFMcnZsay1kOHphMHVZVVN4dUY3M3Q0cUFjSTdXRDBhZkJGOGFtVjJERUFGTnJvc0xpaDV3SDlvZ1UzN1lUM3hRbzRfOURxaW9mZFoxOUNHc0FzTkdHNm4zTkNINFd0YkhNcENObDAw?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "773633f6bc83",
-   "date": "2026-11-21",
-   "type": "briefing",
-   "agents": [
-    "bess-grid-interconnection"
-   ],
-   "title": "CMBlu, 캘리포니아에 10시간급 플로우 배터리 계획",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNjIxS0ViY0hXQzRudnFCemljVzBoakdjRDhYOEp6eG4tTnlHNm8yZGU2bkRvcGRwY1UzUjFNWFBQeDhwa1pJMjBGSEJQSzN2bTJ6N3dCdFZ2NzRYVU1mekstVXhaUWVibTg0UldET29lX3NNZG9BVTc2Q2xBQXVqdm1sNUVjYTY1OVhF?oc=5",
    "source": "구글뉴스"
   }
  ]
