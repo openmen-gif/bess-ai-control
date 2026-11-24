@@ -1417,6 +1417,24 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "0a2c3af1ff59",
+   "date": "2026-11-24",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-customs-tariff",
+    "bess-emc-analyst",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-system-analyst",
+    "bess-system-engineer",
+    "bess-training-expert"
+   ],
+   "title": "팀 토론 — BESS 팀을 위한 신규 O&M 교육 프로그램 개발 및 역량 평가 실시",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "0865fa72d3e3",
    "date": "2026-11-24",
    "type": "skill",
@@ -3571,24 +3589,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 12 개 반영, 스킬 38개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "6e2eea85690e",
-   "date": "2026-11-21",
-   "type": "discussion",
-   "agents": [
-    "bess-cfd-analyst",
-    "bess-epc-bom",
-    "bess-fire-engineer",
-    "bess-grid-interconnection",
-    "bess-hse-manager",
-    "bess-power-system-analyst",
-    "bess-standards-eu",
-    "bess-system-engineer"
-   ],
-   "title": "팀 토론 — CFD·유동해석 영역 리스크 평가 — bess-cfd-analyst 주관, 핵심 결론 도출",
-   "link": "",
-   "source": "bess-team"
   }
  ]
 }

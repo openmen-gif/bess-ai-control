@@ -1099,6 +1099,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-0a2c3af1ff59",
+   "name": "팀 토론 — BESS 팀을 위한 신규 O&M 교육 프로그램 개발 및 역량",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-24",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-0865fa72d3e3",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-14",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-809affbbddc8",
-   "name": "[칼럼] 재생에너지 확대의 완성은 ESS 보급이 아닌 `안전`이다",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-14",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -8175,6 +8175,46 @@
   {
    "source": "EBP-001",
    "target": "K-0d38df437924",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-0a2c3af1ff59",
+   "type": "knowledge"
+  },
+  {
+   "source": "CUS-001",
+   "target": "K-0a2c3af1ff59",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-0a2c3af1ff59",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-0a2c3af1ff59",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-0a2c3af1ff59",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-0a2c3af1ff59",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-0a2c3af1ff59",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRN-001",
+   "target": "K-0a2c3af1ff59",
    "type": "knowledge"
   },
   {
@@ -14486,11 +14526,6 @@
    "source": "PCS-001",
    "target": "K-8afa22e2b1ac",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-809affbbddc8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15129,7 +15164,7 @@
    {
     "date": "2026-11-24",
     "knowledge": 800,
-    "events_total": 5312
+    "events_total": 5313
    }
   ]
  }
