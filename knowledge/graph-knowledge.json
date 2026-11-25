@@ -253,6 +253,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-9b8f3fdf6fd9",
+   "name": "팀 토론 — 화웨이 Luterra ESS의 대규모 화재 시험 통과 동향을",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-94a902835486",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-fdffbeecaef2",
-   "name": "Hundreds object to huge batteries on Wil",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-15",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7440,6 +7440,46 @@
   {
    "source": "COM-003",
    "target": "K-9c2d8e2480b4",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-9b8f3fdf6fd9",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-9b8f3fdf6fd9",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-9b8f3fdf6fd9",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-9b8f3fdf6fd9",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-9b8f3fdf6fd9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TIN-001",
+   "target": "K-9b8f3fdf6fd9",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-9b8f3fdf6fd9",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-9b8f3fdf6fd9",
    "type": "knowledge"
   },
   {
@@ -14486,11 +14526,6 @@
    "source": "STD-003",
    "target": "K-008a63a73937",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-fdffbeecaef2",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15134,7 +15169,7 @@
    {
     "date": "2026-11-25",
     "knowledge": 800,
-    "events_total": 5387
+    "events_total": 5388
    }
   ]
  }
