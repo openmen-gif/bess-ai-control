@@ -496,6 +496,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-4e4438aa63a5",
+   "name": "팀 토론 — 통역 전문가를 활용한 다국어 기술 문서 및 계약서 검토 프로",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-46fad2d4fb70",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-09a8f12ad0ab",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-16",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7780,6 +7780,46 @@
   {
    "source": "MAR-001",
    "target": "K-526362d3cab8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-4e4438aa63a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-4e4438aa63a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-4e4438aa63a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-4e4438aa63a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-4e4438aa63a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-4e4438aa63a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-4e4438aa63a5",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-4e4438aa63a5",
    "type": "knowledge"
   },
   {
@@ -14656,11 +14696,6 @@
    "source": "BAT-001",
    "target": "K-1678362fcf40",
    "type": "knowledge"
-  },
-  {
-   "source": "LEG-001",
-   "target": "K-09a8f12ad0ab",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15304,7 +15339,7 @@
    {
     "date": "2026-11-25",
     "knowledge": 800,
-    "events_total": 5392
+    "events_total": 5393
    }
   ]
  }
