@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "events": [
+  {
+   "id": "ff986d9d1f8b",
+   "date": "2026-11-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-circuit-breaker-expert",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-fit-procedure",
+    "bess-hybrid-specialist",
+    "bess-system-engineer",
+    "bess-transformer-expert"
+   ],
+   "title": "팀 토론 — 변압기 효율 최적화 및 Arc Flash 보호 시스템 강화 검토",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "ff6a006c3f4d",
    "date": "2026-11-25",
@@ -3547,17 +3565,6 @@
    ],
    "title": "[리포트 브리핑]LG에너지솔루션, 'ESS 외형 성장' 목표가 570,000원 - 교보증권",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ybjZoYkxobzBVWThldVUwZWVRME05T09XMmRvbl9vcFRUZnJmSWdsOGxyVXFCN1ctVWQxQzl4OURaRk5EaThrVEFZSjlHSWJnV1VMbWk3UGRpSUU4?oc=5",
-   "source": "구글뉴스"
-  },
-  {
-   "id": "ab273506cdfd",
-   "date": "2026-11-22",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "ACME Solar Commissions 51.87 MW BESS Capacity In Rajasthan",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMlBGRnR0X3VjcE5wRjM4X0NreW1HcHYyb3czNWtUNEJwcmRoRGg3b2N5NGQ3MHQ2S0FUSTROR3VJczBHVDVhbHhiRlNUUG5sdlVDVDVkMzhMSHZyN2p0STN6QkprNkYzeWd1QjdMekJzcnRjN2lpVlplVWl5T3hmeUN1bUxsQ3NTVGdHZUxibG5pXzM0UGRFNzR2Yw?oc=5",
    "source": "구글뉴스"
   }
  ]

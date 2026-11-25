@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-ff986d9d1f8b",
+   "name": "팀 토론 — 변압기 효율 최적화 및 Arc Flash 보호 시스템 강화 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff6a006c3f4d",
    "name": "엘앤에프 | LFP 양산 확대와 1,515억원 전환사채 발행, 2027년",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-1678362fcf40",
-   "name": "Vikram Solar, 2030년 3월까지 BESS 15GWh 목표 제",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-ff986d9d1f8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBK-001",
+   "target": "K-ff986d9d1f8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-ff986d9d1f8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-ff986d9d1f8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-002",
+   "target": "K-ff986d9d1f8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYB-001",
+   "target": "K-ff986d9d1f8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-ff986d9d1f8b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-ff986d9d1f8b",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ff6a006c3f4d",
@@ -14691,15 +14731,10 @@
    "source": "AUD-001",
    "target": "K-19fb74634f29",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-1678362fcf40",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "history": [
    {
     "date": "2026-07-20",
@@ -15340,6 +15375,11 @@
     "date": "2026-11-25",
     "knowledge": 800,
     "events_total": 5393
+   },
+   {
+    "date": "2026-11-26",
+    "knowledge": 800,
+    "events_total": 5394
    }
   ]
  }
