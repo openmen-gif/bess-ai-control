@@ -676,6 +676,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-03521614040a",
+   "name": "팀 토론 — 화웨이 Luterra ESS의 화재 시험 성공 동향을 바탕으",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff83bbcc4619",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-042c59841a4f",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7845,6 +7845,46 @@
   {
    "source": "BAT-001",
    "target": "K-0570edc2a79c",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-03521614040a",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-03521614040a",
+   "type": "knowledge"
+  },
+  {
+   "source": "CYB-001",
+   "target": "K-03521614040a",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-03521614040a",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-03521614040a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-03521614040a",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-03521614040a",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-03521614040a",
    "type": "knowledge"
   },
   {
@@ -14551,11 +14591,6 @@
    "source": "PMG-001",
    "target": "K-07991b175230",
    "type": "knowledge"
-  },
-  {
-   "source": "TRN-001",
-   "target": "K-042c59841a4f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15199,7 +15234,7 @@
    {
     "date": "2026-11-25",
     "knowledge": 800,
-    "events_total": 5389
+    "events_total": 5390
    }
   ]
  }
