@@ -26,7 +26,9 @@ DOM 계약: `.fresh .item[data-candidate-id]`, 선택 속성 `data-summary-statu
 
 확정 API v1: summary는 `{title_ko,background,key:string[],detail,implication,has_body:boolean}`이며 GET 상태 조회도 최대 10개씩 분할한다.
 중복 링크는 유효한 달력 날짜를 포함하는 `/briefing/YYYY-MM-DD#kr|global|notice:부문:기사` 내부 경로만 허용하며 `cache:`·`fresh:` 식별자는 문구로만 표시한다.
-검증: 신규 23개 및 전체 57개 Node 테스트 성공, 문법 검사 성공; 로컬 실제 화면에서 대기→완료·정적 보존·390px 화면 확인.
+검증: 신규 31개 및 전체 65개 Node 테스트 성공, 문법 검사 성공; 로컬 실제 화면에서 대기→완료·정적 보존·390px 화면 확인.
 기존 실패: `node scripts/site-tools.mjs validate`는 수정하지 않은 루트 `index.html`의 theme-color·noscript 누락 2건을 보고한다.
 
 미배포 호환: 404·405·501, HTML fallback, 미지원 status는 페이지 재열기 전까지 조용히 비활성화한다. 이후 POST·polling·오인 대기 표시를 제거하고 원문 목록과 이미 완료한 요약은 보존한다. 로컬 화면에서 404 뒤 10회 재클릭에도 최초 요청 1회·추가 요청 0회·요약 블록 0개를 확인했다.
+
+독립 검토 보완: GET 연속 실패는 30→60→120→240→300초 백오프(최대 5분), 정상 복구 시 오류 안내 초기화; 긴 Retry-After deadline은 보존하며 최대 1시간 타이머 chunk로 대기; 과거 HTTP-date·0초는 최소 30초 재요청 억제; 미수락 POST429는 재요청 안내만 표시; ISO 소수초 1~9자리와 엄격한 달력 검증; GET의 생략 선택 필드 next_retry_at·duplicate_of·summary 초기화. failed/over_budget 초기 GET 1회는 최신 예산·결과 확인에 필요하므로 유지하며 종결 후 polling 0회. limit30은 승인 정책으로 유지.

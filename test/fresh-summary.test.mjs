@@ -28,9 +28,9 @@ const item = (id, status = 'done', extra = {}) => ({ candidate_id: id, status, a
 const summary = { title_ko: '요약 제목', background: '<img src=x onerror=alert(1)>', key: ['핵심 1'], detail: '상세', implication: '시사점', has_body: true };
 const response = (body, status = 200, headers = {}) => ({ ok: status >= 200 && status < 300, status, json: async () => body, headers: { get: key => headers[key] ?? null } });
 const flush = async () => { for (let i = 0; i < 15; i++) await Promise.resolve(); };
-function setup(ids, api) {
+function setup(ids, api, options = {}) {
   const doc = new Document(ids), calls = [], timers = new Map(), timerDelays = []; let nextTimer = 0;
-  const controller = initFreshSummary({ document: doc, now, fetch: async (url, options) => { calls.push({url, options}); return api(url, options, calls.length); }, setTimeout: (cb, ms) => { const id = ++nextTimer; timers.set(id, cb); timerDelays.push(ms); return id; }, clearTimeout: id => timers.delete(id) });
+  const controller = initFreshSummary({ document: doc, now: options.now || now, fetch: async (url, options) => { calls.push({url, options}); return api(url, options, calls.length); }, setTimeout: (cb, ms) => { const id = ++nextTimer; timers.set(id, cb); timerDelays.push(ms); return id; }, clearTimeout: id => timers.delete(id) });
   return {doc, calls, timers, timerDelays, controller};
 }
 
@@ -192,4 +192,69 @@ test('미지원 작업 status는 오인 queued나 반복 조회를 남기지 않
   const s=setup([],()=>response({items:[item('a','future_schema_status')],budget}));
   s.doc.cards=[s.doc.card('a','queued')];s.doc.dispatch('briefing:fresh-rendered');await flush();
   assert.equal(s.doc.cards[0].textContent,'원문 보존');assert.equal(s.timers.size,0);s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);s.controller.destroy();
+});
+
+async function fireTimer(s) {
+  const [id, callback] = s.timers.entries().next().value;
+  s.timers.delete(id); callback(); await flush();
+}
+
+test('GET 연속오류는30초부터5분까지 지수 백오프하고 복구 후 오류 안내를 제거한다', async () => {
+  let clock=now();let reads=0;
+  const s=setup([],()=>++reads<=6?response({},500):response({items:[item('a','done',{summary})],budget}),{now:()=>clock});
+  s.doc.cards=[s.doc.card('a','running')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+  const delays=[];
+  for(let i=0;i<6;i++){delays.push(s.timerDelays.at(-1));clock=new Date(clock.getTime()+s.timerDelays.at(-1));await fireTimer(s);}
+  assert.deepEqual(delays,[30000,60000,120000,240000,300000,300000]);
+  assert.match(s.doc.cards[0].textContent,/AI 요약 보기/);assert.doesNotMatch(s.doc.host.textContent,/실패|확인하지 못/);assert.equal(s.timers.size,0);s.controller.destroy();
+});
+
+test('GET 백오프 deadline은 탭 복귀와 재클릭으로 우회하지 못한다', async () => {
+  let clock=now();const s=setup([],()=>response({},500),{now:()=>clock});
+  s.doc.cards=[s.doc.card('a','running')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+  s.doc.hidden=true;s.doc.dispatch('visibilitychange');s.doc.hidden=false;s.doc.dispatch('visibilitychange');s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);s.controller.destroy();
+});
+
+test('Retry-After3000000초는1시간 이하 chunk로 기다리며 원래 deadline 전에 GET하지 않는다', async () => {
+  let clock=now();const s=setup([],()=>response({},429,{'Retry-After':'3000000'}),{now:()=>clock});
+  s.doc.cards=[s.doc.card('a','running')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+  assert.equal(s.timerDelays.at(-1),3600000);
+  for(let i=0;i<3;i++){clock=new Date(clock.getTime()+3600000);await fireTimer(s);assert.equal(s.calls.length,1);assert.equal(s.timerDelays.at(-1),3600000);}
+  s.controller.destroy();
+});
+
+test('POST429의 과거 HTTP-date·0초는 최소30초 동안 재요청을 막는다', async () => {
+  for(const header of ['Mon, 25 Nov 2024 00:00:00 GMT','0']) {
+    let clock=now();const s=setup(['a'],()=>response({},429,{'Retry-After':header}),{now:()=>clock});await flush();
+    s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);
+    clock=new Date(clock.getTime()+29999);s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);
+    clock=new Date(clock.getTime()+1);s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,2);s.controller.destroy();
+  }
+});
+
+test('POST429 미수락은 대기시간이 지나도 허위 상태 확인 중을 표시하지 않는다', async () => {
+  let clock=now();const s=setup(['a'],()=>response({},429,{'Retry-After':'120'}),{now:()=>clock});await flush();clock=new Date(clock.getTime()+120001);
+  s.doc.hidden=true;s.doc.dispatch('visibilitychange');s.doc.hidden=false;s.doc.dispatch('visibilitychange');await flush();
+  assert.doesNotMatch(s.doc.cards[0].textContent,/상태 확인 중/);assert.match(s.doc.cards[0].textContent,/다시 요청/);assert.equal(s.calls.length,1);assert.equal(s.timers.size,0);s.controller.destroy();
+});
+
+test('Python ISO 소수초6자리와9자리를 수용하면서 달력 검증을 유지한다', async () => {
+  assert.equal(validTimestamp('2026-11-25T01:00:00.123456Z'),true);
+  assert.equal(validTimestamp('2026-11-25T10:00:00.123456789+09:00'),true);
+  assert.equal(validTimestamp('2026-11-31T10:00:00.123456+09:00'),false);
+  const s=setup([],()=>response({items:[item('a','done',{summary,updated_at:'2026-11-25T10:00:00.123456+09:00'})],budget}));s.doc.cards=[s.doc.card('a','done')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.match(s.doc.cards[0].textContent,/AI 요약 보기/);s.controller.destroy();
+});
+
+test('새 GET에서 생략한 선택 필드는 이전 재시도 시각과 중복 링크를 제거한다', async () => {
+  let clock=now(),reads=0;const s=setup([],()=>response({items:++reads===1?[item('a','waiting_limit',{next_retry_at:'2026-11-25T12:00:00+09:00'}),item('b','running',{duplicate_of:'/briefing/2026-11-25#kr:0:0',summary})]:[item('a','waiting_limit'),item('b','duplicate')],budget}),{now:()=>clock});
+  s.doc.cards=[s.doc.card('a','running'),s.doc.card('b','running')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.match(s.doc.cards[0].textContent,/12:00/);clock=new Date(clock.getTime()+30000);await fireTimer(s);
+  assert.doesNotMatch(s.doc.cards[0].textContent,/12:00/);assert.match(s.doc.cards[0].textContent,/시각 확인 중/);assert.equal(s.doc.cards[1].querySelector('.fresh-summary').children.some(e=>e.tagName==='a'),false);s.controller.destroy();
+});
+
+test('종결 마크업도 예산·최신 결과를 한 번 조회하되 이후 polling과 생성 요청은 하지 않는다', async () => {
+  for (const status of ['failed','over_budget']) {
+    const s=setup([],()=>response({items:[item('a',status)],budget:{...budget,used:status==='over_budget'?30:1}}));
+    s.doc.cards=[s.doc.card('a',status)];s.doc.dispatch('briefing:fresh-rendered');await flush();
+    assert.equal(s.calls.length,1);assert.equal(s.calls[0].options?.method,undefined);assert.equal(s.timers.size,0);assert.match(s.doc.host.textContent,/오늘 요약/);s.controller.destroy();
+  }
 });

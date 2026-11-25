@@ -9,7 +9,7 @@
 <p class="meta">30초 뒤 자동 상태 조회 · 시나리오 전환은 페이지를 다시 연 뒤 검증해 주세요</p><pre id="requests">모의 API 호출: 0회</pre>
 <script>
 const jobs=new Map(), log=[];
-const stamp=()=>new Date().toISOString();
+const stamp=()=>new Date().toISOString().replace(/(\.\d{3})Z$/,(_,fraction)=>fraction+'000Z');
 const day=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10);
 const budget=()=>({date:day(),used:document.querySelector('#scenario').value==='over_budget'?30:jobs.size,limit:30});
 window.fetch=async function(url,options={}){
