@@ -19,6 +19,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a55a86b0755f",
+   "name": "팀 토론 — 클라우드 기반 BESS 모니터링 시스템 성능 최적화 및 보안",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff6a006c3f4d",
    "name": "엘앤에프 | LFP 양산 확대와 1,515억원 전환사채 발행, 2027년",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-25ea8c4e96c8",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7280,6 +7280,46 @@
   {
    "source": "TRF-001",
    "target": "K-b99af3d423fc",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-a55a86b0755f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-a55a86b0755f",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-a55a86b0755f",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-a55a86b0755f",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-a55a86b0755f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-a55a86b0755f",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a55a86b0755f",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRF-001",
+   "target": "K-a55a86b0755f",
    "type": "knowledge"
   },
   {
@@ -14761,11 +14801,6 @@
    "source": "STD-002",
    "target": "K-30861841c21f",
    "type": "knowledge"
-  },
-  {
-   "source": "PRS-001",
-   "target": "K-25ea8c4e96c8",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15414,7 +15449,7 @@
    {
     "date": "2026-11-26",
     "knowledge": 800,
-    "events_total": 5395
+    "events_total": 5396
    }
   ]
  }
