@@ -1,8 +1,8 @@
 {
  "updated": "2026-11-26",
  "totals": {
-  "all": 5397,
-  "briefing": 2775,
+  "all": 5426,
+  "briefing": 2804,
   "skill": 1555,
   "discussion": 1067,
   "activity": 0
@@ -29,14 +29,14 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1391,
+   "count": 1396,
    "byType": {
     "skill": 38,
     "discussion": 607,
-    "briefing": 746
+    "briefing": 751
    },
    "lastGrown": "2026-11-26",
-   "xp": 2074,
+   "xp": 2079,
    "level": 27
   },
   "bess-business-dev": {
@@ -233,14 +233,14 @@
    "level": 15
   },
   "bess-fire-engineer": {
-   "count": 534,
+   "count": 535,
    "byType": {
     "skill": 29,
     "discussion": 326,
-    "briefing": 179
+    "briefing": 180
    },
    "lastGrown": "2026-11-26",
-   "xp": 918,
+   "xp": 919,
    "level": 18
   },
   "bess-fit-procedure": {
@@ -254,14 +254,14 @@
    "level": 7
   },
   "bess-grid-interconnection": {
-   "count": 383,
+   "count": 390,
    "byType": {
     "skill": 30,
     "discussion": 151,
-    "briefing": 202
+    "briefing": 209
    },
-   "lastGrown": "2026-11-25",
-   "xp": 594,
+   "lastGrown": "2026-11-26",
+   "xp": 601,
    "level": 15
   },
   "bess-grounding-engineer": {
@@ -396,14 +396,14 @@
    "level": 7
   },
   "bess-marketer": {
-   "count": 814,
+   "count": 819,
    "byType": {
     "skill": 27,
     "discussion": 147,
-    "briefing": 640
+    "briefing": 645
    },
    "lastGrown": "2026-11-26",
-   "xp": 1015,
+   "xp": 1020,
    "level": 19
   },
   "bess-mlops-engineer": {
@@ -447,14 +447,14 @@
    "level": 7
   },
   "bess-pcs-expert": {
-   "count": 546,
+   "count": 553,
    "byType": {
     "skill": 27,
     "discussion": 237,
-    "briefing": 282
+    "briefing": 289
    },
-   "lastGrown": "2026-11-25",
-   "xp": 837,
+   "lastGrown": "2026-11-26",
+   "xp": 844,
    "level": 17
   },
   "bess-permit-asia": {
@@ -489,14 +489,14 @@
    "level": 6
   },
   "bess-power-market-expert": {
-   "count": 212,
+   "count": 213,
    "byType": {
     "skill": 22,
     "discussion": 151,
-    "briefing": 39
+    "briefing": 40
    },
-   "lastGrown": "2026-11-25",
-   "xp": 407,
+   "lastGrown": "2026-11-26",
+   "xp": 408,
    "level": 12
   },
   "bess-power-system-analyst": {
@@ -620,14 +620,14 @@
    "level": 8
   },
   "bess-standards-analyst": {
-   "count": 651,
+   "count": 653,
    "byType": {
     "skill": 21,
     "discussion": 168,
-    "briefing": 462
+    "briefing": 464
    },
-   "lastGrown": "2026-11-25",
-   "xp": 861,
+   "lastGrown": "2026-11-26",
+   "xp": 863,
    "level": 17
   },
   "bess-standards-australia": {
@@ -822,14 +822,14 @@
    "level": 6
   },
   "bess-transformer-expert": {
-   "count": 110,
+   "count": 111,
    "byType": {
     "skill": 20,
     "discussion": 78,
-    "briefing": 12
+    "briefing": 13
    },
    "lastGrown": "2026-11-26",
-   "xp": 228,
+   "xp": 229,
    "level": 9
   },
   "bess-translator": {
@@ -1202,13 +1202,13 @@
   },
   {
    "date": "2026-11-26",
-   "added": 4
+   "added": 33
   }
  ],
  "freshness": {
   "briefing": {
-   "latestSource": "2026-11-25",
-   "staleDays": 1,
+   "latestSource": "2026-11-26",
+   "staleDays": 0,
    "stale": false
   },
   "pipelineLastRun": {
