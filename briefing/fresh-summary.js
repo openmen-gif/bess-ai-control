@@ -3,6 +3,7 @@
 const STATUSES = new Set(['queued', 'running', 'done', 'waiting_limit', 'failed', 'over_budget', 'duplicate']);
 const ACTIVE = new Set(['queued', 'running', 'waiting_limit']);
 const INSTANCES = new WeakMap();
+const UNAVAILABLE_DOCUMENTS = new WeakSet();
 const POLL_MS = 30000;
 const MAX_BACKOFF_MS = 300000;
 const MAX_TIMER_CHUNK_MS = 3600000;
@@ -61,7 +62,7 @@ export function initFreshSummary(options = {}) {
   const states = new Map();
   const views = new WeakMap();
   let cards = [], timer = null, busy = false, stopped = false, budget = null, noticeHint = '', retryUntil = 0, pendingScan = false;
-  let unavailable = false;
+  let unavailable = UNAVAILABLE_DOCUMENTS.has(doc);
   let readFailures = 0, readNotBefore = 0, readNotice = '';
 
   function clearTimer() { if (timer !== null) cancel(timer); timer = null; }
@@ -81,6 +82,7 @@ export function initFreshSummary(options = {}) {
   }
   function disableSummary() {
     // 배포 순서상 API가 없으면 페이지를 다시 열 때까지 조용히 기능을 비활성화한다.
+    UNAVAILABLE_DOCUMENTS.add(doc);
     unavailable = true; pendingScan = false; clearTimer(); budget = null; noticeHint = ''; readNotice = '';
     cards.forEach(card => {
       const state = states.get(card.dataset.candidateId);
@@ -105,7 +107,7 @@ export function initFreshSummary(options = {}) {
       if (!host) return;
       el = doc.createElement('span'); el.id = 'fresh-summary-notice'; el.className = 'st'; el.setAttribute('role', 'status'); host.appendChild(el);
     }
-    el.textContent = [noticeHint, readNotice, budget ? `오늘 요약 ${budget.used}/${budget.limit}건` : ''].filter(Boolean).join(' · ');
+    el.textContent = [noticeHint, readNotice, budget ? `오늘 전체 요약 ${budget.used}/${budget.limit}건` : ''].filter(Boolean).join(' · ');
   }
   function text(parent, tag, value, className) {
     const el = doc.createElement(tag); el.textContent = value; if (className) el.className = className; parent.appendChild(el); return el;
@@ -133,7 +135,7 @@ export function initFreshSummary(options = {}) {
         text(body, 'b', '4. 시사점 · AI 분석'); text(body, 'p', s.implication);
         text(body, 'p', s.has_body ? 'AI 요약 · 본문 기반 · 원문과 다를 수 있어요' : 'AI 요약 · 제목 기반(본문 확보 실패) · 원문 확인이 필요해요', 'meta');
       } else {
-        let message = {queued: '요약 대기 중', running: '요약 생성 중', done: '요약 결과 확인 중', failed: '요약 생성 실패 — 원문을 확인해 주세요', over_budget: '오늘 요약 한도 도달 — 다음 날 다시 확인해 주세요', duplicate: '중복 기사 — 기존 요약을 확인해 주세요'}[state.status] || (state.error ? '원문은 계속 볼 수 있어요' : '이번 확인은 최대 10건 — 다음 새 소식 확인 때 요청해 주세요');
+        let message = {queued: '요약 대기 중', running: '요약 생성 중', done: '요약 결과 확인 중', failed: '요약 생성 실패 — 원문을 확인해 주세요', over_budget: '오늘 전체 요약 한도 도달 — 다음 날 다시 확인해 주세요', duplicate: '중복 기사 — 기존 요약을 확인해 주세요'}[state.status] || (state.error ? '원문은 계속 볼 수 있어요' : state.needsRead ? '요약 상태 확인 중' : '이번 확인은 최대 10건 — 다음 새 소식 확인 때 요청해 주세요');
         if (state.status === 'waiting_limit') {
           const time = formatRetryTime(state.next_retry_at, now());
           message = time ? `요약 한도 대기 — ${time} ${state.accepted ? '재시도 예정' : '이후 새 소식 확인으로 다시 요청'}` : (state.accepted ? '요약 한도 대기 — 재시도 시각 확인 중' : '요약 요청 한도 대기 — 잠시 후 새 소식 확인으로 다시 요청해 주세요');
@@ -148,20 +150,22 @@ export function initFreshSummary(options = {}) {
     notice();
   }
   function scanDom() {
-    cards = [...doc.querySelectorAll('.fresh .item[data-candidate-id]')].filter(card => validId(card.dataset.candidateId));
+    cards = [...doc.querySelectorAll('.fresh .item[data-candidate-id]')].filter(card => validId(card.dataset.candidateId) &&
+      (card.dataset.summaryRequested === undefined || ['true','false'].includes(card.dataset.summaryRequested)));
     for (const card of cards) {
       const id = card.dataset.candidateId;
       if (!states.has(id)) {
         const status = STATUSES.has(card.dataset.summaryStatus) ? card.dataset.summaryStatus : null;
-        states.set(id, { status, accepted: !!status, requested: !!status, needsRead: !!status, budgetDate: kstDate(now()) });
+        const requested = card.dataset.summaryRequested === undefined ? !!status : card.dataset.summaryRequested === 'true';
+        states.set(id, { status:requested ? status : null, accepted:requested, requested, needsRead:requested, budgetDate:kstDate(now()) });
       }
     }
   }
   async function fetchItems(ids) {
-    for (let i = 0; i < ids.length && !stopped; i += 10) {
+    for (let i = 0; i < ids.length && !stopped && !unavailable; i += 10) {
       const batch = ids.slice(i, i + 10);
       const response = await request(`/api/briefing/summary?ids=${encodeURIComponent(batch.join(','))}`, {cache: 'no-store', signal: AbortSignal.timeout(15000)});
-      if (stopped) return false;
+      if (stopped || unavailable) return false;
       if (unsupported(response)) { disableSummary(); return false; }
       if (response.status === 429) {
         const at = retryAfter(response, now());
@@ -173,7 +177,7 @@ export function initFreshSummary(options = {}) {
       }
       if (!response.ok) throw new Error('조회 실패');
       const payload = await response.json();
-      if (stopped) return false;
+      if (stopped || unavailable) return false;
       if (!Array.isArray(payload?.items)) throw new Error('상태 형식 오류');
       if (payload.items.some(result => typeof result?.status === 'string' && !STATUSES.has(result.status))) { disableSummary(); return false; }
       readBudget(payload.budget);
@@ -230,7 +234,7 @@ export function initFreshSummary(options = {}) {
         else {
           batch.forEach(id => Object.assign(states.get(id), {requested:true,status:null,submitting:true,error:null})); render();
           const response = await request('/api/briefing/summarize', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({candidate_ids:batch}), cache:'no-store', signal:AbortSignal.timeout(15000)});
-          if (stopped) return;
+          if (stopped || unavailable) return;
           if (unsupported(response)) { disableSummary(); return; }
           if (response.status === 429) {
             const at = retryAfter(response, now()); retryUntil = at || now().getTime() + POLL_MS;
@@ -238,7 +242,7 @@ export function initFreshSummary(options = {}) {
           } else {
             if (response.status !== 202) throw new Error('요청 실패');
             const payload = await response.json();
-            if (stopped) return;
+            if (stopped || unavailable) return;
             if (Array.isArray(payload?.jobs) && payload.jobs.some(job => typeof job?.status === 'string' && !STATUSES.has(job.status))) { disableSummary(); return; }
             if (!Array.isArray(payload?.jobs) || payload.jobs.length !== batch.length || new Set(payload.jobs.map(j => j?.candidate_id)).size !== batch.length || payload.jobs.some(j => !batch.includes(j?.candidate_id) || !STATUSES.has(j.status))) throw new Error('요청 결과 형식 오류');
             readBudget(payload.budget);
@@ -254,7 +258,11 @@ export function initFreshSummary(options = {}) {
       noticeHint = '요약 응답을 확인하지 못했어요 — 원문은 계속 볼 수 있어요';
     } finally { settle(); }
   }
-  const onFresh = () => { void refresh(); };
+  const onFresh = event => {
+    if (stopped || unavailable) return;
+    if (event?.detail?.summary_available === false) { scanDom(); disableSummary(); return; }
+    void refresh();
+  };
   const onVisibility = () => { if (doc.hidden) clearTimer(); else if (pendingScan) { pendingScan = false; void refresh(); } else if (activeIds().length) void poll(); else render(); };
   doc.addEventListener('briefing:fresh-rendered', onFresh);
   doc.addEventListener('visibilitychange', onVisibility);

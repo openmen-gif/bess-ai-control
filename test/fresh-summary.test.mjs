@@ -14,13 +14,13 @@ class Element {
 }
 class Document {
   constructor(ids = []) { this.hidden = false; this.listeners = new Map(); this.cards = ids.map(id => this.card(id)); this.live = new Element(); this.live.id = 'live-status'; this.host = new Element(); this.host.appendChild(this.live); }
-  card(id, status) { const e = new Element(); if (id) e.dataset.candidateId = id; if (status) e.dataset.summaryStatus = status; e.appendChild(Object.assign(new Element('a'), {textContent: '원문 보존'})); return e; }
+  card(id, status, requested) { const e = new Element(); if (id) e.dataset.candidateId = id; if (status) e.dataset.summaryStatus = status; if (requested !== undefined) e.dataset.summaryRequested = requested; e.appendChild(Object.assign(new Element('a'), {textContent: '원문 보존'})); return e; }
   createElement(tag) { return new Element(tag); }
   querySelectorAll() { return this.cards.filter(c => c.dataset.candidateId); }
   getElementById(id) { return id === 'live-status' ? this.live : this.host.children.find(e => e.id === id); }
   addEventListener(name, cb) { if (!this.listeners.has(name)) this.listeners.set(name, new Set()); this.listeners.get(name).add(cb); }
   removeEventListener(name, cb) { this.listeners.get(name)?.delete(cb); }
-  dispatch(name) { for (const cb of this.listeners.get(name) || []) cb({detail: {updated: '2026-11-25 10:00'}}); }
+  dispatch(name, detail = {updated: '2026-11-25 10:00'}) { for (const cb of this.listeners.get(name) || []) cb({detail}); }
 }
 const now = () => new Date('2026-11-25T01:00:00Z');
 const budget = { date: '2026-11-25', used: 1, limit: 30 };
@@ -255,6 +255,46 @@ test('종결 마크업도 예산·최신 결과를 한 번 조회하되 이후 p
   for (const status of ['failed','over_budget']) {
     const s=setup([],()=>response({items:[item('a',status)],budget:{...budget,used:status==='over_budget'?30:1}}));
     s.doc.cards=[s.doc.card('a',status)];s.doc.dispatch('briefing:fresh-rendered');await flush();
-    assert.equal(s.calls.length,1);assert.equal(s.calls[0].options?.method,undefined);assert.equal(s.timers.size,0);assert.match(s.doc.host.textContent,/오늘 요약/);s.controller.destroy();
+    assert.equal(s.calls.length,1);assert.equal(s.calls[0].options?.method,undefined);assert.equal(s.timers.size,0);assert.match(s.doc.host.textContent,/오늘 전체 요약/);s.controller.destroy();
   }
+});
+
+test('v1.1 queued여도 requested=false는 신규 POST하고 중복 섹션 후보는 한 번만 접수한다', async () => {
+  const s=setup([],()=>response({jobs:[{candidate_id:'a',status:'queued'}],budget},202));
+  s.doc.cards=[s.doc.card('a','queued','false'),s.doc.card('a','queued','false')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+  assert.equal(s.calls.length,1);assert.equal(s.calls[0].options.method,'POST');assert.deepEqual(JSON.parse(s.calls[0].options.body).candidate_ids,['a']);s.controller.destroy();
+});
+
+test('v1.1 requested=true는 status가 없어도 기존 결과를 조회하고 누락 속성은 v0처럼 처리한다', async () => {
+  for(const requested of ['true',undefined]) {
+    const s=setup([],()=>response({items:[item('a','done',{summary})],budget}));
+    s.doc.cards=[s.doc.card('a',requested?'': 'queued',requested)];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);assert.equal(s.calls[0].options.method,undefined);assert.match(s.doc.cards[0].textContent,/AI 요약 보기/);s.controller.destroy();
+  }
+});
+
+test('잘못된 requested 문자열은 접수로 오인하지 않고 해당 카드만 요약 연결에서 제외한다', async () => {
+  const s=setup([],()=>response({jobs:[{candidate_id:'good',status:'queued'}],budget},202));
+  s.doc.cards=['','FALSE','True','yes','0','null'].map((flag,i)=>s.doc.card(`bad${i}`,'queued',flag));s.doc.cards.push(s.doc.card('good','queued','false'));
+  s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);assert.deepEqual(JSON.parse(s.calls[0].options.body).candidate_ids,['good']);s.doc.cards.slice(0,-1).forEach(card=>assert.equal(card.textContent,'원문 보존'));s.controller.destroy();
+});
+
+test('명시적 summary_available=false 뒤 true와 재초기화는 같은 페이지에서 기능을 재개하지 않는다', async () => {
+  const s=setup([],()=>{throw Error('호출 금지');});s.doc.cards=[s.doc.card('a','queued','false')];
+  s.doc.dispatch('briefing:fresh-rendered',{summary_available:false});await flush();assert.equal(s.calls.length,0);assert.equal(s.doc.cards[0].textContent,'원문 보존');
+  s.doc.dispatch('briefing:fresh-rendered',{summary_available:true});await flush();assert.equal(s.calls.length,0);s.controller.destroy();
+  const second=initFreshSummary({document:s.doc,fetch:async()=>{s.calls.push('재초기화 요청');throw Error('호출 금지');}});await flush();assert.equal(s.calls.length,0);second.destroy();
+});
+
+test('summary_available 누락·문자열 false·null은 v0 호환을 유지한다', async () => {
+  for(const value of [undefined,'false',null,true]) {
+    const s=setup([],()=>response({jobs:[{candidate_id:'a',status:'queued'}],budget},202));s.doc.cards=[s.doc.card('a')];s.doc.dispatch('briefing:fresh-rendered',{summary_available:value});await flush();assert.equal(s.calls.length,1);s.controller.destroy();
+  }
+});
+
+test('비활성 신호 뒤 늦은 응답은 추가 GET을 만들지 않으며 새 document에서만 복구한다', async () => {
+  let finish;const pending=new Promise(resolve=>{finish=resolve;});const s=setup([],()=>pending);
+  s.doc.cards=[s.doc.card('a','queued','false')];s.doc.dispatch('briefing:fresh-rendered');
+  s.doc.dispatch('briefing:fresh-rendered',{summary_available:false});finish(response({jobs:[{candidate_id:'a',status:'done'}],budget},202));await flush();
+  assert.equal(s.calls.length,1);assert.equal(s.timers.size,0);assert.equal(s.doc.cards[0].textContent,'원문 보존');s.controller.destroy();
+  const fresh=setup(['a'],()=>response({jobs:[{candidate_id:'a',status:'queued'}],budget},202));await flush();assert.equal(fresh.calls.length,1);fresh.controller.destroy();
 });

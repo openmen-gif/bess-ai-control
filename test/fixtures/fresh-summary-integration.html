@@ -1,0 +1,252 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BESS 실제 발행기 통합 모의 검증</title><style>
+:root { --bg:#0B0F19; --panel:#111827; --line:#1F2937; --ink:#F9FAFB; --muted:#9CA3AF; --accent:#3B82F6; --soft:#0F172A; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--ink); font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif; line-height:1.6; }
+.wrap { max-width:860px; margin:0 auto; padding:32px 16px 60px; }
+.top { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
+h1 { font-size:22px; font-weight:800; }
+.date { color:var(--muted); font-size:13px; }
+.back { color:var(--accent); text-decoration:none; font-size:13px; }
+.tabs { display:flex; gap:6px; margin-top:16px; flex-wrap:wrap; }
+.tabs button { background:var(--panel); color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-size:13px; cursor:pointer; font-weight:700; }
+.tabs button.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+.panel { display:none; }
+.panel.on { display:block; }
+.sec { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:16px; }
+h2 { font-size:15px; font-weight:700; margin-bottom:10px; }
+.item { padding:8px 0; border-top:1px solid var(--line); }
+.item:first-child { border-top:0; }
+.item a, .item .t { color:var(--ink); text-decoration:none; font-size:14px; }
+.item a:hover, summary:hover .t { color:var(--accent); }
+summary { cursor:pointer; list-style:none; }
+summary::-webkit-details-marker { display:none; }
+summary .t::before { content:'▸ '; color:var(--muted); }
+details[open] summary .t::before { content:'▾ '; }
+.meta { display:block; color:var(--muted); font-size:12px; margin-top:2px; }
+.ai { color:var(--accent); }
+.sum { background:var(--soft); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin-top:8px; font-size:13.5px; }
+.sum .row { margin-top:8px; }
+.sum .row:first-child { margin-top:0; }
+.sum b { display:block; font-size:12.5px; color:var(--accent); }
+.sum ul { padding-left:18px; }
+.sum .orig { color:var(--muted); font-size:12px; margin-bottom:6px; }
+.sum .tag { font-style:normal; font-weight:400; color:var(--muted); font-size:11px; border:1px solid var(--line); border-radius:6px; padding:0 5px; }
+.sum .foot { margin-top:10px; color:var(--muted); font-size:12px; }
+.sum .foot a { color:var(--accent); font-size:12px; }
+.fresh { margin-bottom:6px; padding-bottom:4px; border-bottom:1px dashed var(--line); }
+.fresh .lbl { color:#FBBF24; font-size:12px; font-weight:700; }
+.empty { color:var(--muted); font-size:13px; }
+.arch { margin-top:24px; color:var(--muted); font-size:12.5px; }
+.arch a { color:var(--accent); text-decoration:none; margin-right:10px; }
+footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:14px; }
+.live { margin-top:10px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.live button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:7px 14px; font-size:13px; cursor:pointer; font-weight:700; }
+.live button:disabled { opacity:.5; cursor:default; }
+.live .st { color:var(--muted); font-size:12.5px; }
+.search { margin-top:12px; }
+.search input { width:100%; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:10px; padding:10px 14px; font-size:14px; }
+.search input:focus { outline:none; border-color:var(--accent); }
+.search .st { display:block; color:var(--muted); font-size:12.5px; margin-top:6px; min-height:1em; }
+.searching .tabs, .searching .empty, .searching .arch { display:none; }
+.searching .panel { display:block; }
+.item.hide, .sec.hide { display:none; }
+.qarch h2 { color:var(--muted); }
+.qarch .meta a { color:var(--accent); text-decoration:none; font-size:12px; }
+</style></head><body><div class="wrap">
+<!-- 운영 SCRIPT를 수정 없이 삽입한다. 외부 API는 모두 모의 응답으로 대체한다. -->
+<p>로컬 통합 fixture · 운영 SHA <code id="source-commit">49aa0e9fcf250f7a2d8aaa62442de40d4d23b857</code></p>
+<p class="st">SCRIPT SHA256: <code id="source-script-hash">f77f903eac0e5e509499b38a8a7ec918d8fa3e897474d01beabc27fbbe83b68f</code></p>
+<header><h1>BESS 일일 브리핑</h1><div class="date" id="fixture-date"></div><div class="live"><button id="refresh-btn">🔄 새 소식 확인</button><span class="st" id="live-status">기존 정적 브리핑과 신규 카드의 공존 검증</span></div></header>
+<div id="briefing-retry-fallback">AI 요약 1건 생성 지연 — 모의 정적 상태</div>
+<nav class="tabs"><button class="on" data-tab="kr">국내</button><button data-tab="global">해외</button><button data-tab="notice">기관 발표</button></nav>
+<main><div class="panel on" data-panel="kr"><section class="sec" data-region="kr" data-sec="0"><h2>국내 · 배터리·셀</h2><div class="items"><details class="item" id="published-static" data-k="정적보존기사"><summary>정적 보존 기사</summary><div class="sum">기존 정적 요약 본문 보존</div></details></div></section></div>
+<div class="panel" data-panel="global"><section class="sec" data-region="global" data-sec="0"><h2>해외 · 시장·프로젝트</h2><div class="items"></div></section></div>
+<div class="panel" data-panel="notice"></div></main><pre id="integration-requests" style="white-space:pre-wrap;font-size:12px"></pre>
+</div><script>
+const mode=new URLSearchParams(location.search).get('mode')||'normal';
+const fixedDay=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10);
+const fixedStamp=()=>new Date().toISOString().replace(/(\.\d{3})Z$/,(_,fraction)=>fraction+'000Z');
+const A='aaaaaaaaaaaaaaaa', B='bbbbbbbbbbbbbbbb', C='cccccccccccccccc';
+const doneSummary={title_ko:'통합 검증 요약',background:'본문 배경',key:['핵심 사항'],detail:'운영 SCRIPT와 두 상태 모듈을 함께 실행한 결과입니다',implication:'기존 발행 기사와 신규 요약이 분리됩니다',has_body:true};
+const jobs=new Map([[B,{candidate_id:B,status:'done',summary:doneSummary,attempts:1,updated_at:fixedStamp(),requested:true}]]),requests=[];
+const integration=window.integration={available:mode!=='unavailable',requests,jobs};
+const budget=()=>({date:fixedDay(),used:jobs.size,limit:30});
+document.getElementById('fixture-date').textContent=fixedDay()+' · 기존 정적 브리핑 2건';
+window.fetch=async function(input,options={}){
+  const url=new URL(input,location.origin),path=url.pathname;
+  requests.push({path,method:options.method||'GET',body:options.body||null});
+  document.getElementById('integration-requests').textContent=requests.map(x=>x.method+' '+x.path+(x.body?' '+x.body:'')).join('\n');
+  const reply=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json'}});
+  if(path==='/briefing/status.json')return reply({date:fixedDay(),total:2,summarized:1,pending:1,reason:'rate_limit',next_retry_at:new Date(Date.now()+3600000).toISOString(),attempt:1,max_attempts:3,state:'pending_retry'});
+  if(path==='/api/briefing'){
+    const candidate=(id,title)=>({candidate_id:id,title,source:'모의 출처',link:'https://example.invalid/'+id,when:'11/25 10:00',summary_status:jobs.get(id)?.status||'queued',summary_requested:jobs.has(id)});
+    const a=candidate(A,'신규 국내 기사'),b=candidate(B,'이미 요약된 해외 기사'),c=candidate(C,'새로운 해외 기사');
+    const old={title:'정적 보존 기사',source:'모의 출처',link:'https://example.invalid/static',when:'11/25 07:30'};
+    const sections=[{name:'배터리·셀',items:[old,a,b]}],sections_global=[{name:'시장·프로젝트',items:[a,c]}];
+    if(mode==='legacy')for(const sec of [...sections,...sections_global])for(const item of sec.items){delete item.candidate_id;delete item.summary_status;delete item.summary_requested;}
+    return reply({updated:fixedDay()+' 10:00',total:3,total_global:2,sections,sections_global,summary_available:integration.available,budget:budget()});
+  }
+  if(path==='/api/briefing/summarize'&&options.method==='POST'){
+    const ids=JSON.parse(options.body).candidate_ids;
+    ids.forEach(id=>{if(!jobs.has(id))jobs.set(id,{candidate_id:id,status:'queued',attempts:0,updated_at:fixedStamp(),requested:true});});
+    return reply({jobs:ids.map(id=>jobs.get(id)),budget:budget()},202);
+  }
+  if(path==='/api/briefing/summary'){
+    const ids=(url.searchParams.get('ids')||'').split(',');
+    if(ids.length>10)return reply({error:'max10'},400);
+    return reply({items:ids.map(id=>{
+      const job=jobs.get(id);
+      if(!job)return {candidate_id:id,status:'queued',requested:false,attempts:0,updated_at:fixedStamp()};
+      const result={...job,status:'done',summary:doneSummary,attempts:1,updated_at:fixedStamp()};jobs.set(id,result);return result;
+    }),budget:budget()});
+  }
+  throw Error('허용하지 않은 모의 경로: '+path);
+};
+</script>
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.tabs button');
+  function show(r) {
+    tabs.forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-tab') === r); });
+    document.querySelectorAll('.panel').forEach(function (p) { p.classList.toggle('on', p.getAttribute('data-panel') === r); });
+  }
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () { var r = b.getAttribute('data-tab'); show(r); history.replaceState(null, '', '#' + r); });
+  });
+  var h = location.hash.slice(1);
+  if (['kr', 'global', 'notice'].indexOf(h) >= 0) show(h);
+
+  var btn = document.getElementById('refresh-btn');
+  var st = document.getElementById('live-status');
+  if (!btn || !st) return;
+  function tkey(t) { return String(t).replace(/\s+/g, '').toLowerCase().slice(0, 40); }
+  function safeHref(u) { return /^https?:\/\//.test(u) ? u : '#'; }
+  function addFresh(region, secs) {
+    var n = 0;
+    (secs || []).forEach(function (sec, i) {
+      var box = document.querySelector('[data-region="' + region + '"][data-sec="' + i + '"] .items');
+      if (!box) return;
+      var old = box.querySelector('.fresh');
+      if (old) old.remove();
+      var have = {};
+      box.querySelectorAll('[data-k]').forEach(function (el) { have[el.getAttribute('data-k')] = 1; });
+      var news = (sec.items || []).filter(function (it) { return it.title && !have[tkey(it.title)]; });
+      if (!news.length) return;
+      var f = document.createElement('div'); f.className = 'fresh';
+      var l = document.createElement('div'); l.className = 'lbl';
+      l.textContent = '🆕 새로 들어온 소식 ' + news.length + '건 · 참고용(AI 요약·관련도 판정 전, 다음 정기 발행 07:30에 반영)';
+      f.appendChild(l);
+      news.forEach(function (it) {
+        var w = document.createElement('div'); w.className = 'item';
+        if (typeof it.candidate_id === 'string' && /^[a-f0-9]{16}$/.test(it.candidate_id)) w.setAttribute('data-candidate-id', it.candidate_id);
+        if (it.summary_status) w.setAttribute('data-summary-status', it.summary_status);
+        var a = document.createElement('a');
+        a.href = safeHref(it.link); a.target = '_blank'; a.rel = 'noopener'; a.textContent = it.title;
+        var m = document.createElement('div'); m.className = 'meta';
+        m.textContent = [it.source, it.when].filter(Boolean).join(' · ');
+        w.appendChild(a); w.appendChild(m); f.appendChild(w);
+      });
+      box.insertBefore(f, box.firstChild);
+      n += news.length;
+    });
+    return n;
+  }
+  btn.addEventListener('click', function () {
+    btn.disabled = true; st.textContent = '확인 중…';
+    fetch('/api/briefing?_=' + Date.now(), {cache: 'no-store'}).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
+      if (!d.total && !d.total_global) throw 0;
+      var n = addFresh('kr', d.sections) + addFresh('global', d.sections_global);
+      document.dispatchEvent(new CustomEvent('briefing:fresh-rendered', {detail: {updated: d.updated}}));
+      st.textContent = d.updated + ' 기준 새 소식 ' + n + '건' + (n ? ' (각 부문 상단)' : '');
+    }).catch(function () {
+      st.textContent = '확인 실패 — 잠시 후 다시 시도해 주세요';
+    }).finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+<script>
+// 검색 — 이 페이지 기사는 즉시 거르고(요약 본문 포함), 지난 브리핑은 /briefing/search.json 색인에서 찾는다.
+// 색인은 처음 입력할 때 한 번만 받는다. 여러 단어는 모두 들어간 기사만(AND). XSS 방지: textContent만 사용.
+(function () {
+  var q = document.getElementById('q');
+  var st = document.getElementById('q-status');
+  var box = document.getElementById('q-arch');
+  var wrap = document.querySelector('.wrap');
+  if (!q || !st || !box || !wrap) return;
+  var REGION = {kr: '국내', global: '해외', notice: '기관 발표'};
+  var MAX = 50;
+  var rows = null, loading = null, timer = null;
+  function norm(s) { return String(s || '').toLowerCase(); }
+  function hit(text, terms) { for (var i = 0; i < terms.length; i++) if (text.indexOf(terms[i]) < 0) return false; return true; }
+  function safeHref(u) { return /^https?:\/\//.test(u) ? u : '#'; }
+  function load() {
+    if (!loading) loading = fetch('/briefing/search.json', {cache: 'no-cache'}).then(function (r) {
+      if (!r.ok) throw 0; return r.json();
+    }).then(function (d) {
+      rows = (d.rows || []).map(function (r) { return {r: r, s: norm(r.slice(2).join(' '))}; });
+    }).catch(function () { loading = null; rows = null; throw 0; });
+    return loading;
+  }
+  function filterPage(terms) {
+    var n = 0, links = {};
+    document.querySelectorAll('.panel .sec').forEach(function (sec) {
+      var any = false;
+      sec.querySelectorAll('.item').forEach(function (it) {
+        var ok = !terms.length || hit(norm(it.textContent), terms);
+        it.classList.toggle('hide', !ok);
+        if (ok) { any = true; if (terms.length) n++; }
+        var a = it.querySelector('a[href]'); if (a) links[a.getAttribute('href')] = 1;
+      });
+      sec.classList.toggle('hide', terms.length > 0 && !any);
+    });
+    return {n: n, links: links};
+  }
+  function renderArch(terms, links) {
+    box.textContent = '';
+    var found = rows.filter(function (x) { return !links[x.r[4]] && hit(x.s, terms); });
+    if (!found.length) { box.hidden = true; return 0; }
+    var sec = document.createElement('section'); sec.className = 'sec qarch';
+    var h = document.createElement('h2');
+    h.textContent = '🗂️ 지난 브리핑 ' + found.length + '건' + (found.length > MAX ? ' (최근 ' + MAX + '건 표시)' : '');
+    sec.appendChild(h);
+    found.slice(0, MAX).forEach(function (x) {
+      var r = x.r, w = document.createElement('div'); w.className = 'item';
+      var a = document.createElement('a');
+      a.href = safeHref(r[4]); a.target = '_blank'; a.rel = 'noopener'; a.textContent = r[3];
+      var m = document.createElement('div'); m.className = 'meta';
+      m.textContent = [r[0], REGION[r[1]] || r[1], r[2], r[5]].filter(Boolean).join(' · ') + ' · ';
+      var day = document.createElement('a'); day.href = '/briefing/' + r[0] + '.html'; day.textContent = '그날 브리핑';
+      m.appendChild(day);
+      w.appendChild(a); w.appendChild(m); sec.appendChild(w);
+    });
+    box.appendChild(sec); box.hidden = false;
+    return found.length;
+  }
+  function run() {
+    var v = q.value.trim();
+    var terms = norm(v).split(/\s+/).filter(Boolean);
+    var u = new URL(location.href);
+    if (v) u.searchParams.set('q', v); else u.searchParams.delete('q');
+    history.replaceState(null, '', u.pathname + u.search + u.hash);
+    wrap.classList.toggle('searching', terms.length > 0);
+    var page = filterPage(terms);
+    if (!terms.length) { box.hidden = true; box.textContent = ''; st.textContent = ''; return; }
+    st.textContent = '이 페이지 ' + page.n + '건 · 지난 브리핑 찾는 중…';
+    load().then(function () {
+      if (q.value.trim() !== v) return;
+      var m = renderArch(terms, page.links);
+      st.textContent = '이 페이지 ' + page.n + '건 · 지난 브리핑 ' + m + '건' + (page.n + m ? '' : ' — 다른 단어로 찾아보세요');
+    }).catch(function () {
+      if (q.value.trim() !== v) return;
+      st.textContent = '이 페이지 ' + page.n + '건 · 지난 브리핑 색인을 불러오지 못했어요';
+    });
+  }
+  q.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(run, 150); });
+  var init = new URLSearchParams(location.search).get('q');
+  if (init) { q.value = init; run(); }
+})();
+</script>
+<script type="module" src="/briefing/briefing-status.js"></script>
+<script type="module" src="/briefing/fresh-summary.js"></script>
+</body></html>
