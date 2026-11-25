@@ -199,6 +199,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-55eebc3cedac",
+   "name": "팀 토론 — 시운전 프로토콜 최적화를 통해 EMS/FIT 시스템 통합 효",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-5493fbc65b84",
    "name": "▒종합 경제정보 미디어 - 이데일리IR▒",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-72251f33aea6",
-   "name": "역대 최대 ESS 입찰 삼성SDI·SK온…LG 불참 왜",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-16",
-   "val": 3,
-   "color": "#F59E0B"
   }
  ],
  "links": [
@@ -7415,6 +7415,36 @@
   {
    "source": "COM-003",
    "target": "K-5628f462a473",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-55eebc3cedac",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-55eebc3cedac",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-55eebc3cedac",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-55eebc3cedac",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-55eebc3cedac",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-55eebc3cedac",
    "type": "knowledge"
   },
   {
@@ -14726,11 +14756,6 @@
    "source": "BAT-001",
    "target": "K-788b78996829",
    "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-72251f33aea6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15379,7 +15404,7 @@
    {
     "date": "2026-11-26",
     "knowledge": 800,
-    "events_total": 5426
+    "events_total": 5427
    }
   ]
  }
