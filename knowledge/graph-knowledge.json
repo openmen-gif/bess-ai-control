@@ -172,6 +172,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-bb79f1708b85",
+   "name": "팀 토론 — BESS 아시아 시장 진출을 위한 KR/JP 발전사업 허가 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-b54a29a359f6",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-15",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-ddd18ccd7789",
-   "name": "Battery Vents Market To 2035: Safety-Dri",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-15",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7325,6 +7325,46 @@
   {
    "source": "BAT-001",
    "target": "K-bf454b8a34fa",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-bb79f1708b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-bb79f1708b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-bb79f1708b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "HRM-001",
+   "target": "K-bb79f1708b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-bb79f1708b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-bb79f1708b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-001",
+   "target": "K-bb79f1708b85",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-bb79f1708b85",
    "type": "knowledge"
   },
   {
@@ -14451,11 +14491,6 @@
    "source": "MAR-001",
    "target": "K-fdffbeecaef2",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-ddd18ccd7789",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15099,7 +15134,7 @@
    {
     "date": "2026-11-25",
     "knowledge": 800,
-    "events_total": 5386
+    "events_total": 5387
    }
   ]
  }
