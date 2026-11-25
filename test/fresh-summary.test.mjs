@@ -110,10 +110,10 @@ test('잘못된 summary 필드 타입과 부분응답은 완료 카드로 인정
   assert.doesNotMatch(s.doc.cards[0].textContent,/AI 요약 보기/);assert.doesNotMatch(s.doc.cards[1].textContent,/AI 요약 보기/);assert.match(s.doc.host.textContent,/확인하지 못|확인 실패/);s.controller.destroy();
 });
 
-test('400은 만료 안내 후 polling을 멈추고 새 후보 발급 이벤트에서만 재요청한다', async () => {
+test('400은 요청 확인 실패로 안내하고 polling을 멈춘 뒤 새 목록 이벤트에서만 재요청한다', async () => {
   const s=setup([], (url,opts)=>opts?.method==='POST'?response({jobs:[{candidate_id:'a',status:'queued'}],budget},202):response({},400));
   s.doc.cards=[s.doc.card('a','queued')];s.doc.dispatch('briefing:fresh-rendered');await flush();
-  assert.match(s.doc.cards[0].textContent,/만료/);assert.equal(s.timers.size,0);
+  assert.match(s.doc.cards[0].textContent,/요청.*확인/);assert.equal(s.timers.size,0);
   s.doc.cards=[s.doc.card('a')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.at(-1).options.method,'POST');s.controller.destroy();
 });
 
@@ -188,10 +188,10 @@ test('상태 GET API가 미배포이거나 HTML fallback이면 기존 목록을 
   }
 });
 
-test('미지원 작업 status는 오인 queued나 반복 조회를 남기지 않는다', async () => {
+test('처음 보는 기사 status는 해당 기사만 종결하고 오인 queued나 반복 조회를 남기지 않는다', async () => {
   const s=setup([],()=>response({items:[item('a','future_schema_status')],budget}));
   s.doc.cards=[s.doc.card('a','queued')];s.doc.dispatch('briefing:fresh-rendered');await flush();
-  assert.equal(s.doc.cards[0].textContent,'원문 보존');assert.equal(s.timers.size,0);s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);s.controller.destroy();
+  assert.match(s.doc.cards[0].textContent,/요약 후보.*확인/);assert.doesNotMatch(s.doc.cards[0].textContent,/요약 대기/);assert.equal(s.timers.size,0);s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);s.controller.destroy();
 });
 
 async function fireTimer(s) {
@@ -297,4 +297,46 @@ test('비활성 신호 뒤 늦은 응답은 추가 GET을 만들지 않으며 �
   s.doc.dispatch('briefing:fresh-rendered',{summary_available:false});finish(response({jobs:[{candidate_id:'a',status:'done'}],budget},202));await flush();
   assert.equal(s.calls.length,1);assert.equal(s.timers.size,0);assert.equal(s.doc.cards[0].textContent,'원문 보존');s.controller.destroy();
   const fresh=setup(['a'],()=>response({jobs:[{candidate_id:'a',status:'queued'}],budget},202));await flush();assert.equal(fresh.calls.length,1);fresh.controller.destroy();
+});
+
+test('v1.2 최소 unknown 객체와 처음 보는 상태는 해당 기사만 종결하고 다른 기사를 완료한다', async () => {
+  let clock=now();let reads=0;
+  const s=setup([],url=>{reads++;const ids=decodeURIComponent(url.split('ids=')[1]).split(',');return response({items:ids.map(id=>id==='a'?{candidate_id:id,status:'unknown'}:id==='b'?{candidate_id:id,status:'future_status'}:item(id,reads===1?'running':'done',reads===1?{}:{summary})),budget});},{now:()=>clock});
+  s.doc.cards=['a','b','c'].map(id=>s.doc.card(id,'running','true'));s.doc.dispatch('briefing:fresh-rendered');await flush();
+  assert.match(s.doc.cards[0].textContent,/요약 후보.*확인/);assert.match(s.doc.cards[1].textContent,/요약 후보.*확인/);assert.match(s.doc.cards[2].textContent,/생성 중/);assert.equal(s.timers.size,1);
+  clock=new Date(clock.getTime()+30000);await fireTimer(s);assert.match(s.doc.cards[2].textContent,/AI 요약 보기/);assert.equal(decodeURIComponent(s.calls[1].url.split('ids=')[1]),'c');assert.equal(s.timers.size,0);s.controller.destroy();
+});
+
+test('unknown은 같은 DOM 이벤트에서 재요청하지 않고 새로 발급된 DOM false일 때만 요청한다', async () => {
+  const s=setup([], (url,opts)=>opts?.method==='POST'?response({jobs:[{candidate_id:'a',status:'queued'}],budget},202):response({items:[{candidate_id:'a',status:'unknown'}],budget}));
+  s.doc.cards=[s.doc.card('a','queued','true')];s.doc.dispatch('briefing:fresh-rendered');await flush();s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);
+  s.doc.cards=[s.doc.card('a','queued','false')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.at(-1).options.method,'POST');s.controller.destroy();
+});
+
+test('POST403은 명확히 미접수 안내하고 재클릭·신규 후보로 POST를 반복하지 않는다', async () => {
+  const s=setup(['a'],()=>response({},403));await flush();assert.match(s.doc.cards[0].textContent,/요약 요청.*허용되지/);assert.equal(s.timers.size,0);
+  for(let i=0;i<10;i++){s.doc.cards=[s.doc.card('a','queued','false'),s.doc.card(`new${i}`,'queued','false')];s.doc.dispatch('briefing:fresh-rendered');await flush();}
+  assert.equal(s.calls.length,1);assert.match(s.doc.cards[1].textContent,/요약 요청.*허용되지/);s.controller.destroy();
+});
+
+test('403은 기존 작업 GET을 차단하지 않으며 전역 예산을 소진했다고 오인하지 않는다', async () => {
+  const s=setup([], (url,opts)=>opts?.method==='POST'?response({},403):response({items:[item('b','done',{summary})],budget:{...budget,used:5}}));
+  s.doc.cards=[s.doc.card('a','queued','false'),s.doc.card('b','queued','true')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,2);assert.match(s.doc.cards[1].textContent,/AI 요약 보기/);assert.match(s.doc.host.textContent,/오늘 전체 요약 5\/30/);assert.doesNotMatch(s.doc.cards[0].textContent,/전체 요약 한도 도달/);s.controller.destroy();
+});
+
+test('DOM unknown·처음 보는 status도 신규 POST 없이 해당 기사만 종결한다', async () => {
+  const s=setup([],()=>{throw Error('호출 금지');});s.doc.cards=[s.doc.card('a','unknown','false'),s.doc.card('b','future_status','false')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,0);s.doc.cards.forEach(card=>assert.match(card.textContent,/요약 후보.*확인/));assert.equal(s.timers.size,0);s.controller.destroy();
+});
+
+test('POST의 미지 상태도 해당 기사만 종결하고 정상 작업은 계속 조회한다', async () => {
+  let clock=now();const s=setup([], (url,opts)=>opts?.method==='POST'?response({jobs:[{candidate_id:'a',status:'future_status'},{candidate_id:'b',status:'queued'}],budget},202):response({items:[item('b','done',{summary})],budget}),{now:()=>clock});
+  s.doc.cards=[s.doc.card('a','queued','false'),s.doc.card('b','queued','false')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.match(s.doc.cards[0].textContent,/요약 후보.*확인/);clock=new Date(clock.getTime()+30000);await fireTimer(s);assert.equal(decodeURIComponent(s.calls[1].url.split('ids=')[1]),'b');assert.match(s.doc.cards[1].textContent,/AI 요약 보기/);s.controller.destroy();
+});
+
+test('다른 기사 unknown 응답과 DOM 교체가 이미 완료한 요약을 없애지 않는다', async () => {
+  let clock=now(),reads=0;const s=setup([],()=>response({items:++reads===1?[item('b','done',{summary})]:[{candidate_id:'a',status:'unknown'}],budget}),{now:()=>clock});
+  s.doc.cards=[s.doc.card('b','done','true')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+  s.doc.cards=[s.doc.card('b','done','true'),s.doc.card('a','queued','true')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+  clock=new Date(clock.getTime()+30000);await fireTimer(s);
+  assert.equal(reads,2);assert.equal(decodeURIComponent(s.calls[1].url.split('ids=')[1]),'a');assert.match(s.doc.cards[0].textContent,/AI 요약 보기/);assert.match(s.doc.cards[1].textContent,/요약 후보.*확인/);assert.equal(s.timers.size,0);s.controller.destroy();
 });

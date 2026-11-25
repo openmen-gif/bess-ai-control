@@ -1,9 +1,10 @@
 // 기준일: 2026-11-25 · 기준 커밋: ad89756
 // TSM DOM 계약: .fresh .item[data-candidate-id], briefing:fresh-rendered.
-const STATUSES = new Set(['queued', 'running', 'done', 'waiting_limit', 'failed', 'over_budget', 'duplicate']);
+const STATUSES = new Set(['queued', 'running', 'done', 'waiting_limit', 'failed', 'over_budget', 'duplicate', 'unknown']);
 const ACTIVE = new Set(['queued', 'running', 'waiting_limit']);
 const INSTANCES = new WeakMap();
 const UNAVAILABLE_DOCUMENTS = new WeakSet();
+const FORBIDDEN_DOCUMENTS = new WeakSet();
 const POLL_MS = 30000;
 const MAX_BACKOFF_MS = 300000;
 const MAX_TIMER_CHUNK_MS = 3600000;
@@ -63,6 +64,7 @@ export function initFreshSummary(options = {}) {
   const views = new WeakMap();
   let cards = [], timer = null, busy = false, stopped = false, budget = null, noticeHint = '', retryUntil = 0, pendingScan = false;
   let unavailable = UNAVAILABLE_DOCUMENTS.has(doc);
+  let submissionForbidden = FORBIDDEN_DOCUMENTS.has(doc);
   let readFailures = 0, readNotBefore = 0, readNotice = '';
 
   function clearTimer() { if (timer !== null) cancel(timer); timer = null; }
@@ -94,6 +96,13 @@ export function initFreshSummary(options = {}) {
     const type = response.headers?.get('Content-Type');
     return [404, 405, 501].includes(response.status) ||
       (response.ok && !!type && !/^application\/(?:[\w.+-]+\+)?json(?:\s*;|$)/i.test(type));
+  }
+  function forbidSubmissions() {
+    submissionForbidden = true; FORBIDDEN_DOCUMENTS.add(doc);
+    states.forEach(state => {
+      if (!state.accepted && state.status !== 'unknown') Object.assign(state, {status:null,requested:true,submitting:false,needsRead:false,summary:null,next_retry_at:null,duplicate_of:null,error:'요약 요청이 허용되지 않았어요 — 이 페이지에서는 새 요청을 보내지 않습니다'});
+    });
+    noticeHint = '이 페이지에서는 새 요약 요청이 허용되지 않아요';
   }
   function readBudget(value) {
     if (value && validDay(value.date) && value.date === kstDate(now()) &&
@@ -135,7 +144,7 @@ export function initFreshSummary(options = {}) {
         text(body, 'b', '4. 시사점 · AI 분석'); text(body, 'p', s.implication);
         text(body, 'p', s.has_body ? 'AI 요약 · 본문 기반 · 원문과 다를 수 있어요' : 'AI 요약 · 제목 기반(본문 확보 실패) · 원문 확인이 필요해요', 'meta');
       } else {
-        let message = {queued: '요약 대기 중', running: '요약 생성 중', done: '요약 결과 확인 중', failed: '요약 생성 실패 — 원문을 확인해 주세요', over_budget: '오늘 전체 요약 한도 도달 — 다음 날 다시 확인해 주세요', duplicate: '중복 기사 — 기존 요약을 확인해 주세요'}[state.status] || (state.error ? '원문은 계속 볼 수 있어요' : state.needsRead ? '요약 상태 확인 중' : '이번 확인은 최대 10건 — 다음 새 소식 확인 때 요청해 주세요');
+        let message = {queued: '요약 대기 중', running: '요약 생성 중', done: '요약 결과 확인 중', failed: '요약 생성 실패 — 원문을 확인해 주세요', over_budget: '오늘 전체 요약 한도 도달 — 다음 날 다시 확인해 주세요', duplicate: '중복 기사 — 기존 요약을 확인해 주세요', unknown:'요약 후보를 확인할 수 없어요 — 새 소식 확인으로 목록을 갱신해 주세요'}[state.status] || (state.error ? '원문은 계속 볼 수 있어요' : state.needsRead ? '요약 상태 확인 중' : '이번 확인은 최대 10건 — 다음 새 소식 확인 때 요청해 주세요');
         if (state.status === 'waiting_limit') {
           const time = formatRetryTime(state.next_retry_at, now());
           message = time ? `요약 한도 대기 — ${time} ${state.accepted ? '재시도 예정' : '이후 새 소식 확인으로 다시 요청'}` : (state.accepted ? '요약 한도 대기 — 재시도 시각 확인 중' : '요약 요청 한도 대기 — 잠시 후 새 소식 확인으로 다시 요청해 주세요');
@@ -154,10 +163,11 @@ export function initFreshSummary(options = {}) {
       (card.dataset.summaryRequested === undefined || ['true','false'].includes(card.dataset.summaryRequested)));
     for (const card of cards) {
       const id = card.dataset.candidateId;
-      if (!states.has(id)) {
-        const status = STATUSES.has(card.dataset.summaryStatus) ? card.dataset.summaryStatus : null;
-        const requested = card.dataset.summaryRequested === undefined ? !!status : card.dataset.summaryRequested === 'true';
-        states.set(id, { status:requested ? status : null, accepted:requested, requested, needsRead:requested, budgetDate:kstDate(now()) });
+      const rawStatus = card.dataset.summaryStatus;
+      const status = STATUSES.has(rawStatus) ? rawStatus : rawStatus ? 'unknown' : null;
+      if (!states.has(id) || (states.get(id).status === 'unknown' && status !== 'unknown' && card.dataset.summaryRequested === 'false' && !views.has(card))) {
+        const requested = status === 'unknown' || (card.dataset.summaryRequested === undefined ? !!status : card.dataset.summaryRequested === 'true');
+        states.set(id, { status:requested ? status : null, accepted:requested && status !== 'unknown', requested, needsRead:requested && status !== 'unknown', budgetDate:kstDate(now()) });
       }
     }
   }
@@ -173,29 +183,32 @@ export function initFreshSummary(options = {}) {
         readNotice = at ? `요약 상태 조회 한도 대기 — ${formatRetryTime(new Date(at).toISOString(), now())} 이후 재확인` : '요약 상태 조회 한도 대기 — 재시도 시각 확인 중'; return false;
       }
       if (response.status === 400) {
-        batch.forEach(id => Object.assign(states.get(id), {status: 'failed', requested: false, accepted: false, needsRead: false, error: '요약 후보가 만료됐어요 — 새 소식 확인으로 목록을 갱신해 주세요'})); continue;
+        batch.forEach(id => Object.assign(states.get(id), {status: 'failed', requested: false, accepted: false, needsRead: false, error: '요약 조회 요청을 확인하지 못했어요 — 새 소식 확인으로 목록을 갱신해 주세요'})); continue;
       }
       if (!response.ok) throw new Error('조회 실패');
       const payload = await response.json();
       if (stopped || unavailable) return false;
       if (!Array.isArray(payload?.items)) throw new Error('상태 형식 오류');
-      if (payload.items.some(result => typeof result?.status === 'string' && !STATUSES.has(result.status))) { disableSummary(); return false; }
       readBudget(payload.budget);
       const seen = new Set();
       const updates = [];
       for (const result of payload.items) {
-        if (!result || !batch.includes(result.candidate_id) || seen.has(result.candidate_id) || !STATUSES.has(result.status) ||
+        if (!result || !batch.includes(result.candidate_id) || seen.has(result.candidate_id) || typeof result.status !== 'string') throw new Error('기사 식별 형식 오류');
+        seen.add(result.candidate_id);
+        const previous = states.get(result.candidate_id);
+        if (result.status === 'unknown' || !STATUSES.has(result.status)) {
+          updates.push([previous, {candidate_id:result.candidate_id,status:'unknown',attempts:0,updated_at:null}]); continue;
+        }
+        if (
           !Number.isSafeInteger(result.attempts) || result.attempts < 0 || !validTimestamp(result.updated_at) ||
           (result.next_retry_at != null && !validTimestamp(result.next_retry_at)) ||
           (result.status === 'done' && !validSummary(result.summary)) ||
           (result.duplicate_of != null && typeof result.duplicate_of !== 'string')) throw new Error('기사 상태 형식 오류');
-        seen.add(result.candidate_id);
-        const previous = states.get(result.candidate_id);
         if (previous.updated_at && Date.parse(previous.updated_at) > Date.parse(result.updated_at)) continue;
         updates.push([previous, result]);
       }
       if (seen.size !== batch.length) throw new Error('기사 상태 누락');
-      updates.forEach(([previous, result]) => Object.assign(previous, {next_retry_at:null, duplicate_of:null, summary:null}, result, {accepted: true, requested: true, needsRead: false, error: null, budgetDate: kstDate(now())}));
+      updates.forEach(([previous, result]) => Object.assign(previous, {next_retry_at:null, duplicate_of:null, summary:null}, result, {accepted:result.status !== 'unknown', requested:true, needsRead:false, error:null, budgetDate:kstDate(now())}));
     }
     return true;
   }
@@ -229,24 +242,28 @@ export function initFreshSummary(options = {}) {
       const ids = [...new Set(cards.map(c => c.dataset.candidateId))].filter(id => !states.get(id).requested);
       const batch = ids.slice(0, 10);
       noticeHint = ids.length > 10 ? `이번 확인은 최대 10건 요청 · 나머지 ${ids.length - 10}건은 다음 새 소식 확인 때 요청` : '';
-      if (batch.length && now().getTime() >= retryUntil) {
+      if (submissionForbidden) forbidSubmissions();
+      else if (batch.length && now().getTime() >= retryUntil) {
         if (budget && budget.used >= budget.limit) batch.forEach(id => Object.assign(states.get(id), {status:'over_budget',requested:true}));
         else {
           batch.forEach(id => Object.assign(states.get(id), {requested:true,status:null,submitting:true,error:null})); render();
           const response = await request('/api/briefing/summarize', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({candidate_ids:batch}), cache:'no-store', signal:AbortSignal.timeout(15000)});
           if (stopped || unavailable) return;
           if (unsupported(response)) { disableSummary(); return; }
-          if (response.status === 429) {
+          if (response.status === 403) forbidSubmissions();
+          else if (response.status === 429) {
             const at = retryAfter(response, now()); retryUntil = at || now().getTime() + POLL_MS;
             batch.forEach(id => Object.assign(states.get(id), {requested:false,accepted:false,submitting:false,status:'waiting_limit',next_retry_at:at ? new Date(at).toISOString() : null}));
           } else {
             if (response.status !== 202) throw new Error('요청 실패');
             const payload = await response.json();
             if (stopped || unavailable) return;
-            if (Array.isArray(payload?.jobs) && payload.jobs.some(job => typeof job?.status === 'string' && !STATUSES.has(job.status))) { disableSummary(); return; }
-            if (!Array.isArray(payload?.jobs) || payload.jobs.length !== batch.length || new Set(payload.jobs.map(j => j?.candidate_id)).size !== batch.length || payload.jobs.some(j => !batch.includes(j?.candidate_id) || !STATUSES.has(j.status))) throw new Error('요청 결과 형식 오류');
+            if (!Array.isArray(payload?.jobs) || payload.jobs.length !== batch.length || new Set(payload.jobs.map(j => j?.candidate_id)).size !== batch.length || payload.jobs.some(j => !batch.includes(j?.candidate_id) || typeof j.status !== 'string')) throw new Error('요청 결과 형식 오류');
             readBudget(payload.budget);
-            payload.jobs.forEach(job => Object.assign(states.get(job.candidate_id), {status:job.status,accepted:true,submitting:false,needsRead:['done','waiting_limit','duplicate'].includes(job.status),budgetDate:kstDate(now())}));
+            payload.jobs.forEach(job => {
+              const status = STATUSES.has(job.status) ? job.status : 'unknown';
+              Object.assign(states.get(job.candidate_id), {summary:null,next_retry_at:null,duplicate_of:null,status,accepted:status !== 'unknown',submitting:false,needsRead:['done','waiting_limit','duplicate'].includes(status),budgetDate:kstDate(now())});
+            });
           }
         }
       }

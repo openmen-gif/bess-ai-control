@@ -3,7 +3,7 @@
 <style>body{font:16px/1.6 system-ui,sans-serif;max-width:1000px;margin:32px auto;padding:0 20px;background:#0c1221;color:#e4eaf6}h1{font-size:26px}.live{display:flex;flex-wrap:wrap;align-items:center;gap:12px}button,select{font:inherit;padding:9px 13px;background:#263957;color:inherit;border:1px solid #536786;border-radius:8px}a{color:#9bc9ff}.st,.meta{font-size:13px;color:#acbad2}.item{padding:16px 0;border-bottom:1px solid #32405a}.fresh{padding:0 18px;border:1px solid #365b78;border-radius:10px}details summary{cursor:pointer}.sum{margin:10px 0;background:#18243a;padding:16px;border-radius:8px}.fixture{padding:12px;background:#1c2940}pre{white-space:pre-wrap;font-size:12px}h2{font-size:19px}#fresh-summary-notice{flex-basis:100%}</style></head><body>
 <h1>BESS 일일 브리핑</h1><p class="fixture">로컬 모의 API 전용 · 운영 요약 요청 0회 · 기준일 2026-11-25 / 기준 커밋 ad89756</p>
 <div class="live"><button id="refresh-btn">🔄 새 소식 확인</button><span id="live-status" class="st">새 소식 제목과 AI 요약 상태를 확인합니다</span></div>
-<p><label>검증 시나리오 <select id="scenario"><option value="done">요약 완료</option><option value="waiting_limit">한도 대기</option><option value="over_budget">오늘 전체 30건 한도</option><option value="duplicate">중복 기사</option><option value="429">요청 429</option><option value="unavailable">API 미배포 404</option><option value="unavailable_signal">summary_available=false</option><option value="legacy">후보 id 없는 구 API</option><option value="batch">신규 12건</option></select></label></p>
+<p><label>검증 시나리오 <select id="scenario"><option value="done">요약 완료</option><option value="waiting_limit">한도 대기</option><option value="over_budget">오늘 전체 30건 한도</option><option value="duplicate">중복 기사</option><option value="unknown">기사 unknown</option><option value="403">요청 403</option><option value="429">요청 429</option><option value="unavailable">API 미배포 404</option><option value="unavailable_signal">summary_available=false</option><option value="legacy">후보 id 없는 구 API</option><option value="batch">신규 12건</option></select></label></p>
 <details class="item" id="published"><summary>기존 정적 발행 기사 — 보존 대상</summary><p>기존 요약 본문은 새 소식 확인 후에도 그대로 유지됩니다</p></details>
 <h2>국내 · 배터리·셀</h2><div id="kr" class="fresh"></div><h2>해외 · 시장·프로젝트</h2><div id="global" class="fresh"></div>
 <p class="meta">30초 뒤 자동 상태 조회 · 시나리오 전환은 페이지를 다시 연 뒤 검증해 주세요</p><pre id="requests">모의 API 호출: 0회</pre>
@@ -19,12 +19,14 @@ window.fetch=async function(url,options={}){
   const reply=(body,status=200,headers={})=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json',...headers}});
   if(scenario==='unavailable')return reply({},404);
   if(options.method==='POST'){
+    if(scenario==='403')return reply({},403);
     if(scenario==='429')return reply({},429,{'Retry-After':'120'});
     const ids=JSON.parse(options.body).candidate_ids;
     ids.forEach(id=>jobs.set(id,{candidate_id:id,status:['waiting_limit','over_budget','duplicate'].includes(scenario)?scenario:'queued',attempts:0,updated_at:stamp()}));
     return reply({jobs:ids.map(candidate_id=>({candidate_id,status:jobs.get(candidate_id).status})),budget:budget()},202);
   }
   const ids=new URL(url,location.origin).searchParams.get('ids').split(',');
+  if(scenario==='unknown')return reply({items:ids.map(candidate_id=>({candidate_id,status:'unknown'})),budget:budget()});
   const items=ids.map(id=>{
     const job=jobs.get(id); if(!job)return null;
     if(scenario==='waiting_limit')return {...job,next_retry_at:new Date(Date.now()+7200000).toISOString()};
