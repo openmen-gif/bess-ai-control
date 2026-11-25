@@ -26,5 +26,7 @@ DOM 계약: `.fresh .item[data-candidate-id]`, 선택 속성 `data-summary-statu
 
 확정 API v1: summary는 `{title_ko,background,key:string[],detail,implication,has_body:boolean}`이며 GET 상태 조회도 최대 10개씩 분할한다.
 중복 링크는 유효한 달력 날짜를 포함하는 `/briefing/YYYY-MM-DD#kr|global|notice:부문:기사` 내부 경로만 허용하며 `cache:`·`fresh:` 식별자는 문구로만 표시한다.
-검증: 신규 20개 및 전체 54개 Node 테스트 성공, 문법 검사 성공; 로컬 실제 화면에서 대기→완료·정적 보존·390px 화면 확인.
+검증: 신규 23개 및 전체 57개 Node 테스트 성공, 문법 검사 성공; 로컬 실제 화면에서 대기→완료·정적 보존·390px 화면 확인.
 기존 실패: `node scripts/site-tools.mjs validate`는 수정하지 않은 루트 `index.html`의 theme-color·noscript 누락 2건을 보고한다.
+
+미배포 호환: 404·405·501, HTML fallback, 미지원 status는 페이지 재열기 전까지 조용히 비활성화한다. 이후 POST·polling·오인 대기 표시를 제거하고 원문 목록과 이미 완료한 요약은 보존한다. 로컬 화면에서 404 뒤 10회 재클릭에도 최초 요청 1회·추가 요청 0회·요약 블록 0개를 확인했다.

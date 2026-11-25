@@ -58,19 +58,34 @@ export function initFreshSummary(options = {}) {
   const states = new Map();
   const views = new WeakMap();
   let cards = [], timer = null, busy = false, stopped = false, budget = null, noticeHint = '', retryUntil = 0, pendingScan = false;
+  let unavailable = false;
 
   function clearTimer() { if (timer !== null) cancel(timer); timer = null; }
   function activeIds() { return [...states].filter(([, s]) => s.accepted && (ACTIVE.has(s.status) || s.needsRead)).map(([id]) => id).filter(id => cards.some(c => c.dataset.candidateId === id)); }
   function schedule() {
     clearTimer();
-    if (!stopped && !doc.hidden && activeIds().length) {
+    if (!stopped && !unavailable && !doc.hidden && activeIds().length) {
       timer = later(() => { timer = null; poll(); }, Math.max(30000, retryUntil - now().getTime()));
     }
   }
   function settle() {
     busy = false; render();
-    if (pendingScan && !stopped && !doc.hidden) { pendingScan = false; void refresh(); }
+    if (pendingScan && !stopped && !unavailable && !doc.hidden) { pendingScan = false; void refresh(); }
     else schedule();
+  }
+  function disableSummary() {
+    // 배포 순서상 API가 없으면 페이지를 다시 열 때까지 조용히 기능을 비활성화한다.
+    unavailable = true; pendingScan = false; clearTimer(); budget = null; noticeHint = '';
+    cards.forEach(card => {
+      const state = states.get(card.dataset.candidateId);
+      if (state?.status !== 'done' || !validSummary(state.summary)) card.querySelector('.fresh-summary')?.remove();
+    });
+    doc.getElementById('fresh-summary-notice')?.remove();
+  }
+  function unsupported(response) {
+    const type = response.headers?.get('Content-Type');
+    return [404, 405, 501].includes(response.status) ||
+      (response.ok && !!type && !/^application\/(?:[\w.+-]+\+)?json(?:\s*;|$)/i.test(type));
   }
   function readBudget(value) {
     if (value && validDay(value.date) && value.date === kstDate(now()) &&
@@ -90,11 +105,11 @@ export function initFreshSummary(options = {}) {
     const el = doc.createElement(tag); el.textContent = value; if (className) el.className = className; parent.appendChild(el); return el;
   }
   function render() {
-    if (stopped) return;
+    if (stopped || unavailable) return;
     for (const card of cards) {
       const state = states.get(card.dataset.candidateId);
       if (!state) continue;
-      const view = JSON.stringify([state.status, state.accepted, state.error, state.summary, state.next_retry_at, state.duplicate_of, state.next_retry_at ? Date.parse(state.next_retry_at) <= now().getTime() : false]);
+      const view = JSON.stringify([state.status, state.accepted, state.submitting, state.error, state.summary, state.next_retry_at, state.duplicate_of, state.next_retry_at ? Date.parse(state.next_retry_at) <= now().getTime() : false]);
       if (views.get(card) === view) continue;
       let box = card.querySelector('.fresh-summary');
       if (!box) { box = doc.createElement('div'); box.className = 'fresh-summary'; box.setAttribute('aria-live', 'polite'); card.appendChild(box); }
@@ -118,7 +133,7 @@ export function initFreshSummary(options = {}) {
           message = time ? `요약 한도 대기 — ${time} ${state.accepted ? '재시도 예정' : '이후 새 소식 확인으로 다시 요청'}` : '요약 한도 대기 — 재시도 시각 확인 중';
           if (time && Date.parse(state.next_retry_at) <= now().getTime()) message = '요약 재시도 예정 시각 경과 — 상태 확인 중';
         }
-        text(box, 'p', message, 'meta');
+        text(box, 'p', state.submitting ? '요약 요청 확인 중' : message, 'meta');
         const href = duplicateHref(state.duplicate_of);
         if (state.status === 'duplicate' && href) { const link = text(box, 'a', '기존 발행 기사 보기'); link.setAttribute('href', href); }
       }
@@ -141,6 +156,7 @@ export function initFreshSummary(options = {}) {
       const batch = ids.slice(i, i + 10);
       const response = await request(`/api/briefing/summary?ids=${encodeURIComponent(batch.join(','))}`, {cache: 'no-store', signal: AbortSignal.timeout(15000)});
       if (stopped) return;
+      if (unsupported(response)) { disableSummary(); return; }
       if (response.status === 429) {
         const at = retryAfter(response, now());
         retryUntil = at || now().getTime() + 30000;
@@ -153,6 +169,7 @@ export function initFreshSummary(options = {}) {
       const payload = await response.json();
       if (stopped) return;
       if (!Array.isArray(payload?.items)) throw new Error('상태 형식 오류');
+      if (payload.items.some(result => typeof result?.status === 'string' && !STATUSES.has(result.status))) { disableSummary(); return; }
       readBudget(payload.budget);
       const seen = new Set();
       const updates = [];
@@ -172,7 +189,7 @@ export function initFreshSummary(options = {}) {
     }
   }
   async function poll() {
-    if (busy || stopped || doc.hidden) return;
+    if (busy || stopped || unavailable || doc.hidden) return;
     if (retryUntil > now().getTime()) { schedule(); return; }
     busy = true;
     try { await fetchItems(activeIds()); }
@@ -180,7 +197,7 @@ export function initFreshSummary(options = {}) {
     finally { settle(); }
   }
   async function refresh() {
-    if (stopped) return;
+    if (stopped || unavailable) return;
     const previousIds = new Set(cards.map(c => c.dataset.candidateId));
     scanDom(); render();
     if (busy || doc.hidden) { if (cards.some(c => !previousIds.has(c.dataset.candidateId))) pendingScan = true; return; }
@@ -194,19 +211,21 @@ export function initFreshSummary(options = {}) {
       if (batch.length && now().getTime() >= retryUntil) {
         if (budget && budget.used >= budget.limit) batch.forEach(id => Object.assign(states.get(id), {status:'over_budget',requested:true}));
         else {
-          batch.forEach(id => Object.assign(states.get(id), {requested:true,status:'queued',error:null})); render();
+          batch.forEach(id => Object.assign(states.get(id), {requested:true,status:null,submitting:true,error:null})); render();
           const response = await request('/api/briefing/summarize', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({candidate_ids:batch}), cache:'no-store', signal:AbortSignal.timeout(15000)});
           if (stopped) return;
+          if (unsupported(response)) { disableSummary(); return; }
           if (response.status === 429) {
             const at = retryAfter(response, now()); retryUntil = at || now().getTime() + 30000;
-            batch.forEach(id => Object.assign(states.get(id), {requested:false,accepted:false,status:'waiting_limit',next_retry_at:at ? new Date(at).toISOString() : null}));
+            batch.forEach(id => Object.assign(states.get(id), {requested:false,accepted:false,submitting:false,status:'waiting_limit',next_retry_at:at ? new Date(at).toISOString() : null}));
           } else {
             if (response.status !== 202) throw new Error('요청 실패');
             const payload = await response.json();
             if (stopped) return;
+            if (Array.isArray(payload?.jobs) && payload.jobs.some(job => typeof job?.status === 'string' && !STATUSES.has(job.status))) { disableSummary(); return; }
             if (!Array.isArray(payload?.jobs) || payload.jobs.length !== batch.length || new Set(payload.jobs.map(j => j?.candidate_id)).size !== batch.length || payload.jobs.some(j => !batch.includes(j?.candidate_id) || !STATUSES.has(j.status))) throw new Error('요청 결과 형식 오류');
             readBudget(payload.budget);
-            payload.jobs.forEach(job => Object.assign(states.get(job.candidate_id), {status:job.status,accepted:true,needsRead:['done','waiting_limit','duplicate'].includes(job.status),budgetDate:kstDate(now())}));
+            payload.jobs.forEach(job => Object.assign(states.get(job.candidate_id), {status:job.status,accepted:true,submitting:false,needsRead:['done','waiting_limit','duplicate'].includes(job.status),budgetDate:kstDate(now())}));
           }
         }
       }
@@ -214,7 +233,7 @@ export function initFreshSummary(options = {}) {
       const initialReads = [...states].filter(([id,s]) => s.needsRead && cards.some(c => c.dataset.candidateId === id)).map(([id]) => id);
       if (initialReads.length && now().getTime() >= retryUntil) await fetchItems(initialReads);
     } catch {
-      states.forEach(s => { if (s.requested && !s.accepted) Object.assign(s, {requested:false,status:null,error:'요약 요청 실패 — 새 소식 확인으로 다시 요청해 주세요'}); });
+      states.forEach(s => { if (s.requested && !s.accepted) Object.assign(s, {requested:false,status:null,submitting:false,error:'요약 요청 실패 — 새 소식 확인으로 다시 요청해 주세요'}); });
       noticeHint = '요약 응답을 확인하지 못했어요 — 원문은 계속 볼 수 있어요';
     } finally { settle(); }
   }

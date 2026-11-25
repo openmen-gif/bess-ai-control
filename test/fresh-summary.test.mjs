@@ -171,3 +171,25 @@ test('이전 요청 중 새 후보 DOM 이벤트가 오면 직렬 처리하고 �
   let end;const pending=new Promise(resolve=>{end=resolve;});
   const p=setup(Array.from({length:12},(_,i)=>`d${i}`),()=>pending);p.doc.dispatch('briefing:fresh-rendered');end(response({jobs:Array.from({length:10},(_,i)=>({candidate_id:`d${i}`,status:'queued'})),budget},202));await flush();assert.equal(p.calls.length,1);p.controller.destroy();
 });
+
+test('요약 POST API가404·405·501이면 조용히 비활성화하고 재클릭·복귀에도 요청하지 않는다', async () => {
+  for (const status of [404,405,501]) {
+    const s=setup(['a'],()=>response({},status));await flush();
+    assert.equal(s.doc.cards[0].textContent,'원문 보존');assert.equal(s.timers.size,0);
+    s.doc.cards=[s.doc.card('a'),s.doc.card('b')];s.doc.dispatch('briefing:fresh-rendered');s.doc.hidden=true;s.doc.dispatch('visibilitychange');s.doc.hidden=false;s.doc.dispatch('visibilitychange');await flush();
+    assert.equal(s.calls.length,1);assert.equal(s.doc.cards[1].textContent,'원문 보존');assert.equal(s.doc.host.textContent,'');s.controller.destroy();
+  }
+});
+
+test('상태 GET API가 미배포이거나 HTML fallback이면 기존 목록을 보존하고 무한 polling하지 않는다', async () => {
+  for(const reply of [response({},404),response({},405),response({},501),response({},200,{'Content-Type':'text/html'})]) {
+    const s=setup([],()=>reply);s.doc.cards=[s.doc.card('a','queued')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+    assert.equal(s.doc.cards[0].textContent,'원문 보존');assert.equal(s.timers.size,0);s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);s.controller.destroy();
+  }
+});
+
+test('미지원 작업 status는 오인 queued나 반복 조회를 남기지 않는다', async () => {
+  const s=setup([],()=>response({items:[item('a','future_schema_status')],budget}));
+  s.doc.cards=[s.doc.card('a','queued')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+  assert.equal(s.doc.cards[0].textContent,'원문 보존');assert.equal(s.timers.size,0);s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,1);s.controller.destroy();
+});
