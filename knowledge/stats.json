@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-25",
  "totals": {
-  "all": 5388,
+  "all": 5389,
   "briefing": 2775,
   "skill": 1555,
-  "discussion": 1058,
+  "discussion": 1059,
   "activity": 0
  },
  "perAgent": {
@@ -29,25 +29,25 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1383,
+   "count": 1384,
    "byType": {
     "skill": 38,
-    "discussion": 599,
+    "discussion": 600,
     "briefing": 746
    },
    "lastGrown": "2026-11-25",
-   "xp": 2058,
+   "xp": 2060,
    "level": 27
   },
   "bess-business-dev": {
-   "count": 373,
+   "count": 374,
    "byType": {
     "skill": 33,
-    "discussion": 157,
+    "discussion": 158,
     "briefing": 183
    },
    "lastGrown": "2026-11-25",
-   "xp": 596,
+   "xp": 598,
    "level": 15
   },
   "bess-cable-engineer": {
@@ -223,24 +223,24 @@
    "level": 8
   },
   "bess-financial-analysis": {
-   "count": 288,
+   "count": 289,
    "byType": {
     "skill": 33,
-    "discussion": 255
+    "discussion": 256
    },
    "lastGrown": "2026-11-25",
-   "xp": 609,
+   "xp": 611,
    "level": 15
   },
   "bess-fire-engineer": {
-   "count": 529,
+   "count": 530,
    "byType": {
     "skill": 29,
-    "discussion": 321,
+    "discussion": 322,
     "briefing": 179
    },
    "lastGrown": "2026-11-25",
-   "xp": 908,
+   "xp": 910,
    "level": 18
   },
   "bess-fit-procedure": {
@@ -520,13 +520,13 @@
    "level": 7
   },
   "bess-presentation-designer": {
-   "count": 34,
+   "count": 35,
    "byType": {
     "skill": 8,
-    "discussion": 26
+    "discussion": 27
    },
-   "lastGrown": "2026-11-19",
-   "xp": 76,
+   "lastGrown": "2026-11-25",
+   "xp": 78,
    "level": 6
   },
   "bess-procurement-data": {
@@ -631,13 +631,13 @@
    "level": 17
   },
   "bess-standards-australia": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 16,
-    "discussion": 30
+    "discussion": 31
    },
    "lastGrown": "2026-11-25",
-   "xp": 108,
+   "xp": 110,
    "level": 7
   },
   "bess-standards-eu": {
@@ -741,13 +741,13 @@
    "level": 18
   },
   "bess-tax-accountant": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 14,
-    "discussion": 31
+    "discussion": 32
    },
    "lastGrown": "2026-11-25",
-   "xp": 104,
+   "xp": 106,
    "level": 6
   },
   "bess-tax-epc-accounting": {
@@ -1202,7 +1202,7 @@
   },
   {
    "date": "2026-11-25",
-   "added": 74
+   "added": 75
   }
  ],
  "freshness": {

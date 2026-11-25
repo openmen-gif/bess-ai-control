@@ -334,6 +334,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-7fcbd003921b",
+   "name": "팀 토론 — BESS EPC 호주(AU) 프로젝트를 위한 AU 규격 준수",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-25",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-7cce503acfda",
    "name": "남동발전, 발전5사 첫 연구소기업 2곳 출범",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-008a63a73937",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7520,6 +7520,41 @@
   {
    "source": "MAR-001",
    "target": "K-80005156603e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-7fcbd003921b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-7fcbd003921b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-7fcbd003921b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-7fcbd003921b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-7fcbd003921b",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-7fcbd003921b",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-7fcbd003921b",
    "type": "knowledge"
   },
   {
@@ -14521,11 +14556,6 @@
    "source": "TRN-001",
    "target": "K-042c59841a4f",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-003",
-   "target": "K-008a63a73937",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15169,7 +15199,7 @@
    {
     "date": "2026-11-25",
     "knowledge": 800,
-    "events_total": 5388
+    "events_total": 5389
    }
   ]
  }
