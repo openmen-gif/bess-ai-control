@@ -55,8 +55,8 @@ footer { margin-top:28px; color:var(--muted); font-size:12px; border-top:1px sol
 .qarch .meta a { color:var(--accent); text-decoration:none; font-size:12px; }
 </style></head><body><div class="wrap">
 <!-- 운영 SCRIPT를 수정 없이 삽입한다. 외부 API는 모두 모의 응답으로 대체한다. -->
-<p>로컬 통합 fixture · 운영 SHA <code id="source-commit" style="overflow-wrap:anywhere">ad0f7d94262a116652b7bb2f283781d9eeb1d60e</code></p>
-<p class="st">SCRIPT SHA256: <code id="source-script-hash" style="overflow-wrap:anywhere">734c5317ec438f2e405284175a79a5aa92c8d00d2cce4670cfa4698f4ab48e1f</code></p>
+<p>로컬 통합 fixture · 운영 SHA <code id="source-commit" style="overflow-wrap:anywhere">7913b5666ebdf79caec5b77bdfdd15c03e80b271</code></p>
+<p class="st">SCRIPT SHA256: <code id="source-script-hash" style="overflow-wrap:anywhere">e78bec40b379cf18404a3461e8d5c0ce59597fd53268bcb805000650c2db69aa</code></p>
 <p class="st">앱 모듈 SHA256: <code id="app-module-hash" style="overflow-wrap:anywhere">91bb8f3896bbf50b26205aca1de76a07ddeab44623bd9277cb28089e838a1a69</code></p>
 <header><h1>BESS 일일 브리핑</h1><div class="date" id="fixture-date"></div><div class="live"><button id="refresh-btn">🔄 새 소식 확인</button><span class="st" id="live-status">기존 정적 브리핑과 신규 카드의 공존 검증</span></div></header>
 <div id="briefing-retry-fallback">AI 요약 1건 생성 지연 — 모의 정적 상태</div>
@@ -156,7 +156,7 @@ window.fetch=async function(input,options={}){
       if (!news.length) return;
       var f = document.createElement('div'); f.className = 'fresh';
       var l = document.createElement('div'); l.className = 'lbl';
-      l.textContent = '🆕 새로 들어온 소식 ' + news.length + '건 · 참고용(AI 요약·관련도 판정 전, 다음 정기 발행 07:30에 반영)';
+      l.textContent = '🆕 새로 들어온 소식 ' + news.length + '건 · 참고용 신규 기사 · AI 요약 상태는 기사별 표시';
       f.appendChild(l);
       news.forEach(function (it) {
         var w = document.createElement('div'); w.className = 'item';

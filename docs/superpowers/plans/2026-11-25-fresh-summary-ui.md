@@ -1,9 +1,9 @@
 # 신규 기사 요약 UI 구현·검증 기록
 
 - 기준일: 2026-11-25
-- 앱 비교 기준 커밋: 5ba546c6626a9ace8bfcb8cbaa3c72e42420046a
-- 운영 고정 커밋: ad0f7d94262a116652b7bb2f283781d9eeb1d60e
-- 운영 SCRIPT SHA256: 734c5317ec438f2e405284175a79a5aa92c8d00d2cce4670cfa4698f4ab48e1f
+- 앱 비교 기준 커밋: 6833ca4c11fdaa1a755ba1f0aa08134efd5883eb
+- 운영 고정 커밋: 7913b5666ebdf79caec5b77bdfdd15c03e80b271
+- 운영 SCRIPT SHA256: e78bec40b379cf18404a3461e8d5c0ce59597fd53268bcb805000650c2db69aa
 - 앱 모듈 SHA256(LF 정규화): 91bb8f3896bbf50b26205aca1de76a07ddeab44623bd9277cb28089e838a1a69
 
 coordinator가 승인한 앱 범위만 구현한다. 발행기 SCRIPT·생성 HTML·운영 배포는 TSM 소유이며 이 작업에서 수정하지 않았다.
@@ -55,14 +55,14 @@ flowchart LR
 
 현재 운영 정적 페이지에는 briefing-status 태그만 있고 fresh-summary 태그는 없었다. 첫 정기 정적 연결은 2026-11-26 07:30이므로 앱 병합과 별개로 TSM의 정적 발행 여부를 확인해야 한다.
 
-기존 사이트 검사 실패는 변경하지 않은 루트 index.html의 theme-color·noscript 누락 2건이다. 운영 SCRIPT의 고정 새 소식 라벨에 남은 AI 요약 전/다음 07:30 문구는 TSM 소유의 문구 정리 요청으로 전달했다. 최신 앱 SHA의 독립 검토·병합·배포는 아직 보류한다.
+기존 사이트 검사 실패는 변경하지 않은 루트 index.html의 theme-color·noscript 누락 2건이다. TSM PR28의 기사별 상태 안내 라벨을 위 고정 SHA로 재생성·대조했고 07:30 반영을 약속하는 고정 문구가 제거됨을 확인했다. 최신 앱 SHA의 독립 검토·병합·배포는 아직 보류한다.
 
 재현 명령:
 
 ```text
 node --test test/*.test.mjs
 node --check briefing/fresh-summary.js
-py -3.14 scripts/build-briefing-integration-fixture.py --publisher <고정 운영 파일 조회 사본> --commit ad0f7d94262a116652b7bb2f283781d9eeb1d60e
+py -3.14 scripts/build-briefing-integration-fixture.py --publisher <고정 운영 파일 조회 사본> --commit 7913b5666ebdf79caec5b77bdfdd15c03e80b271
 node scripts/probe-briefing-queue-contract.mjs <고정 운영 briefing-queue.js 조회 사본>
 ```
 
