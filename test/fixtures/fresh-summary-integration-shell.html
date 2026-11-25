@@ -1,56 +1,78 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BESS 실제 발행기 통합 모의 검증</title><style>{{CSS}}</style></head><body><div class="wrap">
 <!-- 운영 SCRIPT를 수정 없이 삽입한다. 외부 API는 모두 모의 응답으로 대체한다. -->
-<p>로컬 통합 fixture · 운영 SHA <code id="source-commit">{{COMMIT}}</code></p>
-<p class="st">SCRIPT SHA256: <code id="source-script-hash">{{SCRIPT_SHA256}}</code></p>
+<p>로컬 통합 fixture · 운영 SHA <code id="source-commit" style="overflow-wrap:anywhere">{{COMMIT}}</code></p>
+<p class="st">SCRIPT SHA256: <code id="source-script-hash" style="overflow-wrap:anywhere">{{SCRIPT_SHA256}}</code></p>
+<p class="st">앱 모듈 SHA256: <code id="app-module-hash" style="overflow-wrap:anywhere">{{APP_SHA256}}</code></p>
 <header><h1>BESS 일일 브리핑</h1><div class="date" id="fixture-date"></div><div class="live"><button id="refresh-btn">🔄 새 소식 확인</button><span class="st" id="live-status">기존 정적 브리핑과 신규 카드의 공존 검증</span></div></header>
 <div id="briefing-retry-fallback">AI 요약 1건 생성 지연 — 모의 정적 상태</div>
 <nav class="tabs"><button class="on" data-tab="kr">국내</button><button data-tab="global">해외</button><button data-tab="notice">기관 발표</button></nav>
 <main><div class="panel on" data-panel="kr"><section class="sec" data-region="kr" data-sec="0"><h2>국내 · 배터리·셀</h2><div class="items"><details class="item" id="published-static" data-k="정적보존기사"><summary>정적 보존 기사</summary><div class="sum">기존 정적 요약 본문 보존</div></details></div></section></div>
 <div class="panel" data-panel="global"><section class="sec" data-region="global" data-sec="0"><h2>해외 · 시장·프로젝트</h2><div class="items"></div></section></div>
-<div class="panel" data-panel="notice"></div></main><pre id="integration-requests" style="white-space:pre-wrap;font-size:12px"></pre>
+<div class="panel" data-panel="notice"></div></main><pre id="integration-requests" style="white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px"></pre>
 </div><script>
 const mode=new URLSearchParams(location.search).get('mode')||'normal';
 const fixedDay=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10);
 const fixedStamp=()=>new Date().toISOString().replace(/(\.\d{3})Z$/,(_,fraction)=>fraction+'000Z');
 const A='aaaaaaaaaaaaaaaa', B='bbbbbbbbbbbbbbbb', C='cccccccccccccccc';
 const doneSummary={title_ko:'통합 검증 요약',background:'본문 배경',key:['핵심 사항'],detail:'운영 SCRIPT와 두 상태 모듈을 함께 실행한 결과입니다',implication:'기존 발행 기사와 신규 요약이 분리됩니다',has_body:true};
-const jobs=new Map([[B,{candidate_id:B,status:'done',summary:doneSummary,attempts:1,updated_at:fixedStamp(),requested:true}]]),requests=[];
-const integration=window.integration={available:mode!=='unavailable',requests,jobs};
-const budget=()=>({date:fixedDay(),used:jobs.size,limit:30});
+const jobs=new Map(mode==='partial'?[]:[[B,{candidate_id:B,status:'done',summary:doneSummary,attempts:1,updated_at:fixedStamp(),requested:true}]]),requests=[];
+const started=new Set(jobs.keys()),ipIds=new Set(),candidates=new Set(),events=[];
+const integration=window.integration={available:mode!=='unavailable',requests,jobs,events,eventStates:[],
+  finishAccepted(){
+    // 모의 PC 소비자가 start 후 완료한다. 상태 GET 자체는 작업을 만들거나 생성하지 않는다.
+    for(const [id,job] of jobs)if(job.status==='queued'){started.add(id);jobs.set(id,{...job,status:'done',summary:doneSummary,attempts:1,updated_at:fixedStamp()});}
+  },expire(id){jobs.delete(id);candidates.delete(id);}
+};
+const budget=()=>({date:fixedDay(),used:started.size,limit:30});
+const ipBudget=()=>({date:fixedDay(),used:ipIds.size,limit:5,remaining:Math.max(0,5-ipIds.size)});
+document.addEventListener('briefing:fresh-rendered',event=>{events.push(event.detail);integration.eventStates.push(document.readyState);});
 document.getElementById('fixture-date').textContent=fixedDay()+' · 기존 정적 브리핑 2건';
 window.fetch=async function(input,options={}){
   const url=new URL(input,location.origin),path=url.pathname;
-  requests.push({path,method:options.method||'GET',body:options.body||null});
+  requests.push({path,method:options.method||'GET',body:options.body||null,ids:url.searchParams.get('ids')||null});
   document.getElementById('integration-requests').textContent=requests.map(x=>x.method+' '+x.path+(x.body?' '+x.body:'')).join('\n');
   const reply=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json'}});
   if(path==='/briefing/status.json')return reply({date:fixedDay(),total:2,summarized:1,pending:1,reason:'rate_limit',next_retry_at:new Date(Date.now()+3600000).toISOString(),attempt:1,max_attempts:3,state:'pending_retry'});
   if(path==='/api/briefing'){
-    const candidate=(id,title)=>({candidate_id:id,title,source:'모의 출처',link:'https://example.invalid/'+id,when:'11/25 10:00',summary_status:jobs.get(id)?.status||'queued',summary_requested:jobs.has(id)});
+    const candidate=(id,title)=>{candidates.add(id);return {candidate_id:id,title,source:'모의 출처',link:'https://example.invalid/'+id,when:'11/25 10:00',summary_status:jobs.get(id)?.status||'queued',summary_requested:jobs.has(id)};};
     const a=candidate(A,'신규 국내 기사'),b=candidate(B,'이미 요약된 해외 기사'),c=candidate(C,'새로운 해외 기사');
     const old={title:'정적 보존 기사',source:'모의 출처',link:'https://example.invalid/static',when:'11/25 07:30'};
-    const sections=[{name:'배터리·셀',items:[old,a,b]}],sections_global=[{name:'시장·프로젝트',items:[a,c]}];
+    let sections=[{name:'배터리·셀',items:[old,a,b]}],sections_global=[{name:'시장·프로젝트',items:[{...a,summary_status:'duplicate'},c]}];
+    if(mode==='partial'){
+      const ten=Array.from({length:10},(_,i)=>candidate((i+1).toString(16).padStart(16,'0'),'신규 소식 '+(i+1)));
+      sections=[{name:'배터리·셀',items:[old,...ten.slice(0,5)]}];sections_global=[{name:'시장·프로젝트',items:ten.slice(5)}];
+    }
     if(mode==='legacy')for(const sec of [...sections,...sections_global])for(const item of sec.items){delete item.candidate_id;delete item.summary_status;delete item.summary_requested;}
-    return reply({updated:fixedDay()+' 10:00',total:3,total_global:2,sections,sections_global,summary_available:integration.available,budget:budget()});
+    const payload={updated:fixedDay()+' 10:00',total:sections[0].items.length,total_global:sections_global[0].items.length,sections,sections_global};
+    if(mode!=='legacy')Object.assign(payload,{summary_available:integration.available,budget:budget(),ip_budget:integration.available?ipBudget():{date:fixedDay(),used:0,limit:5,remaining:0}});
+    return reply(payload);
   }
   if(path==='/api/briefing/summarize'&&options.method==='POST'){
     const ids=JSON.parse(options.body).candidate_ids;
-    ids.forEach(id=>{if(!jobs.has(id))jobs.set(id,{candidate_id:id,status:'queued',attempts:0,updated_at:fixedStamp(),requested:true});});
-    return reply({jobs:ids.map(id=>jobs.get(id)),budget:budget()},202);
+    if(!ids.length||ids.length>10||ids.some(id=>!candidates.has(id)&&!jobs.has(id)))return reply({error:'invalid_candidate_ids'},400);
+    const results=ids.map(id=>{
+      if(jobs.has(id))return jobs.get(id);
+      if(ipIds.size>=5)return {candidate_id:id,status:'ip_limited'};
+      if(started.size>=30)return {candidate_id:id,status:'over_budget'};
+      ipIds.add(id);const job={candidate_id:id,status:'queued',attempts:0,updated_at:fixedStamp(),requested:true};jobs.set(id,job);return job;
+    });
+    return reply({jobs:results,budget:budget(),ip_budget:ipBudget()},202);
   }
   if(path==='/api/briefing/summary'){
     const ids=(url.searchParams.get('ids')||'').split(',');
     if(ids.length>10)return reply({error:'max10'},400);
     return reply({items:ids.map(id=>{
       const job=jobs.get(id);
-      if(!job)return {candidate_id:id,status:'queued',requested:false,attempts:0,updated_at:fixedStamp()};
-      const result={...job,status:'done',summary:doneSummary,attempts:1,updated_at:fixedStamp()};jobs.set(id,result);return result;
+      if(!job)return candidates.has(id)?{candidate_id:id,status:'queued',requested:false,attempts:0,updated_at:fixedStamp()}:{candidate_id:id,status:'unknown'};
+      return job;
     }),budget:budget()});
   }
   throw Error('허용하지 않은 모의 경로: '+path);
 };
 </script>
 {{SCRIPT}}
+<script>if(mode==='early'||new URLSearchParams(location.search).has('early'))document.getElementById('refresh-btn').click();</script>
 <script type="module" src="/briefing/briefing-status.js"></script>
-<script type="module" src="/briefing/fresh-summary.js"></script>
+<script type="module" src="/briefing/fresh-summary.js?fixture={{APP_SHA256}}"></script>
 </body></html>

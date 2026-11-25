@@ -24,20 +24,22 @@ class Document {
 }
 const now = () => new Date('2026-11-25T01:00:00Z');
 const budget = { date: '2026-11-25', used: 1, limit: 30 };
+const ipBudget = { date: '2026-11-25', used: 5, limit: 5, remaining: 0 };
 const item = (id, status = 'done', extra = {}) => ({ candidate_id: id, status, attempts: 1, updated_at: '2026-11-25T10:00:00+09:00', ...extra });
 const summary = { title_ko: '요약 제목', background: '<img src=x onerror=alert(1)>', key: ['핵심 1'], detail: '상세', implication: '시사점', has_body: true };
 const response = (body, status = 200, headers = {}) => ({ ok: status >= 200 && status < 300, status, json: async () => body, headers: { get: key => headers[key] ?? null } });
 const flush = async () => { for (let i = 0; i < 15; i++) await Promise.resolve(); };
 function setup(ids, api, options = {}) {
-  const doc = new Document(ids), calls = [], timers = new Map(), timerDelays = []; let nextTimer = 0;
+  const doc = new Document(options.preexisting ? ids : []), calls = [], timers = new Map(), timerDelays = []; let nextTimer = 0;
   const controller = initFreshSummary({ document: doc, now: options.now || now, fetch: async (url, options) => { calls.push({url, options}); return api(url, options, calls.length); }, setTimeout: (cb, ms) => { const id = ++nextTimer; timers.set(id, cb); timerDelays.push(ms); return id; }, clearTimeout: id => timers.delete(id) });
+  if (!options.preexisting && ids.length) { doc.cards=ids.map(id=>doc.card(id)); doc.dispatch('briefing:fresh-rendered'); }
   return {doc, calls, timers, timerDelays, controller};
 }
 
 test('기존 DOM을 즉시 처리하고 중복 id는 한 번 요청하며 재클릭·재렌더에도 재요청하지 않는다', async () => {
-  const s = setup(['a', 'a'], () => response({ jobs: [{candidate_id: 'a', status: 'queued'}], budget }, 202));
+  const s = setup(['a', 'a'], url => url === '/api/briefing' ? response({sections:[],sections_global:[],summary_available:true}) : response({ jobs: [{candidate_id: 'a', status: 'queued'}], budget }, 202), {preexisting:true});
   await flush();
-  assert.deepEqual(JSON.parse(s.calls[0].options.body), {candidate_ids: ['a']});
+  assert.deepEqual(JSON.parse(s.calls.find(c=>c.options.method==='POST').options.body), {candidate_ids: ['a']});
   s.doc.dispatch('briefing:fresh-rendered'); await flush();
   assert.equal(s.calls.filter(c => c.options?.method === 'POST').length, 1);
   s.doc.cards = [s.doc.card('a')]; s.doc.dispatch('briefing:fresh-rendered'); await flush();
@@ -339,4 +341,96 @@ test('다른 기사 unknown 응답과 DOM 교체가 이미 완료한 요약을 �
   s.doc.cards=[s.doc.card('b','done','true'),s.doc.card('a','queued','true')];s.doc.dispatch('briefing:fresh-rendered');await flush();
   clock=new Date(clock.getTime()+30000);await fireTimer(s);
   assert.equal(reads,2);assert.equal(decodeURIComponent(s.calls[1].url.split('ids=')[1]),'a');assert.match(s.doc.cards[0].textContent,/AI 요약 보기/);assert.match(s.doc.cards[1].textContent,/요약 후보.*확인/);assert.equal(s.timers.size,0);s.controller.destroy();
+});
+
+test('v1.3 10개 혼합202는5개 queued와5개 ip_limited를 처리하고 접수 작업만 GET한다', async () => {
+  let clock=now();const ids=Array.from({length:10},(_,i)=>`mix${i}`);
+  const s=setup(ids,(url,opts)=>opts?.method==='POST'?response({jobs:ids.map((candidate_id,i)=>({candidate_id,status:i<5?'queued':'ip_limited'})),budget:{...budget,used:5},ip_budget:ipBudget},202):response({items:decodeURIComponent(url.split('ids=')[1]).split(',').map(id=>item(id,'done',{summary})),budget:{...budget,used:5}}),{now:()=>clock});await flush();
+  assert.equal(JSON.parse(s.calls[0].options.body).candidate_ids.length,10);assert.match(s.doc.host.textContent,/오늘 전체 요약 5\/30/);assert.match(s.doc.host.textContent,/남은 0건/);
+  s.doc.cards.slice(5).forEach(card=>assert.match(card.textContent,/오늘 요청 한도/));clock=new Date(clock.getTime()+30000);await fireTimer(s);
+  assert.deepEqual(decodeURIComponent(s.calls[1].url.split('ids=')[1]).split(','),ids.slice(0,5));assert.equal(s.timers.size,0);s.doc.cards.slice(0,5).forEach(card=>assert.match(card.textContent,/AI 요약 보기/));s.controller.destroy();
+});
+
+test('이벤트 ip_budget은 서버 remaining과 limit을 사용하고 누락은 구 계약을 유지한다', async () => {
+  const s=setup([],()=>response({jobs:[{candidate_id:'a',status:'queued'}],budget},202));s.doc.cards=[s.doc.card('a','queued','false')];s.doc.dispatch('briefing:fresh-rendered',{ip_budget:{...ipBudget,used:2,limit:7,remaining:5}});await flush();assert.match(s.doc.host.textContent,/2\/7/);assert.match(s.doc.host.textContent,/남은 5건/);s.controller.destroy();
+  const old=setup(['a'],()=>response({jobs:[{candidate_id:'a',status:'queued'}],budget},202));await flush();assert.doesNotMatch(old.doc.host.textContent,/남은|이 접속/);old.controller.destroy();
+});
+
+test('ip_budget의 날짜·정수·합계 오류는 표시하지 않으며 정상 jobs 수락을 버리지 않는다', async () => {
+  for(const bad of [{...ipBudget,date:'2026-11-24'},{...ipBudget,date:'2026-11-31'},{...ipBudget,remaining:-1},{...ipBudget,used:1.5},{...ipBudget,remaining:2},{...ipBudget,limit:0}]) {
+    const s=setup(['a'],()=>response({jobs:[{candidate_id:'a',status:'queued'}],budget,ip_budget:bad},202));await flush();assert.match(s.doc.cards[0].textContent,/요약 대기 중/);assert.doesNotMatch(s.doc.host.textContent,/남은|이 접속/);s.controller.destroy();
+  }
+});
+
+test('ip_limited는 당일 DOM 갱신에도 멱등이며 다음 KST 상호작용에서 해제한다', async () => {
+  let clock=new Date('2026-11-25T14:59:59Z'),posts=0;
+  const s=setup(['a'],()=>{const date=new Date(clock.getTime()+9*3600000).toISOString().slice(0,10);posts++;return response({jobs:[{candidate_id:'a',status:posts===1?'ip_limited':'queued'}],budget:{date,used:posts===1?5:1,limit:30},ip_budget:{date,used:posts===1?5:1,limit:5,remaining:posts===1?0:4}},202);},{now:()=>clock});await flush();assert.equal(s.timers.size,0);
+  s.doc.cards=[s.doc.card('a','queued','false')];for(let i=0;i<3;i++){s.doc.dispatch('briefing:fresh-rendered');await flush();}assert.equal(posts,1);
+  clock=new Date(clock.getTime()+2000);s.doc.dispatch('visibilitychange');await flush();assert.equal(posts,1);assert.doesNotMatch(s.doc.cards[0].textContent,/오늘 요청 한도/);assert.doesNotMatch(s.doc.host.textContent,/남은 0건/);
+  s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(posts,2);assert.match(s.doc.host.textContent,/남은 4건/);s.controller.destroy();
+});
+
+test('ip_limited 뒤 다른 사람이 접수한 requested=true DOM은 추가POST 없이 조회한다', async () => {
+  const s=setup(['a'],(url,opts)=>opts?.method==='POST'?response({jobs:[{candidate_id:'a',status:'ip_limited'}],budget,ip_budget:ipBudget},202):response({items:[item('a','done',{summary})],budget}));await flush();
+  s.doc.cards=[s.doc.card('a','done','true')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls.length,2);assert.equal(s.calls[1].options.method,undefined);assert.match(s.doc.cards[0].textContent,/AI 요약 보기/);assert.equal(s.timers.size,0);s.controller.destroy();
+});
+
+test('전역30·IP잔여0이어도 기존 작업 반환을 서버가 판정하며 기존 요약을 보존한다', async () => {
+  let clock=now();const full={...budget,used:30};const s=setup([], (url,opts)=>opts?.method==='POST'?response({jobs:[{candidate_id:'a',status:'done'}],budget:full,ip_budget:ipBudget},202):response({items:decodeURIComponent(url.split('ids=')[1]).split(',').map(id=>item(id,'done',{summary})),budget:full,ip_budget:ipBudget}),{now:()=>clock});
+  s.doc.cards=[s.doc.card('b','done','true')];s.doc.dispatch('briefing:fresh-rendered');await flush();s.doc.cards=[s.doc.card('b','done','true'),s.doc.card('a','queued','false')];s.doc.dispatch('briefing:fresh-rendered');await flush();assert.equal(s.calls[1].options.method,'POST');clock=new Date(clock.getTime()+30000);await fireTimer(s);s.doc.cards.forEach(card=>assert.match(card.textContent,/AI 요약 보기/));assert.match(s.doc.host.textContent,/남은 0건/);assert.equal(s.calls.filter(c=>c.options.method==='POST').length,1);s.controller.destroy();
+});
+
+test('혼합202에서 일부 id가 누락되면 예산·수락 상태를 원자적으로 거부한다', async () => {
+  const ids=Array.from({length:10},(_,i)=>`bad${i}`);const s=setup(ids,()=>response({jobs:ids.slice(0,5).map(candidate_id=>({candidate_id,status:'queued'})),budget,ip_budget:ipBudget},202));await flush();s.doc.cards.forEach(card=>assert.doesNotMatch(card.textContent,/요약 대기 중/));assert.equal(s.timers.size,0);assert.doesNotMatch(s.doc.host.textContent,/남은/);s.controller.destroy();
+});
+
+test('module보다 먼저 렌더된 DOM은 availability/IP 예산을 GET1회 복원한 뒤에만 요청한다', async () => {
+  const s=setup(['a'],url=>url==='/api/briefing'?response({sections:[],summary_available:true,ip_budget:{...ipBudget,used:2,remaining:3}}):response({jobs:[{candidate_id:'a',status:'queued'}],budget},202),{preexisting:true});await flush();assert.deepEqual(s.calls.map(c=>c.options.method||'GET'),['GET','POST']);assert.match(s.doc.host.textContent,/남은 3건/);s.controller.destroy();
+});
+
+test('선행 이벤트의 false가 유실되어도 초기 복원 GET은 POST 없이 조용히 비활성화한다', async () => {
+  const s=setup(['a'],()=>response({sections:[],summary_available:false}),{preexisting:true});await flush();assert.equal(s.calls.length,1);assert.equal(s.calls[0].options.method,undefined);assert.equal(s.doc.cards[0].textContent,'원문 보존');assert.equal(s.timers.size,0);s.doc.dispatch('briefing:fresh-rendered',{summary_available:true});await flush();assert.equal(s.calls.length,1);s.controller.destroy();
+});
+
+test('초기 연결정보 GET 오류에서는 접수로 오인하거나 생성하지 않고 원문을 보존한다', async () => {
+  const s=setup(['a'],()=>response({},503),{preexisting:true});await flush();assert.equal(s.calls.length,1);assert.equal(s.calls[0].options.method,undefined);assert.doesNotMatch(s.doc.cards[0].textContent,/요약 대기|생성 중/);assert.match(s.doc.host.textContent,/연결 정보.*확인/);assert.equal(s.timers.size,0);s.controller.destroy();
+});
+
+test('부트스트랩 응답의 새 후보는 추가하지 않고 대기 중 교체된 DOM id만 접수한다', async () => {
+  let finish;const pending=new Promise(resolve=>{finish=resolve;});
+  const s=setup(['old'],(url,opts)=>url==='/api/briefing'?pending:response({jobs:[{candidate_id:'current',status:'queued'}],budget},202),{preexisting:true});
+  s.doc.cards=[s.doc.card('current','queued','false')];s.doc.dispatch('briefing:fresh-rendered');finish(response({sections:[{items:[{candidate_id:'not-in-dom'}]}],summary_available:true}));await flush();
+  assert.equal(s.calls.length,2);assert.deepEqual(JSON.parse(s.calls[1].options.body).candidate_ids,['current']);s.controller.destroy();
+});
+
+test('부트스트랩 대기 중 destroy 또는 false 신호 뒤 늦은 true는 요청을 만들지 않는다', async () => {
+  for(const stop of ['destroy','false']) {
+    let finish;const pending=new Promise(resolve=>{finish=resolve;});const s=setup(['a'],()=>pending,{preexisting:true});
+    if(stop==='destroy')s.controller.destroy();else s.doc.dispatch('briefing:fresh-rendered',{summary_available:false});
+    finish(response({sections:[],summary_available:true}));await flush();assert.equal(s.calls.length,1);assert.equal(s.doc.cards[0].textContent,'원문 보존');assert.equal(s.timers.size,0);s.controller.destroy();
+  }
+});
+
+test('부트스트랩 중 숨김이면 생성하지 않고 복귀 때 현재 DOM을 한 번만 접수한다', async () => {
+  let finish;const pending=new Promise(resolve=>{finish=resolve;});const s=setup(['a'],url=>url==='/api/briefing'?pending:response({jobs:[{candidate_id:'a',status:'queued'}],budget},202),{preexisting:true});
+  s.doc.hidden=true;s.doc.dispatch('visibilitychange');finish(response({sections:[],summary_available:true}));await flush();assert.equal(s.calls.length,1);
+  s.doc.hidden=false;s.doc.dispatch('visibilitychange');s.doc.dispatch('visibilitychange');await flush();assert.equal(s.calls.length,2);assert.equal(s.calls.filter(c=>c.options.method==='POST').length,1);s.controller.destroy();
+});
+
+test('JSON 복원 대기 중의 false latch도 늦은 JSON 결과가 우회하지 못한다', async () => {
+  let finish;const pending=new Promise(resolve=>{finish=resolve;});const s=setup(['a'],()=>({...response({}),json:()=>pending}),{preexisting:true});await flush();
+  s.doc.dispatch('briefing:fresh-rendered',{summary_available:false});finish({sections:[],summary_available:true});await flush();assert.equal(s.calls.length,1);assert.equal(s.doc.cards[0].textContent,'원문 보존');s.controller.destroy();
+});
+
+test('정상 리스너 선행 경로는 부트스트랩 GET을 추가하지 않는다', async () => {
+  const s=setup(['a'],()=>response({jobs:[{candidate_id:'a',status:'queued'}],budget},202));await flush();assert.equal(s.calls.length,1);assert.equal(s.calls[0].options.method,'POST');s.controller.destroy();
+});
+
+test('다른 POST 실패가 이미 종결된 ip_limited·unknown의 멱등 상태를 초기화하지 않는다', async () => {
+  for(const status of ['ip_limited','unknown']){
+    let posts=0;const s=setup(['a'],()=>++posts===1?response({jobs:[{candidate_id:'a',status}],budget,ip_budget:ipBudget},202):response({},500));await flush();
+    s.doc.cards=[s.doc.card('a',status,status==='unknown'?'true':'false'),s.doc.card('b','queued','false')];s.doc.dispatch('briefing:fresh-rendered');await flush();
+    assert.match(s.doc.cards[0].textContent,status==='ip_limited'?/오늘 요청 한도/:/요약 후보.*확인/);
+    s.doc.dispatch('briefing:fresh-rendered');await flush();assert.deepEqual(JSON.parse(s.calls.at(-1).options.body).candidate_ids,['b']);s.controller.destroy();
+  }
 });

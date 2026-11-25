@@ -8,10 +8,11 @@
 <h2>국내 · 배터리·셀</h2><div id="kr" class="fresh"></div><h2>해외 · 시장·프로젝트</h2><div id="global" class="fresh"></div>
 <p class="meta">30초 뒤 자동 상태 조회 · 시나리오 전환은 페이지를 다시 연 뒤 검증해 주세요</p><pre id="requests">모의 API 호출: 0회</pre>
 <script>
-const jobs=new Map(), log=[];
+const jobs=new Map(), log=[],ipIds=new Set(),completed=new Set();
 const stamp=()=>new Date().toISOString().replace(/(\.\d{3})Z$/,(_,fraction)=>fraction+'000Z');
 const day=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10);
-const budget=()=>({date:day(),used:document.querySelector('#scenario').value==='over_budget'?30:jobs.size,limit:30});
+const budget=()=>({date:day(),used:document.querySelector('#scenario').value==='over_budget'?30:completed.size,limit:30});
+const ipBudget=()=>({date:day(),used:ipIds.size,limit:5,remaining:Math.max(0,5-ipIds.size)});
 window.fetch=async function(url,options={}){
   if(!url.startsWith('/api/briefing/')) throw Error('모의 API 외 fetch 금지');
   log.push((options.method||'GET')+' '+url); document.querySelector('#requests').textContent='모의 API 호출: '+log.length+'회\n'+log.join('\n');
@@ -22,16 +23,21 @@ window.fetch=async function(url,options={}){
     if(scenario==='403')return reply({},403);
     if(scenario==='429')return reply({},429,{'Retry-After':'120'});
     const ids=JSON.parse(options.body).candidate_ids;
-    ids.forEach(id=>jobs.set(id,{candidate_id:id,status:['waiting_limit','over_budget','duplicate'].includes(scenario)?scenario:'queued',attempts:0,updated_at:stamp()}));
-    return reply({jobs:ids.map(candidate_id=>({candidate_id,status:jobs.get(candidate_id).status})),budget:budget()},202);
+    const results=ids.map(id=>{
+      if(jobs.has(id))return {candidate_id:id,status:jobs.get(id).status};
+      if(ipIds.size>=5)return {candidate_id:id,status:'ip_limited'};
+      if(budget().used>=30)return {candidate_id:id,status:'over_budget'};
+      ipIds.add(id);const status=['waiting_limit','duplicate'].includes(scenario)?scenario:'queued';jobs.set(id,{candidate_id:id,status,attempts:0,updated_at:stamp()});return {candidate_id:id,status};
+    });
+    return reply({jobs:results,budget:budget(),ip_budget:ipBudget()},202);
   }
   const ids=new URL(url,location.origin).searchParams.get('ids').split(',');
   if(scenario==='unknown')return reply({items:ids.map(candidate_id=>({candidate_id,status:'unknown'})),budget:budget()});
   const items=ids.map(id=>{
-    const job=jobs.get(id); if(!job)return null;
+    const job=jobs.get(id); if(!job)return {candidate_id:id,status:'unknown'};
     if(scenario==='waiting_limit')return {...job,next_retry_at:new Date(Date.now()+7200000).toISOString()};
     if(scenario==='duplicate')return {...job,duplicate_of:'/briefing/2026-11-25#kr:0:0'};
-    return {...job,status:'done',attempts:1,updated_at:stamp(),summary:{title_ko:'배터리 저장장치 신규 프로젝트',background:'전력망 안정화를 위한 신규 저장장치 사업이 발표됐습니다',key:['용량과 일정은 원문에서 확인해 주세요','모의 계약 데이터입니다'],detail:'기존 정적 발행과 분리된 신규 기사 요약입니다',implication:'수주와 계통 연계 조건을 함께 살펴볼 수 있습니다',has_body:true}};
+    const result={...job,status:'done',attempts:1,updated_at:stamp(),summary:{title_ko:'배터리 저장장치 신규 프로젝트',background:'전력망 안정화를 위한 신규 저장장치 사업이 발표됐습니다',key:['용량과 일정은 원문에서 확인해 주세요','모의 계약 데이터입니다'],detail:'기존 정적 발행과 분리된 신규 기사 요약입니다',implication:'수주와 계통 연계 조건을 함께 살펴볼 수 있습니다',has_body:true}};completed.add(id);jobs.set(id,result);return result;
   });
   return items.some(i=>!i)?reply({},400):reply({items,budget:budget()});
 };
@@ -47,6 +53,6 @@ document.querySelector('#refresh-btn').addEventListener('click',()=>{
     document.getElementById(i%2?'global':'kr').appendChild(card);
   }
   document.querySelector('#live-status').textContent='새 소식 '+count+'건 · 각 부문 상단';
-  document.dispatchEvent(new CustomEvent('briefing:fresh-rendered',{detail:{updated:day()+' 10:00',summary_available:scenario!=='unavailable_signal'}}));
+  document.dispatchEvent(new CustomEvent('briefing:fresh-rendered',{detail:{updated:day()+' 10:00',summary_available:scenario!=='unavailable_signal',ip_budget:ipBudget()}}));
 });
-</script><script type="module" src="/briefing/fresh-summary.js"></script></body></html>
+</script><script type="module" src="/briefing/fresh-summary.js?fixture=91bb8f3896bbf50b26205aca1de76a07ddeab44623bd9277cb28089e838a1a69"></script></body></html>

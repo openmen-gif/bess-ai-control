@@ -6,6 +6,7 @@
 import argparse
 import ast
 import hashlib
+import re
 from pathlib import Path
 
 
@@ -35,10 +36,18 @@ def main():
         raise ValueError("SCRIPT/CSS 상수가 없습니다")
     fixtures = Path(__file__).resolve().parent.parent / "test" / "fixtures"
     shell = (fixtures / "fresh-summary-integration-shell.html").read_text(encoding="utf-8")
+    app_module = fixtures.parent.parent / "briefing" / "fresh-summary.js"
+    app_hash = hashlib.sha256(app_module.read_text(encoding="utf-8").encode()).hexdigest()
     for key, value in {**values, "COMMIT": args.commit,
+                       "APP_SHA256": app_hash,
                        "SCRIPT_SHA256": hashlib.sha256(values["SCRIPT"].encode()).hexdigest()}.items():
         shell = shell.replace("{{" + key + "}}", value)
     (fixtures / "fresh-summary-integration.html").write_text(shell, encoding="utf-8")
+    # 로컬 브라우저가 구버전 모듈을 재사용하지 않도록 단독 fixture에도 LF 정규화 해시를 붙인다.
+    single = fixtures / "fresh-summary.html"
+    single.write_text(re.sub(r'src="/briefing/fresh-summary\.js(?:\?fixture=[a-f0-9]{64})?"',
+                             f'src="/briefing/fresh-summary.js?fixture={app_hash}"',
+                             single.read_text(encoding="utf-8")), encoding="utf-8")
     print(f"운영 {args.commit}: SCRIPT 그대로 삽입, 실행/운영 수정 없음")
 
 
