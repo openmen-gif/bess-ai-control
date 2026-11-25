@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-26",
  "totals": {
-  "all": 5396,
+  "all": 5397,
   "briefing": 2775,
   "skill": 1555,
-  "discussion": 1066,
+  "discussion": 1067,
   "activity": 0
  },
  "perAgent": {
@@ -29,14 +29,14 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1390,
+   "count": 1391,
    "byType": {
     "skill": 38,
-    "discussion": 606,
+    "discussion": 607,
     "briefing": 746
    },
    "lastGrown": "2026-11-26",
-   "xp": 2072,
+   "xp": 2074,
    "level": 27
   },
   "bess-business-dev": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 539,
+   "count": 540,
    "byType": {
     "skill": 38,
-    "discussion": 501
+    "discussion": 502
    },
    "lastGrown": "2026-11-26",
-   "xp": 1116,
+   "xp": 1118,
    "level": 20
   },
   "bess-customs-tariff": {
@@ -183,13 +183,13 @@
    "level": 8
   },
   "bess-env-engineer": {
-   "count": 113,
+   "count": 114,
    "byType": {
     "skill": 18,
-    "discussion": 95
+    "discussion": 96
    },
-   "lastGrown": "2026-11-22",
-   "xp": 244,
+   "lastGrown": "2026-11-26",
+   "xp": 246,
    "level": 10
   },
   "bess-epc-bom": {
@@ -223,13 +223,13 @@
    "level": 8
   },
   "bess-financial-analysis": {
-   "count": 291,
+   "count": 292,
    "byType": {
     "skill": 33,
-    "discussion": 258
+    "discussion": 259
    },
    "lastGrown": "2026-11-26",
-   "xp": 615,
+   "xp": 617,
    "level": 15
   },
   "bess-fire-engineer": {
@@ -305,13 +305,13 @@
    "level": 7
   },
   "bess-hydrogen-specialist": {
-   "count": 37,
+   "count": 38,
    "byType": {
     "skill": 13,
-    "discussion": 24
+    "discussion": 25
    },
    "lastGrown": "2026-11-26",
-   "xp": 87,
+   "xp": 89,
    "level": 6
   },
   "bess-insurance-expert": {
@@ -326,13 +326,13 @@
    "level": 7
   },
   "bess-internal-auditor": {
-   "count": 92,
+   "count": 93,
    "byType": {
     "skill": 19,
-    "discussion": 73
+    "discussion": 74
    },
    "lastGrown": "2026-11-26",
-   "xp": 203,
+   "xp": 205,
    "level": 9
   },
   "bess-ip-patent-expert": {
@@ -631,13 +631,13 @@
    "level": 17
   },
   "bess-standards-australia": {
-   "count": 47,
+   "count": 48,
    "byType": {
     "skill": 16,
-    "discussion": 31
+    "discussion": 32
    },
-   "lastGrown": "2026-11-25",
-   "xp": 110,
+   "lastGrown": "2026-11-26",
+   "xp": 112,
    "level": 7
   },
   "bess-standards-eu": {
@@ -661,13 +661,13 @@
    "level": 7
   },
   "bess-standards-korea": {
-   "count": 415,
+   "count": 416,
    "byType": {
     "skill": 33,
-    "discussion": 382
+    "discussion": 383
    },
-   "lastGrown": "2026-11-25",
-   "xp": 863,
+   "lastGrown": "2026-11-26",
+   "xp": 865,
    "level": 17
   },
   "bess-standards-poland": {
@@ -1202,7 +1202,7 @@
   },
   {
    "date": "2026-11-26",
-   "added": 3
+   "added": 4
   }
  ],
  "freshness": {

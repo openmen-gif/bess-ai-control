@@ -28,6 +28,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-3b3b15837058",
+   "name": "팀 토론 — EIA 평가 강화 및 환경 모니터링 시스템 도입 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff6a006c3f4d",
    "name": "엘앤에프 | LFP 양산 확대와 1,515억원 전환사채 발행, 2027년",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-30861841c21f",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-16",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7320,6 +7320,46 @@
   {
    "source": "TRF-001",
    "target": "K-a55a86b0755f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-3b3b15837058",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-3b3b15837058",
+   "type": "knowledge"
+  },
+  {
+   "source": "ENV-001",
+   "target": "K-3b3b15837058",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-3b3b15837058",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-3b3b15837058",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-3b3b15837058",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-007",
+   "target": "K-3b3b15837058",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-3b3b15837058",
    "type": "knowledge"
   },
   {
@@ -14796,11 +14836,6 @@
    "source": "PCS-001",
    "target": "K-3201749c2c13",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-002",
-   "target": "K-30861841c21f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15449,7 +15484,7 @@
    {
     "date": "2026-11-26",
     "knowledge": 800,
-    "events_total": 5396
+    "events_total": 5397
    }
   ]
  }
