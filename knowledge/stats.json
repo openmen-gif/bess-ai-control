@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-25",
  "totals": {
-  "all": 5391,
+  "all": 5392,
   "briefing": 2775,
   "skill": 1555,
-  "discussion": 1061,
+  "discussion": 1062,
   "activity": 0
  },
  "perAgent": {
@@ -29,14 +29,14 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1385,
+   "count": 1386,
    "byType": {
     "skill": 38,
-    "discussion": 601,
+    "discussion": 602,
     "briefing": 746
    },
    "lastGrown": "2026-11-25",
-   "xp": 2062,
+   "xp": 2064,
    "level": 27
   },
   "bess-business-dev": {
@@ -51,14 +51,14 @@
    "level": 15
   },
   "bess-cable-engineer": {
-   "count": 92,
+   "count": 93,
    "byType": {
     "skill": 21,
-    "discussion": 66,
+    "discussion": 67,
     "briefing": 5
    },
-   "lastGrown": "2026-11-22",
-   "xp": 200,
+   "lastGrown": "2026-11-25",
+   "xp": 202,
    "level": 9
   },
   "bess-cbop-engineer": {
@@ -82,13 +82,13 @@
    "level": 8
   },
   "bess-circuit-breaker-expert": {
-   "count": 98,
+   "count": 99,
    "byType": {
     "skill": 17,
-    "discussion": 81
+    "discussion": 82
    },
    "lastGrown": "2026-11-25",
-   "xp": 213,
+   "xp": 215,
    "level": 9
   },
   "bess-commissioning-coordinator": {
@@ -163,13 +163,13 @@
    "level": 8
   },
   "bess-emc-analyst": {
-   "count": 146,
+   "count": 147,
    "byType": {
     "skill": 24,
-    "discussion": 122
+    "discussion": 123
    },
    "lastGrown": "2026-11-25",
-   "xp": 316,
+   "xp": 318,
    "level": 11
   },
   "bess-emerging-markets": {
@@ -346,13 +346,13 @@
    "level": 7
   },
   "bess-it-infra": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 11,
-    "discussion": 41
+    "discussion": 42
    },
    "lastGrown": "2026-11-25",
-   "xp": 115,
+   "xp": 117,
    "level": 7
   },
   "bess-knowledge-manager": {
@@ -500,13 +500,13 @@
    "level": 12
   },
   "bess-power-system-analyst": {
-   "count": 303,
+   "count": 304,
    "byType": {
     "skill": 32,
-    "discussion": 271
+    "discussion": 272
    },
    "lastGrown": "2026-11-25",
-   "xp": 638,
+   "xp": 640,
    "level": 15
   },
   "bess-precom-report": {
@@ -812,24 +812,24 @@
    "level": 8
   },
   "bess-transfer-pricing": {
-   "count": 46,
+   "count": 47,
    "byType": {
     "skill": 12,
-    "discussion": 34
+    "discussion": 35
    },
-   "lastGrown": "2026-11-23",
-   "xp": 104,
+   "lastGrown": "2026-11-25",
+   "xp": 106,
    "level": 6
   },
   "bess-transformer-expert": {
-   "count": 105,
+   "count": 106,
    "byType": {
     "skill": 20,
-    "discussion": 73,
+    "discussion": 74,
     "briefing": 12
    },
    "lastGrown": "2026-11-25",
-   "xp": 218,
+   "xp": 220,
    "level": 9
   },
   "bess-translator": {
@@ -1202,7 +1202,7 @@
   },
   {
    "date": "2026-11-25",
-   "added": 77
+   "added": 78
   }
  ],
  "freshness": {
