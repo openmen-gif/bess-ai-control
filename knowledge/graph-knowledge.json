@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-b191237409c0",
+   "name": "팀 토론 — 명령: IEC61850 기반 통합 네트워크 보안 강화 전략 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-ff986d9d1f8b",
    "name": "팀 토론 — 변압기 효율 최적화 및 Arc Flash 보호 시스템 강화 ",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,39 @@
    "date": "2026-11-17",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-545be457d006",
-   "name": "삼성SDI, 미국 주피터파워에 ESS용 LFP 배터리 16GWh 공급",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
+  {
+   "source": "CYB-001",
+   "target": "K-b191237409c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-b191237409c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "NET-001",
+   "target": "K-b191237409c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRS-001",
+   "target": "K-b191237409c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b191237409c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b191237409c0",
+   "type": "knowledge"
+  },
   {
    "source": "BAT-001",
    "target": "K-ff986d9d1f8b",
@@ -14486,11 +14516,6 @@
    "source": "STD-001",
    "target": "K-55813d5385b5",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-545be457d006",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15144,7 +15169,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5485
+    "events_total": 5486
    }
   ]
  }
