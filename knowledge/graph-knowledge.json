@@ -262,6 +262,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-295d349ace58",
+   "name": "팀 토론 — EU 배터리 공급망 확장 정책 (CBAM 포함)을 우리 EP",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-223a3343ab60",
    "name": "화염 속 검증, 서브어레이 단위 입증: 화웨이 루테라™ 그리드 포밍 ES",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-16",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-788b78996829",
-   "name": "삼성SDI, 미국 ‘RE+ 2026’서 ESS·UPS·BBU용 배터리 선",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-16",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7510,6 +7510,36 @@
   {
    "source": "PCS-001",
    "target": "K-2d0bead56f3f",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-295d349ace58",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-295d349ace58",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-295d349ace58",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-295d349ace58",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-295d349ace58",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-295d349ace58",
    "type": "knowledge"
   },
   {
@@ -14751,11 +14781,6 @@
    "source": "SYS-001",
    "target": "K-7e493bf5cc25",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-788b78996829",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15404,7 +15429,7 @@
    {
     "date": "2026-11-26",
     "knowledge": 800,
-    "events_total": 5427
+    "events_total": 5428
    }
   ]
  }
