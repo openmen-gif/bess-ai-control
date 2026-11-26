@@ -648,6 +648,22 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "49b715871584",
+   "date": "2026-11-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-grounding-engineer",
+    "bess-procurement-expert",
+    "bess-security-expert",
+    "bess-standards-korea"
+   ],
+   "title": "팀 토론 — 규격 표준 최적화 전략 수립: 8개 시장(IEC, IEEE, JIS, KEC, ENTSO-E)의 BESS 관련 표준 비교 및 리스크 평가를 통해 한국 시장 적합성 강화 방안 제시.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "47ac6e04f1ab",
    "date": "2026-11-26",
    "type": "skill",
@@ -3532,17 +3548,6 @@
    "title": "전원 꺼도 불났다…ESS 성장의 조건 ＇안전＇ 또 ＇안전＇ [ESS 대전환 ③]",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBVaUg1V0U5b1ZldjZDMGJlXzlfMC1QN2gxZ3dYOGU4b3FDcXBPb3cyWHctNzBkRjg4Y1dpY3U3OG9CNHllcWVpMTU4cmdTYl9wRHVNLWNUSV9sYWswazZoMzItamE0MXU5VHY3NE01OVZGU3k3OWNZ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "c504feb9a2cd",
-   "date": "2026-11-23",
-   "type": "skill",
-   "agents": [
-    "bess-standards-uk"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 19 개 반영, 스킬 43개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

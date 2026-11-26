@@ -496,6 +496,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-49b715871584",
+   "name": "팀 토론 — 규격 표준 최적화 전략 수립: 8개 시장(IEC, IEEE,",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-47ac6e04f1ab",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-17",
    "val": 3,
    "color": "#F59E0B"
-  },
-  {
-   "id": "K-2083dc26200e",
-   "name": "2035년까지의 배터리 인버터 시장: 태양광+저장장치 수요가 확장 견인",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7680,6 +7680,36 @@
   {
    "source": "CBK-001",
    "target": "K-4dfadfd36e06",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-49b715871584",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-49b715871584",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-49b715871584",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-49b715871584",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-49b715871584",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-49b715871584",
    "type": "knowledge"
   },
   {
@@ -14541,11 +14571,6 @@
    "source": "SCM-001",
    "target": "K-214342053d20",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-2083dc26200e",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15194,7 +15219,7 @@
    {
     "date": "2026-11-26",
     "knowledge": 800,
-    "events_total": 5469
+    "events_total": 5470
    }
   ]
  }
