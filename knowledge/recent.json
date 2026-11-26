@@ -380,6 +380,22 @@
    "source": "00_Skill_MD"
   },
   {
+   "id": "97bb3032acd6",
+   "date": "2026-11-26",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-data-analyst",
+    "bess-emc-analyst",
+    "bess-power-system-analyst",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 발표 자료 최적화 : BESS EPC 프로젝트 주요 성과 및 리스크를 강조하는 인포그래픽과 대시보드 디자인 개선 제안",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "94befc1366da",
    "date": "2026-11-26",
    "type": "skill",
@@ -3522,17 +3538,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 19 개 반영, 스킬 43개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "c258210c162c",
-   "date": "2026-11-23",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "중국 ESS 배터리 계획 생산능력, 세계 출하량 두 배 육박",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ueWZaTmdxREZ3dDhsa0VhX19wcDYxME1WT01lZm9XX2YwVUM2SWt2M0pMaC16R2xxaXZzUGxaakhBalhJNUJXYi1XZ3VUQQ?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

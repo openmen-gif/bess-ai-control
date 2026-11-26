@@ -289,6 +289,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-97bb3032acd6",
+   "name": "팀 토론 — 발표 자료 최적화 : BESS EPC 프로젝트 주요 성과 및",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-26",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-94befc1366da",
    "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-17",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-1c926cfd2d96",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7490,6 +7490,36 @@
   {
    "source": "DEV-001",
    "target": "K-9988e88943c7",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-97bb3032acd6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-97bb3032acd6",
+   "type": "knowledge"
+  },
+  {
+   "source": "DAT-001",
+   "target": "K-97bb3032acd6",
+   "type": "knowledge"
+  },
+  {
+   "source": "EMC-001",
+   "target": "K-97bb3032acd6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-97bb3032acd6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-97bb3032acd6",
    "type": "knowledge"
   },
   {
@@ -14491,11 +14521,6 @@
    "source": "NET-001",
    "target": "K-1f8b56a18c7a",
    "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-1c926cfd2d96",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15144,7 +15169,7 @@
    {
     "date": "2026-11-26",
     "knowledge": 800,
-    "events_total": 5467
+    "events_total": 5468
    }
   ]
  }

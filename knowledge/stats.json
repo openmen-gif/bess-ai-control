@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-26",
  "totals": {
-  "all": 5467,
+  "all": 5468,
   "briefing": 2804,
   "skill": 1593,
-  "discussion": 1070,
+  "discussion": 1071,
   "activity": 0
  },
  "perAgent": {
@@ -29,14 +29,14 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1400,
+   "count": 1401,
    "byType": {
     "skill": 39,
-    "discussion": 610,
+    "discussion": 611,
     "briefing": 751
    },
    "lastGrown": "2026-11-26",
-   "xp": 2088,
+   "xp": 2090,
    "level": 27
   },
   "bess-business-dev": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 544,
+   "count": 545,
    "byType": {
     "skill": 39,
-    "discussion": 505
+    "discussion": 506
    },
    "lastGrown": "2026-11-26",
-   "xp": 1127,
+   "xp": 1129,
    "level": 20
   },
   "bess-customs-tariff": {
@@ -143,14 +143,14 @@
    "level": 11
   },
   "bess-data-analyst": {
-   "count": 139,
+   "count": 140,
    "byType": {
     "skill": 20,
-    "discussion": 119
+    "discussion": 120
    },
-   "lastGrown": "2026-11-24",
-   "xp": 298,
-   "level": 10
+   "lastGrown": "2026-11-26",
+   "xp": 300,
+   "level": 11
   },
   "bess-ebop-engineer": {
    "count": 72,
@@ -163,13 +163,13 @@
    "level": 8
   },
   "bess-emc-analyst": {
-   "count": 149,
+   "count": 150,
    "byType": {
     "skill": 25,
-    "discussion": 124
+    "discussion": 125
    },
    "lastGrown": "2026-11-26",
-   "xp": 323,
+   "xp": 325,
    "level": 11
   },
   "bess-emerging-markets": {
@@ -500,13 +500,13 @@
    "level": 12
   },
   "bess-power-system-analyst": {
-   "count": 305,
+   "count": 306,
    "byType": {
     "skill": 33,
-    "discussion": 272
+    "discussion": 273
    },
    "lastGrown": "2026-11-26",
-   "xp": 643,
+   "xp": 645,
    "level": 15
   },
   "bess-precom-report": {
@@ -540,13 +540,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 427,
+   "count": 428,
    "byType": {
     "skill": 38,
-    "discussion": 389
+    "discussion": 390
    },
    "lastGrown": "2026-11-26",
-   "xp": 892,
+   "xp": 894,
    "level": 18
   },
   "bess-project-manager": {
@@ -1202,7 +1202,7 @@
   },
   {
    "date": "2026-11-26",
-   "added": 74
+   "added": 75
   }
  ],
  "freshness": {
