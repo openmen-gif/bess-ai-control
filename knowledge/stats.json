@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "totals": {
-  "all": 5470,
+  "all": 5485,
   "briefing": 2804,
-  "skill": 1593,
-  "discussion": 1073,
+  "skill": 1607,
+  "discussion": 1074,
   "activity": 0
  },
  "perAgent": {
@@ -29,25 +29,25 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1402,
+   "count": 1404,
    "byType": {
-    "skill": 39,
-    "discussion": 612,
+    "skill": 40,
+    "discussion": 613,
     "briefing": 751
    },
    "lastGrown": "2026-11-26",
-   "xp": 2092,
+   "xp": 2097,
    "level": 27
   },
   "bess-business-dev": {
-   "count": 377,
+   "count": 378,
    "byType": {
-    "skill": 34,
+    "skill": 35,
     "discussion": 160,
     "briefing": 183
    },
    "lastGrown": "2026-11-26",
-   "xp": 605,
+   "xp": 608,
    "level": 15
   },
   "bess-cable-engineer": {
@@ -92,13 +92,13 @@
    "level": 9
   },
   "bess-commissioning-coordinator": {
-   "count": 79,
+   "count": 80,
    "byType": {
-    "skill": 21,
+    "skill": 22,
     "discussion": 58
    },
    "lastGrown": "2026-11-26",
-   "xp": 179,
+   "xp": 182,
    "level": 8
   },
   "bess-contract-specialist": {
@@ -112,24 +112,24 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 547,
+   "count": 549,
    "byType": {
-    "skill": 39,
-    "discussion": 508
+    "skill": 40,
+    "discussion": 509
    },
    "lastGrown": "2026-11-26",
-   "xp": 1133,
+   "xp": 1138,
    "level": 20
   },
   "bess-customs-tariff": {
-   "count": 84,
+   "count": 85,
    "byType": {
     "skill": 22,
-    "discussion": 58,
+    "discussion": 59,
     "briefing": 4
    },
-   "lastGrown": "2026-11-25",
-   "xp": 186,
+   "lastGrown": "2026-11-26",
+   "xp": 188,
    "level": 8
   },
   "bess-cybersecurity-expert": {
@@ -153,13 +153,13 @@
    "level": 11
   },
   "bess-ebop-engineer": {
-   "count": 72,
+   "count": 73,
    "byType": {
     "skill": 18,
-    "discussion": 54
+    "discussion": 55
    },
-   "lastGrown": "2026-11-24",
-   "xp": 162,
+   "lastGrown": "2026-11-26",
+   "xp": 164,
    "level": 8
   },
   "bess-emc-analyst": {
@@ -213,13 +213,13 @@
    "level": 8
   },
   "bess-facility-manager": {
-   "count": 71,
+   "count": 72,
    "byType": {
     "skill": 16,
-    "discussion": 55
+    "discussion": 56
    },
-   "lastGrown": "2026-11-25",
-   "xp": 158,
+   "lastGrown": "2026-11-26",
+   "xp": 160,
    "level": 8
   },
   "bess-financial-analysis": {
@@ -233,14 +233,14 @@
    "level": 15
   },
   "bess-fire-engineer": {
-   "count": 536,
+   "count": 537,
    "byType": {
-    "skill": 30,
+    "skill": 31,
     "discussion": 326,
     "briefing": 180
    },
    "lastGrown": "2026-11-26",
-   "xp": 922,
+   "xp": 925,
    "level": 18
   },
   "bess-fit-procedure": {
@@ -254,14 +254,14 @@
    "level": 7
   },
   "bess-grid-interconnection": {
-   "count": 391,
+   "count": 392,
    "byType": {
-    "skill": 31,
+    "skill": 32,
     "discussion": 151,
     "briefing": 209
    },
    "lastGrown": "2026-11-26",
-   "xp": 604,
+   "xp": 607,
    "level": 15
   },
   "bess-grounding-engineer": {
@@ -285,13 +285,13 @@
    "level": 7
   },
   "bess-hse-manager": {
-   "count": 238,
+   "count": 239,
    "byType": {
-    "skill": 27,
+    "skill": 28,
     "discussion": 211
    },
    "lastGrown": "2026-11-26",
-   "xp": 503,
+   "xp": 506,
    "level": 13
   },
   "bess-hybrid-specialist": {
@@ -396,14 +396,14 @@
    "level": 7
   },
   "bess-marketer": {
-   "count": 820,
+   "count": 821,
    "byType": {
-    "skill": 28,
+    "skill": 29,
     "discussion": 147,
     "briefing": 645
    },
    "lastGrown": "2026-11-26",
-   "xp": 1023,
+   "xp": 1026,
    "level": 19
   },
   "bess-mlops-engineer": {
@@ -447,14 +447,14 @@
    "level": 7
   },
   "bess-pcs-expert": {
-   "count": 554,
+   "count": 555,
    "byType": {
-    "skill": 28,
+    "skill": 29,
     "discussion": 237,
     "briefing": 289
    },
    "lastGrown": "2026-11-26",
-   "xp": 847,
+   "xp": 850,
    "level": 17
   },
   "bess-permit-asia": {
@@ -500,13 +500,13 @@
    "level": 12
   },
   "bess-power-system-analyst": {
-   "count": 306,
+   "count": 307,
    "byType": {
-    "skill": 33,
+    "skill": 34,
     "discussion": 273
    },
    "lastGrown": "2026-11-26",
-   "xp": 645,
+   "xp": 648,
    "level": 15
   },
   "bess-precom-report": {
@@ -540,13 +540,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 430,
+   "count": 432,
    "byType": {
-    "skill": 38,
-    "discussion": 392
+    "skill": 39,
+    "discussion": 393
    },
    "lastGrown": "2026-11-26",
-   "xp": 898,
+   "xp": 903,
    "level": 18
   },
   "bess-project-manager": {
@@ -620,14 +620,14 @@
    "level": 8
   },
   "bess-standards-analyst": {
-   "count": 653,
+   "count": 654,
    "byType": {
-    "skill": 21,
+    "skill": 22,
     "discussion": 168,
     "briefing": 464
    },
    "lastGrown": "2026-11-26",
-   "xp": 863,
+   "xp": 866,
    "level": 17
   },
   "bess-standards-australia": {
@@ -661,13 +661,13 @@
    "level": 7
   },
   "bess-standards-korea": {
-   "count": 418,
+   "count": 419,
    "byType": {
-    "skill": 34,
+    "skill": 35,
     "discussion": 384
    },
    "lastGrown": "2026-11-26",
-   "xp": 870,
+   "xp": 873,
    "level": 18
   },
   "bess-standards-poland": {
@@ -731,13 +731,13 @@
    "level": 7
   },
   "bess-system-engineer": {
-   "count": 432,
+   "count": 433,
    "byType": {
-    "skill": 36,
+    "skill": 37,
     "discussion": 396
    },
    "lastGrown": "2026-11-26",
-   "xp": 900,
+   "xp": 903,
    "level": 18
   },
   "bess-tax-accountant": {
@@ -844,10 +844,6 @@
   }
  },
  "daily": [
-  {
-   "date": "2026-08-29",
-   "added": 25
-  },
   {
    "date": "2026-08-30",
    "added": 22
@@ -1202,18 +1198,22 @@
   },
   {
    "date": "2026-11-26",
-   "added": 77
+   "added": 92
+  },
+  {
+   "date": "2026-11-27",
+   "added": 0
   }
  ],
  "freshness": {
   "briefing": {
    "latestSource": "2026-11-26",
-   "staleDays": 0,
+   "staleDays": 1,
    "stale": false
   },
   "pipelineLastRun": {
    "previousUpdated": "2026-11-26",
-   "gapDays": 0,
+   "gapDays": 1,
    "overdue": false
   }
  }
