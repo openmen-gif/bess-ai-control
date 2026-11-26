@@ -10,6 +10,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-b05f9c839f48",
+   "name": "팀 토론 — NCR 및 CAR 프로세스 강화를 통한 벤더 감사 효율성 제",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-ff986d9d1f8b",
    "name": "팀 토론 — 변압기 효율 최적화 및 Arc Flash 보호 시스템 강화 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-17",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-55813d5385b5",
-   "name": "중국, 2030년까지 신형 에너지저장 300GW 확대 계획 발표",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7230,6 +7230,36 @@
   {
    "source": "SYS-001",
    "target": "K-b191237409c0",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b05f9c839f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b05f9c839f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b05f9c839f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "AUD-001",
+   "target": "K-b05f9c839f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-b05f9c839f48",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b05f9c839f48",
    "type": "knowledge"
   },
   {
@@ -14511,11 +14541,6 @@
    "source": "MAR-001",
    "target": "K-567d6ab0ec7d",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-55813d5385b5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15169,7 +15194,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5486
+    "events_total": 5487
    }
   ]
  }
