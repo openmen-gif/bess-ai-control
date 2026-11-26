@@ -64,6 +64,22 @@
    "source": "구글뉴스"
   },
   {
+   "id": "dbd9e32da457",
+   "date": "2026-11-26",
+   "type": "discussion",
+   "agents": [
+    "bess-cost-analyst",
+    "bess-procurement-expert",
+    "bess-security-expert",
+    "bess-standards-japan",
+    "bess-tax-korea",
+    "bess-translator"
+   ],
+   "title": "팀 토론 — 일본 조세법 적용 전략 수립 : BESS 프로젝트에 대한 법인세법 및 소비세법 준수 방안과 지방세법 및 조세특별조치법을 고려한 세제 혜택 극대화 전략 개발",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "da6e62cca881",
    "date": "2026-11-26",
    "type": "discussion",
@@ -3523,17 +3539,6 @@
    "type": "skill",
    "agents": [
     "bess-standards-uk"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 19 개 반영, 스킬 43개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "c3df26929b72",
-   "date": "2026-11-23",
-   "type": "skill",
-   "agents": [
-    "bess-grid-interconnection"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 19 개 반영, 스킬 43개 갱신",
    "link": "",

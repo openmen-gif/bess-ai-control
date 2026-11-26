@@ -46,6 +46,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-dbd9e32da457",
+   "name": "팀 토론 — 일본 조세법 적용 전략 수립 : BESS 프로젝트에 대한 법",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-26",
+   "val": 3,
+   "color": "#F59E0B"
+  },
+  {
    "id": "K-da6e62cca881",
    "name": "팀 토론 — 모델 배포 자동화 프레임워크 구축 계획 수립",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-17",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1f8b56a18c7a",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7260,6 +7260,36 @@
   {
    "source": "PCS-001",
    "target": "K-e3075f88219f",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-dbd9e32da457",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-dbd9e32da457",
+   "type": "knowledge"
+  },
+  {
+   "source": "SEC-001",
+   "target": "K-dbd9e32da457",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-003",
+   "target": "K-dbd9e32da457",
+   "type": "knowledge"
+  },
+  {
+   "source": "KTX-001",
+   "target": "K-dbd9e32da457",
+   "type": "knowledge"
+  },
+  {
+   "source": "TRL-001",
+   "target": "K-dbd9e32da457",
    "type": "knowledge"
   },
   {
@@ -14516,11 +14546,6 @@
    "source": "PCS-001",
    "target": "K-2083dc26200e",
    "type": "knowledge"
-  },
-  {
-   "source": "NET-001",
-   "target": "K-1f8b56a18c7a",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15169,7 +15194,7 @@
    {
     "date": "2026-11-26",
     "knowledge": 800,
-    "events_total": 5468
+    "events_total": 5469
    }
   ]
  }
