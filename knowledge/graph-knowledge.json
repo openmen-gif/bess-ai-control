@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-b8c53538db76",
+   "name": "팀 토론 — 냉각 효율 개선 방안 심층 분석 및 하이브리드 냉각 시스템 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b783106cdfb8",
    "name": "팀 토론 — 케이블 최적화 설계 보고서 작성: IEC 60502 및 IE",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-22574ebb85f6",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "STE-001",
    "target": "K-e524f312b415",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b8c53538db76",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b8c53538db76",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-b8c53538db76",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-b8c53538db76",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-b8c53538db76",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-b8c53538db76",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-b8c53538db76",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b8c53538db76",
    "type": "knowledge"
   },
   {
@@ -14706,11 +14746,6 @@
    "source": "SYS-001",
    "target": "K-23ec6a51d9c5",
    "type": "knowledge"
-  },
-  {
-   "source": "QAC-001",
-   "target": "K-22574ebb85f6",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15369,7 +15404,7 @@
    {
     "date": "2026-11-28",
     "knowledge": 800,
-    "events_total": 5548
+    "events_total": 5549
    }
   ]
  }
