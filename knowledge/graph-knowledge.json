@@ -154,6 +154,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-b1efa5a5c9dc",
+   "name": "팀 토론 — 조직문화 개선을 통한 혁신 역량 강화 계획 수립",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b1b349036aa8",
    "name": "아일랜드, 배터리 계통 공급 에너지 2.75배 증가",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-0fad9d4c1289",
-   "name": "팀 토론 — 환경적 지속가능성 평가 강화 및 구체적인 친환경 기술 도입 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7320,6 +7320,46 @@
   {
    "source": "BIZ-001",
    "target": "K-b644595cc1d2",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-b1efa5a5c9dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-b1efa5a5c9dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "FAC-001",
+   "target": "K-b1efa5a5c9dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-b1efa5a5c9dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-b1efa5a5c9dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-b1efa5a5c9dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-b1efa5a5c9dc",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-b1efa5a5c9dc",
    "type": "knowledge"
   },
   {
@@ -14461,46 +14501,6 @@
    "source": "PCS-001",
    "target": "K-1606eb31db00",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-0fad9d4c1289",
-   "type": "knowledge"
-  },
-  {
-   "source": "BIZ-001",
-   "target": "K-0fad9d4c1289",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-0fad9d4c1289",
-   "type": "knowledge"
-  },
-  {
-   "source": "GRD-001",
-   "target": "K-0fad9d4c1289",
-   "type": "knowledge"
-  },
-  {
-   "source": "MKT-001",
-   "target": "K-0fad9d4c1289",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-0fad9d4c1289",
-   "type": "knowledge"
-  },
-  {
-   "source": "PRO-001",
-   "target": "K-0fad9d4c1289",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-0fad9d4c1289",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15154,7 +15154,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5541
+    "events_total": 5542
    }
   ]
  }
