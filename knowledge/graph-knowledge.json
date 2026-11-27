@@ -433,6 +433,15 @@
    "color": "#F59E0B"
   },
   {
+   "id": "K-2b2f1ea1d8e6",
+   "name": "팀 토론 — 네덜란드 BESS Zuidvelde 인수 사례를 바탕으로 글",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-27c9f287134a",
    "name": "Greenvolt Power, 미국 뉴멕시코 최대 태양광·BESS 프로젝",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-1606eb31db00",
-   "name": "한온시스템, ESS·데이터센터 정조준…열관리 사업 확대",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7660,6 +7660,46 @@
   {
    "source": "BIZ-001",
    "target": "K-316119adb9fc",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-2b2f1ea1d8e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-2b2f1ea1d8e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-2b2f1ea1d8e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-2b2f1ea1d8e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-2b2f1ea1d8e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-2b2f1ea1d8e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-2b2f1ea1d8e6",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-2b2f1ea1d8e6",
    "type": "knowledge"
   },
   {
@@ -14496,11 +14536,6 @@
    "source": "MAR-001",
    "target": "K-1619151147c9",
    "type": "knowledge"
-  },
-  {
-   "source": "PCS-001",
-   "target": "K-1606eb31db00",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15154,7 +15189,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5542
+    "events_total": 5543
    }
   ]
  }

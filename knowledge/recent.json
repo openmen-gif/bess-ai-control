@@ -574,6 +574,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "2b2f1ea1d8e6",
+   "date": "2026-11-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-labor-safety",
+    "bess-legal-expert",
+    "bess-power-system-analyst",
+    "bess-procurement-expert",
+    "bess-risk-manager"
+   ],
+   "title": "팀 토론 — 네덜란드 BESS Zuidvelde 인수 사례를 바탕으로 글로벌 대형 프로젝트의 금융 모델링 및 리스크 관리 전략을 재검토하여 한국 시장에 적합한 금융 및 리스크 관리 방안 수립 제안.",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "27c9f287134a",
    "date": "2026-11-27",
    "type": "briefing",
@@ -3511,17 +3529,6 @@
    "title": "Battery storage skyrockets in Georgia. Why big power and clean energy groups are aligned - Columbus Ledger",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LSnJRbmtqMlJQdm12Ulp1VnJPOElmWXNrSUxOMjVPRVZwbU52TjVKeDRWYmljaGdELWRGQ0hUQUtqYWw1ZG9rSlBBQkl6MzRBeUNaOGE4eVg3NTR4TGExSTRpV0dmcXg2dkp1UVhjN29GZjVOTWt1Zm1R0gF6QVVfeXFMTjRYREJ1bFI2Y1N3NDNzWHA1LTE4Z0hQS3dCcnpiTWo2TEdXdTJveWo3SEd6YXJNZkpiNTJTSDBNeHo5X2FFQllBVUw0Ti1INWgxbU9lSy1pUGFjZmJXbTFReVI4eEVuZVdqZmNlLVZlLTVlWmJRMFFGOHc?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "761efaf8524d",
-   "date": "2026-11-24",
-   "type": "skill",
-   "agents": [
-    "bess-commissioning-coordinator"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
