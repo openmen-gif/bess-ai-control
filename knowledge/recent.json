@@ -2,6 +2,24 @@
  "updated": "2026-11-28",
  "events": [
   {
+   "id": "e524f312b415",
+   "date": "2026-11-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-legal-expert",
+    "bess-marketer",
+    "bess-procurement-expert",
+    "bess-site-manager"
+   ],
+   "title": "팀 토론 — 부지 조성 최적화 계획 수립을 통해 프로젝트 초기 비용 절감 및 안전성 강화 방안 마련",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "69a79b37e3d0",
    "date": "2026-11-28",
    "type": "discussion",
@@ -3539,17 +3557,6 @@
    "title": "레바논, 태양광·저장장치 확대 계획 승인…최소 3GW 증설",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNUh4MUpBM0puc1ZNckQ5a0VSSXFpX1lGb1h5bXlscHliWHNhWkY3OVBpTjBCRlhGVUlWT0dzbUZMNjdJTjQ1RS1TRDRFUGQ5Z3pCanZjdHBGWnQ0MVBZZDBnU3dJUEFjZEcxNnNrX1czSTVIRjI5YTIza2Zfa3pYYVdlNmxEaTdFUnlnWXpXYUhOQmlO?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "7be52aeff6f0",
-   "date": "2026-11-24",
-   "type": "skill",
-   "agents": [
-    "bess-qaqc-engineer"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
