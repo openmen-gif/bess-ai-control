@@ -377,6 +377,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "744cdc4306af",
+   "date": "2026-11-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cfd-analyst",
+    "bess-commissioning-coordinator",
+    "bess-cost-analyst",
+    "bess-grid-interconnection",
+    "bess-power-market-expert",
+    "bess-power-system-analyst",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — [냉각 효율 개선 방안] 하이브리드 냉각 시스템 도입의 기술적 타당성 및 시스템 통합 영향 분석 제안",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "683347f5a629",
    "date": "2026-11-27",
    "type": "briefing",
@@ -3486,17 +3504,6 @@
    "type": "skill",
    "agents": [
     "bess-contract-specialist"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6fa56dd8e647",
-   "date": "2026-11-24",
-   "type": "skill",
-   "agents": [
-    "bess-grid-interconnection"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
    "link": "",

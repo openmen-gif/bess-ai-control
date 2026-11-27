@@ -289,6 +289,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-744cdc4306af",
+   "name": "팀 토론 — [냉각 효율 개선 방안] 하이브리드 냉각 시스템 도입의 기술",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-683347f5a629",
    "name": "Poweroad, 최대 245kWh 모듈형 LFP 배터리 시스템 공개",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-17",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-f7291fa5c68f",
-   "name": "LG에너지솔루션, AI 전력난 푼다…북미 최대 에너지 전시회 출격",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7475,6 +7475,46 @@
   {
    "source": "BAT-001",
    "target": "K-79b96a679766",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-744cdc4306af",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-744cdc4306af",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-100",
+   "target": "K-744cdc4306af",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-744cdc4306af",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-744cdc4306af",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-744cdc4306af",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-744cdc4306af",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-744cdc4306af",
    "type": "knowledge"
   },
   {
@@ -14426,11 +14466,6 @@
    "source": "MAR-001",
    "target": "K-fa157c23e66c",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-f7291fa5c68f",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15084,7 +15119,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5539
+    "events_total": 5540
    }
   ]
  }
