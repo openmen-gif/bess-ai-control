@@ -10,6 +10,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-d63347245067",
+   "name": "팀 토론 — 지식 공유 플랫폼 구축 및 내부 전문가 네트워킹 프로그램 실",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-b8c53538db76",
    "name": "팀 토론 — 냉각 효율 개선 방안 심층 분석 및 하이브리드 냉각 시스템 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-23ec6a51d9c5",
-   "name": "팀 토론 — 원격모니터링 시스템 구축을 통한 BESS 운영 가용률 향상 ",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7240,6 +7240,46 @@
   {
    "source": "STE-001",
    "target": "K-e524f312b415",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-d63347245067",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-d63347245067",
+   "type": "knowledge"
+  },
+  {
+   "source": "OSH-001",
+   "target": "K-d63347245067",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-d63347245067",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-d63347245067",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-d63347245067",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-d63347245067",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-002",
+   "target": "K-d63347245067",
    "type": "knowledge"
   },
   {
@@ -14706,46 +14746,6 @@
    "source": "SYS-001",
    "target": "K-26c35dd73c86",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-23ec6a51d9c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "CST-001",
-   "target": "K-23ec6a51d9c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "DAT-001",
-   "target": "K-23ec6a51d9c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "OAM-001",
-   "target": "K-23ec6a51d9c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-23ec6a51d9c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SCH-001",
-   "target": "K-23ec6a51d9c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "STD-004",
-   "target": "K-23ec6a51d9c5",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-23ec6a51d9c5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15404,7 +15404,7 @@
    {
     "date": "2026-11-28",
     "knowledge": 800,
-    "events_total": 5549
+    "events_total": 5550
    }
   ]
  }
