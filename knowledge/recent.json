@@ -329,6 +329,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "88f3fc74bbaa",
+   "date": "2026-11-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-grid-interconnection",
+    "bess-grounding-engineer",
+    "bess-power-system-analyst",
+    "bess-standards-korea",
+    "bess-standards-romania",
+    "bess-standards-uk",
+    "bess-system-engineer"
+   ],
+   "title": "팀 토론 — 접지망 설계 최적화를 통한 안전성 향상 방안 및 IEEE80 표준 준수 검증 수행",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "87b4627e062e",
    "date": "2026-11-27",
    "type": "briefing",
@@ -3518,17 +3536,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "77d8b5b99486",
-   "date": "2026-11-24",
-   "type": "briefing",
-   "agents": [
-    "bess-marketer"
-   ],
-   "title": "Battery storage skyrockets in Georgia. Why big power and clean energy groups are aligned - Columbus Ledger",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LSnJRbmtqMlJQdm12Ulp1VnJPOElmWXNrSUxOMjVPRVZwbU52TjVKeDRWYmljaGdELWRGQ0hUQUtqYWw1ZG9rSlBBQkl6MzRBeUNaOGE4eVg3NTR4TGExSTRpV0dmcXg2dkp1UVhjN29GZjVOTWt1Zm1R0gF6QVVfeXFMTjRYREJ1bFI2Y1N3NDNzWHA1LTE4Z0hQS3dCcnpiTWo2TEdXdTJveWo3SEd6YXJNZkpiNTJTSDBNeHo5X2FFQllBVUw0Ti1INWgxbU9lSy1pUGFjZmJXbTFReVI4eEVuZVdqZmNlLVZlLTVlWmJRMFFGOHc?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

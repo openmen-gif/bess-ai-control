@@ -244,6 +244,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-88f3fc74bbaa",
+   "name": "팀 토론 — 접지망 설계 최적화를 통한 안전성 향상 방안 및 IEEE80",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-87b4627e062e",
    "name": "IEEFA, 호주 송전 용량 확대를 위한 BESS 예비력 조정안 제시",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-1619151147c9",
-   "name": "\"북미 데이터센터 정조준\"…삼성SDI·LG엔솔, 차세대 ESS 놓고 격돌",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7485,6 +7485,46 @@
   {
    "source": "MAR-001",
    "target": "K-9668c3cceb6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-88f3fc74bbaa",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-88f3fc74bbaa",
+   "type": "knowledge"
+  },
+  {
+   "source": "GRD-001",
+   "target": "K-88f3fc74bbaa",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-88f3fc74bbaa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-88f3fc74bbaa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-009",
+   "target": "K-88f3fc74bbaa",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-006",
+   "target": "K-88f3fc74bbaa",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-88f3fc74bbaa",
    "type": "knowledge"
   },
   {
@@ -14531,11 +14571,6 @@
    "source": "STD-001",
    "target": "K-1635f77d34a5",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-1619151147c9",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15189,7 +15224,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5543
+    "events_total": 5544
    }
   ]
  }
