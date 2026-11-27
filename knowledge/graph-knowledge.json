@@ -244,6 +244,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-8cb66e11c5e3",
+   "name": "팀 토론 — BESS·EPC 영역 벤치마킹 — bess-standards",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-88f3fc74bbaa",
    "name": "팀 토론 — 접지망 설계 최적화를 통한 안전성 향상 방안 및 IEEE80",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-1635f77d34a5",
-   "name": "‘보호무역은 번영을 가져온 적이 없다’: EnerVenue CEO, RE",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7485,6 +7485,46 @@
   {
    "source": "MAR-001",
    "target": "K-9668c3cceb6d",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-8cb66e11c5e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CON-001",
+   "target": "K-8cb66e11c5e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-8cb66e11c5e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "LEG-001",
+   "target": "K-8cb66e11c5e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "OAM-001",
+   "target": "K-8cb66e11c5e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-8cb66e11c5e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-8cb66e11c5e3",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-004",
+   "target": "K-8cb66e11c5e3",
    "type": "knowledge"
   },
   {
@@ -14566,11 +14606,6 @@
    "source": "MAR-001",
    "target": "K-1e334d5ee867",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-1635f77d34a5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15224,7 +15259,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5544
+    "events_total": 5545
    }
   ]
  }

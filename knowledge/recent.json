@@ -329,6 +329,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "8cb66e11c5e3",
+   "date": "2026-11-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-contract-specialist",
+    "bess-cost-analyst",
+    "bess-legal-expert",
+    "bess-om-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-standards-eu"
+   ],
+   "title": "팀 토론 — BESS·EPC 영역 벤치마킹 — bess-standards-eu 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "88f3fc74bbaa",
    "date": "2026-11-27",
    "type": "discussion",
@@ -3525,17 +3543,6 @@
    "title": "ESS로 충전한 K배터리…내년 반등 가속페달 밟나",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UYnNGTE1pNl9YREFSZTFoLTRSQ1NROTQzSjlLaWNERjhSVWVnTmRoejQ1ZTc3WHVYY0lWN2N0d3RuU01GdkZKbkpaeFNldktKbTdZRE5KZ3p4RzhQb1lQU2hnTzZjMGVGUW5sYQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "7a5a5bc54368",
-   "date": "2026-11-24",
-   "type": "skill",
-   "agents": [
-    "bess-legal-expert"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }
