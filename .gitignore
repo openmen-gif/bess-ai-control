@@ -1,0 +1,12 @@
+# 기준일자: 2026-11-27 / 기준 커밋: bebad81
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+*.dpapi
+.wrangler/
+node_modules/
+.DS_Store
+Thumbs.db
