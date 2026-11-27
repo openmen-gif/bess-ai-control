@@ -254,6 +254,23 @@
    "source": "구글뉴스"
   },
   {
+   "id": "a5998d46c435",
+   "date": "2026-11-27",
+   "type": "discussion",
+   "agents": [
+    "bess-grid-interconnection",
+    "bess-ip-patent-expert",
+    "bess-mlops-engineer",
+    "bess-power-market-expert",
+    "bess-procurement-expert",
+    "bess-system-engineer",
+    "bess-tool-developer"
+   ],
+   "title": "팀 토론 — 툴 개발 가속화: Streamlit 기반 실시간 시뮬레이션 플랫폼 구축 계획 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "991935fa6547",
    "date": "2026-11-27",
    "type": "briefing",
@@ -3473,17 +3490,6 @@
    "type": "skill",
    "agents": [
     "bess-financial-analysis"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6bab9a0b5ecc",
-   "date": "2026-11-24",
-   "type": "skill",
-   "agents": [
-    "bess-procurement-expert"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
    "link": "",

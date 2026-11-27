@@ -199,6 +199,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-a5998d46c435",
+   "name": "팀 토론 — 툴 개발 가속화: Streamlit 기반 실시간 시뮬레이션 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#10B981"
+  },
+  {
    "id": "K-991935fa6547",
    "name": "화웨이 Smart String Grid Forming ESS Platfo",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-17",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-f6c76cf54a0d",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7360,6 +7360,41 @@
   {
    "source": "FIR-001",
    "target": "K-a61546f39741",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-a5998d46c435",
+   "type": "knowledge"
+  },
+  {
+   "source": "IPP-001",
+   "target": "K-a5998d46c435",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-a5998d46c435",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-a5998d46c435",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-a5998d46c435",
+   "type": "knowledge"
+  },
+  {
+   "source": "SYS-001",
+   "target": "K-a5998d46c435",
+   "type": "knowledge"
+  },
+  {
+   "source": "DEV-001",
+   "target": "K-a5998d46c435",
    "type": "knowledge"
   },
   {
@@ -14361,11 +14396,6 @@
    "source": "MAR-001",
    "target": "K-f7229df02fd3",
    "type": "knowledge"
-  },
-  {
-   "source": "SEC-001",
-   "target": "K-f6c76cf54a0d",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15019,7 +15049,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5537
+    "events_total": 5538
    }
   ]
  }
