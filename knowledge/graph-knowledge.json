@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6bf703c52de7",
+   "name": "팀 토론 — SCH-001 기반 BESS 운영 스케줄 최적화 전략 수립 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-69a79b37e3d0",
    "name": "팀 토론 — 명령: \"SiC 기반 IGBT 인버터 성능 향상을 위한 PC",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-26c35dd73c86",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7360,6 +7360,46 @@
   {
    "source": "PRO-001",
    "target": "K-b783106cdfb8",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6bf703c52de7",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6bf703c52de7",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-6bf703c52de7",
+   "type": "knowledge"
+  },
+  {
+   "source": "HYD-001",
+   "target": "K-6bf703c52de7",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-6bf703c52de7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-6bf703c52de7",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-6bf703c52de7",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-6bf703c52de7",
    "type": "knowledge"
   },
   {
@@ -14741,11 +14781,6 @@
    "source": "MAR-001",
    "target": "K-275368cbe62c",
    "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-26c35dd73c86",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15404,7 +15439,7 @@
    {
     "date": "2026-11-28",
     "knowledge": 800,
-    "events_total": 5550
+    "events_total": 5551
    }
   ]
  }
