@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-28",
  "totals": {
-  "all": 5592,
+  "all": 5593,
   "briefing": 2895,
   "skill": 1607,
-  "discussion": 1090,
+  "discussion": 1091,
   "activity": 0
  },
  "perAgent": {
@@ -29,25 +29,25 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1438,
+   "count": 1439,
    "byType": {
     "skill": 40,
-    "discussion": 627,
+    "discussion": 628,
     "briefing": 771
    },
    "lastGrown": "2026-11-28",
-   "xp": 2145,
+   "xp": 2147,
    "level": 27
   },
   "bess-business-dev": {
-   "count": 391,
+   "count": 392,
    "byType": {
     "skill": 35,
-    "discussion": 162,
+    "discussion": 163,
     "briefing": 194
    },
    "lastGrown": "2026-11-28",
-   "xp": 623,
+   "xp": 625,
    "level": 15
   },
   "bess-cable-engineer": {
@@ -62,13 +62,13 @@
    "level": 9
   },
   "bess-cbop-engineer": {
-   "count": 64,
+   "count": 65,
    "byType": {
     "skill": 14,
-    "discussion": 50
+    "discussion": 51
    },
-   "lastGrown": "2026-11-26",
-   "xp": 142,
+   "lastGrown": "2026-11-28",
+   "xp": 144,
    "level": 7
   },
   "bess-cfd-analyst": {
@@ -112,13 +112,13 @@
    "level": 9
   },
   "bess-cost-analyst": {
-   "count": 562,
+   "count": 563,
    "byType": {
     "skill": 40,
-    "discussion": 522
+    "discussion": 523
    },
    "lastGrown": "2026-11-28",
-   "xp": 1164,
+   "xp": 1166,
    "level": 20
   },
   "bess-customs-tariff": {
@@ -233,14 +233,14 @@
    "level": 15
   },
   "bess-fire-engineer": {
-   "count": 542,
+   "count": 543,
    "byType": {
     "skill": 31,
-    "discussion": 327,
+    "discussion": 328,
     "briefing": 184
    },
    "lastGrown": "2026-11-28",
-   "xp": 931,
+   "xp": 933,
    "level": 18
   },
   "bess-fit-procedure": {
@@ -285,13 +285,13 @@
    "level": 7
   },
   "bess-hse-manager": {
-   "count": 241,
+   "count": 242,
    "byType": {
     "skill": 28,
-    "discussion": 213
+    "discussion": 214
    },
    "lastGrown": "2026-11-28",
-   "xp": 510,
+   "xp": 512,
    "level": 14
   },
   "bess-hybrid-specialist": {
@@ -469,13 +469,13 @@
    "level": 7
   },
   "bess-permit-english": {
-   "count": 45,
+   "count": 46,
    "byType": {
     "skill": 15,
-    "discussion": 30
+    "discussion": 31
    },
-   "lastGrown": "2026-11-27",
-   "xp": 105,
+   "lastGrown": "2026-11-28",
+   "xp": 107,
    "level": 6
   },
   "bess-permit-europe": {
@@ -570,13 +570,13 @@
    "level": 8
   },
   "bess-risk-manager": {
-   "count": 52,
+   "count": 53,
    "byType": {
     "skill": 11,
-    "discussion": 41
+    "discussion": 42
    },
-   "lastGrown": "2026-11-27",
-   "xp": 115,
+   "lastGrown": "2026-11-28",
+   "xp": 117,
    "level": 7
   },
   "bess-sales-manager": {
@@ -1202,7 +1202,7 @@
   },
   {
    "date": "2026-11-28",
-   "added": 47
+   "added": 48
   }
  ],
  "freshness": {

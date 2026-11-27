@@ -46,6 +46,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "e8c9020c447b",
+   "date": "2026-11-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-business-dev",
+    "bess-cbop-engineer",
+    "bess-cost-analyst",
+    "bess-fire-engineer",
+    "bess-hse-manager",
+    "bess-permit-english",
+    "bess-risk-manager"
+   ],
+   "title": "팀 토론 — 부지조성·기초설계 영역 리스크 평가 — bess-cbop-engineer 주관, 핵심 결론 도출",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "e524f312b415",
    "date": "2026-11-28",
    "type": "discussion",
@@ -3548,17 +3566,6 @@
    "title": "LONGi outlines solar-storage strategy for AI at COP31 in Türkiye",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZGQwLWs2N2VKUWJsN3Q5Ymhtem5sYS1SbUxQdGNrWHNfeWwtbXBtbmZSZlV6QUFsWG5RcjEwd0JIem0yelZnNTRnWExkQmtKR3pYUXBRN3d4ck1jLWlDVlZuQ0lKYnpoUjg4djlqbkI3WU5pMlhlVW03UEtSbklzYjU4Q0tteHVGdWk0RExOWUtqbFRKcTQ4SDJfQVowT3NlMlFra0hOQXZKWGZzYUw4cXBCczNkQQ?oc=5",
    "source": "구글뉴스"
-  },
-  {
-   "id": "ca96b627d026",
-   "date": "2026-11-24",
-   "type": "skill",
-   "agents": [
-    "bess-output-generator"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
   }
  ]
 }

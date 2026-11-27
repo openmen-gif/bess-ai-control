@@ -37,6 +37,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-e8c9020c447b",
+   "name": "팀 토론 — 부지조성·기초설계 영역 리스크 평가 — bess-cbop-e",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-e524f312b415",
    "name": "팀 토론 — 부지 조성 최적화 계획 수립을 통해 프로젝트 초기 비용 절감",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-b95a21d908db",
-   "name": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 1",
-   "group": "KNOWLEDGE",
-   "type": "skill",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7220,6 +7220,46 @@
   {
    "source": "BAT-001",
    "target": "K-edb712a5b9a9",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e8c9020c447b",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-e8c9020c447b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CBP-001",
+   "target": "K-e8c9020c447b",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e8c9020c447b",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-e8c9020c447b",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-e8c9020c447b",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRM-002",
+   "target": "K-e8c9020c447b",
+   "type": "knowledge"
+  },
+  {
+   "source": "RSK-001",
+   "target": "K-e8c9020c447b",
    "type": "knowledge"
   },
   {
@@ -14706,11 +14746,6 @@
    "source": "SYS-001",
    "target": "K-be2ec5386bc1",
    "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-b95a21d908db",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15369,7 +15404,7 @@
    {
     "date": "2026-11-28",
     "knowledge": 800,
-    "events_total": 5592
+    "events_total": 5593
    }
   ]
  }
