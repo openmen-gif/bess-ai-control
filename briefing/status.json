@@ -1,11 +1,11 @@
 {
- "date": "2026-11-27",
- "total": 71,
- "summarized": 71,
- "pending": 0,
- "reason": null,
+ "date": "2026-11-28",
+ "total": 78,
+ "summarized": 10,
+ "pending": 68,
+ "reason": "rate_limit",
  "next_retry_at": null,
  "attempt": 0,
  "max_attempts": 3,
- "state": "ok"
+ "state": "gave_up"
 }
