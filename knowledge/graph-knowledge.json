@@ -37,6 +37,15 @@
    "color": "#10B981"
   },
   {
+   "id": "K-e5b8a840de94",
+   "name": "팀 토론 — 인도 신흥시장 진출 전략 수립 및 초기 프로젝트 파트너십 구",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-de3ac75a34a0",
    "name": "Blue Elephant Energy, 네덜란드 BESS 프로젝트 지분 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-fa157c23e66c",
-   "name": "Flower, 독일 Ragow 500MW/2000MWh BESS 계획 공",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7220,6 +7220,46 @@
   {
    "source": "STD-001",
    "target": "K-eaa5a5323dda",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-e5b8a840de94",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-e5b8a840de94",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-e5b8a840de94",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-e5b8a840de94",
+   "type": "knowledge"
+  },
+  {
+   "source": "MLO-001",
+   "target": "K-e5b8a840de94",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-e5b8a840de94",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-e5b8a840de94",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-008",
+   "target": "K-e5b8a840de94",
    "type": "knowledge"
   },
   {
@@ -14461,11 +14501,6 @@
    "source": "SYS-001",
    "target": "K-0fad9d4c1289",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-fa157c23e66c",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15119,7 +15154,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5540
+    "events_total": 5541
    }
   ]
  }

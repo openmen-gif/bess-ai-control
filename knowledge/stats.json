@@ -1,10 +1,10 @@
 {
  "updated": "2026-11-27",
  "totals": {
-  "all": 5540,
+  "all": 5541,
   "briefing": 2854,
   "skill": 1607,
-  "discussion": 1079,
+  "discussion": 1080,
   "activity": 0
  },
  "perAgent": {
@@ -29,25 +29,25 @@
    "level": 8
   },
   "bess-battery-expert": {
-   "count": 1417,
+   "count": 1418,
    "byType": {
     "skill": 40,
-    "discussion": 616,
+    "discussion": 617,
     "briefing": 761
    },
    "lastGrown": "2026-11-27",
-   "xp": 2113,
+   "xp": 2115,
    "level": 27
   },
   "bess-business-dev": {
-   "count": 384,
+   "count": 385,
    "byType": {
     "skill": 35,
-    "discussion": 160,
+    "discussion": 161,
     "briefing": 189
    },
    "lastGrown": "2026-11-27",
-   "xp": 614,
+   "xp": 616,
    "level": 15
   },
   "bess-cable-engineer": {
@@ -112,13 +112,13 @@
    "level": 8
   },
   "bess-cost-analyst": {
-   "count": 552,
+   "count": 553,
    "byType": {
     "skill": 40,
-    "discussion": 512
+    "discussion": 513
    },
    "lastGrown": "2026-11-27",
-   "xp": 1144,
+   "xp": 1146,
    "level": 20
   },
   "bess-customs-tariff": {
@@ -396,24 +396,24 @@
    "level": 7
   },
   "bess-marketer": {
-   "count": 834,
+   "count": 835,
    "byType": {
     "skill": 29,
-    "discussion": 148,
+    "discussion": 149,
     "briefing": 657
    },
    "lastGrown": "2026-11-27",
-   "xp": 1040,
+   "xp": 1042,
    "level": 19
   },
   "bess-mlops-engineer": {
-   "count": 102,
+   "count": 103,
    "byType": {
     "skill": 17,
-    "discussion": 85
+    "discussion": 86
    },
    "lastGrown": "2026-11-27",
-   "xp": 221,
+   "xp": 223,
    "level": 9
   },
   "bess-network-engineer": {
@@ -540,13 +540,13 @@
    "level": 6
   },
   "bess-procurement-expert": {
-   "count": 436,
+   "count": 437,
    "byType": {
     "skill": 39,
-    "discussion": 397
+    "discussion": 398
    },
    "lastGrown": "2026-11-27",
-   "xp": 911,
+   "xp": 913,
    "level": 18
   },
   "bess-project-manager": {
@@ -661,23 +661,23 @@
    "level": 7
   },
   "bess-standards-korea": {
-   "count": 420,
+   "count": 421,
    "byType": {
     "skill": 35,
-    "discussion": 385
+    "discussion": 386
    },
    "lastGrown": "2026-11-27",
-   "xp": 875,
+   "xp": 877,
    "level": 18
   },
   "bess-standards-poland": {
-   "count": 49,
+   "count": 50,
    "byType": {
     "skill": 15,
-    "discussion": 34
+    "discussion": 35
    },
-   "lastGrown": "2026-11-26",
-   "xp": 113,
+   "lastGrown": "2026-11-27",
+   "xp": 115,
    "level": 7
   },
   "bess-standards-romania": {
@@ -1202,7 +1202,7 @@
   },
   {
    "date": "2026-11-27",
-   "added": 55
+   "added": 56
   }
  ],
  "freshness": {
