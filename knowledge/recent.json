@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "events": [
+  {
+   "id": "69a79b37e3d0",
+   "date": "2026-11-28",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cfd-analyst",
+    "bess-cost-analyst",
+    "bess-ebop-engineer",
+    "bess-grid-interconnection",
+    "bess-pcs-expert",
+    "bess-power-market-expert",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 명령: \"SiC 기반 IGBT 인버터 성능 향상을 위한 PCS 인버터 토폴로지 최적화 방안 연구",
+   "link": "",
+   "source": "bess-team"
+  },
   {
    "id": "fc623dac2c55",
    "date": "2026-11-27",
@@ -3532,17 +3550,6 @@
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
    "link": "",
    "source": "00_Skill_MD"
-  },
-  {
-   "id": "7a66cc00ff26",
-   "date": "2026-11-24",
-   "type": "briefing",
-   "agents": [
-    "bess-battery-expert"
-   ],
-   "title": "ESS로 충전한 K배터리…내년 반등 가속페달 밟나",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UYnNGTE1pNl9YREFSZTFoLTRSQ1NROTQzSjlLaWNERjhSVWVnTmRoejQ1ZTc3WHVYY0lWN2N0d3RuU01GdkZKbkpaeFNldktKbTdZRE5KZ3p4RzhQb1lQU2hnTzZjMGVGUW5sYQ?oc=5",
-   "source": "구글뉴스"
   }
  ]
 }

@@ -1,6 +1,15 @@
 {
  "nodes": [
   {
+   "id": "K-69a79b37e3d0",
+   "name": "팀 토론 — 명령: \"SiC 기반 IGBT 인버터 성능 향상을 위한 PC",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-fc623dac2c55",
    "name": "물리 정보 그래프 어텐션 네트워크로 스마트그리드 안정도 평가",
    "group": "KNOWLEDGE",
@@ -7190,18 +7199,49 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-1e334d5ee867",
-   "name": "Moment Energy, 전기차 배터리로 만든 저장장치 'Nova' 공",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
+  {
+   "source": "BAT-001",
+   "target": "K-69a79b37e3d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CFD-001",
+   "target": "K-69a79b37e3d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-69a79b37e3d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-69a79b37e3d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "COM-003",
+   "target": "K-69a79b37e3d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PCS-001",
+   "target": "K-69a79b37e3d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-69a79b37e3d0",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-69a79b37e3d0",
+   "type": "knowledge"
+  },
   {
    "source": "PCS-001",
    "target": "K-fc623dac2c55",
@@ -14601,15 +14641,10 @@
    "source": "BAT-001",
    "target": "K-204c92240b55",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-1e334d5ee867",
-   "type": "knowledge"
   }
  ],
  "meta": {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "history": [
    {
     "date": "2026-07-20",
@@ -15260,6 +15295,11 @@
     "date": "2026-11-27",
     "knowledge": 800,
     "events_total": 5545
+   },
+   {
+    "date": "2026-11-28",
+    "knowledge": 800,
+    "events_total": 5546
    }
   ]
  }
