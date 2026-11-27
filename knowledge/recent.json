@@ -315,6 +315,24 @@
    "source": "구글뉴스"
   },
   {
+   "id": "82f65a8a2183",
+   "date": "2026-11-27",
+   "type": "discussion",
+   "agents": [
+    "bess-battery-expert",
+    "bess-cost-analyst",
+    "bess-financial-analysis",
+    "bess-knowledge-manager",
+    "bess-marketer",
+    "bess-power-market-expert",
+    "bess-power-system-analyst",
+    "bess-procurement-expert"
+   ],
+   "title": "팀 토론 — 네덜란드 BESS Zuidvelde 인수 동향 분석을 통해 글로벌 대규모 프로젝트 금융 모델 및 리스크 관리 전략 재검토 및 적용 방안 수립",
+   "link": "",
+   "source": "bess-team"
+  },
+  {
    "id": "82cb1bcf4ef0",
    "date": "2026-11-27",
    "type": "briefing",
@@ -3479,17 +3497,6 @@
    "type": "skill",
    "agents": [
     "bess-grid-interconnection"
-   ],
-   "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
-   "link": "",
-   "source": "00_Skill_MD"
-  },
-  {
-   "id": "6f537f1ccee0",
-   "date": "2026-11-24",
-   "type": "skill",
-   "agents": [
-    "bess-financial-analysis"
    ],
    "title": "스킬 갱신 — docs(bess-skills): 자동 마이닝 — 세션 13 개 반영, 스킬 33개 갱신",
    "link": "",

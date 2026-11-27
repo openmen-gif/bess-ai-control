@@ -244,6 +244,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-82f65a8a2183",
+   "name": "팀 토론 — 네덜란드 BESS Zuidvelde 인수 동향 분석을 통해 ",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-27",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-82cb1bcf4ef0",
    "name": "MetaWealth·StarCharge, 루마니아 BESS 사업 1,00",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-17",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-f7229df02fd3",
-   "name": "EDF, 화요일 저녁 주민 대상 배터리 저장 계획 공개 설명",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-17",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7415,6 +7415,46 @@
   {
    "source": "PCS-001",
    "target": "K-83c5858a2014",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-82f65a8a2183",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-82f65a8a2183",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIN-001",
+   "target": "K-82f65a8a2183",
+   "type": "knowledge"
+  },
+  {
+   "source": "LKM-001",
+   "target": "K-82f65a8a2183",
+   "type": "knowledge"
+  },
+  {
+   "source": "MAR-001",
+   "target": "K-82f65a8a2183",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-82f65a8a2183",
+   "type": "knowledge"
+  },
+  {
+   "source": "PWR-001",
+   "target": "K-82f65a8a2183",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-82f65a8a2183",
    "type": "knowledge"
   },
   {
@@ -14391,11 +14431,6 @@
    "source": "MAR-001",
    "target": "K-f7291fa5c68f",
    "type": "knowledge"
-  },
-  {
-   "source": "MAR-001",
-   "target": "K-f7229df02fd3",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15049,7 +15084,7 @@
    {
     "date": "2026-11-27",
     "knowledge": 800,
-    "events_total": 5538
+    "events_total": 5539
    }
   ]
  }
