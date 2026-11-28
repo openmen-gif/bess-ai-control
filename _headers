@@ -16,5 +16,5 @@
 
 /labs/*
   ! X-Frame-Options
-  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: frame-ancestors 'self' https://openmen-gif-bess-team.hf.space http://127.0.0.1:* http://localhost:*
   Cache-Control: public, max-age=3600
