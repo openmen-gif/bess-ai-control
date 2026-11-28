@@ -208,6 +208,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-927d7fb25f3e",
+   "name": "팀 토론 — 역대 최대 ESS 입찰 동향 분석 및 국내 입찰 전략 최적화",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-91aebf3e8c1e",
    "name": "LG엔솔 빠진 2조원대 ESS 수주전…삼성SDI 과반 확보",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#8B5CF6"
-  },
-  {
-   "id": "K-bfe374b7eba5",
-   "name": "15차 5개년 신형 에너지저장 실행방안 발표, 수소저장 첨단기술 비축 방",
-   "group": "KNOWLEDGE",
-   "type": "briefing",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#10B981"
   }
  ],
  "links": [
@@ -7490,6 +7490,46 @@
   {
    "source": "BAT-001",
    "target": "K-96dbf182b396",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-927d7fb25f3e",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-927d7fb25f3e",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-927d7fb25f3e",
+   "type": "knowledge"
+  },
+  {
+   "source": "SCM-001",
+   "target": "K-927d7fb25f3e",
+   "type": "knowledge"
+  },
+  {
+   "source": "MKT-001",
+   "target": "K-927d7fb25f3e",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-927d7fb25f3e",
+   "type": "knowledge"
+  },
+  {
+   "source": "STD-002",
+   "target": "K-927d7fb25f3e",
+   "type": "knowledge"
+  },
+  {
+   "source": "TAX-001",
+   "target": "K-927d7fb25f3e",
    "type": "knowledge"
   },
   {
@@ -14741,11 +14781,6 @@
    "source": "BAT-001",
    "target": "K-c4e0429fe4a3",
    "type": "knowledge"
-  },
-  {
-   "source": "STD-001",
-   "target": "K-bfe374b7eba5",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15404,7 +15439,7 @@
    {
     "date": "2026-11-28",
     "knowledge": 800,
-    "events_total": 5594
+    "events_total": 5595
    }
   ]
  }
