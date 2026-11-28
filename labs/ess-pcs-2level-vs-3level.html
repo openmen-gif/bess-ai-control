@@ -1315,6 +1315,85 @@
       .edu-mode-grid,
       .pro-steps-grid { grid-template-columns: 1fr; }
     }
+
+    /* =====================================================================
+     * 모바일(360~640px) 반응형 최적화
+     * ===================================================================== */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    svg, canvas {
+      max-width: 100%;
+    }
+
+    .pro-table-wrap {
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media (max-width: 640px) {
+      .top-nav-inner {
+        padding: 8px 10px;
+        gap: 8px;
+      }
+      .pro-wrap,
+      .edu-wrap,
+      .container {
+        padding: 10px 10px 36px;
+      }
+      .pro-card,
+      .edu-card,
+      .pro-scope-card,
+      .edu-scope-card {
+        padding: 13px 12px;
+        border-radius: 16px;
+        margin-bottom: 12px;
+      }
+      .switch-tab,
+      .pro-topo-btn,
+      .pro-mode-btn,
+      .pro-action-btn,
+      .edu-topo-btn,
+      .edu-mode-btn,
+      .edu-power-btn,
+      .edu-ctrl-btn,
+      .edu-quiz-btn,
+      .modal-close-btn {
+        min-height: 40px;
+      }
+      .pro-btn-group,
+      .edu-btn-row {
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      input[type="range"] {
+        min-height: 36px;
+      }
+      .pro-scope-canvas-wrap,
+      .edu-scope-canvas-wrap {
+        height: 155px;
+      }
+      .pro-comp-table th,
+      .pro-comp-table td {
+        padding: 8px 9px;
+        font-size: 0.76rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .pro-wrap,
+      .edu-wrap,
+      .container {
+        padding: 8px 8px 32px;
+      }
+      .pro-card,
+      .edu-card {
+        padding: 12px 10px;
+      }
+    }
   </style>
 </head>
 <body class="theme-pro">

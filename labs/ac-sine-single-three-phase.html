@@ -642,6 +642,124 @@
     @media (max-width: 520px) {
       .formula-bar { grid-template-columns: 1fr; }
     }
+
+    /* =====================================================================
+     * 모바일(360~640px) 반응형 최적화
+     * ===================================================================== */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    svg, canvas {
+      max-width: 100%;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 10px 10px 36px;
+      }
+      .hero-header {
+        padding: 14px 12px;
+        border-radius: 16px;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+      .hero-left {
+        gap: 10px;
+      }
+      .hero-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 13px;
+        font-size: 22px;
+      }
+      .hero-title {
+        font-size: clamp(1.02rem, 4.5vw, 1.24rem);
+        line-height: 1.3;
+      }
+      .hero-sub {
+        font-size: 0.8rem;
+      }
+      .legend-pill {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+      }
+      .tab-bar {
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .tab-btn {
+        min-height: 42px;
+        padding: 10px 12px;
+        font-size: 0.84rem;
+        border-radius: 13px;
+      }
+      .control-bar {
+        padding: 12px;
+        border-radius: 16px;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+      .ctrl-group {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .btn-play,
+      .chip-btn,
+      .toggle-vrs-btn,
+      .quiz-opt-btn {
+        min-height: 38px;
+        padding: 8px 11px;
+        font-size: 0.78rem;
+      }
+      .angle-ctrl-box {
+        max-width: 100%;
+        width: 100%;
+        flex: 1 1 100%;
+        min-height: 42px;
+        padding: 6px 10px;
+      }
+      input[type="range"],
+      .angle-slider {
+        min-height: 32px;
+      }
+      .angle-slider::-webkit-slider-thumb {
+        width: 22px;
+        height: 22px;
+      }
+      .card {
+        padding: 13px 12px;
+        border-radius: 16px;
+        margin-bottom: 12px;
+      }
+      .card-title {
+        font-size: 0.94rem;
+      }
+      .formula-bar {
+        padding: 12px;
+        border-radius: 14px;
+        gap: 8px;
+        margin-bottom: 12px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .canvas-box {
+        min-height: 220px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 8px 8px 32px;
+      }
+      .card {
+        padding: 12px 10px;
+      }
+      .formula-bar {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
