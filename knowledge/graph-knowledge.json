@@ -253,6 +253,15 @@
    "color": "#8B5CF6"
   },
   {
+   "id": "K-6c781c164347",
+   "name": "팀 토론 — 설비 가용률 최적화 및 예방 정비 계획 수립을 위한 정기 점",
+   "group": "KNOWLEDGE",
+   "type": "discussion",
+   "date": "2026-11-28",
+   "val": 3,
+   "color": "#8B5CF6"
+  },
+  {
    "id": "K-6bf703c52de7",
    "name": "팀 토론 — SCH-001 기반 BESS 운영 스케줄 최적화 전략 수립 ",
    "group": "KNOWLEDGE",
@@ -7190,15 +7199,6 @@
    "date": "2026-11-18",
    "val": 3,
    "color": "#10B981"
-  },
-  {
-   "id": "K-be2ec5386bc1",
-   "name": "팀 토론 — 변전소·레이아웃·SLD 영역 1차 분석 — bess-subs",
-   "group": "KNOWLEDGE",
-   "type": "discussion",
-   "date": "2026-11-18",
-   "val": 3,
-   "color": "#8B5CF6"
   }
  ],
  "links": [
@@ -7515,6 +7515,46 @@
   {
    "source": "FIR-001",
    "target": "K-7078af11cb52",
+   "type": "knowledge"
+  },
+  {
+   "source": "BAT-001",
+   "target": "K-6c781c164347",
+   "type": "knowledge"
+  },
+  {
+   "source": "BIZ-001",
+   "target": "K-6c781c164347",
+   "type": "knowledge"
+  },
+  {
+   "source": "CST-001",
+   "target": "K-6c781c164347",
+   "type": "knowledge"
+  },
+  {
+   "source": "EBP-001",
+   "target": "K-6c781c164347",
+   "type": "knowledge"
+  },
+  {
+   "source": "ESG-001",
+   "target": "K-6c781c164347",
+   "type": "knowledge"
+  },
+  {
+   "source": "FIR-001",
+   "target": "K-6c781c164347",
+   "type": "knowledge"
+  },
+  {
+   "source": "HSE-001",
+   "target": "K-6c781c164347",
+   "type": "knowledge"
+  },
+  {
+   "source": "PRO-001",
+   "target": "K-6c781c164347",
    "type": "knowledge"
   },
   {
@@ -14706,46 +14746,6 @@
    "source": "STD-001",
    "target": "K-bfe374b7eba5",
    "type": "knowledge"
-  },
-  {
-   "source": "BAT-001",
-   "target": "K-be2ec5386bc1",
-   "type": "knowledge"
-  },
-  {
-   "source": "COM-003",
-   "target": "K-be2ec5386bc1",
-   "type": "knowledge"
-  },
-  {
-   "source": "HSE-001",
-   "target": "K-be2ec5386bc1",
-   "type": "knowledge"
-  },
-  {
-   "source": "AUD-001",
-   "target": "K-be2ec5386bc1",
-   "type": "knowledge"
-  },
-  {
-   "source": "PWR-001",
-   "target": "K-be2ec5386bc1",
-   "type": "knowledge"
-  },
-  {
-   "source": "STR-001",
-   "target": "K-be2ec5386bc1",
-   "type": "knowledge"
-  },
-  {
-   "source": "SUB-001",
-   "target": "K-be2ec5386bc1",
-   "type": "knowledge"
-  },
-  {
-   "source": "SYS-001",
-   "target": "K-be2ec5386bc1",
-   "type": "knowledge"
   }
  ],
  "meta": {
@@ -15404,7 +15404,7 @@
    {
     "date": "2026-11-28",
     "knowledge": 800,
-    "events_total": 5593
+    "events_total": 5594
    }
   ]
  }
