@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BESS 전력 지휘 체계 체험실 — 전력거래소 · 어그리게이터 · 통합관제소 · EMS · SCADA</title>
+  <style>
+    /* =====================================================================
+     * 1. 기본 리셋 및 디자인 토큰 (과학관 / 테크 인포그래픽 밝은 테마)
+     * ===================================================================== */
+    :root {
+      --bg-page: #f4f7fb;
+      --bg-card: #ffffff;
+      --border-soft: #dce5f2;
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #64748b;
+
+      /* 계층별 고유 시맨틱 컬러 */
+      --col-kpx: #4f46e5;     /* 전력거래소 Indigo */
+      --col-agg: #7c3aed;     /* 어그리게이터 Violet */
+      --col-roc: #0d9488;     /* 통합 관제소 Teal */
+      --col-ems: #d97706;     /* EMS Amber/Orange */
+      --col-scada: #2563eb;   /* SCADA Blue */
+      --col-bess: #10b981;    /* BESS 현장 Emerald */
+      --col-alert: #e11d48;   /* 경보/고장 Rose */
+
+      --shadow-card: 0 10px 28px -8px rgba(15, 23, 42, 0.08);
+      --radius-card: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      background-image:
+        radial-gradient(circle at 8% 5%, rgba(79, 70, 229, 0.09) 0%, transparent 32%),
+        radial-gradient(circle at 92% 8%, rgba(13, 148, 136, 0.1) 0%, transparent 34%),
+        radial-gradient(circle at 50% 96%, rgba(16, 185, 129, 0.08) 0%, transparent 38%);
+      color: var(--text-main);
+      line-height: 1.56;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 18px 16px 60px;
+    }
+
+    /* =====================================================================
+     * 2. 상단 히어로 헤더 & 3개 메인 탭 바
+     * ===================================================================== */
+    .hero-header {
+      background: linear-gradient(135deg, #ffffff 0%, #eef2ff 52%, #f0fdfa 100%);
+      border: 2px solid var(--border-soft);
+      border-radius: 24px;
+      padding: 20px 24px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .hero-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #4f46e5, #0d9488);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 8px 18px rgba(79, 70, 229, 0.25);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(1.14rem, 2.3vw, 1.54rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .hero-sub {
+      font-size: 0.89rem;
+      color: var(--text-sub);
+      margin-top: 3px;
+    }
+
+    .legend-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .legend-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: var(--text-main);
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* 3개 메인 탭 */
+    .tab-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .tab-btn {
+      appearance: none;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 13px 14px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .tab-btn:hover {
+      border-color: #a5b4fc;
+      color: var(--text-main);
+      transform: translateY(-1px);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #4f46e5, #2563eb);
+      border-color: #4338ca;
+      color: #ffffff;
+      box-shadow: 0 8px 18px rgba(79, 70, 229, 0.28);
+    }
+
+    .tab-panel {
+      display: none;
+      animation: fadeUp 0.24s ease;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* =====================================================================
+     * 3. 공통 카드, 버튼, 배지
+     * ===================================================================== */
+    .card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-soft);
+      border-radius: var(--radius-card);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+    }
+
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-tag {
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #4338ca;
+      border: 1.5px solid #c7d2fe;
+    }
+
+    .ctrl-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.81rem;
+      font-weight: 800;
+      padding: 7px 13px;
+      border-radius: 11px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.16s ease;
+    }
+
+    .ctrl-btn:hover {
+      border-color: #818cf8;
+      background: #eef2ff;
+    }
+
+    .ctrl-btn.is-slow {
+      background: #fef3c7;
+      border-color: #f59e0b;
+      color: #b45309;
+    }
+
+    .ctrl-btn.is-paused {
+      background: #ffe4e6;
+      border-color: #e11d48;
+      color: #be123c;
+    }
+
+    /* =====================================================================
+     * 4. [TAB 1] 시나리오 바 + 메인 SVG 무대 + 하단/우측 상세 패널
+     * ===================================================================== */
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 9px;
+      margin-bottom: 14px;
+    }
+
+    .sc-btn {
+      appearance: none;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 15px;
+      padding: 11px 11px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: all 0.18s ease;
+    }
+
+    .sc-btn:hover {
+      transform: translateY(-2px);
+      border-color: #818cf8;
+      background: #ffffff;
+    }
+
+    .sc-btn strong {
+      font-size: 0.84rem;
+      color: var(--text-main);
+      line-height: 1.3;
+    }
+
+    .sc-btn span {
+      font-size: 0.72rem;
+      color: var(--text-sub);
+      line-height: 1.35;
+    }
+
+    .sc-btn.active-0 { background: #ecfdf5; border-color: #10b981; box-shadow: 0 6px 14px rgba(16, 185, 129, 0.18); }
+    .sc-btn.active-1 { background: #eef2ff; border-color: #4f46e5; box-shadow: 0 6px 14px rgba(79, 70, 229, 0.2); }
+    .sc-btn.active-2 { background: #f5f3ff; border-color: #7c3aed; box-shadow: 0 6px 14px rgba(124, 58, 237, 0.2); }
+    .sc-btn.active-3 { background: #fff1f2; border-color: #e11d48; box-shadow: 0 6px 14px rgba(225, 29, 72, 0.22); }
+    .sc-btn.active-4 { background: #eff6ff; border-color: #2563eb; box-shadow: 0 6px 14px rgba(37, 99, 235, 0.2); }
+
+    /* 재생 컨트롤 + 단계 하이라이트 바 */
+    .playback-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 14px;
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 14px;
+      margin-bottom: 14px;
+    }
+
+    .step-dots {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .step-chip {
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      color: #64748b;
+      transition: all 0.2s ease;
+    }
+
+    .step-chip.active {
+      background: #0f172a;
+      color: #ffffff;
+      box-shadow: 0 3px 10px rgba(15, 23, 42, 0.25);
+    }
+
+    /* 메인 2단: 좌측 대형 SVG + 우측 상세/흐름 패널 */
+    .main-stage-grid {
+      display: grid;
+      grid-template-columns: 1.38fr 0.82fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .svg-stage-box {
+      border-radius: 18px;
+      border: 2px solid #cbd5e1;
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 55%, #f0fdf4 100%);
+      overflow: hidden;
+      padding: 6px;
+    }
+
+    #ecoSvg {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+
+    .clickable-node {
+      cursor: pointer;
+      transition: filter 0.18s ease;
+    }
+
+    .clickable-node:hover {
+      filter: drop-shadow(0 0 9px rgba(79, 70, 229, 0.45));
+    }
+
+    /* 우측 사이드 정보 영역 */
+    .side-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .detail-card {
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+      transition: border-color 0.25s ease;
+    }
+
+    .detail-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .detail-title {
+      font-size: 1rem;
+      font-weight: 900;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .detail-analogy {
+      background: #fffbeb;
+      border: 1.5px solid #fde68a;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 0.82rem;
+      color: #78350f;
+      margin-bottom: 10px;
+    }
+
+    .detail-analogy strong {
+      color: #92400e;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .detail-list {
+      padding-left: 18px;
+      font-size: 0.81rem;
+      color: var(--text-sub);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 10px;
+    }
+
+    .proto-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .proto-tag {
+      font-size: 0.71rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 7px;
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+    }
+
+    .detail-tip {
+      background: #eff6ff;
+      border: 1.5px solid #bfdbfe;
+      border-radius: 11px;
+      padding: 9px 11px;
+      font-size: 0.78rem;
+      color: #1e3a8a;
+      font-weight: 600;
+    }
+
+    /* 실시간 단계별 신호 흐름 내러티브 & 로그 */
+    .flow-steps-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 18px;
+      padding: 15px 16px;
+    }
+
+    .flow-steps-title {
+      font-size: 0.88rem;
+      font-weight: 900;
+      color: #38bdf8;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .flow-step-item {
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      background: rgba(255, 255, 255, 0.04);
+      margin-bottom: 7px;
+      font-size: 0.78rem;
+      color: #94a3b8;
+      transition: all 0.2s ease;
+    }
+
+    .flow-step-item:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .flow-step-item strong {
+      color: #e2e8f0;
+      display: block;
+      margin-bottom: 2px;
+      font-size: 0.8rem;
+    }
+
+    .flow-step-item.active {
+      background: rgba(56, 189, 248, 0.16);
+      border-color: #38bdf8;
+      color: #f8fafc;
+      transform: translateX(3px);
+    }
+
+    .flow-step-item.active strong {
+      color: #fde047;
+    }
+
+    .tele-log {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed rgba(148, 163, 184, 0.3);
+      font-size: 0.73rem;
+      color: #6ee7b7;
+      line-height: 1.5;
+    }
+
+    /* =====================================================================
+     * 5. [TAB 2] 헷갈리는 개념 비교 (EMS vs SCADA / 어그리게이터 vs 통합관제소)
+     * ===================================================================== */
+    .duel-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .duel-box {
+      border-radius: 18px;
+      padding: 16px;
+      border: 2.5px solid #e2e8f0;
+      background: #f8fafc;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .duel-box.lit-ems {
+      background: #fffbeb;
+      border-color: #d97706;
+      box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.18), 0 10px 24px rgba(217, 119, 6, 0.18);
+      transform: translateY(-2px);
+    }
+
+    .duel-box.lit-scada {
+      background: #eff6ff;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18), 0 10px 24px rgba(37, 99, 235, 0.18);
+      transform: translateY(-2px);
+    }
+
+    .duel-box.lit-agg {
+      background: #f5f3ff;
+      border-color: #7c3aed;
+      box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.16), 0 10px 24px rgba(124, 58, 237, 0.16);
+      transform: translateY(-2px);
+    }
+
+    .duel-box.lit-roc {
+      background: #f0fdfa;
+      border-color: #0d9488;
+      box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.16), 0 10px 24px rgba(13, 148, 136, 0.16);
+      transform: translateY(-2px);
+    }
+
+    .duel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .duel-header h3 {
+      font-size: 1.02rem;
+      font-weight: 900;
+    }
+
+    .duel-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+
+    .duel-box ul {
+      padding-left: 18px;
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    /* "이 업무는 누가 할까?" 테스트 버튼들 */
+    .task-test-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 9px;
+      margin-bottom: 12px;
+    }
+
+    .task-btn {
+      appearance: none;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 13px;
+      padding: 10px 12px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--text-main);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.16s ease;
+      line-height: 1.4;
+    }
+
+    .task-btn:hover {
+      border-color: #60a5fa;
+      background: #eff6ff;
+    }
+
+    .task-btn.active-ems {
+      background: #fef3c7;
+      border-color: #d97706;
+      color: #92400e;
+    }
+
+    .task-btn.active-scada {
+      background: #dbeafe;
+      border-color: #2563eb;
+      color: #1e40af;
+    }
+
+    .task-btn.active-agg {
+      background: #ede9fe;
+      border-color: #7c3aed;
+      color: #5b21b6;
+    }
+
+    .task-btn.active-roc {
+      background: #ccfbf1;
+      border-color: #0d9488;
+      color: #115e59;
+    }
+
+    .duel-answer-bar {
+      padding: 12px 15px;
+      border-radius: 13px;
+      background: #0f172a;
+      color: #f8fafc;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    /* 5대 시스템 요약 비교표 */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 15px;
+      border: 2px solid #e2e8f0;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+      font-size: 0.82rem;
+    }
+
+    .comp-table th,
+    .comp-table td {
+      padding: 11px 13px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    .comp-table th {
+      background: #f8fafc;
+      font-weight: 900;
+      color: var(--text-main);
+    }
+
+    .comp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .sys-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+
+    /* =====================================================================
+     * 6. [TAB 3] 응답 속도 스케일 바 & 5문제 미니 퀴즈
+     * ===================================================================== */
+    .speed-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .speed-row {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 13px 16px;
+      display: grid;
+      grid-template-columns: 230px 1fr 140px;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .speed-name strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .speed-name span {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    .speed-track {
+      position: relative;
+      height: 18px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      overflow: hidden;
+    }
+
+    .speed-fill {
+      height: 100%;
+      border-radius: 999px;
+      position: relative;
+    }
+
+    .speed-pulse-dot {
+      position: absolute;
+      top: 50%;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 3px solid #0f172a;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+    }
+
+    .speed-time-badge {
+      text-align: right;
+      font-size: 0.82rem;
+      font-weight: 900;
+    }
+
+    /* 5문제 퀴즈 */
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .quiz-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 11px;
+    }
+
+    .quiz-card.full-span {
+      grid-column: span 2;
+    }
+
+    .quiz-q {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.48;
+    }
+
+    .quiz-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .quiz-opt-btn {
+      appearance: none;
+      width: 100%;
+      text-align: left;
+      padding: 9px 12px;
+      border-radius: 11px;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.81rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .quiz-opt-btn:hover:not(:disabled) {
+      border-color: #6366f1;
+      background: #eef2ff;
+    }
+
+    .quiz-opt-btn.correct {
+      background: #dcfce7;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .quiz-opt-btn.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .quiz-fb {
+      display: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.46;
+      padding: 9px 11px;
+      border-radius: 11px;
+    }
+
+    .quiz-fb.show { display: block; }
+    .quiz-fb.ok { background: #ecfdf5; color: #065f46; border: 1.5px solid #a7f3d0; }
+    .quiz-fb.no { background: #fff1f2; color: #9f1239; border: 1.5px solid #fecdd3; }
+
+    .quiz-footer {
+      margin-top: 14px;
+      padding: 14px 18px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #eef2ff, #f0fdfa);
+      border: 2px solid #c7d2fe;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .quiz-footer.perfect {
+      background: linear-gradient(135deg, #fef9c3, #dcfce7, #dbeafe);
+      border-color: #f59e0b;
+      box-shadow: 0 8px 20px rgba(245, 158, 11, 0.22);
+    }
+
+    /* =====================================================================
+     * 7. 반응형 미디어 쿼리
+     * ===================================================================== */
+    @media (max-width: 1080px) {
+      .main-stage-grid { grid-template-columns: 1fr; }
+      .scenario-grid { grid-template-columns: repeat(3, 1fr); }
+      .task-test-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 780px) {
+      .tab-bar,
+      .duel-grid,
+      .quiz-grid { grid-template-columns: 1fr; }
+      .quiz-card.full-span { grid-column: span 1; }
+      .scenario-grid { grid-template-columns: repeat(2, 1fr); }
+      .speed-row { grid-template-columns: 1fr; gap: 8px; }
+      .speed-time-badge { text-align: left; }
+    }
+
+    @media (max-width: 520px) {
+      .scenario-grid,
+      .task-test-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ================================================================= -->
+    <!-- 상단 히어로 헤더 -->
+    <!-- ================================================================= -->
+    <header class="hero-header">
+      <div class="hero-left">
+        <div class="hero-icon" aria-hidden="true">🎼</div>
+        <div>
+          <h1 class="hero-title">BESS 전력 지휘 체계 체험실 — 전력거래소 · 어그리게이터 · 통합관제소 · EMS · SCADA</h1>
+          <p class="hero-sub">
+            국가 전력망에서 BESS 현장까지 <strong>누가 어떤 명령을 내리고 데이터를 주고받는지</strong> 실시간 애니메이션과 쉬운 비유로 체험하세요!
+          </p>
+        </div>
+      </div>
+
+      <div class="legend-pills" aria-label="계층별 색상 범례">
+        <span class="legend-pill"><span class="dot" style="background:#4f46e5;"></span>전력거래소(KPX)</span>
+        <span class="legend-pill"><span class="dot" style="background:#7c3aed;"></span>어그리게이터(VPP)</span>
+        <span class="legend-pill"><span class="dot" style="background:#0d9488;"></span>통합관제소(ROC)</span>
+        <span class="legend-pill"><span class="dot" style="background:#d97706;"></span>EMS</span>
+        <span class="legend-pill"><span class="dot" style="background:#2563eb;"></span>SCADA</span>
+        <span class="legend-pill"><span class="dot" style="background:#10b981;"></span>BESS 현장</span>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 3개 메인 학습 탭 -->
+    <!-- ================================================================= -->
+    <nav class="tab-bar" role="tablist" aria-label="학습 메뉴">
+      <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="tab1">
+        <span>🎼</span><span>1. 전체 지휘 체계 (실시간 애니메이션)</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab2">
+        <span>🔍</span><span>2. 헷갈리는 개념 비교 (EMS vs SCADA · VPP vs ROC)</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab3">
+        <span>⏱️</span><span>3. 응답 속도 &amp; 이해도 퀴즈</span>
+      </button>
+    </nav>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 1] 🎼 전체 지휘 체계 (실시간 애니메이션) -->
+    <!-- ================================================================= -->
+    <main id="tab1" class="tab-panel active">
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🎬 5가지 실제 운영 시나리오 선택하기</h2>
+          <span class="pill-tag">💡 아래 다이어그램의 6개 장치를 클릭하면 우측에 쉬운 비유와 상세 설명이 열립니다!</span>
+        </div>
+
+        <!-- 5개 시나리오 선택 버튼 -->
+        <div class="scenario-grid">
+          <button type="button" class="sc-btn active-0" data-sc="0">
+            <strong>☀️ 1. 평상시 경제운전</strong>
+            <span>EMS가 싼 시간 충전·비싼 시간 방전 스케줄 실행</span>
+          </button>
+          <button type="button" class="sc-btn" data-sc="1">
+            <strong>⚡ 2. 주파수 급락! 긴급 방전</strong>
+            <span>59.80Hz 급락 → KPX AGC 긴급 지령 → 60.00Hz 회복</span>
+          </button>
+          <button type="button" class="sc-btn" data-sc="2">
+            <strong>💰 3. VPP 전력시장 집합 입찰</strong>
+            <span>소규모 A·B·C(20MW) 묶어 입찰·낙찰·정산 수익 배분</span>
+          </button>
+          <button type="button" class="sc-btn" data-sc="3">
+            <strong>🚨 4. 현장 이상 경보 (과열/트립)</strong>
+            <span>Site B 차단기 즉시 트립 → ROC 경보·출동 &amp; A·C 대체</span>
+          </button>
+          <button type="button" class="sc-btn" data-sc="4">
+            <strong>🌬️ 5. 잉여전력 출력제어 대응</strong>
+            <span>재생에너지 과잉 → KPX 흡수 지령 → 전 사이트 충전</span>
+          </button>
+        </div>
+
+        <!-- 재생 컨트롤 & 단계 하이라이트 바 -->
+        <div class="playback-strip">
+          <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+            <button id="btnPlayPause" type="button" class="ctrl-btn">
+              <span id="playIcon">⏸️</span><span id="playTxt">일시정지</span>
+            </button>
+            <button id="btnSlow" type="button" class="ctrl-btn">
+              <span>🐢</span><span id="slowTxt">천천히 보기 (0.35x)</span>
+            </button>
+          </div>
+          <div class="step-dots" aria-label="신호 흐름 진행 단계">
+            <span style="font-size:0.75rem; font-weight:800; color:#475569;">진행 단계:</span>
+            <span id="stepChip0" class="step-chip active">STEP 1</span>
+            <span id="stepChip1" class="step-chip">STEP 2</span>
+            <span id="stepChip2" class="step-chip">STEP 3</span>
+            <span id="stepChip3" class="step-chip">STEP 4</span>
+          </div>
+        </div>
+
+        <!-- 메인 2단: 좌측 대형 SVG 지휘 체계 + 우측 상세/흐름 패널 -->
+        <div class="main-stage-grid">
+          <!-- 좌측: 인터랙티브 계층 구조 SVG -->
+          <div class="svg-stage-box">
+            <svg id="ecoSvg" viewBox="0 0 980 560" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="glowNode" x="-25%" y="-25%" width="150%" height="150%">
+                  <feGaussianBlur stdDeviation="3.2" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- 계층 구분 배경 띠 -->
+              <rect x="12" y="10" width="956" height="106" rx="14" fill="rgba(79, 70, 229, 0.05)" stroke="#e0e7ff" stroke-width="1.5" />
+              <text x="26" y="30" fill="#4f46e5" font-size="10.5" font-weight="900">LAYER 1 · 국가 전력망 총감독</text>
+
+              <rect x="12" y="126" width="956" height="114" rx="14" fill="rgba(124, 58, 237, 0.04)" stroke="#e2e8f0" stroke-width="1.5" />
+              <text x="26" y="146" fill="#64748b" font-size="10.5" font-weight="900">LAYER 2 · 시장 중개(VPP) &amp; 24시간 통합 관제(ROC)</text>
+
+              <rect x="12" y="250" width="956" height="250" rx="14" fill="rgba(16, 185, 129, 0.05)" stroke="#d1fae5" stroke-width="1.5" />
+              <text x="26" y="270" fill="#047857" font-size="10.5" font-weight="900">LAYER 3 &amp; 4 · BESS 현장 제어(EMS · SCADA) 및 분산 배터리 설비</text>
+
+              <!-- 통신 / 제어 / 전력 경로선 (정적 베이스 라인) -->
+              <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <!-- KPX <-> Aggregator -->
+                <path id="pathKpxAgg" d="M 380 80 C 310 80, 260 110, 260 144" stroke="#a5b4fc" />
+                <!-- KPX <-> ROC (모니터링 연계) -->
+                <path id="pathKpxRoc" d="M 600 80 C 670 80, 720 110, 720 144" stroke="#99f6e4" stroke-dasharray="6 4" />
+                <!-- Aggregator <-> ROC (협업 링크) -->
+                <path id="pathAggRoc" d="M 410 184 L 570 184" stroke="#cbd5e1" stroke-dasharray="5 4" />
+                <!-- Aggregator -> Site A EMS -->
+                <path id="pathAggEms" d="M 210 226 L 210 294" stroke="#c4b5fd" />
+                <!-- Aggregator -> Site B & C -->
+                <path id="pathAggB" d="M 280 226 C 280 264, 625 264, 625 362" stroke="#c4b5fd" stroke-opacity="0.7" />
+                <path id="pathAggC" d="M 310 226 C 310 256, 835 256, 835 362" stroke="#c4b5fd" stroke-opacity="0.7" />
+                <!-- SCADA -> ROC -->
+                <path id="pathScadaRoc" d="M 415 294 C 415 248, 670 250, 670 226" stroke="#5eead4" />
+                <!-- Site B & C -> ROC -->
+                <path id="pathBRoc" d="M 655 362 C 655 290, 720 278, 720 226" stroke="#5eead4" stroke-opacity="0.85" />
+                <path id="pathCRoc" d="M 865 362 C 865 286, 770 276, 770 226" stroke="#5eead4" stroke-opacity="0.85" />
+                <!-- EMS <-> SCADA (내부 연동) -->
+                <path id="pathEmsScada" d="M 278 326 L 324 326" stroke="#94a3b8" stroke-width="3.5" />
+                <!-- SCADA -> Site A Field -->
+                <path id="pathScadaField" d="M 398 358 L 398 390" stroke="#93c5fd" stroke-width="3.5" />
+                <!-- EMS -> Site A Field (지령 참조) -->
+                <path id="pathEmsField" d="M 192 358 L 192 390" stroke="#fcd34d" stroke-width="3" stroke-dasharray="4 3" />
+
+                <!-- 하단 국가 전력계통(Grid) 모선 -->
+                <path d="M 40 532 L 940 532" stroke="#0f172a" stroke-width="6" />
+                <path id="pathGridA" d="M 285 486 L 285 532" stroke="#10b981" stroke-width="5" />
+                <path id="pathGridB" d="M 640 486 L 640 532" stroke="#10b981" stroke-width="5" />
+                <path id="pathGridC" d="M 850 486 L 850 532" stroke="#10b981" stroke-width="5" />
+              </g>
+              <rect x="355" y="518" width="270" height="26" rx="13" fill="#0f172a" />
+              <text x="490" y="535" text-anchor="middle" fill="#fde047" font-size="11.5" font-weight="900">⚡ 국가 전력계통 (Power Grid · 60Hz)</text>
+
+              <!-- ======================================================= -->
+              <!-- NODE 1: 전력거래소 (KPX) -->
+              <!-- ======================================================= -->
+              <g id="nodeKpx" class="clickable-node" data-sys="kpx" transform="translate(330, 20)">
+                <rect id="rectKpx" x="0" y="0" width="320" height="86" rx="16" fill="#eef2ff" stroke="#4f46e5" stroke-width="3" />
+                <text x="20" y="34" font-size="24">🏛️</text>
+                <text x="52" y="29" fill="#312e81" font-size="14" font-weight="900">전력거래소 (KPX)</text>
+                <text x="52" y="46" fill="#4338ca" font-size="10.2" font-weight="700">국가 전력망 총감독 &amp; 전력시장</text>
+
+                <!-- 실시간 주파수 & 시장 배지 -->
+                <rect id="kpxFreqBg" x="14" y="56" width="136" height="22" rx="7" fill="#4f46e5" />
+                <text id="kpxFreqTxt" x="82" y="71" text-anchor="middle" fill="#ffffff" font-size="10.5" font-weight="900" class="mono">주파수: 60.00 Hz</text>
+
+                <rect x="158" y="56" width="148" height="22" rx="7" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.5" />
+                <text id="kpxMarketTxt" x="232" y="71" text-anchor="middle" fill="#3730a3" font-size="10" font-weight="800">SMP 145원 · 정상</text>
+              </g>
+
+              <!-- ======================================================= -->
+              <!-- NODE 2: 어그리게이터 (Aggregator / VPP) -->
+              <!-- ======================================================= -->
+              <g id="nodeAgg" class="clickable-node" data-sys="agg" transform="translate(96, 144)">
+                <rect id="rectAgg" x="0" y="0" width="314" height="82" rx="16" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2.8" />
+                <text x="18" y="34" font-size="23">🤝</text>
+                <text x="50" y="28" fill="#4c1d95" font-size="13.5" font-weight="900">어그리게이터 (Aggregator / VPP)</text>
+                <text x="50" y="45" fill="#6d28d9" font-size="10" font-weight="700">전력 중개 매니저 (A+B+C를 하나로 묶음)</text>
+                <rect x="16" y="54" width="282" height="20" rx="6" fill="#ede9fe" />
+                <text id="aggStatusTxt" x="157" y="68" text-anchor="middle" fill="#5b21b6" font-size="10" font-weight="800" class="mono">VPP 집합용량: 20 MW (5+8+7)</text>
+              </g>
+
+              <!-- ======================================================= -->
+              <!-- NODE 3: 통합 관제소 (ROC / 통합관제센터) -->
+              <!-- ======================================================= -->
+              <g id="nodeRoc" class="clickable-node" data-sys="roc" transform="translate(570, 144)">
+                <rect id="rectRoc" x="0" y="0" width="314" height="82" rx="16" fill="#f0fdfa" stroke="#0d9488" stroke-width="2.8" />
+                <text x="18" y="34" font-size="23">🖥️</text>
+                <text x="50" y="28" fill="#134e4a" font-size="13.5" font-weight="900">통합 관제소 (ROC / 관제센터)</text>
+                <text x="50" y="45" fill="#0f766e" font-size="10" font-weight="700">24시간 전국 종합상황실 (감시·경보·출동)</text>
+                <rect id="rocStatusBg" x="16" y="54" width="282" height="20" rx="6" fill="#ccfbf1" />
+                <text id="rocStatusTxt" x="157" y="68" text-anchor="middle" fill="#115e59" font-size="10" font-weight="900">🟢 전 사이트 정상 감시 중 (경보 0건)</text>
+              </g>
+
+              <!-- ======================================================= -->
+              <!-- SITE A 확장 박스 (EMS + SCADA + BESS Field A) -->
+              <!-- ======================================================= -->
+              <rect x="44" y="278" width="466" height="214" rx="18" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 4" />
+              <text x="60" y="294" fill="#334155" font-size="10.5" font-weight="900">📍 Site A (5MW BESS 발전소 내부 제어 구조)</text>
+
+              <!-- NODE 4: EMS -->
+              <g id="nodeEms" class="clickable-node" data-sys="ems" transform="translate(60, 300)">
+                <rect id="rectEms" x="0" y="0" width="218" height="64" rx="13" fill="#fffbeb" stroke="#d97706" stroke-width="2.6" />
+                <text x="14" y="28" font-size="19">🧠</text>
+                <text x="40" y="23" fill="#92400e" font-size="12.5" font-weight="900">EMS (에너지관리)</text>
+                <text x="40" y="39" fill="#b45309" font-size="9.5" font-weight="700">현장 두뇌 · 경제운전 스케줄</text>
+                <text id="emsStatusTxt" x="109" y="55" text-anchor="middle" fill="#d97706" font-size="9.5" font-weight="800" class="mono">계획: 심야충전/피크방전</text>
+              </g>
+
+              <!-- NODE 5: SCADA -->
+              <g id="nodeScada" class="clickable-node" data-sys="scada" transform="translate(304, 300)">
+                <rect id="rectScada" x="0" y="0" width="190" height="64" rx="13" fill="#eff6ff" stroke="#2563eb" stroke-width="2.6" />
+                <text x="14" y="28" font-size="19">📡</text>
+                <text x="40" y="23" fill="#1e3a8a" font-size="12.5" font-weight="900">SCADA (감시제어)</text>
+                <text x="40" y="39" fill="#1d4ed8" font-size="9.5" font-weight="700">현장 신경망 · 실시간 계측</text>
+                <text id="scadaStatusTxt" x="95" y="55" text-anchor="middle" fill="#2563eb" font-size="9.5" font-weight="800" class="mono">0.2초 주기 폴링 정상</text>
+              </g>
+
+              <!-- NODE 6: BESS 현장 설비 (Site A 상세: PCS + Battery SOC + Breaker) -->
+              <g id="nodeFieldA" class="clickable-node" data-sys="bess" transform="translate(60, 384)">
+                <rect id="rectFieldA" x="0" y="0" width="434" height="96" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2.6" />
+                <text x="16" y="21" fill="#065f46" font-size="11.5" font-weight="900">🔋 BESS 현장 설비 — Site A (5 MW)</text>
+
+                <!-- PCS 박스 -->
+                <rect x="16" y="30" width="106" height="54" rx="9" fill="#ffffff" stroke="#34d399" stroke-width="1.8" />
+                <text x="69" y="51" text-anchor="middle" fill="#047857" font-size="11" font-weight="900">⚡ PCS</text>
+                <text id="siteAPcsTxt" x="69" y="69" text-anchor="middle" fill="#059669" font-size="9.5" font-weight="800" class="mono">출력: +2.5 MW</text>
+
+                <!-- Battery SOC 바 -->
+                <rect x="136" y="30" width="160" height="54" rx="9" fill="#ffffff" stroke="#34d399" stroke-width="1.8" />
+                <text x="148" y="47" fill="#065f46" font-size="9.5" font-weight="800">배터리 (BMS)</text>
+                <text id="siteASocTxt" x="284" y="47" text-anchor="end" fill="#059669" font-size="10.5" font-weight="900" class="mono">68%</text>
+                <rect x="148" y="56" width="136" height="16" rx="5" fill="#e2e8f0" />
+                <rect id="siteASocBar" x="148" y="56" width="92" height="16" rx="5" fill="#10b981" />
+
+                <!-- 차단기 (CB) -->
+                <rect x="310" y="30" width="108" height="54" rx="9" fill="#ffffff" stroke="#34d399" stroke-width="1.8" />
+                <text x="364" y="47" text-anchor="middle" fill="#334155" font-size="9.5" font-weight="800">차단기 (CB)</text>
+                <circle cx="336" cy="66" r="4" fill="#64748b" />
+                <circle cx="392" cy="66" r="4" fill="#64748b" />
+                <line id="siteACbArm" x1="336" y1="66" x2="392" y2="66" stroke="#10b981" stroke-width="4" stroke-linecap="round" />
+              </g>
+
+              <!-- ======================================================= -->
+              <!-- SITE B (8MW 컴팩트 BESS — 시나리오 4에서 과열/트립 발생) -->
+              <!-- ======================================================= -->
+              <g id="nodeFieldB" class="clickable-node" data-sys="bess" transform="translate(544, 362)">
+                <rect id="rectFieldB" x="0" y="0" width="192" height="122" rx="15" fill="#ecfdf5" stroke="#10b981" stroke-width="2.6" />
+                <circle id="siteBLed" cx="22" cy="20" r="6" fill="#10b981" />
+                <text x="35" y="24" fill="#065f46" font-size="12" font-weight="900">🔋 Site B (8 MW)</text>
+                <text id="siteBSub" x="16" y="43" fill="#047857" font-size="9.5" font-weight="800" class="mono">온도: 26°C · CB CLOSED</text>
+
+                <!-- SOC 바 -->
+                <rect x="16" y="54" width="160" height="16" rx="5" fill="#e2e8f0" />
+                <rect id="siteBSocBar" x="16" y="54" width="108" height="16" rx="5" fill="#10b981" />
+                <text id="siteBSocTxt" x="96" y="86" text-anchor="middle" fill="#065f46" font-size="10.5" font-weight="900" class="mono">SOC 64% · 정상 운전</text>
+
+                <!-- 차단기 상태 태그 -->
+                <rect id="siteBAlertBg" x="16" y="94" width="160" height="20" rx="6" fill="#d1fae5" />
+                <text id="siteBAlertTxt" x="96" y="108" text-anchor="middle" fill="#047857" font-size="9.5" font-weight="900">EMS/SCADA 연동 정상</text>
+              </g>
+
+              <!-- ======================================================= -->
+              <!-- SITE C (7MW 컴팩트 BESS) -->
+              <!-- ======================================================= -->
+              <g id="nodeFieldC" class="clickable-node" data-sys="bess" transform="translate(756, 362)">
+                <rect id="rectFieldC" x="0" y="0" width="192" height="122" rx="15" fill="#ecfdf5" stroke="#10b981" stroke-width="2.6" />
+                <circle id="siteCLed" cx="22" cy="20" r="6" fill="#10b981" />
+                <text x="35" y="24" fill="#065f46" font-size="12" font-weight="900">🔋 Site C (7 MW)</text>
+                <text id="siteCSub" x="16" y="43" fill="#047857" font-size="9.5" font-weight="800" class="mono">온도: 25°C · CB CLOSED</text>
+
+                <!-- SOC 바 -->
+                <rect x="16" y="54" width="160" height="16" rx="5" fill="#e2e8f0" />
+                <rect id="siteCSocBar" x="16" y="54" width="116" height="16" rx="5" fill="#10b981" />
+                <text id="siteCSocTxt" x="96" y="86" text-anchor="middle" fill="#065f46" font-size="10.5" font-weight="900" class="mono">SOC 72% · 정상 운전</text>
+
+                <rect id="siteCStateBg" x="16" y="94" width="160" height="20" rx="6" fill="#d1fae5" />
+                <text id="siteCStateTxt" x="96" y="108" text-anchor="middle" fill="#047857" font-size="9.5" font-weight="900">EMS/SCADA 연동 정상</text>
+              </g>
+
+              <!-- 실시간 움직이는 데이터/명령 패킷 레이어 -->
+              <g id="packetLayer" filter="url(#glowNode)"></g>
+            </svg>
+          </div>
+
+          <!-- 우측: 클릭한 시스템 상세 카드 + 실시간 단계별 신호 흐름 내러티브 -->
+          <div class="side-stack">
+            <!-- 선택된 시스템 상세 설명 카드 -->
+            <aside id="sysDetailCard" class="detail-card">
+              <div class="detail-head">
+                <h3 id="detTitle" class="detail-title">🏛️ 전력거래소 (KPX)</h3>
+                <span id="detBadge" class="pill-tag">클릭해서 전환</span>
+              </div>
+              <div class="detail-analogy">
+                <strong id="detAnalogyTitle">🎻 오케스트라 / 스포츠 비유</strong>
+                <span id="detAnalogyText"></span>
+              </div>
+              <ul id="detList" class="detail-list"></ul>
+              <div id="detProtos" class="proto-row mono"></div>
+              <div id="detTip" class="detail-tip"></div>
+            </aside>
+
+            <!-- 실시간 단계별 신호 흐름 & 텔레메트리 로그 -->
+            <aside class="flow-steps-box">
+              <div class="flow-steps-title">
+                <span>📡 실시간 신호 흐름 (Step 1 → 4)</span>
+                <span id="liveStepTag" class="mono" style="font-size:0.74rem; color:#fde047;">STEP 1 진행 중</span>
+              </div>
+              <div id="flowStepList"></div>
+              <div id="teleLogBox" class="tele-log mono"></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 2] 🔍 헷갈리는 개념 완벽 비교 -->
+    <!-- ================================================================= -->
+    <main id="tab2" class="tab-panel">
+      <!-- 대결 1: EMS vs SCADA -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">⚔️ 헷갈리는 개념 1: 🧠 EMS vs 📡 SCADA ("두뇌 vs 신경망")</h2>
+          <span class="pill-tag">아래 업무 버튼을 눌러 누가 처리하는지 바로 확인해 보세요!</span>
+        </div>
+
+        <div class="duel-grid">
+          <div id="duelBoxEms" class="duel-box lit-ems">
+            <div class="duel-header">
+              <h3 style="color:#b45309;">🧠 EMS (에너지관리시스템)</h3>
+              <span class="duel-badge" style="background:#fef3c7; color:#92400e;">생각하는 두뇌 · 전략가</span>
+            </div>
+            <p style="font-size:0.83rem; color:#475569;">
+              "언제 충전하고 언제 방전해야 가장 돈을 많이 벌고 배터리가 오래갈까?"를 계산하는 <strong>최적화 소프트웨어</strong>입니다.
+            </p>
+            <ul>
+              <li>전기요금(TOU)·시장가격(SMP) 기반 <strong>충·방전 스케줄 수립</strong></li>
+              <li>배터리 수명(SOH)·온도·예측 발전량을 고려한 <strong>경제운전 최적화</strong></li>
+              <li>계산한 목표 출력값(예: "지금 3MW 방전해!")을 SCADA에 전달</li>
+            </ul>
+          </div>
+
+          <div id="duelBoxScada" class="duel-box">
+            <div class="duel-header">
+              <h3 style="color:#1d4ed8;">📡 SCADA (원격감시제어)</h3>
+              <span class="duel-badge" style="background:#dbeafe; color:#1e40af;">움직이는 신경망 · 손과 눈</span>
+            </div>
+            <p style="font-size:0.83rem; color:#475569;">
+              현장 장비(PCS·BMS·차단기)에서 0.1초 단위로 데이터를 읽어오고, <strong>실제 스위치를 열고 닫는 실행 시스템</strong>입니다.
+            </p>
+            <ul>
+              <li>전압·전류·온도·SOC 등 <strong>수천 개 센서 데이터 실시간 수집</strong></li>
+              <li>EMS나 상위 지령을 받아 <strong>PCS 출력 제어 및 차단기(CB) 개폐</strong></li>
+              <li>이상 발생 시 즉각 <strong>경보(Alarm) 발생 및 현장 데이터 기록</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="font-size:0.84rem; font-weight:800; margin-bottom:8px; color:#0f172a;">
+          👇 "이 업무는 EMS와 SCADA 중 누가 할까요?" 클릭해 보세요!
+        </div>
+        <div class="task-test-grid" id="emsScadaTasks">
+          <button type="button" class="task-btn active-ems" data-duel="es" data-who="ems" data-exp="🧠 [EMS 담당] 전기요금이 저렴한 심야 시간에 충전하고 비싼 낮/저녁에 방전하는 '경제성 스케줄'을 짜는 것은 두뇌인 EMS의 핵심 역할입니다.">
+            🌙 전기요금 싼 밤에 충전 계획 세우기
+          </button>
+          <button type="button" class="task-btn" data-duel="es" data-who="scada" data-exp="📡 [SCADA 담당] 0.1초 만에 차단기 상태를 읽고 현장에 즉시 차단 명령을 내리는 실시간 감시·제어는 신경망인 SCADA가 수행합니다.">
+            ⚡ 0.1초 만에 차단기 상태 읽고 긴급 차단하기
+          </button>
+          <button type="button" class="task-btn" data-duel="es" data-who="ems" data-exp="🧠 [EMS 담당] 배터리 열화(수명)를 줄이면서 수익을 극대화하는 최적 충방전량을 계산하는 것은 EMS 알고리즘의 역할입니다.">
+            🔋 배터리 수명 고려해 최적 충·방전량 계산하기
+          </button>
+          <button type="button" class="task-btn" data-duel="es" data-who="scada" data-exp="📡 [SCADA 담당] 현장 배터리 랙과 PCS의 온도·전압·전류 센서 수천 개를 Modbus/IEC 61850으로 쉬지 않고 긁어오는 일은 SCADA 몫입니다.">
+            🌡️ 온도·전압 센서 1,000개 실시간 수집하기
+          </button>
+          <button type="button" class="task-btn" data-duel="es" data-who="ems" data-exp="🧠 [EMS 담당] 내일 날씨와 태양광 발전량을 예측해 BESS를 얼마나 비워둘지 미리 계획하는 예측·스케줄링은 EMS가 담당합니다.">
+            ☀️ 내일 날씨 예측해 태양광 충전량 미리 계획하기
+          </button>
+          <button type="button" class="task-btn" data-duel="es" data-who="scada" data-exp="📡 [SCADA 담당] 현장 설비 상태를 실시간 화면(HMI)에 띄우고 통합 관제소(ROC)로 고속 전송하는 역할은 SCADA입니다.">
+            🖥️ 현장 실시간 상태 화면 표시 &amp; 관제소 전송
+          </button>
+        </div>
+        <div id="duelAnswerEs" class="duel-answer-bar">
+          🧠 [EMS 담당] 전기요금이 저렴한 심야 시간에 충전하고 비싼 낮/저녁에 방전하는 '경제성 스케줄'을 짜는 것은 두뇌인 EMS의 핵심 역할입니다.
+        </div>
+      </section>
+
+      <!-- 대결 2: 어그리게이터(VPP) vs 통합 관제소(ROC) -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">⚔️ 헷갈리는 개념 2: 🤝 어그리게이터(VPP) vs 🖥️ 통합 관제소(ROC)</h2>
+          <span class="pill-tag">"시장 영업/매니저" vs "24시간 안전/운영 상황실"</span>
+        </div>
+
+        <div class="duel-grid">
+          <div id="duelBoxAgg" class="duel-box lit-agg">
+            <div class="duel-header">
+              <h3 style="color:#6d28d9;">🤝 어그리게이터 (Aggregator / VPP)</h3>
+              <span class="duel-badge" style="background:#ede9fe; color:#5b21b6;">전력시장 매니저 · 수익 담당</span>
+            </div>
+            <p style="font-size:0.83rem; color:#475569;">
+              전국에 흩어진 소규모 BESS·태양광을 <strong>하나의 가상발전소(VPP)로 묶어</strong> 전력거래소(KPX) 시장에 팔고 수익을 정산합니다.
+            </p>
+            <ul>
+              <li>여러 발전소의 가용 용량을 합산해 <strong>전력시장 집합 입찰</strong></li>
+              <li>KPX의 급전/AGC 지령을 각 사이트(A, B, C)에 <strong>최적 배분</strong></li>
+              <li>시장 수익 정산 및 발전소 주인들에게 <strong>정산금 배분</strong></li>
+            </ul>
+          </div>
+
+          <div id="duelBoxRoc" class="duel-box">
+            <div class="duel-header">
+              <h3 style="color:#0f766e;">🖥️ 통합 관제소 (ROC / 통합관제센터)</h3>
+              <span class="duel-badge" style="background:#ccfbf1; color:#115e59;">24시간 종합상황실 · 안전/O&amp;M 담당</span>
+            </div>
+            <p style="font-size:0.83rem; color:#475569;">
+              여러 지역의 BESS 발전소를 대형 상황판으로 <strong>24시간 365일 감시</strong>하며, 고장·화재 경보 시 원격 조치와 현장 출동을 지휘합니다.
+            </p>
+            <ul>
+              <li>전국 수십 개 현장의 <strong>SCADA 데이터·CCTV·소방 경보 통합 감시</strong></li>
+              <li>과열·트립 등 이상 발생 시 <strong>원격 비상 정지 및 긴급 출동 지시</strong></li>
+              <li>설비 가동률(Availability) 관리 및 <strong>정기 유지보수(O&amp;M) 이력 관리</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="task-test-grid" id="aggRocTasks">
+          <button type="button" class="task-btn active-agg" data-duel="ar" data-who="agg" data-exp="🤝 [어그리게이터 담당] 소규모 BESS 3곳(5+8+7MW)을 20MW 가상발전소로 묶어 전력거래소에 입찰하는 것은 전력 중개 매니저인 어그리게이터의 일입니다.">
+            💰 5MW·8MW·7MW 묶어 20MW로 KPX 입찰하기
+          </button>
+          <button type="button" class="task-btn" data-duel="ar" data-who="roc" data-exp="🖥️ [통합 관제소 담당] 새벽 3시에 Site B 배터리 온도 급상승 경보를 확인하고 현장 O&M 엔지니어를 긴급 출동시키는 것은 24시간 안전 상황실인 ROC의 역할입니다.">
+            🚨 새벽 3시 과열 경보 확인 &amp; 현장 엔지니어 출동 지시
+          </button>
+          <button type="button" class="task-btn" data-duel="ar" data-who="agg" data-exp="🤝 [어그리게이터 담당] Site B가 고장 났을 때 시장 낙찰량을 지키기 위해 Site A와 C에 출력을 다시 나눠 배정하는 것은 어그리게이터의 핵심 기능입니다.">
+            ⚖️ Site B 고장 시 남은 출력량을 Site A·C에 재배분하기
+          </button>
+        </div>
+        <div id="duelAnswerAr" class="duel-answer-bar">
+          🤝 [어그리게이터 담당] 소규모 BESS 3곳(5+8+7MW)을 20MW 가상발전소로 묶어 전력거래소에 입찰하는 것은 전력 중개 매니저인 어그리게이터의 일입니다.
+        </div>
+      </section>
+
+      <!-- 5대 시스템 완벽 요약 비교표 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">📊 BESS 지휘 체계 5대 핵심 시스템 한눈에 비교하기</h2>
+          <span class="pill-tag">이름 · 쉬운 비유 · 핵심 역할 · 시간 단위 · 소통 대상</span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>시스템 이름</th>
+                <th>쉬운 비유</th>
+                <th>핵심 역할</th>
+                <th>주요 시간 단위</th>
+                <th>주 소통 대상</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="sys-pill" style="background:#eef2ff; color:#4338ca;">🏛️ 전력거래소 (KPX)</span></td>
+                <td>국가 전력망 총감독 &amp; 경매장</td>
+                <td>60Hz 주파수 유지, 전력시장 입찰·낙찰·정산, 급전 지령</td>
+                <td class="mono">4초(AGC) ~ 1일 전(D-1)</td>
+                <td>대형 발전사, 어그리게이터</td>
+              </tr>
+              <tr>
+                <td><span class="sys-pill" style="background:#f5f3ff; color:#6d28d9;">🤝 어그리게이터 (VPP)</span></td>
+                <td>연예 기획사 / 공동구매 매니저</td>
+                <td>분산 BESS를 VPP로 집합 입찰, 지령 배분, 수익 정산</td>
+                <td class="mono">수 초 ~ 1시간 / 1일</td>
+                <td>전력거래소(KPX) ↔ 각 현장 EMS</td>
+              </tr>
+              <tr>
+                <td><span class="sys-pill" style="background:#f0fdfa; color:#0f766e;">🖥️ 통합 관제소 (ROC)</span></td>
+                <td>24시간 119 종합상황실</td>
+                <td>전국 발전소 통합 모니터링, 경보 대응, O&amp;M 현장 출동</td>
+                <td class="mono">수 초 감시 / 수 분 대응</td>
+                <td>각 현장 SCADA ↔ O&amp;M 엔지니어</td>
+              </tr>
+              <tr>
+                <td><span class="sys-pill" style="background:#fffbeb; color:#b45309;">🧠 EMS (에너지관리)</span></td>
+                <td>현장 발전소의 두뇌 (전략가)</td>
+                <td>요금·수명 고려 최적 충·방전 스케줄링, 경제운전 계획</td>
+                <td class="mono">1분 ~ 15분 / 24시간</td>
+                <td>어그리게이터 ↔ 현장 SCADA</td>
+              </tr>
+              <tr>
+                <td><span class="sys-pill" style="background:#eff6ff; color:#1d4ed8;">📡 SCADA (감시제어)</span></td>
+                <td>현장의 신경망 (눈과 손)</td>
+                <td>센서 데이터 고속 수집, PCS 출력 제어, 차단기 개폐</td>
+                <td class="mono">0.1초 ~ 1초 (실시간)</td>
+                <td>EMS · ROC ↔ PCS / BMS / 차단기</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 3] ⏱️ 응답 속도 & 이해도 미니 퀴즈 -->
+    <!-- ================================================================= -->
+    <main id="tab3" class="tab-panel">
+      <!-- 응답 속도 스케일 바 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">⏱️ 계층별 응답 속도 비교 (밀리초 ms ~ 하루 전 D-1)</h2>
+          <span class="pill-tag">현장에 가까울수록 찰나의 속도로 안전을 지키고, 상위로 갈수록 넓은 시야로 시장을 운영합니다!</span>
+        </div>
+
+        <div class="speed-list">
+          <div class="speed-row">
+            <div class="speed-name">
+              <strong style="color:#059669;">⚡ 1. 현장 보호 · BMS · PCS</strong>
+              <span>과전류·과열 즉시 차단, 인버터 제어</span>
+            </div>
+            <div class="speed-track">
+              <div class="speed-fill" style="width:16%; background:linear-gradient(90deg, #10b981, #34d399);"></div>
+              <div id="pulseDot0" class="speed-pulse-dot" style="left:8%;"></div>
+            </div>
+            <div class="speed-time-badge mono" style="color:#059669;">수 ms ~ 0.1초</div>
+          </div>
+
+          <div class="speed-row">
+            <div class="speed-name">
+              <strong style="color:#2563eb;">📡 2. SCADA 감시·제어 &amp; AGC</strong>
+              <span>실시간 데이터 수집, 급전 지령 실행</span>
+            </div>
+            <div class="speed-track">
+              <div class="speed-fill" style="width:34%; background:linear-gradient(90deg, #2563eb, #60a5fa);"></div>
+              <div id="pulseDot1" class="speed-pulse-dot" style="left:16%;"></div>
+            </div>
+            <div class="speed-time-badge mono" style="color:#2563eb;">0.2초 ~ 수 초</div>
+          </div>
+
+          <div class="speed-row">
+            <div class="speed-name">
+              <strong style="color:#d97706;">🧠 3. EMS 최적 운전 스케줄링</strong>
+              <span>경제운전·피크저감·배터리 수명 최적화</span>
+            </div>
+            <div class="speed-track">
+              <div class="speed-fill" style="width:56%; background:linear-gradient(90deg, #d97706, #fbbf24);"></div>
+              <div id="pulseDot2" class="speed-pulse-dot" style="left:26%;"></div>
+            </div>
+            <div class="speed-time-badge mono" style="color:#d97706;">1분 ~ 15분</div>
+          </div>
+
+          <div class="speed-row">
+            <div class="speed-name">
+              <strong style="color:#0d9488;">🖥️ 4. 통합 관제소(ROC) 원격 대응·출동</strong>
+              <span>이상 경보 분석, 원격 조치, O&amp;M 출동</span>
+            </div>
+            <div class="speed-track">
+              <div class="speed-fill" style="width:76%; background:linear-gradient(90deg, #0d9488, #2dd4bf);"></div>
+              <div id="pulseDot3" class="speed-pulse-dot" style="left:36%;"></div>
+            </div>
+            <div class="speed-time-badge mono" style="color:#0d9488;">수 분 ~ 수십 분</div>
+          </div>
+
+          <div class="speed-row">
+            <div class="speed-name">
+              <strong style="color:#4f46e5;">🏛️ 5. 어그리게이터 &amp; KPX 시장 입찰</strong>
+              <span>발전량 예측, 집합 입찰, 낙찰 및 정산</span>
+            </div>
+            <div class="speed-track">
+              <div class="speed-fill" style="width:100%; background:linear-gradient(90deg, #4f46e5, #7c3aed);"></div>
+              <div id="pulseDot4" class="speed-pulse-dot" style="left:50%;"></div>
+            </div>
+            <div class="speed-time-badge mono" style="color:#4f46e5;">1시간 ~ 하루 전 (D-1)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5문제 이해도 미니 퀴즈 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🎯 BESS 전력 지휘 체계 이해도 5문제 미니 퀴즈</h2>
+          <span class="pill-tag">5점 만점에 도전해 보세요!</span>
+        </div>
+
+        <div id="quizGrid" class="quiz-grid"></div>
+
+        <div id="quizFooter" class="quiz-footer">
+          <span id="quizScoreText">📝 5문제를 모두 풀어 보세요! (0 / 5 완료)</span>
+          <button id="btnQuizReset" type="button" class="ctrl-btn">🔄 퀴즈 다시 풀기</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 60fps 통합 애니메이션 & 시뮬레이션 엔진 (Pure Vanilla JS) -->
+  <!-- ================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      const SVG_NS = 'http://www.w3.org/2000/svg';
+
+      /* -----------------------------------------------------------------
+       * 1. 6대 시스템 상세 설명 데이터 (클릭 시 우측 카드 표시)
+       * ----------------------------------------------------------------- */
+      const SYS_INFO = {
+        kpx: {
+          title: '🏛️ 전력거래소 (KPX)',
+          badge: '국가 전력망 총감독',
+          border: '#4f46e5',
+          analogyTitle: '🎻 오케스트라 총지휘자 & 주식거래소',
+          analogyText: '대한민국 전체의 전기 수요와 공급을 실시간으로 맞춰 주파수 60.00Hz를 지키고, 전기를 사고파는 시장(경매장)을 운영합니다.',
+          list: [
+            '국가 전력계통 주파수(60Hz) 및 전압 안정도 총괄 감시',
+            '전력시장 입찰 접수, 발전 계획 수립, 낙찰 및 정산금 지급',
+            '주파수 급락·잉여전력 발생 시 AGC/급전 지령 하달'
+          ],
+          protos: ['IEC 60870-5-104', 'DNP3', 'KPX 급전통신망', 'AGC 신호'],
+          tip: '💡 헷갈리지 마세요! 전력거래소(KPX)는 개별 소규모 BESS와 일일이 소통하기 어려워, 중간의 "어그리게이터(VPP)"를 통해 묶음으로 소통합니다.'
+        },
+        agg: {
+          title: '🤝 어그리게이터 (Aggregator / VPP)',
+          badge: '전력 중개 매니저',
+          border: '#7c3aed',
+          analogyTitle: '🤝 공동구매 매니저 / 연예 기획사',
+          analogyText: '혼자서는 전력시장에 나가기 작은 BESS(5MW, 8MW, 7MW)들을 하나로 묶어 20MW급 "가상발전소(VPP)"로 만들고 대신 입찰·정산해 줍니다.',
+          list: [
+            '분산된 여러 BESS의 가용 용량을 모아 전력거래소(KPX)에 집합 입찰',
+            'KPX에서 내려온 급전 지령을 각 사이트(A, B, C)의 SOC에 맞게 배분',
+            '한 현장이 고장 나면 나머지 현장에 출력을 재배분해 시장 약속 이행'
+          ],
+          protos: ['OpenADR', 'REST API / MQTT', 'IEC 60870-5-104', 'VPP 플랫폼'],
+          tip: '💡 헷갈리지 마세요! 어그리게이터는 "시장 입찰과 수익 창출(비즈니스)"이 핵심이고, 24시간 안전 감시·출동은 "통합 관제소(ROC)"의 역할입니다.'
+        },
+        roc: {
+          title: '🖥️ 통합 관제소 (ROC / 통합관제센터)',
+          badge: '24시간 종합상황실',
+          border: '#0d9488',
+          analogyTitle: '🚒 24시간 119 종합상황실',
+          analogyText: '전국에 흩어진 수십 개 BESS 현장의 건강 상태, 온도, CCTV, 소방 경보를 대형 화면으로 24시간 지켜보며 비상 시 출동을 지휘합니다.',
+          list: [
+            '각 현장의 SCADA 데이터를 실시간 수집해 통합 대시보드 감시',
+            '과열·차단기 트립 등 이상 경보 즉시 파악 및 원격 안전 조치',
+            '현장 O&M 유지보수 엔지니어 긴급 출동 지시 및 고장 이력 관리'
+          ],
+          protos: ['VPN 전용망', 'OPC-UA', 'MQTT / WebSocket', 'CCTV / 소방연동'],
+          tip: '💡 헷갈리지 마세요! ROC는 여러 사이트를 한곳에서 지켜보는 "중앙 안전·운영 상황실"이며, 현장 내부에서 0.1초 단위로 기계를 움직이는 것은 SCADA입니다.'
+        },
+        ems: {
+          title: '🧠 EMS (에너지관리시스템)',
+          badge: '현장 두뇌 · 전략가',
+          border: '#d97706',
+          analogyTitle: '🧠 똑똑한 재무설계사 / 현장 두뇌',
+          analogyText: '"전기요금이 싼 밤에 충전하고 비싼 낮에 팔자!", "배터리 수명이 줄지 않게 온도를 보며 조절하자!"처럼 최적의 운전 전략을 세웁니다.',
+          list: [
+            '전기요금(TOU)·시장가격·날씨를 반영한 최적 충·방전 스케줄 작성',
+            '어그리게이터 지령과 현장 배터리 상태(SOC/SOH)를 조율해 목표 출력 산출',
+            '산출된 운전 목표값(Set-point)을 SCADA로 내려 실행 요청'
+          ],
+          protos: ['Modbus TCP', 'OPC-UA', 'REST API', '최적화 알고리즘'],
+          tip: '💡 헷갈리지 마세요! EMS는 "계획과 최적화(두뇌)"를 맡고, 실제 장비와 0.1초 단위로 대화하며 스위치를 켜고 끄는 일은 "SCADA(신경망)"가 합니다.'
+        },
+        scada: {
+          title: '📡 SCADA (원격감시제어)',
+          badge: '현장 신경망 · 눈과 손',
+          border: '#2563eb',
+          analogyTitle: '⚡ 인체의 신경망 (눈과 손)',
+          analogyText: '현장 곳곳의 센서(전압·전류·온도)를 0.2초마다 읽어오고, EMS의 지령이나 비상 보호 신호에 따라 PCS와 차단기(CB)를 직접 제어합니다.',
+          list: [
+            'PCS, BMS, 변압기, 차단기 등 수천 개 접점 데이터 고속 수집',
+            'EMS 목표 출력에 맞춰 PCS 충·방전 실행 및 차단기 원격 개폐',
+            '이상 신호 감지 시 즉각 경보(Alarm) 생성 및 통합 관제소(ROC) 전송'
+          ],
+          protos: ['IEC 61850', 'Modbus TCP/RTU', 'DNP3', 'CAN / RS-485'],
+          tip: '💡 헷갈리지 마세요! SCADA는 빠르고 정확한 "실시간 감시·제어 실행기"입니다. 요금 계산이나 수익 예측은 하지 않습니다.'
+        },
+        bess: {
+          title: '🔋 BESS 현장 설비 (PCS · 배터리 · 차단기)',
+          badge: '실제 전력 실행 부대',
+          border: '#10b981',
+          analogyTitle: '💪 근육과 초대형 보조배터리',
+          analogyText: '실제로 전기를 저장(배터리)하고, 교류↔직류로 변환(PCS)하며, 위험할 때 전기를 끊어주는(차단기·BMS) 물리적 설비입니다.',
+          list: [
+            '배터리 & BMS: 직류(DC) 에너지 저장 및 셀 전압·온도 밀리초(ms) 보호',
+            'PCS (전력변환장치): SCADA 지령에 따라 계통(Grid)과 전력을 주고받음',
+            '차단기(CB): 과열·단락 등 긴급 사고 시 0.05초 내에 계통과 즉시 분리'
+          ],
+          protos: ['CAN Bus (BMS)', 'Modbus / IEC 61850', '하드와이어 트립접점'],
+          tip: '💡 헷갈리지 마세요! 배터리 과열 같은 촌각을 다투는 안전 사고는 상위 관제소 지시를 기다리지 않고 현장 BMS/SCADA가 즉시 차단기를 트립시킵니다.'
+        }
+      };
+
+      /* -----------------------------------------------------------------
+       * 2. 5개 시나리오 데이터 (경로, 패킷, 단계별 설명, 로그)
+       * ----------------------------------------------------------------- */
+      const PATHS = {
+        kpxToAgg:   [{ x: 380, y: 80 }, { x: 260, y: 100 }, { x: 260, y: 144 }],
+        aggToKpx:   [{ x: 260, y: 144 }, { x: 260, y: 100 }, { x: 380, y: 80 }],
+        aggToEms:   [{ x: 210, y: 226 }, { x: 210, y: 300 }],
+        emsToAgg:   [{ x: 210, y: 300 }, { x: 210, y: 226 }],
+        aggToB:     [{ x: 280, y: 226 }, { x: 280, y: 262 }, { x: 625, y: 262 }, { x: 625, y: 362 }],
+        bToAgg:     [{ x: 625, y: 362 }, { x: 625, y: 262 }, { x: 280, y: 262 }, { x: 280, y: 226 }],
+        aggToC:     [{ x: 310, y: 226 }, { x: 310, y: 254 }, { x: 835, y: 254 }, { x: 835, y: 362 }],
+        cToAgg:     [{ x: 835, y: 362 }, { x: 835, y: 254 }, { x: 310, y: 254 }, { x: 310, y: 226 }],
+        emsToScada: [{ x: 278, y: 326 }, { x: 324, y: 326 }],
+        scadaToEms: [{ x: 324, y: 326 }, { x: 278, y: 326 }],
+        scadaToA:   [{ x: 398, y: 364 }, { x: 398, y: 390 }],
+        aToScada:   [{ x: 398, y: 390 }, { x: 398, y: 364 }],
+        scadaToRoc: [{ x: 415, y: 300 }, { x: 415, y: 252 }, { x: 670, y: 252 }, { x: 670, y: 226 }],
+        bToRoc:     [{ x: 655, y: 362 }, { x: 655, y: 280 }, { x: 720, y: 280 }, { x: 720, y: 226 }],
+        rocToB:     [{ x: 720, y: 226 }, { x: 720, y: 280 }, { x: 655, y: 280 }, { x: 655, y: 362 }],
+        cToRoc:     [{ x: 865, y: 362 }, { x: 865, y: 274 }, { x: 770, y: 274 }, { x: 770, y: 226 }],
+        rocToAgg:   [{ x: 570, y: 184 }, { x: 410, y: 184 }],
+        aToGrid:    [{ x: 285, y: 480 }, { x: 285, y: 532 }],
+        gridToA:    [{ x: 285, y: 532 }, { x: 285, y: 480 }],
+        bToGrid:    [{ x: 640, y: 484 }, { x: 640, y: 532 }],
+        gridToB:    [{ x: 640, y: 532 }, { x: 640, y: 484 }],
+        cToGrid:    [{ x: 850, y: 484 }, { x: 850, y: 532 }],
+        gridToC:    [{ x: 850, y: 532 }, { x: 850, y: 484 }]
+      };
+
+      const SCENARIOS = [
+        {
+          id: 0,
+          name: '☀️ 평상시 경제운전',
+          steps: [
+            { title: 'STEP 1 · EMS 스케줄 수립', desc: '현장 EMS가 전기요금(TOU)을 분석해 피크 시간대 방전 목표를 계산합니다.' },
+            { title: 'STEP 2 · SCADA 실시간 실행', desc: 'EMS 목표값을 받은 SCADA가 PCS에 출력 명령을 전달하고 센서를 계측합니다.' },
+            { title: 'STEP 3 · BESS 전력 공급', desc: 'Site A·B·C 배터리가 계통으로 전력을 부드럽게 방전하며 수익을 창출합니다.' },
+            { title: 'STEP 4 · 통합 관제소(ROC) 감시', desc: 'SCADA가 상태 데이터를 ROC로 전송해 24시간 정상(초록) 상태를 유지합니다.' }
+          ],
+          streams: [
+            { path: 'emsToScada', col: '#d97706', lbl: '운전계획', step: 0 },
+            { path: 'scadaToA',   col: '#2563eb', lbl: 'PCS제어', step: 1 },
+            { path: 'aToGrid',    col: '#10b981', lbl: '방전전력', step: 2 },
+            { path: 'bToGrid',    col: '#10b981', lbl: '방전', step: 2 },
+            { path: 'cToGrid',    col: '#10b981', lbl: '방전', step: 2 },
+            { path: 'scadaToRoc', col: '#0d9488', lbl: '상태데이터', step: 3 },
+            { path: 'bToRoc',     col: '#0d9488', lbl: '정상', step: 3 },
+            { path: 'cToRoc',     col: '#0d9488', lbl: '정상', step: 3 }
+          ]
+        },
+        {
+          id: 1,
+          name: '⚡ 주파수 급락! 긴급 방전 (AGC/FR)',
+          steps: [
+            { title: 'STEP 1 · 계통 주파수 59.80Hz 급락!', desc: '대형 발전기 탈락으로 주파수가 급락하자 전력거래소(KPX)가 긴급 AGC 지령을 발송합니다.' },
+            { title: 'STEP 2 · 어그리게이터 고속 배분', desc: '어그리게이터(VPP)가 1초 이내로 Site A(5MW)·B(8MW)·C(7MW)에 긴급 방전량을 쪼개 보냅니다.' },
+            { title: 'STEP 3 · EMS/SCADA 초고속 방전', desc: '현장 EMS와 SCADA가 PCS 최대 출력 방전을 즉시 실행하여 계통에 전력을 쏟아붓습니다.' },
+            { title: 'STEP 4 · 주파수 60.00Hz 회복 완료!', desc: '20MW 긴급 전력 투입 덕분에 국가 전력망 주파수가 60.00Hz로 안전하게 복구됩니다.' }
+          ],
+          streams: [
+            { path: 'kpxToAgg',   col: '#4f46e5', lbl: '긴급AGC!', step: 0 },
+            { path: 'aggToEms',   col: '#7c3aed', lbl: '5MW지령', step: 1 },
+            { path: 'aggToB',     col: '#7c3aed', lbl: '8MW지령', step: 1 },
+            { path: 'aggToC',     col: '#7c3aed', lbl: '7MW지령', step: 1 },
+            { path: 'emsToScada', col: '#d97706', lbl: '최대출력', step: 2 },
+            { path: 'scadaToA',   col: '#2563eb', lbl: '긴급방전', step: 2 },
+            { path: 'aToGrid',    col: '#10b981', lbl: '+5MW', step: 3 },
+            { path: 'bToGrid',    col: '#10b981', lbl: '+8MW', step: 3 },
+            { path: 'cToGrid',    col: '#10b981', lbl: '+7MW', step: 3 }
+          ]
+        },
+        {
+          id: 2,
+          name: '💰 VPP 전력시장 집합 입찰',
+          steps: [
+            { title: 'STEP 1 · 분산 자원 가용용량 보고', desc: '소규모 Site A(5MW), B(8MW), C(7MW)가 각자 방전 가능한 용량을 어그리게이터로 보고합니다.' },
+            { title: 'STEP 2 · 20MW VPP 집합 입찰', desc: '어그리게이터가 세 곳을 하나의 20MW 가상발전소(VPP)로 묶어 전력거래소(KPX) 시장에 입찰합니다.' },
+            { title: 'STEP 3 · 낙찰 확정 & 급전 지령', desc: 'KPX가 20MW 낙찰을 승인하고 급전 지령을 내리면 어그리게이터가 각 사이트에 실행을 지시합니다.' },
+            { title: 'STEP 4 · 전력 공급 & 수익 정산', desc: '전력을 공급한 뒤 KPX에서 받은 시장 정산금을 어그리게이터가 각 발전소에 분배합니다.' }
+          ],
+          streams: [
+            { path: 'emsToAgg',   col: '#10b981', lbl: '5MW가능', step: 0 },
+            { path: 'bToAgg',     col: '#10b981', lbl: '8MW가능', step: 0 },
+            { path: 'cToAgg',     col: '#10b981', lbl: '7MW가능', step: 0 },
+            { path: 'aggToKpx',   col: '#7c3aed', lbl: '20MW입찰', step: 1 },
+            { path: 'kpxToAgg',   col: '#4f46e5', lbl: '낙찰·정산', step: 2 },
+            { path: 'aggToEms',   col: '#f59e0b', lbl: '지령/수익', step: 3 },
+            { path: 'aggToB',     col: '#f59e0b', lbl: '지령/수익', step: 3 },
+            { path: 'aggToC',     col: '#f59e0b', lbl: '지령/수익', step: 3 }
+          ]
+        },
+        {
+          id: 3,
+          name: '🚨 현장 이상 경보 (과열/차단기 트립)',
+          steps: [
+            { title: 'STEP 1 · Site B 배터리 과열 감지!', desc: 'Site B 배터리 온도가 58°C로 급상승하자 현장 BMS와 SCADA가 0.05초 만에 차단기를 즉시 트립합니다.' },
+            { title: 'STEP 2 · 통합 관제소(ROC) 긴급 경보', desc: 'Site B의 적색 고장 패킷이 통합 관제소(ROC)로 쇄도하며 24시간 상황판에 경보가 울립니다.' },
+            { title: 'STEP 3 · ROC 출동 지시 & VPP 통보', desc: 'ROC가 현장 O&M 엔지니어 출동을 지시하고, 어그리게이터에 Site B 운전 정지를 즉시 알립니다.' },
+            { title: 'STEP 4 · 어그리게이터 대체 출력 배분', desc: '어그리게이터가 부족해진 출력량을 정상인 Site A와 Site C에 즉시 나눠 배정해 계통 영향을 막습니다.' }
+          ],
+          streams: [
+            { path: 'bToRoc',     col: '#e11d48', lbl: '🚨과열트립!', step: 1 },
+            { path: 'rocToB',     col: '#0d9488', lbl: 'O&M출동', step: 2 },
+            { path: 'rocToAgg',   col: '#e11d48', lbl: 'B정지통보', step: 2 },
+            { path: 'aggToEms',   col: '#7c3aed', lbl: '대체증발!', step: 3 },
+            { path: 'aggToC',     col: '#7c3aed', lbl: '대체증발!', step: 3 },
+            { path: 'aToGrid',    col: '#10b981', lbl: '대체공급', step: 3 },
+            { path: 'cToGrid',    col: '#10b981', lbl: '대체공급', step: 3 }
+          ]
+        },
+        {
+          id: 4,
+          name: '🌬️ 잉여전력 출력제어 대응 충전',
+          steps: [
+            { title: 'STEP 1 · 태양광·풍력 과잉 발전 발생', desc: '맑고 바람 강한 낮에 전기가 남아돌아 KPX가 출력제어 대신 잉여전력 흡수(충전) 지령을 보냅니다.' },
+            { title: 'STEP 2 · 어그리게이터 충전 배분', desc: '어그리게이터가 배터리 여유 공간이 있는 Site A·B·C 전체에 동시 충전 명령을 내려보냅니다.' },
+            { title: 'STEP 3 · EMS/SCADA 동시 충전 실행', desc: '현장 EMS와 SCADA가 PCS를 정류(AC→DC) 모드로 전환해 계통의 남는 전기를 흡수합니다.' },
+            { title: 'STEP 4 · 출력제어 방지 & ROC 확인', desc: '버려질 뻔한 친환경 에너지를 배터리에 안전하게 저장하고 ROC가 SOC 상승을 모니터링합니다.' }
+          ],
+          streams: [
+            { path: 'kpxToAgg',   col: '#2563eb', lbl: '잉여흡수', step: 0 },
+            { path: 'aggToEms',   col: '#7c3aed', lbl: '충전지령', step: 1 },
+            { path: 'aggToB',     col: '#7c3aed', lbl: '충전지령', step: 1 },
+            { path: 'aggToC',     col: '#7c3aed', lbl: '충전지령', step: 1 },
+            { path: 'emsToScada', col: '#d97706', lbl: '충전실행', step: 2 },
+            { path: 'gridToA',    col: '#0ea5e9', lbl: '충전흡수', step: 2 },
+            { path: 'gridToB',    col: '#0ea5e9', lbl: '충전', step: 2 },
+            { path: 'gridToC',    col: '#0ea5e9', lbl: '충전', step: 2 },
+            { path: 'scadaToRoc', col: '#0d9488', lbl: 'SOC상승', step: 3 }
+          ]
+        }
+      ];
+
+      /* -----------------------------------------------------------------
+       * 3. 5문제 미니 퀴즈 데이터
+       * ----------------------------------------------------------------- */
+      const QUIZ_DATA = [
+        {
+          q: 'Q1. 현장 BESS에서 "전기요금이 싼 밤에 충전하고 비싼 낮에 방전하는 최적 스케줄"을 짜는 두뇌 역할의 시스템은?',
+          opts: ['① EMS (에너지관리시스템)', '② SCADA (원격감시제어)', '③ 차단기(CB)'],
+          ans: 0,
+          ok: '정답입니다! 🧠 EMS는 요금·수명·예측 데이터를 분석해 최적의 충·방전 전략을 세우는 현장의 두뇌입니다.',
+          no: '다시 생각해 보세요! 계획과 최적화는 두뇌(EMS), 실제 센서 계측과 스위치 실행은 신경망(SCADA)이 맡습니다.'
+        },
+        {
+          q: 'Q2. 흩어져 있는 소규모 BESS 발전소(5MW, 8MW, 7MW)를 하나의 20MW 가상발전소(VPP)로 묶어 전력거래소(KPX) 시장에 입찰하는 주체는?',
+          opts: ['① 통합 관제소 (ROC)', '② 어그리게이터 (Aggregator)', '③ 현장 BMS'],
+          ans: 1,
+          ok: '완벽해요! 🤝 어그리게이터는 소규모 분산 자원을 하나로 묶어(Aggregation) 전력시장에 참여하고 수익을 정산하는 중개 매니저입니다.',
+          no: '아쉬워요! 여러 발전소를 묶어 시장에 입찰하는 주체는 "어그리게이터(VPP)"입니다.'
+        },
+        {
+          q: 'Q3. Site B 배터리에서 갑자기 58°C 과열이 발생했습니다! 가장 먼저 0.05초 만에 차단기를 트립시켜 안전을 지키는 곳은?',
+          opts: ['① 전력거래소(KPX)가 다음 날 아침에 승인한 뒤 차단', '② 현장 BMS와 SCADA가 상위 지시를 기다리지 않고 즉시 자동 차단', '③ 어그리게이터가 시장 정산을 끝낸 뒤 차단'],
+          ans: 1,
+          ok: '정확합니다! 🚨 안전과 직결된 고장은 촌각을 다투므로 현장 BMS·SCADA가 밀리초~0.1초 내에 즉시 차단하고, 그 결과를 ROC에 경보로 보냅니다.',
+          no: '힌트! 탭 1의 [4. 현장 이상 경보] 시나리오와 탭 3의 응답 속도 막대를 확인해 보세요.'
+        },
+        {
+          q: 'Q4. 전국 수십 개 BESS 발전소를 24시간 대형 상황판으로 감시하며, 고장 경보 시 원격 조치와 현장 O&M 엔지니어 출동을 지휘하는 곳은?',
+          opts: ['① 통합 관제소 (ROC / 통합관제센터)', '② PCS (전력변환장치)', '③ 전력거래소 (KPX)'],
+          ans: 0,
+          ok: '정답입니다! 🖥️ 통합 관제소(ROC)는 24시간 119 종합상황실처럼 여러 현장의 안전·고장·유지보수(O&M)를 총괄합니다.',
+          no: '다시 생각해 보세요! 24시간 통합 모니터링과 현장 출동 지휘는 "통합 관제소(ROC)"의 핵심 역할입니다.'
+        },
+        {
+          q: 'Q5. 다음 중 응답 속도가 가장 빠른 계층부터 가장 느린(긴 주기) 계층 순서로 올바르게 나열된 것은?',
+          opts: [
+            '① 전력시장 입찰(D-1) → EMS 스케줄링(15분) → 현장 BMS/PCS 보호(ms)',
+            '② 현장 BMS/PCS 보호(ms) → SCADA 제어(0.2초) → EMS 스케줄링(15분) → 전력시장 입찰(1시간~D-1)',
+            '③ 모든 시스템이 똑같이 1초 주기로 동작한다'
+          ],
+          ans: 1,
+          ok: '완벽합니다! ⏱️ 현장에 가까울수록 밀리초~초 단위로 빠르게 안전을 지키고, 상위로 갈수록 분~일 단위로 넓은 시장을 최적화합니다.',
+          no: '힌트! 위쪽의 [계층별 응답 속도 비교] 막대 그래프를 위에서 아래로 살펴보세요!'
+        }
+      ];
+
+      /* -----------------------------------------------------------------
+       * 4. 상태 변수 & DOM 참조
+       * ----------------------------------------------------------------- */
+      const state = {
+        activeTab: 'tab1',
+        scenarioIdx: 0,
+        selectedSys: 'kpx',
+        paused: false,
+        slowMo: false,
+        simTime: 0,
+        stepClock: 0,
+        currentStep: 0,
+        lastTs: 0,
+        socA: 68,
+        socB: 64,
+        socC: 72,
+        quizAns: [null, null, null, null, null]
+      };
+
+      const el = {
+        tabBtns: document.querySelectorAll('.tab-btn'),
+        tabPanels: document.querySelectorAll('.tab-panel'),
+        scBtns: document.querySelectorAll('.sc-btn'),
+        btnPlayPause: document.getElementById('btnPlayPause'),
+        playIcon: document.getElementById('playIcon'),
+        playTxt: document.getElementById('playTxt'),
+        btnSlow: document.getElementById('btnSlow'),
+        slowTxt: document.getElementById('slowTxt'),
+        stepChips: [0, 1, 2, 3].map(i => document.getElementById(`stepChip${i}`)),
+
+        // SVG 동적 요소
+        kpxFreqBg: document.getElementById('kpxFreqBg'),
+        kpxFreqTxt: document.getElementById('kpxFreqTxt'),
+        kpxMarketTxt: document.getElementById('kpxMarketTxt'),
+        aggStatusTxt: document.getElementById('aggStatusTxt'),
+        rectRoc: document.getElementById('rectRoc'),
+        rocStatusBg: document.getElementById('rocStatusBg'),
+        rocStatusTxt: document.getElementById('rocStatusTxt'),
+        emsStatusTxt: document.getElementById('emsStatusTxt'),
+        scadaStatusTxt: document.getElementById('scadaStatusTxt'),
+        siteAPcsTxt: document.getElementById('siteAPcsTxt'),
+        siteASocTxt: document.getElementById('siteASocTxt'),
+        siteASocBar: document.getElementById('siteASocBar'),
+        rectFieldB: document.getElementById('rectFieldB'),
+        siteBLed: document.getElementById('siteBLed'),
+        siteBSub: document.getElementById('siteBSub'),
+        siteBSocBar: document.getElementById('siteBSocBar'),
+        siteBSocTxt: document.getElementById('siteBSocTxt'),
+        siteBAlertBg: document.getElementById('siteBAlertBg'),
+        siteBAlertTxt: document.getElementById('siteBAlertTxt'),
+        siteCSocBar: document.getElementById('siteCSocBar'),
+        siteCSocTxt: document.getElementById('siteCSocTxt'),
+        siteCStateTxt: document.getElementById('siteCStateTxt'),
+        pathGridB: document.getElementById('pathGridB'),
+        packetLayer: document.getElementById('packetLayer'),
+
+        // 우측 상세 카드 & 흐름
+        sysDetailCard: document.getElementById('sysDetailCard'),
+        detTitle: document.getElementById('detTitle'),
+        detBadge: document.getElementById('detBadge'),
+        detAnalogyTitle: document.getElementById('detAnalogyTitle'),
+        detAnalogyText: document.getElementById('detAnalogyText'),
+        detList: document.getElementById('detList'),
+        detProtos: document.getElementById('detProtos'),
+        detTip: document.getElementById('detTip'),
+        liveStepTag: document.getElementById('liveStepTag'),
+        flowStepList: document.getElementById('flowStepList'),
+        teleLogBox: document.getElementById('teleLogBox'),
+
+        // Tab 2
+        duelBoxEms: document.getElementById('duelBoxEms'),
+        duelBoxScada: document.getElementById('duelBoxScada'),
+        duelAnswerEs: document.getElementById('duelAnswerEs'),
+        duelBoxAgg: document.getElementById('duelBoxAgg'),
+        duelBoxRoc: document.getElementById('duelBoxRoc'),
+        duelAnswerAr: document.getElementById('duelAnswerAr'),
+
+        // Tab 3
+        pulseDots: [0, 1, 2, 3, 4].map(i => document.getElementById(`pulseDot${i}`)),
+        quizGrid: document.getElementById('quizGrid'),
+        quizFooter: document.getElementById('quizFooter'),
+        quizScoreText: document.getElementById('quizScoreText'),
+        btnQuizReset: document.getElementById('btnQuizReset')
+      };
+
+      /* -----------------------------------------------------------------
+       * 5. SVG 패킷 풀 생성 및 경로 보간
+       * ----------------------------------------------------------------- */
+      const packetPool = [];
+      function initPacketPool() {
+        el.packetLayer.innerHTML = '';
+        for (let i = 0; i < 16; i++) {
+          const g = document.createElementNS(SVG_NS, 'g');
+          g.setAttribute('opacity', '0');
+
+          const dot = document.createElementNS(SVG_NS, 'circle');
+          dot.setAttribute('r', '6');
+          dot.setAttribute('stroke', '#ffffff');
+          dot.setAttribute('stroke-width', '2');
+
+          const bg = document.createElementNS(SVG_NS, 'rect');
+          bg.setAttribute('x', '-28');
+          bg.setAttribute('y', '-22');
+          bg.setAttribute('width', '56');
+          bg.setAttribute('height', '15');
+          bg.setAttribute('rx', '7');
+          bg.setAttribute('fill', '#0f172a');
+          bg.setAttribute('fill-opacity', '0.9');
+
+          const txt = document.createElementNS(SVG_NS, 'text');
+          txt.setAttribute('x', '0');
+          txt.setAttribute('y', '-11.5');
+          txt.setAttribute('text-anchor', 'middle');
+          txt.setAttribute('fill', '#ffffff');
+          txt.setAttribute('font-size', '8.5');
+          txt.setAttribute('font-weight', '900');
+
+          g.appendChild(dot);
+          g.appendChild(bg);
+          g.appendChild(txt);
+          el.packetLayer.appendChild(g);
+          packetPool.push({ g, dot, bg, txt });
+        }
+      }
+
+      function pointOnPoly(pts, u) {
+        let total = 0;
+        const lens = [];
+        for (let i = 0; i < pts.length - 1; i++) {
+          const d = Math.hypot(pts[i + 1].x - pts[i].x, pts[i + 1].y - pts[i].y);
+          lens.push(d);
+          total += d;
+        }
+        let dist = u * total;
+        for (let i = 0; i < lens.length; i++) {
+          if (dist <= lens[i] || i === lens.length - 1) {
+            const k = lens[i] === 0 ? 0 : dist / lens[i];
+            return {
+              x: pts[i].x + (pts[i + 1].x - pts[i].x) * k,
+              y: pts[i].y + (pts[i + 1].y - pts[i].y) * k
+            };
+          }
+          dist -= lens[i];
+        }
+        return pts[0];
+      }
+
+      /* -----------------------------------------------------------------
+       * 6. 시스템 상세 카드 & 시나리오 전환 로직
+       * ----------------------------------------------------------------- */
+      function selectSystem(key) {
+        state.selectedSys = key;
+        const info = SYS_INFO[key];
+        if (!info) return;
+
+        el.sysDetailCard.style.borderColor = info.border;
+        el.detTitle.textContent = info.title;
+        el.detBadge.textContent = info.badge;
+        el.detAnalogyTitle.textContent = info.analogyTitle;
+        el.detAnalogyText.textContent = info.analogyText;
+        el.detList.innerHTML = info.list.map(x => `<li>${x}</li>`).join('');
+        el.detProtos.innerHTML = info.protos.map(p => `<span class="proto-tag">${p}</span>`).join('');
+        el.detTip.textContent = info.tip;
+      }
+
+      function setScenario(idx) {
+        state.scenarioIdx = idx;
+        state.stepClock = 0;
+        state.currentStep = 0;
+
+        el.scBtns.forEach(b => {
+          b.classList.remove('active-0', 'active-1', 'active-2', 'active-3', 'active-4');
+          if (Number(b.dataset.sc) === idx) b.classList.add(`active-${idx}`);
+        });
+
+        // 우측 단계 리스트 렌더링
+        const sc = SCENARIOS[idx];
+        el.flowStepList.innerHTML = sc.steps.map((s, i) => `
+          <div id="flowItem${i}" class="flow-step-item ${i === 0 ? 'active' : ''}">
+            <strong>${s.title}</strong>
+            <span>${s.desc}</span>
+          </div>
+        `).join('');
+
+        // 시나리오별 대표 시스템 자동 포커스
+        const focusMap = ['ems', 'kpx', 'agg', 'roc', 'kpx'];
+        selectSystem(focusMap[idx]);
+        syncScenarioVisuals(0);
+      }
+
+      function syncScenarioVisuals(t) {
+        const scIdx = state.scenarioIdx;
+        const step = state.currentStep;
+
+        // 단계 칩 및 우측 내러티브 하이라이트
+        el.stepChips.forEach((chip, i) => chip.classList.toggle('active', i === step));
+        el.liveStepTag.textContent = `STEP ${step + 1} 진행 중`;
+        for (let i = 0; i < 4; i++) {
+          const item = document.getElementById(`flowItem${i}`);
+          if (item) item.classList.toggle('active', i === step);
+        }
+
+        // 기본 상태 리셋
+        let freq = 60.00;
+        let marketTxt = 'SMP 145원 · 정상';
+        let aggTxt = 'VPP 집합용량: 20 MW (5+8+7)';
+        let rocAlert = false;
+        let rocTxt = '🟢 전 사이트 정상 감시 중 (경보 0건)';
+        let emsTxt = '계획: 심야충전 / 피크방전';
+        let scadaTxt = '0.2초 주기 폴링 정상';
+        let siteAPcs = '출력: +2.5 MW';
+        let siteBAlarm = false;
+        let siteBSub = '온도: 26°C · CB CLOSED';
+        let siteBAlert = 'EMS/SCADA 연동 정상';
+        let siteCState = 'EMS/SCADA 연동 정상';
+        let logText = '';
+
+        if (scIdx === 0) {
+          logText = `[SCADA→ROC] Site A/B/C 정상 | [EMS] 경제운전 방전 중 (+7.5MW)`;
+        } else if (scIdx === 1) {
+          // 주파수 급락 -> 회복 연출
+          freq = step === 0 ? 59.80 : (step === 1 ? 59.84 : (step === 2 ? 59.93 : 60.00));
+          marketTxt = step < 3 ? '⚠️ FR 긴급 AGC 발동!' : '✅ 60.00Hz 회복 완료';
+          aggTxt = '⚡ 긴급 배분: A(5)+B(8)+C(7) MW';
+          emsTxt = '긴급 FR 방전 모드 (최대출력)';
+          scadaTxt = 'AGC 고속 추종 (< 0.5초)';
+          siteAPcs = '긴급방전: +5.0 MW';
+          logText = `[KPX→VPP] AGC 긴급지령 | 계통 주파수 ${freq.toFixed(2)}Hz → 20MW 투입`;
+        } else if (scIdx === 2) {
+          marketTxt = step >= 2 ? '✅ 20MW 낙찰 확정 (162원)' : '💰 집합 입찰 접수 중...';
+          aggTxt = step === 0 ? '가용용량 취합 중 (5+8+7MW)' : 'VPP 20MW 집합 입찰·정산 중';
+          emsTxt = 'VPP 시장 입찰 스케줄 동기화';
+          siteAPcs = step >= 2 ? '낙찰방전: +5.0 MW' : '대기 (입찰 중)';
+          logText = `[VPP↔KPX] 20MW 집합 입찰 | 예상 정산수익 배분 (A:25% B:40% C:35%)`;
+        } else if (scIdx === 3) {
+          rocAlert = true;
+          siteBAlarm = true;
+          rocTxt = step >= 2 ? '🚨 Site B 과열 경보! O&M 엔지니어 출동!' : '🚨 Site B 과열/차단기 트립 경보 수신!';
+          aggTxt = step >= 3 ? '⚖️ Site B 제외 → A·C 대체 출력 배분!' : '⚠️ Site B 정지 통보 수신 대기';
+          emsTxt = step >= 3 ? 'Site B 대체 증발 (+4.5MW)' : '정상 운전 감시 중';
+          scadaTxt = 'Site A 정상 / Site B CB TRIP';
+          siteAPcs = step >= 3 ? '대체증발: +4.5 MW' : '출력: +2.5 MW';
+          siteBSub = '🔥 온도: 58°C · CB OPEN!';
+          siteBAlert = '🚨 0.05초 자동 트립! 운전 정지';
+          siteCState = step >= 3 ? '⚡ 대체 증발 (+6.5MW)' : '정상 운전';
+          logText = `[SITE-B] 58°C 과열 → CB TRIP! | [ROC] 경보 발령·출동 | [VPP] A·C 대체`;
+        } else if (scIdx === 4) {
+          freq = 60.06;
+          marketTxt = '🌬️ 재생에너지 과잉 · 흡수지령';
+          aggTxt = '🔋 전 사이트 동시 충전 (-18MW)';
+          emsTxt = '출력제어 대응 충전 모드 (AC→DC)';
+          scadaTxt = 'PCS 정류(충전) 제어 정상';
+          siteAPcs = '충전흡수: -4.5 MW';
+          siteBAlert = '🔋 잉여전력 충전 중 (-7.0MW)';
+          siteCState = '🔋 잉여전력 충전 중 (-6.5MW)';
+          logText = `[KPX→VPP] 출력제어 방지 충전 | 3개 사이트 총 18MW 잉여전력 흡수`;
+        }
+
+        // KPX 주파수 색상
+        const freqLow = freq < 59.95;
+        el.kpxFreqBg.setAttribute('fill', freqLow ? '#e11d48' : '#4f46e5');
+        el.kpxFreqTxt.textContent = `주파수: ${freq.toFixed(2)} Hz`;
+        el.kpxMarketTxt.textContent = marketTxt;
+        el.aggStatusTxt.textContent = aggTxt;
+        el.emsStatusTxt.textContent = emsTxt;
+        el.scadaStatusTxt.textContent = scadaTxt;
+        el.siteAPcsTxt.textContent = siteAPcs;
+
+        // ROC 경보 깜빡임
+        const blinkOn = Math.sin(t * 9) > 0;
+        if (rocAlert) {
+          el.rectRoc.setAttribute('stroke', blinkOn ? '#e11d48' : '#fb7185');
+          el.rocStatusBg.setAttribute('fill', blinkOn ? '#ffe4e6' : '#fecdd3');
+          el.rocStatusTxt.setAttribute('fill', '#be123c');
+        } else {
+          el.rectRoc.setAttribute('stroke', '#0d9488');
+          el.rocStatusBg.setAttribute('fill', '#ccfbf1');
+          el.rocStatusTxt.setAttribute('fill', '#115e59');
+        }
+        el.rocStatusTxt.textContent = rocTxt;
+
+        // Site B 고장 연출
+        if (siteBAlarm) {
+          el.rectFieldB.setAttribute('fill', '#fff1f2');
+          el.rectFieldB.setAttribute('stroke', blinkOn ? '#e11d48' : '#f43f5e');
+          el.siteBLed.setAttribute('fill', blinkOn ? '#e11d48' : '#fda4af');
+          el.siteBSub.setAttribute('fill', '#be123c');
+          el.siteBAlertBg.setAttribute('fill', '#ffe4e6');
+          el.siteBAlertTxt.setAttribute('fill', '#be123c');
+          el.pathGridB.setAttribute('stroke', '#94a3b8');
+          el.pathGridB.setAttribute('stroke-dasharray', '5 5');
+        } else {
+          el.rectFieldB.setAttribute('fill', '#ecfdf5');
+          el.rectFieldB.setAttribute('stroke', '#10b981');
+          el.siteBLed.setAttribute('fill', '#10b981');
+          el.siteBSub.setAttribute('fill', '#047857');
+          el.siteBAlertBg.setAttribute('fill', '#d1fae5');
+          el.siteBAlertTxt.setAttribute('fill', '#047857');
+          el.pathGridB.setAttribute('stroke', '#10b981');
+          el.pathGridB.setAttribute('stroke-dasharray', 'none');
+        }
+        el.siteBSub.textContent = siteBSub;
+        el.siteBAlertTxt.textContent = siteBAlert;
+        el.siteCStateTxt.textContent = siteCState;
+
+        // SOC 바 업데이트
+        el.siteASocTxt.textContent = `${Math.round(state.socA)}%`;
+        el.siteASocBar.setAttribute('width', ((state.socA / 100) * 136).toFixed(1));
+        el.siteBSocBar.setAttribute('width', ((state.socB / 100) * 160).toFixed(1));
+        el.siteBSocTxt.textContent = siteBAlarm ? `SOC ${Math.round(state.socB)}% · 운전 정지` : `SOC ${Math.round(state.socB)}% · 정상 운전`;
+        el.siteCSocBar.setAttribute('width', ((state.socC / 100) * 160).toFixed(1));
+        el.siteCSocTxt.textContent = `SOC ${Math.round(state.socC)}% · 정상 운전`;
+
+        el.teleLogBox.textContent = logText;
+      }
+
+      /* -----------------------------------------------------------------
+       * 7. 60fps 메인 애니메이션 루프 (Tab 1 패킷 + Tab 3 응답 속도 펄스)
+       * ----------------------------------------------------------------- */
+      function mainLoop(ts) {
+        if (!state.lastTs) state.lastTs = ts;
+        const rawDt = Math.min((ts - state.lastTs) / 1000, 0.05);
+        state.lastTs = ts;
+
+        const dt = state.paused ? 0 : (state.slowMo ? rawDt * 0.35 : rawDt);
+        state.simTime += dt;
+
+        // === TAB 1 업데이트 ===
+        if (state.activeTab === 'tab1') {
+          if (dt > 0) {
+            // 2.6초마다 Step 0 -> 1 -> 2 -> 3 순환
+            state.stepClock += dt;
+            if (state.stepClock >= 2.6) {
+              state.stepClock = 0;
+              state.currentStep = (state.currentStep + 1) % 4;
+            }
+
+            // 시나리오별 SOC 부드러운 변화
+            const scIdx = state.scenarioIdx;
+            if (scIdx === 4) {
+              // 충전
+              state.socA = Math.min(92, state.socA + dt * 2.2);
+              state.socB = Math.min(92, state.socB + dt * 2.0);
+              state.socC = Math.min(92, state.socC + dt * 2.1);
+              if (state.socA >= 91.5) { state.socA = 42; state.socB = 38; state.socC = 45; }
+            } else {
+              // 방전
+              const rate = scIdx === 1 ? 2.8 : 1.1;
+              state.socA = Math.max(20, state.socA - dt * rate);
+              if (scIdx !== 3) state.socB = Math.max(20, state.socB - dt * rate);
+              state.socC = Math.max(20, state.socC - dt * rate);
+              if (state.socA <= 21) { state.socA = 78; state.socB = 74; state.socC = 80; }
+            }
+          }
+
+          syncScenarioVisuals(state.simTime);
+
+          // 패킷 이동 렌더링
+          const sc = SCENARIOS[state.scenarioIdx];
+          let idx = 0;
+          for (const st of sc.streams) {
+            if (idx >= packetPool.length) break;
+            const p = packetPool[idx++];
+            const pts = PATHS[st.path];
+            const isCurrent = st.step === state.currentStep;
+            const speed = isCurrent ? 0.65 : 0.35;
+            const u = (state.simTime * speed + idx * 0.19) % 1;
+            const pos = pointOnPoly(pts, u);
+
+            p.g.setAttribute('opacity', isCurrent ? '1' : '0.45');
+            p.g.setAttribute('transform', `translate(${pos.x.toFixed(1)}, ${pos.y.toFixed(1)})`);
+            p.dot.setAttribute('fill', st.col);
+            p.dot.setAttribute('r', isCurrent ? '6.8' : '5');
+            p.bg.setAttribute('fill', isCurrent ? st.col : '#0f172a');
+            p.txt.textContent = st.lbl;
+          }
+          while (idx < packetPool.length) packetPool[idx++].g.setAttribute('opacity', '0');
+        }
+
+        // === TAB 3 응답 속도 펄스 애니메이션 ===
+        if (state.activeTab === 'tab3') {
+          const speeds = [3.6, 1.8, 0.75, 0.35, 0.15];
+          const widths = [16, 34, 56, 76, 100];
+          for (let i = 0; i < 5; i++) {
+            const u = (state.simTime * speeds[i]) % 1;
+            const pct = u * widths[i];
+            el.pulseDots[i].style.left = `${pct.toFixed(1)}%`;
+          }
+        }
+
+        requestAnimationFrame(mainLoop);
+      }
+
+      /* -----------------------------------------------------------------
+       * 8. [TAB 3] 5문제 미니 퀴즈 렌더링
+       * ----------------------------------------------------------------- */
+      function renderQuiz() {
+        el.quizGrid.innerHTML = QUIZ_DATA.map((item, qi) => {
+          const picked = state.quizAns[qi];
+          const done = picked !== null;
+          const isOk = picked === item.ans;
+
+          const optsHtml = item.opts.map((txt, oi) => {
+            let cls = 'quiz-opt-btn';
+            if (done) {
+              if (oi === item.ans) cls += ' correct';
+              else if (oi === picked) cls += ' wrong';
+            }
+            return `<button type="button" class="${cls}" data-q="${qi}" data-o="${oi}" ${done ? 'disabled' : ''}>${txt}</button>`;
+          }).join('');
+
+          return `
+            <div class="quiz-card ${qi === 4 ? 'full-span' : ''}">
+              <div class="quiz-q">${item.q}</div>
+              <div class="quiz-opts">${optsHtml}</div>
+              <div class="quiz-fb ${done ? (isOk ? 'show ok' : 'show no') : ''}">
+                ${done ? (isOk ? item.ok : item.no) : ''}
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        el.quizGrid.querySelectorAll('.quiz-opt-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const qi = Number(btn.dataset.q);
+            const oi = Number(btn.dataset.o);
+            if (state.quizAns[qi] !== null) return;
+            state.quizAns[qi] = oi;
+            renderQuiz();
+          });
+        });
+
+        const doneCount = state.quizAns.filter(v => v !== null).length;
+        const score = state.quizAns.reduce((acc, v, i) => acc + (v === QUIZ_DATA[i].ans ? 1 : 0), 0);
+        el.quizFooter.classList.remove('perfect');
+        if (doneCount < 5) {
+          el.quizScoreText.textContent = `📝 5문제를 모두 풀어 보세요! (${doneCount} / 5 완료 · 현재 ${score}점)`;
+        } else if (score === 5) {
+          el.quizFooter.classList.add('perfect');
+          el.quizScoreText.textContent = '🏆 5 / 5점 만점! BESS 전력 지휘 체계(KPX·VPP·ROC·EMS·SCADA)를 완벽하게 마스터하셨습니다! 🎉';
+        } else {
+          el.quizScoreText.textContent = `👍 5문제 완료! 총 ${score} / 5점입니다. 다시 도전해 볼까요?`;
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 9. 초기화 및 이벤트 바인딩
+       * ----------------------------------------------------------------- */
+      window.addEventListener('load', () => {
+        initPacketPool();
+
+        // 상단 3개 탭 전환
+        el.tabBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const target = btn.dataset.tab;
+            state.activeTab = target;
+            el.tabBtns.forEach(b => {
+              const on = b.dataset.tab === target;
+              b.classList.toggle('active', on);
+              b.setAttribute('aria-selected', String(on));
+            });
+            el.tabPanels.forEach(p => p.classList.toggle('active', p.id === target));
+          });
+        });
+
+        // TAB 1: 시나리오 버튼
+        el.scBtns.forEach(btn => {
+          btn.addEventListener('click', () => setScenario(Number(btn.dataset.sc)));
+        });
+
+        // TAB 1: 재생/일시정지 & 슬로우 모션
+        el.btnPlayPause.addEventListener('click', () => {
+          state.paused = !state.paused;
+          el.btnPlayPause.classList.toggle('is-paused', state.paused);
+          el.playIcon.textContent = state.paused ? '▶️' : '⏸️';
+          el.playTxt.textContent = state.paused ? '재생' : '일시정지';
+        });
+
+        el.btnSlow.addEventListener('click', () => {
+          state.slowMo = !state.slowMo;
+          el.btnSlow.classList.toggle('is-slow', state.slowMo);
+          el.slowTxt.textContent = state.slowMo ? '원래 속도로 (1x)' : '천천히 보기 (0.35x)';
+        });
+
+        // TAB 1: SVG 6개 시스템 노드 클릭 -> 상세 카드 전환
+        document.querySelectorAll('.clickable-node').forEach(node => {
+          node.addEventListener('click', () => selectSystem(node.dataset.sys));
+        });
+
+        // TAB 2: "이 업무는 누가 할까?" 인터랙티브 대결 버튼
+        document.querySelectorAll('.task-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const duel = btn.dataset.duel;
+            const who = btn.dataset.who;
+            const exp = btn.dataset.exp;
+
+            if (duel === 'es') {
+              document.querySelectorAll('#emsScadaTasks .task-btn').forEach(b => b.classList.remove('active-ems', 'active-scada'));
+              btn.classList.add(`active-${who}`);
+              el.duelBoxEms.classList.toggle('lit-ems', who === 'ems');
+              el.duelBoxScada.classList.toggle('lit-scada', who === 'scada');
+              el.duelAnswerEs.textContent = exp;
+            } else {
+              document.querySelectorAll('#aggRocTasks .task-btn').forEach(b => b.classList.remove('active-agg', 'active-roc'));
+              btn.classList.add(`active-${who}`);
+              el.duelBoxAgg.classList.toggle('lit-agg', who === 'agg');
+              el.duelBoxRoc.classList.toggle('lit-roc', who === 'roc');
+              el.duelAnswerAr.textContent = exp;
+            }
+          });
+        });
+
+        // TAB 3: 퀴즈 리셋
+        el.btnQuizReset.addEventListener('click', () => {
+          state.quizAns = [null, null, null, null, null];
+          renderQuiz();
+        });
+
+        // 초기 실행
+        setScenario(0);
+        renderQuiz();
+        requestAnimationFrame(mainLoop);
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>전압·전류 인체 감전 피해 강도 체험실 (옴의 법칙 &amp; IEC 60479-1)</title>
+  <style>
+    /* =====================================================================
+     * 1. 기본 리셋 및 디자인 토큰 (밝은 과학관/안전체험관 테마)
+     * ===================================================================== */
+    :root {
+      --bg-main: #f4f7fb;
+      --bg-card: #ffffff;
+      --border-soft: #dce5f2;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+
+      /* 위험 단계별 시맨틱 컬러 */
+      --lv0: #10b981; /* 안전 (0~1mA) */
+      --lv1: #eab308; /* 찌릿함 (1~5mA) */
+      --lv2: #f97316; /* 고통/경련 (5~15mA) */
+      --lv3: #ef4444; /* 이탈불가 (15~50mA) */
+      --lv4: #9333ea; /* 심실세동/치명적 (50mA+) */
+      --accent-blue: #2563eb;
+      --shadow-card: 0 10px 28px -8px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-main);
+      background-image:
+        radial-gradient(circle at 8% 6%, rgba(59, 130, 246, 0.12) 0%, transparent 32%),
+        radial-gradient(circle at 92% 10%, rgba(16, 185, 129, 0.12) 0%, transparent 30%);
+      color: var(--text-primary);
+      line-height: 1.55;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* 치명적 감전 시 화면 외곽 위험 펄스 오버레이 */
+    #dangerOverlay {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 90;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      box-shadow: inset 0 0 0 0 rgba(220, 38, 38, 0);
+    }
+
+    #dangerOverlay.active {
+      opacity: 1;
+      animation: dangerBorderPulse 0.65s ease-in-out infinite;
+    }
+
+    @keyframes dangerBorderPulse {
+      0%, 100% { box-shadow: inset 0 0 36px 8px rgba(220, 38, 38, 0.48); }
+      50% { box-shadow: inset 0 0 64px 18px rgba(147, 51, 234, 0.6); }
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 18px 16px 56px;
+    }
+
+    /* =====================================================================
+     * 2. 상단 헤더 배너
+     * ===================================================================== */
+    .hero-header {
+      background: linear-gradient(135deg, #ffffff 0%, #eff6ff 55%, #ecfdf5 100%);
+      border: 2px solid var(--border-soft);
+      border-radius: 24px;
+      padding: 20px 24px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .hero-title-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(1.2rem, 2.5vw, 1.58rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+
+    .hero-sub {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-top: 3px;
+    }
+
+    .hero-key-badge {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 10px 16px;
+      border-radius: 14px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.16);
+    }
+
+    .hero-key-badge strong {
+      color: #38bdf8;
+    }
+
+    /* =====================================================================
+     * 3. 공통 카드 & 메인 2단 레이아웃
+     * ===================================================================== */
+    .card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-soft);
+      border-radius: 22px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+    }
+
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-tag {
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1.5px solid #bfdbfe;
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 18px;
+      align-items: start;
+      margin-bottom: 18px;
+    }
+
+    /* =====================================================================
+     * 4. 좌측: 인체 감전 애니메이션 무대 & 실시간 ECG
+     * ===================================================================== */
+    .stage-wrapper {
+      position: relative;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 55%, #f1f5f9 100%);
+      border: 2px solid #dbeafe;
+      overflow: hidden;
+      padding: 8px;
+      margin-bottom: 14px;
+    }
+
+    #humanStageSvg {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+
+    /* ELB 누전차단기 작동 오버레이 배너 */
+    .elb-banner {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #ecfdf5, #dcfce7);
+      border: 2px solid #10b981;
+      color: #065f46;
+      margin-bottom: 14px;
+      animation: popIn 0.25s ease;
+    }
+
+    .elb-banner.show {
+      display: flex;
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .elb-reset-btn {
+      appearance: none;
+      border: none;
+      background: #059669;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.84rem;
+      font-weight: 800;
+      padding: 8px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.18s ease, transform 0.15s ease;
+    }
+
+    .elb-reset-btn:hover {
+      background: #047857;
+      transform: translateY(-1px);
+    }
+
+    /* 실시간 ECG 심전도 모니터 */
+    .ecg-box {
+      background: #09111f;
+      border: 2px solid #1e293b;
+      border-radius: 16px;
+      padding: 12px 14px;
+      color: #e2e8f0;
+    }
+
+    .ecg-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .ecg-canvas-wrap {
+      width: 100%;
+      height: 118px;
+      background: #040812;
+      border-radius: 10px;
+      border: 1px solid #1e293b;
+      overflow: hidden;
+    }
+
+    #ecgCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* =====================================================================
+     * 5. 우측: 조작 컨트롤 패널 & 실시간 옴의 법칙 계산기
+     * ===================================================================== */
+    .ohm-box {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #f8fafc;
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .ohm-equation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+
+    .ohm-term {
+      text-align: center;
+      flex: 1 1 70px;
+    }
+
+    .ohm-term-label {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .ohm-term-val {
+      font-size: 1.15rem;
+      font-weight: 900;
+    }
+
+    .ohm-op {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #64748b;
+    }
+
+    /* 데미지 강도 게이지 바 */
+    .gauge-track {
+      position: relative;
+      height: 16px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #10b981 0%, #eab308 24%, #f97316 48%, #ef4444 74%, #9333ea 100%);
+      overflow: visible;
+      margin: 8px 0 6px;
+    }
+
+    .gauge-marker {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 4px solid #0f172a;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+      transform: translate(-50%, -50%);
+      transition: left 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .gauge-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      color: #94a3b8;
+      font-weight: 700;
+    }
+
+    .ctrl-section {
+      margin-bottom: 15px;
+    }
+
+    .ctrl-label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .volt-slider {
+      width: 100%;
+      height: 10px;
+      border-radius: 999px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: linear-gradient(90deg, #38bdf8, #f59e0b, #ef4444);
+      outline: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .volt-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 4px solid #2563eb;
+      box-shadow: 0 3px 10px rgba(37, 99, 235, 0.35);
+      cursor: pointer;
+    }
+
+    .preset-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+    }
+
+    .preset-btn {
+      appearance: none;
+      border: 1.5px solid #cbd5e1;
+      background: #f8fafc;
+      color: #334155;
+      font-family: inherit;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 7px 6px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.16s ease;
+      line-height: 1.3;
+    }
+
+    .preset-btn:hover {
+      border-color: #60a5fa;
+      background: #eff6ff;
+    }
+
+    .preset-btn.active {
+      background: #2563eb;
+      border-color: #1d4ed8;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.28);
+    }
+
+    /* 피부/환경 저항 선택 */
+    .skin-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .skin-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #f8fafc;
+      color: #1e293b;
+      font-family: inherit;
+      padding: 10px 11px;
+      border-radius: 13px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .skin-btn:hover {
+      border-color: #93c5fd;
+      background: #ffffff;
+    }
+
+    .skin-btn.active {
+      border-color: #2563eb;
+      background: #eff6ff;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.14);
+    }
+
+    .skin-btn strong {
+      font-size: 0.84rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4px;
+    }
+
+    .skin-btn span {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    /* AC/DC 토글 + ELB 누전차단기 토글 */
+    .two-col-ctrl {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .seg-box {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 10px;
+    }
+
+    .seg-title {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--text-secondary);
+      margin-bottom: 7px;
+      display: block;
+    }
+
+    .seg-btns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .seg-btn {
+      appearance: none;
+      border: 1.5px solid #cbd5e1;
+      background: #ffffff;
+      color: #475569;
+      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 8px 6px;
+      border-radius: 9px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .seg-btn.active-ac {
+      background: #ef4444;
+      border-color: #dc2626;
+      color: #ffffff;
+    }
+
+    .seg-btn.active-dc {
+      background: #0ea5e9;
+      border-color: #0284c7;
+      color: #ffffff;
+    }
+
+    .elb-toggle-btn {
+      appearance: none;
+      width: 100%;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #475569;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 8px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.18s ease;
+    }
+
+    .elb-toggle-btn.on {
+      background: #ecfdf5;
+      border-color: #10b981;
+      color: #047857;
+    }
+
+    .toggle-pill {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      color: #475569;
+    }
+
+    .elb-toggle-btn.on .toggle-pill {
+      background: #10b981;
+      color: #ffffff;
+    }
+
+    /* =====================================================================
+     * 6. 전류량별 인체 피해 단계표 (IEC 60479-1)
+     * ===================================================================== */
+    .stage-table-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .damage-tier {
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 13px 12px;
+      background: #f8fafc;
+      transition: all 0.22s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .damage-tier .tier-range {
+      font-size: 0.82rem;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 8px;
+      align-self: flex-start;
+    }
+
+    .damage-tier h4 {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .damage-tier p {
+      font-size: 0.77rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .damage-tier .tier-meta {
+      margin-top: auto;
+      padding-top: 6px;
+      border-top: 1px dashed #cbd5e1;
+      font-size: 0.73rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .damage-tier.active-lv0 {
+      background: #ecfdf5;
+      border-color: #10b981;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(16, 185, 129, 0.2);
+    }
+    .damage-tier.active-lv1 {
+      background: #fefce8;
+      border-color: #eab308;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(234, 179, 8, 0.22);
+    }
+    .damage-tier.active-lv2 {
+      background: #fff7ed;
+      border-color: #f97316;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(249, 115, 22, 0.22);
+    }
+    .damage-tier.active-lv3 {
+      background: #fef2f2;
+      border-color: #ef4444;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(239, 68, 68, 0.24);
+    }
+    .damage-tier.active-lv4 {
+      background: #faf5ff;
+      border-color: #9333ea;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(147, 51, 234, 0.28);
+    }
+
+    /* =====================================================================
+     * 7. 핵심 원리 Q&A 카드 & 안전 OX 퀴즈
+     * ===================================================================== */
+    .info-cards-grid,
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .info-card {
+      background: #f8fbff;
+      border: 2px solid #dbeafe;
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .info-card-icon {
+      font-size: 26px;
+    }
+
+    .info-card h3 {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .info-card p {
+      font-size: 0.83rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    .quiz-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .quiz-q {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .ox-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .ox-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 900;
+      padding: 10px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .ox-btn:hover:not(:disabled) {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    .ox-btn.correct {
+      background: #dcfce7;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .ox-btn.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .quiz-fb {
+      display: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.45;
+      padding: 10px 12px;
+      border-radius: 12px;
+    }
+
+    .quiz-fb.show { display: block; }
+    .quiz-fb.ok { background: #ecfdf5; color: #065f46; border: 1.5px solid #a7f3d0; }
+    .quiz-fb.no { background: #fff1f2; color: #9f1239; border: 1.5px solid #fecdd3; }
+
+    .quiz-footer {
+      margin-top: 14px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+      border: 2px solid #bfdbfe;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .quiz-reset-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 7px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .quiz-reset-btn:hover {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    /* =====================================================================
+     * 8. 반응형 미디어 쿼리
+     * ===================================================================== */
+    @media (max-width: 1024px) {
+      .main-grid { grid-template-columns: 1fr; }
+      .stage-table-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .info-cards-grid,
+      .quiz-grid { grid-template-columns: 1fr; }
+      .preset-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 520px) {
+      .stage-table-grid,
+      .skin-grid,
+      .two-col-ctrl { grid-template-columns: 1fr; }
+      .preset-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <!-- 치명적 감전 시 화면 외곽 위험 펄스 -->
+  <div id="dangerOverlay" aria-hidden="true"></div>
+
+  <div class="container">
+    <!-- ================================================================= -->
+    <!-- 상단 헤더 -->
+    <!-- ================================================================= -->
+    <header class="hero-header">
+      <div class="hero-title-group">
+        <div class="hero-icon" aria-hidden="true">⚡</div>
+        <div>
+          <h1 class="hero-title">전압·전류 인체 감전 피해 강도 체험실</h1>
+          <p class="hero-sub">
+            전압(V)이 아니라 <strong>내 몸을 통과하는 전류(mA)</strong>가 감전 피해를 결정합니다! (옴의 법칙 &amp; IEC 60479-1 기준)
+          </p>
+        </div>
+      </div>
+      <div class="hero-key-badge mono">
+        <span>핵심 공식:</span>
+        <strong>전류(I) = 전압(V) ÷ 인체 저항(R)</strong>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 메인 2단 그리드: [좌] 인체 애니메이션 & ECG / [우] 컨트롤 & 옴의 법칙 -->
+    <!-- ================================================================= -->
+    <div class="main-grid">
+      <!-- 좌측 패널: 인체 감전 SVG 무대 + 실시간 심전도 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🧍 실시간 인체 감전 경로 &amp; 심장 반응 시뮬레이터</h2>
+          <span id="stageStatusPill" class="pill-tag">🟢 안전 · 미감지 (0.7 mA)</span>
+        </div>
+
+        <!-- 누전차단기(ELB) 트립 알림 배너 -->
+        <div id="elbBanner" class="elb-banner" role="alert">
+          <div>
+            <strong>⚡ 누전차단기(ELB) 작동! 목숨을 구했습니다!</strong>
+            <div style="font-size:0.8rem; margin-top:2px;">
+              인체 통과 전류가 30mA를 초과하여 <strong>0.03초</strong> 만에 전원을 자동 차단했습니다.
+            </div>
+          </div>
+          <button id="elbResetBtn" type="button" class="elb-reset-btn">🔄 차단기 복구 (리셋)</button>
+        </div>
+
+        <!-- SVG 애니메이션 무대 -->
+        <div class="stage-wrapper">
+          <svg id="humanStageSvg" viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="elecGlow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="3.5" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+              <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#e2e8f0" />
+                <stop offset="100%" stop-color="#cbd5e1" />
+              </linearGradient>
+            </defs>
+
+            <!-- 배경 바닥(접지 Ground) -->
+            <rect x="0" y="388" width="640" height="52" fill="#e2e8f0" />
+            <line x1="0" y1="388" x2="640" y2="388" stroke="#94a3b8" stroke-width="2" />
+            <!-- 바닥 물웅덩이 (젖은 상태일 때만 표시) -->
+            <ellipse id="wetPuddle" cx="350" cy="398" rx="115" ry="14" fill="#38bdf8" fill-opacity="0.45" stroke="#0284c7" stroke-width="1.5" opacity="0" />
+            <!-- 접지 기호 -->
+            <g transform="translate(495, 396)" stroke="#475569" stroke-width="2.5" stroke-linecap="round">
+              <line x1="0" y1="-8" x2="0" y2="6" />
+              <line x1="-16" y1="6" x2="16" y2="6" />
+              <line x1="-10" y1="13" x2="10" y2="13" />
+              <line x1="-4" y1="20" x2="4" y2="20" />
+            </g>
+            <text x="530" y="412" fill="#475569" font-size="11" font-weight="800">대지 접지(Ground)</text>
+
+            <!-- 좌측 전원 장치 + 누전차단기(ELB) -->
+            <g id="powerSourceGroup">
+              <rect x="20" y="92" width="112" height="126" rx="14" fill="#0f172a" stroke="#334155" stroke-width="2.5" />
+              <text x="76" y="114" text-anchor="middle" fill="#94a3b8" font-size="10.5" font-weight="800">전원 공급 장치</text>
+              <rect x="34" y="124" width="84" height="34" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+              <text id="svgVoltText" x="76" y="146" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="900" class="mono">220V</text>
+              <text id="svgTypeText" x="76" y="176" text-anchor="middle" fill="#f87171" font-size="11" font-weight="800" class="mono">AC 60Hz</text>
+
+              <!-- ELB 스위치 표시 -->
+              <rect id="svgElbBox" x="34" y="186" width="84" height="22" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1.2" />
+              <text id="svgElbText" x="76" y="201" text-anchor="middle" fill="#34d399" font-size="9.5" font-weight="800">ELB 30mA ON</text>
+            </g>
+
+            <!-- 전원 -> 왼손 접촉 전선 (중간에 ELB 접점 포함) -->
+            <path d="M 132 162 L 164 162" stroke="#475569" stroke-width="5" stroke-linecap="round" />
+            <circle cx="164" cy="162" r="4" fill="#64748b" />
+            <circle cx="196" cy="162" r="4" fill="#64748b" />
+            <line id="svgElbArm" x1="164" y1="162" x2="196" y2="162" stroke="#10b981" stroke-width="4.5" stroke-linecap="round"
+                  style="transform-origin: 164px 162px; transition: transform 0.2s ease, stroke 0.2s;" />
+            <path id="contactWire" d="M 196 162 L 244 162" stroke="#f59e0b" stroke-width="5" stroke-linecap="round" />
+
+            <!-- 인체 전체 그룹 (근육 경련 떨림 애니메이션 대상) -->
+            <g id="humanBodyGroup" style="transform-origin: 350px 230px;">
+              <!-- 머리 -->
+              <circle cx="350" cy="76" r="32" fill="url(#bodyGrad)" stroke="#64748b" stroke-width="2.5" />
+              <!-- 얼굴 표정 -->
+              <text id="faceEmoji" x="350" y="86" text-anchor="middle" font-size="28">🙂</text>
+
+              <!-- 목 & 몸통 -->
+              <rect x="338" y="106" width="24" height="18" fill="#cbd5e1" />
+              <path d="M 304 124 Q 350 116 396 124 L 388 256 Q 350 264 312 256 Z" fill="url(#bodyGrad)" stroke="#64748b" stroke-width="2.5" stroke-linejoin="round" />
+
+              <!-- 왼팔 (전선 접촉 팔 - 근육 경련 애니메이션 대상) -->
+              <g id="leftArmGroup" style="transform-origin: 306px 136px;">
+                <path d="M 306 136 L 266 158 L 246 162" stroke="#cbd5e1" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <path d="M 306 136 L 266 158 L 246 162" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <!-- 왼손 -->
+                <circle cx="244" cy="162" r="11" fill="#e2e8f0" stroke="#64748b" stroke-width="2" />
+                <!-- 절연 장갑 (절연 모드일 때만 표시) -->
+                <g id="insulGlove" opacity="0">
+                  <rect x="230" y="148" width="28" height="28" rx="10" fill="#facc15" stroke="#ca8a04" stroke-width="2.5" />
+                  <text x="244" y="167" text-anchor="middle" font-size="13">🧤</text>
+                </g>
+              </g>
+
+              <!-- 오른팔 -->
+              <path d="M 394 136 L 424 182 L 434 226" stroke="#cbd5e1" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              <path d="M 394 136 L 424 182 L 434 226" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              <circle cx="434" cy="228" r="10" fill="#e2e8f0" stroke="#64748b" stroke-width="2" />
+
+              <!-- 양다리 -->
+              <path d="M 326 254 L 318 324 L 312 384" stroke="#cbd5e1" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              <path d="M 326 254 L 318 324 L 312 384" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+              <path d="M 374 254 L 382 324 L 388 384" stroke="#cbd5e1" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              <path d="M 374 254 L 382 324 L 388 384" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+              <!-- 절연 장화 (절연 모드일 때만 표시) -->
+              <g id="insulBoots" opacity="0">
+                <rect x="294" y="364" width="36" height="26" rx="8" fill="#facc15" stroke="#ca8a04" stroke-width="2.5" />
+                <rect x="370" y="364" width="36" height="26" rx="8" fill="#facc15" stroke="#ca8a04" stroke-width="2.5" />
+              </g>
+
+              <!-- 인체 내부 전류 통과 경로 (신경/혈관 가이드 라인) -->
+              <path id="currentGuidePath"
+                    d="M 244 162 L 266 158 L 306 136 L 356 172 L 368 242 L 382 324 L 388 384"
+                    stroke="#10b981" stroke-width="4" stroke-dasharray="6 5" fill="none" opacity="0.55" />
+
+              <!-- 심장 벡터 (실시간 심박/심실세동 애니메이션) -->
+              <g id="heartGroup" transform="translate(362, 172)">
+                <circle id="heartHalo" cx="0" cy="0" r="24" fill="#10b981" fill-opacity="0.18" />
+                <path id="heartShape"
+                      d="M 0 14 C -18 2, -22 -14, -10 -18 C -3 -20, 0 -13, 0 -10 C 0 -13, 3 -20, 10 -18 C 22 -14, 18 2, 0 14 Z"
+                      fill="#ef4444" stroke="#991b1b" stroke-width="1.8" />
+              </g>
+
+              <!-- 피부 상태 시각 효과 (물방울 / 땀방울) -->
+              <g id="moistureDrops" opacity="0">
+                <text x="274" y="136" font-size="16">💧</text>
+                <text x="398" y="158" font-size="15">💧</text>
+                <text x="330" y="356" font-size="16">💧</text>
+                <text x="404" y="356" font-size="16">💧</text>
+              </g>
+            </g>
+
+            <!-- 상태 경고 말풍선 (이탈 불가 / 심실세동 등) -->
+            <g id="warningCallout" transform="translate(432, 72)" opacity="0">
+              <rect id="warnBg" x="0" y="0" width="188" height="62" rx="14" fill="#fef2f2" stroke="#ef4444" stroke-width="2.5" />
+              <text id="warnTitle" x="94" y="25" text-anchor="middle" fill="#b91c1c" font-size="12.5" font-weight="900">⚠️ 이탈 불가 경고!</text>
+              <text id="warnSub" x="94" y="45" text-anchor="middle" fill="#7f1d1d" font-size="10.5" font-weight="700">근육 경직으로 손을 못 뗌</text>
+            </g>
+
+            <!-- 접촉점 스파크 & 전기 입자 레이어 -->
+            <g id="sparkLayer" filter="url(#elecGlow)"></g>
+            <g id="particleLayer" filter="url(#elecGlow)"></g>
+
+            <!-- 피부 상태 배지 -->
+            <g transform="translate(20, 336)">
+              <rect x="0" y="0" width="176" height="36" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.8" />
+              <text id="svgSkinLabel" x="88" y="22" text-anchor="middle" fill="#334155" font-size="11.5" font-weight="800">🖐️ 건조한 손 (3,000 Ω)</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- 실시간 심전도(ECG) 모니터 -->
+        <div class="ecg-box">
+          <div class="ecg-header">
+            <span style="color:#38bdf8;">❤️ 실시간 심전도(ECG) 모니터</span>
+            <span id="ecgStatusText" class="mono" style="color:#34d399;">정상 동리듬 (72 BPM)</span>
+          </div>
+          <div class="ecg-canvas-wrap">
+            <canvas id="ecgCanvas"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- 우측 패널: 실시간 옴의 법칙 계산기 + 조작 컨트롤 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🎛️ 감전 조건 설정 &amp; 옴의 법칙 계산기</h2>
+          <span id="currentTypeBadge" class="pill-tag" style="background:#fef2f2; color:#dc2626; border-color:#fecaca;">교류 AC 60Hz</span>
+        </div>
+
+        <!-- 실시간 옴의 법칙 & 데미지 강도 게이지 -->
+        <div class="ohm-box">
+          <div class="ohm-equation mono">
+            <div class="ohm-term">
+              <span class="ohm-term-label">전압 (V)</span>
+              <span id="ohmV" class="ohm-term-val" style="color:#38bdf8;">220 V</span>
+            </div>
+            <span class="ohm-op">÷</span>
+            <div class="ohm-term">
+              <span class="ohm-term-label">인체 저항 (R)</span>
+              <span id="ohmR" class="ohm-term-val" style="color:#fbbf24;">3,000 Ω</span>
+            </div>
+            <span class="ohm-op">=</span>
+            <div class="ohm-term">
+              <span class="ohm-term-label">인체 통과 전류 (I)</span>
+              <span id="ohmI" class="ohm-term-val" style="color:#f87171;">73.3 mA</span>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.8rem; font-weight:800;">
+            <span id="gaugeTitleText" style="color:#f8fafc;">감전 위험 강도 게이지</span>
+            <span id="dcNoteText" style="font-size:0.73rem; color:#94a3b8;">AC 60Hz 기준</span>
+          </div>
+          <div class="gauge-track">
+            <div id="gaugeMarker" class="gauge-marker" style="left: 50%;"></div>
+          </div>
+          <div class="gauge-labels mono">
+            <span>0mA 안전</span>
+            <span>5mA 찌릿</span>
+            <span>15mA 경련</span>
+            <span>50mA+ 치명적</span>
+          </div>
+        </div>
+
+        <!-- 1. 전압(V) 슬라이더 & 프리셋 -->
+        <div class="ctrl-section">
+          <div class="ctrl-label-row">
+            <label for="voltSlider">⚡ 전압(V) 조절 (1V ~ 1000V)</label>
+            <span id="voltReadout" class="mono" style="color:#2563eb; font-size:1rem;">220 V</span>
+          </div>
+          <input id="voltSlider" class="volt-slider" type="range" min="1" max="1000" step="1" value="220" />
+          <div class="preset-grid">
+            <button type="button" class="preset-btn" data-volt="1.5">🔋 건전지<br><span class="mono">1.5V</span></button>
+            <button type="button" class="preset-btn" data-volt="5">🔌 USB<br><span class="mono">5V</span></button>
+            <button type="button" class="preset-btn" data-volt="12">🚗 차량용<br><span class="mono">12V</span></button>
+            <button type="button" class="preset-btn" data-volt="50">⚠️ 안전기준<br><span class="mono">50V</span></button>
+            <button type="button" class="preset-btn active" data-volt="220">🏠 콘센트<br><span class="mono">220V</span></button>
+            <button type="button" class="preset-btn" data-volt="380">🏭 산업용<br><span class="mono">380V</span></button>
+            <button type="button" class="preset-btn" data-volt="1000">⚡ 고압설비<br><span class="mono">1000V</span></button>
+          </div>
+        </div>
+
+        <!-- 2. 피부/환경 상태 (인체 저항 R) -->
+        <div class="ctrl-section">
+          <div class="ctrl-label-row">
+            <span>🖐️ 피부 및 환경 상태 (인체 저항 R)</span>
+            <span style="font-size:0.75rem; color:#64748b;">저항이 낮을수록 전류가 급증!</span>
+          </div>
+          <div class="skin-grid">
+            <button type="button" class="skin-btn" data-resist="10000" data-skin="insulated">
+              <strong>🧤 절연장갑 · 절연화 <span class="mono" style="color:#059669;">10,000 Ω</span></strong>
+              <span>전기를 강력하게 막아주는 안전 장비</span>
+            </button>
+            <button type="button" class="skin-btn active" data-resist="3000" data-skin="dry">
+              <strong>🖐️ 건조한 손 <span class="mono" style="color:#2563eb;">3,000 Ω</span></strong>
+              <span>평상시 마른 피부 상태</span>
+            </button>
+            <button type="button" class="skin-btn" data-resist="1500" data-skin="sweaty">
+              <strong>💦 땀이 난 손 <span class="mono" style="color:#d97706;">1,500 Ω</span></strong>
+              <span>염분과 땀으로 저항이 절반으로 감소</span>
+            </button>
+            <button type="button" class="skin-btn" data-resist="500" data-skin="wet">
+              <strong>🚿 물에 젖은 손 / 욕실 <span class="mono" style="color:#dc2626;">500 Ω</span></strong>
+              <span>저항이 1/6로 급락! 매우 위험</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. 전류 종류 (AC vs DC) & 누전차단기(ELB) -->
+        <div class="two-col-ctrl">
+          <div class="seg-box">
+            <span class="seg-title">🌊 전류 종류 (심장 영향 차이)</span>
+            <div class="seg-btns">
+              <button id="btnAc" type="button" class="seg-btn active-ac">AC 60Hz (가정)</button>
+              <button id="btnDc" type="button" class="seg-btn">DC 직류 (배터리)</button>
+            </div>
+          </div>
+
+          <div class="seg-box">
+            <span class="seg-title">🛡️ 안전장치 (30mA 초과 시 차단)</span>
+            <button id="btnElbToggle" type="button" class="elb-toggle-btn">
+              <span>누전차단기 (ELB)</span>
+              <span id="elbPillText" class="toggle-pill">OFF</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- 전류량별 인체 피해 단계표 (IEC 60479-1) -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">📊 전류량(mA)별 인체 피해 강도 단계표 (IEC 60479-1 기준)</h2>
+        <span id="currentSymptomSummary" class="pill-tag">현재 단계 확인</span>
+      </div>
+
+      <div class="stage-table-grid">
+        <div class="damage-tier" data-tier="0">
+          <span class="tier-range mono" style="background:#dcfce7; color:#047857;">0 ~ 1 mA</span>
+          <h4>🟢 안전 / 미감지</h4>
+          <p>인체가 전류의 흐름을 거의 느끼지 못하는 안전한 구간입니다.</p>
+          <div class="tier-meta">이탈: 자유로움 · 심장: 정상</div>
+        </div>
+
+        <div class="damage-tier" data-tier="1">
+          <span class="tier-range mono" style="background:#fef9c3; color:#a16207;">1 ~ 5 mA</span>
+          <h4>🟡 찌릿함 / 놀람</h4>
+          <p>가벼운 불쾌감과 찌릿함을 느끼며 깜짝 놀라 2차 추락 위험이 있습니다.</p>
+          <div class="tier-meta">이탈: 가능 · 심장: 약간 빨라짐</div>
+        </div>
+
+        <div class="damage-tier" data-tier="2">
+          <span class="tier-range mono" style="background:#ffedd5; color:#c2410c;">5 ~ 15 mA</span>
+          <h4>🟠 고통 / 근육 경련</h4>
+          <p>강한 통증과 함께 팔 근육이 떨리기 시작합니다. (성인 이탈 한계치)</p>
+          <div class="tier-meta">이탈: 힘겹게 가능 · 심장: 불안정</div>
+        </div>
+
+        <div class="damage-tier" data-tier="3">
+          <span class="tier-range mono" style="background:#fee2e2; color:#b91c1c;">15 ~ 50 mA</span>
+          <h4>🔴 이탈 불가 / 호흡 곤란</h4>
+          <p>근육이 강하게 수축해 전선에서 손을 스스로 뗄 수 없으며 호흡이 어려워집니다.</p>
+          <div class="tier-meta">이탈: 불가능 · 심장: 부정맥 위험</div>
+        </div>
+
+        <div class="damage-tier" data-tier="4">
+          <span class="tier-range mono" style="background:#f3e8ff; color:#7e22ce;">50 ~ 100 mA+</span>
+          <h4>🟣 심실세동 / 치명적</h4>
+          <p>심장이 불규칙하게 떨며 혈액 공급이 멈추는 심실세동이 발생해 생명이 위태롭습니다.</p>
+          <div class="tier-meta">이탈: 불가능 · 심장: 심정지 위험</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 핵심 궁금증 3가지 요약 카드 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">💡 꼭 알아야 할 전기 안전 핵심 원리 3가지</h2>
+        <span class="pill-tag">생활 속 전기 상식</span>
+      </div>
+
+      <div class="info-cards-grid">
+        <article class="info-card">
+          <div class="info-card-icon">🚿</div>
+          <h3>왜 220V 콘센트를 젖은 손으로 만지면 치명적일까요?</h3>
+          <p>
+            건조한 피부의 저항은 약 3,000Ω이지만, 물에 젖으면 저항이 <strong>500Ω 이하로 뚝 떨어집니다</strong>.
+            옴의 법칙(I=V/R)에 따라 같은 220V라도 젖은 손에서는 <strong>440mA</strong>라는 치명적인 전류가 심장을 관통하게 됩니다.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <div class="info-card-icon">⚡</div>
+          <h3>왜 겨울철 수만 V 정전기는 맞아도 안 죽을까요?</h3>
+          <p>
+            겨울철 문고리 정전기는 전압이 10,000~20,000V로 매우 높지만, 저장된 전하량이 극도로 적어
+            전류가 <strong>0.0001초도 안 되는 찰나에 사라집니다</strong>. 심장을 멈추게 할 만큼의 지속적인 전류가 흐르지 않기 때문입니다.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <div class="info-card-icon">🌊</div>
+          <h3>왜 같은 전류라도 교류(AC)가 직류(DC)보다 더 위험할까요?</h3>
+          <p>
+            가정용 교류(AC 60Hz)는 1초에 60번 방향이 바뀌며 진동하는데, 이 주파수가 <strong>심장 박동 리듬과 근육 신경을 강하게 교란</strong>합니다.
+            따라서 같은 전류량(mA)이라도 AC가 DC보다 심실세동 및 근육 경직 위험이 약 2.5배 높습니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 전기 안전 OX 미니 퀴즈 (3문제) -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">🎯 전기 안전 OX 미니 퀴즈 (3문제)</h2>
+        <span class="pill-tag">배운 내용을 확인해 보세요!</span>
+      </div>
+
+      <div id="quizGrid" class="quiz-grid"></div>
+
+      <div class="quiz-footer">
+        <span id="quizScoreText">📝 3문제를 모두 풀어 보세요! (0 / 3 완료)</span>
+        <button id="quizResetBtn" type="button" class="quiz-reset-btn">🔄 퀴즈 다시 풀기</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 시뮬레이션 & 애니메이션 엔진 (Vanilla JS, 60fps) -->
+  <!-- ================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      const SVG_NS = 'http://www.w3.org/2000/svg';
+
+      /* -----------------------------------------------------------------
+       * 1. 시뮬레이션 상태 변수
+       * ----------------------------------------------------------------- */
+      const state = {
+        voltage: 220,          // 1 ~ 1000 V
+        resistance: 3000,      // Ω (10000, 3000, 1500, 500)
+        skinKey: 'dry',        // 'insulated' | 'dry' | 'sweaty' | 'wet'
+        currentType: 'AC',     // 'AC' | 'DC'
+        elbEnabled: false,     // 누전차단기 ON/OFF
+        elbTripped: false,     // 30mA 초과로 실제 트립되었는지 여부
+
+        rawMa: 0,              // 이론상 흐르는 전류 (mA)
+        actualMa: 0,           // ELB 반영 후 실제 흐르는 전류 (mA)
+        effectiveMa: 0,        // AC 환산 위험 전류 (mA)
+        level: 0,              // 0~4 위험 단계
+
+        simTime: 0,
+        lastTs: 0,
+        ecgHistory: [],
+        ecgWidth: 300,
+        ecgHeight: 118,
+        quizAnswers: [null, null, null]
+      };
+
+      const SKIN_META = {
+        insulated: { label: '🧤 절연장갑·장화 (10,000 Ω)' },
+        dry:       { label: '🖐️ 건조한 손 (3,000 Ω)' },
+        sweaty:    { label: '💦 땀이 난 손 (1,500 Ω)' },
+        wet:       { label: '🚿 물에 젖은 손 (500 Ω)' }
+      };
+
+      const LEVEL_META = [
+        { name: '안전 · 미감지', color: '#10b981', pillBg: '#ecfdf5', pillBorder: '#a7f3d0', face: '🙂', bpm: 72, summary: '안전 구간: 전류를 거의 느끼지 않습니다.' },
+        { name: '찌릿함 · 놀람', color: '#eab308', pillBg: '#fefce8', pillBorder: '#fde047', face: '😮', bpm: 92, summary: '주의 구간: 찌릿한 감각과 놀람 반응이 나타납니다.' },
+        { name: '고통 · 근육 경련', color: '#f97316', pillBg: '#fff7ed', pillBorder: '#fdba74', face: '😖', bpm: 118, summary: '경고 구간: 고통이 크고 팔 근육이 떨리기 시작합니다.' },
+        { name: '이탈 불가 · 호흡 곤란', color: '#ef4444', pillBg: '#fef2f2', pillBorder: '#fca5a5', face: '😱', bpm: 152, summary: '위험 구간: 근육 경직으로 스스로 손을 뗄 수 없습니다!' },
+        { name: '심실세동 · 치명적', color: '#9333ea', pillBg: '#faf5ff', pillBorder: '#d8b4fe', face: '😵', bpm: 0, summary: '치명적 위험: 심실세동(심장 정지) 위험이 매우 높습니다!' }
+      ];
+
+      // 인체 내부 전류 경로 좌표 (왼손 -> 팔 -> 어깨 -> 심장 -> 몸통 -> 오른다리 -> 발 접지)
+      const BODY_PATH = [
+        { x: 244, y: 162 },
+        { x: 266, y: 158 },
+        { x: 306, y: 136 },
+        { x: 356, y: 172 },
+        { x: 368, y: 242 },
+        { x: 382, y: 324 },
+        { x: 388, y: 384 }
+      ];
+
+      const QUIZ_DATA = [
+        {
+          q: 'Q1. 전압이 높으면 전류가 얼마 흐르든 무조건 치명적이다.',
+          ans: false,
+          ok: '정답(X)! 겨울철 정전기처럼 수만 V라도 흐르는 전류가 극히 미세하고 짧으면 치명적이지 않습니다. 인체 통과 전류(mA)가 핵심입니다.',
+          no: '오답! 정답은 X입니다. 감전 피해를 결정하는 것은 전압 자체가 아니라 내 몸을 통과하는 전류(mA)와 시간입니다.'
+        },
+        {
+          q: 'Q2. 물에 젖은 손으로 콘센트를 만지면 인체 저항이 크게 낮아져 훨씬 더 큰 전류가 흐른다.',
+          ans: true,
+          ok: '정답(O)! 물에 젖으면 인체 저항이 건조할 때(약 3,000Ω)보다 500Ω 이하로 급감해 치명적인 전류가 흐릅니다.',
+          no: '오답! 정답은 O입니다. 물과 습기는 인체 저항(R)을 크게 낮춰 전류(I=V/R)를 급증시킵니다.'
+        },
+        {
+          q: 'Q3. 누전차단기(ELB, 30mA)는 위험한 전류가 인체에 흐르기 시작하면 0.03초 만에 전원을 끊어 생명을 보호한다.',
+          ans: true,
+          ok: '정답(O)! 누전차단기는 30mA 이상의 누설 전류를 감지하면 심실세동이 일어나기 전에 초고속으로 전원을 차단합니다.',
+          no: '오답! 정답은 O입니다. 위 체험기에서 누전차단기(ELB)를 켜고 220V에 젖은 손을 시험해 보세요!'
+        }
+      ];
+
+      /* -----------------------------------------------------------------
+       * 2. DOM 요소 참조
+       * ----------------------------------------------------------------- */
+      const el = {
+        dangerOverlay: document.getElementById('dangerOverlay'),
+        stageStatusPill: document.getElementById('stageStatusPill'),
+        elbBanner: document.getElementById('elbBanner'),
+        elbResetBtn: document.getElementById('elbResetBtn'),
+        svgVoltText: document.getElementById('svgVoltText'),
+        svgTypeText: document.getElementById('svgTypeText'),
+        svgElbBox: document.getElementById('svgElbBox'),
+        svgElbText: document.getElementById('svgElbText'),
+        svgElbArm: document.getElementById('svgElbArm'),
+        contactWire: document.getElementById('contactWire'),
+        wetPuddle: document.getElementById('wetPuddle'),
+        humanBodyGroup: document.getElementById('humanBodyGroup'),
+        leftArmGroup: document.getElementById('leftArmGroup'),
+        faceEmoji: document.getElementById('faceEmoji'),
+        insulGlove: document.getElementById('insulGlove'),
+        insulBoots: document.getElementById('insulBoots'),
+        currentGuidePath: document.getElementById('currentGuidePath'),
+        heartGroup: document.getElementById('heartGroup'),
+        heartHalo: document.getElementById('heartHalo'),
+        heartShape: document.getElementById('heartShape'),
+        moistureDrops: document.getElementById('moistureDrops'),
+        warningCallout: document.getElementById('warningCallout'),
+        warnBg: document.getElementById('warnBg'),
+        warnTitle: document.getElementById('warnTitle'),
+        warnSub: document.getElementById('warnSub'),
+        sparkLayer: document.getElementById('sparkLayer'),
+        particleLayer: document.getElementById('particleLayer'),
+        svgSkinLabel: document.getElementById('svgSkinLabel'),
+        ecgCanvas: document.getElementById('ecgCanvas'),
+        ecgStatusText: document.getElementById('ecgStatusText'),
+
+        currentTypeBadge: document.getElementById('currentTypeBadge'),
+        ohmV: document.getElementById('ohmV'),
+        ohmR: document.getElementById('ohmR'),
+        ohmI: document.getElementById('ohmI'),
+        dcNoteText: document.getElementById('dcNoteText'),
+        gaugeMarker: document.getElementById('gaugeMarker'),
+        voltSlider: document.getElementById('voltSlider'),
+        voltReadout: document.getElementById('voltReadout'),
+        presetBtns: document.querySelectorAll('.preset-btn'),
+        skinBtns: document.querySelectorAll('.skin-btn'),
+        btnAc: document.getElementById('btnAc'),
+        btnDc: document.getElementById('btnDc'),
+        btnElbToggle: document.getElementById('btnElbToggle'),
+        elbPillText: document.getElementById('elbPillText'),
+        tiers: document.querySelectorAll('.damage-tier'),
+        currentSymptomSummary: document.getElementById('currentSymptomSummary'),
+        quizGrid: document.getElementById('quizGrid'),
+        quizScoreText: document.getElementById('quizScoreText'),
+        quizResetBtn: document.getElementById('quizResetBtn')
+      };
+
+      const ecgCtx = el.ecgCanvas.getContext('2d');
+
+      /* -----------------------------------------------------------------
+       * 3. 전기 입자 풀 생성 (SVG)
+       * ----------------------------------------------------------------- */
+      const PARTICLE_COUNT = 22;
+      const particles = [];
+
+      function initParticles() {
+        el.particleLayer.innerHTML = '';
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+          const g = document.createElementNS(SVG_NS, 'g');
+          g.setAttribute('opacity', '0');
+          const halo = document.createElementNS(SVG_NS, 'circle');
+          halo.setAttribute('r', '8');
+          halo.setAttribute('fill-opacity', '0.35');
+          const core = document.createElementNS(SVG_NS, 'circle');
+          core.setAttribute('r', '4');
+          core.setAttribute('stroke', '#ffffff');
+          core.setAttribute('stroke-width', '1.4');
+          g.appendChild(halo);
+          g.appendChild(core);
+          el.particleLayer.appendChild(g);
+          particles.push({ g, halo, core });
+        }
+      }
+
+      function getPointOnBodyPath(t) {
+        let total = 0;
+        const segs = [];
+        for (let i = 0; i < BODY_PATH.length - 1; i++) {
+          const d = Math.hypot(BODY_PATH[i + 1].x - BODY_PATH[i].x, BODY_PATH[i + 1].y - BODY_PATH[i].y);
+          segs.push(d);
+          total += d;
+        }
+        let dist = t * total;
+        for (let i = 0; i < segs.length; i++) {
+          if (dist <= segs[i] || i === segs.length - 1) {
+            const localT = segs[i] === 0 ? 0 : dist / segs[i];
+            const p0 = BODY_PATH[i];
+            const p1 = BODY_PATH[i + 1];
+            const len = segs[i] || 1;
+            return {
+              x: p0.x + (p1.x - p0.x) * localT,
+              y: p0.y + (p1.y - p0.y) * localT,
+              nx: -(p1.y - p0.y) / len,
+              ny: (p1.x - p0.x) / len
+            };
+          }
+          dist -= segs[i];
+        }
+        return { x: BODY_PATH[0].x, y: BODY_PATH[0].y, nx: 0, ny: 1 };
+      }
+
+      /* -----------------------------------------------------------------
+       * 4. 핵심 물리 계산 (옴의 법칙 + IEC 60479-1 + ELB 차단기)
+       * ----------------------------------------------------------------- */
+      function recalculatePhysics(allowRetrip) {
+        // I(mA) = (V / R) * 1000
+        state.rawMa = (state.voltage / state.resistance) * 1000;
+
+        // 누전차단기(ELB) 30mA 판정
+        if (state.elbEnabled) {
+          if (state.rawMa > 30 && (allowRetrip || state.elbTripped)) {
+            state.elbTripped = true;
+          } else if (state.rawMa <= 30) {
+            state.elbTripped = false;
+          }
+        } else {
+          state.elbTripped = false;
+        }
+
+        state.actualMa = state.elbTripped ? 0 : state.rawMa;
+
+        // AC vs DC 위험 환산 (IEC 60479-1 기준: DC는 AC 60Hz 대비 심실세동/경직 임계치가 약 2.5배 높음)
+        state.effectiveMa = state.currentType === 'AC' ? state.actualMa : (state.actualMa / 2.5);
+
+        // 5단계 판정 (0~4)
+        const eff = state.effectiveMa;
+        if (eff < 1) state.level = 0;
+        else if (eff < 5) state.level = 1;
+        else if (eff < 15) state.level = 2;
+        else if (eff < 50) state.level = 3;
+        else state.level = 4;
+
+        updateStaticUI();
+      }
+
+      function formatMa(val) {
+        if (val >= 100) return `${Math.round(val).toLocaleString()} mA`;
+        if (val >= 10) return `${val.toFixed(1)} mA`;
+        return `${val.toFixed(2)} mA`;
+      }
+
+      function updateStaticUI() {
+        const meta = LEVEL_META[state.level];
+
+        // 1) 옴의 법칙 수식 표시
+        el.ohmV.textContent = `${state.voltage} V`;
+        el.ohmR.textContent = `${state.resistance.toLocaleString()} Ω`;
+        el.ohmI.textContent = state.elbTripped ? `0.00 mA (차단)` : formatMa(state.actualMa);
+        el.ohmI.style.color = state.elbTripped ? '#34d399' : meta.color;
+
+        el.dcNoteText.textContent = state.currentType === 'AC'
+          ? 'AC 60Hz 기준 (심장 교란 위험 높음)'
+          : `DC 직류 기준 (AC 환산 위험도 약 ${formatMa(state.effectiveMa)})`;
+
+        // 2) 데미지 게이지 위치 (로그-구간 매핑: 0~1 -> 0~15%, 1~5 -> 15~35%, 5~15 -> 35~58%, 15~50 -> 58~80%, 50~150 -> 80~100%)
+        const eff = state.effectiveMa;
+        let pct = 0;
+        if (eff <= 1) pct = (eff / 1) * 15;
+        else if (eff <= 5) pct = 15 + ((eff - 1) / 4) * 20;
+        else if (eff <= 15) pct = 35 + ((eff - 5) / 10) * 23;
+        else if (eff <= 50) pct = 58 + ((eff - 15) / 35) * 22;
+        else pct = Math.min(100, 80 + ((eff - 50) / 100) * 20);
+        el.gaugeMarker.style.left = `${pct.toFixed(1)}%`;
+
+        // 3) 상단 상태 배지 & 화면 위험 펄스
+        if (state.elbTripped) {
+          el.stageStatusPill.textContent = `🛡️ ELB 차단 완료 (0.00 mA · 안전)`;
+          el.stageStatusPill.style.background = '#ecfdf5';
+          el.stageStatusPill.style.color = '#047857';
+          el.stageStatusPill.style.borderColor = '#10b981';
+          el.elbBanner.classList.add('show');
+        } else {
+          el.stageStatusPill.textContent = `${meta.name} (${formatMa(state.actualMa)})`;
+          el.stageStatusPill.style.background = meta.pillBg;
+          el.stageStatusPill.style.color = meta.color;
+          el.stageStatusPill.style.borderColor = meta.pillBorder;
+          el.elbBanner.classList.remove('show');
+        }
+
+        el.dangerOverlay.classList.toggle('active', !state.elbTripped && state.level === 4);
+
+        // 4) SVG 내부 텍스트 & 장치 상태
+        el.svgVoltText.textContent = `${state.voltage}V`;
+        el.svgTypeText.textContent = state.currentType === 'AC' ? 'AC 60Hz' : 'DC 직류';
+        el.svgTypeText.setAttribute('fill', state.currentType === 'AC' ? '#f87171' : '#38bdf8');
+
+        el.currentTypeBadge.textContent = state.currentType === 'AC' ? '교류 AC 60Hz' : '직류 DC (배터리)';
+        el.currentTypeBadge.style.background = state.currentType === 'AC' ? '#fef2f2' : '#f0f9ff';
+        el.currentTypeBadge.style.color = state.currentType === 'AC' ? '#dc2626' : '#0284c7';
+        el.currentTypeBadge.style.borderColor = state.currentType === 'AC' ? '#fecaca' : '#bae6fd';
+
+        // ELB 스위치 그래픽
+        if (state.elbTripped) {
+          el.svgElbArm.style.transform = 'rotate(-40deg)';
+          el.svgElbArm.setAttribute('stroke', '#ef4444');
+          el.contactWire.setAttribute('stroke', '#94a3b8');
+          el.svgElbBox.setAttribute('fill', '#7f1d1d');
+          el.svgElbBox.setAttribute('stroke', '#ef4444');
+          el.svgElbText.setAttribute('fill', '#fca5a5');
+          el.svgElbText.textContent = 'ELB TRIP! 차단';
+        } else {
+          el.svgElbArm.style.transform = 'rotate(0deg)';
+          el.svgElbArm.setAttribute('stroke', state.elbEnabled ? '#10b981' : '#94a3b8');
+          el.contactWire.setAttribute('stroke', meta.color);
+          el.svgElbBox.setAttribute('fill', state.elbEnabled ? '#064e3b' : '#1e293b');
+          el.svgElbBox.setAttribute('stroke', state.elbEnabled ? '#10b981' : '#475569');
+          el.svgElbText.setAttribute('fill', state.elbEnabled ? '#34d399' : '#94a3b8');
+          el.svgElbText.textContent = state.elbEnabled ? 'ELB 30mA ON' : 'ELB OFF';
+        }
+
+        // 피부 상태 시각화 (절연장갑/장화, 물방울, 웅덩이)
+        el.svgSkinLabel.textContent = SKIN_META[state.skinKey].label;
+        el.insulGlove.setAttribute('opacity', state.skinKey === 'insulated' ? '1' : '0');
+        el.insulBoots.setAttribute('opacity', state.skinKey === 'insulated' ? '1' : '0');
+        el.moistureDrops.setAttribute('opacity', (state.skinKey === 'sweaty' || state.skinKey === 'wet') ? '1' : '0');
+        el.wetPuddle.setAttribute('opacity', state.skinKey === 'wet' ? '1' : '0');
+
+        // 얼굴 표정 & 전류 가이드라인 색상
+        el.faceEmoji.textContent = state.elbTripped ? '😅' : meta.face;
+        el.currentGuidePath.setAttribute('stroke', state.elbTripped ? '#94a3b8' : meta.color);
+        el.currentGuidePath.setAttribute('opacity', state.elbTripped ? '0.2' : (0.35 + state.level * 0.16).toFixed(2));
+
+        // 경고 말풍선 (Lv 3 이상일 때)
+        if (!state.elbTripped && state.level === 3) {
+          el.warningCallout.setAttribute('opacity', '1');
+          el.warnBg.setAttribute('fill', '#fef2f2');
+          el.warnBg.setAttribute('stroke', '#ef4444');
+          el.warnTitle.setAttribute('fill', '#b91c1c');
+          el.warnTitle.textContent = '⚠️ 이탈 불가 경고!';
+          el.warnSub.textContent = '근육 경직으로 손을 못 뗌';
+        } else if (!state.elbTripped && state.level === 4) {
+          el.warningCallout.setAttribute('opacity', '1');
+          el.warnBg.setAttribute('fill', '#faf5ff');
+          el.warnBg.setAttribute('stroke', '#9333ea');
+          el.warnTitle.setAttribute('fill', '#7e22ce');
+          el.warnTitle.textContent = '🚨 심실세동 치명적!';
+          el.warnSub.textContent = state.actualMa >= 100 ? '100mA+ 즉각 심정지 위험' : '심장 경련 · 즉시 전원 차단';
+        } else {
+          el.warningCallout.setAttribute('opacity', '0');
+        }
+
+        // ECG 상태 텍스트
+        if (state.elbTripped) {
+          el.ecgStatusText.textContent = '전원 차단됨 · 정상 심박 유지 (72 BPM)';
+          el.ecgStatusText.style.color = '#34d399';
+        } else if (state.level === 0) {
+          el.ecgStatusText.textContent = '정상 동리듬 (72 BPM)';
+          el.ecgStatusText.style.color = '#34d399';
+        } else if (state.level === 1) {
+          el.ecgStatusText.textContent = '약간 빠른 맥박 (92 BPM)';
+          el.ecgStatusText.style.color = '#facc15';
+        } else if (state.level === 2) {
+          el.ecgStatusText.textContent = '긴장성 빈맥 · 불안정 (118 BPM)';
+          el.ecgStatusText.style.color = '#fb923c';
+        } else if (state.level === 3) {
+          el.ecgStatusText.textContent = '심각한 부정맥 위험 (152 BPM)';
+          el.ecgStatusText.style.color = '#f87171';
+        } else {
+          el.ecgStatusText.textContent = '🚨 심실세동 (V-Fib · 혈액 순환 정지!)';
+          el.ecgStatusText.style.color = '#e879f9';
+        }
+
+        // 5) 하단 5단계 표 하이라이트
+        el.tiers.forEach(card => {
+          const idx = Number(card.dataset.tier);
+          card.classList.remove('active-lv0', 'active-lv1', 'active-lv2', 'active-lv3', 'active-lv4');
+          if (idx === state.level) {
+            card.classList.add(`active-lv${idx}`);
+          }
+        });
+        el.currentSymptomSummary.textContent = state.elbTripped
+          ? '🛡️ 누전차단기(ELB)가 0.03초 만에 전류를 차단했습니다.'
+          : meta.summary;
+      }
+
+      /* -----------------------------------------------------------------
+       * 5. 60fps 애니메이션 루프 (전기 입자, 근육 떨림, 심장 박동, 스파크, ECG)
+       * ----------------------------------------------------------------- */
+      function renderSparks(t) {
+        el.sparkLayer.innerHTML = '';
+        if (state.elbTripped || state.level === 0) return;
+
+        const meta = LEVEL_META[state.level];
+        const count = state.level === 1 ? 1 : (state.level === 2 ? 2 : (state.level === 3 ? 3 : 5));
+
+        for (let i = 0; i < count; i++) {
+          const phase = Math.sin(t * 24 + i * 2.1);
+          if (phase < -0.2 && state.level < 3) continue;
+
+          // 접촉점(왼손) 또는 심장 부근에 번개 지그재그 생성
+          const cx = (i % 2 === 0 || state.level < 4) ? 244 : 362;
+          const cy = (i % 2 === 0 || state.level < 4) ? 162 : 172;
+          const rad = 12 + state.level * 6;
+          const ang = (t * 7 + i * 1.9) % (Math.PI * 2);
+          const mx = cx + Math.cos(ang) * (rad * 0.5) + Math.sin(t * 40 + i) * 5;
+          const my = cy + Math.sin(ang) * (rad * 0.5) + Math.cos(t * 35 + i) * 5;
+          const ex = cx + Math.cos(ang) * rad;
+          const ey = cy + Math.sin(ang) * rad;
+
+          const bolt = document.createElementNS(SVG_NS, 'polyline');
+          bolt.setAttribute('points', `${cx},${cy} ${mx.toFixed(1)},${my.toFixed(1)} ${ex.toFixed(1)},${ey.toFixed(1)}`);
+          bolt.setAttribute('fill', 'none');
+          bolt.setAttribute('stroke', state.level === 4 && i % 2 === 1 ? '#e879f9' : meta.color);
+          bolt.setAttribute('stroke-width', state.level >= 3 ? '2.8' : '2');
+          bolt.setAttribute('stroke-linecap', 'round');
+          el.sparkLayer.appendChild(bolt);
+        }
+      }
+
+      // ECG 파형 샘플 생성기
+      function getEcgSample(t) {
+        if (state.elbTripped || state.level === 0) {
+          // 정상 PQRST (72 BPM -> 주기 약 0.83초)
+          const p = (t % 0.83) / 0.83;
+          return pqrstWave(p);
+        }
+        if (state.level === 1) {
+          const p = (t % 0.65) / 0.65;
+          return pqrstWave(p) + Math.sin(t * 25) * 0.03;
+        }
+        if (state.level === 2) {
+          const p = (t % 0.50) / 0.50;
+          return pqrstWave(p) * 1.08 + Math.sin(t * 42) * 0.08;
+        }
+        if (state.level === 3) {
+          // 빠르고 불규칙한 부정맥
+          const p = ((t * 2.4 + Math.sin(t * 3) * 0.12) % 1 + 1) % 1;
+          return pqrstWave(p) * 1.15 + Math.sin(t * 55) * 0.14;
+        }
+        // Lv 4: 심실세동 (V-Fib: 불규칙한 고주파 떨림)
+        return (
+          Math.sin(t * 38) * 0.28 +
+          Math.sin(t * 67 + 1.2) * 0.22 +
+          Math.cos(t * 93) * 0.16
+        );
+      }
+
+      function pqrstWave(p) {
+        // P파
+        if (p > 0.10 && p < 0.20) return Math.sin(((p - 0.10) / 0.10) * Math.PI) * 0.16;
+        // Q파
+        if (p >= 0.24 && p < 0.27) return -Math.sin(((p - 0.24) / 0.03) * Math.PI) * 0.14;
+        // R파 (뾰족한 피크)
+        if (p >= 0.27 && p < 0.32) return Math.sin(((p - 0.27) / 0.05) * Math.PI) * 0.92;
+        // S파
+        if (p >= 0.32 && p < 0.36) return -Math.sin(((p - 0.32) / 0.04) * Math.PI) * 0.24;
+        // T파
+        if (p >= 0.44 && p < 0.60) return Math.sin(((p - 0.44) / 0.16) * Math.PI) * 0.26;
+        return 0;
+      }
+
+      function drawEcg() {
+        const w = state.ecgWidth;
+        const h = state.ecgHeight;
+        ecgCtx.clearRect(0, 0, w, h);
+
+        // 심전도 배경 격자
+        ecgCtx.strokeStyle = 'rgba(30, 58, 138, 0.32)';
+        ecgCtx.lineWidth = 1;
+        ecgCtx.beginPath();
+        for (let x = 0; x < w; x += 22) { ecgCtx.moveTo(x, 0); ecgCtx.lineTo(x, h); }
+        for (let y = 0; y < h; y += 22) { ecgCtx.moveTo(0, y); ecgCtx.lineTo(w, y); }
+        ecgCtx.stroke();
+
+        // 중앙 기준선
+        ecgCtx.strokeStyle = 'rgba(148, 163, 184, 0.22)';
+        ecgCtx.beginPath();
+        ecgCtx.moveTo(0, h * 0.58);
+        ecgCtx.lineTo(w, h * 0.58);
+        ecgCtx.stroke();
+
+        // 새 샘플 추가
+        const sample = getEcgSample(state.simTime);
+        state.ecgHistory.push(sample);
+        const maxPoints = Math.max(120, Math.floor(w / 2));
+        while (state.ecgHistory.length > maxPoints) state.ecgHistory.shift();
+
+        // 파형 색상 결정
+        const strokeColor = state.elbTripped
+          ? '#34d399'
+          : (state.level <= 1 ? '#34d399' : (state.level === 2 ? '#fb923c' : (state.level === 3 ? '#f87171' : '#e879f9')));
+
+        ecgCtx.strokeStyle = strokeColor;
+        ecgCtx.lineWidth = 2.4;
+        ecgCtx.lineJoin = 'round';
+        ecgCtx.beginPath();
+
+        const len = state.ecgHistory.length;
+        for (let i = 0; i < len; i++) {
+          const x = (i / (maxPoints - 1)) * w;
+          const y = h * 0.58 - state.ecgHistory[i] * (h * 0.44);
+          if (i === 0) ecgCtx.moveTo(x, y);
+          else ecgCtx.lineTo(x, y);
+        }
+        ecgCtx.stroke();
+
+        // 끝점 발광 점
+        if (len > 0) {
+          const lx = ((len - 1) / (maxPoints - 1)) * w;
+          const ly = h * 0.58 - state.ecgHistory[len - 1] * (h * 0.44);
+          ecgCtx.fillStyle = '#ffffff';
+          ecgCtx.beginPath();
+          ecgCtx.arc(lx, ly, 3.2, 0, Math.PI * 2);
+          ecgCtx.fill();
+        }
+      }
+
+      function animate(ts) {
+        if (!state.lastTs) state.lastTs = ts;
+        const dt = Math.min((ts - state.lastTs) / 1000, 0.05);
+        state.lastTs = ts;
+        state.simTime += dt;
+
+        const t = state.simTime;
+        const meta = LEVEL_META[state.level];
+
+        // 1) 심장 박동 / 심실세동 애니메이션
+        let heartScale = 1;
+        let hx = 362;
+        let hy = 172;
+        if (!state.elbTripped && state.level === 4) {
+          // 심실세동: 빠르고 불규칙하게 미세 떨림
+          heartScale = 0.96 + Math.sin(t * 48) * 0.08;
+          hx = 362 + Math.sin(t * 55) * 3.2;
+          hy = 172 + Math.cos(t * 62) * 3.2;
+        } else {
+          const freq = state.elbTripped ? 1.2 : (meta.bpm / 60);
+          const beat = Math.pow(Math.max(0, Math.sin(t * Math.PI * freq)), 8);
+          heartScale = 1 + beat * 0.22;
+        }
+        el.heartGroup.setAttribute('transform', `translate(${hx.toFixed(1)}, ${hy.toFixed(1)}) scale(${heartScale.toFixed(3)})`);
+        el.heartHalo.setAttribute('fill', state.elbTripped ? '#10b981' : meta.color);
+
+        // 2) 팔 근육 경련 / 몸통 떨림 애니메이션
+        if (!state.elbTripped && state.level >= 2) {
+          const shakeAmp = state.level === 2 ? 1.8 : (state.level === 3 ? 3.2 : 4.5);
+          const armRot = Math.sin(t * 45) * shakeAmp;
+          el.leftArmGroup.setAttribute('transform', `rotate(${armRot.toFixed(2)}, 306, 136)`);
+
+          if (state.level >= 3) {
+            const bx = Math.sin(t * 52) * (state.level === 4 ? 2.8 : 1.5);
+            el.humanBodyGroup.setAttribute('transform', `translate(${bx.toFixed(1)}, 0)`);
+          } else {
+            el.humanBodyGroup.setAttribute('transform', 'translate(0, 0)');
+          }
+        } else {
+          el.leftArmGroup.setAttribute('transform', 'rotate(0, 306, 136)');
+          el.humanBodyGroup.setAttribute('transform', 'translate(0, 0)');
+        }
+
+        // 3) 인체 통과 전기 입자 애니메이션
+        if (state.elbTripped || state.actualMa < 0.05) {
+          for (let i = 0; i < particles.length; i++) {
+            particles[i].g.setAttribute('opacity', '0');
+          }
+        } else {
+          const activeCount = Math.min(PARTICLE_COUNT, 4 + state.level * 4);
+          const speed = 0.35 + state.level * 0.32;
+          const wiggleAmp = state.currentType === 'AC' ? (3 + state.level * 1.8) : 0;
+
+          for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            if (i >= activeCount) {
+              p.g.setAttribute('opacity', '0');
+              continue;
+            }
+            const prog = (t * speed + i / activeCount) % 1;
+            const pt = getPointOnBodyPath(prog);
+            const wig = Math.sin(prog * Math.PI * 10 + t * 18) * wiggleAmp;
+            const px = pt.x + pt.nx * wig;
+            const py = pt.y + pt.ny * wig;
+
+            p.g.setAttribute('opacity', '1');
+            p.g.setAttribute('transform', `translate(${px.toFixed(1)}, ${py.toFixed(1)})`);
+            p.halo.setAttribute('fill', meta.color);
+            p.core.setAttribute('fill', state.level === 4 && i % 2 === 0 ? '#e879f9' : meta.color);
+          }
+        }
+
+        // 4) 접촉점 & 심장 스파크
+        renderSparks(t);
+
+        // 5) 실시간 ECG 심전도 그리기
+        drawEcg();
+
+        requestAnimationFrame(animate);
+      }
+
+      /* -----------------------------------------------------------------
+       * 6. 캔버스 리사이즈 & OX 퀴즈 렌더링
+       * ----------------------------------------------------------------- */
+      function resizeEcgCanvas() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const rect = el.ecgCanvas.parentElement.getBoundingClientRect();
+        if (rect.width <= 0 || rect.height <= 0) return;
+        state.ecgWidth = rect.width;
+        state.ecgHeight = rect.height;
+        el.ecgCanvas.width = Math.floor(rect.width * dpr);
+        el.ecgCanvas.height = Math.floor(rect.height * dpr);
+        ecgCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      function renderQuiz() {
+        el.quizGrid.innerHTML = QUIZ_DATA.map((item, qi) => {
+          const picked = state.quizAnswers[qi];
+          const done = picked !== null;
+          const isOk = picked === item.ans;
+
+          const oCls = done ? (item.ans === true ? 'ox-btn correct' : (picked === true ? 'ox-btn wrong' : 'ox-btn')) : 'ox-btn';
+          const xCls = done ? (item.ans === false ? 'ox-btn correct' : (picked === false ? 'ox-btn wrong' : 'ox-btn')) : 'ox-btn';
+
+          return `
+            <div class="quiz-card">
+              <div class="quiz-q">${item.q}</div>
+              <div class="ox-row">
+                <button type="button" class="${oCls}" data-q="${qi}" data-v="true" ${done ? 'disabled' : ''}>⭕ 맞다 (O)</button>
+                <button type="button" class="${xCls}" data-q="${qi}" data-v="false" ${done ? 'disabled' : ''}>❌ 틀리다 (X)</button>
+              </div>
+              <div class="quiz-fb ${done ? (isOk ? 'show ok' : 'show no') : ''}">
+                ${done ? (isOk ? item.ok : item.no) : ''}
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        el.quizGrid.querySelectorAll('.ox-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const qi = Number(btn.dataset.q);
+            const val = btn.dataset.v === 'true';
+            if (state.quizAnswers[qi] !== null) return;
+            state.quizAnswers[qi] = val;
+            renderQuiz();
+          });
+        });
+
+        const doneCount = state.quizAnswers.filter(v => v !== null).length;
+        const score = state.quizAnswers.reduce((acc, v, i) => acc + (v === QUIZ_DATA[i].ans ? 1 : 0), 0);
+        if (doneCount < 3) {
+          el.quizScoreText.textContent = `📝 3문제를 모두 풀어 보세요! (${doneCount} / 3 완료 · 현재 ${score}점)`;
+        } else if (score === 3) {
+          el.quizScoreText.textContent = '🏆 3 / 3점 만점! 전기 안전과 옴의 법칙을 완벽하게 이해하셨습니다!';
+        } else {
+          el.quizScoreText.textContent = `👍 3문제 완료! 총 ${score} / 3점입니다. 다시 도전해 볼까요?`;
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 7. 이벤트 바인딩 및 초기화
+       * ----------------------------------------------------------------- */
+      function setVoltage(v) {
+        state.voltage = v;
+        el.voltSlider.value = Math.round(v);
+        el.voltReadout.textContent = `${v} V`;
+        el.presetBtns.forEach(b => {
+          b.classList.toggle('active', Number(b.dataset.volt) === v);
+        });
+        recalculatePhysics(true);
+      }
+
+      window.addEventListener('load', () => {
+        initParticles();
+        resizeEcgCanvas();
+
+        // 전압 슬라이더
+        el.voltSlider.addEventListener('input', e => {
+          setVoltage(Number(e.target.value));
+        });
+
+        // 전압 프리셋 버튼
+        el.presetBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            setVoltage(Number(btn.dataset.volt));
+          });
+        });
+
+        // 피부/환경 저항 버튼
+        el.skinBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.resistance = Number(btn.dataset.resist);
+            state.skinKey = btn.dataset.skin;
+            el.skinBtns.forEach(b => b.classList.toggle('active', b === btn));
+            recalculatePhysics(true);
+          });
+        });
+
+        // 전류 종류 (AC / DC)
+        el.btnAc.addEventListener('click', () => {
+          state.currentType = 'AC';
+          el.btnAc.classList.add('active-ac');
+          el.btnDc.classList.remove('active-dc');
+          recalculatePhysics(false);
+        });
+        el.btnDc.addEventListener('click', () => {
+          state.currentType = 'DC';
+          el.btnDc.classList.add('active-dc');
+          el.btnAc.classList.remove('active-ac');
+          recalculatePhysics(false);
+        });
+
+        // 누전차단기(ELB) 토글
+        el.btnElbToggle.addEventListener('click', () => {
+          state.elbEnabled = !state.elbEnabled;
+          el.btnElbToggle.classList.toggle('on', state.elbEnabled);
+          el.elbPillText.textContent = state.elbEnabled ? 'ON' : 'OFF';
+          recalculatePhysics(true);
+        });
+
+        // 누전차단기 리셋 버튼
+        el.elbResetBtn.addEventListener('click', () => {
+          state.elbTripped = false;
+          // 현재 조건이 여전히 30mA를 초과하면 안전하게 전압을 50V로 낮춰 복구 체험 제공
+          if (state.rawMa > 30) {
+            setVoltage(50);
+          } else {
+            recalculatePhysics(false);
+          }
+        });
+
+        // 퀴즈 리셋
+        el.quizResetBtn.addEventListener('click', () => {
+          state.quizAnswers = [null, null, null];
+          renderQuiz();
+        });
+
+        window.addEventListener('resize', resizeEcgCanvas);
+
+        // 초기 실행 (가정용 220V + 건조한 손)
+        recalculatePhysics(false);
+        renderQuiz();
+        requestAnimationFrame(animate);
+      });
+    })();
+  </script>
+</body>
+</html>

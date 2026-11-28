@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>설비 · 사람 · 대지 전류 흐름 체험실 (접지와 감전 원리 애니메이션)</title>
+  <style>
+    /* =====================================================================
+     * 1. 기본 리셋 및 디자인 토큰 (과학관 / 현대적 교과서 스타일)
+     * ===================================================================== */
+    :root {
+      --bg-page: #f4f7fb;
+      --bg-card: #ffffff;
+      --border-card: #dce5f2;
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #64748b;
+
+      /* 전기 배선 및 경로 시맨틱 컬러 */
+      --wire-live: #ef4444;     /* 활선 L */
+      --wire-neutral: #3b82f6;  /* 중성선 N */
+      --wire-pe: #10b981;       /* 보호접지선 PE */
+      --fault-danger: #f97316;  /* 인체 누설/감전 */
+      --fault-crit: #dc2626;    /* 치명적 감전 */
+      --earth-amber: #d97706;   /* 대지 귀환 전류 */
+      --earth-soil: #92400e;    /* 토양/지층 */
+
+      --shadow-soft: 0 10px 26px -8px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      background-image:
+        radial-gradient(circle at 8% 6%, rgba(59, 130, 246, 0.11) 0%, transparent 32%),
+        radial-gradient(circle at 92% 10%, rgba(16, 185, 129, 0.12) 0%, transparent 34%),
+        radial-gradient(circle at 50% 96%, rgba(217, 119, 6, 0.08) 0%, transparent 40%);
+      color: var(--text-main);
+      line-height: 1.55;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 18px 16px 56px;
+    }
+
+    /* =====================================================================
+     * 2. 상단 헤더 배너 & 범례
+     * ===================================================================== */
+    .hero-header {
+      background: linear-gradient(135deg, #ffffff 0%, #eff6ff 55%, #ecfdf5 100%);
+      border: 2px solid var(--border-card);
+      border-radius: 24px;
+      padding: 20px 24px;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .hero-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #2563eb, #10b981);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.24);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(1.18rem, 2.5vw, 1.55rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .hero-sub {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-top: 3px;
+    }
+
+    .legend-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .legend-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: var(--text-main);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* =====================================================================
+     * 3. 공통 카드 및 시나리오 퀵 버튼
+     * ===================================================================== */
+    .card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-card);
+      border-radius: 22px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 18px;
+    }
+
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-hint {
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1.5px solid #bfdbfe;
+    }
+
+    /* 4가지 시나리오 버튼 */
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .scenario-btn {
+      appearance: none;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 15px;
+      padding: 12px 13px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: all 0.18s ease;
+    }
+
+    .scenario-btn:hover {
+      transform: translateY(-2px);
+      border-color: #93c5fd;
+      background: #ffffff;
+    }
+
+    .scenario-btn strong {
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .scenario-btn span {
+      font-size: 0.76rem;
+      color: var(--text-sub);
+      line-height: 1.38;
+    }
+
+    .scenario-btn.active-s1 {
+      background: #ecfdf5;
+      border-color: #10b981;
+      box-shadow: 0 6px 14px rgba(16, 185, 129, 0.18);
+    }
+    .scenario-btn.active-s2 {
+      background: #fef2f2;
+      border-color: #ef4444;
+      box-shadow: 0 6px 14px rgba(239, 68, 68, 0.2);
+    }
+    .scenario-btn.active-s3 {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      box-shadow: 0 6px 14px rgba(59, 130, 246, 0.18);
+    }
+    .scenario-btn.active-s4 {
+      background: #fffbeb;
+      border-color: #f59e0b;
+      box-shadow: 0 6px 14px rgba(245, 158, 11, 0.2);
+    }
+
+    /* =====================================================================
+     * 4. ELB 차단 알림 배너 & SVG 애니메이션 무대
+     * ===================================================================== */
+    .elb-trip-banner {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #ecfdf5, #dcfce7);
+      border: 2.5px solid #10b981;
+      color: #065f46;
+      margin-bottom: 14px;
+      animation: popSlide 0.25s ease;
+    }
+
+    .elb-trip-banner.show {
+      display: flex;
+    }
+
+    @keyframes popSlide {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn-primary-green {
+      appearance: none;
+      border: none;
+      background: #059669;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 800;
+      padding: 9px 16px;
+      border-radius: 11px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .btn-primary-green:hover {
+      background: #047857;
+      transform: translateY(-1px);
+    }
+
+    .stage-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tool-btn {
+      appearance: none;
+      border: 1.5px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.16s ease;
+    }
+
+    .tool-btn:hover {
+      border-color: #60a5fa;
+      background: #eff6ff;
+    }
+
+    .tool-btn.is-slow {
+      background: #fef3c7;
+      border-color: #f59e0b;
+      color: #b45309;
+    }
+
+    .tool-btn.is-paused {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #b91c1c;
+    }
+
+    .stage-box {
+      width: 100%;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 68%, #fef3c7 100%);
+      border: 2px solid #dbeafe;
+      overflow: hidden;
+      padding: 6px;
+    }
+
+    #circuitSvg {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+
+    .svg-clickable {
+      cursor: pointer;
+      transition: filter 0.18s ease;
+    }
+    .svg-clickable:hover {
+      filter: drop-shadow(0 0 6px rgba(37, 99, 235, 0.45));
+    }
+
+    /* =====================================================================
+     * 5. 실시간 텔레메트리 (4개 카드) & 전류 분배 비율 막대
+     * ===================================================================== */
+    .telemetry-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .metric-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 13px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .metric-label {
+      font-size: 0.77rem;
+      font-weight: 800;
+      color: var(--text-sub);
+    }
+
+    .metric-value {
+      font-size: 1.32rem;
+      font-weight: 900;
+      color: var(--text-main);
+    }
+
+    .metric-sub {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .safety-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      align-self: flex-start;
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 999px;
+      margin-top: 2px;
+    }
+
+    /* 전류 분배 비율 막대 (접지선 vs 사람) */
+    .split-bar-panel {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 16px;
+      padding: 14px 16px;
+    }
+
+    .split-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .split-track {
+      width: 100%;
+      height: 26px;
+      border-radius: 999px;
+      background: #1e293b;
+      overflow: hidden;
+      display: flex;
+      border: 1.5px solid #334155;
+    }
+
+    .split-seg-pe {
+      background: linear-gradient(90deg, #059669, #10b981);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.74rem;
+      font-weight: 900;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: width 0.25s ease;
+    }
+
+    .split-seg-human {
+      background: linear-gradient(90deg, #f97316, #ef4444);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.74rem;
+      font-weight: 900;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: width 0.25s ease;
+    }
+
+    .split-foot {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 8px;
+      font-size: 0.76rem;
+      color: #cbd5e1;
+    }
+
+    /* =====================================================================
+     * 6. 상세 조작 컨트롤 패널
+     * ===================================================================== */
+    .ctrl-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .ctrl-box {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 13px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .ctrl-box-title {
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .toggle-btn {
+      appearance: none;
+      width: 100%;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #475569;
+      font-family: inherit;
+      font-size: 0.84rem;
+      font-weight: 800;
+      padding: 10px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.18s ease;
+    }
+
+    .toggle-btn .status-pill {
+      font-size: 0.72rem;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      color: #475569;
+    }
+
+    .toggle-btn.on-danger {
+      background: #fef2f2;
+      border-color: #ef4444;
+      color: #b91c1c;
+    }
+    .toggle-btn.on-danger .status-pill {
+      background: #ef4444;
+      color: #ffffff;
+    }
+
+    .toggle-btn.on-safe {
+      background: #ecfdf5;
+      border-color: #10b981;
+      color: #047857;
+    }
+    .toggle-btn.on-safe .status-pill {
+      background: #10b981;
+      color: #ffffff;
+    }
+
+    .slider-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .re-slider {
+      width: 100%;
+      height: 8px;
+      border-radius: 999px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: linear-gradient(90deg, #10b981, #f59e0b, #ef4444);
+      outline: none;
+      cursor: pointer;
+    }
+
+    .re-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 3.5px solid #059669;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.35);
+      cursor: pointer;
+    }
+
+    .re-slider:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .shoe-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .shoe-btn {
+      appearance: none;
+      border: 1.5px solid #cbd5e1;
+      background: #ffffff;
+      color: #334155;
+      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 7px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.16s ease;
+    }
+
+    .shoe-btn:hover {
+      border-color: #93c5fd;
+      background: #eff6ff;
+    }
+
+    .shoe-btn.active {
+      background: #2563eb;
+      border-color: #1d4ed8;
+      color: #ffffff;
+    }
+
+    /* =====================================================================
+     * 7. 하단 교육 섹션 (핵심 원리 3가지 & 미니 안전 OX 퀴즈)
+     * ===================================================================== */
+    .three-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .principle-card {
+      background: #f8fbff;
+      border: 2px solid #dbeafe;
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .principle-tag {
+      align-self: flex-start;
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .principle-card h3 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .principle-card p {
+      font-size: 0.83rem;
+      color: var(--text-sub);
+      line-height: 1.56;
+    }
+
+    .quiz-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .quiz-q {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .ox-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .ox-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 900;
+      padding: 9px;
+      border-radius: 11px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .ox-btn:hover:not(:disabled) {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    .ox-btn.correct {
+      background: #dcfce7;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .ox-btn.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .quiz-fb {
+      display: none;
+      font-size: 0.79rem;
+      font-weight: 600;
+      line-height: 1.46;
+      padding: 9px 11px;
+      border-radius: 11px;
+    }
+
+    .quiz-fb.show { display: block; }
+    .quiz-fb.ok { background: #ecfdf5; color: #065f46; border: 1.5px solid #a7f3d0; }
+    .quiz-fb.no { background: #fff1f2; color: #9f1239; border: 1.5px solid #fecdd3; }
+
+    .quiz-score-bar {
+      margin-top: 14px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+      border: 2px solid #bfdbfe;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    /* =====================================================================
+     * 8. 반응형 미디어 쿼리
+     * ===================================================================== */
+    @media (max-width: 1040px) {
+      .scenario-grid,
+      .telemetry-grid,
+      .ctrl-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 780px) {
+      .three-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .scenario-grid,
+      .telemetry-grid,
+      .ctrl-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ================================================================= -->
+    <!-- 상단 헤더 -->
+    <!-- ================================================================= -->
+    <header class="hero-header">
+      <div class="hero-left">
+        <div class="hero-icon" aria-hidden="true">🌍</div>
+        <div>
+          <h1 class="hero-title">설비 · 사람 · 대지 전류 흐름 체험실</h1>
+          <p class="hero-sub">
+            누전된 전기가 <strong>설비 → 사람 → 대지 → 변압기</strong>로 돌아가는 <strong>폐회로(Closed Loop)</strong>와 접지·차단기의 보호 원리를 눈으로 확인하세요!
+          </p>
+        </div>
+      </div>
+      <div class="legend-pills" aria-label="전선 색상 범례">
+        <span class="legend-pill"><span class="dot" style="background:#ef4444;"></span>활선(L · 220V)</span>
+        <span class="legend-pill"><span class="dot" style="background:#3b82f6;"></span>중성선(N · 0V)</span>
+        <span class="legend-pill"><span class="dot" style="background:#10b981;"></span>보호접지(PE)</span>
+        <span class="legend-pill"><span class="dot" style="background:#f97316;"></span>인체 감전 전류</span>
+        <span class="legend-pill"><span class="dot" style="background:#d97706;"></span>대지 귀환 전류</span>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 4가지 시나리오 퀵 버튼 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">🎬 4가지 대표 상황 바로 체험하기</h2>
+        <span class="pill-hint">1번부터 4번까지 순서대로 눌러 비교해 보세요!</span>
+      </div>
+
+      <div class="scenario-grid">
+        <button type="button" class="scenario-btn" data-scenario="1">
+          <strong>✅ 1. 정상 운전</strong>
+          <span>절연 정상 · 전류가 L → 설비 코일 → N으로만 안전하게 순환</span>
+        </button>
+        <button type="button" class="scenario-btn" data-scenario="2">
+          <strong>⚡ 2. 누전 (접지 없음)</strong>
+          <span>PE 미연결 + 젖은 바닥 · 누설전류 100%가 사람과 대지로 관통!</span>
+        </button>
+        <button type="button" class="scenario-btn" data-scenario="3">
+          <strong>🛡️ 3. 누전 + 보호접지(PE)</strong>
+          <span>R_e=5Ω 접지 연결 · 전류가 저항 작은 녹색 접지선으로 대량 우회!</span>
+        </button>
+        <button type="button" class="scenario-btn" data-scenario="4">
+          <strong>🚨 4. 누전 + 접지 + 누전차단기</strong>
+          <span>ELB(30mA) 활성화 · 누전 즉시 0.03초 만에 자동 차단 보호!</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 핵심 인터랙티브 SVG 애니메이션 무대 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">⚡ 설비 · 사람 · 대지 폐회로(Closed Loop) 실시간 단면도</h2>
+        <div class="stage-tools">
+          <button id="btnSlow" type="button" class="tool-btn">
+            <span>🐢</span><span id="slowLabel">천천히 보기 (0.3x)</span>
+          </button>
+          <button id="btnPause" type="button" class="tool-btn">
+            <span>⏸️</span><span id="pauseLabel">일시정지</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 누전차단기(ELB) 작동 완료 배너 -->
+      <div id="elbTripBanner" class="elb-trip-banner" role="alert">
+        <div>
+          <strong>🚨 누전차단기(ELB) 0.03초 차단 완료! 설비와 사람 보호됨</strong>
+          <div style="font-size:0.8rem; margin-top:2px;">
+            대지로 빠져나가는 누설 전류가 30mA 이상 감지되어 활선(L)과 중성선(N) 전원을 즉시 차단했습니다.
+          </div>
+        </div>
+        <button id="btnElbResetBanner" type="button" class="btn-primary-green">🔄 차단기 복구 (Reset)</button>
+      </div>
+
+      <div class="stage-box">
+        <svg id="circuitSvg" viewBox="0 0 960 460" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="soilGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#d97706" stop-opacity="0.22" />
+              <stop offset="25%" stop-color="#b45309" stop-opacity="0.28" />
+              <stop offset="100%" stop-color="#78350f" stop-opacity="0.42" />
+            </linearGradient>
+            <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e2e8f0" />
+              <stop offset="100%" stop-color="#cbd5e1" />
+            </linearGradient>
+            <filter id="glowSoft" x="-35%" y="-35%" width="170%" height="170%">
+              <feGaussianBlur stdDeviation="3.2" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- ========================================================= -->
+          <!-- 1. 하단 대지 (Earth / Ground Layer) -->
+          <!-- ========================================================= -->
+          <rect x="0" y="346" width="960" height="114" fill="url(#soilGrad)" />
+          <line x1="0" y1="346" x2="960" y2="346" stroke="#92400e" stroke-width="3" />
+          <!-- 지층 장식선 -->
+          <path d="M 0 382 Q 240 374 480 384 T 960 380" stroke="#92400e" stroke-opacity="0.22" stroke-width="1.5" fill="none" />
+          <path d="M 0 420 Q 280 428 560 416 T 960 424" stroke="#78350f" stroke-opacity="0.22" stroke-width="1.5" fill="none" />
+
+          <!-- 대지 라벨 -->
+          <rect x="330" y="424" width="300" height="26" rx="13" fill="#78350f" fill-opacity="0.88" />
+          <text x="480" y="441" text-anchor="middle" fill="#fef3c7" font-size="12" font-weight="800">
+            🌍 대지 (Earth · 거대한 전류 귀환 통로)
+          </text>
+
+          <!-- 대지 내부 전류 귀환 가이드 경로 (사람 발 -> 설비 접지극 -> 변압기 B종 접지극) -->
+          <path id="earthPathHuman" d="M 730 350 L 730 402 L 122 402 L 122 368"
+                stroke="#d97706" stroke-width="4" stroke-dasharray="7 5" fill="none" opacity="0.28" />
+          <path id="earthPathPe" d="M 480 368 L 480 390 L 122 390 L 122 368"
+                stroke="#10b981" stroke-width="4" stroke-dasharray="7 5" fill="none" opacity="0.28" />
+
+          <!-- ========================================================= -->
+          <!-- 2. 좌측: 변압기 (220V AC) & B종 접지(R_b = 10Ω) -->
+          <!-- ========================================================= -->
+          <g id="transformerGroup">
+            <rect x="26" y="70" width="136" height="170" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2.5" />
+            <text x="94" y="94" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="900">⚡ 주상 변압기</text>
+            <text x="94" y="112" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="800" class="mono">AC 220V · 60Hz</text>
+
+            <!-- 변압기 코일 심볼 -->
+            <g transform="translate(50, 126)" stroke-width="2.8" fill="none" stroke-linecap="round">
+              <!-- 1차측 -->
+              <path d="M 14 6 c 10 0 10 16 0 16 c 10 0 10 16 0 16 c 10 0 10 16 0 16 c 10 0 10 16 0 16" stroke="#94a3b8" />
+              <!-- 철심 -->
+              <line x1="36" y1="6" x2="36" y2="70" stroke="#64748b" stroke-width="2.5" />
+              <line x1="44" y1="6" x2="44" y2="70" stroke="#64748b" stroke-width="2.5" />
+              <!-- 2차측 (220V) -->
+              <path d="M 66 6 c -10 0 -10 16 0 16 c -10 0 -10 16 0 16 c -10 0 -10 16 0 16 c -10 0 -10 16 0 16" stroke="#38bdf8" />
+            </g>
+
+            <!-- L / N 단자 표시 -->
+            <circle cx="162" cy="132" r="5.5" fill="#ef4444" stroke="#ffffff" stroke-width="1.5" />
+            <text x="144" y="136" text-anchor="end" fill="#fca5a5" font-size="11" font-weight="900" class="mono">L</text>
+
+            <circle cx="162" cy="196" r="5.5" fill="#3b82f6" stroke="#ffffff" stroke-width="1.5" />
+            <text x="144" y="200" text-anchor="end" fill="#93c5fd" font-size="11" font-weight="900" class="mono">N</text>
+
+            <!-- B종 접지선 (중성선 N -> 대지 접지극) -->
+            <path d="M 122 196 L 122 368" stroke="#3b82f6" stroke-width="4.5" fill="none" />
+            <circle cx="122" cy="196" r="4.5" fill="#3b82f6" />
+            <!-- B종 접지극 -->
+            <rect x="116" y="346" width="12" height="40" rx="3" fill="#1d4ed8" stroke="#ffffff" stroke-width="1.5" />
+            <!-- 접지 기호 -->
+            <g transform="translate(86, 360)" stroke="#1e3a8a" stroke-width="2.2" stroke-linecap="round">
+              <line x1="0" y1="0" x2="22" y2="0" />
+              <line x1="4" y1="6" x2="18" y2="6" />
+              <line x1="8" y1="12" x2="14" y2="12" />
+            </g>
+            <rect x="34" y="274" width="128" height="44" rx="10" fill="#ffffff" stroke="#93c5fd" stroke-width="1.8" />
+            <text x="98" y="292" text-anchor="middle" fill="#1e40af" font-size="11" font-weight="900">B종 접지 (중성점)</text>
+            <text x="98" y="309" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="800" class="mono">R_b = 10 Ω</text>
+          </g>
+
+          <!-- ========================================================= -->
+          <!-- 3. 배선: 활선(L) & 중성선(N) + 누전차단기(ELB) -->
+          <!-- ========================================================= -->
+          <!-- 변압기 -> ELB -->
+          <path d="M 162 132 L 224 132" stroke="#ef4444" stroke-width="5" fill="none" />
+          <path d="M 162 196 L 224 196" stroke="#3b82f6" stroke-width="5" fill="none" />
+
+          <!-- ELB -> 설비 내부 코일 -->
+          <path id="wireLiveAfterElb" d="M 284 132 L 424 132" stroke="#ef4444" stroke-width="5" fill="none" />
+          <path id="wireNeutralAfterElb" d="M 284 196 L 424 196" stroke="#3b82f6" stroke-width="5" fill="none" />
+
+          <text x="346" y="122" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="900">활선 L (220V)</text>
+          <text x="346" y="214" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="900">중성선 N (0V)</text>
+
+          <!-- 클릭/토글 가능한 누전차단기(ELB) 심볼 -->
+          <g id="svgElbGroup" class="svg-clickable" transform="translate(216, 104)">
+            <rect id="svgElbBody" x="0" y="0" width="76" height="118" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2.5" />
+            <text x="38" y="18" text-anchor="middle" fill="#0f172a" font-size="10.5" font-weight="900">ELB 30mA</text>
+            <!-- L 접점 -->
+            <circle cx="12" cy="28" r="4" fill="#ef4444" />
+            <circle cx="64" cy="28" r="4" fill="#ef4444" />
+            <line id="elbArmL" x1="12" y1="28" x2="64" y2="28" stroke="#ef4444" stroke-width="4" stroke-linecap="round"
+                  style="transform-origin: 12px 28px; transition: transform 0.2s ease;" />
+            <!-- N 접점 -->
+            <circle cx="12" cy="92" r="4" fill="#3b82f6" />
+            <circle cx="64" cy="92" r="4" fill="#3b82f6" />
+            <line id="elbArmN" x1="12" y1="92" x2="64" y2="92" stroke="#3b82f6" stroke-width="4" stroke-linecap="round"
+                  style="transform-origin: 12px 92px; transition: transform 0.2s ease;" />
+            <!-- 연동 점선 -->
+            <line x1="38" y1="36" x2="38" y2="84" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="3 3" />
+            <!-- 상태 배지 -->
+            <rect id="svgElbBadgeBg" x="8" y="50" width="60" height="20" rx="6" fill="#e2e8f0" />
+            <text id="svgElbBadgeTxt" x="38" y="64" text-anchor="middle" fill="#475569" font-size="9.5" font-weight="900">OFF</text>
+          </g>
+
+          <!-- ========================================================= -->
+          <!-- 4. 중앙 좌측: 전기 설비 (금속 외함 모터/설비) & PE 접지선 -->
+          <!-- ========================================================= -->
+          <g id="equipGroup">
+            <!-- 금속 외함 글로우 레이어 (접촉전압에 비례해 붉게 빛남) -->
+            <rect id="enclosureGlow" x="382" y="76" width="196" height="196" rx="20" fill="#ef4444" opacity="0" filter="url(#glowSoft)" />
+
+            <!-- 금속 외함 본체 -->
+            <rect id="enclosureRect" x="388" y="82" width="184" height="184" rx="16" fill="url(#metalGrad)" stroke="#475569" stroke-width="4" />
+            <text x="480" y="106" text-anchor="middle" fill="#0f172a" font-size="13" font-weight="900">🏭 전기 설비 (금속 외함)</text>
+
+            <!-- 내부 모터/코일 박스 -->
+            <rect x="424" y="118" width="112" height="92" rx="12" fill="#ffffff" stroke="#94a3b8" stroke-width="2" />
+            <text x="480" y="136" text-anchor="middle" fill="#64748b" font-size="10" font-weight="800">내부 모터 코일</text>
+            <!-- 내부 코일 심볼 -->
+            <path d="M 424 132 L 452 132 L 452 146 q 14 8 0 16 q 14 8 0 16 q 14 8 0 16 L 424 196"
+                  stroke="#6366f1" stroke-width="3.2" fill="none" stroke-linecap="round" />
+            <circle cx="498" cy="166" r="20" fill="#eff6ff" stroke="#3b82f6" stroke-width="2.5" />
+            <text x="498" y="172" text-anchor="middle" fill="#1d4ed8" font-size="14" font-weight="900">M</text>
+
+            <!-- 외함 접촉전압 실시간 표시 -->
+            <rect id="vTouchTagBg" x="412" y="222" width="136" height="30" rx="8" fill="#0f172a" />
+            <text id="vTouchSvgText" x="480" y="241" text-anchor="middle" fill="#34d399" font-size="11.5" font-weight="900" class="mono">외함 전압: 0.0 V</text>
+
+            <!-- 설비 지지대 (바닥 절연 받침) -->
+            <rect x="404" y="266" width="22" height="80" rx="4" fill="#64748b" />
+            <rect x="534" y="266" width="22" height="80" rx="4" fill="#64748b" />
+
+            <!-- 누전(절연 파괴) 아크 표시 (Fault ON 시 표시) -->
+            <g id="faultArcGroup" opacity="0" filter="url(#glowSoft)">
+              <path d="M 432 132 L 418 118 L 424 108 L 404 94 L 392 88" stroke="#ef4444" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="414" cy="112" r="14" fill="#ef4444" fill-opacity="0.28" />
+              <rect x="394" y="42" width="172" height="28" rx="14" fill="#dc2626" />
+              <text x="480" y="60" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="900">⚡ 절연 파괴! 누전 발생!</text>
+            </g>
+
+            <!-- 보호접지선(PE) & 접지극 (R_e) -->
+            <g id="peGroundGroup">
+              <circle cx="480" cy="266" r="5.5" fill="#10b981" stroke="#ffffff" stroke-width="1.5" />
+              <path id="peWireLine" d="M 480 266 L 480 356" stroke="#10b981" stroke-width="5" fill="none" />
+              <!-- PE 끊김 표시 (OFF일 때) -->
+              <g id="peCutMark" opacity="0">
+                <rect x="466" y="294" width="28" height="22" rx="4" fill="#f8fbff" />
+                <text x="480" y="310" text-anchor="middle" fill="#ef4444" font-size="15" font-weight="900">✂️</text>
+              </g>
+              <!-- 설비 접지극 -->
+              <rect id="peRodRect" x="474" y="346" width="12" height="40" rx="3" fill="#059669" stroke="#ffffff" stroke-width="1.5" />
+              <rect x="494" y="284" width="114" height="44" rx="10" fill="#ffffff" stroke="#6ee7b7" stroke-width="1.8" />
+              <text id="peLabelTop" x="551" y="302" text-anchor="middle" fill="#047857" font-size="10.5" font-weight="900">보호접지 (PE)</text>
+              <text id="peLabelVal" x="551" y="319" text-anchor="middle" fill="#059669" font-size="11" font-weight="800" class="mono">R_e = 10 Ω</text>
+            </g>
+          </g>
+
+          <!-- ========================================================= -->
+          <!-- 5. 중앙 우측: 사람 (외함 접촉 + 대지 직립) -->
+          <!-- ========================================================= -->
+          <!-- 물웅덩이 (맨발·젖은 바닥일 때만 표시) -->
+          <ellipse id="svgWetPuddle" cx="725" cy="350" rx="68" ry="10" fill="#38bdf8" fill-opacity="0.55" stroke="#0284c7" stroke-width="1.5" opacity="0" />
+
+          <g id="humanGroup" style="transform-origin: 725px 220px;">
+            <!-- 머리 -->
+            <circle cx="725" cy="112" r="28" fill="#e2e8f0" stroke="#475569" stroke-width="2.5" />
+            <text id="humanFace" x="725" y="121" text-anchor="middle" font-size="25">😊</text>
+
+            <!-- 목 & 몸통 -->
+            <rect x="716" y="139" width="18" height="14" fill="#cbd5e1" />
+            <path d="M 688 153 Q 725 147 762 153 L 756 248 Q 725 255 694 248 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2.5" stroke-linejoin="round" />
+
+            <!-- 심장 아이콘 -->
+            <g id="humanHeart" transform="translate(734, 186)">
+              <circle id="heartPulseBg" cx="0" cy="0" r="15" fill="#10b981" fill-opacity="0.2" />
+              <text x="0" y="6" text-anchor="middle" font-size="16">❤️</text>
+            </g>
+
+            <!-- 왼팔 (설비 금속 외함 접촉) -->
+            <path d="M 690 162 L 632 168 L 574 168" stroke="#cbd5e1" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 690 162 L 632 168 L 574 168" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <!-- 왼손 -->
+            <circle cx="574" cy="168" r="9.5" fill="#e2e8f0" stroke="#475569" stroke-width="2" />
+            <!-- 절연 장갑 (절연장화 모드 시 표시) -->
+            <g id="svgInsulGlove" opacity="0">
+              <rect x="562" y="155" width="24" height="26" rx="8" fill="#facc15" stroke="#ca8a04" stroke-width="2" />
+            </g>
+
+            <!-- 오른팔 -->
+            <path d="M 760 162 L 784 202 L 792 238" stroke="#cbd5e1" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 760 162 L 784 202 L 792 238" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+            <!-- 양다리 -->
+            <path d="M 706 247 L 700 298 L 696 344" stroke="#cbd5e1" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 706 247 L 700 298 L 696 344" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+            <path d="M 744 247 L 750 298 L 754 344" stroke="#cbd5e1" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 744 247 L 750 298 L 754 344" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+            <!-- 신발 시각화: 일반 운동화 -->
+            <g id="svgSneakers" opacity="1">
+              <rect x="682" y="334" width="28" height="14" rx="5" fill="#3b82f6" stroke="#1e40af" stroke-width="1.8" />
+              <rect x="740" y="334" width="28" height="14" rx="5" fill="#3b82f6" stroke="#1e40af" stroke-width="1.8" />
+            </g>
+
+            <!-- 신발 시각화: 노란 절연장화 -->
+            <g id="svgInsulBoots" opacity="0">
+              <rect x="680" y="324" width="32" height="24" rx="7" fill="#facc15" stroke="#ca8a04" stroke-width="2.2" />
+              <rect x="738" y="324" width="32" height="24" rx="7" fill="#facc15" stroke="#ca8a04" stroke-width="2.2" />
+            </g>
+
+            <!-- 인체 내부 감전 경로 가이드 -->
+            <path id="humanFaultGuide" d="M 574 168 L 690 162 L 734 186 L 744 247 L 754 346"
+                  stroke="#f97316" stroke-width="3.5" stroke-dasharray="5 4" fill="none" opacity="0" />
+          </g>
+
+          <!-- 사람 상태 말풍선 -->
+          <g transform="translate(794, 72)">
+            <rect id="humanBadgeBg" x="0" y="0" width="148" height="68" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2" />
+            <text id="humanBadgeTitle" x="74" y="23" text-anchor="middle" fill="#047857" font-size="12" font-weight="900">😊 안전 상태</text>
+            <text id="humanBadgeMa" x="74" y="42" text-anchor="middle" fill="#065f46" font-size="12" font-weight="900" class="mono">0.0 mA</text>
+            <text id="humanBadgeRh" x="74" y="58" text-anchor="middle" fill="#475569" font-size="10" font-weight="700" class="mono">R_h = 2,000 Ω</text>
+          </g>
+
+          <!-- 스파크 & 전류 입자 레이어 -->
+          <g id="sparkLayer" filter="url(#glowSoft)"></g>
+          <g id="particleLayer" filter="url(#glowSoft)"></g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 실시간 텔레메트리 (4개 카드) & 전류 분배 비율 막대 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">📊 실시간 계측 대시보드 &amp; 전류 분배 비율 (분류의 법칙)</h2>
+        <span class="pill-hint mono">V = 220V · R_b = 10Ω · R_f = 5Ω</span>
+      </div>
+
+      <div class="telemetry-grid">
+        <div class="metric-card">
+          <span class="metric-label">1. 외함 접촉전압 (V_touch)</span>
+          <span id="valVtouch" class="metric-value mono">0.0 V</span>
+          <span class="metric-sub">금속 외함에 걸리는 위험 전압</span>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-label">2. 인체 통과 전류 (I_h)</span>
+          <span id="valIh" class="metric-value mono">0.0 mA</span>
+          <span id="humanSafetyBadge" class="safety-badge" style="background:#dcfce7; color:#047857;">🟢 안전 (미감지)</span>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-label">3. 접지선 우회 전류 (I_g)</span>
+          <span id="valIg" class="metric-value mono" style="color:#059669;">0.0 mA</span>
+          <span class="metric-sub">보호접지선(PE)으로 빠져나간 전류</span>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-label">4. 대지 귀환 총 누설전류 (I_fault)</span>
+          <span id="valIfault" class="metric-value mono" style="color:#d97706;">0.0 mA</span>
+          <span class="metric-sub">대지를 거쳐 변압기(R_b)로 귀환</span>
+        </div>
+      </div>
+
+      <!-- 전류 분배 비율 막대 (접지선 vs 사람) -->
+      <div class="split-bar-panel">
+        <div class="split-head">
+          <span>⚖️ 누설전류 분배 비율 (접지선 PE vs 사람 인체)</span>
+          <span id="splitSummaryText" class="mono" style="color:#38bdf8;">누전 없음 (정상 운전)</span>
+        </div>
+        <div class="split-track">
+          <div id="splitPeBar" class="split-seg-pe" style="width: 0%;"></div>
+          <div id="splitHumanBar" class="split-seg-human" style="width: 0%;"></div>
+        </div>
+        <div class="split-foot mono">
+          <span id="splitPeText" style="color:#34d399;">🛡️ 보호접지선(PE): 0.0%</span>
+          <span id="splitHumanText" style="color:#fb923c;">🧍 사람 인체(R_h): 0.0%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 상세 조작 컨트롤 패널 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">🎛️ 상세 조건 조작 패널</h2>
+        <span class="pill-hint">접지저항 슬라이더와 신발 상태를 바꿔 전류 분배 변화를 관찰하세요!</span>
+      </div>
+
+      <div class="ctrl-grid">
+        <!-- 1. 설비 누전 토글 -->
+        <div class="ctrl-box">
+          <div class="ctrl-box-title">
+            <span>⚡ 1. 설비 누전 (절연 파괴)</span>
+          </div>
+          <p style="font-size:0.77rem; color:#64748b;">
+            내부 활선(L)의 피복이 벗겨져 금속 외함에 닿는 사고를 발생시킵니다.
+          </p>
+          <button id="btnFaultToggle" type="button" class="toggle-btn">
+            <span>설비 누전 발생</span>
+            <span id="faultPill" class="status-pill">OFF</span>
+          </button>
+        </div>
+
+        <!-- 2. 보호접지(PE) 토글 + 접지저항 R_e 슬라이더 -->
+        <div class="ctrl-box">
+          <div class="ctrl-box-title">
+            <span>🛡️ 2. 보호접지 (PE)</span>
+            <span id="reReadout" class="mono" style="color:#059669;">10 Ω</span>
+          </div>
+          <button id="btnPeToggle" type="button" class="toggle-btn on-safe">
+            <span>보호접지선 연결</span>
+            <span id="pePill" class="status-pill">ON</span>
+          </button>
+          <div class="slider-wrap">
+            <label for="reSlider" style="font-size:0.74rem; font-weight:700; color:#475569;">접지저항 R_e 조절 (1Ω ~ 100Ω)</label>
+            <input id="reSlider" class="re-slider" type="range" min="1" max="100" step="1" value="10" />
+          </div>
+        </div>
+
+        <!-- 3. 사람/바닥 저항 R_h 선택 -->
+        <div class="ctrl-box">
+          <div class="ctrl-box-title">
+            <span>👟 3. 사람 · 바닥 상태 (R_h)</span>
+          </div>
+          <div class="shoe-btns">
+            <button type="button" class="shoe-btn" data-rh="500" data-shoe="wet">
+              <span>🚿 맨발 · 젖은 바닥</span>
+              <span class="mono">500 Ω</span>
+            </button>
+            <button type="button" class="shoe-btn active" data-rh="2000" data-shoe="normal">
+              <span>👟 일반 실내 (건조)</span>
+              <span class="mono">2,000 Ω</span>
+            </button>
+            <button type="button" class="shoe-btn" data-rh="50000" data-shoe="insulated">
+              <span>🧤 절연장화 · 절연장갑</span>
+              <span class="mono">50,000 Ω</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. 누전차단기(ELB) 토글 & 복구 -->
+        <div class="ctrl-box">
+          <div class="ctrl-box-title">
+            <span>🚨 4. 누전차단기 (ELB 30mA)</span>
+          </div>
+          <p style="font-size:0.77rem; color:#64748b;">
+            누설전류가 30mA 이상이면 0.03초 만에 전원을 자동 차단합니다.
+          </p>
+          <button id="btnElbToggle" type="button" class="toggle-btn">
+            <span>누전차단기 (ELB)</span>
+            <span id="elbPill" class="status-pill">OFF</span>
+          </button>
+          <button id="btnElbResetCtrl" type="button" class="btn-primary-green" style="display:none; width:100%;">
+            🔄 차단기 복구 (Reset)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 핵심 원리 3가지 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">📘 꼭 기억해야 할 전기 안전 핵심 원리 3가지</h2>
+        <span class="pill-hint">설비 · 사람 · 대지의 관계</span>
+      </div>
+
+      <div class="three-grid">
+        <article class="principle-card">
+          <span class="principle-tag">원리 1 · 폐회로</span>
+          <h3>전류는 반드시 출발지로 돌아간다</h3>
+          <p>
+            변압기 중성점(N)이 대지에 접지(B종 접지)되어 있기 때문에, 누전된 설비를 만지면
+            <strong>설비 → 사람 → 대지 → 변압기 중성점</strong>으로 이어지는 완벽한 폐회로가 만들어져 감전됩니다.
+          </p>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-tag">원리 2 · 분류의 법칙</span>
+          <h3>전류는 저항이 작은 길로 몰린다</h3>
+          <p>
+            금속 외함에 보호접지(예: <strong>5Ω</strong>)를 연결하면, 인체 저항(<strong>2,000Ω</strong>)보다 400배나 길이 넓어집니다.
+            따라서 누설전류의 <strong>99% 이상이 접지선으로 우회</strong>하여 사람을 통과하는 전류가 크게 줄어듭니다.
+          </p>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-tag">원리 3 · 이중 보호</span>
+          <h3>접지 + 누전차단기(ELB)의 완벽한 조합</h3>
+          <p>
+            보호접지는 외함 접촉전압을 낮춰주고, 동시에 큰 누설전류가 대지로 흐르게 하여
+            <strong>누전차단기(ELB)가 0.03초 만에 즉시 작동</strong>하도록 돕습니다. 두 장치가 함께 있어야 설비와 사람을 완벽히 지킵니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 미니 안전 OX 퀴즈 (3문제) -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">🎯 미니 안전 OX 퀴즈 (3문제)</h2>
+        <span class="pill-hint">방금 본 애니메이션 원리를 확인해 보세요!</span>
+      </div>
+
+      <div id="quizGrid" class="three-grid"></div>
+
+      <div class="quiz-score-bar">
+        <span id="quizScoreText">📝 3문제를 모두 풀어 보세요! (0 / 3 완료)</span>
+        <button id="btnQuizReset" type="button" class="tool-btn">🔄 퀴즈 다시 풀기</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 물리 계산 및 60fps SVG 애니메이션 엔진 (Vanilla JS) -->
+  <!-- ================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      const SVG_NS = 'http://www.w3.org/2000/svg';
+
+      /* -----------------------------------------------------------------
+       * 1. 물리 상수 및 시뮬레이션 상태
+       * ----------------------------------------------------------------- */
+      const V_SOURCE = 220; // 220V AC
+      const R_B = 10;       // 변압기 중성점 B종 접지 저항 (Ω)
+      const R_F = 5;        // 설비 내부 누전 접촉 저항 (Ω)
+
+      const state = {
+        faultActive: false,
+        peConnected: true,
+        rE: 10,             // 보호접지 저항 (1 ~ 100 Ω)
+        rH: 2000,           // 인체 + 신발 저항 (500 / 2000 / 50000 Ω)
+        shoeMode: 'normal', // 'wet' | 'normal' | 'insulated'
+        elbEnabled: false,
+        elbTripped: false,
+        elbTripPending: false,
+        elbTimer: null,
+
+        slowMo: false,
+        paused: false,
+        simTime: 0,
+        lastTs: 0,
+
+        // 계산된 실시간 전기량
+        iFaultA: 0,         // 총 누설 전류 (A)
+        vTouch: 0,          // 외함 접촉전압 (V)
+        iHumanMa: 0,        // 인체 통과 전류 (mA)
+        iGroundMa: 0,       // 접지선 우회 전류 (mA)
+        humanLevel: 0,      // 0:안전, 1:찌릿, 2:경련, 3:치명적
+        activeScenario: 1,
+
+        quizAns: [null, null, null]
+      };
+
+      const QUIZ_DATA = [
+        {
+          q: 'Q1. 감전 시 사람 발로 빠져나간 전류는 대지(땅)를 통해 변압기 중성점 접지극(R_b)으로 되돌아간다.',
+          ans: true,
+          ok: '정답(O)! 전류는 반드시 폐회로(Closed Loop)를 이루어야 흐릅니다. 대지는 거대한 전류 귀환 통로 역할을 합니다.',
+          no: '오답! 정답은 O입니다. 변압기 중성점이 대지에 접지되어 있어 설비 → 사람 → 대지 → 변압기로 전류가 돌아갑니다.'
+        },
+        {
+          q: 'Q2. 보호접지(PE)의 접지저항(R_e)이 높을수록 사람 쪽으로 흐르는 전류가 더 많이 줄어든다.',
+          ans: false,
+          ok: '정답(X)! 전류는 저항이 "작은" 길로 몰립니다. 접지저항(R_e)이 낮을수록 더 많은 전류가 접지선으로 우회해 안전해집니다.',
+          no: '오답! 정답은 X입니다. 위 슬라이더에서 접지저항(R_e)을 1Ω과 100Ω으로 바꿔 비교해 보세요!'
+        },
+        {
+          q: 'Q3. 보호접지(PE)와 누전차단기(ELB)를 함께 설치하면 누전 발생 시 0.03초 만에 전원을 끊어 사람과 설비를 지킨다.',
+          ans: true,
+          ok: '정답(O)! 접지선을 통해 30mA 이상의 누설전류가 대지로 빠져나가면 ELB가 이를 감지해 즉시 전원을 차단합니다.',
+          no: '오답! 정답은 O입니다. 4번 시나리오 버튼을 눌러 이중 보호 동작을 확인해 보세요!'
+        }
+      ];
+
+      /* -----------------------------------------------------------------
+       * 2. 전류 경로 좌표 정의 (SVG)
+       * ----------------------------------------------------------------- */
+      const PATHS = {
+        // 정상 운전 부하 전류: 변압기 L -> ELB -> 설비 코일 -> ELB -> 변압기 N
+        normalLoad: [
+          { x: 162, y: 132 }, { x: 452, y: 132 }, { x: 452, y: 196 }, { x: 162, y: 196 }
+        ],
+        // 누전 공급 경로: 변압기 L -> 외함 누전 지점
+        faultSupply: [
+          { x: 162, y: 132 }, { x: 432, y: 132 }, { x: 404, y: 94 }, { x: 392, y: 88 }
+        ],
+        // 외함 -> 보호접지(PE) -> 대지 접지극 -> 대지 귀환 -> 변압기 B종 접지극 -> N
+        peReturnLoop: [
+          { x: 480, y: 266 }, { x: 480, y: 390 }, { x: 122, y: 390 }, { x: 122, y: 196 }
+        ],
+        // 외함 -> 사람 손 -> 심장 -> 다리 -> 발 -> 대지 귀환 -> 변압기 B종 접지극 -> N
+        humanReturnLoop: [
+          { x: 574, y: 168 }, { x: 690, y: 162 }, { x: 734, y: 186 },
+          { x: 744, y: 247 }, { x: 754, y: 350 }, { x: 730, y: 402 },
+          { x: 122, y: 402 }, { x: 122, y: 196 }
+        ]
+      };
+
+      /* -----------------------------------------------------------------
+       * 3. DOM 참조
+       * ----------------------------------------------------------------- */
+      const el = {
+        scenarioBtns: document.querySelectorAll('.scenario-btn'),
+        btnSlow: document.getElementById('btnSlow'),
+        slowLabel: document.getElementById('slowLabel'),
+        btnPause: document.getElementById('btnPause'),
+        pauseLabel: document.getElementById('pauseLabel'),
+        elbTripBanner: document.getElementById('elbTripBanner'),
+        btnElbResetBanner: document.getElementById('btnElbResetBanner'),
+
+        // SVG 요소
+        svgElbGroup: document.getElementById('svgElbGroup'),
+        svgElbBody: document.getElementById('svgElbBody'),
+        elbArmL: document.getElementById('elbArmL'),
+        elbArmN: document.getElementById('elbArmN'),
+        svgElbBadgeBg: document.getElementById('svgElbBadgeBg'),
+        svgElbBadgeTxt: document.getElementById('svgElbBadgeTxt'),
+        wireLiveAfterElb: document.getElementById('wireLiveAfterElb'),
+        wireNeutralAfterElb: document.getElementById('wireNeutralAfterElb'),
+
+        enclosureGlow: document.getElementById('enclosureGlow'),
+        enclosureRect: document.getElementById('enclosureRect'),
+        vTouchSvgText: document.getElementById('vTouchSvgText'),
+        faultArcGroup: document.getElementById('faultArcGroup'),
+
+        peWireLine: document.getElementById('peWireLine'),
+        peCutMark: document.getElementById('peCutMark'),
+        peRodRect: document.getElementById('peRodRect'),
+        peLabelTop: document.getElementById('peLabelTop'),
+        peLabelVal: document.getElementById('peLabelVal'),
+
+        earthPathHuman: document.getElementById('earthPathHuman'),
+        earthPathPe: document.getElementById('earthPathPe'),
+
+        svgWetPuddle: document.getElementById('svgWetPuddle'),
+        humanGroup: document.getElementById('humanGroup'),
+        humanFace: document.getElementById('humanFace'),
+        humanHeart: document.getElementById('humanHeart'),
+        heartPulseBg: document.getElementById('heartPulseBg'),
+        svgInsulGlove: document.getElementById('svgInsulGlove'),
+        svgSneakers: document.getElementById('svgSneakers'),
+        svgInsulBoots: document.getElementById('svgInsulBoots'),
+        humanFaultGuide: document.getElementById('humanFaultGuide'),
+        humanBadgeBg: document.getElementById('humanBadgeBg'),
+        humanBadgeTitle: document.getElementById('humanBadgeTitle'),
+        humanBadgeMa: document.getElementById('humanBadgeMa'),
+        humanBadgeRh: document.getElementById('humanBadgeRh'),
+
+        sparkLayer: document.getElementById('sparkLayer'),
+        particleLayer: document.getElementById('particleLayer'),
+
+        // 텔레메트리 & 분배 막대
+        valVtouch: document.getElementById('valVtouch'),
+        valIh: document.getElementById('valIh'),
+        humanSafetyBadge: document.getElementById('humanSafetyBadge'),
+        valIg: document.getElementById('valIg'),
+        valIfault: document.getElementById('valIfault'),
+        splitSummaryText: document.getElementById('splitSummaryText'),
+        splitPeBar: document.getElementById('splitPeBar'),
+        splitHumanBar: document.getElementById('splitHumanBar'),
+        splitPeText: document.getElementById('splitPeText'),
+        splitHumanText: document.getElementById('splitHumanText'),
+
+        // 컨트롤
+        btnFaultToggle: document.getElementById('btnFaultToggle'),
+        faultPill: document.getElementById('faultPill'),
+        btnPeToggle: document.getElementById('btnPeToggle'),
+        pePill: document.getElementById('pePill'),
+        reSlider: document.getElementById('reSlider'),
+        reReadout: document.getElementById('reReadout'),
+        shoeBtns: document.querySelectorAll('.shoe-btn'),
+        btnElbToggle: document.getElementById('btnElbToggle'),
+        elbPill: document.getElementById('elbPill'),
+        btnElbResetCtrl: document.getElementById('btnElbResetCtrl'),
+
+        // 퀴즈
+        quizGrid: document.getElementById('quizGrid'),
+        quizScoreText: document.getElementById('quizScoreText'),
+        btnQuizReset: document.getElementById('btnQuizReset')
+      };
+
+      /* -----------------------------------------------------------------
+       * 4. SVG 입자 풀 & 경로 보간
+       * ----------------------------------------------------------------- */
+      const MAX_PARTICLES = 56;
+      const particles = [];
+
+      function initParticlePool() {
+        el.particleLayer.innerHTML = '';
+        for (let i = 0; i < MAX_PARTICLES; i++) {
+          const g = document.createElementNS(SVG_NS, 'g');
+          g.setAttribute('opacity', '0');
+          const halo = document.createElementNS(SVG_NS, 'circle');
+          halo.setAttribute('r', '8');
+          halo.setAttribute('fill-opacity', '0.35');
+          const core = document.createElementNS(SVG_NS, 'circle');
+          core.setAttribute('r', '4.2');
+          core.setAttribute('stroke', '#ffffff');
+          core.setAttribute('stroke-width', '1.3');
+          g.appendChild(halo);
+          g.appendChild(core);
+          el.particleLayer.appendChild(g);
+          particles.push({ g, halo, core });
+        }
+      }
+
+      function pointOnPolyline(pts, t) {
+        let total = 0;
+        const lens = [];
+        for (let i = 0; i < pts.length - 1; i++) {
+          const d = Math.hypot(pts[i + 1].x - pts[i].x, pts[i + 1].y - pts[i].y);
+          lens.push(d);
+          total += d;
+        }
+        let dist = t * total;
+        for (let i = 0; i < lens.length; i++) {
+          if (dist <= lens[i] || i === lens.length - 1) {
+            const u = lens[i] === 0 ? 0 : dist / lens[i];
+            return {
+              x: pts[i].x + (pts[i + 1].x - pts[i].x) * u,
+              y: pts[i].y + (pts[i + 1].y - pts[i].y) * u
+            };
+          }
+          dist -= lens[i];
+        }
+        return pts[0];
+      }
+
+      /* -----------------------------------------------------------------
+       * 5. 물리 계산 엔진 (병렬 저항 · 분류 법칙 · ELB 0.2s 시각 트립)
+       * ----------------------------------------------------------------- */
+      function clearPendingElbTimer() {
+        if (state.elbTimer) {
+          clearTimeout(state.elbTimer);
+          state.elbTimer = null;
+        }
+        state.elbTripPending = false;
+      }
+
+      function formatCurrent(mA) {
+        if (mA >= 1000) return `${(mA / 1000).toFixed(2)} A`;
+        if (mA >= 100) return `${mA.toFixed(0)} mA`;
+        return `${mA.toFixed(1)} mA`;
+      }
+
+      function computePhysics(allowElbCheck) {
+        const rPar = state.peConnected
+          ? (state.rE * state.rH) / (state.rE + state.rH)
+          : state.rH;
+
+        const theoreticalIfaultA = state.faultActive ? V_SOURCE / (R_B + R_F + rPar) : 0;
+
+        // ELB 트립 조건: ELB ON && 누전 발생 && 총 누설전류 >= 30mA
+        if (allowElbCheck && state.elbEnabled && !state.elbTripped && state.faultActive && theoreticalIfaultA * 1000 >= 30) {
+          if (!state.elbTripPending) {
+            state.elbTripPending = true;
+            // 현실적인 0.03초 차단을 눈으로 인지할 수 있게 0.2초 연출 후 트립
+            state.elbTimer = setTimeout(() => {
+              state.elbTripPending = false;
+              if (state.elbEnabled && state.faultActive) {
+                state.elbTripped = true;
+                computePhysics(false);
+              }
+            }, 200);
+          }
+        } else if (!state.elbEnabled || !state.faultActive) {
+          clearPendingElbTimer();
+          if (!state.elbEnabled) state.elbTripped = false;
+        }
+
+        if (!state.faultActive || state.elbTripped) {
+          state.iFaultA = 0;
+          state.vTouch = 0;
+          state.iHumanMa = 0;
+          state.iGroundMa = 0;
+        } else {
+          state.iFaultA = theoreticalIfaultA;
+          state.vTouch = state.iFaultA * rPar;
+          state.iHumanMa = (state.vTouch / state.rH) * 1000;
+          state.iGroundMa = state.peConnected ? (state.vTouch / state.rE) * 1000 : 0;
+        }
+
+        // 인체 위험 단계 판정
+        if (state.iHumanMa < 1) state.humanLevel = 0;
+        else if (state.iHumanMa < 5) state.humanLevel = 1;
+        else if (state.iHumanMa < 15) state.humanLevel = 2;
+        else state.humanLevel = 3;
+
+        updateUI();
+      }
+
+      function updateUI() {
+        // 1) ELB 상태 및 배너
+        el.elbTripBanner.classList.toggle('show', state.elbTripped);
+        el.btnElbResetCtrl.style.display = state.elbTripped ? 'block' : 'none';
+
+        if (state.elbTripped) {
+          el.elbArmL.style.transform = 'rotate(-36deg)';
+          el.elbArmN.style.transform = 'rotate(-36deg)';
+          el.svgElbBody.setAttribute('stroke', '#ef4444');
+          el.svgElbBadgeBg.setAttribute('fill', '#fee2e2');
+          el.svgElbBadgeTxt.setAttribute('fill', '#dc2626');
+          el.svgElbBadgeTxt.textContent = 'TRIP!';
+          el.wireLiveAfterElb.setAttribute('stroke', '#94a3b8');
+          el.wireNeutralAfterElb.setAttribute('stroke', '#94a3b8');
+        } else {
+          el.elbArmL.style.transform = 'rotate(0deg)';
+          el.elbArmN.style.transform = 'rotate(0deg)';
+          el.svgElbBody.setAttribute('stroke', state.elbEnabled ? '#10b981' : '#64748b');
+          el.svgElbBadgeBg.setAttribute('fill', state.elbEnabled ? '#dcfce7' : '#e2e8f0');
+          el.svgElbBadgeTxt.setAttribute('fill', state.elbEnabled ? '#047857' : '#475569');
+          el.svgElbBadgeTxt.textContent = state.elbEnabled ? 'ON' : 'OFF';
+          el.wireLiveAfterElb.setAttribute('stroke', '#ef4444');
+          el.wireNeutralAfterElb.setAttribute('stroke', '#3b82f6');
+        }
+
+        // 2) 설비 누전 & 접촉전압 시각화
+        const activeFaultVisual = state.faultActive && !state.elbTripped;
+        el.faultArcGroup.setAttribute('opacity', activeFaultVisual ? '1' : '0');
+
+        const glowStrength = activeFaultVisual ? Math.min(0.85, (state.vTouch / 180) * 0.85) : 0;
+        el.enclosureGlow.setAttribute('opacity', glowStrength.toFixed(2));
+        el.enclosureRect.setAttribute('stroke', activeFaultVisual && state.vTouch > 20 ? '#ef4444' : '#475569');
+        el.vTouchSvgText.textContent = `외함 전압: ${state.vTouch.toFixed(1)} V`;
+        el.vTouchSvgText.setAttribute('fill', state.vTouch > 50 ? '#f87171' : (state.vTouch > 15 ? '#fbbf24' : '#34d399'));
+
+        // 3) 보호접지(PE) 시각화
+        if (state.peConnected) {
+          el.peWireLine.setAttribute('stroke', '#10b981');
+          el.peWireLine.setAttribute('stroke-dasharray', 'none');
+          el.peCutMark.setAttribute('opacity', '0');
+          el.peRodRect.setAttribute('fill', '#059669');
+          el.peLabelTop.setAttribute('fill', '#047857');
+          el.peLabelVal.textContent = `R_e = ${state.rE} Ω`;
+          el.peLabelVal.setAttribute('fill', '#059669');
+        } else {
+          el.peWireLine.setAttribute('stroke', '#cbd5e1');
+          el.peWireLine.setAttribute('stroke-dasharray', '6 6');
+          el.peCutMark.setAttribute('opacity', '1');
+          el.peRodRect.setAttribute('fill', '#94a3b8');
+          el.peLabelTop.setAttribute('fill', '#94a3b8');
+          el.peLabelVal.textContent = '미연결 (∞ Ω)';
+          el.peLabelVal.setAttribute('fill', '#ef4444');
+        }
+
+        // 4) 대지 귀환 가이드선 밝기
+        el.earthPathPe.setAttribute('opacity', (activeFaultVisual && state.peConnected) ? '0.85' : '0.18');
+        el.earthPathHuman.setAttribute('opacity', (activeFaultVisual && state.iHumanMa >= 0.5) ? '0.85' : '0.18');
+        el.humanFaultGuide.setAttribute('opacity', (activeFaultVisual && state.iHumanMa >= 0.5) ? '0.75' : '0');
+
+        // 5) 사람 신발/바닥 시각화
+        el.svgWetPuddle.setAttribute('opacity', state.shoeMode === 'wet' ? '1' : '0');
+        el.svgSneakers.setAttribute('opacity', state.shoeMode === 'normal' ? '1' : '0');
+        el.svgInsulBoots.setAttribute('opacity', state.shoeMode === 'insulated' ? '1' : '0');
+        el.svgInsulGlove.setAttribute('opacity', state.shoeMode === 'insulated' ? '1' : '0');
+
+        // 6) 사람 표정 & 안전 상태 배지
+        const levels = [
+          { face: '😊', title: '😊 안전 상태', badge: '🟢 안전 (미감지)', bg: '#ecfdf5', bd: '#10b981', col: '#047857' },
+          { face: '😮', title: '😮 찌릿함!', badge: '🟡 찌릿함 (주의)', bg: '#fefce8', bd: '#eab308', col: '#a16207' },
+          { face: '😣', title: '😣 근육 경련!', badge: '🟠 근육 경련 (경고)', bg: '#fff7ed', bd: '#f97316', col: '#c2410c' },
+          { face: '😵', title: '😵 치명적 감전!', badge: '🔴 치명적 감전!', bg: '#fef2f2', bd: '#ef4444', col: '#b91c1c' }
+        ];
+        const lv = levels[state.humanLevel];
+        el.humanFace.textContent = state.elbTripped ? '😌' : lv.face;
+        el.humanBadgeBg.setAttribute('fill', state.elbTripped ? '#ecfdf5' : lv.bg);
+        el.humanBadgeBg.setAttribute('stroke', state.elbTripped ? '#10b981' : lv.bd);
+        el.humanBadgeTitle.setAttribute('fill', state.elbTripped ? '#047857' : lv.col);
+        el.humanBadgeTitle.textContent = state.elbTripped ? '🛡️ 차단 보호됨!' : lv.title;
+        el.humanBadgeMa.textContent = formatCurrent(state.iHumanMa);
+        el.humanBadgeMa.setAttribute('fill', state.elbTripped ? '#059669' : lv.col);
+        el.humanBadgeRh.textContent = `R_h = ${state.rH.toLocaleString()} Ω`;
+        el.heartPulseBg.setAttribute('fill', state.elbTripped ? '#10b981' : lv.bd);
+
+        // 7) 텔레메트리 카드 4종
+        el.valVtouch.textContent = `${state.vTouch.toFixed(1)} V`;
+        el.valVtouch.style.color = state.vTouch > 50 ? '#dc2626' : (state.vTouch > 15 ? '#d97706' : '#0f172a');
+
+        el.valIh.textContent = formatCurrent(state.iHumanMa);
+        el.valIh.style.color = state.elbTripped ? '#059669' : lv.col;
+        el.humanSafetyBadge.textContent = state.elbTripped ? '🛡️ ELB 차단 안전' : lv.badge;
+        el.humanSafetyBadge.style.background = state.elbTripped ? '#dcfce7' : lv.bg;
+        el.humanSafetyBadge.style.color = state.elbTripped ? '#047857' : lv.col;
+
+        el.valIg.textContent = formatCurrent(state.iGroundMa);
+        el.valIfault.textContent = formatCurrent(state.iFaultA * 1000);
+
+        // 8) 전류 분배 비율 막대 (접지선 vs 사람)
+        const totalMa = state.iGroundMa + state.iHumanMa;
+        if (totalMa <= 0.001) {
+          el.splitPeBar.style.width = '0%';
+          el.splitPeBar.textContent = '';
+          el.splitHumanBar.style.width = '0%';
+          el.splitHumanBar.textContent = '';
+          el.splitSummaryText.textContent = state.elbTripped
+            ? 'ELB 차단 완료 (누설전류 0mA)'
+            : '누전 없음 (정상 운전)';
+          el.splitPeText.textContent = '🛡️ 보호접지선(PE): 0.0%';
+          el.splitHumanText.textContent = '🧍 사람 인체(R_h): 0.0%';
+        } else {
+          const pePct = (state.iGroundMa / totalMa) * 100;
+          const humanPct = (state.iHumanMa / totalMa) * 100;
+          el.splitPeBar.style.width = `${pePct.toFixed(2)}%`;
+          el.splitHumanBar.style.width = `${humanPct.toFixed(2)}%`;
+          el.splitPeBar.textContent = pePct >= 14 ? `PE ${pePct.toFixed(1)}%` : '';
+          el.splitHumanBar.textContent = humanPct >= 14 ? `사람 ${humanPct.toFixed(1)}%` : '';
+
+          el.splitSummaryText.textContent = state.peConnected
+            ? `분류의 법칙 작동 중 (R_e ${state.rE}Ω vs R_h ${state.rH.toLocaleString()}Ω)`
+            : '접지 없음! 누설전류 100%가 사람으로 집중!';
+          el.splitPeText.textContent = `🛡️ 보호접지선(PE): ${pePct.toFixed(2)}% (${formatCurrent(state.iGroundMa)})`;
+          el.splitHumanText.textContent = `🧍 사람 인체(R_h): ${humanPct.toFixed(2)}% (${formatCurrent(state.iHumanMa)})`;
+        }
+
+        // 9) 컨트롤 버튼 상태 동기화
+        el.btnFaultToggle.classList.toggle('on-danger', state.faultActive);
+        el.faultPill.textContent = state.faultActive ? 'ON' : 'OFF';
+
+        el.btnPeToggle.classList.toggle('on-safe', state.peConnected);
+        el.pePill.textContent = state.peConnected ? 'ON' : 'OFF';
+        el.reSlider.disabled = !state.peConnected;
+        el.reReadout.textContent = state.peConnected ? `${state.rE} Ω` : '미연결';
+
+        el.btnElbToggle.classList.toggle('on-safe', state.elbEnabled);
+        el.elbPill.textContent = state.elbEnabled ? 'ON' : 'OFF';
+
+        el.shoeBtns.forEach(b => b.classList.toggle('active', b.dataset.shoe === state.shoeMode));
+
+        el.scenarioBtns.forEach(b => {
+          b.classList.remove('active-s1', 'active-s2', 'active-s3', 'active-s4');
+          const sc = Number(b.dataset.scenario);
+          if (sc === state.activeScenario) b.classList.add(`active-s${sc}`);
+        });
+      }
+
+      /* -----------------------------------------------------------------
+       * 6. 60fps 애니메이션 루프 (입자 흐름, 인체 떨림, 스파크)
+       * ----------------------------------------------------------------- */
+      function renderSparks(t) {
+        el.sparkLayer.innerHTML = '';
+        if (state.elbTripped) return;
+
+        // 누전 발생 시 설비 접촉점/손 스파크
+        if (state.faultActive && state.humanLevel >= 1) {
+          const count = state.humanLevel === 1 ? 1 : (state.humanLevel === 2 ? 2 : 4);
+          for (let i = 0; i < count; i++) {
+            const ang = (t * 9 + i * 1.7) % (Math.PI * 2);
+            const r = 10 + state.humanLevel * 5;
+            const cx = 574;
+            const cy = 168;
+            const mx = cx + Math.cos(ang) * (r * 0.5) + Math.sin(t * 36 + i) * 4;
+            const my = cy + Math.sin(ang) * (r * 0.5) + Math.cos(t * 32 + i) * 4;
+            const ex = cx + Math.cos(ang) * r;
+            const ey = cy + Math.sin(ang) * r;
+
+            const poly = document.createElementNS(SVG_NS, 'polyline');
+            poly.setAttribute('points', `${cx},${cy} ${mx.toFixed(1)},${my.toFixed(1)} ${ex.toFixed(1)},${ey.toFixed(1)}`);
+            poly.setAttribute('fill', 'none');
+            poly.setAttribute('stroke', state.humanLevel >= 3 ? '#ef4444' : '#f97316');
+            poly.setAttribute('stroke-width', '2.4');
+            poly.setAttribute('stroke-linecap', 'round');
+            el.sparkLayer.appendChild(poly);
+          }
+        }
+      }
+
+      function animate(ts) {
+        if (!state.lastTs) state.lastTs = ts;
+        const rawDt = Math.min((ts - state.lastTs) / 1000, 0.05);
+        state.lastTs = ts;
+
+        const dt = state.paused ? 0 : (state.slowMo ? rawDt * 0.3 : rawDt);
+        state.simTime += dt;
+        const t = state.simTime;
+
+        // 1) 감전 시 인체 떨림 & 심장 박동
+        if (!state.elbTripped && state.humanLevel >= 2) {
+          const amp = state.humanLevel === 2 ? 1.8 : 3.4;
+          const dx = Math.sin(t * 50) * amp;
+          el.humanGroup.setAttribute('transform', `translate(${dx.toFixed(1)}, 0)`);
+        } else {
+          el.humanGroup.setAttribute('transform', 'translate(0, 0)');
+        }
+
+        const heartFreq = state.elbTripped ? 1.2 : (1.2 + state.humanLevel * 0.9);
+        const beat = 1 + Math.pow(Math.max(0, Math.sin(t * Math.PI * heartFreq)), 6) * 0.22;
+        el.humanHeart.setAttribute('transform', `translate(734, 186) scale(${beat.toFixed(2)})`);
+
+        // 2) 전류 입자 배치
+        let idx = 0;
+        const placeStream = (pts, count, speed, colorFn, radius) => {
+          for (let i = 0; i < count && idx < particles.length; i++) {
+            const p = particles[idx++];
+            const prog = (t * speed + i / count) % 1;
+            const pos = pointOnPolyline(pts, prog);
+            const col = typeof colorFn === 'function' ? colorFn(pos, prog) : colorFn;
+            p.g.setAttribute('opacity', '1');
+            p.g.setAttribute('transform', `translate(${pos.x.toFixed(1)}, ${pos.y.toFixed(1)})`);
+            p.halo.setAttribute('r', String(radius + 3.5));
+            p.halo.setAttribute('fill', col);
+            p.core.setAttribute('r', String(radius));
+            p.core.setAttribute('fill', col);
+          }
+        };
+
+        if (!state.elbTripped) {
+          // (A) 정상 부하 전류 (L -> 코일 -> N)
+          placeStream(PATHS.normalLoad, 8, 0.32, (pos) => (pos.y < 164 ? '#ef4444' : '#3b82f6'), 3.8);
+
+          // (B) 누전 발생 시 누설 전류 분배
+          if (state.faultActive) {
+            // 활선 -> 외함 아크 공급
+            placeStream(PATHS.faultSupply, 6, 0.65, '#ef4444', 4.5);
+
+            // PE 보호접지 경로 (접지 연결 시 대량 우회)
+            if (state.peConnected && state.iGroundMa > 1) {
+              const peCount = Math.min(18, Math.max(6, Math.round(6 + (state.iGroundMa / 1000) * 1.2)));
+              const peSpeed = Math.min(0.85, 0.35 + (state.iGroundMa / 15000) * 0.5);
+              placeStream(PATHS.peReturnLoop, peCount, peSpeed, (pos) => (pos.y > 350 ? '#d97706' : '#10b981'), 5.2);
+            }
+
+            // 사람 인체 경로 -> 대지 귀환 -> 변압기 B종 접지극
+            if (state.iHumanMa >= 0.4) {
+              const hCount = state.iHumanMa > 50 ? 14 : (state.iHumanMa > 15 ? 10 : (state.iHumanMa > 3 ? 6 : 3));
+              const hSpeed = state.iHumanMa > 50 ? 0.58 : (state.iHumanMa > 15 ? 0.44 : 0.28);
+              const hRad = state.iHumanMa > 30 ? 5.0 : 3.6;
+              placeStream(PATHS.humanReturnLoop, hCount, hSpeed, (pos) => {
+                if (pos.y > 352) return '#d97706'; // 대지 귀환 구간
+                return state.humanLevel >= 3 ? '#dc2626' : '#f97316';
+              }, hRad);
+            }
+          }
+        }
+
+        // 남는 입자 숨기기
+        while (idx < particles.length) {
+          particles[idx++].g.setAttribute('opacity', '0');
+        }
+
+        // 3) 접촉 스파크
+        renderSparks(t);
+
+        requestAnimationFrame(animate);
+      }
+
+      /* -----------------------------------------------------------------
+       * 7. 4가지 시나리오 프리셋 적용
+       * ----------------------------------------------------------------- */
+      function applyScenario(num) {
+        clearPendingElbTimer();
+        state.elbTripped = false;
+        state.activeScenario = num;
+
+        if (num === 1) {
+          // 1. 정상 운전
+          state.faultActive = false;
+          state.peConnected = true;
+          state.rE = 10;
+          state.elbEnabled = false;
+          state.rH = 2000;
+          state.shoeMode = 'normal';
+        } else if (num === 2) {
+          // 2. 누전 (접지 없음 + 맨발/젖은 바닥 -> 치명적 감전)
+          state.faultActive = true;
+          state.peConnected = false;
+          state.elbEnabled = false;
+          state.rH = 500;
+          state.shoeMode = 'wet';
+        } else if (num === 3) {
+          // 3. 누전 + 보호접지(PE, 5Ω)
+          state.faultActive = true;
+          state.peConnected = true;
+          state.rE = 5;
+          state.elbEnabled = false;
+          state.rH = 2000;
+          state.shoeMode = 'normal';
+        } else if (num === 4) {
+          // 4. 누전 + 보호접지 + 누전차단기(ELB)
+          state.faultActive = true;
+          state.peConnected = true;
+          state.rE = 5;
+          state.elbEnabled = true;
+          state.rH = 2000;
+          state.shoeMode = 'normal';
+        }
+
+        el.reSlider.value = String(state.rE);
+        computePhysics(true);
+      }
+
+      /* -----------------------------------------------------------------
+       * 8. OX 퀴즈 렌더링
+       * ----------------------------------------------------------------- */
+      function renderQuiz() {
+        el.quizGrid.innerHTML = QUIZ_DATA.map((item, qi) => {
+          const picked = state.quizAns[qi];
+          const done = picked !== null;
+          const isOk = picked === item.ans;
+
+          const oCls = done ? (item.ans === true ? 'ox-btn correct' : (picked === true ? 'ox-btn wrong' : 'ox-btn')) : 'ox-btn';
+          const xCls = done ? (item.ans === false ? 'ox-btn correct' : (picked === false ? 'ox-btn wrong' : 'ox-btn')) : 'ox-btn';
+
+          return `
+            <div class="quiz-card">
+              <div class="quiz-q">${item.q}</div>
+              <div class="ox-row">
+                <button type="button" class="${oCls}" data-q="${qi}" data-v="true" ${done ? 'disabled' : ''}>⭕ 맞다 (O)</button>
+                <button type="button" class="${xCls}" data-q="${qi}" data-v="false" ${done ? 'disabled' : ''}>❌ 틀리다 (X)</button>
+              </div>
+              <div class="quiz-fb ${done ? (isOk ? 'show ok' : 'show no') : ''}">
+                ${done ? (isOk ? item.ok : item.no) : ''}
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        el.quizGrid.querySelectorAll('.ox-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const qi = Number(btn.dataset.q);
+            const val = btn.dataset.v === 'true';
+            if (state.quizAns[qi] !== null) return;
+            state.quizAns[qi] = val;
+            renderQuiz();
+          });
+        });
+
+        const doneCount = state.quizAns.filter(v => v !== null).length;
+        const score = state.quizAns.reduce((acc, v, i) => acc + (v === QUIZ_DATA[i].ans ? 1 : 0), 0);
+        if (doneCount < 3) {
+          el.quizScoreText.textContent = `📝 3문제를 모두 풀어 보세요! (${doneCount} / 3 완료 · 현재 ${score}점)`;
+        } else if (score === 3) {
+          el.quizScoreText.textContent = '🏆 3 / 3점 만점! 설비·사람·대지 전류 흐름과 접지 원리를 완벽히 마스터하셨습니다!';
+        } else {
+          el.quizScoreText.textContent = `👍 3문제 완료! 총 ${score} / 3점입니다. 다시 도전해 볼까요?`;
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 9. 이벤트 바인딩 및 초기화
+       * ----------------------------------------------------------------- */
+      function resetElbTrip() {
+        clearPendingElbTimer();
+        state.elbTripped = false;
+        // 복구 시 누전 상태가 유지되어 바로 재트립되는 혼동을 막기 위해 누전을 해제해 안전 복구
+        state.faultActive = false;
+        state.activeScenario = 0;
+        computePhysics(false);
+      }
+
+      window.addEventListener('load', () => {
+        initParticlePool();
+
+        // 시나리오 버튼
+        el.scenarioBtns.forEach(btn => {
+          btn.addEventListener('click', () => applyScenario(Number(btn.dataset.scenario)));
+        });
+
+        // 슬로우 모션 / 일시정지
+        el.btnSlow.addEventListener('click', () => {
+          state.slowMo = !state.slowMo;
+          el.btnSlow.classList.toggle('is-slow', state.slowMo);
+          el.slowLabel.textContent = state.slowMo ? '원래 속도로 (1x)' : '천천히 보기 (0.3x)';
+        });
+
+        el.btnPause.addEventListener('click', () => {
+          state.paused = !state.paused;
+          el.btnPause.classList.toggle('is-paused', state.paused);
+          el.pauseLabel.textContent = state.paused ? '재생' : '일시정지';
+        });
+
+        // 상세 컨트롤: 설비 누전 토글
+        el.btnFaultToggle.addEventListener('click', () => {
+          state.activeScenario = 0;
+          state.faultActive = !state.faultActive;
+          if (!state.faultActive) state.elbTripped = false;
+          computePhysics(true);
+        });
+
+        // 상세 컨트롤: 보호접지(PE) 토글 & R_e 슬라이더
+        el.btnPeToggle.addEventListener('click', () => {
+          state.activeScenario = 0;
+          state.peConnected = !state.peConnected;
+          computePhysics(true);
+        });
+
+        el.reSlider.addEventListener('input', e => {
+          state.activeScenario = 0;
+          state.rE = Number(e.target.value);
+          computePhysics(true);
+        });
+
+        // 상세 컨트롤: 신발/바닥 저항 R_h
+        el.shoeBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.activeScenario = 0;
+            state.rH = Number(btn.dataset.rh);
+            state.shoeMode = btn.dataset.shoe;
+            computePhysics(true);
+          });
+        });
+
+        // 상세 컨트롤 & SVG 내 ELB 클릭 토글
+        const toggleElb = () => {
+          state.activeScenario = 0;
+          if (state.elbTripped) {
+            resetElbTrip();
+          } else {
+            state.elbEnabled = !state.elbEnabled;
+            computePhysics(true);
+          }
+        };
+        el.btnElbToggle.addEventListener('click', toggleElb);
+        el.svgElbGroup.addEventListener('click', toggleElb);
+
+        // ELB 복구 버튼
+        el.btnElbResetBanner.addEventListener('click', resetElbTrip);
+        el.btnElbResetCtrl.addEventListener('click', resetElbTrip);
+
+        // 퀴즈 리셋
+        el.btnQuizReset.addEventListener('click', () => {
+          state.quizAns = [null, null, null];
+          renderQuiz();
+        });
+
+        // 초기 실행: 1번 정상 운전
+        renderQuiz();
+        applyScenario(1);
+        requestAnimationFrame(animate);
+      });
+    })();
+  </script>
+</body>
+</html>

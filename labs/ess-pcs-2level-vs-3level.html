@@ -1,0 +1,3712 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESS PCS 동작 원리 통합 시뮬레이터 (2-Level vs 3-Level NPC)</title>
+  <style>
+    /* =====================================================================
+     * 0. 공통 리셋 및 테마 스타일
+     * ===================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background-color 0.28s ease, color 0.28s ease;
+      line-height: 1.5;
+    }
+
+    body.theme-pro {
+      background-color: #070d19;
+      background-image:
+        linear-gradient(rgba(30, 58, 138, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30, 58, 138, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      color: #e2e8f0;
+    }
+
+    body.theme-edu {
+      background-color: #f0f7ff;
+      background-image:
+        radial-gradient(circle at 10% 8%, rgba(147, 197, 253, 0.36) 0%, transparent 32%),
+        radial-gradient(circle at 90% 15%, rgba(167, 243, 208, 0.4) 0%, transparent 35%),
+        radial-gradient(circle at 50% 95%, rgba(254, 240, 138, 0.34) 0%, transparent 40%);
+      color: #1e293b;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* =====================================================================
+     * 1. 상단 통합 네비게이션 바 (전문가용 <-> 일반용)
+     * ===================================================================== */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: background-color 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+    }
+
+    body.theme-pro .top-nav {
+      background: rgba(10, 18, 34, 0.92);
+      border-bottom-color: #1e293b;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+    }
+
+    body.theme-edu .top-nav {
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom-color: #dbeafe;
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.08);
+    }
+
+    .top-nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 11px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    body.theme-pro .brand-logo {
+      background: linear-gradient(135deg, #06b6d4, #2563eb);
+      box-shadow: 0 0 14px rgba(6, 182, 212, 0.4);
+    }
+
+    body.theme-edu .brand-logo {
+      background: linear-gradient(135deg, #60a5fa, #34d399);
+      box-shadow: 0 6px 14px rgba(59, 130, 246, 0.25);
+    }
+
+    .brand-title {
+      font-size: clamp(0.98rem, 2vw, 1.18rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    body.theme-pro .brand-title { color: #f8fafc; }
+    body.theme-edu .brand-title { color: #0f172a; }
+
+    .brand-sub {
+      font-size: 0.74rem;
+      font-weight: 600;
+    }
+
+    body.theme-pro .brand-sub { color: #38bdf8; }
+    body.theme-edu .brand-sub { color: #64748b; }
+
+    .mode-switcher {
+      display: inline-flex;
+      padding: 4px;
+      border-radius: 14px;
+      gap: 4px;
+    }
+
+    body.theme-pro .mode-switcher {
+      background: #0f172a;
+      border: 1.5px solid #334155;
+    }
+
+    body.theme-edu .mode-switcher {
+      background: #eff6ff;
+      border: 1.5px solid #bfdbfe;
+    }
+
+    .switch-tab {
+      appearance: none;
+      border: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 800;
+      padding: 9px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    body.theme-pro .switch-tab { color: #94a3b8; }
+    body.theme-pro .switch-tab:hover { color: #e2e8f0; }
+    body.theme-pro .switch-tab.active {
+      background: linear-gradient(135deg, #0891b2, #2563eb);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(6, 182, 212, 0.35);
+    }
+
+    body.theme-edu .switch-tab { color: #475569; }
+    body.theme-edu .switch-tab:hover { color: #1e293b; }
+    body.theme-edu .switch-tab.active {
+      background: linear-gradient(135deg, #3b82f6, #10b981);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.28);
+    }
+
+    .view-panel {
+      display: none;
+      animation: fadeSlideIn 0.25s ease;
+    }
+    .view-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* =====================================================================
+     * 2. [전문가용 SCADA 모드] 스타일 (.pro-*)
+     * ===================================================================== */
+    .pro-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 16px 16px 52px;
+    }
+
+    /* 8종 텔레메트리 바 */
+    .pro-telemetry-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 9px;
+      margin-bottom: 16px;
+    }
+
+    .pro-tele-card {
+      background: linear-gradient(180deg, #111c33 0%, #0b1324 100%);
+      border: 1px solid #1e293b;
+      border-radius: 13px;
+      padding: 10px 11px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 4px;
+    }
+
+    .pro-tele-label {
+      font-size: 0.67rem;
+      font-weight: 700;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .pro-tele-val {
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: #38bdf8;
+      white-space: nowrap;
+    }
+
+    .pro-tele-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .pro-panel {
+      background: linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
+      border: 1px solid #1e293b;
+      border-radius: 18px;
+      padding: 17px 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.34);
+    }
+
+    .pro-panel-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 13px;
+    }
+
+    .pro-panel-title {
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pro-badge {
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(6, 182, 212, 0.14);
+      color: #22d3ee;
+      border: 1px solid rgba(6, 182, 212, 0.35);
+    }
+
+    /* 토폴로지 전환 바 (전문가용) */
+    .pro-topo-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .pro-topo-btn {
+      appearance: none;
+      background: #0d1629;
+      border: 1.8px solid #26354f;
+      border-radius: 13px;
+      padding: 12px 15px;
+      color: #cbd5e1;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .pro-topo-btn:hover {
+      border-color: #38bdf8;
+      background: #13203a;
+    }
+
+    .pro-topo-btn strong {
+      display: block;
+      font-size: 0.94rem;
+      color: #f8fafc;
+      margin-bottom: 2px;
+    }
+
+    .pro-topo-btn span {
+      font-size: 0.76rem;
+      color: #94a3b8;
+    }
+
+    .pro-topo-chip {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 9px;
+      border-radius: 8px;
+      background: #1e293b;
+      color: #94a3b8;
+      white-space: nowrap;
+    }
+
+    .pro-topo-btn.active-2l {
+      background: rgba(14, 165, 233, 0.16);
+      border-color: #38bdf8;
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.22);
+    }
+    .pro-topo-btn.active-2l .pro-topo-chip {
+      background: #0284c7;
+      color: #ffffff;
+    }
+
+    .pro-topo-btn.active-3l {
+      background: rgba(168, 85, 247, 0.18);
+      border-color: #c084fc;
+      box-shadow: 0 0 18px rgba(192, 132, 252, 0.25);
+    }
+    .pro-topo-btn.active-3l .pro-topo-chip {
+      background: #9333ea;
+      color: #ffffff;
+    }
+
+    /* 운전 모드 4버튼 */
+    .pro-mode-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .pro-mode-btn {
+      appearance: none;
+      background: #111c33;
+      border: 1.5px solid #26354f;
+      border-radius: 13px;
+      padding: 11px 13px;
+      color: #cbd5e1;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .pro-mode-btn:hover {
+      border-color: #38bdf8;
+      background: #16233d;
+    }
+
+    .pro-mode-btn strong {
+      font-size: 0.9rem;
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .pro-mode-btn span {
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+
+    .pro-mode-btn.active-charge {
+      background: rgba(6, 182, 212, 0.16);
+      border-color: #06b6d4;
+      box-shadow: 0 0 16px rgba(6, 182, 212, 0.22);
+    }
+    .pro-mode-btn.active-discharge {
+      background: rgba(16, 185, 129, 0.16);
+      border-color: #10b981;
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.22);
+    }
+    .pro-mode-btn.active-ups {
+      background: rgba(245, 158, 11, 0.16);
+      border-color: #f59e0b;
+      box-shadow: 0 0 16px rgba(245, 158, 11, 0.24);
+    }
+    .pro-mode-btn.active-standby {
+      background: rgba(100, 116, 139, 0.22);
+      border-color: #94a3b8;
+    }
+
+    .pro-ctrl-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 15px;
+      background: #080f1d;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+    }
+
+    .pro-slider-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 11px;
+      flex: 1 1 300px;
+    }
+
+    .pro-slider {
+      flex: 1;
+      min-width: 140px;
+      max-width: 280px;
+      height: 8px;
+      border-radius: 999px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: linear-gradient(90deg, #0ea5e9, #10b981, #f59e0b);
+      outline: none;
+      cursor: pointer;
+    }
+
+    .pro-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f8fafc;
+      border: 3px solid #06b6d4;
+      box-shadow: 0 0 10px rgba(6, 182, 212, 0.6);
+      cursor: pointer;
+    }
+
+    .pro-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pro-action-btn {
+      appearance: none;
+      background: #131f38;
+      border: 1px solid #334155;
+      color: #e2e8f0;
+      font-family: inherit;
+      font-size: 0.81rem;
+      font-weight: 700;
+      padding: 8px 13px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.16s ease;
+    }
+
+    .pro-action-btn:hover {
+      border-color: #38bdf8;
+      background: #1a2a4a;
+    }
+
+    .pro-action-btn.is-paused {
+      border-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+    }
+
+    .pro-svg-box {
+      width: 100%;
+      background: #060b16;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 8px;
+      overflow: hidden;
+    }
+
+    #proScadaSvg {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+
+    /* 3채널 오실로스코프 */
+    .pro-scope-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .pro-scope-card {
+      background: #080f1d;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .pro-scope-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      font-size: 0.81rem;
+      font-weight: 800;
+      color: #e2e8f0;
+    }
+
+    .pro-scope-canvas-wrap {
+      width: 100%;
+      height: 150px;
+      background: #040812;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .pro-scope-canvas-wrap canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .pro-scope-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.73rem;
+      color: #94a3b8;
+    }
+
+    .leg-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .leg-swatch {
+      width: 10px;
+      height: 3px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    /* 4단계 공학 해설 */
+    .pro-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 11px;
+    }
+
+    .pro-step-card {
+      background: #0a1324;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .pro-step-tag {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.71rem;
+      font-weight: 800;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+    }
+
+    .pro-step-card h4 {
+      font-size: 0.89rem;
+      font-weight: 800;
+      color: #f8fafc;
+    }
+
+    .pro-step-card p {
+      font-size: 0.79rem;
+      color: #94a3b8;
+      line-height: 1.54;
+    }
+
+    /* 2-Level vs 3-Level 공학 비교표 */
+    .pro-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid #1e293b;
+    }
+
+    .pro-comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      min-width: 620px;
+    }
+
+    .pro-comp-table th,
+    .pro-comp-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid #1e293b;
+      text-align: left;
+    }
+
+    .pro-comp-table th {
+      background: #0b1324;
+      color: #cbd5e1;
+      font-weight: 800;
+    }
+
+    .pro-comp-table td {
+      color: #94a3b8;
+      background: #070e1c;
+    }
+
+    .pro-comp-table td:first-child {
+      color: #e2e8f0;
+      font-weight: 700;
+      width: 22%;
+    }
+
+    .pro-comp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .col-highlight-2l {
+      background: rgba(14, 165, 233, 0.12) !important;
+      color: #e0f2fe !important;
+      border-left: 1px solid rgba(56, 189, 248, 0.35);
+      border-right: 1px solid rgba(56, 189, 248, 0.35);
+    }
+
+    .col-highlight-3l {
+      background: rgba(168, 85, 247, 0.14) !important;
+      color: #f3e8ff !important;
+      border-left: 1px solid rgba(192, 132, 252, 0.38);
+      border-right: 1px solid rgba(192, 132, 252, 0.38);
+    }
+
+    /* =====================================================================
+     * 3. [일반용 전기 변신 마법사] 스타일 (.edu-*)
+     * ===================================================================== */
+    .edu-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 16px 52px;
+    }
+
+    .edu-hero {
+      background: linear-gradient(135deg, #ffffff 0%, #eff6ff 55%, #ecfdf5 100%);
+      border: 2px solid #dceafe;
+      border-radius: 24px;
+      padding: 18px 22px;
+      box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.09);
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .edu-hero-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .edu-hero-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #60a5fa, #34d399);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      box-shadow: 0 8px 16px rgba(59, 130, 246, 0.24);
+      flex-shrink: 0;
+    }
+
+    .edu-hero-title {
+      font-size: clamp(1.18rem, 2.4vw, 1.52rem);
+      font-weight: 900;
+      color: #0f172a;
+    }
+
+    .edu-hero-sub {
+      font-size: 0.89rem;
+      color: #526580;
+      margin-top: 2px;
+    }
+
+    .edu-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .edu-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 1.5px solid transparent;
+    }
+
+    .edu-card {
+      background: #ffffff;
+      border: 2px solid #dceafe;
+      border-radius: 24px;
+      padding: 19px 20px;
+      box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.09);
+      margin-bottom: 18px;
+    }
+
+    .edu-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .edu-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .edu-hint {
+      font-size: 0.79rem;
+      font-weight: 700;
+      color: #2563eb;
+      background: #eff6ff;
+      border: 1.5px solid #bfdbfe;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    /* 일반용 2레벨 vs 3레벨 전환 버튼 */
+    .edu-topo-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .edu-topo-btn {
+      appearance: none;
+      background: #f8fafc;
+      border: 2.5px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 13px 15px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      transition: all 0.2s ease;
+    }
+
+    .edu-topo-btn:hover {
+      transform: translateY(-2px);
+      border-color: #93c5fd;
+      background: #ffffff;
+    }
+
+    .edu-topo-btn strong {
+      display: block;
+      font-size: 0.96rem;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+
+    .edu-topo-btn span {
+      font-size: 0.79rem;
+      color: #526580;
+    }
+
+    .edu-topo-tag {
+      font-size: 0.73rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      color: #475569;
+      white-space: nowrap;
+    }
+
+    .edu-topo-btn.active-2l {
+      background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+      border-color: #3b82f6;
+      box-shadow: 0 8px 18px rgba(59, 130, 246, 0.18);
+    }
+    .edu-topo-btn.active-2l .edu-topo-tag {
+      background: #3b82f6;
+      color: #ffffff;
+    }
+
+    .edu-topo-btn.active-3l {
+      background: linear-gradient(135deg, #faf5ff, #ecfdf5);
+      border-color: #8b5cf6;
+      box-shadow: 0 8px 18px rgba(139, 92, 246, 0.2);
+    }
+    .edu-topo-btn.active-3l .edu-topo-tag {
+      background: #8b5cf6;
+      color: #ffffff;
+    }
+
+    .edu-mode-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 11px;
+      margin-bottom: 14px;
+    }
+
+    .edu-mode-btn {
+      appearance: none;
+      background: #f8fafc;
+      border: 2.5px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 13px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+
+    .edu-mode-btn:hover {
+      transform: translateY(-2px);
+      border-color: #93c5fd;
+      background: #ffffff;
+    }
+
+    .edu-mode-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .edu-mode-name {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .edu-mode-tag {
+      font-size: 0.71rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .edu-mode-desc {
+      font-size: 0.79rem;
+      color: #526580;
+      line-height: 1.4;
+    }
+
+    .edu-mode-btn.active-charge {
+      background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+      border-color: #3b82f6;
+      box-shadow: 0 8px 16px rgba(59, 130, 246, 0.18);
+    }
+    .edu-mode-btn.active-discharge {
+      background: linear-gradient(135deg, #ecfdf5, #fefce8);
+      border-color: #10b981;
+      box-shadow: 0 8px 16px rgba(16, 185, 129, 0.18);
+    }
+    .edu-mode-btn.active-ups {
+      background: linear-gradient(135deg, #fff7ed, #fef2f2);
+      border-color: #f97316;
+      box-shadow: 0 8px 16px rgba(249, 115, 22, 0.2);
+    }
+    .edu-mode-btn.active-standby {
+      background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+      border-color: #64748b;
+    }
+
+    .edu-ctrl-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 13px 15px;
+      background: #f8fbff;
+      border: 2px dashed #cbd5e1;
+      border-radius: 16px;
+    }
+
+    .edu-power-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .edu-power-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #334155;
+      font-family: inherit;
+      font-size: 0.83rem;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .edu-power-btn.active {
+      background: #3b82f6;
+      border-color: #2563eb;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.28);
+    }
+
+    .edu-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .edu-ctrl-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.83rem;
+      font-weight: 700;
+      padding: 7px 13px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.16s ease;
+    }
+
+    .edu-ctrl-btn:hover {
+      border-color: #60a5fa;
+      background: #eff6ff;
+    }
+
+    .edu-ctrl-btn.is-slow {
+      background: #fef3c7;
+      border-color: #f59e0b;
+      color: #b45309;
+    }
+
+    .edu-ctrl-btn.is-paused {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #b91c1c;
+    }
+
+    .edu-stage-wrap {
+      position: relative;
+      width: 100%;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 55%, #f0fdf4 100%);
+      border: 2px solid #dbeafe;
+      overflow: hidden;
+      padding: 8px;
+    }
+
+    #eduStageSvg {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+
+    .clickable-part {
+      cursor: pointer;
+      transition: filter 0.18s ease;
+    }
+    .clickable-part:hover {
+      filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.45));
+    }
+
+    @keyframes blinkAlert {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.25; }
+    }
+    .alert-blink {
+      animation: blinkAlert 0.9s ease-in-out infinite;
+    }
+
+    .edu-scope-grid,
+    .edu-story-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 13px;
+    }
+
+    .edu-quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px;
+    }
+
+    .edu-scope-card {
+      background: #f8fbff;
+      border: 2px solid #dbeafe;
+      border-radius: 18px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .edu-scope-card.scope-pwm {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+    }
+    .edu-scope-card.scope-dc {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+
+    .edu-canvas-box {
+      width: 100%;
+      height: 130px;
+      background: #ffffff;
+      border-radius: 14px;
+      border: 1.5px solid #e2e8f0;
+      overflow: hidden;
+    }
+
+    .edu-canvas-box canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .edu-story-step {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 15px;
+    }
+
+    .edu-step-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .edu-story-step h3 {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .edu-story-step p {
+      font-size: 0.84rem;
+      color: #526580;
+      line-height: 1.55;
+    }
+
+    .edu-quiz-item {
+      background: #f8fbff;
+      border: 2px solid #dbeafe;
+      border-radius: 18px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 11px;
+    }
+
+    .edu-quiz-q {
+      font-size: 0.89rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.48;
+    }
+
+    .edu-quiz-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .edu-quiz-btn {
+      appearance: none;
+      width: 100%;
+      text-align: left;
+      padding: 9px 12px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.83rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .edu-quiz-btn:hover:not(:disabled) {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    .edu-quiz-btn.correct {
+      background: #dcfce7;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .edu-quiz-btn.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .edu-quiz-fb {
+      font-size: 0.79rem;
+      line-height: 1.45;
+      padding: 9px 11px;
+      border-radius: 11px;
+      display: none;
+      font-weight: 600;
+    }
+
+    .edu-quiz-fb.show { display: block; }
+    .edu-quiz-fb.fb-ok { background: #ecfdf5; color: #065f46; border: 1.5px solid #a7f3d0; }
+    .edu-quiz-fb.fb-no { background: #fff1f2; color: #9f1239; border: 1.5px solid #fecdd3; }
+
+    .edu-score-bar {
+      margin-top: 15px;
+      padding: 13px 17px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+      border: 2px solid #bfdbfe;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .edu-score-bar.perfect {
+      background: linear-gradient(135deg, #fef9c3, #dcfce7, #dbeafe);
+      border-color: #f59e0b;
+      box-shadow: 0 8px 20px rgba(245, 158, 11, 0.22);
+    }
+
+    /* 글로벌 토스트 & 교육용 모달 */
+    .global-toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(24px);
+      background: rgba(15, 23, 42, 0.94);
+      color: #ffffff;
+      border: 1px solid rgba(56, 189, 248, 0.42);
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s ease;
+      z-index: 120;
+      white-space: nowrap;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    }
+    .global-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.48);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 110;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      background: #ffffff;
+      border: 3px solid #bfdbfe;
+      border-radius: 26px;
+      max-width: 450px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 24px 48px rgba(15, 23, 42, 0.24);
+      transform: scale(0.92);
+      transition: transform 0.2s ease;
+      text-align: center;
+      color: #1e293b;
+    }
+
+    .modal-backdrop.open .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-close-btn {
+      appearance: none;
+      border: none;
+      background: linear-gradient(135deg, #3b82f6, #10b981);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.94rem;
+      font-weight: 800;
+      padding: 11px 28px;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+
+    /* =====================================================================
+     * 4. 반응형 미디어 쿼리
+     * ===================================================================== */
+    @media (max-width: 1140px) {
+      .pro-telemetry-grid { grid-template-columns: repeat(4, 1fr); }
+      .pro-steps-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 920px) {
+      .pro-mode-row,
+      .edu-mode-grid { grid-template-columns: repeat(2, 1fr); }
+      .pro-scope-grid,
+      .edu-scope-grid,
+      .edu-story-grid,
+      .edu-quiz-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .top-nav-inner { justify-content: center; }
+      .mode-switcher { width: 100%; }
+      .switch-tab { flex: 1; justify-content: center; padding: 9px 10px; font-size: 0.8rem; }
+      .pro-telemetry-grid { grid-template-columns: repeat(2, 1fr); }
+      .pro-topo-row,
+      .edu-topo-row,
+      .pro-mode-row,
+      .edu-mode-grid,
+      .pro-steps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="theme-pro">
+
+  <!-- ================================================================= -->
+  <!-- 상단 통합 네비게이션 바 (전문가용 <-> 일반용 즉시 전환) -->
+  <!-- ================================================================= -->
+  <nav class="top-nav" aria-label="시뮬레이터 모드 선택">
+    <div class="top-nav-inner">
+      <div class="brand-group">
+        <div class="brand-logo" aria-hidden="true">⚡</div>
+        <div>
+          <div class="brand-title">ESS PCS 동작 원리 시뮬레이터 (2-Level · 3-Level NPC)</div>
+          <div id="navSubCaption" class="brand-sub">Industrial SCADA · 2-Level vs 3-Level NPC Topology Monitor</div>
+        </div>
+      </div>
+
+      <div class="mode-switcher" role="tablist">
+        <button id="tabPro" type="button" class="switch-tab active" role="tab" aria-selected="true" data-view="pro">
+          <span>🏭</span>
+          <span>전문가용 (SCADA 모드)</span>
+        </button>
+        <button id="tabEdu" type="button" class="switch-tab" role="tab" aria-selected="false" data-view="edu">
+          <span>💡</span>
+          <span>일반용 (전기 변신 마법사)</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================================= -->
+  <!-- [1] 전문가용 SCADA 모드 (#viewPro) -->
+  <!-- ================================================================= -->
+  <main id="viewPro" class="view-panel active">
+    <div class="pro-wrap">
+      <!-- 1-1. 실시간 8종 텔레메트리 바 -->
+      <section class="pro-telemetry-grid" aria-label="실시간 SCADA 텔레메트리">
+        <div class="pro-tele-card">
+          <span class="pro-tele-label">운전 모드 (STATUS)</span>
+          <div class="pro-tele-status mono" style="color:#22d3ee;">
+            <span id="proTeleDot" class="status-dot" style="background:#06b6d4; box-shadow:0 0 8px #06b6d4;"></span>
+            <span id="proTeleStatusText">RUN · CHG</span>
+          </div>
+        </div>
+        <div class="pro-tele-card">
+          <span class="pro-tele-label">토폴로지 (TOPOLOGY)</span>
+          <div id="proTeleTopo" class="pro-tele-val mono" style="color:#38bdf8;">2-LEVEL</div>
+        </div>
+        <div class="pro-tele-card">
+          <span class="pro-tele-label">유효전력 (OUTPUT)</span>
+          <div id="proTelePower" class="pro-tele-val mono">-250.0 kW</div>
+        </div>
+        <div class="pro-tele-card">
+          <span class="pro-tele-label">배터리 SOC</span>
+          <div id="proTeleSoc" class="pro-tele-val mono" style="color:#34d399;">50.0 %</div>
+        </div>
+        <div class="pro-tele-card">
+          <span class="pro-tele-label">변환 효율 (EFF)</span>
+          <div id="proTeleEff" class="pro-tele-val mono" style="color:#fbbf24;">97.2 %</div>
+        </div>
+        <div class="pro-tele-card">
+          <span class="pro-tele-label">전류 왜율 (THD)</span>
+          <div id="proTeleThd" class="pro-tele-val mono" style="color:#f472b6;">3.8 %</div>
+        </div>
+        <div class="pro-tele-card">
+          <span class="pro-tele-label">계통 전압/주파수</span>
+          <div id="proTeleGridV" class="pro-tele-val mono">380V / 60Hz</div>
+        </div>
+        <div class="pro-tele-card">
+          <span class="pro-tele-label">스위칭 주파수 (f_sw)</span>
+          <div id="proTeleFreq" class="pro-tele-val mono" style="color:#c084fc;">10.0 kHz</div>
+        </div>
+      </section>
+
+      <!-- 1-2. 토폴로지 선택 + 운전 모드 & 출력 제어 패널 -->
+      <section class="pro-panel">
+        <div class="pro-panel-head">
+          <h2 class="pro-panel-title">🎛️ 토폴로지 (2-Level vs 3-Level NPC) 및 운전 제어</h2>
+          <span id="proSpecBadge" class="pro-badge mono">2-Level 6-IGBT · 380V / 500kW PCS</span>
+        </div>
+
+        <!-- 토폴로지 전환 토글 -->
+        <div class="pro-topo-row">
+          <button type="button" class="pro-topo-btn active-2l" data-topo="2level">
+            <div>
+              <strong>⚡ 2-Level (2단 스위칭 · 6-IGBT)</strong>
+              <span>단일 DC Link 커패시터 · +Vdc/2 ↔ -Vdc/2 2단 출력 (구조 단순)</span>
+            </div>
+            <span class="pro-topo-chip mono">EFF ~97.2% · THD ~3.8%</span>
+          </button>
+          <button type="button" class="pro-topo-btn" data-topo="3level">
+            <div>
+              <strong>🔷 3-Level NPC (3단 스위칭 · 12-IGBT + 클램핑 다이오드)</strong>
+              <span>분할 DC Link (중성점 N=0V) · +Vdc/2 ↔ 0V ↔ -Vdc/2 3단 출력 (고효율·저왜율)</span>
+            </div>
+            <span class="pro-topo-chip mono">EFF ~98.6% · THD ~1.6%</span>
+          </button>
+        </div>
+
+        <!-- 운전 모드 4버튼 -->
+        <div class="pro-mode-row">
+          <button type="button" class="pro-mode-btn" data-pro-mode="charge">
+            <strong>충전 운전 (정류) <span class="mono" style="color:#22d3ee;">AC→DC</span></strong>
+            <span>계통 AC 전력을 정류하여 배터리에 저장</span>
+          </button>
+          <button type="button" class="pro-mode-btn" data-pro-mode="discharge">
+            <strong>방전 운전 (인버터) <span class="mono" style="color:#34d399;">DC→AC</span></strong>
+            <span>배터리 DC를 계통 동기화 AC로 역변환</span>
+          </button>
+          <button type="button" class="pro-mode-btn" data-pro-mode="ups">
+            <strong>비상/독립 운전 <span class="mono" style="color:#fbbf24;">UPS</span></strong>
+            <span>계통 정전 시 CB 개방 후 수용가 단독 공급</span>
+          </button>
+          <button type="button" class="pro-mode-btn" data-pro-mode="standby">
+            <strong>대기 운전 <span class="mono" style="color:#94a3b8;">STANDBY</span></strong>
+            <span>IGBT 게이트 차단 및 계통 감시 대기</span>
+          </button>
+        </div>
+
+        <!-- 출력 슬라이더 및 액션 -->
+        <div class="pro-ctrl-bar">
+          <div class="pro-slider-box">
+            <label for="proPowerSlider" style="font-size:0.83rem; font-weight:700; color:#cbd5e1;">유효전력 지령 (P_ref):</label>
+            <input id="proPowerSlider" class="pro-slider" type="range" min="10" max="500" step="10" value="250" />
+            <span id="proPowerReadout" class="pro-badge mono" style="min-width:84px; text-align:center;">250 kW</span>
+          </div>
+          <div class="pro-btn-group">
+            <button id="proBtnPause" type="button" class="pro-action-btn">
+              <span>⏸️</span><span id="proPauseLabel">일시정지</span>
+            </button>
+            <button id="proBtnResetSoc" type="button" class="pro-action-btn">
+              <span>🔄</span><span>SOC 50% 초기화</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1-3. 인터랙티브 SCADA 단선 계통도 (SVG + 60fps) -->
+      <section class="pro-panel">
+        <div class="pro-panel-head">
+          <h2 class="pro-panel-title">⚡ 실시간 ESS PCS 전력 변환 단선 계통도 (SCADA SLD)</h2>
+          <span id="proFlowBadge" class="pro-badge mono">FLOW: GRID → LCL → 2-LEVEL IGBT → DC-LINK → BATT</span>
+        </div>
+
+        <div class="pro-svg-box">
+          <svg id="proScadaSvg" viewBox="0 0 1120 435" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="proBatFill" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#059669" />
+                <stop offset="70%" stop-color="#10b981" />
+                <stop offset="100%" stop-color="#34d399" />
+              </linearGradient>
+              <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- 구역 라벨 -->
+            <text x="86" y="26" text-anchor="middle" fill="#64748b" font-size="11" font-weight="700" class="mono">AC UTILITY GRID</text>
+            <text id="proSvgPcsTitle" x="590" y="26" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="800" class="mono">POWER CONVERSION SYSTEM (2-LEVEL 6-IGBT)</text>
+            <text x="1000" y="26" text-anchor="middle" fill="#34d399" font-size="11" font-weight="700" class="mono">ESS BATTERY BANK</text>
+
+            <!-- 주요 전력 버스 -->
+            <path id="proWireGridCb" d="M 140 158 L 196 158" stroke="#0ea5e9" stroke-width="5" fill="none" />
+            <path id="proWireCbBus" d="M 260 158 L 300 158" stroke="#0ea5e9" stroke-width="5" fill="none" />
+            <path id="proWireBusLoad" d="M 300 158 L 300 324 L 208 324" stroke="#0ea5e9" stroke-width="5" stroke-linejoin="round" fill="none" />
+            <path id="proWireBusLcl" d="M 300 158 L 366 158" stroke="#0ea5e9" stroke-width="5" fill="none" />
+            <path id="proWireLclIgbt" d="M 476 158 L 520 158" stroke="#38bdf8" stroke-width="5" fill="none" />
+            <path id="proWireIgbtDc" d="M 712 158 L 754 158" stroke="#10b981" stroke-width="5" fill="none" />
+            <path id="proWireDcBat" d="M 848 158 L 902 158" stroke="#10b981" stroke-width="5" fill="none" />
+            <!-- 3-Level 중성점 클램프선 (3-Level일 때만 표시) -->
+            <path id="proWireNeutralClamp" d="M 754 198 L 712 198" stroke="#c084fc" stroke-width="3" stroke-dasharray="4 3" fill="none" opacity="0" />
+
+            <circle id="proAcBusNode" cx="300" cy="158" r="7" fill="#06b6d4" stroke="#0f172a" stroke-width="2.5" />
+
+            <!-- 1. 전력 계통 (송전탑) -->
+            <g>
+              <rect id="proGridBox" x="22" y="54" width="118" height="176" rx="14" fill="#0f172a" stroke="#1e3a5f" stroke-width="2" />
+              <text x="81" y="76" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="800">전력 계통 (KEPCO)</text>
+              <g id="proTowerVec" transform="translate(51, 88)" stroke="#38bdf8" stroke-width="2.4" fill="none" stroke-linecap="round">
+                <path d="M 30 4 L 12 84" /><path d="M 30 4 L 48 84" />
+                <path d="M 6 24 L 54 24" /><path d="M 9 48 L 51 48" />
+                <path d="M 18 48 L 42 24" /><path d="M 42 48 L 18 24" />
+                <path d="M 14 76 L 46 48" /><path d="M 46 76 L 14 48" />
+                <line x1="6" y1="84" x2="54" y2="84" />
+              </g>
+              <rect id="proGridTagBg" x="36" y="192" width="90" height="24" rx="6" fill="rgba(6,182,212,0.16)" stroke="#06b6d4" stroke-width="1" />
+              <text id="proGridTagText" x="81" y="208" text-anchor="middle" fill="#22d3ee" font-size="10.5" font-weight="800" class="mono">380V 60Hz</text>
+            </g>
+
+            <!-- 2. 연계 차단기 (CB-01) -->
+            <g transform="translate(196, 158)">
+              <rect x="-4" y="-38" width="70" height="76" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.8" />
+              <text x="31" y="-21" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="800" class="mono">CB-01</text>
+              <circle cx="8" cy="0" r="4.5" fill="#64748b" />
+              <circle cx="54" cy="0" r="4.5" fill="#64748b" />
+              <line id="proCbArm" x1="8" y1="0" x2="54" y2="0" stroke="#10b981" stroke-width="4.5" stroke-linecap="round"
+                    style="transform-origin: 8px 0px; transition: transform 0.3s ease, stroke 0.25s;" />
+              <text id="proCbText" x="31" y="26" text-anchor="middle" fill="#34d399" font-size="10" font-weight="800" class="mono">CLOSED</text>
+            </g>
+
+            <!-- 3. 수용가 부하 -->
+            <g>
+              <rect x="22" y="258" width="186" height="150" rx="14" fill="#0f172a" stroke="#1e3a5f" stroke-width="2" />
+              <text x="115" y="280" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="800">수용가 부하 (공장 · 빌딩)</text>
+              <g transform="translate(44, 296)">
+                <rect x="0" y="6" width="50" height="64" rx="4" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+                <rect x="8" y="15" width="10" height="10" rx="2" fill="#38bdf8" />
+                <rect x="30" y="15" width="10" height="10" rx="2" fill="#38bdf8" />
+                <rect x="8" y="32" width="10" height="10" rx="2" fill="#38bdf8" />
+                <rect x="30" y="32" width="10" height="10" rx="2" fill="#38bdf8" />
+                <rect x="8" y="49" width="10" height="10" rx="2" fill="#38bdf8" />
+                <rect x="30" y="49" width="10" height="10" rx="2" fill="#38bdf8" />
+                <path d="M 62 70 L 62 28 L 86 16 L 86 28 L 110 16 L 110 28 L 136 16 L 136 70 Z" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+                <rect x="72" y="40" width="16" height="14" rx="2" fill="#fbbf24" />
+                <rect x="104" y="40" width="16" height="14" rx="2" fill="#fbbf24" />
+              </g>
+              <text id="proLoadStatus" x="115" y="392" text-anchor="middle" fill="#38bdf8" font-size="10.5" font-weight="800" class="mono">LOAD POWERED (AC)</text>
+            </g>
+
+            <!-- 4. PCS 내부 외곽 -->
+            <rect id="proPcsFrame" x="342" y="40" width="530" height="370" rx="18" fill="rgba(15, 23, 42, 0.74)" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="7 4" />
+
+            <!-- 4-1. LCL 필터 -->
+            <g transform="translate(366, 92)">
+              <rect x="0" y="0" width="110" height="132" rx="12" fill="#0b1324" stroke="#334155" stroke-width="1.8" />
+              <text x="55" y="22" text-anchor="middle" fill="#38bdf8" font-size="11.5" font-weight="800" class="mono">LCL FILTER</text>
+              <text x="55" y="37" text-anchor="middle" fill="#94a3b8" font-size="9.5">고조파 저감 필터</text>
+              <path d="M 10 66 q 6 -13 12 0 q 6 -13 12 0 q 6 -13 12 0" stroke="#38bdf8" stroke-width="2.5" fill="none" />
+              <path d="M 64 66 q 6 -13 12 0 q 6 -13 12 0 q 6 -13 12 0" stroke="#38bdf8" stroke-width="2.5" fill="none" />
+              <line x1="46" y1="66" x2="64" y2="66" stroke="#38bdf8" stroke-width="2.2" />
+              <line x1="55" y1="66" x2="55" y2="84" stroke="#38bdf8" stroke-width="2" />
+              <line x1="43" y1="84" x2="67" y2="84" stroke="#22d3ee" stroke-width="2.5" />
+              <line x1="43" y1="92" x2="67" y2="92" stroke="#22d3ee" stroke-width="2.5" />
+              <line x1="55" y1="92" x2="55" y2="106" stroke="#64748b" stroke-width="2" />
+              <line x1="47" y1="106" x2="63" y2="106" stroke="#64748b" stroke-width="2" />
+              <text id="proFilterThdTxt" x="55" y="122" text-anchor="middle" fill="#f472b6" font-size="9.5" font-weight="800" class="mono">THD ~3.8%</text>
+            </g>
+
+            <!-- 4-2A. [2-Level] 6-IGBT 3상 풀브릿지 -->
+            <g id="proSw2L" transform="translate(520, 66)">
+              <rect x="0" y="0" width="192" height="184" rx="12" fill="#0b1324" stroke="#38bdf8" stroke-width="1.8" />
+              <text x="96" y="21" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="800" class="mono">2-LEVEL 6-IGBT BRIDGE</text>
+              <text id="proIgbtRole2L" x="96" y="36" text-anchor="middle" fill="#22d3ee" font-size="9.5" font-weight="700">PWM RECTIFIER (+Vdc/2, -Vdc/2)</text>
+
+              <g transform="translate(18, 48)">
+                <rect id="igbt2Box0" x="0" y="0" width="44" height="50" rx="7" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+                <circle id="igbt2Led0" cx="22" cy="18" r="5.5" fill="#475569" />
+                <text x="22" y="40" text-anchor="middle" fill="#cbd5e1" font-size="9.5" font-weight="800" class="mono">Q1(R+)</text>
+
+                <rect id="igbt2Box1" x="56" y="0" width="44" height="50" rx="7" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+                <circle id="igbt2Led1" cx="78" cy="18" r="5.5" fill="#475569" />
+                <text x="78" y="40" text-anchor="middle" fill="#cbd5e1" font-size="9.5" font-weight="800" class="mono">Q3(S+)</text>
+
+                <rect id="igbt2Box2" x="112" y="0" width="44" height="50" rx="7" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+                <circle id="igbt2Led2" cx="134" cy="18" r="5.5" fill="#475569" />
+                <text x="134" y="40" text-anchor="middle" fill="#cbd5e1" font-size="9.5" font-weight="800" class="mono">Q5(T+)</text>
+
+                <rect id="igbt2Box3" x="0" y="64" width="44" height="50" rx="7" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+                <circle id="igbt2Led3" cx="22" cy="82" r="5.5" fill="#475569" />
+                <text x="22" y="104" text-anchor="middle" fill="#cbd5e1" font-size="9.5" font-weight="800" class="mono">Q4(R-)</text>
+
+                <rect id="igbt2Box4" x="56" y="64" width="44" height="50" rx="7" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+                <circle id="igbt2Led4" cx="78" cy="82" r="5.5" fill="#475569" />
+                <text x="78" y="104" text-anchor="middle" fill="#cbd5e1" font-size="9.5" font-weight="800" class="mono">Q6(S-)</text>
+
+                <rect id="igbt2Box5" x="112" y="64" width="44" height="50" rx="7" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+                <circle id="igbt2Led5" cx="134" cy="82" r="5.5" fill="#475569" />
+                <text x="134" y="104" text-anchor="middle" fill="#cbd5e1" font-size="9.5" font-weight="800" class="mono">Q2(T-)</text>
+              </g>
+            </g>
+
+            <!-- 4-2B. [3-Level NPC] 12-IGBT + 클램핑 다이오드 (초기 숨김) -->
+            <g id="proSw3L" transform="translate(520, 66)" display="none">
+              <rect x="0" y="0" width="192" height="184" rx="12" fill="#120b24" stroke="#c084fc" stroke-width="1.8" />
+              <text x="96" y="20" text-anchor="middle" fill="#f3e8ff" font-size="11.2" font-weight="800" class="mono">3-LEVEL NPC (12-IGBT)</text>
+              <text id="proIgbtRole3L" x="96" y="34" text-anchor="middle" fill="#c084fc" font-size="9.2" font-weight="700">+Vdc/2 · 0V(N) · -Vdc/2 클램핑</text>
+
+              <!-- 3상(R, S, T) × 4스위치(S1~S4) + 중앙 클램핑 다이오드 표시 -->
+              <g transform="translate(12, 43)">
+                <!-- 상 헤더 -->
+                <text x="24" y="9" text-anchor="middle" fill="#94a3b8" font-size="8.5" font-weight="800" class="mono">R상</text>
+                <text x="84" y="9" text-anchor="middle" fill="#94a3b8" font-size="8.5" font-weight="800" class="mono">S상</text>
+                <text x="144" y="9" text-anchor="middle" fill="#94a3b8" font-size="8.5" font-weight="800" class="mono">T상</text>
+
+                <!-- Row 1 (S1: +) -->
+                <rect id="igbt3Box0" x="4" y="14" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led0" cx="13" cy="25" r="3.5" fill="#475569" /><text x="30" y="28" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S1</text>
+
+                <rect id="igbt3Box4" x="64" y="14" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led4" cx="73" cy="25" r="3.5" fill="#475569" /><text x="90" y="28" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S1</text>
+
+                <rect id="igbt3Box8" x="124" y="14" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led8" cx="133" cy="25" r="3.5" fill="#475569" /><text x="150" y="28" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S1</text>
+
+                <!-- Row 2 (S2: 0+) -->
+                <rect id="igbt3Box1" x="4" y="40" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led1" cx="13" cy="51" r="3.5" fill="#475569" /><text x="30" y="54" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S2</text>
+
+                <rect id="igbt3Box5" x="64" y="40" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led5" cx="73" cy="51" r="3.5" fill="#475569" /><text x="90" y="54" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S2</text>
+
+                <rect id="igbt3Box9" x="124" y="40" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led9" cx="133" cy="51" r="3.5" fill="#475569" /><text x="150" y="54" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S2</text>
+
+                <!-- 클램핑 다이오드 중성점 바 (N=0V) -->
+                <rect x="4" y="66" width="160" height="16" rx="4" fill="rgba(192,132,252,0.22)" stroke="#c084fc" stroke-width="1" />
+                <text x="84" y="77" text-anchor="middle" fill="#e9d5ff" font-size="8.2" font-weight="800" class="mono">◄ CLAMP DIODES (D1·D2 · N=0V) ►</text>
+
+                <!-- Row 3 (S3: 0-) -->
+                <rect id="igbt3Box2" x="4" y="86" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led2" cx="13" cy="97" r="3.5" fill="#475569" /><text x="30" y="100" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S3</text>
+
+                <rect id="igbt3Box6" x="64" y="86" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led6" cx="73" cy="97" r="3.5" fill="#475569" /><text x="90" y="100" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S3</text>
+
+                <rect id="igbt3Box10" x="124" y="86" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led10" cx="133" cy="97" r="3.5" fill="#475569" /><text x="150" y="100" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S3</text>
+
+                <!-- Row 4 (S4: -) -->
+                <rect id="igbt3Box3" x="4" y="112" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led3" cx="13" cy="123" r="3.5" fill="#475569" /><text x="30" y="126" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S4</text>
+
+                <rect id="igbt3Box7" x="64" y="112" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led7" cx="73" cy="123" r="3.5" fill="#475569" /><text x="90" y="126" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S4</text>
+
+                <rect id="igbt3Box11" x="124" y="112" width="40" height="22" rx="4" fill="#1e1b4b" stroke="#475569" stroke-width="1.2" />
+                <circle id="igbt3Led11" cx="133" cy="123" r="3.5" fill="#475569" /><text x="150" y="126" text-anchor="middle" fill="#e2e8f0" font-size="8.5" class="mono">S4</text>
+              </g>
+            </g>
+
+            <!-- 4-3A. [2-Level] 단일 DC Link 커패시터 -->
+            <g id="proDc2L" transform="translate(754, 92)">
+              <rect x="0" y="0" width="94" height="132" rx="12" fill="#0b1324" stroke="#10b981" stroke-width="1.8" />
+              <text x="47" y="21" text-anchor="middle" fill="#34d399" font-size="11" font-weight="800" class="mono">DC LINK</text>
+              <text x="47" y="36" text-anchor="middle" fill="#94a3b8" font-size="9">단일 커패시터</text>
+              <line x1="47" y1="48" x2="47" y2="68" stroke="#10b981" stroke-width="2.5" />
+              <line x1="25" y1="68" x2="69" y2="68" stroke="#34d399" stroke-width="3.5" />
+              <line x1="25" y1="80" x2="69" y2="80" stroke="#34d399" stroke-width="3.5" />
+              <line x1="47" y1="80" x2="47" y2="100" stroke="#10b981" stroke-width="2.5" />
+              <text id="proSvgDcVal2L" x="47" y="119" text-anchor="middle" fill="#6ee7b7" font-size="10.5" font-weight="800" class="mono">785V DC</text>
+            </g>
+
+            <!-- 4-3B. [3-Level NPC] 분할 DC Link 커패시터 (C1/C2 + 중성점 N=0V) -->
+            <g id="proDc3L" transform="translate(754, 78)" display="none">
+              <rect x="0" y="0" width="94" height="160" rx="12" fill="#0b1324" stroke="#c084fc" stroke-width="1.8" />
+              <text x="47" y="19" text-anchor="middle" fill="#e9d5ff" font-size="10.5" font-weight="800" class="mono">SPLIT DC LINK</text>
+              <text x="47" y="32" text-anchor="middle" fill="#94a3b8" font-size="8.5">분할 커패시터</text>
+              <!-- 상단 C1 (+Vdc/2) -->
+              <line x1="47" y1="40" x2="47" y2="52" stroke="#34d399" stroke-width="2.2" />
+              <line x1="28" y1="52" x2="66" y2="52" stroke="#34d399" stroke-width="3" />
+              <line x1="28" y1="60" x2="66" y2="60" stroke="#34d399" stroke-width="3" />
+              <text id="proSvgDcTop" x="47" y="75" text-anchor="middle" fill="#6ee7b7" font-size="9" font-weight="800" class="mono">+392.5V</text>
+              <!-- 중성점 N (0V) -->
+              <line x1="47" y1="60" x2="47" y2="100" stroke="#c084fc" stroke-width="2" />
+              <circle cx="47" cy="86" r="4" fill="#c084fc" />
+              <text x="72" y="89" text-anchor="middle" fill="#e9d5ff" font-size="8.5" font-weight="800" class="mono">N(0V)</text>
+              <!-- 하단 C2 (-Vdc/2) -->
+              <line x1="28" y1="100" x2="66" y2="100" stroke="#38bdf8" stroke-width="3" />
+              <line x1="28" y1="108" x2="66" y2="108" stroke="#38bdf8" stroke-width="3" />
+              <line x1="47" y1="108" x2="47" y2="122" stroke="#38bdf8" stroke-width="2.2" />
+              <text id="proSvgDcBot" x="47" y="136" text-anchor="middle" fill="#7dd3fc" font-size="9" font-weight="800" class="mono">-392.5V</text>
+              <text x="47" y="151" text-anchor="middle" fill="#c084fc" font-size="8.2" font-weight="700" class="mono">BALANCED</text>
+            </g>
+
+            <!-- 4-4. MCU / DSP 제어기 -->
+            <g>
+              <path d="M 576 302 L 576 250" stroke="#a855f7" stroke-width="2" stroke-dasharray="5 4" fill="none" />
+              <path d="M 616 302 L 616 250" stroke="#a855f7" stroke-width="2" stroke-dasharray="5 4" fill="none" />
+              <path d="M 656 302 L 656 250" stroke="#a855f7" stroke-width="2" stroke-dasharray="5 4" fill="none" />
+              <text id="proGateDriveTxt" x="616" y="280" text-anchor="middle" fill="#c084fc" font-size="9.5" font-weight="800" class="mono">2-LEVEL SPWM GATE DRIVE (10kHz)</text>
+
+              <path d="M 772 346 L 902 346" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+              <text x="846" y="338" text-anchor="middle" fill="#38bdf8" font-size="9" font-weight="700" class="mono">CAN/RS485</text>
+
+              <rect x="444" y="302" width="328" height="88" rx="12" fill="#0f172a" stroke="#6366f1" stroke-width="2" />
+              <text x="608" y="325" text-anchor="middle" fill="#c7d2fe" font-size="12" font-weight="800" class="mono">MCU / DSP CONTROLLER (PLL · d-q 제어)</text>
+              <text id="proDspStatus" x="608" y="346" text-anchor="middle" fill="#94a3b8" font-size="10.2">계통 위상 동기화(PLL) 및 전류 피드백 PI 제어 정상</text>
+              <rect x="464" y="358" width="288" height="21" rx="5" fill="#1e1b4b" />
+              <text id="proDspMetrics" x="608" y="372" text-anchor="middle" fill="#a5b4fc" font-size="9.8" font-weight="700" class="mono">2-Level | f_sw: 10kHz | Mod(m): 0.78 | PF: 0.99</text>
+            </g>
+
+            <!-- 5. 배터리 뱅크 -->
+            <g transform="translate(902, 54)">
+              <rect x="0" y="0" width="194" height="354" rx="16" fill="#0f172a" stroke="#10b981" stroke-width="2" />
+              <text x="97" y="24" text-anchor="middle" fill="#f8fafc" font-size="12.5" font-weight="800">ESS 배터리 뱅크</text>
+              <text x="97" y="40" text-anchor="middle" fill="#34d399" font-size="10" class="mono">Li-Ion Rack (750~850V)</text>
+
+              <rect x="72" y="54" width="50" height="10" rx="3" fill="#475569" />
+              <rect x="42" y="64" width="110" height="178" rx="12" fill="#060d1a" stroke="#475569" stroke-width="2.5" />
+              <clipPath id="proBatClip">
+                <rect x="48" y="70" width="98" height="166" rx="8" />
+              </clipPath>
+              <g clip-path="url(#proBatClip)">
+                <rect id="proBatBar" x="48" y="153" width="98" height="83" fill="url(#proBatFill)" />
+                <line x1="48" y1="112" x2="146" y2="112" stroke="#0f172a" stroke-width="2" stroke-opacity="0.45" />
+                <line x1="48" y1="153" x2="146" y2="153" stroke="#0f172a" stroke-width="2" stroke-opacity="0.45" />
+                <line x1="48" y1="194" x2="146" y2="194" stroke="#0f172a" stroke-width="2" stroke-opacity="0.45" />
+              </g>
+              <text id="proBatSocText" x="97" y="268" text-anchor="middle" fill="#34d399" font-size="18" font-weight="900" class="mono">50.0%</text>
+              <text id="proBatCurrText" x="97" y="288" text-anchor="middle" fill="#94a3b8" font-size="10.5" class="mono">I_dc: +318.5 A</text>
+
+              <rect x="16" y="304" width="162" height="34" rx="8" fill="#081121" stroke="#1e293b" stroke-width="1.5" />
+              <circle id="proBmsLed" cx="32" cy="321" r="5" fill="#10b981" />
+              <text x="46" y="325" fill="#cbd5e1" font-size="10" font-weight="700" class="mono">BMS LINK: ONLINE</text>
+            </g>
+
+            <!-- 전력 흐름 입자 레이어 -->
+            <g id="proParticleLayer" filter="url(#neonGlow)"></g>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 1-4. 실시간 3채널 오실로스코프 (HTML5 Canvas) -->
+      <section class="pro-panel">
+        <div class="pro-panel-head">
+          <h2 class="pro-panel-title">📈 실시간 3채널 디지털 오실로스코프 (2-Level vs 3-Level 파형 비교)</h2>
+          <span id="proScopeSyncBadge" class="pro-badge mono">2-LEVEL PWM · TIMEBASE 5ms/div</span>
+        </div>
+
+        <div class="pro-scope-grid">
+          <!-- CH1: AC 전압/전류 -->
+          <div class="pro-scope-card">
+            <div class="pro-scope-head">
+              <span class="mono" style="color:#38bdf8;">CH1 · 계통 AC 정현파 (V / I)</span>
+              <span id="proCh1PhaseBadge" class="mono" style="font-size:0.71rem; color:#f472b6;">180° 역위상 (충전)</span>
+            </div>
+            <div class="pro-scope-canvas-wrap">
+              <canvas id="proCanvasCh1"></canvas>
+            </div>
+            <div class="pro-scope-legend">
+              <span class="leg-item"><span class="leg-swatch" style="background:#38bdf8;"></span>전압 V_ac</span>
+              <span class="leg-item"><span class="leg-swatch" style="background:#f472b6;"></span>전류 I_ac (3-Level 시 리플 감소)</span>
+            </div>
+          </div>
+
+          <!-- CH2: PCS PWM 출력 파형 (2-Level vs 3-Level 핵심 차이) -->
+          <div class="pro-scope-card">
+            <div class="pro-scope-head">
+              <span class="mono" style="color:#c084fc;">CH2 · PCS PWM 출력 파형</span>
+              <span id="proCh2ModBadge" class="mono" style="font-size:0.71rem; color:#c084fc;">2-Level (+ / -)</span>
+            </div>
+            <div class="pro-scope-canvas-wrap">
+              <canvas id="proCanvasCh2"></canvas>
+            </div>
+            <div class="pro-scope-legend">
+              <span class="leg-item"><span class="leg-swatch" style="background:#c084fc;"></span>PWM 스위칭 출력</span>
+              <span class="leg-item"><span class="leg-swatch" style="background:#64748b;"></span>기준 정현파 (Ref)</span>
+            </div>
+          </div>
+
+          <!-- CH3: DC Link 버스 (단일 vs 분할 밸런싱) -->
+          <div class="pro-scope-card">
+            <div class="pro-scope-head">
+              <span class="mono" style="color:#34d399;">CH3 · DC Link 커패시터 전압</span>
+              <span id="proCh3DcBadge" class="mono" style="font-size:0.71rem; color:#34d399;">785.0 V DC</span>
+            </div>
+            <div class="pro-scope-canvas-wrap">
+              <canvas id="proCanvasCh3"></canvas>
+            </div>
+            <div class="pro-scope-legend" id="proCh3Legend">
+              <span class="leg-item"><span class="leg-swatch" style="background:#34d399;"></span>단일 DC Bus 전압 + 리플</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1-5. 현재 모드 4단계 공학 해설 -->
+      <section class="pro-panel">
+        <div class="pro-panel-head">
+          <h2 class="pro-panel-title">📘 현재 모드 전력 변환 공학 메커니즘 (4-Step Analysis)</h2>
+          <span id="proStepModeBadge" class="pro-badge mono">MODE: CHARGING · 2-LEVEL</span>
+        </div>
+        <div id="proStepsContainer" class="pro-steps-grid"></div>
+      </section>
+
+      <!-- 1-6. 2-Level vs 3-Level NPC 공학 비교표 -->
+      <section class="pro-panel">
+        <div class="pro-panel-head">
+          <h2 class="pro-panel-title">📊 2-Level vs 3-Level NPC 토폴로지 공학 비교표</h2>
+          <span id="proCompBadge" class="pro-badge mono">현재 선택: 2-Level 강조 표시 중</span>
+        </div>
+
+        <div class="pro-table-wrap">
+          <table class="pro-comp-table">
+            <thead>
+              <tr>
+                <th>비교 항목</th>
+                <th id="th2L">⚡ 2-Level (2단 스위칭)</th>
+                <th id="th3L">🔷 3-Level NPC (3단 스위칭)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>출력 전압 레벨</td>
+                <td class="td-2l mono">2단계 (+Vdc/2, -Vdc/2)</td>
+                <td class="td-3l mono">3단계 (+Vdc/2, 0V, -Vdc/2)</td>
+              </tr>
+              <tr>
+                <td>스위치 소자 수 (3상)</td>
+                <td class="td-2l">IGBT 6개 (단일 DC 커패시터)</td>
+                <td class="td-3l">IGBT 12개 + 클램핑 다이오드 6개 (분할 커패시터)</td>
+              </tr>
+              <tr>
+                <td>dv/dt 및 소자 내압 스트레스</td>
+                <td class="td-2l">높음 (스위치 1개가 전체 Vdc 부담)</td>
+                <td class="td-3l">절반 수준 (각 소자가 Vdc/2만 부담 · 수명 유리)</td>
+              </tr>
+              <tr>
+                <td>출력 전류 왜율 (THD)</td>
+                <td class="td-2l mono">~3.8% (고조파 상대적 높음)</td>
+                <td class="td-3l mono">~1.6% (정현파에 근접한 저왜율)</td>
+              </tr>
+              <tr>
+                <td>변환 효율 / 발열</td>
+                <td class="td-2l mono">~97.2% (스위칭 손실 상대적 큼)</td>
+                <td class="td-3l mono">~98.6% (스위칭 손실 감소 · 저발열)</td>
+              </tr>
+              <tr>
+                <td>LCL 필터 크기 및 비용</td>
+                <td class="td-2l">큼 (고조파 제거를 위해 대형 인덕터 필요)</td>
+                <td class="td-3l">소형화 가능 (필터 부피·무게 약 30~40% 절감)</td>
+              </tr>
+              <tr>
+                <td>주요 적용처</td>
+                <td class="td-2l">소용량 ESS, 상업용·주택용 인버터 (~250kW)</td>
+                <td class="td-3l">대용량 유틸리티 ESS, 1,500V 계통연계 PCS (500kW~MW급)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- [2] 일반용 전기 변신 마법사 (#viewEdu) -->
+  <!-- ================================================================= -->
+  <main id="viewEdu" class="view-panel">
+    <div class="edu-wrap">
+      <!-- 2-1. 안내 배너 -->
+      <header class="edu-hero">
+        <div class="edu-hero-left">
+          <div class="edu-hero-icon" aria-hidden="true">🧙‍♂️</div>
+          <div>
+            <h1 class="edu-hero-title">PCS 전기 변신 마법사 체험실</h1>
+            <p class="edu-hero-sub">
+              파도 전기(AC)와 직진 전기(DC)를 바꿔주는 <strong>PCS</strong>! <strong>2단 계단(2레벨)</strong>과 <strong>3단 계단(3레벨)</strong>의 차이도 직접 비교해 보세요.
+            </p>
+          </div>
+        </div>
+        <div class="edu-pills">
+          <span class="edu-pill" style="background:#eff6ff; color:#2563eb; border-color:#bfdbfe;">🌊 교류(AC): 파도 전기</span>
+          <span class="edu-pill" style="background:#faf5ff; color:#7e22ce; border-color:#e9d5ff;">🪜 2레벨 vs 3레벨</span>
+          <span class="edu-pill" style="background:#ecfdf5; color:#059669; border-color:#a7f3d0;">➡️ 직류(DC): 직진 전기</span>
+        </div>
+      </header>
+
+      <!-- 2-2. 2레벨/3레벨 선택 + 상황 선택 & 컨트롤 -->
+      <section class="edu-card">
+        <div class="edu-head">
+          <h2 class="edu-title">🎮 1) 계단 방식(2레벨 vs 3레벨)과 2) 상황을 골라보세요!</h2>
+          <span class="edu-hint">계단이 많을수록 더 부드러운 파도 전기가 만들어져요!</span>
+        </div>
+
+        <!-- 2레벨 vs 3레벨 쉬운 토글 -->
+        <div class="edu-topo-row">
+          <button type="button" class="edu-topo-btn active-2l" data-topo="2level">
+            <div>
+              <strong>🪜 2레벨 (2단 계단)</strong>
+              <span>위(+)와 아래(-) 두 칸만 껑충껑충 뛰어서 파도를 만들어요</span>
+            </div>
+            <span class="edu-topo-tag">기본형</span>
+          </button>
+          <button type="button" class="edu-topo-btn" data-topo="3level">
+            <div>
+              <strong>🪜 3레벨 (3단 계단 · 부드러운 전기)</strong>
+              <span>중간에 0V 쉼터가 있어서 훨씬 매끄럽고 효율이 좋아요!</span>
+            </div>
+            <span class="edu-topo-tag">고급형 ✨</span>
+          </button>
+        </div>
+
+        <!-- 상황 4버튼 -->
+        <div class="edu-mode-grid">
+          <button type="button" class="edu-mode-btn" data-edu-mode="charge">
+            <div class="edu-mode-top">
+              <span class="edu-mode-name">🔋 전기 채우기</span>
+              <span class="edu-mode-tag" style="background:#dbeafe; color:#1d4ed8;">충전 AC→DC</span>
+            </div>
+            <span class="edu-mode-desc">남는 전기를 초대형 보조배터리에 꽉 채워요!</span>
+          </button>
+
+          <button type="button" class="edu-mode-btn" data-edu-mode="discharge">
+            <div class="edu-mode-top">
+              <span class="edu-mode-name">💡 전기 꺼내 쓰기</span>
+              <span class="edu-mode-tag" style="background:#d1fae5; color:#047857;">방전 DC→AC</span>
+            </div>
+            <span class="edu-mode-desc">전기가 많이 필요할 때 집과 건물로 보내요!</span>
+          </button>
+
+          <button type="button" class="edu-mode-btn" data-edu-mode="ups">
+            <div class="edu-mode-top">
+              <span class="edu-mode-name">⚡ 앗! 정전이다!</span>
+              <span class="edu-mode-tag" style="background:#ffedd5; color:#c2410c;">비상 모드</span>
+            </div>
+            <span class="edu-mode-desc">정전이 돼도 안전 스위치가 열리고 불빛을 지켜요!</span>
+          </button>
+
+          <button type="button" class="edu-mode-btn" data-edu-mode="standby">
+            <div class="edu-mode-top">
+              <span class="edu-mode-name">😴 쉬는 시간</span>
+              <span class="edu-mode-tag" style="background:#e2e8f0; color:#475569;">대기 모드</span>
+            </div>
+            <span class="edu-mode-desc">배터리와 PCS가 쉬면서 다음 명령을 기다려요.</span>
+          </button>
+        </div>
+
+        <!-- 세기 & 슬로우모션 -->
+        <div class="edu-ctrl-bar">
+          <div class="edu-power-group">
+            <span style="font-size:0.87rem; font-weight:800; color:#1e293b;">⚡ 전기 세기:</span>
+            <button type="button" class="edu-power-btn" data-edu-power="1">약함 ⚡</button>
+            <button type="button" class="edu-power-btn active" data-edu-power="2">보통 ⚡⚡</button>
+            <button type="button" class="edu-power-btn" data-edu-power="3">강함 ⚡⚡⚡</button>
+          </div>
+
+          <div class="edu-btn-row">
+            <button id="eduBtnSlow" type="button" class="edu-ctrl-btn">
+              <span>🐢</span><span id="eduSlowLabel">천천히 보기 (0.3x)</span>
+            </button>
+            <button id="eduBtnPause" type="button" class="edu-ctrl-btn">
+              <span>⏸️</span><span id="eduPauseLabel">일시정지</span>
+            </button>
+            <button id="eduBtnReset" type="button" class="edu-ctrl-btn">
+              <span>🔄</span><span>배터리 리셋 (50%)</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2-3. 직관적 애니메이션 무대 (SVG) -->
+      <section class="edu-card">
+        <div class="edu-head">
+          <h2 class="edu-title">🎬 PCS 전기 변신 무대</h2>
+          <span class="edu-hint">💡 그림 속 장치들을 클릭하면 쉬운 설명 팝업이 열려요!</span>
+        </div>
+
+        <div class="edu-stage-wrap">
+          <svg id="eduStageSvg" viewBox="0 0 1040 440" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="eduPcsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#eff6ff" stop-opacity="0.95" />
+                <stop offset="100%" stop-color="#f5f3ff" stop-opacity="0.95" />
+              </linearGradient>
+              <linearGradient id="eduBatGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#10b981" />
+                <stop offset="65%" stop-color="#34d399" />
+                <stop offset="100%" stop-color="#fde047" />
+              </linearGradient>
+              <filter id="eduShadow" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#1e3a8a" flood-opacity="0.1" />
+              </filter>
+            </defs>
+
+            <!-- 구역 배경 -->
+            <rect x="14" y="14" width="292" height="412" rx="20" fill="#eff6ff" fill-opacity="0.65" stroke="#bfdbfe" stroke-width="1.5" stroke-dasharray="6 4" />
+            <text x="160" y="38" text-anchor="middle" fill="#2563eb" font-size="13" font-weight="800">🌊 파도 전기(AC) 구역</text>
+
+            <rect x="752" y="14" width="274" height="412" rx="20" fill="#ecfdf5" fill-opacity="0.7" stroke="#a7f3d0" stroke-width="1.5" stroke-dasharray="6 4" />
+            <text x="889" y="38" text-anchor="middle" fill="#059669" font-size="13" font-weight="800">➡️ 직진 전기(DC) 구역</text>
+
+            <!-- 전선 -->
+            <path id="eduWirePlantSw" d="M 155 150 L 210 150" stroke="#93c5fd" stroke-width="8" stroke-linecap="round" fill="none" />
+            <path id="eduWireSwNode" d="M 262 150 L 288 150" stroke="#93c5fd" stroke-width="8" stroke-linecap="round" fill="none" />
+            <path id="eduWireNodeHome" d="M 288 150 L 288 320 L 175 320" stroke="#93c5fd" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none" />
+            <path id="eduWireNodePcs" d="M 288 150 L 385 150 L 385 225 L 400 225" stroke="#93c5fd" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none" />
+            <path id="eduWireMid" d="M 500 225 L 548 225" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round" fill="none" />
+            <path id="eduWirePcsBat" d="M 692 225 L 795 225" stroke="#6ee7b7" stroke-width="8" stroke-linecap="round" fill="none" />
+            <circle id="eduAcDot" cx="288" cy="150" r="8" fill="#3b82f6" stroke="#ffffff" stroke-width="3" />
+
+            <!-- 발전소 -->
+            <g class="clickable-part" data-part="plant" filter="url(#eduShadow)">
+              <rect id="eduPlantCard" x="30" y="58" width="130" height="162" rx="18" fill="#ffffff" stroke="#93c5fd" stroke-width="2.5" />
+              <text x="95" y="82" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="800">🏭 발전소</text>
+              <circle cx="146" cy="72" r="9" fill="#eff6ff" stroke="#60a5fa" stroke-width="1.5" />
+              <text x="146" y="76" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="900">?</text>
+              <g id="eduTowerIcon" transform="translate(65, 95)" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round">
+                <path d="M 30 6 L 14 78" /><path d="M 30 6 L 46 78" />
+                <path d="M 6 24 L 54 24" /><path d="M 10 46 L 50 46" />
+                <path d="M 18 46 L 42 24" /><path d="M 42 46 L 18 24" />
+                <line x1="6" y1="78" x2="54" y2="78" />
+              </g>
+              <g id="eduBlackoutBadge" opacity="0">
+                <circle cx="95" cy="136" r="24" fill="#fee2e2" stroke="#ef4444" stroke-width="2.5" />
+                <text x="95" y="145" text-anchor="middle" font-size="24">⚡</text>
+              </g>
+              <rect id="eduPlantBg" x="45" y="188" width="100" height="22" rx="11" fill="#dbeafe" />
+              <text id="eduPlantTxt" x="95" y="203" text-anchor="middle" fill="#1d4ed8" font-size="10.5" font-weight="800">정상 가동 중</text>
+            </g>
+
+            <!-- 안전 스위치 -->
+            <g transform="translate(210, 150)">
+              <rect x="-8" y="-32" width="68" height="64" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" />
+              <text x="26" y="-16" text-anchor="middle" fill="#475569" font-size="10" font-weight="800">⚡ 안전스위치</text>
+              <circle cx="4" cy="4" r="5" fill="#64748b" />
+              <circle cx="48" cy="4" r="5" fill="#64748b" />
+              <line id="eduBreakerArm" x1="4" y1="4" x2="48" y2="4" stroke="#10b981" stroke-width="5" stroke-linecap="round"
+                    style="transform-origin: 4px 4px; transition: transform 0.3s ease, stroke 0.25s;" />
+              <text id="eduBreakerTxt" x="26" y="24" text-anchor="middle" fill="#059669" font-size="10" font-weight="800">연결됨</text>
+            </g>
+
+            <!-- 우리 집 & 건물 -->
+            <g class="clickable-part" data-part="home" filter="url(#eduShadow)">
+              <rect x="30" y="242" width="152" height="168" rx="18" fill="#ffffff" stroke="#93c5fd" stroke-width="2.5" />
+              <text x="106" y="266" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="800">🏠 우리 집 &amp; 건물 🏢</text>
+              <circle cx="168" cy="256" r="9" fill="#eff6ff" stroke="#60a5fa" stroke-width="1.5" />
+              <text x="168" y="260" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="900">?</text>
+              <g transform="translate(44, 286)">
+                <polygon points="28,8 2,34 54,34" fill="#fb7185" />
+                <rect x="8" y="34" width="40" height="44" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" />
+                <rect x="15" y="42" width="11" height="11" rx="2" fill="#fde047" stroke="#f59e0b" stroke-width="1.5" />
+                <rect x="31" y="42" width="11" height="11" rx="2" fill="#fde047" stroke="#f59e0b" stroke-width="1.5" />
+                <rect x="22" y="59" width="12" height="19" rx="2" fill="#fb923c" />
+              </g>
+              <g transform="translate(106, 286)">
+                <rect x="4" y="22" width="60" height="56" rx="5" fill="#e0f2fe" stroke="#3b82f6" stroke-width="2" />
+                <rect x="22" y="6" width="24" height="16" rx="4" fill="#60a5fa" />
+                <circle cx="34" cy="14" r="5" fill="#ffffff" />
+                <rect x="12" y="32" width="12" height="12" rx="2" fill="#fde047" stroke="#eab308" stroke-width="1.5" />
+                <rect x="28" y="32" width="12" height="12" rx="2" fill="#fde047" stroke="#eab308" stroke-width="1.5" />
+                <rect x="44" y="32" width="12" height="12" rx="2" fill="#fde047" stroke="#eab308" stroke-width="1.5" />
+                <rect x="12" y="52" width="12" height="12" rx="2" fill="#fde047" stroke="#eab308" stroke-width="1.5" />
+                <rect x="44" y="52" width="12" height="12" rx="2" fill="#fde047" stroke="#eab308" stroke-width="1.5" />
+                <rect x="28" y="55" width="12" height="23" rx="2" fill="#3b82f6" />
+              </g>
+              <rect id="eduHomeBg" x="44" y="376" width="124" height="22" rx="11" fill="#fef9c3" />
+              <text id="eduHomeTxt" x="106" y="391" text-anchor="middle" fill="#a16207" font-size="10.5" font-weight="800">💡 불빛 환하게 켜짐!</text>
+            </g>
+
+            <!-- 중앙 PCS 마법사 상자 -->
+            <g filter="url(#eduShadow)">
+              <rect x="334" y="76" width="386" height="330" rx="26" fill="url(#eduPcsGrad)" stroke="#818cf8" stroke-width="3" />
+              <g transform="translate(342, 18)">
+                <rect id="eduSpeechBg" x="0" y="0" width="370" height="44" rx="22" fill="#3b82f6" />
+                <polygon id="eduSpeechTail" points="175,44 195,44 185,56" fill="#3b82f6" />
+                <text id="eduSpeechTxt" x="185" y="27" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="800">파도 전기(AC)를 직진 전기(DC)로 변신 중!</text>
+              </g>
+
+              <text x="527" y="108" text-anchor="middle" fill="#312e81" font-size="15.5" font-weight="900">🧙‍♂️ PCS (전기 변신 마법사)</text>
+              <text id="eduPcsSubTxt" x="527" y="126" text-anchor="middle" fill="#6366f1" font-size="11" font-weight="700">현재: 🪜 2레벨 (2단 계단 변신)</text>
+
+              <!-- 파도 다듬기 필터 -->
+              <g class="clickable-part" data-part="filter">
+                <rect x="354" y="146" width="146" height="174" rx="18" fill="#ffffff" stroke="#93c5fd" stroke-width="2.5" />
+                <circle cx="486" cy="160" r="9" fill="#eff6ff" stroke="#60a5fa" stroke-width="1.5" />
+                <text x="486" y="164" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="900">?</text>
+                <text x="427" y="176" text-anchor="middle" fill="#1e293b" font-size="12.5" font-weight="800">🌊 파도 다듬기 필터</text>
+                <text x="427" y="192" text-anchor="middle" fill="#64748b" font-size="10" font-weight="600">거친 계단을 매끄럽게!</text>
+                <rect x="372" y="206" width="110" height="66" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5" />
+                <path d="M 384 239 q 8 -18 16 0 q 8 -18 16 0 q 8 -18 16 0 q 8 -18 16 0 q 8 -18 16 0" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round" fill="none" />
+                <text id="eduFilterTxt" x="427" y="298" text-anchor="middle" fill="#2563eb" font-size="10.8" font-weight="800">매끈하게 다듬는 중 ✨</text>
+              </g>
+
+              <!-- 초고속 스위치 (2레벨 vs 3레벨 동적 시각화) -->
+              <g class="clickable-part" data-part="switch">
+                <rect x="530" y="146" width="170" height="174" rx="18" fill="#ffffff" stroke="#c4b5fd" stroke-width="2.5" />
+                <circle cx="686" cy="160" r="9" fill="#faf5ff" stroke="#a855f7" stroke-width="1.5" />
+                <text x="686" y="164" text-anchor="middle" fill="#7e22ce" font-size="11" font-weight="900">?</text>
+                <text x="615" y="176" text-anchor="middle" fill="#1e293b" font-size="12.5" font-weight="800">⚡ 초고속 스위치</text>
+                <text id="eduSwModeSub" x="615" y="192" text-anchor="middle" fill="#7c3aed" font-size="10" font-weight="700">2단 계단 (+ / -)</text>
+
+                <!-- 2레벨 스위치 UI -->
+                <g id="eduSw2LGroup" transform="translate(546, 204)">
+                  <rect id="eduSw2Top" x="0" y="0" width="138" height="32" rx="9" fill="#eff6ff" stroke="#93c5fd" stroke-width="2" />
+                  <text id="eduSw2TopTxt" x="69" y="20" text-anchor="middle" fill="#1d4ed8" font-size="11" font-weight="800">⬆️ 위층 스위치 (+)</text>
+
+                  <rect id="eduSw2Bot" x="0" y="42" width="138" height="32" rx="9" fill="#eff6ff" stroke="#93c5fd" stroke-width="2" />
+                  <text id="eduSw2BotTxt" x="69" y="62" text-anchor="middle" fill="#1d4ed8" font-size="11" font-weight="800">⬇️ 아래층 스위치 (-)</text>
+                </g>
+
+                <!-- 3레벨 스위치 UI (중간 0V 쉼터 포함) -->
+                <g id="eduSw3LGroup" transform="translate(546, 200)" display="none">
+                  <rect id="eduSw3Top" x="0" y="0" width="138" height="23" rx="7" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1.8" />
+                  <text id="eduSw3TopTxt" x="69" y="15" text-anchor="middle" fill="#6b21a8" font-size="10" font-weight="800">⬆️ 위층 (+)</text>
+
+                  <rect id="eduSw3Mid" x="0" y="28" width="138" height="23" rx="7" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.8" />
+                  <text id="eduSw3MidTxt" x="69" y="43" text-anchor="middle" fill="#047857" font-size="10" font-weight="800">⏸️ 중간 쉼터 (0V)</text>
+
+                  <rect id="eduSw3Bot" x="0" y="56" width="138" height="23" rx="7" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1.8" />
+                  <text id="eduSw3BotTxt" x="69" y="71" text-anchor="middle" fill="#6b21a8" font-size="10" font-weight="800">⬇️ 아래층 (-)</text>
+                </g>
+
+                <text id="eduSwStateTxt" x="615" y="302" text-anchor="middle" fill="#7c3aed" font-size="10.8" font-weight="800">찰칵찰칵 변신 중! ⚡</text>
+              </g>
+
+              <rect x="354" y="336" width="346" height="50" rx="14" fill="#ffffff" stroke="#c7d2fe" stroke-width="2" />
+              <text x="374" y="366" font-size="22">🧠</text>
+              <text x="406" y="357" fill="#312e81" font-size="12" font-weight="800">똑똑한 두뇌 컴퓨터 (제어기)</text>
+              <text id="eduBrainTxt" x="406" y="375" fill="#64748b" font-size="10.3" font-weight="600">배터리 상태를 보며 스위치를 지휘해요!</text>
+            </g>
+
+            <!-- 초대형 보조배터리 -->
+            <g class="clickable-part" data-part="battery" filter="url(#eduShadow)">
+              <rect x="786" y="64" width="212" height="342" rx="22" fill="#ffffff" stroke="#6ee7b7" stroke-width="3" />
+              <circle cx="980" cy="82" r="10" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+              <text x="980" y="86" text-anchor="middle" fill="#059669" font-size="11.5" font-weight="900">?</text>
+              <text x="892" y="92" text-anchor="middle" fill="#065f46" font-size="14" font-weight="900">🔋 초대형 보조배터리</text>
+              <text x="892" y="110" text-anchor="middle" fill="#059669" font-size="11" font-weight="700">ESS 배터리 (직류 DC 저장)</text>
+
+              <rect x="866" y="124" width="52" height="12" rx="4" fill="#64748b" />
+              <rect x="826" y="136" width="132" height="198" rx="18" fill="#f1f5f9" stroke="#475569" stroke-width="3.5" />
+              <clipPath id="eduBatClip">
+                <rect x="833" y="143" width="118" height="184" rx="12" />
+              </clipPath>
+              <g clip-path="url(#eduBatClip)">
+                <rect id="eduBatRect" x="833" y="235" width="118" height="92" fill="url(#eduBatGrad)" />
+                <line x1="833" y1="189" x2="951" y2="189" stroke="#ffffff" stroke-width="2" stroke-opacity="0.5" />
+                <line x1="833" y1="235" x2="951" y2="235" stroke="#ffffff" stroke-width="2" stroke-opacity="0.5" />
+                <line x1="833" y1="281" x2="951" y2="281" stroke="#ffffff" stroke-width="2" stroke-opacity="0.5" />
+              </g>
+              <g transform="translate(892, 224)">
+                <circle cx="0" cy="0" r="32" fill="#ffffff" fill-opacity="0.92" stroke="#10b981" stroke-width="2.5" />
+                <text id="eduBatEmoji" x="0" y="8" text-anchor="middle" font-size="28">😐</text>
+              </g>
+              <text id="eduBatPct" x="892" y="364" text-anchor="middle" fill="#0f172a" font-size="20" font-weight="900">50%</text>
+              <text id="eduBatMood" x="892" y="388" text-anchor="middle" fill="#059669" font-size="11.5" font-weight="800">전기가 쑥쑥 차오르고 있어요!</text>
+            </g>
+
+            <!-- 전기 알갱이 레이어 -->
+            <g id="eduParticleLayer"></g>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 2-4. 전기 모양 돋보기 (Canvas 3단계 파형 비교) -->
+      <section class="edu-card">
+        <div class="edu-head">
+          <h2 class="edu-title">🔍 전기 모양 돋보기 (2레벨 vs 3레벨 블록 차이 보기)</h2>
+          <span id="eduScopeHint" class="edu-hint">현재: 🪜 2레벨 (거친 + / - 2단 블록)</span>
+        </div>
+
+        <div class="edu-scope-grid">
+          <div class="edu-scope-card">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <strong style="font-size:0.91rem;">① 파도 모양 전기 (교류 AC)</strong>
+              <span class="edu-mode-tag" style="background:#dbeafe; color:#1d4ed8;">🌊 출렁출렁</span>
+            </div>
+            <div class="edu-canvas-box"><canvas id="eduCanvasAc"></canvas></div>
+            <p style="font-size:0.8rem; color:#526580;">집과 발전소에서 쓰는 전기예요. 1초에 60번 방향이 바뀌며 물결처럼 흘러요.</p>
+          </div>
+
+          <div class="edu-scope-card scope-pwm">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <strong style="font-size:0.91rem;">② 잘게 쪼갠 블록 전기 (스위칭)</strong>
+              <span id="eduPwmTag" class="edu-mode-tag" style="background:#f3e8ff; color:#7e22ce;">🪜 2단 (+ / -)</span>
+            </div>
+            <div class="edu-canvas-box"><canvas id="eduCanvasPwm"></canvas></div>
+            <p id="eduPwmDesc" style="font-size:0.8rem; color:#526580;">2레벨은 위(+)와 아래(-) 두 칸만 오가서 계단이 크고 거칠어요!</p>
+          </div>
+
+          <div class="edu-scope-card scope-dc">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <strong style="font-size:0.91rem;">③ 반듯한 직선 전기 (직류 DC)</strong>
+              <span class="edu-mode-tag" style="background:#d1fae5; color:#047857;">➡️ 직진</span>
+            </div>
+            <div class="edu-canvas-box"><canvas id="eduCanvasDc"></canvas></div>
+            <p style="font-size:0.8rem; color:#526580;">한 방향으로 쭉 흐르는 전기예요. 배터리가 가장 안전하게 저장할 수 있어요.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2-5. 3단계 스토리 해설 -->
+      <section class="edu-card">
+        <div class="edu-head">
+          <h2 class="edu-title">📖 지금 무슨 일이 일어나고 있나요?</h2>
+          <span id="eduStoryBadge" class="edu-hint">🔋 전기 채우기 (충전)</span>
+        </div>
+        <div id="eduStoryGrid" class="edu-story-grid"></div>
+      </section>
+
+      <!-- 2-6. 4문제 미니 퀴즈 (2레벨/3레벨 포함) -->
+      <section class="edu-card">
+        <div class="edu-head">
+          <h2 class="edu-title">🎯 배운 내용 4문제 미니 퀴즈</h2>
+          <span class="edu-hint">2레벨·3레벨 문제까지 4점 만점에 도전해 보세요!</span>
+        </div>
+        <div id="eduQuizGrid" class="edu-quiz-grid"></div>
+        <div id="eduScoreBar" class="edu-score-bar">
+          <span id="eduScoreTxt" style="font-size:0.94rem; font-weight:800; color:#0f172a;">📝 문제를 풀어 보세요! (0 / 4 완료)</span>
+          <button id="eduResetQuizBtn" type="button" class="edu-ctrl-btn">🔄 퀴즈 다시 풀기</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- 글로벌 토스트 -->
+  <div id="globalToast" class="global-toast" role="status" aria-live="polite"></div>
+
+  <!-- 일반용 장치 클릭 설명 팝업 모달 -->
+  <div id="eduInfoModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div id="modalEmoji" style="font-size:42px; margin-bottom:6px;">🧙‍♂️</div>
+      <h3 id="modalTitle" style="font-size:1.18rem; font-weight:900; margin-bottom:6px;">장치 이름</h3>
+      <span id="modalSub" style="display:inline-block; font-size:0.79rem; font-weight:700; color:#2563eb; background:#eff6ff; padding:4px 12px; border-radius:999px; margin-bottom:14px;">별명</span>
+      <p id="modalBody" style="font-size:0.9rem; color:#334155; line-height:1.65; text-align:left; background:#f8fafc; padding:14px 16px; border-radius:16px; margin-bottom:18px;"></p>
+      <button id="modalCloseBtn" type="button" class="modal-close-btn">알겠어요! 👍</button>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 통합 시뮬레이션 엔진 (Vanilla JS · 단일 rAF 루프) -->
+  <!-- ================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      const SVG_NS = 'http://www.w3.org/2000/svg';
+
+      /* -----------------------------------------------------------------
+       * 0. 공통 앱 상태 (토폴로지 동기화 포함)
+       * ----------------------------------------------------------------- */
+      const app = {
+        activeView: 'pro',   // 'pro' | 'edu'
+        topology: '2level',  // '2level' | '3level'
+        lastFrame: 0,
+        toastTimer: null
+      };
+
+      const toastEl = document.getElementById('globalToast');
+      function showToast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        if (app.toastTimer) clearTimeout(app.toastTimer);
+        app.toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2300);
+      }
+
+      function getPointOnPath(points, t, reverse) {
+        const u = reverse ? (1 - t) : t;
+        let total = 0;
+        const lens = [];
+        for (let i = 0; i < points.length - 1; i++) {
+          const d = Math.hypot(points[i + 1].x - points[i].x, points[i + 1].y - points[i].y);
+          lens.push(d);
+          total += d;
+        }
+        let dist = u * total;
+        for (let i = 0; i < lens.length; i++) {
+          if (dist <= lens[i] || i === lens.length - 1) {
+            const localT = lens[i] === 0 ? 0 : dist / lens[i];
+            const p0 = points[i];
+            const p1 = points[i + 1];
+            const len = lens[i] || 1;
+            return {
+              x: p0.x + (p1.x - p0.x) * localT,
+              y: p0.y + (p1.y - p0.y) * localT,
+              nx: -(p1.y - p0.y) / len,
+              ny: (p1.x - p0.x) / len
+            };
+          }
+          dist -= lens[i];
+        }
+        return { x: points[0].x, y: points[0].y, nx: 0, ny: 1 };
+      }
+
+      function createSvgParticlePool(layerEl, count, rOuter, rCore) {
+        layerEl.innerHTML = '';
+        const pool = [];
+        for (let i = 0; i < count; i++) {
+          const g = document.createElementNS(SVG_NS, 'g');
+          g.setAttribute('opacity', '0');
+          const outer = document.createElementNS(SVG_NS, 'circle');
+          outer.setAttribute('r', String(rOuter));
+          outer.setAttribute('fill-opacity', '0.3');
+          const core = document.createElementNS(SVG_NS, 'circle');
+          core.setAttribute('r', String(rCore));
+          core.setAttribute('stroke', '#ffffff');
+          core.setAttribute('stroke-width', '1.3');
+          g.appendChild(outer);
+          g.appendChild(core);
+          layerEl.appendChild(g);
+          pool.push({ g, outer, core });
+        }
+        return pool;
+      }
+
+      /* =================================================================
+       * 1. [전문가용 SCADA] 데이터 및 DOM
+       * ================================================================= */
+      const pro = {
+        mode: 'charge',
+        powerKw: 250,
+        paused: false,
+        soc: 50.0,
+        simTime: 0,
+        particles: [],
+        scopes: []
+      };
+
+      const PRO_PATHS = {
+        gridToBus: [{ x: 140, y: 158 }, { x: 300, y: 158 }],
+        busToLoad: [{ x: 300, y: 158 }, { x: 300, y: 324 }, { x: 208, y: 324 }],
+        busToLcl: [{ x: 300, y: 158 }, { x: 366, y: 158 }],
+        lclToIgbt: [{ x: 476, y: 158 }, { x: 520, y: 158 }],
+        igbtToDc: [{ x: 712, y: 158 }, { x: 754, y: 158 }],
+        dcToBat: [{ x: 848, y: 158 }, { x: 902, y: 158 }]
+      };
+
+      function getProSteps(mode, topo) {
+        const is3 = topo === '3level';
+        const swName = is3 ? '12-IGBT + 클램핑 다이오드 (3-Level NPC)' : '6-IGBT 풀브릿지 (2-Level)';
+        const dcName = is3 ? '분할 DC Link 커패시터(C1/C2 · 중성점 N=0V 밸런싱)' : '단일 DC Link 커패시터';
+        const thdTxt = is3 ? '1.6% 수준의 초저왜율 정현파' : '3.8% 수준의 정현파';
+
+        const map = {
+          charge: {
+            badge: `MODE: CHARGING (AC → DC) · ${is3 ? '3-LEVEL NPC' : '2-LEVEL'}`,
+            flow: `FLOW: GRID → LCL → ${is3 ? '3-LEVEL NPC(RECT)' : '2-LEVEL IGBT(RECT)'} → DC-LINK → BATT`,
+            dsp: `계통 PLL 동기화 및 ${is3 ? '중성점 전압 밸런싱 포함 ' : ''}정전류/정전압(CC/CV) 충전 제어 중`,
+            steps: [
+              { tag: 'STEP 01', title: '계통 수전 및 PLL 위상 동기화', desc: '3상 380V 60Hz 교류 계통 전력을 수전하며 DSP의 PLL 알고리즘으로 계통 전압 위상을 실시간 추종합니다.' },
+              { tag: 'STEP 02', title: 'LCL 필터 고조파 억제', desc: `스위칭 리플이 계통으로 유입되지 않도록 LCL 필터가 전류 파형을 ${thdTxt}로 정제합니다.` },
+              { tag: 'STEP 03', title: `${swName} 능동 정류`, desc: is3 ? '12개 IGBT와 클램핑 다이오드가 +Vdc/2, 0V, -Vdc/2 3단으로 스위칭하여 손실과 dv/dt를 절반으로 줄이며 정류합니다.' : '6개 IGBT가 +Vdc/2와 -Vdc/2 2단으로 고속 스위칭하며 계통 전류를 180° 역위상으로 정류합니다.' },
+              { tag: 'STEP 04', title: `${dcName} 및 충전`, desc: `${dcName}로 직류 버스를 안정화한 뒤 BMS 허용 전류 내에서 배터리를 충전합니다.` }
+            ]
+          },
+          discharge: {
+            badge: `MODE: DISCHARGING (DC → AC) · ${is3 ? '3-LEVEL NPC' : '2-LEVEL'}`,
+            flow: `FLOW: BATT → DC-LINK → ${is3 ? '3-LEVEL NPC(INV)' : '2-LEVEL IGBT(INV)'} → LCL → GRID/LOAD`,
+            dsp: `배터리 DC를 ${is3 ? '3단 계단형 PWM으로 고효율(~98.6%) ' : '2단 PWM으로 '}계통 동위상 AC 역변환 중`,
+            steps: [
+              { tag: 'STEP 01', title: '배터리 방전 및 DC Link 유지', desc: `BMS 통신을 통해 배터리 직류 에너지를 ${dcName}로 공급받아 안정적인 직류 전압을 유지합니다.` },
+              { tag: 'STEP 02', title: `${swName} 역변환`, desc: is3 ? '상·하단 스위치와 중성점(0V) 클램핑을 조합해 정현파에 매우 가까운 3단 계단형 PWM 파형을 생성합니다.' : 'DSP d-q 전류 제어기가 6-IGBT 브릿지로 +Vdc/2와 -Vdc/2 2단 SPWM 구형파를 생성합니다.' },
+              { tag: 'STEP 03', title: 'LCL 필터 정현파 복원', desc: `PWM 출력을 LCL 필터에 통과시켜 ${thdTxt}의 고품질 3상 60Hz AC 전원으로 복원합니다.` },
+              { tag: 'STEP 04', title: '계통 연계 및 수용가 공급', desc: '계통 전압과 완벽히 동위상(0°)인 전류를 수용가 부하와 계통으로 송출하여 피크 전력을 저감합니다.' }
+            ]
+          },
+          ups: {
+            badge: `MODE: ISLANDING / UPS · ${is3 ? '3-LEVEL NPC' : '2-LEVEL'}`,
+            flow: `FLOW: [GRID FAULT] CB OPEN · BATT → ${is3 ? '3-LEVEL NPC(V/f)' : '2-LEVEL(V/f)'} → LOAD`,
+            dsp: '계통 정전 감지! CB-01 고속 개방 후 독립 정전압/정주파수(380V 60Hz V/f) 운전',
+            steps: [
+              { tag: 'STEP 01', title: '계통 정전 감지 및 CB-01 개방', desc: '계통 전압/주파수 이상을 수 ms 내에 감지하고 연계 차단기(CB-01)를 개방하여 계통과 분리합니다.' },
+              { tag: 'STEP 02', title: '독립 운전(V/f) 제어 전환', desc: 'DSP 제어 모드를 전류원에서 정전압·정주파수(CVCF) 전압원 제어로 무순단 전환합니다.' },
+              { tag: 'STEP 03', title: `${swName} 비상 역변환`, desc: is3 ? '3-Level NPC 인버터가 낮은 THD(~1.6%)와 높은 효율로 민감한 중요 부하에 깨끗한 전력을 생성합니다.' : '2-Level 인버터가 배터리 DC를 즉시 3상 AC로 변환하여 비상 전원을 공급합니다.' },
+              { tag: 'STEP 04', title: '수용가 중요 부하 무정전 유지', desc: '외부 계통 복구 전까지 공장·빌딩 중요 부하에 끊김 없이 안정적인 전력을 단독 공급합니다.' }
+            ]
+          },
+          standby: {
+            badge: `MODE: STANDBY (GATE BLOCKED) · ${is3 ? '3-LEVEL NPC' : '2-LEVEL'}`,
+            flow: 'FLOW: GRID → LOAD (PCS IGBT GATE OFF)',
+            dsp: 'IGBT 게이트 펄스 차단 · 계통 및 BMS 상태 실시간 감시 대기 중',
+            steps: [
+              { tag: 'STEP 01', title: 'IGBT 게이트 신호 차단', desc: `전력 변환 지령이 없는 대기 상태에서는 ${is3 ? '12개' : '6개'} IGBT 게이트를 차단해 스위칭 손실을 최소화합니다.` },
+              { tag: 'STEP 02', title: '수용가 부하 계통 직결 운전', desc: '연계 차단기(CB-01)가 닫힌 상태에서 수용가 부하는 전력 계통으로부터 직접 전력을 공급받습니다.' },
+              { tag: 'STEP 03', title: 'DC Link 초기 충전 상태 유지', desc: `${dcName} 전압과 배터리 상태를 안전 범위로 모니터링하여 즉시 기동에 대비합니다.` },
+              { tag: 'STEP 04', title: 'EMS 지령 및 정전 상시 감시', desc: '상위 EMS 지령이나 정전 발생 시 즉시 운전 모드로 진입할 수 있도록 상시 대기합니다.' }
+            ]
+          }
+        };
+        return map[mode];
+      }
+
+      const proEl = {
+        topoBtns: document.querySelectorAll('.pro-topo-btn'),
+        modeBtns: document.querySelectorAll('[data-pro-mode]'),
+        slider: document.getElementById('proPowerSlider'),
+        powerReadout: document.getElementById('proPowerReadout'),
+        btnPause: document.getElementById('proBtnPause'),
+        pauseLabel: document.getElementById('proPauseLabel'),
+        btnResetSoc: document.getElementById('proBtnResetSoc'),
+        specBadge: document.getElementById('proSpecBadge'),
+        teleDot: document.getElementById('proTeleDot'),
+        teleStatusText: document.getElementById('proTeleStatusText'),
+        teleTopo: document.getElementById('proTeleTopo'),
+        telePower: document.getElementById('proTelePower'),
+        teleSoc: document.getElementById('proTeleSoc'),
+        teleEff: document.getElementById('proTeleEff'),
+        teleThd: document.getElementById('proTeleThd'),
+        teleGridV: document.getElementById('proTeleGridV'),
+        teleFreq: document.getElementById('proTeleFreq'),
+        flowBadge: document.getElementById('proFlowBadge'),
+        svgPcsTitle: document.getElementById('proSvgPcsTitle'),
+        pcsFrame: document.getElementById('proPcsFrame'),
+        wireNeutralClamp: document.getElementById('proWireNeutralClamp'),
+        filterThdTxt: document.getElementById('proFilterThdTxt'),
+        sw2L: document.getElementById('proSw2L'),
+        sw3L: document.getElementById('proSw3L'),
+        dc2L: document.getElementById('proDc2L'),
+        dc3L: document.getElementById('proDc3L'),
+        igbtRole2L: document.getElementById('proIgbtRole2L'),
+        igbtRole3L: document.getElementById('proIgbtRole3L'),
+        gateDriveTxt: document.getElementById('proGateDriveTxt'),
+        gridBox: document.getElementById('proGridBox'),
+        towerVec: document.getElementById('proTowerVec'),
+        gridTagBg: document.getElementById('proGridTagBg'),
+        gridTagText: document.getElementById('proGridTagText'),
+        cbArm: document.getElementById('proCbArm'),
+        cbText: document.getElementById('proCbText'),
+        loadStatus: document.getElementById('proLoadStatus'),
+        wireGridCb: document.getElementById('proWireGridCb'),
+        wireCbBus: document.getElementById('proWireCbBus'),
+        wireBusLoad: document.getElementById('proWireBusLoad'),
+        wireBusLcl: document.getElementById('proWireBusLcl'),
+        wireLclIgbt: document.getElementById('proWireLclIgbt'),
+        wireIgbtDc: document.getElementById('proWireIgbtDc'),
+        wireDcBat: document.getElementById('proWireDcBat'),
+        acBusNode: document.getElementById('proAcBusNode'),
+        igbts2: [0, 1, 2, 3, 4, 5].map(i => ({
+          box: document.getElementById(`igbt2Box${i}`),
+          led: document.getElementById(`igbt2Led${i}`)
+        })),
+        igbts3: Array.from({ length: 12 }, (_, i) => ({
+          box: document.getElementById(`igbt3Box${i}`),
+          led: document.getElementById(`igbt3Led${i}`)
+        })),
+        svgDcVal2L: document.getElementById('proSvgDcVal2L'),
+        svgDcTop: document.getElementById('proSvgDcTop'),
+        svgDcBot: document.getElementById('proSvgDcBot'),
+        dspStatus: document.getElementById('proDspStatus'),
+        dspMetrics: document.getElementById('proDspMetrics'),
+        batBar: document.getElementById('proBatBar'),
+        batSocText: document.getElementById('proBatSocText'),
+        batCurrText: document.getElementById('proBatCurrText'),
+        bmsLed: document.getElementById('proBmsLed'),
+        particleLayer: document.getElementById('proParticleLayer'),
+        scopeSyncBadge: document.getElementById('proScopeSyncBadge'),
+        ch1PhaseBadge: document.getElementById('proCh1PhaseBadge'),
+        ch2ModBadge: document.getElementById('proCh2ModBadge'),
+        ch3DcBadge: document.getElementById('proCh3DcBadge'),
+        ch3Legend: document.getElementById('proCh3Legend'),
+        stepModeBadge: document.getElementById('proStepModeBadge'),
+        stepsContainer: document.getElementById('proStepsContainer'),
+        compBadge: document.getElementById('proCompBadge'),
+        th2L: document.getElementById('th2L'),
+        th3L: document.getElementById('th3L'),
+        td2Ls: document.querySelectorAll('.td-2l'),
+        td3Ls: document.querySelectorAll('.td-3l')
+      };
+
+      function syncProStaticUI() {
+        const mode = pro.mode;
+        const is3 = app.topology === '3level';
+        const cfg = getProSteps(mode, app.topology);
+
+        // 토폴로지 버튼
+        proEl.topoBtns.forEach(b => {
+          b.classList.remove('active-2l', 'active-3l');
+          if (b.dataset.topo === app.topology) b.classList.add(is3 ? 'active-3l' : 'active-2l');
+        });
+
+        // 운전 모드 버튼
+        proEl.modeBtns.forEach(b => {
+          b.classList.remove('active-charge', 'active-discharge', 'active-ups', 'active-standby');
+          if (b.dataset.proMode === mode) b.classList.add(`active-${mode}`);
+        });
+
+        // SVG 토폴로지 블록 전환
+        proEl.sw2L.setAttribute('display', is3 ? 'none' : 'inline');
+        proEl.dc2L.setAttribute('display', is3 ? 'none' : 'inline');
+        proEl.sw3L.setAttribute('display', is3 ? 'inline' : 'none');
+        proEl.dc3L.setAttribute('display', is3 ? 'inline' : 'none');
+        proEl.wireNeutralClamp.setAttribute('opacity', is3 ? '1' : '0');
+        proEl.pcsFrame.setAttribute('stroke', is3 ? '#c084fc' : '#0ea5e9');
+        proEl.svgPcsTitle.setAttribute('fill', is3 ? '#e9d5ff' : '#38bdf8');
+        proEl.svgPcsTitle.textContent = is3
+          ? 'POWER CONVERSION SYSTEM (3-LEVEL NPC · 12-IGBT)'
+          : 'POWER CONVERSION SYSTEM (2-LEVEL · 6-IGBT)';
+        proEl.specBadge.textContent = is3
+          ? '3-Level NPC 12-IGBT · 380V / 500kW PCS'
+          : '2-Level 6-IGBT · 380V / 500kW PCS';
+        proEl.filterThdTxt.textContent = is3 ? 'THD ~1.6%' : 'THD ~3.8%';
+        proEl.filterThdTxt.setAttribute('fill', is3 ? '#34d399' : '#f472b6');
+        proEl.gateDriveTxt.textContent = is3
+          ? '3-LEVEL NPC SPWM GATE DRIVE (10kHz)'
+          : '2-LEVEL SPWM GATE DRIVE (10kHz)';
+        proEl.scopeSyncBadge.textContent = is3
+          ? '3-LEVEL NPC PWM · TIMEBASE 5ms/div'
+          : '2-LEVEL PWM · TIMEBASE 5ms/div';
+
+        proEl.ch3Legend.innerHTML = is3
+          ? '<span class="leg-item"><span class="leg-swatch" style="background:#34d399;"></span>상단 C1 (+Vdc/2)</span><span class="leg-item"><span class="leg-swatch" style="background:#38bdf8;"></span>하단 C2 (-Vdc/2)</span>'
+          : '<span class="leg-item"><span class="leg-swatch" style="background:#34d399;"></span>단일 DC Bus 전압 + 스위칭 리플</span>';
+
+        const roleMap = {
+          charge: is3 ? 'PWM RECTIFIER (+Vdc/2 · 0V · -Vdc/2)' : 'PWM RECTIFIER (+Vdc/2, -Vdc/2)',
+          discharge: is3 ? 'PWM INVERTER (+Vdc/2 · 0V · -Vdc/2)' : 'PWM INVERTER (+Vdc/2, -Vdc/2)',
+          ups: is3 ? 'STANDALONE V/f NPC INVERTER' : 'STANDALONE V/f INVERTER',
+          standby: 'GATE BLOCKED (IDLE)'
+        };
+        proEl.igbtRole2L.textContent = roleMap[mode];
+        proEl.igbtRole3L.textContent = roleMap[mode];
+
+        proEl.flowBadge.textContent = cfg.flow;
+        proEl.dspStatus.textContent = cfg.dsp;
+        proEl.stepModeBadge.textContent = cfg.badge;
+
+        // 계통 & 차단기 상태
+        if (mode === 'ups') {
+          proEl.gridBox.setAttribute('stroke', '#ef4444');
+          proEl.towerVec.setAttribute('stroke', '#475569');
+          proEl.gridTagBg.setAttribute('fill', 'rgba(239,68,68,0.2)');
+          proEl.gridTagBg.setAttribute('stroke', '#ef4444');
+          proEl.gridTagText.setAttribute('fill', '#f87171');
+          proEl.gridTagText.textContent = 'GRID FAULT';
+
+          proEl.cbArm.style.transform = 'rotate(-36deg)';
+          proEl.cbArm.setAttribute('stroke', '#ef4444');
+          proEl.cbText.setAttribute('fill', '#f87171');
+          proEl.cbText.textContent = 'OPEN';
+
+          proEl.wireGridCb.setAttribute('stroke', '#475569');
+          proEl.wireCbBus.setAttribute('stroke', '#334155');
+          proEl.wireBusLoad.setAttribute('stroke', '#f59e0b');
+          proEl.wireBusLcl.setAttribute('stroke', '#f59e0b');
+          proEl.wireLclIgbt.setAttribute('stroke', '#fbbf24');
+          proEl.wireIgbtDc.setAttribute('stroke', '#10b981');
+          proEl.wireDcBat.setAttribute('stroke', '#10b981');
+          proEl.acBusNode.setAttribute('fill', '#f59e0b');
+          proEl.loadStatus.setAttribute('fill', '#fbbf24');
+          proEl.loadStatus.textContent = 'UPS BACKUP ACTIVE';
+        } else {
+          proEl.gridBox.setAttribute('stroke', '#1e3a5f');
+          proEl.towerVec.setAttribute('stroke', '#38bdf8');
+          proEl.gridTagBg.setAttribute('fill', 'rgba(6,182,212,0.16)');
+          proEl.gridTagBg.setAttribute('stroke', '#06b6d4');
+          proEl.gridTagText.setAttribute('fill', '#22d3ee');
+          proEl.gridTagText.textContent = '380V 60Hz';
+
+          proEl.cbArm.style.transform = 'rotate(0deg)';
+          proEl.cbArm.setAttribute('stroke', '#10b981');
+          proEl.cbText.setAttribute('fill', '#34d399');
+          proEl.cbText.textContent = 'CLOSED';
+
+          const acCol = mode === 'discharge' ? '#10b981' : '#0ea5e9';
+          const idleCol = '#334155';
+          proEl.wireGridCb.setAttribute('stroke', acCol);
+          proEl.wireCbBus.setAttribute('stroke', acCol);
+          proEl.wireBusLoad.setAttribute('stroke', acCol);
+          proEl.wireBusLcl.setAttribute('stroke', mode === 'standby' ? idleCol : acCol);
+          proEl.wireLclIgbt.setAttribute('stroke', mode === 'standby' ? idleCol : (is3 ? '#c084fc' : '#38bdf8'));
+          proEl.wireIgbtDc.setAttribute('stroke', mode === 'standby' ? idleCol : '#10b981');
+          proEl.wireDcBat.setAttribute('stroke', mode === 'standby' ? idleCol : '#10b981');
+          proEl.acBusNode.setAttribute('fill', acCol);
+          proEl.loadStatus.setAttribute('fill', '#38bdf8');
+          proEl.loadStatus.textContent = 'LOAD POWERED (AC)';
+        }
+
+        // 4단계 공학 해설
+        proEl.stepsContainer.innerHTML = cfg.steps.map(s => `
+          <div class="pro-step-card">
+            <span class="pro-step-tag mono">${s.tag}</span>
+            <h4>${s.title}</h4>
+            <p>${s.desc}</p>
+          </div>
+        `).join('');
+
+        // 비교표 하이라이트
+        proEl.compBadge.textContent = is3 ? '현재 선택: 3-Level NPC 강조 표시 중' : '현재 선택: 2-Level 강조 표시 중';
+        proEl.th2L.classList.toggle('col-highlight-2l', !is3);
+        proEl.th3L.classList.toggle('col-highlight-3l', is3);
+        proEl.td2Ls.forEach(td => td.classList.toggle('col-highlight-2l', !is3));
+        proEl.td3Ls.forEach(td => td.classList.toggle('col-highlight-3l', is3));
+      }
+
+      function updatePro(dt) {
+        if (!pro.paused) {
+          pro.simTime += dt;
+          const socDelta = (pro.powerKw / 500) * 5.0 * dt;
+          if (pro.mode === 'charge') {
+            pro.soc += socDelta;
+            if (pro.soc >= 95) pro.soc = 15;
+          } else if (pro.mode === 'discharge' || pro.mode === 'ups') {
+            pro.soc -= socDelta;
+            if (pro.soc <= 10) pro.soc = 90;
+          }
+        }
+
+        const t = pro.simTime;
+        const m = pro.mode;
+        const is3 = app.topology === '3level';
+        const pRatio = pro.powerKw / 500;
+        const dcV = 750 + (pro.soc * 0.8) + (m === 'charge' ? pRatio * 18 : (m === 'standby' ? 0 : -pRatio * 14));
+        const baseEff = is3 ? 98.1 : 96.6;
+        const eff = m === 'standby' ? 0 : (baseEff + Math.sin(pRatio * Math.PI * 0.85) * 0.7);
+        const thd = m === 'standby' ? 0 : (is3 ? (1.5 + (1 - pRatio) * 0.35) : (3.6 + (1 - pRatio) * 0.55));
+        const modIndex = m === 'standby' ? 0 : (0.44 + pRatio * 0.48);
+        const iDc = m === 'standby' ? 0 : (pro.powerKw * 1000) / dcV;
+
+        // 1) 8종 텔레메트리 갱신
+        if (m === 'charge') {
+          proEl.teleDot.style.background = '#06b6d4';
+          proEl.teleDot.style.boxShadow = '0 0 8px #06b6d4';
+          proEl.teleStatusText.style.color = '#22d3ee';
+          proEl.teleStatusText.textContent = 'RUN · CHG';
+          proEl.telePower.textContent = `-${pro.powerKw.toFixed(1)} kW`;
+          proEl.telePower.style.color = '#22d3ee';
+        } else if (m === 'discharge') {
+          proEl.teleDot.style.background = '#10b981';
+          proEl.teleDot.style.boxShadow = '0 0 8px #10b981';
+          proEl.teleStatusText.style.color = '#34d399';
+          proEl.teleStatusText.textContent = 'RUN · DCHG';
+          proEl.telePower.textContent = `+${pro.powerKw.toFixed(1)} kW`;
+          proEl.telePower.style.color = '#34d399';
+        } else if (m === 'ups') {
+          proEl.teleDot.style.background = '#f59e0b';
+          proEl.teleDot.style.boxShadow = '0 0 8px #f59e0b';
+          proEl.teleStatusText.style.color = '#fbbf24';
+          proEl.teleStatusText.textContent = 'UPS · ISLAND';
+          proEl.telePower.textContent = `+${pro.powerKw.toFixed(1)} kW`;
+          proEl.telePower.style.color = '#fbbf24';
+        } else {
+          proEl.teleDot.style.background = '#94a3b8';
+          proEl.teleDot.style.boxShadow = 'none';
+          proEl.teleStatusText.style.color = '#94a3b8';
+          proEl.teleStatusText.textContent = 'STANDBY';
+          proEl.telePower.textContent = '0.0 kW';
+          proEl.telePower.style.color = '#94a3b8';
+        }
+
+        proEl.teleTopo.textContent = is3 ? '3-LEVEL NPC' : '2-LEVEL';
+        proEl.teleTopo.style.color = is3 ? '#c084fc' : '#38bdf8';
+        proEl.teleSoc.textContent = `${pro.soc.toFixed(1)} %`;
+        proEl.teleEff.textContent = m === 'standby' ? '-- %' : `${eff.toFixed(1)} %`;
+        proEl.teleThd.textContent = m === 'standby' ? '-- %' : `${thd.toFixed(1)} %`;
+        proEl.teleThd.style.color = is3 ? '#34d399' : '#f472b6';
+        proEl.teleGridV.textContent = m === 'ups' ? '0V / 0Hz' : '380V / 60Hz';
+        proEl.teleGridV.style.color = m === 'ups' ? '#f87171' : '#38bdf8';
+        proEl.teleFreq.textContent = m === 'standby' ? '0.0 kHz' : '10.0 kHz';
+
+        // 2) SVG DC Link & 배터리 수치
+        proEl.svgDcVal2L.textContent = `${dcV.toFixed(0)}V DC`;
+        const halfV = dcV / 2;
+        const balOffset = m === 'standby' ? 0 : Math.sin(t * 3.5) * 1.2;
+        proEl.svgDcTop.textContent = `+${(halfV + balOffset).toFixed(1)}V`;
+        proEl.svgDcBot.textContent = `-${(halfV - balOffset).toFixed(1)}V`;
+
+        proEl.dspMetrics.textContent = m === 'standby'
+          ? `${is3 ? '3-Level NPC' : '2-Level'} | f_sw: 0.0kHz | GATE OFF`
+          : `${is3 ? '3-Level NPC' : '2-Level'} | f_sw: 10kHz | Mod(m): ${modIndex.toFixed(2)} | THD: ${thd.toFixed(1)}%`;
+
+        const barH = Math.max(8, (pro.soc / 100) * 166);
+        proEl.batBar.setAttribute('y', (236 - barH).toFixed(1));
+        proEl.batBar.setAttribute('height', barH.toFixed(1));
+        proEl.batSocText.textContent = `${pro.soc.toFixed(1)}%`;
+        const sign = m === 'charge' ? '+' : (m === 'standby' ? '' : '-');
+        proEl.batCurrText.textContent = `I_dc: ${sign}${iDc.toFixed(1)} A`;
+        proEl.bmsLed.setAttribute('fill', Math.sin(t * 7) > 0 ? '#10b981' : '#065f46');
+
+        // 3) IGBT LED 애니메이션 (2-Level 6개 vs 3-Level 12개)
+        const swCol = m === 'charge' ? '#06b6d4' : (m === 'discharge' ? '#10b981' : '#f59e0b');
+        if (!is3) {
+          for (let phase = 0; phase < 3; phase++) {
+            const up = proEl.igbts2[phase];
+            const lo = proEl.igbts2[phase + 3];
+            if (m === 'standby') {
+              up.led.setAttribute('fill', '#475569'); up.box.setAttribute('stroke', '#334155');
+              lo.led.setAttribute('fill', '#475569'); lo.box.setAttribute('stroke', '#334155');
+            } else {
+              const uOn = Math.sin(t * (7 + pRatio * 6) - phase * (Math.PI * 2 / 3)) >= 0;
+              up.led.setAttribute('fill', uOn ? swCol : '#334155');
+              up.box.setAttribute('stroke', uOn ? swCol : '#334155');
+              lo.led.setAttribute('fill', !uOn ? swCol : '#334155');
+              lo.box.setAttribute('stroke', !uOn ? swCol : '#334155');
+            }
+          }
+        } else {
+          // 3-Level NPC: 각 상마다 S1,S2 (+), S2,S3 (0V), S3,S4 (-) 3상태 순환
+          for (let phase = 0; phase < 3; phase++) {
+            const base = phase * 4;
+            const s = [0, 1, 2, 3].map(k => proEl.igbts3[base + k]);
+            if (m === 'standby') {
+              s.forEach(item => { item.led.setAttribute('fill', '#475569'); item.box.setAttribute('stroke', '#334155'); });
+            } else {
+              const v = Math.sin(t * (6 + pRatio * 5) - phase * (Math.PI * 2 / 3));
+              // v > 0.35 -> +상태(S1,S2 ON), -0.35~0.35 -> 0V상태(S2,S3 ON), v < -0.35 -> -상태(S3,S4 ON)
+              const states = v > 0.35 ? [1, 1, 0, 0] : (v < -0.35 ? [0, 0, 1, 1] : [0, 1, 1, 0]);
+              const activeCol = (v >= -0.35 && v <= 0.35) ? '#c084fc' : swCol;
+              states.forEach((on, k) => {
+                s[k].led.setAttribute('fill', on ? activeCol : '#334155');
+                s[k].box.setAttribute('stroke', on ? activeCol : '#334155');
+              });
+            }
+          }
+        }
+
+        // 4) 전력 흐름 입자
+        const speed = 0.25 + pRatio * 0.95;
+        const pCount = Math.max(2, Math.round(2 + pRatio * 4));
+        const segs = [];
+
+        if (m === 'charge') {
+          segs.push({ path: PRO_PATHS.gridToBus, rev: false, color: '#22d3ee', count: pCount });
+          segs.push({ path: PRO_PATHS.busToLoad, rev: false, color: '#38bdf8', count: 2 });
+          segs.push({ path: PRO_PATHS.busToLcl, rev: false, color: '#22d3ee', count: 2 });
+          segs.push({ path: PRO_PATHS.lclToIgbt, rev: false, color: is3 ? '#c084fc' : '#38bdf8', count: 2 });
+          segs.push({ path: PRO_PATHS.igbtToDc, rev: false, color: '#34d399', count: 2 });
+          segs.push({ path: PRO_PATHS.dcToBat, rev: false, color: '#34d399', count: 2 });
+        } else if (m === 'discharge') {
+          segs.push({ path: PRO_PATHS.dcToBat, rev: true, color: '#34d399', count: 2 });
+          segs.push({ path: PRO_PATHS.igbtToDc, rev: true, color: '#34d399', count: 2 });
+          segs.push({ path: PRO_PATHS.lclToIgbt, rev: true, color: is3 ? '#c084fc' : '#22d3ee', count: 2 });
+          segs.push({ path: PRO_PATHS.busToLcl, rev: true, color: '#10b981', count: 2 });
+          segs.push({ path: PRO_PATHS.busToLoad, rev: false, color: '#10b981', count: pCount });
+          segs.push({ path: PRO_PATHS.gridToBus, rev: true, color: '#10b981', count: pCount });
+        } else if (m === 'ups') {
+          segs.push({ path: PRO_PATHS.dcToBat, rev: true, color: '#34d399', count: 2 });
+          segs.push({ path: PRO_PATHS.igbtToDc, rev: true, color: '#34d399', count: 2 });
+          segs.push({ path: PRO_PATHS.lclToIgbt, rev: true, color: '#fbbf24', count: 2 });
+          segs.push({ path: PRO_PATHS.busToLcl, rev: true, color: '#f59e0b', count: 2 });
+          segs.push({ path: PRO_PATHS.busToLoad, rev: false, color: '#f59e0b', count: pCount });
+        } else {
+          segs.push({ path: PRO_PATHS.gridToBus, rev: false, color: '#38bdf8', count: 2 });
+          segs.push({ path: PRO_PATHS.busToLoad, rev: false, color: '#38bdf8', count: 2 });
+        }
+
+        let idx = 0;
+        for (const s of segs) {
+          for (let i = 0; i < s.count && idx < pro.particles.length; i++) {
+            const p = pro.particles[idx++];
+            const prog = (t * speed + i / s.count) % 1;
+            const pt = getPointOnPath(s.path, prog, s.rev);
+            p.g.setAttribute('opacity', '1');
+            p.g.setAttribute('transform', `translate(${pt.x.toFixed(1)}, ${pt.y.toFixed(1)})`);
+            p.outer.setAttribute('fill', s.color);
+            p.core.setAttribute('fill', s.color);
+          }
+        }
+        while (idx < pro.particles.length) pro.particles[idx++].g.setAttribute('opacity', '0');
+
+        // 5) 3채널 오실로스코프
+        drawProScopes(dcV, modIndex, pRatio, is3);
+      }
+
+      function drawProGrid(ctx, w, h) {
+        ctx.clearRect(0, 0, w, h);
+        ctx.strokeStyle = 'rgba(51, 65, 85, 0.45)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        for (let x = w / 8; x < w; x += w / 8) { ctx.moveTo(x, 0); ctx.lineTo(x, h); }
+        for (let y = h / 4; y < h; y += h / 4) { ctx.moveTo(0, y); ctx.lineTo(w, y); }
+        ctx.stroke();
+
+        ctx.strokeStyle = 'rgba(148, 163, 184, 0.35)';
+        ctx.beginPath();
+        ctx.moveTo(0, h / 2); ctx.lineTo(w, h / 2);
+        ctx.stroke();
+      }
+
+      function drawProScopes(dcV, modIndex, pRatio, is3) {
+        const t = pro.simTime;
+        const m = pro.mode;
+
+        // CH1: 계통 AC 전압/전류 정현파 (3-Level은 리플 적고 매끄러움)
+        {
+          const { ctx, w, h } = pro.scopes[0];
+          drawProGrid(ctx, w, h);
+          const mid = h / 2;
+          const vAmp = h * 0.35;
+          const iAmp = m === 'standby' ? 0 : (h * (0.14 + pRatio * 0.21));
+          const phaseShift = m === 'charge' ? Math.PI : 0;
+
+          if (m === 'charge') { proEl.ch1PhaseBadge.textContent = '180° 역위상 (충전)'; proEl.ch1PhaseBadge.style.color = '#f472b6'; }
+          else if (m === 'discharge') { proEl.ch1PhaseBadge.textContent = '0° 동위상 (방전)'; proEl.ch1PhaseBadge.style.color = '#34d399'; }
+          else if (m === 'ups') { proEl.ch1PhaseBadge.textContent = '독립 V/f 출력 (UPS)'; proEl.ch1PhaseBadge.style.color = '#fbbf24'; }
+          else { proEl.ch1PhaseBadge.textContent = '무부하 대기 (I=0)'; proEl.ch1PhaseBadge.style.color = '#94a3b8'; }
+
+          // 전압 V
+          ctx.strokeStyle = m === 'ups' ? '#fbbf24' : '#38bdf8';
+          ctx.lineWidth = 2.1;
+          ctx.beginPath();
+          for (let x = 0; x <= w; x += 2) {
+            const ang = (x / w) * Math.PI * 2 * 2.5 - t * 5.0;
+            const y = mid - Math.sin(ang) * vAmp;
+            x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+          }
+          ctx.stroke();
+
+          // 전류 I (2-Level: 미세 리플 크게, 3-Level: 매우 매끄럽게)
+          if (iAmp > 0) {
+            const ripple = is3 ? 0.6 : 2.8;
+            ctx.strokeStyle = m === 'charge' ? '#f472b6' : '#34d399';
+            ctx.lineWidth = 2.0;
+            ctx.beginPath();
+            for (let x = 0; x <= w; x += 1.5) {
+              const ang = (x / w) * Math.PI * 2 * 2.5 - t * 5.0 + phaseShift;
+              const hf = Math.sin(x * 0.45 - t * 28) * ripple;
+              const y = mid - Math.sin(ang) * iAmp + hf;
+              x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+          }
+        }
+
+        // CH2: PCS PWM 출력 파형 (2-Level: +Vdc/2 ↔ -Vdc/2 vs 3-Level: +Vdc/2 ↔ 0V ↔ -Vdc/2)
+        {
+          const { ctx, w, h } = pro.scopes[1];
+          drawProGrid(ctx, w, h);
+          const mid = h / 2;
+          proEl.ch2ModBadge.textContent = m === 'standby'
+            ? 'GATE OFF'
+            : (is3 ? '3-Level (+ / 0 / -)' : '2-Level (+ / -)');
+
+          if (m === 'standby') {
+            ctx.strokeStyle = '#64748b';
+            ctx.lineWidth = 2;
+            ctx.beginPath(); ctx.moveTo(0, mid); ctx.lineTo(w, mid); ctx.stroke();
+          } else {
+            const amp = h * 0.37;
+            const carrier = 20;
+
+            // 기준 정현파 (점선)
+            ctx.strokeStyle = 'rgba(148, 163, 184, 0.42)';
+            ctx.setLineDash([4, 4]);
+            ctx.lineWidth = 1.4;
+            ctx.beginPath();
+            for (let x = 0; x <= w; x += 2) {
+              const ref = Math.sin((x / w) * Math.PI * 2 * 2.0 - t * 3.8) * modIndex;
+              const y = mid - ref * amp;
+              x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // PWM 파형
+            ctx.strokeStyle = is3 ? '#c084fc' : '#38bdf8';
+            ctx.lineWidth = 1.9;
+            ctx.beginPath();
+            let prev = 0;
+            for (let x = 0; x <= w; x += 1) {
+              const nx = x / w;
+              const ref = Math.sin(nx * Math.PI * 2 * 2.0 - t * 3.8) * modIndex;
+              const cPhase = ((nx * carrier - t * 0.55) % 1 + 1) % 1;
+              const tri = cPhase < 0.5 ? (cPhase * 4 - 1) : (3 - cPhase * 4); // -1 ~ +1
+
+              let lvl;
+              if (!is3) {
+                // 2-Level: +1 또는 -1
+                lvl = ref >= tri ? 1 : -1;
+              } else {
+                // 3-Level NPC (PD-PWM): 양의 반주기엔 상단 삼각파(0~1)와 비교하여 +1 또는 0, 음의 반주기엔 하단 삼각파(-1~0)와 비교하여 0 또는 -1
+                const triTop = (tri + 1) * 0.5;     // 0 ~ +1
+                const triBot = (tri - 1) * 0.5;     // -1 ~ 0
+                if (ref >= 0) lvl = ref >= triTop ? 1 : 0;
+                else lvl = ref <= triBot ? -1 : 0;
+              }
+
+              const y = mid - lvl * amp;
+              if (x === 0) ctx.moveTo(x, y);
+              else {
+                if (lvl !== prev) ctx.lineTo(x, mid - prev * amp);
+                ctx.lineTo(x, y);
+              }
+              prev = lvl;
+            }
+            ctx.stroke();
+          }
+        }
+
+        // CH3: DC Link 전압 (2-Level: 단일 버스 vs 3-Level: 상단/하단 분할 커패시터 밸런싱)
+        {
+          const { ctx, w, h } = pro.scopes[2];
+          drawProGrid(ctx, w, h);
+
+          if (!is3) {
+            proEl.ch3DcBadge.textContent = `${dcV.toFixed(1)} V DC`;
+            const normV = (dcV - 740) / 120;
+            const baseY = h * (0.7 - Math.min(0.45, Math.max(0.05, normV * 0.42)));
+            const ripAmp = m === 'standby' ? 0.5 : (2.2 + pRatio * 4.2);
+
+            ctx.strokeStyle = '#34d399';
+            ctx.lineWidth = 2.4;
+            ctx.beginPath();
+            for (let x = 0; x <= w; x += 2) {
+              const rip = Math.sin(x * 0.25 - t * 24) * ripAmp;
+              const y = baseY + rip;
+              x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            ctx.fillStyle = '#6ee7b7';
+            ctx.font = '700 10.5px ui-monospace, monospace';
+            ctx.fillText(`Single Bus: ${dcV.toFixed(1)}V (Ripple ±${(ripAmp * 0.8).toFixed(1)}V)`, 8, 17);
+          } else {
+            const halfV = dcV / 2;
+            proEl.ch3DcBadge.textContent = `±${halfV.toFixed(1)} V (N=0V)`;
+            const topY = h * 0.26;
+            const botY = h * 0.74;
+            const ripAmp = m === 'standby' ? 0.3 : (0.9 + pRatio * 1.6);
+
+            // 상단 C1 (+Vdc/2)
+            ctx.strokeStyle = '#34d399';
+            ctx.lineWidth = 2.2;
+            ctx.beginPath();
+            for (let x = 0; x <= w; x += 2) {
+              const y = topY + Math.sin(x * 0.22 - t * 20) * ripAmp;
+              x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // 하단 C2 (-Vdc/2)
+            ctx.strokeStyle = '#38bdf8';
+            ctx.lineWidth = 2.2;
+            ctx.beginPath();
+            for (let x = 0; x <= w; x += 2) {
+              const y = botY - Math.sin(x * 0.22 - t * 20) * ripAmp;
+              x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            ctx.fillStyle = '#6ee7b7';
+            ctx.font = '700 10px ui-monospace, monospace';
+            ctx.fillText(`C1: +${halfV.toFixed(1)}V`, 8, 16);
+            ctx.fillStyle = '#7dd3fc';
+            ctx.fillText(`C2: -${halfV.toFixed(1)}V`, 8, h - 8);
+            ctx.fillStyle = '#c084fc';
+            ctx.fillText('N (0V)', w - 46, h / 2 - 4);
+          }
+        }
+      }
+
+      /* =================================================================
+       * 2. [일반용 전기 변신 마법사] 데이터 및 DOM
+       * ================================================================= */
+      const edu = {
+        mode: 'charge',
+        powerLevel: 2,
+        slowMo: false,
+        paused: false,
+        soc: 50.0,
+        simTime: 0,
+        particles: [],
+        scopes: [],
+        quizAns: [null, null, null, null]
+      };
+
+      const EDU_POWER = {
+        1: { speed: 0.55, amp: 0.55, socRate: 2.2, count: 3 },
+        2: { speed: 1.0, amp: 0.8, socRate: 4.4, count: 4 },
+        3: { speed: 1.55, amp: 1.0, socRate: 7.0, count: 6 }
+      };
+
+      const EDU_MODES = {
+        charge: {
+          badge: '🔋 전기 채우기 (충전: AC → DC)',
+          speech: '파도 전기(AC)를 직진 전기(DC)로 변신 중!',
+          speechColor: '#3b82f6',
+          brain: '남는 전기를 안전하게 배터리에 차곡차곡 채우고 있어요!'
+        },
+        discharge: {
+          badge: '💡 전기 꺼내 쓰기 (방전: DC → AC)',
+          speech: '직진 전기(DC)를 파도 전기(AC)로 변신 중!',
+          speechColor: '#10b981',
+          brain: '배터리 전기를 집과 건물이 쓰기 좋게 바꾸고 있어요!'
+        },
+        ups: {
+          badge: '⚡ 앗! 정전이다! (비상 모드)',
+          speech: '정전 비상! 0.01초 만에 배터리 전기를 보내는 중!',
+          speechColor: '#f97316',
+          brain: '발전소 연결을 딱 끊고 우리 집과 건물 불빛을 지켜요!'
+        },
+        standby: {
+          badge: '😴 쉬는 시간 (대기 모드)',
+          speech: '잠시 휴식 중! 다음 명령을 기다리고 있어요 💤',
+          speechColor: '#64748b',
+          brain: '스위치를 쉬게 하면서 배터리 건강 상태를 지켜보고 있어요.'
+        }
+      };
+
+      function getEduSteps(mode, topo) {
+        const is3 = topo === '3level';
+        const swStory = is3
+          ? '3레벨 초고속 스위치가 위(+) · 중간 쉼터(0) · 아래(-) 3단 계단으로 훨씬 부드럽고 알뜰하게 변신시켜요!'
+          : '2레벨 초고속 스위치가 위(+)와 아래(-) 2단 계단을 빠르게 오가며 전기 모양을 바꿔줘요!';
+
+        if (mode === 'charge') {
+          return [
+            { tag: '1단계', bg: '#dbeafe', col: '#1d4ed8', title: '발전소에서 파도 전기(AC)가 와요', desc: '전기가 남을 때 발전소에서 출렁출렁 파도 모양 전기(교류)가 PCS로 들어옵니다.' },
+            { tag: '2단계', bg: '#f3e8ff', col: '#7e22ce', title: `PCS ${is3 ? '3레벨' : '2레벨'} 통역 마법!`, desc: swStory },
+            { tag: '3단계', bg: '#d1fae5', col: '#047857', title: '초대형 보조배터리에 쑥쑥 저장!', desc: '변신한 반듯한 직진 전기(DC)가 보조배터리 안으로 들어가 차곡차곡 모여요!' }
+          ];
+        }
+        if (mode === 'discharge') {
+          return [
+            { tag: '1단계', bg: '#d1fae5', col: '#047857', title: '배터리에서 직진 전기(DC)가 나와요', desc: '전기가 많이 필요할 때 보조배터리에 모아둔 직진 전기(직류)가 PCS로 출발합니다.' },
+            { tag: '2단계', bg: '#f3e8ff', col: '#7e22ce', title: `${is3 ? '3단 계단' : '2단 계단'}으로 파도 만들기!`, desc: swStory },
+            { tag: '3단계', bg: '#dbeafe', col: '#1d4ed8', title: '우리 집과 건물로 안전하게 배달!', desc: '파도 다듬기 필터를 거친 깨끗한 파도 전기(AC)가 전등과 가전제품을 켜줍니다.' }
+          ];
+        }
+        if (mode === 'ups') {
+          return [
+            { tag: '1단계', bg: '#fee2e2', col: '#b91c1c', title: '정전 감지 & 안전 스위치 열림!', desc: '발전소 전기가 갑자기 끊기면 PCS 두뇌가 0.01초 만에 안전 스위치를 열어 차단해요.' },
+            { tag: '2단계', bg: '#ffedd5', col: '#c2410c', title: `비상 ${is3 ? '3레벨' : '2레벨'} 변신 가동!`, desc: swStory },
+            { tag: '3단계', bg: '#fef9c3', col: '#a16207', title: '정전 속에서도 불빛이 꺼지지 않아요!', desc: '덕분에 우리 집과 건물, 병원의 불빛과 컴퓨터가 단 1초도 꺼지지 않고 켜져 있어요!' }
+          ];
+        }
+        return [
+          { tag: '1단계', bg: '#e2e8f0', col: '#475569', title: '초고속 스위치가 잠시 쉬어요', desc: '충전이나 방전이 필요 없을 때는 스위치를 꺼 두어 불필요한 전기 낭비를 막아줍니다.' },
+          { tag: '2단계', bg: '#dbeafe', col: '#1d4ed8', title: '집과 건물은 발전소 전기를 써요', desc: '안전 스위치가 연결되어 있어 우리 집과 건물은 평상시처럼 발전소 전기를 사용합니다.' },
+          { tag: '3단계', bg: '#d1fae5', col: '#047857', title: '언제든 출동할 준비 완료!', desc: '쉬는 동안에도 두뇌 컴퓨터가 정전 여부를 감시하며 바로 출동할 준비를 하고 있어요.' }
+        ];
+      }
+
+      const EDU_GLOSSARY = {
+        plant: { emoji: '🏭', title: '발전소', sub: '파도 전기(AC)를 만들어 보내는 곳', body: '발전소에서 만든 전기를 송전탑을 통해 우리 동네로 보내줘요. 멀리까지 보낼 때 손실이 적은 <strong>교류(AC, 파도 전기)</strong>를 사용합니다.' },
+        home: { emoji: '🏠', title: '우리 집 & 건물', sub: '파도 전기(AC)를 쓰는 곳', body: '벽 콘센트에 꽂아 쓰는 TV, 냉장고, 사무실 조명 등은 모두 <strong>교류(AC) 전기</strong>를 사용해요. 1초에 60번 방향이 바뀌는 파도 전기를 좋아합니다.' },
+        filter: { emoji: '🌊', title: '파도 다듬기 필터 (LCL 필터)', sub: '계단 블록을 매끄러운 파도로!', body: '초고속 스위치가 전기를 블록처럼 쪼개고 나면 계단 모양이 돼요. 필터가 이를 부드러운 파도로 다듬어 주는데, <strong>3레벨</strong>은 원래 파도에 가까워 필터 크기도 훨씬 작아진답니다!' },
+        switch: { emoji: '🪜', title: '초고속 스위치 (2레벨 vs 3레벨)', sub: '1초에 10,000번 찰칵찰칵!', body: '<strong>2레벨</strong>은 위(+)와 아래(-) 두 칸만 오가며 파도를 만들지만, <strong>3레벨</strong>은 가운데 <strong>0V 쉼터</strong>가 하나 더 있어 훨씬 촘촘하고 부드러운 전기를 만들며 에너지 손실도 적어요!' },
+        battery: { emoji: '🔋', title: '초대형 보조배터리 (ESS 배터리)', sub: '직진 전기(DC)만 저장할 수 있어요', body: '스마트폰 보조배터리를 집채만 하게 키워 놓은 장치예요! 배터리는 방향이 바뀌는 파도 전기(AC)는 저장할 수 없고, 오직 <strong>직진 전기(DC)</strong>만 저장할 수 있답니다.' }
+      };
+
+      const EDU_QUIZ = [
+        {
+          q: 'Q1. 남는 전기를 초대형 보조배터리에 채울 때(충전), PCS는 전기를 어떻게 변신시킬까요?',
+          opts: ['① 파도 전기(AC) → 직진 전기(DC)', '② 직진 전기(DC) → 파도 전기(AC)', '③ 전기를 사라지게 한다'],
+          ans: 0,
+          ok: '정답이에요! 👏 배터리는 직진 전기(DC)만 저장할 수 있어서 PCS가 AC → DC로 통역해 줍니다.',
+          no: '다시 생각해 볼까요? 배터리가 좋아하는 전기 모양은 한 방향으로 흐르는 "직진 전기(DC)"예요!'
+        },
+        {
+          q: 'Q2. 2레벨과 비교했을 때, 3레벨 PCS가 더 부드러운 파도 전기를 만드는 비결은 무엇일까요?',
+          opts: ['① 중간에 0V 쉼터(중성점)가 있어 3단 계단(+/0/-)으로 촘촘하게 만든다', '② 스위치를 아주 천천히 움직인다', '③ 배터리를 사용하지 않는다'],
+          ans: 0,
+          ok: '완벽해요! 🪜 중간 0V 쉼터 덕분에 3단 계단으로 파도를 그려 훨씬 매끄럽고 효율도 높아져요!',
+          no: '힌트! 위에서 2레벨과 3레벨 버튼을 번갈아 누르며 ②번 블록 파형을 비교해 보세요!'
+        },
+        {
+          q: 'Q3. 3레벨 PCS를 사용하면 좋은 점이 아닌 것은?',
+          opts: ['① 전기 변환 효율이 더 높아진다', '② 파형이 부드러워 필터 크기를 줄일 수 있다', '③ 스위치 부품 개수가 2레벨보다 더 적어진다'],
+          ans: 2,
+          ok: '정확해요! 🎯 3레벨은 성능이 뛰어난 대신 스위치 부품(12개+다이오드)이 2레벨(6개)보다 더 많이 들어가요.',
+          no: '아쉬워요! 3레벨은 3단 계단을 만들기 위해 스위치 부품이 2레벨보다 더 많이 필요하답니다.'
+        },
+        {
+          q: 'Q4. 갑자기 정전이 일어났을 때, PCS가 우리 집과 건물의 불빛을 지켜주는 방법은?',
+          opts: ['① 안전 스위치를 열어 발전소와 끊고, 배터리 전기를 파도 전기(AC)로 바꿔 보낸다', '② 배터리를 충전 모드로 바꾼다', '③ 모든 스위치를 끄고 기다린다'],
+          ans: 0,
+          ok: '대단해요! ⚡ 정전이 나면 안전 스위치를 열고 배터리 전기를 파도 전기(AC)로 바꿔 불을 지켜줘요!',
+          no: '힌트! "⚡ 앗! 정전이다!" 버튼을 눌러 전기 흐름을 확인해 보세요.'
+        }
+      ];
+
+      const EDU_PATHS = {
+        plantToNode: [{ x: 155, y: 150 }, { x: 288, y: 150 }],
+        nodeToHome: [{ x: 288, y: 150 }, { x: 288, y: 320 }, { x: 175, y: 320 }],
+        nodeToPcs: [{ x: 288, y: 150 }, { x: 385, y: 150 }, { x: 385, y: 225 }, { x: 400, y: 225 }],
+        pcsMid: [{ x: 500, y: 225 }, { x: 548, y: 225 }],
+        pcsToBat: [{ x: 692, y: 225 }, { x: 795, y: 225 }]
+      };
+
+      const eduEl = {
+        topoBtns: document.querySelectorAll('.edu-topo-btn'),
+        modeBtns: document.querySelectorAll('[data-edu-mode]'),
+        powerBtns: document.querySelectorAll('[data-edu-power]'),
+        btnSlow: document.getElementById('eduBtnSlow'),
+        slowLabel: document.getElementById('eduSlowLabel'),
+        btnPause: document.getElementById('eduBtnPause'),
+        pauseLabel: document.getElementById('eduPauseLabel'),
+        btnReset: document.getElementById('eduBtnReset'),
+        wirePlantSw: document.getElementById('eduWirePlantSw'),
+        wireSwNode: document.getElementById('eduWireSwNode'),
+        wireNodeHome: document.getElementById('eduWireNodeHome'),
+        wireNodePcs: document.getElementById('eduWireNodePcs'),
+        wireMid: document.getElementById('eduWireMid'),
+        wirePcsBat: document.getElementById('eduWirePcsBat'),
+        acDot: document.getElementById('eduAcDot'),
+        plantCard: document.getElementById('eduPlantCard'),
+        towerIcon: document.getElementById('eduTowerIcon'),
+        blackoutBadge: document.getElementById('eduBlackoutBadge'),
+        plantBg: document.getElementById('eduPlantBg'),
+        plantTxt: document.getElementById('eduPlantTxt'),
+        breakerArm: document.getElementById('eduBreakerArm'),
+        breakerTxt: document.getElementById('eduBreakerTxt'),
+        homeBg: document.getElementById('eduHomeBg'),
+        homeTxt: document.getElementById('eduHomeTxt'),
+        speechBg: document.getElementById('eduSpeechBg'),
+        speechTail: document.getElementById('eduSpeechTail'),
+        speechTxt: document.getElementById('eduSpeechTxt'),
+        pcsSubTxt: document.getElementById('eduPcsSubTxt'),
+        filterTxt: document.getElementById('eduFilterTxt'),
+        swModeSub: document.getElementById('eduSwModeSub'),
+        sw2LGroup: document.getElementById('eduSw2LGroup'),
+        sw3LGroup: document.getElementById('eduSw3LGroup'),
+        sw2Top: document.getElementById('eduSw2Top'),
+        sw2TopTxt: document.getElementById('eduSw2TopTxt'),
+        sw2Bot: document.getElementById('eduSw2Bot'),
+        sw2BotTxt: document.getElementById('eduSw2BotTxt'),
+        sw3Top: document.getElementById('eduSw3Top'),
+        sw3TopTxt: document.getElementById('eduSw3TopTxt'),
+        sw3Mid: document.getElementById('eduSw3Mid'),
+        sw3MidTxt: document.getElementById('eduSw3MidTxt'),
+        sw3Bot: document.getElementById('eduSw3Bot'),
+        sw3BotTxt: document.getElementById('eduSw3BotTxt'),
+        swStateTxt: document.getElementById('eduSwStateTxt'),
+        brainTxt: document.getElementById('eduBrainTxt'),
+        batRect: document.getElementById('eduBatRect'),
+        batEmoji: document.getElementById('eduBatEmoji'),
+        batPct: document.getElementById('eduBatPct'),
+        batMood: document.getElementById('eduBatMood'),
+        particleLayer: document.getElementById('eduParticleLayer'),
+        scopeHint: document.getElementById('eduScopeHint'),
+        pwmTag: document.getElementById('eduPwmTag'),
+        pwmDesc: document.getElementById('eduPwmDesc'),
+        storyBadge: document.getElementById('eduStoryBadge'),
+        storyGrid: document.getElementById('eduStoryGrid'),
+        quizGrid: document.getElementById('eduQuizGrid'),
+        scoreBar: document.getElementById('eduScoreBar'),
+        scoreTxt: document.getElementById('eduScoreTxt'),
+        resetQuizBtn: document.getElementById('eduResetQuizBtn'),
+        modal: document.getElementById('eduInfoModal'),
+        modalEmoji: document.getElementById('modalEmoji'),
+        modalTitle: document.getElementById('modalTitle'),
+        modalSub: document.getElementById('modalSub'),
+        modalBody: document.getElementById('modalBody'),
+        modalCloseBtn: document.getElementById('modalCloseBtn')
+      };
+
+      function syncEduStaticUI() {
+        const mode = edu.mode;
+        const is3 = app.topology === '3level';
+        const info = EDU_MODES[mode];
+
+        eduEl.topoBtns.forEach(b => {
+          b.classList.remove('active-2l', 'active-3l');
+          if (b.dataset.topo === app.topology) b.classList.add(is3 ? 'active-3l' : 'active-2l');
+        });
+
+        eduEl.modeBtns.forEach(b => {
+          b.classList.remove('active-charge', 'active-discharge', 'active-ups', 'active-standby');
+          if (b.dataset.eduMode === mode) b.classList.add(`active-${mode}`);
+        });
+
+        // 2레벨 vs 3레벨 스위치 시각화 전환
+        eduEl.sw2LGroup.setAttribute('display', is3 ? 'none' : 'inline');
+        eduEl.sw3LGroup.setAttribute('display', is3 ? 'inline' : 'none');
+        eduEl.pcsSubTxt.textContent = is3
+          ? '현재: 🪜 3레벨 (중간 0V 쉼터가 있는 3단 변신!)'
+          : '현재: 🪜 2레벨 (위·아래 2단 계단 변신)';
+        eduEl.swModeSub.textContent = is3 ? '3단 계단 (+ / 0 / -)' : '2단 계단 (+ / -)';
+        eduEl.scopeHint.textContent = is3
+          ? '현재: 🪜 3레벨 (중간 0이 있어 부드러운 3단 블록 ✨)'
+          : '현재: 🪜 2레벨 (거친 + / - 2단 블록)';
+        eduEl.pwmTag.textContent = is3 ? '🪜 3단 (+ / 0 / -)' : '🪜 2단 (+ / -)';
+        eduEl.pwmDesc.textContent = is3
+          ? '3레벨은 중간(0) 쉼터가 있어서 블록이 파도 모양에 훨씬 촘촘하고 부드럽게 맞아요!'
+          : '2레벨은 위(+)와 아래(-) 두 칸만 오가서 계단이 크고 거칠어요!';
+
+        eduEl.speechTxt.textContent = info.speech;
+        eduEl.speechBg.setAttribute('fill', info.speechColor);
+        eduEl.speechTail.setAttribute('fill', info.speechColor);
+        eduEl.brainTxt.textContent = info.brain;
+
+        if (mode === 'ups') {
+          eduEl.plantCard.setAttribute('stroke', '#ef4444');
+          eduEl.towerIcon.setAttribute('stroke', '#fca5a5');
+          eduEl.blackoutBadge.setAttribute('opacity', '1');
+          eduEl.blackoutBadge.classList.add('alert-blink');
+          eduEl.plantBg.setAttribute('fill', '#fee2e2');
+          eduEl.plantTxt.setAttribute('fill', '#dc2626');
+          eduEl.plantTxt.textContent = '⚡ 정전 발생!';
+
+          eduEl.breakerArm.style.transform = 'rotate(-36deg)';
+          eduEl.breakerArm.setAttribute('stroke', '#ef4444');
+          eduEl.breakerTxt.setAttribute('fill', '#dc2626');
+          eduEl.breakerTxt.textContent = '차단됨!';
+
+          eduEl.homeBg.setAttribute('fill', '#ffedd5');
+          eduEl.homeTxt.setAttribute('fill', '#c2410c');
+          eduEl.homeTxt.textContent = '🛡️ 배터리로 불빛 유지!';
+
+          eduEl.wirePlantSw.setAttribute('stroke', '#fecaca');
+          eduEl.wireSwNode.setAttribute('stroke', '#e2e8f0');
+          eduEl.wireNodeHome.setAttribute('stroke', '#fdba74');
+          eduEl.wireNodePcs.setAttribute('stroke', '#fdba74');
+          eduEl.wireMid.setAttribute('stroke', '#fbbf24');
+          eduEl.wirePcsBat.setAttribute('stroke', '#6ee7b7');
+          eduEl.acDot.setAttribute('fill', '#f97316');
+        } else {
+          eduEl.plantCard.setAttribute('stroke', '#93c5fd');
+          eduEl.towerIcon.setAttribute('stroke', '#3b82f6');
+          eduEl.blackoutBadge.setAttribute('opacity', '0');
+          eduEl.blackoutBadge.classList.remove('alert-blink');
+          eduEl.plantBg.setAttribute('fill', '#dbeafe');
+          eduEl.plantTxt.setAttribute('fill', '#1d4ed8');
+          eduEl.plantTxt.textContent = '정상 가동 중';
+
+          eduEl.breakerArm.style.transform = 'rotate(0deg)';
+          eduEl.breakerArm.setAttribute('stroke', '#10b981');
+          eduEl.breakerTxt.setAttribute('fill', '#059669');
+          eduEl.breakerTxt.textContent = '연결됨';
+
+          eduEl.homeBg.setAttribute('fill', '#fef9c3');
+          eduEl.homeTxt.setAttribute('fill', '#a16207');
+          eduEl.homeTxt.textContent = '💡 불빛 환하게 켜짐!';
+
+          const idle = mode === 'standby';
+          eduEl.wirePlantSw.setAttribute('stroke', '#93c5fd');
+          eduEl.wireSwNode.setAttribute('stroke', '#93c5fd');
+          eduEl.wireNodeHome.setAttribute('stroke', '#93c5fd');
+          eduEl.wireNodePcs.setAttribute('stroke', idle ? '#e2e8f0' : '#93c5fd');
+          eduEl.wireMid.setAttribute('stroke', idle ? '#e2e8f0' : '#c4b5fd');
+          eduEl.wirePcsBat.setAttribute('stroke', idle ? '#e2e8f0' : '#6ee7b7');
+          eduEl.acDot.setAttribute('fill', '#3b82f6');
+        }
+
+        eduEl.filterTxt.textContent = mode === 'standby' ? '잠시 쉬는 중 💤' : (is3 ? '가볍게 다듬는 중 ✨' : '열심히 다듬는 중 ✨');
+        eduEl.swStateTxt.textContent = mode === 'standby' ? '스위치 OFF 💤' : (is3 ? '3단 찰칵찰칵 변신! ✨' : '2단 찰칵찰칵 변신! ⚡');
+
+        const steps = getEduSteps(mode, app.topology);
+        eduEl.storyBadge.textContent = `${info.badge} · ${is3 ? '3레벨' : '2레벨'}`;
+        eduEl.storyGrid.innerHTML = steps.map(s => `
+          <div class="edu-story-step">
+            <span class="edu-step-badge" style="background:${s.bg}; color:${s.col};">${s.tag}</span>
+            <h3>${s.title}</h3>
+            <p>${s.desc}</p>
+          </div>
+        `).join('');
+      }
+
+      function updateEdu(rawDt) {
+        const dt = edu.paused ? 0 : (edu.slowMo ? rawDt * 0.3 : rawDt);
+        edu.simTime += dt;
+
+        const t = edu.simTime;
+        const m = edu.mode;
+        const is3 = app.topology === '3level';
+        const pMeta = EDU_POWER[edu.powerLevel];
+
+        if (dt > 0) {
+          if (m === 'charge') {
+            edu.soc += dt * pMeta.socRate;
+            if (edu.soc >= 96) {
+              edu.soc = 18;
+              showToast('배터리가 가득 찼어요! 다시 충전 체험을 이어갑니다 🔋');
+            }
+          } else if (m === 'discharge' || m === 'ups') {
+            edu.soc -= dt * pMeta.socRate;
+            if (edu.soc <= 10) {
+              edu.soc = 88;
+              showToast('배터리를 다 썼어요! 체험을 위해 다시 채워드렸어요 ✨');
+            }
+          }
+        }
+
+        // 배터리 게이지 & 표정
+        const h = Math.max(12, (edu.soc / 100) * 184);
+        eduEl.batRect.setAttribute('y', (327 - h).toFixed(1));
+        eduEl.batRect.setAttribute('height', h.toFixed(1));
+        eduEl.batPct.textContent = `${Math.round(edu.soc)}%`;
+
+        if (edu.soc < 25) {
+          eduEl.batEmoji.textContent = '😵';
+          eduEl.batMood.textContent = m === 'charge' ? '어질어질~ 전기가 들어와요!' : '전기가 얼마 안 남았어요!';
+        } else if (edu.soc < 65) {
+          eduEl.batEmoji.textContent = '😐';
+          eduEl.batMood.textContent =
+            m === 'charge' ? '전기가 쑥쑥 차오르고 있어요!' :
+            m === 'discharge' ? '집과 건물로 힘을 보내는 중!' :
+            m === 'ups' ? '정전 걱정 마세요! 제가 지킬게요!' : '편안하게 쉬고 있어요~';
+        } else {
+          eduEl.batEmoji.textContent = '😀';
+          eduEl.batMood.textContent = m === 'charge' ? '우와! 에너지가 빵빵해요!' : '힘이 넘쳐요! 쭉쭉 보내줄게요!';
+        }
+
+        // 스위치 점멸 애니메이션 (2레벨 2단 vs 3레벨 3단)
+        const swFreq = 5.8 * pMeta.speed;
+        const activeCol = m === 'charge' ? '#3b82f6' : (m === 'discharge' ? '#10b981' : '#f97316');
+
+        if (!is3) {
+          if (m === 'standby') {
+            eduEl.sw2Top.setAttribute('fill', '#f1f5f9'); eduEl.sw2TopTxt.setAttribute('fill', '#94a3b8');
+            eduEl.sw2Bot.setAttribute('fill', '#f1f5f9'); eduEl.sw2BotTxt.setAttribute('fill', '#94a3b8');
+          } else {
+            const topOn = Math.sin(t * swFreq) >= 0;
+            eduEl.sw2Top.setAttribute('fill', topOn ? activeCol : '#f1f5f9');
+            eduEl.sw2TopTxt.setAttribute('fill', topOn ? '#ffffff' : '#64748b');
+            eduEl.sw2Bot.setAttribute('fill', !topOn ? activeCol : '#f1f5f9');
+            eduEl.sw2BotTxt.setAttribute('fill', !topOn ? '#ffffff' : '#64748b');
+          }
+        } else {
+          if (m === 'standby') {
+            [eduEl.sw3Top, eduEl.sw3Mid, eduEl.sw3Bot].forEach(r => r.setAttribute('fill', '#f1f5f9'));
+            [eduEl.sw3TopTxt, eduEl.sw3MidTxt, eduEl.sw3BotTxt].forEach(tx => tx.setAttribute('fill', '#94a3b8'));
+          } else {
+            const v = Math.sin(t * swFreq);
+            const isTop = v > 0.35;
+            const isBot = v < -0.35;
+            const isMid = !isTop && !isBot;
+            eduEl.sw3Top.setAttribute('fill', isTop ? activeCol : '#f1f5f9');
+            eduEl.sw3TopTxt.setAttribute('fill', isTop ? '#ffffff' : '#64748b');
+            eduEl.sw3Mid.setAttribute('fill', isMid ? '#8b5cf6' : '#f1f5f9');
+            eduEl.sw3MidTxt.setAttribute('fill', isMid ? '#ffffff' : '#64748b');
+            eduEl.sw3Bot.setAttribute('fill', isBot ? activeCol : '#f1f5f9');
+            eduEl.sw3BotTxt.setAttribute('fill', isBot ? '#ffffff' : '#64748b');
+          }
+        }
+
+        // 전기 알갱이
+        const moveSpd = 0.42 * pMeta.speed;
+        const cnt = pMeta.count;
+        const segs = [];
+
+        if (m === 'charge') {
+          segs.push({ path: EDU_PATHS.plantToNode, rev: false, isAc: true, color: '#3b82f6', count: cnt });
+          segs.push({ path: EDU_PATHS.nodeToHome, rev: false, isAc: true, color: '#6366f1', count: Math.max(2, cnt - 1) });
+          segs.push({ path: EDU_PATHS.nodeToPcs, rev: false, isAc: true, color: '#3b82f6', count: cnt });
+          segs.push({ path: EDU_PATHS.pcsMid, rev: false, isAc: false, color: '#8b5cf6', count: 2 });
+          segs.push({ path: EDU_PATHS.pcsToBat, rev: false, isAc: false, color: '#10b981', count: cnt });
+        } else if (m === 'discharge') {
+          segs.push({ path: EDU_PATHS.pcsToBat, rev: true, isAc: false, color: '#10b981', count: cnt });
+          segs.push({ path: EDU_PATHS.pcsMid, rev: true, isAc: false, color: '#8b5cf6', count: 2 });
+          segs.push({ path: EDU_PATHS.nodeToPcs, rev: true, isAc: true, color: '#3b82f6', count: cnt });
+          segs.push({ path: EDU_PATHS.nodeToHome, rev: false, isAc: true, color: '#6366f1', count: cnt });
+          segs.push({ path: EDU_PATHS.plantToNode, rev: true, isAc: true, color: '#3b82f6', count: Math.max(2, cnt - 1) });
+        } else if (m === 'ups') {
+          segs.push({ path: EDU_PATHS.pcsToBat, rev: true, isAc: false, color: '#10b981', count: cnt });
+          segs.push({ path: EDU_PATHS.pcsMid, rev: true, isAc: false, color: '#f59e0b', count: 2 });
+          segs.push({ path: EDU_PATHS.nodeToPcs, rev: true, isAc: true, color: '#f97316', count: cnt });
+          segs.push({ path: EDU_PATHS.nodeToHome, rev: false, isAc: true, color: '#f97316', count: cnt });
+        } else {
+          segs.push({ path: EDU_PATHS.plantToNode, rev: false, isAc: true, color: '#60a5fa', count: 2 });
+          segs.push({ path: EDU_PATHS.nodeToHome, rev: false, isAc: true, color: '#60a5fa', count: 2 });
+        }
+
+        let idx = 0;
+        for (const s of segs) {
+          for (let i = 0; i < s.count && idx < edu.particles.length; i++) {
+            const p = edu.particles[idx++];
+            const prog = (t * moveSpd + i / s.count) % 1;
+            const pt = getPointOnPath(s.path, prog, s.rev);
+            let x = pt.x, y = pt.y;
+            if (s.isAc) {
+              const wig = Math.sin(prog * Math.PI * 6 + t * 8) * (7.5 * pMeta.amp);
+              x += pt.nx * wig;
+              y += pt.ny * wig;
+            }
+            p.g.setAttribute('opacity', '1');
+            p.g.setAttribute('transform', `translate(${x.toFixed(1)}, ${y.toFixed(1)})`);
+            p.outer.setAttribute('fill', s.color);
+            p.core.setAttribute('fill', s.color);
+          }
+        }
+        while (idx < edu.particles.length) edu.particles[idx++].g.setAttribute('opacity', '0');
+
+        drawEduScopes(pMeta, is3);
+      }
+
+      function drawEduGrid(ctx, w, h) {
+        ctx.clearRect(0, 0, w, h);
+        ctx.strokeStyle = '#f1f5f9';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        for (let x = w / 6; x < w; x += w / 6) { ctx.moveTo(x, 0); ctx.lineTo(x, h); }
+        for (let y = h / 4; y < h; y += h / 4) { ctx.moveTo(0, y); ctx.lineTo(w, y); }
+        ctx.stroke();
+
+        ctx.strokeStyle = '#cbd5e1';
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath(); ctx.moveTo(0, h / 2); ctx.lineTo(w, h / 2); ctx.stroke();
+        ctx.setLineDash([]);
+      }
+
+      function drawEduScopes(pMeta, is3) {
+        const t = edu.simTime;
+        const m = edu.mode;
+
+        // ① 파도 AC
+        {
+          const { ctx, w, h } = edu.scopes[0];
+          drawEduGrid(ctx, w, h);
+          const mid = h / 2;
+          const amp = (m === 'standby' ? 0.45 : pMeta.amp) * (h * 0.34);
+          ctx.strokeStyle = m === 'ups' ? '#f97316' : '#3b82f6';
+          ctx.lineWidth = 3.2;
+          ctx.beginPath();
+          for (let x = 0; x <= w; x += 2) {
+            const ang = (x / w) * Math.PI * 2 * 2.5 - t * 4.5 * pMeta.speed;
+            const y = mid - Math.sin(ang) * amp;
+            x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+          }
+          ctx.stroke();
+        }
+
+        // ② 블록 스위칭 (2레벨: 거친 2단 + / - vs 3레벨: 부드러운 3단 + / 0 / -)
+        {
+          const { ctx, w, h } = edu.scopes[1];
+          drawEduGrid(ctx, w, h);
+          const mid = h / 2;
+          if (m === 'standby') {
+            ctx.strokeStyle = '#94a3b8';
+            ctx.lineWidth = 3;
+            ctx.beginPath(); ctx.moveTo(0, mid); ctx.lineTo(w, mid); ctx.stroke();
+          } else {
+            const amp = h * 0.35;
+            const mod = 0.48 + 0.44 * pMeta.amp;
+            const spd = t * 3.0 * pMeta.speed;
+
+            // 목표 파도 가이드선
+            ctx.strokeStyle = 'rgba(148, 163, 184, 0.45)';
+            ctx.setLineDash([4, 4]);
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            for (let x = 0; x <= w; x += 2) {
+              const ref = Math.sin((x / w) * Math.PI * 2 * 2.0 - spd) * mod;
+              const y = mid - ref * amp;
+              x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // 2단 vs 3단 블록 파형
+            ctx.strokeStyle = is3 ? '#8b5cf6' : (m === 'ups' ? '#f59e0b' : '#2563eb');
+            ctx.lineWidth = 2.4;
+            ctx.beginPath();
+            let prev = 0;
+            for (let x = 0; x <= w; x += 1) {
+              const nx = x / w;
+              const ref = Math.sin(nx * Math.PI * 2 * 2.0 - spd) * mod;
+              const cPhase = ((nx * 16 - spd * 0.35) % 1 + 1) % 1;
+              const tri = cPhase < 0.5 ? (cPhase * 4 - 1) : (3 - cPhase * 4);
+
+              let lvl;
+              if (!is3) {
+                lvl = ref >= tri ? 1 : -1;
+              } else {
+                const triTop = (tri + 1) * 0.5;
+                const triBot = (tri - 1) * 0.5;
+                if (ref >= 0) lvl = ref >= triTop ? 1 : 0;
+                else lvl = ref <= triBot ? -1 : 0;
+              }
+
+              const y = mid - lvl * amp;
+              if (x === 0) ctx.moveTo(x, y);
+              else {
+                if (lvl !== prev) ctx.lineTo(x, mid - prev * amp);
+                ctx.lineTo(x, y);
+              }
+              prev = lvl;
+            }
+            ctx.stroke();
+          }
+        }
+
+        // ③ 직선 DC
+        {
+          const { ctx, w, h } = edu.scopes[2];
+          drawEduGrid(ctx, w, h);
+          const baseY = m === 'standby' ? h * 0.45 : (m === 'charge' ? h * 0.28 : h * 0.34);
+          ctx.strokeStyle = m === 'standby' ? '#94a3b8' : '#10b981';
+          ctx.lineWidth = 3.5;
+          ctx.beginPath();
+          for (let x = 0; x <= w; x += 4) {
+            const y = baseY + (m === 'standby' ? 0 : Math.sin(x * 0.08 - t * 10) * 1.0);
+            x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+          }
+          ctx.stroke();
+
+          if (m !== 'standby') {
+            ctx.fillStyle = '#059669';
+            const shift = (t * 55 * pMeta.speed) % (w / 3);
+            for (let i = 0; i < 3; i++) {
+              const ax = (i * (w / 3) + shift) % w;
+              ctx.beginPath();
+              ctx.moveTo(ax + 6, baseY);
+              ctx.lineTo(ax - 4, baseY - 5);
+              ctx.lineTo(ax - 4, baseY + 5);
+              ctx.closePath();
+              ctx.fill();
+            }
+          }
+        }
+      }
+
+      // 4문제 미니 퀴즈 렌더링
+      function renderEduQuiz() {
+        eduEl.quizGrid.innerHTML = EDU_QUIZ.map((q, qi) => {
+          const picked = edu.quizAns[qi];
+          const done = picked !== null;
+          const ok = picked === q.ans;
+          const opts = q.opts.map((o, oi) => {
+            let cls = 'edu-quiz-btn';
+            if (done) {
+              if (oi === q.ans) cls += ' correct';
+              else if (oi === picked) cls += ' wrong';
+            }
+            return `<button type="button" class="${cls}" data-q="${qi}" data-o="${oi}" ${done ? 'disabled' : ''}>${o}</button>`;
+          }).join('');
+          return `
+            <div class="edu-quiz-item">
+              <div class="edu-quiz-q">${q.q}</div>
+              <div class="edu-quiz-opts">${opts}</div>
+              <div class="edu-quiz-fb ${done ? (ok ? 'show fb-ok' : 'show fb-no') : ''}">${done ? (ok ? q.ok : q.no) : ''}</div>
+            </div>
+          `;
+        }).join('');
+
+        eduEl.quizGrid.querySelectorAll('.edu-quiz-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const qi = Number(btn.dataset.q);
+            const oi = Number(btn.dataset.o);
+            if (edu.quizAns[qi] !== null) return;
+            edu.quizAns[qi] = oi;
+            renderEduQuiz();
+          });
+        });
+
+        const doneCnt = edu.quizAns.filter(v => v !== null).length;
+        const score = edu.quizAns.reduce((s, v, i) => s + (v === EDU_QUIZ[i].ans ? 1 : 0), 0);
+        eduEl.scoreBar.classList.remove('perfect');
+        if (doneCnt < 4) {
+          eduEl.scoreTxt.textContent = `📝 문제를 풀어 보세요! (${doneCnt} / 4 완료 · 현재 점수: ${score}점)`;
+        } else if (score === 4) {
+          eduEl.scoreBar.classList.add('perfect');
+          eduEl.scoreTxt.textContent = '🏆 4 / 4점 만점! 2레벨과 3레벨 PCS 원리까지 완벽히 마스터하셨어요! 🎉✨';
+          showToast('🏆 퀴즈 4점 만점 달성! 정말 대단해요!');
+        } else {
+          eduEl.scoreTxt.textContent = `👍 4문제 완료! 총 ${score} / 4점이에요. 다시 도전해 볼까요?`;
+        }
+      }
+
+      /* =================================================================
+       * 3. 토폴로지 전환 · 탭 전환 · 캔버스 리사이즈
+       * ================================================================= */
+      function setTopology(topo) {
+        app.topology = topo;
+        syncProStaticUI();
+        syncEduStaticUI();
+        showToast(topo === '3level'
+          ? '🔷 3-Level NPC (3단 스위칭 · 고효율/저왜율)로 전환했습니다.'
+          : '⚡ 2-Level (2단 스위칭 · 기본형)로 전환했습니다.');
+      }
+
+      function resizeScopeList(list) {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        list.forEach(s => {
+          const rect = s.canvas.parentElement.getBoundingClientRect();
+          if (rect.width <= 0 || rect.height <= 0) return;
+          s.w = rect.width;
+          s.h = rect.height;
+          s.canvas.width = Math.floor(rect.width * dpr);
+          s.canvas.height = Math.floor(rect.height * dpr);
+          s.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        });
+      }
+
+      function switchView(view) {
+        app.activeView = view;
+        document.body.className = view === 'pro' ? 'theme-pro' : 'theme-edu';
+
+        document.getElementById('viewPro').classList.toggle('active', view === 'pro');
+        document.getElementById('viewEdu').classList.toggle('active', view === 'edu');
+
+        const tabPro = document.getElementById('tabPro');
+        const tabEdu = document.getElementById('tabEdu');
+        tabPro.classList.toggle('active', view === 'pro');
+        tabPro.setAttribute('aria-selected', String(view === 'pro'));
+        tabEdu.classList.toggle('active', view === 'edu');
+        tabEdu.setAttribute('aria-selected', String(view === 'edu'));
+
+        document.getElementById('navSubCaption').textContent = view === 'pro'
+          ? 'Industrial SCADA · 2-Level vs 3-Level NPC Topology Monitor'
+          : '누구나 쉽게 이해하는 PCS 체험실 · 2레벨 vs 3레벨 비교';
+
+        if (view === 'pro') resizeScopeList(pro.scopes);
+        else resizeScopeList(edu.scopes);
+
+        app.lastFrame = 0;
+      }
+
+      /* =================================================================
+       * 4. 단일 60fps 메인 루프 (활성 탭만 렌더링)
+       * ================================================================= */
+      function mainLoop(ts) {
+        if (!app.lastFrame) app.lastFrame = ts;
+        const dt = Math.min((ts - app.lastFrame) / 1000, 0.05);
+        app.lastFrame = ts;
+
+        if (app.activeView === 'pro') updatePro(dt);
+        else updateEdu(dt);
+
+        requestAnimationFrame(mainLoop);
+      }
+
+      /* =================================================================
+       * 5. 초기화 및 이벤트 바인딩
+       * ================================================================= */
+      window.addEventListener('load', () => {
+        pro.scopes = ['proCanvasCh1', 'proCanvasCh2', 'proCanvasCh3'].map(id => {
+          const c = document.getElementById(id);
+          return { canvas: c, ctx: c.getContext('2d'), w: 300, h: 150 };
+        });
+        edu.scopes = ['eduCanvasAc', 'eduCanvasPwm', 'eduCanvasDc'].map(id => {
+          const c = document.getElementById(id);
+          return { canvas: c, ctx: c.getContext('2d'), w: 300, h: 130 };
+        });
+
+        pro.particles = createSvgParticlePool(proEl.particleLayer, 36, 7.5, 4);
+        edu.particles = createSvgParticlePool(eduEl.particleLayer, 40, 9, 5.2);
+
+        // 상단 듀얼 모드 탭
+        document.querySelectorAll('.switch-tab').forEach(tab => {
+          tab.addEventListener('click', () => switchView(tab.dataset.view));
+        });
+
+        // 공통 2-Level vs 3-Level 토폴로지 버튼
+        document.querySelectorAll('[data-topo]').forEach(btn => {
+          btn.addEventListener('click', () => setTopology(btn.dataset.topo));
+        });
+
+        // 전문가용 이벤트
+        proEl.modeBtns.forEach(b => b.addEventListener('click', () => {
+          pro.mode = b.dataset.proMode;
+          syncProStaticUI();
+        }));
+        proEl.slider.addEventListener('input', e => {
+          pro.powerKw = Number(e.target.value);
+          proEl.powerReadout.textContent = `${pro.powerKw} kW`;
+        });
+        proEl.btnPause.addEventListener('click', () => {
+          pro.paused = !pro.paused;
+          proEl.btnPause.classList.toggle('is-paused', pro.paused);
+          proEl.pauseLabel.textContent = pro.paused ? '재생' : '일시정지';
+        });
+        proEl.btnResetSoc.addEventListener('click', () => {
+          pro.soc = 50.0;
+          showToast('🔋 배터리 SOC를 50.0%로 초기화했습니다.');
+        });
+
+        // 일반용 이벤트
+        eduEl.modeBtns.forEach(b => b.addEventListener('click', () => {
+          edu.mode = b.dataset.eduMode;
+          syncEduStaticUI();
+        }));
+        eduEl.powerBtns.forEach(b => {
+          b.addEventListener('click', () => {
+            edu.powerLevel = Number(b.dataset.eduPower);
+            eduEl.powerBtns.forEach(x => x.classList.toggle('active', x === b));
+          });
+        });
+        eduEl.btnSlow.addEventListener('click', () => {
+          edu.slowMo = !edu.slowMo;
+          eduEl.btnSlow.classList.toggle('is-slow', edu.slowMo);
+          eduEl.slowLabel.textContent = edu.slowMo ? '원래 속도로 (1x)' : '천천히 보기 (0.3x)';
+        });
+        eduEl.btnPause.addEventListener('click', () => {
+          edu.paused = !edu.paused;
+          eduEl.btnPause.classList.toggle('is-paused', edu.paused);
+          eduEl.pauseLabel.textContent = edu.paused ? '재생' : '일시정지';
+        });
+        eduEl.btnReset.addEventListener('click', () => {
+          edu.soc = 50.0;
+          showToast('🔋 배터리를 50%로 초기화했어요!');
+        });
+        eduEl.resetQuizBtn.addEventListener('click', () => {
+          edu.quizAns = [null, null, null, null];
+          renderEduQuiz();
+        });
+
+        // 일반용 장치 클릭 모달
+        document.querySelectorAll('.clickable-part').forEach(node => {
+          node.addEventListener('click', () => {
+            const g = EDU_GLOSSARY[node.dataset.part];
+            if (!g) return;
+            eduEl.modalEmoji.textContent = g.emoji;
+            eduEl.modalTitle.textContent = g.title;
+            eduEl.modalSub.textContent = g.sub;
+            eduEl.modalBody.innerHTML = g.body;
+            eduEl.modal.classList.add('open');
+          });
+        });
+        const closeModal = () => eduEl.modal.classList.remove('open');
+        eduEl.modalCloseBtn.addEventListener('click', closeModal);
+        eduEl.modal.addEventListener('click', e => { if (e.target === eduEl.modal) closeModal(); });
+        window.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        window.addEventListener('resize', () => {
+          if (app.activeView === 'pro') resizeScopeList(pro.scopes);
+          else resizeScopeList(edu.scopes);
+        });
+
+        // 초기 실행
+        syncProStaticUI();
+        syncEduStaticUI();
+        renderEduQuiz();
+        switchView('pro');
+        requestAnimationFrame(mainLoop);
+      });
+    })();
+  </script>
+</body>
+</html>

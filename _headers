@@ -13,3 +13,7 @@
 
 /briefing/*.json
   Cache-Control: public, max-age=300, must-revalidate
+
+/labs/*
+  X-Frame-Options: SAMEORIGIN
+  Cache-Control: public, max-age=3600

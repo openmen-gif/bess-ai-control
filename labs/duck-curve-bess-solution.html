@@ -1,0 +1,2267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>전력 계통의 진화: 덕 커브(Duck Curve)와 BESS 해결 체험실</title>
+  <style>
+    /* =====================================================================
+     * 1. 기본 리셋 및 디자인 토큰 (밝은 과학관 / 교육용 대시보드 테마)
+     * ===================================================================== */
+    :root {
+      --bg-page: #f4f7fb;
+      --bg-card: #ffffff;
+      --border-soft: #dce5f2;
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #64748b;
+
+      /* 그래프 & 에너지 컬러 코딩 */
+      --col-load: #1e293b;      /* 총 전력 수요 (네이비) */
+      --col-solar: #f59e0b;     /* 태양광 발전 (골드 앰버) */
+      --col-net: #2563eb;       /* 순부하 / 덕 커브 (블루/인디고) */
+      --col-bess: #10b981;      /* BESS 적용 후 (에메랄드 그린) */
+      --col-danger: #ef4444;    /* 출력제어 / 위험 (코랄 레드) */
+      --col-warn: #f97316;      /* 주의 / 방전 (오렌지) */
+
+      --shadow-card: 0 10px 28px -8px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      background-image:
+        radial-gradient(circle at 8% 6%, rgba(37, 99, 235, 0.1) 0%, transparent 32%),
+        radial-gradient(circle at 92% 8%, rgba(245, 158, 11, 0.12) 0%, transparent 32%),
+        radial-gradient(circle at 50% 96%, rgba(16, 185, 129, 0.1) 0%, transparent 38%);
+      color: var(--text-main);
+      line-height: 1.55;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 18px 16px 56px;
+    }
+
+    /* =====================================================================
+     * 2. 상단 히어로 헤더
+     * ===================================================================== */
+    .hero-header {
+      background: linear-gradient(135deg, #ffffff 0%, #eff6ff 52%, #ecfdf5 100%);
+      border: 2px solid var(--border-soft);
+      border-radius: 24px;
+      padding: 20px 24px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .hero-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #2563eb, #10b981);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 29px;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.24);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(1.18rem, 2.5vw, 1.58rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .hero-sub {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-top: 3px;
+    }
+
+    .legend-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .legend-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: var(--text-main);
+    }
+
+    .swatch {
+      width: 11px;
+      height: 4px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    .swatch-dash {
+      width: 13px;
+      height: 0;
+      border-top: 3px dashed #1e293b;
+      display: inline-block;
+    }
+
+    /* =====================================================================
+     * 3. 공통 카드 및 시대별 시나리오 바
+     * ===================================================================== */
+    .card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-soft);
+      border-radius: 22px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+    }
+
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-badge {
+      font-size: 0.77rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1.5px solid #bfdbfe;
+    }
+
+    .morph-btn {
+      appearance: none;
+      border: none;
+      background: linear-gradient(135deg, #2563eb, #0ea5e9);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 800;
+      padding: 9px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      box-shadow: 0 6px 14px rgba(37, 99, 235, 0.28);
+      transition: all 0.18s ease;
+    }
+
+    .morph-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.34);
+    }
+
+    .morph-btn.playing {
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      box-shadow: 0 6px 14px rgba(239, 68, 68, 0.3);
+    }
+
+    .era-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .era-btn {
+      appearance: none;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 15px;
+      padding: 11px 12px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: all 0.18s ease;
+    }
+
+    .era-btn:hover {
+      transform: translateY(-2px);
+      border-color: #93c5fd;
+      background: #ffffff;
+    }
+
+    .era-btn .era-step {
+      font-size: 0.7rem;
+      font-weight: 900;
+      color: var(--text-muted);
+    }
+
+    .era-btn strong {
+      font-size: 0.86rem;
+      color: var(--text-main);
+      line-height: 1.3;
+    }
+
+    .era-btn span.era-desc {
+      font-size: 0.74rem;
+      color: var(--text-sub);
+      line-height: 1.35;
+    }
+
+    .era-btn.active-0 { background: #f1f5f9; border-color: #475569; box-shadow: 0 6px 14px rgba(71, 85, 105, 0.16); }
+    .era-btn.active-1 { background: #fffbeb; border-color: #f59e0b; box-shadow: 0 6px 14px rgba(245, 158, 11, 0.18); }
+    .era-btn.active-2 { background: #eff6ff; border-color: #2563eb; box-shadow: 0 6px 14px rgba(37, 99, 235, 0.2); }
+    .era-btn.active-3 { background: #fef2f2; border-color: #ef4444; box-shadow: 0 6px 14px rgba(239, 68, 68, 0.22); }
+    .era-btn.active-4 { background: #ecfdf5; border-color: #10b981; box-shadow: 0 6px 14px rgba(16, 185, 129, 0.22); }
+
+    /* 자막 해설 배너 */
+    .caption-banner {
+      margin-top: 12px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f8fafc;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .caption-banner strong {
+      color: #38bdf8;
+    }
+
+    /* =====================================================================
+     * 4. 메인 2단 비주얼 무대: [좌] 24시간 SVG 디오라마 / [우] Canvas 덕 커브
+     * ===================================================================== */
+    .stage-grid {
+      display: grid;
+      grid-template-columns: 0.96fr 1.24fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+
+    .stage-grid .card {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .diorama-wrap {
+      flex: 1;
+      border-radius: 18px;
+      border: 2px solid #dbeafe;
+      overflow: hidden;
+      background: #0f172a;
+      display: flex;
+      align-items: center;
+    }
+
+    #dioramaSvg {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+
+    .diorama-footer {
+      margin-top: 11px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-sub);
+    }
+
+    /* 메인 덕 커브 Canvas 영역 */
+    .graph-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .duck-toggle-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #f8fafc;
+      color: #334155;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.16s ease;
+    }
+
+    .duck-toggle-btn:hover {
+      border-color: #60a5fa;
+      background: #eff6ff;
+    }
+
+    .duck-toggle-btn.on {
+      background: #fef3c7;
+      border-color: #f59e0b;
+      color: #b45309;
+      box-shadow: 0 4px 10px rgba(245, 158, 11, 0.22);
+    }
+
+    .canvas-container {
+      position: relative;
+      flex: 1;
+      min-height: 335px;
+      border-radius: 16px;
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      overflow: hidden;
+      cursor: crosshair;
+    }
+
+    #duckCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* 그래프 호버 툴팁 */
+    .graph-tooltip {
+      position: absolute;
+      pointer-events: none;
+      background: rgba(15, 23, 42, 0.94);
+      color: #f8fafc;
+      border: 1.5px solid #38bdf8;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 0.77rem;
+      line-height: 1.55;
+      min-width: 185px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+      opacity: 0;
+      transition: opacity 0.12s ease;
+      z-index: 20;
+    }
+
+    .graph-tooltip.show {
+      opacity: 1;
+    }
+
+    .tt-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    /* =====================================================================
+     * 5. 직접 조작 컨트롤 패널 & 4종 계통 진단 KPI
+     * ===================================================================== */
+    .ctrl-kpi-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .ctrl-kpi-grid .card {
+      margin-bottom: 0;
+    }
+
+    .slider-list {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .slider-item {
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 11px 14px;
+    }
+
+    .slider-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .range-input {
+      width: 100%;
+      height: 9px;
+      border-radius: 999px;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .range-solar { background: linear-gradient(90deg, #e2e8f0, #fbbf24, #f59e0b); }
+    .range-evening { background: linear-gradient(90deg, #e2e8f0, #60a5fa, #1d4ed8); }
+    .range-bess { background: linear-gradient(90deg, #e2e8f0, #34d399, #059669); }
+    .range-time { background: linear-gradient(90deg, #1e293b, #38bdf8, #fbbf24, #f97316, #1e293b); }
+
+    .range-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 4px solid #2563eb;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.25);
+      cursor: pointer;
+    }
+
+    .time-ctrl-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 2px;
+    }
+
+    .play-time-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #0f172a;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 7px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.16s ease;
+    }
+
+    .play-time-btn:hover {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    /* KPI 2x2 그리드 */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 11px;
+    }
+
+    .kpi-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .kpi-label {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--text-sub);
+    }
+
+    .kpi-val {
+      font-size: 1.42rem;
+      font-weight: 900;
+      color: var(--text-main);
+    }
+
+    .kpi-sub {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      align-self: flex-start;
+      padding: 4px 11px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+
+    /* =====================================================================
+     * 6. 하단 4단계 스토리 해설 & 3문제 미니 퀴즈
+     * ===================================================================== */
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .story-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      transition: all 0.22s ease;
+    }
+
+    .story-card.highlighted {
+      background: #eff6ff;
+      border-color: #2563eb;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.16);
+    }
+
+    .story-card.highlighted-bess {
+      background: #ecfdf5;
+      border-color: #10b981;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(16, 185, 129, 0.18);
+    }
+
+    .story-tag {
+      align-self: flex-start;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+
+    .story-card h3 {
+      font-size: 0.93rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .story-card p {
+      font-size: 0.81rem;
+      color: var(--text-sub);
+      line-height: 1.54;
+    }
+
+    /* 미니 퀴즈 */
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 13px;
+    }
+
+    .quiz-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 11px;
+    }
+
+    .quiz-q {
+      font-size: 0.89rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.48;
+    }
+
+    .quiz-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .quiz-opt-btn {
+      appearance: none;
+      width: 100%;
+      text-align: left;
+      padding: 9px 11px;
+      border-radius: 11px;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.81rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .quiz-opt-btn:hover:not(:disabled) {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    .quiz-opt-btn.correct {
+      background: #dcfce7;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .quiz-opt-btn.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .quiz-fb {
+      display: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.45;
+      padding: 9px 11px;
+      border-radius: 11px;
+    }
+
+    .quiz-fb.show { display: block; }
+    .quiz-fb.ok { background: #ecfdf5; color: #065f46; border: 1.5px solid #a7f3d0; }
+    .quiz-fb.no { background: #fff1f2; color: #9f1239; border: 1.5px solid #fecdd3; }
+
+    .quiz-footer {
+      margin-top: 14px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+      border: 2px solid #bfdbfe;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    /* =====================================================================
+     * 7. 반응형 미디어 쿼리
+     * ===================================================================== */
+    @media (max-width: 1080px) {
+      .stage-grid,
+      .ctrl-kpi-grid { grid-template-columns: 1fr; }
+      .era-grid { grid-template-columns: repeat(3, 1fr); }
+      .story-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 780px) {
+      .quiz-grid { grid-template-columns: 1fr; }
+      .era-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 540px) {
+      .era-grid,
+      .kpi-grid,
+      .story-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ================================================================= -->
+    <!-- 상단 헤더 -->
+    <!-- ================================================================= -->
+    <header class="hero-header">
+      <div class="hero-left">
+        <div class="hero-icon" aria-hidden="true">🦆</div>
+        <div>
+          <h1 class="hero-title">전력 계통의 진화: 덕 커브(Duck Curve)와 BESS 해결 체험실</h1>
+          <p class="hero-sub">
+            태양광 발전 증가와 저녁 생활 패턴이 만나 생기는 <strong>덕 커브</strong> 현상과, <strong>BESS(에너지저장장치)</strong>의 시간 이동 해결 원리를 애니메이션으로 체험하세요!
+          </p>
+        </div>
+      </div>
+
+      <div class="legend-pills" aria-label="그래프 색상 범례">
+        <span class="legend-pill"><span class="swatch-dash"></span>총 전력 수요</span>
+        <span class="legend-pill"><span class="swatch" style="background:#f59e0b;"></span>태양광(PV)</span>
+        <span class="legend-pill"><span class="swatch" style="background:#2563eb;"></span>순부하(덕 커브)</span>
+        <span class="legend-pill"><span class="swatch" style="background:#10b981;"></span>BESS 적용 후</span>
+        <span class="legend-pill"><span class="swatch" style="background:#ef4444;"></span>출력제어 한계(30GW)</span>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 1. 시대별 시나리오 5단계 & 자동 변화 애니메이션 (Morphing) -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">⏳ 시대별 전력 계통 변화 시나리오 (2012 → 미래 BESS 계통)</h2>
+        <button id="btnMorphPlay" type="button" class="morph-btn">
+          <span>▶</span><span id="morphBtnText">변화 과정 자동 재생 (① → ⑤)</span>
+        </button>
+      </div>
+
+      <div class="era-grid">
+        <button type="button" class="era-btn" data-era="0">
+          <span class="era-step">STEP ①</span>
+          <strong>2012 과거 전통 계통</strong>
+          <span class="era-desc">태양광 0% · BESS 0%<br>완만한 전통 수요 곡선</span>
+        </button>
+        <button type="button" class="era-btn" data-era="1">
+          <span class="era-step">STEP ②</span>
+          <strong>2018 태양광 확산기</strong>
+          <span class="era-desc">태양광 40% · BESS 0%<br>낮 순부하 하락 시작</span>
+        </button>
+        <button type="button" class="era-btn" data-era="2">
+          <span class="era-step">STEP ③</span>
+          <strong>2024 덕 커브 심화</strong>
+          <span class="era-desc">태양광 75% · 저녁 증가<br>뚜렷한 오리 모양 형성</span>
+        </button>
+        <button type="button" class="era-btn" data-era="3">
+          <span class="era-step">STEP ④</span>
+          <strong>2026+ 출력제어 위기</strong>
+          <span class="era-desc">태양광 100% · EV 피크<br>기저 하한 돌파 &amp; 급램프</span>
+        </button>
+        <button type="button" class="era-btn" data-era="4">
+          <span class="era-step">STEP ⑤</span>
+          <strong>BESS 해결 (미래 계통)</strong>
+          <span class="era-desc">태양광 100% · BESS 85%<br>낮 충전·저녁 방전 평탄화</span>
+        </button>
+      </div>
+
+      <!-- 실시간 단계 해설 자막 배너 -->
+      <div class="caption-banner" role="status" aria-live="polite">
+        <span id="captionText"><strong>[① 2012 과거 전통 계통]</strong> 태양광이 거의 없던 시절에는 하루 동안 완만하게 오르내리는 단순한 전력 수요 곡선이었습니다.</span>
+        <span id="captionClock" class="mono" style="color:#fbbf24;">현재 시각 12:00</span>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 2. 메인 2단 비주얼 무대: [좌] 24시간 SVG 디오라마 / [우] Canvas 덕 커브 -->
+    <!-- ================================================================= -->
+    <div class="stage-grid">
+      <!-- 좌측: 24시간 연동 SVG 전력망 디오라마 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🏙️ 24시간 연동 실시간 전력망 디오라마</h2>
+          <span id="dioramaTimePill" class="pill-badge mono">☀️ 12:00 · 한낮</span>
+        </div>
+
+        <div class="diorama-wrap">
+          <svg id="dioramaSvg" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop id="skyTop" offset="0%" stop-color="#38bdf8" />
+                <stop id="skyBot" offset="100%" stop-color="#e0f2fe" />
+              </linearGradient>
+              <linearGradient id="bessFillGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#059669" />
+                <stop offset="100%" stop-color="#34d399" />
+              </linearGradient>
+              <filter id="glowSoft" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- 1. 동적 하늘 배경 -->
+            <rect x="0" y="0" width="560" height="255" fill="url(#skyGrad)" />
+
+            <!-- 밤하늘 별 & 달 -->
+            <g id="nightSkyGroup" opacity="0">
+              <circle cx="65" cy="42" r="1.8" fill="#fef08a" />
+              <circle cx="145" cy="28" r="1.4" fill="#ffffff" />
+              <circle cx="240" cy="54" r="1.8" fill="#fef08a" />
+              <circle cx="350" cy="30" r="1.6" fill="#ffffff" />
+              <circle cx="460" cy="48" r="1.9" fill="#fef08a" />
+              <circle cx="515" cy="26" r="1.3" fill="#ffffff" />
+              <g id="moonGroup" transform="translate(475, 58)">
+                <circle cx="0" cy="0" r="16" fill="#fef08a" />
+                <circle cx="6" cy="-4" r="14" fill="#0f172a" />
+              </g>
+            </g>
+
+            <!-- 태양 (06~18시 호를 그리며 이동) -->
+            <g id="sunGroup" transform="translate(280, 56)" opacity="1">
+              <circle cx="0" cy="0" r="26" fill="#fbbf24" fill-opacity="0.28" />
+              <circle cx="0" cy="0" r="17" fill="#f59e0b" stroke="#fef08a" stroke-width="2.5" />
+            </g>
+
+            <!-- 지면 및 언덕 -->
+            <path d="M 0 250 Q 140 236 280 250 T 560 246 L 560 400 L 0 400 Z" fill="#e2e8f0" />
+            <rect x="0" y="254" width="560" height="146" fill="#f1f5f9" />
+            <line x1="0" y1="254" x2="560" y2="254" stroke="#cbd5e1" stroke-width="2" />
+
+            <!-- 중앙 전력 계통 허브(변전소 모선) & 전력선 -->
+            <path id="linePvHub" d="M 108 212 L 108 272 L 280 272" stroke="#f59e0b" stroke-width="5" stroke-linejoin="round" fill="none" />
+            <path id="lineThermalHub" d="M 108 338 L 280 338 L 280 272" stroke="#64748b" stroke-width="5" stroke-linejoin="round" fill="none" />
+            <path id="lineHubBess" d="M 280 272 L 280 338 L 448 338" stroke="#10b981" stroke-width="5" stroke-linejoin="round" fill="none" />
+            <path id="lineHubTown" d="M 280 272 L 452 272 L 452 228" stroke="#2563eb" stroke-width="5" stroke-linejoin="round" fill="none" />
+
+            <!-- 중앙 변전소 허브 노드 -->
+            <g transform="translate(280, 272)">
+              <circle cx="0" cy="0" r="20" fill="#0f172a" stroke="#38bdf8" stroke-width="3" />
+              <text x="0" y="4" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="900">계통</text>
+            </g>
+
+            <!-- 2. 좌상단: 태양광 발전소 (PV) -->
+            <g transform="translate(24, 134)">
+              <rect x="0" y="0" width="166" height="92" rx="14" fill="#ffffff" stroke="#fbbf24" stroke-width="2.5" />
+              <text x="83" y="20" text-anchor="middle" fill="#b45309" font-size="11.5" font-weight="900">☀️ 태양광 발전소 (PV)</text>
+              <!-- 태양광 패널 벡터 -->
+              <g transform="translate(24, 28)">
+                <polygon points="10,28 24,4 106,4 92,28" fill="#1d4ed8" stroke="#93c5fd" stroke-width="1.8" />
+                <line x1="38" y1="4" x2="24" y2="28" stroke="#93c5fd" stroke-width="1.2" />
+                <line x1="65" y1="4" x2="51" y2="28" stroke="#93c5fd" stroke-width="1.2" />
+                <line x1="90" y1="4" x2="76" y2="28" stroke="#93c5fd" stroke-width="1.2" />
+                <line x1="17" y1="16" x2="99" y2="16" stroke="#93c5fd" stroke-width="1.2" />
+                <line x1="56" y1="28" x2="56" y2="38" stroke="#475569" stroke-width="3" />
+              </g>
+              <rect x="20" y="68" width="126" height="18" rx="6" fill="#fef3c7" />
+              <text id="dioPvText" x="83" y="81" text-anchor="middle" fill="#b45309" font-size="10.5" font-weight="900" class="mono">출력: 0.0 GW</text>
+            </g>
+
+            <!-- 3. 좌하단: 화력 / 기저 발전소 -->
+            <g transform="translate(24, 294)">
+              <rect id="dioThermalBox" x="0" y="0" width="166" height="92" rx="14" fill="#ffffff" stroke="#64748b" stroke-width="2.5" />
+              <text x="83" y="20" text-anchor="middle" fill="#1e293b" font-size="11.5" font-weight="900">🏭 화력·기저 발전소</text>
+              <!-- 발전소 굴뚝 -->
+              <g transform="translate(22, 30)">
+                <rect x="6" y="18" width="44" height="22" rx="3" fill="#475569" />
+                <rect x="12" y="4" width="10" height="16" fill="#64748b" />
+                <rect x="30" y="0" width="10" height="20" fill="#64748b" />
+                <circle id="smoke1" cx="35" cy="-6" r="5" fill="#94a3b8" fill-opacity="0.65" />
+                <circle id="smoke2" cx="43" cy="-12" r="6.5" fill="#cbd5e1" fill-opacity="0.5" />
+              </g>
+              <!-- 램프 급상승 경고 배지 -->
+              <g id="dioRampWarn" opacity="0" transform="translate(82, 30)">
+                <rect x="0" y="0" width="76" height="30" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1.8" />
+                <text x="38" y="13" text-anchor="middle" fill="#dc2626" font-size="9" font-weight="900">⚠️ 급가동!</text>
+                <text x="38" y="25" text-anchor="middle" fill="#b91c1c" font-size="8.5" font-weight="800">램프 과부하</text>
+              </g>
+              <rect x="20" y="68" width="126" height="18" rx="6" fill="#f1f5f9" />
+              <text id="dioThermalText" x="83" y="81" text-anchor="middle" fill="#334155" font-size="10.5" font-weight="900" class="mono">출력: 50.0 GW</text>
+            </g>
+
+            <!-- 4. 우상단: 소비자 마을 / 아파트 & EV 충전 -->
+            <g transform="translate(362, 124)">
+              <rect x="0" y="0" width="174" height="108" rx="14" fill="#ffffff" stroke="#3b82f6" stroke-width="2.5" />
+              <text x="87" y="19" text-anchor="middle" fill="#1e3a8a" font-size="11.5" font-weight="900">🏠 소비자 마을 &amp; EV</text>
+              <!-- 아파트 & 주택 -->
+              <g transform="translate(16, 26)">
+                <rect x="0" y="6" width="46" height="46" rx="4" fill="#334155" />
+                <rect class="town-win" x="7" y="13" width="9" height="8" rx="1.5" fill="#475569" />
+                <rect class="town-win" x="28" y="13" width="9" height="8" rx="1.5" fill="#475569" />
+                <rect class="town-win" x="7" y="26" width="9" height="8" rx="1.5" fill="#475569" />
+                <rect class="town-win" x="28" y="26" width="9" height="8" rx="1.5" fill="#475569" />
+                <rect class="town-win" x="7" y="39" width="9" height="8" rx="1.5" fill="#475569" />
+                <rect class="town-win" x="28" y="39" width="9" height="8" rx="1.5" fill="#475569" />
+
+                <!-- 주택 -->
+                <polygon points="74,16 54,32 94,32" fill="#fb7185" />
+                <rect x="58" y="32" width="32" height="20" rx="2" fill="#e2e8f0" stroke="#64748b" stroke-width="1.2" />
+                <rect class="town-win" x="64" y="37" width="8" height="8" rx="1.5" fill="#475569" />
+                <rect class="town-win" x="76" y="37" width="8" height="8" rx="1.5" fill="#475569" />
+
+                <!-- EV 전기차 충전 표시 -->
+                <g transform="translate(100, 22)">
+                  <rect id="evBox" x="0" y="0" width="44" height="30" rx="7" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" />
+                  <text x="22" y="14" text-anchor="middle" font-size="12">🚗</text>
+                  <text id="evTxt" x="22" y="25" text-anchor="middle" fill="#2563eb" font-size="8.2" font-weight="900">대기</text>
+                </g>
+              </g>
+              <rect x="16" y="83" width="142" height="18" rx="6" fill="#eff6ff" />
+              <text id="dioLoadText" x="87" y="96" text-anchor="middle" fill="#1d4ed8" font-size="10.5" font-weight="900" class="mono">수요: 60.0 GW</text>
+            </g>
+
+            <!-- 5. 우하단: BESS 컨테이너 (에너지저장장치) -->
+            <g transform="translate(362, 294)">
+              <rect id="dioBessBox" x="0" y="0" width="174" height="92" rx="14" fill="#ffffff" stroke="#10b981" stroke-width="2.5" />
+              <text x="87" y="19" text-anchor="middle" fill="#065f46" font-size="11.5" font-weight="900">🔋 BESS 에너지저장장치</text>
+
+              <!-- 배터리 SOC 게이지 바 -->
+              <rect x="16" y="28" width="76" height="32" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="2" />
+              <rect x="92" y="37" width="5" height="14" rx="2" fill="#64748b" />
+              <clipPath id="bessClip">
+                <rect x="19" y="31" width="70" height="26" rx="4" />
+              </clipPath>
+              <g clip-path="url(#bessClip)">
+                <rect id="dioBessBar" x="19" y="31" width="35" height="26" fill="url(#bessFillGrad)" />
+              </g>
+              <text id="dioBessSoc" x="54" y="48" text-anchor="middle" fill="#0f172a" font-size="11" font-weight="900" class="mono">50%</text>
+
+              <!-- 충/방전 상태 태그 -->
+              <rect id="dioBessStateBg" x="104" y="29" width="58" height="30" rx="8" fill="#f1f5f9" />
+              <text id="dioBessStateTxt" x="133" y="48" text-anchor="middle" fill="#64748b" font-size="10.5" font-weight="900">미투입</text>
+
+              <rect x="16" y="68" width="142" height="18" rx="6" fill="#ecfdf5" />
+              <text id="dioBessPowerTxt" x="87" y="81" text-anchor="middle" fill="#047857" font-size="10.5" font-weight="900" class="mono">BESS: 0.0 GW</text>
+            </g>
+
+            <!-- 실시간 에너지 입자 레이어 -->
+            <g id="dioParticleLayer" filter="url(#glowSoft)"></g>
+          </svg>
+        </div>
+
+        <div class="diorama-footer">
+          <span id="dioramaSummary">☀️ 낮에는 태양광이 전력을 생산하고, BESS가 남는 전기를 저장합니다.</span>
+          <span class="mono" style="color:#2563eb;">60fps 실시간 연동</span>
+        </div>
+      </section>
+
+      <!-- 우측: 메인 인터랙티브 덕 커브 그래프 (HTML5 Canvas) -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">📈 24시간 전력 수급 &amp; 덕 커브(Duck Curve) 그래프</h2>
+          <div class="graph-toolbar">
+            <button id="btnDuckOverlay" type="button" class="duck-toggle-btn on">
+              <span>🦆</span><span id="duckToggleLabel">오리 실루엣 보기 ON</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="canvasContainer" class="canvas-container">
+          <canvas id="duckCanvas"></canvas>
+          <div id="graphTooltip" class="graph-tooltip mono"></div>
+        </div>
+
+        <div class="diorama-footer">
+          <span>💡 그래프 위를 클릭·드래그하면 원하는 시간대로 이동하며, 마우스를 올리면 상세 수치가 표시됩니다.</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- 3. 직접 조작 컨트롤 패널 & 4종 계통 진단 KPI -->
+    <!-- ================================================================= -->
+    <div class="ctrl-kpi-grid">
+      <!-- 직접 조작 슬라이더 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🎛️ 계통 변수 직접 조작하기</h2>
+          <span class="pill-badge">슬라이더를 움직여 덕 커브 변화를 관찰하세요!</span>
+        </div>
+
+        <div class="slider-list">
+          <div class="slider-item">
+            <div class="slider-head">
+              <label for="sliderSolar">☀️ 태양광 보급률 (PV Penetration)</label>
+              <span id="valSolar" class="mono" style="color:#d97706;">75%</span>
+            </div>
+            <input id="sliderSolar" class="range-input range-solar" type="range" min="0" max="100" step="1" value="75" />
+          </div>
+
+          <div class="slider-item">
+            <div class="slider-head">
+              <label for="sliderEvening">🏠 저녁 생활 패턴 (퇴근 · 가전 · EV 집중도)</label>
+              <span id="valEvening" class="mono" style="color:#2563eb;">75%</span>
+            </div>
+            <input id="sliderEvening" class="range-input range-evening" type="range" min="0" max="100" step="1" value="75" />
+          </div>
+
+          <div class="slider-item">
+            <div class="slider-head">
+              <label for="sliderBess">🔋 BESS 용량 투입 (에너지저장장치)</label>
+              <span id="valBess" class="mono" style="color:#059669;">0%</span>
+            </div>
+            <input id="sliderBess" class="range-input range-bess" type="range" min="0" max="100" step="1" value="0" />
+          </div>
+
+          <div class="slider-item">
+            <div class="slider-head">
+              <label for="sliderTime">🕒 24시간 타임 커서 (직접 탐색)</label>
+              <span id="valTime" class="mono" style="color:#0f172a;">12:00</span>
+            </div>
+            <div class="time-ctrl-row">
+              <button id="btnTimePlay" type="button" class="play-time-btn">⏸️ 일시정지</button>
+              <input id="sliderTime" class="range-input range-time" type="range" min="0" max="23.95" step="0.05" value="12" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 실시간 4종 계통 진단 KPI 카드 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">📊 실시간 계통 안정도 진단 지표 (KPI)</h2>
+          <span id="kpiBasisTag" class="pill-badge">BESS 미적용 기준</span>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <span class="kpi-label">1. 오리 배 최저 순부하</span>
+            <span id="kpiMinNet" class="kpi-val mono">28.4 GW</span>
+            <span id="kpiMinNetSub" class="kpi-sub">기저발전 하한선: 30.0 GW</span>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">2. 저녁 3시간 급상승 램프량</span>
+            <span id="kpiRamp" class="kpi-val mono">38.2 GW / 3h</span>
+            <span id="kpiRampSub" class="kpi-sub">16시 → 19시 화력발전 급가동 부담</span>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">3. 출력제어(버려지는 태양광) 비율</span>
+            <span id="kpiCurtail" class="kpi-val mono">0.0 %</span>
+            <span id="kpiCurtailSub" class="kpi-sub">기저 하한(30GW) 미만 과잉 발전</span>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">4. 계통 안정도 &amp; BESS 완화 효과</span>
+            <span id="kpiStatusPill" class="status-pill" style="background:#dcfce7; color:#047857;">🟢 안정</span>
+            <span id="kpiBessEffect" class="kpi-sub">BESS 투입 시 램프·출력제어 완화</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- 4. 하단 이해도 강화 교육 섹션: 4단계 스토리 해설 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">📖 한눈에 이해하는 덕 커브 &amp; BESS 4단계 스토리</h2>
+        <span class="pill-badge">선택된 시나리오 단계가 자동 강조됩니다</span>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card" data-story="0">
+          <span class="story-tag" style="background:#e2e8f0; color:#334155;">1단계 · 과거 전력망</span>
+          <h3>완만했던 전통 수요 곡선</h3>
+          <p>
+            태양광이 적었던 과거에는 아침에 전기를 쓰기 시작해 낮과 저녁에 완만하게 유지되는 단순한 곡선이었으며, 화력·원자력 발전소만으로 안정적 공급이 가능했습니다.
+          </p>
+        </article>
+
+        <article class="story-card" data-story="1">
+          <span class="story-tag" style="background:#fef3c7; color:#b45309;">2단계 · 오리의 배 (낮)</span>
+          <h3>태양광 폭증과 출력제어 위기</h3>
+          <p>
+            정오 무렵 태양광 발전량이 급증하면 기존 발전소가 담당할 <strong>순부하가 푹 꺼져 오리의 배</strong> 모양이 됩니다. 기저발전 하한(30GW) 아래로 내려가면 전기를 강제로 버리는 <strong>출력제어</strong>가 발생합니다.
+          </p>
+        </article>
+
+        <article class="story-card" data-story="2">
+          <span class="story-tag" style="background:#fee2e2; color:#b91c1c;">3단계 · 오리의 목 (저녁)</span>
+          <h3>일몰 + 저녁 생활 패턴 급경사</h3>
+          <p>
+            해가 지며 태양광이 0으로 떨어지는 순간, 사람들이 퇴근해 가전·냉난방·EV 충전을 동시에 켜면서 <strong>3시간 만에 막대한 전력이 필요한 가파른 오리 목(Ramp-up)</strong>이 생깁니다.
+          </p>
+        </article>
+
+        <article class="story-card" data-story="3">
+          <span class="story-tag" style="background:#dcfce7; color:#047857;">4단계 · BESS의 마법</span>
+          <h3>시간 이동(Time-Shifting) 평탄화</h3>
+          <p>
+            <strong>BESS</strong>가 낮에 버려질 태양광 전기를 배터리에 <strong>충전</strong>해 오리의 배를 채우고, 저녁 피크 때 <strong>방전</strong>해 오리의 목과 머리를 낮춰 전력망을 다시 부드럽게 만듭니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 5. 이해도 확인 미니 퀴즈 (3문제) -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">🎯 이해도 확인 미니 퀴즈 (3문제)</h2>
+        <span class="pill-badge">덕 커브와 BESS 핵심 원리 체크!</span>
+      </div>
+
+      <div id="quizGrid" class="quiz-grid"></div>
+
+      <div class="quiz-footer">
+        <span id="quizScoreText">📝 3문제를 모두 풀어 보세요! (0 / 3 완료)</span>
+        <button id="btnQuizReset" type="button" class="play-time-btn">🔄 퀴즈 다시 풀기</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 시뮬레이션 & 60fps 애니메이션 엔진 (Vanilla JS) -->
+  <!-- ================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      const SVG_NS = 'http://www.w3.org/2000/svg';
+      const BASELOAD_MIN_GW = 30.0; // 기저발전 최소 출력선 (출력제어 기준)
+
+      /* -----------------------------------------------------------------
+       * 1. 5단계 시대별 프리셋 & 퀴즈 데이터
+       * ----------------------------------------------------------------- */
+      const ERAS = [
+        {
+          solar: 0, evening: 20, bess: 0, storyIdx: 0,
+          caption: '<strong>[① 2012 과거 전통 계통]</strong> 태양광이 없던 시기에는 낮과 저녁의 차이가 크지 않은 완만한 수요 곡선을 보였습니다.'
+        },
+        {
+          solar: 40, evening: 45, bess: 0, storyIdx: 1,
+          caption: '<strong>[② 2018 태양광 확산기]</strong> 낮 시간 태양광 발전이 늘어나면서 정오 부근의 순부하(파란선)가 서서히 내려앉기 시작합니다.'
+        },
+        {
+          solar: 75, evening: 75, bess: 0, storyIdx: 2,
+          caption: '<strong>[③ 2024 덕 커브 심화]</strong> 낮 과잉 태양광(오리 배)과 일몰 후 퇴근·가전 수요(오리 목)가 만나 뚜렷한 오리 모양이 나타납니다.'
+        },
+        {
+          solar: 100, evening: 100, bess: 0, storyIdx: 2,
+          caption: '<strong>[④ 2026+ 출력제어 위기]</strong> 낮 순부하가 기저발전 하한(30GW) 아래로 떨어져 전기를 버리고, 저녁엔 극심한 급램프 위험이 발생합니다!'
+        },
+        {
+          solar: 100, evening: 100, bess: 85, storyIdx: 3,
+          caption: '<strong>[⑤ BESS 해결 (미래 계통)]</strong> BESS가 낮의 남는 태양광을 충전하고 저녁 피크에 방전하여 덕 커브를 안전하게 평탄화합니다!'
+        }
+      ];
+
+      const QUIZ_DATA = [
+        {
+          q: 'Q1. 전력 계통에서 "덕 커브(Duck Curve)"의 오리 배(낮 시간 급감)가 깊어지는 주된 원인은 무엇인가요?',
+          opts: [
+            '① 낮 시간에 태양광 발전량이 크게 증가하여 기존 발전소가 감당할 순부하가 줄어들기 때문',
+            '② 낮 시간에 모든 공장과 가정이 전기를 완전히 끄기 때문',
+            '③ 밤 시간에 태양광 발전량이 최대가 되기 때문'
+          ],
+          ans: 0,
+          ok: '정답입니다! ☀️ 정오 무렵 태양광 발전량이 폭증하면 [총 수요 - 태양광 = 순부하]가 푹 꺼지며 오리의 배가 깊어집니다.',
+          no: '다시 생각해 보세요! 순부하는 "총 수요 - 태양광 발전량"입니다. 태양광 슬라이더를 올리면 낮 순부하가 어떻게 변하는지 확인해 보세요.'
+        },
+        {
+          q: 'Q2. 덕 커브에서 "오리의 목(16~19시 급경사 램프)"이 전력망에 특히 위험한 이유는 무엇인가요?',
+          opts: [
+            '① 전기가 너무 남아돌아서 배터리가 고장 나기 때문',
+            '② 일몰로 태양광이 사라지는 동시에 저녁 생활·EV 수요가 몰려 짧은 시간에 발전량을 급격히 올려야 하기 때문',
+            '③ 화력발전소를 끄는 데 시간이 오래 걸리기 때문'
+          ],
+          ans: 1,
+          ok: '정확해요! 🚨 해가 지면서 태양광이 급감하고 퇴근 후 소비가 폭증해 3시간 만에 막대한 예비 발전기를 급가동해야 하는 큰 부담이 생깁니다.',
+          no: '힌트! 16시~19시 사이에 태양광(노란 영역)은 사라지고 총 수요(점선)는 치솟는 구간을 그래프에서 확인해 보세요.'
+        },
+        {
+          q: 'Q3. BESS(에너지저장장치)가 덕 커브 문제를 해결하는 올바른 운전 방식은 무엇인가요?',
+          opts: [
+            '① 낮에 방전하고, 저녁 피크 시간에 충전한다',
+            '② 하루 종일 충전만 계속한다',
+            '③ 낮 과잉 발전 시간에 충전하고, 저녁 피크 시간에 방전해 전력을 시간 이동(Time-Shifting)한다'
+          ],
+          ans: 2,
+          ok: '완벽합니다! 🔋 낮에 버려질 태양광을 BESS에 담아두었다가 저녁 피크에 꺼내 쓰면 출력제어와 급램프를 동시에 해결할 수 있습니다.',
+          no: '아쉬워요! ⑤번 [BESS 해결] 버튼을 눌러 낮(충전·파란 음영)과 저녁(방전·주황 음영)의 역할을 확인해 보세요.'
+        }
+      ];
+
+      /* -----------------------------------------------------------------
+       * 2. 시뮬레이션 상태 변수
+       * ----------------------------------------------------------------- */
+      const state = {
+        solar: 75,         // 0 ~ 100 (%)
+        evening: 75,       // 0 ~ 100 (%)
+        bess: 0,           // 0 ~ 100 (%)
+        hour: 12.0,        // 0.0 ~ 24.0
+        timePlaying: true,
+        showDuck: true,
+        activeEra: 2,
+
+        // 자동 변화(Morphing) 상태
+        morphPlaying: false,
+        morphStep: 0,
+        morphProgress: 0,
+
+        // 호버 툴팁 상태
+        hoverHour: null,
+        draggingCanvas: false,
+
+        // 캔버스 크기 & 애니메이션 타이밍
+        cw: 600,
+        ch: 340,
+        simTime: 0,
+        lastTs: 0,
+        quizAns: [null, null, null]
+      };
+
+      /* -----------------------------------------------------------------
+       * 3. DOM 요소 참조
+       * ----------------------------------------------------------------- */
+      const el = {
+        eraBtns: document.querySelectorAll('.era-btn'),
+        btnMorphPlay: document.getElementById('btnMorphPlay'),
+        morphBtnText: document.getElementById('morphBtnText'),
+        captionText: document.getElementById('captionText'),
+        captionClock: document.getElementById('captionClock'),
+
+        // 디오라마 SVG
+        dioramaTimePill: document.getElementById('dioramaTimePill'),
+        dioramaSummary: document.getElementById('dioramaSummary'),
+        skyTop: document.getElementById('skyTop'),
+        skyBot: document.getElementById('skyBot'),
+        nightSkyGroup: document.getElementById('nightSkyGroup'),
+        sunGroup: document.getElementById('sunGroup'),
+        dioPvText: document.getElementById('dioPvText'),
+        dioThermalBox: document.getElementById('dioThermalBox'),
+        dioThermalText: document.getElementById('dioThermalText'),
+        dioRampWarn: document.getElementById('dioRampWarn'),
+        smoke1: document.getElementById('smoke1'),
+        smoke2: document.getElementById('smoke2'),
+        townWins: document.querySelectorAll('.town-win'),
+        evBox: document.getElementById('evBox'),
+        evTxt: document.getElementById('evTxt'),
+        dioLoadText: document.getElementById('dioLoadText'),
+        dioBessBox: document.getElementById('dioBessBox'),
+        dioBessBar: document.getElementById('dioBessBar'),
+        dioBessSoc: document.getElementById('dioBessSoc'),
+        dioBessStateBg: document.getElementById('dioBessStateBg'),
+        dioBessStateTxt: document.getElementById('dioBessStateTxt'),
+        dioBessPowerTxt: document.getElementById('dioBessPowerTxt'),
+        dioParticleLayer: document.getElementById('dioParticleLayer'),
+
+        // 캔버스 & 툴팁
+        btnDuckOverlay: document.getElementById('btnDuckOverlay'),
+        duckToggleLabel: document.getElementById('duckToggleLabel'),
+        canvasContainer: document.getElementById('canvasContainer'),
+        duckCanvas: document.getElementById('duckCanvas'),
+        graphTooltip: document.getElementById('graphTooltip'),
+
+        // 슬라이더
+        sliderSolar: document.getElementById('sliderSolar'),
+        valSolar: document.getElementById('valSolar'),
+        sliderEvening: document.getElementById('sliderEvening'),
+        valEvening: document.getElementById('valEvening'),
+        sliderBess: document.getElementById('sliderBess'),
+        valBess: document.getElementById('valBess'),
+        sliderTime: document.getElementById('sliderTime'),
+        valTime: document.getElementById('valTime'),
+        btnTimePlay: document.getElementById('btnTimePlay'),
+
+        // KPI
+        kpiBasisTag: document.getElementById('kpiBasisTag'),
+        kpiMinNet: document.getElementById('kpiMinNet'),
+        kpiMinNetSub: document.getElementById('kpiMinNetSub'),
+        kpiRamp: document.getElementById('kpiRamp'),
+        kpiRampSub: document.getElementById('kpiRampSub'),
+        kpiCurtail: document.getElementById('kpiCurtail'),
+        kpiCurtailSub: document.getElementById('kpiCurtailSub'),
+        kpiStatusPill: document.getElementById('kpiStatusPill'),
+        kpiBessEffect: document.getElementById('kpiBessEffect'),
+
+        // 스토리 & 퀴즈
+        storyCards: document.querySelectorAll('.story-card'),
+        quizGrid: document.getElementById('quizGrid'),
+        quizScoreText: document.getElementById('quizScoreText'),
+        btnQuizReset: document.getElementById('btnQuizReset')
+      };
+
+      const ctx = el.duckCanvas.getContext('2d');
+
+      /* -----------------------------------------------------------------
+       * 4. 수학적 24시간 전력 수급 곡선 모델링
+       * ----------------------------------------------------------------- */
+      function gauss(x, mu, sigma) {
+        const z = (x - mu) / sigma;
+        return Math.exp(-0.5 * z * z);
+      }
+
+      // 총 전력 수요 (GW)
+      function getTotalLoad(h, eveningPct) {
+        const ev = eveningPct / 100;
+        const base = 46;
+        const morningBump = 17.5 * gauss(h, 9.8, 3.0);
+        const afternoonHold = 13.5 * gauss(h, 14.2, 2.8);
+        // 저녁 퇴근·가전·EV 충전 피크 (19.5시 중심)
+        const eveningPeak = (12.5 + ev * 26.5) * gauss(h, 19.6, 2.35);
+        // 심야 EV 완속 충전 미세 상승
+        const lateNight = (2.0 + ev * 3.0) * gauss(h, 23.2, 1.8);
+        return base + morningBump + afternoonHold + eveningPeak + lateNight;
+      }
+
+      // 태양광 발전량 (GW)
+      function getSolarPV(h, solarPct) {
+        if (h < 5.5 || h > 19.0) return 0;
+        const maxPv = 51.0 * (solarPct / 100);
+        // 12.4시 정점, 부드러운 사인^1.7 형태
+        const norm = (h - 5.5) / 13.5;
+        return maxPv * Math.pow(Math.sin(norm * Math.PI), 1.75);
+      }
+
+      // BESS 충·방전 프로파일 (GW): 양수(+) = 충전(순부하 증가), 음수(-) = 방전(순부하 감소)
+      function getBessPower(h, solarPct, eveningPct, bessPct) {
+        if (bessPct <= 0.1) return 0;
+        const b = bessPct / 100;
+        const s = solarPct / 100;
+        const ev = eveningPct / 100;
+
+        // 낮 12.4시 중심 충전 (태양광이 많을수록 크게 충전)
+        const chargeMax = (4.0 + s * 22.5) * b;
+        const charge = chargeMax * gauss(h, 12.4, 2.05);
+
+        // 저녁 19.5시 중심 방전 (충전 에너지의 약 90% 방출)
+        const dischargeMax = (4.0 + (s * 0.65 + ev * 0.35) * 21.0) * b;
+        const discharge = -dischargeMax * gauss(h, 19.5, 2.15);
+
+        return charge + discharge;
+      }
+
+      // 특정 시각의 전체 스냅샷 계산
+      function evaluateAt(h, solarPct, eveningPct, bessPct) {
+        const load = getTotalLoad(h, eveningPct);
+        const solar = getSolarPV(h, solarPct);
+        const net = load - solar;
+        const bess = getBessPower(h, solarPct, eveningPct, bessPct);
+        const netWithBess = net + bess;
+        return { load, solar, net, bess, netWithBess };
+      }
+
+      // 하루(24시간) 전체 KPI 및 BESS SOC 커브 계산
+      function computeDailyMetrics() {
+        const s = state.solar;
+        const ev = state.evening;
+        const b = state.bess;
+
+        let minNetNoBess = 999;
+        let minNetFinal = 999;
+        let totalSolarEnergy = 0;
+        let curtailEnergyNoBess = 0;
+        let curtailEnergyFinal = 0;
+
+        const steps = 96; // 15분 간격
+        const dt = 24 / steps;
+
+        for (let i = 0; i <= steps; i++) {
+          const h = i * dt;
+          const d = evaluateAt(h, s, ev, b);
+          if (d.net < minNetNoBess) minNetNoBess = d.net;
+          if (d.netWithBess < minNetFinal) minNetFinal = d.netWithBess;
+
+          totalSolarEnergy += d.solar * dt;
+          if (d.net < BASELOAD_MIN_GW) curtailEnergyNoBess += (BASELOAD_MIN_GW - d.net) * dt;
+          if (d.netWithBess < BASELOAD_MIN_GW) curtailEnergyFinal += (BASELOAD_MIN_GW - d.netWithBess) * dt;
+        }
+
+        // 저녁 3시간 급상승 램프량 (16:00 -> 19:00)
+        const d16 = evaluateAt(16.0, s, ev, b);
+        const d19 = evaluateAt(19.0, s, ev, b);
+        const rampNoBess = Math.max(0, d19.net - d16.net);
+        const rampFinal = Math.max(0, d19.netWithBess - d16.netWithBess);
+
+        const curtailPctNoBess = totalSolarEnergy > 1 ? (curtailEnergyNoBess / totalSolarEnergy) * 100 : 0;
+        const curtailPctFinal = totalSolarEnergy > 1 ? (curtailEnergyFinal / totalSolarEnergy) * 100 : 0;
+
+        // BESS 완화 효과 (%)
+        const rampReduction = rampNoBess > 1 ? Math.max(0, ((rampNoBess - rampFinal) / rampNoBess) * 100) : 0;
+
+        return {
+          minNetFinal,
+          rampFinal,
+          rampNoBess,
+          curtailPctFinal,
+          curtailPctNoBess,
+          rampReduction
+        };
+      }
+
+      // 특정 시각의 BESS SOC(%) 추정 (0~24시 연속 적분)
+      function getBessSocAt(hour) {
+        if (state.bess <= 0.1) return 50;
+        // 06시 최저(22%)에서 낮 충전으로 16시 최고(90%) 도달 후 저녁 방전으로 22% 복귀
+        const chargeIntegral = 0.5 * (1 + Math.tanh((hour - 12.2) / 1.8));
+        const dischargeIntegral = 0.5 * (1 + Math.tanh((hour - 19.4) / 1.7));
+        const soc = 22 + 68 * Math.max(0, chargeIntegral - dischargeIntegral * 0.96);
+        return Math.min(95, Math.max(15, soc));
+      }
+
+      /* -----------------------------------------------------------------
+       * 5. 디오라마 입자 풀 & 24시간 SVG 업데이트
+       * ----------------------------------------------------------------- */
+      const DIO_PATHS = {
+        pvToHub: [{ x: 108, y: 212 }, { x: 108, y: 272 }, { x: 280, y: 272 }],
+        thermalToHub: [{ x: 108, y: 338 }, { x: 280, y: 338 }, { x: 280, y: 272 }],
+        hubToBess: [{ x: 280, y: 272 }, { x: 280, y: 338 }, { x: 448, y: 338 }],
+        hubToTown: [{ x: 280, y: 272 }, { x: 452, y: 272 }, { x: 452, y: 228 }]
+      };
+
+      const dioParticles = [];
+      function initDioParticles() {
+        el.dioParticleLayer.innerHTML = '';
+        for (let i = 0; i < 36; i++) {
+          const c = document.createElementNS(SVG_NS, 'circle');
+          c.setAttribute('r', '4.8');
+          c.setAttribute('stroke', '#ffffff');
+          c.setAttribute('stroke-width', '1.4');
+          c.setAttribute('opacity', '0');
+          el.dioParticleLayer.appendChild(c);
+          dioParticles.push(c);
+        }
+      }
+
+      function pointOnPts(pts, t, rev) {
+        const u = rev ? (1 - t) : t;
+        let total = 0;
+        const lens = [];
+        for (let i = 0; i < pts.length - 1; i++) {
+          const d = Math.hypot(pts[i + 1].x - pts[i].x, pts[i + 1].y - pts[i].y);
+          lens.push(d);
+          total += d;
+        }
+        let dist = u * total;
+        for (let i = 0; i < lens.length; i++) {
+          if (dist <= lens[i] || i === lens.length - 1) {
+            const k = lens[i] === 0 ? 0 : dist / lens[i];
+            return {
+              x: pts[i].x + (pts[i + 1].x - pts[i].x) * k,
+              y: pts[i].y + (pts[i + 1].y - pts[i].y) * k
+            };
+          }
+          dist -= lens[i];
+        }
+        return pts[0];
+      }
+
+      function formatClock(h) {
+        const hh = Math.floor(h) % 24;
+        const mm = Math.floor((h - Math.floor(h)) * 60);
+        return `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`;
+      }
+
+      function updateDiorama(t) {
+        const h = state.hour;
+        const d = evaluateAt(h, state.solar, state.evening, state.bess);
+        const clockStr = formatClock(h);
+
+        // 1) 하늘색 및 태양/달 위치 보간
+        let topCol = '#0f172a', botCol = '#1e293b', nightOp = 1, sunOp = 0, periodTxt = '🌙 심야';
+        if (h >= 5.5 && h < 8.0) {
+          topCol = '#3b82f6'; botCol = '#fed7aa'; nightOp = 0.15; sunOp = 0.85; periodTxt = '🌅 일출';
+        } else if (h >= 8.0 && h < 16.5) {
+          topCol = '#0ea5e9'; botCol = '#e0f2fe'; nightOp = 0; sunOp = 1; periodTxt = '☀️ 한낮';
+        } else if (h >= 16.5 && h < 19.5) {
+          topCol = '#6366f1'; botCol = '#fdba74'; nightOp = 0.25; sunOp = 0.85; periodTxt = '🌇 노을·퇴근';
+        } else if (h >= 19.5 && h < 22.5) {
+          topCol = '#1e1b4b'; botCol = '#312e81'; nightOp = 0.9; sunOp = 0; periodTxt = '🌃 저녁 피크';
+        }
+
+        el.skyTop.setAttribute('stop-color', topCol);
+        el.skyBot.setAttribute('stop-color', botCol);
+        el.nightSkyGroup.setAttribute('opacity', String(nightOp));
+        el.sunGroup.setAttribute('opacity', String(sunOp));
+
+        // 태양 궤적 (06시 좌측 -> 12.5시 정점 -> 19시 우측)
+        if (sunOp > 0) {
+          const u = Math.min(1, Math.max(0, (h - 5.5) / 14.0));
+          const sx = 60 + u * 440;
+          const sy = 148 - Math.sin(u * Math.PI) * 104;
+          el.sunGroup.setAttribute('transform', `translate(${sx.toFixed(1)}, ${sy.toFixed(1)})`);
+        }
+
+        el.dioramaTimePill.textContent = `${periodTxt} · ${clockStr}`;
+        el.captionClock.textContent = `현재 시각 ${clockStr}`;
+
+        // 2) 발전소 & 마을 수치 업데이트
+        const thermalOut = Math.max(BASELOAD_MIN_GW, d.netWithBess);
+        el.dioPvText.textContent = `출력: ${d.solar.toFixed(1)} GW`;
+        el.dioThermalText.textContent = `출력: ${thermalOut.toFixed(1)} GW`;
+        el.dioLoadText.textContent = `수요: ${d.load.toFixed(1)} GW`;
+
+        // 저녁 급램프 경고 (16:30 ~ 20:30, 3시간 램프 > 25GW 시 경고)
+        const metrics = computeDailyMetrics();
+        const isRampDanger = (h >= 16.5 && h <= 20.5) && metrics.rampFinal > 24;
+        el.dioRampWarn.setAttribute('opacity', isRampDanger ? '1' : '0');
+        el.dioThermalBox.setAttribute('stroke', isRampDanger ? '#ef4444' : '#64748b');
+
+        // 굴뚝 연기 움직임
+        const smokeSpd = isRampDanger ? 5.5 : 2.2;
+        el.smoke1.setAttribute('cy', (-6 - ((t * smokeSpd * 4) % 10)).toFixed(1));
+        el.smoke2.setAttribute('cy', (-12 - ((t * smokeSpd * 4 + 5) % 12)).toFixed(1));
+
+        // 마을 창문 불빛 & EV 충전 (저녁 17:30 ~ 23:00 점등)
+        const isEveningLit = (h >= 17.5 && h <= 23.2) || h < 1.0;
+        el.townWins.forEach(w => {
+          w.setAttribute('fill', isEveningLit ? '#fde047' : '#475569');
+        });
+        const isEvActive = (h >= 18.0 && h <= 22.5) && state.evening >= 30;
+        el.evBox.setAttribute('fill', isEvActive ? '#fef3c7' : '#eff6ff');
+        el.evBox.setAttribute('stroke', isEvActive ? '#f59e0b' : '#93c5fd');
+        el.evTxt.textContent = isEvActive ? '⚡충전중' : '대기';
+        el.evTxt.setAttribute('fill', isEvActive ? '#b45309' : '#2563eb');
+
+        // 3) BESS 컨테이너 SOC & 충방전 상태
+        const soc = getBessSocAt(h);
+        const barW = (soc / 100) * 70;
+        el.dioBessBar.setAttribute('width', barW.toFixed(1));
+        el.dioBessSoc.textContent = state.bess > 0 ? `${Math.round(soc)}%` : 'OFF';
+
+        if (state.bess <= 0.1) {
+          el.dioBessStateBg.setAttribute('fill', '#f1f5f9');
+          el.dioBessStateTxt.setAttribute('fill', '#64748b');
+          el.dioBessStateTxt.textContent = '미투입';
+          el.dioBessPowerTxt.textContent = 'BESS: 0.0 GW';
+        } else if (d.bess > 1.2) {
+          el.dioBessStateBg.setAttribute('fill', '#dbeafe');
+          el.dioBessStateTxt.setAttribute('fill', '#1d4ed8');
+          el.dioBessStateTxt.textContent = '🔋 충전중';
+          el.dioBessPowerTxt.textContent = `충전: +${d.bess.toFixed(1)} GW`;
+        } else if (d.bess < -1.2) {
+          el.dioBessStateBg.setAttribute('fill', '#ffedd5');
+          el.dioBessStateTxt.setAttribute('fill', '#c2410c');
+          el.dioBessStateTxt.textContent = '⚡ 방전중';
+          el.dioBessPowerTxt.textContent = `방전: ${Math.abs(d.bess).toFixed(1)} GW`;
+        } else {
+          el.dioBessStateBg.setAttribute('fill', '#ecfdf5');
+          el.dioBessStateTxt.setAttribute('fill', '#047857');
+          el.dioBessStateTxt.textContent = '대기중';
+          el.dioBessPowerTxt.textContent = 'BESS: 0.0 GW';
+        }
+
+        // 하단 요약 문구
+        if (d.netWithBess < BASELOAD_MIN_GW) {
+          el.dioramaSummary.textContent = '⚠️ 태양광 과잉 발전! 기저발전 하한(30GW) 아래로 내려가 출력제어(전기 버림) 발생 중!';
+        } else if (state.bess > 10 && d.bess > 1.5) {
+          el.dioramaSummary.textContent = '🔋 낮에 남는 태양광 전기를 BESS가 흡수(충전)하여 출력제어를 막고 있습니다!';
+        } else if (state.bess > 10 && d.bess < -1.5) {
+          el.dioramaSummary.textContent = '⚡ 저녁 피크 시간! 낮에 저장한 전기를 BESS가 방전하여 화력발전 부담을 덜어줍니다!';
+        } else if (isRampDanger) {
+          el.dioramaSummary.textContent = '🚨 일몰 + 퇴근 피크 겹침! 화력발전소가 매우 가파르게 출력을 올리고 있습니다!';
+        } else {
+          el.dioramaSummary.textContent = '✅ 전력 수요와 공급이 안정적으로 균형을 이루며 마을에 전기가 공급되고 있습니다.';
+        }
+
+        // 4) 전력선 에너지 입자 애니메이션
+        let idx = 0;
+        const emit = (pts, rev, count, speed, color) => {
+          for (let i = 0; i < count && idx < dioParticles.length; i++) {
+            const p = dioParticles[idx++];
+            const prog = (t * speed + i / count) % 1;
+            const pos = pointOnPts(pts, prog, rev);
+            p.setAttribute('opacity', '1');
+            p.setAttribute('cx', pos.x.toFixed(1));
+            p.setAttribute('cy', pos.y.toFixed(1));
+            p.setAttribute('fill', color);
+          }
+        };
+
+        // 태양광 -> 허브
+        if (d.solar > 1.5) {
+          const pvCnt = Math.min(8, Math.max(2, Math.round(d.solar / 6)));
+          emit(DIO_PATHS.pvToHub, false, pvCnt, 0.35 + d.solar * 0.008, '#f59e0b');
+        }
+        // 화력 -> 허브
+        const thCnt = Math.min(8, Math.max(3, Math.round(thermalOut / 11)));
+        emit(DIO_PATHS.thermalToHub, false, thCnt, 0.25 + thermalOut * 0.005, isRampDanger ? '#ef4444' : '#475569');
+
+        // 허브 <-> BESS
+        if (Math.abs(d.bess) > 1.0) {
+          const bCnt = Math.min(7, Math.max(2, Math.round(Math.abs(d.bess) / 3.5)));
+          const isChg = d.bess > 0;
+          emit(DIO_PATHS.hubToBess, !isChg, bCnt, 0.4 + Math.abs(d.bess) * 0.012, isChg ? '#0ea5e9' : '#f97316');
+        }
+
+        // 허브 -> 마을
+        const loadCnt = Math.min(9, Math.max(4, Math.round(d.load / 10)));
+        emit(DIO_PATHS.hubToTown, false, loadCnt, 0.3 + d.load * 0.005, '#2563eb');
+
+        while (idx < dioParticles.length) dioParticles[idx++].setAttribute('opacity', '0');
+      }
+
+      /* -----------------------------------------------------------------
+       * 6. 메인 덕 커브 HTML5 Canvas 렌더링
+       * ----------------------------------------------------------------- */
+      const PAD = { left: 48, right: 20, top: 24, bottom: 36 };
+
+      function xOf(h) {
+        return PAD.left + (h / 24) * (state.cw - PAD.left - PAD.right);
+      }
+
+      function yOf(gw) {
+        const clamped = Math.max(0, Math.min(100, gw));
+        return PAD.top + (1 - clamped / 100) * (state.ch - PAD.top - PAD.bottom);
+      }
+
+      function drawDuckGraph() {
+        const w = state.cw;
+        const h = state.ch;
+        ctx.clearRect(0, 0, w, h);
+
+        const plotW = w - PAD.left - PAD.right;
+        const plotH = h - PAD.top - PAD.bottom;
+
+        // 1) 배경 격자 & 축 라벨
+        ctx.strokeStyle = '#f1f5f9';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        for (let gw = 0; gw <= 100; gw += 20) {
+          const y = yOf(gw);
+          ctx.moveTo(PAD.left, y);
+          ctx.lineTo(w - PAD.right, y);
+        }
+        for (let hr = 0; hr <= 24; hr += 3) {
+          const x = xOf(hr);
+          ctx.moveTo(x, PAD.top);
+          ctx.lineTo(x, h - PAD.bottom);
+        }
+        ctx.stroke();
+
+        // Y축 라벨 (GW)
+        ctx.fillStyle = '#64748b';
+        ctx.font = '700 11px ui-monospace, monospace';
+        ctx.textAlign = 'right';
+        for (let gw = 0; gw <= 100; gw += 20) {
+          ctx.fillText(`${gw}`, PAD.left - 8, yOf(gw) + 4);
+        }
+        ctx.textAlign = 'left';
+        ctx.fillText('GW', 10, PAD.top - 7);
+
+        // X축 라벨 (시간)
+        ctx.textAlign = 'center';
+        for (let hr = 0; hr <= 24; hr += 3) {
+          ctx.fillText(`${String(hr).padStart(2, '0')}시`, xOf(hr), h - 14);
+        }
+
+        // 샘플 포인트 생성 (0 ~ 24시, 0.2시간 간격)
+        const pts = [];
+        for (let hr = 0; hr <= 24.01; hr += 0.2) {
+          const hh = Math.min(24, hr);
+          pts.push({ h: hh, ...evaluateAt(hh, state.solar, state.evening, state.bess) });
+        }
+
+        // 2) 태양광 발전량 (노란색 반투명 영역)
+        if (state.solar > 0.5) {
+          ctx.fillStyle = 'rgba(245, 158, 11, 0.22)';
+          ctx.beginPath();
+          ctx.moveTo(xOf(0), yOf(0));
+          for (const p of pts) ctx.lineTo(xOf(p.h), yOf(p.solar));
+          ctx.lineTo(xOf(24), yOf(0));
+          ctx.closePath();
+          ctx.fill();
+
+          ctx.strokeStyle = 'rgba(245, 158, 11, 0.75)';
+          ctx.lineWidth = 1.8;
+          ctx.beginPath();
+          pts.forEach((p, i) => (i === 0 ? ctx.moveTo(xOf(p.h), yOf(p.solar)) : ctx.lineTo(xOf(p.h), yOf(p.solar))));
+          ctx.stroke();
+        }
+
+        // 3) 출력제어 위험 영역 (순부하 < 30GW 시 코랄 레드 빗금)
+        const activeCurveKey = state.bess > 0.5 ? 'netWithBess' : 'net';
+        let hasCurtail = false;
+        ctx.save();
+        ctx.beginPath();
+        let inCurtail = false;
+        for (let i = 0; i < pts.length; i++) {
+          const val = pts[i][activeCurveKey];
+          if (val < BASELOAD_MIN_GW) {
+            hasCurtail = true;
+            if (!inCurtail) {
+              ctx.moveTo(xOf(pts[i].h), yOf(BASELOAD_MIN_GW));
+              inCurtail = true;
+            }
+            ctx.lineTo(xOf(pts[i].h), yOf(val));
+          } else if (inCurtail) {
+            ctx.lineTo(xOf(pts[i].h), yOf(BASELOAD_MIN_GW));
+            inCurtail = false;
+          }
+        }
+        if (inCurtail) ctx.lineTo(xOf(24), yOf(BASELOAD_MIN_GW));
+        ctx.closePath();
+        if (hasCurtail) {
+          ctx.fillStyle = 'rgba(239, 68, 68, 0.24)';
+          ctx.fill();
+          ctx.clip();
+          ctx.strokeStyle = 'rgba(239, 68, 68, 0.55)';
+          ctx.lineWidth = 1.5;
+          for (let sx = -plotH; sx < plotW + plotH; sx += 10) {
+            ctx.beginPath();
+            ctx.moveTo(PAD.left + sx, PAD.top);
+            ctx.lineTo(PAD.left + sx + plotH, PAD.top + plotH);
+            ctx.stroke();
+          }
+        }
+        ctx.restore();
+
+        // 4) BESS 충전(파란 음영) / 방전(주황 음영) 영역
+        if (state.bess > 0.5) {
+          // 충전 구간 (netWithBess > net)
+          ctx.fillStyle = 'rgba(14, 165, 233, 0.22)';
+          ctx.beginPath();
+          let started = false;
+          for (let i = 0; i < pts.length; i++) {
+            if (pts[i].bess > 0.3) {
+              if (!started) { ctx.moveTo(xOf(pts[i].h), yOf(pts[i].net)); started = true; }
+              ctx.lineTo(xOf(pts[i].h), yOf(pts[i].netWithBess));
+            }
+          }
+          for (let i = pts.length - 1; i >= 0; i--) {
+            if (pts[i].bess > 0.3) ctx.lineTo(xOf(pts[i].h), yOf(pts[i].net));
+          }
+          ctx.closePath();
+          ctx.fill();
+
+          // 방전 구간 (netWithBess < net)
+          ctx.fillStyle = 'rgba(249, 115, 22, 0.24)';
+          ctx.beginPath();
+          started = false;
+          for (let i = 0; i < pts.length; i++) {
+            if (pts[i].bess < -0.3) {
+              if (!started) { ctx.moveTo(xOf(pts[i].h), yOf(pts[i].net)); started = true; }
+              ctx.lineTo(xOf(pts[i].h), yOf(pts[i].netWithBess));
+            }
+          }
+          for (let i = pts.length - 1; i >= 0; i--) {
+            if (pts[i].bess < -0.3) ctx.lineTo(xOf(pts[i].h), yOf(pts[i].net));
+          }
+          ctx.closePath();
+          ctx.fill();
+        }
+
+        // 5) 기저발전 최소 출력선 (30GW 빨간 점선)
+        ctx.strokeStyle = '#ef4444';
+        ctx.lineWidth = 1.8;
+        ctx.setLineDash([6, 5]);
+        ctx.beginPath();
+        ctx.moveTo(PAD.left, yOf(BASELOAD_MIN_GW));
+        ctx.lineTo(w - PAD.right, yOf(BASELOAD_MIN_GW));
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        ctx.fillStyle = '#dc2626';
+        ctx.font = '800 10.5px Pretendard, sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText('기저발전 하한선 (30GW · 출력제어 기준)', PAD.left + 6, yOf(BASELOAD_MIN_GW) - 6);
+
+        if (hasCurtail) {
+          ctx.fillStyle = '#dc2626';
+          ctx.font = '900 11px Pretendard, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('⚠️ 출력제어 (Curtailment)', xOf(12.4), yOf(BASELOAD_MIN_GW) + 18);
+        }
+
+        // 6) 총 전력 수요 곡선 (네이비 점선)
+        ctx.strokeStyle = '#1e293b';
+        ctx.lineWidth = 2.1;
+        ctx.setLineDash([5, 4]);
+        ctx.beginPath();
+        pts.forEach((p, i) => (i === 0 ? ctx.moveTo(xOf(p.h), yOf(p.load)) : ctx.lineTo(xOf(p.h), yOf(p.load))));
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // 7) 순부하 / 덕 커브 (굵은 파란 실선)
+        ctx.strokeStyle = state.bess > 0.5 ? 'rgba(37, 99, 235, 0.45)' : '#2563eb';
+        ctx.lineWidth = state.bess > 0.5 ? 2.4 : 3.6;
+        ctx.beginPath();
+        pts.forEach((p, i) => (i === 0 ? ctx.moveTo(xOf(p.h), yOf(p.net)) : ctx.lineTo(xOf(p.h), yOf(p.net))));
+        ctx.stroke();
+
+        // 8) BESS 적용 후 순부하 (선명한 에메랄드 그린 실선)
+        if (state.bess > 0.5) {
+          ctx.strokeStyle = '#10b981';
+          ctx.lineWidth = 3.8;
+          ctx.beginPath();
+          pts.forEach((p, i) => (i === 0 ? ctx.moveTo(xOf(p.h), yOf(p.netWithBess)) : ctx.lineTo(xOf(p.h), yOf(p.netWithBess))));
+          ctx.stroke();
+        }
+
+        // 9) 🦆 오리 실루엣 & 주석 오버레이 (태양광 >= 35%일 때 선명하게 표시)
+        if (state.showDuck && state.solar >= 30) {
+          const dBelly = evaluateAt(12.4, state.solar, state.evening, 0);
+          const dNeck = evaluateAt(17.5, state.solar, state.evening, 0);
+          const dHead = evaluateAt(19.6, state.solar, state.evening, 0);
+
+          const bx = xOf(12.4), by = yOf(dBelly.net);
+          const nx = xOf(17.5), ny = yOf(dNeck.net);
+          const hx = xOf(19.6), hy = yOf(dHead.net);
+
+          // 반투명 오리 머리 & 부리 윤곽
+          ctx.save();
+          ctx.fillStyle = 'rgba(245, 158, 11, 0.18)';
+          ctx.strokeStyle = 'rgba(217, 119, 6, 0.65)';
+          ctx.lineWidth = 2;
+
+          // 머리 원
+          ctx.beginPath();
+          ctx.arc(hx, hy + 10, 14, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+
+          // 오리 눈
+          ctx.fillStyle = '#0f172a';
+          ctx.beginPath();
+          ctx.arc(hx + 5, hy + 7, 2.2, 0, Math.PI * 2);
+          ctx.fill();
+
+          // 오리 부리
+          ctx.fillStyle = '#f97316';
+          ctx.beginPath();
+          ctx.moveTo(hx + 13, hy + 7);
+          ctx.lineTo(hx + 24, hy + 11);
+          ctx.lineTo(hx + 13, hy + 15);
+          ctx.closePath();
+          ctx.fill();
+
+          // 3개 말풍선 라벨
+          drawCallout(bx, by - 14, '🦆 오리 배 (낮 과잉발전)', '#2563eb');
+          drawCallout(nx - 26, ny, '오리 목 (급경사 램프)', '#ef4444');
+          drawCallout(hx - 14, Math.max(PAD.top + 16, hy - 18), '오리 머리 (저녁 피크)', '#1e293b');
+          ctx.restore();
+        }
+
+        // 10) 24시간 수직 타임 커서 & 현재 시각 점
+        const cx = xOf(state.hour);
+        ctx.strokeStyle = 'rgba(15, 23, 42, 0.55)';
+        ctx.lineWidth = 1.6;
+        ctx.setLineDash([4, 3]);
+        ctx.beginPath();
+        ctx.moveTo(cx, PAD.top);
+        ctx.lineTo(cx, h - PAD.bottom);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        const cur = evaluateAt(state.hour, state.solar, state.evening, state.bess);
+        const curY = yOf(state.bess > 0.5 ? cur.netWithBess : cur.net);
+        ctx.fillStyle = state.bess > 0.5 ? '#10b981' : '#2563eb';
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        ctx.arc(cx, curY, 6.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+
+        // 상단 타임 태그
+        ctx.fillStyle = '#0f172a';
+        ctx.fillRect(cx - 22, PAD.top - 18, 44, 16);
+        ctx.fillStyle = '#ffffff';
+        ctx.font = '800 10px ui-monospace, monospace';
+        ctx.textAlign = 'center';
+        ctx.fillText(formatClock(state.hour), cx, PAD.top - 6);
+      }
+
+      function drawCallout(x, y, text, color) {
+        ctx.font = '800 10.5px Pretendard, sans-serif';
+        const tw = ctx.measureText(text).width + 12;
+        const rx = Math.max(PAD.left + 4, Math.min(state.cw - PAD.right - tw - 4, x - tw / 2));
+        const ry = Math.max(PAD.top + 4, Math.min(state.ch - PAD.bottom - 22, y - 10));
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.92)';
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.roundRect(rx, ry, tw, 19, 6);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = color;
+        ctx.textAlign = 'center';
+        ctx.fillText(text, rx + tw / 2, ry + 13);
+      }
+
+      /* -----------------------------------------------------------------
+       * 7. UI 및 KPI 동기화
+       * ----------------------------------------------------------------- */
+      function syncSlidersAndKpi() {
+        el.sliderSolar.value = Math.round(state.solar);
+        el.valSolar.textContent = `${Math.round(state.solar)}%`;
+        el.sliderEvening.value = Math.round(state.evening);
+        el.valEvening.textContent = `${Math.round(state.evening)}%`;
+        el.sliderBess.value = Math.round(state.bess);
+        el.valBess.textContent = `${Math.round(state.bess)}%`;
+        el.sliderTime.value = state.hour.toFixed(2);
+        el.valTime.textContent = formatClock(state.hour);
+
+        // KPI 계산 및 표시
+        const m = computeDailyMetrics();
+        el.kpiBasisTag.textContent = state.bess > 0.5 ? `BESS ${Math.round(state.bess)}% 적용 기준` : 'BESS 미적용 기준';
+
+        el.kpiMinNet.textContent = `${m.minNetFinal.toFixed(1)} GW`;
+        el.kpiMinNet.style.color = m.minNetFinal < BASELOAD_MIN_GW ? '#dc2626' : (m.minNetFinal < 36 ? '#d97706' : '#059669');
+        el.kpiMinNetSub.textContent = m.minNetFinal < BASELOAD_MIN_GW
+          ? `⚠️ 하한선(30GW) 대비 ${(BASELOAD_MIN_GW - m.minNetFinal).toFixed(1)}GW 초과 하락!`
+          : '기저발전 하한선(30.0 GW) 안전 유지';
+
+        el.kpiRamp.textContent = `${m.rampFinal.toFixed(1)} GW / 3h`;
+        el.kpiRamp.style.color = m.rampFinal >= 34 ? '#dc2626' : (m.rampFinal >= 22 ? '#d97706' : '#059669');
+        el.kpiRampSub.textContent = m.rampFinal >= 34
+          ? '🚨 매우 가파른 오리 목! 급가동 위험'
+          : (m.rampFinal >= 22 ? '⚠️ 저녁 램프 상승 주의' : '✅ 화력발전 추종 가능한 완만한 기울기');
+
+        el.kpiCurtail.textContent = `${m.curtailPctFinal.toFixed(1)} %`;
+        el.kpiCurtail.style.color = m.curtailPctFinal > 0.1 ? '#dc2626' : '#059669';
+        el.kpiCurtailSub.textContent = m.curtailPctFinal > 0.1
+          ? `태양광 발전량의 ${m.curtailPctFinal.toFixed(1)}%가 강제 버려짐`
+          : '버려지는 태양광 전기 없음 (0%)';
+
+        // 계통 안정도 판정
+        if (m.minNetFinal < BASELOAD_MIN_GW || m.rampFinal >= 36) {
+          el.kpiStatusPill.textContent = '🔴 위험 (덕 커브 위기)';
+          el.kpiStatusPill.style.background = '#fee2e2';
+          el.kpiStatusPill.style.color = '#b91c1c';
+        } else if (m.rampFinal >= 24 || m.minNetFinal < 36) {
+          el.kpiStatusPill.textContent = '🟠 주의 (램프 부담)';
+          el.kpiStatusPill.style.background = '#ffedd5';
+          el.kpiStatusPill.style.color = '#c2410c';
+        } else {
+          el.kpiStatusPill.textContent = '🟢 안정 (균형 계통)';
+          el.kpiStatusPill.style.background = '#dcfce7';
+          el.kpiStatusPill.style.color = '#047857';
+        }
+
+        el.kpiBessEffect.textContent = state.bess > 0.5
+          ? `🛡️ BESS 효과: 저녁 램프 ${m.rampReduction.toFixed(0)}% 완화!`
+          : 'BESS 슬라이더를 올려 해결 효과를 확인하세요';
+
+        // 시대 버튼 & 스토리 카드 하이라이트
+        el.eraBtns.forEach(b => {
+          b.classList.remove('active-0', 'active-1', 'active-2', 'active-3', 'active-4');
+          const idx = Number(b.dataset.era);
+          if (idx === state.activeEra) b.classList.add(`active-${idx}`);
+        });
+
+        let storyHighlight = 0;
+        if (state.bess >= 25) storyHighlight = 3;
+        else if (state.solar >= 60 && state.evening >= 60) storyHighlight = 2;
+        else if (state.solar >= 25) storyHighlight = 1;
+
+        el.storyCards.forEach(c => {
+          const idx = Number(c.dataset.story);
+          c.classList.remove('highlighted', 'highlighted-bess');
+          if (idx === storyHighlight) {
+            c.classList.add(idx === 3 ? 'highlighted-bess' : 'highlighted');
+          }
+        });
+      }
+
+      /* -----------------------------------------------------------------
+       * 8. 메인 60fps 애니메이션 루프 (Morphing 보간 + 24시간 진행)
+       * ----------------------------------------------------------------- */
+      function animate(ts) {
+        if (!state.lastTs) state.lastTs = ts;
+        const dt = Math.min((ts - state.lastTs) / 1000, 0.05);
+        state.lastTs = ts;
+        state.simTime += dt;
+
+        // 1) 시대별 자동 변화(Morphing) 보간
+        if (state.morphPlaying) {
+          state.morphProgress += dt * 0.34; // 단계당 약 3초 소요
+          if (state.morphProgress >= 1) {
+            state.morphProgress = 0;
+            state.morphStep++;
+            if (state.morphStep >= ERAS.length - 1) {
+              // 마지막 ⑤단계 도착 완료
+              const last = ERAS[ERAS.length - 1];
+              state.solar = last.solar;
+              state.evening = last.evening;
+              state.bess = last.bess;
+              state.activeEra = ERAS.length - 1;
+              el.captionText.innerHTML = last.caption;
+              stopMorph();
+            }
+          }
+          if (state.morphPlaying) {
+            const from = ERAS[state.morphStep];
+            const to = ERAS[state.morphStep + 1];
+            const ease = state.morphProgress < 0.5
+              ? 2 * state.morphProgress * state.morphProgress
+              : 1 - Math.pow(-2 * state.morphProgress + 2, 2) / 2;
+
+            state.solar = from.solar + (to.solar - from.solar) * ease;
+            state.evening = from.evening + (to.evening - from.evening) * ease;
+            state.bess = from.bess + (to.bess - from.bess) * ease;
+            state.activeEra = state.morphProgress > 0.5 ? state.morphStep + 1 : state.morphStep;
+            el.captionText.innerHTML = ERAS[state.activeEra].caption;
+          }
+          syncSlidersAndKpi();
+        }
+
+        // 2) 24시간 타임 커서 자동 진행
+        if (state.timePlaying && !state.draggingCanvas) {
+          state.hour = (state.hour + dt * 1.45) % 24;
+          el.sliderTime.value = state.hour.toFixed(2);
+          el.valTime.textContent = formatClock(state.hour);
+        }
+
+        // 3) SVG 디오라마 & Canvas 그래프 렌더
+        updateDiorama(state.simTime);
+        drawDuckGraph();
+
+        requestAnimationFrame(animate);
+      }
+
+      function stopMorph() {
+        state.morphPlaying = false;
+        el.btnMorphPlay.classList.remove('playing');
+        el.morphBtnText.textContent = '변화 과정 자동 재생 (① → ⑤)';
+      }
+
+      function applyEra(idx) {
+        stopMorph();
+        const e = ERAS[idx];
+        state.solar = e.solar;
+        state.evening = e.evening;
+        state.bess = e.bess;
+        state.activeEra = idx;
+        el.captionText.innerHTML = e.caption;
+        syncSlidersAndKpi();
+      }
+
+      /* -----------------------------------------------------------------
+       * 9. 캔버스 리사이즈 & 호버 툴팁 / 드래그 탐색
+       * ----------------------------------------------------------------- */
+      function resizeCanvas() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const rect = el.canvasContainer.getBoundingClientRect();
+        if (rect.width <= 0 || rect.height <= 0) return;
+        state.cw = rect.width;
+        state.ch = rect.height;
+        el.duckCanvas.width = Math.floor(rect.width * dpr);
+        el.duckCanvas.height = Math.floor(rect.height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      function clientXToHour(clientX) {
+        const rect = el.duckCanvas.getBoundingClientRect();
+        const x = clientX - rect.left;
+        const frac = (x - PAD.left) / (state.cw - PAD.left - PAD.right);
+        return Math.max(0, Math.min(23.95, frac * 24));
+      }
+
+      function updateTooltip(clientX, clientY) {
+        const rect = el.duckCanvas.getBoundingClientRect();
+        const mx = clientX - rect.left;
+        const my = clientY - rect.top;
+
+        if (mx < PAD.left || mx > state.cw - PAD.right || my < PAD.top || my > state.ch - PAD.bottom) {
+          el.graphTooltip.classList.remove('show');
+          return;
+        }
+
+        const hr = clientXToHour(clientX);
+        const d = evaluateAt(hr, state.solar, state.evening, state.bess);
+        const bessLabel = d.bess > 0.2 ? `충전 +${d.bess.toFixed(1)} GW` : (d.bess < -0.2 ? `방전 ${d.bess.toFixed(1)} GW` : '0.0 GW');
+
+        el.graphTooltip.innerHTML = `
+          <div style="font-weight:900; color:#38bdf8; margin-bottom:4px;">🕒 ${formatClock(hr)} 계통 수치</div>
+          <div class="tt-row"><span>총 전력 수요:</span><strong>${d.load.toFixed(1)} GW</strong></div>
+          <div class="tt-row" style="color:#fbbf24;"><span>태양광(PV):</span><strong>${d.solar.toFixed(1)} GW</strong></div>
+          <div class="tt-row" style="color:#60a5fa;"><span>순부하(덕 커브):</span><strong>${d.net.toFixed(1)} GW</strong></div>
+          ${state.bess > 0.5 ? `
+            <div class="tt-row" style="color:#fb923c;"><span>BESS 동작:</span><strong>${bessLabel}</strong></div>
+            <div class="tt-row" style="color:#34d399;"><span>BESS 적용 순부하:</span><strong>${d.netWithBess.toFixed(1)} GW</strong></div>
+          ` : ''}
+        `;
+
+        const tipW = 195;
+        const left = mx + 14 + tipW > state.cw ? (mx - tipW - 14) : (mx + 14);
+        const top = Math.max(8, Math.min(state.ch - 130, my - 20));
+        el.graphTooltip.style.left = `${left}px`;
+        el.graphTooltip.style.top = `${top}px`;
+        el.graphTooltip.classList.add('show');
+      }
+
+      /* -----------------------------------------------------------------
+       * 10. 미니 퀴즈 렌더링
+       * ----------------------------------------------------------------- */
+      function renderQuiz() {
+        el.quizGrid.innerHTML = QUIZ_DATA.map((item, qi) => {
+          const picked = state.quizAns[qi];
+          const done = picked !== null;
+          const isOk = picked === item.ans;
+
+          const optsHtml = item.opts.map((txt, oi) => {
+            let cls = 'quiz-opt-btn';
+            if (done) {
+              if (oi === item.ans) cls += ' correct';
+              else if (oi === picked) cls += ' wrong';
+            }
+            return `<button type="button" class="${cls}" data-q="${qi}" data-o="${oi}" ${done ? 'disabled' : ''}>${txt}</button>`;
+          }).join('');
+
+          return `
+            <div class="quiz-card">
+              <div class="quiz-q">${item.q}</div>
+              <div class="quiz-opts">${optsHtml}</div>
+              <div class="quiz-fb ${done ? (isOk ? 'show ok' : 'show no') : ''}">
+                ${done ? (isOk ? item.ok : item.no) : ''}
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        el.quizGrid.querySelectorAll('.quiz-opt-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const qi = Number(btn.dataset.q);
+            const oi = Number(btn.dataset.o);
+            if (state.quizAns[qi] !== null) return;
+            state.quizAns[qi] = oi;
+            renderQuiz();
+          });
+        });
+
+        const doneCount = state.quizAns.filter(v => v !== null).length;
+        const score = state.quizAns.reduce((acc, v, i) => acc + (v === QUIZ_DATA[i].ans ? 1 : 0), 0);
+        if (doneCount < 3) {
+          el.quizScoreText.textContent = `📝 3문제를 모두 풀어 보세요! (${doneCount} / 3 완료 · 현재 ${score}점)`;
+        } else if (score === 3) {
+          el.quizScoreText.textContent = '🏆 3 / 3점 만점! 덕 커브의 발생 원리와 BESS 해결책을 완벽히 이해하셨습니다!';
+        } else {
+          el.quizScoreText.textContent = `👍 3문제 완료! 총 ${score} / 3점입니다. 다시 도전해 볼까요?`;
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 11. 이벤트 바인딩 및 초기화
+       * ----------------------------------------------------------------- */
+      window.addEventListener('load', () => {
+        initDioParticles();
+        resizeCanvas();
+
+        // 5단계 시대별 프리셋 버튼
+        el.eraBtns.forEach(btn => {
+          btn.addEventListener('click', () => applyEra(Number(btn.dataset.era)));
+        });
+
+        // 자동 변화(Morphing) 재생/정지 버튼
+        el.btnMorphPlay.addEventListener('click', () => {
+          if (state.morphPlaying) {
+            stopMorph();
+          } else {
+            state.morphPlaying = true;
+            state.morphStep = 0;
+            state.morphProgress = 0;
+            state.solar = ERAS[0].solar;
+            state.evening = ERAS[0].evening;
+            state.bess = ERAS[0].bess;
+            state.activeEra = 0;
+            el.captionText.innerHTML = ERAS[0].caption;
+            el.btnMorphPlay.classList.add('playing');
+            el.morphBtnText.textContent = '⏹️ 자동 재생 중지';
+            syncSlidersAndKpi();
+          }
+        });
+
+        // 오리 실루엣 토글
+        el.btnDuckOverlay.addEventListener('click', () => {
+          state.showDuck = !state.showDuck;
+          el.btnDuckOverlay.classList.toggle('on', state.showDuck);
+          el.duckToggleLabel.textContent = state.showDuck ? '오리 실루엣 보기 ON' : '오리 실루엣 보기 OFF';
+        });
+
+        // 슬라이더 직접 조작
+        const onManualSlide = () => {
+          stopMorph();
+          state.activeEra = -1;
+          el.captionText.innerHTML = `<strong>[직접 조작 모드]</strong> 태양광 ${Math.round(state.solar)}% · 저녁 패턴 ${Math.round(state.evening)}% · BESS ${Math.round(state.bess)}% 조건의 실시간 덕 커브입니다.`;
+          syncSlidersAndKpi();
+        };
+
+        el.sliderSolar.addEventListener('input', e => { state.solar = Number(e.target.value); onManualSlide(); });
+        el.sliderEvening.addEventListener('input', e => { state.evening = Number(e.target.value); onManualSlide(); });
+        el.sliderBess.addEventListener('input', e => { state.bess = Number(e.target.value); onManualSlide(); });
+
+        // 24시간 타임 슬라이더 & 재생/일시정지
+        el.sliderTime.addEventListener('input', e => {
+          state.hour = Number(e.target.value);
+          el.valTime.textContent = formatClock(state.hour);
+        });
+
+        el.btnTimePlay.addEventListener('click', () => {
+          state.timePlaying = !state.timePlaying;
+          el.btnTimePlay.textContent = state.timePlaying ? '⏸️ 일시정지' : '▶ 시간 재생';
+        });
+
+        // 캔버스 마우스/터치 드래그 및 호버 툴팁
+        el.duckCanvas.addEventListener('mousemove', e => {
+          updateTooltip(e.clientX, e.clientY);
+          if (state.draggingCanvas) {
+            state.hour = clientXToHour(e.clientX);
+            el.sliderTime.value = state.hour.toFixed(2);
+            el.valTime.textContent = formatClock(state.hour);
+          }
+        });
+        el.duckCanvas.addEventListener('mouseleave', () => {
+          el.graphTooltip.classList.remove('show');
+          state.draggingCanvas = false;
+        });
+        el.duckCanvas.addEventListener('mousedown', e => {
+          state.draggingCanvas = true;
+          state.hour = clientXToHour(e.clientX);
+          el.sliderTime.value = state.hour.toFixed(2);
+          el.valTime.textContent = formatClock(state.hour);
+        });
+        window.addEventListener('mouseup', () => { state.draggingCanvas = false; });
+
+        // 터치 지원
+        el.duckCanvas.addEventListener('touchstart', e => {
+          if (!e.touches.length) return;
+          state.draggingCanvas = true;
+          state.hour = clientXToHour(e.touches[0].clientX);
+          el.sliderTime.value = state.hour.toFixed(2);
+          el.valTime.textContent = formatClock(state.hour);
+        }, { passive: true });
+        el.duckCanvas.addEventListener('touchmove', e => {
+          if (!state.draggingCanvas || !e.touches.length) return;
+          state.hour = clientXToHour(e.touches[0].clientX);
+          el.sliderTime.value = state.hour.toFixed(2);
+          el.valTime.textContent = formatClock(state.hour);
+        }, { passive: true });
+        window.addEventListener('touchend', () => { state.draggingCanvas = false; });
+
+        // 퀴즈 리셋
+        el.btnQuizReset.addEventListener('click', () => {
+          state.quizAns = [null, null, null];
+          renderQuiz();
+        });
+
+        window.addEventListener('resize', resizeCanvas);
+
+        // 초기 실행: ③ 2024 덕 커브 심화 단계로 시작
+        renderQuiz();
+        applyEra(2);
+        requestAnimationFrame(animate);
+      });
+    })();
+  </script>
+</body>
+</html>

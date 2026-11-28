@@ -1,0 +1,2738 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BESS 프로젝트 A to Z 체험실 — 계약 · 설계 · 토목/건축 · EPC · 턴키 · SI</title>
+  <style>
+    /* =====================================================================
+     * 1. 기본 리셋 및 디자인 토큰 (현대적 공학 교과서 / 과학관 체험 테마)
+     * ===================================================================== */
+    :root {
+      --bg-page: #f4f7fb;
+      --bg-card: #ffffff;
+      --border-soft: #dce5f2;
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #64748b;
+
+      /* 영역별 시맨틱 컬러 */
+      --col-eng: #2563eb;       /* 설계/엔지니어링 (Blue) */
+      --col-civil: #d97706;     /* 토목/시공 (Amber/Orange) */
+      --col-epc: #10b981;       /* EPC/턴키/운전 (Emerald) */
+      --col-si: #4f46e5;        /* SI/제어 (Indigo) */
+      --col-risk: #e11d48;      /* 리스크/방화벽 (Rose) */
+
+      --shadow-card: 0 10px 28px -8px rgba(15, 23, 42, 0.08);
+      --radius-card: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      background-image:
+        radial-gradient(circle at 8% 5%, rgba(37, 99, 235, 0.09) 0%, transparent 32%),
+        radial-gradient(circle at 92% 8%, rgba(16, 185, 129, 0.1) 0%, transparent 34%),
+        radial-gradient(circle at 50% 96%, rgba(245, 158, 11, 0.08) 0%, transparent 38%);
+      color: var(--text-main);
+      line-height: 1.56;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 18px 16px 60px;
+    }
+
+    /* =====================================================================
+     * 2. 상단 히어로 헤더 & 4개 메인 탭 바
+     * ===================================================================== */
+    .hero-header {
+      background: linear-gradient(135deg, #ffffff 0%, #eff6ff 52%, #ecfdf5 100%);
+      border: 2px solid var(--border-soft);
+      border-radius: 24px;
+      padding: 20px 24px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .hero-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #2563eb, #10b981);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.24);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(1.14rem, 2.3vw, 1.54rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .hero-sub {
+      font-size: 0.89rem;
+      color: var(--text-sub);
+      margin-top: 3px;
+    }
+
+    .legend-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .legend-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: var(--text-main);
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* 4개 메인 탭 네비게이션 */
+    .tab-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .tab-btn {
+      appearance: none;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 13px 12px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .tab-btn:hover {
+      border-color: #93c5fd;
+      color: var(--text-main);
+      transform: translateY(-1px);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #2563eb, #0284c7);
+      border-color: #1d4ed8;
+      color: #ffffff;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.28);
+    }
+
+    .tab-panel {
+      display: none;
+      animation: fadeUp 0.24s ease;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* =====================================================================
+     * 3. 공통 카드 및 버튼 컴포넌트
+     * ===================================================================== */
+    .card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-soft);
+      border-radius: var(--radius-card);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+    }
+
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-tag {
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1.5px solid #bfdbfe;
+    }
+
+    .action-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 8px 14px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.16s ease;
+    }
+
+    .action-btn:hover {
+      border-color: #60a5fa;
+      background: #eff6ff;
+    }
+
+    .action-btn.primary {
+      border: none;
+      background: linear-gradient(135deg, #2563eb, #0ea5e9);
+      color: #ffffff;
+      box-shadow: 0 5px 14px rgba(37, 99, 235, 0.28);
+    }
+
+    .action-btn.primary.playing {
+      background: linear-gradient(135deg, #f97316, #e11d48);
+      box-shadow: 0 5px 14px rgba(225, 29, 72, 0.28);
+    }
+
+    .action-btn.is-slow {
+      background: #fef3c7;
+      border-color: #f59e0b;
+      color: #b45309;
+    }
+
+    .action-btn.is-paused {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #b91c1c;
+    }
+
+    .svg-stage {
+      width: 100%;
+      border-radius: 18px;
+      border: 2px solid #dbeafe;
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+      overflow: hidden;
+      padding: 6px;
+    }
+
+    .svg-stage svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+
+    /* =====================================================================
+     * 4. [탭 1] 계약 방식 비교 (분리발주 · SI · EPC · 턴키)
+     * ===================================================================== */
+    .contract-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 11px;
+      margin-bottom: 14px;
+    }
+
+    .contract-card {
+      appearance: none;
+      background: #f8fafc;
+      border: 2.5px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 14px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      transition: all 0.18s ease;
+    }
+
+    .contract-card:hover {
+      transform: translateY(-2px);
+      border-color: #93c5fd;
+      background: #ffffff;
+    }
+
+    .contract-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .contract-card strong {
+      font-size: 0.96rem;
+      color: var(--text-main);
+    }
+
+    .contract-chip {
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .contract-card span.c-desc {
+      font-size: 0.78rem;
+      color: var(--text-sub);
+      line-height: 1.4;
+    }
+
+    .contract-card.active-multi { background: #fff1f2; border-color: #e11d48; box-shadow: 0 8px 18px rgba(225, 29, 72, 0.16); }
+    .contract-card.active-si    { background: #eef2ff; border-color: #4f46e5; box-shadow: 0 8px 18px rgba(79, 70, 229, 0.16); }
+    .contract-card.active-epc   { background: #ecfdf5; border-color: #10b981; box-shadow: 0 8px 18px rgba(16, 185, 129, 0.18); }
+    .contract-card.active-turnkey { background: #eff6ff; border-color: #2563eb; box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18); }
+
+    /* 집 짓기 비유 배너 */
+    .analogy-box {
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      border: 2px solid #fbbf24;
+      border-radius: 16px;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+    }
+
+    .analogy-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .analogy-box h3 {
+      font-size: 0.94rem;
+      font-weight: 900;
+      color: #92400e;
+      margin-bottom: 3px;
+    }
+
+    .analogy-box p {
+      font-size: 0.85rem;
+      color: #78350f;
+      line-height: 1.5;
+    }
+
+    /* 비교 지표 4개 바 */
+    .metrics-bar-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .metric-box {
+      background: #f8fafc;
+      border: 1.8px solid #e2e8f0;
+      border-radius: 15px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .metric-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--text-sub);
+    }
+
+    .meter-track {
+      height: 9px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      overflow: hidden;
+    }
+
+    .meter-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease;
+    }
+
+    .metric-foot {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* 비교 테이블 */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 15px;
+      border: 2px solid #e2e8f0;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 680px;
+      font-size: 0.82rem;
+    }
+
+    .comp-table th,
+    .comp-table td {
+      padding: 11px 13px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      transition: background-color 0.2s ease;
+    }
+
+    .comp-table th {
+      background: #f8fafc;
+      font-weight: 900;
+      color: var(--text-main);
+    }
+
+    .comp-table td:first-child {
+      font-weight: 800;
+      color: var(--text-main);
+      background: #f8fafc;
+      width: 19%;
+    }
+
+    .comp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .hl-multi { background: #fff1f2 !important; color: #9f1239 !important; font-weight: 700; }
+    .hl-si    { background: #eef2ff !important; color: #3730a3 !important; font-weight: 700; }
+    .hl-epc   { background: #ecfdf5 !important; color: #065f46 !important; font-weight: 700; }
+    .hl-turnkey { background: #eff6ff !important; color: #1e40af !important; font-weight: 700; }
+
+    /* =====================================================================
+     * 5. [탭 2] 설계 단계 진화 (기획 → 기본설계 → 상세설계 → 준공)
+     * ===================================================================== */
+    .stepper-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .step-btn {
+      appearance: none;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 15px;
+      padding: 12px 13px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: all 0.18s ease;
+    }
+
+    .step-btn:hover {
+      border-color: #60a5fa;
+      background: #ffffff;
+    }
+
+    .step-btn .s-num {
+      font-size: 0.7rem;
+      font-weight: 900;
+      color: var(--text-muted);
+    }
+
+    .step-btn strong {
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .step-btn span.s-sub {
+      font-size: 0.75rem;
+      color: var(--text-sub);
+    }
+
+    .step-btn.active {
+      background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+      border-color: #2563eb;
+      box-shadow: 0 8px 16px rgba(37, 99, 235, 0.18);
+    }
+
+    .step-btn.active .s-num {
+      color: #2563eb;
+    }
+
+    .blueprint-stage {
+      background: #0b1930;
+      border: 2.5px solid #1e3a5f;
+      border-radius: 18px;
+      overflow: hidden;
+      padding: 6px;
+      margin-bottom: 16px;
+    }
+
+    .blueprint-stage svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .three-info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .info-panel {
+      background: #f8fbff;
+      border: 2px solid #dbeafe;
+      border-radius: 17px;
+      padding: 15px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .info-panel.warn {
+      background: #fff1f2;
+      border-color: #fecdd3;
+    }
+
+    .info-panel.civil {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .info-panel h3 {
+      font-size: 0.93rem;
+      font-weight: 900;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .info-panel ul {
+      padding-left: 18px;
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    /* =====================================================================
+     * 6. [탭 3] 토목·건축 시공 타임랩스 (5단계 디오라마 + 핫스팟)
+     * ===================================================================== */
+    .const-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 9px;
+      margin-bottom: 14px;
+    }
+
+    .const-btn {
+      appearance: none;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 10px 11px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      transition: all 0.18s ease;
+    }
+
+    .const-btn:hover {
+      border-color: #fbbf24;
+      background: #ffffff;
+    }
+
+    .const-btn strong {
+      font-size: 0.84rem;
+      color: var(--text-main);
+    }
+
+    .const-btn span {
+      font-size: 0.72rem;
+      color: var(--text-sub);
+    }
+
+    .const-btn.active {
+      background: linear-gradient(135deg, #fffbeb, #fef3c7);
+      border-color: #d97706;
+      box-shadow: 0 6px 14px rgba(217, 119, 6, 0.2);
+    }
+
+    .const-btn.active-cod {
+      background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+      border-color: #10b981;
+      box-shadow: 0 6px 14px rgba(16, 185, 129, 0.22);
+    }
+
+    .const-caption {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 14px;
+      padding: 12px 16px;
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .const-caption strong {
+      color: #fbbf24;
+    }
+
+    .hotspot-g {
+      cursor: pointer;
+      transition: transform 0.16s ease, filter 0.16s ease;
+    }
+
+    .hotspot-g:hover {
+      filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.55));
+    }
+
+    .hotspot-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .hs-chip {
+      appearance: none;
+      border: 1.5px solid #bfdbfe;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-family: inherit;
+      font-size: 0.77rem;
+      font-weight: 800;
+      padding: 6px 11px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .hs-chip:hover {
+      background: #2563eb;
+      color: #ffffff;
+      border-color: #1d4ed8;
+    }
+
+    /* =====================================================================
+     * 7. [탭 4] 역할 분담(DOR) 매트릭스 & 4문제 미니 퀴즈
+     * ===================================================================== */
+    .dor-toggle-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .dor-btn {
+      appearance: none;
+      border: 2px solid #cbd5e1;
+      background: #f8fafc;
+      color: #334155;
+      font-family: inherit;
+      font-size: 0.86rem;
+      font-weight: 800;
+      padding: 9px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .dor-btn:hover {
+      border-color: #60a5fa;
+      background: #ffffff;
+    }
+
+    .dor-btn.active {
+      background: #0f172a;
+      border-color: #0f172a;
+      color: #ffffff;
+      box-shadow: 0 5px 14px rgba(15, 23, 42, 0.22);
+    }
+
+    .dor-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .dor-row {
+      background: #f8fafc;
+      border: 1.8px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      transition: border-color 0.25s ease, background-color 0.25s ease;
+    }
+
+    .dor-scope strong {
+      display: block;
+      font-size: 0.87rem;
+      color: var(--text-main);
+    }
+
+    .dor-scope span {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    .dor-pill {
+      font-size: 0.76rem;
+      font-weight: 900;
+      padding: 6px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+      transition: all 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .owner-owner { background: #ffe4e6; color: #be123c; border: 1.5px solid #fda4af; }
+    .owner-civil { background: #fef3c7; color: #b45309; border: 1.5px solid #fcd34d; }
+    .owner-si    { background: #e0e7ff; color: #3730a3; border: 1.5px solid #a5b4fc; }
+    .owner-epc   { background: #d1fae5; color: #047857; border: 1.5px solid #6ee7b7; }
+    .owner-tk    { background: #dbeafe; color: #1d4ed8; border: 1.5px solid #93c5fd; }
+
+    /* 4문제 미니 퀴즈 */
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .quiz-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 11px;
+    }
+
+    .quiz-q {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.48;
+    }
+
+    .quiz-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .quiz-opt-btn {
+      appearance: none;
+      width: 100%;
+      text-align: left;
+      padding: 9px 12px;
+      border-radius: 11px;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.81rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .quiz-opt-btn:hover:not(:disabled) {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    .quiz-opt-btn.correct {
+      background: #dcfce7;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .quiz-opt-btn.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .quiz-fb {
+      display: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.46;
+      padding: 9px 11px;
+      border-radius: 11px;
+    }
+
+    .quiz-fb.show { display: block; }
+    .quiz-fb.ok { background: #ecfdf5; color: #065f46; border: 1.5px solid #a7f3d0; }
+    .quiz-fb.no { background: #fff1f2; color: #9f1239; border: 1.5px solid #fecdd3; }
+
+    .quiz-footer {
+      margin-top: 14px;
+      padding: 14px 18px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+      border: 2px solid #bfdbfe;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .quiz-footer.perfect {
+      background: linear-gradient(135deg, #fef9c3, #dcfce7, #dbeafe);
+      border-color: #f59e0b;
+      box-shadow: 0 8px 20px rgba(245, 158, 11, 0.22);
+    }
+
+    /* =====================================================================
+     * 8. 핫스팟 상세 설명 모달
+     * ===================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 120;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      background: #ffffff;
+      border: 2.5px solid #bfdbfe;
+      border-radius: 24px;
+      max-width: 480px;
+      width: 100%;
+      padding: 22px 24px;
+      box-shadow: 0 24px 48px rgba(15, 23, 42, 0.26);
+      transform: scale(0.93);
+      transition: transform 0.2s ease;
+    }
+
+    .modal-backdrop.open .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .modal-cat {
+      font-size: 0.74rem;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    .modal-sec {
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      font-size: 0.84rem;
+      color: var(--text-sub);
+    }
+
+    .modal-sec strong {
+      display: block;
+      color: var(--text-main);
+      margin-bottom: 4px;
+      font-size: 0.86rem;
+    }
+
+    /* =====================================================================
+     * 9. 반응형 미디어 쿼리
+     * ===================================================================== */
+    @media (max-width: 1080px) {
+      .tab-bar,
+      .contract-grid,
+      .metrics-bar-grid,
+      .stepper-grid { grid-template-columns: repeat(2, 1fr); }
+      .const-steps-grid { grid-template-columns: repeat(3, 1fr); }
+      .three-info-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .dor-grid,
+      .quiz-grid { grid-template-columns: 1fr; }
+      .const-steps-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 520px) {
+      .tab-bar,
+      .contract-grid,
+      .metrics-bar-grid,
+      .stepper-grid,
+      .const-steps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ================================================================= -->
+    <!-- 상단 히어로 헤더 -->
+    <!-- ================================================================= -->
+    <header class="hero-header">
+      <div class="hero-left">
+        <div class="hero-icon" aria-hidden="true">🏗️</div>
+        <div>
+          <h1 class="hero-title">BESS 프로젝트 A to Z 체험실 — 계약 · 설계 · 토목/건축 · EPC · 턴키 · SI</h1>
+          <p class="hero-sub">
+            복잡한 BESS 발전소 건설 과정(계약 구조, 기본·상세설계, 토목·건축 시공, 역할 분담)을 <strong>애니메이션과 집 짓기 비유</strong>로 한눈에 이해하세요!
+          </p>
+        </div>
+      </div>
+
+      <div class="legend-pills" aria-label="영역별 색상 범례">
+        <span class="legend-pill"><span class="dot" style="background:#2563eb;"></span>설계/엔지니어링</span>
+        <span class="legend-pill"><span class="dot" style="background:#d97706;"></span>토목·건축 시공</span>
+        <span class="legend-pill"><span class="dot" style="background:#10b981;"></span>EPC/턴키·BESS</span>
+        <span class="legend-pill"><span class="dot" style="background:#4f46e5;"></span>SI/제어통합</span>
+        <span class="legend-pill"><span class="dot" style="background:#e11d48;"></span>리스크/방화벽</span>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 4개 메인 학습 탭 -->
+    <!-- ================================================================= -->
+    <nav class="tab-bar" role="tablist" aria-label="BESS 프로젝트 학습 탭">
+      <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="tab1">
+        <span>📑</span><span>1. 계약 방식 비교 (분리·SI·EPC·턴키)</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab2">
+        <span>📐</span><span>2. 설계 단계 진화 (기획→기본→상세→준공)</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab3">
+        <span>🚜</span><span>3. 토목·건축 시공 타임랩스</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab4">
+        <span>🧩</span><span>4. 역할 분담(DOR) &amp; 미니 퀴즈</span>
+      </button>
+    </nav>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 1] 📑 계약 방식 비교 (분리발주 · SI · EPC · 턴키) -->
+    <!-- ================================================================= -->
+    <main id="tab1" class="tab-panel active">
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">📑 BESS 사업 4가지 대표 계약 방식 선택</h2>
+          <span class="pill-tag">카드를 눌러 계약선과 책임 경계(Single Point of Responsibility) 변화를 비교하세요!</span>
+        </div>
+
+        <!-- 4가지 계약 방식 선택 카드 -->
+        <div class="contract-grid">
+          <button type="button" class="contract-card active-multi" data-contract="multi">
+            <div class="contract-top">
+              <strong>① 분리발주</strong>
+              <span class="contract-chip" style="background:#ffe4e6; color:#be123c;">Multi-Contract</span>
+            </div>
+            <span class="c-desc">발주처가 토목·건축, 전기, BESS 기자재를 각각 따로 계약하고 직접 총괄</span>
+          </button>
+
+          <button type="button" class="contract-card" data-contract="si">
+            <div class="contract-top">
+              <strong>② SI (시스템 통합)</strong>
+              <span class="contract-chip" style="background:#e0e7ff; color:#3730a3;">System Integrator</span>
+            </div>
+            <span class="c-desc">배터리·PCS·EMS 통합은 SI사가 담당, 토목·건축(BOP)은 별도 발주</span>
+          </button>
+
+          <button type="button" class="contract-card" data-contract="epc">
+            <div class="contract-top">
+              <strong>③ EPC 일괄 계약</strong>
+              <span class="contract-chip" style="background:#d1fae5; color:#047857;">Eng·Proc·Const</span>
+            </div>
+            <span class="c-desc">설계(E)·조달(P)·토목/건축/전기 시공(C)을 단일 EPC사가 일괄 수행</span>
+          </button>
+
+          <button type="button" class="contract-card" data-contract="turnkey">
+            <div class="contract-top">
+              <strong>④ 턴키 (Turnkey)</strong>
+              <span class="contract-chip" style="background:#dbeafe; color:#1d4ed8;">열쇠 인도</span>
+            </div>
+            <span class="c-desc">EPC + 인허가·계통연계 시험·종합 시운전(COD)까지 끝내 열쇠만 인도</span>
+          </button>
+        </div>
+
+        <!-- 쉬운 집 짓기 비유 콜아웃 -->
+        <div class="analogy-box">
+          <div class="analogy-icon" aria-hidden="true">🏠</div>
+          <div>
+            <h3 id="analogyTitle">쉬운 집 짓기 비유 — ① 분리발주</h3>
+            <p id="analogyText">집주인이 땅 파는 회사, 집 짓는 목수, 전기 기사, 가전제품 매장을 전부 따로 부르고 일정과 하자를 직접 조율해야 하는 방식입니다.</p>
+          </div>
+        </div>
+
+        <!-- 인터랙티브 SVG 계약 관계도 & 리스크 흐름 -->
+        <div class="svg-stage">
+          <svg id="contractSvg" viewBox="0 0 980 410" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="cGlow" x="-25%" y="-25%" width="150%" height="150%">
+                <feGaussianBlur stdDeviation="3.5" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- 책임 경계 (Single Point of Responsibility) 글로우 박스 -->
+            <rect id="respBox" x="340" y="34" width="600" height="342" rx="22"
+                  fill="rgba(16, 185, 129, 0.08)" stroke="#10b981" stroke-width="3" stroke-dasharray="9 6" opacity="0" />
+            <rect id="respLabelBg" x="360" y="20" width="260" height="26" rx="13" fill="#10b981" opacity="0" />
+            <text id="respLabelTxt" x="490" y="37" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="900" opacity="0">
+              🛡️ 주계약자 단일 책임 경계 (SPR)
+            </text>
+
+            <!-- 계약선 레이어 (동적 갱신) -->
+            <g id="contractLinesLayer"></g>
+            <!-- 인터페이스 충돌 경고선 레이어 -->
+            <g id="clashLinesLayer"></g>
+
+            <!-- 1. 발주처 (Owner) 노드 -->
+            <g transform="translate(34, 152)">
+              <rect x="0" y="0" width="166" height="106" rx="18" fill="#0f172a" stroke="#38bdf8" stroke-width="3" />
+              <text x="83" y="32" text-anchor="middle" font-size="24">🏢</text>
+              <text x="83" y="58" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="900">발주처 (Owner)</text>
+              <text id="ownerSubTxt" x="83" y="78" text-anchor="middle" fill="#f87171" font-size="10.5" font-weight="800">4개 계약 직접 관리</text>
+              <text x="83" y="95" text-anchor="middle" fill="#94a3b8" font-size="9.5">발전사업자 · 투자사</text>
+            </g>
+
+            <!-- 2. 주계약자 (EPC / Turnkey / SI) 중앙 허브 노드 -->
+            <g id="primeNode" transform="translate(358, 152)" opacity="0">
+              <rect id="primeRect" x="0" y="0" width="184" height="106" rx="18" fill="#10b981" stroke="#047857" stroke-width="3" />
+              <text id="primeIcon" x="92" y="32" text-anchor="middle" font-size="24">🤝</text>
+              <text id="primeTitle" x="92" y="58" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="900">EPC 주계약자</text>
+              <text id="primeSub" x="92" y="78" text-anchor="middle" fill="#ecfdf5" font-size="10.5" font-weight="800">설계·조달·시공 단일 창구</text>
+              <text id="primeTag" x="92" y="95" text-anchor="middle" fill="#d1fae5" font-size="9.5">하도급 &amp; 인터페이스 총괄</text>
+            </g>
+
+            <!-- 3. 우측 4개 실행 공종 노드 -->
+            <!-- (A) 토목·건축 시공사 -->
+            <g transform="translate(716, 48)">
+              <rect id="nodeCivilBox" x="0" y="0" width="212" height="68" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2.5" />
+              <text x="26" y="39" font-size="22">🚜</text>
+              <text x="58" y="29" fill="#92400e" font-size="12.5" font-weight="900">토목 · 건축 시공사</text>
+              <text x="58" y="48" fill="#b45309" font-size="10" font-weight="700">부지조성·기초패드·배수·방화벽</text>
+            </g>
+
+            <!-- (B) 전기·계통 시공사 (BOP) -->
+            <g transform="translate(716, 132)">
+              <rect id="nodeElecBox" x="0" y="0" width="212" height="68" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" />
+              <text x="26" y="39" font-size="22">⚡</text>
+              <text x="58" y="29" fill="#1e3a8a" font-size="12.5" font-weight="900">전기 · 계통 시공사</text>
+              <text x="58" y="48" fill="#1d4ed8" font-size="10" font-weight="700">케이블 포설·변전설비·접지망</text>
+            </g>
+
+            <!-- (C) 핵심 기자재 공급사 (BESS/PCS/EMS) -->
+            <g transform="translate(716, 216)">
+              <rect id="nodeEquipBox" x="0" y="0" width="212" height="68" rx="14" fill="#eef2ff" stroke="#4f46e5" stroke-width="2.5" />
+              <text x="26" y="39" font-size="22">🔋</text>
+              <text x="58" y="29" fill="#312e81" font-size="12.5" font-weight="900">기자재 공급 (BESS·PCS)</text>
+              <text x="58" y="48" fill="#4338ca" font-size="10" font-weight="700">배터리 컨테이너·PCS·EMS 제어</text>
+            </g>
+
+            <!-- (D) 인허가 · 종합 시운전 (COD) -->
+            <g transform="translate(716, 300)">
+              <rect id="nodeCodBox" x="0" y="0" width="212" height="68" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2.5" />
+              <text x="26" y="39" font-size="22">🔑</text>
+              <text x="58" y="29" fill="#065f46" font-size="12.5" font-weight="900">인허가 · 시운전 (COD)</text>
+              <text x="58" y="48" fill="#047857" font-size="10" font-weight="700">계통연계 시험·성능보증·상업운전</text>
+            </g>
+
+            <!-- 애니메이션 입자 & 경고 스파크 레이어 -->
+            <g id="contractParticles" filter="url(#cGlow)"></g>
+            <g id="contractSparks" filter="url(#cGlow)"></g>
+          </svg>
+        </div>
+
+        <!-- 4종 비교 지표 게이지 -->
+        <div class="metrics-bar-grid">
+          <div class="metric-box">
+            <div class="metric-head"><span>발주처 관리 부담</span><span id="mOwnerVal" class="mono">매우 높음</span></div>
+            <div class="meter-track"><div id="mOwnerBar" class="meter-fill" style="width:95%; background:#e11d48;"></div></div>
+            <span id="mOwnerFoot" class="metric-foot">모든 공정·일정 직접 조율</span>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-head"><span>인터페이스 충돌 리스크</span><span id="mRiskVal" class="mono">매우 높음</span></div>
+            <div class="meter-track"><div id="mRiskBar" class="meter-fill" style="width:92%; background:#f97316;"></div></div>
+            <span id="mRiskFoot" class="metric-foot">토목↔전기↔기자재 책임 공방</span>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-head"><span>토목·건축 포함 여부</span><span id="mCivilVal" class="mono">별도 발주</span></div>
+            <div class="meter-track"><div id="mCivilBar" class="meter-fill" style="width:20%; background:#d97706;"></div></div>
+            <span id="mCivilFoot" class="metric-foot">발주처가 토목사 별도 계약</span>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-head"><span>준공·성능 보증 책임</span><span id="mGuarVal" class="mono">분산됨</span></div>
+            <div class="meter-track"><div id="mGuarBar" class="meter-fill" style="width:25%; background:#10b981;"></div></div>
+            <span id="mGuarFoot" class="metric-foot">업체별 부분 하자만 보증</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 계약 방식 요약 비교표 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">📊 4가지 계약 방식 한눈에 비교하기</h2>
+          <span id="compTableBadge" class="pill-tag">현재 선택: ① 분리발주 강조 표시 중</span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>비교 항목</th>
+                <th class="col-multi">① 분리발주</th>
+                <th class="col-si">② SI (시스템 통합)</th>
+                <th class="col-epc">③ EPC 일괄</th>
+                <th class="col-turnkey">④ 턴키 (Turnkey)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>계약 창구 수</td>
+                <td class="col-multi">다수 (토목·전기·기자재 개별)</td>
+                <td class="col-si">2~3개 (SI사 + 토목/전기 BOP)</td>
+                <td class="col-epc">단일 창구 (EPC 주계약자)</td>
+                <td class="col-turnkey">완전 단일 창구 (턴키 주계약자)</td>
+              </tr>
+              <tr>
+                <td>토목·건축 시공 주체</td>
+                <td class="col-multi">발주처가 토목사 별도 계약</td>
+                <td class="col-si">일반적으로 발주처/BOP 별도</td>
+                <td class="col-epc">EPC 계약 범위에 포함</td>
+                <td class="col-turnkey">턴키 계약 범위에 완전 포함</td>
+              </tr>
+              <tr>
+                <td>인허가 · 시운전(COD)</td>
+                <td class="col-multi">발주처 직접 수행</td>
+                <td class="col-si">BESS 연동 시험만 SI 지원</td>
+                <td class="col-epc">시운전 수행 (일부 인허가 발주처)</td>
+                <td class="col-turnkey">인허가·계통시험·COD 일괄 완료</td>
+              </tr>
+              <tr>
+                <td>초기 사업비 vs 리스크</td>
+                <td class="col-multi">마진 절감 가능 / 지연 리스크 큼</td>
+                <td class="col-si">기술 전문성 확보 / 경계 분쟁 주의</td>
+                <td class="col-epc">예산·공기 예측성 우수 (표준)</td>
+                <td class="col-turnkey">계약금액 가장 높음 / 리스크 최소</td>
+              </tr>
+              <tr>
+                <td>추천 발주처 유형</td>
+                <td class="col-multi">자체 건설·기술 조직 보유 대기업</td>
+                <td class="col-si">현지 토목사를 직접 보유한 개발사</td>
+                <td class="col-epc">대부분의 유틸리티·민간 BESS 사업</td>
+                <td class="col-turnkey">인력이 적은 금융투자사·신규 사업자</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 2] 📐 설계 단계 진화 (기획 → 기본설계 → 상세설계 → 준공) -->
+    <!-- ================================================================= -->
+    <main id="tab2" class="tab-panel">
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">📐 BESS 설계 도면 진화 과정 (지반조사 → 기본설계 → 상세설계 → 준공도면)</h2>
+          <button id="btnDesignPlay" type="button" class="action-btn primary">
+            <span>▶</span><span id="designPlayTxt">자동 진화 재생 (1 → 4단계)</span>
+          </button>
+        </div>
+
+        <!-- 4단계 스텝퍼 -->
+        <div class="stepper-grid">
+          <button type="button" class="step-btn active" data-design="0">
+            <span class="s-num">STAGE 01</span>
+            <strong>부지조사 &amp; 기획</strong>
+            <span class="s-sub">지반 보링(SPT) · 측량 · 침수 검토</span>
+          </button>
+          <button type="button" class="step-btn" data-design="1">
+            <span class="s-num">STAGE 02</span>
+            <strong>기본설계 (FEED)</strong>
+            <span class="s-sub">배치도(Plot Plan) · 이격거리 · 개략 CAPEX</span>
+          </button>
+          <button type="button" class="step-btn" data-design="2">
+            <span class="s-num">STAGE 03</span>
+            <strong>상세설계 (AFC)</strong>
+            <span class="s-sub">철근 기초 · 트렌치 · 접지망 · 방화벽</span>
+          </button>
+          <button type="button" class="step-btn" data-design="3">
+            <span class="s-num">STAGE 04</span>
+            <strong>시공 &amp; 준공도면</strong>
+            <span class="s-sub">현장 변경(Red-line) 반영 · As-Built 확정</span>
+          </button>
+        </div>
+
+        <!-- 인터랙티브 CAD 블루프린트 SVG -->
+        <div class="blueprint-stage">
+          <svg id="blueprintSvg" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="cadGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+                <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(56, 189, 248, 0.14)" stroke-width="1" />
+              </pattern>
+              <pattern id="rebarHatch" width="8" height="8" patternUnits="userSpaceOnUse">
+                <path d="M 0 4 L 8 4 M 4 0 L 4 8" fill="none" stroke="rgba(251, 191, 36, 0.55)" stroke-width="0.9" />
+              </pattern>
+              <pattern id="fireHatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="8" stroke="#fb7185" stroke-width="2.5" />
+              </pattern>
+            </defs>
+
+            <!-- CAD 청사진 배경 -->
+            <rect x="0" y="0" width="980" height="430" fill="#091529" />
+            <rect x="0" y="0" width="980" height="430" fill="url(#cadGrid)" />
+            <rect x="14" y="14" width="952" height="402" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5" />
+
+            <!-- 우측 하단 도면 표제란 (Title Block) -->
+            <g transform="translate(724, 344)">
+              <rect x="0" y="0" width="234" height="64" fill="#0d213f" stroke="#38bdf8" stroke-width="1.5" />
+              <line x1="0" y1="24" x2="234" y2="24" stroke="#38bdf8" stroke-width="1" />
+              <text id="bpTitleTop" x="117" y="16" text-anchor="middle" fill="#e0f2fe" font-size="11" font-weight="900" class="mono">DWG: BESS-GEO-001 (STAGE 1)</text>
+              <text id="bpTitleMid" x="12" y="42" fill="#93c5fd" font-size="10" font-weight="700">단계: 부지조사 &amp; 지반보링(SPT)</text>
+              <text id="bpTitleBot" x="12" y="57" fill="#34d399" font-size="9.5" class="mono">SCALE: 1/200 | REV: 0</text>
+            </g>
+
+            <!-- LAYER 1: 지형 등고선 + 지반 보링(SPT) + 지하수위 -->
+            <g id="bpLayer1" opacity="1">
+              <path d="M 40 310 Q 220 260 440 290 T 920 260" fill="none" stroke="rgba(148,163,184,0.35)" stroke-width="1.5" stroke-dasharray="6 4" />
+              <path d="M 40 200 Q 260 155 500 185 T 920 140" fill="none" stroke="rgba(148,163,184,0.35)" stroke-width="1.5" stroke-dasharray="6 4" />
+              <path d="M 40 105 Q 300 75 560 100 T 920 80" fill="none" stroke="rgba(148,163,184,0.3)" stroke-width="1.5" stroke-dasharray="6 4" />
+              <text x="64" y="96" fill="#94a3b8" font-size="10" class="mono">EL +12.5m (등고선)</text>
+              <text x="64" y="192" fill="#94a3b8" font-size="10" class="mono">EL +11.0m</text>
+
+              <!-- 보링 지점 3개 + 드릴 애니메이션 -->
+              <g id="boringPoints">
+                <g transform="translate(220, 150)">
+                  <circle cx="0" cy="0" r="14" fill="rgba(245,158,11,0.18)" stroke="#f59e0b" stroke-width="2" />
+                  <line x1="-10" y1="0" x2="10" y2="0" stroke="#f59e0b" stroke-width="1.5" />
+                  <line x1="0" y1="-10" x2="0" y2="10" stroke="#f59e0b" stroke-width="1.5" />
+                  <text x="20" y="-4" fill="#fbbf24" font-size="11" font-weight="800" class="mono">BH-1 (SPT N=22)</text>
+                  <text x="20" y="11" fill="#94a3b8" font-size="9.5">지내력 양호 · 심도 15m</text>
+                </g>
+                <g transform="translate(540, 210)">
+                  <circle cx="0" cy="0" r="14" fill="rgba(245,158,11,0.18)" stroke="#f59e0b" stroke-width="2" />
+                  <line x1="-10" y1="0" x2="10" y2="0" stroke="#f59e0b" stroke-width="1.5" />
+                  <line x1="0" y1="-10" x2="0" y2="10" stroke="#f59e0b" stroke-width="1.5" />
+                  <text x="20" y="-4" fill="#fbbf24" font-size="11" font-weight="800" class="mono">BH-2 (연약층 발견!)</text>
+                  <text x="20" y="11" fill="#fb7185" font-size="9.5">→ 추후 파일(Pile) 보강 검토</text>
+                </g>
+                <g transform="translate(760, 130)">
+                  <circle cx="0" cy="0" r="14" fill="rgba(56,189,248,0.2)" stroke="#38bdf8" stroke-width="2" />
+                  <text x="0" y="4" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="900">💧</text>
+                  <text x="-85" y="30" fill="#38bdf8" font-size="10.5" font-weight="800">지하수위 GL -2.8m · 홍수위 검토</text>
+                </g>
+              </g>
+              <!-- 움직이는 보링 스캔 링 -->
+              <circle id="bpDrillPulse" cx="540" cy="210" r="18" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.8" />
+            </g>
+
+            <!-- LAYER 2: 기본설계 (Plot Plan 배치도 + 안전 이격거리) -->
+            <g id="bpLayer2" opacity="0" style="transition: opacity 0.35s ease;">
+              <!-- 부지 경계 울타리선 -->
+              <rect x="52" y="44" width="876" height="286" rx="8" fill="rgba(37, 99, 235, 0.06)" stroke="#60a5fa" stroke-width="2" stroke-dasharray="10 5" />
+              <text x="64" y="64" fill="#93c5fd" font-size="11" font-weight="800" class="mono">SITE BOUNDARY (100MW / 400MWh BESS PLOT PLAN)</text>
+
+              <!-- BESS 블록 4개 -->
+              <rect x="92" y="88" width="160" height="72" rx="6" fill="rgba(16,185,129,0.16)" stroke="#34d399" stroke-width="2.2" />
+              <text x="172" y="120" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="900">BESS BLOCK #1</text>
+              <text x="172" y="138" text-anchor="middle" fill="#a7f3d0" font-size="9.5" class="mono">40ft Container (35 ton)</text>
+
+              <rect x="92" y="210" width="160" height="72" rx="6" fill="rgba(16,185,129,0.16)" stroke="#34d399" stroke-width="2.2" />
+              <text x="172" y="242" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="900">BESS BLOCK #2</text>
+              <text x="172" y="260" text-anchor="middle" fill="#a7f3d0" font-size="9.5" class="mono">40ft Container (35 ton)</text>
+
+              <!-- PCS + 변압기 구역 -->
+              <rect x="336" y="114" width="152" height="142" rx="6" fill="rgba(59,130,246,0.18)" stroke="#60a5fa" stroke-width="2.2" />
+              <text x="412" y="176" text-anchor="middle" fill="#bfdbfe" font-size="12.5" font-weight="900">PCS + 승압변압기</text>
+              <text x="412" y="196" text-anchor="middle" fill="#93c5fd" font-size="10" class="mono">Inverter Skid + TR</text>
+
+              <!-- 제어실 / E-House -->
+              <rect x="568" y="88" width="152" height="106" rx="6" fill="rgba(99,102,241,0.2)" stroke="#818cf8" stroke-width="2.2" />
+              <text x="644" y="136" text-anchor="middle" fill="#e0e7ff" font-size="12" font-weight="900">제어실 (E-House)</text>
+              <text x="644" y="155" text-anchor="middle" fill="#c7d2fe" font-size="9.5" class="mono">EMS · 보호배전반</text>
+
+              <!-- 변전소 연계점 -->
+              <rect x="768" y="114" width="126" height="134" rx="6" fill="rgba(245,158,11,0.16)" stroke="#fbbf24" stroke-width="2.2" />
+              <text x="831" y="176" text-anchor="middle" fill="#fde68a" font-size="12" font-weight="900">수변전설비</text>
+              <text x="831" y="196" text-anchor="middle" fill="#fcd34d" font-size="9.5" class="mono">154kV / 22.9kV</text>
+
+              <!-- 화재 안전 이격거리 화살표 -->
+              <g stroke="#fb7185" stroke-width="1.8">
+                <line x1="172" y1="164" x2="172" y2="206" />
+                <line x1="256" y1="124" x2="332" y2="124" />
+              </g>
+              <rect x="116" y="175" width="112" height="18" rx="4" fill="#881337" />
+              <text x="172" y="188" text-anchor="middle" fill="#ffe4e6" font-size="9.5" font-weight="800" class="mono">이격거리 ≥ 3.0m</text>
+              <rect x="260" y="102" width="68" height="17" rx="4" fill="#881337" />
+              <text x="294" y="114" text-anchor="middle" fill="#ffe4e6" font-size="9" font-weight="800" class="mono">안전이격</text>
+            </g>
+
+            <!-- LAYER 3: 상세설계 (철근 기초, 케이블 트렌치, 접지망, 방화벽 해치, 배수 구배) -->
+            <g id="bpLayer3" opacity="0" style="transition: opacity 0.35s ease;">
+              <!-- 철근 콘크리트 패드 해치 (BESS 하부) -->
+              <rect x="86" y="82" width="172" height="84" rx="4" fill="url(#rebarHatch)" stroke="#fbbf24" stroke-width="1.5" />
+              <rect x="86" y="204" width="172" height="84" rx="4" fill="url(#rebarHatch)" stroke="#fbbf24" stroke-width="1.5" />
+              <text x="172" y="76" text-anchor="middle" fill="#fcd34d" font-size="9.5" font-weight="800" class="mono">RC PAD t=600mm · D19@150 철근배근 (35t 지지)</text>
+
+              <!-- 내화 방화벽 해치 -->
+              <rect x="92" y="180" width="160" height="11" fill="url(#fireHatch)" stroke="#fb7185" stroke-width="1.8" />
+              <text x="264" y="189" fill="#fda4af" font-size="9.5" font-weight="800">◀ 2시간 내화 방화벽</text>
+
+              <!-- 지하 케이블 트렌치 (점선 이중선) -->
+              <path d="M 252 124 L 336 124 M 252 246 L 336 246 M 488 184 L 768 184 M 488 144 L 568 144"
+                    fill="none" stroke="#38bdf8" stroke-width="8" stroke-opacity="0.32" />
+              <path d="M 252 124 L 336 124 M 252 246 L 336 246 M 488 184 L 768 184 M 488 144 L 568 144"
+                    fill="none" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="5 3" />
+              <text x="630" y="210" text-anchor="middle" fill="#38bdf8" font-size="9.5" font-weight="800" class="mono">지하 케이블 트렌치 (W1.2m × D1.5m)</text>
+
+              <!-- 동봉·메쉬 접지망 (Earth Grid) -->
+              <path d="M 70 302 L 906 302 M 300 62 L 300 302 M 530 62 L 530 302 M 740 62 L 740 302"
+                    fill="none" stroke="#10b981" stroke-width="1.4" stroke-dasharray="3 4" />
+              <text x="415" y="317" text-anchor="middle" fill="#34d399" font-size="9.5" font-weight="800" class="mono">나동선 95㎟ 메쉬 접지망 (목표 접지저항 ≤ 1Ω)</text>
+
+              <!-- 배수로 구배 화살표 -->
+              <path d="M 60 324 L 680 324" stroke="#60a5fa" stroke-width="2.2" />
+              <text x="175" y="344" fill="#93c5fd" font-size="9.5" font-weight="800" class="mono">우수 U형 측구 (구배 S=1.5%) ➔ 집수정</text>
+            </g>
+
+            <!-- LAYER 4: 시공 & 준공도면 (As-Built 도장 + 현장 Red-line 반영 + 완료 체크) -->
+            <g id="bpLayer4" opacity="0" style="transition: opacity 0.35s ease;">
+              <!-- Red-line 현장 변경 반영 표시 -->
+              <ellipse cx="644" cy="240" rx="68" ry="22" fill="rgba(244, 63, 94, 0.14)" stroke="#fb7185" stroke-width="2" stroke-dasharray="4 3" />
+              <text x="644" y="244" text-anchor="middle" fill="#fda4af" font-size="10" font-weight="800">✏️ Red-line 반영 완료</text>
+
+              <!-- AS-BUILT 승인 스탬프 -->
+              <g transform="translate(755, 58) rotate(-8)">
+                <rect x="0" y="0" width="144" height="44" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#34d399" stroke-width="3" />
+                <text x="72" y="22" text-anchor="middle" fill="#34d399" font-size="14" font-weight="900" class="mono">AS-BUILT</text>
+                <text x="72" y="36" text-anchor="middle" fill="#a7f3d0" font-size="9" font-weight="800">준공도면 최종 승인</text>
+              </g>
+
+              <!-- 완료 체크마크 뱃지들 -->
+              <text x="234" y="106" font-size="16">✅</text>
+              <text x="234" y="228" font-size="16">✅</text>
+              <text x="468" y="132" font-size="16">✅</text>
+              <text x="700" y="106" font-size="16">✅</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- 하단 3단 요약 카드 -->
+        <div id="designSummaryGrid" class="three-info-grid"></div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 3] 🚜 토목·건축 시공 타임랩스 (BESS 부지 완성 애니메이션) -->
+    <!-- ================================================================= -->
+    <main id="tab3" class="tab-panel">
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🚜 BESS 토목·건축 시공 타임랩스 (맨땅 → 상업운전 COD)</h2>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <button id="btnConstPlay" type="button" class="action-btn primary">
+              <span>▶</span><span id="constPlayTxt">전체 공정 자동 재생</span>
+            </button>
+            <button id="btnConstPause" type="button" class="action-btn">
+              <span>⏸️</span><span id="constPauseTxt">일시정지</span>
+            </button>
+            <button id="btnConstSlow" type="button" class="action-btn">
+              <span>🐢</span><span id="constSlowTxt">천천히 (0.4x)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5단계 공정 버튼 -->
+        <div class="const-steps-grid">
+          <button type="button" class="const-btn active" data-cstep="0">
+            <strong>1단계 · 토공·지반</strong>
+            <span>절토·성토 · 다짐 · 파일 보강</span>
+          </button>
+          <button type="button" class="const-btn" data-cstep="1">
+            <strong>2단계 · 배수·지하매설</strong>
+            <span>배수로 · 트렌치 · 접지망</span>
+          </button>
+          <button type="button" class="const-btn" data-cstep="2">
+            <strong>3단계 · 기초·방화벽</strong>
+            <span>철근 패드 · 오일피트 · 방화벽</span>
+          </button>
+          <button type="button" class="const-btn" data-cstep="3">
+            <strong>4단계 · 건축·부대시설</strong>
+            <span>제어실(E-House) · 울타리 · 포장</span>
+          </button>
+          <button type="button" class="const-btn" data-cstep="4">
+            <strong>5단계 · 거치 &amp; 시운전</strong>
+            <span>크레인 안착 → 전력 가동(COD)</span>
+          </button>
+        </div>
+
+        <!-- 인터랙티브 시공 디오라마 SVG -->
+        <div class="svg-stage" style="padding:0; border-color:#cbd5e1;">
+          <svg id="constSvg" viewBox="0 0 980 450" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cSky" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#bae6fd" />
+                <stop offset="100%" stop-color="#f0f9ff" />
+              </linearGradient>
+              <linearGradient id="cSoil" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#d97706" stop-opacity="0.32" />
+                <stop offset="35%" stop-color="#b45309" stop-opacity="0.44" />
+                <stop offset="100%" stop-color="#78350f" stop-opacity="0.65" />
+              </linearGradient>
+              <filter id="cLiveGlow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- 하늘 & 구름 -->
+            <rect x="0" y="0" width="980" height="280" fill="url(#cSky)" />
+            <g fill="#ffffff" fill-opacity="0.75">
+              <ellipse cx="150" cy="54" rx="44" ry="15" />
+              <ellipse cx="180" cy="48" rx="32" ry="13" />
+              <ellipse cx="770" cy="64" rx="50" ry="16" />
+              <ellipse cx="805" cy="56" rx="34" ry="13" />
+            </g>
+
+            <!-- 지반 단면 (지표면 y=280) -->
+            <rect x="0" y="280" width="980" height="170" fill="url(#cSoil)" />
+            <line x1="0" y1="280" x2="980" y2="280" stroke="#92400e" stroke-width="3" />
+            <text x="20" y="436" fill="#fef3c7" font-size="11" font-weight="800">지하 단면 (Subsurface — 파일 · 배수 · 케이블 트렌치 · 접지망)</text>
+
+            <!-- [STEP 1] 지반 보강 파일(Pile) & 굴삭기/롤러 -->
+            <g id="cLayerPiles">
+              <rect x="148" y="286" width="12" height="118" rx="3" fill="#64748b" stroke="#334155" stroke-width="1.5" />
+              <rect x="262" y="286" width="12" height="118" rx="3" fill="#64748b" stroke="#334155" stroke-width="1.5" />
+              <rect x="358" y="286" width="12" height="118" rx="3" fill="#64748b" stroke="#334155" stroke-width="1.5" />
+              <rect x="472" y="286" width="12" height="118" rx="3" fill="#64748b" stroke="#334155" stroke-width="1.5" />
+              <text x="205" y="420" text-anchor="middle" fill="#fef3c7" font-size="10" font-weight="800">지반 파일(Pile) 보강</text>
+            </g>
+
+            <!-- 움직이는 굴삭기/다짐롤러 (Step 1에서만 표시) -->
+            <g id="cExcavator" transform="translate(220, 224)">
+              <rect x="0" y="34" width="66" height="18" rx="9" fill="#334155" />
+              <circle cx="14" cy="43" r="6" fill="#94a3b8" />
+              <circle cx="52" cy="43" r="6" fill="#94a3b8" />
+              <rect x="8" y="10" width="46" height="24" rx="5" fill="#f59e0b" stroke="#b45309" stroke-width="2" />
+              <rect x="32" y="14" width="16" height="12" rx="2" fill="#e0f2fe" />
+              <path id="cExcArm" d="M 54 22 L 84 4 L 100 30" fill="none" stroke="#d97706" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+              <polygon points="94,28 112,32 102,44" fill="#475569" />
+            </g>
+
+            <!-- [STEP 2] 배수로·집수정, 지하 케이블 트렌치, 접지망(Earth Grid) -->
+            <g id="cLayerUnder" opacity="0" style="transition: opacity 0.35s ease;">
+              <!-- 배수로 및 집수정 (클릭 핫스팟) -->
+              <g class="hotspot-g" data-hs="drain">
+                <rect x="36" y="280" width="54" height="58" rx="4" fill="#cbd5e1" stroke="#475569" stroke-width="2" />
+                <rect x="42" y="302" width="42" height="32" fill="#38bdf8" fill-opacity="0.65" />
+                <path d="M 10 282 L 42 296" stroke="#0284c7" stroke-width="3" stroke-dasharray="4 3" />
+                <text x="63" y="354" text-anchor="middle" fill="#e0f2fe" font-size="10" font-weight="900">💧배수로·집수정</text>
+              </g>
+
+              <!-- 지하 케이블 트렌치 (클릭 핫스팟) -->
+              <g class="hotspot-g" data-hs="trench">
+                <rect x="200" y="316" width="590" height="26" rx="4" fill="#1e293b" stroke="#64748b" stroke-width="2" />
+                <line x1="210" y1="325" x2="780" y2="325" stroke="#ef4444" stroke-width="3" />
+                <line x1="210" y1="334" x2="780" y2="334" stroke="#38bdf8" stroke-width="3" />
+                <text x="495" y="360" text-anchor="middle" fill="#bae6fd" font-size="10.5" font-weight="900">🔌 지하 케이블 트렌치 (고압 전력선 + 통신선)</text>
+              </g>
+
+              <!-- 동봉·메쉬 접지망 (클릭 핫스팟) -->
+              <g class="hotspot-g" data-hs="ground">
+                <line x1="120" y1="382" x2="870" y2="382" stroke="#10b981" stroke-width="3.5" stroke-dasharray="8 4" />
+                <line x1="180" y1="368" x2="180" y2="404" stroke="#10b981" stroke-width="4" />
+                <line x1="510" y1="368" x2="510" y2="404" stroke="#10b981" stroke-width="4" />
+                <line x1="830" y1="368" x2="830" y2="404" stroke="#10b981" stroke-width="4" />
+                <text x="670" y="400" text-anchor="middle" fill="#6ee7b7" font-size="10.5" font-weight="900">🌍 접지망 (Earth Grid · 동봉 매설)</text>
+              </g>
+            </g>
+
+            <!-- [STEP 3] 철근 콘크리트 기초 패드, 변압기 오일피트, 내화 방화벽 -->
+            <g id="cLayerFound" opacity="0" style="transition: opacity 0.35s ease;">
+              <!-- BESS 콘크리트 기초 패드 2개 (클릭 핫스팟) -->
+              <g class="hotspot-g" data-hs="pad">
+                <rect x="132" y="264" width="156" height="22" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="2" />
+                <rect x="342" y="264" width="156" height="22" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="2" />
+                <text x="210" y="279" text-anchor="middle" fill="#0f172a" font-size="10" font-weight="900">🧱 콘크리트 기초 패드</text>
+                <text x="420" y="279" text-anchor="middle" fill="#0f172a" font-size="10" font-weight="900">🧱 콘크리트 기초 패드</text>
+              </g>
+
+              <!-- 방화벽 Firewall (클릭 핫스팟) -->
+              <g class="hotspot-g" data-hs="firewall">
+                <rect x="304" y="152" width="22" height="128" rx="3" fill="#fda4af" stroke="#e11d48" stroke-width="2.5" />
+                <line x1="304" y1="176" x2="326" y2="176" stroke="#e11d48" stroke-width="1.2" />
+                <line x1="304" y1="204" x2="326" y2="204" stroke="#e11d48" stroke-width="1.2" />
+                <line x1="304" y1="232" x2="326" y2="232" stroke="#e11d48" stroke-width="1.2" />
+                <rect x="274" y="128" width="82" height="20" rx="6" fill="#e11d48" />
+                <text x="315" y="142" text-anchor="middle" fill="#ffffff" font-size="9.5" font-weight="900">🔥 방화벽</text>
+              </g>
+
+              <!-- PCS 기초 + 변압기 오일피트 (클릭 핫스팟) -->
+              <g class="hotspot-g" data-hs="oilpit">
+                <rect x="540" y="264" width="170" height="22" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="2" />
+                <rect x="630" y="286" width="76" height="26" rx="3" fill="#475569" stroke="#1e293b" stroke-width="2" />
+                <rect x="636" y="294" width="64" height="14" fill="#f59e0b" fill-opacity="0.55" />
+                <text x="668" y="305" text-anchor="middle" fill="#fef3c7" font-size="8.8" font-weight="900">🛢️ 오일피트</text>
+              </g>
+            </g>
+
+            <!-- [STEP 4] 제어실/전기실(E-House), 울타리, 쇄석 포장 -->
+            <g id="cLayerArch" opacity="0" style="transition: opacity 0.35s ease;">
+              <!-- 쇄석 / 아스팔트 노면 포장 -->
+              <rect x="94" y="274" width="854" height="8" fill="#cbd5e1" />
+
+              <!-- 부지 보안 울타리 -->
+              <g stroke="#64748b" stroke-width="1.6" stroke-opacity="0.65">
+                <line x1="100" y1="238" x2="946" y2="238" />
+                <line x1="100" y1="256" x2="946" y2="256" />
+                <line x1="100" y1="232" x2="100" y2="278" />
+                <line x1="946" y1="232" x2="946" y2="278" />
+              </g>
+
+              <!-- 제어실 / E-House 건축물 (클릭 핫스팟) -->
+              <g class="hotspot-g" data-hs="ehouse" transform="translate(756, 152)">
+                <rect x="0" y="0" width="164" height="122" rx="8" fill="#ffffff" stroke="#4f46e5" stroke-width="3" />
+                <rect x="0" y="0" width="164" height="24" rx="6" fill="#4f46e5" />
+                <text x="82" y="16" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="900">🏢 제어실 (E-House)</text>
+                <!-- 창문 & 출입문 -->
+                <rect x="16" y="38" width="44" height="32" rx="4" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.8" />
+                <rect x="70" y="38" width="44" height="32" rx="4" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.8" />
+                <rect x="124" y="54" width="28" height="66" rx="3" fill="#e2e8f0" stroke="#64748b" stroke-width="1.8" />
+                <text x="64" y="96" text-anchor="middle" fill="#3730a3" font-size="9.5" font-weight="800">EMS · 공조 · 소방반</text>
+              </g>
+            </g>
+
+            <!-- [STEP 5] 크레인 + BESS 컨테이너 2대 + PCS/변압기 안착 & 전력 흐름 -->
+            <g id="cLayerEquip" opacity="0" style="transition: opacity 0.35s ease;">
+              <!-- 크레인 붐대 (안착 애니메이션) -->
+              <g id="cCraneGroup" opacity="0.9">
+                <line x1="560" y1="26" x2="210" y2="96" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" />
+                <line id="cCraneCable" x1="210" y1="96" x2="210" y2="174" stroke="#334155" stroke-width="2.5" stroke-dasharray="4 2" />
+              </g>
+
+              <!-- BESS 컨테이너 #1 (크레인으로 내려오는 애니메이션 적용) -->
+              <g id="cBess1" transform="translate(138, 178)">
+                <rect x="0" y="0" width="144" height="86" rx="8" fill="#10b981" stroke="#047857" stroke-width="2.5" />
+                <rect x="10" y="12" width="124" height="26" rx="4" fill="#065f46" />
+                <text x="72" y="29" text-anchor="middle" fill="#6ee7b7" font-size="11.5" font-weight="900" class="mono">BESS UNIT #1</text>
+                <text x="72" y="58" text-anchor="middle" fill="#ffffff" font-size="10.5" font-weight="800">🔋 4MWh Li-Ion (35t)</text>
+                <circle id="cLed1" cx="20" cy="72" r="4.5" fill="#fde047" />
+                <text x="32" y="76" fill="#ecfdf5" font-size="9.5" font-weight="800">ONLINE · COD</text>
+              </g>
+
+              <!-- BESS 컨테이너 #2 -->
+              <g id="cBess2" transform="translate(348, 178)">
+                <rect x="0" y="0" width="144" height="86" rx="8" fill="#10b981" stroke="#047857" stroke-width="2.5" />
+                <rect x="10" y="12" width="124" height="26" rx="4" fill="#065f46" />
+                <text x="72" y="29" text-anchor="middle" fill="#6ee7b7" font-size="11.5" font-weight="900" class="mono">BESS UNIT #2</text>
+                <text x="72" y="58" text-anchor="middle" fill="#ffffff" font-size="10.5" font-weight="800">🔋 4MWh Li-Ion (35t)</text>
+                <circle id="cLed2" cx="20" cy="72" r="4.5" fill="#fde047" />
+                <text x="32" y="76" fill="#ecfdf5" font-size="9.5" font-weight="800">ONLINE · COD</text>
+              </g>
+
+              <!-- PCS + 변압기 스키드 -->
+              <g transform="translate(546, 184)">
+                <rect x="0" y="0" width="76" height="80" rx="7" fill="#2563eb" stroke="#1e40af" stroke-width="2.2" />
+                <text x="38" y="34" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="900">PCS</text>
+                <text x="38" y="52" text-anchor="middle" fill="#bfdbfe" font-size="9" font-weight="700">전력변환</text>
+
+                <rect x="84" y="10" width="74" height="70" rx="7" fill="#475569" stroke="#1e293b" stroke-width="2.2" />
+                <text x="121" y="42" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="900">변압기</text>
+                <text x="121" y="58" text-anchor="middle" fill="#fcd34d" font-size="9" font-weight="700">22.9kV 승압</text>
+              </g>
+
+              <!-- COD 완료 배너 -->
+              <g id="cCodBanner" transform="translate(364, 34)">
+                <rect x="0" y="0" width="252" height="36" rx="18" fill="#059669" />
+                <text x="126" y="23" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="900">🎉 시운전(COD) 완료 · 계통 송전 중!</text>
+              </g>
+            </g>
+
+            <!-- 물 흐름 / 전력 흐름 입자 레이어 -->
+            <g id="cParticleLayer" filter="url(#cLiveGlow)"></g>
+          </svg>
+        </div>
+
+        <!-- 공정 자막 해설 -->
+        <div class="const-caption">
+          <span id="constCaptionTxt"><strong>[1단계 · 토공·지반]</strong> 30~40톤 배터리 컨테이너가 가라앉지 않도록 지반을 다지고 파일(Pile)을 박아 기초 지내력을 확보합니다.</span>
+          <span class="mono" style="color:#38bdf8;">💡 아래 구조물 버튼이나 그림을 클릭해 보세요!</span>
+        </div>
+
+        <!-- 7개 클릭 가능 구조물 핫스팟 칩 -->
+        <div class="hotspot-chips" aria-label="토목·건축 구조물 상세 설명 버튼">
+          <button type="button" class="hs-chip" data-hs="pad">🧱 콘크리트 기초 패드</button>
+          <button type="button" class="hs-chip" data-hs="firewall">🔥 방화벽 (Firewall)</button>
+          <button type="button" class="hs-chip" data-hs="trench">🔌 케이블 트렌치</button>
+          <button type="button" class="hs-chip" data-hs="drain">💧 배수로·집수정</button>
+          <button type="button" class="hs-chip" data-hs="ground">🌍 접지망 (Earth Grid)</button>
+          <button type="button" class="hs-chip" data-hs="oilpit">🛢️ 변압기 오일피트</button>
+          <button type="button" class="hs-chip" data-hs="ehouse">🏢 제어실 (E-House)</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 4] 🧩 역할 분담(DOR) 체험 & 4문제 미니 퀴즈 -->
+    <!-- ================================================================= -->
+    <main id="tab4" class="tab-panel">
+      <!-- 인터랙티브 DOR (Division of Responsibility) 매트릭스 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🧩 인터랙티브 역할 분담표 (DOR: Division of Responsibility)</h2>
+          <span class="pill-tag">계약 방식을 바꿀 때마다 8개 핵심 공종의 책임 주체가 어떻게 이동하는지 보세요!</span>
+        </div>
+
+        <div class="dor-toggle-bar">
+          <button type="button" class="dor-btn active" data-dor="multi">① 분리발주</button>
+          <button type="button" class="dor-btn" data-dor="si">② SI 계약</button>
+          <button type="button" class="dor-btn" data-dor="epc">③ EPC 계약</button>
+          <button type="button" class="dor-btn" data-dor="turnkey">④ 턴키 계약</button>
+        </div>
+
+        <div id="dorMatrixGrid" class="dor-grid"></div>
+      </section>
+
+      <!-- 4문제 미니 퀴즈 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🎯 BESS 사업 · 계약 · 설계 · 토목/건축 4문제 미니 퀴즈</h2>
+          <span class="pill-tag">4점 만점에 도전해 보세요!</span>
+        </div>
+
+        <div id="quizGrid" class="quiz-grid"></div>
+
+        <div id="quizFooter" class="quiz-footer">
+          <span id="quizScoreText">📝 4문제를 모두 풀어 보세요! (0 / 4 완료)</span>
+          <button id="btnQuizReset" type="button" class="action-btn">🔄 퀴즈 다시 풀기</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 핫스팟 구조물 상세 정보 모달 -->
+  <!-- ================================================================= -->
+  <div id="hsModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="hsModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="hsModalTitle" style="font-size:1.12rem; font-weight:900;">구조물 이름</h3>
+        <span id="hsModalCat" class="modal-cat" style="background:#fef3c7; color:#b45309;">토목 공사</span>
+      </div>
+      <div class="modal-sec">
+        <strong>🔍 무슨 역할인가요?</strong>
+        <p id="hsModalRole"></p>
+      </div>
+      <div class="modal-sec">
+        <strong>🏗️ 토목 vs 건축 구분</strong>
+        <p id="hsModalDiv"></p>
+      </div>
+      <div class="modal-sec" style="background:#fff1f2; border-color:#fecdd3;">
+        <strong style="color:#9f1239;">⚠️ 실무 핵심 주의사항</strong>
+        <p id="hsModalTip" style="color:#881337;"></p>
+      </div>
+      <div style="text-align:right; margin-top:12px;">
+        <button id="hsModalClose" type="button" class="action-btn primary">확인했어요 👍</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 60fps 인터랙티브 시뮬레이션 엔진 (Pure Vanilla JS) -->
+  <!-- ================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      const SVG_NS = 'http://www.w3.org/2000/svg';
+
+      /* -----------------------------------------------------------------
+       * 1. 데이터 정의: 계약 방식 / 설계 단계 / 시공 타임랩스 / DOR / 퀴즈
+       * ----------------------------------------------------------------- */
+      const CONTRACTS = {
+        multi: {
+          title: '① 분리발주 (Multi-Contract)',
+          analogyTitle: '쉬운 집 짓기 비유 — ① 분리발주',
+          analogyText: '집주인이 땅 파는 회사(토목), 집 짓는 목수(건축), 전기 기사(BOP), 가전 매장(BESS)을 전부 따로 부르고 일정과 하자를 직접 조율해야 합니다. 가격은 아낄 수 있지만 문제가 생기면 "저쪽 탓" 공방이 벌어집니다.',
+          ownerSub: '4개 계약 직접 관리',
+          ownerSubCol: '#f87171',
+          showPrime: false,
+          respBox: null,
+          metrics: [
+            { val: '매우 높음', pct: 95, col: '#e11d48', foot: '모든 공정·일정 직접 조율' },
+            { val: '매우 높음', pct: 92, col: '#f97316', foot: '토목↔전기↔기자재 책임 공방' },
+            { val: '별도 발주', pct: 15, col: '#d97706', foot: '발주처가 토목사 별도 계약' },
+            { val: '분산됨', pct: 20, col: '#10b981', foot: '업체별 부분 하자만 보증' }
+          ]
+        },
+        si: {
+          title: '② SI (System Integrator)',
+          analogyTitle: '쉬운 집 짓기 비유 — ② SI (시스템 통합)',
+          analogyText: '집주인이 땅을 다지고 집 뼈대(토목·건축 BOP)는 따로 짓되, 집 안의 스마트홈·가전·배터리 연동(BESS·PCS·EMS)만 전문 통합 업체(SI)에 맡기는 방식입니다. 토목과 장비 경계면(기초 치수·트렌치) 협의가 핵심입니다.',
+          ownerSub: 'SI + 토목/전기 조율',
+          ownerSubCol: '#fbbf24',
+          showPrime: true,
+          primeTitle: 'SI 사업자',
+          primeSub: 'BESS·PCS·EMS 통합',
+          primeTag: '장비·제어 연동 책임',
+          primeFill: '#4f46e5',
+          primeStroke: '#3730a3',
+          respBox: { x: 344, y: 202, w: 598, h: 100, col: '#4f46e5', label: '🟣 SI 책임 경계 (기자재·제어 통합)' },
+          metrics: [
+            { val: '중간', pct: 58, col: '#f59e0b', foot: '토목/전기(BOP)와 SI 간 조율' },
+            { val: '중간 (경계 주의)', pct: 60, col: '#4f46e5', foot: '기초 패드·케이블 경계 협의 필수' },
+            { val: '대부분 별도', pct: 25, col: '#d97706', foot: '토목·건축은 발주처/BOP 담당' },
+            { val: '시스템 성능만', pct: 55, col: '#4f46e5', foot: 'BESS 충방전 효율·성능 보증' }
+          ]
+        },
+        epc: {
+          title: '③ EPC 일괄 계약',
+          analogyTitle: '쉬운 집 짓기 비유 — ③ EPC (설계·조달·시공 일괄)',
+          analogyText: '설계(E), 자재 구매(P), 토목·건축·전기 시공(C)까지 집 짓는 전 과정을 한 건설사에 통째로 맡기는 방식입니다. 집주인은 창구가 하나라 편하고 공기·예산 예측이 명확합니다.',
+          ownerSub: '단일 EPC 창구 관리',
+          ownerSubCol: '#34d399',
+          showPrime: true,
+          primeTitle: 'EPC 주계약자',
+          primeSub: '설계·조달·시공 일괄',
+          primeTag: '토목·건축·전기·기자재 총괄',
+          primeFill: '#10b981',
+          primeStroke: '#047857',
+          respBox: { x: 344, y: 34, w: 598, h: 266, col: '#10b981', label: '🟢 EPC 단일 책임 경계 (E·P·C 일괄)' },
+          metrics: [
+            { val: '낮음', pct: 25, col: '#10b981', foot: 'EPC 주계약자 1곳만 관리' },
+            { val: '낮음', pct: 20, col: '#10b981', foot: 'EPC사가 하도급 인터페이스 흡수' },
+            { val: '완전 포함', pct: 100, col: '#10b981', foot: '지반·기초·방화벽·건축 일괄 포함' },
+            { val: '준공·성능 보증', pct: 85, col: '#10b981', foot: '공기 지연 지체상금(LD)·성능 보증' }
+          ]
+        },
+        turnkey: {
+          title: '④ 턴키 (Turnkey · 열쇠 인도)',
+          analogyTitle: '쉬운 집 짓기 비유 — ④ 턴키 (Turnkey)',
+          analogyText: '집 짓기(EPC)는 물론이고 전기·수도 개통, 행정 인허가, 입주 성능 테스트(COD)까지 100% 끝낸 뒤 집주인에게 "열쇠(Key)만 돌리면 바로 살 수 있는 상태"로 넘겨주는 방식입니다.',
+          ownerSub: '열쇠만 받고 상업운전!',
+          ownerSubCol: '#38bdf8',
+          showPrime: true,
+          primeTitle: '턴키 주계약자',
+          primeSub: 'EPC + 인허가 + COD',
+          primeTag: '상업운전까지 100% 책임',
+          primeFill: '#2563eb',
+          primeStroke: '#1d4ed8',
+          respBox: { x: 344, y: 34, w: 598, h: 346, col: '#2563eb', label: '🔵 턴키 완전 책임 경계 (EPC + COD)' },
+          metrics: [
+            { val: '매우 낮음', pct: 10, col: '#2563eb', foot: '발주처는 최종 검수·인수만 수행' },
+            { val: '최소화', pct: 10, col: '#2563eb', foot: '모든 기술·인허가 리스크 주계약자 부담' },
+            { val: '완전 포함', pct: 100, col: '#2563eb', foot: '부지조성~건축·조경까지 완전 포함' },
+            { val: 'COD·성능 100%', pct: 100, col: '#2563eb', foot: '상업운전(COD) 달성까지 최종 보증' }
+          ]
+        }
+      };
+
+      const DESIGN_STAGES = [
+        {
+          dwg: 'DWG: BESS-GEO-001 (STAGE 1)',
+          mid: '단계: 부지조사 & 지반보링(SPT)',
+          rev: 'SCALE: 1/500 | REV: 0 (기획)',
+          deliverables: ['지반조사 보고서 (시추 주상도, SPT N치)', '지형 현황 측량도 및 경계 복원 측량', '홍수위·우수 유출량 및 침수 이력 검토서'],
+          civilChecks: ['35~40톤 배터리 컨테이너를 버틸 지내력 확인', '연약지반 발견 시 파일(Pile) 기초 공법 사전 반영', '부지 진입도로 폭·회전반경(크레인·트레일러 진입)'],
+          mistakes: ['지반조사를 생략했다가 착공 후 연약지반 발견 → 수억 원 추가 공사비 발생', '배수 계획을 안 세워 장마철 BESS 부지 침수 위험 초래']
+        },
+        {
+          dwg: 'DWG: BESS-PLOT-002 (STAGE 2)',
+          mid: '단계: 기본설계 (Basic Design / FEED)',
+          rev: 'SCALE: 1/200 | REV: A (인허가용)',
+          deliverables: ['전체 배치도 (Plot Plan) 및 단선 결선도(SLD)', '소방·안전 이격거리 검토서 및 인허가 도서', '개략 토목·건축 물량 산출 및 사업비(CAPEX) 예산'],
+          civilChecks: ['BESS 컨테이너 간 화재 확산 방지 이격거리(통상 3m+ 또는 방화벽)', '변전소·PCS·BESS 간 케이블 최단 동선 배치', '대형 크레인 작업 공간 및 유지보수 차량 통로 확보'],
+          mistakes: ['배치도에서 장비 이격거리를 좁게 잡아 소방 인허가 반려', '기자재 치수 미확정 상태에서 기초 면적을 과소 추정']
+        },
+        {
+          dwg: 'DWG: BESS-AFC-003 (STAGE 3)',
+          mid: '단계: 상세설계 (Detailed Design / AFC)',
+          rev: 'SCALE: 1/50 | REV: 1 (시공용)',
+          deliverables: ['철근 콘크리트 기초 구조계산서 및 배근도', '지하 케이블 트렌치·관로 단면도 및 접지망 설계도', '내화 방화벽·변압기 오일피트·배수로 구배 시공도면'],
+          civilChecks: ['35톤 하중 + 지진하중(내진설계) 고려한 RC 패드 두께·철근 간격', '지하 케이블 트렌치 배수 구배(S=1.5%) 및 방수 처리', '동봉·나동선 메쉬 접지망(목표 접지저항 ≤ 1Ω)'],
+          mistakes: ['트렌치 깊이와 케이블 굽힘반경(Bending Radius) 불일치로 포설 불가', '기초 패드 앵커볼트 위치가 컨테이너 규격과 어긋나 현장 재시공']
+        },
+        {
+          dwg: 'DWG: BESS-ASB-004 (STAGE 4)',
+          mid: '단계: 시공 & 준공도면 (As-Built)',
+          rev: 'SCALE: 1/50 | REV: FINAL (승인)',
+          deliverables: ['현장 설계 변경(Red-line)이 반영된 최종 준공도면(As-Built)', '콘크리트 압축강도·접지저항·절연저항 시험 성적서', '시설물 유지보수 매뉴얼 및 사용전검사 필증'],
+          civilChecks: ['지하 매설물(케이블·접지선·배수관) 정확한 위치·심도 기록', '기초 부등침하 계측 및 배수로 통수 시험 완료', '방화벽·울타리·안전표지판 최종 준공 검사'],
+          mistakes: ['현장에서 바꾼 지하 케이블 경로를 준공도면에 안 적어 추후 굴착 시 단선 사고 발생']
+        }
+      ];
+
+      const CONST_STEPS = [
+        {
+          caption: '<strong>[1단계 · 토공·지반]</strong> 35~40톤 배터리 컨테이너가 가라앉지 않도록 부지를 평탄화하고, 굴삭기·롤러 다짐과 파일(Pile) 보강으로 지반을 단단히 만듭니다.'
+        },
+        {
+          caption: '<strong>[2단계 · 배수·지하매설]</strong> 빗물을 빼내는 배수로·집수정, 고압선과 통신선이 지나갈 지하 케이블 트렌치, 감전·낙뢰를 막는 구리 접지망(Earth Grid)을 땅속에 먼저 묻습니다.'
+        },
+        {
+          caption: '<strong>[3단계 · 기초·방화벽]</strong> 철근을 엮어 콘크리트 기초 패드를 타설하고, 변압기 하부 오일피트(기름 유출 방지)와 BESS 간 화재 확산을 막는 내화 방화벽을 세웁니다.'
+        },
+        {
+          caption: '<strong>[4단계 · 건축·부대시설]</strong> EMS·보호배전반·소방제어반이 들어갈 제어실(E-House)을 건축하고, 보안 울타리와 쇄석·아스팔트 포장을 마무리합니다.'
+        },
+        {
+          caption: '<strong>[5단계 · 기자재 거치 & 시운전(COD)]</strong> 대형 크레인이 BESS 컨테이너와 PCS·변압기를 기초 패드에 정확히 안착시키고, 케이블 결선 및 계통 시험을 거쳐 상업운전(COD)을 시작합니다!'
+        }
+      ];
+
+      const HOTSPOTS = {
+        pad: {
+          title: '🧱 콘크리트 기초 패드 (RC Foundation Pad)',
+          cat: '토목 공사', catBg: '#fef3c7', catCol: '#b45309',
+          role: '무게가 30~40톤에 달하는 BESS 컨테이너와 PCS·변압기를 지반 침하 없이 안전하게 떠받치는 철근 콘크리트 받침대입니다.',
+          div: '지반 위에 하중을 전달하는 구조물이므로 대표적인 <strong>토목(구조) 공사</strong>에 해당합니다.',
+          tip: '컨테이너 모서리(Corner Casting) 위치와 앵커볼트 치수가 1cm만 틀려도 거치가 불가능하므로, 타설 전 기자재 도면(Vendor Print) 교차 검수가 필수입니다.'
+        },
+        firewall: {
+          title: '🔥 내화 방화벽 (Firewall)',
+          cat: '건축 / 소방 공사', catBg: '#ffe4e6', catCol: '#be123c',
+          role: 'BESS 컨테이너 1대에 열폭주 화재가 발생하더라도 인접한 배터리나 변압기로 불길이 번지지 않도록 차단하는 내화 구조 벽체입니다.',
+          div: '내화 성능(통상 2~3시간)을 갖춘 벽체 축조로 <strong>건축(및 소방) 공사</strong> 영역으로 분류됩니다.',
+          tip: '부지 면적이 좁아 법정 이격거리(예: 3m 이상)를 확보하기 어려울 때 방화벽을 설치하면 이격거리를 줄일 수 있습니다.'
+        },
+        trench: {
+          title: '🔌 지하 케이블 트렌치 (Cable Trench)',
+          cat: '토목 · 전기 경계', catBg: '#dbeafe', catCol: '#1d4ed8',
+          role: 'BESS, PCS, 변압기, 제어실 사이를 오가는 두꺼운 DC/AC 고압 전력 케이블과 통신선을 안전하게 보호하는 지하 통로입니다.',
+          div: '트렌치 콘크리트 구조물 굴착·타설은 <strong>토목</strong>, 내부 케이블 포설은 <strong>전기(BOP)</strong>가 담당하는 대표적 인터페이스 구간입니다.',
+          tip: '전력선과 통신선(노이즈 방지)을 분리 배치해야 하며, 트렌치 내부에 빗물이 고이지 않도록 반드시 배수 구배와 배수공을 두어야 합니다.'
+        },
+        drain: {
+          title: '💧 우수 배수로 및 집수정 (Drainage & Sump)',
+          cat: '토목 공사', catBg: '#e0f2fe', catCol: '#0369a1',
+          role: '폭우 시 BESS 부지에 물이 고여 전기설비 침수·감전 사고가 나지 않도록 빗물을 빠르게 모아 외부로 배출하는 시설입니다.',
+          div: '부지 정지 및 수리 계산을 동반하는 핵심 <strong>토목 공사</strong>입니다.',
+          tip: 'BESS는 물에 극도로 취약하므로 부지 전체에 1~2%의 미세 경사(구배)를 주고, 배수로가 막히지 않게 정기 청소 접근성을 확보해야 합니다.'
+        },
+        ground: {
+          title: '🌍 접지망 (Earth Grid · 메쉬 접지)',
+          cat: '전기 · 토목 협동', catBg: '#d1fae5', catCol: '#047857',
+          role: '누전이나 낙뢰 발생 시 이상 전류를 대지로 안전하게 흘려보내 작업자의 감전과 고가 장비의 파손을 막아주는 지하 구리선 그물망입니다.',
+          div: '설계·시공은 <strong>전기 공사</strong> 주관이되, 터파기·되메우기 시 <strong>토목 공정</strong>과 동시에 시공해야 재굴착을 막을 수 있습니다.',
+          tip: '토양 고유저항이 높은 암반/건조 지반은 접지저감제를 시공해 목표 접지저항(통상 1Ω 이하)을 만족시켜야 합니다.'
+        },
+        oilpit: {
+          title: '🛢️ 변압기 오일피트 (Transformer Oil Pit)',
+          cat: '토목 / 환경 공사', catBg: '#fef3c7', catCol: '#b45309',
+          role: '유입식 변압기에서 절연유가 누출되거나 화재가 났을 때 기름이 토양·하천으로 흘러가지 않도록 하부에 가두어 두는 집유조입니다.',
+          div: '방수 콘크리트 수조 구조물로서 <strong>토목 공사</strong>에 포함됩니다.',
+          tip: '변압기 전체 절연유 용량의 100~110% 이상을 수용할 수 있어야 하며, 상부에 쇄석(자갈)을 깔아 화재 시 산소를 차단(소화 효과)하도록 설계합니다.'
+        },
+        ehouse: {
+          title: '🏢 제어실 / 전기실 (Control Building / E-House)',
+          cat: '건축 공사', catBg: '#e0e7ff', catCol: '#3730a3',
+          role: '발전소의 두뇌인 EMS 서버, 고압 배전반, 보호계전기, 소방 수신반, 공조설비가 설치되는 건물 또는 조립식 전기실(E-House)입니다.',
+          div: '인허가(건축허가/신고)와 마감·공조·소방이 수반되는 대표적인 <strong>건축 공사</strong>입니다.',
+          tip: '현장 콘크리트 건축 대신 공장에서 미리 제작해 가져오는 E-House(프리팹) 방식을 쓰면 현장 공기를 대폭 단축할 수 있습니다.'
+        }
+      };
+
+      const DOR_SCOPES = [
+        { name: '① 지반조사 · 부지조성', sub: '토목 (측량·절성토·다짐·파일)' },
+        { name: '② 기초 패드 · 배수 · 트렌치', sub: '토목 (RC 패드·우수·오일피트)' },
+        { name: '③ 제어실 · 방화벽 · 울타리', sub: '건축 (E-House·내화벽·포장)' },
+        { name: '④ 배터리 · PCS · EMS 공급', sub: '핵심 기자재 및 제어 소프트웨어' },
+        { name: '⑤ 전기공사 · 계통연계 (BOP)', sub: '케이블 포설·변전설비·접지망' },
+        { name: '⑥ 기본 / 상세설계 통합', sub: '토목·건축·전기·기자재 도면 정합' },
+        { name: '⑦ 개발행위 · 소방 · 전기 인허가', sub: '지자체·한전·전기안전공사 승인' },
+        { name: '⑧ 종합 시운전 · 성능보증 (COD)', sub: '계통연계 시험 및 상업운전 개시' }
+      ];
+
+      // 각 계약 방식별 8개 공종 책임 주체 매핑
+      const DOR_MAP = {
+        multi: [
+          { lbl: '토목/건축사 (발주처 별도)', cls: 'owner-civil' },
+          { lbl: '토목/건축사 (발주처 별도)', cls: 'owner-civil' },
+          { lbl: '토목/건축사 (발주처 별도)', cls: 'owner-civil' },
+          { lbl: '기자재사 (발주처 별도)', cls: 'owner-si' },
+          { lbl: '전기시공사 (발주처 별도)', cls: 'owner-owner' },
+          { lbl: '발주처 직접 통합 조율', cls: 'owner-owner' },
+          { lbl: '발주처 (Owner)', cls: 'owner-owner' },
+          { lbl: '발주처 총괄 (책임 분산)', cls: 'owner-owner' }
+        ],
+        si: [
+          { lbl: '발주처 / 별도 토목사', cls: 'owner-civil' },
+          { lbl: '발주처 / 별도 토목사', cls: 'owner-civil' },
+          { lbl: '발주처 / 별도 건축사', cls: 'owner-civil' },
+          { lbl: 'SI 사업자 (책임 공급)', cls: 'owner-si' },
+          { lbl: '발주처 / 별도 전기사', cls: 'owner-owner' },
+          { lbl: 'BESS는 SI / 부지는 발주처', cls: 'owner-si' },
+          { lbl: '발주처 (SI 기술 지원)', cls: 'owner-owner' },
+          { lbl: 'BESS 성능은 SI / COD 발주처', cls: 'owner-si' }
+        ],
+        epc: [
+          { lbl: 'EPC 주계약자 일괄', cls: 'owner-epc' },
+          { lbl: 'EPC 주계약자 일괄', cls: 'owner-epc' },
+          { lbl: 'EPC 주계약자 일괄', cls: 'owner-epc' },
+          { lbl: 'EPC 주계약자 일괄', cls: 'owner-epc' },
+          { lbl: 'EPC 주계약자 일괄', cls: 'owner-epc' },
+          { lbl: 'EPC 주계약자 통합', cls: 'owner-epc' },
+          { lbl: '발주처 주체 (EPC 지원)', cls: 'owner-owner' },
+          { lbl: 'EPC 주계약자 (성능 보증)', cls: 'owner-epc' }
+        ],
+        turnkey: [
+          { lbl: '턴키 주계약자 100%', cls: 'owner-tk' },
+          { lbl: '턴키 주계약자 100%', cls: 'owner-tk' },
+          { lbl: '턴키 주계약자 100%', cls: 'owner-tk' },
+          { lbl: '턴키 주계약자 100%', cls: 'owner-tk' },
+          { lbl: '턴키 주계약자 100%', cls: 'owner-tk' },
+          { lbl: '턴키 주계약자 100%', cls: 'owner-tk' },
+          { lbl: '턴키 주계약자 일괄 대행', cls: 'owner-tk' },
+          { lbl: '턴키 주계약자 (COD 완결)', cls: 'owner-tk' }
+        ]
+      };
+
+      const QUIZ_DATA = [
+        {
+          q: 'Q1. EPC 계약과 턴키(Turnkey) 계약의 가장 핵심적인 차이는 무엇인가요?',
+          opts: [
+            '① EPC는 토목공사가 빠지고, 턴키는 전기공사가 빠진다',
+            '② 턴키는 EPC에 더해 인허가·계통시험·상업운전(COD)까지 끝내 열쇠만 넘겨주는 완전 일괄 방식이다',
+            '③ EPC와 턴키는 발주처가 모든 하도급사를 따로 계약하는 방식이다'
+          ],
+          ans: 1,
+          ok: '정답입니다! 🔑 턴키는 EPC를 포함해 인허가와 최종 시운전(COD)까지 완료해 "열쇠만 돌리면 바로 운전 가능한 상태"로 인도합니다.',
+          no: '다시 생각해 보세요! 탭 1의 [집 짓기 비유]에서 ③ EPC와 ④ 턴키의 차이를 비교해 보세요.'
+        },
+        {
+          q: 'Q2. BESS 사업에서 "SI(시스템 통합) 계약"을 체결했을 때, 토목·건축 공사(부지조성, 기초 패드 등)는 일반적으로 누가 책임지나요?',
+          opts: [
+            '① 발주처가 별도의 토목/건축 시공사(BOP)와 계약하여 수행한다',
+            '② 배터리 셀 제조사가 무료로 시공해 준다',
+            '③ 토목·건축 공사는 BESS 사업에서 필요하지 않다'
+          ],
+          ans: 0,
+          ok: '정확해요! 🧩 SI 사업자는 BESS·PCS·EMS 통합을 책임지며, 토목·건축(BOP)은 보통 발주처가 별도 발주하므로 경계면(기초 치수 등) 협의가 매우 중요합니다.',
+          no: '아쉬워요! SI는 System Integrator로 장비·제어 통합에 집중하며, 토목·건축은 별도 발주하는 경우가 일반적입니다.'
+        },
+        {
+          q: 'Q3. 기본설계(Basic Design / FEED)와 상세설계(Detailed Design / AFC)의 차이로 올바른 것은?',
+          opts: [
+            '① 기본설계에서 철근 간격과 볼트 치수까지 모두 확정하고, 상세설계는 생략한다',
+            '② 기본설계는 배치도·이격거리·개략 예산 등 큰 그림을 잡고, 상세설계는 철근 배근·트렌치 단면 등 실제 시공 도면을 확정한다',
+            '③ 기본설계는 준공 후에 작성하는 유지보수 도면이다'
+          ],
+          ans: 1,
+          ok: '완벽합니다! 📐 기본설계(FEED)는 인허가와 예산 확정을 위한 큰 그림이고, 상세설계(AFC)는 현장에서 그대로 시공할 수 있는 정밀 도면입니다.',
+          no: '힌트! 탭 2에서 2단계(기본설계)와 3단계(상세설계) 버튼을 눌러 도면의 정밀도 차이를 확인해 보세요.'
+        },
+        {
+          q: 'Q4. BESS 토목공사에서 지반 다짐·파일 보강, 철근 기초 패드, 배수로가 유독 중요한 이유는?',
+          opts: [
+            '① 컨테이너 1대당 30~40톤에 달하는 초고중량 설비이며, 침수 시 대형 전기·화재 사고로 이어질 수 있기 때문',
+            '② 배터리가 바람에 날아가지 않게 묶어두기만 하면 되기 때문',
+            '③ 미관상 보기 좋게 정원을 꾸미기 위해서'
+          ],
+          ans: 0,
+          ok: '정답입니다! 🚜 BESS 컨테이너는 매우 무거워 부등침하 방지가 필수이며, 전기설비 특성상 완벽한 배수와 접지가 안전의 핵심입니다.',
+          no: '다시 생각해 보세요! 탭 3 시공 타임랩스에서 1~3단계 토목 구조물 핫스팟 설명을 확인해 보세요.'
+        }
+      ];
+
+      /* -----------------------------------------------------------------
+       * 2. 앱 상태 변수
+       * ----------------------------------------------------------------- */
+      const state = {
+        activeTab: 'tab1',
+        contract: 'multi',
+        designStep: 0,
+        designAuto: false,
+        designTimer: 0,
+
+        constStep: 0,
+        constAuto: false,
+        constAutoTimer: 0,
+        constPaused: false,
+        constSlow: false,
+        constProgress: 0, // Step 5 크레인 하강 보간용
+
+        dorMode: 'multi',
+        quizAns: [null, null, null, null],
+
+        simTime: 0,
+        lastTs: 0
+      };
+
+      /* -----------------------------------------------------------------
+       * 3. DOM 요소 참조
+       * ----------------------------------------------------------------- */
+      const el = {
+        tabBtns: document.querySelectorAll('.tab-btn'),
+        tabPanels: document.querySelectorAll('.tab-panel'),
+
+        // Tab 1
+        contractCards: document.querySelectorAll('.contract-card'),
+        analogyTitle: document.getElementById('analogyTitle'),
+        analogyText: document.getElementById('analogyText'),
+        respBox: document.getElementById('respBox'),
+        respLabelBg: document.getElementById('respLabelBg'),
+        respLabelTxt: document.getElementById('respLabelTxt'),
+        contractLinesLayer: document.getElementById('contractLinesLayer'),
+        clashLinesLayer: document.getElementById('clashLinesLayer'),
+        ownerSubTxt: document.getElementById('ownerSubTxt'),
+        primeNode: document.getElementById('primeNode'),
+        primeRect: document.getElementById('primeRect'),
+        primeTitle: document.getElementById('primeTitle'),
+        primeSub: document.getElementById('primeSub'),
+        primeTag: document.getElementById('primeTag'),
+        contractParticles: document.getElementById('contractParticles'),
+        contractSparks: document.getElementById('contractSparks'),
+        compTableBadge: document.getElementById('compTableBadge'),
+        mOwnerVal: document.getElementById('mOwnerVal'), mOwnerBar: document.getElementById('mOwnerBar'), mOwnerFoot: document.getElementById('mOwnerFoot'),
+        mRiskVal: document.getElementById('mRiskVal'), mRiskBar: document.getElementById('mRiskBar'), mRiskFoot: document.getElementById('mRiskFoot'),
+        mCivilVal: document.getElementById('mCivilVal'), mCivilBar: document.getElementById('mCivilBar'), mCivilFoot: document.getElementById('mCivilFoot'),
+        mGuarVal: document.getElementById('mGuarVal'), mGuarBar: document.getElementById('mGuarBar'), mGuarFoot: document.getElementById('mGuarFoot'),
+
+        // Tab 2
+        designBtns: document.querySelectorAll('[data-design]'),
+        btnDesignPlay: document.getElementById('btnDesignPlay'),
+        designPlayTxt: document.getElementById('designPlayTxt'),
+        bpTitleTop: document.getElementById('bpTitleTop'),
+        bpTitleMid: document.getElementById('bpTitleMid'),
+        bpTitleBot: document.getElementById('bpTitleBot'),
+        bpLayer2: document.getElementById('bpLayer2'),
+        bpLayer3: document.getElementById('bpLayer3'),
+        bpLayer4: document.getElementById('bpLayer4'),
+        bpDrillPulse: document.getElementById('bpDrillPulse'),
+        designSummaryGrid: document.getElementById('designSummaryGrid'),
+
+        // Tab 3
+        constBtns: document.querySelectorAll('[data-cstep]'),
+        btnConstPlay: document.getElementById('btnConstPlay'),
+        constPlayTxt: document.getElementById('constPlayTxt'),
+        btnConstPause: document.getElementById('btnConstPause'),
+        constPauseTxt: document.getElementById('constPauseTxt'),
+        btnConstSlow: document.getElementById('btnConstSlow'),
+        constSlowTxt: document.getElementById('constSlowTxt'),
+        cExcavator: document.getElementById('cExcavator'),
+        cLayerUnder: document.getElementById('cLayerUnder'),
+        cLayerFound: document.getElementById('cLayerFound'),
+        cLayerArch: document.getElementById('cLayerArch'),
+        cLayerEquip: document.getElementById('cLayerEquip'),
+        cCraneGroup: document.getElementById('cCraneGroup'),
+        cCraneCable: document.getElementById('cCraneCable'),
+        cBess1: document.getElementById('cBess1'),
+        cLed1: document.getElementById('cLed1'),
+        cLed2: document.getElementById('cLed2'),
+        cCodBanner: document.getElementById('cCodBanner'),
+        cParticleLayer: document.getElementById('cParticleLayer'),
+        constCaptionTxt: document.getElementById('constCaptionTxt'),
+
+        // Tab 4
+        dorBtns: document.querySelectorAll('[data-dor]'),
+        dorMatrixGrid: document.getElementById('dorMatrixGrid'),
+        quizGrid: document.getElementById('quizGrid'),
+        quizFooter: document.getElementById('quizFooter'),
+        quizScoreText: document.getElementById('quizScoreText'),
+        btnQuizReset: document.getElementById('btnQuizReset'),
+
+        // Modal
+        hsModal: document.getElementById('hsModal'),
+        hsModalTitle: document.getElementById('hsModalTitle'),
+        hsModalCat: document.getElementById('hsModalCat'),
+        hsModalRole: document.getElementById('hsModalRole'),
+        hsModalDiv: document.getElementById('hsModalDiv'),
+        hsModalTip: document.getElementById('hsModalTip'),
+        hsModalClose: document.getElementById('hsModalClose')
+      };
+
+      /* -----------------------------------------------------------------
+       * 4. [탭 1] 계약 방식 관계도 렌더링 및 입자 애니메이션
+       * ----------------------------------------------------------------- */
+      let activeContractPaths = [];
+      let activeClashPoints = [];
+      const contractParticlePool = [];
+
+      function initPools() {
+        el.contractParticles.innerHTML = '';
+        for (let i = 0; i < 28; i++) {
+          const c = document.createElementNS(SVG_NS, 'circle');
+          c.setAttribute('r', '4.8');
+          c.setAttribute('stroke', '#ffffff');
+          c.setAttribute('stroke-width', '1.4');
+          c.setAttribute('opacity', '0');
+          el.contractParticles.appendChild(c);
+          contractParticlePool.push(c);
+        }
+      }
+
+      const constParticlePool = [];
+      function initConstPool() {
+        el.cParticleLayer.innerHTML = '';
+        for (let i = 0; i < 24; i++) {
+          const c = document.createElementNS(SVG_NS, 'circle');
+          c.setAttribute('r', '4.6');
+          c.setAttribute('stroke', '#ffffff');
+          c.setAttribute('stroke-width', '1.3');
+          c.setAttribute('opacity', '0');
+          el.cParticleLayer.appendChild(c);
+          constParticlePool.push(c);
+        }
+      }
+
+      function setContractMode(mode) {
+        state.contract = mode;
+        const cfg = CONTRACTS[mode];
+
+        // 카드 활성화
+        el.contractCards.forEach(c => {
+          c.classList.remove('active-multi', 'active-si', 'active-epc', 'active-turnkey');
+          if (c.dataset.contract === mode) c.classList.add(`active-${mode}`);
+        });
+
+        // 비유 및 발주처 문구
+        el.analogyTitle.textContent = cfg.analogyTitle;
+        el.analogyText.textContent = cfg.analogyText;
+        el.ownerSubTxt.textContent = cfg.ownerSub;
+        el.ownerSubTxt.setAttribute('fill', cfg.ownerSubCol);
+
+        // 주계약자 노드 표시
+        if (cfg.showPrime) {
+          el.primeNode.setAttribute('opacity', '1');
+          el.primeRect.setAttribute('fill', cfg.primeFill);
+          el.primeRect.setAttribute('stroke', cfg.primeStroke);
+          el.primeTitle.textContent = cfg.primeTitle;
+          el.primeSub.textContent = cfg.primeSub;
+          el.primeTag.textContent = cfg.primeTag;
+        } else {
+          el.primeNode.setAttribute('opacity', '0');
+        }
+
+        // 책임 경계 글로우 박스
+        if (cfg.respBox) {
+          const rb = cfg.respBox;
+          el.respBox.setAttribute('x', rb.x);
+          el.respBox.setAttribute('y', rb.y);
+          el.respBox.setAttribute('width', rb.w);
+          el.respBox.setAttribute('height', rb.h);
+          el.respBox.setAttribute('stroke', rb.col);
+          el.respBox.setAttribute('fill', rb.col);
+          el.respBox.setAttribute('fill-opacity', '0.07');
+          el.respBox.setAttribute('opacity', '1');
+
+          el.respLabelBg.setAttribute('x', rb.x + 18);
+          el.respLabelBg.setAttribute('y', rb.y - 13);
+          el.respLabelBg.setAttribute('fill', rb.col);
+          el.respLabelBg.setAttribute('opacity', '1');
+
+          el.respLabelTxt.setAttribute('x', rb.x + 148);
+          el.respLabelTxt.setAttribute('y', rb.y + 4);
+          el.respLabelTxt.textContent = rb.label;
+          el.respLabelTxt.setAttribute('opacity', '1');
+        } else {
+          el.respBox.setAttribute('opacity', '0');
+          el.respLabelBg.setAttribute('opacity', '0');
+          el.respLabelTxt.setAttribute('opacity', '0');
+        }
+
+        // 계약선 & 충돌선 구성
+        // 좌표: Owner 우측(200,205), Prime 좌측(358,205) / 우측(542,205)
+        // 우측 4개 노드 좌측 중앙: Civil(716,82), Elec(716,166), Equip(716,250), COD(716,334)
+        activeContractPaths = [];
+        activeClashPoints = [];
+
+        if (mode === 'multi') {
+          activeContractPaths = [
+            { x1: 200, y1: 185, x2: 716, y2: 82, col: '#d97706' },
+            { x1: 200, y1: 198, x2: 716, y2: 166, col: '#2563eb' },
+            { x1: 200, y1: 212, x2: 716, y2: 250, col: '#4f46e5' },
+            { x1: 200, y1: 225, x2: 716, y2: 334, col: '#10b981' }
+          ];
+          activeClashPoints = [
+            { x: 716, y: 124, label: '토목↔전기 충돌!' },
+            { x: 716, y: 208, label: '전기↔기자재 충돌!' },
+            { x: 716, y: 292, label: '책임 경계 모호!' }
+          ];
+        } else if (mode === 'si') {
+          activeContractPaths = [
+            { x1: 200, y1: 180, x2: 716, y2: 82, col: '#d97706' },
+            { x1: 200, y1: 196, x2: 716, y2: 166, col: '#2563eb' },
+            { x1: 200, y1: 210, x2: 358, y2: 210, col: '#4f46e5' },
+            { x1: 542, y1: 216, x2: 716, y2: 250, col: '#4f46e5' },
+            { x1: 200, y1: 228, x2: 716, y2: 334, col: '#10b981' }
+          ];
+          activeClashPoints = [
+            { x: 716, y: 208, label: '⚠️ 토목/BOP ↔ SI 경계 협의 필수!' }
+          ];
+        } else if (mode === 'epc') {
+          activeContractPaths = [
+            { x1: 200, y1: 205, x2: 358, y2: 205, col: '#10b981' },
+            { x1: 542, y1: 190, x2: 716, y2: 82, col: '#10b981' },
+            { x1: 542, y1: 200, x2: 716, y2: 166, col: '#10b981' },
+            { x1: 542, y1: 214, x2: 716, y2: 250, col: '#10b981' },
+            { x1: 200, y1: 230, x2: 716, y2: 334, col: '#64748b' }
+          ];
+        } else {
+          // Turnkey
+          activeContractPaths = [
+            { x1: 200, y1: 205, x2: 358, y2: 205, col: '#2563eb' },
+            { x1: 542, y1: 185, x2: 716, y2: 82, col: '#2563eb' },
+            { x1: 542, y1: 198, x2: 716, y2: 166, col: '#2563eb' },
+            { x1: 542, y1: 212, x2: 716, y2: 250, col: '#2563eb' },
+            { x1: 542, y1: 226, x2: 716, y2: 334, col: '#2563eb' }
+          ];
+        }
+
+        // 계약선 SVG 그리기
+        el.contractLinesLayer.innerHTML = activeContractPaths.map(p => {
+          const mx = (p.x1 + p.x2) / 2;
+          return `<path d="M ${p.x1} ${p.y1} C ${mx} ${p.y1}, ${mx} ${p.y2}, ${p.x2} ${p.y2}" fill="none" stroke="${p.col}" stroke-width="3.6" stroke-opacity="0.72" />`;
+        }).join('');
+
+        // 충돌 경고 배지 그리기
+        el.clashLinesLayer.innerHTML = activeClashPoints.map(c => `
+          <g transform="translate(${c.x - 120}, ${c.y - 12})">
+            <rect x="0" y="0" width="174" height="22" rx="11" fill="#ffe4e6" stroke="#e11d48" stroke-width="1.6" />
+            <text x="87" y="15" text-anchor="middle" fill="#be123c" font-size="9.5" font-weight="900">${c.label}</text>
+          </g>
+        `).join('');
+
+        // 4개 지표 게이지 업데이트
+        const ms = cfg.metrics;
+        const targets = [
+          [el.mOwnerVal, el.mOwnerBar, el.mOwnerFoot],
+          [el.mRiskVal, el.mRiskBar, el.mRiskFoot],
+          [el.mCivilVal, el.mCivilBar, el.mCivilFoot],
+          [el.mGuarVal, el.mGuarBar, el.mGuarFoot]
+        ];
+        ms.forEach((m, i) => {
+          targets[i][0].textContent = m.val;
+          targets[i][1].style.width = `${m.pct}%`;
+          targets[i][1].style.background = m.col;
+          targets[i][2].textContent = m.foot;
+        });
+
+        // 하단 비교표 열 하이라이트
+        el.compTableBadge.textContent = `현재 선택: ${cfg.title} 강조 표시 중`;
+        ['multi', 'si', 'epc', 'turnkey'].forEach(k => {
+          document.querySelectorAll(`.col-${k}`).forEach(cell => {
+            cell.classList.remove('hl-multi', 'hl-si', 'hl-epc', 'hl-turnkey');
+            if (k === mode) cell.classList.add(`hl-${k}`);
+          });
+        });
+      }
+
+      function cubicPoint(p, t) {
+        const mx = (p.x1 + p.x2) / 2;
+        const u = 1 - t;
+        const x = u * u * u * p.x1 + 3 * u * u * t * mx + 3 * u * t * t * mx + t * t * t * p.x2;
+        const y = u * u * u * p.y1 + 3 * u * u * t * p.y1 + 3 * u * t * t * p.y2 + t * t * t * p.y2;
+        return { x, y };
+      }
+
+      function animateTab1(t) {
+        let idx = 0;
+        const perPath = 3;
+        for (const p of activeContractPaths) {
+          for (let i = 0; i < perPath && idx < contractParticlePool.length; i++) {
+            const c = contractParticlePool[idx++];
+            const prog = (t * 0.42 + i / perPath) % 1;
+            const pt = cubicPoint(p, prog);
+            c.setAttribute('opacity', '1');
+            c.setAttribute('cx', pt.x.toFixed(1));
+            c.setAttribute('cy', pt.y.toFixed(1));
+            c.setAttribute('fill', p.col);
+          }
+        }
+        while (idx < contractParticlePool.length) contractParticlePool[idx++].setAttribute('opacity', '0');
+
+        // 인터페이스 충돌 스파크 점멸
+        el.contractSparks.innerHTML = '';
+        if (activeClashPoints.length > 0 && Math.sin(t * 10) > -0.2) {
+          activeClashPoints.forEach((cp, k) => {
+            const pulse = 6 + Math.sin(t * 14 + k) * 3;
+            const circ = document.createElementNS(SVG_NS, 'circle');
+            circ.setAttribute('cx', String(cp.x - 126));
+            circ.setAttribute('cy', String(cp.y - 1));
+            circ.setAttribute('r', pulse.toFixed(1));
+            circ.setAttribute('fill', '#e11d48');
+            circ.setAttribute('fill-opacity', '0.55');
+            el.contractSparks.appendChild(circ);
+          });
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 5. [탭 2] 설계 단계 진화 로직
+       * ----------------------------------------------------------------- */
+      function setDesignStage(idx) {
+        state.designStep = idx;
+        const d = DESIGN_STAGES[idx];
+
+        el.designBtns.forEach(b => b.classList.toggle('active', Number(b.dataset.design) === idx));
+        el.bpTitleTop.textContent = d.dwg;
+        el.bpTitleMid.textContent = d.mid;
+        el.bpTitleBot.textContent = d.rev;
+
+        el.bpLayer2.setAttribute('opacity', idx >= 1 ? '1' : '0');
+        el.bpLayer3.setAttribute('opacity', idx >= 2 ? '1' : '0');
+        el.bpLayer4.setAttribute('opacity', idx >= 3 ? '1' : '0');
+
+        el.designSummaryGrid.innerHTML = `
+          <article class="info-panel">
+            <h3>📄 핵심 산출물 (Deliverables)</h3>
+            <ul>${d.deliverables.map(x => `<li>${x}</li>`).join('')}</ul>
+          </article>
+          <article class="info-panel civil">
+            <h3>🚜 토목·건축 핵심 체크포인트</h3>
+            <ul>${d.civilChecks.map(x => `<li>${x}</li>`).join('')}</ul>
+          </article>
+          <article class="info-panel warn">
+            <h3>⚠️ 이 단계에서 자주 생기는 실수</h3>
+            <ul>${d.mistakes.map(x => `<li>${x}</li>`).join('')}</ul>
+          </article>
+        `;
+      }
+
+      function animateTab2(dt, t) {
+        // 보링 지점 펄스
+        const r = 14 + ((t * 18) % 18);
+        el.bpDrillPulse.setAttribute('r', r.toFixed(1));
+        el.bpDrillPulse.setAttribute('opacity', (1 - (r - 14) / 18).toFixed(2));
+
+        if (state.designAuto) {
+          state.designTimer += dt;
+          if (state.designTimer >= 3.0) {
+            state.designTimer = 0;
+            if (state.designStep < 3) {
+              setDesignStage(state.designStep + 1);
+            } else {
+              state.designAuto = false;
+              el.btnDesignPlay.classList.remove('playing');
+              el.designPlayTxt.textContent = '자동 진화 재생 (1 → 4단계)';
+            }
+          }
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 6. [탭 3] 토목·건축 시공 타임랩스 로직
+       * ----------------------------------------------------------------- */
+      function setConstStep(step) {
+        state.constStep = step;
+        state.constProgress = 0;
+
+        el.constBtns.forEach(b => {
+          b.classList.remove('active', 'active-cod');
+          if (Number(b.dataset.cstep) === step) {
+            b.classList.add(step === 4 ? 'active-cod' : 'active');
+          }
+        });
+
+        el.cExcavator.setAttribute('opacity', step === 0 ? '1' : '0');
+        el.cLayerUnder.setAttribute('opacity', step >= 1 ? '1' : '0');
+        el.cLayerFound.setAttribute('opacity', step >= 2 ? '1' : '0');
+        el.cLayerArch.setAttribute('opacity', step >= 3 ? '1' : '0');
+        el.cLayerEquip.setAttribute('opacity', step >= 4 ? '1' : '0');
+        el.constCaptionTxt.innerHTML = CONST_STEPS[step].caption;
+      }
+
+      function animateTab3(rawDt) {
+        const dt = state.constPaused ? 0 : (state.constSlow ? rawDt * 0.4 : rawDt);
+        state.constProgress = Math.min(1, state.constProgress + dt * 0.55);
+
+        // 자동 재생 타이머
+        if (state.constAuto && !state.constPaused) {
+          state.constAutoTimer += dt;
+          if (state.constAutoTimer >= 3.2) {
+            state.constAutoTimer = 0;
+            if (state.constStep < 4) {
+              setConstStep(state.constStep + 1);
+            } else {
+              state.constAuto = false;
+              el.btnConstPlay.classList.remove('playing');
+              el.constPlayTxt.textContent = '전체 공정 자동 재생';
+            }
+          }
+        }
+
+        const t = state.simTime;
+
+        // Step 1: 굴삭기 좌우 이동
+        if (state.constStep === 0) {
+          const ex = 180 + Math.sin(t * 1.4) * 140;
+          el.cExcavator.setAttribute('transform', `translate(${ex.toFixed(1)}, 224)`);
+        }
+
+        // Step 5: 크레인으로 BESS #1 부드럽게 하강 거치 후 COD 가동
+        if (state.constStep === 4) {
+          const ease = 1 - Math.pow(1 - state.constProgress, 3);
+          const yPos = 112 + ease * 66; // 112 -> 178 안착
+          el.cBess1.setAttribute('transform', `translate(138, ${yPos.toFixed(1)})`);
+          el.cCraneCable.setAttribute('y2', yPos.toFixed(1));
+          el.cCraneGroup.setAttribute('opacity', state.constProgress > 0.96 ? '0.15' : '0.95');
+          el.cCodBanner.setAttribute('opacity', state.constProgress > 0.85 ? '1' : '0');
+
+          const blink = Math.sin(t * 8) > 0 ? '#fde047' : '#34d399';
+          el.cLed1.setAttribute('fill', blink);
+          el.cLed2.setAttribute('fill', blink);
+        }
+
+        // 입자 애니메이션: Step 2+ 배수 물방울 & Step 5 지하 트렌치 전력 흐름
+        let idx = 0;
+        if (state.constStep >= 1) {
+          // 우수 배수로 물방울 흐름
+          for (let i = 0; i < 4; i++) {
+            const c = constParticlePool[idx++];
+            const u = (t * 0.65 + i / 4) % 1;
+            c.setAttribute('opacity', '0.9');
+            c.setAttribute('cx', (12 + u * 48).toFixed(1));
+            c.setAttribute('cy', (282 + u * 24).toFixed(1));
+            c.setAttribute('fill', '#38bdf8');
+          }
+        }
+        if (state.constStep === 4 && state.constProgress > 0.85) {
+          // 트렌치 내부 전력 흐름 (BESS -> PCS -> 변압기 -> 제어실)
+          for (let i = 0; i < 12; i++) {
+            const c = constParticlePool[idx++];
+            const u = (t * 0.55 + i / 12) % 1;
+            c.setAttribute('opacity', '1');
+            c.setAttribute('cx', (210 + u * 570).toFixed(1));
+            c.setAttribute('cy', i % 2 === 0 ? '325' : '334');
+            c.setAttribute('fill', i % 2 === 0 ? '#fde047' : '#34d399');
+          }
+        }
+        while (idx < constParticlePool.length) constParticlePool[idx++].setAttribute('opacity', '0');
+      }
+
+      /* -----------------------------------------------------------------
+       * 7. [탭 4] DOR 매트릭스 & 4문제 미니 퀴즈 렌더링
+       * ----------------------------------------------------------------- */
+      function renderDor(mode) {
+        state.dorMode = mode;
+        el.dorBtns.forEach(b => b.classList.toggle('active', b.dataset.dor === mode));
+        const assigns = DOR_MAP[mode];
+
+        el.dorMatrixGrid.innerHTML = DOR_SCOPES.map((sc, i) => `
+          <div class="dor-row">
+            <div class="dor-scope">
+              <strong>${sc.name}</strong>
+              <span>${sc.sub}</span>
+            </div>
+            <span class="dor-pill ${assigns[i].cls}">${assigns[i].lbl}</span>
+          </div>
+        `).join('');
+      }
+
+      function renderQuiz() {
+        el.quizGrid.innerHTML = QUIZ_DATA.map((item, qi) => {
+          const picked = state.quizAns[qi];
+          const done = picked !== null;
+          const isOk = picked === item.ans;
+
+          const optsHtml = item.opts.map((txt, oi) => {
+            let cls = 'quiz-opt-btn';
+            if (done) {
+              if (oi === item.ans) cls += ' correct';
+              else if (oi === picked) cls += ' wrong';
+            }
+            return `<button type="button" class="${cls}" data-q="${qi}" data-o="${oi}" ${done ? 'disabled' : ''}>${txt}</button>`;
+          }).join('');
+
+          return `
+            <div class="quiz-card">
+              <div class="quiz-q">${item.q}</div>
+              <div class="quiz-opts">${optsHtml}</div>
+              <div class="quiz-fb ${done ? (isOk ? 'show ok' : 'show no') : ''}">
+                ${done ? (isOk ? item.ok : item.no) : ''}
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        el.quizGrid.querySelectorAll('.quiz-opt-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const qi = Number(btn.dataset.q);
+            const oi = Number(btn.dataset.o);
+            if (state.quizAns[qi] !== null) return;
+            state.quizAns[qi] = oi;
+            renderQuiz();
+          });
+        });
+
+        const doneCount = state.quizAns.filter(v => v !== null).length;
+        const score = state.quizAns.reduce((acc, v, i) => acc + (v === QUIZ_DATA[i].ans ? 1 : 0), 0);
+        el.quizFooter.classList.remove('perfect');
+        if (doneCount < 4) {
+          el.quizScoreText.textContent = `📝 4문제를 모두 풀어 보세요! (${doneCount} / 4 완료 · 현재 ${score}점)`;
+        } else if (score === 4) {
+          el.quizFooter.classList.add('perfect');
+          el.quizScoreText.textContent = '🏆 4 / 4점 만점! BESS 계약·설계·토목/건축 실무 핵심을 완벽히 마스터하셨습니다! 🎉';
+        } else {
+          el.quizScoreText.textContent = `👍 4문제 완료! 총 ${score} / 4점입니다. 다시 도전해 볼까요?`;
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 8. 핫스팟 모달 열기/닫기
+       * ----------------------------------------------------------------- */
+      function openHotspotModal(key) {
+        const hs = HOTSPOTS[key];
+        if (!hs) return;
+        el.hsModalTitle.textContent = hs.title;
+        el.hsModalCat.textContent = hs.cat;
+        el.hsModalCat.style.background = hs.catBg;
+        el.hsModalCat.style.color = hs.catCol;
+        el.hsModalRole.innerHTML = hs.role;
+        el.hsModalDiv.innerHTML = hs.div;
+        el.hsModalTip.innerHTML = hs.tip;
+        el.hsModal.classList.add('open');
+      }
+
+      /* -----------------------------------------------------------------
+       * 9. 단일 60fps 메인 애니메이션 루프
+       * ----------------------------------------------------------------- */
+      function mainLoop(ts) {
+        if (!state.lastTs) state.lastTs = ts;
+        const dt = Math.min((ts - state.lastTs) / 1000, 0.05);
+        state.lastTs = ts;
+
+        if (!(state.activeTab === 'tab3' && state.constPaused)) {
+          state.simTime += (state.activeTab === 'tab3' && state.constSlow) ? dt * 0.4 : dt;
+        }
+
+        if (state.activeTab === 'tab1') animateTab1(state.simTime);
+        else if (state.activeTab === 'tab2') animateTab2(dt, state.simTime);
+        else if (state.activeTab === 'tab3') animateTab3(dt);
+
+        requestAnimationFrame(mainLoop);
+      }
+
+      /* -----------------------------------------------------------------
+       * 10. 초기화 및 이벤트 바인딩
+       * ----------------------------------------------------------------- */
+      window.addEventListener('load', () => {
+        initPools();
+        initConstPool();
+
+        // 메인 4개 탭 전환
+        el.tabBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const target = btn.dataset.tab;
+            state.activeTab = target;
+            el.tabBtns.forEach(b => {
+              const on = b.dataset.tab === target;
+              b.classList.toggle('active', on);
+              b.setAttribute('aria-selected', String(on));
+            });
+            el.tabPanels.forEach(p => p.classList.toggle('active', p.id === target));
+          });
+        });
+
+        // 탭 1: 계약 카드
+        el.contractCards.forEach(card => {
+          card.addEventListener('click', () => setContractMode(card.dataset.contract));
+        });
+
+        // 탭 2: 설계 스텝퍼 & 자동 재생
+        el.designBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.designAuto = false;
+            el.btnDesignPlay.classList.remove('playing');
+            el.designPlayTxt.textContent = '자동 진화 재생 (1 → 4단계)';
+            setDesignStage(Number(btn.dataset.design));
+          });
+        });
+
+        el.btnDesignPlay.addEventListener('click', () => {
+          state.designAuto = !state.designAuto;
+          if (state.designAuto) {
+            state.designTimer = 0;
+            setDesignStage(0);
+            el.btnDesignPlay.classList.add('playing');
+            el.designPlayTxt.textContent = '⏹️ 자동 재생 중지';
+          } else {
+            el.btnDesignPlay.classList.remove('playing');
+            el.designPlayTxt.textContent = '자동 진화 재생 (1 → 4단계)';
+          }
+        });
+
+        // 탭 3: 시공 타임랩스 컨트롤
+        el.constBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.constAuto = false;
+            el.btnConstPlay.classList.remove('playing');
+            el.constPlayTxt.textContent = '전체 공정 자동 재생';
+            setConstStep(Number(btn.dataset.cstep));
+          });
+        });
+
+        el.btnConstPlay.addEventListener('click', () => {
+          state.constAuto = !state.constAuto;
+          if (state.constAuto) {
+            state.constAutoTimer = 0;
+            state.constPaused = false;
+            el.btnConstPause.classList.remove('is-paused');
+            el.constPauseTxt.textContent = '일시정지';
+            setConstStep(0);
+            el.btnConstPlay.classList.add('playing');
+            el.constPlayTxt.textContent = '⏹️ 공정 재생 중지';
+          } else {
+            el.btnConstPlay.classList.remove('playing');
+            el.constPlayTxt.textContent = '전체 공정 자동 재생';
+          }
+        });
+
+        el.btnConstPause.addEventListener('click', () => {
+          state.constPaused = !state.constPaused;
+          el.btnConstPause.classList.toggle('is-paused', state.constPaused);
+          el.constPauseTxt.textContent = state.constPaused ? '재생' : '일시정지';
+        });
+
+        el.btnConstSlow.addEventListener('click', () => {
+          state.constSlow = !state.constSlow;
+          el.btnConstSlow.classList.toggle('is-slow', state.constSlow);
+          el.constSlowTxt.textContent = state.constSlow ? '원래 속도 (1x)' : '천천히 (0.4x)';
+        });
+
+        // 탭 3: SVG 핫스팟 & 하단 칩 클릭
+        document.querySelectorAll('[data-hs]').forEach(node => {
+          node.addEventListener('click', () => openHotspotModal(node.dataset.hs));
+        });
+        const closeHs = () => el.hsModal.classList.remove('open');
+        el.hsModalClose.addEventListener('click', closeHs);
+        el.hsModal.addEventListener('click', e => { if (e.target === el.hsModal) closeHs(); });
+        window.addEventListener('keydown', e => { if (e.key === 'Escape') closeHs(); });
+
+        // 탭 4: DOR 토글 & 퀴즈 리셋
+        el.dorBtns.forEach(btn => {
+          btn.addEventListener('click', () => renderDor(btn.dataset.dor));
+        });
+        el.btnQuizReset.addEventListener('click', () => {
+          state.quizAns = [null, null, null, null];
+          renderQuiz();
+        });
+
+        // 초기 실행
+        setContractMode('multi');
+        setDesignStage(0);
+        setConstStep(0);
+        renderDor('multi');
+        renderQuiz();
+        requestAnimationFrame(mainLoop);
+      });
+    })();
+  </script>
+</body>
+</html>

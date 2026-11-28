@@ -1,0 +1,2741 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>글로벌 5대국 Grid Code 체험실</title>
+  <style>
+    /* =====================================================================
+     * 1. 기본 리셋 및 디자인 토큰
+     * ===================================================================== */
+    :root {
+      --bg-page: #f1f5f9;
+      --bg-card: #ffffff;
+      --border-soft: #e2e8f0;
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #64748b;
+
+      --emerald: #10b981;
+      --blue: #2563eb;
+      --amber: #f59e0b;
+      --red: #ef4444;
+      --violet: #7c3aed;
+
+      --shadow-card: 0 8px 24px -6px rgba(15, 23, 42, 0.08);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.55;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 18px 16px 56px;
+    }
+
+    /* =====================================================================
+     * 2. 상단 헤더 & 4개 메인 탭 네비게이션
+     * ===================================================================== */
+    .hero-header {
+      background: linear-gradient(135deg, #ffffff 0%, #eff6ff 55%, #fffbeb 100%);
+      border: 1.5px solid #cbd5e1;
+      border-radius: 22px;
+      padding: 20px 24px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .hero-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #2563eb, #f59e0b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(1.18rem, 2.4vw, 1.56rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .hero-sub {
+      font-size: 0.89rem;
+      color: var(--text-sub);
+      margin-top: 3px;
+    }
+
+    .hero-pill {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 9px 15px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .tab-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .tab-btn {
+      appearance: none;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 13px 12px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+      transition: all 0.18s ease;
+    }
+
+    .tab-btn:hover {
+      border-color: #93c5fd;
+      color: var(--text-main);
+      transform: translateY(-1px);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      border-color: #1e40af;
+      color: #ffffff;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.28);
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    /* =====================================================================
+     * 3. 공통 카드 및 버튼 컴포넌트
+     * ===================================================================== */
+    .card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+    }
+
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 1.03rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+
+    .badge-ok { background: #dcfce7; color: #047857; border-color: #a7f3d0; }
+    .badge-warn { background: #ffedd5; color: #c2410c; border-color: #fdba74; }
+    .badge-err { background: #fee2e2; color: #dc2626; border-color: #fca5a5; }
+    .badge-au { background: #fef3c7; color: #b45309; border-color: #fcd34d; }
+
+    /* =====================================================================
+     * 4. [TAB 1] 컨트롤 바 & 3패널 시뮬레이터 무대
+     * ===================================================================== */
+    .country-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 9px;
+      margin-bottom: 12px;
+    }
+
+    .country-btn {
+      appearance: none;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 10px 8px;
+      text-align: center;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      transition: all 0.16s ease;
+    }
+
+    .country-btn:hover {
+      background: #ffffff;
+      border-color: #93c5fd;
+    }
+
+    .country-btn strong {
+      font-size: 0.92rem;
+      color: var(--text-main);
+    }
+
+    .country-btn span {
+      font-size: 0.72rem;
+      color: var(--text-sub);
+      font-weight: 700;
+    }
+
+    .country-btn.active-kr { background: #eff6ff; border-color: #2563eb; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.18); }
+    .country-btn.active-uk { background: #f5f3ff; border-color: #7c3aed; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.18); }
+    .country-btn.active-eu { background: #f0f9ff; border-color: #0284c7; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.18); }
+    .country-btn.active-au { background: #fffbeb; border-color: #d97706; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.22); }
+    .country-btn.active-us { background: #fff1f2; border-color: #e11d48; box-shadow: 0 4px 12px rgba(225, 29, 72, 0.18); }
+
+    .ctrl-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 12px 14px;
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 14px;
+      margin-bottom: 16px;
+    }
+
+    .ctrl-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .btn-pill {
+      appearance: none;
+      border: 1.8px solid #cbd5e1;
+      background: #ffffff;
+      color: #334155;
+      font-family: inherit;
+      font-size: 0.79rem;
+      font-weight: 800;
+      padding: 7px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-pill:hover {
+      border-color: #60a5fa;
+      background: #eff6ff;
+    }
+
+    .btn-pill.active-normal { background: #10b981; border-color: #059669; color: #ffffff; }
+    .btn-pill.active-lvrt-n { background: #2563eb; border-color: #1d4ed8; color: #ffffff; }
+    .btn-pill.active-lvrt-d { background: #f97316; border-color: #ea580c; color: #ffffff; }
+    .btn-pill.active-freq   { background: #7c3aed; border-color: #6d28d9; color: #ffffff; }
+    .btn-pill.active-comp   { background: #059669; border-color: #047857; color: #ffffff; }
+    .btn-pill.active-non    { background: #dc2626; border-color: #b91c1c; color: #ffffff; }
+    .btn-pill.is-paused     { background: #fee2e2; border-color: #ef4444; color: #b91c1c; }
+
+    /* 라이브 3패널 그리드 */
+    .stage-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 16px;
+      align-items: stretch;
+      margin-bottom: 16px;
+    }
+
+    .svg-panel {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .live-metrics-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 9px 13px;
+      border-radius: 12px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .metric-kv {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #gridSvg {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      user-select: none;
+    }
+
+    .narrative-bar {
+      background: #eff6ff;
+      border: 1.5px solid #bfdbfe;
+      color: #1e3a8a;
+      border-radius: 12px;
+      padding: 10px 13px;
+      font-size: 0.81rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .charts-col {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .chart-panel {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .chart-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .canvas-wrap {
+      width: 100%;
+      height: 190px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 11px;
+      overflow: hidden;
+    }
+
+    .canvas-wrap canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .rule-note-box {
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 11px;
+      padding: 9px 12px;
+      font-size: 0.77rem;
+      color: var(--text-sub);
+      line-height: 1.5;
+    }
+
+    .rule-note-box.au-highlight {
+      background: #fffbeb;
+      border-color: #f59e0b;
+      color: #78350f;
+    }
+
+    /* 국가 요약 카드 */
+    .country-summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 0.8fr;
+      gap: 14px;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 15px 18px;
+    }
+
+    .summary-col h3 {
+      font-size: 0.92rem;
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .summary-col p,
+    .summary-col li {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+    }
+
+    .summary-col ul {
+      padding-left: 17px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag-chip {
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 5px 9px;
+      border-radius: 8px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+    }
+
+    /* =====================================================================
+     * 5. [TAB 2] 핵심 4대 규칙 원리관 (2x2 Mini-Labs)
+     * ===================================================================== */
+    .lab-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .lab-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border-soft);
+      border-radius: 18px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .lab-canvas-wrap {
+      width: 100%;
+      height: 215px;
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .lab-canvas-wrap canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .lab-controls {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .slider-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .slider-row input[type="range"] {
+      flex: 1;
+      height: 7px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .seg-toggle {
+      display: inline-flex;
+      background: #e2e8f0;
+      padding: 3px;
+      border-radius: 10px;
+      gap: 3px;
+    }
+
+    .seg-btn {
+      appearance: none;
+      border: none;
+      background: transparent;
+      color: #475569;
+      font-family: inherit;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 5px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .seg-btn.active-step { background: #d97706; color: #ffffff; }
+    .seg-btn.active-ramp { background: #2563eb; color: #ffffff; }
+
+    .p-bar-wrap {
+      height: 16px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .p-bar-center {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #64748b;
+    }
+
+    .p-bar-fill {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-radius: 999px;
+      transition: left 0.1s, width 0.1s;
+    }
+
+    .shock-btn {
+      appearance: none;
+      border: none;
+      background: linear-gradient(135deg, #ef4444, #f97316);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.83rem;
+      font-weight: 900;
+      padding: 8px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.28);
+    }
+
+    .lab-desc {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+    }
+
+    /* =====================================================================
+     * 6. [TAB 3] 5대국 비교표 & 4단계 인증 여정
+     * ===================================================================== */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 14px;
+      margin-bottom: 12px;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 740px;
+      font-size: 0.82rem;
+    }
+
+    .comp-table th,
+    .comp-table td {
+      padding: 12px 13px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    .comp-table th {
+      background: #f8fafc;
+      font-weight: 900;
+    }
+
+    .comp-table tbody tr {
+      cursor: pointer;
+      transition: background-color 0.15s ease;
+    }
+
+    .comp-table tbody tr:hover { background: #eff6ff; }
+    .comp-table tbody tr.selected { background: #dbeafe; }
+
+    .tip-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 13px;
+      padding: 13px 16px;
+      font-size: 0.83rem;
+      line-height: 1.55;
+    }
+
+    .tip-box strong { color: #fbbf24; }
+
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 11px;
+      margin-bottom: 12px;
+    }
+
+    .journey-card {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .journey-step-num {
+      font-size: 0.72rem;
+      font-weight: 900;
+      color: #2563eb;
+    }
+
+    .journey-card strong {
+      font-size: 0.91rem;
+      color: var(--text-main);
+    }
+
+    .journey-card p {
+      font-size: 0.78rem;
+      color: var(--text-sub);
+    }
+
+    /* =====================================================================
+     * 7. [TAB 4] 5문제 미니 퀴즈
+     * ===================================================================== */
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .quiz-card {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .quiz-card.span-2 {
+      grid-column: span 2;
+    }
+
+    .quiz-q {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .quiz-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .quiz-opt {
+      appearance: none;
+      width: 100%;
+      text-align: left;
+      padding: 9px 12px;
+      border-radius: 10px;
+      border: 1.8px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.81rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .quiz-opt:hover:not(:disabled) {
+      border-color: #2563eb;
+      background: #eff6ff;
+    }
+
+    .quiz-opt.correct { background: #dcfce7; border-color: #10b981; color: #065f46; }
+    .quiz-opt.wrong   { background: #fee2e2; border-color: #ef4444; color: #991b1b; }
+
+    .quiz-fb {
+      display: none;
+      font-size: 0.79rem;
+      font-weight: 600;
+      padding: 9px 11px;
+      border-radius: 10px;
+      line-height: 1.45;
+    }
+
+    .quiz-fb.show { display: block; }
+    .quiz-fb.ok   { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+    .quiz-fb.no   { background: #fff1f2; color: #9f1239; border: 1px solid #fecdd3; }
+
+    .quiz-footer {
+      margin-top: 14px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+      border: 1.5px solid #bfdbfe;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    /* =====================================================================
+     * 8. 반응형 미디어 쿼리
+     * ===================================================================== */
+    @media (max-width: 1080px) {
+      .stage-grid,
+      .country-summary-grid,
+      .lab-grid { grid-template-columns: 1fr; }
+      .country-grid { grid-template-columns: repeat(3, 1fr); }
+      .journey-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 760px) {
+      .tab-bar,
+      .quiz-grid { grid-template-columns: 1fr; }
+      .quiz-card.span-2 { grid-column: span 1; }
+      .country-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 520px) {
+      .country-grid,
+      .journey-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ================================================================= -->
+    <!-- 상단 헤더 -->
+    <!-- ================================================================= -->
+    <header class="hero-header">
+      <div class="hero-left">
+        <div class="hero-icon" aria-hidden="true">🌍</div>
+        <div>
+          <h1 class="hero-title">글로벌 5대국 Grid Code 체험실</h1>
+          <p class="hero-sub">
+            한국·영국·EU·호주·미국의 <strong>전력망 계통연계 기준(Grid Code)</strong>과 LVRT · 주파수 · 무효전력 · 가상관성(GFM)을 실시간 애니메이션으로 체험하세요.
+          </p>
+        </div>
+      </div>
+      <div class="hero-pill">
+        <span>🚦 핵심 비유:</span>
+        <span style="color:#fbbf24;">전력망 = 고속도로 · Grid Code = 교통법규</span>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 4개 메인 탭 네비게이션 -->
+    <!-- ================================================================= -->
+    <nav class="tab-bar" role="tablist" aria-label="Grid Code 학습 탭">
+      <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="tab1">
+        <span>🌍</span><span>1. 5대국 실시간 시뮬레이터</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab2">
+        <span>🚦</span><span>2. 핵심 4대 규칙 원리관</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab3">
+        <span>📊</span><span>3. 5대국 비교표 &amp; 인증 여정</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab4">
+        <span>🧩</span><span>4. 이해도 미니 퀴즈</span>
+      </button>
+    </nav>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 1] 🌍 5대국 실시간 시뮬레이터 -->
+    <!-- ================================================================= -->
+    <main id="tab1" class="tab-panel active">
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🌐 5대국 Grid Code 선택 및 실시간 계통 사고 시뮬레이션</h2>
+          <span id="headerCodeBadge" class="badge badge-au mono">🇦🇺 AEMO NER · 50Hz · Step Envelope</span>
+        </div>
+
+        <!-- 국가 선택 버튼 -->
+        <div class="country-grid">
+          <button type="button" class="country-btn" data-country="kr">
+            <strong>🇰🇷 한국</strong>
+            <span>60Hz · KEPCO/KPX</span>
+          </button>
+          <button type="button" class="country-btn" data-country="uk">
+            <strong>🇬🇧 영국</strong>
+            <span>50Hz · NESO</span>
+          </button>
+          <button type="button" class="country-btn" data-country="eu">
+            <strong>🇪🇺 EU</strong>
+            <span>50Hz · ENTSO-E RfG</span>
+          </button>
+          <button type="button" class="country-btn active-au" data-country="au">
+            <strong>🇦🇺 호주</strong>
+            <span>50Hz · AEMO NER</span>
+          </button>
+          <button type="button" class="country-btn" data-country="us">
+            <strong>🇺🇸 미국</strong>
+            <span>60Hz · IEEE 2800 / NERC</span>
+          </button>
+        </div>
+
+        <!-- 시나리오 / 준수 여부 / 재생 컨트롤 -->
+        <div class="ctrl-strip">
+          <div class="ctrl-group">
+            <button type="button" class="btn-pill" data-scenario="normal">🟢 정상 운전</button>
+            <button type="button" class="btn-pill active-lvrt-n" data-scenario="lvrt_normal">⚡ 단락 사고 LVRT - 정상 차단</button>
+            <button type="button" class="btn-pill" data-scenario="lvrt_delay">🚨 차단 지연 / 전압 미회복 - May Trip</button>
+            <button type="button" class="btn-pill" data-scenario="freq_drop">📉 대형 발전기 탈락 - 주파수 급락</button>
+          </div>
+
+          <div class="ctrl-group">
+            <button id="btnCompYes" type="button" class="btn-pill active-comp">✅ Grid Code 준수</button>
+            <button id="btnCompNo" type="button" class="btn-pill">❌ 규칙 미준수</button>
+            <button id="btnPlayToggle" type="button" class="btn-pill">⏸ 일시정지</button>
+            <button id="btnRestart" type="button" class="btn-pill">🔄 다시 실행</button>
+          </div>
+        </div>
+
+        <!-- 라이브 3패널 비주얼 무대 -->
+        <div class="stage-grid">
+          <!-- 패널 1: 인터랙티브 SVG 전력망 다이어그램 -->
+          <div class="svg-panel">
+            <div class="live-metrics-strip mono">
+              <span class="metric-kv">V: <strong id="pillVolt" style="color:#38bdf8;">1.00 pu</strong></span>
+              <span class="metric-kv">f: <strong id="pillFreq" style="color:#34d399;">50.00 Hz</strong></span>
+              <span class="metric-kv">P: <strong id="pillP" style="color:#a7f3d0;">+2.0 MW</strong></span>
+              <span class="metric-kv">Q: <strong id="pillQ" style="color:#c4b5fd;">+0.0 MVAr</strong></span>
+              <span id="pillVerdict" class="badge badge-ok">✅ 연계 유지 성공</span>
+            </div>
+
+            <svg id="gridSvg" viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg">
+              <!-- 상단 상태 바 -->
+              <rect id="svgTopBar" x="12" y="10" width="536" height="32" rx="10" fill="#d97706" />
+              <text id="svgTopTitle" x="26" y="31" fill="#ffffff" font-size="13" font-weight="900">🇦🇺 호주 계통 (AEMO · 50Hz)</text>
+              <text id="svgTopTime" x="534" y="31" text-anchor="end" fill="#fef3c7" font-size="12" font-weight="900" class="mono">t = 0.00s</text>
+
+              <!-- 전력 선로 -->
+              <path id="lineGridBus" d="M 142 136 L 280 136" stroke="#2563eb" stroke-width="6" fill="none" />
+              <path id="lineBusCity" d="M 280 136 L 418 136" stroke="#2563eb" stroke-width="6" fill="none" />
+              <path id="lineBusCb" d="M 280 136 L 280 184" stroke="#10b981" stroke-width="5.5" fill="none" />
+              <path id="lineCbBess" d="M 280 222 L 280 250" stroke="#10b981" stroke-width="5.5" fill="none" />
+
+              <!-- 좌측: 전력계통 / 주력 발전소 -->
+              <g transform="translate(18, 82)">
+                <rect x="0" y="0" width="124" height="108" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+                <text x="62" y="22" text-anchor="middle" fill="#0f172a" font-size="11.5" font-weight="900">🏭 전력 계통</text>
+                <g transform="translate(35, 32)" stroke="#334155" stroke-width="2.4" fill="none" stroke-linecap="round">
+                  <path d="M 27 4 L 13 46" /><path d="M 27 4 L 41 46" />
+                  <path d="M 8 18 L 46 18" /><path d="M 11 32 L 43 32" />
+                  <line x1="8" y1="46" x2="46" y2="46" />
+                </g>
+                <rect id="svgGridStatusBg" x="12" y="83" width="100" height="18" rx="6" fill="#dbeafe" />
+                <text id="svgGridStatusTxt" x="62" y="96" text-anchor="middle" fill="#1d4ed8" font-size="9.5" font-weight="900">정상 공급</text>
+              </g>
+
+              <!-- 단락 사고 번개 표시 -->
+              <g id="svgFaultGroup" opacity="0" transform="translate(194, 86)">
+                <circle cx="18" cy="50" r="22" fill="#ef4444" fill-opacity="0.24" />
+                <polyline points="24,10 10,44 22,44 8,80" fill="none" stroke="#ef4444" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+                <rect x="-24" y="-12" width="84" height="19" rx="7" fill="#dc2626" />
+                <text x="18" y="1" text-anchor="middle" fill="#ffffff" font-size="9.5" font-weight="900">💥 단락 사고</text>
+              </g>
+
+              <!-- 중앙 연계점 모선 -->
+              <g transform="translate(280, 136)">
+                <circle cx="0" cy="0" r="21" fill="#0f172a" stroke="#38bdf8" stroke-width="2.8" />
+                <text x="0" y="4" text-anchor="middle" fill="#38bdf8" font-size="10" font-weight="900">연계점</text>
+              </g>
+
+              <!-- 연계 차단기 (CB) -->
+              <g transform="translate(280, 184)">
+                <rect x="-44" y="-3" width="88" height="42" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.8" />
+                <circle cx="0" cy="4" r="4.2" fill="#64748b" />
+                <circle cx="0" cy="34" r="4.2" fill="#64748b" />
+                <line id="svgCbArm" x1="0" y1="4" x2="0" y2="34" stroke="#10b981" stroke-width="4.5" stroke-linecap="round" />
+                <text id="svgCbTxt" x="50" y="23" fill="#059669" font-size="10" font-weight="900" class="mono">CB CLOSED</text>
+              </g>
+
+              <!-- 우측: 도시 수용가 부하 -->
+              <g transform="translate(418, 82)">
+                <rect x="0" y="0" width="124" height="108" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+                <text x="62" y="22" text-anchor="middle" fill="#0f172a" font-size="11.5" font-weight="900">🏙️ 도시 부하</text>
+                <g transform="translate(23, 30)">
+                  <rect x="0" y="8" width="34" height="42" rx="3" fill="#334155" />
+                  <rect class="city-light" x="6" y="14" width="8" height="7" rx="1" fill="#fde047" />
+                  <rect class="city-light" x="20" y="14" width="8" height="7" rx="1" fill="#fde047" />
+                  <rect class="city-light" x="6" y="25" width="8" height="7" rx="1" fill="#fde047" />
+                  <rect class="city-light" x="20" y="25" width="8" height="7" rx="1" fill="#fde047" />
+                  <rect class="city-light" x="6" y="36" width="8" height="7" rx="1" fill="#fde047" />
+                  <rect class="city-light" x="20" y="36" width="8" height="7" rx="1" fill="#fde047" />
+                  <rect x="42" y="18" width="34" height="32" rx="3" fill="#475569" />
+                  <rect class="city-light" x="48" y="24" width="8" height="7" rx="1" fill="#38bdf8" />
+                  <rect class="city-light" x="62" y="24" width="8" height="7" rx="1" fill="#38bdf8" />
+                  <rect class="city-light" x="48" y="35" width="8" height="7" rx="1" fill="#38bdf8" />
+                  <rect class="city-light" x="62" y="35" width="8" height="7" rx="1" fill="#38bdf8" />
+                </g>
+                <rect id="svgCityStatusBg" x="12" y="83" width="100" height="18" rx="6" fill="#fef9c3" />
+                <text id="svgCityStatusTxt" x="62" y="96" text-anchor="middle" fill="#a16207" font-size="9.5" font-weight="900">💡 전력 안정</text>
+              </g>
+
+              <!-- 하단: BESS PCS 설비 -->
+              <g transform="translate(115, 250)">
+                <rect id="svgBessBox" x="0" y="0" width="330" height="94" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="2.6" />
+                <text x="165" y="24" text-anchor="middle" fill="#065f46" font-size="12.5" font-weight="900">🔋 BESS + PCS (인버터 연계 설비)</text>
+                <text id="svgBessSub" x="165" y="43" text-anchor="middle" fill="#047857" font-size="10.5" font-weight="800">✅ Grid Code 준수 정상 연계 중</text>
+                <rect x="16" y="54" width="142" height="28" rx="8" fill="#ffffff" stroke="#a7f3d0" stroke-width="1.5" />
+                <text id="svgBessP" x="87" y="72" text-anchor="middle" fill="#059669" font-size="11" font-weight="900" class="mono">P: +2.0 MW</text>
+                <rect x="172" y="54" width="142" height="28" rx="8" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.5" />
+                <text id="svgBessQ" x="243" y="72" text-anchor="middle" fill="#7c3aed" font-size="11" font-weight="900" class="mono">Q: +0.0 MVAr</text>
+              </g>
+
+              <!-- 블랙아웃 경고 배너 -->
+              <g id="svgBlackoutBanner" opacity="0" transform="translate(130, 50)">
+                <rect x="0" y="0" width="300" height="26" rx="13" fill="#dc2626" />
+                <text x="150" y="17" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="900">🚨 규정 위반 연쇄 탈락 → 도시 정전!</text>
+              </g>
+
+              <!-- 에너지 흐름 입자 레이어 -->
+              <g id="svgFlowLayer"></g>
+            </svg>
+
+            <div class="narrative-bar">
+              <span id="simNarrative">시뮬레이션 준비 중...</span>
+            </div>
+          </div>
+
+          <!-- 패널 2 & 3: LVRT 차트 + 주파수/유효전력 차트 -->
+          <div class="charts-col">
+            <!-- Canvas Chart 1: LVRT Voltage Profile -->
+            <div class="chart-panel">
+              <div class="chart-head">
+                <span>🛡️ LVRT 전압 프로파일 (비선형 시간축 0s ~ 10s)</span>
+                <div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center;">
+                  <span id="lvrtClearBadge" class="badge mono">⏱️ 차단: 250ms (후비보호 여유)</span>
+                  <span id="lvrtVerdictBadge" class="badge badge-ok">✅ 연계 유지 성공</span>
+                </div>
+              </div>
+              <div class="canvas-wrap">
+                <canvas id="canvasLvrt"></canvas>
+              </div>
+              <div id="lvrtDynamicNote" class="rule-note-box au-highlight"></div>
+            </div>
+
+            <!-- Canvas Chart 2: Frequency & BESS Active Power -->
+            <div class="chart-panel">
+              <div class="chart-head">
+                <span>📈 계통 주파수(Hz) &amp; BESS 유효전력(P) 응답</span>
+                <span id="freqStatusBadge" class="badge mono">50.00 Hz · Deadband ±0.015Hz</span>
+              </div>
+              <div class="canvas-wrap">
+                <canvas id="canvasFreq"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 선택 국가 요약 카드 -->
+        <div id="countrySummaryBox" class="country-summary-grid"></div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 2] 🚦 핵심 4대 규칙 원리관 -->
+    <!-- ================================================================= -->
+    <main id="tab2" class="tab-panel">
+      <div class="lab-grid">
+        <!-- Mini-Lab 1: LVRT 계단형 vs 사선형 체험기 -->
+        <section class="lab-card">
+          <div class="card-head" style="margin-bottom:0;">
+            <h2 class="card-title">1. 🛡️ LVRT 계단형(호주) vs 사선형(한국/EU)</h2>
+            <span id="lab1Verdict" class="badge badge-ok">✅ 연계 유지 의무</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px;">
+            <div class="seg-toggle">
+              <button type="button" class="seg-btn active-step" data-lab1-mode="step">🇦🇺 호주 계단형 (Step)</button>
+              <button type="button" class="seg-btn" data-lab1-mode="ramp">🇰🇷/🇪🇺 사선형 (Ramp)</button>
+            </div>
+            <span id="lab1IqBadge" class="badge mono" style="background:#f5f3ff; color:#6d28d9; border-color:#ddd6fe;">요구 무효전류 Iq: 80%</span>
+          </div>
+          <div class="lab-canvas-wrap">
+            <canvas id="canvasLab1"></canvas>
+          </div>
+          <div class="lab-controls">
+            <div class="slider-row">
+              <label for="lab1Volt">사고 잔류 전압 (pu):</label>
+              <input id="lab1Volt" type="range" min="0" max="100" step="2" value="60" />
+              <span id="lab1VoltVal" class="mono" style="min-width:52px; text-align:right; color:#2563eb;">0.60 pu</span>
+            </div>
+            <div class="slider-row">
+              <label for="lab1Dur">사고 지속 시간 (s):</label>
+              <input id="lab1Dur" type="range" min="5" max="300" step="5" value="50" />
+              <span id="lab1DurVal" class="mono" style="min-width:52px; text-align:right; color:#2563eb;">0.50 s</span>
+            </div>
+          </div>
+          <p id="lab1Desc" class="lab-desc"></p>
+        </section>
+
+        <!-- Mini-Lab 2: 주파수 제어 (Deadband & Droop) -->
+        <section class="lab-card">
+          <div class="card-head" style="margin-bottom:0;">
+            <h2 class="card-title">2. 🎚️ 주파수 제어 (Deadband &amp; Droop)</h2>
+            <span id="lab2OutBadge" class="badge mono">BESS P 출력: 0%</span>
+          </div>
+          <div class="lab-canvas-wrap">
+            <canvas id="canvasLab2"></canvas>
+          </div>
+          <div class="lab-controls">
+            <div class="slider-row">
+              <label for="lab2Dev">주파수 편차 (Hz):</label>
+              <input id="lab2Dev" type="range" min="-50" max="50" step="1" value="0" />
+              <span id="lab2DevVal" class="mono" style="min-width:62px; text-align:right; color:#7c3aed;">0.00 Hz</span>
+            </div>
+            <div class="slider-row">
+              <label for="lab2Droop">속도조정률 Droop (%):</label>
+              <input id="lab2Droop" type="range" min="20" max="50" step="5" value="30" />
+              <span id="lab2DroopVal" class="mono" style="min-width:62px; text-align:right; color:#2563eb;">3.0 %</span>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between; font-size:0.74rem; font-weight:800; color:#475569; margin-bottom:4px;">
+                <span>충전 (-100%)</span><span>0% (불감대)</span><span>방전 (+100%)</span>
+              </div>
+              <div class="p-bar-wrap">
+                <div class="p-bar-center"></div>
+                <div id="lab2PBar" class="p-bar-fill" style="left:50%; width:0%; background:#10b981;"></div>
+              </div>
+            </div>
+          </div>
+          <p class="lab-desc">💡 불감대(±0.03Hz) 밖으로 벗어나면 Droop 기울기에 따라 자동으로 방전(저주파수) 또는 충전(고주파수)합니다. Droop이 작을수록 더 민감하게 반응합니다.</p>
+        </section>
+
+        <!-- Mini-Lab 3: 무효전력 Volt-Var 제어 -->
+        <section class="lab-card">
+          <div class="card-head" style="margin-bottom:0;">
+            <h2 class="card-title">3. 💧 무효전력 Volt-Var 제어 (수도관 수압 비유)</h2>
+            <span id="lab3QBadge" class="badge mono">Q = 0% (적정 수압)</span>
+          </div>
+          <div class="lab-canvas-wrap">
+            <canvas id="canvasLab3"></canvas>
+          </div>
+          <div class="lab-controls">
+            <div class="slider-row">
+              <label for="lab3Volt">계통 전압 (pu):</label>
+              <input id="lab3Volt" type="range" min="90" max="110" step="1" value="100" />
+              <span id="lab3VoltVal" class="mono" style="min-width:56px; text-align:right; color:#0284c7;">1.00 pu</span>
+            </div>
+          </div>
+          <p id="lab3Desc" class="lab-desc">💡 전압은 수도관의 수압과 같습니다. 저전압 시 무효전력(Q)을 주입해 수압을 밀어 올리고, 고전압 시 Q를 흡수해 수압을 낮춥니다.</p>
+        </section>
+
+        <!-- Mini-Lab 4: GFL vs GFM (가상 관성) 비교 -->
+        <section class="lab-card">
+          <div class="card-head" style="margin-bottom:0;">
+            <h2 class="card-title">4. 🏎️ GFL vs GFM (가상 관성 비교)</h2>
+            <button id="btnLab4Shock" type="button" class="shock-btn">⚡ 계통 충격 주기</button>
+          </div>
+          <div class="lab-canvas-wrap">
+            <canvas id="canvasLab4"></canvas>
+          </div>
+          <p class="lab-desc">
+            💡 <strong>GFL(추종형)</strong>은 계통 위상을 측정한 뒤 반응하므로 충격 시 주파수가 깊게 떨어지지만, <strong>GFM(형성형)</strong>은 가상 관성으로 즉각 에너지를 내어 주파수 하락 폭을 크게 줄입니다.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 3] 📊 5대국 비교표 & 인증 여정 -->
+    <!-- ================================================================= -->
+    <main id="tab3" class="tab-panel">
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">📊 글로벌 5대국 Grid Code 비교표</h2>
+          <span class="badge">💡 각 국가 행을 클릭하면 하단에 실무 엔지니어링 팁이 표시됩니다</span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="comp-table" id="compTable">
+            <thead>
+              <tr>
+                <th>국가</th>
+                <th>기준 주파수</th>
+                <th>주요 규정 / 운영기관</th>
+                <th>LVRT 경계 특징</th>
+                <th>주파수 불감대</th>
+                <th>핵심 특이사항</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-row="kr">
+                <td><strong>🇰🇷 한국</strong></td>
+                <td class="mono"><strong>60 Hz</strong></td>
+                <td>KEPCO / KPX (송배전 이용규정)</td>
+                <td>사선형 (0.15s 0pu → 1.5s 0.9pu)</td>
+                <td class="mono">±0.05 Hz</td>
+                <td>단일 섬 계통 · 제주/호남 속응성 제어 강화</td>
+              </tr>
+              <tr data-row="uk">
+                <td><strong>🇬🇧 영국</strong></td>
+                <td class="mono"><strong>50 Hz</strong></td>
+                <td>NESO (GB Grid Code · GC0137)</td>
+                <td>사선형 (0.14s 0pu → 1.2s 0.85pu)</td>
+                <td class="mono">±0.015 Hz</td>
+                <td>Dynamic Containment (&lt;1s) · 세계 최초 GFM 규격</td>
+              </tr>
+              <tr data-row="eu">
+                <td><strong>🇪🇺 EU</strong></td>
+                <td class="mono"><strong>50 Hz</strong></td>
+                <td>ENTSO-E (NC RfG Type A~D)</td>
+                <td>사선형 (0.15s 0.05pu → 1.5s 0.85pu)</td>
+                <td class="mono">±0.05 Hz</td>
+                <td>용량 등급제 + 국가별 세부규정(독일 VDE 등)</td>
+              </tr>
+              <tr data-row="au" class="selected">
+                <td><strong>🇦🇺 호주</strong></td>
+                <td class="mono"><strong>50 Hz</strong></td>
+                <td>AEMO (NER S5.2.5 / GPS)</td>
+                <td>계단형 (430ms/2s/10s 수직 계단)</td>
+                <td class="mono">±0.015 Hz</td>
+                <td>S5.2.5.5 (100ms P 95% 회복) · PSCAD/EMT 필수</td>
+              </tr>
+              <tr data-row="us">
+                <td><strong>🇺🇸 미국</strong></td>
+                <td class="mono"><strong>60 Hz</strong></td>
+                <td>FERC / NERC / ISO (IEEE 2800)</td>
+                <td>계단+사선 (0.15s 0→0.5pu → 3s 0.9pu)</td>
+                <td class="mono">±0.036 Hz</td>
+                <td>연방 표준 + 지역 ISO(ERCOT 초고속 FFR 등) 상이</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="tableTipBox" class="tip-box"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🛂 BESS 프로젝트 Grid Code 인증 4단계 여정</h2>
+          <span class="badge">설계 초기부터 상업운전(COD)까지</span>
+        </div>
+
+        <div class="journey-grid">
+          <article class="journey-card">
+            <span class="journey-step-num mono">STEP 01</span>
+            <strong>연계 기준 협의 (GPS)</strong>
+            <p>운영기관과 발전소 성능 기준(자동연계기준 AAS vs 최소연계기준 MAS)을 협상하여 LVRT·주파수·무효전력 스펙을 확정합니다.</p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-step-num mono">STEP 02</span>
+            <strong>시뮬레이션 검증 (PSS/E · PSCAD)</strong>
+            <p>착공 전 RMS(PSS/E) 및 전자기과도(PSCAD/EMT) 해석으로 단락·약계통(Low SCR) 환경에서의 규정 적합성을 증명합니다.</p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-step-num mono">STEP 03</span>
+            <strong>공장 · 형식시험 (HIL)</strong>
+            <p>실물 PCS 및 PPC 제어기를 실시간 모의장치(RTDS/HIL)에 연결해 시뮬레이션 모델과 하드웨어 동작이 일치함을 검증합니다.</p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-step-num mono">STEP 04</span>
+            <strong>현장 시운전 (Hold Point / R2)</strong>
+            <p>연계 후 출력을 단계별(Hold Point)로 증발하며 실측 파형과 모델 일치(호주 R2, 영국 FON)를 최종 승인받아 COD를 개시합니다.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [TAB 4] 🧩 이해도 미니 퀴즈 -->
+    <!-- ================================================================= -->
+    <main id="tab4" class="tab-panel">
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🧩 글로벌 5대국 Grid Code 이해도 미니 퀴즈 (5문제)</h2>
+          <span class="badge">선택 즉시 채점 및 해설이 표시됩니다</span>
+        </div>
+
+        <div id="quizGrid" class="quiz-grid"></div>
+
+        <div class="quiz-footer">
+          <span id="quizScoreTxt">📝 5문제를 모두 풀어 보세요! (0 / 5 완료)</span>
+          <button id="btnQuizReset" type="button" class="btn-pill">🔄 퀴즈 다시 풀기</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 순수 Vanilla JS 통합 시뮬레이션 엔진 -->
+  <!-- ================================================================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      'use strict';
+
+      const SVG_NS = 'http://www.w3.org/2000/svg';
+
+      /* -----------------------------------------------------------------
+       * 1. 공용 유틸리티 (ctx.roundRect 미사용, 자체 rounded rect 구현)
+       * ----------------------------------------------------------------- */
+      function drawRoundRect(ctx, x, y, w, h, r) {
+        const rad = Math.max(0, Math.min(r, w / 2, h / 2));
+        ctx.beginPath();
+        ctx.moveTo(x + rad, y);
+        ctx.lineTo(x + w - rad, y);
+        ctx.quadraticCurveTo(x + w, y, x + w, y + rad);
+        ctx.lineTo(x + w, y + h - rad);
+        ctx.quadraticCurveTo(x + w, y + h, x + w - rad, y + h);
+        ctx.lineTo(x + rad, y + h);
+        ctx.quadraticCurveTo(x, y + h, x, y + h - rad);
+        ctx.lineTo(x, y + rad);
+        ctx.quadraticCurveTo(x, y, x + rad, y);
+        ctx.closePath();
+      }
+
+      /* -----------------------------------------------------------------
+       * 2. 5대국 Grid Code 정의 (정확한 LVRT 경계선 및 차단 시간)
+       * ----------------------------------------------------------------- */
+      const COUNTRIES = {
+        kr: {
+          code: 'kr', name: '🇰🇷 한국', org: 'KEPCO / KPX', freq: 60.0, deadband: 0.05,
+          color: '#2563eb', isStep: false, clearNormalSec: 0.11, clearDelaySec: 0.35,
+          headerBadge: '🇰🇷 KEPCO/KPX · 60Hz · 송배전 이용규정',
+          clearNormalLabel: '⏱️ 차단: 110ms (주보호)',
+          clearDelayLabel: '🚨 차단 지연 (350ms)',
+          lvrtPts: [
+            { t: 0.0, v: 0.0 }, { t: 0.15, v: 0.0 },
+            { t: 0.15, v: 0.15 }, { t: 1.5, v: 0.90 }, { t: 10.0, v: 0.90 }
+          ],
+          note: '💡 <strong>한국(KEPCO/KPX):</strong> 0~0.15s 동안 0 pu를 버틴 뒤 1.5s까지 0.90 pu로 올라가는 <strong>사선(Ramp)</strong> 기준입니다. 정상 주보호(110ms) 차단 시 경계선 위를 여유 있게 유지하며 연계를 지킵니다.',
+          features: [
+            '60Hz 단일 계통(외부 연계선 없는 섬 계통)으로 주파수 안정도가 핵심입니다.',
+            '단락 사고 시 150ms 동안 탈락 없이 버티며(LVRT) 무효전류(Iq)를 공급합니다.',
+            '신재생 밀집 지역(제주·호남) 중심으로 출력제어 대응과 속응성 제어가 강화되고 있습니다.'
+          ],
+          tags: ['60Hz 계통', 'LVRT 150ms', '주파수조정(FR)', 'KEPCO 기술검토']
+        },
+        uk: {
+          code: 'uk', name: '🇬🇧 영국', org: 'NESO (GB Grid Code)', freq: 50.0, deadband: 0.015,
+          color: '#7c3aed', isStep: false, clearNormalSec: 0.11, clearDelaySec: 0.35,
+          headerBadge: '🇬🇧 NESO · 50Hz · GB Grid Code (GC0137)',
+          clearNormalLabel: '⏱️ 차단: 110ms (주보호)',
+          clearDelayLabel: '🚨 차단 지연 (350ms)',
+          lvrtPts: [
+            { t: 0.0, v: 0.0 }, { t: 0.14, v: 0.0 },
+            { t: 1.2, v: 0.85 }, { t: 2.0, v: 0.90 }, { t: 10.0, v: 0.90 }
+          ],
+          note: '💡 <strong>영국(NESO):</strong> 0~0.14s 동안 0 pu를 유지한 뒤 1.2s(0.85 pu) → 2.0s(0.90 pu)로 올라가는 <strong>사선(Ramp)</strong> 기준입니다. ±0.015Hz 초정밀 불감대와 세계 최초 GFM(GC0137) 규격이 특징입니다.',
+          features: [
+            '해상풍력 비중 확대로 관성이 부족해지자 세계 최초로 GC0137(Grid Forming) 규격을 도입했습니다.',
+            '±0.015Hz 불감대를 벗어나면 1초 이내 응답하는 Dynamic Containment 시장을 운영합니다.',
+            '0~140ms 완전 저전압(0 pu) 구간에서 탈락 없이 버텨야 합니다.'
+          ],
+          tags: ['50Hz 계통', 'GC0137 GFM', 'Dynamic Containment', '±0.015Hz 불감대']
+        },
+        eu: {
+          code: 'eu', name: '🇪🇺 EU', org: 'ENTSO-E (NC RfG)', freq: 50.0, deadband: 0.05,
+          color: '#0284c7', isStep: false, clearNormalSec: 0.11, clearDelaySec: 0.35,
+          headerBadge: '🇪🇺 ENTSO-E · 50Hz · NC RfG (Type A~D)',
+          clearNormalLabel: '⏱️ 차단: 110ms (주보호)',
+          clearDelayLabel: '🚨 차단 지연 (350ms)',
+          lvrtPts: [
+            { t: 0.0, v: 0.05 }, { t: 0.15, v: 0.05 },
+            { t: 1.5, v: 0.85 }, { t: 3.0, v: 0.90 }, { t: 10.0, v: 0.90 }
+          ],
+          note: '💡 <strong>EU(ENTSO-E NC RfG):</strong> 0~0.15s 동안 0.05 pu를 유지한 뒤 1.5s(0.85 pu) → 3.0s(0.90 pu)로 회복하는 <strong>사선(Ramp)</strong> 기준입니다. 설비 용량별 Type A~D 등급제를 적용합니다.',
+          features: [
+            '설비 용량과 전압에 따라 Type A(소형) ~ Type D(대형) 4단계 의무 등급을 적용합니다.',
+            '유럽 공통 규정(NC RfG) 위에 독일 VDE 등 회원국별 세부 기술기준을 준수해야 합니다.',
+            '저주파수(LFSM-U) 및 고주파수(LFSM-O) 구간 자동 출력 조절이 필수입니다.'
+          ],
+          tags: ['50Hz 계통', 'Type A~D 등급제', 'LFSM-U/O', '형식인증(Unit Cert)']
+        },
+        au: {
+          code: 'au', name: '🇦🇺 호주', org: 'AEMO (NER S5.2.5)', freq: 50.0, deadband: 0.015,
+          color: '#d97706', isStep: true, clearNormalSec: 0.25, clearDelaySec: 0.55,
+          headerBadge: '🇦🇺 AEMO NER · 50Hz · S5.2.5.4 Step Envelope',
+          clearNormalLabel: '⏱️ 차단: 250ms (후비보호 여유)',
+          clearDelayLabel: '🚨 차단 지연 (550ms)',
+          lvrtPts: [
+            { t: 0.0, v: 0.0 }, { t: 0.43, v: 0.0 },
+            { t: 0.43, v: 0.70 }, { t: 2.0, v: 0.70 },
+            { t: 2.0, v: 0.80 }, { t: 10.0, v: 0.80 },
+            { t: 10.0, v: 0.90 }
+          ],
+          note: '📌 <strong>호주 NER S5.2.5.4 계단형(Step Envelope) 해설:</strong> 430ms(0→0.7pu), 2.0s(0.7→0.8pu), 10.0s(0.8→0.9pu)의 수직선은 설비가 수직으로 움직인다는 뜻이 아니라 <strong>연계 유지 의무와 탈락 허용(May Trip)을 가르는 판정 경계선</strong>입니다. 동시에 <strong>S5.2.5.5</strong>에 따라 사고 제거 후 <strong>100ms 이내 유효전력 95% 회복</strong>을 만족해야 합니다.',
+          features: [
+            'NER S5.2.5.4 자동연계기준(AAS)은 후비보호 시간(430ms)을 포함한 계단형(Step Envelope)으로 규정됩니다.',
+            'NER S5.2.5.5에 따라 사고 제거 직후 100ms 이내에 유효전력을 95% 이상 회복해야 합니다.',
+            '약계통(Low SCR)이 많아 다중 고장(Multiple FRT) 및 PSCAD/EMT 정밀 모델 검증이 필수입니다.'
+          ],
+          tags: ['NER S5.2.5.4 계단형', 'S5.2.5.5 100ms 회복', 'PSCAD/EMT', 'Very Fast FCAS']
+        },
+        us: {
+          code: 'us', name: '🇺🇸 미국', org: 'FERC / NERC / ISO', freq: 60.0, deadband: 0.036,
+          color: '#e11d48', isStep: false, clearNormalSec: 0.11, clearDelaySec: 0.35,
+          headerBadge: '🇺🇸 IEEE 2800 / NERC · 60Hz · 지역 ISO',
+          clearNormalLabel: '⏱️ 차단: 110ms (주보호)',
+          clearDelayLabel: '🚨 차단 지연 (350ms)',
+          lvrtPts: [
+            { t: 0.0, v: 0.0 }, { t: 0.15, v: 0.0 },
+            { t: 0.15, v: 0.50 }, { t: 1.2, v: 0.70 },
+            { t: 3.0, v: 0.90 }, { t: 10.0, v: 0.90 }
+          ],
+          note: '💡 <strong>미국(IEEE 2800 / NERC):</strong> 0~0.15s 0 pu 유지 후 0.15s에 0.50 pu로 계단 상승하고, 1.2s(0.70 pu) → 3.0s(0.90 pu)로 이어지는 <strong>계단+사선</strong> 기준입니다. 지역 ISO(ERCOT, CAISO 등)별 추가 규정이 존재합니다.',
+          features: [
+            '대용량 송전망 인버터(IBR)는 최신 표준인 IEEE 2800과 NERC 신뢰도 기준을 따릅니다.',
+            '텍사스(ERCOT), 캘리포니아(CAISO) 등 지역 ISO/RTO마다 별도 연계 규정이 있습니다.',
+            'ERCOT 등 독립 계통에서는 0.5초 이내 초고속 주파수 응답(FFR)을 요구합니다.'
+          ],
+          tags: ['60Hz 계통', 'IEEE 2800', 'ERCOT FFR', '지역 ISO 규정']
+        }
+      };
+
+      const TABLE_TIPS = {
+        kr: '<strong>[🇰🇷 한국 실무 팁]</strong> 한전(KEPCO) 송배전 이용규정의 LVRT(150ms)·역률 기준과 전력거래소(KPX)의 주파수조정(FR) 기준을 모두 만족해야 합니다.',
+        uk: '<strong>[🇬🇧 영국 실무 팁]</strong> Dynamic Containment(1초 미만 응답)와 세계 최초 Grid Forming 규격(GC0137) 대응이 핵심이며, NESO의 EON→ION→FON 단계별 승인이 필요합니다.',
+        eu: '<strong>[🇪🇺 EU 실무 팁]</strong> 프로젝트 용량 등급(Type B/C/D)을 먼저 확정하고, 독일 VDE 등 해당 국가의 세칙에 맞는 형식인증서(Unit Certificate)를 확보해야 합니다.',
+        au: '<strong>[🇦🇺 호주 실무 팁]</strong> NER S5.2.5.4 계단형 LVRT(430ms/2s/10s)와 S5.2.5.5(사고 제거 후 100ms 내 유효전력 95% 회복)를 동시에 통과해야 하므로, 사업 초기부터 정확한 PSCAD/EMT 모델 확보가 필수입니다.',
+        us: '<strong>[🇺🇸 미국 실무 팁]</strong> 연방 표준(IEEE 2800, NERC PRC-024/029)과 함께 설치 지역 ISO(ERCOT, CAISO, PJM)의 연계 대기열(Queue) 스터디 요건을 최우선으로 확인해야 합니다.'
+      };
+
+      const QUIZ_DATA = [
+        {
+          q: 'Q1. Grid Code의 역할을 일상생활에 비유할 때 가장 적절한 설명은?',
+          opts: [
+            '① 전력망이라는 고속도로에 진입하는 발전소·BESS가 지켜야 할 교통법규(안전·주행 규칙)',
+            '② 전기요금을 매달 청구하기 위한 단순 회계 프로그램',
+            '③ 배터리 내부 화학 물질을 제조하는 공장 레시피'
+          ],
+          ans: 0,
+          ok: '✅ 정답입니다! Grid Code는 전력망 안정도를 지키기 위해 모든 연계 설비가 준수해야 하는 기술 교통법규입니다.',
+          no: '❌ 오답입니다. Grid Code는 전력망 고속도로에서 사고를 막고 품질을 유지하기 위한 계통연계 교통법규입니다.'
+        },
+        {
+          q: 'Q2. 호주(AEMO NER S5.2.5.4)의 수직 계단형 LVRT와 S5.2.5.5 규정에 대한 올바른 설명은?',
+          opts: [
+            '① 430ms 시점에 전압이 0.7 pu 이상 회복되면 반드시 연계를 유지해야 하며, 사고 제거 후 100ms 내 유효전력 95% 회복이 요구된다',
+            '② 수직 경계선은 430ms가 되면 모든 발전소가 즉시 차단기를 열어야 한다는 명령선이다',
+            '③ 호주는 LVRT 규정이 없어 전압이 떨어지면 바로 정지해도 된다'
+          ],
+          ans: 0,
+          ok: '✅ 완벽합니다! 호주 NER S5.2.5.4의 430ms/2s/10s 수직 계단은 연계 유지 판정 경계선이며, S5.2.5.5는 사고 제거 후 100ms 이내 유효전력 95% 회복을 요구합니다.',
+          no: '❌ 다시 확인해 보세요! 탭 1에서 호주(🇦🇺)를 선택하고 LVRT 차트 하단 해설을 읽어보면 명확히 이해할 수 있습니다.'
+        },
+        {
+          q: 'Q3. 단락 사고로 계통 전압이 순간 급락했을 때, Grid Code를 준수하는 BESS의 올바른 행동은?',
+          opts: [
+            '① 즉시 차단기를 열어 계통에서 도망친다',
+            '② 규정된 LVRT 시간 동안 탈락하지 않고 버티며 무효전류(Iq)를 주입해 전압 회복을 돕는다',
+            '③ 전기를 최대로 충전해 계통 전압을 더 떨어뜨린다'
+          ],
+          ans: 1,
+          ok: '✅ 정답입니다! 사고 순간 발전설비가 동시에 탈락하면 대정전(블랙아웃)으로 이어지므로 LVRT로 버티며 무효전류를 공급해야 합니다.',
+          no: '❌ 오답입니다. LVRT 규정에 따라 탈락 없이 버티며 무효전류(Iq)로 계통 전압 회복을 지원해야 합니다.'
+        },
+        {
+          q: 'Q4. 주파수 제어에서 불감대(Deadband)를 두는 주된 이유는 무엇인가요?',
+          opts: [
+            '① 고장이 났을 때 BESS가 아예 작동하지 않도록 막기 위해서',
+            '② 정상 범위의 미세한 주파수 흔들림에 설비가 과민하게 잦은 충·방전을 반복(수명 저하)하는 것을 방지하기 위해서',
+            '③ 계통 주파수를 50Hz에서 60Hz로 바꾸기 위해서'
+          ],
+          ans: 1,
+          ok: '✅ 정확합니다! 불감대(예: ±0.015~0.05Hz) 안에서는 불필요한 미세 동작을 억제해 설비 마모를 줄이고, 벗어날 때 Droop 제어로 반응합니다.',
+          no: '❌ 오답입니다. 탭 2의 2번 원리관(Deadband & Droop)에서 불감대 구간의 역할을 확인해 보세요.'
+        },
+        {
+          q: 'Q5. 기존 GFL(추종형) 인버터와 비교한 GFM(Grid Forming, 형성형) 인버터의 가장 큰 장점은?',
+          opts: [
+            '① 가상 관성을 통해 계통 충격 시 즉각 에너지를 공급하여 주파수 하락 폭을 크게 줄인다',
+            '② 계통 전압과 주파수가 완전히 안정적일 때만 작동할 수 있다',
+            '③ 배터리 없이도 전기를 무한정 만들어낸다'
+          ],
+          ans: 0,
+          ok: '✅ 정답입니다! GFM은 가상 관성으로 스스로 전압·주파수를 형성해 약계통에서도 강력한 안정화 효과를 발휘합니다.',
+          no: '❌ 오답입니다. 탭 2의 4번 원리관(GFL vs GFM)에서 계통 충격 버튼을 눌러 주파수 하락 폭 차이를 비교해 보세요.'
+        }
+      ];
+
+      /* -----------------------------------------------------------------
+       * 3. 비선형(Piecewise) LVRT X축 매핑 함수
+       * ----------------------------------------------------------------- */
+      const KNOTS = [
+        { t: 0.0,  x: 0.05 },
+        { t: 0.15, x: 0.22 },
+        { t: 0.43, x: 0.40 },
+        { t: 1.0,  x: 0.55 },
+        { t: 2.0,  x: 0.70 },
+        { t: 3.0,  x: 0.82 },
+        { t: 10.0, x: 0.96 }
+      ];
+
+      function tToNormX(tSec) {
+        if (tSec <= 0) return KNOTS[0].x;
+        for (let i = 0; i < KNOTS.length - 1; i++) {
+          const a = KNOTS[i];
+          const b = KNOTS[i + 1];
+          if (tSec <= b.t) {
+            return a.x + ((tSec - a.t) / (b.t - a.t)) * (b.x - a.x);
+          }
+        }
+        return KNOTS[KNOTS.length - 1].x;
+      }
+
+      function normToTSec(u) {
+        const clamped = Math.max(0, Math.min(1, u));
+        const targetX = KNOTS[0].x + clamped * (KNOTS[KNOTS.length - 1].x - KNOTS[0].x);
+        for (let i = 0; i < KNOTS.length - 1; i++) {
+          const a = KNOTS[i];
+          const b = KNOTS[i + 1];
+          if (targetX <= b.x) {
+            return a.t + ((targetX - a.x) / (b.x - a.x)) * (b.t - a.t);
+          }
+        }
+        return 10.0;
+      }
+
+      function getLvrtLimitAt(pts, tSec) {
+        let limit = pts[0].v;
+        for (let i = 0; i < pts.length - 1; i++) {
+          const a = pts[i];
+          const b = pts[i + 1];
+          if (a.t === b.t) {
+            if (tSec >= a.t) limit = b.v;
+            continue;
+          }
+          if (tSec >= a.t && tSec <= b.t) {
+            const frac = (tSec - a.t) / (b.t - a.t);
+            return a.v + (b.v - a.v) * frac;
+          }
+          if (tSec > b.t) limit = b.v;
+        }
+        return limit;
+      }
+
+      // 국가별 정확한 LVRT 전압 궤적 (정상 차단 시 5개국 모두 경계선 위 통과!)
+      function getLvrtVoltage(countryCode, scenario, compliant, tSec) {
+        const isAu = countryCode === 'au';
+
+        if (scenario === 'lvrt_normal') {
+          if (!compliant && tSec >= 0.08) {
+            // 미준수: 80ms 만에 임의 트립 -> 계통 전압 붕괴 연출
+            return Math.max(0.0, 0.06 - ((tSec - 0.08) / 0.25) * 0.06);
+          }
+          if (isAu) {
+            // 호주: 250ms 차단 -> 0.40s까지 0.78pu(430ms 수직벽 이전!) -> 1.5s까지 1.0pu
+            if (tSec < 0.25) return 0.06;
+            if (tSec < 0.40) {
+              const u = (tSec - 0.25) / 0.15;
+              return 0.06 + (1 - Math.pow(1 - u, 2)) * 0.72; // 0.78pu by 0.40s
+            }
+            if (tSec < 1.50) {
+              const u = (tSec - 0.40) / 1.10;
+              return 0.78 + (1 - Math.pow(1 - u, 2)) * 0.22; // 1.00pu by 1.5s
+            }
+            return 1.00;
+          } else {
+            // KR, UK, EU, US: 110ms 주보호 차단 -> 0.14s까지 0.78pu -> 0.80s까지 1.0pu
+            if (tSec < 0.11) return 0.06;
+            if (tSec < 0.14) {
+              const u = (tSec - 0.11) / 0.03;
+              return 0.06 + u * 0.72; // 0.78pu by 0.14s
+            }
+            if (tSec < 0.80) {
+              const u = (tSec - 0.14) / 0.66;
+              return 0.78 + (1 - Math.pow(1 - u, 2)) * 0.22; // 1.00pu by 0.8s
+            }
+            return 1.00;
+          }
+        }
+
+        if (scenario === 'lvrt_delay') {
+          if (isAu) {
+            // 호주 지연 차단(550ms): 0.43s 수직벽을 넘겨 0.40pu 정체 -> May Trip 진입
+            if (tSec < 0.30) return 0.10;
+            if (tSec < 0.40) return 0.10 + ((tSec - 0.30) / 0.10) * 0.30;
+            if (tSec < 0.55) return 0.40;
+            return 0.40;
+          } else {
+            // 타 4개국 지연 차단(350ms): 0.15s 이후 0.15pu 정체 -> May Trip 진입
+            if (tSec < 0.35) return 0.12;
+            if (tSec < 0.45) return 0.12 + ((tSec - 0.35) / 0.10) * 0.18;
+            return 0.30;
+          }
+        }
+
+        return 1.00;
+      }
+
+      /* -----------------------------------------------------------------
+       * 4. 상태 변수 & DOM 참조
+       * ----------------------------------------------------------------- */
+      const state = {
+        activeTab: 'tab1',
+        country: 'au',
+        scenario: 'lvrt_normal',
+        compliant: true,
+        paused: false,
+        simTime: 0,
+        timeline: 0, // 0 ~ 5.0s 루프
+        lastTs: 0,
+
+        // Tab 2 Mini-Labs
+        lab1Mode: 'step',
+        lab1Volt: 0.60,
+        lab1Dur: 0.50,
+        lab2Dev: 0.00,
+        lab2Droop: 3.0,
+        lab3Volt: 1.00,
+        lab4ShockAge: 99, // 충격 후 경과 시간(초)
+
+        // Tab 4 Quiz
+        quizAns: [null, null, null, null, null]
+      };
+
+      function getCanvas(id, defW, defH) {
+        const el = document.getElementById(id);
+        return { el: el, ctx: el ? el.getContext('2d') : null, w: defW, h: defH };
+      }
+
+      const canvases = {
+        lvrt: getCanvas('canvasLvrt', 460, 190),
+        freq: getCanvas('canvasFreq', 460, 190),
+        lab1: getCanvas('canvasLab1', 460, 215),
+        lab2: getCanvas('canvasLab2', 460, 215),
+        lab3: getCanvas('canvasLab3', 460, 215),
+        lab4: getCanvas('canvasLab4', 460, 215)
+      };
+
+      const ui = {
+        tabBtns: document.querySelectorAll('.tab-btn'),
+        tabPanels: document.querySelectorAll('.tab-panel'),
+
+        headerCodeBadge: document.getElementById('headerCodeBadge'),
+        countryBtns: document.querySelectorAll('[data-country]'),
+        scenarioBtns: document.querySelectorAll('[data-scenario]'),
+        btnCompYes: document.getElementById('btnCompYes'),
+        btnCompNo: document.getElementById('btnCompNo'),
+        btnPlayToggle: document.getElementById('btnPlayToggle'),
+        btnRestart: document.getElementById('btnRestart'),
+
+        pillVolt: document.getElementById('pillVolt'),
+        pillFreq: document.getElementById('pillFreq'),
+        pillP: document.getElementById('pillP'),
+        pillQ: document.getElementById('pillQ'),
+        pillVerdict: document.getElementById('pillVerdict'),
+
+        svgTopBar: document.getElementById('svgTopBar'),
+        svgTopTitle: document.getElementById('svgTopTitle'),
+        svgTopTime: document.getElementById('svgTopTime'),
+        lineGridBus: document.getElementById('lineGridBus'),
+        lineBusCity: document.getElementById('lineBusCity'),
+        lineBusCb: document.getElementById('lineBusCb'),
+        lineCbBess: document.getElementById('lineCbBess'),
+        svgGridStatusBg: document.getElementById('svgGridStatusBg'),
+        svgGridStatusTxt: document.getElementById('svgGridStatusTxt'),
+        svgFaultGroup: document.getElementById('svgFaultGroup'),
+        svgCbArm: document.getElementById('svgCbArm'),
+        svgCbTxt: document.getElementById('svgCbTxt'),
+        cityLights: document.querySelectorAll('.city-light'),
+        svgCityStatusBg: document.getElementById('svgCityStatusBg'),
+        svgCityStatusTxt: document.getElementById('svgCityStatusTxt'),
+        svgBessBox: document.getElementById('svgBessBox'),
+        svgBessSub: document.getElementById('svgBessSub'),
+        svgBessP: document.getElementById('svgBessP'),
+        svgBessQ: document.getElementById('svgBessQ'),
+        svgBlackoutBanner: document.getElementById('svgBlackoutBanner'),
+        svgFlowLayer: document.getElementById('svgFlowLayer'),
+        simNarrative: document.getElementById('simNarrative'),
+
+        lvrtClearBadge: document.getElementById('lvrtClearBadge'),
+        lvrtVerdictBadge: document.getElementById('lvrtVerdictBadge'),
+        lvrtDynamicNote: document.getElementById('lvrtDynamicNote'),
+        freqStatusBadge: document.getElementById('freqStatusBadge'),
+        countrySummaryBox: document.getElementById('countrySummaryBox'),
+
+        // Tab 2
+        lab1ModeBtns: document.querySelectorAll('[data-lab1-mode]'),
+        lab1Verdict: document.getElementById('lab1Verdict'),
+        lab1IqBadge: document.getElementById('lab1IqBadge'),
+        lab1Volt: document.getElementById('lab1Volt'),
+        lab1VoltVal: document.getElementById('lab1VoltVal'),
+        lab1Dur: document.getElementById('lab1Dur'),
+        lab1DurVal: document.getElementById('lab1DurVal'),
+        lab1Desc: document.getElementById('lab1Desc'),
+
+        lab2OutBadge: document.getElementById('lab2OutBadge'),
+        lab2Dev: document.getElementById('lab2Dev'),
+        lab2DevVal: document.getElementById('lab2DevVal'),
+        lab2Droop: document.getElementById('lab2Droop'),
+        lab2DroopVal: document.getElementById('lab2DroopVal'),
+        lab2PBar: document.getElementById('lab2PBar'),
+
+        lab3QBadge: document.getElementById('lab3QBadge'),
+        lab3Volt: document.getElementById('lab3Volt'),
+        lab3VoltVal: document.getElementById('lab3VoltVal'),
+        lab3Desc: document.getElementById('lab3Desc'),
+        btnLab4Shock: document.getElementById('btnLab4Shock'),
+
+        // Tab 3 & 4
+        tableRows: document.querySelectorAll('#compTable tbody tr'),
+        tableTipBox: document.getElementById('tableTipBox'),
+        quizGrid: document.getElementById('quizGrid'),
+        quizScoreTxt: document.getElementById('quizScoreTxt'),
+        btnQuizReset: document.getElementById('btnQuizReset')
+      };
+
+      /* -----------------------------------------------------------------
+       * 5. 안전한 Canvas 리사이즈 (width === 0 가드)
+       * ----------------------------------------------------------------- */
+      function resizeActiveCanvases() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const list = state.activeTab === 'tab1'
+          ? [canvases.lvrt, canvases.freq]
+          : state.activeTab === 'tab2'
+            ? [canvases.lab1, canvases.lab2, canvases.lab3, canvases.lab4]
+            : [];
+
+        list.forEach(function (cv) {
+          if (!cv.el || !cv.ctx || !cv.el.parentElement) return;
+          const rect = cv.el.parentElement.getBoundingClientRect();
+          if (rect.width <= 10 || rect.height <= 10) return;
+          cv.w = rect.width;
+          cv.h = rect.height;
+          cv.el.width = Math.floor(rect.width * dpr);
+          cv.el.height = Math.floor(rect.height * dpr);
+          cv.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        });
+      }
+
+      /* -----------------------------------------------------------------
+       * 6. SVG 전력 입자 풀 초기화
+       * ----------------------------------------------------------------- */
+      const flowDots = [];
+      function initFlowDots() {
+        if (!ui.svgFlowLayer) return;
+        ui.svgFlowLayer.innerHTML = '';
+        for (let i = 0; i < 16; i++) {
+          const c = document.createElementNS(SVG_NS, 'circle');
+          c.setAttribute('r', '4.8');
+          c.setAttribute('stroke', '#ffffff');
+          c.setAttribute('stroke-width', '1.4');
+          c.setAttribute('opacity', '0');
+          ui.svgFlowLayer.appendChild(c);
+          flowDots.push(c);
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 7. [TAB 1] 국가/시나리오 전환 및 실시간 프레임 업데이트
+       * ----------------------------------------------------------------- */
+      function applyCountry(code) {
+        const c = COUNTRIES[code];
+        if (!c) return;
+        state.country = code;
+        state.timeline = 0;
+
+        ui.countryBtns.forEach(function (btn) {
+          btn.classList.remove('active-kr', 'active-uk', 'active-eu', 'active-au', 'active-us');
+          if (btn.dataset.country === code) btn.classList.add('active-' + code);
+        });
+
+        ui.headerCodeBadge.textContent = c.headerBadge;
+        ui.headerCodeBadge.className = 'badge mono ' + (c.isStep ? 'badge-au' : '');
+        ui.svgTopBar.setAttribute('fill', c.color);
+        ui.svgTopTitle.textContent = c.name + ' 계통 (' + c.org + ' · ' + c.freq + 'Hz)';
+        ui.lvrtDynamicNote.innerHTML = c.note;
+        ui.lvrtDynamicNote.classList.toggle('au-highlight', c.isStep);
+
+        ui.countrySummaryBox.style.borderColor = c.color;
+        ui.countrySummaryBox.innerHTML =
+          '<div class="summary-col">' +
+            '<h3 style="color:' + c.color + ';">' + c.name + ' · ' + c.org + '</h3>' +
+            '<p><strong>기준 주파수:</strong> ' + c.freq + ' Hz (불감대 ±' + c.deadband + ' Hz)</p>' +
+            '<p style="margin-top:4px;"><strong>LVRT 유형:</strong> ' + (c.isStep ? '수직 계단형 (Step Envelope)' : '사선 회복형 (Ramp Envelope)') + '</p>' +
+          '</div>' +
+          '<div class="summary-col">' +
+            '<h3>📌 핵심 규정 특징</h3>' +
+            '<ul>' + c.features.map(function (f) { return '<li>' + f + '</li>'; }).join('') + '</ul>' +
+          '</div>' +
+          '<div class="summary-col">' +
+            '<h3>🛠️ 핵심 체크포인트</h3>' +
+            '<div class="tag-list">' + c.tags.map(function (t) { return '<span class="tag-chip">' + t + '</span>'; }).join('') + '</div>' +
+          '</div>';
+      }
+
+      function applyScenario(sc) {
+        state.scenario = sc;
+        state.timeline = 0;
+        ui.scenarioBtns.forEach(function (btn) {
+          btn.classList.remove('active-normal', 'active-lvrt-n', 'active-lvrt-d', 'active-freq');
+          if (btn.dataset.scenario === sc) {
+            if (sc === 'normal') btn.classList.add('active-normal');
+            else if (sc === 'lvrt_normal') btn.classList.add('active-lvrt-n');
+            else if (sc === 'lvrt_delay') btn.classList.add('active-lvrt-d');
+            else btn.classList.add('active-freq');
+          }
+        });
+      }
+
+      function updateTab1(dt) {
+        const c = COUNTRIES[state.country];
+        if (!c) return;
+
+        if (dt > 0) {
+          state.timeline = (state.timeline + dt) % 5.2;
+        }
+        const tl = state.timeline;
+
+        let voltPu = 1.00;
+        let freqHz = c.freq;
+        let bessP = 2.0;
+        let bessQ = 0.0;
+        let faultActive = false;
+        let cbTripped = false;
+        let mayTrip = false;
+        let blackout = false;
+        let lvrtSec = 0;
+        let verdictText = '✅ 연계 유지 성공';
+        let verdictClass = 'badge badge-ok';
+
+        if (state.scenario === 'normal') {
+          voltPu = 1.00 + Math.sin(state.simTime * 2.5) * 0.004;
+          freqHz = c.freq + Math.sin(state.simTime * 1.8) * 0.004;
+          ui.lvrtClearBadge.textContent = '🟢 정상 운전 (사고 없음)';
+          ui.lvrtClearBadge.className = 'badge badge-ok mono';
+          ui.simNarrative.textContent = '🟢 정상 운전 중: ' + c.name + ' 계통이 ' + c.freq + 'Hz와 1.00 pu 전압을 안정적으로 유지하고 있습니다.';
+        } else if (state.scenario === 'lvrt_normal' || state.scenario === 'lvrt_delay') {
+          const isNormalClear = state.scenario === 'lvrt_normal';
+          const clearSec = isNormalClear ? c.clearNormalSec : c.clearDelaySec;
+          ui.lvrtClearBadge.textContent = isNormalClear ? c.clearNormalLabel : c.clearDelayLabel;
+          ui.lvrtClearBadge.className = 'badge mono ' + (isNormalClear ? '' : 'badge-warn');
+
+          if (tl >= 0.4 && tl <= 4.6) {
+            lvrtSec = normToTSec((tl - 0.4) / 4.2);
+            faultActive = lvrtSec < clearSec;
+            voltPu = getLvrtVoltage(c.code, state.scenario, state.compliant, lvrtSec);
+            const limitPu = getLvrtLimitAt(c.lvrtPts, lvrtSec);
+
+            if (isNormalClear) {
+              if (state.compliant) {
+                // 규정 준수: 무효전류 Iq 주입 + 사고 제거 후 유효전력 급속 회복 (호주 S5.2.5.5 100ms 95% 회복 반영)
+                bessQ = voltPu < 0.92 ? Math.min(10.0, (1.0 - voltPu) * 11.5) : 0.0;
+                if (lvrtSec < clearSec) {
+                  bessP = 0.4;
+                } else if (lvrtSec < clearSec + 0.10) {
+                  bessP = 0.4 + ((lvrtSec - clearSec) / 0.10) * 3.4;
+                } else {
+                  bessP = 4.0;
+                }
+                verdictText = '✅ 연계 유지 성공';
+                verdictClass = 'badge badge-ok';
+                ui.simNarrative.textContent = '🛡️ LVRT 연계 유지 성공! (' + Math.round(clearSec * 1000) + 'ms 차단 · t=' + lvrtSec.toFixed(2) + 's) 경계선 위를 유지하며 무효전류 Q를 주입합니다.';
+              } else {
+                // 규정 미준수: 80ms 만에 임의 탈락 -> 도시 정전
+                if (lvrtSec >= 0.08) {
+                  cbTripped = true;
+                  blackout = true;
+                  bessP = 0;
+                  bessQ = 0;
+                  verdictText = '❌ 규정 위반 탈락·정전';
+                  verdictClass = 'badge badge-err';
+                  ui.simNarrative.textContent = '🚨 규정 위반! Must Ride Through 영역인데도 80ms 만에 임의 트립 → 연쇄 탈락 및 도시 정전 발생!';
+                } else {
+                  bessP = 0.4;
+                }
+              }
+            } else {
+              // 차단 지연 / 전압 미회복 시나리오 -> 경계선 하단 May Trip 진입
+              if (voltPu < limitPu - 0.005) {
+                cbTripped = true;
+                mayTrip = true;
+                bessP = 0;
+                bessQ = 0;
+                verdictText = '⚠️ 보호 트립 허용 (May Trip)';
+                verdictClass = 'badge badge-warn';
+                ui.simNarrative.textContent = '⚠️ 차단 지연(' + Math.round(clearSec * 1000) + 'ms)으로 t=' + lvrtSec.toFixed(2) + 's에 전압(' + voltPu.toFixed(2) + 'pu)이 하한(' + limitPu.toFixed(2) + 'pu) 미달 → 합법적 UVR 보호 트립 허용!';
+              } else {
+                bessQ = Math.min(10.0, (1.0 - voltPu) * 11.5);
+                bessP = 0.5;
+                verdictText = '⏳ 지연 감시 중 (버티기)';
+                verdictClass = 'badge';
+                ui.simNarrative.textContent = '⏳ 차단 지연 감시 중 (t=' + lvrtSec.toFixed(2) + 's): 경계선 도달 전까지 무효전류(Q)로 버티는 중...';
+              }
+            }
+          } else {
+            ui.simNarrative.textContent = '⚡ 단락 사고 LVRT 주행 준비 / 완료 — 자동으로 다시 시작됩니다.';
+          }
+        } else if (state.scenario === 'freq_drop') {
+          ui.lvrtClearBadge.textContent = '📉 주파수 급락 이벤트';
+          ui.lvrtClearBadge.className = 'badge mono';
+
+          if (tl >= 0.5) {
+            const ft = tl - 0.5;
+            if (state.compliant) {
+              const speedFactor = (c.code === 'uk' || c.code === 'au' || c.code === 'us') ? 1.55 : 1.15;
+              const drop = 0.48 * Math.exp(-ft * speedFactor) * Math.sin(Math.min(1, ft * 2.5) * Math.PI * 0.5);
+              freqHz = c.freq - drop;
+              const excess = Math.max(0, (c.freq - freqHz) - c.deadband);
+              bessP = Math.min(10.0, 2.0 + excess * 28.0);
+              verdictText = '✅ 주파수 방어 성공';
+              verdictClass = 'badge badge-ok';
+              ui.simNarrative.textContent = '⚡ 주파수 급락 대응! Deadband(±' + c.deadband + 'Hz) 이탈 즉시 BESS가 +' + bessP.toFixed(1) + 'MW 긴급 방전하여 ' + c.freq + 'Hz를 복구합니다.';
+            } else {
+              freqHz = Math.max(c.freq - 1.15, c.freq - ft * 0.52);
+              bessP = 0;
+              if (freqHz <= c.freq - 0.55) {
+                cbTripped = true;
+                blackout = true;
+                verdictText = '❌ 규정 위반 탈락·정전';
+                verdictClass = 'badge badge-err';
+                ui.simNarrative.textContent = '🚨 규칙 미준수! 주파수 방어를 하지 않아 ' + freqHz.toFixed(2) + 'Hz까지 추락 → 계통 붕괴 및 도시 정전!';
+              } else {
+                verdictText = '⚠️ 주파수 급락 중';
+                verdictClass = 'badge badge-warn';
+                ui.simNarrative.textContent = '⚠️ 대형 발전기 탈락으로 주파수가 급락하고 있습니다...';
+              }
+            }
+          } else {
+            ui.simNarrative.textContent = '📉 대형 발전기 탈락 이벤트 대기 중 (' + c.freq.toFixed(2) + 'Hz 정상)...';
+          }
+        }
+
+        // 상단 라이브 상태 필 업데이트
+        ui.pillVolt.textContent = voltPu.toFixed(2) + ' pu';
+        ui.pillVolt.style.color = voltPu < 0.85 ? '#f87171' : '#38bdf8';
+        ui.pillFreq.textContent = freqHz.toFixed(2) + ' Hz';
+        ui.pillFreq.style.color = Math.abs(freqHz - c.freq) > 0.2 ? '#f87171' : '#34d399';
+        ui.pillP.textContent = (bessP >= 0 ? '+' : '') + bessP.toFixed(1) + ' MW';
+        ui.pillQ.textContent = '+' + bessQ.toFixed(1) + ' MVAr';
+        ui.pillVerdict.textContent = verdictText;
+        ui.pillVerdict.className = verdictClass;
+
+        ui.lvrtVerdictBadge.textContent = verdictText;
+        ui.lvrtVerdictBadge.className = verdictClass;
+        ui.freqStatusBadge.textContent = freqHz.toFixed(2) + ' Hz · Deadband ±' + c.deadband + 'Hz';
+
+        // SVG 업데이트
+        ui.svgTopTime.textContent = lvrtSec > 0
+          ? ('t = ' + (lvrtSec < 1 ? Math.round(lvrtSec * 1000) + 'ms' : lvrtSec.toFixed(2) + 's'))
+          : ('t = ' + tl.toFixed(2) + 's');
+        ui.svgFaultGroup.setAttribute('opacity', faultActive ? '1' : '0');
+        ui.svgBlackoutBanner.setAttribute('opacity', blackout ? (Math.sin(state.simTime * 10) > -0.3 ? '1' : '0.35') : '0');
+
+        if (cbTripped) {
+          ui.svgCbArm.setAttribute('x2', '18');
+          ui.svgCbArm.setAttribute('y2', '26');
+          ui.svgCbArm.setAttribute('stroke', mayTrip ? '#f97316' : '#ef4444');
+          ui.svgCbTxt.textContent = mayTrip ? 'UVR TRIP (허용)' : 'CB TRIP!';
+          ui.svgCbTxt.setAttribute('fill', mayTrip ? '#ea580c' : '#dc2626');
+          ui.lineBusCb.setAttribute('stroke', '#94a3b8');
+          ui.lineCbBess.setAttribute('stroke', '#94a3b8');
+          ui.svgBessBox.setAttribute('fill', mayTrip ? '#fff7ed' : '#fef2f2');
+          ui.svgBessBox.setAttribute('stroke', mayTrip ? '#f97316' : '#ef4444');
+          ui.svgBessSub.textContent = mayTrip ? '⚠️ May Trip 구간 진입 → 합법적 보호 분리' : '❌ 규정 위반 임의 탈락';
+          ui.svgBessSub.setAttribute('fill', mayTrip ? '#c2410c' : '#dc2626');
+        } else {
+          ui.svgCbArm.setAttribute('x2', '0');
+          ui.svgCbArm.setAttribute('y2', '34');
+          ui.svgCbArm.setAttribute('stroke', '#10b981');
+          ui.svgCbTxt.textContent = 'CB CLOSED';
+          ui.svgCbTxt.setAttribute('fill', '#059669');
+          const bCol = bessQ > 1.0 ? '#7c3aed' : '#10b981';
+          ui.lineBusCb.setAttribute('stroke', bCol);
+          ui.lineCbBess.setAttribute('stroke', bCol);
+          ui.svgBessBox.setAttribute('fill', '#ecfdf5');
+          ui.svgBessBox.setAttribute('stroke', '#10b981');
+          ui.svgBessSub.textContent = bessQ > 1.0
+            ? '🛡️ LVRT 버티기 + 무효전류(Iq) 주입 중!'
+            : (bessP > 3.5 ? '⚡ 주파수 회복 긴급 방전 중!' : '✅ Grid Code 준수 정상 연계 중');
+          ui.svgBessSub.setAttribute('fill', bessQ > 1.0 ? '#6d28d9' : '#047857');
+        }
+
+        ui.svgBessP.textContent = 'P: +' + bessP.toFixed(1) + ' MW';
+        ui.svgBessQ.textContent = 'Q: +' + bessQ.toFixed(1) + ' MVAr';
+
+        ui.cityLights.forEach(function (rect, idx) {
+          rect.setAttribute('fill', blackout ? '#334155' : (idx < 6 ? '#fde047' : '#38bdf8'));
+        });
+        ui.svgCityStatusBg.setAttribute('fill', blackout ? '#fee2e2' : '#fef9c3');
+        ui.svgCityStatusTxt.setAttribute('fill', blackout ? '#dc2626' : '#a16207');
+        ui.svgCityStatusTxt.textContent = blackout ? '🌑 정전!' : '💡 전력 안정';
+
+        ui.lineGridBus.setAttribute('stroke', faultActive ? '#ef4444' : (blackout ? '#94a3b8' : c.color));
+        ui.lineBusCity.setAttribute('stroke', blackout ? '#94a3b8' : c.color);
+        ui.svgGridStatusBg.setAttribute('fill', faultActive || blackout ? '#fee2e2' : '#dbeafe');
+        ui.svgGridStatusTxt.setAttribute('fill', faultActive || blackout ? '#dc2626' : '#1d4ed8');
+        ui.svgGridStatusTxt.textContent = faultActive ? '💥 전압 급락' : (blackout ? '🚨 계통 붕괴' : '정상 공급');
+
+        // SVG 입자 애니메이션
+        let idx = 0;
+        function spawnDots(x1, y1, x2, y2, count, speed, col) {
+          for (let i = 0; i < count && idx < flowDots.length; i++) {
+            const d = flowDots[idx++];
+            const u = (state.simTime * speed + i / count) % 1;
+            d.setAttribute('opacity', '1');
+            d.setAttribute('cx', (x1 + (x2 - x1) * u).toFixed(1));
+            d.setAttribute('cy', (y1 + (y2 - y1) * u).toFixed(1));
+            d.setAttribute('fill', col);
+          }
+        }
+        if (!blackout) {
+          spawnDots(142, 136, 280, 136, 4, 0.55, c.color);
+          spawnDots(280, 136, 418, 136, 4, 0.55, c.color);
+        }
+        if (!cbTripped && (bessP > 0.2 || bessQ > 0.2)) {
+          spawnDots(280, 250, 280, 136, 4, (bessQ > 1 || bessP > 4) ? 1.15 : 0.5, bessQ > 1 ? '#7c3aed' : '#10b981');
+        }
+        while (idx < flowDots.length) {
+          flowDots[idx++].setAttribute('opacity', '0');
+        }
+
+        // 두 Canvas 차트 그리기
+        drawLvrtCanvas(c, lvrtSec, voltPu, cbTripped, mayTrip);
+        drawFreqCanvas(c, tl, freqHz, bessP, blackout);
+      }
+
+      /* -----------------------------------------------------------------
+       * 8. Canvas Chart 1: LVRT Voltage Profile (Piecewise Nonlinear X-axis)
+       * ----------------------------------------------------------------- */
+      function drawLvrtCanvas(c, tSec, voltPu, tripped, mayTrip) {
+        const cv = canvases.lvrt;
+        if (!cv.ctx || cv.w <= 20 || cv.h <= 20) return;
+        const ctx = cv.ctx;
+        const w = cv.w;
+        const h = cv.h;
+        ctx.clearRect(0, 0, w, h);
+
+        const pad = { l: 42, r: 14, t: 16, b: 28 };
+        const pw = Math.max(10, w - pad.l - pad.r);
+        const ph = Math.max(10, h - pad.t - pad.b);
+        const xOf = function (sec) { return pad.l + tToNormX(sec) * pw; };
+        const yOf = function (pu) { return pad.t + (1 - Math.max(0, Math.min(1.1, pu)) / 1.1) * ph; };
+
+        // 배경 격자
+        ctx.strokeStyle = '#f1f5f9';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        [0, 0.25, 0.5, 0.7, 0.9, 1.0].forEach(function (v) {
+          ctx.moveTo(pad.l, yOf(v));
+          ctx.lineTo(w - pad.r, yOf(v));
+        });
+        KNOTS.forEach(function (k) {
+          ctx.moveTo(xOf(k.t), pad.t);
+          ctx.lineTo(xOf(k.t), h - pad.b);
+        });
+        ctx.stroke();
+
+        // 상단 Green Must Ride Through 영역
+        ctx.fillStyle = 'rgba(16, 185, 129, 0.11)';
+        ctx.beginPath();
+        ctx.moveTo(xOf(0), yOf(1.1));
+        ctx.lineTo(xOf(10.0), yOf(1.1));
+        for (let i = c.lvrtPts.length - 1; i >= 0; i--) {
+          ctx.lineTo(xOf(c.lvrtPts[i].t), yOf(c.lvrtPts[i].v));
+        }
+        ctx.closePath();
+        ctx.fill();
+
+        // 하단 Red Hatched May Trip 영역
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(xOf(0), yOf(0));
+        c.lvrtPts.forEach(function (p) { ctx.lineTo(xOf(p.t), yOf(p.v)); });
+        ctx.lineTo(xOf(10.0), yOf(0));
+        ctx.closePath();
+        ctx.fillStyle = 'rgba(239, 68, 68, 0.12)';
+        ctx.fill();
+        ctx.clip();
+        ctx.strokeStyle = 'rgba(239, 68, 68, 0.25)';
+        ctx.lineWidth = 1.2;
+        for (let sx = -ph; sx < pw + ph; sx += 9) {
+          ctx.beginPath();
+          ctx.moveTo(pad.l + sx, pad.t);
+          ctx.lineTo(pad.l + sx + ph, pad.t + ph);
+          ctx.stroke();
+        }
+        ctx.restore();
+
+        // 국가별 LVRT 경계선
+        ctx.strokeStyle = c.color;
+        ctx.lineWidth = 2.8;
+        ctx.beginPath();
+        c.lvrtPts.forEach(function (p, i) {
+          if (i === 0) ctx.moveTo(xOf(p.t), yOf(p.v));
+          else ctx.lineTo(xOf(p.t), yOf(p.v));
+        });
+        ctx.stroke();
+
+        // 호주 Step Envelope 콜아웃 도트 (0.43s, 2.0s, 10.0s)
+        if (c.isStep) {
+          const callouts = [
+            { t: 0.43, v: 0.70, txt: '0.43s, 0.7pu', dy: -13 },
+            { t: 2.0,  v: 0.80, txt: '2.0s, 0.8pu',  dy: -13 },
+            { t: 10.0, v: 0.90, txt: '10s, 0.9pu',   dy: 16 }
+          ];
+          callouts.forEach(function (co) {
+            const cx = xOf(co.t);
+            const cy = yOf(co.v);
+            ctx.fillStyle = '#d97706';
+            ctx.beginPath();
+            ctx.arc(cx, cy, 3.8, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.font = '800 8.5px Pretendard, sans-serif';
+            const tw = ctx.measureText(co.txt).width + 8;
+            const rx = Math.max(pad.l + 2, Math.min(w - pad.r - tw - 2, cx - tw / 2));
+            const ry = cy + co.dy - 8;
+            ctx.fillStyle = 'rgba(255, 251, 235, 0.95)';
+            ctx.strokeStyle = '#f59e0b';
+            ctx.lineWidth = 1.2;
+            drawRoundRect(ctx, rx, ry, tw, 15, 4);
+            ctx.fill();
+            ctx.stroke();
+            ctx.fillStyle = '#92400e';
+            ctx.textAlign = 'center';
+            ctx.fillText(co.txt, rx + tw / 2, ry + 10.5);
+          });
+        }
+
+        // 영역 라벨 & 축 눈금
+        ctx.fillStyle = '#047857';
+        ctx.font = '800 9.5px Pretendard, sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText('연계 유지 의무 (Must Ride Through)', pad.l + 6, pad.t + 11);
+
+        ctx.fillStyle = '#dc2626';
+        ctx.textAlign = 'right';
+        ctx.fillText('탈락 허용 구간 (May Trip)', w - pad.r - 6, h - pad.b - 6);
+
+        ctx.fillStyle = '#64748b';
+        ctx.font = '700 9px ui-monospace, monospace';
+        ctx.textAlign = 'right';
+        ctx.fillText('1.0', pad.l - 5, yOf(1.0) + 3);
+        ctx.fillText('0.7', pad.l - 5, yOf(0.7) + 3);
+        ctx.fillText('0.0', pad.l - 5, yOf(0.0) + 3);
+
+        ctx.textAlign = 'center';
+        KNOTS.forEach(function (k) {
+          const lbl = k.t === 0 ? '0s' : (k.t < 1 ? k.t + 's' : k.t.toFixed(0) + 's');
+          ctx.fillText(lbl, xOf(k.t), h - 9);
+        });
+
+        // 실시간 전압 궤적 주행선
+        if ((state.scenario === 'lvrt_normal' || state.scenario === 'lvrt_delay') && tSec > 0) {
+          ctx.strokeStyle = mayTrip ? '#f97316' : (tripped ? '#ef4444' : '#0f172a');
+          ctx.lineWidth = 2.4;
+          ctx.beginPath();
+          for (let i = 0; i <= 70; i++) {
+            const st = (i / 70) * tSec;
+            const sv = getLvrtVoltage(c.code, state.scenario, state.compliant, st);
+            if (i === 0) ctx.moveTo(xOf(st), yOf(sv));
+            else ctx.lineTo(xOf(st), yOf(sv));
+          }
+          ctx.stroke();
+
+          ctx.fillStyle = mayTrip ? '#f97316' : (tripped ? '#ef4444' : '#10b981');
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2.2;
+          ctx.beginPath();
+          ctx.arc(xOf(tSec), yOf(voltPu), 6, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 9. Canvas Chart 2: Frequency & BESS Active Power Response
+       * ----------------------------------------------------------------- */
+      function drawFreqCanvas(c, tl, freqHz, bessP, blackout) {
+        const cv = canvases.freq;
+        if (!cv.ctx || cv.w <= 20 || cv.h <= 20) return;
+        const ctx = cv.ctx;
+        const w = cv.w;
+        const h = cv.h;
+        ctx.clearRect(0, 0, w, h);
+
+        const pad = { l: 46, r: 16, t: 16, b: 26 };
+        const pw = Math.max(10, w - pad.l - pad.r);
+        const ph = Math.max(10, h - pad.t - pad.b);
+        const xOf = function (sec) { return pad.l + (sec / 5.2) * pw; };
+        const yOfF = function (f) { return pad.t + (1 - (f - (c.freq - 1.2)) / 1.6) * ph; };
+        const yOfP = function (p) { return pad.t + (1 - Math.max(0, Math.min(10, p)) / 10) * ph; };
+
+        // Deadband 음영 띠
+        const dbTop = yOfF(c.freq + c.deadband);
+        const dbBot = yOfF(c.freq - c.deadband);
+        ctx.fillStyle = 'rgba(148, 163, 184, 0.25)';
+        ctx.fillRect(pad.l, dbTop, pw, Math.max(4, dbBot - dbTop));
+
+        // 기준 주파수 점선
+        ctx.strokeStyle = '#94a3b8';
+        ctx.setLineDash([5, 4]);
+        ctx.lineWidth = 1.2;
+        ctx.beginPath();
+        ctx.moveTo(pad.l, yOfF(c.freq));
+        ctx.lineTo(w - pad.r, yOfF(c.freq));
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // BESS 유효전력 P 영역
+        ctx.fillStyle = 'rgba(16, 185, 129, 0.16)';
+        ctx.beginPath();
+        ctx.moveTo(xOf(0), h - pad.b);
+        for (let i = 0; i <= 50; i++) {
+          const st = (i / 50) * tl;
+          let sp = 2.0;
+          if (state.scenario === 'freq_drop' && st >= 0.5) {
+            if (state.compliant) {
+              const ft = st - 0.5;
+              const sf = (c.code === 'uk' || c.code === 'au' || c.code === 'us') ? 1.55 : 1.15;
+              const drop = 0.48 * Math.exp(-ft * sf) * Math.sin(Math.min(1, ft * 2.5) * Math.PI * 0.5);
+              sp = Math.min(10.0, 2.0 + Math.max(0, drop - c.deadband) * 28.0);
+            } else {
+              sp = 0;
+            }
+          }
+          ctx.lineTo(xOf(st), yOfP(sp));
+        }
+        ctx.lineTo(xOf(tl), h - pad.b);
+        ctx.closePath();
+        ctx.fill();
+
+        // 실시간 주파수 곡선
+        ctx.strokeStyle = blackout ? '#ef4444' : c.color;
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        for (let i = 0; i <= 50; i++) {
+          const st = (i / 50) * tl;
+          let sf = c.freq;
+          if (state.scenario === 'freq_drop' && st >= 0.5) {
+            const ft = st - 0.5;
+            if (state.compliant) {
+              const spd = (c.code === 'uk' || c.code === 'au' || c.code === 'us') ? 1.55 : 1.15;
+              sf = c.freq - 0.48 * Math.exp(-ft * spd) * Math.sin(Math.min(1, ft * 2.5) * Math.PI * 0.5);
+            } else {
+              sf = Math.max(c.freq - 1.15, c.freq - ft * 0.52);
+            }
+          }
+          if (i === 0) ctx.moveTo(xOf(st), yOfF(sf));
+          else ctx.lineTo(xOf(st), yOfF(sf));
+        }
+        ctx.stroke();
+
+        // 현재 점
+        ctx.fillStyle = blackout ? '#ef4444' : c.color;
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(xOf(tl), yOfF(freqHz), 5.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+
+        // 라벨
+        ctx.fillStyle = '#64748b';
+        ctx.font = '700 9px ui-monospace, monospace';
+        ctx.textAlign = 'right';
+        ctx.fillText(c.freq.toFixed(1) + 'Hz', pad.l - 5, yOfF(c.freq) + 3);
+        ctx.fillText((c.freq - 1.0).toFixed(1) + 'Hz', pad.l - 5, yOfF(c.freq - 1.0) + 3);
+        ctx.textAlign = 'left';
+        ctx.fillStyle = '#059669';
+        ctx.fillText('■ BESS 유효전력 P: +' + bessP.toFixed(1) + ' MW', pad.l + 6, h - pad.b - 6);
+        ctx.fillStyle = '#64748b';
+        ctx.fillText('회색 띠 = Deadband (±' + c.deadband + 'Hz)', pad.l + 6, pad.t + 11);
+      }
+
+      /* -----------------------------------------------------------------
+       * 10. [TAB 2] 핵심 4대 규칙 Mini-Labs 렌더링
+       * ----------------------------------------------------------------- */
+      function renderTab2(dt) {
+        // --- Lab 1: LVRT 계단형(호주) vs 사선형(한국/EU) ---
+        if (canvases.lab1.ctx && canvases.lab1.w > 20) {
+          const ctx = canvases.lab1.ctx;
+          const w = canvases.lab1.w;
+          const h = canvases.lab1.h;
+          ctx.clearRect(0, 0, w, h);
+
+          const pad = { l: 42, r: 16, t: 16, b: 28 };
+          const pw = w - pad.l - pad.r;
+          const ph = h - pad.t - pad.b;
+          const xOf = function (s) { return pad.l + (s / 3.0) * pw; };
+          const yOf = function (v) { return pad.t + (1 - v / 1.1) * ph; };
+
+          const isStep = state.lab1Mode === 'step';
+          const pts = isStep
+            ? [{ t: 0, v: 0 }, { t: 0.43, v: 0 }, { t: 0.43, v: 0.70 }, { t: 2.0, v: 0.70 }, { t: 2.0, v: 0.80 }, { t: 3.0, v: 0.80 }]
+            : [{ t: 0, v: 0 }, { t: 0.15, v: 0 }, { t: 0.15, v: 0.15 }, { t: 1.5, v: 0.90 }, { t: 3.0, v: 0.90 }];
+
+          // Must Ride Through 영역
+          ctx.fillStyle = 'rgba(16, 185, 129, 0.13)';
+          ctx.beginPath();
+          ctx.moveTo(xOf(0), yOf(1.1));
+          ctx.lineTo(xOf(3.0), yOf(1.1));
+          for (let i = pts.length - 1; i >= 0; i--) ctx.lineTo(xOf(pts[i].t), yOf(pts[i].v));
+          ctx.closePath();
+          ctx.fill();
+
+          // May Trip 영역
+          ctx.fillStyle = 'rgba(239, 68, 68, 0.13)';
+          ctx.beginPath();
+          ctx.moveTo(xOf(0), yOf(0));
+          pts.forEach(function (p) { ctx.lineTo(xOf(p.t), yOf(p.v)); });
+          ctx.lineTo(xOf(3.0), yOf(0));
+          ctx.closePath();
+          ctx.fill();
+
+          // 경계선
+          ctx.strokeStyle = isStep ? '#d97706' : '#2563eb';
+          ctx.lineWidth = 2.8;
+          ctx.beginPath();
+          pts.forEach(function (p, i) {
+            if (i === 0) ctx.moveTo(xOf(p.t), yOf(p.v));
+            else ctx.lineTo(xOf(p.t), yOf(p.v));
+          });
+          ctx.stroke();
+
+          const limit = getLvrtLimitAt(pts, state.lab1Dur);
+          const safe = state.lab1Volt >= limit - 0.005;
+          const reqIq = safe ? Math.min(100, Math.round(Math.max(0, (0.90 - state.lab1Volt) * 200))) : 0;
+
+          const px = xOf(state.lab1Dur);
+          const py = yOf(state.lab1Volt);
+          ctx.fillStyle = safe ? '#10b981' : '#ef4444';
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.arc(px, py, 7.5, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.fillStyle = '#64748b';
+          ctx.font = '700 9.5px ui-monospace, monospace';
+          ctx.textAlign = 'right';
+          ctx.fillText('1.0', pad.l - 5, yOf(1.0) + 3);
+          ctx.fillText('0.7', pad.l - 5, yOf(0.7) + 3);
+          ctx.fillText('0.0', pad.l - 5, yOf(0.0) + 3);
+          ctx.textAlign = 'center';
+          ctx.fillText('0s', xOf(0), h - 9);
+          ctx.fillText(isStep ? '0.43s' : '0.15s', xOf(isStep ? 0.43 : 0.15), h - 9);
+          ctx.fillText('1.5s', xOf(1.5), h - 9);
+          ctx.fillText('3.0s', xOf(3.0) - 6, h - 9);
+
+          ui.lab1Verdict.textContent = safe ? '✅ 연계 유지 의무' : '⚠️ 탈락 허용 (May Trip)';
+          ui.lab1Verdict.className = 'badge ' + (safe ? 'badge-ok' : 'badge-err');
+          ui.lab1IqBadge.textContent = '요구 무효전류 Iq: ' + reqIq + '%';
+          ui.lab1Desc.innerHTML = safe
+            ? '✅ <strong>' + (isStep ? '호주 계단형' : '한국/EU 사선형') + '</strong> 기준(' + limit.toFixed(2) + ' pu) 이상이므로 탈락 없이 버티며 <strong>Iq ' + reqIq + '%</strong>를 공급해야 합니다.'
+            : '⚠️ <strong>' + (isStep ? '호주 계단형' : '한국/EU 사선형') + '</strong> 기준(' + limit.toFixed(2) + ' pu) 아래이므로 UVR 보호 트립이 허용됩니다.';
+        }
+
+        // --- Lab 2: 주파수 제어 (Deadband & Droop) ---
+        if (canvases.lab2.ctx && canvases.lab2.w > 20) {
+          const ctx = canvases.lab2.ctx;
+          const w = canvases.lab2.w;
+          const h = canvases.lab2.h;
+          ctx.clearRect(0, 0, w, h);
+
+          const pad = { l: 44, r: 16, t: 16, b: 28 };
+          const pw = w - pad.l - pad.r;
+          const ph = h - pad.t - pad.b;
+          const xOf = function (d) { return pad.l + ((d + 0.5) / 1.0) * pw; };
+          const yOf = function (p) { return pad.t + (1 - (p + 100) / 200) * ph; };
+
+          const db = 0.03;
+          const droopSpan = 0.5 * (state.lab2Droop / 5.0) + 0.15; // Droop 2%~5%에 따라 기울기 변화
+
+          // 불감대 음영
+          ctx.fillStyle = 'rgba(148, 163, 184, 0.25)';
+          ctx.fillRect(xOf(-db), pad.t, xOf(db) - xOf(-db), ph);
+
+          // 중심축
+          ctx.strokeStyle = '#cbd5e1';
+          ctx.lineWidth = 1.2;
+          ctx.beginPath();
+          ctx.moveTo(pad.l, yOf(0)); ctx.lineTo(w - pad.r, yOf(0));
+          ctx.moveTo(xOf(0), pad.t); ctx.lineTo(xOf(0), h - pad.b);
+          ctx.stroke();
+
+          function calcOut(dev) {
+            if (Math.abs(dev) <= db) return 0;
+            if (dev < -db) return Math.min(100, ((-db - dev) / droopSpan) * 100);
+            return -Math.min(100, ((dev - db) / droopSpan) * 100);
+          }
+
+          // Droop 곡선
+          ctx.strokeStyle = '#7c3aed';
+          ctx.lineWidth = 3;
+          ctx.beginPath();
+          for (let i = 0; i <= 100; i++) {
+            const d = -0.5 + (i / 100) * 1.0;
+            const py = yOf(calcOut(d));
+            if (i === 0) ctx.moveTo(xOf(d), py);
+            else ctx.lineTo(xOf(d), py);
+          }
+          ctx.stroke();
+
+          const outPct = calcOut(state.lab2Dev);
+          ctx.fillStyle = outPct > 0 ? '#10b981' : (outPct < 0 ? '#2563eb' : '#64748b');
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.arc(xOf(state.lab2Dev), yOf(outPct), 7, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.fillStyle = '#64748b';
+          ctx.font = '700 9.5px ui-monospace, monospace';
+          ctx.textAlign = 'right';
+          ctx.fillText('+100%', pad.l - 4, yOf(100) + 3);
+          ctx.fillText('0%', pad.l - 4, yOf(0) + 3);
+          ctx.fillText('-100%', pad.l - 4, yOf(-100) + 3);
+          ctx.textAlign = 'center';
+          ctx.fillText('-0.5Hz', xOf(-0.5) + 12, h - 9);
+          ctx.fillText('0.0Hz (불감대)', xOf(0), h - 9);
+          ctx.fillText('+0.5Hz', xOf(0.5) - 12, h - 9);
+
+          ui.lab2OutBadge.textContent = 'BESS P 출력: ' + (outPct > 0 ? '+' : '') + Math.round(outPct) + '%';
+          if (outPct >= 0) {
+            ui.lab2PBar.style.left = '50%';
+            ui.lab2PBar.style.width = (outPct / 2).toFixed(1) + '%';
+            ui.lab2PBar.style.background = '#10b981';
+          } else {
+            const wPct = Math.abs(outPct) / 2;
+            ui.lab2PBar.style.left = (50 - wPct).toFixed(1) + '%';
+            ui.lab2PBar.style.width = wPct.toFixed(1) + '%';
+            ui.lab2PBar.style.background = '#2563eb';
+          }
+        }
+
+        // --- Lab 3: 무효전력 Volt-Var 제어 ---
+        if (canvases.lab3.ctx && canvases.lab3.w > 20) {
+          const ctx = canvases.lab3.ctx;
+          const w = canvases.lab3.w;
+          const h = canvases.lab3.h;
+          ctx.clearRect(0, 0, w, h);
+
+          const pad = { l: 44, r: 16, t: 16, b: 56 };
+          const pw = w - pad.l - pad.r;
+          const ph = h - pad.t - pad.b;
+          const xOf = function (v) { return pad.l + ((v - 0.90) / 0.20) * pw; };
+          const yOf = function (q) { return pad.t + (1 - (q + 100) / 200) * ph; };
+
+          ctx.strokeStyle = '#cbd5e1';
+          ctx.lineWidth = 1.2;
+          ctx.beginPath();
+          ctx.moveTo(pad.l, yOf(0)); ctx.lineTo(w - pad.r, yOf(0));
+          ctx.moveTo(xOf(1.00), pad.t); ctx.lineTo(xOf(1.00), h - pad.b);
+          ctx.stroke();
+
+          // Volt-Var 곡선
+          ctx.strokeStyle = '#0284c7';
+          ctx.lineWidth = 3;
+          ctx.beginPath();
+          ctx.moveTo(xOf(0.90), yOf(100));
+          ctx.lineTo(xOf(0.92), yOf(100));
+          ctx.lineTo(xOf(0.98), yOf(0));
+          ctx.lineTo(xOf(1.02), yOf(0));
+          ctx.lineTo(xOf(1.08), yOf(-100));
+          ctx.lineTo(xOf(1.10), yOf(-100));
+          ctx.stroke();
+
+          let qPct = 0;
+          if (state.lab3Volt < 0.98) qPct = Math.min(100, ((0.98 - state.lab3Volt) / 0.06) * 100);
+          else if (state.lab3Volt > 1.02) qPct = -Math.min(100, ((state.lab3Volt - 1.02) / 0.06) * 100);
+
+          ctx.fillStyle = qPct > 0 ? '#7c3aed' : (qPct < 0 ? '#0284c7' : '#10b981');
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.arc(xOf(state.lab3Volt), yOf(qPct), 7, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+
+          // 하단 수도관 수압 비유 바
+          const pipeY = h - 34;
+          ctx.fillStyle = '#e0f2fe';
+          ctx.strokeStyle = '#0284c7';
+          ctx.lineWidth = 2;
+          drawRoundRect(ctx, pad.l, pipeY, pw, 22, 8);
+          ctx.fill();
+          ctx.stroke();
+
+          const normV = Math.max(0, Math.min(1, (state.lab3Volt - 0.90) / 0.20));
+          ctx.fillStyle = state.lab3Volt < 0.95 ? '#ef4444' : (state.lab3Volt > 1.05 ? '#f97316' : '#0284c7');
+          drawRoundRect(ctx, pad.l + 3, pipeY + 3, Math.max(8, (pw - 6) * normV), 16, 6);
+          ctx.fill();
+
+          ctx.fillStyle = '#ffffff';
+          ctx.font = '800 10px Pretendard, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('수도관 수압(전압): ' + state.lab3Volt.toFixed(2) + ' pu', pad.l + pw / 2, pipeY + 14.5);
+
+          ui.lab3QBadge.textContent = qPct > 0
+            ? ('Q 공급 +' + Math.round(qPct) + '%')
+            : (qPct < 0 ? ('Q 흡수 ' + Math.round(qPct) + '%') : 'Q = 0% (적정 수압)');
+        }
+
+        // --- Lab 4: GFL vs GFM 주파수 충격 비교 ---
+        if (canvases.lab4.ctx && canvases.lab4.w > 20) {
+          if (dt > 0 && state.lab4ShockAge < 5.0) {
+            state.lab4ShockAge += dt;
+          }
+          const ctx = canvases.lab4.ctx;
+          const w = canvases.lab4.w;
+          const h = canvases.lab4.h;
+          ctx.clearRect(0, 0, w, h);
+
+          const pad = { l: 46, r: 16, t: 22, b: 26 };
+          const pw = w - pad.l - pad.r;
+          const ph = h - pad.t - pad.b;
+          const xOf = function (s) { return pad.l + (s / 5.0) * pw; };
+          const yOf = function (f) { return pad.t + (1 - (f - 59.0) / 1.2) * ph; };
+
+          // 기준 60Hz 선
+          ctx.strokeStyle = '#cbd5e1';
+          ctx.setLineDash([4, 4]);
+          ctx.lineWidth = 1.2;
+          ctx.beginPath();
+          ctx.moveTo(pad.l, yOf(60.0)); ctx.lineTo(w - pad.r, yOf(60.0));
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          const maxT = Math.min(5.0, state.lab4ShockAge);
+          function fGfl(t) {
+            if (t < 0.3) return 60.0;
+            const u = t - 0.3;
+            return 60.0 - 0.78 * Math.exp(-u * 0.75) * Math.sin(Math.min(1, u * 2.2) * Math.PI * 0.5);
+          }
+          function fGfm(t) {
+            if (t < 0.3) return 60.0;
+            const u = t - 0.3;
+            return 60.0 - 0.24 * Math.exp(-u * 1.45) * Math.sin(Math.min(1, u * 3.2) * Math.PI * 0.5);
+          }
+
+          // GFL 곡선 (빨강)
+          ctx.strokeStyle = '#ef4444';
+          ctx.lineWidth = 2.6;
+          ctx.beginPath();
+          for (let i = 0; i <= 60; i++) {
+            const st = (i / 60) * maxT;
+            if (i === 0) ctx.moveTo(xOf(st), yOf(fGfl(st)));
+            else ctx.lineTo(xOf(st), yOf(fGfl(st)));
+          }
+          ctx.stroke();
+
+          // GFM 곡선 (초록)
+          ctx.strokeStyle = '#10b981';
+          ctx.lineWidth = 3.0;
+          ctx.beginPath();
+          for (let i = 0; i <= 60; i++) {
+            const st = (i / 60) * maxT;
+            if (i === 0) ctx.moveTo(xOf(st), yOf(fGfm(st)));
+            else ctx.lineTo(xOf(st), yOf(fGfm(st)));
+          }
+          ctx.stroke();
+
+          // 범례 & 눈금
+          ctx.font = '800 10px Pretendard, sans-serif';
+          ctx.textAlign = 'left';
+          ctx.fillStyle = '#10b981';
+          ctx.fillText('━ GFM (가상관성 · 얕은 하락 59.76Hz)', pad.l + 6, pad.t + 8);
+          ctx.fillStyle = '#ef4444';
+          ctx.fillText('━ GFL (추종형 · 깊은 하락 59.22Hz)', pad.l + 6, pad.t + 23);
+
+          ctx.fillStyle = '#64748b';
+          ctx.font = '700 9px ui-monospace, monospace';
+          ctx.textAlign = 'right';
+          ctx.fillText('60.0Hz', pad.l - 4, yOf(60.0) + 3);
+          ctx.fillText('59.2Hz', pad.l - 4, yOf(59.2) + 3);
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 11. [TAB 3] 비교표 선택 & [TAB 4] 퀴즈 렌더링
+       * ----------------------------------------------------------------- */
+      function selectTableRow(code) {
+        ui.tableRows.forEach(function (tr) {
+          tr.classList.toggle('selected', tr.dataset.row === code);
+        });
+        if (ui.tableTipBox && TABLE_TIPS[code]) {
+          ui.tableTipBox.innerHTML = TABLE_TIPS[code];
+        }
+      }
+
+      function renderQuiz() {
+        if (!ui.quizGrid) return;
+        ui.quizGrid.innerHTML = QUIZ_DATA.map(function (item, qi) {
+          const picked = state.quizAns[qi];
+          const done = picked !== null;
+          const isOk = picked === item.ans;
+
+          const optsHtml = item.opts.map(function (txt, oi) {
+            let cls = 'quiz-opt';
+            if (done) {
+              if (oi === item.ans) cls += ' correct';
+              else if (oi === picked) cls += ' wrong';
+            }
+            return '<button type="button" class="' + cls + '" data-q="' + qi + '" data-o="' + oi + '"' + (done ? ' disabled' : '') + '>' + txt + '</button>';
+          }).join('');
+
+          return (
+            '<div class="quiz-card ' + (qi === 4 ? 'span-2' : '') + '">' +
+              '<div class="quiz-q">' + item.q + '</div>' +
+              '<div class="quiz-opts">' + optsHtml + '</div>' +
+              '<div class="quiz-fb ' + (done ? (isOk ? 'show ok' : 'show no') : '') + '">' +
+                (done ? (isOk ? item.ok : item.no) : '') +
+              '</div>' +
+            '</div>'
+          );
+        }).join('');
+
+        ui.quizGrid.querySelectorAll('.quiz-opt').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            const qi = Number(btn.dataset.q);
+            const oi = Number(btn.dataset.o);
+            if (state.quizAns[qi] !== null) return;
+            state.quizAns[qi] = oi;
+            renderQuiz();
+          });
+        });
+
+        const doneCount = state.quizAns.filter(function (v) { return v !== null; }).length;
+        const score = state.quizAns.reduce(function (acc, v, i) { return acc + (v === QUIZ_DATA[i].ans ? 1 : 0); }, 0);
+        if (doneCount < 5) {
+          ui.quizScoreTxt.textContent = '📝 5문제를 모두 풀어 보세요! (' + doneCount + ' / 5 완료 · 현재 ' + score + '점)';
+        } else if (score === 5) {
+          ui.quizScoreTxt.textContent = '🏆 5 / 5점 만점! 글로벌 5대국 Grid Code를 완벽하게 마스터하셨습니다! 🎉';
+        } else {
+          ui.quizScoreTxt.textContent = '👍 5문제 완료! 총 ' + score + ' / 5점입니다. 다시 도전해 볼까요?';
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 12. try/catch로 보호된 60fps 메인 루프
+       * ----------------------------------------------------------------- */
+      function mainLoop(ts) {
+        try {
+          if (!state.lastTs) state.lastTs = ts;
+          const rawDt = Math.min((ts - state.lastTs) / 1000, 0.05);
+          state.lastTs = ts;
+
+          const dt = (state.activeTab === 'tab1' && state.paused) ? 0 : rawDt;
+          state.simTime += dt;
+
+          if (state.activeTab === 'tab1') {
+            updateTab1(dt);
+          } else if (state.activeTab === 'tab2') {
+            renderTab2(rawDt);
+          }
+        } catch (err) {
+          console.error('Simulation loop error:', err);
+        }
+        requestAnimationFrame(mainLoop);
+      }
+
+      /* -----------------------------------------------------------------
+       * 13. 이벤트 리스너 일괄 등록 (No inline handlers)
+       * ----------------------------------------------------------------- */
+      initFlowDots();
+
+      // 메인 탭 전환
+      ui.tabBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const target = btn.dataset.tab;
+          state.activeTab = target;
+          ui.tabBtns.forEach(function (b) {
+            const on = b.dataset.tab === target;
+            b.classList.toggle('active', on);
+            b.setAttribute('aria-selected', String(on));
+          });
+          ui.tabPanels.forEach(function (p) {
+            p.classList.toggle('active', p.id === target);
+          });
+          resizeActiveCanvases();
+        });
+      });
+
+      // Tab 1 컨트롤
+      ui.countryBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () { applyCountry(btn.dataset.country); });
+      });
+      ui.scenarioBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () { applyScenario(btn.dataset.scenario); });
+      });
+
+      ui.btnCompYes.addEventListener('click', function () {
+        state.compliant = true;
+        ui.btnCompYes.classList.add('active-comp');
+        ui.btnCompNo.classList.remove('active-non');
+        state.timeline = 0;
+      });
+      ui.btnCompNo.addEventListener('click', function () {
+        state.compliant = false;
+        ui.btnCompNo.classList.add('active-non');
+        ui.btnCompYes.classList.remove('active-comp');
+        state.timeline = 0;
+      });
+
+      ui.btnPlayToggle.addEventListener('click', function () {
+        state.paused = !state.paused;
+        ui.btnPlayToggle.classList.toggle('is-paused', state.paused);
+        ui.btnPlayToggle.textContent = state.paused ? '▶ 재생' : '⏸ 일시정지';
+      });
+
+      ui.btnRestart.addEventListener('click', function () {
+        state.timeline = 0;
+        if (state.paused) {
+          state.paused = false;
+          ui.btnPlayToggle.classList.remove('is-paused');
+          ui.btnPlayToggle.textContent = '⏸ 일시정지';
+        }
+      });
+
+      // Tab 2 컨트롤
+      ui.lab1ModeBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          state.lab1Mode = btn.dataset.lab1Mode;
+          ui.lab1ModeBtns.forEach(function (b) {
+            b.classList.remove('active-step', 'active-ramp');
+            if (b.dataset.lab1Mode === state.lab1Mode) {
+              b.classList.add(state.lab1Mode === 'step' ? 'active-step' : 'active-ramp');
+            }
+          });
+        });
+      });
+      ui.lab1Volt.addEventListener('input', function (e) {
+        state.lab1Volt = Number(e.target.value) / 100;
+        ui.lab1VoltVal.textContent = state.lab1Volt.toFixed(2) + ' pu';
+      });
+      ui.lab1Dur.addEventListener('input', function (e) {
+        state.lab1Dur = Number(e.target.value) / 100;
+        ui.lab1DurVal.textContent = state.lab1Dur.toFixed(2) + ' s';
+      });
+
+      ui.lab2Dev.addEventListener('input', function (e) {
+        state.lab2Dev = Number(e.target.value) / 100;
+        ui.lab2DevVal.textContent = (state.lab2Dev > 0 ? '+' : '') + state.lab2Dev.toFixed(2) + ' Hz';
+      });
+      ui.lab2Droop.addEventListener('input', function (e) {
+        state.lab2Droop = Number(e.target.value) / 10;
+        ui.lab2DroopVal.textContent = state.lab2Droop.toFixed(1) + ' %';
+      });
+
+      ui.lab3Volt.addEventListener('input', function (e) {
+        state.lab3Volt = Number(e.target.value) / 100;
+        ui.lab3VoltVal.textContent = state.lab3Volt.toFixed(2) + ' pu';
+      });
+
+      ui.btnLab4Shock.addEventListener('click', function () {
+        state.lab4ShockAge = 0;
+      });
+
+      // Tab 3 비교표 행 클릭
+      ui.tableRows.forEach(function (tr) {
+        tr.addEventListener('click', function () { selectTableRow(tr.dataset.row); });
+      });
+
+      // Tab 4 퀴즈 리셋
+      ui.btnQuizReset.addEventListener('click', function () {
+        state.quizAns = [null, null, null, null, null];
+        renderQuiz();
+      });
+
+      window.addEventListener('resize', resizeActiveCanvases);
+
+      // 초기 상태 세팅 및 60fps 루프 시작
+      applyCountry('au');
+      applyScenario('lvrt_normal');
+      selectTableRow('au');
+      renderQuiz();
+      resizeActiveCanvases();
+      requestAnimationFrame(mainLoop);
+    });
+  </script>
+</body>
+</html>

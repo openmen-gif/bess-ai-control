@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>교류(AC) 사인파 · 단상 220V &amp; 3상 380V 원리 체험실</title>
+  <style>
+    /* =====================================================================
+     * 1. 기본 리셋 및 디자인 토큰 (과학관 / 공학 교육용 밝은 테마)
+     * ===================================================================== */
+    :root {
+      --bg-page: #f4f7fb;
+      --bg-card: #ffffff;
+      --border-soft: #dce5f2;
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #64748b;
+
+      /* 전기 상별 & 물리량 시맨틱 컬러 */
+      --col-r: #ef4444;      /* R상 빨강 */
+      --col-s: #10b981;      /* S상 초록/에메랄드 */
+      --col-t: #3b82f6;      /* T상 파랑 */
+      --col-vrs: #8b5cf6;    /* 선간전압 V_RS 보라 */
+      --col-rms: #f59e0b;    /* 실효값 / 일정전력 주황/골드 */
+      --col-curr: #06b6d4;   /* 전류 시안 */
+
+      --shadow-card: 0 10px 28px -8px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      background-image:
+        radial-gradient(circle at 8% 5%, rgba(59, 130, 246, 0.1) 0%, transparent 32%),
+        radial-gradient(circle at 92% 8%, rgba(139, 92, 246, 0.1) 0%, transparent 32%),
+        radial-gradient(circle at 50% 96%, rgba(16, 185, 129, 0.09) 0%, transparent 38%);
+      color: var(--text-main);
+      line-height: 1.55;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 18px 16px 56px;
+    }
+
+    /* =====================================================================
+     * 2. 상단 헤더 배너
+     * ===================================================================== */
+    .hero-header {
+      background: linear-gradient(135deg, #ffffff 0%, #eff6ff 50%, #f5f3ff 100%);
+      border: 2px solid var(--border-soft);
+      border-radius: 24px;
+      padding: 20px 24px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .hero-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ef4444, #8b5cf6, #3b82f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 8px 18px rgba(139, 92, 246, 0.25);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(1.18rem, 2.4vw, 1.58rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .hero-sub {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-top: 3px;
+    }
+
+    .legend-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .legend-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: var(--text-main);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* =====================================================================
+     * 3. 상단 3개 메인 학습 탭 & 공통 조작 컨트롤 바
+     * ===================================================================== */
+    .tab-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .tab-btn {
+      appearance: none;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 13px 16px;
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      border-color: #93c5fd;
+      color: var(--text-main);
+      transform: translateY(-1px);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #2563eb, #4f46e5);
+      border-color: #1d4ed8;
+      color: #ffffff;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.28);
+    }
+
+    /* 공통 조작 컨트롤 바 */
+    .control-bar {
+      background: #ffffff;
+      border: 2px solid var(--border-soft);
+      border-radius: 20px;
+      padding: 13px 16px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .ctrl-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .ctrl-label {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      margin-right: 2px;
+    }
+
+    .btn-play {
+      appearance: none;
+      border: none;
+      background: linear-gradient(135deg, #2563eb, #0ea5e9);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.84rem;
+      font-weight: 800;
+      padding: 8px 15px;
+      border-radius: 11px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+      transition: all 0.16s ease;
+    }
+
+    .btn-play.paused {
+      background: linear-gradient(135deg, #10b981, #059669);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+    }
+
+    .chip-btn {
+      appearance: none;
+      border: 1.5px solid #cbd5e1;
+      background: #f8fafc;
+      color: #334155;
+      font-family: inherit;
+      font-size: 0.77rem;
+      font-weight: 800;
+      padding: 6px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .chip-btn:hover {
+      border-color: #60a5fa;
+      background: #eff6ff;
+    }
+
+    .chip-btn.active {
+      background: #1e293b;
+      border-color: #0f172a;
+      color: #ffffff;
+    }
+
+    .chip-btn.active-pf {
+      background: #7c3aed;
+      border-color: #6d28d9;
+      color: #ffffff;
+    }
+
+    .angle-ctrl-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 5px 11px;
+      flex: 1 1 230px;
+      max-width: 340px;
+    }
+
+    .angle-slider {
+      flex: 1;
+      min-width: 90px;
+      height: 7px;
+      border-radius: 999px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: linear-gradient(90deg, #ef4444, #f59e0b, #10b981, #3b82f6, #8b5cf6);
+      outline: none;
+      cursor: pointer;
+    }
+
+    .angle-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 3.5px solid #2563eb;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.25);
+      cursor: pointer;
+    }
+
+    /* =====================================================================
+     * 4. 공통 카드 및 탭 패널 레이아웃
+     * ===================================================================== */
+    .tab-panel {
+      display: none;
+      animation: fadeUp 0.22s ease;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-soft);
+      border-radius: 22px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+    }
+
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 13px;
+    }
+
+    .card-title {
+      font-size: 1.03rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-tag {
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1.5px solid #bfdbfe;
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+
+    .equal-two-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+
+    .two-col-grid .card,
+    .equal-two-grid .card {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .canvas-box {
+      width: 100%;
+      flex: 1;
+      border-radius: 16px;
+      background: #f8fbff;
+      border: 2px solid #e2e8f0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .canvas-box canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* 실시간 투명 수식 패널 */
+    .formula-bar {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #f8fafc;
+      border-radius: 18px;
+      padding: 15px 18px;
+      margin-bottom: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .formula-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      border-radius: 12px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .formula-label {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      font-weight: 700;
+    }
+
+    .formula-val {
+      font-size: 1.02rem;
+      font-weight: 900;
+      color: #38bdf8;
+    }
+
+    .formula-sub {
+      font-size: 0.71rem;
+      color: #cbd5e1;
+    }
+
+    /* 탭 2 핵심 질문 배너 & 토글 */
+    .question-banner {
+      background: linear-gradient(135deg, #f5f3ff, #eff6ff);
+      border: 2px solid #c4b5fd;
+      border-radius: 18px;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .toggle-vrs-btn {
+      appearance: none;
+      border: 2px solid #8b5cf6;
+      background: #8b5cf6;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.83rem;
+      font-weight: 800;
+      padding: 8px 15px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.28);
+      transition: all 0.16s ease;
+    }
+
+    .toggle-vrs-btn.off {
+      background: #ffffff;
+      color: #6d28d9;
+      box-shadow: none;
+    }
+
+    /* 탭 3 역률 상세 슬라이더 바 */
+    .pf-detail-bar {
+      background: linear-gradient(135deg, #f8fafc, #eff6ff);
+      border: 2px solid #bfdbfe;
+      border-radius: 18px;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .pf-slider-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1 1 280px;
+    }
+
+    .pf-meter-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pf-badge {
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 0.79rem;
+      font-weight: 800;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+    }
+
+    /* =====================================================================
+     * 5. 하단 교육 보조 영역: 3가지 핵심 원리 카드 & 3문제 미니 퀴즈
+     * ===================================================================== */
+    .three-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .principle-card {
+      background: #f8fbff;
+      border: 2px solid #dbeafe;
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .principle-tag {
+      align-self: flex-start;
+      font-size: 0.73rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .principle-card h3 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .principle-card p {
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      line-height: 1.56;
+    }
+
+    .quiz-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 11px;
+    }
+
+    .quiz-q {
+      font-size: 0.89rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.48;
+    }
+
+    .quiz-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .quiz-opt-btn {
+      appearance: none;
+      width: 100%;
+      text-align: left;
+      padding: 9px 11px;
+      border-radius: 11px;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      color: #1e293b;
+      font-family: inherit;
+      font-size: 0.81rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .quiz-opt-btn:hover:not(:disabled) {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    .quiz-opt-btn.correct {
+      background: #dcfce7;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .quiz-opt-btn.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .quiz-fb {
+      display: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.45;
+      padding: 9px 11px;
+      border-radius: 11px;
+    }
+
+    .quiz-fb.show { display: block; }
+    .quiz-fb.ok { background: #ecfdf5; color: #065f46; border: 1.5px solid #a7f3d0; }
+    .quiz-fb.no { background: #fff1f2; color: #9f1239; border: 1.5px solid #fecdd3; }
+
+    .quiz-footer {
+      margin-top: 14px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+      border: 2px solid #bfdbfe;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    /* =====================================================================
+     * 6. 반응형 미디어 쿼리
+     * ===================================================================== */
+    @media (max-width: 1040px) {
+      .two-col-grid,
+      .equal-two-grid { grid-template-columns: 1fr; }
+      .formula-bar { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 780px) {
+      .tab-bar,
+      .three-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 520px) {
+      .formula-bar { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ================================================================= -->
+    <!-- 상단 헤더 -->
+    <!-- ================================================================= -->
+    <header class="hero-header">
+      <div class="hero-left">
+        <div class="hero-icon" aria-hidden="true">⚡</div>
+        <div>
+          <h1 class="hero-title">교류(AC) 사인파 · 단상 220V &amp; 3상 380V 원리 체험실</h1>
+          <p class="hero-sub">
+            출렁이는 사인파가 왜 일정한 <strong>220V · 380V</strong>로 측정되고 설비를 부드럽게 돌릴까요? 벡터도와 물의 흐름으로 직접 확인해 보세요!
+          </p>
+        </div>
+      </div>
+
+      <div class="legend-pills" aria-label="전압 색상 범례">
+        <span class="legend-pill"><span class="dot" style="background:#ef4444;"></span>R상 (220V)</span>
+        <span class="legend-pill"><span class="dot" style="background:#10b981;"></span>S상 (220V)</span>
+        <span class="legend-pill"><span class="dot" style="background:#3b82f6;"></span>T상 (220V)</span>
+        <span class="legend-pill"><span class="dot" style="background:#8b5cf6;"></span>선간 V_RS (380V)</span>
+        <span class="legend-pill"><span class="dot" style="background:#f59e0b;"></span>실효값(RMS) · 일정전력</span>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 상단 3개 메인 학습 탭 -->
+    <!-- ================================================================= -->
+    <nav class="tab-bar" role="tablist" aria-label="학습 주제 선택">
+      <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="tab1">
+        <span>🌊</span><span>1. 단상 220V와 실효값(RMS)의 비밀</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab2">
+        <span>🔺</span><span>2. 3상 380V와 벡터도(Phasor)의 비밀</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab3">
+        <span>⚙️</span><span>3. 설비 입장: 단상 vs 3상 &amp; 물의 흐름</span>
+      </button>
+    </nav>
+
+    <!-- ================================================================= -->
+    <!-- 공통 조작 컨트롤 바 -->
+    <!-- ================================================================= -->
+    <section class="control-bar" aria-label="공통 애니메이션 제어">
+      <div class="ctrl-group">
+        <button id="btnPlayPause" type="button" class="btn-play">
+          <span id="playIcon">⏸️</span><span id="playText">일시정지</span>
+        </button>
+        <span class="ctrl-label">속도:</span>
+        <button type="button" class="chip-btn" data-speed="0.05">🐢 아주 천천히</button>
+        <button type="button" class="chip-btn active" data-speed="0.2">🚶 천천히</button>
+        <button type="button" class="chip-btn" data-speed="0.6">🏃 보통</button>
+      </div>
+
+      <div class="angle-ctrl-box">
+        <span class="ctrl-label mono">θ:</span>
+        <input id="angleSlider" class="angle-slider" type="range" min="0" max="360" step="1" value="30" />
+        <span id="angleReadout" class="mono" style="font-weight:900; color:#2563eb; min-width:44px; text-align:right;">30°</span>
+        <button type="button" class="chip-btn mono" data-snap="0" style="padding:3px 6px;">0°</button>
+        <button type="button" class="chip-btn mono" data-snap="90" style="padding:3px 6px;">90°</button>
+        <button type="button" class="chip-btn mono" data-snap="120" style="padding:3px 6px;">120°</button>
+      </div>
+
+      <div class="ctrl-group">
+        <span class="ctrl-label">부하 역률:</span>
+        <button type="button" class="chip-btn active-pf" data-phi="0">🔥 히터 (1.0 / 0°)</button>
+        <button type="button" class="chip-btn" data-phi="30">⚙️ 일반모터 (0.87 / 30°)</button>
+        <button type="button" class="chip-btn" data-phi="45">🏭 대형모터 (0.71 / 45°)</button>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- [탭 1] 🌊 단상 220V와 실효값(RMS)의 비밀 -->
+    <!-- ================================================================= -->
+    <main id="tab1" class="tab-panel active">
+      <div class="two-col-grid">
+        <!-- 좌측: 회전 벡터 + 사인파 + 순시전력 p(t) 동기화 Canvas -->
+        <section class="card">
+          <div class="card-head">
+            <h2 class="card-title">📈 회전 벡터 → 사인파(±311V) → 순시전력 p(t) 실시간 동기화</h2>
+            <span class="pill-tag mono">V_rms = 311.1 / √2 = 220V</span>
+          </div>
+          <div class="canvas-box" style="min-height: 390px;">
+            <canvas id="canvasTab1Wave"></canvas>
+          </div>
+        </section>
+
+        <!-- 우측: 왕복 물펌프 & 양방향 물레방아 vs DC 220V 히터 수조 비교 -->
+        <section class="card">
+          <div class="card-head">
+            <h2 class="card-title">💧 비유: AC 311V 왕복 물펌프 vs DC 220V 일정 수압</h2>
+            <button id="btnResetHeat" type="button" class="chip-btn">🔄 수조 온도 리셋</button>
+          </div>
+          <div class="canvas-box" style="min-height: 390px;">
+            <canvas id="canvasTab1Water"></canvas>
+          </div>
+          <p style="font-size:0.8rem; color:#475569; margin-top:10px;">
+            💡 <strong>핵심:</strong> 교류(AC)는 물을 앞뒤로 밀고 당기지만, 양방향 날개(또는 히터 저항)는 어느 방향이든 계속 일을 합니다! 피크 <strong>311V</strong>로 출렁이는 AC가 만든 누적 열량은 일정한 <strong>DC 220V</strong>와 정확히 같습니다.
+          </p>
+        </section>
+      </div>
+
+      <!-- 실시간 투명 수식 카드 -->
+      <section class="formula-bar mono" aria-label="단상 실시간 수식 계산">
+        <div class="formula-cell">
+          <span class="formula-label">1. 현재 순시 전압 v(θ)</span>
+          <span id="f1InstV" class="formula-val" style="color:#f87171;">+155.6 V</span>
+          <span id="f1InstVEq" class="formula-sub">311.1 × sin(30°)</span>
+        </div>
+        <div class="formula-cell">
+          <span class="formula-label">2. 실효값 (멀티미터 측정값)</span>
+          <span class="formula-val" style="color:#fbbf24;">220.0 V (RMS)</span>
+          <span class="formula-sub">V_peak ÷ √2 = 311.1 ÷ 1.414</span>
+        </div>
+        <div class="formula-cell">
+          <span class="formula-label">3. 현재 순시 전력 p(θ) = v·i</span>
+          <span id="f1InstP" class="formula-val" style="color:#34d399;">+550 W</span>
+          <span id="f1InstPEq" class="formula-sub">평균 유효전력 P_avg = 1,100 W</span>
+        </div>
+        <div class="formula-cell">
+          <span class="formula-label">4. 부하 위상차(φ) / 역률(cosφ)</span>
+          <span id="f1Pf" class="formula-val" style="color:#38bdf8;">φ = 0° (cosφ = 1.00)</span>
+          <span id="f1PfDesc" class="formula-sub">전압·전류 동위상 (100% 유효 일)</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [탭 2] 🔺 3상 380V와 벡터도(Phasor)의 비밀 -->
+    <!-- ================================================================= -->
+    <main id="tab2" class="tab-panel">
+      <!-- 핵심 질문 배너 + 선간전압 토글 -->
+      <div class="question-banner">
+        <div>
+          <strong style="font-size:1.02rem; color:#4c1d95;">❓ 왜 220V가 3개 모였는데 660V가 아니라 380V일까요?</strong>
+          <p style="font-size:0.83rem; color:#475569; margin-top:2px;">
+            R·S·T 세 상이 같은 방향이 아니라 <strong>120°씩 어긋나서</strong> 회전하기 때문입니다! 두 화살표 끝 사이의 거리(<strong>V_RS = V_R − V_S</strong>)를 재면 정확히 <strong>220 × √3 ≈ 380V</strong>가 됩니다.
+          </p>
+        </div>
+        <button id="btnToggleVrs" type="button" class="toggle-vrs-btn">
+          <span>🟣</span><span id="vrsToggleTxt">선간전압 벡터(V_RS = V_R - V_S) 보기 ON</span>
+        </button>
+      </div>
+
+      <!-- 대형 통합 동기화 무대: [좌] 회전 벡터도 <-> [수평 투영 점선] <-> [우] 3상 사인파 오실로스코프 -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">🔺 3상 회전 벡터도(Phasor) ↔ Y축 투영 ↔ 실시간 사인파 오실로스코프</h2>
+          <span class="pill-tag mono" style="background:#f5f3ff; color:#6d28d9; border-color:#ddd6fe;">V_RS 피크 = ±539V (실효 381V ≈ 380V · +30° 앞섬)</span>
+        </div>
+        <div class="canvas-box" style="min-height: 430px;">
+          <canvas id="canvasTab2Phasor"></canvas>
+        </div>
+      </section>
+
+      <!-- 하단 실시간 3상 수식 패널 -->
+      <section class="formula-bar mono" aria-label="3상 실시간 수식 계산">
+        <div class="formula-cell">
+          <span class="formula-label">R상 순시전압 v_R(θ)</span>
+          <span id="f2Vr" class="formula-val" style="color:#f87171;">+155.6 V</span>
+          <span class="formula-sub">311.1·sin(θ) · RMS 220V</span>
+        </div>
+        <div class="formula-cell">
+          <span class="formula-label">S상 순시전압 v_S(θ - 120°)</span>
+          <span id="f2Vs" class="formula-val" style="color:#34d399;">-311.1 V</span>
+          <span class="formula-sub">311.1·sin(θ - 120°) · RMS 220V</span>
+        </div>
+        <div class="formula-cell">
+          <span class="formula-label">T상 순시전압 v_T(θ + 120°)</span>
+          <span id="f2Vt" class="formula-val" style="color:#60a5fa;">+155.6 V</span>
+          <span class="formula-sub">311.1·sin(θ + 120°) · RMS 220V</span>
+        </div>
+        <div class="formula-cell" style="border-color:rgba(139,92,246,0.55); background:rgba(139,92,246,0.14);">
+          <span class="formula-label" style="color:#ddd6fe;">선간전압 v_RS = v_R − v_S</span>
+          <span id="f2Vrs" class="formula-val" style="color:#c4b5fd;">+466.7 V</span>
+          <span class="formula-sub" style="color:#e9d5ff;">220V × √3 = 381.1V (≈ 380V)</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- [탭 3] ⚙️ 설비·소비자 입장: 단상 vs 3상 전력 공급 & 물의 흐름 비유 -->
+    <!-- ================================================================= -->
+    <main id="tab3" class="tab-panel">
+      <!-- 위상차(역률) 정밀 조절 바 -->
+      <div class="pf-detail-bar">
+        <div class="pf-slider-wrap">
+          <label for="phiSlider" style="font-size:0.85rem; font-weight:800; white-space:nowrap;">🎛️ 전압-전류 위상차(φ):</label>
+          <input id="phiSlider" class="angle-slider" type="range" min="0" max="60" step="1" value="0" style="background:linear-gradient(90deg, #10b981, #f59e0b, #ef4444);" />
+          <span id="phiReadout" class="mono" style="font-weight:900; color:#7c3aed; min-width:38px;">0°</span>
+        </div>
+        <div class="pf-meter-badges mono">
+          <span id="pfBadgeCos" class="pf-badge" style="color:#047857; border-color:#a7f3d0;">역률 cosφ = 1.00</span>
+          <span id="pfBadgeActive" class="pf-badge" style="color:#1d4ed8; border-color:#bfdbfe;">일하는 물(유효): 100%</span>
+          <span id="pfBadgeReactive" class="pf-badge" style="color:#dc2626; border-color:#fecaca;">헛도는 물(무효): 0%</span>
+        </div>
+      </div>
+
+      <!-- 좌우 비교 대시보드: 단상 220V 설비 vs 3상 380V 설비 -->
+      <div class="equal-two-grid">
+        <!-- 좌측: 단상 220V 설비 (1기통 펌프 + 맥동 전력) -->
+        <section class="card">
+          <div class="card-head">
+            <h2 class="card-title">🚲 단상 220V 설비 (외발 페달 · 1기통 물펌프)</h2>
+            <span class="pill-tag" style="background:#fef2f2; color:#dc2626; border-color:#fecaca;">1초에 120번 힘=0 (맥동)</span>
+          </div>
+          <div class="canvas-box" style="min-height: 400px;">
+            <canvas id="canvasTab3Single"></canvas>
+          </div>
+          <p style="font-size:0.8rem; color:#475569; margin-top:10px;">
+            ⚠️ 단상은 전력 파형이 <strong>매 반주기마다 0으로 떨어지기 때문에</strong> 큰 모터를 돌리면 진동과 덜컹거림(맥동 토크)이 생깁니다.
+          </p>
+        </section>
+
+        <!-- 우측: 3상 380V 설비 (120° 3기통 펌프 + 완벽한 일정 전력) -->
+        <section class="card">
+          <div class="card-head">
+            <h2 class="card-title">⚙️ 3상 380V 설비 (3인 협동 페달 · 3기통 물펌프)</h2>
+            <span class="pill-tag" style="background:#ecfdf5; color:#047857; border-color:#a7f3d0;">합성 전력 완벽 일직선! ✨</span>
+          </div>
+          <div class="canvas-box" style="min-height: 400px;">
+            <canvas id="canvasTab3Three"></canvas>
+          </div>
+          <p style="font-size:0.8rem; color:#475569; margin-top:10px;">
+            ✅ R·S·T 세 상이 120° 간격으로 번갈아 밀어주면 <strong>P_total = p_R + p_S + p_T가 한순간도 0이 되지 않고 완벽한 직선</strong>을 유지해 모터가 진동 없이 부드럽게 돕니다!
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- 하단 교육 보조 1: 3가지 핵심 원리 요약 카드 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">📘 한눈에 정리하는 교류(AC) 220V · 380V 핵심 원리 3가지</h2>
+        <span class="pill-tag">이론과 직관을 한 번에!</span>
+      </div>
+
+      <div class="three-grid">
+        <article class="principle-card">
+          <span class="principle-tag" style="background:#fef3c7; color:#b45309;">원리 1 · 실효값(RMS)</span>
+          <h3>311V 피크가 왜 220V로 측정될까요?</h3>
+          <p>
+            가정용 교류는 순간적으로 <strong>+311V ↔ -311V</strong>까지 출렁이지만, 0V를 지나는 순간도 있습니다.
+            실제로 히터를 데우는 <strong>평균 일량</strong>을 직류(DC)로 환산하면 정확히 <strong>311.1 ÷ √2 = 220V</strong>와 같아, 계측기도 220V로 표시합니다.
+          </p>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-tag" style="background:#f3e8ff; color:#6d28d9;">원리 2 · 120° 벡터와 √3</span>
+          <h3>220V 3개가 왜 660V가 아니라 380V일까요?</h3>
+          <p>
+            3상은 R, S, T가 나란히 더해지는 것이 아니라 <strong>120°씩 각도를 두고</strong> 회전합니다.
+            두 선 사이의 전압 차(<strong>V_RS = V_R − V_S</strong>)는 변의 길이가 220인 120° 이등변삼각형의 밑변과 같아 <strong>220 × √3 ≈ 380V</strong>가 됩니다.
+          </p>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-tag" style="background:#dcfce7; color:#047857;">원리 3 · 일정한 합성 전력</span>
+          <h3>공장과 대형 설비는 왜 3상 380V를 쓸까요?</h3>
+          <p>
+            단상은 힘이 1초에 120번 0으로 꺼지며 맥동하지만, 3상은 세 상의 전력을 합치면 <strong>삼각함수 상쇄로 완벽한 일직선(일정 전력)</strong>이 됩니다.
+            덕분에 대형 모터가 진동 없이 강력하고 효율적으로 회전합니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 하단 교육 보조 2: 3문제 인터랙티브 미니 퀴즈 -->
+    <!-- ================================================================= -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">🎯 이해도 확인 미니 퀴즈 (3문제)</h2>
+        <span class="pill-tag">방금 본 애니메이션 원리를 점검해 보세요!</span>
+      </div>
+
+      <div id="quizGrid" class="three-grid"></div>
+
+      <div class="quiz-footer">
+        <span id="quizScoreText">📝 3문제를 모두 풀어 보세요! (0 / 3 완료)</span>
+        <button id="btnQuizReset" type="button" class="chip-btn">🔄 퀴즈 다시 풀기</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 60fps 통합 애니메이션 & 물리 시뮬레이션 엔진 (Pure Vanilla JS) -->
+  <!-- ================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      const SQRT2 = Math.SQRT2;
+      const SQRT3 = Math.sqrt(3);
+      const V_RMS = 220.0;
+      const V_PEAK = V_RMS * SQRT2; // 311.127 V
+      const V_LINE_RMS = V_RMS * SQRT3; // 381.05 V (≈ 380V)
+      const V_LINE_PEAK = V_PEAK * SQRT3; // 538.89 V
+
+      /* -----------------------------------------------------------------
+       * 1. 전역 시뮬레이션 상태
+       * ----------------------------------------------------------------- */
+      const state = {
+        activeTab: 'tab1',   // 'tab1' | 'tab2' | 'tab3'
+        playing: true,
+        speed: 0.2,          // 0.05 | 0.2 | 0.6 (초당 회전수)
+        thetaDeg: 30,        // 0 ~ 360 (현재 전기각)
+        phiDeg: 0,           // 0 ~ 60 (전압-전류 위상차, 역률각)
+        showVrs: true,       // 탭 2 선간전압 벡터 표시 여부
+
+        // 탭 1 누적 열량 비교 (AC vs DC 수조 온도 20°C ~ 100°C)
+        acTemp: 24.0,
+        dcTemp: 24.0,
+        acWheelAngle: 0,
+        dcWheelAngle: 0,
+
+        // 탭 3 모터 회전각 (단상 맥동 vs 3상 일정)
+        singleMotorAngle: 0,
+        threeMotorAngle: 0,
+
+        lastTs: 0,
+        quizAns: [null, null, null]
+      };
+
+      const QUIZ_DATA = [
+        {
+          q: 'Q1. 우리 집 콘센트(단상 220V)의 사인파 전압은 순간적으로 약 ±311V까지 올라가는데, 왜 220V라고 부를까요?',
+          opts: [
+            '① 계측기가 고장 나서 실제보다 작게 표시하기 때문에',
+            '② 출렁이는 AC가 하는 평균 일량(열량)이 일정한 DC 220V와 똑같기 때문에 (실효값 RMS)',
+            '③ 전기를 아끼기 위해 311V를 반으로 줄여서 보내기 때문에'
+          ],
+          ans: 1,
+          ok: '정답입니다! 🌊 피크 311.1V로 출렁이는 교류의 실효값(311.1 ÷ √2 = 220V)은 일정한 DC 220V가 하는 일과 정확히 같습니다.',
+          no: '다시 생각해 보세요! 탭 1의 [AC 왕복 물펌프 vs DC 220V 수조 온도]가 똑같이 올라가는 모습을 확인해 보세요.'
+        },
+        {
+          q: 'Q2. 3상 전력에서 상전압 220V가 3개 모였을 때, 두 선 사이의 선간전압(V_RS)이 380V가 되는 이유는?',
+          opts: [
+            '① 세 상이 120° 위상차를 두고 회전해 두 벡터의 차(V_R - V_S)가 220 × √3 ≈ 381V가 되기 때문',
+            '② 전선이 길어서 660V 중 280V가 열로 사라지기 때문',
+            '③ 변압기에서 임의로 380V를 정했기 때문'
+          ],
+          ans: 0,
+          ok: '완벽해요! 🔺 120° 이등변삼각형의 기하학 덕분에 220 × √3 = 381V(공칭 380V)가 됩니다.',
+          no: '힌트! 탭 2에서 [선간전압 벡터 V_RS 보기]를 켜고 120° 삼각형 길이를 확인해 보세요.'
+        },
+        {
+          q: 'Q3. 공장 대형 모터에 단상 대신 3상 전력을 사용하는 가장 큰 장점은 무엇인가요?',
+          opts: [
+            '① 전선을 한 가닥만 쓰기 때문에',
+            '② 120° 간격의 3상 전력을 모두 합치면 순간적으로 0이 되지 않고 완벽하게 일정한 전력이 공급되기 때문에',
+            '③ 3상은 교류가 아니라 직류(DC)이기 때문에'
+          ],
+          ans: 1,
+          ok: '정확합니다! ⚙️ 세 상의 전력을 더한 P_total이 완벽한 일직선을 유지해 모터가 진동 없이 부드럽고 강력하게 회전합니다.',
+          no: '힌트! 탭 3에서 단상(1초에 120번 0으로 떨어짐)과 3상(완벽한 일직선 합성 전력) 그래프를 비교해 보세요.'
+        }
+      ];
+
+      /* -----------------------------------------------------------------
+       * 2. DOM 요소 & Canvas 컨텍스트 관리
+       * ----------------------------------------------------------------- */
+      const canvases = {
+        tab1Wave: { el: document.getElementById('canvasTab1Wave'), ctx: null, w: 500, h: 390 },
+        tab1Water: { el: document.getElementById('canvasTab1Water'), ctx: null, w: 400, h: 390 },
+        tab2Phasor: { el: document.getElementById('canvasTab2Phasor'), ctx: null, w: 900, h: 430 },
+        tab3Single: { el: document.getElementById('canvasTab3Single'), ctx: null, w: 500, h: 400 },
+        tab3Three: { el: document.getElementById('canvasTab3Three'), ctx: null, w: 500, h: 400 }
+      };
+
+      Object.values(canvases).forEach(c => {
+        c.ctx = c.el.getContext('2d');
+      });
+
+      const ui = {
+        tabBtns: document.querySelectorAll('.tab-btn'),
+        tabPanels: document.querySelectorAll('.tab-panel'),
+        btnPlayPause: document.getElementById('btnPlayPause'),
+        playIcon: document.getElementById('playIcon'),
+        playText: document.getElementById('playText'),
+        speedBtns: document.querySelectorAll('[data-speed]'),
+        angleSlider: document.getElementById('angleSlider'),
+        angleReadout: document.getElementById('angleReadout'),
+        snapBtns: document.querySelectorAll('[data-snap]'),
+        pfPresetBtns: document.querySelectorAll('[data-phi]'),
+
+        // 탭 1
+        btnResetHeat: document.getElementById('btnResetHeat'),
+        f1InstV: document.getElementById('f1InstV'),
+        f1InstVEq: document.getElementById('f1InstVEq'),
+        f1InstP: document.getElementById('f1InstP'),
+        f1InstPEq: document.getElementById('f1InstPEq'),
+        f1Pf: document.getElementById('f1Pf'),
+        f1PfDesc: document.getElementById('f1PfDesc'),
+
+        // 탭 2
+        btnToggleVrs: document.getElementById('btnToggleVrs'),
+        vrsToggleTxt: document.getElementById('vrsToggleTxt'),
+        f2Vr: document.getElementById('f2Vr'),
+        f2Vs: document.getElementById('f2Vs'),
+        f2Vt: document.getElementById('f2Vt'),
+        f2Vrs: document.getElementById('f2Vrs'),
+
+        // 탭 3
+        phiSlider: document.getElementById('phiSlider'),
+        phiReadout: document.getElementById('phiReadout'),
+        pfBadgeCos: document.getElementById('pfBadgeCos'),
+        pfBadgeActive: document.getElementById('pfBadgeActive'),
+        pfBadgeReactive: document.getElementById('pfBadgeReactive'),
+
+        // 퀴즈
+        quizGrid: document.getElementById('quizGrid'),
+        quizScoreText: document.getElementById('quizScoreText'),
+        btnQuizReset: document.getElementById('btnQuizReset')
+      };
+
+      function resizeVisibleCanvases() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const list = state.activeTab === 'tab1'
+          ? [canvases.tab1Wave, canvases.tab1Water]
+          : state.activeTab === 'tab2'
+            ? [canvases.tab2Phasor]
+            : [canvases.tab3Single, canvases.tab3Three];
+
+        list.forEach(c => {
+          const rect = c.el.parentElement.getBoundingClientRect();
+          if (rect.width <= 0 || rect.height <= 0) return;
+          c.w = rect.width;
+          c.h = rect.height;
+          c.el.width = Math.floor(rect.width * dpr);
+          c.el.height = Math.floor(rect.height * dpr);
+          c.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        });
+      }
+
+      /* -----------------------------------------------------------------
+       * 3. 도형 보조 함수 (화살표, 둥근 사각형, 물레방아)
+       * ----------------------------------------------------------------- */
+      function drawArrow(ctx, x1, y1, x2, y2, color, width, headLen) {
+        const dx = x2 - x1;
+        const dy = y2 - y1;
+        const ang = Math.atan2(dy, dx);
+        const hl = headLen || 10;
+        ctx.save();
+        ctx.strokeStyle = color;
+        ctx.fillStyle = color;
+        ctx.lineWidth = width || 3;
+        ctx.lineCap = 'round';
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(x2, y2);
+        ctx.lineTo(x2 - hl * Math.cos(ang - Math.PI / 6), y2 - hl * Math.sin(ang - Math.PI / 6));
+        ctx.lineTo(x2 - hl * Math.cos(ang + Math.PI / 6), y2 - hl * Math.sin(ang + Math.PI / 6));
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+      }
+
+      function drawPaddleWheel(ctx, cx, cy, r, angle, color, blades) {
+        const n = blades || 6;
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.rotate(angle);
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 3;
+        for (let i = 0; i < n; i++) {
+          const a = (i * Math.PI * 2) / n;
+          ctx.beginPath();
+          ctx.moveTo(0, 0);
+          ctx.lineTo(Math.cos(a) * r, Math.sin(a) * r);
+          ctx.stroke();
+          ctx.fillStyle = color;
+          ctx.beginPath();
+          ctx.arc(Math.cos(a) * r, Math.sin(a) * r, 4, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.fillStyle = '#ffffff';
+        ctx.strokeStyle = '#334155';
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        ctx.arc(0, 0, r * 0.3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+        ctx.restore();
+      }
+
+      /* -----------------------------------------------------------------
+       * 4. [탭 1] 렌더링: 단상 벡터+사인파+순시전력 & 물펌프/수조 비유
+       * ----------------------------------------------------------------- */
+      function renderTab1() {
+        const theta = (state.thetaDeg * Math.PI) / 180;
+        const phi = (state.phiDeg * Math.PI) / 180;
+        const cosPhi = Math.cos(phi);
+
+        // 순시값 계산 (정격 5A RMS 부하 기준 -> 평균전력 220*5*cosPhi = 1100*cosPhi W)
+        const vInst = V_PEAK * Math.sin(theta);
+        const iPeak = 5.0 * SQRT2;
+        const iInst = iPeak * Math.sin(theta - phi);
+        const pInst = vInst * iInst; // W
+        const pAvg = V_RMS * 5.0 * cosPhi;
+
+        // 실시간 수식 바 업데이트
+        ui.f1InstV.textContent = `${vInst >= 0 ? '+' : ''}${vInst.toFixed(1)} V`;
+        ui.f1InstVEq.textContent = `311.1 × sin(${Math.round(state.thetaDeg)}°)`;
+        ui.f1InstP.textContent = `${pInst >= 0 ? '+' : ''}${Math.round(pInst).toLocaleString()} W`;
+        ui.f1InstP.style.color = pInst < -5 ? '#f87171' : '#34d399';
+        ui.f1InstPEq.textContent = `평균 유효전력 P_avg = ${Math.round(pAvg).toLocaleString()} W`;
+        ui.f1Pf.textContent = `φ = ${state.phiDeg}° (cosφ = ${cosPhi.toFixed(2)})`;
+        ui.f1PfDesc.textContent = state.phiDeg === 0
+          ? '전압·전류 동위상 (100% 유효 일)'
+          : `전류가 ${state.phiDeg}° 지연 (음의 전력=무효전력 발생)`;
+
+        /* --- (A) 좌측 Canvas: 회전 벡터 + 사인파 + 순시전력 p(t) --- */
+        {
+          const { ctx, w, h } = canvases.tab1Wave;
+          ctx.clearRect(0, 0, w, h);
+
+          const topH = h * 0.56;
+          const botTop = topH + 14;
+          const botH = h - botTop - 14;
+
+          // 좌측 페이저 원 중심 & 반지름
+          const vecAreaW = Math.min(165, w * 0.30);
+          const vcx = vecAreaW * 0.52;
+          const vcy = topH * 0.52;
+          const vr = Math.min(vecAreaW * 0.37, topH * 0.38);
+
+          // 우측 파형 영역
+          const wx0 = vecAreaW + 14;
+          const wx1 = w - 18;
+          const ww = Math.max(80, wx1 - wx0);
+
+          // 1) 페이저 원 & 기준축
+          ctx.strokeStyle = '#e2e8f0';
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          ctx.arc(vcx, vcy, vr, 0, Math.PI * 2);
+          ctx.stroke();
+
+          ctx.strokeStyle = '#cbd5e1';
+          ctx.setLineDash([3, 3]);
+          ctx.beginPath();
+          ctx.moveTo(vcx - vr - 10, vcy); ctx.lineTo(vcx + vr + 10, vcy);
+          ctx.moveTo(vcx, vcy - vr - 10); ctx.lineTo(vcx, vcy + vr + 10);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          // 전압 벡터 (반시계 회전: y = -sin(theta))
+          const vx = vcx + Math.cos(theta) * vr;
+          const vy = vcy - Math.sin(theta) * vr;
+          drawArrow(ctx, vcx, vcy, vx, vy, '#ef4444', 3.2, 10);
+
+          // 전류 벡터 (위상차 phi만큼 지연)
+          const ir = vr * 0.65;
+          const ix = vcx + Math.cos(theta - phi) * ir;
+          const iy = vcy - Math.sin(theta - phi) * ir;
+          drawArrow(ctx, vcx, vcy, ix, iy, '#06b6d4', 2.4, 8);
+
+          ctx.fillStyle = '#0f172a';
+          ctx.font = '800 11px Pretendard, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('회전 벡터 (Phasor)', vcx, 18);
+          ctx.fillStyle = '#64748b';
+          ctx.font = '700 10px ui-monospace, monospace';
+          ctx.fillText(`θ = ${Math.round(state.thetaDeg)}°`, vcx, vcy + vr + 20);
+
+          // 2) 상단 사인파 영역 (전압 + 전류 + 220V RMS 점선)
+          ctx.strokeStyle = '#e2e8f0';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(wx0, vcy); ctx.lineTo(wx1, vcy);
+          ctx.stroke();
+
+          // ±220V RMS 점선 (vr / sqrt2)
+          const rmsOffset = vr / SQRT2;
+          ctx.strokeStyle = '#f59e0b';
+          ctx.lineWidth = 1.6;
+          ctx.setLineDash([6, 4]);
+          ctx.beginPath();
+          ctx.moveTo(wx0, vcy - rmsOffset); ctx.lineTo(wx1, vcy - rmsOffset);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          ctx.fillStyle = '#d97706';
+          ctx.font = '800 10.5px Pretendard, sans-serif';
+          ctx.textAlign = 'right';
+          ctx.fillText('실효값 220V (RMS)', wx1 - 2, vcy - rmsOffset - 5);
+
+          ctx.fillStyle = '#ef4444';
+          ctx.textAlign = 'left';
+          ctx.fillText('+311V 피크', wx0 + 4, vcy - vr + 10);
+
+          // 전압 사인파 (0~360도 표시)
+          ctx.strokeStyle = '#ef4444';
+          ctx.lineWidth = 2.6;
+          ctx.beginPath();
+          for (let px = 0; px <= ww; px += 2) {
+            const ang = (px / ww) * Math.PI * 2;
+            const py = vcy - Math.sin(ang) * vr;
+            px === 0 ? ctx.moveTo(wx0 + px, py) : ctx.lineTo(wx0 + px, py);
+          }
+          ctx.stroke();
+
+          // 전류 사인파
+          ctx.strokeStyle = '#06b6d4';
+          ctx.lineWidth = 2;
+          ctx.beginPath();
+          for (let px = 0; px <= ww; px += 2) {
+            const ang = (px / ww) * Math.PI * 2;
+            const py = vcy - Math.sin(ang - phi) * ir;
+            px === 0 ? ctx.moveTo(wx0 + px, py) : ctx.lineTo(wx0 + px, py);
+          }
+          ctx.stroke();
+
+          // 현재 각도 위치 X & 벡터 끝에서 수평 투영 점선
+          const curX = wx0 + (state.thetaDeg / 360) * ww;
+          ctx.strokeStyle = 'rgba(239, 68, 68, 0.55)';
+          ctx.lineWidth = 1.4;
+          ctx.setLineDash([4, 3]);
+          ctx.beginPath();
+          ctx.moveTo(vx, vy);
+          ctx.lineTo(curX, vy);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          // 수직 커서 (상단~하단 전력 그래프 관통)
+          ctx.strokeStyle = 'rgba(15, 23, 42, 0.35)';
+          ctx.lineWidth = 1.4;
+          ctx.setLineDash([4, 3]);
+          ctx.beginPath();
+          ctx.moveTo(curX, 20);
+          ctx.lineTo(curX, h - 14);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          // 현재 전압/전류 점
+          ctx.fillStyle = '#ef4444';
+          ctx.beginPath(); ctx.arc(curX, vy, 5, 0, Math.PI * 2); ctx.fill();
+          ctx.fillStyle = '#06b6d4';
+          ctx.beginPath(); ctx.arc(curX, iy, 4, 0, Math.PI * 2); ctx.fill();
+
+          // 3) 하단 순시전력 p(t) = v·i 그래프
+          const pZeroY = botTop + botH * 0.72;
+          const pScale = botH * 0.62;
+
+          ctx.fillStyle = '#0f172a';
+          ctx.font = '800 11px Pretendard, sans-serif';
+          ctx.textAlign = 'left';
+          ctx.fillText('⚡ 순시전력 p(t) = v·i (2배 주파수 · 평균선 = DC 220V 전력)', wx0, botTop + 2);
+
+          // 0W 기준선
+          ctx.strokeStyle = '#94a3b8';
+          ctx.lineWidth = 1.2;
+          ctx.beginPath();
+          ctx.moveTo(wx0, pZeroY); ctx.lineTo(wx1, pZeroY);
+          ctx.stroke();
+
+          // 전력 음영 (양의 전력: 에메랄드, 음의 전력: 코랄 레드)
+          for (let px = 0; px < ww; px += 2) {
+            const ang = (px / ww) * Math.PI * 2;
+            const normP = Math.sin(ang) * Math.sin(ang - phi); // -0.5 ~ 1.0
+            const py = pZeroY - normP * pScale;
+            ctx.fillStyle = normP >= 0 ? 'rgba(16, 185, 129, 0.24)' : 'rgba(239, 68, 68, 0.28)';
+            ctx.fillRect(wx0 + px, Math.min(pZeroY, py), 2.5, Math.abs(pZeroY - py));
+          }
+
+          // 전력 곡선
+          ctx.strokeStyle = '#10b981';
+          ctx.lineWidth = 2.4;
+          ctx.beginPath();
+          for (let px = 0; px <= ww; px += 2) {
+            const ang = (px / ww) * Math.PI * 2;
+            const normP = Math.sin(ang) * Math.sin(ang - phi);
+            const py = pZeroY - normP * pScale;
+            px === 0 ? ctx.moveTo(wx0 + px, py) : ctx.lineTo(wx0 + px, py);
+          }
+          ctx.stroke();
+
+          // 평균 전력선 (= 0.5 * cosPhi)
+          const avgY = pZeroY - (0.5 * cosPhi) * pScale;
+          ctx.strokeStyle = '#f59e0b';
+          ctx.lineWidth = 2;
+          ctx.setLineDash([6, 4]);
+          ctx.beginPath();
+          ctx.moveTo(wx0, avgY); ctx.lineTo(wx1, avgY);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          ctx.fillStyle = '#d97706';
+          ctx.font = '800 10px Pretendard, sans-serif';
+          ctx.textAlign = 'right';
+          ctx.fillText(`평균 일량 = DC 220V`, wx1 - 2, avgY - 4);
+
+          // 현재 전력 점
+          const curNormP = Math.sin(theta) * Math.sin(theta - phi);
+          ctx.fillStyle = curNormP >= 0 ? '#059669' : '#dc2626';
+          ctx.beginPath();
+          ctx.arc(curX, pZeroY - curNormP * pScale, 5.2, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        /* --- (B) 우측 Canvas: AC 왕복 물펌프 & 양방향 물레방아 vs DC 220V 일정 수압 --- */
+        {
+          const { ctx, w, h } = canvases.tab1Water;
+          ctx.clearRect(0, 0, w, h);
+
+          const midX = w / 2;
+          // 중앙 구분선
+          ctx.strokeStyle = '#cbd5e1';
+          ctx.lineWidth = 1.5;
+          ctx.setLineDash([5, 5]);
+          ctx.beginPath();
+          ctx.moveTo(midX, 16); ctx.lineTo(midX, h - 16);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          const sinT = Math.sin(theta);
+
+          // === 왼쪽: AC 311V 피크 왕복 물펌프 ===
+          const lx = midX * 0.5;
+          ctx.fillStyle = '#dc2626';
+          ctx.font = '900 12.5px Pretendard, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('🌊 교류 AC (피크 ±311V)', lx, 24);
+          ctx.fillStyle = '#64748b';
+          ctx.font = '700 10.5px Pretendard, sans-serif';
+          ctx.fillText('물이 앞뒤로 왕복하며 일을 함', lx, 40);
+
+          // 수관(파이프)
+          const pipeY = 92;
+          const pipeW = Math.min(148, midX - 32);
+          ctx.fillStyle = '#e0f2fe';
+          ctx.strokeStyle = '#38bdf8';
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.roundRect(lx - pipeW / 2, pipeY - 18, pipeW, 36, 10);
+          ctx.fill();
+          ctx.stroke();
+
+          // 왕복 피스톤 위치
+          const pistonX = lx + sinT * (pipeW * 0.28);
+          ctx.fillStyle = '#ef4444';
+          ctx.fillRect(pistonX - 7, pipeY - 15, 14, 30);
+
+          // 물 흐름 화살표 (좌우 방향 전환)
+          if (Math.abs(sinT) > 0.12) {
+            const dir = sinT > 0 ? 1 : -1;
+            const len = Math.abs(sinT) * 26;
+            drawArrow(ctx, pistonX + dir * 10, pipeY, pistonX + dir * (10 + len), pipeY, '#0284c7', 2.8, 7);
+          }
+
+          // 양방향 물레방아 (앞뒤 어느 쪽으로 밀어도 계속 일함)
+          const wheelY = 172;
+          drawPaddleWheel(ctx, lx, wheelY, 28, state.acWheelAngle, '#ef4444', 6);
+          ctx.fillStyle = '#475569';
+          ctx.font = '700 10.5px Pretendard, sans-serif';
+          ctx.fillText('양방향 물레방아 (계속 회전!)', lx, wheelY + 44);
+
+          // AC 가열 물탱크 (온도 게이지)
+          drawHeatTank(ctx, lx, 250, 96, 112, state.acTemp, '#ef4444', 'AC 누적 열량');
+
+          // === 오른쪽: DC 220V 일정 수압 ===
+          const rx = midX + midX * 0.5;
+          ctx.fillStyle = '#d97706';
+          ctx.font = '900 12.5px Pretendard, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('➡️ 직류 DC (일정 220V)', rx, 24);
+          ctx.fillStyle = '#64748b';
+          ctx.font = '700 10.5px Pretendard, sans-serif';
+          ctx.fillText('물이 한 방향으로 일정하게 흐름', rx, 40);
+
+          // DC 수관
+          ctx.fillStyle = '#fef3c7';
+          ctx.strokeStyle = '#f59e0b';
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.roundRect(rx - pipeW / 2, pipeY - 18, pipeW, 36, 10);
+          ctx.fill();
+          ctx.stroke();
+
+          // DC 일정 물 흐름 화살표들
+          const shift = ((state.dcWheelAngle * 14) % 36);
+          for (let i = -1; i <= 1; i++) {
+            const ax = rx - 30 + i * 32 + (shift - 18) * 0.5;
+            if (ax > rx - pipeW / 2 + 10 && ax < rx + pipeW / 2 - 22) {
+              drawArrow(ctx, ax, pipeY, ax + 18, pipeY, '#d97706', 2.6, 6);
+            }
+          }
+
+          // DC 물레방아 (일정 속도)
+          drawPaddleWheel(ctx, rx, wheelY, 28, state.dcWheelAngle, '#f59e0b', 6);
+          ctx.fillStyle = '#475569';
+          ctx.font = '700 10.5px Pretendard, sans-serif';
+          ctx.fillText('일정 수압 물레방아', rx, wheelY + 44);
+
+          // DC 가열 물탱크
+          drawHeatTank(ctx, rx, 250, 96, 112, state.dcTemp, '#f59e0b', 'DC 누적 열량');
+
+          // 중앙 "=" 비교 배지
+          ctx.fillStyle = '#0f172a';
+          ctx.beginPath();
+          ctx.arc(midX, 306, 16, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = '#34d399';
+          ctx.font = '900 18px ui-monospace, monospace';
+          ctx.textAlign = 'center';
+          ctx.fillText('=', midX, 312);
+        }
+      }
+
+      function drawHeatTank(ctx, cx, topY, tw, th, temp, accentCol, label) {
+        const x = cx - tw / 2;
+        const pct = Math.min(1, Math.max(0, (temp - 20) / 80));
+        const fillH = pct * (th - 10);
+
+        ctx.fillStyle = '#ffffff';
+        ctx.strokeStyle = '#64748b';
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        ctx.roundRect(x, topY, tw, th, 12);
+        ctx.fill();
+        ctx.stroke();
+
+        // 따뜻한 물 채우기
+        const grad = ctx.createLinearGradient(0, topY + th, 0, topY);
+        grad.addColorStop(0, '#38bdf8');
+        grad.addColorStop(0.5, '#fbbf24');
+        grad.addColorStop(1, accentCol);
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.roundRect(x + 4, topY + th - 4 - fillH, tw - 8, fillH, 8);
+        ctx.fill();
+
+        // 온도 텍스트
+        ctx.fillStyle = '#0f172a';
+        ctx.font = '900 15px ui-monospace, monospace';
+        ctx.textAlign = 'center';
+        ctx.fillText(`${temp.toFixed(1)}°C`, cx, topY + th * 0.52);
+
+        ctx.fillStyle = '#475569';
+        ctx.font = '800 10.5px Pretendard, sans-serif';
+        ctx.fillText(label, cx, topY + th + 17);
+      }
+
+      /* -----------------------------------------------------------------
+       * 5. [탭 2] 렌더링: 3상 회전 벡터도 ↔ 수평 투영 ↔ 사인파 오실로스코프
+       * ----------------------------------------------------------------- */
+      function renderTab2() {
+        const theta = (state.thetaDeg * Math.PI) / 180;
+        const angR = theta;
+        const angS = theta - (2 * Math.PI) / 3; // -120°
+        const angT = theta + (2 * Math.PI) / 3; // +120°
+
+        const vR = V_PEAK * Math.sin(angR);
+        const vS = V_PEAK * Math.sin(angS);
+        const vT = V_PEAK * Math.sin(angT);
+        const vRS = vR - vS; // = V_LINE_PEAK * sin(theta + 30°)
+
+        // 하단 수식 패널 업데이트
+        ui.f2Vr.textContent = `${vR >= 0 ? '+' : ''}${vR.toFixed(1)} V`;
+        ui.f2Vs.textContent = `${vS >= 0 ? '+' : ''}${vS.toFixed(1)} V`;
+        ui.f2Vt.textContent = `${vT >= 0 ? '+' : ''}${vT.toFixed(1)} V`;
+        ui.f2Vrs.textContent = `${vRS >= 0 ? '+' : ''}${vRS.toFixed(1)} V`;
+
+        const { ctx, w, h } = canvases.tab2Phasor;
+        ctx.clearRect(0, 0, w, h);
+
+        const isNarrow = w < 640;
+        const vcx = isNarrow ? w * 0.5 : Math.min(210, w * 0.27);
+        const vcy = isNarrow ? h * 0.34 : h * 0.52;
+        // 선간전압(√3배)까지 화면에 넉넉히 들어오도록 반지름 설정
+        const maxR = isNarrow ? Math.min(w * 0.24, h * 0.16) : Math.min(vcx * 0.48, h * 0.24);
+        const rPhase = maxR;            // 상전압 220V (피크 311V) 반지름
+        const rLine = maxR * SQRT3;     // 선간전압 380V (피크 539V) 반지름
+
+        // 1) 벡터도 원 (상전압 원 & 선간전압 원)
+        ctx.strokeStyle = '#e2e8f0';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(vcx, vcy, rPhase, 0, Math.PI * 2); ctx.stroke();
+
+        if (state.showVrs) {
+          ctx.strokeStyle = 'rgba(139, 92, 246, 0.25)';
+          ctx.setLineDash([4, 4]);
+          ctx.beginPath(); ctx.arc(vcx, vcy, rLine, 0, Math.PI * 2); ctx.stroke();
+          ctx.setLineDash([]);
+        }
+
+        // 중심 축 & 중성점 N(0V)
+        ctx.strokeStyle = '#cbd5e1';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(vcx - rLine - 8, vcy); ctx.lineTo(vcx + rLine + 8, vcy);
+        ctx.moveTo(vcx, vcy - rLine - 8); ctx.lineTo(vcx, vcy + rLine + 8);
+        ctx.stroke();
+
+        // R, S, T 끝점 좌표
+        const rx = vcx + Math.cos(angR) * rPhase, ry = vcy - Math.sin(angR) * rPhase;
+        const sx = vcx + Math.cos(angS) * rPhase, sy = vcy - Math.sin(angS) * rPhase;
+        const tx = vcx + Math.cos(angT) * rPhase, ty = vcy - Math.sin(angT) * rPhase;
+
+        // 선간전압 V_RS = V_R - V_S (원점 기준 +30° 앞선 보라색 벡터 & R-S 이등변삼각형 연결선)
+        const angRS = theta + Math.PI / 6; // +30°
+        const rsx = vcx + Math.cos(angRS) * rLine;
+        const rsy = vcy - Math.sin(angRS) * rLine;
+
+        if (state.showVrs) {
+          // 120° 이등변삼각형 음영 (N - R - S)
+          ctx.fillStyle = 'rgba(139, 92, 246, 0.12)';
+          ctx.beginPath();
+          ctx.moveTo(vcx, vcy);
+          ctx.lineTo(rx, ry);
+          ctx.lineTo(sx, sy);
+          ctx.closePath();
+          ctx.fill();
+
+          // S 끝 -> R 끝 직접 잇는 기하학적 거리선 (길이 = 220 × √3 = 381V)
+          drawArrow(ctx, sx, sy, rx, ry, 'rgba(139, 92, 246, 0.65)', 2.4, 9);
+
+          // 원점에서 그리는 V_RS 페이저 (+30° 앞섬)
+          drawArrow(ctx, vcx, vcy, rsx, rsy, '#8b5cf6', 3.4, 11);
+
+          ctx.fillStyle = '#6d28d9';
+          ctx.font = '900 11px Pretendard, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('V_RS (380V)', rsx + Math.cos(angRS) * 24, rsy - Math.sin(angRS) * 14);
+        }
+
+        // R, S, T 상전압 화살표
+        drawArrow(ctx, vcx, vcy, rx, ry, '#ef4444', 3.2, 10);
+        drawArrow(ctx, vcx, vcy, sx, sy, '#10b981', 3.2, 10);
+        drawArrow(ctx, vcx, vcy, tx, ty, '#3b82f6', 3.2, 10);
+
+        // 라벨 R, S, T, N
+        ctx.font = '900 11.5px ui-monospace, monospace';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#dc2626'; ctx.fillText('R', rx + Math.cos(angR) * 14, ry - Math.sin(angR) * 14 + 4);
+        ctx.fillStyle = '#059669'; ctx.fillText('S', sx + Math.cos(angS) * 14, sy - Math.sin(angS) * 14 + 4);
+        ctx.fillStyle = '#2563eb'; ctx.fillText('T', tx + Math.cos(angT) * 14, ty - Math.sin(angT) * 14 + 4);
+
+        ctx.fillStyle = '#0f172a';
+        ctx.beginPath(); ctx.arc(vcx, vcy, 4.5, 0, Math.PI * 2); ctx.fill();
+        ctx.font = '800 10px ui-monospace, monospace';
+        ctx.fillText('N(0V)', vcx + 18, vcy + 13);
+
+        ctx.fillStyle = '#0f172a';
+        ctx.font = '800 12px Pretendard, sans-serif';
+        ctx.fillText('회전 벡터도 (120° 간격)', vcx, 20);
+
+        // 2) 우측(또는 하단) 사인파 오실로스코프 영역
+        const wx0 = isNarrow ? 34 : vcx + rLine + 44;
+        const wx1 = w - 20;
+        const ww = Math.max(120, wx1 - wx0);
+        const wcy = isNarrow ? h * 0.77 : vcy;
+        const ampP = isNarrow ? h * 0.11 : rPhase;
+        const ampL = ampP * SQRT3;
+
+        // 배경 격자
+        ctx.strokeStyle = '#e2e8f0';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(wx0, wcy); ctx.lineTo(wx1, wcy);
+        ctx.moveTo(wx0, wcy - ampP); ctx.lineTo(wx1, wcy - ampP);
+        ctx.moveTo(wx0, wcy + ampP); ctx.lineTo(wx1, wcy + ampP);
+        if (state.showVrs) {
+          ctx.moveTo(wx0, wcy - ampL); ctx.lineTo(wx1, wcy - ampL);
+          ctx.moveTo(wx0, wcy + ampL); ctx.lineTo(wx1, wcy + ampL);
+        }
+        ctx.stroke();
+
+        // Y축 전압 눈금 라벨
+        ctx.fillStyle = '#64748b';
+        ctx.font = '700 10px ui-monospace, monospace';
+        ctx.textAlign = 'right';
+        ctx.fillText('+311V', wx0 - 5, wcy - ampP + 3);
+        ctx.fillText('0V', wx0 - 5, wcy + 3);
+        ctx.fillText('-311V', wx0 - 5, wcy + ampP + 3);
+        if (state.showVrs) {
+          ctx.fillStyle = '#7c3aed';
+          ctx.fillText('+539V', wx0 - 5, wcy - ampL + 3);
+          ctx.fillText('-539V', wx0 - 5, wcy + ampL + 3);
+        }
+
+        // 사인파 그리기 헬퍼 (오른쪽에서 왼쪽으로 흐르거나 고정 0~360°에서 현재 θ 커서 이동)
+        // 현재 각도 θ 커서 위치를 왼쪽 끝(wx0)에 맞추면 벡터 끝에서 수평 투영선이 곧바로 사인파 시작점과 100% 직선 연결됨!
+        const drawPhaseWave = (offsetRad, amp, color, lw) => {
+          ctx.strokeStyle = color;
+          ctx.lineWidth = lw;
+          ctx.beginPath();
+          for (let px = 0; px <= ww; px += 2) {
+            // x=0이 현재 θ, 오른쪽으로 갈수록 과거(θ - 2π * px/ww)
+            const ang = theta - (px / ww) * Math.PI * 2 + offsetRad;
+            const py = wcy - Math.sin(ang) * amp;
+            px === 0 ? ctx.moveTo(wx0 + px, py) : ctx.lineTo(wx0 + px, py);
+          }
+          ctx.stroke();
+        };
+
+        drawPhaseWave(0, ampP, '#ef4444', 2.4);
+        drawPhaseWave(-(2 * Math.PI) / 3, ampP, '#10b981', 2.4);
+        drawPhaseWave((2 * Math.PI) / 3, ampP, '#3b82f6', 2.4);
+        if (state.showVrs) {
+          drawPhaseWave(Math.PI / 6, ampL, '#8b5cf6', 3.2);
+        }
+
+        // PC 화면(가로 배치)에서는 벡터 끝점 -> 사인파 시작점(wx0) 수평 투영 점선 직접 연결!
+        if (!isNarrow) {
+          const drawProj = (px, py, col) => {
+            ctx.strokeStyle = col;
+            ctx.lineWidth = 1.4;
+            ctx.setLineDash([4, 4]);
+            ctx.beginPath();
+            ctx.moveTo(px, py);
+            ctx.lineTo(wx0, py);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.fillStyle = col;
+            ctx.beginPath(); ctx.arc(wx0, py, 4.8, 0, Math.PI * 2); ctx.fill();
+          };
+          drawProj(rx, ry, '#ef4444');
+          drawProj(sx, sy, '#10b981');
+          drawProj(tx, ty, '#3b82f6');
+          if (state.showVrs) drawProj(rsx, rsy, '#8b5cf6');
+        }
+
+        ctx.fillStyle = '#0f172a';
+        ctx.font = '800 12px Pretendard, sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText('실시간 사인파 오실로스코프 (벡터의 Y축 높이 = 순시 전압)', wx0, isNarrow ? wcy - ampL - 10 : 20);
+      }
+
+      /* -----------------------------------------------------------------
+       * 6. [탭 3] 렌더링: 단상(맥동) vs 3상(일정 전력) & 물의 흐름 비유
+       * ----------------------------------------------------------------- */
+      function renderTab3() {
+        const theta = (state.thetaDeg * Math.PI) / 180;
+        const phi = (state.phiDeg * Math.PI) / 180;
+        const cosPhi = Math.cos(phi);
+        const sinPhi = Math.sin(phi);
+
+        // 역률 정보 배지 업데이트
+        ui.phiReadout.textContent = `${state.phiDeg}°`;
+        ui.pfBadgeCos.textContent = `역률 cosφ = ${cosPhi.toFixed(2)}`;
+        const activePct = Math.round(cosPhi * 100);
+        const reactivePct = Math.round(sinPhi * 100);
+        ui.pfBadgeActive.textContent = `일하는 물(유효): ${activePct}%`;
+        ui.pfBadgeReactive.textContent = `헛도는 물(무효): ${reactivePct}%`;
+
+        /* --- (A) 좌측: 단상 220V 설비 (1기통 펌프 + 맥동 전력) --- */
+        {
+          const { ctx, w, h } = canvases.tab3Single;
+          ctx.clearRect(0, 0, w, h);
+
+          const topH = h * 0.48;
+          const pSingle = Math.sin(theta) * Math.sin(theta - phi); // 현재 순시전력 (-0.5 ~ 1.0)
+
+          // 1) 상단: 1기통 수압 펌프 + 덜컹거리는 물레방아/모터
+          const pumpX = w * 0.27;
+          const motorX = w * 0.72;
+          const cy = topH * 0.54;
+
+          // 실린더 (1기통)
+          ctx.fillStyle = '#fee2e2';
+          ctx.strokeStyle = '#ef4444';
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.roundRect(pumpX - 24, cy - 42, 48, 84, 10);
+          ctx.fill();
+          ctx.stroke();
+
+          // 피스톤 상하 왕복
+          const pisY = cy - Math.sin(theta) * 26;
+          ctx.fillStyle = '#dc2626';
+          ctx.fillRect(pumpX - 20, pisY - 7, 40, 14);
+
+          // 연결 수관
+          ctx.strokeStyle = pSingle > 0.05 ? '#ef4444' : '#94a3b8';
+          ctx.lineWidth = 6;
+          ctx.beginPath();
+          ctx.moveTo(pumpX + 24, cy);
+          ctx.lineTo(motorX - 38, cy);
+          ctx.stroke();
+
+          // 단상 모터 (전력이 0 부근일 때 미세하게 떨림 연출)
+          const jitter = Math.abs(pSingle) < 0.15 ? Math.sin(theta * 14) * 2.2 : 0;
+          drawPaddleWheel(ctx, motorX + jitter, cy, 34, state.singleMotorAngle, '#ef4444', 6);
+
+          ctx.fillStyle = '#0f172a';
+          ctx.font = '800 11.5px Pretendard, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('1기통 물펌프 (R상)', pumpX, cy + 58);
+          ctx.fillStyle = '#dc2626';
+          ctx.fillText(Math.abs(pSingle) < 0.12 ? '⚠️ 힘=0 순간! (덜컹)' : '단상 모터 (맥동 회전)', motorX, cy + 58);
+
+          // 2) 하단: 단상 순시전력 그래프
+          const gx0 = 36, gx1 = w - 18, gw = gx1 - gx0;
+          const gTop = topH + 14, gBot = h - 22;
+          const gZero = gTop + (gBot - gTop) * 0.72;
+          const gScale = (gBot - gTop) * 0.62;
+
+          ctx.strokeStyle = '#94a3b8';
+          ctx.lineWidth = 1.2;
+          ctx.beginPath(); ctx.moveTo(gx0, gZero); ctx.lineTo(gx1, gZero); ctx.stroke();
+
+          // 전력 영역 음영
+          for (let px = 0; px < gw; px += 2) {
+            const ang = (px / gw) * Math.PI * 2;
+            const p = Math.sin(ang) * Math.sin(ang - phi);
+            const py = gZero - p * gScale;
+            ctx.fillStyle = p >= 0 ? 'rgba(239, 68, 68, 0.22)' : 'rgba(220, 38, 38, 0.35)';
+            ctx.fillRect(gx0 + px, Math.min(gZero, py), 2.5, Math.abs(gZero - py));
+          }
+
+          ctx.strokeStyle = '#ef4444';
+          ctx.lineWidth = 2.6;
+          ctx.beginPath();
+          for (let px = 0; px <= gw; px += 2) {
+            const ang = (px / gw) * Math.PI * 2;
+            const p = Math.sin(ang) * Math.sin(ang - phi);
+            const py = gZero - p * gScale;
+            px === 0 ? ctx.moveTo(gx0 + px, py) : ctx.lineTo(gx0 + px, py);
+          }
+          ctx.stroke();
+
+          // 평균선
+          const avgY = gZero - (0.5 * cosPhi) * gScale;
+          ctx.strokeStyle = '#f59e0b';
+          ctx.setLineDash([5, 4]);
+          ctx.lineWidth = 1.8;
+          ctx.beginPath(); ctx.moveTo(gx0, avgY); ctx.lineTo(gx1, avgY); ctx.stroke();
+          ctx.setLineDash([]);
+
+          // 현재 θ 위치 점
+          const curX = gx0 + (state.thetaDeg / 360) * gw;
+          ctx.fillStyle = '#0f172a';
+          ctx.beginPath(); ctx.arc(curX, gZero - pSingle * gScale, 5.2, 0, Math.PI * 2); ctx.fill();
+
+          ctx.fillStyle = '#475569';
+          ctx.font = '800 10.5px Pretendard, sans-serif';
+          ctx.textAlign = 'left';
+          ctx.fillText('단상 순시전력 p(t) — 매 반주기마다 0으로 추락!', gx0, gTop + 2);
+          ctx.fillText('0W', 10, gZero + 4);
+        }
+
+        /* --- (B) 우측: 3상 380V 설비 (120° 3기통 펌프 + 완벽한 일직선 총 전력) --- */
+        {
+          const { ctx, w, h } = canvases.tab3Three;
+          ctx.clearRect(0, 0, w, h);
+
+          const topH = h * 0.48;
+          const cy = topH * 0.54;
+
+          // 1) 상단: 120° 위상차 3기통 수압 펌프 (R, S, T) + 부드러운 3상 모터
+          const pumps = [
+            { x: w * 0.14, ang: theta, col: '#ef4444', bg: '#fee2e2', lbl: 'R' },
+            { x: w * 0.28, ang: theta - (2 * Math.PI) / 3, col: '#10b981', bg: '#dcfce7', lbl: 'S' },
+            { x: w * 0.42, ang: theta + (2 * Math.PI) / 3, col: '#3b82f6', bg: '#dbeafe', lbl: 'T' }
+          ];
+
+          pumps.forEach(pm => {
+            ctx.fillStyle = pm.bg;
+            ctx.strokeStyle = pm.col;
+            ctx.lineWidth = 2.2;
+            ctx.beginPath();
+            ctx.roundRect(pm.x - 16, cy - 38, 32, 76, 8);
+            ctx.fill();
+            ctx.stroke();
+
+            const py = cy - Math.sin(pm.ang) * 24;
+            ctx.fillStyle = pm.col;
+            ctx.fillRect(pm.x - 13, py - 6, 26, 12);
+
+            ctx.fillStyle = pm.col;
+            ctx.font = '900 11px ui-monospace, monospace';
+            ctx.textAlign = 'center';
+            ctx.fillText(pm.lbl, pm.x, cy + 54);
+          });
+
+          // 합류 파이프 -> 3상 모터
+          const motorX = w * 0.77;
+          ctx.strokeStyle = '#f59e0b';
+          ctx.lineWidth = 7;
+          ctx.beginPath();
+          ctx.moveTo(w * 0.42 + 16, cy);
+          ctx.lineTo(motorX - 38, cy);
+          ctx.stroke();
+
+          // 3상 모터 (진동 0, 완벽하게 일정한 회전)
+          drawPaddleWheel(ctx, motorX, cy, 34, state.threeMotorAngle, '#10b981', 8);
+
+          ctx.fillStyle = '#047857';
+          ctx.font = '800 11.5px Pretendard, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('✨ 3상 모터 (무진동·일정 토크)', motorX, cy + 58);
+
+          // 2) 하단: 개별 3상 전력 + 합성 총 전력 P_total (완벽 일직선!)
+          const gx0 = 36, gx1 = w - 18, gw = gx1 - gx0;
+          const gTop = topH + 14, gBot = h - 22;
+          const gZero = gTop + (gBot - gTop) * 0.80;
+          const gScale = (gBot - gTop) * 0.42; // P_total = 1.5 * cosPhi가 상단에 예쁘게 표시되도록
+
+          ctx.strokeStyle = '#94a3b8';
+          ctx.lineWidth = 1.2;
+          ctx.beginPath(); ctx.moveTo(gx0, gZero); ctx.lineTo(gx1, gZero); ctx.stroke();
+
+          // R, S, T 개별 순시전력 (얇은 반투명 실선)
+          const phases = [
+            { off: 0, col: 'rgba(239, 68, 68, 0.45)' },
+            { off: -(2 * Math.PI) / 3, col: 'rgba(16, 185, 129, 0.45)' },
+            { off: (2 * Math.PI) / 3, col: 'rgba(59, 130, 246, 0.45)' }
+          ];
+          phases.forEach(ph => {
+            ctx.strokeStyle = ph.col;
+            ctx.lineWidth = 1.6;
+            ctx.beginPath();
+            for (let px = 0; px <= gw; px += 2) {
+              const ang = (px / gw) * Math.PI * 2 + ph.off;
+              const p = Math.sin(ang) * Math.sin(ang - phi);
+              const py = gZero - p * gScale;
+              px === 0 ? ctx.moveTo(gx0 + px, py) : ctx.lineTo(gx0 + px, py);
+            }
+            ctx.stroke();
+          });
+
+          // 합성 총 전력 P_total = p_R + p_S + p_T = 1.5 * cos(phi) (완벽한 일직선!)
+          const pTotal = 1.5 * cosPhi;
+          const totY = gZero - pTotal * gScale;
+
+          ctx.fillStyle = 'rgba(245, 158, 11, 0.16)';
+          ctx.fillRect(gx0, totY, gw, gZero - totY);
+
+          ctx.strokeStyle = '#f59e0b';
+          ctx.lineWidth = 3.8;
+          ctx.beginPath();
+          ctx.moveTo(gx0, totY);
+          ctx.lineTo(gx1, totY);
+          ctx.stroke();
+
+          // 현재 θ 위치 점 (일직선 위를 부드럽게 활주)
+          const curX = gx0 + (state.thetaDeg / 360) * gw;
+          ctx.fillStyle = '#d97706';
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2;
+          ctx.beginPath(); ctx.arc(curX, totY, 5.8, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+
+          ctx.fillStyle = '#047857';
+          ctx.font = '800 10.5px Pretendard, sans-serif';
+          ctx.textAlign = 'left';
+          ctx.fillText('P_total = p_R + p_S + p_T (완벽한 일직선!)', gx0, gTop + 2);
+          ctx.fillStyle = '#475569';
+          ctx.fillText('0W', 10, gZero + 4);
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 7. 단일 60fps 메인 애니메이션 루프
+       * ----------------------------------------------------------------- */
+      function animate(ts) {
+        if (!state.lastTs) state.lastTs = ts;
+        const dt = Math.min((ts - state.lastTs) / 1000, 0.05);
+        state.lastTs = ts;
+
+        if (state.playing) {
+          // 전기각 θ 진행
+          const dDeg = dt * state.speed * 360;
+          state.thetaDeg = (state.thetaDeg + dDeg) % 360;
+          ui.angleSlider.value = String(Math.round(state.thetaDeg));
+          ui.angleReadout.textContent = `${Math.round(state.thetaDeg)}°`;
+
+          const theta = (state.thetaDeg * Math.PI) / 180;
+          const phi = (state.phiDeg * Math.PI) / 180;
+          const cosPhi = Math.cos(phi);
+
+          // 탭 1 물레방아 & AC/DC 수조 누적 열량 (RMS 원리: AC sin² 평균 = 0.5 = DC 220V 일정)
+          const instPowerNorm = Math.max(0, Math.sin(theta) * Math.sin(theta - phi));
+          const avgPowerNorm = 0.5 * cosPhi;
+          state.acWheelAngle += dt * (2.5 + instPowerNorm * 7.0) * (state.speed / 0.2);
+          state.dcWheelAngle += dt * (2.5 + avgPowerNorm * 7.0) * (state.speed / 0.2);
+
+          if (state.activeTab === 'tab1') {
+            const heatRate = 3.2 * (state.speed / 0.2);
+            state.acTemp += dt * heatRate * Math.sin(theta) * Math.sin(theta - phi);
+            state.dcTemp += dt * heatRate * avgPowerNorm;
+            if (state.dcTemp >= 98) {
+              state.acTemp = 24.0;
+              state.dcTemp = 24.0;
+            }
+          }
+
+          // 탭 3 모터 회전 (단상은 맥동 토크, 3상은 일정 토크)
+          const baseOmega = 3.6 * (state.speed / 0.2);
+          const singleTorque = 0.45 + 0.9 * Math.max(0, Math.sin(theta) * Math.sin(theta - phi));
+          state.singleMotorAngle += dt * baseOmega * singleTorque;
+          state.threeMotorAngle += dt * baseOmega * (0.45 + 0.9 * Math.max(0.25, cosPhi));
+        }
+
+        // 활성 탭만 렌더링
+        if (state.activeTab === 'tab1') renderTab1();
+        else if (state.activeTab === 'tab2') renderTab2();
+        else renderTab3();
+
+        requestAnimationFrame(animate);
+      }
+
+      /* -----------------------------------------------------------------
+       * 8. 미니 퀴즈 렌더링 & 컨트롤 동기화
+       * ----------------------------------------------------------------- */
+      function setPhi(deg) {
+        state.phiDeg = deg;
+        ui.phiSlider.value = String(deg);
+        ui.pfPresetBtns.forEach(b => {
+          b.classList.toggle('active-pf', Number(b.dataset.phi) === deg);
+        });
+      }
+
+      function renderQuiz() {
+        ui.quizGrid.innerHTML = QUIZ_DATA.map((item, qi) => {
+          const picked = state.quizAns[qi];
+          const done = picked !== null;
+          const isOk = picked === item.ans;
+
+          const optsHtml = item.opts.map((txt, oi) => {
+            let cls = 'quiz-opt-btn';
+            if (done) {
+              if (oi === item.ans) cls += ' correct';
+              else if (oi === picked) cls += ' wrong';
+            }
+            return `<button type="button" class="${cls}" data-q="${qi}" data-o="${oi}" ${done ? 'disabled' : ''}>${txt}</button>`;
+          }).join('');
+
+          return `
+            <div class="quiz-card">
+              <div class="quiz-q">${item.q}</div>
+              <div class="quiz-opts">${optsHtml}</div>
+              <div class="quiz-fb ${done ? (isOk ? 'show ok' : 'show no') : ''}">
+                ${done ? (isOk ? item.ok : item.no) : ''}
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        ui.quizGrid.querySelectorAll('.quiz-opt-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const qi = Number(btn.dataset.q);
+            const oi = Number(btn.dataset.o);
+            if (state.quizAns[qi] !== null) return;
+            state.quizAns[qi] = oi;
+            renderQuiz();
+          });
+        });
+
+        const doneCount = state.quizAns.filter(v => v !== null).length;
+        const score = state.quizAns.reduce((acc, v, i) => acc + (v === QUIZ_DATA[i].ans ? 1 : 0), 0);
+        if (doneCount < 3) {
+          ui.quizScoreText.textContent = `📝 3문제를 모두 풀어 보세요! (${doneCount} / 3 완료 · 현재 ${score}점)`;
+        } else if (score === 3) {
+          ui.quizScoreText.textContent = '🏆 3 / 3점 만점! 단상 220V와 3상 380V의 원리를 완벽하게 이해하셨습니다!';
+        } else {
+          ui.quizScoreText.textContent = `👍 3문제 완료! 총 ${score} / 3점입니다. 다시 도전해 볼까요?`;
+        }
+      }
+
+      /* -----------------------------------------------------------------
+       * 9. 이벤트 바인딩 및 초기화
+       * ----------------------------------------------------------------- */
+      window.addEventListener('load', () => {
+        // 3개 학습 탭 전환
+        ui.tabBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const target = btn.dataset.tab;
+            state.activeTab = target;
+            ui.tabBtns.forEach(b => {
+              const on = b.dataset.tab === target;
+              b.classList.toggle('active', on);
+              b.setAttribute('aria-selected', String(on));
+            });
+            ui.tabPanels.forEach(p => p.classList.toggle('active', p.id === target));
+            resizeVisibleCanvases();
+          });
+        });
+
+        // 재생 / 일시정지
+        ui.btnPlayPause.addEventListener('click', () => {
+          state.playing = !state.playing;
+          ui.btnPlayPause.classList.toggle('paused', !state.playing);
+          ui.playIcon.textContent = state.playing ? '⏸️' : '▶️';
+          ui.playText.textContent = state.playing ? '일시정지' : '재생';
+        });
+
+        // 속도 선택
+        ui.speedBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.speed = Number(btn.dataset.speed);
+            ui.speedBtns.forEach(b => b.classList.toggle('active', b === btn));
+          });
+        });
+
+        // 각도 수동 슬라이더 & 스냅 버튼
+        ui.angleSlider.addEventListener('input', e => {
+          state.thetaDeg = Number(e.target.value);
+          ui.angleReadout.textContent = `${Math.round(state.thetaDeg)}°`;
+        });
+        ui.snapBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.playing = false;
+            ui.btnPlayPause.classList.add('paused');
+            ui.playIcon.textContent = '▶️';
+            ui.playText.textContent = '재생';
+            state.thetaDeg = Number(btn.dataset.snap);
+            ui.angleSlider.value = String(state.thetaDeg);
+            ui.angleReadout.textContent = `${state.thetaDeg}°`;
+          });
+        });
+
+        // 부하 역률 프리셋 & 탭 3 미세 슬라이더
+        ui.pfPresetBtns.forEach(btn => {
+          btn.addEventListener('click', () => setPhi(Number(btn.dataset.phi)));
+        });
+        ui.phiSlider.addEventListener('input', e => setPhi(Number(e.target.value)));
+
+        // 탭 1 수조 온도 리셋
+        ui.btnResetHeat.addEventListener('click', () => {
+          state.acTemp = 24.0;
+          state.dcTemp = 24.0;
+        });
+
+        // 탭 2 선간전압 벡터 토글
+        ui.btnToggleVrs.addEventListener('click', () => {
+          state.showVrs = !state.showVrs;
+          ui.btnToggleVrs.classList.toggle('off', !state.showVrs);
+          ui.vrsToggleTxt.textContent = state.showVrs
+            ? '선간전압 벡터(V_RS = V_R - V_S) 보기 ON'
+            : '선간전압 벡터(V_RS = V_R - V_S) 보기 OFF';
+        });
+
+        // 퀴즈 리셋
+        ui.btnQuizReset.addEventListener('click', () => {
+          state.quizAns = [null, null, null];
+          renderQuiz();
+        });
+
+        window.addEventListener('resize', resizeVisibleCanvases);
+
+        // 초기 실행
+        resizeVisibleCanvases();
+        renderQuiz();
+        requestAnimationFrame(animate);
+      });
+    })();
+  </script>
+</body>
+</html>
